@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "excel",
+  "displayName": "Excel",
+  "version": "1.0.3",
+  "description": "Create, edit, analyze, and convert Excel workbooks and delimited spreadsheet files with live formulas, professional formatting, charts, data cleaning, and formula recalculation.",
+  "author": "MiniMax",
+  "icon": "excel.webp",
+  "category": "Office",
+  "exampleQueries": [
+    "Clean this CSV and turn it into a formatted Excel workbook with live formulas and charts",
+    "Update this existing Excel model while preserving its formatting, formulas, and named ranges",
+    "Analyze this large XLSX file and create an Excel-native summary using SUMIFS and COUNTIFS"
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/xlsx/SKILL.md"
+  ]
+}
