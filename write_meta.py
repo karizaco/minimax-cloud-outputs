@@ -10,13 +10,37 @@ from datetime import datetime, timezone
 
 OUT_ROOT = "/workspace/us-eod"
 DATA = "/workspace/data"
-DATE = "2026-10-20"
+import sys
+DATE = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("EOD_DATE", "2026-10-20")
 INTL = ["au", "jp", "tw", "ca", "eu-de", "eu-fr", "eu-it", "eu-es", "eu-nl",
         "eu-be", "eu-at", "eu-pt", "eu-ie", "eu-fi", "eu-dk", "eu-gr"]
 LABEL = {"us": "US", "au": "AU", "jp": "JP", "tw": "TW", "ca": "CA",
          "eu-de": "EU-DE", "eu-fr": "EU-FR", "eu-it": "EU-IT", "eu-es": "EU-ES",
          "eu-nl": "EU-NL", "eu-be": "EU-BE", "eu-at": "EU-AT", "eu-pt": "EU-PT",
          "eu-ie": "EU-IE", "eu-fi": "EU-FI", "eu-dk": "EU-DK", "eu-gr": "EU-GR"}
+
+
+def _prev_csv(date_str):
+    """Compare today's ticker sets against the previous calendar day's file."""
+    import datetime as _dt
+    d = _dt.date.fromisoformat(date_str) - _dt.timedelta(days=1)
+    out = []
+    for region in ["us"] + INTL:
+        cur = (f"{OUT_ROOT}/{region}/{date_str}.csv" if region != "us"
+               else f"{OUT_ROOT}/{DATE}.csv")
+        prv = (f"{OUT_ROOT}/{region}/{d.isoformat()}.csv" if region != "us"
+               else f"{OUT_ROOT}/{d.isoformat()}.csv")
+        if not (os.path.exists(cur) and os.path.exists(prv)):
+            continue
+        def tickers(p):
+            with open(p, newline="", encoding="utf-8") as fh:
+                return {r["ticker"] for r in csv.DictReader(fh)}
+        c, p_ = tickers(cur), tickers(prv)
+        if not p_:
+            continue
+        out.append(f"{LABEL[region]}: +{len(c - p_):,} new, -{len(p_ - c):,} gone, "
+                   f"{len(c & p_):,} unchanged (of {len(p_):,} prior)")
+    return (d.isoformat(), out) if out else None
 
 
 def et_now():
@@ -94,8 +118,16 @@ def main():
     A("- Blank `pe_ratio` = negative/absent earnings; blank `market_cap` = no")
     A("  market cap reported (105 US, 125 CA, ~5 elsewhere). 6 blank `change_pct`")
     A("  cells were filled from Yahoo Finance.")
-    A("- No prior-day archive exists in this sandbox, so movers-mode forward-fill")
-    A("  was not applied — every region is a full refresh.")
+    prev = _prev_csv(DATE)
+    if prev:
+        A(f"- Prior-day archive present ({prev[0]}): universe churn vs prior day —")
+        for line in prev[1]:
+            A(f"  {line}")
+        A("- Movers-mode forward-fill was not applied (TradingView full-universe pull")
+        A("  is ~3 s); every region is a full refresh.")
+    else:
+        A("- No prior-day archive in this sandbox, so movers-mode forward-fill was")
+        A("  not applied — every region is a full refresh.")
     A("")
     out = f"{OUT_ROOT}/{DATE}.meta.md"
     with open(out, "w", encoding="utf-8") as fh:
