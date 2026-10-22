@@ -57,9 +57,9 @@ got=[]
 with ThreadPoolExecutor(max_workers=12) as ex:
     for r in ex.map(fetch_one, universe[region]):
         if r: got.append(r)
-with open(f"/tmp/asia/res_{region}.json","w") as f:
+with open(f"/workspace/.cache/asia/res_{region}.json","w") as f:
     json.dump(got,f,indent=2)
-TODAY="2026-10-21"
+TODAY="2026-10-22"
 fresh=[x for x in got if (x.get("last_close_utc") or "").startswith(TODAY)]
 fresh.sort(key=lambda x: abs(x.get('pct') or 0), reverse=True)
 print(f"=== {region}: {len(got)}/{len(universe[region])} ok, {len(fresh)} fresh ===")

@@ -1,0 +1,394 @@
+[
+  {
+    "symbol": "005930.KS",
+    "price": 214500.0,
+    "pct": -4.027,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "000660.KS",
+    "price": 1223000.0,
+    "pct": -5.487,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "005380.KS",
+    "price": 301500.0,
+    "pct": -2.585,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "035420.KS",
+    "price": 176400.0,
+    "pct": -1.727,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "051910.KS",
+    "price": 238000.0,
+    "pct": -6.849,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "005490.KS",
+    "price": 286000.0,
+    "pct": -4.983,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "028260.KS",
+    "price": 288500.0,
+    "pct": -0.517,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "105560.KS",
+    "price": 158200.0,
+    "pct": -1.494,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "055550.KS",
+    "price": 90300.0,
+    "pct": -1.527,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "012330.KS",
+    "price": 337000.0,
+    "pct": -2.601,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "096770.KS",
+    "price": 141700.0,
+    "pct": -8.166,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "017670.KS",
+    "price": 76200.0,
+    "pct": -1.423,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "003550.KS",
+    "price": 100900.0,
+    "pct": -1.753,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "066570.KS",
+    "price": 160000.0,
+    "pct": -3.089,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "034730.KS",
+    "price": 461500.0,
+    "pct": -4.253,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "015760.KS",
+    "price": 28800.0,
+    "pct": -0.173,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "033780.KS",
+    "price": 193800.0,
+    "pct": -0.103,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "018260.KS",
+    "price": 207000.0,
+    "pct": 2.73,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "003490.KS",
+    "price": 26450.0,
+    "pct": -2.936,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "009150.KS",
+    "price": 1145000.0,
+    "pct": -1.969,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "024110.KS",
+    "price": 19850.0,
+    "pct": -0.301,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "011170.KS",
+    "price": 50200.0,
+    "pct": -4.198,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "000270.KS",
+    "price": 108800.0,
+    "pct": -1.538,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "010130.KS",
+    "price": 891000.0,
+    "pct": -2.41,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "028050.KS",
+    "price": 55400.0,
+    "pct": 16.143,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "030200.KS",
+    "price": 47550.0,
+    "pct": -3.157,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "036570.KS",
+    "price": 211500.0,
+    "pct": -1.168,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "004020.KS",
+    "price": 27250.0,
+    "pct": -3.54,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "086790.KS",
+    "price": 119900.0,
+    "pct": -1.56,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "009540.KS",
+    "price": 252000.0,
+    "pct": -3.077,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "000810.KS",
+    "price": 608000.0,
+    "pct": 1.165,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "021240.KS",
+    "price": 106100.0,
+    "pct": -0.469,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "032830.KS",
+    "price": 241500.0,
+    "pct": -1.429,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "006400.KS",
+    "price": 512000.0,
+    "pct": -7.581,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "139480.KS",
+    "price": 71000.0,
+    "pct": -2.74,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "010950.KS",
+    "price": 139800.0,
+    "pct": -5.477,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "002790.KS",
+    "price": 25250.0,
+    "pct": -0.786,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "000720.KS",
+    "price": 93000.0,
+    "pct": 0.541,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "005940.KS",
+    "price": 23600.0,
+    "pct": -1.667,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "034020.KS",
+    "price": 61600.0,
+    "pct": -2.992,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "005830.KS",
+    "price": 187100.0,
+    "pct": 0.808,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "001740.KS",
+    "price": 5640.0,
+    "pct": -1.913,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "005385.KS",
+    "price": 161600.0,
+    "pct": -2.651,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "002380.KS",
+    "price": 384500.0,
+    "pct": -2.163,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "006800.KS",
+    "price": 24900.0,
+    "pct": -3.861,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "009830.KS",
+    "price": 29100.0,
+    "pct": -4.59,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "011790.KS",
+    "price": 85700.0,
+    "pct": -6.339,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "014680.KS",
+    "price": 218000.0,
+    "pct": -3.965,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  },
+  {
+    "symbol": "016360.KS",
+    "price": 77500.0,
+    "pct": -2.393,
+    "currency": "KRW",
+    "exchange": "KSE",
+    "last_close_utc": "2026-10-22T00:00:00"
+  }
+]

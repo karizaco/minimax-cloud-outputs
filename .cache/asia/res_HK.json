@@ -1,0 +1,554 @@
+[
+  {
+    "symbol": "0700.HK",
+    "price": 382.4,
+    "pct": -2.895,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "9988.HK",
+    "price": 97.35,
+    "pct": -6.123,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "3690.HK",
+    "price": 71.3,
+    "pct": -4.552,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "9618.HK",
+    "price": 98.3,
+    "pct": -4.284,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1810.HK",
+    "price": 25.8,
+    "pct": -3.731,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0941.HK",
+    "price": 77.35,
+    "pct": -0.258,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1299.HK",
+    "price": 71.15,
+    "pct": -1.318,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0883.HK",
+    "price": 23.36,
+    "pct": -2.341,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0388.HK",
+    "price": 367.2,
+    "pct": -1.502,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1398.HK",
+    "price": 7.35,
+    "pct": -1.342,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "3988.HK",
+    "price": 5.99,
+    "pct": -1.803,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2628.HK",
+    "price": 22.62,
+    "pct": -2.078,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0823.HK",
+    "price": 37.42,
+    "pct": -1.526,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0669.HK",
+    "price": 125.2,
+    "pct": -5.08,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1109.HK",
+    "price": 29.42,
+    "pct": -2.712,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0005.HK",
+    "price": 144.0,
+    "pct": -1.235,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0001.HK",
+    "price": 64.6,
+    "pct": -2.491,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0016.HK",
+    "price": 104.1,
+    "pct": -3.073,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0017.HK",
+    "price": 4.95,
+    "pct": -1.883,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0027.HK",
+    "price": 31.5,
+    "pct": -4.545,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0066.HK",
+    "price": 32.38,
+    "pct": -1.039,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0101.HK",
+    "price": 6.22,
+    "pct": -2.355,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0175.HK",
+    "price": 14.11,
+    "pct": -2.824,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0267.HK",
+    "price": 11.81,
+    "pct": -5.217,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0386.HK",
+    "price": 4.44,
+    "pct": -1.443,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0688.HK",
+    "price": 12.41,
+    "pct": -2.283,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0857.HK",
+    "price": 9.7,
+    "pct": -0.818,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0868.HK",
+    "price": 7.795,
+    "pct": -1.454,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0902.HK",
+    "price": 5.74,
+    "pct": -1.205,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "0992.HK",
+    "price": 23.16,
+    "pct": -10.923,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1024.HK",
+    "price": 26.78,
+    "pct": -4.494,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1038.HK",
+    "price": 67.3,
+    "pct": -0.444,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1044.HK",
+    "price": 19.5,
+    "pct": -0.205,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1088.HK",
+    "price": 39.0,
+    "pct": -3.033,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1093.HK",
+    "price": 8.355,
+    "pct": -3.966,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1099.HK",
+    "price": 15.4,
+    "pct": -1.723,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1113.HK",
+    "price": 44.08,
+    "pct": -2.218,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1177.HK",
+    "price": 4.98,
+    "pct": -6.916,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1211.HK",
+    "price": 67.4,
+    "pct": -5.271,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1288.HK",
+    "price": 6.705,
+    "pct": -0.297,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1336.HK",
+    "price": 37.92,
+    "pct": -4.0,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1378.HK",
+    "price": 18.02,
+    "pct": -4.757,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1655.HK",
+    "price": 0.148,
+    "pct": -5.732,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1686.HK",
+    "price": 4.93,
+    "pct": -3.711,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1876.HK",
+    "price": 5.855,
+    "pct": -1.844,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1918.HK",
+    "price": 0.495,
+    "pct": -8.333,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1928.HK",
+    "price": 10.86,
+    "pct": -4.485,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1929.HK",
+    "price": 10.95,
+    "pct": -3.439,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "1972.HK",
+    "price": 23.98,
+    "pct": -1.882,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2007.HK",
+    "price": 0.152,
+    "pct": -7.879,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2015.HK",
+    "price": 43.38,
+    "pct": -5.325,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2018.HK",
+    "price": 34.82,
+    "pct": -3.918,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2020.HK",
+    "price": 73.0,
+    "pct": -3.247,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2057.HK",
+    "price": 156.1,
+    "pct": -0.637,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2076.HK",
+    "price": 61.85,
+    "pct": -2.675,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2121.HK",
+    "price": 3.82,
+    "pct": 0.262,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2269.HK",
+    "price": 45.26,
+    "pct": -8.381,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2313.HK",
+    "price": 35.46,
+    "pct": -3.379,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2318.HK",
+    "price": 48.48,
+    "pct": -1.423,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2331.HK",
+    "price": 12.45,
+    "pct": -3.488,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2382.HK",
+    "price": 60.15,
+    "pct": -2.354,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2388.HK",
+    "price": 49.66,
+    "pct": -2.627,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2410.HK",
+    "price": 3.19,
+    "pct": -3.04,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2423.HK",
+    "price": 44.4,
+    "pct": -4.434,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2459.HK",
+    "price": 0.595,
+    "pct": -1.653,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2513.HK",
+    "price": 460.8,
+    "pct": -7.097,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2533.HK",
+    "price": 7.75,
+    "pct": -6.795,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2600.HK",
+    "price": 6.675,
+    "pct": -4.982,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  },
+  {
+    "symbol": "2688.HK",
+    "price": 48.02,
+    "pct": -2.833,
+    "currency": "HKD",
+    "exchange": "HKSE",
+    "last_close_utc": "2026-10-22T01:30:00"
+  }
+]
