@@ -1,4 +1,6 @@
-.cache/
-.plugin-cache/
-*.pyc
+.tmp/
+.home/
+data/
+helper_*.py
 __pycache__/
+*.pyc
