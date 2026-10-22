@@ -1,7 +1,7 @@
 # _summary — cron #9 daily sweep
 
 - **Cron date**: 2026-10-22 (Thursday) · **Data session**: **2026-10-21** — last completed close
-- **Fired at**: 07:3x ET (see `daily-sweep.md` → *Schedule deviation*)
+- **Fired at**: 07:32 ET (see `daily-sweep.md` → *Schedule deviation*)
 - **Generated**: 2026-10-22T11:33:57Z
 
 ## 1. Regime state
@@ -15,12 +15,8 @@
 
 | Sym | Close | Chg | 1M | 3M | Flags |
 |---|---|---|---|---|---|
-| **RCEL** | 15.29 | 10.80% | 38.50% | — | bonde_4pct, kse, kullamagi_momentum, qm |
-| **LIFE** | 44.22 | 7.67% | 21.68% | — | bonde_4pct, kullamagi_momentum, pw, qm |
-| **KOD** | 87.72 | -5.65% | 165.50% | — | kullamagi_momentum, pw, qm |
-| **APPN** | 48.73 | 9.48% | 29.09% | — | bonde_4pct, kullamagi_momentum, qm |
-| **HAS** | 114.00 | 4.09% | 30.64% | — | bonde_4pct, kse, sun |
-| **MEDP** | 662.48 | 6.43% | 7.87% | — | bonde_4pct, kse, sun |
+| **RCEL** | 15.29 | 10.80% | 38.50% | 219.87% | bonde_4pct, kse, kullamagi_momentum, qm |
+| **LIFE** | 44.22 | 7.67% | 21.68% | 135.46% | bonde_4pct, kullamagi_momentum, pw, qm |
 
 Full merged counts — **Master 200** · **Stalk 54** · **Focus 13** · **Tier-A 2**.
 
@@ -31,7 +27,7 @@ Full merged counts — **Master 200** · **Stalk 54** · **Focus 13** · **Tier-
 
 ## 4. Reversal-bullish (15:55 ET Bonde)
 
-**Not run.** The skill gates this scan to weekdays 15:30–16:00 ET. This fire landed at 07:3x ET, outside the window. No names are reported rather than a loose substitute being presented as the real scan.
+**Not run.** The skill gates this scan to weekdays 15:30–16:00 ET. This fire landed at 07:32 ET, outside the window. No names are reported rather than a loose substitute being presented as the real scan.
 
 ## Verification
 
