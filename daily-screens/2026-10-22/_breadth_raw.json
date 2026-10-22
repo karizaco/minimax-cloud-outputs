@@ -1,0 +1,332 @@
+{
+ "breadth": {
+  "cron_date": "2026-10-22",
+  "fetched_utc": "2026-10-22T11:33:57Z",
+  "indices": {
+   "SPY": {
+    "last_bar_date": "2026-10-21",
+    "close": 773.09,
+    "ma50": 768.3372,
+    "ma200": 726.2936,
+    "atr14": 7.07,
+    "atr_pct": 0.915,
+    "ext_atr_from_50ma": 0.672,
+    "pct_from_50ma": 0.62,
+    "last_bar": {
+     "date": "2026-10-21",
+     "open": 771.1699829101562,
+     "high": 774.4400024414062,
+     "low": 768.4000244140625,
+     "close": 773.0900268554688,
+     "volume": 31812600
+    },
+    "n_bars": 251
+   },
+   "RSP": {
+    "last_bar_date": "2026-10-21",
+    "close": 216.64,
+    "ma50": 215.534,
+    "ma200": 207.0591,
+    "atr14": 2.015,
+    "atr_pct": 0.93,
+    "ext_atr_from_50ma": 0.549,
+    "pct_from_50ma": 0.51,
+    "last_bar": {
+     "date": "2026-10-21",
+     "open": 216.39999389648438,
+     "high": 217.02000427246094,
+     "low": 215.75,
+     "close": 216.63999938964844,
+     "volume": 7888100
+    },
+    "n_bars": 251
+   },
+   "QQQ": {
+    "last_bar_date": "2026-10-21",
+    "close": 725.2,
+    "ma50": 726.7502,
+    "ma200": 676.4881,
+    "atr14": 11.265,
+    "atr_pct": 1.553,
+    "ext_atr_from_50ma": -0.138,
+    "pct_from_50ma": -0.21,
+    "last_bar": {
+     "date": "2026-10-21",
+     "open": 722.219970703125,
+     "high": 727.9500122070312,
+     "low": 719.7100219726562,
+     "close": 725.2000122070312,
+     "volume": 32034100
+    },
+    "n_bars": 251
+   },
+   "QQQE": {
+    "last_bar_date": "2026-10-21",
+    "close": 119.37,
+    "ma50": 120.6714,
+    "ma200": 112.6401,
+    "atr14": 1.5886,
+    "atr_pct": 1.331,
+    "ext_atr_from_50ma": -0.819,
+    "pct_from_50ma": -1.08,
+    "last_bar": {
+     "date": "2026-10-21",
+     "open": 118.93000030517578,
+     "high": 119.80000305175781,
+     "low": 118.80999755859375,
+     "close": 119.37000274658203,
+     "volume": 120200
+    },
+    "n_bars": 251
+   },
+   "IWM": {
+    "last_bar_date": "2026-10-21",
+    "close": 276.48,
+    "ma50": 287.49,
+    "ma200": 278.0298,
+    "atr14": 3.8786,
+    "atr_pct": 1.403,
+    "ext_atr_from_50ma": -2.839,
+    "pct_from_50ma": -3.83,
+    "last_bar": {
+     "date": "2026-10-21",
+     "open": 276.8599853515625,
+     "high": 277.70001220703125,
+     "low": 275.29998779296875,
+     "close": 276.4800109863281,
+     "volume": 15846700
+    },
+    "n_bars": 251
+   }
+  },
+  "vix": {
+   "^VIX": {
+    "last_bar_date": "2026-10-22",
+    "close": 18.27,
+    "n_bars": 130,
+    "meta_px": 18.27,
+    "meta_time": "2026-10-22 11:18 UTC"
+   },
+   "^VXN": {
+    "last_bar_date": "2026-10-21",
+    "close": 24.42,
+    "n_bars": 127,
+    "meta_px": 24.42,
+    "meta_time": "2026-10-21 20:15 UTC"
+   },
+   "cboe_vix": {
+    "last_bar_date": "2026-10-21",
+    "close": 16.68,
+    "n_rows": 9299,
+    "header": "DATE,OPEN,HIGH,LOW,CLOSE",
+    "source": "cdn.cboe.com"
+   },
+   "vxv_status": "UNAVAILABLE: yahoo ^VXV no timestamp, ^VIXCLS 404, cboe VXV_History.csv 403 AccessDenied",
+   "ratio_proxy_vix_vxn": 0.7482,
+   "ratio_definition": "VIX/VXN proxy (NOT the skill's VIX/VXVCLS) - see vxv_status"
+  },
+  "session_check": {
+   "SPY": {
+    "yahoo_last_bar_date": "2026-10-21",
+    "yahoo_close": 773.09,
+    "tv_close": null,
+    "delta_pct": null
+   },
+   "QQQ": {
+    "yahoo_last_bar_date": "2026-10-21",
+    "yahoo_close": 725.2,
+    "tv_close": null,
+    "delta_pct": null
+   },
+   "IWM": {
+    "yahoo_last_bar_date": "2026-10-21",
+    "yahoo_close": 276.48,
+    "tv_close": null,
+    "delta_pct": null
+   },
+   "AAPL": {
+    "yahoo_last_bar_date": "2026-10-21",
+    "yahoo_close": 343.99,
+    "tv_close": 343.99,
+    "delta_pct": 0.0
+   },
+   "NVDA": {
+    "yahoo_last_bar_date": "2026-10-21",
+    "yahoo_close": 221.97,
+    "tv_close": 221.97,
+    "delta_pct": -0.0
+   },
+   "TSLA": {
+    "yahoo_last_bar_date": "2026-10-21",
+    "yahoo_close": 386.47,
+    "tv_close": 386.47,
+    "delta_pct": -0.0
+   }
+  },
+  "provenance": [
+   {
+    "tag": "yahoo_chart_SPY",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?range=1y&interval=1d",
+    "http": 200,
+    "bytes": 27911,
+    "secs": 0.13,
+    "ok": true
+   },
+   {
+    "tag": "yahoo_chart_RSP",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/RSP?range=1y&interval=1d",
+    "http": 200,
+    "bytes": 28933,
+    "secs": 0.13,
+    "ok": true
+   },
+   {
+    "tag": "yahoo_chart_QQQ",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?range=1y&interval=1d",
+    "http": 200,
+    "bytes": 27840,
+    "secs": 0.14,
+    "ok": true
+   },
+   {
+    "tag": "yahoo_chart_QQQE",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQE?range=1y&interval=1d",
+    "http": 200,
+    "bytes": 28808,
+    "secs": 0.17,
+    "ok": true
+   },
+   {
+    "tag": "yahoo_chart_IWM",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/IWM?range=1y&interval=1d",
+    "http": 200,
+    "bytes": 28792,
+    "secs": 0.15,
+    "ok": true
+   },
+   {
+    "tag": "yahoo_chart_^VIX",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX?range=6mo&interval=1d",
+    "http": 200,
+    "bytes": 14888,
+    "secs": 0.11,
+    "ok": true
+   },
+   {
+    "tag": "yahoo_chart_^VXN",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVXN?range=6mo&interval=1d",
+    "http": 200,
+    "bytes": 14458,
+    "secs": 0.11,
+    "ok": true
+   },
+   {
+    "tag": "cboe_vix_history",
+    "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+    "http": 200,
+    "bytes": 473992,
+    "secs": 0.26,
+    "ok": true
+   },
+   {
+    "tag": "cboe_vix_history",
+    "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "secs": 0.26,
+    "ok": false
+   },
+   {
+    "tag": "cboe_vix_history",
+    "url": "https://cdn-api.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+    "http": 200,
+    "bytes": 473992,
+    "secs": 0.2,
+    "ok": true
+   },
+   {
+    "tag": "yahoo_chart_SPY",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?range=1mo&interval=1d",
+    "http": 200,
+    "bytes": 3537,
+    "secs": 0.13,
+    "ok": true
+   },
+   {
+    "tag": "yahoo_chart_QQQ",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?range=1mo&interval=1d",
+    "http": 200,
+    "bytes": 3498,
+    "secs": 0.15,
+    "ok": true
+   },
+   {
+    "tag": "yahoo_chart_IWM",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/IWM?range=1mo&interval=1d",
+    "http": 200,
+    "bytes": 3637,
+    "secs": 0.13,
+    "ok": true
+   },
+   {
+    "tag": "yahoo_chart_AAPL",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?range=1mo&interval=1d",
+    "http": 200,
+    "bytes": 3486,
+    "secs": 0.14,
+    "ok": true
+   },
+   {
+    "tag": "yahoo_chart_NVDA",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?range=1mo&interval=1d",
+    "http": 200,
+    "bytes": 3674,
+    "secs": 0.13,
+    "ok": true
+   },
+   {
+    "tag": "yahoo_chart_TSLA",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=1mo&interval=1d",
+    "http": 200,
+    "bytes": 3575,
+    "secs": 0.11,
+    "ok": true
+   }
+  ],
+  "tv_reported_session_date": "2026-10-21"
+ },
+ "regime": {
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "_inputs": {
+   "breadth_pct_above_20dma_mcap10b": 65.82,
+   "breadth_n": 869,
+   "breadth_pct_above_50dma_mcap10b": 48.1,
+   "breadth_n_50": 869,
+   "breadth_pct_above_200dma_mcap10b": 51.82,
+   "breadth_pct_above_20dma_full_universe": 55.19,
+   "full_universe_n": 2928,
+   "breadth_pct_above_50dma_full_universe": 38.65,
+   "full_universe_n_50": 2926,
+   "indices_below_20dma": {
+    "SPY": false,
+    "RSP": false,
+    "QQQ": false,
+    "QQQE": false,
+    "IWM": false
+   },
+   "ext_atr_from_50ma": {
+    "SPY": 0.672,
+    "RSP": 0.549,
+    "QQQ": -0.138,
+    "QQQE": -0.819,
+    "IWM": -2.839
+   },
+   "vix_close_cboe_2026_10_21": 16.68,
+   "vix_vxn_ratio_proxy": 0.7482,
+   "vix_vxvcls_status": "UNAVAILABLE: yahoo ^VXV no timestamp, ^VIXCLS 404, cboe VXV_History.csv 403 AccessDenied"
+  },
+  "_data_date": "2026-10-21",
+  "_cron_date": "2026-10-22"
+ }
+}
