@@ -125,6 +125,9 @@ def movers():
 if __name__ == "__main__":
     print("== lag attribution (US, top names) ==")
     offs = lag_check()
+    json.dump({"offsets_min": offs,
+               "median_min": statistics.median(offs) if offs else None},
+              open(f"{DATA}/_lag.json", "w"), indent=1)
     if offs:
         print(f"  median lag = {statistics.median(offs):.0f} min")
     print("== blank fill (change_pct from Yahoo) ==")

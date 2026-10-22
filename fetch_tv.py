@@ -73,6 +73,12 @@ PRIMARY_LISTING = {
 IDX = {c: i for i, c in enumerate(COLUMNS)}
 
 
+def _norm_name(n):
+    """Normalised company name for venue-duplicate grouping."""
+    import re as _re
+    return _re.sub(r"[^a-z0-9]", "", (n or "").lower())
+
+
 def scan(slug: str, body: dict, tries: int = 3):
     last = None
     for attempt in range(tries):
@@ -164,6 +170,31 @@ def pull_region(region: str):
         canon["also_listed_on"] = [g["ticker"] for g in grp[1:]]
         removed += len(grp) - 1
         deduped.append(canon)
+
+    # Venue-duplicate collapse (intl regions only): the screener returns every
+    # venue a company lists on, and those listings often carry different
+    # symbols (XETR:SAP vs LSX:716460). The skill's dedupe intent is one
+    # canonical row per underlying company per region; symbol grouping alone
+    # misses issuers whose symbol differs across venues. The US is left alone
+    # (no US venue priority map) so share classes are not collapsed.
+    if region in PRIMARY_LISTING:
+        groups = {}
+        for r in deduped:
+            key = _norm_name(r["values"][1]) or r["ticker"]
+            groups.setdefault(key, []).append(r)
+        collapsed, removed2 = [], 0
+        for g in groups.values():
+            if len(g) == 1:
+                collapsed.append(g[0])
+                continue
+            g.sort(key=lambda r: (prio.get(r["ticker"].split(":", 1)[0], 999),
+                                   r["ticker"]))
+            canon = dict(g[0])
+            canon["also_listed_on"] = [x["ticker"] for x in g[1:]]
+            removed2 += len(g) - 1
+            collapsed.append(canon)
+        deduped = collapsed
+        removed += removed2
 
     # sort by market cap desc, ticker asc (matches helper ordering)
     def mcap(r):
