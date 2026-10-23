@@ -1,0 +1,31 @@
+symbol,exchange,close,premarket_change_pct,premarket_volume,premarket_gap_pct,volume,market_cap,sector,industry
+FRGT,NASDAQ,0.322,167.96,137366161,34.73,332059972,197960,Finance,Financial Conglomerates
+IPDN,NASDAQ,4.61,102.58,30688218,-0.65,70597740,3069388,Commercial Services,Commercial Printing/Forms
+OLOX,NASDAQ,1.25,64.77,34210099,115.91,97428682,2074183,Producer Manufacturing,Building Products
+JAGX,NASDAQ,5.62,38.48,8862331,22.62,27071673,10933946,Health Technology,Pharmaceuticals: Major
+OPCH,NASDAQ,31,32.82,11613988,21.18,65081906,4643342848,Health Services,Medical/Nursing Services
+APOG,NASDAQ,40,18.9,83591,-4.63,1519160,834731822,Producer Manufacturing,Building Products
+AXG,NASDAQ,0.112,16.0,126730276,8.0,168797208,21627628,Finance,Investment Banks/Brokers
+AIFA,NASDAQ,7.67,13.95,82041,0.43,4761778,49243822,Consumer Services,Movies/Entertainment
+PRME,NASDAQ,3.5,12.46,399167,1.25,12022398,634819023,Health Technology,Biotechnology
+CIRC,NASDAQ,0.496,12.21,2052126,11.39,12106592,56745830,Health Technology,Pharmaceuticals: Major
+QTEX,NASDAQ,1.59,11.04,26489404,19.48,74098405,106649327,Health Technology,Medical Specialties
+AIIO,NASDAQ,1.13,9.01,20873278,0.9,29755403,134510206,Consumer Durables,Motor Vehicles
+BRUN,NASDAQ,15.17,8.93,510254,0.14,5160003,1271930772,Technology Services,Packaged Software
+CEG,NASDAQ,300.4,8.52,579090,3.43,13482609,106433932921,Utilities,Electric Utilities
+OSTX,AMEX,1.49,8.12,2250103,2.5,6015043,69739792,Health Technology,Biotechnology
+SRFM,NYSE,1.01,7.8,984826,2.18,9693849,124880687,Transportation,Airlines
+WHLR,NASDAQ,0.91,7.34,7203817,42.2,15091171,517072,Finance,Real Estate Investment Trusts
+RUBI,NASDAQ,0.6541,7.16,24101401,17.14,30106777,781172,Transportation,Marine Shipping
+BIAF,NASDAQ,6.06,6.95,51351,-4.68,259250,7069747,Health Technology,Medical Specialties
+BRN,AMEX,0.9575,6.7,7831145,12.04,9852792,13820851,Energy Minerals,Integrated Oil
+PENN,NASDAQ,15.91,6.29,69200,1.32,3552159,2132999490,Consumer Services,Casinos/Gaming
+XHLD,NASDAQ,0.623,6.28,4213415,1.87,149635456,7461948,Commercial Services,Miscellaneous Commercial Services
+XNDU,NASDAQ,5.06,6.19,1379375,1.55,20854699,1549811522,Electronic Technology,Computer Processing Hardware
+VERI,NASDAQ,0.7464,6.08,223381,3.46,4408113,74981155,Commercial Services,Advertising/Marketing Services
+CLF,NYSE,12.25,5.9,261961,0.49,12077588,6989115369,Non-Energy Minerals,Steel
+LW,NYSE,47.91,5.9,390998,0.63,8381671,6586715530,Consumer Non-Durables,Food: Specialty/Candy
+PSQL,NASDAQ,6.84,5.82,60797,0.16,2203954,1452088825,Electronic Technology,Computer Processing Hardware
+CTVA,NYSE,13.91,5.65,656032,2.5,45132468,9282143087,Process Industries,Agricultural Commodities/Milling
+PL,NYSE,18.57,5.41,417413,0.92,15715372,6756657281,Technology Services,Packaged Software
+RZLV,NASDAQ,2.15,5.38,1917854,0.9,19864097,896268135,Technology Services,Packaged Software

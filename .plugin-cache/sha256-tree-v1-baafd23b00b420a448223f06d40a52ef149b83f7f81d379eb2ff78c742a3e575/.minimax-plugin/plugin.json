@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "pdf",
+  "displayName": "PDF",
+  "version": "1.0.3",
+  "description": "Create, read, reformat, fill, transform, and validate PDF documents, including professional reports, Markdown and LaTeX rendering, form filling, OCR-assisted extraction, page operations, layout-preserving translation, and delivery quality checks.",
+  "author": "MiniMax",
+  "icon": "pdf.webp",
+  "category": "Office",
+  "exampleQueries": [
+    "Create a polished A4 PDF report from my source materials with a cover page, table of contents, charts, headers and footers, source links, and final visual quality checks.",
+    "Read this PDF, extract its text and tables, use OCR or page-level visual inspection where needed, and return a structured summary with page references.",
+    "Fill this uploaded PDF form with the provided information while preserving its original layout, then verify that every field is visible and correctly placed."
+  ],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [
+    "skills/pdf/SKILL.md"
+  ]
+}

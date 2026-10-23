@@ -1,0 +1,42 @@
+{
+ "size_cut_pct": 0,
+ "uncertainty": false,
+ "late_cycle": false,
+ "_inputs": {
+  "breadth_pct_above_20dma_mcap10b": 65.82,
+  "breadth_n": 869,
+  "breadth_pct_above_50dma_mcap10b": 48.1,
+  "breadth_n_50": 869,
+  "breadth_pct_above_200dma_mcap10b": 51.82,
+  "breadth_pct_above_20dma_full_universe": 55.19,
+  "full_universe_n": 2928,
+  "breadth_pct_above_50dma_full_universe": 38.65,
+  "full_universe_n_50": 2926,
+  "indices_below_20dma": {
+   "SPY": false,
+   "RSP": false,
+   "QQQ": false,
+   "QQQE": false,
+   "IWM": false
+  },
+  "ext_atr_from_50ma": {
+   "SPY": 0.672,
+   "RSP": 0.549,
+   "QQQ": -0.138,
+   "QQQE": -0.819,
+   "IWM": -2.839
+  },
+  "vix_close_cboe_2026_10_21": 16.68,
+  "vix_vxn_ratio_proxy": 0.7482,
+  "vix_vxvcls_status": "UNAVAILABLE: yahoo ^VXV no timestamp, ^VIXCLS 404, cboe VXV_History.csv 403 AccessDenied"
+ },
+ "_data_date": "2026-10-21",
+ "_cron_date": "2026-10-22",
+ "_provenance": {
+  "universe": "scanner.tradingview.com/america/scan (POST), 1 request, 2928 rows, http 200",
+  "breadth_indices": "query1.finance.yahoo.com/v8/finance/chart (SPY/RSP/QQQ/QQQE/IWM, 1y daily)",
+  "vix": "cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv (9299 rows, last 2026-10-21 close 16.68)",
+  "generated_utc": "2026-10-22T11:33:57Z",
+  "requests": 17
+ }
+}

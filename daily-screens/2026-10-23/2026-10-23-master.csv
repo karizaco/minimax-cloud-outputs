@@ -1,0 +1,201 @@
+symbol,name,close,change_pct,rvol_10d,market_cap_m,adr_pct_atr,perf_5d,perf_1m,n_flags,stylist_flags,near_ma,sector
+XLAB,Exascale Labs Holdings Inc.,4.71,73.16,2.51,303.0,14.59,155.28,65.26,4,bonde_4pct;bonde_ep9m;peoplewish_adr_velocity;qull_parabolic_short,,Finance
+MRNA,"Moderna, Inc.",202.63,-17.57,2.5,80897.2,10.39,-13.77,20.26,3,bonde_ep9m;peoplewish_adr_velocity;qull_rs,,Health Technology
+BRCB,"Black Rock Coffee Bar, Inc.",9.65,11.43,1.85,483.2,5.39,15.43,30.58,2,bonde_4pct;peoplewish_adr_velocity,,Consumer Services
+SPOT,Spotify Technology S.A.,583.66,11.1,3.04,120165.3,3.64,8.69,12.16,2,bonde_4pct;sun_canslim,,Technology Services
+WCN,"Waste Connections, Inc.",184.88,9.86,2.65,46598.9,2.44,10.85,18.85,2,bonde_4pct;sun_vcp,,Industrial Services
+APPN,Appian Corporation,51.15,4.97,1.83,3663.8,5.15,15.38,29.1,2,peoplewish_adr_velocity;qull_rs,,Technology Services
+CNNE,"Cannae Holdings, Inc.",16.43,2.05,1.32,712.6,2.38,0.86,6.9,2,bonde_coil;sun_vcp,,Consumer Services
+NTSK,"Netskope, Inc.",22.2,1.79,1.08,9070.6,5.26,8.45,21.78,2,peoplewish_adr_velocity;qull_rs,,Technology Services
+PATH,"UiPath, Inc.",13.94,1.68,1.32,7264.9,4.46,0.87,0.0,2,bonde_ep9m;sun_canslim,,Technology Services
+AAPL,Apple Inc.,348.22,1.23,1.19,5081985.3,1.85,0.62,2.38,2,bonde_coil;bonde_ep9m,,Electronic Technology
+XRPN,Evernorth Holdings Inc.,15.46,-1.84,0.23,365.5,25.29,-5.15,46.26,2,peoplewish_adr_velocity;qull_rs,,Finance
+KOD,Kodiak Sciences Inc,85.78,-2.21,0.43,5391.2,8.26,-1.61,162.24,2,peoplewish_adr_velocity;qull_rs,,Health Technology
+CDNA,"CareDx, Inc.",69.16,-2.23,0.7,3577.9,5.79,4.25,27.04,2,peoplewish_adr_velocity;qull_rs,,Health Technology
+TJGC,TJGC Group Limited,31.89,-2.63,1.18,322.1,11.83,,88.59,2,peoplewish_adr_velocity;qull_rs,,Electronic Technology
+IOVA,"Iovance Biotherapeutics, Inc.",14.14,-3.28,0.93,6405.0,6.43,-3.48,38.97,2,peoplewish_adr_velocity;qull_rs,,Health Technology
+BHVN,Biohaven Ltd.,14.69,25.02,16.55,2218.8,7.25,29.89,1.87,1,bonde_4pct,,Health Technology
+MLTX,MoonLake Immunotherapeutics,12.34,15.87,3.62,1050.2,6.12,19.34,-3.06,1,bonde_4pct,,Health Technology
+EGBN,"Eagle Bancorp, Inc.",32.97,15.56,3.6,1005.1,2.84,17.16,17.46,1,bonde_4pct,,Finance
+VITL,"Vital Farms, Inc.",9.41,15.18,1.13,404.0,5.92,10.19,-24.17,1,bonde_4pct,,Process Industries
+POOL,Pool Corporation,197.21,14.36,2.83,7166.8,3.29,15.96,16.07,1,bonde_4pct,,Distribution Services
+HCSG,"Healthcare Services Group, Inc.",24.79,14.19,1.8,1701.4,3.18,15.3,15.3,1,bonde_4pct,,Commercial Services
+BMI,"Badger Meter, Inc.",149.64,13.48,3.09,4337.6,3.72,17.79,12.12,1,bonde_4pct,,Producer Manufacturing
+AVEX,AEVEX Corp.,10.96,13.22,2.09,1389.4,11.74,-28.78,-34.21,1,bonde_4pct,,Electronic Technology
+KSS,Kohl's Corporation,24.78,11.82,2.13,2809.5,4.55,9.55,39.53,1,bonde_4pct,,Retail Trade
+GSHD,"Goosehead Insurance, Inc.",50.62,11.69,2.03,1797.8,5.45,10.57,-3.65,1,bonde_4pct,,Finance
+WGO,"Winnebago Industries, Inc.",28.57,11.43,1.83,812.6,4.76,14.74,3.55,1,bonde_4pct,,Consumer Durables
+ALLE,Allegion plc,176.52,11.02,2.08,15010.7,2.51,13.25,14.97,1,bonde_4pct,,Consumer Durables
+FLO,"Flowers Foods, Inc.",6.42,10.5,1.28,1361.4,3.92,4.39,6.12,1,bonde_4pct,SMA50,Consumer Non-Durables
+R,"Ryder System, Inc.",265.53,10.49,1.99,10182.2,2.62,10.54,10.7,1,bonde_4pct,,Transportation
+HOV,"Hovnanian Enterprises, Inc.",101.29,9.86,1.35,600.1,5.76,0.89,-14.73,1,bonde_4pct,,Consumer Durables
+MOBI,"Mobia Medical, Inc.",10.58,9.75,2.16,352.2,6.25,27.32,8.51,1,bonde_4pct,,Health Technology
+ROP,"Roper Technologies, Inc.",436.23,9.73,2.84,43143.5,2.65,12.67,17.63,1,bonde_4pct,,Technology Services
+CRAI,"CRA International,Inc.",200.94,9.59,2.08,1261.3,3.23,12.31,22.72,1,bonde_4pct,,Commercial Services
+RH,RH,140.15,9.48,1.83,2653.5,5.0,17.77,6.98,1,bonde_4pct,,Retail Trade
+VSTM,"Verastem, Inc.",10.06,9.23,0.74,1222.3,7.52,8.93,25.12,1,peoplewish_adr_velocity,,Health Technology
+MGPI,"MGP Ingredients, Inc.",16.25,9.21,0.96,348.0,4.09,4.17,20.37,1,bonde_4pct,,Process Industries
+WDFC,WD-40 Company,210.18,9.15,2.16,2820.8,2.88,4.53,9.33,1,bonde_4pct,,Process Industries
+LEN.B,Lennar Corporation,84.13,9.03,1.44,20081.1,3.91,10.05,6.9,1,bonde_4pct,,Consumer Durables
+MHK,"Mohawk Industries, Inc.",128.7,9.03,1.43,7778.4,3.86,3.53,6.67,1,bonde_4pct,SMA50,Producer Manufacturing
+RPD,"Rapid7, Inc.",14.73,9.03,1.47,992.8,6.03,11.59,15.1,1,bonde_4pct,,Technology Services
+BL,"BlackLine, Inc.",34.37,8.9,1.57,1997.8,3.7,11.92,17.5,1,bonde_4pct,,Technology Services
+AMN,AMN Healthcare Services Inc,46.82,8.86,1.48,1813.3,3.65,18.71,35.71,1,bonde_4pct,,Commercial Services
+RHI,Robert Half Inc.,37.68,8.78,1.72,3857.0,4.22,7.53,0.03,1,bonde_4pct,,Commercial Services
+CPB,The Campbell's Company,21.26,8.69,1.29,6340.5,3.36,6.3,5.59,1,bonde_4pct,SMA50,Consumer Non-Durables
+LEN,Lennar Corporation,84.45,8.69,1.42,20081.1,3.87,8.42,4.26,1,bonde_4pct,,Consumer Durables
+TWFG,"TWFG, Inc.",28.67,8.64,1.97,1549.7,3.64,13.91,11.08,1,bonde_4pct,,Finance
+WHR,Whirlpool Corporation,28.8,8.56,1.41,1877.7,5.53,1.41,-13.64,1,bonde_4pct,SMA20,Consumer Durables
+Z,"Zillow Group, Inc.",33.98,8.53,1.12,7689.3,4.46,8.49,7.98,1,bonde_4pct,,Technology Services
+AVLN,Avalyn Pharma Inc.,27.25,8.52,0.95,1208.1,7.11,10.23,-14.68,1,bonde_4pct,,Health Technology
+BX,Blackstone Inc.,118.75,8.38,2.05,146523.6,3.68,7.59,-6.96,1,bonde_4pct,,Finance
+LAD,"Lithia Motors, Inc.",291.07,8.15,2.11,6398.6,5.63,-1.67,-8.84,1,bonde_4pct,SMA20,Retail Trade
+MHO,"M/I Homes, Inc.",123.3,8.12,1.97,3117.4,3.86,-2.31,-14.04,1,bonde_4pct,,Consumer Durables
+GIS,"General Mills, Inc.",35.18,8.01,1.18,18810.3,3.16,5.87,-2.17,1,bonde_4pct,,Consumer Non-Durables
+GPI,"Group 1 Automotive, Inc.",242.79,7.98,1.3,2894.6,4.7,1.0,-4.97,1,bonde_4pct,SMA20,Retail Trade
+FA,First Advantage Corporation,21.22,7.93,1.83,3644.6,3.94,4.64,2.76,1,bonde_4pct,,Technology Services
+LZ,"LegalZoom.com, Inc.",7.12,7.88,1.18,1219.4,3.76,13.92,17.88,1,bonde_4pct,,Technology Services
+LULU,lululemon athletica inc.,104.06,7.8,2.04,12052.9,3.79,4.19,0.76,1,bonde_4pct,SMA50,Consumer Non-Durables
+HPQ,HP Inc.,33.76,7.79,1.38,30444.5,3.94,8.69,1.59,1,bonde_4pct,,Technology Services
+LCID,"Lucid Group, Inc.",3.46,7.79,1.12,1363.5,8.16,-1.14,-20.82,1,bonde_4pct,,Consumer Durables
+FSV,FirstService Corporation,147.22,7.78,1.87,6731.3,2.53,8.32,9.75,1,bonde_4pct,,Finance
+CSGP,"CoStar Group, Inc.",35.45,7.75,1.56,14364.3,3.44,9.45,19.64,1,bonde_4pct,,Technology Services
+GPK,Graphic Packaging Holding Company,9.04,7.75,1.61,2676.5,4.08,2.84,-4.94,1,bonde_4pct,,Process Industries
+MAX,"MediaAlpha, Inc.",12.41,7.73,0.87,760.3,4.69,5.44,13.13,1,bonde_4pct,,Technology Services
+ACN,Accenture plc,258.74,7.69,1.15,152925.2,3.69,13.17,36.62,1,bonde_4pct,,Technology Services
+SAM,"Boston Beer Company, Inc. (The)",195.72,7.65,2.03,2014.3,2.88,8.28,12.51,1,bonde_4pct,,Consumer Non-Durables
+NGVC,"Natural Grocers by Vitamin Cottage, Inc.",32.37,7.65,1.11,746.0,3.47,4.22,3.58,1,bonde_4pct,,Retail Trade
+SHOE,"Shoe Station Group, Inc.",14.22,7.56,0.99,386.6,4.07,2.38,7.08,1,bonde_4pct,,Retail Trade
+BLDR,"Builders FirstSource, Inc.",57.54,7.53,1.15,6191.1,4.37,7.65,-4.0,1,bonde_4pct,,Retail Trade
+CCS,"Century Communities, Inc.",58.34,7.48,1.08,1658.8,3.83,4.85,-7.41,1,bonde_4pct,SMA20,Consumer Durables
+NDAQ,"Nasdaq, Inc.",103.3,7.47,2.72,57742.4,2.28,9.61,8.79,1,bonde_4pct,,Finance
+REF,Reformation Inc.,15.03,7.43,1.22,888.0,5.75,2.95,11.66,1,bonde_4pct,,Retail Trade
+UPBD,"Upbound Group, Inc.",17.37,7.42,1.33,1012.7,3.6,5.34,0.4,1,bonde_4pct,SMA50,Finance
+BF.A,Brown Forman Inc,30.91,7.14,0.8,13971.5,2.44,5.14,14.91,1,sun_vcp,,Consumer Non-Durables
+FRPT,"Freshpet, Inc.",67.0,7.06,1.3,3219.9,3.91,-1.35,7.84,1,sun_canslim,SMA50,Consumer Non-Durables
+CD,Chaince Digital Holdings Inc. - American,8.205,7.05,0.74,902.6,16.54,16.71,104.61,1,peoplewish_adr_velocity,,Technology Services
+MNDY,monday.com Ltd.,106.86,6.7,1.68,4517.4,5.21,12.33,18.08,1,peoplewish_adr_velocity,,Technology Services
+BETR,Better Home & Finance Holding Company,16.58,6.42,1.22,315.2,9.74,55.24,32.43,1,peoplewish_adr_velocity,,Finance
+QLYS,"Qualys, Inc.",208.2,5.85,1.79,7202.7,4.92,7.56,13.24,1,qull_rs,,Technology Services
+RKT,"Rocket Companies, Inc.",11.74,5.67,1.29,33243.5,5.06,5.77,-7.92,1,bonde_ep9m,,Finance
+AMTM,"Amentum Holdings, Inc.",21.29,5.66,1.47,5205.5,3.19,11.12,6.45,1,sun_canslim,,Electronic Technology
+PAYX,"Paychex, Inc.",118.81,5.61,1.15,42294.0,2.42,6.21,2.68,1,sun_vcp,,Technology Services
+CENTA,Central Garden & Pet Company,38.81,5.38,1.62,2500.3,2.38,7.66,10.6,1,sun_vcp,,Consumer Non-Durables
+RYAN,"Ryan Specialty Holdings, Inc.",44.49,5.28,1.12,11381.2,3.18,10.18,10.12,1,sun_canslim,,Finance
+STZ,"Constellation Brands, Inc.",138.98,5.27,1.08,23518.4,2.41,6.22,16.19,1,sun_vcp,,Consumer Non-Durables
+AMAL,Amalgamated Financial Corp.,50.31,5.21,2.54,1504.3,2.4,6.52,3.86,1,sun_vcp,,Finance
+FIS,"Fidelity National Information Services, Inc.",38.29,5.13,1.16,19746.4,2.97,5.13,7.5,1,sun_canslim,SMA50,Technology Services
+TTEK,"Tetra Tech, Inc.",36.81,5.02,1.52,9425.0,2.37,5.38,2.34,1,sun_vcp,,Industrial Services
+BXP,"BXP, Inc.",61.49,4.86,1.21,9817.6,2.67,2.59,-4.59,1,sun_canslim,,Finance
+AOS,A.O. Smith Corporation,62.47,4.73,1.21,8490.2,2.42,4.55,7.74,1,sun_vcp,,Producer Manufacturing
+LIF,"Life360, Inc.",46.46,4.66,0.96,3785.6,3.97,10.62,11.31,1,sun_canslim,,Technology Services
+WTW,Willis Towers Watson Public Limited Company,332.18,4.58,1.19,30850.2,2.3,6.11,8.09,1,sun_canslim,,Finance
+PTLO,Portillo's Inc.,4.51,4.4,0.47,342.5,5.05,-6.43,18.37,1,peoplewish_adr_velocity,,Consumer Services
+ODD,ODDITY Tech Ltd.,23.35,4.33,0.75,1077.0,5.48,0.04,24.67,1,peoplewish_adr_velocity,,Technology Services
+QS,QuantumScape Corporation,4.15,4.27,2.23,2569.3,6.49,-1.43,-20.04,1,bonde_ep9m,,Producer Manufacturing
+IMKTA,"Ingles Markets, Incorporated",88.75,4.24,0.93,1649.6,2.37,2.06,5.82,1,sun_vcp,,Retail Trade
+MIAX,"Miami International Holdings, Inc.",34.99,4.2,0.9,3472.1,4.18,14.57,-8.14,1,sun_canslim,,Finance
+BCE,"BCE, Inc.",20.81,4.15,1.14,19405.9,2.44,2.97,-5.5,1,sun_canslim,,Communications
+LOW,"Lowe's Companies, Inc.",204.37,3.97,1.31,114662.6,2.39,3.71,4.93,1,sun_vcp,,Retail Trade
+ASAN,"Asana, Inc.",11.5,3.88,1.19,2633.2,5.23,9.68,19.54,1,peoplewish_adr_velocity,,Technology Services
+LYFT,"Lyft, Inc.",17.43,3.81,0.99,6598.0,3.38,1.51,12.02,1,sun_canslim,,Transportation
+MRP,"Millrose Properties, Inc.",23.97,3.81,0.7,3696.8,4.23,7.25,-16.63,1,sun_canslim,SMA20,Finance
+JNJ,Johnson & Johnson,267.61,3.81,1.22,644220.3,2.41,4.73,0.04,1,sun_vcp,SMA50,Health Technology
+T,AT&T Inc.,22.74,3.79,0.88,153187.4,3.13,-3.85,-11.05,1,bonde_ep9m,,Communications
+PGR,Progressive Corporation (The),229.62,3.74,0.78,133432.2,2.43,7.3,8.57,1,sun_vcp,,Finance
+KNSL,"Kinsale Capital Group, Inc.",390.64,3.7,1.56,8898.2,2.44,8.5,8.31,1,sun_vcp,,Finance
+OMER,Omeros Corporation,16.86,3.69,0.6,1220.5,5.25,-6.02,-13.89,1,qull_rs,,Health Technology
+STN,Stantec Inc,72.77,3.63,1.52,8179.3,2.37,3.97,1.85,1,sun_vcp,,Industrial Services
+AZO,"AutoZone, Inc.",3270.7,3.61,1.18,53395.3,2.45,5.81,13.01,1,sun_vcp,,Retail Trade
+TNGX,"Tango Therapeutics, Inc.",27.93,3.52,1.46,4709.3,6.01,20.8,25.08,1,peoplewish_adr_velocity,,Health Technology
+CMCSA,Comcast Corporation,22.84,3.44,1.71,81050.9,3.01,4.24,-1.06,1,bonde_ep9m,,Consumer Services
+MYGN,"Myriad Genetics, Inc.",5.76,3.41,1.08,550.9,6.58,32.57,47.69,1,peoplewish_adr_velocity,,Health Technology
+UDR,"UDR, Inc.",36.18,3.25,1.4,11623.3,1.88,5.24,6.22,1,sun_canslim,,Finance
+HSTM,"HealthStream, Inc.",34.59,3.22,0.98,1058.3,2.38,1.89,17.89,1,sun_vcp,,Technology Services
+DOX,Amdocs Limited,63.57,3.2,1.0,6838.3,2.42,3.45,5.67,1,sun_vcp,,Technology Services
+NFLX,"Netflix, Inc.",67.05,3.09,1.29,275329.2,3.17,-4.03,-9.01,1,bonde_ep9m,,Technology Services
+ZIP,"ZipRecruiter, Inc.",4.67,3.09,0.89,384.0,5.94,-4.3,18.53,1,peoplewish_adr_velocity,,Technology Services
+AAL,"American Airlines Group, Inc.",12.6,2.98,1.43,8340.8,4.43,2.82,-10.38,1,bonde_ep9m,SMA20,Transportation
+FLYW,Flywire Corporation - Voting,19.15,2.79,0.59,2329.9,3.14,-0.93,9.68,1,sun_canslim,,Commercial Services
+ADT,ADT Inc.,6.99,2.79,0.92,4723.9,2.42,1.3,4.64,1,sun_vcp,SMA50,Commercial Services
+CWBC,Community West Bancshares,26.29,2.78,1.4,713.3,2.39,1.86,1.12,1,sun_vcp,SMA20;SMA50,Finance
+PLSE,"Pulse Biosciences, Inc",52.68,2.67,1.11,3830.0,6.62,15.81,-1.03,1,qull_rs,,Health Technology
+CCK,"Crown Holdings, Inc.",119.26,2.62,1.07,12970.8,2.39,3.98,8.2,1,sun_vcp,,Process Industries
+MSCI,MSCI Inc.,620.24,2.61,0.92,44347.2,2.37,8.05,11.13,1,sun_vcp,,Commercial Services
+AVAH,Aveanna Healthcare Holdings Inc.,13.32,2.54,0.88,2907.6,3.15,5.3,-0.97,1,sun_canslim,,Health Services
+AUPH,Aurinia Pharmaceuticals Inc,17.33,2.54,0.93,2305.8,2.61,3.09,3.65,1,sun_canslim,,Health Technology
+BIP,Brookfield Infrastructure Partners LP Limited Partnership,37.29,2.53,1.15,24267.9,2.41,0.57,3.96,1,sun_canslim,SMA50,Utilities
+KRG,Kite Realty Group Trust,24.77,2.44,0.82,4962.6,1.77,0.41,-2.06,1,sun_canslim,SMA20,Finance
+FIGS,"FIGS, Inc.",20.46,2.4,0.48,3399.2,4.61,2.92,53.72,1,qull_rs,,Consumer Non-Durables
+KRNY,Kearny Financial,9.27,2.32,1.87,601.9,2.42,2.54,-3.64,1,sun_vcp,SMA20,Finance
+REPL,"Replimune Group, Inc.",11.99,2.3,1.04,1129.7,6.32,2.22,-7.27,1,qull_rs,,Health Technology
+TSLX,"Sixth Street Specialty Lending, Inc.",17.38,2.3,0.89,1657.1,2.41,-1.59,-4.24,1,sun_vcp,SMA20,Miscellaneous
+PNFP,"Pinnacle Financial Partners, Inc.",100.46,2.29,2.19,15180.8,2.4,5.71,3.12,1,sun_vcp,,Finance
+TDC,Teradata Corporation,34.21,2.27,0.99,3181.5,3.13,8.81,14.88,1,sun_canslim,,Technology Services
+CON,"Concentra Group Holdings Parent, Inc.",39.97,2.25,0.97,5096.9,2.42,1.81,15.92,1,sun_vcp,,Health Services
+CLBK,"Columbia Financial, Inc.",10.86,2.16,0.87,2927.3,2.32,0.18,-6.78,1,sun_canslim,SMA20,Finance
+CAE,CAE Inc,25.02,2.08,0.94,8017.8,2.4,4.08,1.58,1,sun_vcp,,Commercial Services
+AMGN,Amgen Inc.,447.28,2.04,1.16,241813.9,2.41,2.14,10.37,1,sun_vcp,,Health Technology
+SHC,Sotera Health Company,18.13,2.03,1.42,5173.8,2.84,0.0,-3.51,1,sun_canslim,SMA20,Health Technology
+FCBC,"First Community Bankshares, Inc.",49.19,1.76,0.89,930.2,2.43,1.7,3.97,1,sun_vcp,,Finance
+LQDT,"Liquidity Services, Inc.",44.3,1.7,0.66,1388.0,2.38,0.11,2.29,1,sun_vcp,,Retail Trade
+SRZN,"Surrozen, Inc.",25.75,1.7,0.23,302.7,10.48,2.63,53.46,1,peoplewish_adr_velocity,,Health Technology
+CNX,CNX Resources Corporation,35.73,1.62,0.91,5286.0,2.53,3.51,10.45,1,sun_canslim,,Energy Minerals
+INDV,"Indivior Pharmaceuticals, Inc.",35.33,1.55,0.27,4170.1,3.18,5.56,-0.56,1,sun_canslim,SMA20;SMA50,Health Technology
+DAVE,Dave Inc.,382.39,1.49,1.56,4877.6,5.22,2.59,6.54,1,sun_canslim,,Finance
+AMRX,"Amneal Pharmaceuticals, Inc.",20.48,1.39,1.53,6540.4,3.3,6.22,2.4,1,sun_canslim,,Health Technology
+KNSA,"Kiniksa Pharmaceuticals International, plc",80.79,1.37,0.61,6303.6,3.68,1.06,3.46,1,sun_canslim,,Health Technology
+CMPR,Cimpress plc,82.27,1.36,0.8,2003.2,3.17,7.16,1.79,1,sun_canslim,SMA50,Commercial Services
+MANE,"Veradermics, Incorporated",138.49,1.34,0.69,5786.1,6.43,21.28,21.49,1,peoplewish_adr_velocity,,Health Technology
+SKWD,"Skyward Specialty Insurance Group, Inc.",62.16,1.24,1.07,2759.7,2.39,3.34,8.73,1,sun_vcp,,Finance
+EVH,"Evolent Health, Inc",4.89,1.24,0.65,552.9,5.51,0.0,31.45,1,peoplewish_adr_velocity,,Commercial Services
+DLB,Dolby Laboratories,63.28,1.22,0.86,5927.4,2.38,3.47,8.9,1,sun_vcp,,Technology Services
+STLA,Stellantis N.V.,4.27,1.18,1.29,16071.9,4.1,-4.04,-12.95,1,bonde_ep9m,,Consumer Durables
+VNT,Vontier Corporation,34.54,1.14,1.1,4669.8,2.42,3.38,8.99,1,sun_vcp,,Transportation
+EXEL,"Exelixis, Inc.",65.31,1.13,0.69,16182.6,2.43,3.7,13.29,1,sun_vcp,,Health Technology
+SPNT,SiriusPoint Ltd.,25.96,1.09,1.76,3015.6,2.35,4.34,0.19,1,sun_canslim,,Finance
+COF/PL,"Capital One Financial Corporation Depositary Shares, Each Representing a 1/40th Interest in a Share of Fixed Rate Non-Cumulative Perpetual Preferred Stock, Seri",14.77,0.96,2.03,124801.2,1.58,-0.14,-4.22,1,sun_canslim,SMA20;SMA50,Finance
+AGCO,AGCO Corporation,106.17,0.9,0.65,7435.3,3.66,-0.1,-12.67,1,sun_canslim,,Producer Manufacturing
+RCEL,"Avita Medical, Inc.",15.42,0.85,1.63,476.9,5.05,15.33,41.99,1,peoplewish_adr_velocity,,Health Technology
+FBYD,"Falcon's Beyond Global, Inc.",8.28,0.85,1.14,1004.0,6.95,-2.59,22.12,1,peoplewish_adr_velocity,SMA20,Industrial Services
+STGW,Stagwell Inc.,8.99,0.78,0.68,2197.8,3.65,-2.39,6.39,1,sun_canslim,,Commercial Services
+RHP,"Ryman Hospitality Properties, Inc. (REIT)",131.26,0.74,1.24,8954.5,2.37,4.11,6.66,1,sun_vcp,,Finance
+INVA,"Innoviva, Inc.",21.06,0.72,0.77,1521.5,2.29,0.43,-0.52,1,sun_canslim,SMA20;SMA50,Health Technology
+RIG,Transocean Ltd (Switzerland),6.08,0.66,1.33,6790.9,3.88,8.77,13.43,1,bonde_ep9m,,Industrial Services
+SUJA,"Suja Life, Inc.",9.71,0.62,0.7,375.0,7.16,-15.57,20.77,1,peoplewish_adr_velocity,,Consumer Non-Durables
+BAC,Bank of America Corporation,51.08,0.59,0.74,353611.3,2.46,-2.03,-12.08,1,bonde_ep9m,,Finance
+SG,"Sweetgreen, Inc.",10.22,0.59,0.79,1216.6,4.57,-3.4,34.65,1,qull_rs,,Consumer Services
+ZWS,Zurn Elkay Water Solutions Corporation,48.66,0.58,1.24,8070.9,2.39,3.62,3.86,1,sun_vcp,,Producer Manufacturing
+MG,Mistras Group Inc,21.42,0.52,0.71,682.4,2.28,2.05,0.99,1,bonde_coil,SMA20,Industrial Services
+EPAC,Enerpac Tool Group Corp.,35.63,0.48,1.42,1822.0,2.44,1.63,-0.14,1,sun_vcp,SMA20;SMA50,Producer Manufacturing
+QGEN,Qiagen N.V.,50.22,0.44,11.6,10349.1,2.98,7.79,13.03,1,bonde_ep9m,,Health Technology
+COF/PJ,"Capital One Financial Corporation Depositary Shares, Each Representing a 1/40th Interest in a Share of Fixed Rate Non- Cumulative Perpetual Preferred Stock, Ser",16.09,0.44,0.9,124801.2,1.63,-0.43,-3.77,1,sun_canslim,SMA20,Finance
+BRZE,"Braze, Inc.",45.86,0.39,0.94,5209.0,4.82,49.62,76.38,1,qull_rs,,Technology Services
+TFIN,"Triumph Financial, Inc.",62.21,0.35,1.5,1488.2,2.95,1.4,-0.65,1,sun_canslim,SMA20,Finance
+F,Ford Motor Company,11.94,0.34,1.0,47611.9,2.74,-4.88,-10.19,1,bonde_ep9m,,Consumer Durables
+RBRK,"Rubrik, Inc.",120.75,0.31,0.81,25032.0,5.0,1.24,6.15,1,qull_rs,,Technology Services
+TRS,TriMas Corporation,39.9,0.18,1.75,1431.4,2.06,2.15,4.23,1,sun_canslim,,Process Industries
+EXE,Expand Energy Corporation,92.96,0.14,0.88,21520.6,2.49,2.38,6.24,1,sun_canslim,SMA50,Energy Minerals
+RAMP,"LiveRamp Holdings, Inc.",38.24,0.1,0.7,2324.8,0.53,1.54,1.38,1,sun_canslim,SMA20;SMA50,Technology Services
+GIC,Global Industrial Company,44.91,0.07,0.79,1711.4,2.41,1.58,9.32,1,sun_vcp,,Retail Trade
+PAA,"Plains All American Pipeline, L.P.",25.9,0.04,1.06,18274.2,1.81,2.05,4.23,1,sun_canslim,,Industrial Services
+PAGP,"Plains GP Holdings, L.P.",27.93,0.04,0.78,5527.5,1.71,2.2,3.29,1,sun_canslim,,Industrial Services
+BALY,Bally's Corporation,13.76,-0.22,1.06,694.5,5.0,2.0,29.32,1,peoplewish_adr_velocity,SMA20,Consumer Services
+RSKD,Riskified Ltd.,8.92,-0.34,0.6,1177.8,4.76,3.0,39.16,1,qull_rs,,Technology Services
+DRH,Diamondrock Hospitality Company,13.885,-0.36,1.22,2849.7,2.38,4.16,11.98,1,sun_vcp,,Finance
+HBAN,Huntington Bancshares Incorporated,15.66,-0.38,1.38,31639.7,2.13,1.56,-2.97,1,bonde_ep9m,,Finance
+HPK,"HighPeak Energy, Inc.",11.21,-0.44,0.66,1417.5,5.47,10.55,44.65,1,peoplewish_adr_velocity,,Energy Minerals
+FIVN,"Five9, Inc.",35.1,-0.54,0.74,2622.8,5.88,-1.04,-5.44,1,qull_rs,SMA20,Technology Services
+FTRE,Fortrea Holdings Inc.,23.92,-0.58,1.04,2274.8,5.08,3.82,18.83,1,peoplewish_adr_velocity,,Commercial Services
+HTFL,"Heartflow, Inc.",55.43,-0.7,0.81,4819.8,5.11,9.46,8.81,1,qull_rs,,Technology Services
+SOFI,"SoFi Technologies, Inc.",14.77,-0.87,0.85,19076.5,4.44,-2.02,-17.6,1,bonde_ep9m,,Finance
+SXT,Sensient Technologies Corporation,130.94,-0.95,1.14,5573.2,2.39,-2.15,0.21,1,sun_vcp,SMA20;SMA50,Consumer Non-Durables
+SKYD,Skydance Corporation,7.79,-1.02,1.36,8760.0,8.95,9.1,-22.45,1,bonde_ep9m,,Consumer Services
+CNXC,Concentrix Corporation,33.88,-1.08,0.0,2070.3,5.62,20.96,20.48,1,peoplewish_adr_velocity,,Technology Services
+IRON,"Disc Medicine, Inc.",75.03,-1.28,0.8,2880.6,5.88,32.66,7.72,1,qull_parabolic_short,,Health Technology
+PCG,Pacific Gas & Electric Co.,12.98,-1.29,1.89,28586.7,3.34,-0.38,-0.38,1,bonde_ep9m,SMA20,Utilities
+ECO,Okeanis Eco Tankers Corp.,90.05,-1.29,0.64,3453.3,4.88,-1.97,15.7,1,qull_rs,SMA20,Transportation
+PICS,PicS N.V.,13.58,-1.38,0.46,1759.8,5.79,1.95,38.01,1,peoplewish_adr_velocity,,Commercial Services
+LIFE,Ethos Technologies Inc.,43.53,-1.56,0.97,2828.8,5.81,12.99,19.29,1,peoplewish_adr_velocity,,Technology Services
+AMLX,"Amylyx Pharmaceuticals, Inc.",28.57,-1.58,0.93,3585.9,5.01,3.33,-12.15,1,qull_rs,SMA20,Health Technology
+SNX,TD SYNNEX Corporation,247.08,-1.62,1.62,19711.4,4.09,-2.34,-11.79,1,bonde_reversal_bullish,,Distribution Services

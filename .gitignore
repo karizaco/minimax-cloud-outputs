@@ -1,0 +1,14 @@
+.tmp/
+.home/
+data/
+refs/
+helper_*.py
+__pycache__/
+*.pyc
+.plugin-cache/
+.skills/
+colprobe*.json
+p2*.json
+tv_probe.json
+yh_probe.json
+fv_probe.html

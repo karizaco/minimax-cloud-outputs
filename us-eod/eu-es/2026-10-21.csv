@@ -1,0 +1,277 @@
+date,ticker,name,open,high,low,close,volume,change_pct,market_cap,pe_ratio,sector,currency,exchange
+2026-10-21,BME:ITX,"Industria de Diseno Textil, S.A.",56.16,56.74,55.82,56.42,419134,-0.248,172490631098,27.3602,Retail Trade,EUR,BME
+2026-10-21,BME:SAN,"Banco Santander, S.A.",11.74,11.972,11.686,11.916,13230800,1.603,171176104736,10.7648,Finance,EUR,BME
+2026-10-21,BME:IBE,Iberdrola SA,21.2,21.53,21.09,21.47,2647084,1.13,140004559535,19.877,Utilities,EUR,BME
+2026-10-21,BME:BBVA,"Banco Bilbao Vizcaya Argentaria, S.A.",22.65,23.1,22.5,22.98,3635288,1.278,124935731048,11.6989,Finance,EUR,BME
+2026-10-21,BME:CABK,CaixaBank SA,11.625,11.855,11.545,11.785,1489234,1.42,81848845387,13.2214,Finance,EUR,BME
+2026-10-21,BME:ELE,Endesa S.A.,42.12,42.6,42.1,42.51,102122,0.592,43439170755,16.6778,Utilities,EUR,BME
+2026-10-21,BME:AENA,Aena SME SA,26.24,26.5,26.14,26.38,282906,0.457,38310001373,17.4796,Transportation,EUR,BME
+2026-10-21,BME:REP,Repsol SA,29.35,29.57,29.27,29.5,957280,1.689,31941292972,9.288,Energy Minerals,EUR,BME
+2026-10-21,BME:NTGY,"Naturgy Energy Group, S.A.",30.72,30.76,30.52,30.62,166312,-0.13,29199004809,13.3973,Utilities,EUR,BME
+2026-10-21,BME:ACS,"ACS, Actividades de Construccion y Servicios SA",90.3,91.4,89.95,90.95,81521,1.168,24023366736,23.0817,Industrial Services,EUR,BME
+2026-10-21,BME:AMS,Amadeus IT Group SA Class A,55.98,56.52,55.54,56.02,122982,-1.095,21906059385,18.3634,Technology Services,EUR,BME
+2026-10-21,BME:TEF,Telefonica SA,3.39,3.422,3.362,3.414,3329568,0.294,19041872405,,Communications,EUR,BME
+2026-10-21,BME:CLNX,Cellnex Telecom S.A.,25.55,25.78,25.24,25.44,576810,-1.242,16860348070,,Industrial Services,EUR,BME
+2026-10-21,BME:SAB,Banco de Sabadell SA,3.54,3.57,3.507,3.551,3768129,0.367,16851745748,14.9367,Finance,EUR,BME
+2026-10-21,BME:BKT,Bankinter SA,15.03,15.385,14.875,15.33,567901,2.302,13446211567,,Finance,EUR,BME
+2026-10-21,BME:MAP,Mapfre SA,4.37,4.438,4.366,4.43,499839,1.327,13222566262,11.3249,Finance,EUR,BME
+2026-10-21,BME:ANA,Acciona SA,208.4,211.6,208.2,211,12297,0.764,11475858650,31.3679,Industrial Services,EUR,BME
+2026-10-21,BME:PUIG,"Puig Brands, S.A. Class B",19.32,19.55,19.32,19.46,194448,0.465,10877170284,18.7446,Consumer Non-Durables,EUR,BME
+2026-10-21,BME:IDR,"Indra Sistemas, S.A. Class A",61.6,63.9,61.3,63.46,438515,1.699,10773858074,24.6984,Technology Services,EUR,BME
+2026-10-21,BME:UNI,Unicaja Banco S.A.,3.226,3.258,3.196,3.254,1488674,1.308,8217609918,12.5254,Finance,EUR,BME
+2026-10-21,BME:RED,Redeia Corporacion SA,14.62,14.69,14.56,14.69,171951,0.479,7847770910,15.798,Utilities,EUR,BME
+2026-10-21,BME:MRL,"MERLIN Properties SOCIMI, S.A.",11.5,11.76,11.47,11.69,828239,1.564,7096321288,8.0113,Finance,EUR,BME
+2026-10-21,BME:ANE,Corporacion Acciona Energias Renovables SA,21.48,21.82,21.42,21.8,49643,1.113,7034341423,38.1666,Utilities,EUR,BME
+2026-10-21,BME:GRF,"Grifols, S.A. Class A",10.125,10.14,9.968,10.075,664406,-0.788,6011657309,15.2625,Health Technology,EUR,BME
+2026-10-21,BME:GRF.P,"Grifols, S.A. Pref Class B",6.81,6.81,6.68,6.78,19733,-0.732,6011657309,10.3204,Health Technology,EUR,BME
+2026-10-21,BME:LOG,"Logista Integral, S.A.",36.94,37.18,36.76,37.06,41436,0.271,4871559844,18.4411,Transportation,EUR,BME
+2026-10-21,BME:FCC,"Fomento de Construcciones y Contratas, S.A.",10.42,10.44,10.32,10.36,18280,0,4852437488,22.9567,Industrial Services,EUR,BME
+2026-10-21,BME:ENG,Enagas SA,17.21,17.4,17.15,17.35,355656,0.58,4403460127,12.9727,Utilities,EUR,BME
+2026-10-21,BME:GGC,General de Galerias Comerciales SA,,,,,,0,4186000000,,Finance,EUR,BME
+2026-10-21,BME:ACX,Acerinox SA,16.75,17.05,16.67,17,195736,1.493,4004221022,76.3243,Non-Energy Minerals,EUR,BME
+2026-10-21,BME:FDR,"Fluidra, S.A.",17.77,17.93,17.56,17.87,124270,0.676,3344159430,20.0639,Consumer Durables,EUR,BME
+2026-10-21,BME:VID,Vidrala SA,89.9,89.9,87,89.1,7655,-0.89,3188086187,14.3845,Process Industries,EUR,BME
+2026-10-21,BME:SCYR,Sacyr SA,4.01,4.038,4.004,4.022,565190,0.349,3169195147,23.7359,Industrial Services,EUR,BME
+2026-10-21,BME:CIE,"CIE Automotive, S.A.",26.3,26.35,26,26.2,28908,-0.758,3083042282,9.1045,Producer Manufacturing,EUR,BME
+2026-10-21,BME:COL,Colonial SFL SOCIMI SA,5.05,5.075,5.02,5.045,320054,0.298,3019371380,9.481,Finance,EUR,BME
+2026-10-21,BME:CIRSA,"Cirsa Enterprises, S.A.U.",17.66,17.92,17.58,17.84,16867,1.595,2933151965,25.7189,Producer Manufacturing,EUR,BME
+2026-10-21,BME:ROVI,"Laboratorios Farmaceuticos Rovi, S.A.",58.7,59.1,58.3,58.85,33602,0.256,2912721163,16.1161,Health Technology,EUR,BME
+2026-10-21,BME:EBRO,Ebro Foods SA,18.2,18.3,18.1,18.1,18697,-0.549,2797272782,12.683,Process Industries,EUR,BME
+2026-10-21,BME:DIA,Distribuidora Internacional de Alimentacion SA,47.15,47.15,45.65,46.1,15426,-1.496,2707342085,23.6459,Retail Trade,EUR,BME
+2026-10-21,BME:CAF,"Construcciones y Auxiliar de Ferrocarriles, S.A.",77,78,77,78,6508,0.775,2663614488,15.2543,Producer Manufacturing,EUR,BME
+2026-10-21,BME:VIS,"Viscofan, S.A.",53.8,54.5,53.6,53.9,48437,-0.37,2490228240,15.3064,Process Industries,EUR,BME
+2026-10-21,BME:ENO,Elecnor S.A.,29.2,29.3,28.85,29.1,29173,0.345,2413376965,18.7953,Industrial Services,EUR,BME
+2026-10-21,BME:CMO,"Cementos Molins, S.A.",35,38.8,34.8,38.8,280,3.191,2381636692,12.0075,Non-Energy Minerals,EUR,BME
+2026-10-21,BME:MEL,"Melia Hotels International, S.A.",10.43,10.51,10.38,10.38,83706,-0.288,2269581503,26.2573,Consumer Services,EUR,BME
+2026-10-21,BME:ALM,Almirall SA,10.34,10.42,10.26,10.4,56972,0.58,2174696398,37.3723,Health Technology,EUR,BME
+2026-10-21,BME:TRE,Tecnicas Reunidas SA,26.68,27.66,26.6,27.64,97415,2.598,2074063371,13.0134,Industrial Services,EUR,BME
+2026-10-21,BME:SLR,"Solaria Energia y Medio Ambiente, S.A.",14.74,14.945,14.605,14.88,434157,1.293,2010794380,10.0316,Utilities,EUR,BME
+2026-10-21,BME:ART,Arteche Lantegi Elkartea SA,31.5,32.7,31.5,32.7,5836,0.926,1876719360,32.4291,Distribution Services,EUR,BME
+2026-10-21,BME:DIGIS,"Digi Spain Telecom, S.A. Unipersonal",6.345,6.45,6.2,6.445,66091,2.709,1860935918,,Communications,EUR,BME
+2026-10-21,BME:GRE,Grenergy Renovables S.A,65.3,67,65.1,66.7,15114,1.522,1735860911,14.3789,Industrial Services,EUR,BME
+2026-10-21,BME:GEST,Gestamp Automocion S.A.,2.97,2.97,2.935,2.945,74009,-0.338,1686693986,8.8966,Producer Manufacturing,EUR,BME
+2026-10-21,BME:PSG,Prosegur Compania de Seguridad SA,3.15,3.18,3.12,3.16,244442,0.797,1686266607,13.6879,Commercial Services,EUR,BME
+2026-10-21,BME:IMC,INMOCEMENTO SA,3.61,3.64,3.57,3.57,17029,-1.108,1668151338,6.2822,Finance,EUR,BME
+2026-10-21,BME:HOME,Neinor Homes SA,16.6,16.99,16.41,16.91,112392,2.052,1630859125,12.2876,Finance,EUR,BME
+2026-10-21,BME:MVC,Metrovacesa SA,10.46,10.54,10.34,10.48,34201,0.383,1572029445,17.4454,Finance,EUR,BME
+2026-10-21,BME:FAE,"Faes Farma, S.A.",4.845,4.85,4.765,4.78,115145,-1.342,1459652213,17.9717,Health Technology,EUR,BME
+2026-10-21,BME:RLIA,"Realia Business, S.A.",0.924,0.924,0.918,0.918,11724,-0.434,1425391138,8.8525,Finance,EUR,BME
+2026-10-21,BME:YCPS,Castellana Properties Socimi SA,,,,,,-1.571,1403554796,8.8328,Finance,EUR,BME
+2026-10-21,BME:LDA,Linea Directa Aseguradora SA,1.218,1.244,1.218,1.236,521034,0.98,1335936182,14.1435,Finance,EUR,BME
+2026-10-21,BME:A3M,Atresmedia Corporacion de Medios de Comunicacion SA,5.92,5.97,5.89,5.91,243200,0.169,1312790177,24.5665,Consumer Services,EUR,BME
+2026-10-21,BME:YEPSA,Emperador Properties SOCIMI SA,,,,,,0,1287098690,,Finance,EUR,BME
+2026-10-21,BME:PHM,Pharma Mar SA,69.5,70.9,69,70.5,18416,1.805,1215167746,21.4335,Health Technology,EUR,BME
+2026-10-21,BME:YGMP,Gmp Property SOCIMI SA,,,,,,1.613,1185417110,,Finance,EUR,BME
+2026-10-21,BME:YVIV,Vivenio Residencial SOCIMI SA,,,,,,0,973615150,,Finance,EUR,BME
+2026-10-21,BME:CASH,Prosegur Cash SA,0.667,0.676,0.664,0.672,136002,0.75,954542102,10.7767,Commercial Services,EUR,BME
+2026-10-21,BME:COXG,Cox Infrastructure Group S.A.,11.35,11.35,10.9,10.9,2368,-3.54,929642219,,Utilities,EUR,BME
+2026-10-21,BME:AEDAS,AEDAS Homes SA,22.7,22.7,22.35,22.7,62,2.252,915842250,16.2087,Finance,EUR,BME
+2026-10-21,BME:CBAV,Clinica Baviera SA,54.2,54.8,53.6,54.4,2149,0,883647396,18.4856,Health Services,EUR,BME
+2026-10-21,BME:R4,RENTA 4 BANCO SA,19.35,21,19.35,20,9744,2.828,788039879,14.6018,Finance,EUR,BME
+2026-10-21,BME:TSK,TSK Electronica y Electricidad SA,6.465,6.675,6.46,6.58,114314,2.732,772441755,,Industrial Services,EUR,BME
+2026-10-21,BME:YZBL,Zambal Spain SOCIMI SA,,,,,,0,590721367,,Finance,EUR,BME
+2026-10-21,BME:SCHST,"NORDESTE PROPERTIES SOCIMI, S.A.",,,,,,,589646000,20.5039,Finance,EUR,BME
+2026-10-21,BME:YATO,Atom Hoteles SOCIMI SA,,,,,,0,568282007,,Finance,EUR,BME
+2026-10-21,BME:ENC,ENCE Energia y Celulosa SA,2.174,2.25,2.162,2.246,253871,3.502,532241551,,Process Industries,EUR,BME
+2026-10-21,BME:EDR,eDreams ODIGEO,4.78,4.915,4.73,4.73,243202,-2.575,526056100,14.0542,Consumer Services,EUR,BME
+2026-10-21,BME:EBROM,Ebro Motors Group EV SA,9.7,9.7,9.6,9.7,3505,0,474049118,,Industrial Services,EUR,BME
+2026-10-21,BME:ADX,Audax Renovables SA,1.05,1.058,1.038,1.046,105308,-0.57,469754300,38.6567,Utilities,EUR,BME
+2026-10-21,BME:EAT,AmRest Holdings SE,2.21,2.22,2.18,2.2,1793,-0.452,469612385.0136,112.865,Consumer Services,EUR,BME
+2026-10-21,BME:NXT,"Nueva Expresion Textil, S.A.",0.998,0.998,0.925,0.945,2485459,-5.311,466139530,79.76,Consumer Non-Durables,EUR,BME
+2026-10-21,BME:OHLA,Obrascon Huarte Lain SA,0.339,0.3428,0.3366,0.3398,3230067,-0.7013,461734276,14.6348,Industrial Services,EUR,BME
+2026-10-21,BME:GSJ,"Grupo Empresarial San Jose, S.A.",6.95,7.08,6.95,7.03,9960,-0.142,447379472,9.7016,Producer Manufacturing,EUR,BME
+2026-10-21,BME:YTST,Testa Residencial Socimi SA,3.24,3.24,3.24,3.24,3,-0.613,429442968,,Finance,EUR,BME
+2026-10-21,BME:YFID,Fidere Patrimonio Socimi SAU,,,,,,0,402972984,,Finance,EUR,BME
+2026-10-21,BME:ALC,Altia Consultores S.A.,5.8,5.8,5.8,5.8,2000,-0.855,395437000,,Technology Services,EUR,BME
+2026-10-21,BME:DOM,Global Dominion Access SA,2.59,2.635,2.59,2.62,92141,0,391455296,31.9853,Industrial Services,EUR,BME
+2026-10-21,BME:MCM,"Miquel y Costas & Miquel, S.A.",10,10,9.74,9.8,20560,-2,390752951,11.36,Consumer Non-Durables,EUR,BME
+2026-10-21,BME:AMP,"Amper, S.A.",4.395,4.45,4.38,4.44,130920,0.566,364358589,,Industrial Services,EUR,BME
+2026-10-21,BME:CLR,Clerhp Estructuras SA,19.95,20.3,19.9,20.1,1933,0,357921113,,Finance,EUR,BME
+2026-10-21,BME:ALNT,Alantra Partners SA,8.88,8.98,8.8,8.9,11448,-0.447,347100941,15.9928,Finance,EUR,BME
+2026-10-21,BME:TUB,"Tubacex, S.A.",2.65,2.755,2.65,2.745,221633,2.045,318206234,,Non-Energy Minerals,EUR,BME
+2026-10-21,BME:ISUR,"Inmobiliaria del Sur, S.A.",16.75,17.05,16.75,17.05,204,2.096,310516658,7.4386,Consumer Durables,EUR,BME
+2026-10-21,BME:TLGO,Talgo SA,2.36,2.395,2.36,2.395,38783,1.055,307010094,,Producer Manufacturing,EUR,BME
+2026-10-21,BME:YVIT,Vitruvio Real Estate SOCIMI S.A.,18,18,18,18,156,0,304820446,,Finance,EUR,BME
+2026-10-21,BME:PRS,"Promotora de Informaciones, S.A.",2.125,2.15,2.1,2.15,9578,0.467,277985822,,Consumer Services,EUR,BME
+2026-10-21,BME:ARM,Arima Real Estate SOCIMI SA,11.6,11.9,11.6,11.9,412,6.25,273691749,11.9418,Finance,EUR,BME
+2026-10-21,BME:YSIL,Silicius Real Estate Socimi SA,,,,,,0,270364406,,Finance,EUR,BME
+2026-10-21,BME:IZER,Izertis SA,7.24,7.24,7.12,7.18,11296,-0.278,259471058,109.7561,Technology Services,EUR,BME
+2026-10-21,BME:BKY,Berkeley Energia Limited,0.455,0.487,0.448,0.4755,9995370,6.9741,252755836.4707,,Non-Energy Minerals,EUR,BME
+2026-10-21,BME:AZK,"Azkoyen, S.A.",10.35,10.35,10.15,10.25,3965,0,252327809,16.3146,Producer Manufacturing,EUR,BME
+2026-10-21,BME:NAT,Natac Natural Ingredients SA,0.555,0.555,0.55,0.55,8722,0,244902408,,Finance,EUR,BME
+2026-10-21,BME:SEC,Secuoya Grupo de Comunicacion SA,,,,,,0,243313528,,Consumer Services,EUR,BME
+2026-10-21,BME:INDXA,"Indexa Capital Group, S.A.",15.7,15.7,15.7,15.7,15,0.641,229599750,66.3527,Finance,EUR,BME
+2026-10-21,BME:SOL,Soltec Power Holdings SA,0.51,0.54,0.492,0.496,1154174,-1.782,227334323,36.3309,Electronic Technology,EUR,BME
+2026-10-21,BME:RJF,"LABORATORIO REIG JOFRE, S.A.",2.58,2.61,2.58,2.59,6053,-0.385,214895255,30.3887,Health Technology,EUR,BME
+2026-10-21,BME:YAI1,All Iron Re I Socimi SA,,,,,,,214489484,,Finance,EUR,BME
+2026-10-21,BME:PRM,"PRIM, S.A.",12.7,12.7,12.55,12.7,1157,1.195,212709682,16.5775,Health Technology,EUR,BME
+2026-10-21,BME:YHTI,Hotei Properties Group SOCIMI SA,,,,,,0,211929885,,Finance,EUR,BME
+2026-10-21,BME:ORY,Oryzon Genomics SA,2.55,2.61,2.55,2.594,69468,0.543,206860677,,Health Technology,EUR,BME
+2026-10-21,BME:ATRY,Atrys Health SA,2.64,2.695,2.64,2.655,16182,-0.188,201342871,,Health Services,EUR,BME
+2026-10-21,BME:CEV,"Compania Espanola de Viviendas en Alquiler, S.A.",8.4,8.4,8.4,8.4,120,0,194489212,5.6638,Finance,EUR,BME
+2026-10-21,BME:YTRI,Trivium Real Estate Socimi SA,,,,,,0,193457967,,Finance,EUR,BME
+2026-10-21,BME:SQRL,Squirrel Media SA,2.05,2.05,1.93,1.95,9769,-1.015,191861282,22.6177,Consumer Services,EUR,BME
+2026-10-21,BME:ATSI,"Aplicaciones y Tratamiento de Sistemas, S.A.",,,,,,0,189672533,,Technology Services,EUR,BME
+2026-10-21,BME:ENER,Ecoener SA,3.35,3.47,3.35,3.4,7230,2.102,189640665,44.1645,Utilities,EUR,BME
+2026-10-21,BME:YORE,"Olimpo Real Estate SOCIMI, S.A.",,,,,,0.526,186782252,12.5828,Finance,EUR,BME
+2026-10-21,BME:IBG,"Iberpapel Gestion, S.A.",16.45,16.65,16.45,16.65,810,-0.299,178831332,2277.7778,Distribution Services,EUR,BME
+2026-10-21,BME:OLE,"DEOLEO, S.A.",0.352,0.352,0.348,0.35,130257,0.287,173500001,9.4809,Consumer Non-Durables,EUR,BME
+2026-10-21,BME:YDOA,Inversiones Doalca SOCIMI SA,,,,,,0,163950230,,Finance,EUR,BME
+2026-10-21,BME:YEUR,Euro Cervantes SOCIMI SAU,,,,,,0,158999996,,Finance,EUR,BME
+2026-10-21,BME:YLFG,"LAFINCA GLOBAL ASSETS SOCIMI, S.A.",,,,,,0,157953587,,Industrial Services,EUR,BME
+2026-10-21,BME:YTRM,Torimbia SOCIMI SA,,,,,,0,136167380,,Finance,EUR,BME
+2026-10-21,BME:NTH,Naturhouse Health SA,2.23,2.25,2.2,2.23,25188,0.45,134286840,15.4007,Health Technology,EUR,BME
+2026-10-21,BME:AI,Airtificial Intelligence Structures SA,0.0844,0.0849,0.0833,0.0848,773822,0.1181,132246492,,Producer Manufacturing,EUR,BME
+2026-10-21,BME:GAM,"General de Alquiler de Maquinaria, S.A.",,,,,,,129693931,12.4885,Finance,EUR,BME
+2026-10-21,BME:YGOP,GOP Properties SOCIMI SA,,,,,,,123321314,10.6695,Finance,EUR,BME
+2026-10-21,BME:YADR,Adriano Care SOCIMI SA,,,,,,,117600002,,Finance,EUR,BME
+2026-10-21,BME:NEA,"Nicolas Correa, S.A.",9.48,9.56,9.48,9.56,750,1.702,117541508,9.5276,Producer Manufacturing,EUR,BME
+2026-10-21,BME:YISC,ISC Fresh Water Investment SOCIMI S.A.,,,,,,0,113204749,,Finance,EUR,BME
+2026-10-21,BME:YTAN,TANDER INVERSIONES SOCIMI SA,,,,,,0,111520869,,Finance,EUR,BME
+2026-10-21,BME:VYT,Vytrus Biotech SA,14.5,14.5,14,14.1,2596,-2.759,110516401,,Health Technology,EUR,BME
+2026-10-21,BME:BYTE,"Bytetravel, S.A.",3.68,3.68,3.68,3.68,300,1.657,109200734,,Technology Services,EUR,BME
+2026-10-21,BME:MDF,Duro Felguera S.A.,0.2165,0.219,0.2155,0.216,33976,-1.37,107296832,0.7931,Industrial Services,EUR,BME
+2026-10-21,BME:YIBI,IBI LION Socimi S.A.,,,,,,0,104469192,,Finance,EUR,BME
+2026-10-21,BME:YENT,Entrecampos Cuatro SOCIMI SA,,,,,,0,101370545,,Finance,EUR,BME
+2026-10-21,BME:STNA,Santa Ana Global Enterprises SA,,,,,,-4.545,100424527,,Finance,EUR,BME
+2026-10-21,BME:AMEN,Aeternal Mentis SA,,,,,,-4.667,98704948,,Finance,EUR,BME
+2026-10-21,BME:VOC,"Vocento, S.A.",0.82,0.82,0.82,0.82,1130,0.244,98451505,,Consumer Services,EUR,BME
+2026-10-21,BME:YHSP,Hispanotels Inversiones SOCIMI SA,8.7,8.7,8.65,8.65,1181,-1.143,98447122,,Finance,EUR,BME
+2026-10-21,BME:SCTEM,Tempore Properties SOCIMI SA,,,,,,,98237159,,Finance,EUR,BME
+2026-10-21,BME:SNG,Singular People SA,,,,,,,95218308,15.4242,Commercial Services,EUR,BME
+2026-10-21,BME:YVCP,Veracruz Properties Socimi SA,,,,,,0,94646604,,Consumer Durables,EUR,BME
+2026-10-21,BME:SCAFS,Ahorro Familiar S.A.,,,,,,,94602055,,Finance,EUR,BME
+2026-10-21,BME:YMRE,Meridia Real Estate III SOCIMI SA,,,,,,0,94292505,,Finance,EUR,BME
+2026-10-21,BME:GGR,Greening Group Global S.A.,1.58,1.685,1.57,1.58,13461,-3.659,93452878,,Electronic Technology,EUR,BME
+2026-10-21,BME:YADV,ADVERO Properties Socimi SA,13.1,13.1,13.1,13.1,210,0.769,89500422,,Finance,EUR,BME
+2026-10-21,BME:APG,Axon Partners Group SA,,,,,,,87616829,,Finance,EUR,BME
+2026-10-21,BME:ALQ,Alquiber Quality SA,15.9,15.9,15.9,15.9,259,0.633,83906494,9.498,Finance,EUR,BME
+2026-10-21,BME:YAZR,Azaria Rental SOCIMI SA,,,,,,0,79407023,,Finance,EUR,BME
+2026-10-21,BME:UMB,Umbrella Global Energy SA,,,,,,0.671,72453496,,Electronic Technology,EUR,BME
+2026-10-21,BME:SCIG4,Inbest GPF Multi Asset Class Prime IV SA,,,,,,0,67279503,,Finance,EUR,BME
+2026-10-21,BME:YTCH,Techo Hogar SOCIMI Sociedad de Beneficio e Interes Comun SA,,,,,,0,65326782,,Finance,EUR,BME
+2026-10-21,BME:LIB,Libertas 7 SA,3.06,3.06,3.06,3.06,100,-1.29,64924146,16.4456,Finance,EUR,BME
+2026-10-21,BME:ADZ,"Adolfo Dominguez, S.A.",6.9,7,6.65,6.65,942,0,64068800,37.5919,Consumer Non-Durables,EUR,BME
+2026-10-21,BME:LLYC,Llorente & Cuenca SA,,,,,,,62853680,,Commercial Services,EUR,BME
+2026-10-21,BME:MTB,"Montebalito, S.A.",1.98,1.99,1.86,1.86,6735,-2.618,61486908,17.7016,Finance,EUR,BME
+2026-10-21,BME:YARP,Arrienda Rental Properties SOCIMI SA,,,,,,0,60422691,,Finance,EUR,BME
+2026-10-21,BME:SCSOL,SOLVENTO GROUP 2022 SOCIMI SA,,,,,,,60000036,12.5654,Finance,EUR,BME
+2026-10-21,BME:AIG,Andino Inversiones Global SA,,,,,,0,59277064.32,,Transportation,EUR,BME
+2026-10-21,BME:YINB1,Inbest Prime I Inmuebles Socimi SA,,,,,,0,56183601,,Finance,EUR,BME
+2026-10-21,BME:MAKS,Making Science Group SA,6.25,6.25,6.25,6.25,100,0.806,54592023,,Commercial Services,EUR,BME
+2026-10-21,BME:LGT,"Lingotes Especiales, S.A.",5.4,5.4,5.4,5.4,1087,-0.369,54200001,,Producer Manufacturing,EUR,BME
+2026-10-21,BME:SCO,Seresco SA,5.85,5.85,5.85,5.85,6,0,53554935,,Technology Services,EUR,BME
+2026-10-21,BME:YIPS,Inversa Prime SOCIMI SA,0.705,0.705,0.69,0.69,1003,0,52528814,,Finance,EUR,BME
+2026-10-21,BME:EZE,Grupo Ezentis SA,0.065,0.066,0.0647,0.0655,67659,-0.3044,51880578,,Industrial Services,EUR,BME
+2026-10-21,BME:PANG,Pangaea Oncology SA,1.47,1.47,1.47,1.47,30404,2.797,51262936,,Health Technology,EUR,BME
+2026-10-21,BME:480S,Soluciones Cuatroochenta SA,,,,,,0.559,48810559,,Technology Services,EUR,BME
+2026-10-21,BME:FACE,Facephi Biometria SA,1.7,1.78,1.7,1.75,8237,1.744,47082990,,Technology Services,EUR,BME
+2026-10-21,BME:YINB4,Inbest Prime IV Inmuebles SOCIMI SA,,,,,,0,46966500,,Finance,EUR,BME
+2026-10-21,BME:YMIL,Milepro Logistica Ultima Milla SA,,,,,,0,46709385,,Finance,EUR,BME
+2026-10-21,BME:GRI,GRINO ECOLOGIC S.A.,1.45,1.45,1.45,1.45,1500,-3.974,45863015,,Industrial Services,EUR,BME
+2026-10-21,BME:SCASH,Ashington SOCIMI SA,,,,,,,42414411,,Finance,EUR,BME
+2026-10-21,BME:LAB,Labiana Health SA,4.88,4.88,4.8,4.8,25721,-1.235,41936920,,Health Technology,EUR,BME
+2026-10-21,BME:SCAP7,AP67 Socimi SA,,,,,,0,41090267,,Finance,EUR,BME
+2026-10-21,BME:DESA,"Desarrollos Especialos de Sistomas de Anclajo, S.A.",22.6,22.6,22.6,22.6,1,-1.739,41028713,9.7042,Producer Manufacturing,EUR,BME
+2026-10-21,BME:YINB6,Inbest Prime VI Inmuebles SOCIMI SA,,,,,,0,40483499,,Finance,EUR,BME
+2026-10-21,BME:YKTS,Ktesios Real Estate Socimi SA,,,,,,-1.887,40437473.6,,Finance,EUR,BME
+2026-10-21,BME:END,Endurance Motive SA,3,3.08,3,3,2780,-2.597,38762175,,Electronic Technology,EUR,BME
+2026-10-21,BME:NBI,NBI Bearings Europe SA,3.1,3.1,3.04,3.1,1222,-1.899,37275462,174.5856,Producer Manufacturing,EUR,BME
+2026-10-21,BME:YABA,Jaba I Inversiones Inmobiliarias Socimi,,,,,,0,36691718,,Finance,EUR,BME
+2026-10-21,BME:YHCR,Home Capital Rentals Socimi SA,,,,,,0,36018150,,Finance,EUR,BME
+2026-10-21,BME:GIGA,Gigas Hosting SA,2.8,2.86,2.7,2.71,2746,-5.245,34711375,,Technology Services,EUR,BME
+2026-10-21,BME:SCUVS,Urban View Development Spain Socimi SA,,,,,,,34639081,,Finance,EUR,BME
+2026-10-21,BME:UBS,"Urbas Grupo Financiero, S.A.",,,,,,0,33520299,,Consumer Durables,EUR,BME
+2026-10-21,BME:SCIPP,Inhome Prime Properties SOCIMI SA,,,,,,0,33294329,,Finance,EUR,BME
+2026-10-21,BME:ISE,Innovative Solutions Ecosystem SA,,,,,,,32535075,,Commercial Services,EUR,BME
+2026-10-21,BME:EIDF,"Energia, Innovacion y Desarrollo Fotovoltaico SA",,,,,,0,31634224,,Utilities,EUR,BME
+2026-10-21,BME:YQUO,Quonia SOCIMI S.A.,,,,,,,31452582,,Finance,EUR,BME
+2026-10-21,BME:YPSN,Prevision Sanitaria Nacional Gestion SOCIMI SA,,,,,,0,31349501.4,,Finance,EUR,BME
+2026-10-21,BME:ETC,"Energy Solar Tech, S.A.",1.14,1.14,1.14,1.14,1000,0,30396862,,Electronic Technology,EUR,BME
+2026-10-21,BME:SCGAV,Gavari Properties SOCIMI SA,,,,,,,27336416,,Energy Minerals,EUR,BME
+2026-10-21,BME:SAI,Substrate Artificial Intelligence SA,0.0374,0.0395,0.0355,0.0376,9033083,1.0753,26321294,,Commercial Services,EUR,BME
+2026-10-21,BME:SAI.B,Substrate Artificial Intelligence SA Class B,,,,,,,26321294,,Commercial Services,EUR,BME
+2026-10-21,BME:SCLIS,Lauthon Invest SOCIMI SA,,,,,,,26000000,,Finance,EUR,BME
+2026-10-21,BME:PAR,Parlem Telecom Companyia de Telecomunicacions SA,,,,,,0,25758080,,Communications,EUR,BME
+2026-10-21,BME:SCPKR,"Inmobiliaria Park Rose Iberoamericana SOCIMI, SA",,,,,,0,25473955,,Finance,EUR,BME
+2026-10-21,BME:YINB8,Inbest Prime VIII Inmuebles SOCIMI SA,,,,,,0,25410001,,Finance,EUR,BME
+2026-10-21,BME:YINB2,Inbest Prime II Inmuebles SOCIMI SA,,,,,,0,24523976,,Finance,EUR,BME
+2026-10-21,BME:YINB3,Inbest Prime III Inmuebles SOCIMI SA,,,,,,0,24333400,,Finance,EUR,BME
+2026-10-21,BME:OPTS,Optare Solutions SA,,,,,,-2.239,23505175,,Technology Services,EUR,BME
+2026-10-21,BME:COM,Catenon SA,1.22,1.23,1.12,1.14,70226,-8.8,23170000,,Commercial Services,EUR,BME
+2026-10-21,BME:YMIB,Mistral Iberia Real Estate SOCIMI SA,,,,,,0,22231734,,Finance,EUR,BME
+2026-10-21,BME:SCIG8,Inbest GPF Multi Asset Class Prime VIII SA,,,,,,,21857921,,Finance,EUR,BME
+2026-10-21,BME:TRG,"Tubos Reunidos, S.A.",,,,,,,21762690,,Non-Energy Minerals,EUR,BME
+2026-10-21,BME:REN,"Renta Corporacion Real Estate, S.A.",0.67,0.67,0.67,0.67,5010,2.446,21622227,,Finance,EUR,BME
+2026-10-21,BME:YMAT,Matritense Real Estate SA,,,,,,0,20478576.18,,Finance,EUR,BME
+2026-10-21,BME:RDG,Redegal SA,,,,,,,20341485,,Commercial Services,EUR,BME
+2026-10-21,BME:HLZ,Holaluz Clidom SA,0.62,0.638,0.62,0.638,2435,2.903,20056310,,Utilities,EUR,BME
+2026-10-21,BME:SCGRM,"GreyMile SOCIMI, SA",,,,,,0,19900000,,Finance,EUR,BME
+2026-10-21,BME:IFLEX,"IFLEX FLEXIBLE PACKAGING, S.A.",,,,,,0,18523950,,Commercial Services,EUR,BME
+2026-10-21,BME:ENRS,Enerside Energy SA,,,,,,0,17164294,,Industrial Services,EUR,BME
+2026-10-21,BME:SCIG1,Inbest GPF Multi Asset Class Prime I SA,,,,,,,17062500,,Finance,EUR,BME
+2026-10-21,BME:SCIG5,Inbest GPF Multi Asset Class Prime V SA,,,,,,,17062500,,Finance,EUR,BME
+2026-10-21,BME:SCIG3,Inbest GPF Multi Asset Class Prime III SA,,,,,,,17057137.5,,Finance,EUR,BME
+2026-10-21,BME:SCEOL,Eolo Toys INT SA,3,3,3,3,1990,0.671,16833744,,Consumer Durables,EUR,BME
+2026-10-21,BME:RBT,"Robot, S.A.",6.1,6.15,6.1,6.15,254,0,16704234,,Electronic Technology,EUR,BME
+2026-10-21,BME:NZI,NZI Technical Protection SA,,,,,,-5,16490101,,Producer Manufacturing,EUR,BME
+2026-10-21,BME:SCGCS,Galil Capital RE Spain SA,,,,,,,16261775,,Finance,EUR,BME
+2026-10-21,BME:NYE,"Nyesa Valores Corporacion, S.A.",0.003,0.003,0.0028,0.0029,51485720,-3.333,15833013,15,Finance,EUR,BME
+2026-10-21,BME:BST,Biotechnology Assets SA,0.198,0.198,0.189,0.19,221976,-6.863,15561100,,Health Technology,EUR,BME
+2026-10-21,BME:LLN,LleidaNetworks Serveis Telematics SA,0.922,0.95,0.9,0.9,9843,-0.881,14685255,,Communications,EUR,BME
+2026-10-21,BME:TRTK,Tree Technology SA,2.4,2.4,2.4,2.4,300,0,14490048,,Technology Services,EUR,BME
+2026-10-21,BME:YMCS,Miciso Real Estate SOCIMI SA,,,,,,0,14048000,,Finance,EUR,BME
+2026-10-21,BME:SCVBA,VBARE Iberian Properties SOCIMI S.A.,,,,,,,12961952,,Finance,EUR,BME
+2026-10-21,BME:YINB7,Inbest Prime VII Inmuebles SOCIMI SA,,,,,,0,12929552.85,,Finance,EUR,BME
+2026-10-21,BME:DOMO,Domo Activos SA,,,,,,-0.725,12479971,,Finance,EUR,BME
+2026-10-21,BME:SCGV,Grandvoyage Travel SA,,,,,,,11775999,,Consumer Services,EUR,BME
+2026-10-21,BME:SPH,Profithol SA,,,,,,0,11502594,,Industrial Services,EUR,BME
+2026-10-21,BME:SCCMM,"COMMCENTER, S.A.",,,,,,,11198498,,Communications,EUR,BME
+2026-10-21,BME:KOM,Plasticos Compuestos SA,,,,,,0,11098931,,Producer Manufacturing,EUR,BME
+2026-10-21,BME:YGO2,Greenoak Spain Holdings Socimi II SA,,,,,,0,10946347,,Finance,EUR,BME
+2026-10-21,BME:SCECO,Ecoinmo Spaces SOCIMI SA,,,,,,,10918709,,Finance,EUR,BME
+2026-10-21,BME:YNPC,Nextpoint Capital Socimi SA,,,,,,0,9237480,,Finance,EUR,BME
+2026-10-21,BME:ELZ,ASTURIANA DE LAMINADOS S.A,0.0628,0.0628,0.0628,0.0628,4895,1.948,8038920,,Non-Energy Minerals,EUR,BME
+2026-10-21,BME:PVA,"Pescanova, S.A.",0.223,0.226,0.223,0.224,12804,0.448,6379774,,Consumer Non-Durables,EUR,BME
+2026-10-21,BME:SCSS,Innovative Simply Solar SA,,,,,,0,5312208,,Industrial Services,EUR,BME
+2026-10-21,BME:YEIS,Elaia Investment Spain SOCIMI S.A.,,,,,,0,5194513,,Finance,EUR,BME
+2026-10-21,BME:EEP,"EuroEspes, S.A.",,,,,,,3934921,,Health Services,EUR,BME
+2026-10-21,BME:RIO,"Bodegas Riojanas, S.A.",0.87,0.87,0.835,0.85,15385,3.659,3922839,,Consumer Non-Durables,EUR,BME
+2026-10-21,BME:CITY,Club De Futbol Intercity SAD,0.0117,0.0122,0.0105,0.0111,7541976,-5.1282,3073692,,Consumer Services,EUR,BME
+2026-10-21,BME:VANA,Vanadi Coffee SA,0.0126,0.013,0.0116,0.0116,7120410,-8.5937,2946595,,Consumer Services,EUR,BME
+2026-10-21,BME:HAN,Hannun SA,,,,,,0,,,Consumer Durables,EUR,BME
+2026-10-21,BME:S1013,Brunara SICAV SA,,,,,,-3.9419,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SCALF,Alfil Patrimonial Socimi SA,,,,,,,,,Finance,EUR,BME
+2026-10-21,BME:SCASM,Alquiler Seguro Asset Market Socimi SA,,,,,,,,,Finance,EUR,BME
+2026-10-21,BME:SCBTT,"BETTER CONSULTANTS, S.A.",,,,,,0,,,Technology Services,EUR,BME
+2026-10-21,BME:SCFRS,"Iniciativas Faro 2024 SOCIMI, S.A.",,,,,,,,,Finance,EUR,BME
+2026-10-21,BME:SCGLR,"Grupo Lar Retail Investments Socimi, S.A.",,,,,,,,,Finance,EUR,BME
+2026-10-21,BME:SCIBH,"Ibervalles Hoteles Socimi, S.A.",,,,,,,,,Consumer Services,EUR,BME
+2026-10-21,BME:SCIG2,"Inbest GPF Multi-Asset Class Prime II Socimi, S.A.",,,,,,,,,Finance,EUR,BME
+2026-10-21,BME:SCIG6,Inbest GPF Multi Asset Class Prime VI SA,,,,,,,,,Finance,EUR,BME
+2026-10-21,BME:SCIMS,"Inmobiliaria Marbella Socimi, S.A.",,,,,,,,,Finance,EUR,BME
+2026-10-21,BME:SCMIB,Mistral Iberia Real Estate SOCIMI II SA,,,,,,,,,Finance,EUR,BME
+2026-10-21,BME:SCRES,"INMUEBLES EN ALQUILER RESYDENZA SOCIMI, S.A.",,,,,,,,,Finance,EUR,BME
+2026-10-21,BME:SCRN3,Rentas Noblejas 3 SOCIMI,,,,,,,,,Finance,EUR,BME
+2026-10-21,BME:SL003,Equilibria Investments SIL SA,,,,,,0,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL006,Rho Investments SIL SA,,,,,,0,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL007,Ursus-3C Valor SIL SA,,,,,,0,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL011,Belona Inversiones Financieras SIL SA,,,,,,0,,,Finance,EUR,BME
+2026-10-21,BME:SL014,Fadair SIL SA,,,,,,0,,,Finance,EUR,BME
+2026-10-21,BME:SL016,Jungleland Value SIL SA,,,,,,0,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL018,Polo Capital SIL SA,,,,,,0,,,Finance,EUR,BME
+2026-10-21,BME:SL021,Rosalita Capital SIL SA,,,,,,0,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL024,Freecap Investment SIL SA,,,,,,1323.698,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL027,Inversiones Focalizadas SIL SA,,,,,,0,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL028,All You Need Is Love Tech Capital SIL SA,,,,,,0,,,Non-Energy Minerals,EUR,BME
+2026-10-21,BME:SL030,Moonhealth SIL SA,,,,,,0,,,Finance,EUR,BME
+2026-10-21,BME:SL042,"Inversiones Kineas, FI",,,,,,0,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL044,Prestige Inversiones SIL SA,,,,,,0,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL050,Famoga Inversiones SIL SA,,,,,,0,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL051,Invest Stella SIL SA,,,,,,1325.952,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL065,Turqueta Gestion SIL SA,,,,,,1697.843,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL085,Amposta Inversiones SIL SA,,,,,,0,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL086,Mestre Patrimonio SIL SA,,,,,,0,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL087,Synergy Capital Investments SIL SA,,,,,,0,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL091,Columbus Inversiones 2000 SIL,,,,,,0,,,Miscellaneous,EUR,BME
+2026-10-21,BME:SL098,Diale Inversones Financieras SICAV SA,,,,,,0,,,Miscellaneous,EUR,BME
