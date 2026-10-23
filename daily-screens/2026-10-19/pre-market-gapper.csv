@@ -1,0 +1,31 @@
+symbol,exchange,close,premarket_change_pct,premarket_volume,premarket_gap_pct,volume,market_cap,sector,industry
+YMAT,NASDAQ,1.83,94.66,33824592,4.58,66687131,7338488,Producer Manufacturing,Electrical Products
+FRGT,NASDAQ,1.47,35.44,3329452,6.25,10255665,24952271,Finance,Financial Conglomerates
+SAFX,NASDAQ,0.1565,34.5,84446851,87.81,185633358,64993968,Energy Minerals,Oil Refining/Marketing
+AAME,NASDAQ,1.45,33.33,28316882,37.14,48571450,29575980,Finance,Multi-Line Insurance
+MASK,NASDAQ,0.9299,29.61,41938812,-0.4,76890935,3448047,Technology Services,Information Technology Services
+IRON,NASDAQ,78.93,29.24,877084,10.5,8493173,3030347275,Health Technology,Biotechnology
+ZONE,AMEX,0.095,26.11,111212,6.32,17217819,48338874,Distribution Services,Wholesale Distributors
+RPGL,NASDAQ,8.05,21.48,168756,16.4,738596,8420067,Technology Services,Information Technology Services
+XLAB,NASDAQ,3.06,19.15,25943715,-3.4,71530071,103088496,Finance,Financial Conglomerates
+FUFU,NASDAQ,1.19,16.65,61492,8.51,52200464,198317778,Technology Services,Data Processing Services
+UPLD,NASDAQ,3.32,16.62,129395,14.84,676768,9817873,Technology Services,Information Technology Services
+CLF,NYSE,14.1,16.5,2223765,3.8,88398324,8044614474,Non-Energy Minerals,Steel
+MEDS,NASDAQ,2.67,16.35,2237437,3.8,4136891,11994228,Distribution Services,Medical Distributors
+AIBZ,NASDAQ,2.95,15.88,123126,11.59,5929774,14978413,Technology Services,Data Processing Services
+TCRT,NASDAQ,3.13,14.83,17346782,0.4,41243035,9161932,Health Technology,Biotechnology
+MNDR,NASDAQ,0.94,14.13,1640906,5.92,5924457,1122864,Health Services,Medical/Nursing Services
+DWTX,NASDAQ,1.21,11.48,84043,0,228509,41130990,Health Technology,Pharmaceuticals: Major
+EOSE,NASDAQ,1.81,10.99,3305574,4.31,41585408,659143655,Producer Manufacturing,Electrical Products
+SLXN,NASDAQ,0.153,9.8,2733262,0.33,5121210,2214414,Health Technology,Pharmaceuticals: Major
+PLAG,AMEX,0.52,9.63,9474592,0.06,53039285,7401010,Consumer Non-Durables,Food: Specialty/Candy
+VAI,NASDAQ,2.67,9.01,406995,12.88,657706,38868495,Finance,Finance/Rental/Leasing
+ACTU,NASDAQ,0.599,8.93,127294,10.76,727328,14384507,Health Technology,Pharmaceuticals: Major
+ZNTL,NASDAQ,2.3,8.92,54241,10.32,2736606,217745412,Health Technology,Biotechnology
+EQPT,NASDAQ,13.95,8.87,86124,2.1,4998771,3540607968,Technology Services,Internet Software/Services
+RCAT,NASDAQ,4.68,8.69,361165,3.6,6160552,714703152,Technology Services,Packaged Software
+TWG,NASDAQ,0.0727,8.58,158113559,48.51,195412866,4561674,Distribution Services,Food Distributors
+UAMY,NYSE,3.1,8.42,215273,4.91,8889991,463975086,Non-Energy Minerals,Other Metals/Minerals
+RYDE,AMEX,0.7146,8.4,52082,0.76,204173,121286403,Technology Services,Internet Software/Services
+MRKR,NASDAQ,1.2,7.69,170135,3.85,580085,20007751,Health Technology,Biotechnology
+NRXP,NASDAQ,2.63,7.69,50111,8.46,1093428,113867857,Health Technology,Pharmaceuticals: Major

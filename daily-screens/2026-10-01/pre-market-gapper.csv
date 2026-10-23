@@ -1,0 +1,31 @@
+symbol,exchange,close,premarket_change_pct,premarket_volume,premarket_gap_pct,volume,market_cap,sector,industry
+NXL,NASDAQ,7.55,104.91,14092562,16.82,62332111,6261966,Health Technology,Medical Specialties
+RZAI,NASDAQ,26.31,47.62,87028,127.97,900128,1463977564,Technology Services,Packaged Software
+SDEV,AMEX,3.66,38.61,25520837,10.04,107762135,189409964,Health Technology,Pharmaceuticals: Major
+VEEA,NASDAQ,3.47,36.87,24840842,0.82,80636688,10794156,Technology Services,Packaged Software
+GIPR,NASDAQ,0.452,31.43,72011772,13.08,146273088,1373239,Finance,Real Estate Investment Trusts
+HXHX,NASDAQ,0.4,27.87,4006571,2.5,14289010,5888000,Transportation,Trucking
+MEDS,NASDAQ,4.06,22.71,18666771,3.79,34896467,12886404,Distribution Services,Medical Distributors
+BTTC,NASDAQ,0.6335,18.33,17635930,-5.06,94504539,6825722,Technology Services,Packaged Software
+ACN,NYSE,212.3,17.29,2270103,0.29,28986118,129915312580,Technology Services,Information Technology Services
+FLNA,NASDAQ,0.965,15.12,599422,6.15,2804697,46617117,Health Technology,Biotechnology
+EFXT,NYSE,25.44,12.99,76209,0.18,2095139,3106297430,Producer Manufacturing,Industrial Machinery
+QSI,NASDAQ,1.43,12.15,1595285,10.28,33063447,313004007,Technology Services,Packaged Software
+SCKT,NASDAQ,0.54,11.57,77597252,0,131812054,4477507,Electronic Technology,Computer Peripherals
+EJH,NASDAQ,1.79,10.56,1105546,-1.41,4174970,5728276,Consumer Services,Other Consumer Services
+LPA,AMEX,2.91,10.49,198160,9.09,1022691,92243024,Finance,Real Estate Development
+INSG,NASDAQ,4.37,9.84,72936,14.75,2178459,71757986,Electronic Technology,Telecommunications Equipment
+GLOB,NYSE,36.98,9.6,65997,0.86,2087968,1596779941,Technology Services,Information Technology Services
+AISP,NASDAQ,2.22,9.14,479358,1.08,41942015,76455832,Technology Services,Packaged Software
+QNME,NASDAQ,0.5382,8.95,4021630,-1.52,8124224,18528912,Transportation,Air Freight/Couriers
+SDOT,NASDAQ,11.76,8.26,145837,4.68,504858,17108777,Consumer Services,Restaurants
+CTSH,NASDAQ,60.88,7.9,187323,-1.51,13750542,27423043084,Technology Services,Information Technology Services
+WVE,NASDAQ,3.88,7.57,111678,0.27,5418860,764546917,Health Technology,Biotechnology
+SNPS,NASDAQ,490.54,7.34,95456,1.92,6664648,94005439118,Technology Services,Packaged Software
+PMAX,NASDAQ,0.9382,7.3,5561769,0,12469701,1840715,Communications,Specialty Telecommunications
+FICO,NYSE,661.75,7.18,126612,-0.26,2999510,14292234432,Commercial Services,Financial Publishing/Services
+ABAT,NASDAQ,2.28,6.79,10654865,0.9,21538859,325077295,Non-Energy Minerals,Other Metals/Minerals
+AIB,AMEX,1.52,6.74,555490,8.27,6407212,115488796,Technology Services,Data Processing Services
+VUZI,NASDAQ,2.885,6.45,102669,2.62,2255002,243535050,Electronic Technology,Electronic Equipment/Instruments
+QNC,AMEX,1.74,6.08,107144,7.43,1410522,381703215,Electronic Technology,Semiconductors
+WETO,NASDAQ,1.12,5.94,794643,14.85,3805829,1207137,Transportation,Other Transportation
