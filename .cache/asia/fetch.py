@@ -1,6 +1,13 @@
 import urllib.request, json, time, datetime, sys
 from concurrent.futures import ThreadPoolExecutor
 
+# Freshness must come from meta.regularMarketTime (last actual print), NOT the
+# last element of the timestamp series: Yahoo inserts a placeholder bar for a
+# non-trading day that carries a DUPLICATED close, which silently passes a
+# timestamp-based freshness check.
+# Also, meta.regularMarketChangePercent has been observed stale for index
+# endpoints, so percent change is computed from the raw close series instead.
+
 universe = {
     "JP": ["7203.T","6758.T","9984.T","8306.T","6861.T","7974.T","6902.T","9432.T","9433.T","7267.T",
         "8058.T","8035.T","4063.T","7741.T","6367.T","6503.T","6501.T","7269.T","7751.T","6594.T",
@@ -32,10 +39,14 @@ universe = {
         "005830.KS","001740.KS","005385.KS","002380.KS","006800.KS","009830.KS","011790.KS","014680.KS","016360.KS"],
 }
 
+# Exchange local UTC offset (hours) for computing the session date
+OFFSET = {"JP": 9, "TW": 8, "HK": 8, "KR": 9}
+TODAY = "2026-10-23"
+
 def fetch_one(sym):
     for attempt in range(3):
         try:
-            url = f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=5d&interval=1d"
+            url = f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=10d&interval=1d"
             req = urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0"})
             data = json.loads(urllib.request.urlopen(req, timeout=6).read())
             r = data["chart"]["result"]
@@ -43,11 +54,23 @@ def fetch_one(sym):
                 return None
             meta = r[0]["meta"]
             ts = r[0].get("timestamp", [])
-            lc = datetime.datetime.utcfromtimestamp(ts[-1]).isoformat() if ts else None
+            closes = r[0]["indicators"]["quote"][0]["close"]
+            pairs = [(t, c) for t, c in zip(ts, closes) if c is not None]
+            rmt = meta.get("regularMarketTime")
+            # session date = local calendar date of the last actual print
+            sess = datetime.datetime.utcfromtimestamp(rmt + OFFSET[region]*3600).strftime("%Y-%m-%d") if rmt else None
+            # percent change computed from the raw close series (meta.pct proven stale on indices)
+            pct = None
+            if len(pairs) >= 2:
+                # use the last bar whose date matches the session date, else the last bar
+                last_c = pairs[-1][1]
+                prev_c = pairs[-2][1]
+                if prev_c:
+                    pct = (last_c/prev_c - 1) * 100
             return {"symbol":sym,"price":meta.get("regularMarketPrice"),
-                    "pct":meta.get("regularMarketChangePercent"),
-                    "currency":meta.get("currency"),"exchange":meta.get("fullExchangeName"),
-                    "last_close_utc":lc}
+                    "pct":pct,"meta_pct":meta.get("regularMarketChangePercent"),
+                    "currency":meta.get("currency"),"session_date":sess,
+                    "last_two":[ (datetime.datetime.utcfromtimestamp(t).strftime("%Y-%m-%d"), c) for t,c in pairs[-2:] ]}
         except Exception:
             time.sleep(0.8*(attempt+1))
     return None
@@ -59,9 +82,13 @@ with ThreadPoolExecutor(max_workers=12) as ex:
         if r: got.append(r)
 with open(f"/workspace/.cache/asia/res_{region}.json","w") as f:
     json.dump(got,f,indent=2)
-TODAY="2026-10-22"
-fresh=[x for x in got if (x.get("last_close_utc") or "").startswith(TODAY)]
+
+fresh=[x for x in got if x.get("session_date")==TODAY]
+stale=[x for x in got if x.get("session_date")!=TODAY]
 fresh.sort(key=lambda x: abs(x.get('pct') or 0), reverse=True)
-print(f"=== {region}: {len(got)}/{len(universe[region])} ok, {len(fresh)} fresh ===")
+print(f"=== {region}: {len(got)}/{len(universe[region])} ok | FRESH({TODAY})={len(fresh)} | STALE={len(stale)} ===")
+if stale:
+    sd = sorted(set(x.get('session_date') for x in stale))
+    print(f"    stale session dates: {sd}")
 for x in fresh[:18]:
     print(f"  {x['symbol']:14s} pct={x['pct']:+6.2f}  px={x['price']}")
