@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import datetime
 import json
 import os
 import subprocess
@@ -11,7 +12,8 @@ import sys
 DATA = "/workspace/data"
 OUT_ROOT = "/workspace/us-eod"
 DATE = sys.argv[1] if len(sys.argv) > 1 else "2026-10-22"
-PRIOR = "2026-10-21"
+PRIOR = (datetime.date.fromisoformat(DATE)
+         - datetime.timedelta(days=1)).isoformat()
 INTL = ["au", "jp", "tw", "ca", "eu-de", "eu-fr", "eu-it", "eu-es", "eu-nl",
         "eu-be", "eu-at", "eu-pt", "eu-ie", "eu-fi", "eu-dk", "eu-gr"]
 LABEL = {"us": "US", "au": "AU", "jp": "JP", "tw": "TW", "ca": "CA",
@@ -19,6 +21,13 @@ LABEL = {"us": "US", "au": "AU", "jp": "JP", "tw": "TW", "ca": "CA",
          "eu-nl": "EU-NL", "eu-be": "EU-BE", "eu-at": "EU-AT", "eu-pt": "EU-PT",
          "eu-ie": "EU-IE", "eu-fi": "EU-FI", "eu-dk": "EU-DK", "eu-gr": "EU-GR"}
 CLOSED = {"au", "jp", "tw"}
+# source actually used per run date (2026-10-21 ran on the Yahoo fallback)
+SOURCE_HISTORY = {
+    "2026-10-20": "TradingView screener",
+    "2026-10-21": "Yahoo fallback (screener TLS-blocked)",
+    "2026-10-22": "TradingView screener",
+    "2026-10-23": "TradingView screener",
+}
 
 
 def et_now():
@@ -42,16 +51,22 @@ def main():
     A("")
     A("- Cron: #20 `eod-watchlist-csv-snapshot` (16:00 ET weekdays)")
     A(f"- Captured: {et_now()}")
-    A("- Window check: PASS (2026-10-22 = Thursday)")
+    _d = datetime.date.fromisoformat(DATE)
+    A(f"- Window check: PASS ({DATE} = {_d.strftime('%A')})")
     A("")
     A("## Data source")
     A("")
-    A("**PRIMARY (skill: TradingView screener) — RESTORED.**")
-    A("`scanner.tradingview.com` was TLS-blocked from this sandbox on")
-    A("2026-10-21 (every CloudFront edge reset the handshake). It answered")
-    A("normally today (3/3 probes, then a full 17-region pull), so this file is")
-    A("back on the skill's primary path. Universe, OHLCV, change%, market cap,")
-    A("PE and sector all come from one screener pass per region.")
+    A("**PRIMARY (skill: TradingView screener).**")
+    A("`scanner.tradingview.com` was TLS-blocked from this sandbox for one day")
+    A("(2026-10-21 — every CloudFront edge reset the handshake) and has")
+    A("answered normally since. It was re-probed before this run (3/3 probes")
+    A("HTTP 200) and served the full 17-region pull. Universe, OHLCV, change%,")
+    A("market cap, PE and sector all come from one screener pass per region.")
+    A("")
+    A("Source actually used per run date:")
+    A("")
+    for d in sorted(SOURCE_HISTORY):
+        A(f"- {d}: {SOURCE_HISTORY[d]}")
     A("")
     A("- Cross-check source: Yahoo Finance (`/v7/finance/spark`,")
     A("  `/v8/finance/chart`) — 80-name sample per region, entity + change%")
@@ -64,8 +79,9 @@ def main():
     A("")
     med = lag.get("median_min")
     A(f"- TradingView's US stream measured **{round(med) if med else 'n/a'} min behind**")
-    A("  the live tape (median of 8 large caps, range 5-20 min) — fresher than")
-    A("  the ~55 min measured on 2026-10-20.")
+    _offs = lag.get("offsets_min") or []
+    _rng = f"{min(_offs):.0f}-{max(_offs):.0f} min" if _offs else "n/a"
+    A(f"  the live tape (median of {len(_offs)} large caps, range {_rng}).")
     A("- The US close (16:00 ET) had **not** happened at capture time, so")
     A("  US/EU/CA rows are intraday, not settled closes. AU/JP/TW sessions were")
     A("  complete.")
@@ -105,12 +121,13 @@ def main():
         A(f"- {LABEL[region]}: {len(c):,} rows vs {len(q):,} on {PRIOR} "
           f"(+{len(c - q):,} new, -{len(q - c):,} dropped)")
     A("")
-    A("**Source continuity:** the 2026-10-21 file was written from Yahoo")
-    A("prices (TradingView blocked, market_cap/pe_ratio/sector carried from")
-    A("2026-10-20); today's file is screener-sourced, so those three fields")
-    A("are fresh again. Price fields for the two days are not strictly")
-    A("comparable — 2026-10-21 prices are live-to-capture, 2026-10-22 prices")
-    A("carry the screener's ~20 min delay.")
+    A("**Source continuity:** this file and the 2026-10-22 file are both")
+    A("screener-sourced, so prices are comparable apart from the feed delay")
+    A("measured per run (20 min on 2026-10-22, "
+      f"{round(lag.get('median_min')) if lag.get('median_min') else 'n/a'} min today).")
+    A("The 2026-10-21 file was the Yahoo-fallback run (live prices, with")
+    A("market_cap/pe_ratio/sector carried from 2026-10-20), so it is not")
+    A("price-comparable with the other three days.")
     A("")
     A("## Verification (Yahoo vs TradingView, ~80 names per region)")
     A("")
