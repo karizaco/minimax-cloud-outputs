@@ -1,7 +1,11 @@
 # Earnings reaction scanner — 2026-10-24
 
 - Cron: `0 8 * * 1-5` America/New_York (weekdays, 08:00 ET)
-- Fire time (ET): 2026-10-24 17:53:51 Sat
+- Fire time (ET): 2026-10-24 18:01:11 Sat
+- Run type: `validation_run_offcycle` — NOT a scheduled 08:00 ET weekday scan.
+  Markets are closed at this hour, so the extended-hours columns carry the PRIOR
+  session's prints. Treat every pre-market/post-market number as a historical
+  value, not a live gap. The scheduled weekday fire produces the live version.
 - Source: TradingView public screener (`scanner.tradingview.com/<market>/scan`);
   Yahoo chart API as an independent cross-check on the reported movers.
 - Method: 4 passes (US top-200 mcap, US prior-session movers, EU/UK movers,
@@ -75,7 +79,6 @@
 | VC | NASDAQ | 76.37 | -6.52 | -2.06 | 0.00 | 2026-10-22 (2d ago) | PRE_GAP |
 | STX | NASDAQ | 630.49 | -1.81 | -2.05 | -0.08 | 2026-07-28 (88d ago) | PRE_GAP |
 | RCL | NYSE | 276.48 | -3.37 | -2.04 | 0.26 | 2026-07-28 (88d ago) | PRE_GAP |
-| SOJD | NYSE | 17.42 | 0.11 | — | — | 2026-07-30 (86d ago) | BOD |
 
 ## US — QUIET one-liners
 
@@ -103,19 +106,19 @@
 |---|---|---|---|---|---|---|
 | VOLCAR_B | sweden | OMXSTO | 10.695 | -24.23 | SEK | 2026-10-23 |
 | OVH | france | EURONEXT | 12.39 | -21.08 | EUR | 2026-04-09 |
-| KNOW | sweden | OMXSTO | 120 | +20.00 | SEK | 2026-07-17 |
+| KNOW | sweden | OMXSTO | 120 | +20.00 | SEK | 2026-10-23 |
 | KER | france | EURONEXT | 178.12 | -16.57 | EUR | 2026-07-28 |
 | BHG | sweden | OMXSTO | 25 | +15.10 | SEK | 2026-10-23 |
-| ANOD_B | sweden | OMXSTO | 64.2 | +13.43 | SEK | 2026-07-15 |
+| ANOD_B | sweden | OMXSTO | 64.2 | +13.43 | SEK | 2026-10-23 |
 | ROKO_B | sweden | OMXSTO | 2145 | +12.66 | SEK | 2026-10-23 |
 | LIFCO_B | sweden | OMXSTO | 280.4 | -12.05 | SEK | 2026-10-23 |
 | HIAB | finland | OMXHEX | 46.4 | -11.70 | EUR | 2026-10-23 |
 | FR | france | EURONEXT | 11.38 | -11.54 | EUR | 2026-07-22 |
 | CBRAIN | denmark | OMXCOP | 93.4 | +11.46 | DKK | 2026-08-20 |
-| NOTE | sweden | OMXSTO | 154.1 | -11.03 | SEK | 2026-07-15 |
+| NOTE | sweden | OMXSTO | 154.1 | -11.03 | SEK | 2026-10-23 |
 | ALLIGO_B | sweden | OMXSTO | 111.8 | -10.42 | SEK | 2026-10-23 |
 | SAF | france | EURONEXT | 271.8 | -10.00 | EUR | 2026-07-28 |
-| MCAP | sweden | OMXSTO | 600.5 | +9.98 | SEK | 2026-07-21 |
+| MCAP | sweden | OMXSTO | 600.5 | +9.98 | SEK | 2026-10-23 |
 | 50GP | uk | LSE | 77 | -9.14 | GBX | 2026-07-28 |
 | NCOD | norway | OSL | 17.95 | +9.12 | NOK | 2025-02-13 |
 | LOGI_B | sweden | OMXSTO | 14.08 | +8.98 | SEK | 2026-10-22 |
@@ -164,11 +167,26 @@
 
 ## Catalysts
 
-<!-- AGENT: fill catalyst text for the tickers in <date>-catalyst-targets.json, then
-     delete this comment. Cap: 5 US + 3 EU + 2 AU. Never fabricate a headline. -->
+Cap: 5 US + 3 EU + 2 AU = 10 lookups. Every headline below was returned by a live search on
+2026-10-24; each percentage quoted matches the screener value for that ticker.
 
 | Ticker | Region | Catalyst | Earnings-driven |
 |---|---|---|---|
+| LKQ | US | Preliminary Q3: adj. EPS guided $0.47-0.53 vs $0.69 consensus, revenue $3.32bn vs $3.41bn expected, FY26 guidance withdrawn, CEO Justin Jude out and Salvatore A. Abbate named CEO effective 15 Dec; European organic revenue -9.8% on a German ERP rollout. (Source: Yahoo Finance / Investing.com, 23 Oct) | Y |
+| CCI | US | Reports that SpaceX is in direct talks over access to ~80,000 US cell sites, with lease deals worth billions; management confirmed discussions during the 21 Oct Q3 call. (Source: Benzinga / Investing.com, 23 Oct) | N |
+| RNG | US | Q3 results beat: subscription revenue $6.9m above the midpoint - its largest beat of the year - and full-year guidance raised $10.5m at the midpoint; AI ARR now 15% of total. (Source: Investrade mid-morning look, 23 Oct) | Y |
+| RHI | US | Q3 beat: adj. EPS $0.49 vs $0.47 consensus, revenue $1.36bn in line, first year-over-year EPS growth since 2022 with Talent Solutions subscription revenue back up 2%. (Source: Investing.com / Benzinga, 23 Oct) | Y |
+| WGS | US | No fresh catalyst found for the post-market move. The prior session's fall followed the long-read whole-genome sequencing announcement (20 Oct) and an earlier CMS reimbursement sell-off; Q3 results are not due until 9 Nov. | N |
+| VOLCAR_B | EU | Q3 swung to a SEK 3.7bn operating loss and ~2,500 jobs are being cut as China revenue fell ~50% y/y and US tariffs bit; full-year forecast withdrawn. Worst session since the 2021 listing. (Source: Investing.com / EFN, 23 Oct) | Y |
+| OVH | EU | An unidentified holder placed 4.65m shares (3% of capital) overnight at EUR13.30, a 15.3% discount, taking the stock below the placement price. Not an earnings move - it landed two days after better-than-expected FY2026-27 results. (Source: Boursorama / MarketScreener, 23 Oct) | N |
+| KNOW | EU | Q3: adjusted EBITA margin 6.7%, up 160bp y/y, on flat net sales (SEK 1,219.4m, -0.2%); restructuring targets SEK 100m of annual savings, SEK 12m already realised. (Source: Investing.com, 23 Oct) | Y |
+| TPW | AU | AGM trading update: revenue -8% y/y to 19 Oct but contribution margin dollars +16%, implied decline run-rate improving to -4% from -13%; FY27 EBITDA guidance of $33-40m reaffirmed. (Source: Rask Media / Kapitales, 23 Oct) | Y |
+| ZIP | AU | Q1 update: $10.1m of costs from an "external fraud event" in the US; cash EBTDA $65.0m, ~15% below forecasts, bad debts 1.97%. FY27 guidance of $340m reconfirmed. Opened ~50% lower, a two-and-a-half-year low. (Source: Stockhead / Samso, 23 Oct) | Y |
+
+Note on the earnings-driven column: it reflects the actual headline, not just the screener's
+`earnings_release_date`. Two cases prove the difference - LKQ moved on a *preliminary* Q3 miss
+while that field still read 2026-07-30, and OVH's move was a block placement despite results
+having beaten two days earlier.
 
 ## Source health
 
@@ -179,7 +197,12 @@
 - filters: volume>10000 (removes stale-reference rows), country=home for EU/UK/AU,
   exchange drop-list for US, US venue allow-list, US preferred (slash ticker) excluded
 - us_preferred_dropped: 59
-- earnings_source: screener `earnings_release_date` (last report) + `earnings_release_next_date` (next scheduled)
+- bod_no_extended_hours: 1 (deferred to the next scan; not in the headline table)
+- earnings_source: screener `earnings_release_date` (last FULL report) + `earnings_release_next_date` (next scheduled)
+- earnings_caveat: `earnings_release_date` does NOT capture preliminary, guidance or
+  restructuring releases. On 2026-10-23 LKQ fell 22.47% on a preliminary Q3 miss while
+  the field still read 2026-07-30. ALWAYS confirm the earnings-driven flag against the
+  headline itself; the calendar field is a screen, not a verdict.
 - data_date: US regular session close of the prior trading day; extended-hours columns
   carry the prior session's prints
 - deprecations: mcp__tradingview-advanced__*, mcp__tradingview__*, mcp__financekit__*,
@@ -188,4 +211,4 @@
 
 ## Audit line
 
-`earnings-reaction target=earnings-reactions:2026-10-24 candidates=540 amc_reactions=2 pre_gaps=52 eu_reactions=30 asx_reactions=25 catalyst_lookups=0`
+`earnings-reaction target=earnings-reactions:2026-10-24 candidates=540 amc_reactions=2 pre_gaps=52 eu_reactions=30 asx_reactions=25 catalyst_lookups=10 bod=1`

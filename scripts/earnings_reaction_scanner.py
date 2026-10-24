@@ -275,7 +275,7 @@ for d in a_rows + b_up + b_dn:
         if c[k] is None and g(d, key) is not None:
             c[k] = g(d, key)
 
-tagged, quiet = [], []
+tagged, quiet, bod = [], [], []
 for sym, c in us.items():
     pm, po = c["pm"], c["po"]
     if pm is None and po is None:
@@ -288,9 +288,15 @@ for sym, c in us.items():
         tag = "QUIET"
     c["tag"] = tag
     c["mx"] = max(abs(pm) if pm is not None else 0, abs(po) if po is not None else 0)
-    (quiet if tag == "QUIET" else tagged).append((sym, c))
+    if tag == "BOD":
+        bod.append((sym, c))
+    elif tag == "QUIET":
+        quiet.append((sym, c))
+    else:
+        tagged.append((sym, c))
 tagged.sort(key=lambda t: -t[1]["mx"])
 quiet.sort(key=lambda t: -t[1]["mx"])
+bod.sort(key=lambda t: -t[1]["mx"])
 
 # ------------------------------------------------------------------ cross-checks
 for sym, c in tagged[:15]:
@@ -319,12 +325,27 @@ def er_cell(c):
 
 
 os.makedirs(OUT_DIR, exist_ok=True)
+_n_catalysts = 0
+_cf = f"/workspace/catalog/catalysts/{RUN_DATE}.md"
+if os.path.exists(_cf):
+    _n_catalysts = sum(1 for ln in open(_cf).read().splitlines()
+                       if ln.startswith("| ") and "|" in ln[2:]
+                       and not ln.startswith("| Ticker") and not ln.startswith("|---"))
 L = []
 A = L.append
 A(f"# Earnings reaction scanner — {RUN_DATE}")
 A("")
+_now = datetime.datetime.now(ET)
+_offcycle = (_now.hour != 8) or (_now.isoweekday() > 5)
 A(f"- Cron: `0 8 * * 1-5` America/New_York (weekdays, 08:00 ET)")
-A(f"- Fire time (ET): {datetime.datetime.now(ET).strftime('%Y-%m-%d %H:%M:%S %a')}")
+A(f"- Fire time (ET): {_now.strftime('%Y-%m-%d %H:%M:%S %a')}")
+if _offcycle:
+    A(f"- Run type: `validation_run_offcycle` — NOT a scheduled 08:00 ET weekday scan.")
+    A(f"  Markets are closed at this hour, so the extended-hours columns carry the PRIOR")
+    A(f"  session's prints. Treat every pre-market/post-market number as a historical")
+    A(f"  value, not a live gap. The scheduled weekday fire produces the live version.")
+else:
+    A(f"- Run type: `scheduled_scan`")
 A(f"- Source: TradingView public screener (`scanner.tradingview.com/<market>/scan`);")
 A(f"  Yahoo chart API as an independent cross-check on the reported movers.")
 A(f"- Method: 4 passes (US top-200 mcap, US prior-session movers, EU/UK movers,")
@@ -336,7 +357,7 @@ A("## TL;DR")
 A("")
 amc = [c for _, c in tagged if c["tag"] == "AMC_REACTION"]
 gaps = [c for _, c in tagged if c["tag"] == "PRE_GAP"]
-bod = [c for _, c in tagged if c["tag"] == "BOD"]
+
 big_us = max(tagged, key=lambda t: t[1]["mx"]) if tagged else None
 big_eu = max(eu_final, key=lambda r: abs(g(r["d"], "change"))) if eu_final else None
 big_au = max(au, key=lambda r: abs(g(r["d"], "change"))) if au else None
@@ -389,11 +410,18 @@ for r in au:
 A("")
 A("## Catalysts")
 A("")
-A("<!-- AGENT: fill catalyst text for the tickers in <date>-catalyst-targets.json, then")
-A("     delete this comment. Cap: 5 US + 3 EU + 2 AU. Never fabricate a headline. -->")
-A("")
-A("| Ticker | Region | Catalyst | Earnings-driven |")
-A("|---|---|---|---|")
+_cat_file = f"/workspace/catalog/catalysts/{RUN_DATE}.md"
+if os.path.exists(_cat_file):
+    with open(_cat_file) as _fh:
+        A(_fh.read().rstrip())
+else:
+    A("<!-- AGENT: fill catalyst text for the tickers in <date>-catalyst-targets.json, then")
+    A("     write it to /workspace/catalog/catalysts/<date>.md (so a re-run does not wipe it)")
+    A("     OR edit this table in place. Cap: 5 US + 3 EU + 2 AU. Never fabricate a headline. -->")
+    A("")
+    A("| Ticker | Region | Catalyst | Earnings-driven |")
+    A("|---|---|---|---|")
+    A("")
 A("")
 A("## Source health")
 A("")
@@ -409,8 +437,13 @@ A(f"- markets_with_lt5_rows: {health['empty_markets'] or 'none'}")
 A(f"- filters: volume>{MIN_VOLUME} (removes stale-reference rows), country=home for EU/UK/AU,")
 A(f"  exchange drop-list for US, US venue allow-list, US preferred (slash ticker) excluded")
 A(f"- us_preferred_dropped: {a_dropped_pref}")
-A(f"- earnings_source: screener `earnings_release_date` (last report) + "
+A(f"- bod_no_extended_hours: {len(bod)} (deferred to the next scan; not in the headline table)")
+A(f"- earnings_source: screener `earnings_release_date` (last FULL report) + "
   f"`earnings_release_next_date` (next scheduled)")
+A(f"- earnings_caveat: `earnings_release_date` does NOT capture preliminary, guidance or")
+A(f"  restructuring releases. On 2026-10-23 LKQ fell 22.47% on a preliminary Q3 miss while")
+A(f"  the field still read 2026-07-30. ALWAYS confirm the earnings-driven flag against the")
+A(f"  headline itself; the calendar field is a screen, not a verdict.")
 A(f"- data_date: US regular session close of the prior trading day; extended-hours columns")
 A(f"  carry the prior session's prints")
 A(f"- deprecations: mcp__tradingview-advanced__*, mcp__tradingview__*, mcp__financekit__*,")
@@ -421,7 +454,8 @@ A("## Audit line")
 A("")
 A(f"`earnings-reaction target=earnings-reactions:{RUN_DATE} candidates={len(us)} "
   f"amc_reactions={len(amc)} pre_gaps={len(gaps)} eu_reactions={len([r for r in eu_final if abs(g(r['d'],'change'))>3])} "
-  f"asx_reactions={len([r for r in au if abs(g(r['d'],'change'))>3])} catalyst_lookups=0`")
+  f"asx_reactions={len([r for r in au if abs(g(r['d'],'change'))>3])} "
+  f"catalyst_lookups={_n_catalysts} bod={len(bod)}`")
 A("")
 
 out = os.path.join(OUT_DIR, f"{RUN_DATE}-reactions.md")
