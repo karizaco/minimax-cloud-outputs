@@ -1,0 +1,41 @@
+Symbol,Company,Close,Chg%,Vol,RVOL10,Mcap$B,ADR%,ADV$M,Perf5D,Perf1M,Perf3M,Sector
+XLAB,Exascale Labs Holdings Inc.,4.71,73.16,"67,907,055",2.51,0.3,14.59,53,155.28,65.26,-54.49,Finance
+BHVN,Biohaven Ltd.,14.69,25.02,"30,510,125",16.55,2.2,7.25,49,29.89,1.87,0.07,Health Technology
+MLTX,MoonLake Immunotherapeutics,12.34,15.87,"6,120,090",3.62,1.1,6.12,25,19.34,-3.06,-36.65,Health Technology
+EGBN,"Eagle Bancorp, Inc.",32.97,15.56,"1,536,386",3.60,1.0,2.84,14,17.16,17.46,18.51,Finance
+VITL,"Vital Farms, Inc.",9.41,15.18,"1,810,146",1.13,0.4,5.92,17,10.19,-24.17,-27.25,Process Industries
+POOL,Pool Corporation,197.21,14.36,"2,195,181",2.83,7.2,3.29,176,15.96,16.07,7.57,Distribution Services
+HCSG,"Healthcare Services Group, Inc",24.79,14.19,"1,337,906",1.80,1.7,3.18,19,15.30,15.30,10.57,Commercial Services
+BMI,"Badger Meter, Inc.",149.64,13.48,"1,234,915",3.09,4.3,3.72,66,17.79,12.12,20.41,Producer Manufacturing
+AVEX,AEVEX Corp.,10.96,13.22,"6,495,934",2.09,1.4,11.74,24,-28.78,-34.21,-27.99,Electronic Technology
+KSS,Kohl's Corporation,24.78,11.82,"8,971,301",2.13,2.8,4.55,105,9.55,39.53,35.93,Retail Trade
+GSHD,"Goosehead Insurance, Inc.",50.62,11.69,"738,703",2.03,1.8,5.45,25,10.57,-3.65,-5.28,Finance
+BRCB,"Black Rock Coffee Bar, Inc.",9.65,11.43,"639,443",1.85,0.5,5.39,3,15.43,30.58,22.00,Consumer Services
+WGO,"Winnebago Industries, Inc.",28.57,11.43,"1,807,057",1.83,0.8,4.76,23,14.74,3.55,-5.18,Consumer Durables
+SPOT,Spotify Technology S.A.,583.66,11.10,"4,736,332",3.04,120.2,3.64,937,8.69,12.16,22.88,Technology Services
+ALLE,Allegion plc,176.52,11.02,"2,097,622",2.08,15.0,2.51,197,13.25,14.97,15.94,Consumer Durables
+FLO,"Flowers Foods, Inc.",6.42,10.50,"7,186,097",1.28,1.4,3.92,47,4.39,6.12,-18.01,Consumer Non-Durables
+R,"Ryder System, Inc.",265.53,10.49,"620,117",1.99,10.2,2.62,78,10.54,10.70,-1.82,Transportation
+WCN,"Waste Connections, Inc.",184.88,9.86,"5,315,852",2.65,46.6,2.44,328,10.85,18.85,10.14,Industrial Services
+HOV,"Hovnanian Enterprises, Inc.",101.29,9.86,"192,994",1.35,0.6,5.76,12,0.89,-14.73,-23.25,Consumer Durables
+MOBI,"Mobia Medical, Inc.",10.58,9.75,"210,604",2.16,0.4,6.25,2,27.32,8.51,-2.04,Health Technology
+ROP,"Roper Technologies, Inc.",436.23,9.73,"1,977,042",2.84,43.1,2.65,382,12.67,17.63,20.35,Technology Services
+CRAI,"CRA International,Inc.",200.94,9.59,"216,888",2.08,1.3,3.23,25,12.31,22.72,33.84,Commercial Services
+RH,RH,140.15,9.48,"1,581,193",1.83,2.7,5.00,126,17.77,6.98,-16.27,Retail Trade
+MGPI,"MGP Ingredients, Inc.",16.25,9.21,"276,773",0.96,0.3,4.09,5,4.17,20.37,-8.61,Process Industries
+WDFC,WD-40 Company,210.18,9.15,"322,769",2.16,2.8,2.88,30,4.53,9.33,-9.71,Process Industries
+LEN.B,Lennar Corporation,84.13,9.03,"183,758",1.44,20.1,3.91,12,10.05,6.90,3.84,Consumer Durables
+MHK,"Mohawk Industries, Inc.",128.70,9.03,"1,632,594",1.43,7.8,3.86,149,3.53,6.67,16.62,Producer Manufacturing
+RPD,"Rapid7, Inc.",14.73,9.03,"2,138,396",1.47,1.0,6.03,26,11.59,15.10,51.70,Technology Services
+BL,"BlackLine, Inc.",34.37,8.90,"1,535,043",1.57,2.0,3.70,33,11.92,17.50,23.32,Technology Services
+AMN,AMN Healthcare Services Inc,46.82,8.86,"1,446,847",1.48,1.8,3.65,37,18.71,35.71,40.18,Commercial Services
+RHI,Robert Half Inc.,37.68,8.78,"2,912,614",1.72,3.9,4.22,69,7.53,0.03,2.39,Commercial Services
+CPB,The Campbell's Company,21.26,8.69,"9,844,356",1.29,6.3,3.36,162,6.30,5.59,-0.84,Consumer Non-Durables
+LEN,Lennar Corporation,84.45,8.69,"6,493,217",1.42,20.1,3.87,490,8.42,4.26,2.40,Consumer Durables
+TWFG,"TWFG, Inc.",28.67,8.64,"227,732",1.97,1.5,3.64,4,13.91,11.08,11.30,Finance
+WHR,Whirlpool Corporation,28.80,8.56,"4,924,820",1.41,1.9,5.53,96,1.41,-13.64,-20.02,Consumer Durables
+Z,"Zillow Group, Inc.",33.98,8.53,"6,119,147",1.12,7.7,4.46,158,8.49,7.98,14.41,Technology Services
+AVLN,Avalyn Pharma Inc.,27.25,8.52,"286,743",0.95,1.2,7.11,8,10.23,-14.68,-9.11,Health Technology
+BX,Blackstone Inc.,118.75,8.38,"11,853,045",2.05,146.5,3.68,625,7.59,-6.96,-5.15,Finance
+LAD,"Lithia Motors, Inc.",291.07,8.15,"879,940",2.11,6.4,5.63,114,-1.67,-8.84,-13.10,Retail Trade
+MHO,"M/I Homes, Inc.",123.30,8.12,"727,868",1.97,3.1,3.86,34,-2.31,-14.04,-16.30,Consumer Durables

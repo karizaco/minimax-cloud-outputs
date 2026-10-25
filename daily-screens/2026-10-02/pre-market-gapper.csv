@@ -1,0 +1,31 @@
+symbol,exchange,close,premarket_change_pct,premarket_volume,premarket_gap_pct,volume,market_cap,sector,industry
+AMOD,NASDAQ,3.49,197.44,78074895,79.49,194448822,5767826,Technology Services,Packaged Software
+NIVF,NASDAQ,0.129,60.59,190944935,32.57,303279263,290994,Finance,Financial Conglomerates
+SDEV,AMEX,7.48,36.75,20141200,23.22,153271188,189409975,Health Technology,Pharmaceuticals: Major
+SGRX,NASDAQ,1.26,27.7,7059015,25.18,17438993,1034405,Consumer Non-Durables,Food: Meat/Fish/Dairy
+XRPN,NASDAQ,39.42,23.52,163932,13.83,9304055,1245277779,Finance,Financial Conglomerates
+SCNX,NASDAQ,0.1588,18.92,111013010,-2.15,163385999,6520986,Commercial Services,Miscellaneous Commercial Services
+QTEX,NASDAQ,1.1,18.03,20952081,11.52,127437913,73782557,Health Technology,Medical Specialties
+SYNA,NASDAQ,121.1,14.65,409120,14.19,7668306,4806751323,Electronic Technology,Semiconductors
+SCKT,NASDAQ,0.7073,12.04,17014438,7.96,107717082,5864706,Electronic Technology,Computer Peripherals
+CYCU,NASDAQ,3.82,11.52,3058165,5.2,49204051,12338760,Technology Services,Information Technology Services
+TNON,NASDAQ,3.7,11.39,3109521,0,5891969,3820538,Health Services,Medical/Nursing Services
+TNMG,NASDAQ,4.76,10.84,5711935,-2.89,11230306,3620327,Technology Services,Internet Software/Services
+CYPH,NASDAQ,3.03,10.62,1215876,4.79,15381329,326526084,Finance,Financial Conglomerates
+ORBS,NASDAQ,1.16,9.73,1534392,3.54,31406302,498541787,Finance,Finance/Rental/Leasing
+SMTOF,OTC,16.57,9.6,76390,9.6,76960,52389473371,Producer Manufacturing,Auto Parts: OEM
+GOW,NASDAQ,3.87,8.72,3193795,4.03,11202189,17158670,Finance,Financial Conglomerates
+FWDI,NASDAQ,8.16,8.43,229828,3.19,3048494,622511833,Finance,Financial Conglomerates
+VERI,NASDAQ,0.7491,8.06,368624,4.75,12832373,75252392,Commercial Services,Advertising/Marketing Services
+BTCT,NASDAQ,1.15,7.41,553894,8.33,2175824,19522405,Technology Services,Data Processing Services
+NAMM,NASDAQ,1.26,6.92,628135,1.54,7425586,70374028,Non-Energy Minerals,Precious Metals
+SOC,NYSE,3.51,6.38,122542,0.3,10466953,673462228,Energy Minerals,Integrated Oil
+ZONE,AMEX,0.1316,6.07,430151,-0.16,3684806,66962062,Distribution Services,Wholesale Distributors
+BTDR,NASDAQ,11.02,6.02,358424,1.79,11436760,2995040449,Technology Services,Data Processing Services
+FPS,NYSE,40.35,6.0,205439,1.34,8780060,12283706499,Producer Manufacturing,Electrical Products
+DFDV,NASDAQ,5.25,5.94,80472,3.72,2344799,171259136,Finance,Financial Conglomerates
+ON,NASDAQ,84.89,5.84,604904,5.72,22908331,33048671524,Electronic Technology,Semiconductors
+COSM,NASDAQ,0.38,5.49,82251,3.44,2490946,38240832,Health Technology,Pharmaceuticals: Major
+RKT,NYSE,11.7,5.35,1314124,0.5,39134017,33130216262,Finance,Finance/Rental/Leasing
+CMPX,NASDAQ,0.8567,5.06,51702,1.69,20754217,154281318,Health Technology,Pharmaceuticals: Major
+AZTR,AMEX,0.132,5.06,134446,3.04,825843,7999694,Health Technology,Pharmaceuticals: Major
