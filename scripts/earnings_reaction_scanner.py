@@ -336,14 +336,22 @@ A = L.append
 A(f"# Earnings reaction scanner — {RUN_DATE}")
 A("")
 _now = datetime.datetime.now(ET)
-_offcycle = (_now.hour != 8) or (_now.isoweekday() > 5)
+_weekend = _now.isoweekday() > 5
+_offcycle = (_now.hour != 8) or _weekend
 A(f"- Cron: `0 8 * * 1-5` America/New_York (weekdays, 08:00 ET)")
 A(f"- Fire time (ET): {_now.strftime('%Y-%m-%d %H:%M:%S %a')}")
 if _offcycle:
-    A(f"- Run type: `validation_run_offcycle` — NOT a scheduled 08:00 ET weekday scan.")
-    A(f"  Markets are closed at this hour, so the extended-hours columns carry the PRIOR")
-    A(f"  session's prints. Treat every pre-market/post-market number as a historical")
-    A(f"  value, not a live gap. The scheduled weekday fire produces the live version.")
+    A(f"- Run type: `validation_run_offcycle` — the fire was NOT at the canonical 08:00 ET")
+    A(f"  weekday slot.")
+    if _weekend:
+        A(f"  It is a weekend, so US/EU/ASX cash markets are closed and the extended-hours")
+        A(f"  columns carry the PRIOR session's prints. Treat every pre-market/post-market")
+        A(f"  number as a historical value, not a live gap.")
+    else:
+        A(f"  It fired at {_now.strftime('%H:%M')} ET on a weekday. The pre-market columns are")
+        A(f"  live only if the fire was before the 09:30 ET US open; after that they are")
+        A(f"  frozen at the open. The 08:00 ET fire is the one the skill is designed for.")
+    A(f"  The scheduled weekday fire at 08:00 ET produces the live version.")
 else:
     A(f"- Run type: `scheduled_scan`")
 A(f"- Source: TradingView public screener (`scanner.tradingview.com/<market>/scan`);")
