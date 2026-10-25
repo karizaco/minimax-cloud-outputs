@@ -147,6 +147,22 @@ guidance contradicts a table with 27 rows.
 - **Restored the deleted artifacts.** All six cron #19 earnings files plus the 2026-10-18 skip
   record, recovered from git history, were re-added to `main` in commits `886a949` / `7ac925a`,
   together with the repo's `.gitignore`.
+- **Restored the other 275 files cron #12 deleted** — `daily-screens/` (109), `us-eod/` (72),
+  `international-eod/` (13), `us-stocks-in-play/` (9), `daily-briefs/` (6), `ntrt/` (6),
+  `options-flow/` (5), `refs/` (5), `macro-calendar/` (2) and the rest, in commit `d3f774e` and
+  `b3d7877`. Verified: **zero** paths that existed before the incident are missing now.
+- **Fixed the destructive push recipe across the whole fleet, not just cron #19.** All 19 other
+  cron prompts in the migration repo used the same unscoped `git add -A`. Cron #12's prompt was the
+  one that fired, but the next offender would have been any of the other 18. Every prompt now uses
+  a worktree at `origin/main` and stages only its own output directory, with an abort-if-deletion
+  guard. Commit `27ad61b`. The fix was validated end-to-end in a clean sandbox: one file added,
+  zero deletions, all directories intact.
+- **Removed the contradictory `refs/` rule from `.gitignore`.** The repo ignored `refs/` while
+  tracking five documents inside it, so any restore via `git add -A` silently skipped them — that
+  is why the first restore pass left `refs/` empty.
+- **Pinned the sandbox CA in the push recipe.** `GIT_SSL_CAINFO=/etc/ssl/certs/agent-identity/
+  sandbox-gateway-ca.crt` — without it git fails cert verification, as it did on 2026-10-14 and
+  2026-10-20.
 - **Skill audit line is malformed.** SKILL.md step 6 reads
   `earnings_reminder target=earnings:<date> watchlist_hits=<n> bigcap_hits=<n>` — the angle brackets
   were eaten by templating, so the format string is unusable as written.
