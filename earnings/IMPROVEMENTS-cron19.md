@@ -142,6 +142,26 @@ guidance contradicts a table with 27 rows.
 
 ---
 
+## Trigger layer — also edited (2026-10-25)
+
+Beyond the prompt body, the scheduler-level trigger was editable too:
+
+- **Schedule → `0 6 * * 1-5` America/New_York.** The day-of-week field now lives in the cron
+  expression, so the scheduler never fires on weekends and no weekend `SKIPPED_*.md` files are
+  produced. The in-prompt weekend branch is kept as a redundant one-line guard, and the holiday
+  gate still runs — no cron expression can express market holidays.
+- **Session mode → `new`.** The task was bound to one long-lived conversation
+  (`sessionId: 450511046144336` — the very conversation this review happened in), while all 20
+  prompts carry the line *"The cron session is fresh each time — there is no shared state."* The
+  deployment and the prompt contradicted each other, and one run's context bled into the next.
+  Now each fire starts clean, which matches what the prompt always claimed.
+- **Timezone pinned.** A `cron_update` that omits `timezone` silently adopted the caller's local
+  zone — the task briefly flipped to `Europe/Paris`, which would have fired a 06:00 ET job at
+  00:00 ET. Caught by re-reading the task; the repo README now documents the gotcha.
+- **Next fire confirmed: 2026-10-26 06:00 Mon ET.**
+
+---
+
 ## Also fixed (not counted among the ten)
 
 - **Restored the deleted artifacts.** All six cron #19 earnings files plus the 2026-10-18 skip
