@@ -1,4 +1,0 @@
-cooldown 180s for Yahoo rate-limit window ...
-TV fetch at 2026-10-26 09:58:49 ET -> 20 rows
-  spark chunk 0 FAILED -- retrying once after 30s
-  spark chunk 8 FAILED -- retrying once after 30s

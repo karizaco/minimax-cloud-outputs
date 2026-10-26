@@ -1,6 +1,0 @@
-sym,company,exchange,prev_close,pm_last,pm_gap_pct,pm_volume,pm_high,pm_low,bid,ask,up_gap_flag,down_gap_alert,source,snapshot_et
-XLAB,Exascale Labs Holdings Inc. Class A Common Stock,NASDAQ-GM,3.35,3.46,3.28,178798,$3.59 (07:49:30 AM),$3.2 (04:06:34 AM),$3.33,$3.56,0,0,nasdaq_public_api,2026-10-26 08:35:10 EDT
-MRNA,"Moderna, Inc. Common Stock",NASDAQ-GS,200.1,184.11,-7.99,865496,$195.33 (04:01:06 AM),$175.5549 (06:15:10 AM),$183.50,$183.98,0,1,nasdaq_public_api,2026-10-26 08:35:10 EDT
-KOD,Kodiak Sciences Inc Common Stock,NASDAQ-GM,87.63,88.01,0.43,2840,$88.32 (06:40:07 AM),$87.5 (07:07:36 AM),$87.50,$89.00,0,0,nasdaq_public_api,2026-10-26 08:35:10 EDT
-TJGC,TJGC Group Limited Class A Ordinary Shares,NASDAQ-CM,31.89,,,,,,$32.52,$36.06,0,0,nasdaq_public_api,2026-10-26 08:35:10 EDT
-CD,Chaince Digital Holdings Inc. Ordinary Shares,NASDAQ-GM,8.76,8.76,0.0,750,$8.76 (06:57:35 AM),$8.76 (06:57:35 AM),$8.45,$10.31,0,0,nasdaq_public_api,2026-10-26 08:35:10 EDT
