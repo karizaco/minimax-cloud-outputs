@@ -1,0 +1,8774 @@
+{
+ "_note": "Rows whose screener close/change belong to an EARLIER session (the instrument did not trade on 2026-10-26). The CSV schema is fixed at 14 columns, so this index lists them separately. last_trade = the instrument's last Yahoo trade date; confirmed = the screener volume matches Yahoo's volume for that session.",
+ "date": "2026-10-26",
+ "regions": {
+  "au": {
+   "ASX:BTR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.565",
+    "change_pct": "-15.6716"
+   },
+   "ASX:CDP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "5.35",
+    "change_pct": "0"
+   },
+   "ASX:GRX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.96",
+    "change_pct": "-4"
+   },
+   "ASX:CTM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.375",
+    "change_pct": "-2.5974"
+   },
+   "ASX:CY5": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.16",
+    "change_pct": "-3.0303"
+   },
+   "ASX:CVC": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "1.695",
+    "change_pct": "0"
+   },
+   "ASX:WRK": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.084",
+    "change_pct": "-3.4483"
+   },
+   "ASX:APW": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "3.91",
+    "change_pct": "0"
+   },
+   "ASX:PRG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.38",
+    "change_pct": "-1.4286"
+   },
+   "ASX:ACS": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.21",
+    "change_pct": "5"
+   },
+   "ASX:SEG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.28",
+    "change_pct": "0"
+   },
+   "ASX:TOT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.39",
+    "change_pct": "-3.7037"
+   },
+   "ASX:3PL": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.315",
+    "change_pct": "0"
+   },
+   "ASX:MDX": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "2.9412"
+   },
+   "ASX:ARA": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.43",
+    "change_pct": "0"
+   },
+   "ASX:AT4": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.043",
+    "change_pct": "4.878"
+   },
+   "ASX:LM8": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.32",
+    "change_pct": "-3.0303"
+   },
+   "ASX:IOV": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.395",
+    "change_pct": "-1.25"
+   },
+   "ASX:NDO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "4.5455"
+   },
+   "ASX:UBN": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.65",
+    "change_pct": "0"
+   },
+   "ASX:TPC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "4.18",
+    "change_pct": "6.9054"
+   },
+   "ASX:WTL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.145",
+    "change_pct": "-3.3333"
+   },
+   "ASX:HIT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.05",
+    "change_pct": "-3.2258"
+   },
+   "ASX:EV8": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.36",
+    "change_pct": "-5.2632"
+   },
+   "ASX:CYC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.375",
+    "change_pct": "4.1667"
+   },
+   "ASX:AUZ": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.1",
+    "change_pct": "-4.7619"
+   },
+   "ASX:WWG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.255",
+    "change_pct": "0"
+   },
+   "ASX:CCG": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.08",
+    "change_pct": "0"
+   },
+   "ASX:WAG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.59",
+    "change_pct": "-1.6667"
+   },
+   "ASX:ASH": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.285",
+    "change_pct": "1.7857"
+   },
+   "ASX:SIX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.057",
+    "change_pct": "3.6364"
+   },
+   "ASX:CC5": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.018",
+    "change_pct": "-5.2632"
+   },
+   "ASX:LCY": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.004",
+    "change_pct": "0"
+   },
+   "ASX:RHT": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.082",
+    "change_pct": "6.4935"
+   },
+   "ASX:SFM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "-8"
+   },
+   "ASX:TCO": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "2.78",
+    "change_pct": "0.361"
+   },
+   "ASX:NTD": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.22",
+    "change_pct": "0"
+   },
+   "ASX:FMN": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.12",
+    "change_pct": "0"
+   },
+   "ASX:S2R": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.061",
+    "change_pct": "-3.1746"
+   },
+   "ASX:SPA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.079",
+    "change_pct": "1.2821"
+   },
+   "ASX:NC6": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.077",
+    "change_pct": "1.3158"
+   },
+   "ASX:A3D": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.059",
+    "change_pct": "3.5088"
+   },
+   "ASX:ODE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.016",
+    "change_pct": "-5.8824"
+   },
+   "ASX:AMX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.315",
+    "change_pct": "-1.5625"
+   },
+   "ASX:VMT": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.074",
+    "change_pct": "-1.3333"
+   },
+   "ASX:LCE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.9",
+    "change_pct": "5.8824"
+   },
+   "ASX:ZAG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.028",
+    "change_pct": "-9.6774"
+   },
+   "ASX:CG1": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.067",
+    "change_pct": "-2.8986"
+   },
+   "ASX:GUM": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.09",
+    "change_pct": "0"
+   },
+   "ASX:DYM": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.55",
+    "change_pct": "0"
+   },
+   "ASX:FRX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.019",
+    "change_pct": "0"
+   },
+   "ASX:VHL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.012",
+    "change_pct": "0"
+   },
+   "ASX:NRL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.013",
+    "change_pct": "8.3333"
+   },
+   "ASX:AMK": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.2",
+    "change_pct": "0"
+   },
+   "ASX:STP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.14",
+    "change_pct": "-3.4483"
+   },
+   "ASX:SDV": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.135",
+    "change_pct": "0"
+   },
+   "ASX:HTM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.24",
+    "change_pct": "-4"
+   },
+   "ASX:HAW": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.073",
+    "change_pct": "2.8169"
+   },
+   "ASX:AXN": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.029",
+    "change_pct": "-3.3333"
+   },
+   "ASX:GAP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.083",
+    "change_pct": "0"
+   },
+   "ASX:PVL": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.14",
+    "change_pct": "3.7037"
+   },
+   "ASX:LEG": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.008",
+    "change_pct": "0"
+   },
+   "ASX:MNE": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.16",
+    "change_pct": "-13.5135"
+   },
+   "ASX:STH": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.13",
+    "change_pct": "0"
+   },
+   "ASX:AAP": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.057",
+    "change_pct": "1.7857"
+   },
+   "ASX:GGR": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "15.3846"
+   },
+   "ASX:MCP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.145",
+    "change_pct": "2.1127"
+   },
+   "ASX:BSR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.305",
+    "change_pct": "1.6667"
+   },
+   "ASX:ACP": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.022",
+    "change_pct": "-15.3846"
+   },
+   "ASX:SWP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.062",
+    "change_pct": "-6.0606"
+   },
+   "ASX:S66": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.14",
+    "change_pct": "0"
+   },
+   "ASX:VMS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "0"
+   },
+   "ASX:LPE": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "6.383"
+   },
+   "ASX:USC": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.018",
+    "change_pct": "0"
+   },
+   "ASX:EME": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.084",
+    "change_pct": "-1.1765"
+   },
+   "ASX:BTE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "-8.1633"
+   },
+   "ASX:PR1": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.245",
+    "change_pct": "19.5122"
+   },
+   "ASX:APL": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.295",
+    "change_pct": "1.7241"
+   },
+   "ASX:IME": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.32",
+    "change_pct": "6.6667"
+   },
+   "ASX:ELK": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.135",
+    "change_pct": "-3.5714"
+   },
+   "ASX:CXZ": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.024",
+    "change_pct": "0"
+   },
+   "ASX:AUR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.013",
+    "change_pct": "-7.1429"
+   },
+   "ASX:CMD": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.017",
+    "change_pct": "21.4286"
+   },
+   "ASX:MEM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "ASX:TSL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.006",
+    "change_pct": "0"
+   },
+   "ASX:XRA": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.25",
+    "change_pct": "-10.7143"
+   },
+   "ASX:BPP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "0"
+   },
+   "ASX:RMY": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.021",
+    "change_pct": "5"
+   },
+   "ASX:AQX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.006",
+    "change_pct": "0"
+   },
+   "ASX:EPX": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.16",
+    "change_pct": "-3.0303"
+   },
+   "ASX:GUL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.063",
+    "change_pct": "-4.5455"
+   },
+   "ASX:HCL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.096",
+    "change_pct": "-4"
+   },
+   "ASX:EGA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "11.1111"
+   },
+   "ASX:MFD": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.125",
+    "change_pct": "0"
+   },
+   "ASX:AU1": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "0"
+   },
+   "ASX:AFL": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.14",
+    "change_pct": "-9.6774"
+   },
+   "ASX:IMC": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "ASX:AKG": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "0"
+   },
+   "ASX:KAM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.052",
+    "change_pct": "-3.7037"
+   },
+   "ASX:BNL": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.13",
+    "change_pct": "30"
+   },
+   "ASX:TLM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.052",
+    "change_pct": "-1.8868"
+   },
+   "ASX:CYB": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.058",
+    "change_pct": "0"
+   },
+   "ASX:RLG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "ASX:DWG": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.105",
+    "change_pct": "-8.6957"
+   },
+   "ASX:ATV": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.008",
+    "change_pct": "0"
+   },
+   "ASX:OLY": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.046",
+    "change_pct": "2.2222"
+   },
+   "ASX:BEO": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "0"
+   },
+   "ASX:ROG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.001",
+    "change_pct": "0"
+   },
+   "ASX:SKN": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.003",
+    "change_pct": "50"
+   },
+   "ASX:AXL": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.059",
+    "change_pct": "0"
+   },
+   "ASX:IGN": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.625",
+    "change_pct": "7.7586"
+   },
+   "ASX:RRE": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.071",
+    "change_pct": "-12.3457"
+   },
+   "ASX:UWC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "-3.8462"
+   },
+   "ASX:ODA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.054",
+    "change_pct": "-3.5714"
+   },
+   "ASX:RC1": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.075",
+    "change_pct": "0"
+   },
+   "ASX:MCO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.016",
+    "change_pct": "0"
+   },
+   "ASX:FOS": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.12",
+    "change_pct": "0"
+   },
+   "ASX:CC9": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.039",
+    "change_pct": "-2.5"
+   },
+   "ASX:1AD": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.003",
+    "change_pct": "0"
+   },
+   "ASX:FUL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "0"
+   },
+   "ASX:MEX": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.048",
+    "change_pct": "9.0909"
+   },
+   "ASX:JCS": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.026",
+    "change_pct": "0"
+   },
+   "ASX:EG1": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.021",
+    "change_pct": "5"
+   },
+   "ASX:ERE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.013",
+    "change_pct": "-13.3333"
+   },
+   "ASX:SIS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.004",
+    "change_pct": "0"
+   },
+   "ASX:TNY": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.048",
+    "change_pct": "-7.6923"
+   },
+   "ASX:OLL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.011",
+    "change_pct": "-8.3333"
+   },
+   "ASX:SHE": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.012",
+    "change_pct": "-7.6923"
+   },
+   "ASX:SCN": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "-6.25"
+   },
+   "ASX:CTQ": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.011",
+    "change_pct": "-15.3846"
+   },
+   "ASX:SP8": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.006",
+    "change_pct": "0"
+   },
+   "ASX:MDI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.008",
+    "change_pct": "-20"
+   },
+   "ASX:AD1": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.019",
+    "change_pct": "5.5556"
+   },
+   "ASX:8CO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "-10.2564"
+   },
+   "ASX:GES": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "-9.0909"
+   },
+   "ASX:SEQ": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.062",
+    "change_pct": "1.6393"
+   },
+   "ASX:AUG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.028",
+    "change_pct": "0"
+   },
+   "ASX:KFM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.072",
+    "change_pct": "0"
+   },
+   "ASX:ICL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.017",
+    "change_pct": "-5.5556"
+   },
+   "ASX:RAG": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "0"
+   },
+   "ASX:AIV": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.023",
+    "change_pct": "0"
+   },
+   "ASX:MRQ": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.002",
+    "change_pct": "0"
+   },
+   "ASX:OMG": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.006",
+    "change_pct": "0"
+   },
+   "ASX:NSM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.018",
+    "change_pct": "-18.1818"
+   },
+   "ASX:R8R": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.09",
+    "change_pct": "11.1111"
+   },
+   "ASX:RCL": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "9.7561"
+   },
+   "ASX:PKD": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "-13.0435"
+   },
+   "ASX:AVD": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.08",
+    "change_pct": "0"
+   },
+   "ASX:HMI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.032",
+    "change_pct": "0"
+   },
+   "ASX:IRD": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.008",
+    "change_pct": "0"
+   },
+   "ASX:T88": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.054",
+    "change_pct": "-8.4746"
+   },
+   "ASX:MEG": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.009",
+    "change_pct": "12.5"
+   },
+   "ASX:BIM": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.071",
+    "change_pct": "5.9701"
+   },
+   "ASX:QXR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.003",
+    "change_pct": "0"
+   },
+   "ASX:WYX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.037",
+    "change_pct": "0"
+   },
+   "ASX:NGX": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "0"
+   },
+   "ASX:TON": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.004",
+    "change_pct": "-20"
+   },
+   "ASX:RCR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.012",
+    "change_pct": "0"
+   },
+   "ASX:CGR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.054",
+    "change_pct": "3.8462"
+   },
+   "ASX:HT8": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.016",
+    "change_pct": "0"
+   },
+   "ASX:RB6": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.097",
+    "change_pct": "-22.4"
+   },
+   "ASX:HE8": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.001",
+    "change_pct": "0"
+   },
+   "ASX:PFT": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.017",
+    "change_pct": "-26.087"
+   },
+   "ASX:BUS": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.083",
+    "change_pct": "1.2195"
+   },
+   "ASX:1TT": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.001",
+    "change_pct": "0"
+   },
+   "ASX:ENT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.003",
+    "change_pct": "0"
+   },
+   "ASX:TSK": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "-3.8462"
+   },
+   "ASX:AER": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.071",
+    "change_pct": "1.4286"
+   },
+   "ASX:ENV": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.002",
+    "change_pct": "100"
+   },
+   "ASX:PRO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.067",
+    "change_pct": "-4.2857"
+   },
+   "ASX:SRK": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.019",
+    "change_pct": "0"
+   },
+   "ASX:CCO": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.001",
+    "change_pct": "0"
+   },
+   "ASX:SOC": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.038",
+    "change_pct": "-5"
+   },
+   "ASX:T92": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "0"
+   },
+   "ASX:HFY": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "11.1111"
+   },
+   "ASX:C29": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.023",
+    "change_pct": "-4.1667"
+   },
+   "ASX:IFG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.008",
+    "change_pct": "-11.1111"
+   },
+   "ASX:AUA": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.024",
+    "change_pct": "-7.6923"
+   },
+   "ASX:OM1": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.012",
+    "change_pct": "-7.6923"
+   },
+   "ASX:NPM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.008",
+    "change_pct": "14.2857"
+   },
+   "ASX:WNX": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.066",
+    "change_pct": "-4.3478"
+   },
+   "ASX:ABE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.029",
+    "change_pct": "0"
+   },
+   "ASX:KNO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.022",
+    "change_pct": "4.7619"
+   },
+   "ASX:OB1": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.008",
+    "change_pct": "-20"
+   },
+   "ASX:DM1": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.007",
+    "change_pct": "16.6667"
+   },
+   "ASX:ABR": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.003",
+    "change_pct": "0"
+   },
+   "ASX:ZMM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.004",
+    "change_pct": "33.3333"
+   },
+   "ASX:NME": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.013",
+    "change_pct": "0"
+   },
+   "ASX:JNO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.021",
+    "change_pct": "-8.6957"
+   },
+   "ASX:QEM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.012",
+    "change_pct": "0"
+   },
+   "ASX:AXI": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.008",
+    "change_pct": "0"
+   },
+   "ASX:HYD": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.003",
+    "change_pct": "0"
+   },
+   "ASX:SRH": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "0"
+   },
+   "ASX:MOH": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.004",
+    "change_pct": "0"
+   },
+   "ASX:TML": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.047",
+    "change_pct": "0"
+   },
+   "ASX:CUL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.006",
+    "change_pct": "0"
+   },
+   "ASX:WSR": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "ASX:IBX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "ASX:RDS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.003",
+    "change_pct": "50"
+   },
+   "ASX:KNG": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.042",
+    "change_pct": "0"
+   },
+   "ASX:MMR": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.002",
+    "change_pct": "0"
+   },
+   "ASX:SP3": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.009",
+    "change_pct": "12.5"
+   },
+   "ASX:CT1": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.002",
+    "change_pct": "-33.3333"
+   },
+   "ASX:AYM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.002",
+    "change_pct": "100"
+   },
+   "ASX:PXR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.001",
+    "change_pct": "0"
+   },
+   "ASX:GLH": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "0"
+   },
+   "ASX:INF": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.005",
+    "change_pct": "-16.6667"
+   },
+   "ASX:HAL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.012",
+    "change_pct": "-7.6923"
+   },
+   "ASX:IMI": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.006",
+    "change_pct": "0"
+   },
+   "ASX:DAF": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.013",
+    "change_pct": "0"
+   },
+   "ASX:BPH": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.002",
+    "change_pct": "-33.3333"
+   },
+   "ASX:TSR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.016",
+    "change_pct": "-33.3333"
+   },
+   "ASX:RAS": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.017",
+    "change_pct": "0"
+   },
+   "ASX:VFX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.037",
+    "change_pct": "0"
+   },
+   "ASX:MGT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.014",
+    "change_pct": "7.6923"
+   },
+   "ASX:RBX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.023",
+    "change_pct": "-8"
+   },
+   "ASX:PBL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "-18.0328"
+   },
+   "ASX:RPM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.011",
+    "change_pct": "-8.3333"
+   },
+   "ASX:ANR": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.009",
+    "change_pct": "0"
+   },
+   "ASX:OSX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.004",
+    "change_pct": "0"
+   },
+   "ASX:BTN": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.007",
+    "change_pct": "0"
+   },
+   "ASX:OAK": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.08",
+    "change_pct": "0"
+   },
+   "ASX:VEN": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.001",
+    "change_pct": "0"
+   },
+   "ASX:LRD": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.013",
+    "change_pct": "-7.1429"
+   },
+   "ASX:RBR": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "7.1429"
+   },
+   "ASX:NX1": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.009",
+    "change_pct": "-40"
+   },
+   "ASX:CYQ": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.004",
+    "change_pct": "0"
+   },
+   "ASX:ATT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.004",
+    "change_pct": "0"
+   },
+   "ASX:RLC": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.002",
+    "change_pct": "0"
+   },
+   "ASX:AXP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.004",
+    "change_pct": "-20"
+   },
+   "ASX:VTA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.018",
+    "change_pct": "-18.1818"
+   },
+   "ASX:HPC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.002",
+    "change_pct": "-33.3333"
+   },
+   "ASX:BGE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.005",
+    "change_pct": "-28.5714"
+   },
+   "ASX:MNV": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.96",
+    "change_pct": "0"
+   },
+   "ASX:NHU": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "0"
+   }
+  },
+  "jp": {
+   "TSE:4365": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "23780",
+    "change_pct": "-3.7247"
+   },
+   "TSE:8301": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "20400",
+    "change_pct": "0"
+   },
+   "TSE:8030": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "3725",
+    "change_pct": "-0.134"
+   },
+   "TSE:1787": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "5500",
+    "change_pct": "0"
+   },
+   "TSE:3954": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "3010",
+    "change_pct": "-3.0596"
+   },
+   "TSE:7565": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "6850",
+    "change_pct": "-2.1429"
+   },
+   "TSE:4769": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1099",
+    "change_pct": "0"
+   },
+   "TSE:1897": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "3430",
+    "change_pct": "0.2924"
+   },
+   "TSE:5189": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "3380",
+    "change_pct": "0.4458"
+   },
+   "TSE:6408": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "4245",
+    "change_pct": "-1.2791"
+   },
+   "TSE:9976": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1080",
+    "change_pct": "1.1236"
+   },
+   "TSE:3426": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1308",
+    "change_pct": "0.3067"
+   },
+   "TSE:9361": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "2000",
+    "change_pct": "0"
+   },
+   "TSE:6396": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "4435",
+    "change_pct": "-2.7412"
+   },
+   "TSE:7808": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "2628",
+    "change_pct": "-0.2657"
+   },
+   "TSE:9362": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "3910",
+    "change_pct": "-1.6352"
+   },
+   "TSE:3317": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1508",
+    "change_pct": "-0.0663"
+   },
+   "TSE:5997": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "860",
+    "change_pct": "-0.8074"
+   },
+   "TSE:2747": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "3200",
+    "change_pct": "0"
+   },
+   "TSE:7446": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "4400",
+    "change_pct": "0"
+   },
+   "TSE:8138": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "4030",
+    "change_pct": "0"
+   },
+   "TSE:7501": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1404",
+    "change_pct": "-1.1268"
+   },
+   "TSE:4102": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1435",
+    "change_pct": "-1.0345"
+   },
+   "TSE:3944": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "2900",
+    "change_pct": "0"
+   },
+   "TSE:9012": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "2090",
+    "change_pct": "-0.1433"
+   },
+   "TSE:5987": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "1660",
+    "change_pct": "0.5451"
+   },
+   "TSE:5580": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1632",
+    "change_pct": "-0.1835"
+   },
+   "TSE:7863": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "926",
+    "change_pct": "0"
+   },
+   "TSE:9242": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1921",
+    "change_pct": "0.0521"
+   },
+   "NAG:3670": {
+    "last_trade": "2026-09-30",
+    "confirmed": false,
+    "close": "1580",
+    "change_pct": "0.5729"
+   },
+   "TSE:9214": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1253",
+    "change_pct": "-0.7132"
+   },
+   "TSE:522A": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "2970",
+    "change_pct": "-1.6556"
+   },
+   "NAG:9914": {
+    "last_trade": "2026-09-18",
+    "confirmed": false,
+    "close": "763",
+    "change_pct": "-0.1309"
+   },
+   "TSE:271A": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1500",
+    "change_pct": "0"
+   },
+   "TSE:647A": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "500",
+    "change_pct": ""
+   },
+   "FSE:6147": {
+    "last_trade": "2026-09-30",
+    "confirmed": false,
+    "close": "198",
+    "change_pct": "-1"
+   },
+   "NAG:7946": {
+    "last_trade": "2026-09-30",
+    "confirmed": false,
+    "close": "344",
+    "change_pct": "-1.9943"
+   },
+   "TSE:649A": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "4200",
+    "change_pct": ""
+   },
+   "FSE:7851": {
+    "last_trade": "2026-09-30",
+    "confirmed": false,
+    "close": "201",
+    "change_pct": "-2.4272"
+   },
+   "FSE:7985": {
+    "last_trade": "2026-09-30",
+    "confirmed": false,
+    "close": "770",
+    "change_pct": "-1.9108"
+   },
+   "TSE:9243": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "520",
+    "change_pct": "8.3333"
+   }
+  },
+  "ca": {
+   "TSX:WFC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "22",
+    "change_pct": "0"
+   },
+   "NEO:TTS": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "2.8",
+    "change_pct": "-5.7239"
+   },
+   "NEO:REG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "4.73",
+    "change_pct": "-0.4211"
+   },
+   "NEO:PCU": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.83",
+    "change_pct": "0"
+   },
+   "NEO:LA": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "12.25",
+    "change_pct": "-5.7692"
+   },
+   "NEO:CUU": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.6",
+    "change_pct": "1.6949"
+   },
+   "TSX:MPC": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "4.8",
+    "change_pct": "0"
+   },
+   "NEO:MOG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.455",
+    "change_pct": "0"
+   },
+   "TSXV:SFR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.25",
+    "change_pct": "0"
+   },
+   "NEO:EOG": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.78",
+    "change_pct": "1.2987"
+   },
+   "NEO:WSTR": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "6.21",
+    "change_pct": "-1.4286"
+   },
+   "NEO:BMM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "4.24",
+    "change_pct": "-8.026"
+   },
+   "TSXV:PPX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "0"
+   },
+   "TSX:GDC": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "3.51",
+    "change_pct": "0"
+   },
+   "NEO:GG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "2.74",
+    "change_pct": "-0.3636"
+   },
+   "NEO:AE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.97",
+    "change_pct": "-2.0202"
+   },
+   "NEO:MKA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.48",
+    "change_pct": "-11.1111"
+   },
+   "NEO:WI": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "1.12",
+    "change_pct": "3.7037"
+   },
+   "NEO:KTO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.74",
+    "change_pct": "-13.9535"
+   },
+   "NEO:AURO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.37",
+    "change_pct": "2.2388"
+   },
+   "NEO:NRC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.16",
+    "change_pct": "-1.6949"
+   },
+   "NEO:LTC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "4.42",
+    "change_pct": "3.7559"
+   },
+   "NEO:KLD": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "2.15",
+    "change_pct": "-1.8265"
+   },
+   "NEO:DE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "7.91",
+    "change_pct": "-0.2522"
+   },
+   "NEO:FEO": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.6",
+    "change_pct": "-3.2258"
+   },
+   "NEO:FTZ": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.5",
+    "change_pct": "-7.4074"
+   },
+   "NEO:GPH": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.74",
+    "change_pct": "-6.3291"
+   },
+   "NEO:TDG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.53",
+    "change_pct": "1.9231"
+   },
+   "NEO:CTH": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "1.2",
+    "change_pct": "0"
+   },
+   "TSX:FLNT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.33",
+    "change_pct": "0"
+   },
+   "NEO:EVR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "2.83",
+    "change_pct": "5.2045"
+   },
+   "NEO:GHRT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.61",
+    "change_pct": "1.6667"
+   },
+   "NEO:EBM": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "1.78",
+    "change_pct": "-7.2917"
+   },
+   "TSXV:BILD": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "2.58",
+    "change_pct": "0"
+   },
+   "NEO:AGC": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.33",
+    "change_pct": "-2.9412"
+   },
+   "TSXV:SGQ": {
+    "last_trade": "2026-10-07",
+    "confirmed": true,
+    "close": "0.32",
+    "change_pct": "0"
+   },
+   "NEO:COV": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "4.24",
+    "change_pct": "4.6914"
+   },
+   "NEO:CCI": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.52",
+    "change_pct": "-7.1429"
+   },
+   "NEO:NSE": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.69",
+    "change_pct": "-1.4286"
+   },
+   "TSXV:PKT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "8",
+    "change_pct": "-0.1248"
+   },
+   "NEO:HI": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "-3.2258"
+   },
+   "TSXV:RET": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "2.2",
+    "change_pct": "0"
+   },
+   "NEO:INTR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.8",
+    "change_pct": "-6.9767"
+   },
+   "TSXV:AFE": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.19",
+    "change_pct": "0"
+   },
+   "NEO:OMI": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.235",
+    "change_pct": "-9.6154"
+   },
+   "NEO:FL": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.38",
+    "change_pct": "-2.5641"
+   },
+   "NEO:SANU": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.26",
+    "change_pct": "-7.1429"
+   },
+   "NEO:HAM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "6.12",
+    "change_pct": "3.7288"
+   },
+   "NEO:ARGH": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.305",
+    "change_pct": "3.3898"
+   },
+   "NEO:LCU": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "5.69",
+    "change_pct": "-38.8172"
+   },
+   "NEO:SERV": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "3.1",
+    "change_pct": "0.9772"
+   },
+   "NEO:ARIC": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.65",
+    "change_pct": "-2.9851"
+   },
+   "NEO:YGT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.175",
+    "change_pct": "-2.7778"
+   },
+   "NEO:BRO": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.265",
+    "change_pct": "-7.0175"
+   },
+   "NEO:CANX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.365",
+    "change_pct": "1.3889"
+   },
+   "NEO:BLLG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.5",
+    "change_pct": "-12.2807"
+   },
+   "NEO:LTH": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.435",
+    "change_pct": "-1.1364"
+   },
+   "NEO:IRR": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "1.17",
+    "change_pct": "-2.5"
+   },
+   "NEO:JPEG": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.01",
+    "change_pct": "100"
+   },
+   "NEO:SGLD": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.255",
+    "change_pct": "4.0816"
+   },
+   "NEO:FMAN": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.305",
+    "change_pct": "10.9091"
+   },
+   "NEO:NCAU": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.27",
+    "change_pct": "-3.5714"
+   },
+   "NEO:BKM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "4.1",
+    "change_pct": "0.2445"
+   },
+   "NEO:IPT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "0"
+   },
+   "NEO:SRL": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.325",
+    "change_pct": "-9.7222"
+   },
+   "NEO:AUUA": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "3.26",
+    "change_pct": "0.3077"
+   },
+   "NEO:AZS": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.51",
+    "change_pct": "0"
+   },
+   "NEO:RCK": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.61",
+    "change_pct": "-18.6667"
+   },
+   "NEO:EDG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.405",
+    "change_pct": "1.25"
+   },
+   "NEO:CCCM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.63",
+    "change_pct": "-3.0769"
+   },
+   "NEO:NWST": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.25",
+    "change_pct": "-13.7931"
+   },
+   "TSXV:MSR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.435",
+    "change_pct": "-13"
+   },
+   "NEO:TNR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.295",
+    "change_pct": "-6.3492"
+   },
+   "NEO:AUOZ": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.38",
+    "change_pct": "2.7027"
+   },
+   "NEO:YARR": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.135",
+    "change_pct": "-3.5714"
+   },
+   "NEO:BEW": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.7",
+    "change_pct": "0"
+   },
+   "NEO:AZT": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.375",
+    "change_pct": "1.3514"
+   },
+   "NEO:KC": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.39",
+    "change_pct": "-2.5"
+   },
+   "NEO:DB": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "1.8",
+    "change_pct": "11.8012"
+   },
+   "NEO:KDK": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.61",
+    "change_pct": "-4.6875"
+   },
+   "NEO:MMET": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.62",
+    "change_pct": "-18.4211"
+   },
+   "NEO:ABI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "-8.3333"
+   },
+   "NEO:JEV": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.215",
+    "change_pct": "-2.2727"
+   },
+   "NEO:ARS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.25",
+    "change_pct": "-1.9608"
+   },
+   "NEO:OYL": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.2",
+    "change_pct": "0"
+   },
+   "NEO:CRE": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.285",
+    "change_pct": "-5"
+   },
+   "NEO:NDA": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.52",
+    "change_pct": "7.2165"
+   },
+   "TSX:SYZ": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "2.85",
+    "change_pct": "0"
+   },
+   "NEO:OGW": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "1.25",
+    "change_pct": "-6.015"
+   },
+   "NEO:ROS": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.155",
+    "change_pct": "0"
+   },
+   "NEO:ALTA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.22",
+    "change_pct": "2.3256"
+   },
+   "NEO:NKG": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.66",
+    "change_pct": "-15.3846"
+   },
+   "NEO:TLT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.24",
+    "change_pct": "11.6279"
+   },
+   "NEO:VMXX": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.43",
+    "change_pct": "2.381"
+   },
+   "NEO:ZIGY": {
+    "last_trade": "2026-10-13",
+    "confirmed": false,
+    "close": "1.5",
+    "change_pct": "-24.2424"
+   },
+   "NEO:LEEF": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.225",
+    "change_pct": "2.2727"
+   },
+   "NEO:NVRO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.12",
+    "change_pct": "-4"
+   },
+   "NEO:LITH": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.285",
+    "change_pct": "1.7857"
+   },
+   "NEO:VEXT": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.255",
+    "change_pct": "-10.5263"
+   },
+   "NEO:PSIL": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.81",
+    "change_pct": "-1.2195"
+   },
+   "NEO:ARCH": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.87",
+    "change_pct": "8.75"
+   },
+   "NEO:BLO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.45",
+    "change_pct": "15.3846"
+   },
+   "NEO:OTC": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.4",
+    "change_pct": "-2.439"
+   },
+   "TSX:ICE": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "4.4",
+    "change_pct": "0"
+   },
+   "NEO:GSP": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.125",
+    "change_pct": "0"
+   },
+   "NEO:ZNX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.28",
+    "change_pct": "-5.0847"
+   },
+   "TSXV:WOLF": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.65",
+    "change_pct": "0"
+   },
+   "NEO:PEAK": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.34",
+    "change_pct": "-8.1081"
+   },
+   "NEO:HPQ": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.12",
+    "change_pct": "0"
+   },
+   "NEO:VML": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.46",
+    "change_pct": "-13.2075"
+   },
+   "NEO:ISTK": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.465",
+    "change_pct": "-5.102"
+   },
+   "NEO:OGO": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.33",
+    "change_pct": "-28.2609"
+   },
+   "NEO:TIG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.74",
+    "change_pct": "-5.1282"
+   },
+   "NEO:IVS": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.24",
+    "change_pct": "-5.8824"
+   },
+   "NEO:WAM": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.56",
+    "change_pct": "12"
+   },
+   "NEO:GFG": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.18",
+    "change_pct": "9.0909"
+   },
+   "NEO:SRR": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "1.07",
+    "change_pct": "-2.7273"
+   },
+   "NEO:ZAU": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.345",
+    "change_pct": "9.5238"
+   },
+   "NEO:ATLE": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.13",
+    "change_pct": "13.0435"
+   },
+   "NEO:HWG": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.61",
+    "change_pct": "-3.1746"
+   },
+   "NEO:GPG": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.28",
+    "change_pct": "3.7037"
+   },
+   "CSE:BUX": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.47",
+    "change_pct": "0"
+   },
+   "TSXV:EK": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.67",
+    "change_pct": "3.0769"
+   },
+   "NEO:AUAU": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.415",
+    "change_pct": "-8.7912"
+   },
+   "TSX:GVC": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.37",
+    "change_pct": "0"
+   },
+   "NEO:GRDM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.21",
+    "change_pct": "-6.6667"
+   },
+   "NEO:BBB": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.57",
+    "change_pct": "-5"
+   },
+   "NEO:ARO": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.88",
+    "change_pct": "-16.1905"
+   },
+   "NEO:TK": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.365",
+    "change_pct": "-8.75"
+   },
+   "TSX:AIAI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.52",
+    "change_pct": "0"
+   },
+   "NEO:AIDR": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.46",
+    "change_pct": "-4.1667"
+   },
+   "NEO:GTCH": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.24",
+    "change_pct": "-7.6923"
+   },
+   "NEO:M": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.345",
+    "change_pct": "-8"
+   },
+   "NEO:MHUB": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.495",
+    "change_pct": "35.6164"
+   },
+   "NEO:DLP": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.31",
+    "change_pct": "-8.8235"
+   },
+   "NEO:BPAG": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.78",
+    "change_pct": "-8.2353"
+   },
+   "TSXV:GUN": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.77",
+    "change_pct": "0"
+   },
+   "NEO:LEM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.16",
+    "change_pct": "-11.1111"
+   },
+   "NEO:CYBT": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.215",
+    "change_pct": "13.1579"
+   },
+   "NEO:BLM": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.81",
+    "change_pct": "-1.2195"
+   },
+   "NEO:PHNM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.34",
+    "change_pct": "-1.4493"
+   },
+   "NEO:SAG": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.91",
+    "change_pct": "-28.3465"
+   },
+   "NEO:CCMM": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.51",
+    "change_pct": "34.2105"
+   },
+   "NEO:FOMO": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.265",
+    "change_pct": "-7.0175"
+   },
+   "NEO:ADK": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.37",
+    "change_pct": "-2.6316"
+   },
+   "NEO:NHHH": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "-7.6923"
+   },
+   "NEO:NMC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.53",
+    "change_pct": "-13.1148"
+   },
+   "NEO:GLB": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "31.4286"
+   },
+   "NEO:MPH": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "4.4",
+    "change_pct": "0.2278"
+   },
+   "NEO:FOR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.63",
+    "change_pct": "0"
+   },
+   "TSXV:VITA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.65",
+    "change_pct": "0"
+   },
+   "NEO:DAU": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.13",
+    "change_pct": "4"
+   },
+   "NEO:KCC": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "1.07",
+    "change_pct": "13.8298"
+   },
+   "NEO:MD": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.34",
+    "change_pct": "0"
+   },
+   "NEO:SEAS": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "1",
+    "change_pct": "11.1111"
+   },
+   "TSXV:RME": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.27",
+    "change_pct": "0"
+   },
+   "NEO:XX": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "1.72",
+    "change_pct": "22.8571"
+   },
+   "TSXV:RK": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.145",
+    "change_pct": "0"
+   },
+   "NEO:WG": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.18",
+    "change_pct": "-5.2632"
+   },
+   "NEO:VUL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.335",
+    "change_pct": "-6.9444"
+   },
+   "NEO:EDM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.53",
+    "change_pct": "-8.6207"
+   },
+   "NEO:CEC": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.36",
+    "change_pct": "-10"
+   },
+   "NEO:AEP": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.57",
+    "change_pct": "1.7857"
+   },
+   "NEO:VRDN": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.77",
+    "change_pct": "10"
+   },
+   "NEO:TAJ": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.14",
+    "change_pct": "-15.1515"
+   },
+   "NEO:FMS": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.4",
+    "change_pct": "2.5641"
+   },
+   "NEO:MSM": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.6",
+    "change_pct": "-17.8082"
+   },
+   "NEO:VAU": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.19",
+    "change_pct": "0"
+   },
+   "NEO:HRNY": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.9",
+    "change_pct": "2.2727"
+   },
+   "NEO:ESK": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.215",
+    "change_pct": "7.5"
+   },
+   "NEO:DEFN": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.095",
+    "change_pct": "-5"
+   },
+   "NEO:CGD": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.34",
+    "change_pct": "-2.8986"
+   },
+   "NEO:CCDS": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "1.45",
+    "change_pct": "-3.3333"
+   },
+   "NEO:CD": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "-17.8571"
+   },
+   "NEO:VLTA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.265",
+    "change_pct": "3.9216"
+   },
+   "NEO:SEVA": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.3",
+    "change_pct": "-24.0506"
+   },
+   "NEO:LCE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.21",
+    "change_pct": "-2.3256"
+   },
+   "NEO:NLH": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.44",
+    "change_pct": "-16.9811"
+   },
+   "NEO:ZOMD": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.39",
+    "change_pct": "4"
+   },
+   "TSXV:OCI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "-3.2258"
+   },
+   "NEO:YMC": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.28",
+    "change_pct": "-21.1268"
+   },
+   "NEO:SWAN": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.79",
+    "change_pct": "-4.8193"
+   },
+   "NEO:SPOT": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.275",
+    "change_pct": "-1.7857"
+   },
+   "NEO:QGR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.185",
+    "change_pct": "-5.1282"
+   },
+   "NEO:DTEA": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "1.19",
+    "change_pct": "-1.6529"
+   },
+   "NEO:SME": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.17",
+    "change_pct": "6.25"
+   },
+   "NEO:NMI": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.155",
+    "change_pct": "-6.0606"
+   },
+   "NEO:QESS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.255",
+    "change_pct": "-8.9286"
+   },
+   "NEO:FRED": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.55",
+    "change_pct": "-3.5088"
+   },
+   "NEO:SONA": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.3",
+    "change_pct": "-9.0909"
+   },
+   "NEO:USGD": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.14",
+    "change_pct": "-6.6667"
+   },
+   "NEO:ATMY": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.28",
+    "change_pct": "-6.6667"
+   },
+   "NEO:IBAT": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.09",
+    "change_pct": "-14.2857"
+   },
+   "NEO:KNG": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.96",
+    "change_pct": "-3.0303"
+   },
+   "NEO:LFLR": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.3",
+    "change_pct": "-6.25"
+   },
+   "NEO:LMS": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.21",
+    "change_pct": "-4.5455"
+   },
+   "NEO:PMI": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.69",
+    "change_pct": "-10.3896"
+   },
+   "NEO:IGO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.12",
+    "change_pct": "0"
+   },
+   "NEO:RRI": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.36",
+    "change_pct": "-13.253"
+   },
+   "NEO:LGHT": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.185",
+    "change_pct": "2.7778"
+   },
+   "NEO:STCU": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.49",
+    "change_pct": "-14.0351"
+   },
+   "NEO:CANU": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.07",
+    "change_pct": "-5.3097"
+   },
+   "NEO:ANOR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.16",
+    "change_pct": "-11.1111"
+   },
+   "NEO:NVX": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "1.12",
+    "change_pct": "12"
+   },
+   "CSE:FW": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "1.09",
+    "change_pct": "9"
+   },
+   "CSE:METX": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "1.06",
+    "change_pct": "0.9524"
+   },
+   "CSE:NAHF": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.365",
+    "change_pct": "-6.4103"
+   },
+   "NEO:DLTA": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.205",
+    "change_pct": "0"
+   },
+   "NEO:PLAS": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.2",
+    "change_pct": "-6.9767"
+   },
+   "NEO:SPC": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.07",
+    "change_pct": "-12.5"
+   },
+   "NEO:ALCH": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.78",
+    "change_pct": "-2.5"
+   },
+   "NEO:LVX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.265",
+    "change_pct": "-8.6207"
+   },
+   "NEO:FRG": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.29",
+    "change_pct": "16"
+   },
+   "NEO:NPTH": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.58",
+    "change_pct": "1.7544"
+   },
+   "NEO:WEB": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "1.09",
+    "change_pct": "-9.1667"
+   },
+   "NEO:DTC": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.36",
+    "change_pct": "-2.7027"
+   },
+   "NEO:YES": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.205",
+    "change_pct": "-2.381"
+   },
+   "NEO:ALX": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.6",
+    "change_pct": "-14.2857"
+   },
+   "CSE:CSR": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.5",
+    "change_pct": "7.5269"
+   },
+   "NEO:RDG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.2",
+    "change_pct": "-16.6667"
+   },
+   "NEO:RLYG": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.59",
+    "change_pct": "-16.9014"
+   },
+   "NEO:LBNK": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.52",
+    "change_pct": "-1.8868"
+   },
+   "TSXV:QZM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.385",
+    "change_pct": "-3.75"
+   },
+   "NEO:ROMJ": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.435",
+    "change_pct": "-1.1364"
+   },
+   "TSXV:CHER": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.26",
+    "change_pct": "2.439"
+   },
+   "NEO:ONAU": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.53",
+    "change_pct": "1.9231"
+   },
+   "NEO:ARU": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.24",
+    "change_pct": "0"
+   },
+   "NEO:DEC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "4.7619"
+   },
+   "NEO:FHYD": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.33",
+    "change_pct": "15.7895"
+   },
+   "NEO:EMNT": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.34",
+    "change_pct": "-10.5263"
+   },
+   "NEO:SGC": {
+    "last_trade": "2026-10-13",
+    "confirmed": false,
+    "close": "0.125",
+    "change_pct": "4.1667"
+   },
+   "NEO:TELI": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.35",
+    "change_pct": "-2.7778"
+   },
+   "NEO:SOU": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "0"
+   },
+   "NEO:GPAC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "7.1429"
+   },
+   "TSXV:CNRI": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.24",
+    "change_pct": "0"
+   },
+   "NEO:STUV": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.61",
+    "change_pct": "-15.2778"
+   },
+   "NEO:NQC": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "-8.3333"
+   },
+   "NEO:VCG": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "1.06",
+    "change_pct": "-24.8227"
+   },
+   "NEO:WML": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "-7.1429"
+   },
+   "NEO:GRB": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.5",
+    "change_pct": "-26.4706"
+   },
+   "TSXV:MRZ": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.3",
+    "change_pct": "0"
+   },
+   "NEO:PINK": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.165",
+    "change_pct": "-10.8108"
+   },
+   "NEO:XRI": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.375",
+    "change_pct": "-11.7647"
+   },
+   "NEO:COR": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.285",
+    "change_pct": "7.5472"
+   },
+   "NEO:OPTI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "4.65",
+    "change_pct": "4.4944"
+   },
+   "NEO:ROAR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.21",
+    "change_pct": "0"
+   },
+   "NEO:PAU": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.14",
+    "change_pct": "-6.6667"
+   },
+   "NEO:ALGR": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.58",
+    "change_pct": "0"
+   },
+   "NEO:NINE": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.14",
+    "change_pct": "12"
+   },
+   "TSXV:PCQ": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.17",
+    "change_pct": "61.9048"
+   },
+   "NEO:FRI": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "9.0909"
+   },
+   "TSXV:CDA": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.8",
+    "change_pct": "0"
+   },
+   "NEO:TMG": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "3.4483"
+   },
+   "NEO:NBM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.14",
+    "change_pct": "-3.4483"
+   },
+   "CSE:NICO": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.12",
+    "change_pct": "-17.2414"
+   },
+   "TSXV:PJX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.13",
+    "change_pct": "0"
+   },
+   "NEO:SNAG": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.21",
+    "change_pct": "-10.6383"
+   },
+   "NEO:IDEX": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.37",
+    "change_pct": "-1.3333"
+   },
+   "TSXV:CMU": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "5",
+    "change_pct": "-9.0909"
+   },
+   "NEO:CEQ": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.17",
+    "change_pct": "3.0303"
+   },
+   "NEO:GSR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.28",
+    "change_pct": "-15.1515"
+   },
+   "NEO:ENW": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.2",
+    "change_pct": "14.2857"
+   },
+   "NEO:PRME": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "16.6667"
+   },
+   "NEO:LOD": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.25",
+    "change_pct": "-7.4074"
+   },
+   "NEO:FCI": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.5",
+    "change_pct": "-1.9608"
+   },
+   "NEO:GSTM": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.175",
+    "change_pct": "16.6667"
+   },
+   "NEO:API": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.125",
+    "change_pct": "-30.5556"
+   },
+   "NEO:CVB": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "15.3846"
+   },
+   "TSXV:ERDA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.095",
+    "change_pct": "0"
+   },
+   "NEO:WIL": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.25",
+    "change_pct": "6.383"
+   },
+   "TSX:YRB": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.05",
+    "change_pct": "0"
+   },
+   "NEO:GMR": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.79",
+    "change_pct": "-7.0588"
+   },
+   "NEO:AZEM": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.79",
+    "change_pct": "-7.0588"
+   },
+   "NEO:PRG": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.12",
+    "change_pct": "0"
+   },
+   "TSXV:CDB": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "-11.5385"
+   },
+   "NEO:MCC": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.155",
+    "change_pct": "-8.8235"
+   },
+   "NEO:FTUR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.235",
+    "change_pct": "2.1739"
+   },
+   "NEO:BVA": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.73",
+    "change_pct": "-2.6667"
+   },
+   "TSX:SFI": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.26",
+    "change_pct": "0"
+   },
+   "NEO:NIOX": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.455",
+    "change_pct": "-26.6129"
+   },
+   "NEO:WGT": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.225",
+    "change_pct": "15.3846"
+   },
+   "NEO:NEXX": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.465",
+    "change_pct": "-50"
+   },
+   "NEO:LQWD": {
+    "last_trade": "2026-10-13",
+    "confirmed": false,
+    "close": "0.79",
+    "change_pct": "-8.1395"
+   },
+   "CSE:EPIC": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.18",
+    "change_pct": "-5.2632"
+   },
+   "NEO:MKT": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.29",
+    "change_pct": "3.5714"
+   },
+   "NEO:QYOU": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.45",
+    "change_pct": "0"
+   },
+   "NEO:BHS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "NEO:GIII": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.14",
+    "change_pct": "-15.1515"
+   },
+   "NEO:SCU": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.22",
+    "change_pct": "-21.4286"
+   },
+   "NEO:EQTY": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.085",
+    "change_pct": "0"
+   },
+   "NEO:PURE": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "1.38",
+    "change_pct": "-13.75"
+   },
+   "NEO:DEX": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.335",
+    "change_pct": "0"
+   },
+   "NEO:LPS": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.145",
+    "change_pct": "11.5385"
+   },
+   "TSXV:GRF": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.41",
+    "change_pct": "0"
+   },
+   "CSE:NAME": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.91",
+    "change_pct": "-5.2083"
+   },
+   "TSXV:NSKY": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.4",
+    "change_pct": "0"
+   },
+   "NEO:EMM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "9.0909"
+   },
+   "NEO:PEL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "3.4483"
+   },
+   "NEO:MCI": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.175",
+    "change_pct": "2.9412"
+   },
+   "NEO:TITI": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.59",
+    "change_pct": "0"
+   },
+   "NEO:AUCU": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.16",
+    "change_pct": "0"
+   },
+   "NEO:EPL": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.17",
+    "change_pct": "-5.5556"
+   },
+   "NEO:FYL": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.125",
+    "change_pct": "0"
+   },
+   "TSXV:VTX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.175",
+    "change_pct": "0"
+   },
+   "NEO:W": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.335",
+    "change_pct": "-6.9444"
+   },
+   "NEO:MN": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.085",
+    "change_pct": "6.25"
+   },
+   "NEO:WSR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.385",
+    "change_pct": "-8.3333"
+   },
+   "NEO:CTEK": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.65",
+    "change_pct": "4.8387"
+   },
+   "NEO:GRMI": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.335",
+    "change_pct": "1.5152"
+   },
+   "NEO:KDOZ": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.145",
+    "change_pct": "16"
+   },
+   "TSX:GEC": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.275",
+    "change_pct": "0"
+   },
+   "TSXV:EAM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "0"
+   },
+   "NEO:CGM": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.15",
+    "change_pct": "-26.8293"
+   },
+   "NEO:STUD": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.13",
+    "change_pct": "6.1224"
+   },
+   "NEO:TRR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.28",
+    "change_pct": "-6.6667"
+   },
+   "NEO:MILI": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.245",
+    "change_pct": "0"
+   },
+   "CSE:EYE": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.45",
+    "change_pct": "0"
+   },
+   "NEO:IRON": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.4",
+    "change_pct": "-14.8936"
+   },
+   "NEO:CN": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.14",
+    "change_pct": "-3.4483"
+   },
+   "CSE:BAR": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.7",
+    "change_pct": "0"
+   },
+   "NEO:HPL": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.3",
+    "change_pct": "-7.6923"
+   },
+   "NEO:NCI": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.37",
+    "change_pct": "-5.1282"
+   },
+   "NEO:MDMA": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.175",
+    "change_pct": "-2.7778"
+   },
+   "NEO:BSK": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "NEO:VPT": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.09",
+    "change_pct": "0"
+   },
+   "NEO:JUGR": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.39",
+    "change_pct": "-1.2658"
+   },
+   "NEO:ESAF": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.375",
+    "change_pct": "-6.25"
+   },
+   "NEO:PRCG": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.66",
+    "change_pct": "-5.7143"
+   },
+   "NEO:BEEP": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.21",
+    "change_pct": "-2.3256"
+   },
+   "TSXV:TOTC": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.45",
+    "change_pct": "0"
+   },
+   "NEO:PTX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "0"
+   },
+   "NEO:NOP": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "0"
+   },
+   "NEO:SLV": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.225",
+    "change_pct": "-22.4138"
+   },
+   "NEO:NSU": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.175",
+    "change_pct": "-5.4054"
+   },
+   "CSE:PURR": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.6",
+    "change_pct": "-9.0909"
+   },
+   "NEO:PTU": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.19",
+    "change_pct": "-2.5641"
+   },
+   "TSX:BR": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.65",
+    "change_pct": "0"
+   },
+   "NEO:QIM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.18",
+    "change_pct": "-16.2791"
+   },
+   "NEO:MERG": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.415",
+    "change_pct": "10.6667"
+   },
+   "TSX:GRC": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "NEO:PER": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "-4.3478"
+   },
+   "NEO:RHEL": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "0"
+   },
+   "NEO:VRR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.39",
+    "change_pct": "-2.5"
+   },
+   "CSE:SYN": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.54",
+    "change_pct": "-6.8966"
+   },
+   "NEO:BAY": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "-7.6923"
+   },
+   "NEO:RYO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.25",
+    "change_pct": "-10.7143"
+   },
+   "TSXV:FREQ": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.255",
+    "change_pct": "0"
+   },
+   "NEO:AUME": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "10"
+   },
+   "NEO:KRIT": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "1",
+    "change_pct": "-0.9901"
+   },
+   "NEO:OC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "4.7619"
+   },
+   "NEO:SBMI": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "-8.3333"
+   },
+   "NEO:KALO": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.125",
+    "change_pct": "-3.8462"
+   },
+   "TSXV:ICGH": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.49",
+    "change_pct": "0"
+   },
+   "NEO:NOB": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "TSXV:VVTM": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.195",
+    "change_pct": "0"
+   },
+   "NEO:JZR": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.185",
+    "change_pct": "-35.0877"
+   },
+   "NEO:STRM": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.5",
+    "change_pct": "-15.2542"
+   },
+   "NEO:VO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "NEO:ELEC": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "-4.3478"
+   },
+   "NEO:ICG": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.335",
+    "change_pct": "-9.4595"
+   },
+   "NEO:EMET": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.085",
+    "change_pct": "54.5455"
+   },
+   "CSE:VSBY": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.12",
+    "change_pct": "-4"
+   },
+   "NEO:MTTA": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.1",
+    "change_pct": "0"
+   },
+   "NEO:MAXM": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.42",
+    "change_pct": "-19.2308"
+   },
+   "NEO:LECR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.3",
+    "change_pct": "20"
+   },
+   "NEO:AIML": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "-11.1111"
+   },
+   "NEO:ALTU": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.185",
+    "change_pct": "8.8235"
+   },
+   "NEO:BPC": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.33",
+    "change_pct": "-2.9412"
+   },
+   "NEO:ROVA": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "-8.3333"
+   },
+   "NEO:BTT": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.11",
+    "change_pct": "0"
+   },
+   "NEO:HC": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.08",
+    "change_pct": "0"
+   },
+   "NEO:MANU": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.12",
+    "change_pct": "-20"
+   },
+   "NEO:AUGC": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.31",
+    "change_pct": "-3.125"
+   },
+   "CSE:BMT": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.225",
+    "change_pct": "-4.2553"
+   },
+   "NEO:CRG": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.19",
+    "change_pct": "-2.5641"
+   },
+   "CSE:PREV": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.02",
+    "change_pct": "33.3333"
+   },
+   "NEO:CEXY": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.4",
+    "change_pct": "-12.0879"
+   },
+   "NEO:IMR": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.18",
+    "change_pct": "-5.2632"
+   },
+   "NEO:URAI": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.08",
+    "change_pct": "-20"
+   },
+   "NEO:PEX": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.145",
+    "change_pct": "-14.7059"
+   },
+   "NEO:VIZ": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.195",
+    "change_pct": "-15.2174"
+   },
+   "NEO:CNVI": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.115",
+    "change_pct": "-11.5385"
+   },
+   "NEO:SAO": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.08",
+    "change_pct": "0"
+   },
+   "CSE:MBL": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.2",
+    "change_pct": "0"
+   },
+   "NEO:USCU": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.105",
+    "change_pct": "-12.5"
+   },
+   "NEO:AIR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "-9.0909"
+   },
+   "NEO:KDA": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "-8.3333"
+   },
+   "TSXV:TLA": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.46",
+    "change_pct": "2.2222"
+   },
+   "NEO:RSMX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.09",
+    "change_pct": "0"
+   },
+   "NEO:IQ": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.415",
+    "change_pct": "-1.1905"
+   },
+   "NEO:LOBE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "-50"
+   },
+   "NEO:PINN": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.08",
+    "change_pct": "-11.1111"
+   },
+   "NEO:NBY": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "-6.6667"
+   },
+   "NEO:LIT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.075",
+    "change_pct": "0"
+   },
+   "TSXV:GDP": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.26",
+    "change_pct": "0"
+   },
+   "NEO:OMM": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.04",
+    "change_pct": "-20"
+   },
+   "CSE:CAPR": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.09",
+    "change_pct": "20"
+   },
+   "NEO:TN": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "0"
+   },
+   "TSXV:BAT": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "0"
+   },
+   "CSE:HYLQ": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.64",
+    "change_pct": "-7.2464"
+   },
+   "NEO:WERX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.25",
+    "change_pct": "-5.6604"
+   },
+   "NEO:SR": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.215",
+    "change_pct": "-28.3333"
+   },
+   "NEO:RWB": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "TSXV:NVLH": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "0"
+   },
+   "NEO:BTCW": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "TSXV:HEM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "NEO:NASA": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.07",
+    "change_pct": "7.6923"
+   },
+   "NEO:GRBM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "0"
+   },
+   "TSXV:MOGL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "9.5238"
+   },
+   "NEO:GX": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "-8.3333"
+   },
+   "NEO:BLAB": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "16.6667"
+   },
+   "TSXV:VAND": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.65",
+    "change_pct": "0"
+   },
+   "TSXV:YEG": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.1",
+    "change_pct": "0"
+   },
+   "TSXV:RAGE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.28",
+    "change_pct": "-6.6667"
+   },
+   "NEO:STND": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "7.6923"
+   },
+   "TSXV:TRO": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "0"
+   },
+   "NEO:NEXE": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.115",
+    "change_pct": "-11.5385"
+   },
+   "NEO:OTMC": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.42",
+    "change_pct": "-2.3256"
+   },
+   "TSXV:MAX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.2",
+    "change_pct": "0"
+   },
+   "TSXV:GPM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "0"
+   },
+   "NEO:NSJ": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.4",
+    "change_pct": "33.3333"
+   },
+   "NEO:GXP": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.22",
+    "change_pct": "-4.3478"
+   },
+   "CSE:STGX": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.175",
+    "change_pct": "0"
+   },
+   "NEO:SKP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.5",
+    "change_pct": "-18.4783"
+   },
+   "TSXV:CPAU": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.09",
+    "change_pct": "0"
+   },
+   "NEO:IDK": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "0"
+   },
+   "NEO:NGC": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "-6.6667"
+   },
+   "TSXV:AXE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.075",
+    "change_pct": "0"
+   },
+   "NEO:EMN": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.075",
+    "change_pct": "0"
+   },
+   "CSE:SIX": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.045",
+    "change_pct": "12.5"
+   },
+   "NEO:PEMC": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "CSE:FLM": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.11",
+    "change_pct": "0"
+   },
+   "NEO:CTV": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.085",
+    "change_pct": "13.3333"
+   },
+   "NEO:CYM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.105",
+    "change_pct": "5"
+   },
+   "TSXV:NTLX": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "1.61",
+    "change_pct": "-3.012"
+   },
+   "NEO:IMI": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "-13.3333"
+   },
+   "TSXV:SGU": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "14.2857"
+   },
+   "NEO:AMY": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "-11.1111"
+   },
+   "TSXV:DNO": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.3",
+    "change_pct": "0"
+   },
+   "TSXV:KAPA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "0"
+   },
+   "NEO:PAI": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "4.7619"
+   },
+   "TSXV:RTH": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "TSXV:DWS": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "0"
+   },
+   "NEO:OCEN": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "-7.6923"
+   },
+   "TSXV:VTEN": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.51",
+    "change_pct": "2"
+   },
+   "CSE:QB": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.7",
+    "change_pct": "-6.6667"
+   },
+   "NEO:MEK": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "-12.5"
+   },
+   "CSE:GFT": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.5",
+    "change_pct": "11.1111"
+   },
+   "CSE:NEXU": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.55",
+    "change_pct": "1.8519"
+   },
+   "TSXV:RAMP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.28",
+    "change_pct": "1.8182"
+   },
+   "NEO:IZO": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "-21.0526"
+   },
+   "NEO:GT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "-16.6667"
+   },
+   "NEO:NIX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "-25"
+   },
+   "NEO:TICO": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "-23.3333"
+   },
+   "NEO:SPN": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "0"
+   },
+   "CSE:CUPA": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "NEO:CACR": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "NEO:AEMC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "NEO:AURA": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.2",
+    "change_pct": "-20"
+   },
+   "NEO:LAB": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "0"
+   },
+   "NEO:INVR": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.2",
+    "change_pct": "14.2857"
+   },
+   "NEO:PCLO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "0"
+   },
+   "NEO:PA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.09",
+    "change_pct": "-25"
+   },
+   "NEO:ICM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "-14.2857"
+   },
+   "TSXV:CPS": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "0"
+   },
+   "CSE:BRAZ": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.13",
+    "change_pct": "0"
+   },
+   "NEO:SXL": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "0"
+   },
+   "TSXV:EDY": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "1.5",
+    "change_pct": "0"
+   },
+   "TSXV:REX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.13",
+    "change_pct": "0"
+   },
+   "NEO:GGI": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "-7.1429"
+   },
+   "NEO:MERC": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.115",
+    "change_pct": "9.5238"
+   },
+   "NEO:MTS": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.125",
+    "change_pct": "-10.7143"
+   },
+   "NEO:VRTX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.64",
+    "change_pct": "1.5873"
+   },
+   "NEO:RUU": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.19",
+    "change_pct": "5.5556"
+   },
+   "NEO:SMY": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.22",
+    "change_pct": "-4.3478"
+   },
+   "NEO:UPPR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.105",
+    "change_pct": "-30"
+   },
+   "NEO:OWLI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "14.2857"
+   },
+   "NEO:QBTQ": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.33",
+    "change_pct": "-15.3846"
+   },
+   "NEO:PVIS": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.215",
+    "change_pct": "-10.4167"
+   },
+   "NEO:QQQ": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.09",
+    "change_pct": "-10"
+   },
+   "NEO:BIRD": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.175",
+    "change_pct": "9.375"
+   },
+   "NEO:ROBO": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.22",
+    "change_pct": "-18.5185"
+   },
+   "TSXV:CSX": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "0"
+   },
+   "CSE:INNO": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "1.9",
+    "change_pct": "0"
+   },
+   "NEO:DYG": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.12",
+    "change_pct": "0"
+   },
+   "NEO:BLST": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.25",
+    "change_pct": "-28.5714"
+   },
+   "NEO:MOC": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.09",
+    "change_pct": "5.8824"
+   },
+   "NEO:REC": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "10"
+   },
+   "NEO:TEX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "-41.1765"
+   },
+   "NEO:RVV": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "-20"
+   },
+   "CSE:ACDX": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.33",
+    "change_pct": "-10.8108"
+   },
+   "NEO:CLIC": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.33",
+    "change_pct": "-4.3478"
+   },
+   "TSXV:SGZ": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "0"
+   },
+   "NEO:TG": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.145",
+    "change_pct": "-9.375"
+   },
+   "NEO:GZD": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "-12.5"
+   },
+   "NEO:APMI": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.115",
+    "change_pct": "0"
+   },
+   "TSXV:WBE": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.225",
+    "change_pct": "-2.1739"
+   },
+   "TSXV:DAR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.85",
+    "change_pct": "0"
+   },
+   "NEO:RKR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "NEO:SONI": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.17",
+    "change_pct": "-2.8571"
+   },
+   "CSE:TAUR": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.06",
+    "change_pct": "0"
+   },
+   "NEO:GIGA": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "-9.0909"
+   },
+   "NEO:MNRG": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.08",
+    "change_pct": "0"
+   },
+   "NEO:ATHA": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.21",
+    "change_pct": "-23.6364"
+   },
+   "NEO:RKL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.105",
+    "change_pct": "-38.2353"
+   },
+   "NEO:NCP": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "1.25",
+    "change_pct": "-16.6667"
+   },
+   "NEO:FHR": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.115",
+    "change_pct": "-4.1667"
+   },
+   "NEO:GRUN": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.47",
+    "change_pct": "-21.6667"
+   },
+   "CSE:GPIN": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.19",
+    "change_pct": "0"
+   },
+   "NEO:GOH": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "-11.7647"
+   },
+   "TSX:PDV": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "14.3",
+    "change_pct": "0"
+   },
+   "NEO:VCT": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "-16.6667"
+   },
+   "NEO:ASHL": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "-13.3333"
+   },
+   "NEO:WLF": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.04",
+    "change_pct": "-33.3333"
+   },
+   "CSE:HM": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.28",
+    "change_pct": "3.7037"
+   },
+   "CSE:BVCI": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.18",
+    "change_pct": "2.8571"
+   },
+   "TSXV:AWX": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "11.1111"
+   },
+   "NEO:ORS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "0"
+   },
+   "TSXV:TORQ": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "-20"
+   },
+   "TSXV:ROX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "TSXV:FMN": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.17",
+    "change_pct": "0"
+   },
+   "NEO:MRVL": {
+    "last_trade": "2026-10-13",
+    "confirmed": false,
+    "close": "0.11",
+    "change_pct": "-26.6667"
+   },
+   "NEO:UUU": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.18",
+    "change_pct": "-2.7027"
+   },
+   "NEO:CQX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "-20"
+   },
+   "CSE:GC": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.495",
+    "change_pct": "-1"
+   },
+   "TSXV:LEAP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "0"
+   },
+   "NEO:AWCM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.22",
+    "change_pct": "-4.3478"
+   },
+   "NEO:BOOM": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "TSXV:TGX": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.5",
+    "change_pct": "0"
+   },
+   "NEO:FAIR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "-11.1111"
+   },
+   "NEO:URZ": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.145",
+    "change_pct": "-3.3333"
+   },
+   "NEO:TMAS": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.085",
+    "change_pct": "-5.5556"
+   },
+   "NEO:RGEN": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "37.5"
+   },
+   "TSXV:YAY": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.13",
+    "change_pct": "30"
+   },
+   "NEO:SCM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.095",
+    "change_pct": "-13.6364"
+   },
+   "NEO:GGM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "16.6667"
+   },
+   "TSX:KLS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.12",
+    "change_pct": "0"
+   },
+   "NEO:MGMA": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "0"
+   },
+   "NEO:ESBL": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.08",
+    "change_pct": "0"
+   },
+   "TSXV:JEC": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.095",
+    "change_pct": "11.7647"
+   },
+   "TSXV:ZONE": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "NEO:NRM": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "0"
+   },
+   "CSE:UCM": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.37",
+    "change_pct": "0"
+   },
+   "NEO:BAD": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.075",
+    "change_pct": "-25"
+   },
+   "NEO:CRI": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "-16.6667"
+   },
+   "NEO:IN": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.085",
+    "change_pct": "21.4286"
+   },
+   "TSXV:RIWI": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "0"
+   },
+   "NEO:AVCR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "-9.0909"
+   },
+   "NEO:PRR": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "TSXV:MMM": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.145",
+    "change_pct": "0"
+   },
+   "NEO:PUL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "-33.3333"
+   },
+   "NEO:CLC": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "-16.6667"
+   },
+   "NEO:GCOM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "12.5"
+   },
+   "CSE:APPT": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.1",
+    "change_pct": "0"
+   },
+   "TSXV:FDI": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.215",
+    "change_pct": "0"
+   },
+   "CSE:SRS": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.1",
+    "change_pct": "5.2632"
+   },
+   "NEO:FOBI": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "-16.6667"
+   },
+   "TSXV:CBLU": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "0"
+   },
+   "NEO:INEO": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.125",
+    "change_pct": "13.6364"
+   },
+   "NEO:SPRK": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "0"
+   },
+   "TSXV:CFY": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.09",
+    "change_pct": "0"
+   },
+   "TSXV:SGE": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.65",
+    "change_pct": "0"
+   },
+   "NEO:EMR": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.095",
+    "change_pct": "-5"
+   },
+   "NEO:FAS": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "-17.6471"
+   },
+   "TSXV:ZBNI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "0"
+   },
+   "CSE:BPAI": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.025",
+    "change_pct": "0"
+   },
+   "NEO:HHE": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "0"
+   },
+   "NEO:BOL": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "0"
+   },
+   "TSXV:CAI": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "TSXV:CPI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "0"
+   },
+   "CSE:SUR": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.12",
+    "change_pct": "14.2857"
+   },
+   "NEO:PNRG": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.22",
+    "change_pct": "10"
+   },
+   "NEO:RMB": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.55",
+    "change_pct": "-5.1724"
+   },
+   "CSE:PDO": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.17",
+    "change_pct": "0"
+   },
+   "NEO:VG": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.085",
+    "change_pct": "0"
+   },
+   "TSXV:ROI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.12",
+    "change_pct": "-4"
+   },
+   "CSE:USCM": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.11",
+    "change_pct": "0"
+   },
+   "CSE:DOCT": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.17",
+    "change_pct": "0"
+   },
+   "NEO:EVER": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.25",
+    "change_pct": "8.6957"
+   },
+   "TSXV:AUQ": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.24",
+    "change_pct": "0"
+   },
+   "NEO:STMN": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "-14.2857"
+   },
+   "NEO:MINE": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.105",
+    "change_pct": "-12.5"
+   },
+   "TSXV:RCT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.115",
+    "change_pct": "-11.5385"
+   },
+   "NEO:SPX": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.095",
+    "change_pct": "0"
+   },
+   "NEO:OPW": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.14",
+    "change_pct": "0"
+   },
+   "TSXV:WISH": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "-23.0769"
+   },
+   "TSXV:CTA": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "4.81",
+    "change_pct": "-5.315"
+   },
+   "NEO:KENY": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.16",
+    "change_pct": "-34.6939"
+   },
+   "NEO:VTT": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "0"
+   },
+   "CSE:TNJ": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.05",
+    "change_pct": "11.1111"
+   },
+   "NEO:HPSS": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "-36.3636"
+   },
+   "NEO:HVG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "-14.2857"
+   },
+   "NEO:BTU": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "0"
+   },
+   "TSXV:AEF": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.17",
+    "change_pct": "0"
+   },
+   "NEO:CASA": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "8.3333"
+   },
+   "NEO:VQS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.08",
+    "change_pct": "-20"
+   },
+   "CSE:SURE": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.125",
+    "change_pct": "0"
+   },
+   "NEO:FP": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.73",
+    "change_pct": "-1.3514"
+   },
+   "TSXV:WINS": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.075",
+    "change_pct": "0"
+   },
+   "NEO:OMGA": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "-9.0909"
+   },
+   "NEO:ILI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "0"
+   },
+   "TSXV:EFF": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "0"
+   },
+   "CSE:GSRI": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.235",
+    "change_pct": "11.9048"
+   },
+   "NEO:PMAX": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.14",
+    "change_pct": "-17.6471"
+   },
+   "TSXV:CRD": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "0"
+   },
+   "CSE:ABND": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.19",
+    "change_pct": "5.5556"
+   },
+   "NEO:MKR": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.09",
+    "change_pct": "-18.1818"
+   },
+   "NEO:HAR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "-10"
+   },
+   "CSE:PHRM": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "TSXV:WCSB": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "-4.3478"
+   },
+   "CSE:GGC": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.075",
+    "change_pct": "0"
+   },
+   "NEO:SRD": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "-13.0435"
+   },
+   "TSXV:AUEN": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.2",
+    "change_pct": "0"
+   },
+   "TSXV:APX": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "NEO:XTM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "-15.3846"
+   },
+   "NEO:NSG": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "-14.2857"
+   },
+   "NEO:UDOC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "-54.5455"
+   },
+   "NEO:RUC": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "0"
+   },
+   "TSXV:NNX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "CSE:HEAL": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.075",
+    "change_pct": "7.1429"
+   },
+   "NEO:KAS": {
+    "last_trade": "2026-10-13",
+    "confirmed": false,
+    "close": "0.025",
+    "change_pct": "25"
+   },
+   "NEO:GLDN": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.08",
+    "change_pct": "-11.1111"
+   },
+   "NEO:MCF": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "-33.3333"
+   },
+   "NEO:TRU": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.03",
+    "change_pct": "-14.2857"
+   },
+   "CSE:QCA": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.05",
+    "change_pct": "-9.0909"
+   },
+   "TSXV:VMS": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "0"
+   },
+   "NEO:RKV": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.17",
+    "change_pct": "-5.5556"
+   },
+   "TSXV:BM": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.13",
+    "change_pct": "30"
+   },
+   "NEO:CCD": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "0"
+   },
+   "NEO:CPL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.32",
+    "change_pct": "28"
+   },
+   "NEO:PWER": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.18",
+    "change_pct": "20"
+   },
+   "TSXV:HASH": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "-10"
+   },
+   "TSXV:SWLF": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "0"
+   },
+   "NEO:SQX": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.035",
+    "change_pct": "75"
+   },
+   "NEO:GSPR": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "0"
+   },
+   "NEO:GGF": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.16",
+    "change_pct": ""
+   },
+   "NEO:MUSL": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "25"
+   },
+   "TSXV:MET": {
+    "last_trade": "2026-09-30",
+    "confirmed": true,
+    "close": "2.4",
+    "change_pct": "0"
+   },
+   "NEO:FINX": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.08",
+    "change_pct": "-23.8095"
+   },
+   "NEO:SATO": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "-13.3333"
+   },
+   "TSXV:NVI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.125",
+    "change_pct": "0"
+   },
+   "CSE:TRG": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.035",
+    "change_pct": "0"
+   },
+   "CSE:ATLA": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.075",
+    "change_pct": "66.6667"
+   },
+   "NEO:TTGI": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "-33.3333"
+   },
+   "CSE:ANON": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.12",
+    "change_pct": "0"
+   },
+   "TSXV:AUTO": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "40"
+   },
+   "CSE:MEDA": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.25",
+    "change_pct": "-12.2807"
+   },
+   "CSE:KLN": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.045",
+    "change_pct": "-10"
+   },
+   "TSXV:GKO": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "0"
+   },
+   "TSXV:TUK": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "0"
+   },
+   "NEO:SILV": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.105",
+    "change_pct": "-12.5"
+   },
+   "NEO:DMED": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.03",
+    "change_pct": "-14.2857"
+   },
+   "TSXV:GGL": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "-6.25"
+   },
+   "TSXV:LITT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "0"
+   },
+   "TSXV:VIS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "0"
+   },
+   "TSXV:FA": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "20"
+   },
+   "CSE:NVR": {
+    "last_trade": "2026-10-13",
+    "confirmed": false,
+    "close": "0.215",
+    "change_pct": "0"
+   },
+   "CSE:ORGN": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "TSXV:MUR": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.185",
+    "change_pct": "0"
+   },
+   "TSXV:FNR": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "0"
+   },
+   "NEO:CLTE": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "-3.2258"
+   },
+   "TSXV:MON": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.45",
+    "change_pct": "0"
+   },
+   "TSXV:ALM": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.35",
+    "change_pct": "0"
+   },
+   "TSXV:GOK": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "NEO:XIM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "-20"
+   },
+   "CSE:SKNY": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.13",
+    "change_pct": "0"
+   },
+   "CSE:METG": {
+    "last_trade": "2026-10-13",
+    "confirmed": false,
+    "close": "0.05",
+    "change_pct": "25"
+   },
+   "TSXV:EGM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.09",
+    "change_pct": "0"
+   },
+   "TSXV:USHA": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "NEO:AVE": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.41",
+    "change_pct": "-17.1717"
+   },
+   "CSE:WMC": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.17",
+    "change_pct": "-15"
+   },
+   "NEO:ORCL": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "0"
+   },
+   "NEO:SNV": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "50"
+   },
+   "NEO:HZ": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.195",
+    "change_pct": "8.3333"
+   },
+   "NEO:DOS": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "-16.6667"
+   },
+   "NEO:CPER": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "-14.2857"
+   },
+   "CSE:LABZ": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.12",
+    "change_pct": "0"
+   },
+   "TSXV:IVX": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.73",
+    "change_pct": "7.3529"
+   },
+   "TSXV:GRI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "100"
+   },
+   "NEO:PLY": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "TSXV:IOT": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "0"
+   },
+   "CSE:WOGC": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.11",
+    "change_pct": "0"
+   },
+   "CSE:UX": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.15",
+    "change_pct": "0"
+   },
+   "NEO:GRAY": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "-17.8571"
+   },
+   "TSXV:ABZ": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "-22.2222"
+   },
+   "NEO:BGF": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "0"
+   },
+   "NEO:TCO": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "0"
+   },
+   "NEO:SIEN": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.08",
+    "change_pct": "-20"
+   },
+   "TSXV:RMD": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.095",
+    "change_pct": "0"
+   },
+   "NEO:CASC": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "-9.0909"
+   },
+   "NEO:OILS": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "-20"
+   },
+   "CSE:XIGM": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.045",
+    "change_pct": "0"
+   },
+   "TSXV:APL": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "9.5238"
+   },
+   "TSXV:CBA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "12.5"
+   },
+   "TSXV:QPT": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "NEO:REE": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.03",
+    "change_pct": "-14.2857"
+   },
+   "NEO:BEAR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "11.1111"
+   },
+   "NEO:VCV": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.085",
+    "change_pct": "54.5455"
+   },
+   "TSXV:PERU": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "0"
+   },
+   "TSXV:TORC": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.14",
+    "change_pct": "-17.6471"
+   },
+   "TSXV:MMX": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "-10"
+   },
+   "TSXV:OLV": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "TSXV:IZZ": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "-10"
+   },
+   "TSXV:GNG": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "-7.6923"
+   },
+   "CSE:GRUV": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.115",
+    "change_pct": "15"
+   },
+   "TSXV:RUM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "7.6923"
+   },
+   "NEO:KNR": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.06",
+    "change_pct": "0"
+   },
+   "TSX:AAB": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "TSXV:MTH": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "20"
+   },
+   "TSXV:GBML": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.215",
+    "change_pct": "-8.5106"
+   },
+   "TSXV:GAMA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "0"
+   },
+   "CSE:STK": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.125",
+    "change_pct": "0"
+   },
+   "NEO:NBLC": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "-25"
+   },
+   "NEO:QMC": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "-12.5"
+   },
+   "TSXV:VERT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "TSXV:VKG": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "50"
+   },
+   "TSXV:WP": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.115",
+    "change_pct": "-25.8065"
+   },
+   "NEO:OPHR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "0"
+   },
+   "TSX:FOOD": {
+    "last_trade": "2026-08-04",
+    "confirmed": false,
+    "close": "0.03",
+    "change_pct": "0"
+   },
+   "NEO:NVRS": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.05",
+    "change_pct": "-16.6667"
+   },
+   "NEO:EWK": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "-20"
+   },
+   "TSXV:NVT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "TSXV:BPR": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.09",
+    "change_pct": "0"
+   },
+   "TSXV:PHD": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "TSXV:OSM": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.025",
+    "change_pct": "-16.6667"
+   },
+   "TSXV:DEAL": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "NEO:ZLTO": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "83.3333"
+   },
+   "CSE:QBAT": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.295",
+    "change_pct": "-18.0556"
+   },
+   "TSXV:AME": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "0"
+   },
+   "NEO:DFSC": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "1.1",
+    "change_pct": "11.1111"
+   },
+   "TSXV:GST": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "1.35",
+    "change_pct": "-16.1491"
+   },
+   "CSE:ZRO": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.08",
+    "change_pct": "100"
+   },
+   "CSE:AWR": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.22",
+    "change_pct": "12.8205"
+   },
+   "TSXV:KGC": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "0"
+   },
+   "NEO:MASS": {
+    "last_trade": "2026-10-13",
+    "confirmed": false,
+    "close": "0.04",
+    "change_pct": "-20"
+   },
+   "NEO:DCOP": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "8.3333"
+   },
+   "NEO:SYG": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "0"
+   },
+   "CSE:RXM": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "TSXV:JJJJ": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "0"
+   },
+   "CSE:LINE": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.205",
+    "change_pct": "10.8108"
+   },
+   "TSXV:NL": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.19",
+    "change_pct": "0"
+   },
+   "NEO:LSTR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "-25"
+   },
+   "TSXV:SRQ": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "TSXV:UIG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "-33.3333"
+   },
+   "NEO:WIN": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "-25"
+   },
+   "CSE:NATN": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.06",
+    "change_pct": "0"
+   },
+   "CSE:CAMP": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.1",
+    "change_pct": "0"
+   },
+   "CSE:KVM": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.41",
+    "change_pct": "-6.8182"
+   },
+   "TSXV:FTEC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "20"
+   },
+   "TSXV:DELX": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "100"
+   },
+   "CSE:NARA": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.17",
+    "change_pct": "6.25"
+   },
+   "TSXV:CAN": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "0"
+   },
+   "CSE:QQ": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.035",
+    "change_pct": "0"
+   },
+   "NEO:ARGL": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.2",
+    "change_pct": "5.2632"
+   },
+   "NEO:CSTR": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "NEO:CRB": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.05",
+    "change_pct": "11.1111"
+   },
+   "NEO:CVGR": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.03",
+    "change_pct": "0"
+   },
+   "NEO:NRED": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "18.1818"
+   },
+   "NEO:APP": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "100"
+   },
+   "NEO:GURN": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.38",
+    "change_pct": "-2.5641"
+   },
+   "TSXV:ANTL": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "0"
+   },
+   "NEO:GOGO": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "-37.5"
+   },
+   "TSXV:BMV": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "0"
+   },
+   "CSE:ADP": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.14",
+    "change_pct": "0"
+   },
+   "CSE:RESO": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.06",
+    "change_pct": "0"
+   },
+   "NEO:GRD": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "0"
+   },
+   "TSXV:ALT": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "0"
+   },
+   "TSXV:MBO": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "11.1111"
+   },
+   "CSE:TEMP": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.07",
+    "change_pct": "-17.6471"
+   },
+   "TSXV:EW": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.125",
+    "change_pct": "4.1667"
+   },
+   "CSE:ASEP": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.13",
+    "change_pct": "0"
+   },
+   "TSXV:CONE": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "0"
+   },
+   "CSE:PSYC": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "NEO:KNOX": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.125",
+    "change_pct": "-7.4074"
+   },
+   "NEO:AUEX": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.095",
+    "change_pct": "-5"
+   },
+   "CSE:PATH": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.09",
+    "change_pct": "0"
+   },
+   "NEO:EONE": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "NEO:EKG": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "0"
+   },
+   "CSE:METL": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.12",
+    "change_pct": "-4"
+   },
+   "TSXV:SKYG": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "TSXV:CELL": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "0"
+   },
+   "TSXV:GHL": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "-7.6923"
+   },
+   "NEO:PGX": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "0"
+   },
+   "TSXV:LFST": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.05",
+    "change_pct": "0"
+   },
+   "TSXV:FMM": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "-14.2857"
+   },
+   "NEO:APN": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "-33.3333"
+   },
+   "TSXV:JDN": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.3",
+    "change_pct": "15.3846"
+   },
+   "TSXV:TRAN": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "0"
+   },
+   "TSXV:AML": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.12",
+    "change_pct": "14.2857"
+   },
+   "NEO:ATOM": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "-16.6667"
+   },
+   "TSXV:LUXR": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.125",
+    "change_pct": "0"
+   },
+   "TSXV:GGX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "12.5"
+   },
+   "CSE:WISR": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.03",
+    "change_pct": "0"
+   },
+   "NEO:AVU": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "-33.3333"
+   },
+   "CSE:VIK": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.015",
+    "change_pct": "50"
+   },
+   "TSXV:ENEV": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "TSXV:ISGI": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "0"
+   },
+   "TSXV:RFX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.175",
+    "change_pct": "0"
+   },
+   "CSE:NURL": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.01",
+    "change_pct": "-33.3333"
+   },
+   "TSXV:WEC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "0"
+   },
+   "NEO:DIGI": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "-33.3333"
+   },
+   "CSE:AXN": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.11",
+    "change_pct": "57.1429"
+   },
+   "TSXV:RRRL": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "0"
+   },
+   "TSXV:PBM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "28.5714"
+   },
+   "TSXV:BRON": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.045",
+    "change_pct": "0"
+   },
+   "TSXV:SPAR": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.2",
+    "change_pct": "-9.0909"
+   },
+   "TSXV:PDQ": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.09",
+    "change_pct": "0"
+   },
+   "CSE:LION": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.015",
+    "change_pct": "0"
+   },
+   "TSXV:BECN": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "0"
+   },
+   "NEO:COS": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "-9.0909"
+   },
+   "CSE:CSQ": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.025",
+    "change_pct": "0"
+   },
+   "TSXV:FG": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "0"
+   },
+   "CSE:PDFI": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "TSXV:LWR": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "0"
+   },
+   "NEO:VRB": {
+    "last_trade": "2026-10-13",
+    "confirmed": false,
+    "close": "0.06",
+    "change_pct": "9.0909"
+   },
+   "CSE:GDN": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.15",
+    "change_pct": "0"
+   },
+   "CSE:NPT": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.11",
+    "change_pct": "-8.3333"
+   },
+   "NEO:PTC": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.105",
+    "change_pct": "5"
+   },
+   "TSXV:LALI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "NEO:LTHM": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "TSXV:CUEX": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.45",
+    "change_pct": "0"
+   },
+   "TSXV:TCCM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.21",
+    "change_pct": "5"
+   },
+   "NEO:BLGV": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.15",
+    "change_pct": "-40"
+   },
+   "TSXV:BNZ": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "TSXV:ENRG": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.24",
+    "change_pct": "2.1277"
+   },
+   "NEO:STNG": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "0"
+   },
+   "TSXV:GEMC": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "TSXV:IMM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.06",
+    "change_pct": "0"
+   },
+   "CSE:CRC": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.1",
+    "change_pct": "-4.7619"
+   },
+   "CSE:WEST": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.03",
+    "change_pct": "20"
+   },
+   "NEO:SML": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "0"
+   },
+   "TSXV:GVR": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.04",
+    "change_pct": "-52.9412"
+   },
+   "TSXV:ESXR": {
+    "last_trade": "2026-09-23",
+    "confirmed": true,
+    "close": "0.19",
+    "change_pct": "0"
+   },
+   "TSXV:RMO": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.05",
+    "change_pct": "-23.0769"
+   },
+   "CSE:SKUL": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.02",
+    "change_pct": "-20"
+   },
+   "NEO:ACDC": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "-40"
+   },
+   "TSXV:DTWO": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.035",
+    "change_pct": "0"
+   },
+   "TSXV:GENX": {
+    "last_trade": "2026-08-27",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "CSE:JJJ": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.04",
+    "change_pct": "-11.1111"
+   },
+   "NEO:BIGT": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "-33.3333"
+   },
+   "NEO:GEL": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.07",
+    "change_pct": "-6.6667"
+   },
+   "NEO:SYAI": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "-33.3333"
+   },
+   "NEO:FWM": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.055",
+    "change_pct": "37.5"
+   },
+   "TSXV:RTE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.07",
+    "change_pct": "0"
+   },
+   "CSE:ARWY": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.03",
+    "change_pct": "-14.2857"
+   },
+   "TSXV:FEX": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "-4.3478"
+   },
+   "CSE:FRDM": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.13",
+    "change_pct": "-23.5294"
+   },
+   "NEO:BITK": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.035",
+    "change_pct": "-22.2222"
+   },
+   "TSXV:JADE": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "50"
+   },
+   "NEO:PPM": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.12",
+    "change_pct": "-20"
+   },
+   "TSXV:BWR": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "0"
+   },
+   "CSE:LITS": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.12",
+    "change_pct": "0"
+   },
+   "TSXV:KGS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "0"
+   },
+   "CSE:LCR": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.01",
+    "change_pct": "-33.3333"
+   },
+   "TSXV:PAT": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "1.07",
+    "change_pct": "0"
+   },
+   "TSXV:IPD": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "0"
+   },
+   "TSXV:INFI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.175",
+    "change_pct": "2.9412"
+   },
+   "TSXV:QRO": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "-14.2857"
+   },
+   "TSXV:GOOD": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.175",
+    "change_pct": "0"
+   },
+   "TSXV:BLDS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.33",
+    "change_pct": "0"
+   },
+   "TSXV:XPLR": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "TSXV:IDL": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "81.8182"
+   },
+   "NEO:COMT": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "0"
+   },
+   "CSE:STKT": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "NEO:SCV": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "50"
+   },
+   "CSE:EATH": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.055",
+    "change_pct": "0"
+   },
+   "CSE:POWR": {
+    "last_trade": "2026-10-13",
+    "confirmed": false,
+    "close": "0.015",
+    "change_pct": "0"
+   },
+   "CSE:BEAU": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.075",
+    "change_pct": "-16.6667"
+   },
+   "CSE:NVPC": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.02",
+    "change_pct": "33.3333"
+   },
+   "CSE:BATT": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.06",
+    "change_pct": "-14.2857"
+   },
+   "NEO:FUSE": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "-33.3333"
+   },
+   "CSE:JBR": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.01",
+    "change_pct": "-33.3333"
+   },
+   "CSE:MBIO": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.125",
+    "change_pct": "4.1667"
+   },
+   "TSXV:CUCU": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "TSXV:FTJ": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.035",
+    "change_pct": "0"
+   },
+   "NEO:TGLD": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.16",
+    "change_pct": "-38.4615"
+   },
+   "NEO:RAIN": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "0"
+   },
+   "TSXV:VPI": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "-33.3333"
+   },
+   "NEO:PONY": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.19",
+    "change_pct": "-2.5641"
+   },
+   "NEO:MIRA": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": ""
+   },
+   "CSE:CAT": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.02",
+    "change_pct": "-20"
+   },
+   "NEO:MOOD": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.1",
+    "change_pct": "-20"
+   },
+   "TSXV:HANS": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.015",
+    "change_pct": "0"
+   },
+   "CSE:SBTC": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.01",
+    "change_pct": "0"
+   },
+   "CSE:ATHR": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.01",
+    "change_pct": "0"
+   },
+   "CSE:TANA": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "CSE:GCP": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.02",
+    "change_pct": "-20"
+   },
+   "CSE:CULT": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.3",
+    "change_pct": "0"
+   },
+   "CSE:MY": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "NEO:PWRO": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.02",
+    "change_pct": "-50"
+   },
+   "CSE:BULL": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.015",
+    "change_pct": "0"
+   },
+   "TSXV:TBIX": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "CSE:VIBE": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.63",
+    "change_pct": "0"
+   },
+   "TSXV:AGET": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.065",
+    "change_pct": "0"
+   },
+   "NEO:PHRX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "TSXV:NUG": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "0"
+   },
+   "CSE:HARD": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.04",
+    "change_pct": "0"
+   },
+   "CSE:SI": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.055",
+    "change_pct": "-8.3333"
+   },
+   "TSXV:MAH": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.115",
+    "change_pct": "0"
+   },
+   "CSE:RGLD": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.115",
+    "change_pct": "0"
+   },
+   "TSXV:NTE": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.03",
+    "change_pct": "-14.2857"
+   },
+   "CSE:ETI": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "TSXV:NED": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.025",
+    "change_pct": "25"
+   },
+   "CSE:VOLT": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "CSE:TWEL": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.01",
+    "change_pct": "0"
+   },
+   "NEO:AIG": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.095",
+    "change_pct": "-24"
+   },
+   "CSE:CMP": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.035",
+    "change_pct": "-12.5"
+   },
+   "TSXV:NPV": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "CSE:BGX": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.025",
+    "change_pct": "-28.5714"
+   },
+   "CSE:ASTI": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.015",
+    "change_pct": "50"
+   },
+   "CSE:TARG": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.12",
+    "change_pct": "0"
+   },
+   "CSE:DATT": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "CSE:PLTO": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.015",
+    "change_pct": "-25"
+   },
+   "CSE:MONI": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.03",
+    "change_pct": "-25"
+   },
+   "TSXV:NAV": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "CSE:VTI": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.175",
+    "change_pct": "9.375"
+   },
+   "TSX:STG": {
+    "last_trade": "2026-03-13",
+    "confirmed": false,
+    "close": "10.52",
+    "change_pct": "0"
+   },
+   "CSE:PBF": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.005",
+    "change_pct": "0"
+   },
+   "TSXV:ICRS": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.02",
+    "change_pct": "0"
+   },
+   "CSE:RAD": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.05",
+    "change_pct": "0"
+   },
+   "CSE:HERC": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.02",
+    "change_pct": "-73.3333"
+   },
+   "TSXV:IMPT": {
+    "last_trade": "2026-10-20",
+    "confirmed": true,
+    "close": "0.01",
+    "change_pct": "-33.3333"
+   },
+   "CSE:ALTH": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.065",
+    "change_pct": "0"
+   },
+   "CSE:FUTR": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.275",
+    "change_pct": "-15.3846"
+   },
+   "CSE:HRK": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.035",
+    "change_pct": "16.6667"
+   },
+   "CSE:RLGC": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.7",
+    "change_pct": "-17.6471"
+   },
+   "NEO:AIOS": {
+    "last_trade": "2026-10-16",
+    "confirmed": true,
+    "close": "0.68",
+    "change_pct": ""
+   },
+   "NEO:BRS": {
+    "last_trade": "2026-10-14",
+    "confirmed": true,
+    "close": "0.46",
+    "change_pct": "-4.1667"
+   },
+   "NEO:JAY": {
+    "last_trade": "2026-10-15",
+    "confirmed": true,
+    "close": "0.78",
+    "change_pct": "-9.3023"
+   },
+   "NEO:KARU": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "0.21",
+    "change_pct": "-30"
+   },
+   "NEO:VLLC": {
+    "last_trade": "2026-10-13",
+    "confirmed": true,
+    "close": "0.42",
+    "change_pct": "2.439"
+   },
+   "TSXV:ALZI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.23",
+    "change_pct": "-8"
+   },
+   "TSXV:EVNT": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "0.95",
+    "change_pct": "-32.1429"
+   },
+   "TSXV:GCV": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.25",
+    "change_pct": "-16.6667"
+   },
+   "TSXV:GFTA": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "0.12",
+    "change_pct": "0"
+   },
+   "TSXV:NAP": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "0.105",
+    "change_pct": "0"
+   },
+   "TSXV:OCAL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.11",
+    "change_pct": "0"
+   },
+   "TSXV:PSVA": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.44",
+    "change_pct": "-2.2222"
+   },
+   "TSXV:REH": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1",
+    "change_pct": "-4.7619"
+   }
+  },
+  "eu-de": {
+   "XETR:KA1": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "4.9",
+    "change_pct": "0"
+   }
+  },
+  "eu-fr": {
+   "EURONEXT:ARTO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "8550",
+    "change_pct": "0"
+   },
+   "EURONEXT:FCMC": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "2820",
+    "change_pct": "-0.7042"
+   },
+   "EURONEXT:GPE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "62.2",
+    "change_pct": "0.0805"
+   },
+   "EURONEXT:ALLUX": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "492",
+    "change_pct": "0"
+   },
+   "EURONEXT:BLEE": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "102",
+    "change_pct": "10.2703"
+   },
+   "EURONEXT:ALECR": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "18400",
+    "change_pct": "1.6575"
+   },
+   "EURONEXT:MLVIN": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "4.5",
+    "change_pct": "-1.7467"
+   },
+   "EURONEXT:SACI": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "36",
+    "change_pct": "0"
+   },
+   "EURONEXT:MLGRC": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "27",
+    "change_pct": "-18.1818"
+   },
+   "EURONEXT:MLHOT": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "53.5",
+    "change_pct": "0"
+   },
+   "EURONEXT:MLGAI": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "130",
+    "change_pct": "-2.9851"
+   },
+   "EURONEXT:MLCFD": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "1150",
+    "change_pct": "0"
+   },
+   "EURONEXT:ALMER": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "4.8",
+    "change_pct": "0"
+   },
+   "EURONEXT:ALNSC": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "58",
+    "change_pct": "-3.3333"
+   },
+   "EURONEXT:ALHIT": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "12.7",
+    "change_pct": "3.252"
+   },
+   "EURONEXT:MLSRP": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "12.2",
+    "change_pct": "-2.4"
+   },
+   "EURONEXT:MLPRI": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "22",
+    "change_pct": "10"
+   },
+   "EURONEXT:MLOCT": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.15",
+    "change_pct": "-2.5974"
+   },
+   "EURONEXT:MLHCF": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "16.4",
+    "change_pct": "0"
+   },
+   "EURONEXT:FIPP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.131",
+    "change_pct": "0"
+   },
+   "EURONEXT:MLOTT": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "1.3",
+    "change_pct": "0"
+   },
+   "EURONEXT:ALSAS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "3.88",
+    "change_pct": "0"
+   },
+   "EURONEXT:MLHYE": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "100",
+    "change_pct": "1.0101"
+   },
+   "EURONEXT:ALVIN": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "2.66",
+    "change_pct": "9.9174"
+   },
+   "EURONEXT:ALMGI": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "2.3",
+    "change_pct": "2.6786"
+   },
+   "EURONEXT:ALI2S": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "6.45",
+    "change_pct": "4.0323"
+   },
+   "EURONEXT:ALCOF": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "258",
+    "change_pct": "-0.7692"
+   },
+   "EURONEXT:ALERO": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "3",
+    "change_pct": "4.8951"
+   },
+   "EURONEXT:MLFXO": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "5.2",
+    "change_pct": "-3.7037"
+   },
+   "EURONEXT:ALQWA": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "1.5",
+    "change_pct": "-0.6623"
+   },
+   "EURONEXT:COUR": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "101",
+    "change_pct": "0"
+   },
+   "EURONEXT:AUGR": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "4.8",
+    "change_pct": "-0.4149"
+   },
+   "EURONEXT:MLSDN": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "29.6",
+    "change_pct": "-4.5161"
+   },
+   "EURONEXT:ALDBL": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "3.42",
+    "change_pct": "-5"
+   },
+   "EURONEXT:ALAQU": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "3.7",
+    "change_pct": "0"
+   },
+   "EURONEXT:ALDUB": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.86",
+    "change_pct": "0"
+   },
+   "EURONEXT:ALUVI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "2.34",
+    "change_pct": "0"
+   },
+   "EURONEXT:MLIDS": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.58",
+    "change_pct": "0"
+   },
+   "EURONEXT:GJAJ": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "1.24",
+    "change_pct": "0"
+   },
+   "EURONEXT:MLCLP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.65",
+    "change_pct": "19.5652"
+   },
+   "EURONEXT:MLLOI": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "10.8",
+    "change_pct": "12.5"
+   },
+   "EURONEXT:MLAEM": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "1.27",
+    "change_pct": "0.7937"
+   },
+   "EURONEXT:ALPRE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.01",
+    "change_pct": "18.8235"
+   },
+   "EURONEXT:MLPAC": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "7.75",
+    "change_pct": "6.1644"
+   },
+   "EURONEXT:CHSR": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "7",
+    "change_pct": "11.1111"
+   },
+   "EURONEXT:MLIMP": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "3.7",
+    "change_pct": "0"
+   },
+   "EURONEXT:NR21": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "41.4",
+    "change_pct": "0.4854"
+   },
+   "EURONEXT:MLHPE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "4.1",
+    "change_pct": "-1.9139"
+   },
+   "EURONEXT:BUI": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "3.08",
+    "change_pct": "0"
+   },
+   "EURONEXT:MLAA": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "1.94",
+    "change_pct": "0"
+   },
+   "EURONEXT:ALREE": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.4",
+    "change_pct": "0"
+   },
+   "EURONEXT:MLIML": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.372",
+    "change_pct": "-2.1053"
+   },
+   "EURONEXT:MLDAM": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "4.02",
+    "change_pct": "0"
+   },
+   "EURONEXT:ALMAS": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.004",
+    "change_pct": "0"
+   },
+   "EURONEXT:ALIMO": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.39",
+    "change_pct": "25.8065"
+   },
+   "EURONEXT:MLSML": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.0225",
+    "change_pct": "9.7561"
+   },
+   "EURONEXT:MLAGI": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.324",
+    "change_pct": "-48.9764"
+   },
+   "EURONEXT:ALBOO": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.4",
+    "change_pct": "0"
+   }
+  },
+  "eu-nl": {
+   "EURONEXT:VALUE": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "6.5",
+    "change_pct": "2.3622"
+   },
+   "EURONEXT:PBH": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "3.32",
+    "change_pct": "0.6061"
+   },
+   "EURONEXT:PORF": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "14.4",
+    "change_pct": "6.6667"
+   },
+   "EURONEXT:HWK": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "2.24",
+    "change_pct": "-0.885"
+   }
+  },
+  "eu-be": {
+   "EURONEXT:ROCK": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "18.6",
+    "change_pct": "0"
+   },
+   "EURONEXT:ROU": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "11.4",
+    "change_pct": "-3.7975"
+   },
+   "EURONEXT:FLSP": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "21.6",
+    "change_pct": "-4.4248"
+   },
+   "EURONEXT:NEWT": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "1.95",
+    "change_pct": "0"
+   },
+   "EURONEXT:MOP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "240",
+    "change_pct": "0"
+   },
+   "EURONEXT:MONNI": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "7.38",
+    "change_pct": "-15.6475"
+   },
+   "EURONEXT:SOFT": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.77",
+    "change_pct": "-1.2821"
+   },
+   "EURONEXT:CAND": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "1.92",
+    "change_pct": "20"
+   },
+   "EURONEXT:MLTV": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.144",
+    "change_pct": "-4"
+   },
+   "EURONEXT:DEXB": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.02",
+    "change_pct": "-60"
+   }
+  },
+  "eu-pt": {
+   "EURONEXT:SCP": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "0.95",
+    "change_pct": "-4.0404"
+   },
+   "EURONEXT:MLFMV": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "5",
+    "change_pct": "0"
+   },
+   "EURONEXT:MLCIA": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "2.26",
+    "change_pct": "0"
+   },
+   "EURONEXT:ESON": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "2.7",
+    "change_pct": "0"
+   }
+  },
+  "eu-fi": {
+   "OMXHEX:ELEAV": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "2.14",
+    "change_pct": "0.9434"
+   }
+  },
+  "eu-dk": {
+   "OMXCOP:GERHSP": {
+    "last_trade": "2026-10-19",
+    "confirmed": true,
+    "close": "64.5",
+    "change_pct": "-3.7313"
+   },
+   "OMXCOP:GJ": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "85.5",
+    "change_pct": "-1.1561"
+   },
+   "OMXCOP:RIAS_B": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "630",
+    "change_pct": "-1.5625"
+   },
+   "OMXCOP:OKEAC": {
+    "last_trade": "2026-10-21",
+    "confirmed": true,
+    "close": "5600",
+    "change_pct": "-3.4483"
+   },
+   "OMXCOP:FASTPC": {
+    "last_trade": "2026-10-22",
+    "confirmed": true,
+    "close": "42",
+    "change_pct": "-9.8712"
+   },
+   "OMXCOP:MOVINN": {
+    "last_trade": "2026-10-23",
+    "confirmed": true,
+    "close": "1.43",
+    "change_pct": "-5.9211"
+   }
+  },
+  "eu-es": {
+   "BME:GGC": {
+    "last_trade": "2026-09-11",
+    "confirmed": false,
+    "close": "161",
+    "change_pct": "0"
+   },
+   "BME:YCPS": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "9.55",
+    "change_pct": "0"
+   },
+   "BME:YEPSA": {
+    "last_trade": "2026-09-21",
+    "confirmed": true,
+    "close": "10.6",
+    "change_pct": "0"
+   },
+   "BME:YGMP": {
+    "last_trade": "2026-10-09",
+    "confirmed": true,
+    "close": "62",
+    "change_pct": "0"
+   },
+   "BME:YVIV": {
+    "last_trade": "2026-02-23",
+    "confirmed": true,
+    "close": "1.33",
+    "change_pct": "0"
+   },
+   "BME:YZBL": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "0.915",
+    "change_pct": "0"
+   },
+   "BME:YATO": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "17.6",
+    "change_pct": "0"
+   },
+   "BME:YTST": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "3.26",
+    "change_pct": "0"
+   },
+   "BME:YFID": {
+    "last_trade": "2026-05-25",
+    "confirmed": false,
+    "close": "40",
+    "change_pct": "0"
+   },
+   "BME:ALC": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "5.8",
+    "change_pct": "0"
+   },
+   "BME:YVIT": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "18",
+    "change_pct": "0"
+   },
+   "BME:YSIL": {
+    "last_trade": "2026-08-19",
+    "confirmed": false,
+    "close": "10.5",
+    "change_pct": "0"
+   },
+   "BME:YHTI": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "1.83",
+    "change_pct": "0"
+   },
+   "BME:CEV": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "8.4",
+    "change_pct": "0"
+   },
+   "BME:YTRI": {
+    "last_trade": "2026-09-10",
+    "confirmed": false,
+    "close": "38.4",
+    "change_pct": "0"
+   },
+   "BME:YORE": {
+    "last_trade": "2026-10-01",
+    "confirmed": true,
+    "close": "0.95",
+    "change_pct": "0"
+   },
+   "BME:YDOA": {
+    "last_trade": "2026-10-02",
+    "confirmed": true,
+    "close": "26.8",
+    "change_pct": "0"
+   },
+   "BME:YEUR": {
+    "last_trade": "2026-06-09",
+    "confirmed": false,
+    "close": "31.8",
+    "change_pct": "0"
+   },
+   "BME:YLFG": {
+    "last_trade": "2026-07-29",
+    "confirmed": false,
+    "close": "4.18",
+    "change_pct": "0"
+   },
+   "BME:YADR": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "9.95",
+    "change_pct": "0"
+   },
+   "BME:YISC": {
+    "last_trade": "2025-02-27",
+    "confirmed": false,
+    "close": "15.1",
+    "change_pct": "0"
+   },
+   "BME:YTAN": {
+    "last_trade": "2025-10-09",
+    "confirmed": false,
+    "close": "11.9",
+    "change_pct": "0"
+   },
+   "BME:YENT": {
+    "last_trade": "2026-08-27",
+    "confirmed": false,
+    "close": "1.78",
+    "change_pct": "0"
+   },
+   "BME:STNA": {
+    "last_trade": "2026-10-12",
+    "confirmed": false,
+    "close": "15.4",
+    "change_pct": "0"
+   },
+   "BME:AMEN": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "7.5",
+    "change_pct": "0"
+   },
+   "BME:YVCP": {
+    "last_trade": "2026-09-04",
+    "confirmed": false,
+    "close": "31.2",
+    "change_pct": "0"
+   },
+   "BME:YMRE": {
+    "last_trade": "2026-07-16",
+    "confirmed": true,
+    "close": "0.77",
+    "change_pct": "0"
+   },
+   "BME:YADV": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "13.4",
+    "change_pct": "0"
+   },
+   "BME:ALQ": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "16",
+    "change_pct": "0"
+   },
+   "BME:YAZR": {
+    "last_trade": "2025-02-10",
+    "confirmed": false,
+    "close": "8.4",
+    "change_pct": "0"
+   },
+   "BME:UMB": {
+    "last_trade": "2026-10-06",
+    "confirmed": true,
+    "close": "2.98",
+    "change_pct": "0"
+   },
+   "BME:SCIG4": {
+    "last_trade": "2025-08-19",
+    "confirmed": true,
+    "close": "1",
+    "change_pct": "0"
+   },
+   "BME:YTCH": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "1.15",
+    "change_pct": "0"
+   },
+   "BME:YARP": {
+    "last_trade": "2026-09-11",
+    "confirmed": false,
+    "close": "2.94",
+    "change_pct": "0"
+   },
+   "BME:AIG": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "2.8",
+    "change_pct": "0"
+   },
+   "BME:YINB1": {
+    "last_trade": "2026-02-11",
+    "confirmed": true,
+    "close": "1.13",
+    "change_pct": "0"
+   },
+   "BME:YINB4": {
+    "last_trade": "2026-05-11",
+    "confirmed": false,
+    "close": "0.945",
+    "change_pct": "0"
+   },
+   "BME:YMIL": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "19.5",
+    "change_pct": "0"
+   },
+   "BME:GRI": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "1.45",
+    "change_pct": "0"
+   },
+   "BME:SCAP7": {
+    "last_trade": "2026-07-21",
+    "confirmed": true,
+    "close": "5.6",
+    "change_pct": "0"
+   },
+   "BME:YINB6": {
+    "last_trade": "2025-04-03",
+    "confirmed": false,
+    "close": "0.985",
+    "change_pct": "0"
+   },
+   "BME:YABA": {
+    "last_trade": "2025-10-09",
+    "confirmed": false,
+    "close": "1.03",
+    "change_pct": "0"
+   },
+   "BME:YHCR": {
+    "last_trade": "2026-06-19",
+    "confirmed": false,
+    "close": "6",
+    "change_pct": "0"
+   },
+   "BME:UBS": {
+    "last_trade": "2025-04-30",
+    "confirmed": false,
+    "close": "0.0022",
+    "change_pct": "0"
+   },
+   "BME:SCIPP": {
+    "last_trade": "2026-04-01",
+    "confirmed": true,
+    "close": "13.7",
+    "change_pct": "0"
+   },
+   "BME:EIDF": {
+    "last_trade": "2026-04-30",
+    "confirmed": false,
+    "close": "0.44",
+    "change_pct": "0"
+   },
+   "BME:YQUO": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "1.16",
+    "change_pct": "0"
+   },
+   "BME:YPSN": {
+    "last_trade": "2026-10-14",
+    "confirmed": false,
+    "close": "16.1",
+    "change_pct": "0"
+   },
+   "BME:SCPKR": {
+    "last_trade": "2026-09-02",
+    "confirmed": false,
+    "close": "1.48",
+    "change_pct": "0"
+   },
+   "BME:YINB8": {
+    "last_trade": "2025-06-04",
+    "confirmed": false,
+    "close": "1.1",
+    "change_pct": "0"
+   },
+   "BME:YINB2": {
+    "last_trade": "2025-10-24",
+    "confirmed": true,
+    "close": "0.99",
+    "change_pct": "0"
+   },
+   "BME:YINB3": {
+    "last_trade": "2026-10-08",
+    "confirmed": true,
+    "close": "0.98",
+    "change_pct": "0"
+   },
+   "BME:YMIB": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.995",
+    "change_pct": "0"
+   },
+   "BME:YMAT": {
+    "last_trade": "2025-07-30",
+    "confirmed": false,
+    "close": "1.01",
+    "change_pct": "0"
+   },
+   "BME:RDG": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.855",
+    "change_pct": "0"
+   },
+   "BME:SCGRM": {
+    "last_trade": "2026-02-18",
+    "confirmed": true,
+    "close": "3.2",
+    "change_pct": "0"
+   },
+   "BME:IFLEX": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "1.74",
+    "change_pct": "0"
+   },
+   "BME:ENRS": {
+    "last_trade": "2026-09-21",
+    "confirmed": true,
+    "close": "0.392",
+    "change_pct": "0"
+   },
+   "BME:NZI": {
+    "last_trade": "2026-10-08",
+    "confirmed": true,
+    "close": "1",
+    "change_pct": "0"
+   },
+   "BME:TRTK": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "2.4",
+    "change_pct": "0"
+   },
+   "BME:YMCS": {
+    "last_trade": "2025-01-23",
+    "confirmed": false,
+    "close": "1",
+    "change_pct": "0"
+   },
+   "BME:YINB7": {
+    "last_trade": "2026-10-15",
+    "confirmed": false,
+    "close": "0.87",
+    "change_pct": "0"
+   },
+   "BME:DOMO": {
+    "last_trade": "2026-10-16",
+    "confirmed": false,
+    "close": "1.38",
+    "change_pct": "0"
+   },
+   "BME:SPH": {
+    "last_trade": "2026-04-30",
+    "confirmed": false,
+    "close": "0.5",
+    "change_pct": "0"
+   },
+   "BME:SCGV": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "2.22",
+    "change_pct": "0"
+   },
+   "BME:KOM": {
+    "last_trade": "2026-09-25",
+    "confirmed": true,
+    "close": "0.83",
+    "change_pct": "0"
+   },
+   "BME:YGO2": {
+    "last_trade": "2025-09-19",
+    "confirmed": false,
+    "close": "1.66",
+    "change_pct": "0"
+   },
+   "BME:YNPC": {
+    "last_trade": "2026-05-13",
+    "confirmed": false,
+    "close": "8.85",
+    "change_pct": "0"
+   },
+   "BME:SCSS": {
+    "last_trade": "2026-05-15",
+    "confirmed": false,
+    "close": "4.8",
+    "change_pct": "0"
+   },
+   "BME:YEIS": {
+    "last_trade": "2026-09-11",
+    "confirmed": false,
+    "close": "0.46",
+    "change_pct": "0"
+   },
+   "BME:HAN": {
+    "last_trade": "2026-09-22",
+    "confirmed": true,
+    "close": "0.132",
+    "change_pct": "0"
+   },
+   "BME:S1013": {
+    "last_trade": "2026-09-22",
+    "confirmed": false,
+    "close": "27.5689",
+    "change_pct": "0.4127"
+   },
+   "BME:SCBTT": {
+    "last_trade": "2026-09-18",
+    "confirmed": true,
+    "close": "4.6",
+    "change_pct": "0"
+   }
+  },
+  "eu-it": {
+   "MIL:YRM": {
+    "last_trade": "2026-09-30",
+    "confirmed": false,
+    "close": "236",
+    "change_pct": "0"
+   },
+   "MIL:VARV": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "6.8",
+    "change_pct": "0"
+   },
+   "MIL:AC5": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "2.08",
+    "change_pct": "0"
+   },
+   "MIL:RWY": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "10.2",
+    "change_pct": "0"
+   },
+   "MIL:BF": {
+    "last_trade": "2019-06-28",
+    "confirmed": false,
+    "close": "1.25",
+    "change_pct": "0"
+   },
+   "MIL:NOVA": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "8.3",
+    "change_pct": "0"
+   },
+   "MIL:ESF": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "4",
+    "change_pct": "0"
+   },
+   "MIL:VLT": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "11.9",
+    "change_pct": "0"
+   },
+   "MIL:E9IA": {
+    "last_trade": "2025-08-27",
+    "confirmed": false,
+    "close": "2",
+    "change_pct": "0"
+   },
+   "MIL:ABC": {
+    "last_trade": "2026-09-21",
+    "confirmed": false,
+    "close": "3.9",
+    "change_pct": "0"
+   },
+   "MIL:TPS": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "7.8",
+    "change_pct": "0"
+   },
+   "MIL:KLN": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "3.96",
+    "change_pct": "0"
+   },
+   "MIL:UBA": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "5.3",
+    "change_pct": "0"
+   },
+   "MIL:SMCAP": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "1.43",
+    "change_pct": "0"
+   },
+   "MIL:CUBE": {
+    "last_trade": "2026-10-01",
+    "confirmed": false,
+    "close": "2.26",
+    "change_pct": "0"
+   },
+   "MIL:CREG": {
+    "last_trade": "2026-02-27",
+    "confirmed": false,
+    "close": "2.96",
+    "change_pct": "0"
+   },
+   "MIL:IB": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "8.25",
+    "change_pct": "0"
+   },
+   "MIL:TALEA": {
+    "last_trade": "2025-08-05",
+    "confirmed": false,
+    "close": "4.8",
+    "change_pct": "0"
+   },
+   "MIL:PMED": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "5.25",
+    "change_pct": "0"
+   },
+   "MIL:ESAU": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "3.02",
+    "change_pct": "0"
+   },
+   "MIL:ACQ": {
+    "last_trade": "2025-05-05",
+    "confirmed": false,
+    "close": "10.5",
+    "change_pct": "0"
+   },
+   "MIL:PLN": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "3.56",
+    "change_pct": "0"
+   },
+   "MIL:PSQ": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.935",
+    "change_pct": "0"
+   },
+   "MIL:HZY": {
+    "last_trade": "2026-09-16",
+    "confirmed": false,
+    "close": "2",
+    "change_pct": "0"
+   },
+   "MIL:SCK": {
+    "last_trade": "2025-06-11",
+    "confirmed": false,
+    "close": "0.94",
+    "change_pct": "0"
+   },
+   "MIL:ARBS": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "3.03",
+    "change_pct": "0"
+   },
+   "MIL:NPI": {
+    "last_trade": "2026-10-19",
+    "confirmed": false,
+    "close": "0.915",
+    "change_pct": "0"
+   },
+   "MIL:CORE": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "1.3",
+    "change_pct": "0"
+   },
+   "MIL:VIM": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "1.4",
+    "change_pct": "0"
+   },
+   "MIL:AMI": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "1.42",
+    "change_pct": "0"
+   },
+   "MIL:DOT": {
+    "last_trade": "2026-09-03",
+    "confirmed": false,
+    "close": "4",
+    "change_pct": "0"
+   },
+   "MIL:GMS": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "1.28",
+    "change_pct": "0"
+   },
+   "MIL:MARK": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "1.58",
+    "change_pct": "0"
+   },
+   "MIL:LMG": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "1.03",
+    "change_pct": "0"
+   },
+   "MIL:COP": {
+    "last_trade": "2026-10-13",
+    "confirmed": false,
+    "close": "7.7",
+    "change_pct": "0"
+   },
+   "MIL:ELB": {
+    "last_trade": "2026-10-06",
+    "confirmed": false,
+    "close": "4.26",
+    "change_pct": "0"
+   },
+   "MIL:OTO": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "2.1",
+    "change_pct": "0"
+   },
+   "MIL:TRAI": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "2.14",
+    "change_pct": "0"
+   },
+   "MIL:TWL": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "23",
+    "change_pct": "0"
+   },
+   "MIL:AUTME": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "2.64",
+    "change_pct": "0"
+   },
+   "MIL:MQSPA": {
+    "last_trade": "2024-03-18",
+    "confirmed": false,
+    "close": "0.22",
+    "change_pct": "0"
+   },
+   "MIL:LS": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "1.28",
+    "change_pct": "0"
+   },
+   "MIL:EUK": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.48",
+    "change_pct": "0"
+   },
+   "MIL:CLABO": {
+    "last_trade": "2025-06-13",
+    "confirmed": false,
+    "close": "1.1",
+    "change_pct": "0"
+   },
+   "MIL:CSP": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "0.265",
+    "change_pct": "0"
+   },
+   "MIL:GAIN": {
+    "last_trade": "2026-02-03",
+    "confirmed": false,
+    "close": "1.56",
+    "change_pct": "0"
+   },
+   "MIL:NSP": {
+    "last_trade": "2025-06-20",
+    "confirmed": false,
+    "close": "0.44",
+    "change_pct": "0"
+   },
+   "MIL:ELSA": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "2.44",
+    "change_pct": "0"
+   },
+   "MIL:VNE": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "2.86",
+    "change_pct": "0"
+   },
+   "MIL:ART": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.246",
+    "change_pct": "0"
+   },
+   "MIL:S3D": {
+    "last_trade": "2026-09-29",
+    "confirmed": false,
+    "close": "0.385",
+    "change_pct": "0"
+   },
+   "MIL:CGF": {
+    "last_trade": "2026-10-05",
+    "confirmed": false,
+    "close": "1.25",
+    "change_pct": "0"
+   },
+   "MIL:TCM": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.744",
+    "change_pct": "0"
+   },
+   "MIL:OSA": {
+    "last_trade": "2025-06-05",
+    "confirmed": false,
+    "close": "0.382",
+    "change_pct": "0"
+   },
+   "MIL:TMP": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "3.93",
+    "change_pct": "0"
+   },
+   "MIL:HQF": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.492",
+    "change_pct": "0"
+   },
+   "MIL:VLC": {
+    "last_trade": "2026-10-09",
+    "confirmed": false,
+    "close": "1.92",
+    "change_pct": "0"
+   },
+   "MIL:ICC": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "1.05",
+    "change_pct": "0"
+   },
+   "MIL:LTX": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.71",
+    "change_pct": "0"
+   },
+   "MIL:AMB": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.386",
+    "change_pct": "0"
+   },
+   "MIL:FPT": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "1.09",
+    "change_pct": "0"
+   },
+   "MIL:TLM": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "1.6",
+    "change_pct": "0"
+   },
+   "MIL:U24": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.168",
+    "change_pct": "0"
+   },
+   "MIL:AGAIN": {
+    "last_trade": "2026-05-27",
+    "confirmed": false,
+    "close": "0.658",
+    "change_pct": "0"
+   },
+   "MIL:MTS": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "1.66",
+    "change_pct": "0"
+   },
+   "MIL:BWZ": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "0.288",
+    "change_pct": "0"
+   },
+   "MIL:TNX": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "0.545",
+    "change_pct": "0"
+   },
+   "MIL:ILLA": {
+    "last_trade": "2024-07-12",
+    "confirmed": false,
+    "close": "0.0005",
+    "change_pct": "0"
+   },
+   "MIL:OPS": {
+    "last_trade": "2026-04-30",
+    "confirmed": false,
+    "close": "0.1",
+    "change_pct": "0"
+   },
+   "MIL:MEV": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.09",
+    "change_pct": "0"
+   },
+   "MIL:OEC": {
+    "last_trade": "2026-07-28",
+    "confirmed": false,
+    "close": "0.0234",
+    "change_pct": "0"
+   },
+   "MIL:BES": {
+    "last_trade": "2025-11-25",
+    "confirmed": false,
+    "close": "0.058",
+    "change_pct": "0"
+   },
+   "MIL:OPR": {
+    "last_trade": "2026-04-24",
+    "confirmed": false,
+    "close": "0.0109",
+    "change_pct": "0"
+   },
+   "MIL:GT": {
+    "last_trade": "2025-05-23",
+    "confirmed": false,
+    "close": "0.16",
+    "change_pct": "0"
+   },
+   "MIL:PRXD": {
+    "last_trade": "2026-09-21",
+    "confirmed": false,
+    "close": "10",
+    "change_pct": "0"
+   },
+   "MIL:OPTS": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.92",
+    "change_pct": "0"
+   }
+  },
+  "eu-gr": {
+   "ATHEX:DOTSOFT": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "35",
+    "change_pct": "0"
+   },
+   "ATHEX:NAKAS": {
+    "last_trade": "2026-10-20",
+    "confirmed": false,
+    "close": "3.4",
+    "change_pct": "0"
+   },
+   "ATHEX:MOYZK": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.505",
+    "change_pct": "0"
+   },
+   "ATHEX:ATEK": {
+    "last_trade": "2026-10-22",
+    "confirmed": false,
+    "close": "1.03",
+    "change_pct": "0"
+   },
+   "ATHEX:VOSYS": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "1.87",
+    "change_pct": "-0.7958"
+   },
+   "ATHEX:HAIDE": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.98",
+    "change_pct": "-1.0101"
+   },
+   "ATHEX:AAAK": {
+    "last_trade": "2026-10-21",
+    "confirmed": false,
+    "close": "4.78",
+    "change_pct": "0"
+   },
+   "ATHEX:MIN": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.74",
+    "change_pct": "1.3699"
+   },
+   "ATHEX:PAIR": {
+    "last_trade": "2026-10-23",
+    "confirmed": false,
+    "close": "0.806",
+    "change_pct": "3.599"
+   }
+  }
+ }
+}
