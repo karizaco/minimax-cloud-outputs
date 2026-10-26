@@ -1,0 +1,503 @@
+symbol,name,sector,data_date,close,sma20,sma50,above_sma20,above_sma50,perf_1m_pct,perf_3m_pct,atr_pct,atr_x_median,_source
+PTC,"PTC Inc.",Information Technology,2026-10-23,193.80,180.59,158.41,true,true,41.04,54.78,0.49,0.14,yahoo_chart_api_fallback
+ACN,"Accenture",Information Technology,2026-10-23,249.37,213.55,195.82,true,true,40.56,61.87,3.78,0.86,yahoo_chart_api_fallback
+HAS,"Hasbro",Consumer Discretionary,2026-10-23,117.44,97.24,93.96,true,true,35.28,29.61,2.92,1.08,yahoo_chart_api_fallback
+IT,"Gartner",Information Technology,2026-10-23,230.28,199.59,192.36,true,true,28.42,56.17,3.47,0.73,yahoo_chart_api_fallback
+CBOE,"Cboe Global Markets",Financials,2026-10-23,340.42,294.79,291.14,true,true,27.23,17.85,3.40,1.03,yahoo_chart_api_fallback
+CCI,"Crown Castle",Real Estate,2026-10-23,85.97,74.73,74.48,true,true,27.12,15.97,4.48,1.56,yahoo_chart_api_fallback
+INTU,"Intuit",Information Technology,2026-10-23,343.39,306.17,321.12,true,true,23.91,12.99,3.67,0.79,yahoo_chart_api_fallback
+CTSH,"Cognizant",Information Technology,2026-10-23,70.54,62.31,61.51,true,true,23.39,49.93,3.77,0.96,yahoo_chart_api_fallback
+EFX,"Equifax",Industrials,2026-10-23,182.36,153.59,166.96,true,true,22.55,2.85,3.32,0.86,yahoo_chart_api_fallback
+FDS,"FactSet",Financials,2026-10-23,331.32,290.55,289.46,true,true,22.15,24.60,3.24,0.72,yahoo_chart_api_fallback
+CSGP,"CoStar Group",Real Estate,2026-10-23,33.92,29.98,30.52,true,true,21.75,16.28,3.79,0.81,yahoo_chart_api_fallback
+STZ,"Constellation Brands",Consumer Staples,2026-10-23,138.68,123.68,125.54,true,true,21.43,6.92,2.68,0.95,yahoo_chart_api_fallback
+BRO,"Brown & Brown",Financials,2026-10-23,72.97,65.08,67.22,true,true,20.95,4.69,2.67,0.89,yahoo_chart_api_fallback
+ROP,"Roper Technologies",Information Technology,2026-10-23,438.14,375.48,387.70,true,true,20.36,16.83,2.52,0.91,yahoo_chart_api_fallback
+CCL,"Carnival Corporation",Consumer Discretionary,2026-10-23,26.11,25.95,24.75,true,true,19.83,-3.72,3.50,0.86,yahoo_chart_api_fallback
+TYL,"Tyler Technologies",Information Technology,2026-10-23,390.14,346.06,347.41,true,true,19.36,23.51,2.83,0.69,yahoo_chart_api_fallback
+ADSK,"Autodesk",Information Technology,2026-10-23,252.20,230.90,232.79,true,true,19.33,11.64,3.10,0.83,yahoo_chart_api_fallback
+APA,"APA Corporation",Energy,2026-10-23,51.90,46.27,44.64,true,true,18.82,49.40,3.21,0.82,yahoo_chart_api_fallback
+CDW,"CDW Corporation",Information Technology,2026-10-23,165.11,144.60,144.56,true,true,18.39,19.61,3.12,0.77,yahoo_chart_api_fallback
+AJG,"Arthur J. Gallagher & Co.",Financials,2026-10-23,268.04,240.63,247.05,true,true,18.01,5.79,2.50,0.85,yahoo_chart_api_fallback
+VEEV,"Veeva Systems",Health Care,2026-10-23,323.04,297.47,276.93,true,true,17.54,66.12,3.00,0.75,yahoo_chart_api_fallback
+ALLE,"Allegion",Industrials,2026-10-23,178.98,156.26,156.43,true,true,17.38,13.18,2.70,1.07,yahoo_chart_api_fallback
+CRL,"Charles River Laboratories",Health Care,2026-10-23,345.37,306.65,293.94,true,true,17.30,53.98,4.32,1.04,yahoo_chart_api_fallback
+MPC,"Marathon Petroleum",Energy,2026-10-23,457.22,447.74,409.30,true,true,16.95,46.38,3.64,1.05,yahoo_chart_api_fallback
+CASY,"Casey's",Consumer Staples,2026-10-23,699.26,650.10,688.78,true,true,16.77,-18.06,2.62,0.90,yahoo_chart_api_fallback
+COP,"ConocoPhillips",Energy,2026-10-23,150.80,136.43,134.07,true,true,16.59,30.47,2.41,0.89,yahoo_chart_api_fallback
+PNW,"Pinnacle West Capital",Utilities,2026-10-23,105.88,99.29,97.72,true,true,16.25,0.47,1.79,0.97,yahoo_chart_api_fallback
+MRSH,"Marsh McLennan",Financials,2026-10-23,197.48,179.71,181.59,true,true,16.21,7.73,2.28,0.95,yahoo_chart_api_fallback
+PAYX,"Paychex",Industrials,2026-10-23,118.04,106.10,113.83,true,true,16.19,2.22,2.23,0.73,yahoo_chart_api_fallback
+VRSK,"Verisk Analytics",Industrials,2026-10-23,195.88,178.43,180.56,true,true,16.15,-5.22,3.35,0.96,yahoo_chart_api_fallback
+ERIE,"Erie Indemnity",Financials,2026-10-23,253.52,231.44,242.26,true,true,15.78,11.07,3.10,0.92,yahoo_chart_api_fallback
+RCL,"Royal Caribbean Group",Consumer Discretionary,2026-10-23,276.48,277.08,271.87,false,true,15.69,-9.36,3.40,0.78,yahoo_chart_api_fallback
+CI,"Cigna",Health Care,2026-10-23,306.95,286.69,281.76,true,true,15.61,5.47,2.51,0.97,yahoo_chart_api_fallback
+ADP,"Automatic Data Processing",Industrials,2026-10-23,304.16,276.12,275.36,true,true,15.60,19.29,2.00,0.74,yahoo_chart_api_fallback
+NOW,"ServiceNow",Information Technology,2026-10-23,158.96,141.68,137.49,true,true,15.37,50.59,3.91,0.75,yahoo_chart_api_fallback
+LMT,"Lockheed Martin",Industrials,2026-10-23,604.18,527.47,540.14,true,true,15.37,4.17,2.73,1.05,yahoo_chart_api_fallback
+ZTS,"Zoetis",Health Care,2026-10-23,81.03,74.89,74.59,true,true,15.31,5.34,2.30,0.76,yahoo_chart_api_fallback
+MCK,"McKesson",Health Care,2026-10-23,1000.77,947.97,910.08,true,true,15.12,17.73,2.14,0.85,yahoo_chart_api_fallback
+WM,"Waste Management",Industrials,2026-10-23,239.38,216.11,216.95,true,true,15.11,0.62,1.81,0.90,yahoo_chart_api_fallback
+ROL,"Rollins, Inc.",Industrials,2026-10-23,34.82,32.04,33.72,true,true,14.54,-10.88,3.22,1.25,yahoo_chart_api_fallback
+BALL,"Ball Corporation",Materials,2026-10-23,64.76,59.97,60.88,true,true,14.30,0.14,2.28,0.94,yahoo_chart_api_fallback
+DOW,"Dow Inc.",Materials,2026-10-23,32.61,29.05,29.66,true,true,14.18,13.43,2.73,0.68,yahoo_chart_api_fallback
+EOG,"EOG Resources",Energy,2026-10-23,163.03,149.65,147.57,true,true,14.12,16.19,2.40,0.88,yahoo_chart_api_fallback
+RMD,"ResMed",Health Care,2026-10-23,252.86,232.79,229.53,true,true,13.96,24.51,2.28,0.81,yahoo_chart_api_fallback
+EL,"Estée Lauder Companies (The)",Consumer Staples,2026-10-23,108.67,99.17,98.45,true,true,13.95,30.61,3.30,0.87,yahoo_chart_api_fallback
+SYK,"Stryker Corporation",Health Care,2026-10-23,307.15,285.99,295.80,true,true,13.86,-8.79,2.72,0.97,yahoo_chart_api_fallback
+ULTA,"Ulta Beauty",Consumer Discretionary,2026-10-23,624.46,574.84,552.91,true,true,13.79,29.96,2.67,0.89,yahoo_chart_api_fallback
+CME,"CME Group",Financials,2026-10-23,305.71,280.23,277.37,true,true,13.68,19.72,2.00,0.91,yahoo_chart_api_fallback
+ABNB,"Airbnb",Consumer Discretionary,2026-10-23,172.01,166.44,172.01,true,false,13.62,17.13,2.59,0.79,yahoo_chart_api_fallback
+CVX,"Chevron Corporation",Energy,2026-10-23,233.21,215.37,210.42,true,true,13.40,22.74,2.14,1.00,yahoo_chart_api_fallback
+CTAS,"Cintas",Industrials,2026-10-23,224.10,205.93,202.69,true,true,13.37,6.22,1.74,0.77,yahoo_chart_api_fallback
+CNC,"Centene Corporation",Health Care,2026-10-23,70.17,66.57,65.81,true,true,13.32,9.50,3.10,0.82,yahoo_chart_api_fallback
+KR,"Kroger",Consumer Staples,2026-10-23,66.77,61.73,59.67,true,true,13.32,15.16,2.92,1.04,yahoo_chart_api_fallback
+KMB,"Kimberly-Clark",Consumer Staples,2026-10-23,110.15,100.84,102.81,true,true,13.30,-1.16,2.37,1.01,yahoo_chart_api_fallback
+ISRG,"Intuitive Surgical",Health Care,2026-10-23,452.29,420.59,396.06,true,true,13.21,26.75,2.87,0.98,yahoo_chart_api_fallback
+BF-B,"Brown–Forman",Consumer Staples,2026-10-23,29.41,27.30,27.11,true,true,13.12,7.34,2.59,0.78,yahoo_chart_api_fallback
+RSG,"Republic Services",Industrials,2026-10-23,240.45,221.43,220.37,true,true,13.04,10.86,1.88,0.96,yahoo_chart_api_fallback
+XOM,"ExxonMobil",Energy,2026-10-23,183.21,170.85,165.78,true,true,12.99,18.38,2.14,0.85,yahoo_chart_api_fallback
+AMT,"American Tower",Real Estate,2026-10-23,188.97,174.36,174.69,true,true,12.98,13.33,3.40,1.30,yahoo_chart_api_fallback
+MAS,"Masco",Industrials,2026-10-23,76.01,70.81,70.89,true,true,12.93,-6.35,2.78,0.91,yahoo_chart_api_fallback
+PGR,"Progressive Corporation",Financials,2026-10-23,228.07,216.62,216.02,true,true,12.81,5.71,2.59,1.09,yahoo_chart_api_fallback
+OTIS,"Otis Worldwide",Industrials,2026-10-23,75.15,68.32,69.34,true,true,12.70,2.68,1.80,0.77,yahoo_chart_api_fallback
+ED,"Consolidated Edison",Utilities,2026-10-23,115.74,107.64,107.04,true,true,12.69,3.80,1.86,1.00,yahoo_chart_api_fallback
+BR,"Broadridge Financial Solutions",Industrials,2026-10-23,183.28,168.34,171.05,true,true,12.68,19.96,2.15,0.67,yahoo_chart_api_fallback
+EBAY,"eBay Inc.",Consumer Discretionary,2026-10-23,121.41,113.80,109.15,true,true,12.59,7.24,2.88,0.95,yahoo_chart_api_fallback
+KDP,"Keurig Dr Pepper",Consumer Staples,2026-10-23,34.68,32.51,32.03,true,true,12.31,15.14,2.23,0.89,yahoo_chart_api_fallback
+XEL,"Xcel Energy",Utilities,2026-10-23,78.05,73.87,74.75,true,true,12.21,-3.30,1.74,0.90,yahoo_chart_api_fallback
+CAH,"Cardinal Health",Health Care,2026-10-23,249.57,240.33,236.27,true,true,12.11,8.82,2.22,0.93,yahoo_chart_api_fallback
+SO,"Southern Company",Utilities,2026-10-23,92.89,87.24,87.73,true,true,12.06,-3.72,1.80,1.07,yahoo_chart_api_fallback
+HLT,"Hilton Worldwide",Consumer Discretionary,2026-10-23,349.63,332.71,322.72,true,true,12.01,5.68,2.17,0.95,yahoo_chart_api_fallback
+COST,"Costco",Consumer Staples,2026-10-23,1003.32,958.15,938.86,true,true,11.92,5.44,1.63,0.84,yahoo_chart_api_fallback
+GDDY,"GoDaddy",Information Technology,2026-10-23,112.79,102.67,100.08,true,true,11.88,16.99,3.05,0.69,yahoo_chart_api_fallback
+AZO,"AutoZone",Consumer Discretionary,2026-10-23,3200.76,2970.18,2951.23,true,true,11.85,4.08,2.42,0.87,yahoo_chart_api_fallback
+IBM,"IBM",Information Technology,2026-10-23,253.56,230.67,233.04,true,true,11.67,17.24,2.92,0.89,yahoo_chart_api_fallback
+SPGI,"S&P Global",Financials,2026-10-23,450.31,412.39,418.13,true,true,11.67,2.38,2.06,0.75,yahoo_chart_api_fallback
+CNP,"CenterPoint Energy",Utilities,2026-10-23,41.07,38.90,39.01,true,true,11.54,-6.68,1.68,0.91,yahoo_chart_api_fallback
+UNH,"UnitedHealth Group",Health Care,2026-10-23,418.09,389.21,388.57,true,true,11.49,0.11,3.13,1.17,yahoo_chart_api_fallback
+ALL,"Allstate",Financials,2026-10-23,253.19,235.44,245.82,true,true,11.45,-3.09,2.22,0.92,yahoo_chart_api_fallback
+WMT,"Walmart",Consumer Staples,2026-10-23,119.89,112.19,109.43,true,true,11.43,7.29,2.20,0.97,yahoo_chart_api_fallback
+HST,"Host Hotels & Resorts",Real Estate,2026-10-23,24.72,23.26,22.72,true,true,11.30,-1.00,2.27,0.99,yahoo_chart_api_fallback
+SBAC,"SBA Communications",Real Estate,2026-10-23,184.75,173.77,179.11,true,true,11.21,7.03,4.09,1.39,yahoo_chart_api_fallback
+STE,"Steris",Health Care,2026-10-23,232.15,216.90,220.26,true,true,11.20,6.30,2.32,0.91,yahoo_chart_api_fallback
+MAR,"Marriott International",Consumer Discretionary,2026-10-23,390.71,372.81,356.38,true,true,11.15,2.00,2.05,0.85,yahoo_chart_api_fallback
+KVUE,"Kenvue",Consumer Staples,2026-10-23,19.57,18.18,18.36,true,true,11.13,0.46,1.92,0.95,yahoo_chart_api_fallback
+BDX,"Becton Dickinson",Health Care,2026-10-23,198.91,186.81,185.37,true,true,10.98,25.16,2.18,0.88,yahoo_chart_api_fallback
+HUM,"Humana",Health Care,2026-10-23,422.07,409.37,397.79,true,true,10.98,10.74,4.59,1.22,yahoo_chart_api_fallback
+TSN,"Tyson Foods",Consumer Staples,2026-10-23,56.70,53.28,53.94,true,true,10.87,-6.61,1.75,0.75,yahoo_chart_api_fallback
+V,"Visa Inc.",Financials,2026-10-23,407.92,385.26,377.07,true,true,10.85,12.52,1.76,0.84,yahoo_chart_api_fallback
+CMS,"CMS Energy",Utilities,2026-10-23,69.58,66.00,66.92,true,true,10.85,-6.31,1.79,1.01,yahoo_chart_api_fallback
+HCA,"HCA Healthcare",Health Care,2026-10-23,469.03,448.85,431.51,true,true,10.76,20.38,2.47,0.86,yahoo_chart_api_fallback
+BIIB,"Biogen",Health Care,2026-10-23,250.69,230.92,223.38,true,true,10.75,25.26,3.07,1.04,yahoo_chart_api_fallback
+MSCI,"MSCI",Financials,2026-10-23,615.62,566.05,562.06,true,true,10.71,7.81,2.26,0.85,yahoo_chart_api_fallback
+WTW,"Willis Towers Watson",Financials,2026-10-23,325.01,302.02,316.02,true,true,10.69,7.39,2.44,0.96,yahoo_chart_api_fallback
+OMC,"Omnicom Group",Communication Services,2026-10-23,82.68,77.57,80.55,true,true,10.68,0.33,2.73,0.87,yahoo_chart_api_fallback
+PSX,"Phillips 66",Energy,2026-10-23,283.18,277.71,262.50,true,true,10.67,36.26,3.13,1.00,yahoo_chart_api_fallback
+NI,"NiSource",Utilities,2026-10-23,43.28,41.05,41.01,true,true,10.63,-5.52,1.83,0.97,yahoo_chart_api_fallback
+OXY,"Occidental Petroleum",Energy,2026-10-23,64.17,59.99,59.82,true,true,10.54,16.82,2.48,0.79,yahoo_chart_api_fallback
+PG,"Procter & Gamble",Consumer Staples,2026-10-23,161.02,152.76,148.37,true,true,10.53,8.34,2.10,1.08,yahoo_chart_api_fallback
+COO,"Cooper Companies (The)",Health Care,2026-10-23,61.21,57.01,61.92,true,false,10.53,-12.92,2.43,0.95,yahoo_chart_api_fallback
+EXC,"Exelon",Utilities,2026-10-23,44.43,42.04,42.87,true,true,10.52,-5.77,1.86,0.94,yahoo_chart_api_fallback
+ELV,"Elevance Health",Health Care,2026-10-23,439.95,413.94,408.05,true,true,10.47,16.28,2.71,0.98,yahoo_chart_api_fallback
+LYB,"LyondellBasell",Materials,2026-10-23,66.45,60.87,62.58,true,true,10.42,13.36,2.58,0.66,yahoo_chart_api_fallback
+ADBE,"Adobe Inc.",Information Technology,2026-10-23,263.82,244.07,255.78,true,true,10.42,10.97,3.37,0.88,yahoo_chart_api_fallback
+EXPE,"Expedia Group",Consumer Discretionary,2026-10-23,289.01,275.40,290.51,true,false,10.41,3.82,4.22,0.96,yahoo_chart_api_fallback
+WSM,"Williams-Sonoma, Inc.",Consumer Discretionary,2026-10-23,252.47,242.52,235.22,true,true,10.41,7.71,2.69,0.78,yahoo_chart_api_fallback
+DLTR,"Dollar Tree",Consumer Staples,2026-10-23,125.31,119.35,121.95,true,true,10.41,-0.18,3.32,0.87,yahoo_chart_api_fallback
+DUK,"Duke Energy",Utilities,2026-10-23,124.98,117.78,118.94,true,true,10.38,-2.99,1.69,0.99,yahoo_chart_api_fallback
+CHD,"Church & Dwight",Consumer Staples,2026-10-23,105.19,99.87,98.64,true,true,10.34,6.58,2.05,0.92,yahoo_chart_api_fallback
+LDOS,"Leidos",Industrials,2026-10-23,136.08,123.10,129.58,true,true,10.32,18.38,2.74,0.85,yahoo_chart_api_fallback
+AEP,"American Electric Power",Utilities,2026-10-23,129.69,123.56,123.01,true,true,10.31,-2.92,1.84,0.99,yahoo_chart_api_fallback
+CL,"Colgate-Palmolive",Consumer Staples,2026-10-23,94.04,89.82,89.33,true,true,10.22,2.24,2.11,0.98,yahoo_chart_api_fallback
+TJX,"TJX Companies",Consumer Discretionary,2026-10-23,145.06,140.04,136.38,true,true,10.20,-7.24,1.79,0.84,yahoo_chart_api_fallback
+KMI,"Kinder Morgan",Energy,2026-10-23,34.43,32.45,31.90,true,true,10.18,8.44,2.56,1.14,yahoo_chart_api_fallback
+MA,"Mastercard",Financials,2026-10-23,623.60,590.19,581.65,true,true,10.16,13.03,1.66,0.76,yahoo_chart_api_fallback
+WEC,"WEC Energy Group",Utilities,2026-10-23,111.09,105.15,105.55,true,true,10.10,-2.40,1.75,1.01,yahoo_chart_api_fallback
+ATO,"Atmos Energy",Utilities,2026-10-23,172.21,162.50,164.08,true,true,10.09,-3.37,1.68,1.01,yahoo_chart_api_fallback
+SWK,"Stanley Black & Decker",Industrials,2026-10-23,99.24,91.33,93.28,true,true,10.06,5.38,2.85,0.82,yahoo_chart_api_fallback
+TRMB,"Trimble Inc.",Information Technology,2026-10-23,63.49,59.90,59.19,true,true,10.05,13.84,2.75,0.84,yahoo_chart_api_fallback
+LNT,"Alliant Energy",Utilities,2026-10-23,69.66,66.25,66.95,true,true,10.03,-5.78,1.69,0.97,yahoo_chart_api_fallback
+JKHY,"Jack Henry & Associates",Financials,2026-10-23,162.55,150.51,156.56,true,true,10.02,6.26,2.60,0.84,yahoo_chart_api_fallback
+MTD,"Mettler Toledo",Health Care,2026-10-23,1670.29,1578.64,1466.21,true,true,9.95,24.99,2.43,0.85,yahoo_chart_api_fallback
+WDAY,"Workday, Inc.",Information Technology,2026-10-23,209.99,192.39,193.36,true,true,9.95,42.33,3.19,0.60,yahoo_chart_api_fallback
+AON,"Aon plc",Financials,2026-10-23,303.52,281.63,305.76,true,false,9.94,-17.34,2.15,0.83,yahoo_chart_api_fallback
+TRV,"Travelers Companies (The)",Financials,2026-10-23,398.28,375.30,371.45,true,true,9.90,2.03,2.10,1.05,yahoo_chart_api_fallback
+CVS,"CVS Health",Health Care,2026-10-23,93.47,89.36,91.61,true,true,9.90,-12.70,2.42,0.95,yahoo_chart_api_fallback
+ZBH,"Zimmer Biomet",Health Care,2026-10-23,98.56,92.22,95.16,true,true,9.89,7.05,2.36,0.85,yahoo_chart_api_fallback
+UPS,"United Parcel Service",Industrials,2026-10-23,101.06,95.76,98.93,true,true,9.79,-10.53,1.95,0.79,yahoo_chart_api_fallback
+BBY,"Best Buy",Consumer Discretionary,2026-10-23,99.87,90.22,89.25,true,true,9.75,12.91,3.16,0.92,yahoo_chart_api_fallback
+PODD,"Insulet Corporation",Health Care,2026-10-23,149.01,137.44,140.50,true,true,9.74,-9.69,2.93,0.76,yahoo_chart_api_fallback
+IFF,"International Flavors & Fragrances",Materials,2026-10-23,94.15,87.27,85.89,true,true,9.67,23.23,1.96,0.65,yahoo_chart_api_fallback
+AMCR,"Amcor",Materials,2026-10-23,46.11,42.94,44.03,true,true,9.52,1.92,2.01,0.70,yahoo_chart_api_fallback
+VLO,"Valero Energy",Energy,2026-10-23,419.28,425.50,392.41,false,true,9.51,37.50,4.07,1.13,yahoo_chart_api_fallback
+HD,"Home Depot (The)",Consumer Discretionary,2026-10-23,319.83,297.61,309.99,true,true,9.46,-4.84,2.38,0.93,yahoo_chart_api_fallback
+PPL,"PPL Corporation",Utilities,2026-10-23,34.98,33.96,34.13,true,true,9.42,-2.86,1.77,0.94,yahoo_chart_api_fallback
+ETR,"Entergy",Utilities,2026-10-23,107.34,103.19,104.29,true,true,9.35,-5.64,1.66,0.84,yahoo_chart_api_fallback
+NTAP,"NetApp",Information Technology,2026-10-23,215.48,220.13,203.42,false,true,9.25,26.90,4.20,1.13,yahoo_chart_api_fallback
+EIX,"Edison International",Utilities,2026-10-23,57.35,55.09,59.21,true,false,9.15,-27.07,2.64,1.05,yahoo_chart_api_fallback
+IDXX,"Idexx Laboratories",Health Care,2026-10-23,560.38,533.81,533.01,true,true,9.15,0.75,2.33,0.77,yahoo_chart_api_fallback
+YUM,"Yum! Brands",Consumer Discretionary,2026-10-23,149.70,144.44,145.69,true,true,9.00,1.29,2.16,0.96,yahoo_chart_api_fallback
+WRB,"W. R. Berkley Corporation",Financials,2026-10-23,73.33,71.73,70.17,true,true,8.98,-3.13,2.21,1.03,yahoo_chart_api_fallback
+AEE,"Ameren",Utilities,2026-10-23,108.04,103.05,104.41,true,true,8.91,-3.63,1.70,0.94,yahoo_chart_api_fallback
+PSA,"Public Storage",Real Estate,2026-10-23,309.89,291.02,299.79,true,true,8.90,-4.36,1.97,0.88,yahoo_chart_api_fallback
+FANG,"Diamondback Energy",Energy,2026-10-23,205.75,193.01,197.42,true,true,8.86,5.08,2.86,0.90,yahoo_chart_api_fallback
+DTE,"DTE Energy",Utilities,2026-10-23,131.89,127.04,130.93,true,true,8.84,-10.42,1.62,0.90,yahoo_chart_api_fallback
+HIG,"Hartford (The)",Financials,2026-10-23,136.76,130.43,133.43,true,true,8.81,-2.41,1.73,0.89,yahoo_chart_api_fallback
+AIZ,"Assurant",Financials,2026-10-23,284.75,273.54,277.95,true,true,8.74,2.85,1.88,0.90,yahoo_chart_api_fallback
+EVRG,"Evergy",Utilities,2026-10-23,84.43,81.13,81.13,true,true,8.72,-1.64,1.63,0.96,yahoo_chart_api_fallback
+LIN,"Linde plc",Materials,2026-10-23,508.83,488.98,480.65,true,true,8.69,0.36,1.49,0.76,yahoo_chart_api_fallback
+FTV,"Fortive",Industrials,2026-10-23,60.25,57.39,57.44,true,true,8.68,-4.24,2.00,0.82,yahoo_chart_api_fallback
+AIG,"American International Group",Financials,2026-10-23,81.26,77.70,76.59,true,true,8.61,2.65,1.72,0.81,yahoo_chart_api_fallback
+CINF,"Cincinnati Financial",Financials,2026-10-23,176.30,166.42,168.35,true,true,8.61,-4.30,1.76,0.90,yahoo_chart_api_fallback
+NEE,"NextEra Energy",Utilities,2026-10-23,82.10,77.97,80.60,true,true,8.57,-7.58,1.94,0.96,yahoo_chart_api_fallback
+AWK,"American Water Works",Utilities,2026-10-23,142.75,131.80,135.02,true,true,8.53,6.09,2.08,0.87,yahoo_chart_api_fallback
+NDAQ,"Nasdaq, Inc.",Financials,2026-10-23,102.56,93.90,94.87,true,true,8.47,9.18,2.18,0.86,yahoo_chart_api_fallback
+EXR,"Extra Space Storage",Real Estate,2026-10-23,143.41,135.71,138.59,true,true,8.45,-3.29,1.86,0.84,yahoo_chart_api_fallback
+VLTO,"Veralto",Industrials,2026-10-23,104.33,98.54,97.51,true,true,8.45,10.66,1.91,0.83,yahoo_chart_api_fallback
+FISV,"Fiserv",Financials,2026-10-23,49.86,46.66,49.04,true,true,8.44,-4.68,2.34,0.64,yahoo_chart_api_fallback
+PYPL,"PayPal",Financials,2026-10-23,57.02,55.43,55.85,true,true,8.40,1.69,1.85,0.58,yahoo_chart_api_fallback
+NOC,"Northrop Grumman",Industrials,2026-10-23,551.44,501.05,522.39,true,true,8.34,0.70,2.63,1.03,yahoo_chart_api_fallback
+DG,"Dollar General",Consumer Staples,2026-10-23,132.69,127.09,125.63,true,true,8.29,7.69,3.37,1.03,yahoo_chart_api_fallback
+VMC,"Vulcan Materials Company",Materials,2026-10-23,261.69,250.24,256.28,true,true,8.27,-8.01,2.30,0.84,yahoo_chart_api_fallback
+MNST,"Monster Beverage",Consumer Staples,2026-10-23,46.19,44.18,44.83,true,true,8.25,-3.09,2.25,1.00,yahoo_chart_api_fallback
+PEG,"Public Service Enterprise Group",Utilities,2026-10-23,72.02,70.22,71.45,true,true,8.20,-9.08,2.06,1.06,yahoo_chart_api_fallback
+AMGN,"Amgen",Health Care,2026-10-23,439.26,421.32,417.26,true,true,8.18,16.74,2.50,1.02,yahoo_chart_api_fallback
+CSX,"CSX Corporation",Industrials,2026-10-23,50.79,47.92,48.72,true,true,8.18,-1.95,1.93,0.93,yahoo_chart_api_fallback
+SRE,"Sempra",Utilities,2026-10-23,84.06,80.86,82.36,true,true,8.13,-7.88,1.65,0.79,yahoo_chart_api_fallback
+NWSA,"News Corp (Class A)",Communication Services,2026-10-23,30.74,29.48,29.76,true,true,8.09,12.64,1.98,0.79,yahoo_chart_api_fallback
+HPQ,"HP Inc.",Information Technology,2026-10-23,33.64,31.38,31.48,true,true,8.03,26.70,3.87,0.93,yahoo_chart_api_fallback
+APD,"Air Products",Materials,2026-10-23,307.15,288.30,293.63,true,true,7.97,4.98,1.58,0.71,yahoo_chart_api_fallback
+D,"Dominion Energy",Utilities,2026-10-23,65.20,62.17,64.07,true,true,7.95,-7.22,1.91,0.97,yahoo_chart_api_fallback
+MO,"Altria",Consumer Staples,2026-10-23,74.31,71.33,69.52,true,true,7.88,1.95,2.05,0.94,yahoo_chart_api_fallback
+GEN,"Gen Digital",Information Technology,2026-10-23,24.88,23.15,26.68,true,false,7.85,-6.96,2.92,0.82,yahoo_chart_api_fallback
+MDT,"Medtronic",Health Care,2026-10-23,95.41,90.71,91.37,true,true,7.80,13.29,2.73,1.15,yahoo_chart_api_fallback
+BAX,"Baxter International",Health Care,2026-10-23,25.30,24.48,24.77,true,true,7.75,8.40,2.96,0.83,yahoo_chart_api_fallback
+LLY,"Lilly (Eli)",Health Care,2026-10-23,1273.46,1204.94,1186.60,true,true,7.75,6.34,3.25,1.03,yahoo_chart_api_fallback
+ABBV,"AbbVie",Health Care,2026-10-23,285.64,275.09,266.12,true,true,7.74,11.18,2.54,1.00,yahoo_chart_api_fallback
+GEHC,"GE HealthCare",Health Care,2026-10-23,71.45,67.44,68.36,true,true,7.64,16.90,2.55,0.89,yahoo_chart_api_fallback
+SBUX,"Starbucks",Consumer Discretionary,2026-10-23,100.80,95.67,99.51,true,true,7.63,-2.75,2.67,1.03,yahoo_chart_api_fallback
+AVY,"Avery Dennison",Materials,2026-10-23,181.83,172.81,173.93,true,true,7.59,11.53,2.04,0.83,yahoo_chart_api_fallback
+URI,"United Rentals",Industrials,2026-10-23,1098.88,1052.53,1045.43,true,true,7.56,-2.57,3.62,1.13,yahoo_chart_api_fallback
+BRK-B,"Berkshire Hathaway",Financials,2026-10-23,542.19,518.58,510.82,true,true,7.33,9.05,1.21,0.88,yahoo_chart_api_fallback
+FIS,"Fidelity National Information Services",Financials,2026-10-23,37.53,34.85,37.41,true,true,7.26,-13.04,2.85,0.82,yahoo_chart_api_fallback
+RL,"Ralph Lauren Corporation",Consumer Discretionary,2026-10-23,377.40,371.36,359.84,true,true,7.26,-0.67,2.50,0.74,yahoo_chart_api_fallback
+EQT,"EQT Corporation",Energy,2026-10-23,55.63,52.50,53.01,true,true,7.25,6.98,2.40,0.87,yahoo_chart_api_fallback
+J,"Jacobs Solutions",Industrials,2026-10-23,145.06,139.92,143.16,true,true,7.19,7.27,2.50,0.91,yahoo_chart_api_fallback
+EG,"Everest Group",Financials,2026-10-23,398.60,377.80,375.49,true,true,7.16,2.38,2.12,0.99,yahoo_chart_api_fallback
+DPZ,"Domino's",Consumer Discretionary,2026-10-23,313.61,304.32,316.96,true,false,7.02,-8.71,3.27,1.05,yahoo_chart_api_fallback
+ACGL,"Arch Capital Group",Financials,2026-10-23,101.69,97.20,97.50,true,true,7.02,-2.11,2.00,0.99,yahoo_chart_api_fallback
+NWS,"News Corp (Class B)",Communication Services,2026-10-23,33.77,32.41,33.11,true,true,7.00,9.22,1.88,0.73,yahoo_chart_api_fallback
+FDX,"FedEx",Industrials,2026-10-23,298.72,292.34,306.61,true,false,6.86,-3.88,1.90,0.76,yahoo_chart_api_fallback
+UNP,"Union Pacific Corporation",Industrials,2026-10-23,292.87,281.88,287.42,true,true,6.86,-2.15,1.90,0.92,yahoo_chart_api_fallback
+FE,"FirstEnergy",Utilities,2026-10-23,46.15,44.79,45.50,true,true,6.85,-6.43,1.56,0.86,yahoo_chart_api_fallback
+AOS,"A. O. Smith",Industrials,2026-10-23,61.65,58.07,58.96,true,true,6.85,-1.27,2.54,0.95,yahoo_chart_api_fallback
+SJM,"J.M. Smucker Company (The)",Consumer Staples,2026-10-23,129.98,122.30,123.57,true,true,6.84,7.38,2.35,0.90,yahoo_chart_api_fallback
+EXPD,"Expeditors International",Industrials,2026-10-23,196.21,193.47,190.60,true,true,6.83,14.52,1.91,0.89,yahoo_chart_api_fallback
+UDR,"UDR, Inc.",Real Estate,2026-10-23,35.84,34.14,35.27,true,true,6.83,-8.73,1.93,0.98,yahoo_chart_api_fallback
+COR,"Cencora",Health Care,2026-10-23,331.00,324.55,322.04,true,true,6.82,6.38,1.94,0.78,yahoo_chart_api_fallback
+TRGP,"Targa Resources",Energy,2026-10-23,302.37,286.97,288.53,true,true,6.79,12.98,2.74,1.00,yahoo_chart_api_fallback
+LHX,"L3Harris",Industrials,2026-10-23,253.97,240.80,251.03,true,true,6.69,-16.31,2.05,0.79,yahoo_chart_api_fallback
+L,"Loews Corporation",Financials,2026-10-23,112.01,108.11,108.71,true,true,6.61,-5.51,1.60,0.88,yahoo_chart_api_fallback
+HAL,"Halliburton",Energy,2026-10-23,34.92,32.76,34.17,true,true,6.59,8.68,2.89,0.90,yahoo_chart_api_fallback
+DIS,"Walt Disney Company (The)",Communication Services,2026-10-23,112.52,107.65,106.90,true,true,6.59,16.42,1.75,0.81,yahoo_chart_api_fallback
+LH,"Labcorp",Health Care,2026-10-23,328.95,315.62,320.74,true,true,6.47,9.22,2.27,0.94,yahoo_chart_api_fallback
+NCLH,"Norwegian Cruise Line Holdings",Consumer Discretionary,2026-10-23,15.10,15.16,15.51,false,false,6.41,-24.61,4.50,0.92,yahoo_chart_api_fallback
+TSCO,"Tractor Supply",Consumer Discretionary,2026-10-23,33.42,32.70,33.52,true,false,6.30,5.09,4.04,1.22,yahoo_chart_api_fallback
+KIM,"Kimco Realty",Real Estate,2026-10-23,23.62,22.51,23.09,true,true,6.16,-10.46,1.64,0.98,yahoo_chart_api_fallback
+HRL,"Hormel Foods",Consumer Staples,2026-10-23,21.06,20.04,21.15,true,false,6.15,-19.16,2.14,0.88,yahoo_chart_api_fallback
+ALGN,"Align Technology",Health Care,2026-10-23,154.51,145.75,152.07,true,true,6.10,-8.06,2.49,0.63,yahoo_chart_api_fallback
+CB,"Chubb Limited",Financials,2026-10-23,355.11,343.86,341.70,true,true,6.05,-1.06,1.92,1.03,yahoo_chart_api_fallback
+DOV,"Dover Corporation",Industrials,2026-10-23,199.20,192.44,193.69,true,true,6.02,-3.23,1.88,0.77,yahoo_chart_api_fallback
+PEP,"PepsiCo",Consumer Staples,2026-10-23,135.77,129.24,134.12,true,true,5.95,-2.88,2.38,1.16,yahoo_chart_api_fallback
+XYL,"Xylem Inc.",Industrials,2026-10-23,108.74,103.37,107.19,true,true,5.92,-9.50,2.21,0.89,yahoo_chart_api_fallback
+MSI,"Motorola Solutions",Information Technology,2026-10-23,481.83,455.35,464.46,true,true,5.92,13.69,1.68,0.74,yahoo_chart_api_fallback
+ZBRA,"Zebra Technologies",Information Technology,2026-10-23,386.45,380.44,366.33,true,true,5.85,46.06,2.77,0.73,yahoo_chart_api_fallback
+ES,"Eversource Energy",Utilities,2026-10-23,67.46,65.45,67.89,true,false,5.74,-9.68,1.90,0.92,yahoo_chart_api_fallback
+PFE,"Pfizer",Health Care,2026-10-23,30.03,28.79,28.30,true,true,5.70,21.73,1.92,0.92,yahoo_chart_api_fallback
+AFL,"Aflac",Financials,2026-10-23,120.51,116.07,116.41,true,true,5.70,-4.78,1.86,1.03,yahoo_chart_api_fallback
+MLM,"Martin Marietta Materials",Materials,2026-10-23,507.17,489.02,503.55,true,true,5.64,-11.34,2.34,0.84,yahoo_chart_api_fallback
+CLX,"Clorox",Consumer Staples,2026-10-23,86.40,84.00,90.47,true,false,5.62,-11.30,2.65,0.86,yahoo_chart_api_fallback
+UHS,"Universal Health Services",Health Care,2026-10-23,186.89,180.05,176.70,true,true,5.59,17.31,2.46,0.75,yahoo_chart_api_fallback
+GWW,"W. W. Grainger",Industrials,2026-10-23,1349.90,1301.83,1296.63,true,true,5.50,-3.51,2.08,0.90,yahoo_chart_api_fallback
+WAT,"Waters Corporation",Health Care,2026-10-23,453.67,438.73,424.14,true,true,5.43,22.22,3.22,1.02,yahoo_chart_api_fallback
+LOW,"Lowe's",Consumer Discretionary,2026-10-23,198.68,189.59,197.71,true,true,5.41,-6.08,2.64,0.98,yahoo_chart_api_fallback
+NSC,"Norfolk Southern",Industrials,2026-10-23,329.99,320.23,326.56,true,true,5.37,-3.89,1.69,0.89,yahoo_chart_api_fallback
+RVTY,"Revvity",Health Care,2026-10-23,158.77,153.89,140.08,true,true,5.37,46.91,4.06,1.09,yahoo_chart_api_fallback
+MSFT,"Microsoft",Information Technology,2026-10-23,524.51,526.70,508.43,false,true,5.34,34.80,2.10,0.81,yahoo_chart_api_fallback
+KO,"Coca-Cola Company (The)",Consumer Staples,2026-10-23,92.71,89.57,89.10,true,true,5.23,10.28,1.81,1.08,yahoo_chart_api_fallback
+EXE,"Expand Energy",Energy,2026-10-23,93.23,89.30,92.25,true,true,5.20,3.01,2.42,0.89,yahoo_chart_api_fallback
+SHW,"Sherwin-Williams",Materials,2026-10-23,337.06,327.52,331.55,true,true,5.20,2.99,2.39,0.89,yahoo_chart_api_fallback
+TXN,"Texas Instruments",Information Technology,2026-10-23,284.69,283.84,272.40,true,true,5.19,1.89,3.35,1.01,yahoo_chart_api_fallback
+DVA,"DaVita",Health Care,2026-10-23,183.64,180.27,180.53,true,true,5.14,-22.29,3.17,1.11,yahoo_chart_api_fallback
+OKE,"Oneok",Energy,2026-10-23,95.83,90.56,92.79,true,true,5.10,7.12,2.42,0.89,yahoo_chart_api_fallback
+DVN,"Devon Energy",Energy,2026-10-23,51.39,48.80,48.53,true,true,5.09,19.07,2.81,0.89,yahoo_chart_api_fallback
+DHI,"D. R. Horton",Consumer Discretionary,2026-10-23,147.48,137.67,141.07,true,true,5.08,-0.12,2.98,0.93,yahoo_chart_api_fallback
+WST,"West Pharmaceutical Services",Health Care,2026-10-23,392.15,376.58,362.07,true,true,4.97,18.38,2.15,0.78,yahoo_chart_api_fallback
+DDOG,"Datadog",Information Technology,2026-10-23,269.65,271.42,248.75,false,true,4.95,7.06,5.72,1.05,yahoo_chart_api_fallback
+DD,"DuPont",Industrials,2026-10-23,136.55,131.26,132.48,true,true,4.86,-2.44,2.13,0.73,yahoo_chart_api_fallback
+MDLZ,"Mondelez International",Consumer Staples,2026-10-23,63.80,61.19,61.83,true,true,4.83,5.16,2.19,0.99,yahoo_chart_api_fallback
+MCD,"McDonald's",Consumer Discretionary,2026-10-23,248.46,238.13,249.79,true,false,4.83,-8.21,1.81,0.99,yahoo_chart_api_fallback
+ECL,"Ecolab",Materials,2026-10-23,288.53,282.88,280.42,true,true,4.78,6.32,1.90,0.85,yahoo_chart_api_fallback
+CPT,"Camden Property Trust",Real Estate,2026-10-23,102.00,98.18,101.86,true,true,4.71,-9.61,1.80,0.92,yahoo_chart_api_fallback
+ODFL,"Old Dominion",Industrials,2026-10-23,182.70,182.30,186.61,true,false,4.44,-19.43,2.56,0.75,yahoo_chart_api_fallback
+RF,"Regions Financial Corporation",Financials,2026-10-23,28.47,27.30,28.78,true,false,4.44,-7.38,2.00,0.88,yahoo_chart_api_fallback
+HON,"Honeywell Technologies",Industrials,2026-10-23,221.15,211.69,212.30,true,true,4.42,-10.01,2.47,1.08,yahoo_chart_api_fallback
+CRM,"Salesforce",Information Technology,2026-10-23,248.57,235.53,234.98,true,true,4.34,43.19,3.52,0.84,yahoo_chart_api_fallback
+FOXA,"Fox Corporation (Class A)",Communication Services,2026-10-23,66.60,63.71,65.53,true,true,4.32,17.58,2.78,0.99,yahoo_chart_api_fallback
+PNR,"Pentair",Industrials,2026-10-23,55.30,53.08,56.92,true,false,4.28,-12.47,2.49,0.85,yahoo_chart_api_fallback
+ORLY,"O'Reilly Automotive",Consumer Discretionary,2026-10-23,89.92,87.07,87.29,true,true,4.27,-0.74,2.04,0.83,yahoo_chart_api_fallback
+GILD,"Gilead Sciences",Health Care,2026-10-23,156.04,151.03,148.84,true,true,4.24,19.55,2.64,1.04,yahoo_chart_api_fallback
+LEN,"Lennar",Consumer Discretionary,2026-10-23,84.92,78.51,81.21,true,true,4.23,-0.14,3.58,1.03,yahoo_chart_api_fallback
+BLK,"BlackRock",Financials,2026-10-23,1118.25,1091.11,1104.37,true,true,4.17,5.28,2.43,0.95,yahoo_chart_api_fallback
+PM,"Philip Morris International",Consumer Staples,2026-10-23,199.47,197.00,192.53,true,true,4.16,1.95,2.81,1.06,yahoo_chart_api_fallback
+KEY,"KeyCorp",Financials,2026-10-23,21.08,20.24,21.08,true,false,4.10,-6.35,2.00,0.93,yahoo_chart_api_fallback
+NUE,"Nucor",Materials,2026-10-23,258.11,250.65,252.71,true,true,4.09,4.14,2.79,0.94,yahoo_chart_api_fallback
+SYY,"Sysco",Consumer Staples,2026-10-23,81.37,79.61,80.55,true,true,4.07,-3.23,1.87,0.86,yahoo_chart_api_fallback
+PPG,"PPG Industries",Materials,2026-10-23,110.61,106.59,108.48,true,true,4.03,-6.63,2.33,0.79,yahoo_chart_api_fallback
+FOX,"Fox Corporation (Class B)",Communication Services,2026-10-23,59.46,56.98,58.54,true,true,3.95,17.02,2.65,0.95,yahoo_chart_api_fallback
+KHC,"Kraft Heinz",Consumer Staples,2026-10-23,24.80,23.00,24.15,true,true,3.94,-5.42,2.59,0.96,yahoo_chart_api_fallback
+INVH,"Invitation Homes",Real Estate,2026-10-23,27.54,26.64,27.77,true,false,3.92,-7.05,1.85,0.98,yahoo_chart_api_fallback
+EW,"Edwards Lifesciences",Health Care,2026-10-23,89.07,86.82,88.06,true,true,3.90,7.26,2.27,0.84,yahoo_chart_api_fallback
+GD,"General Dynamics",Industrials,2026-10-23,349.36,336.33,354.38,true,false,3.89,-10.22,1.72,0.79,yahoo_chart_api_fallback
+PKG,"Packaging Corporation of America",Materials,2026-10-23,247.29,233.53,237.25,true,true,3.86,-2.01,1.91,0.69,yahoo_chart_api_fallback
+ICE,"Intercontinental Exchange",Financials,2026-10-23,162.74,155.93,157.12,true,true,3.70,9.42,2.01,0.83,yahoo_chart_api_fallback
+NKE,"Nike, Inc.",Consumer Discretionary,2026-10-23,37.30,35.88,37.17,true,true,3.64,-11.49,2.80,0.92,yahoo_chart_api_fallback
+MMM,"3M",Industrials,2026-10-23,173.46,165.74,169.14,true,true,3.55,-2.68,2.41,0.97,yahoo_chart_api_fallback
+AAPL,"Apple Inc.",Information Technology,2026-10-23,347.73,338.91,329.47,true,true,3.52,3.21,1.78,0.77,yahoo_chart_api_fallback
+EMR,"Emerson Electric",Industrials,2026-10-23,161.59,160.62,156.34,true,true,3.49,8.23,2.74,0.95,yahoo_chart_api_fallback
+MCO,"Moody's Corporation",Financials,2026-10-23,483.45,465.45,477.83,true,true,3.44,-0.52,2.63,0.97,yahoo_chart_api_fallback
+CPRT,"Copart",Industrials,2026-10-23,29.00,27.39,29.89,true,false,3.42,-2.65,3.17,0.98,yahoo_chart_api_fallback
+SPG,"Simon Property Group",Real Estate,2026-10-23,211.63,202.97,207.93,true,true,3.39,-8.65,1.75,0.96,yahoo_chart_api_fallback
+VTRS,"Viatris",Health Care,2026-10-23,18.00,17.89,17.19,true,true,3.33,2.04,2.77,0.98,yahoo_chart_api_fallback
+VMRK,"Vivmark Residential",Real Estate,2026-10-23,63.03,61.07,63.18,true,false,3.24,-6.26,1.84,0.92,yahoo_chart_api_fallback
+SLB,"Schlumberger",Energy,2026-10-23,53.06,49.52,52.47,true,true,3.17,2.97,2.95,0.90,yahoo_chart_api_fallback
+DECK,"Deckers Brands",Consumer Discretionary,2026-10-23,81.09,82.52,83.59,false,false,3.06,-17.03,3.84,1.08,yahoo_chart_api_fallback
+HONA,"Honeywell Aerospace",Industrials,2026-10-23,163.31,158.21,159.94,true,true,3.06,-22.54,3.62,1.04,yahoo_chart_api_fallback
+FERG,"Ferguson Enterprises",Industrials,2026-10-23,226.86,223.95,225.92,true,true,3.04,-3.09,2.53,0.94,yahoo_chart_api_fallback
+HII,"Huntington Ingalls Industries",Industrials,2026-10-23,274.08,267.09,280.07,true,false,3.04,-4.92,2.55,0.83,yahoo_chart_api_fallback
+DHR,"Danaher Corporation",Health Care,2026-10-23,230.50,223.27,216.13,true,true,3.01,17.30,3.09,1.10,yahoo_chart_api_fallback
+FITB,"Fifth Third Bancorp",Financials,2026-10-23,52.98,51.05,53.01,true,false,2.95,-7.05,2.10,0.92,yahoo_chart_api_fallback
+SYF,"Synchrony Financial",Financials,2026-10-23,73.64,72.85,75.44,true,false,2.92,-2.22,2.65,0.95,yahoo_chart_api_fallback
+VRSN,"Verisign",Information Technology,2026-10-23,300.32,296.89,292.99,true,true,2.89,9.28,2.82,1.03,yahoo_chart_api_fallback
+HBAN,"Huntington Bancshares",Financials,2026-10-23,15.73,15.35,16.14,true,false,2.74,-8.33,2.03,0.86,yahoo_chart_api_fallback
+MRNA,"Moderna",Health Care,2026-10-23,200.10,210.49,171.15,false,true,2.71,259.70,11.73,1.64,yahoo_chart_api_fallback
+STLD,"Steel Dynamics",Materials,2026-10-23,241.53,237.04,237.40,true,true,2.69,-3.49,3.19,0.96,yahoo_chart_api_fallback
+O,"Realty Income",Real Estate,2026-10-23,56.89,54.99,58.08,true,false,2.67,-13.15,1.74,1.06,yahoo_chart_api_fallback
+TFC,"Truist Financial",Financials,2026-10-23,48.44,46.65,48.69,true,false,2.67,-7.06,1.93,0.86,yahoo_chart_api_fallback
+ABT,"Abbott Laboratories",Health Care,2026-10-23,103.70,101.01,105.17,true,false,2.60,-0.76,2.83,1.15,yahoo_chart_api_fallback
+PHM,"PulteGroup",Consumer Discretionary,2026-10-23,121.19,114.57,119.90,true,true,2.55,-7.20,3.13,0.99,yahoo_chart_api_fallback
+CMCSA,"Comcast",Communication Services,2026-10-23,22.69,21.63,23.80,true,false,2.53,-0.48,3.00,1.08,yahoo_chart_api_fallback
+PCG,"PG&E Corporation",Utilities,2026-10-23,12.63,12.75,14.12,false,false,2.52,-28.24,3.16,1.23,yahoo_chart_api_fallback
+CARR,"Carrier Global",Industrials,2026-10-23,56.24,55.49,56.96,true,false,2.50,-18.88,2.43,0.72,yahoo_chart_api_fallback
+DRI,"Darden Restaurants",Consumer Discretionary,2026-10-23,212.40,205.44,211.06,true,true,2.49,4.07,2.26,0.83,yahoo_chart_api_fallback
+AXP,"American Express",Financials,2026-10-23,313.22,310.12,319.19,true,false,2.47,-6.61,2.08,0.86,yahoo_chart_api_fallback
+ESS,"Essex Property Trust",Real Estate,2026-10-23,278.35,271.57,276.16,true,true,2.47,-4.24,1.86,0.96,yahoo_chart_api_fallback
+COF,"Capital One",Financials,2026-10-23,201.34,198.39,206.27,true,false,2.41,-2.76,2.55,0.92,yahoo_chart_api_fallback
+FAST,"Fastenal",Industrials,2026-10-23,51.91,50.98,50.39,true,true,2.33,8.96,2.94,1.22,yahoo_chart_api_fallback
+BSX,"Boston Scientific",Health Care,2026-10-23,45.69,43.70,45.54,true,true,2.26,0.40,2.58,0.76,yahoo_chart_api_fallback
+DGX,"Quest Diagnostics",Health Care,2026-10-23,241.89,234.17,237.60,true,true,2.24,4.33,2.74,1.21,yahoo_chart_api_fallback
+LII,"Lennox International",Industrials,2026-10-23,376.01,360.81,374.53,true,true,2.24,-31.30,2.94,0.84,yahoo_chart_api_fallback
+ADI,"Analog Devices",Information Technology,2026-10-23,391.07,403.60,384.30,false,true,2.21,5.16,3.45,1.10,yahoo_chart_api_fallback
+TDY,"Teledyne Technologies",Information Technology,2026-10-23,625.41,615.89,618.26,true,true,2.19,-4.03,2.33,0.87,yahoo_chart_api_fallback
+PLTR,"Palantir Technologies",Information Technology,2026-10-23,196.75,195.51,184.75,true,true,2.16,49.59,4.56,0.97,yahoo_chart_api_fallback
+MAA,"Mid-America Apartment Communities",Real Estate,2026-10-23,119.78,117.01,122.73,true,false,2.15,-10.25,1.78,0.93,yahoo_chart_api_fallback
+VICI,"Vici Properties",Real Estate,2026-10-23,23.76,23.08,24.37,true,false,2.11,-11.18,1.92,1.08,yahoo_chart_api_fallback
+NXPI,"NXP Semiconductors",Information Technology,2026-10-23,234.92,234.45,230.34,true,true,2.07,-12.24,3.69,0.90,yahoo_chart_api_fallback
+CPAY,"Corpay",Financials,2026-10-23,408.46,400.53,404.47,true,true,2.03,7.57,2.29,0.71,yahoo_chart_api_fallback
+USB,"U.S. Bancorp",Financials,2026-10-23,59.58,57.83,60.28,true,false,2.02,-6.16,1.96,0.94,yahoo_chart_api_fallback
+FFIV,"F5, Inc.",Information Technology,2026-10-23,455.42,456.51,427.92,false,true,1.99,11.63,3.23,0.99,yahoo_chart_api_fallback
+CF,"CF Industries",Materials,2026-10-23,120.68,116.57,123.40,true,false,1.89,0.75,3.36,0.84,yahoo_chart_api_fallback
+HSY,"Hershey Company (The)",Consumer Staples,2026-10-23,169.64,164.53,171.76,true,false,1.65,-5.85,2.24,0.90,yahoo_chart_api_fallback
+ARES,"Ares Management",Financials,2026-10-23,122.08,116.82,127.65,true,false,1.64,-4.45,3.01,0.74,yahoo_chart_api_fallback
+MET,"MetLife",Financials,2026-10-23,98.82,98.37,97.26,true,true,1.61,3.81,2.32,1.09,yahoo_chart_api_fallback
+VST,"Vistra Corp.",Utilities,2026-10-23,140.16,150.12,145.19,false,false,1.61,-10.77,7.08,1.58,yahoo_chart_api_fallback
+WELL,"Welltower",Real Estate,2026-10-23,237.32,230.65,233.79,true,true,1.59,-4.44,2.13,0.96,yahoo_chart_api_fallback
+WMB,"Williams Companies",Energy,2026-10-23,71.70,71.14,72.17,true,false,1.59,1.29,3.18,1.29,yahoo_chart_api_fallback
+IQV,"IQVIA",Health Care,2026-10-23,279.36,266.08,263.22,true,true,1.58,31.02,2.90,0.78,yahoo_chart_api_fallback
+REG,"Regency Centers",Real Estate,2026-10-23,73.98,72.30,73.94,true,true,1.45,-10.15,1.63,0.98,yahoo_chart_api_fallback
+AMP,"Ameriprise Financial",Financials,2026-10-23,492.19,494.67,526.33,false,false,1.45,-8.52,2.23,0.87,yahoo_chart_api_fallback
+TT,"Trane Technologies",Industrials,2026-10-23,444.90,463.93,452.91,false,false,1.45,-7.95,3.18,1.14,yahoo_chart_api_fallback
+LYV,"Live Nation Entertainment",Communication Services,2026-10-23,173.44,171.18,174.15,true,false,1.39,-3.32,2.18,0.78,yahoo_chart_api_fallback
+ITW,"Illinois Tool Works",Industrials,2026-10-23,275.75,268.23,272.23,true,true,1.38,-3.18,2.02,0.97,yahoo_chart_api_fallback
+MTB,"M&T Bank",Financials,2026-10-23,221.66,218.23,228.90,true,false,1.37,-10.72,2.02,0.99,yahoo_chart_api_fallback
+RTX,"RTX Corporation",Industrials,2026-10-23,191.01,187.39,197.11,true,false,1.27,-12.55,2.52,1.07,yahoo_chart_api_fallback
+SNPS,"Synopsys",Information Technology,2026-10-23,430.14,467.89,430.87,false,false,1.23,10.58,3.88,0.99,yahoo_chart_api_fallback
+P,"Everpure",Information Technology,2026-10-23,123.33,137.68,117.74,false,true,1.19,66.19,6.81,1.24,yahoo_chart_api_fallback
+REGN,"Regeneron Pharmaceuticals",Health Care,2026-10-23,805.02,766.26,791.37,true,true,1.13,20.66,2.65,0.97,yahoo_chart_api_fallback
+CRH,"CRH plc",Materials,2026-10-23,84.89,82.90,87.88,true,false,1.11,-17.47,2.52,0.81,yahoo_chart_api_fallback
+TXT,"Textron",Industrials,2026-10-23,76.83,75.90,79.10,true,false,1.07,-20.08,2.20,0.89,yahoo_chart_api_fallback
+AES,"AES Corporation",Utilities,2026-10-23,15.00,14.94,14.85,true,true,1.01,1.15,0.30,0.66,yahoo_chart_api_fallback
+FTNT,"Fortinet",Information Technology,2026-10-23,179.99,181.37,170.54,false,true,0.74,18.12,3.89,1.00,yahoo_chart_api_fallback
+BX,"Blackstone Inc.",Financials,2026-10-23,117.97,111.95,125.04,true,false,0.65,-11.03,3.51,1.00,yahoo_chart_api_fallback
+CFG,"Citizens Financial Group",Financials,2026-10-23,65.14,63.92,67.19,true,false,0.63,-8.38,2.19,0.93,yahoo_chart_api_fallback
+MKC,"McCormick & Company",Consumer Staples,2026-10-23,48.12,46.13,49.88,true,false,0.63,-4.92,2.78,0.91,yahoo_chart_api_fallback
+PNC,"PNC Financial Services",Financials,2026-10-23,224.46,220.27,232.32,true,false,0.50,-10.09,2.03,0.95,yahoo_chart_api_fallback
+LUV,"Southwest Airlines",Industrials,2026-10-23,41.75,41.13,40.66,true,true,0.48,-8.00,3.81,1.01,yahoo_chart_api_fallback
+TTWO,"Take-Two Interactive",Communication Services,2026-10-23,203.69,205.31,214.98,false,false,0.35,-16.50,3.10,0.96,yahoo_chart_api_fallback
+VRTX,"Vertex Pharmaceuticals",Health Care,2026-10-23,523.93,510.64,522.71,true,true,0.30,9.38,2.64,1.02,yahoo_chart_api_fallback
+WFC,"Wells Fargo",Financials,2026-10-23,82.39,81.71,84.65,true,false,0.26,-5.59,2.47,1.00,yahoo_chart_api_fallback
+IEX,"IDEX Corporation",Industrials,2026-10-23,229.05,233.24,230.24,false,false,0.24,2.33,2.23,0.95,yahoo_chart_api_fallback
+A,"Agilent Technologies",Health Care,2026-10-23,173.07,171.92,161.41,true,true,0.13,25.51,2.88,0.97,yahoo_chart_api_fallback
+TPL,"Texas Pacific Land Corporation",Energy,2026-10-23,338.26,346.16,356.76,false,false,0.00,-14.71,3.57,0.83,yahoo_chart_api_fallback
+TECH,"Bio-Techne",Health Care,2026-10-23,72.55,72.51,72.42,true,true,-0.03,1.30,0.17,0.05,yahoo_chart_api_fallback
+BMY,"Bristol Myers Squibb",Health Care,2026-10-23,61.48,60.43,63.20,true,false,-0.03,-1.73,3.21,1.33,yahoo_chart_api_fallback
+VTR,"Ventas",Real Estate,2026-10-23,86.80,84.32,87.90,true,false,-0.03,-13.30,2.12,1.02,yahoo_chart_api_fallback
+TDG,"TransDigm Group",Industrials,2026-10-23,1104.84,1112.29,1137.51,false,false,-0.04,-14.11,2.50,0.90,yahoo_chart_api_fallback
+TROW,"T. Rowe Price",Financials,2026-10-23,104.20,103.22,106.34,true,false,-0.07,-12.59,2.23,0.98,yahoo_chart_api_fallback
+FSLR,"First Solar",Information Technology,2026-10-23,171.99,176.28,193.28,false,false,-0.10,-16.44,3.85,0.76,yahoo_chart_api_fallback
+BXP,"BXP, Inc.",Real Estate,2026-10-23,62.10,59.91,63.73,true,false,-0.27,-10.27,2.66,1.00,yahoo_chart_api_fallback
+XYZ,"Block, Inc.",Financials,2026-10-23,76.46,76.36,78.50,true,false,-0.36,-5.88,3.01,0.80,yahoo_chart_api_fallback
+CSCO,"Cisco",Information Technology,2026-10-23,106.50,110.84,110.23,false,false,-0.44,-7.04,2.98,1.07,yahoo_chart_api_fallback
+GRMN,"Garmin",Consumer Discretionary,2026-10-23,293.74,283.11,284.49,true,true,-0.44,21.14,2.61,0.97,yahoo_chart_api_fallback
+AMZN,"Amazon",Consumer Discretionary,2026-10-23,248.00,254.43,255.65,false,false,-0.55,7.18,2.86,1.05,yahoo_chart_api_fallback
+HSIC,"Henry Schein",Health Care,2026-10-23,84.96,84.95,86.95,true,false,-0.67,0.41,2.44,0.99,yahoo_chart_api_fallback
+RJF,"Raymond James Financial",Financials,2026-10-23,157.70,157.98,166.57,false,false,-0.67,-9.16,1.96,0.80,yahoo_chart_api_fallback
+TMO,"Thermo Fisher Scientific",Health Care,2026-10-23,673.82,672.10,644.96,true,true,-0.67,20.43,3.37,1.16,yahoo_chart_api_fallback
+CMI,"Cummins",Industrials,2026-10-23,517.40,525.28,546.79,false,false,-0.70,-21.82,2.99,0.90,yahoo_chart_api_fallback
+CRWD,"CrowdStrike",Information Technology,2026-10-23,257.57,255.68,234.80,true,true,-0.81,43.01,5.28,1.09,yahoo_chart_api_fallback
+MCHP,"Microchip Technology",Information Technology,2026-10-23,74.05,76.48,75.19,false,false,-0.86,-4.94,4.23,0.97,yahoo_chart_api_fallback
+JCI,"Johnson Controls",Industrials,2026-10-23,143.96,151.48,146.94,false,false,-0.96,0.40,3.38,1.16,yahoo_chart_api_fallback
+BKNG,"Booking Holdings",Consumer Discretionary,2026-10-23,155.83,160.41,177.23,false,false,-1.00,-16.57,3.31,0.89,yahoo_chart_api_fallback
+ON,"ON Semiconductor",Information Technology,2026-10-23,72.25,77.40,75.18,false,false,-1.23,-18.86,4.70,0.98,yahoo_chart_api_fallback
+GIS,"General Mills",Consumer Staples,2026-10-23,34.39,32.73,35.94,true,false,-1.26,-6.06,3.02,1.04,yahoo_chart_api_fallback
+JBHT,"J.B. Hunt",Industrials,2026-10-23,226.03,228.26,247.13,false,false,-1.36,-19.55,2.61,0.82,yahoo_chart_api_fallback
+NDSN,"Nordson Corporation",Industrials,2026-10-23,318.84,328.17,322.32,false,false,-1.37,7.21,2.38,1.10,yahoo_chart_api_fallback
+ECHO,"EchoStar",Communication Services,2026-10-23,89.08,91.10,90.58,false,false,-1.44,2.76,4.84,0.95,yahoo_chart_api_fallback
+FRT,"Federal Realty Investment Trust",Real Estate,2026-10-23,108.72,106.75,111.77,true,false,-1.48,-14.48,1.51,0.94,yahoo_chart_api_fallback
+TSLA,"Tesla, Inc.",Consumer Discretionary,2026-10-23,372.22,369.87,363.77,true,true,-1.51,20.37,3.14,0.82,yahoo_chart_api_fallback
+TPR,"Tapestry, Inc.",Consumer Discretionary,2026-10-23,110.37,116.06,119.39,false,false,-1.56,-25.14,2.96,0.85,yahoo_chart_api_fallback
+ROK,"Rockwell Automation",Industrials,2026-10-23,426.11,434.41,430.70,false,false,-1.58,-8.56,2.95,1.01,yahoo_chart_api_fallback
+ILMN,"Illumina, Inc.",Health Care,2026-10-23,269.42,271.82,241.80,false,true,-1.64,42.20,5.82,1.42,yahoo_chart_api_fallback
+CDNS,"Cadence Design Systems",Information Technology,2026-10-23,316.49,335.39,318.83,false,false,-1.71,-6.53,3.46,0.94,yahoo_chart_api_fallback
+IR,"Ingersoll Rand",Industrials,2026-10-23,73.48,77.28,76.71,false,false,-1.74,-13.21,3.11,0.96,yahoo_chart_api_fallback
+MRK,"Merck & Co.",Health Care,2026-10-23,145.27,145.20,146.64,true,false,-1.83,11.10,3.10,1.20,yahoo_chart_api_fallback
+APTV,"Aptiv",Consumer Discretionary,2026-10-23,42.69,44.02,45.11,false,false,-2.04,-25.69,2.94,0.77,yahoo_chart_api_fallback
+JPM,"JPMorgan Chase",Financials,2026-10-23,331.58,333.70,345.41,false,false,-2.06,-6.91,1.92,0.91,yahoo_chart_api_fallback
+ADM,"Archer Daniels Midland",Consumer Staples,2026-10-23,80.14,81.03,82.25,false,false,-2.13,-3.67,2.45,0.83,yahoo_chart_api_fallback
+TGT,"Target Corporation",Consumer Staples,2026-10-23,152.76,154.66,157.62,false,false,-2.17,8.85,2.72,0.94,yahoo_chart_api_fallback
+PANW,"Palo Alto Networks",Information Technology,2026-10-23,380.55,384.25,370.35,false,true,-2.40,19.93,5.25,1.19,yahoo_chart_api_fallback
+BKR,"Baker Hughes",Energy,2026-10-23,55.86,55.88,58.97,false,false,-2.50,-7.81,3.00,0.97,yahoo_chart_api_fallback
+JNJ,"Johnson & Johnson",Health Care,2026-10-23,263.81,259.02,265.20,true,false,-2.54,-0.80,2.66,1.36,yahoo_chart_api_fallback
+LULU,"Lululemon Athletica",Consumer Discretionary,2026-10-23,99.01,96.32,104.24,true,false,-2.59,-15.97,3.82,0.98,yahoo_chart_api_fallback
+ROST,"Ross Stores",Consumer Discretionary,2026-10-23,229.30,231.06,231.73,false,false,-2.59,-5.77,2.35,1.06,yahoo_chart_api_fallback
+TEL,"TE Connectivity",Information Technology,2026-10-23,208.05,214.45,209.97,false,false,-2.63,0.23,2.53,0.73,yahoo_chart_api_fallback
+SNA,"Snap-on",Industrials,2026-10-23,357.02,364.37,375.63,false,false,-2.91,-12.37,2.28,1.10,yahoo_chart_api_fallback
+GPN,"Global Payments",Financials,2026-10-23,82.82,82.63,86.86,true,false,-2.92,-1.48,2.74,0.74,yahoo_chart_api_fallback
+AME,"Ametek",Industrials,2026-10-23,240.03,248.46,243.69,false,false,-3.11,-1.27,2.43,1.08,yahoo_chart_api_fallback
+CEG,"Constellation Energy",Utilities,2026-10-23,253.45,273.16,274.20,false,false,-3.12,-6.13,6.26,1.48,yahoo_chart_api_fallback
+PRU,"Prudential Financial",Financials,2026-10-23,114.99,114.30,117.72,true,false,-3.17,-5.66,2.18,1.00,yahoo_chart_api_fallback
+WY,"Weyerhaeuser",Real Estate,2026-10-23,19.49,19.10,21.33,true,false,-3.23,-18.49,2.65,1.03,yahoo_chart_api_fallback
+BNY,"BNY Mellon",Financials,2026-10-23,145.27,143.80,152.93,true,false,-3.28,-7.92,2.26,1.05,yahoo_chart_api_fallback
+FDXF,"FedEx Freight",Industrials,2026-10-23,110.05,111.50,121.75,false,false,-3.30,-26.78,3.62,0.89,yahoo_chart_api_fallback
+PCAR,"Paccar",Industrials,2026-10-23,106.96,109.38,117.45,false,false,-3.35,-19.84,2.25,0.91,yahoo_chart_api_fallback
+CHRW,"C.H. Robinson",Industrials,2026-10-23,141.17,142.78,146.54,false,false,-3.44,-19.08,3.32,1.00,yahoo_chart_api_fallback
+SOLV,"Solventum",Health Care,2026-10-23,85.41,87.04,88.57,false,false,-3.59,6.14,2.54,0.90,yahoo_chart_api_fallback
+IRM,"Iron Mountain",Real Estate,2026-10-23,109.96,112.79,115.70,false,false,-3.62,-13.41,3.39,1.12,yahoo_chart_api_fallback
+UBER,"Uber",Industrials,2026-10-23,66.70,69.34,72.29,false,false,-3.64,-2.17,2.74,0.81,yahoo_chart_api_fallback
+NTRS,"Northern Trust",Financials,2026-10-23,167.92,168.17,177.27,false,false,-3.77,-8.00,2.34,0.99,yahoo_chart_api_fallback
+HUBB,"Hubbell Incorporated",Industrials,2026-10-23,448.10,467.10,464.25,false,false,-3.82,-10.01,3.11,0.99,yahoo_chart_api_fallback
+NVR,"NVR, Inc.",Consumer Discretionary,2026-10-23,5983.68,5978.43,6160.90,true,false,-4.04,-5.19,3.43,1.20,yahoo_chart_api_fallback
+BA,"Boeing",Industrials,2026-10-23,188.35,189.13,201.13,false,false,-4.29,-10.95,2.22,0.72,yahoo_chart_api_fallback
+DASH,"DoorDash",Consumer Discretionary,2026-10-23,179.38,188.69,202.29,false,false,-4.35,-2.71,4.24,0.96,yahoo_chart_api_fallback
+KKR,"KKR & Co.",Financials,2026-10-23,91.34,89.93,98.66,true,false,-4.50,-10.12,3.12,0.84,yahoo_chart_api_fallback
+BEN,"Franklin Resources",Financials,2026-10-23,31.06,31.85,33.01,false,false,-4.58,-6.50,2.60,0.93,yahoo_chart_api_fallback
+DLR,"Digital Realty",Real Estate,2026-10-23,172.37,176.64,183.11,false,false,-4.77,-11.95,2.96,1.19,yahoo_chart_api_fallback
+FICO,"Fair Isaac",Information Technology,2026-10-23,815.31,727.72,912.23,true,false,-4.81,-36.33,4.47,0.85,yahoo_chart_api_fallback
+GPC,"Genuine Parts Company",Consumer Discretionary,2026-10-23,123.02,127.81,131.25,false,false,-4.83,-3.66,3.20,1.11,yahoo_chart_api_fallback
+IP,"International Paper",Materials,2026-10-23,33.19,32.83,35.53,true,false,-4.85,-21.74,2.75,0.72,yahoo_chart_api_fallback
+PFG,"Principal Financial Group",Financials,2026-10-23,108.57,109.68,112.21,false,false,-4.89,-2.44,2.02,0.89,yahoo_chart_api_fallback
+SWKS,"Skyworks Solutions",Information Technology,2026-10-23,83.43,81.65,78.64,true,true,-4.99,31.51,4.39,0.98,yahoo_chart_api_fallback
+DOC,"Healthpeak Properties",Real Estate,2026-10-23,19.25,19.09,20.08,true,false,-5.03,-14.52,2.34,0.95,yahoo_chart_api_fallback
+GS,"Goldman Sachs",Financials,2026-10-23,875.68,892.86,959.72,false,false,-5.16,-16.46,2.79,0.94,yahoo_chart_api_fallback
+PLD,"Prologis",Real Estate,2026-10-23,126.45,128.81,134.34,false,false,-5.51,-14.13,2.38,1.12,yahoo_chart_api_fallback
+AXON,"Axon Enterprise",Industrials,2026-10-23,420.37,411.80,482.59,true,false,-5.53,-20.00,4.27,0.74,yahoo_chart_api_fallback
+RDDT,"Reddit",Communication Services,2026-10-23,144.25,151.73,153.81,false,false,-5.55,-19.52,5.41,0.90,yahoo_chart_api_fallback
+GNRC,"Generac",Industrials,2026-10-23,186.92,207.32,200.74,false,false,-5.62,-5.38,5.77,1.16,yahoo_chart_api_fallback
+VZ,"Verizon",Communication Services,2026-10-23,44.66,44.90,47.54,false,false,-5.62,-5.62,3.24,1.44,yahoo_chart_api_fallback
+NRG,"NRG Energy",Utilities,2026-10-23,92.31,100.50,106.97,false,false,-5.66,-32.37,5.69,1.36,yahoo_chart_api_fallback
+GM,"General Motors",Consumer Discretionary,2026-10-23,75.92,80.50,83.37,false,false,-5.77,-12.78,3.03,1.00,yahoo_chart_api_fallback
+NVDA,"Nvidia",Information Technology,2026-10-23,210.96,225.54,222.48,false,false,-6.06,7.35,2.83,0.86,yahoo_chart_api_fallback
+WAB,"Wabtec",Industrials,2026-10-23,272.35,285.96,287.07,false,false,-6.16,-9.49,2.88,1.15,yahoo_chart_api_fallback
+BG,"Bunge Global",Consumer Staples,2026-10-23,103.22,105.84,112.14,false,false,-6.34,-12.15,2.93,0.89,yahoo_chart_api_fallback
+GOOG,"Alphabet Inc. (Class C)",Communication Services,2026-10-23,317.28,339.53,339.58,false,false,-6.41,-2.84,2.57,0.99,yahoo_chart_api_fallback
+GOOGL,"Alphabet Inc. (Class A)",Communication Services,2026-10-23,320.21,343.08,342.94,false,false,-6.47,-1.94,2.62,0.98,yahoo_chart_api_fallback
+TKO,"TKO Group Holdings",Communication Services,2026-10-23,173.07,176.81,184.93,false,false,-6.48,-5.35,2.71,0.86,yahoo_chart_api_fallback
+APO,"Apollo Global Management",Financials,2026-10-23,112.83,114.81,124.18,false,false,-6.51,-9.18,3.19,0.93,yahoo_chart_api_fallback
+INCY,"Incyte",Health Care,2026-10-23,115.71,115.07,121.26,true,false,-7.02,-2.66,2.77,0.94,yahoo_chart_api_fallback
+DE,"Deere & Company",Industrials,2026-10-23,646.15,655.11,658.64,false,false,-7.02,3.38,2.93,1.03,yahoo_chart_api_fallback
+DAL,"Delta Air Lines",Industrials,2026-10-23,76.78,80.47,80.96,false,false,-7.23,-11.41,4.01,1.18,yahoo_chart_api_fallback
+STT,"State Street Corporation",Financials,2026-10-23,167.83,172.25,181.94,false,false,-7.32,-9.11,2.81,1.15,yahoo_chart_api_fallback
+GL,"Globe Life",Financials,2026-10-23,154.79,166.05,170.06,false,false,-7.49,-11.23,2.58,1.24,yahoo_chart_api_fallback
+CHTR,"Charter Communications",Communication Services,2026-10-23,108.61,108.54,128.50,true,false,-7.61,-17.48,4.55,0.95,yahoo_chart_api_fallback
+LVS,"Las Vegas Sands",Consumer Discretionary,2026-10-23,35.68,37.06,40.87,false,false,-7.68,-25.29,2.74,0.97,yahoo_chart_api_fallback
+EQIX,"Equinix",Real Estate,2026-10-23,955.03,1005.59,1030.66,false,false,-7.71,-8.77,3.20,1.31,yahoo_chart_api_fallback
+F,"Ford Motor Company",Consumer Discretionary,2026-10-23,11.60,12.14,13.12,false,false,-7.94,-20.98,2.59,0.87,yahoo_chart_api_fallback
+NFLX,"Netflix",Communication Services,2026-10-23,65.85,69.15,74.27,false,false,-8.18,-6.46,3.18,1.08,yahoo_chart_api_fallback
+AVGO,"Broadcom",Information Technology,2026-10-23,321.68,348.71,356.76,false,false,-8.19,-16.06,3.67,0.94,yahoo_chart_api_fallback
+IVZ,"Invesco",Financials,2026-10-23,28.06,29.47,30.91,false,false,-8.54,-6.81,3.35,1.02,yahoo_chart_api_fallback
+MS,"Morgan Stanley",Financials,2026-10-23,179.49,186.57,200.87,false,false,-8.57,-16.35,2.87,1.05,yahoo_chart_api_fallback
+C,"Citigroup",Financials,2026-10-23,120.62,126.33,131.24,false,false,-8.69,-9.38,2.82,1.04,yahoo_chart_api_fallback
+SCHW,"Charles Schwab Corporation",Financials,2026-10-23,90.58,95.21,102.67,false,false,-8.96,-13.05,2.34,0.97,yahoo_chart_api_fallback
+SW,"Smurfit Westrock",Materials,2026-10-23,41.85,42.07,44.60,false,false,-9.02,-16.45,2.93,0.76,yahoo_chart_api_fallback
+WYNN,"Wynn Resorts",Consumer Discretionary,2026-10-23,72.73,76.23,85.25,false,false,-9.30,-27.05,3.12,0.99,yahoo_chart_api_fallback
+QCOM,"Qualcomm",Information Technology,2026-10-23,175.91,178.17,176.11,false,false,-9.45,3.45,3.40,0.86,yahoo_chart_api_fallback
+FCX,"Freeport-McMoRan",Materials,2026-10-23,65.18,70.41,71.89,false,false,-9.57,3.92,3.87,0.87,yahoo_chart_api_fallback
+ORCL,"Oracle Corporation",Information Technology,2026-10-23,126.16,135.57,142.89,false,false,-9.59,5.22,5.23,1.02,yahoo_chart_api_fallback
+PH,"Parker Hannifin",Industrials,2026-10-23,880.57,954.56,968.62,false,false,-9.68,-10.81,2.77,1.09,yahoo_chart_api_fallback
+CBRE,"CBRE Group",Real Estate,2026-10-23,123.30,130.56,139.00,false,false,-9.69,-14.30,3.95,1.26,yahoo_chart_api_fallback
+BAC,"Bank of America",Financials,2026-10-23,50.56,52.91,57.73,false,false,-9.76,-18.62,2.58,1.21,yahoo_chart_api_fallback
+CVNA,"Carvana",Consumer Discretionary,2026-10-23,57.81,61.14,66.61,false,false,-9.93,-9.73,5.03,0.86,yahoo_chart_api_fallback
+Q,"Qnity Electronics",Information Technology,2026-10-23,109.83,123.16,123.72,false,false,-10.20,-17.40,4.99,0.97,yahoo_chart_api_fallback
+NEM,"Newmont",Materials,2026-10-23,108.87,115.58,121.67,false,false,-10.25,16.48,3.57,0.88,yahoo_chart_api_fallback
+IBKR,"Interactive Brokers",Financials,2026-10-23,80.28,85.74,89.44,false,false,-10.62,-12.99,3.75,1.00,yahoo_chart_api_fallback
+CIEN,"Ciena",Information Technology,2026-10-23,320.26,376.08,370.46,false,false,-10.65,-15.11,9.52,1.32,yahoo_chart_api_fallback
+GE,"GE Aerospace",Industrials,2026-10-23,285.64,306.94,323.55,false,false,-10.68,-21.01,3.08,1.02,yahoo_chart_api_fallback
+HPE,"Hewlett Packard Enterprise",Information Technology,2026-10-23,56.69,63.78,59.40,false,false,-10.75,17.64,6.66,1.32,yahoo_chart_api_fallback
+APH,"Amphenol",Information Technology,2026-10-23,74.09,83.17,81.56,false,false,-10.82,-0.74,4.11,0.97,yahoo_chart_api_fallback
+DXCM,"Dexcom",Health Care,2026-10-23,77.94,84.54,86.83,false,false,-10.90,6.23,3.60,1.03,yahoo_chart_api_fallback
+TMUS,"T-Mobile US",Communication Services,2026-10-23,146.54,159.42,170.40,false,false,-11.38,-17.31,4.51,1.61,yahoo_chart_api_fallback
+MRVL,"Marvell Technology",Information Technology,2026-10-23,228.51,256.79,242.95,false,false,-11.76,20.80,8.03,1.36,yahoo_chart_api_fallback
+JBL,"Jabil",Information Technology,2026-10-23,273.97,295.73,305.57,false,false,-11.82,-12.05,5.10,1.13,yahoo_chart_api_fallback
+UAL,"United Airlines Holdings",Industrials,2026-10-23,97.93,105.27,109.16,false,false,-11.93,-18.78,5.01,1.21,yahoo_chart_api_fallback
+KEYS,"Keysight Technologies",Information Technology,2026-10-23,314.77,358.52,342.05,false,false,-11.96,0.35,4.63,1.19,yahoo_chart_api_fallback
+TWLO,"Twilio",Information Technology,2026-10-23,261.79,276.84,255.06,false,true,-12.64,34.62,6.31,1.24,yahoo_chart_api_fallback
+ALB,"Albemarle Corporation",Materials,2026-10-23,93.67,100.31,115.80,false,false,-13.47,-19.38,3.53,0.70,yahoo_chart_api_fallback
+EME,"Emcor",Industrials,2026-10-23,647.66,748.75,757.84,false,false,-13.87,-12.80,4.96,1.35,yahoo_chart_api_fallback
+CMG,"Chipotle Mexican Grill",Consumer Discretionary,2026-10-23,27.52,30.61,33.52,false,false,-14.03,-17.11,4.12,1.15,yahoo_chart_api_fallback
+MPWR,"Monolithic Power Systems",Information Technology,2026-10-23,1140.12,1321.32,1289.92,false,false,-14.63,-14.86,5.50,1.14,yahoo_chart_api_fallback
+GEV,"GE Vernova",Industrials,2026-10-23,815.00,950.83,949.53,false,false,-14.66,-18.22,6.22,1.37,yahoo_chart_api_fallback
+CAT,"Caterpillar Inc.",Industrials,2026-10-23,687.00,781.05,799.74,false,false,-14.68,-21.33,4.34,1.24,yahoo_chart_api_fallback
+ARE,"Alexandria Real Estate Equities",Real Estate,2026-10-23,43.02,44.62,48.89,false,false,-14.78,-16.29,3.78,0.97,yahoo_chart_api_fallback
+DELL,"Dell Technologies",Information Technology,2026-10-23,456.44,524.28,512.87,false,false,-14.85,6.92,7.15,1.26,yahoo_chart_api_fallback
+PWR,"Quanta Services",Industrials,2026-10-23,546.43,650.29,641.62,false,false,-15.08,-11.91,5.91,1.52,yahoo_chart_api_fallback
+AKAM,"Akamai Technologies",Information Technology,2026-10-23,93.53,99.70,105.93,false,false,-15.29,-17.12,5.79,1.16,yahoo_chart_api_fallback
+ANET,"Arista Networks",Information Technology,2026-10-23,172.37,197.72,196.42,false,false,-16.20,0.94,5.52,1.13,yahoo_chart_api_fallback
+MGM,"MGM Resorts",Consumer Discretionary,2026-10-23,28.06,29.75,36.31,false,false,-16.71,-39.40,3.43,0.98,yahoo_chart_api_fallback
+APP,"AppLovin",Communication Services,2026-10-23,260.25,276.89,299.95,false,false,-16.71,-36.94,4.13,0.65,yahoo_chart_api_fallback
+ETN,"Eaton Corporation",Industrials,2026-10-23,366.11,414.55,416.44,false,false,-16.79,-8.16,4.56,1.24,yahoo_chart_api_fallback
+META,"Meta Platforms",Communication Services,2026-10-23,642.62,717.65,663.81,false,false,-17.36,8.21,3.93,1.20,yahoo_chart_api_fallback
+COIN,"Coinbase",Financials,2026-10-23,164.45,179.31,179.55,false,false,-17.45,-1.82,6.05,0.94,yahoo_chart_api_fallback
+T,"AT&T",Communication Services,2026-10-23,20.93,23.50,24.75,false,false,-17.76,-14.29,4.31,1.75,yahoo_chart_api_fallback
+AMD,"Advanced Micro Devices",Information Technology,2026-10-23,516.79,587.22,542.28,false,false,-17.87,4.41,5.66,1.11,yahoo_chart_api_fallback
+LITE,"Lumentum",Information Technology,2026-10-23,756.17,953.76,925.24,false,false,-18.61,6.21,9.49,1.07,yahoo_chart_api_fallback
+MU,"Micron Technology",Information Technology,2026-10-23,877.55,986.70,982.73,false,false,-18.79,-2.52,5.74,0.90,yahoo_chart_api_fallback
+HWM,"Howmet Aerospace",Industrials,2026-10-23,185.91,219.58,237.86,false,false,-18.95,-35.43,4.42,1.34,yahoo_chart_api_fallback
+GLW,"Corning Inc.",Information Technology,2026-10-23,123.69,147.23,151.21,false,false,-19.76,-13.72,6.70,1.05,yahoo_chart_api_fallback
+TER,"Teradyne",Information Technology,2026-10-23,308.85,379.25,374.46,false,false,-20.34,-7.74,7.19,1.13,yahoo_chart_api_fallback
+AMAT,"Applied Materials",Information Technology,2026-10-23,377.24,470.84,468.42,false,false,-20.46,-27.02,5.45,1.14,yahoo_chart_api_fallback
+SMCI,"Supermicro",Information Technology,2026-10-23,32.94,38.70,38.58,false,false,-20.65,10.50,8.31,1.24,yahoo_chart_api_fallback
+VRT,"Vertiv",Industrials,2026-10-23,194.32,230.20,247.70,false,false,-20.78,-32.43,6.09,1.06,yahoo_chart_api_fallback
+HOOD,"Robinhood Markets",Financials,2026-10-23,95.07,106.64,108.87,false,false,-21.31,-0.61,5.58,0.95,yahoo_chart_api_fallback
+KLAC,"KLA Corporation",Information Technology,2026-10-23,145.61,182.97,182.43,false,false,-22.18,-28.40,5.74,1.23,yahoo_chart_api_fallback
+SKYD,"Skydance",Communication Services,2026-10-23,7.77,8.65,9.78,false,false,-23.67,-3.24,9.82,2.23,yahoo_chart_api_fallback
+WDC,"Western Digital",Information Technology,2026-10-23,343.67,395.04,433.00,false,false,-23.68,-30.98,6.39,0.90,yahoo_chart_api_fallback
+MOS,"Mosaic Company (The)",Materials,2026-10-23,17.84,19.65,22.42,false,false,-24.69,-20.14,3.97,0.93,yahoo_chart_api_fallback
+LRCX,"Lam Research",Information Technology,2026-10-23,230.10,299.94,302.39,false,false,-25.09,-21.09,6.75,1.31,yahoo_chart_api_fallback
+BE,"Bloom Energy",Industrials,2026-10-23,193.30,257.30,248.30,false,false,-27.51,2.72,10.16,1.11,yahoo_chart_api_fallback
+COHR,"Coherent Corp.",Information Technology,2026-10-23,209.29,279.18,287.90,false,false,-27.98,-22.86,10.40,1.21,yahoo_chart_api_fallback
+FIX,"Comfort Systems USA",Industrials,2026-10-23,1160.86,1575.73,1608.17,false,false,-29.36,-32.91,8.43,1.62,yahoo_chart_api_fallback
+SNDK,"Sandisk",Information Technology,2026-10-23,1238.03,1530.97,1593.45,false,false,-29.40,-3.14,7.68,0.96,yahoo_chart_api_fallback
+STX,"Seagate Technology",Information Technology,2026-10-23,630.49,772.96,823.08,false,false,-30.40,-22.83,7.31,1.11,yahoo_chart_api_fallback
+INTC,"Intel",Information Technology,2026-10-23,86.96,104.09,102.11,false,false,-31.74,-5.14,6.26,1.01,yahoo_chart_api_fallback
+FLEX,"Flex Ltd.",Information Technology,2026-10-23,76.55,104.51,109.03,false,false,-31.90,-34.05,9.27,1.70,yahoo_chart_api_fallback
