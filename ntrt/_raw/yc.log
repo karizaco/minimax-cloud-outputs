@@ -1,0 +1,131 @@
+cooldown 45s for Yahoo rate-limit window ...
+  XNCR   UNVERIFIED ['None']
+  SGRY   UNVERIFIED ['None']
+  BRAI   UNVERIFIED ['None']
+  SSII   UNVERIFIED ['None']
+  RRC    UNVERIFIED ['None']
+  XP     UNVERIFIED ['None']
+  STNE   UNVERIFIED ['None']
+  INTR   UNVERIFIED ['None']
+  PICS   UNVERIFIED ['None']
+  PAGS   UNVERIFIED ['None']
+{
+ "checked_at_utc": "2026-10-26T14:00:18Z",
+ "checked_at_et": "2026-10-26 10:00:18 EDT",
+ "agree": 0,
+ "mismatch": 0,
+ "unverified": 10,
+ "reference_stamps": {
+  "XNCR": {
+   "error": "unavailable"
+  },
+  "SGRY": {
+   "error": "unavailable"
+  },
+  "BRAI": {
+   "error": "unavailable"
+  }
+ },
+ "results": [
+  {
+   "ticker": "XNCR",
+   "tv_gap_pct": 29.070691024622718,
+   "tv_close": 25.18,
+   "tv_premarket_close": 32.5,
+   "verdict": "UNVERIFIED",
+   "notes": [
+    "None"
+   ]
+  },
+  {
+   "ticker": "SGRY",
+   "tv_gap_pct": 23.619047619047613,
+   "tv_close": 15.75,
+   "tv_premarket_close": 19.47,
+   "verdict": "UNVERIFIED",
+   "notes": [
+    "None"
+   ]
+  },
+  {
+   "ticker": "BRAI",
+   "tv_gap_pct": 15.774647887323958,
+   "tv_close": 3.55,
+   "tv_premarket_close": 4.11,
+   "verdict": "UNVERIFIED",
+   "notes": [
+    "None"
+   ]
+  },
+  {
+   "ticker": "SSII",
+   "tv_gap_pct": 14.084444444444443,
+   "tv_close": 2.25,
+   "tv_premarket_close": 2.5669,
+   "verdict": "UNVERIFIED",
+   "notes": [
+    "None"
+   ]
+  },
+  {
+   "ticker": "RRC",
+   "tv_gap_pct": 11.20386643233742,
+   "tv_close": 45.52,
+   "tv_premarket_close": 50.62,
+   "verdict": "UNVERIFIED",
+   "notes": [
+    "None"
+   ]
+  },
+  {
+   "ticker": "XP",
+   "tv_gap_pct": -53.56790529431108,
+   "tv_close": 30.41,
+   "tv_premarket_close": 14.12,
+   "verdict": "UNVERIFIED",
+   "notes": [
+    "None"
+   ]
+  },
+  {
+   "ticker": "STNE",
+   "tv_gap_pct": -38.67595818815332,
+   "tv_close": 11.48,
+   "tv_premarket_close": 7.04,
+   "verdict": "UNVERIFIED",
+   "notes": [
+    "None"
+   ]
+  },
+  {
+   "ticker": "INTR",
+   "tv_gap_pct": -38.24756606397774,
+   "tv_close": 7.19,
+   "tv_premarket_close": 4.44,
+   "verdict": "UNVERIFIED",
+   "notes": [
+    "None"
+   ]
+  },
+  {
+   "ticker": "PICS",
+   "tv_gap_pct": -34.93188405797102,
+   "tv_close": 13.8,
+   "tv_premarket_close": 8.9794,
+   "verdict": "UNVERIFIED",
+   "notes": [
+    "None"
+   ]
+  },
+  {
+   "ticker": "PAGS",
+   "tv_gap_pct": -34.4493006993007,
+   "tv_close": 11.44,
+   "tv_premarket_close": 7.499,
+   "verdict": "UNVERIFIED",
+   "notes": [
+    "None"
+   ]
+  }
+ ]
+}
