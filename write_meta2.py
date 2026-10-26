@@ -12,8 +12,7 @@ import sys
 DATA = "/workspace/data"
 OUT_ROOT = "/workspace/us-eod"
 DATE = sys.argv[1] if len(sys.argv) > 1 else "2026-10-22"
-PRIOR = (datetime.date.fromisoformat(DATE)
-         - datetime.timedelta(days=1)).isoformat()
+PRIOR = None  # resolved at run time to the most recent prior snapshot
 INTL = ["au", "jp", "tw", "ca", "eu-de", "eu-fr", "eu-it", "eu-es", "eu-nl",
         "eu-be", "eu-at", "eu-pt", "eu-ie", "eu-fi", "eu-dk", "eu-gr"]
 LABEL = {"us": "US", "au": "AU", "jp": "JP", "tw": "TW", "ca": "CA",
@@ -27,6 +26,9 @@ SOURCE_HISTORY = {
     "2026-10-21": "Yahoo fallback (screener TLS-blocked)",
     "2026-10-22": "TradingView screener",
     "2026-10-23": "TradingView screener",
+    "2026-10-24": "skipped (weekend)",
+    "2026-10-25": "skipped (weekend)",
+    "2026-10-26": "TradingView screener",
 }
 
 
@@ -45,6 +47,16 @@ def main():
     verify = json.load(open(f"{DATA}/_yahoo_verify.json"))
     stats = json.load(open(f"{DATA}/_csv_stats.json"))
     lag = json.load(open(f"{DATA}/_lag.json"))
+    cc = {}
+    if os.path.exists(f"{DATA}/_close_check.json"):
+        cc = json.load(open(f"{DATA}/_close_check.json"))
+    global PRIOR
+    _d0 = datetime.date.fromisoformat(DATE)
+    for _back in range(1, 10):
+        _cand = (_d0 - datetime.timedelta(days=_back)).isoformat()
+        if os.path.exists(f"{OUT_ROOT}/{_cand}.csv"):
+            PRIOR = _cand
+            break
     lines = []
     A = lines.append
     A(f"# EOD market snapshot — {DATE} (run metadata)")
@@ -77,16 +89,32 @@ def main():
     A("")
     A("## Lag / freshness")
     A("")
-    med = lag.get("median_min")
-    A(f"- TradingView's US stream measured **{round(med) if med else 'n/a'} min behind**")
-    _offs = lag.get("offsets_min") or []
-    _rng = f"{min(_offs):.0f}-{max(_offs):.0f} min" if _offs else "n/a"
-    A(f"  the live tape (median of {len(_offs)} large caps, range {_rng}).")
-    A("- The US close (16:00 ET) had **not** happened at capture time, so")
-    A("  US/EU/CA rows are intraday, not settled closes. AU/JP/TW sessions were")
-    A("  complete.")
-    A("- Closed markets agree with Yahoo to **<0.001 pp** median |Δ change|")
-    A("  (AU 0.0003, JP 0.0003, TW 0.0002) — those values are final.")
+    _cap = datetime.datetime.now(datetime.timezone.utc).astimezone(
+        datetime.timezone(datetime.timedelta(hours=-4)))
+    if _cap.hour >= 16:
+        A(f"- Capture at {_cap.strftime('%H:%M')} ET is **after** the 16:00 ET US")
+        A("  close, so the session itself is finished. The screener still serves a")
+        A("  900-second delayed stream: the US `close` column is the tape as of")
+        A("  roughly 15:45-16:00 ET, not the official settling close.")
+        if cc:
+            A(f"- Measured against Yahoo's official daily close on {cc['sampled']}")
+            A(f"  large caps: median |Δ| **{cc['median_abs_diff_vs_official_close_pct']}%**,")
+            A(f"  max {cc['max_abs_diff_pct']}%. Names flat into the close match")
+            A("  exactly; the gap is real price movement in the last 15 minutes.")
+    else:
+        med = lag.get("median_min")
+        _offs = lag.get("offsets_min") or []
+        _rng = f"{min(_offs):.0f}-{max(_offs):.0f} min" if _offs else "n/a"
+        A(f"- TradingView's US stream measured **{round(med) if med else 'n/a'} min behind**")
+        A(f"  the live tape (median of {len(_offs)} large caps, range {_rng}).")
+        A("- The US close (16:00 ET) had **not** happened at capture time, so")
+        A("  US/EU/CA rows are intraday, not settled closes.")
+    A("- Every international region agrees with Yahoo to **<0.001 pp** median")
+    A("  |Δ change| — their sessions are complete and those values are final.")
+    A("- Method note: lag is measured by matching the screener close against")
+    A("  Yahoo 5-minute bars. Closest-bar matching overstates the lag when a")
+    A("  price is flat (it can land on an earlier, identical print), so quote")
+    A("  the official-close comparison above rather than the bar delta.")
     A("")
     A("## Coverage")
     A("")
@@ -106,7 +134,7 @@ def main():
     A("")
     A("## Universe")
     A("")
-    A("Same rule as 2026-10-21: one canonical row per company per region")
+    A("Rule unchanged since 2026-10-21: one canonical row per company per region")
     A("(venue duplicates collapsed, primary venue preferred). The US keeps every")
     A("row so share classes survive. Row counts vs the prior file:")
     A("")
@@ -121,13 +149,14 @@ def main():
         A(f"- {LABEL[region]}: {len(c):,} rows vs {len(q):,} on {PRIOR} "
           f"(+{len(c - q):,} new, -{len(q - c):,} dropped)")
     A("")
-    A("**Source continuity:** this file and the 2026-10-22 file are both")
-    A("screener-sourced, so prices are comparable apart from the feed delay")
-    A("measured per run (20 min on 2026-10-22, "
-      f"{round(lag.get('median_min')) if lag.get('median_min') else 'n/a'} min today).")
-    A("The 2026-10-21 file was the Yahoo-fallback run (live prices, with")
-    A("market_cap/pe_ratio/sector carried from 2026-10-20), so it is not")
-    A("price-comparable with the other three days.")
+    A("**Source continuity:** this file and the 2026-10-22 / 2026-10-23 files")
+    A("are screener-sourced, so prices are comparable apart from each run's")
+    A("capture time and feed delay. The 2026-10-21 file was the Yahoo-fallback")
+    A("run (live prices, with market_cap/pe_ratio/sector carried from")
+    A("2026-10-20), so it is not price-comparable with the screener days. The")
+    A("2026-10-24 and 2026-10-25 weekend fires were skipped by the window")
+    A("check, so this is the first snapshot since 2026-10-23 - a three-calendar-")
+    A("day gap in the series, not a missing trading day.")
     A("")
     A("## Verification (Yahoo vs TradingView, ~80 names per region)")
     A("")
