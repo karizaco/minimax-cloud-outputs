@@ -1,0 +1,85 @@
+{
+  "us": [
+    {
+      "name": "XP",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-17"
+    },
+    {
+      "name": "INTR",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-05"
+    },
+    {
+      "name": "AGBK",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-05"
+    },
+    {
+      "name": "MELI",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-05"
+    },
+    {
+      "name": "RRC",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-07-21"
+    },
+    {
+      "name": "MRNA",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-07-31"
+    },
+    {
+      "name": "ADPT",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-07-29"
+    },
+    {
+      "name": "AVBP",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-12"
+    }
+  ],
+  "eu": [
+    {
+      "name": "YUBICO",
+      "market": "sweden",
+      "chg": 16.59
+    },
+    {
+      "name": "OTEC",
+      "market": "norway",
+      "chg": -16.36
+    },
+    {
+      "name": "SBB_D",
+      "market": "sweden",
+      "chg": 13.66
+    },
+    {
+      "name": "GTT",
+      "market": "france",
+      "chg": -13.27
+    },
+    {
+      "name": "GMAB",
+      "market": "denmark",
+      "chg": 12.37
+    }
+  ],
+  "au": [
+    {
+      "name": "TUA",
+      "chg": -30.49
+    },
+    {
+      "name": "ZIP",
+      "chg": 10.96
+    },
+    {
+      "name": "CTD",
+      "chg": -8.89
+    }
+  ]
+}

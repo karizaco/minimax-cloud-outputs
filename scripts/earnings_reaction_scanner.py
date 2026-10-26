@@ -64,7 +64,9 @@ IDX = {c: i for i, c in enumerate(SCANNER_COLS)}
 
 health = {"scanner_calls": 0, "scanner_errors": 0, "yahoo_calls": 0, "yahoo_errors": 0,
           "yahoo_429": 0, "empty_markets": [], "cross_check": {"agree": 0, "mismatch": 0,
-          "unverified": 0, "mismatch_detail": []}}
+          "unverified": 0, "stale": 0, "drift": [], "by_mode": {}, "mismatch_detail": []},
+          "premarket_check": {"checked": 0, "within_1pp": 0, "within_3pp": 0,
+                              "outliers": [], "unavailable": 0}}
 
 
 def _curl(args, timeout=45):
@@ -94,14 +96,35 @@ def scan(market, filters, rng=(0, 200), sort=None, cols=None):
     return {"data": [], "totalCount": 0}
 
 
-def yahoo_pct(symbol):
-    """Independent daily % change from Yahoo. Returns (pct, last_close, date) or None.
+def yahoo_pct(symbol, live_session=False):
+    """Independent daily % change from Yahoo.
 
-    Yahoo's ASX feed appends a trailing LIVE-stamp bar at a different time-of-day
-    than the completed daily bars (verified 2026-10-24: SRL.AX had 10 completed
-    bars at 19:00 ET plus one at 01:10 ET). Using the naive last-two-bars makes
-    every ASX move read 0.00%. Fix: keep only bars stamped at the MODAL
-    time-of-day, then take the last two of those.
+    Returns a dict {pct, last_close, ref_close, date, mode} or None.
+
+    TWO Yahoo feed quirks are handled, both verified against the raw bars:
+
+    1. ASX trailing LIVE-stamp bar. Yahoo's ASX feed appends a trailing bar stamped
+       at a different time-of-day than the completed daily bars (2026-10-24: SRL.AX
+       had 10 completed bars at 19:00 ET plus one at 01:10 ET). Naive last-two-bars
+       makes every ASX move read 0.00%. Fix: keep only bars stamped at the MODAL
+       time-of-day, then take the last two of those.
+
+    2. LIVE EU/UK session bar. On a weekday the EU/UK cash markets are mid-session
+       at 08:00 ET, and Yahoo's daily feed carries an in-progress bar stamped at
+       the session open (04:00 ET) while the completed bars carry the previous
+       session's stamp (03:00 ET). The modal filter therefore DISCARDS the live
+       bar and compares Thu->Fri, which is the PRIOR session's move, not today's.
+       Verified 2026-10-26: this alone failed 8/8 EU cross-checks while 21/21
+       US+ASX checks passed. Fix: for a live session, if the last bar is dated
+       today it IS the live session -> compare it against the prior bar.
+
+    `live_session` must be set by the CALLER, not inferred from the data: an ASX
+    feed's trailing live-stamp bar is also dated today in ET, so a date test alone
+    would send every ASX move back to 0.00%.
+
+    ref_close is the close the move is measured AGAINST - the number a stale
+    screener row gets wrong. The cross-check validates that base rather than the
+    price, because a live market legitimately moves between two snapshots.
     """
     for attempt in range(3):
         r = _curl(["-A", "Mozilla/5.0",
@@ -118,36 +141,105 @@ def yahoo_pct(symbol):
             bars = [(t, c) for t, c in zip(res["timestamp"], q["close"]) if c is not None]
             if len(bars) < 2:
                 return None
-            tods = [datetime.datetime.fromtimestamp(t, ET).strftime("%H:%M") for t, _ in bars]
-            modal = max(set(tods), key=tods.count)
-            bars = [b for b, s in zip(bars, tods) if s == modal]
-            if len(bars) < 2:
-                return None
-            pct = (bars[-1][1] - bars[-2][1]) / bars[-2][1] * 100
-            d = datetime.datetime.fromtimestamp(bars[-1][0], ET).strftime("%Y-%m-%d")
-            return (round(pct, 3), round(bars[-1][1], 4), d)
+            today = datetime.datetime.now(ET).strftime("%Y-%m-%d")
+            last_date = datetime.datetime.fromtimestamp(bars[-1][0], ET).strftime("%Y-%m-%d")
+            if live_session and last_date == today:
+                # in-progress session bar: today's move vs the previous close
+                ref, last = bars[-2][1], bars[-1][1]
+                mode = "live"
+            else:
+                tods = [datetime.datetime.fromtimestamp(t, ET).strftime("%H:%M")
+                        for t, _ in bars]
+                modal = max(set(tods), key=tods.count)
+                bars = [b for b, s in zip(bars, tods) if s == modal]
+                if len(bars) < 2:
+                    return None
+                ref, last = bars[-2][1], bars[-1][1]
+                last_date = datetime.datetime.fromtimestamp(bars[-1][0], ET).strftime("%Y-%m-%d")
+                mode = "closed"
+            pct = (last - ref) / ref * 100
+            return {"pct": round(pct, 3), "last_close": round(last, 4),
+                    "ref_close": round(ref, 4), "date": last_date, "mode": mode}
         except Exception:
             health["yahoo_errors"] += 1
             time.sleep(2 * (attempt + 1))
     return None
 
 
-def cross_check(name, tv_pct, suffix, region):
-    """Compare the screener's % change against Yahoo. Records agreement."""
-    sym = f"{name.replace(' ', '-')}{suffix}"
-    y = yahoo_pct(sym)
+def yahoo_premarket(symbol, prior_close):
+    """Independent US pre-market % for a ticker.
+
+    Returns (pct, as_of_ET_time) or None. Uses the 1-minute chart with
+    includePrePost, keeping only bars stamped inside today's pre-market window
+    (04:00-09:30 ET). prior_close is the last regular close, i.e. the base the
+    pre-market % is measured against.
+    """
+    if not prior_close:
+        return None
+    r = _curl(["-A", "Mozilla/5.0",
+               f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
+               "?interval=1m&range=1d&includePrePost=true"], timeout=30)
+    health["yahoo_calls"] += 1
+    try:
+        res = json.loads(r.stdout)["chart"]["result"][0]
+        if "timestamp" not in res:
+            return None
+        q = res["indicators"]["quote"][0]
+        today = datetime.datetime.now(ET).date()
+        pre = []
+        for t, c in zip(res["timestamp"], q["close"]):
+            if c is None:
+                continue
+            dt = datetime.datetime.fromtimestamp(t, ET)
+            if dt.date() == today and 3 < dt.hour < 9:
+                pre.append((dt, c))
+        if not pre:
+            return None
+        last_dt, last_c = pre[-1]
+        return (round((last_c - prior_close) / prior_close * 100, 3),
+                last_dt.strftime("%H:%M"))
+    except Exception:
+        health["yahoo_errors"] += 1
+        return None
+
+
+def cross_check(name, tv_pct, tv_close, suffix, region, live_session=False):
+    """Validate the screener's move against Yahoo.
+
+    The screener's `change` and `close` are internally consistent, so the
+    implied reference close (close / (1 + change/100)) can be compared with
+    Yahoo's own reference close. A match proves the move was measured against
+    the TRUE prior close. A mismatch means the row was measured against a
+    STALE reference - a phantom move that must not be published.
+
+    The percentages themselves are NOT compared directly on live markets:
+    Yahoo's bar is fetched seconds-to-minutes after the screener snapshot, so
+    a fast-moving name drifts by design. The drift is recorded, not flagged.
+    """
+    sym = f"{name.replace(' ', '-').replace('_', '-')}{suffix}"
+    y = yahoo_pct(sym, live_session=live_session)
     if y is None:
         health["cross_check"]["unverified"] += 1
         return None
-    delta = abs(tv_pct - y[0])
-    if delta < 0.15:
-        health["cross_check"]["agree"] += 1
-        return y
-    health["cross_check"]["mismatch"] += 1
-    health["cross_check"]["mismatch_detail"].append(
-        {"region": region, "symbol": sym, "tv": round(tv_pct, 3), "yahoo": y[0],
-         "delta": round(delta, 3), "yahoo_date": y[2]})
-    return y
+    cc = health["cross_check"]
+    drift = tv_pct - y["pct"]
+    implied = ref_delta = None
+    if tv_close and y["ref_close"]:
+        implied = tv_close / (1 + tv_pct / 100.0)
+        ref_delta = (implied - y["ref_close"]) / y["ref_close"] * 100
+    if ref_delta is not None and abs(ref_delta) > 0.5:
+        cc["stale"] += 1
+        cc["mismatch"] += 1
+        cc["mismatch_detail"].append(
+            {"region": region, "symbol": sym, "tv": round(tv_pct, 3), "yahoo": y["pct"],
+             "delta": round(drift, 3), "ref_delta_pct": round(ref_delta, 3),
+             "tv_implied_ref": round(implied, 4), "yahoo_ref": y["ref_close"],
+             "yahoo_date": y["date"], "verdict": "stale_reference"})
+        return dict(y, stale=True)
+    cc["agree"] += 1
+    cc["drift"].append(round(drift, 3))
+    cc["by_mode"][y["mode"]] = cc["by_mode"].get(y["mode"], 0) + 1
+    return dict(y, stale=False)
 
 
 def g(d, key):
@@ -299,15 +391,61 @@ quiet.sort(key=lambda t: -t[1]["mx"])
 bod.sort(key=lambda t: -t[1]["mx"])
 
 # ------------------------------------------------------------------ cross-checks
-for sym, c in tagged[:15]:
-    cross_check(c["name"], c["change"], "", "US")
-    time.sleep(0.4)
-for r in eu_final[:10]:
-    cross_check(g(r["d"], "name"), g(r["d"], "change"), r["suffix"], r["market"])
-    time.sleep(0.4)
-for r in au[:6]:
-    cross_check(g(r["d"], "name"), g(r["d"], "change"), r["suffix"], "AU")
-    time.sleep(0.4)
+# EVERY row that reaches a headline table is validated, not a top-N subset: a
+# stale-reference row can hide anywhere in the table. US and ASX are checked
+# against the last COMPLETED session bar; EU/UK against the live session bar.
+us_stale, eu_stale, au_stale = [], [], []
+us_ref = {}
+for sym, c in tagged:
+    res = cross_check(c["name"], c["change"], c["close"], "", "US", live_session=False)
+    if res:
+        us_ref[sym] = res
+        if res.get("stale"):
+            us_stale.append(sym)
+    time.sleep(0.35)
+for r in eu_final:
+    res = cross_check(g(r["d"], "name"), g(r["d"], "change"), g(r["d"], "close"),
+                      r["suffix"], r["market"], live_session=True)
+    if res and res.get("stale"):
+        eu_stale.append(g(r["d"], "name"))
+    time.sleep(0.35)
+for r in au:
+    res = cross_check(g(r["d"], "name"), g(r["d"], "change"), g(r["d"], "close"),
+                      r["suffix"], "AU", live_session=False)
+    if res and res.get("stale"):
+        au_stale.append(g(r["d"], "name"))
+    time.sleep(0.35)
+
+# Independent check of the US pre-market column - the headline number of the
+# table - using Yahoo's 1-minute pre/post feed as the second source.
+pmc = health["premarket_check"]
+for sym, c in tagged[:10]:
+    if c["pm"] is None:
+        continue
+    v = yahoo_premarket(sym, us_ref.get(sym, {}).get("last_close"))
+    if v is None:
+        pmc["unavailable"] += 1
+        continue
+    pmc["checked"] += 1
+    d = abs(v[0] - c["pm"])
+    if d <= 1.0:
+        pmc["within_1pp"] += 1
+    if d <= 3.0:
+        pmc["within_3pp"] += 1
+    else:
+        pmc["outliers"].append({"symbol": sym, "tv": round(c["pm"], 3),
+                                 "yahoo": v[0], "delta": round(d, 3),
+                                 "yahoo_asof": v[1]})
+    time.sleep(0.35)
+
+# Rows proven to sit on a stale reference close are NOT published.
+if us_stale:
+    tagged = [t for t in tagged if t[0] not in us_stale]
+    quiet = [q for q in quiet if q[0] not in us_stale]
+if eu_stale:
+    eu_final = [r for r in eu_final if g(r["d"], "name") not in eu_stale]
+if au_stale:
+    au = [r for r in au if g(r["d"], "name") not in au_stale]
 
 
 def pct(v):
@@ -437,13 +575,41 @@ A(f"- scanner_calls: {health['scanner_calls']} | scanner_errors: {health['scanne
 A(f"- yahoo_calls: {health['yahoo_calls']} | yahoo_429: {health['yahoo_429']} | "
   f"yahoo_errors: {health['yahoo_errors']}")
 cc = health["cross_check"]
-A(f"- cross_check (screener vs Yahoo): agree={cc['agree']} mismatch={cc['mismatch']} "
-  f"unverified={cc['unverified']}")
+A(f"- cross_check (screener vs Yahoo, reference-close validation): agree={cc['agree']} "
+  f"mismatch={cc['mismatch']} unverified={cc['unverified']} stale_reference={cc['stale']}")
+A(f"  method: the screener's implied reference close (close / (1 + change/100)) is compared")
+A(f"  with Yahoo's own reference close. A match proves the move was measured against the")
+A(f"  TRUE prior close; a mismatch means the row sits on a STALE reference (phantom move).")
+A(f"  Coverage: every row of the US headline, EU/UK and ASX tables is checked. The US QUIET")
+A(f"  one-liner table is NOT cross-checked.")
+A(f"  Yahoo bar mode: {json.dumps(cc['by_mode'])} (closed = last completed session bar;")
+A(f"  live = in-progress EU/UK session bar, which is what a weekday 08:00 ET EU move needs)")
+if cc["drift"]:
+    _dr = sorted(abs(x) for x in cc["drift"])
+    A(f"  live drift between the screener snapshot and the later Yahoo print: "
+      f"median={_dr[len(_dr)//2]:.2f}pp max={_dr[-1]:.2f}pp (expected on a live market)")
 if cc["mismatch_detail"]:
     A(f"- cross_check mismatches: {json.dumps(cc['mismatch_detail'])}")
+A(f"- stale_rows_dropped: US={us_stale or 'none'} EU={eu_stale or 'none'} AU={au_stale or 'none'}")
+pmc = health["premarket_check"]
+A(f"- us_premarket_check (Yahoo 1-min pre/post feed vs the screener pre-market column): "
+  f"checked={pmc['checked']} within_1pp={pmc['within_1pp']} within_3pp={pmc['within_3pp']} "
+  f"unavailable={pmc['unavailable']}")
+if pmc["outliers"]:
+    A(f"  us_premarket outliers (>3pp; thin pre-market books, not a screener error): "
+      f"{json.dumps(pmc['outliers'])}")
 A(f"- markets_with_lt5_rows: {health['empty_markets'] or 'none'}")
+A(f"  NOTE: this fires per market AND direction, so it is NOT a coverage-failure signal on")
+A(f"  its own. A 'less' count of 0-3 means almost nothing fell more than 2.5% that session")
+A(f"  (a broad up-day); a small 'egreater' count usually means a small market with few")
+A(f"  names above the $1B market-cap floor. Check the median change before calling it a gap.")
 A(f"- filters: volume>{MIN_VOLUME} (removes stale-reference rows), country=home for EU/UK/AU,")
 A(f"  exchange drop-list for US, US venue allow-list, US preferred (slash ticker) excluded")
+A(f"- volume_floor_note: volume>{MIN_VOLUME} removes MOST stale-reference rows, but a row can")
+A(f"  still sit on a stale reference when its only volume came from one thin day (verified")
+A(f"  2026-10-26: LSE 50GP cleared the floor on 12,000 shares dated 2026-10-15 while Yahoo")
+A(f"  showed no bar for the scan date). The reference-close cross-check is what catches")
+A(f"  those; rows that fail it are dropped from the tables, not published.")
 A(f"- us_preferred_dropped: {a_dropped_pref}")
 A(f"- bod_no_extended_hours: {len(bod)} (deferred to the next scan; not in the headline table)")
 A(f"- earnings_source: screener `earnings_release_date` (last FULL report) + "
