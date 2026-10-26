@@ -1,0 +1,41 @@
+Symbol,Company,Close,Chg%,Vol,RVOL10,Mcap$B,ADR%,ADV$M,Perf5D,Perf1M,Perf3M,Sector
+BXP,"BXP, Inc.",61.49,4.86,"1,639,225",1.21,9.8,2.67,88,2.59,-4.59,-10.06,Finance
+AMRX,"Amneal Pharmaceuticals, Inc.",20.48,1.39,"6,036,678",1.53,6.5,3.30,75,6.22,2.40,13.27,Health Technology
+MIAX,"Miami International Holdings, ",34.99,4.20,"1,462,095",0.90,3.5,4.18,66,14.57,-8.14,-16.55,Finance
+LYFT,"Lyft, Inc.",17.43,3.81,"10,735,249",0.99,6.6,3.38,168,1.51,12.02,25.94,Transportation
+BIP,Brookfield Infrastructure Part,37.29,2.53,"681,701",1.15,24.3,2.41,29,0.57,3.96,-9.47,Utilities
+EXE,Expand Energy Corporation,92.96,0.14,"3,176,828",0.88,21.5,2.49,335,2.38,6.24,0.69,Energy Minerals
+RYAN,"Ryan Specialty Holdings, Inc.",44.49,5.28,"1,818,492",1.12,11.4,3.18,91,10.18,10.12,10.84,Finance
+TRS,TriMas Corporation,39.90,0.18,"486,521",1.75,1.4,2.06,12,2.15,4.23,-0.75,Process Industries
+FIS,Fidelity National Information ,38.29,5.13,"6,012,871",1.16,19.7,2.97,233,5.13,7.50,-5.18,Technology Services
+KNSA,Kiniksa Pharmaceuticals Intern,80.79,1.37,"429,710",0.61,6.3,3.68,49,1.06,3.46,27.53,Health Technology
+PATH,"UiPath, Inc.",13.94,1.68,"36,272,304",1.32,7.3,4.46,527,0.87,0.00,35.74,Technology Services
+AVAH,Aveanna Healthcare Holdings In,13.32,2.54,"1,777,658",0.88,2.9,3.15,38,5.30,-0.97,44.16,Health Services
+BCE,"BCE, Inc.",20.81,4.15,"6,055,602",1.14,19.4,2.44,105,2.97,-5.50,-1.61,Communications
+INVA,"Innoviva, Inc.",21.06,0.72,"452,078",0.77,1.5,2.29,19,0.43,-0.52,-1.63,Health Technology
+WTW,Willis Towers Watson Public Li,332.18,4.58,"523,016",1.19,30.9,2.30,177,6.11,8.09,14.85,Finance
+RAMP,"LiveRamp Holdings, Inc.",38.24,0.10,"1,354,440",0.70,2.3,0.53,59,1.54,1.38,1.14,Technology Services
+CNX,CNX Resources Corporation,35.73,1.62,"1,445,128",0.91,5.3,2.53,71,3.51,10.45,3.27,Energy Minerals
+MRP,"Millrose Properties, Inc.",23.97,3.81,"2,586,805",0.70,3.7,4.23,79,7.25,-16.63,-15.84,Finance
+CLBK,"Columbia Financial, Inc.",10.86,2.16,"2,675,130",0.87,2.9,2.32,46,0.18,-6.78,-1.27,Finance
+CMPR,Cimpress plc,82.27,1.36,"145,254",0.80,2.0,3.17,16,7.16,1.79,-16.09,Commercial Services
+COF/PL,Capital One Financial Corporat,14.77,0.96,"250,220",2.03,124.8,1.58,2,-0.14,-4.22,-6.16,Finance
+COF/PJ,Capital One Financial Corporat,16.09,0.44,"159,972",0.90,124.8,1.63,3,-0.43,-3.77,-7.48,Finance
+TFIN,"Triumph Financial, Inc.",62.21,0.35,"415,660",1.50,1.5,2.95,16,1.40,-0.65,-23.11,Finance
+SHC,Sotera Health Company,18.13,2.03,"2,797,514",1.42,5.2,2.84,37,0.00,-3.51,3.01,Health Technology
+FLYW,Flywire Corporation - Voting,19.15,2.79,"725,847",0.59,2.3,3.14,26,-0.93,9.68,20.97,Commercial Services
+FRPT,"Freshpet, Inc.",67.00,7.06,"1,332,615",1.30,3.2,3.91,72,-1.35,7.84,19.34,Consumer Non-Durables
+AGCO,AGCO Corporation,106.17,0.90,"567,112",0.65,7.4,3.66,100,-0.10,-12.67,-9.79,Producer Manufacturing
+AUPH,Aurinia Pharmaceuticals Inc,17.33,2.54,"780,506",0.93,2.3,2.61,14,3.09,3.65,12.46,Health Technology
+STGW,Stagwell Inc.,8.99,0.78,"1,125,281",0.68,2.2,3.65,14,-2.39,6.39,25.91,Commercial Services
+LIF,"Life360, Inc.",46.46,4.66,"585,359",0.96,3.8,3.97,29,10.62,11.31,-6.24,Technology Services
+KRG,Kite Realty Group Trust,24.77,2.44,"1,722,623",0.82,5.0,1.77,54,0.41,-2.06,-14.73,Finance
+SPNT,SiriusPoint Ltd.,25.96,1.09,"1,207,891",1.76,3.0,2.35,26,4.34,0.19,3.76,Finance
+TDC,Teradata Corporation,34.21,2.27,"1,797,741",0.99,3.2,3.13,57,8.81,14.88,20.50,Technology Services
+UDR,"UDR, Inc.",36.18,3.25,"5,784,538",1.40,11.6,1.88,152,5.24,6.22,-7.85,Finance
+DAVE,Dave Inc.,382.39,1.49,"387,621",1.56,4.9,5.22,114,2.59,6.54,-5.81,Finance
+PAA,"Plains All American Pipeline, ",25.90,0.04,"2,220,066",1.06,18.3,1.81,62,2.05,4.23,5.24,Industrial Services
+PAGP,"Plains GP Holdings, L.P.",27.93,0.04,"1,590,844",0.78,5.5,1.71,51,2.20,3.29,5.32,Industrial Services
+INDV,"Indivior Pharmaceuticals, Inc.",35.33,1.55,"871,702",0.27,4.2,3.18,86,5.56,-0.56,-13.47,Health Technology
+AMTM,"Amentum Holdings, Inc.",21.29,5.66,"2,405,687",1.47,5.2,3.19,38,11.12,6.45,-4.31,Electronic Technology
+SPOT,Spotify Technology S.A.,583.66,11.10,"4,736,332",3.04,120.2,3.64,937,8.69,12.16,22.88,Technology Services

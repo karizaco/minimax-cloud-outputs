@@ -1,0 +1,155 @@
+{
+ "us": {
+  "rows": 5714,
+  "fresh": 5416,
+  "stale_bar": 287,
+  "no_data": 11,
+  "no_price_cells": 878,
+  "file": "/workspace/us-eod/2026-10-21.csv",
+  "kb": 743.0
+ },
+ "au": {
+  "rows": 1553,
+  "fresh": 1553,
+  "stale_bar": 0,
+  "no_data": 0,
+  "no_price_cells": 0,
+  "file": "/workspace/us-eod/au/2026-10-21.csv",
+  "kb": 173.3
+ },
+ "jp": {
+  "rows": 3863,
+  "fresh": 3727,
+  "stale_bar": 32,
+  "no_data": 104,
+  "no_price_cells": 159,
+  "file": "/workspace/us-eod/jp/2026-10-21.csv",
+  "kb": 450.9
+ },
+ "tw": {
+  "rows": 2323,
+  "fresh": 2296,
+  "stale_bar": 27,
+  "no_data": 0,
+  "no_price_cells": 43,
+  "file": "/workspace/us-eod/tw/2026-10-21.csv",
+  "kb": 292.2
+ },
+ "ca": {
+  "rows": 2671,
+  "fresh": 1733,
+  "stale_bar": 470,
+  "no_data": 468,
+  "no_price_cells": 1277,
+  "file": "/workspace/us-eod/ca/2026-10-21.csv",
+  "kb": 276.6
+ },
+ "eu-de": {
+  "rows": 497,
+  "fresh": 470,
+  "stale_bar": 0,
+  "no_data": 27,
+  "no_price_cells": 37,
+  "file": "/workspace/us-eod/eu-de/2026-10-21.csv",
+  "kb": 53.6
+ },
+ "eu-fr": {
+  "rows": 542,
+  "fresh": 518,
+  "stale_bar": 24,
+  "no_data": 0,
+  "no_price_cells": 71,
+  "file": "/workspace/us-eod/eu-fr/2026-10-21.csv",
+  "kb": 61.4
+ },
+ "eu-it": {
+  "rows": 393,
+  "fresh": 370,
+  "stale_bar": 23,
+  "no_data": 0,
+  "no_price_cells": 71,
+  "file": "/workspace/us-eod/eu-it/2026-10-21.csv",
+  "kb": 41.7
+ },
+ "eu-es": {
+  "rows": 276,
+  "fresh": 235,
+  "stale_bar": 10,
+  "no_data": 31,
+  "no_price_cells": 132,
+  "file": "/workspace/us-eod/eu-es/2026-10-21.csv",
+  "kb": 27.7
+ },
+ "eu-nl": {
+  "rows": 77,
+  "fresh": 73,
+  "stale_bar": 4,
+  "no_data": 0,
+  "no_price_cells": 8,
+  "file": "/workspace/us-eod/eu-nl/2026-10-21.csv",
+  "kb": 9.2
+ },
+ "eu-be": {
+  "rows": 103,
+  "fresh": 99,
+  "stale_bar": 4,
+  "no_data": 0,
+  "no_price_cells": 11,
+  "file": "/workspace/us-eod/eu-be/2026-10-21.csv",
+  "kb": 11.7
+ },
+ "eu-at": {
+  "rows": 65,
+  "fresh": 61,
+  "stale_bar": 4,
+  "no_data": 0,
+  "no_price_cells": 6,
+  "file": "/workspace/us-eod/eu-at/2026-10-21.csv",
+  "kb": 6.9
+ },
+ "eu-pt": {
+  "rows": 31,
+  "fresh": 30,
+  "stale_bar": 1,
+  "no_data": 0,
+  "no_price_cells": 13,
+  "file": "/workspace/us-eod/eu-pt/2026-10-21.csv",
+  "kb": 3.8
+ },
+ "eu-ie": {
+  "rows": 19,
+  "fresh": 19,
+  "stale_bar": 0,
+  "no_data": 0,
+  "no_price_cells": 2,
+  "file": "/workspace/us-eod/eu-ie/2026-10-21.csv",
+  "kb": 2.4
+ },
+ "eu-fi": {
+  "rows": 187,
+  "fresh": 184,
+  "stale_bar": 2,
+  "no_data": 1,
+  "no_price_cells": 3,
+  "file": "/workspace/us-eod/eu-fi/2026-10-21.csv",
+  "kb": 21.7
+ },
+ "eu-dk": {
+  "rows": 134,
+  "fresh": 130,
+  "stale_bar": 4,
+  "no_data": 0,
+  "no_price_cells": 9,
+  "file": "/workspace/us-eod/eu-dk/2026-10-21.csv",
+  "kb": 15.5
+ },
+ "eu-gr": {
+  "rows": 130,
+  "fresh": 123,
+  "stale_bar": 7,
+  "no_data": 0,
+  "no_price_cells": 11,
+  "file": "/workspace/us-eod/eu-gr/2026-10-21.csv",
+  "kb": 15.6
+ }
+}
