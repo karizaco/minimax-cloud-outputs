@@ -76,15 +76,28 @@ shared output repo. Fetch and run it:
 ```bash
 cd /workspace
 mkdir -p scripts
+# FETCH FROM THE UNCACHED REF FORM. `raw/.../main/...` sits behind Fastly
+# (max-age=300, vary: Authorization) and kept serving the PRE-push file for
+# ~15 minutes after the 2026-10-26 pipeline push, which would silently run a
+# stale script. `refs/heads/main/...` is a different cache key and returned the
+# new file immediately. The script also self-heals at startup (it compares its
+# own SCRIPT_VERSION against this same uncached URL and re-execs if the repo is
+# newer), but that cannot help a script that predates the guard - so fetch the
+# uncached form directly.
 curl -sS -w 'HTTP=%{http_code}\n' --max-time 60 \
-  https://raw.githubusercontent.com/karizaco/minimax-cloud-outputs/main/scripts/earnings_reaction_scanner.py \
+  https://raw.githubusercontent.com/karizaco/minimax-cloud-outputs/refs/heads/main/scripts/earnings_reaction_scanner.py \
   -o scripts/earnings_reaction_scanner.py
 head -5 scripts/earnings_reaction_scanner.py
+grep -m1 SCRIPT_VERSION scripts/earnings_reaction_scanner.py
 ```
 
 If that fetch fails, retry once with `-k` (the GitHub cert expires intermittently). If both
 attempts fail, write a stub artifact with `_source=skill_fetch_failed`, report `errors: 1`, stop.
 Never improvise the procedure from memory.
+
+To confirm what the repo actually holds (bypasses the raw CDN entirely), use the API:
+`curl -sS -H "Authorization: token $GITHUB_TOKEN" \
+"https://api.github.com/repos/karizaco/minimax-cloud-outputs/contents/scripts/earnings_reaction_scanner.py?ref=main"`.
 
 ## STEP 3 — RUN THE PIPELINE
 

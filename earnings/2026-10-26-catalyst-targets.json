@@ -36,36 +36,36 @@
       "last_earnings": "2026-07-29"
     },
     {
-      "name": "AVBP",
+      "name": "CLS",
       "tag": "PRE_GAP",
-      "last_earnings": "2026-08-12"
+      "last_earnings": "2026-07-27"
     }
   ],
   "eu": [
     {
-      "name": "YUBICO",
-      "market": "sweden",
-      "chg": 16.59
-    },
-    {
       "name": "OTEC",
       "market": "norway",
-      "chg": -16.36
+      "chg": -17.52
+    },
+    {
+      "name": "YUBICO",
+      "market": "sweden",
+      "chg": 15.56
     },
     {
       "name": "SBB_D",
       "market": "sweden",
-      "chg": 13.66
+      "chg": 13.5
     },
     {
       "name": "GTT",
       "market": "france",
-      "chg": -13.27
+      "chg": -13.41
     },
     {
       "name": "GMAB",
       "market": "denmark",
-      "chg": 12.37
+      "chg": 12.86
     }
   ],
   "au": [

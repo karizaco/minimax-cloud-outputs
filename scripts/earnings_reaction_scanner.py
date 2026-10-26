@@ -22,7 +22,54 @@ Verified behaviours this script encodes (see memory topic
   * `earnings_release_date` = MOST RECENT report date; `earnings_release_next_date`
     = next scheduled. This replaces the absent financekit earnings calendar.
 """
-import json, subprocess, time, datetime, os, sys
+import json, subprocess, time, datetime, os, sys, re
+
+# Bump this on every behavioural change. The self-heal guard below compares it
+# against the copy in the shared repo.
+SCRIPT_VERSION = "2026-10-26.2"
+SELF_HEALED = {"done": False, "from": None, "to": None}
+
+RAW_REPO = "https://raw.githubusercontent.com/karizaco/minimax-cloud-outputs"
+SCRIPT_PATH = "scripts/earnings_reaction_scanner.py"
+
+
+def _self_heal():
+    """Replace this file with the current shared-repo copy if it is newer.
+
+    The cron fetches the pipeline from `raw/.../main/...`, and that URL is served
+    from a CDN cache entry that can keep returning a STALE copy for a long time
+    after a push - measured 2026-10-26: the `main` form still served the
+    pre-patch file while `refs/heads/main` and the commit SHA served the new one.
+    A stale fetch would silently undo a fix. The `refs/heads/main` form is not
+    cached the same way, so compare against that and re-exec if it differs.
+
+    The content is compared byte-for-byte as well as by version, and the new
+    copy carries the remote's own SCRIPT_VERSION, so this cannot loop.
+    """
+    try:
+        url = f"{RAW_REPO}/refs/heads/main/{SCRIPT_PATH}"
+        r = subprocess.run(["curl", "-sS", "-m", "30", url],
+                           capture_output=True, text=True)
+        if r.returncode != 0 or "SCRIPT_VERSION" not in r.stdout:
+            return
+        remote = re.search(r'SCRIPT_VERSION\s*=\s*"([^"]+)"', r.stdout)
+        if not remote or remote.group(1) == SCRIPT_VERSION:
+            return
+        here = os.path.abspath(__file__)
+        with open(here, "r") as fh:
+            if fh.read() == r.stdout:
+                return
+        with open(here, "w") as fh:
+            fh.write(r.stdout)
+        SELF_HEALED["done"] = True
+        SELF_HEALED["from"] = SCRIPT_VERSION
+        SELF_HEALED["to"] = remote.group(1)
+        os.execv(sys.executable, [sys.executable, here] + sys.argv[1:])
+    except Exception:
+        return
+
+
+_self_heal()
 
 ET = datetime.timezone(datetime.timedelta(hours=-4))
 RUN_DATE = datetime.datetime.now(ET).strftime("%Y-%m-%d")
@@ -572,6 +619,9 @@ A("")
 A("## Source health")
 A("")
 A(f"- scanner_calls: {health['scanner_calls']} | scanner_errors: {health['scanner_errors']}")
+A(f"- pipeline_version: {SCRIPT_VERSION}" +
+  (f" | self-healed at start of run from {SELF_HEALED['from']} to {SELF_HEALED['to']} "
+   f"(the cron's cached raw URL served a stale copy)" if SELF_HEALED["done"] else ""))
 A(f"- yahoo_calls: {health['yahoo_calls']} | yahoo_429: {health['yahoo_429']} | "
   f"yahoo_errors: {health['yahoo_errors']}")
 cc = health["cross_check"]

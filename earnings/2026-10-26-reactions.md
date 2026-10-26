@@ -1,7 +1,7 @@
 # Earnings reaction scanner — 2026-10-26
 
 - Cron: `0 8 * * 1-5` America/New_York (weekdays, 08:00 ET)
-- Fire time (ET): 2026-10-26 08:27:46 Mon
+- Fire time (ET): 2026-10-26 08:34:03 Mon
 - Run type: `scheduled_scan`
 - Source: TradingView public screener (`scanner.tradingview.com/<market>/scan`);
   Yahoo chart API as an independent cross-check on the reported movers.
@@ -12,9 +12,9 @@
 
 ## TL;DR
 
-- 0 AMC reactions, 35 pre-market gaps, 140 without extended-hours data; 29 EU/UK and 25 ASX movers.
-- Biggest US extended-hours move: XP PRE_GAP (47.91%).
-- Biggest EU/UK move: YUBICO (+16.59%, sweden).
+- 0 AMC reactions, 33 pre-market gaps, 137 without extended-hours data; 29 EU/UK and 25 ASX movers.
+- Biggest US extended-hours move: XP PRE_GAP (47.65%).
+- Biggest EU/UK move: OTEC (-17.52%, norway).
 - Biggest ASX move: TUA (-30.49%).
 - EU/AU earnings-driven tagging is keyword-based on headlines (best-effort).
 
@@ -22,92 +22,90 @@
 
 | Ticker | Venue | Close | Chg % | Pre-mkt % | Post-mkt % | Last earnings | Tag |
 |---|---|---|---|---|---|---|---|
-| XP | NASDAQ | 30.41 | 3.61 | -47.91 | — | 2026-08-17 (70d ago) | PRE_GAP |
-| INTR | NASDAQ | 7.19 | 6.68 | -35.88 | — | 2026-08-05 (82d ago) | PRE_GAP |
+| XP | NASDAQ | 30.41 | 3.61 | -47.65 | — | 2026-08-17 (70d ago) | PRE_GAP |
+| INTR | NASDAQ | 7.19 | 6.68 | -37.13 | — | 2026-08-05 (82d ago) | PRE_GAP |
 | AGBK | NYSE | 7.58 | 4.26 | -21.50 | — | 2026-08-05 (82d ago) | PRE_GAP |
-| MELI | NASDAQ | 1810.15 | -0.81 | -14.42 | — | 2026-08-05 (82d ago) | PRE_GAP |
-| RRC | NYSE | 45.52 | 3.78 | 11.38 | — | 2026-07-21 (97d ago) | PRE_GAP |
-| MRNA | NASDAQ | 200.1 | -1.25 | -8.39 | — | 2026-07-31 (87d ago) | PRE_GAP |
+| MELI | NASDAQ | 1810.15 | -0.81 | -14.49 | — | 2026-08-05 (82d ago) | PRE_GAP |
+| RRC | NYSE | 45.52 | 3.78 | 10.83 | — | 2026-07-21 (97d ago) | PRE_GAP |
+| MRNA | NASDAQ | 200.1 | -1.25 | -8.05 | — | 2026-07-31 (87d ago) | PRE_GAP |
 | ADPT | NASDAQ | 25.51 | 4.51 | -6.00 | — | 2026-07-29 (89d ago) | PRE_GAP |
-| AVBP | NASDAQ | 21 | 9.38 | 3.81 | — | 2026-08-12 (75d ago) | PRE_GAP |
+| CLS | NYSE | 260.01 | -3.35 | 3.87 | — | 2026-07-27 (91d ago) | PRE_GAP |
 | PBLS | NASDAQ | 24.44 | -9.21 | 3.72 | — | 2026-08-13 (74d ago) | PRE_GAP |
-| CLS | NYSE | 260.01 | -3.35 | 3.65 | — | 2026-07-27 (91d ago) | PRE_GAP |
+| MRVI | NASDAQ | 7.32 | 3.54 | -3.55 | — | 2026-08-06 (81d ago) | PRE_GAP |
 | SDRL | NYSE | 52.35 | 6.42 | -3.17 | — | 2026-08-10 (77d ago) | PRE_GAP |
-| ENTG | NASDAQ | 134.52 | 4.84 | 3.07 | — | 2026-08-04 (83d ago) | PRE_GAP |
 | SMTC | NASDAQ | 132 | 5.50 | 3.03 | — | 2026-08-25 (62d ago) | PRE_GAP |
-| VG | NYSE | 14 | 9.29 | -2.86 | — | 2026-08-11 (76d ago) | PRE_GAP |
-| PTEN | NASDAQ | 11.97 | 5.56 | -2.84 | — | 2026-07-29 (89d ago) | PRE_GAP |
 | RGC | NASDAQ | 7.67 | -21.81 | 2.83 | — | — | PRE_GAP |
-| ABCL | NASDAQ | 11.82 | 3.96 | 2.79 | — | 2026-08-05 (82d ago) | PRE_GAP |
 | FORM | NASDAQ | 98.51 | 3.66 | 2.53 | — | 2026-07-29 (89d ago) | PRE_GAP |
 | WGS | NASDAQ | 56.15 | -16.37 | 2.49 | — | 2026-08-03 (84d ago) | PRE_GAP |
-| BE | NYSE | 193.3 | -11.24 | 2.41 | — | 2026-10-22 (4d ago) | PRE_GAP |
+| MU | NASDAQ | 877.55 | 2.46 | 2.49 | — | 2026-09-30 (26d ago) | PRE_GAP |
+| APA | NASDAQ | 51.9 | 4.98 | -2.49 | — | 2026-08-05 (82d ago) | PRE_GAP |
+| MGM | NYSE | 28.06 | -4.88 | 2.46 | — | 2026-07-29 (89d ago) | PRE_GAP |
 | TDW | NYSE | 86.07 | 8.11 | -2.41 | — | 2026-08-03 (84d ago) | PRE_GAP |
-| TSLA | NASDAQ | 372.22 | -0.63 | 2.37 | — | 2026-10-21 (5d ago) | PRE_GAP |
-| APA | NASDAQ | 51.9 | 4.98 | -2.31 | — | 2026-08-05 (82d ago) | PRE_GAP |
+| TSLA | NASDAQ | 372.22 | -0.63 | 2.38 | — | 2026-10-21 (5d ago) | PRE_GAP |
+| AVBP | NASDAQ | 21 | 9.38 | 2.38 | — | 2026-08-12 (75d ago) | PRE_GAP |
+| VG | NYSE | 14 | 9.29 | -2.36 | — | 2026-08-11 (76d ago) | PRE_GAP |
+| SNDK | NASDAQ | 1238.03 | -1.82 | 2.33 | — | 2026-08-05 (82d ago) | PRE_GAP |
+| BTDR | NASDAQ | 6.96 | -4.40 | -2.30 | — | 2026-08-10 (77d ago) | PRE_GAP |
 | NN | NASDAQ | 10.08 | 9.45 | -2.28 | — | 2026-08-11 (76d ago) | PRE_GAP |
-| MGM | NYSE | 28.06 | -4.88 | 2.28 | — | 2026-07-29 (89d ago) | PRE_GAP |
 | ATEN | NYSE | 25.45 | 3.62 | -2.27 | — | 2026-08-05 (82d ago) | PRE_GAP |
+| KLAC | NASDAQ | 145.61 | -1.50 | 2.24 | — | 2026-07-28 (90d ago) | PRE_GAP |
 | ORIC | NASDAQ | 13.17 | -3.37 | -2.20 | — | 2026-08-03 (84d ago) | PRE_GAP |
-| PBF | NYSE | 76.17 | -3.89 | -2.19 | — | 2026-07-30 (88d ago) | PRE_GAP |
 | PSX | NYSE | 283.18 | -0.51 | -2.18 | — | 2026-08-05 (82d ago) | PRE_GAP |
-| MU | NASDAQ | 877.55 | 2.46 | 2.15 | — | 2026-09-30 (26d ago) | PRE_GAP |
+| COHU | NASDAQ | 47.96 | 3.67 | 2.15 | — | 2026-07-30 (88d ago) | PRE_GAP |
+| BE | NYSE | 193.3 | -11.24 | 2.15 | — | 2026-10-22 (4d ago) | PRE_GAP |
 | DVN | NYSE | 51.39 | 4.49 | -2.14 | — | 2026-08-04 (83d ago) | PRE_GAP |
-| TNGX | NASDAQ | 23.34 | -16.43 | 2.14 | — | 2026-08-11 (76d ago) | PRE_GAP |
-| KLAC | NASDAQ | 145.61 | -1.50 | 2.13 | — | 2026-07-28 (90d ago) | PRE_GAP |
 | SM | NYSE | 40.11 | 4.40 | -2.08 | — | 2026-08-05 (82d ago) | PRE_GAP |
-| FRO | NYSE | 52.94 | 3.36 | 2.02 | — | 2026-08-28 (59d ago) | PRE_GAP |
 
 ## US — QUIET one-liners
 
 | Ticker | Venue | Chg % | Pre-mkt % | Post-mkt % |
 |---|---|---|---|---|
-| AMAT | NASDAQ | 0.44 | 1.99 | — |
 | WTTR | NYSE | 3.42 | -1.98 | — |
+| PBF | NYSE | -3.89 | -1.98 | — |
+| FRO | NYSE | 3.36 | 1.98 | — |
 | CRGY | NYSE | 3.75 | -1.95 | — |
 | BAND | NASDAQ | 9.09 | 1.95 | — |
-| SNDK | NASDAQ | -1.82 | 1.94 | — |
 | LRCX | NASDAQ | -0.02 | 1.93 | — |
-| GLW | NYSE | -0.24 | 1.92 | — |
-| CRDO | NASDAQ | -9.51 | 1.92 | — |
+| FIX | NYSE | -9.26 | 1.91 | — |
+| RIG | NYSE | 5.43 | -1.87 | — |
 | VET | NYSE | 3.49 | -1.87 | — |
+| ABCL | NASDAQ | 3.96 | 1.86 | — |
 | VLO | NYSE | -1.64 | -1.86 | — |
-| RIG | NYSE | 5.43 | -1.84 | — |
+| TALO | NYSE | 4.13 | -1.85 | — |
 | NEM | NYSE | -4.59 | 1.84 | — |
 | BTE | NYSE | 3.38 | -1.82 | — |
 | ALGT | NASDAQ | -3.82 | 1.82 | — |
-| COF | NYSE | -1.03 | 1.80 | — |
 
 ## EU/UK — Headline table
 
 | Ticker | Market | Venue | Close | Chg % | Currency | Last earnings |
 |---|---|---|---|---|---|---|
-| YUBICO | sweden | OMXSTO | 146.9 | +16.59 | SEK | 2026-08-06 |
-| OTEC | norway | OSL | 18.86 | -16.36 | NOK | 2022-02-15 |
-| SBB_D | sweden | OMXSTO | 6.99 | +13.66 | SEK | — |
-| GTT | france | EURONEXT | 177.8 | -13.27 | EUR | 2026-07-28 |
-| GMAB | denmark | OMXCOP | 2971 | +12.37 | DKK | 2026-08-06 |
-| BETCO_DKK | denmark | OMXCOP | 45 | -12.28 | DKK | 2026-08-20 |
-| CCC | uk | LSE | 5070 | +10.46 | GBX | 2026-09-08 |
-| GALP | portugal | EURONEXT | 20.7 | -9.84 | EUR | 2026-07-27 |
+| OTEC | norway | OSL | 18.6 | -17.52 | NOK | 2022-02-15 |
+| YUBICO | sweden | OMXSTO | 145.6 | +15.56 | SEK | 2026-08-06 |
+| SBB_D | sweden | OMXSTO | 6.98 | +13.50 | SEK | — |
+| GTT | france | EURONEXT | 177.5 | -13.41 | EUR | 2026-07-28 |
+| GMAB | denmark | OMXCOP | 2984 | +12.86 | DKK | 2026-08-06 |
+| BETCO_DKK | denmark | OMXCOP | 44.9 | -12.48 | DKK | 2026-08-20 |
+| CCC | uk | LSE | 5075 | +10.57 | GBX | 2026-09-08 |
+| GALP | portugal | EURONEXT | 20.66 | -10.02 | EUR | 2026-07-27 |
 | NCOD | norway | OSL | 19.7 | +9.75 | NOK | 2025-02-13 |
-| OHB | germany | XETR | 225 | +8.70 | EUR | 2026-08-06 |
-| BITTI | finland | OMXHEX | 36.4 | +8.49 | EUR | 2022-02-10 |
+| OHB | germany | XETR | 225.5 | +8.94 | EUR | 2026-08-06 |
+| ALLEI | sweden | OMXSTO | 103 | -8.61 | SEK | 2026-07-16 |
 | NTG | denmark | OMXCOP | 339 | +8.48 | DKK | 2026-09-22 |
 | AOF | germany | XETR | 94.5 | +8.25 | EUR | 2026-07-27 |
-| NANO | france | EURONEXT | 27.9 | +8.22 | EUR | 2026-09-24 |
-| ALLEI | sweden | OMXSTO | 103.6 | -8.07 | SEK | 2026-07-16 |
-| ROKO_B | sweden | OMXSTO | 1978 | -7.79 | SEK | 2026-10-23 |
+| BITTI | finland | OMXHEX | 36.25 | +8.05 | EUR | 2022-02-10 |
+| NANO | france | EURONEXT | 27.82 | +7.91 | EUR | 2026-09-24 |
+| ROKO_B | sweden | OMXSTO | 1980 | -7.69 | SEK | 2026-10-23 |
 | KCC | norway | OSL | 108 | +7.57 | NOK | 2026-08-25 |
 | BWE | norway | OSL | 61.2 | -7.41 | NOK | 2026-07-30 |
-| MSAB_B | sweden | OMXSTO | 116 | +7.41 | SEK | 2026-10-23 |
+| MSAB_B | sweden | OMXSTO | 115.5 | +6.94 | SEK | 2026-10-23 |
 | IBT_B | sweden | OMXSTO | 75.9 | -6.87 | SEK | 2026-08-26 |
 | PEN | norway | OSL | 31.65 | -6.64 | NOK | 2026-08-20 |
-| FRVIA | france | EURONEXT | 8.556 | +6.44 | EUR | 2026-07-31 |
-| MCAP | sweden | OMXSTO | 564 | -6.08 | SEK | 2026-10-23 |
-| ORNAV | finland | OMXHEX | 97.3 | +5.99 | EUR | 2026-07-17 |
+| FRVIA | france | EURONEXT | 8.542 | +6.27 | EUR | 2026-07-31 |
+| BFG | italy | MIL | 7.86 | +6.22 | EUR | — |
+| ORNAV | finland | OMXHEX | 97.5 | +6.21 | EUR | 2026-07-17 |
+| MCAP | sweden | OMXSTO | 564.5 | -6.00 | SEK | 2026-10-23 |
 | BFIT | netherlands | EURONEXT | 30.4 | +5.92 | EUR | 2026-07-27 |
-| ORNBV | finland | OMXHEX | 97.55 | +5.69 | EUR | 2026-07-17 |
 | WAF | germany | XETR | 59.1 | +5.54 | EUR | 2026-07-30 |
 | DNORD | denmark | OMXCOP | 381.6 | +5.53 | DKK | 2026-08-13 |
 | MDATA | norway | OSL | 12.98 | +5.53 | NOK | 2026-08-26 |
@@ -158,7 +156,7 @@ the headline wins and the field is noted.
 | AGBK | US | Not earnings. AGI Inc, the Banco Agibank holding company, under Brazil runoff pressure given its concentrated Brazilian payroll and INSS lending and the fiscal and rate uncertainty; Q3 earnings are due 11 Nov. Friday's close had followed a roughly 30% 30-day rebound. (Perplexity Finance, 26 Oct) | N |
 | MELI | US | Not earnings. Brazil runoff shock: the real and Brazilian rates repriced on fiscal risk, which compresses MercadoLibre's dollar-reported earnings, with the MSCI Brazil ETF down nearly 19% overnight. Q3 is due in early November, so the move is not the report. (Investing.com, 26 Oct 05:30 ET) | N |
 | RRC | US | Not earnings - acquisition. EQT and Range Resources signed a definitive all-stock merger: 0.987 EQT shares per Range share, pro forma enterprise value above $50bn, about $12.83bn of equity value and an implied $54.91 per share, roughly 20.6% above Friday's close. Range holders take about 27% of the combined group, close expected in Q1 2027, and both companies moved their Q3 results to 27 Oct. (EQT press release and Reuters, 26 Oct) | N |
-| OTEC | EU | Earnings, scheduled but not yet confirmed. Otello's Q3 2026 report was scheduled for 26 Oct (Investing.com earnings calendar, period 09-2026) but no release text was found on Otello's IR feed or filing list at scan time, so the -15% intraday move has no located company explanation; the screener's own `earnings_release_date` field is stale at 2022-02-15. Next scheduled event is the FY26 year-end report on 17 Feb 2027. | Y |
+| OTEC | EU | Earnings, scheduled but not yet confirmed. Otello's Q3 2026 report was scheduled for 26 Oct (Investing.com earnings calendar, period 09-2026) but no release text was found on Otello's IR feed or filing list at scan time, so the mid-teens intraday drop has no located company explanation; the screener's own `earnings_release_date` field is stale at 2022-02-15. Next scheduled event is the FY26 year-end report on 17 Feb 2027. | Y |
 | YUBICO | EU | Not earnings. The cybersecurity complex rallied after last week's discovery of security flaws in the PHP programming language, which led several countries to shut down government sites, and a strong Friday rally in the US cybersecurity sector drove Monday's move; social-media interest in the stock as an AI-security hedge amplified it. Q3 report due 5 Nov. (Dagens Industri via Direkt and Placera, 26 Oct) | N |
 | GTT | EU | Earnings. 9M 2026 revenue was €570.1m, down 4.9% year on year, with Q3 revenue of €183m against €193m consensus and €196m at Jefferies, on fewer LNG carriers under construction. FY26 guidance was confirmed (revenue €740-780m, EBITDA €490-530m, dividend policy maintained), while Bernstein cut its target from €245 to €210. Worst SBF 120 performer of the morning. (Zonebourse, Boursedirect and MarketScreener, 26 Oct) | Y |
 | TUA | AU | Not earnings. Singapore's IMDA served Simba Telecom, Tuas' wholly-owned Singapore subsidiary, a formal Show Cause Notice with six allegations, including unauthorised dynamic spectrum sharing at about 133 sites in 2022-23 and unauthorised 2340-2360 MHz use at about 92 sites in 2023-26. Possible sanctions are a fine of the higher of 10% of annual turnover or S$1m and suspension or cancellation of spectrum licences; a formal response is due 16 Nov 2026. (ASX release, 26 Oct 09:35 AEDT) | N |
@@ -167,20 +165,22 @@ the headline wins and the field is noted.
 ## Source health
 
 - scanner_calls: 39 | scanner_errors: 0
-- yahoo_calls: 100 | yahoo_429: 0 | yahoo_errors: 0
-- cross_check (screener vs Yahoo, reference-close validation): agree=89 mismatch=1 unverified=0 stale_reference=1
+- pipeline_version: 2026-10-26.2
+- yahoo_calls: 98 | yahoo_429: 0 | yahoo_errors: 0
+- cross_check (screener vs Yahoo, reference-close validation): agree=87 mismatch=1 unverified=0 stale_reference=1
   method: the screener's implied reference close (close / (1 + change/100)) is compared
   with Yahoo's own reference close. A match proves the move was measured against the
   TRUE prior close; a mismatch means the row sits on a STALE reference (phantom move).
   Coverage: every row of the US headline, EU/UK and ASX tables is checked. The US QUIET
   one-liner table is NOT cross-checked.
-  Yahoo bar mode: {"closed": 60, "live": 29} (closed = last completed session bar;
+  Yahoo bar mode: {"closed": 58, "live": 29} (closed = last completed session bar;
   live = in-progress EU/UK session bar, which is what a weekday 08:00 ET EU move needs)
-  live drift between the screener snapshot and the later Yahoo print: median=0.00pp max=1.35pp (expected on a live market)
+  live drift between the screener snapshot and the later Yahoo print: median=0.00pp max=0.93pp (expected on a live market)
 - cross_check mismatches: [{"region": "uk", "symbol": "50GP.L", "tv": -9.145, "yahoo": 0.0, "delta": -9.145, "ref_delta_pct": 10.065, "tv_implied_ref": 84.75, "yahoo_ref": 77.0, "yahoo_date": "2026-10-23", "verdict": "stale_reference"}]
 - stale_rows_dropped: US=none EU=['50GP'] AU=none
-- us_premarket_check (Yahoo 1-min pre/post feed vs the screener pre-market column): checked=9 within_1pp=8 within_3pp=9 unavailable=1
-- markets_with_lt5_rows: ['uk:less=1', 'germany:less=0', 'france:less=1', 'netherlands:less=1', 'belgium:egreater=2', 'belgium:less=1', 'portugal:egreater=0', 'portugal:less=1', 'ireland:egreater=1', 'ireland:less=0', 'italy:less=1', 'switzerland:less=0', 'spain:less=2', 'norway:less=4', 'denmark:less=1', 'finland:less=0', 'poland:less=1', 'austria:egreater=1', 'austria:less=2', 'greece:egreater=1', 'greece:less=0']
+- us_premarket_check (Yahoo 1-min pre/post feed vs the screener pre-market column): checked=9 within_1pp=5 within_3pp=8 unavailable=1
+  us_premarket outliers (>3pp; thin pre-market books, not a screener error): [{"symbol": "ADPT", "tv": -5.998, "yahoo": -1.019, "delta": 4.979, "yahoo_asof": "08:21"}]
+- markets_with_lt5_rows: ['uk:less=1', 'germany:less=0', 'france:less=1', 'netherlands:less=1', 'belgium:egreater=2', 'belgium:less=1', 'portugal:egreater=0', 'portugal:less=1', 'ireland:egreater=1', 'ireland:less=0', 'italy:less=1', 'switzerland:less=0', 'spain:less=2', 'norway:less=4', 'denmark:less=1', 'finland:less=0', 'poland:less=2', 'austria:egreater=1', 'austria:less=2', 'greece:egreater=1', 'greece:less=0']
   NOTE: this fires per market AND direction, so it is NOT a coverage-failure signal on
   its own. A 'less' count of 0-3 means almost nothing fell more than 2.5% that session
   (a broad up-day); a small 'egreater' count usually means a small market with few
@@ -193,7 +193,7 @@ the headline wins and the field is noted.
   showed no bar for the scan date). The reference-close cross-check is what catches
   those; rows that fail it are dropped from the tables, not published.
 - us_preferred_dropped: 59
-- bod_no_extended_hours: 140 (deferred to the next scan; not in the headline table)
+- bod_no_extended_hours: 137 (deferred to the next scan; not in the headline table)
 - earnings_source: screener `earnings_release_date` (last FULL report) + `earnings_release_next_date` (next scheduled)
 - earnings_caveat: `earnings_release_date` does NOT capture preliminary, guidance or
   restructuring releases. On 2026-10-23 LKQ fell 22.47% on a preliminary Q3 miss while
@@ -207,4 +207,4 @@ the headline wins and the field is noted.
 
 ## Audit line
 
-`earnings-reaction target=earnings-reactions:2026-10-26 candidates=539 amc_reactions=0 pre_gaps=35 eu_reactions=29 asx_reactions=25 catalyst_lookups=10 bod=140`
+`earnings-reaction target=earnings-reactions:2026-10-26 candidates=539 amc_reactions=0 pre_gaps=33 eu_reactions=29 asx_reactions=25 catalyst_lookups=10 bod=137`
