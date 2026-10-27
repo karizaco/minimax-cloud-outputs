@@ -1,100 +1,121 @@
 #!/usr/bin/env python3
-"""Rank + QC the Asia pre-market screens into per-market tables."""
+"""Rank Asia movers: session-date filter, exchange whitelist, dedupe, anomaly flags."""
 import json, os, datetime, collections
 
 CACHE = "/workspace/.cache/asia"
-OFFSET = {"JPX": 9, "TWO": 8, "HKG": 8, "KSC": 9, "KOE": 9}   # hours from UTC
-KEEP = {"JPX", "TWO", "HKG", "KSC", "KOE"}
-GROUPS = {"JP": ["JPX"], "TW": ["TWO"], "HK": ["HKG"], "KR": ["KSC", "KOE"]}
-NAME = {"JP": "Japan (TSE)", "TW": "Taiwan (TWSE)", "HK": "Hong Kong (HKEX)",
-        "KR": "Korea (KRX)"}
+TARGET = "2026-10-27"
+
+MARKETS = [
+    ("JP", "JPX", "Japan", 9),
+    ("TW", "TWO", "Taiwan", 8),
+    ("HK", "HKG", "Hong Kong", 8),
+    ("KSC", "KSC", "Korea KOSPI", 9),
+    ("KOE", "KOE", "Korea KOSDAQ", 9),
+]
+
+DROP_EXCHANGES = {"OTC", "PINK", "OTCBB", "GREY", "LSE", "LSX", "NASDAQ", "NYSE", "AMEX", "BATS"}
 
 
-def load(ex, d):
-    p = os.path.join(CACHE, f"scr_{ex}_{d}.json")
-    if not os.path.exists(p):
-        return []
-    try:
-        r = (json.load(open(p)).get("finance") or {}).get("result")
-        return (r[0].get("quotes") or []) if r else []
-    except Exception:
-        return []
+def local_date(q):
+    t = q.get("regularMarketTime")
+    if not t:
+        return None, None
+    off = q.get("gmtOffSetMilliseconds") or 0
+    loc = datetime.datetime.utcfromtimestamp(t + off / 1000.0)
+    return loc.strftime("%Y-%m-%d"), loc.isoformat()
 
 
-def session_date(ts, off):
-    return (datetime.datetime.utcfromtimestamp(ts) +
-            datetime.timedelta(hours=off)).strftime("%Y-%m-%d")
+def load(key, code, direction):
+    fn = os.path.join(CACHE, f"scr_{key}_{direction}.json")
+    if not os.path.exists(fn):
+        return [], 0
+    d = json.load(open(fn))
+    return d["quotes"], d["total"]
 
 
-out = {}
-qc = {"rows_raw": 0, "dropped_exchange": 0, "dropped_price": 0, "dropped_nomc": 0,
-      "dedup_hk": 0, "dedup_other": 0, "session_dates": {}, "cap_rows": 0}
+stats = collections.Counter()
+rows_out = {}
+market_meta = {}
 
-for mk, exs in GROUPS.items():
-    rows = []
-    for ex in exs:
-        for d in ("up", "down"):
-            for q in load(ex, d):
-                qc["rows_raw"] += 1
-                exs_field = q.get("exchange")
-                if exs_field not in KEEP:
-                    qc["dropped_exchange"] += 1
-                    continue
-                px = q.get("regularMarketPrice")
-                pct = q.get("regularMarketChangePercent")
-                mc = q.get("marketCap")
-                ts = q.get("regularMarketTime")
-                if px is None or pct is None or ts is None:
-                    continue
-                if px < 5:                      # close floor, local currency
-                    qc["dropped_price"] += 1
-                    continue
-                if not mc or mc < 2_000_000_000:  # $2B market-cap floor
-                    qc["dropped_nomc"] += 1
-                    continue
-                rows.append({
-                    "symbol": q.get("symbol"), "name": q.get("shortName"),
-                    "long": q.get("longName"), "exch": exs_field,
-                    "full": q.get("fullExchangeName"), "px": px, "pct": round(pct, 2),
-                    "mc": mc, "cur": q.get("currency"), "ts": ts,
-                    "sess": session_date(ts, OFFSET[exs_field]),
-                    "vol": q.get("regularMarketVolume"),
-                })
-
-    # ---- dedupe: same company appearing twice (HK dual-ticker 5-digit vs 4-digit) ----
-    byname = collections.defaultdict(list)
-    for r in rows:
-        byname[(r["name"] or r["long"] or r["symbol"]).upper()].append(r)
-    kept = []
-    for nm, grp in byname.items():
-        if len(grp) == 1:
-            kept.append(grp[0])
+for key, code, name, tzoff in MARKETS:
+    allrows = []
+    for direction in ("up", "down"):
+        quotes, total = load(key, code, direction)
+        stats[f"{key}_total_{direction}"] = total
+        for q in quotes:
+            ex = (q.get("exchange") or "").upper()
+            fen = (q.get("fullExchangeName") or "")
+            if ex in DROP_EXCHANGES:
+                stats[f"{key}_dropped_exch"] += 1
+                continue
+            sd, loctime = local_date(q)
+            if sd != TARGET:
+                stats[f"{key}_dropped_stale"] += 1
+                continue
+            pct = q.get("regularMarketChangePercent")
+            if pct is None:
+                stats[f"{key}_dropped_nopct"] += 1
+                continue
+            mcap = q.get("marketCap") or 0
+            price = q.get("regularMarketPrice")
+            prev = q.get("regularMarketPreviousClose")
+            sym = q.get("symbol", "")
+            flags = []
+            # KOSPI 1형 preferred shares: no daily limit, capital-action moves
+            if sym.endswith("(1P)") or "(1P)" in sym or sym.endswith(".KS") and "P)" in sym:
+                flags.append("PREFERRED_NO_LIMIT")
+            # TWSE: keep primary tier only per skill whitelist
+            if key == "TW" and fen and "Taipei" in fen and "Exchange" in fen:
+                flags.append("TPEX_SECONDARY")
+            allrows.append({
+                "symbol": sym, "name": q.get("shortName"), "longname": q.get("longName"),
+                "exchange": ex, "full_exchange": fen, "currency": q.get("currency"),
+                "price": price, "prev_close": prev, "pct": pct,
+                "mcap": mcap, "time_local": loctime, "session_date": sd,
+                "day_high": q.get("regularMarketDayHigh"), "day_low": q.get("regularMarketDayLow"),
+                "volume": q.get("regularMarketVolume"),
+                "avgvol3m": q.get("averageDailyVolume3Month"),
+                "market_state": q.get("marketState"),
+                "direction": direction, "flags": flags,
+                "quote_type": q.get("quoteType"),
+            })
+    # dedupe by symbol, then by (name, mcap) for dual-ticker
+    bysym = {}
+    for r in allrows:
+        if r["symbol"] not in bysym or abs(r["pct"]) > abs(bysym[r["symbol"]]["pct"]):
+            bysym[r["symbol"]] = r
+    seen_name = set()
+    dedup = []
+    for r in sorted(bysym.values(), key=lambda x: -abs(x["pct"])):
+        k = (r["name"], round((r["mcap"] or 0) / 1e6))
+        if r["name"] and k in seen_name:
+            stats[f"{key}_dedup_dupticker"] += 1
             continue
-        # keep the shorter numeric ticker (4-digit HK primary) when market caps agree
-        grp2 = sorted(grp, key=lambda r: (len(str(r["symbol"]).split(".")[0]), -r["mc"]))
-        kept.append(grp2[0])
-        if mk == "HK":
-            qc["dedup_hk"] += len(grp) - 1
-        else:
-            qc["dedup_other"] += len(grp) - 1
+        seen_name.add(k)
+        dedup.append(r)
+    rows_out[key] = dedup
+    market_meta[key] = {"name": name, "code": code, "n": len(dedup)}
 
-    up = sorted([r for r in kept if r["pct"] > 0], key=lambda r: -r["pct"])[:15]
-    dn = sorted([r for r in kept if r["pct"] < 0], key=lambda r: r["pct"])[:15]
-    qc["session_dates"][mk] = collections.Counter(
-        [r["sess"] for r in kept]).most_common()
-    qc["cap_rows"] += len(up) + len(dn)
-    out[mk] = {"name": NAME[mk], "up": up, "down": dn,
-               "n_kept": len(kept)}
+# exclude preferred-share / TPEX-secondary rows from movers
+movers = {}
+for key, rows in rows_out.items():
+    keep = [r for r in rows if "PREFERRED_NO_LIMIT" not in r["flags"]]
+    stats[f"{key}_excl_preferred"] = len(rows) - len(keep)
+    movers[key] = keep
 
-json.dump({"markets": out, "qc": qc}, open(os.path.join(CACHE, "ranked.json"), "w"),
-          indent=1, default=str)
+json.dump({"movers": movers, "all_rows": rows_out, "stats": dict(stats),
+           "meta": market_meta},
+          open(os.path.join(CACHE, "ranked.json"), "w"), indent=2, ensure_ascii=False)
 
-for mk in ("JP", "TW", "HK", "KR"):
-    m = out[mk]
-    print(f"\n=== {m['name']} | kept={m['n_kept']} | session dates={qc['session_dates'][mk]}")
-    for lbl, lst in (("UP", m["up"]), ("DOWN", m["down"])):
-        print(f"  --{lbl}--")
-        for r in lst:
-            print(f"   {r['symbol']:>10} {str(r['name'])[:26]:<26} {r['pct']:>7.2f}% "
-                  f"px={r['px']:>10} mc=${r['mc']/1e9:>6.2f}B {r['cur']} [{r['full']}] sess={r['sess']}")
-print("\nQC:", json.dumps(qc, default=str))
+print("STATS:", json.dumps(dict(stats), indent=1))
+print()
+for key, rows in movers.items():
+    print(f"=== {key} {market_meta[key]['name']} ({market_meta[key]['n']} rows) ===")
+    for r in rows[:12]:
+        hi = r["day_high"] == r["price"]
+        lo = r["day_low"] == r["price"]
+        lim = "AT-HI" if hi else ("AT-LO" if lo else "")
+        print(f"  {r['symbol']:14s} {str(r['name'])[:26]:26s} {r['pct']:8.2f}%  "
+              f"px={r['price']:>10} prev={r['prev_close']:>10} mcap={r['mcap']/1e9:7.2f}B "
+              f"{r['full_exchange'][:18]:18s} {lim} vol={r['volume']} {r['flags']}")
+    print()
