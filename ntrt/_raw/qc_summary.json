@@ -1,0 +1,831 @@
+{
+ "flags": [
+  [
+   "ITJTY",
+   "not comparable (home listing)",
+   0.0,
+   null,
+   5000
+  ],
+  [
+   "AAIGF",
+   "not comparable (home listing)",
+   0.022988505747134114,
+   null,
+   176
+  ],
+  [
+   "IVBXF",
+   "not comparable (home listing)",
+   0.0,
+   null,
+   195
+  ],
+  [
+   "HWKN",
+   "stale print",
+   0.0,
+   91.48913733333333,
+   100
+  ],
+  [
+   "WSO",
+   "thin book",
+   0.0,
+   7.922470666666666,
+   10910
+  ],
+  [
+   "SVRE",
+   "thin book",
+   0.0,
+   14.055804,
+   6691
+  ],
+  [
+   "VLKPF",
+   "not comparable (home listing)",
+   null,
+   null,
+   2
+  ],
+  [
+   "ATEYY",
+   "not comparable (home listing)",
+   0.0,
+   null,
+   100
+  ],
+  [
+   "OSCUF",
+   "not comparable (home listing)",
+   null,
+   null,
+   165
+  ],
+  [
+   "SXC",
+   "stale print",
+   0.0,
+   123.80580400000001,
+   4463
+  ],
+  [
+   "ISD",
+   "stale print",
+   0.0,
+   81.88913733333334,
+   750
+  ],
+  [
+   "PII",
+   "stale print",
+   0.0,
+   96.62247066666667,
+   553
+  ],
+  [
+   "VGM",
+   "thin book",
+   0.0,
+   40.88913733333333,
+   100
+  ],
+  [
+   "YDES",
+   "not comparable (home listing)",
+   0.0,
+   null,
+   1192
+  ],
+  [
+   "ELVR",
+   "not comparable (home listing)",
+   0.0,
+   null,
+   200
+  ],
+  [
+   "BESVF",
+   "not comparable (home listing)",
+   null,
+   null,
+   1
+  ],
+  [
+   "SAIQ",
+   "not comparable (home listing)",
+   null,
+   null,
+   481762
+  ],
+  [
+   "GMTL",
+   "not comparable (home listing)",
+   null,
+   null,
+   760
+  ],
+  [
+   "NEWP",
+   "not comparable (home listing)",
+   null,
+   null,
+   3665
+  ],
+  [
+   "HRI",
+   "not comparable (home listing)",
+   null,
+   null,
+   10844
+  ],
+  [
+   "ACHV",
+   "not comparable (home listing)",
+   null,
+   null,
+   436
+  ],
+  [
+   "WHR",
+   "not comparable (home listing)",
+   null,
+   null,
+   347030
+  ],
+  [
+   "ETRA",
+   "not comparable (home listing)",
+   null,
+   null,
+   351
+  ],
+  [
+   "NBTX",
+   "not comparable (home listing)",
+   null,
+   null,
+   2239
+  ],
+  [
+   "HSBC",
+   "not comparable (home listing)",
+   null,
+   null,
+   153695
+  ],
+  [
+   "EEFT",
+   "not comparable (home listing)",
+   null,
+   null,
+   6127
+  ],
+  [
+   "WVE",
+   "not comparable (home listing)",
+   null,
+   null,
+   51849
+  ],
+  [
+   "XLAB",
+   "not comparable (home listing)",
+   null,
+   null,
+   73069
+  ],
+  [
+   "LPTH",
+   "not comparable (home listing)",
+   null,
+   null,
+   75976
+  ],
+  [
+   "DETRF",
+   "not comparable (home listing)",
+   null,
+   null,
+   1680
+  ],
+  [
+   "AZUL",
+   "not comparable (home listing)",
+   null,
+   null,
+   200
+  ],
+  [
+   "CSHR",
+   "not comparable (home listing)",
+   null,
+   null,
+   8587
+  ],
+  [
+   "PED",
+   "not comparable (home listing)",
+   null,
+   null,
+   400
+  ],
+  [
+   "RZAI",
+   "not comparable (home listing)",
+   null,
+   null,
+   600
+  ],
+  [
+   "NE",
+   "not comparable (home listing)",
+   null,
+   null,
+   2263
+  ],
+  [
+   "DAC",
+   "not comparable (home listing)",
+   null,
+   null,
+   2628
+  ],
+  [
+   "OABI",
+   "not comparable (home listing)",
+   null,
+   null,
+   603
+  ],
+  [
+   "THRM",
+   "not comparable (home listing)",
+   null,
+   null,
+   2832
+  ],
+  [
+   "MRP",
+   "not comparable (home listing)",
+   null,
+   null,
+   3825
+  ],
+  [
+   "ZURA",
+   "not comparable (home listing)",
+   null,
+   null,
+   62504
+  ],
+  [
+   "GOOGN",
+   "not comparable (home listing)",
+   null,
+   null,
+   100
+  ],
+  [
+   "HUBB",
+   "not comparable (home listing)",
+   null,
+   null,
+   588
+  ],
+  [
+   "ZLAB",
+   "not comparable (home listing)",
+   null,
+   null,
+   15112
+  ],
+  [
+   "RCL",
+   "not comparable (home listing)",
+   null,
+   null,
+   79627
+  ],
+  [
+   "PMRTY",
+   "not comparable (home listing)",
+   null,
+   null,
+   1504
+  ],
+  [
+   "ASPI",
+   "not comparable (home listing)",
+   null,
+   null,
+   47699
+  ],
+  [
+   "GRRR",
+   "not comparable (home listing)",
+   null,
+   null,
+   3685
+  ],
+  [
+   "SMTC",
+   "not comparable (home listing)",
+   null,
+   null,
+   12898
+  ],
+  [
+   "SPGI",
+   "not comparable (home listing)",
+   null,
+   null,
+   6456
+  ],
+  [
+   "SPOK",
+   "not comparable (home listing)",
+   null,
+   null,
+   201
+  ],
+  [
+   "NAUT",
+   "not comparable (home listing)",
+   null,
+   null,
+   581217
+  ],
+  [
+   "EROC",
+   "not comparable (home listing)",
+   null,
+   null,
+   81931
+  ],
+  [
+   "JCI",
+   "not comparable (home listing)",
+   null,
+   null,
+   90170
+  ],
+  [
+   "NPSCY",
+   "not comparable (home listing)",
+   null,
+   null,
+   30600
+  ],
+  [
+   "NBIS",
+   "not comparable (home listing)",
+   null,
+   null,
+   535902
+  ],
+  [
+   "LWLG",
+   "not comparable (home listing)",
+   null,
+   null,
+   6516
+  ],
+  [
+   "ASXFF",
+   "not comparable (home listing)",
+   null,
+   null,
+   522
+  ],
+  [
+   "VIPS",
+   "not comparable (home listing)",
+   null,
+   null,
+   5957
+  ],
+  [
+   "ZSQR",
+   "not comparable (home listing)",
+   null,
+   null,
+   3900
+  ],
+  [
+   "STRL",
+   "not comparable (home listing)",
+   null,
+   null,
+   3469
+  ],
+  [
+   "VNDA",
+   "not comparable (home listing)",
+   null,
+   null,
+   43353
+  ],
+  [
+   "TRON",
+   "not comparable (home listing)",
+   null,
+   null,
+   10251
+  ],
+  [
+   "HYSNY",
+   "not comparable (home listing)",
+   null,
+   null,
+   1431
+  ],
+  [
+   "HLT",
+   "not comparable (home listing)",
+   null,
+   null,
+   22485
+  ],
+  [
+   "AWI",
+   "not comparable (home listing)",
+   null,
+   null,
+   66193
+  ],
+  [
+   "EPRT",
+   "not comparable (home listing)",
+   null,
+   null,
+   2152
+  ],
+  [
+   "WULF",
+   "not comparable (home listing)",
+   null,
+   null,
+   408466
+  ],
+  [
+   "BRO",
+   "not comparable (home listing)",
+   null,
+   null,
+   79336
+  ],
+  [
+   "SWRD",
+   "not comparable (home listing)",
+   null,
+   null,
+   305
+  ],
+  [
+   "ABTC",
+   "not comparable (home listing)",
+   null,
+   null,
+   4856
+  ],
+  [
+   "SEI",
+   "not comparable (home listing)",
+   null,
+   null,
+   2667
+  ],
+  [
+   "CRWV",
+   "not comparable (home listing)",
+   null,
+   null,
+   1274554
+  ],
+  [
+   "IPX",
+   "not comparable (home listing)",
+   null,
+   null,
+   1275
+  ],
+  [
+   "UAMY",
+   "not comparable (home listing)",
+   null,
+   null,
+   75549
+  ],
+  [
+   "FIGR",
+   "not comparable (home listing)",
+   null,
+   null,
+   21317
+  ],
+  [
+   "ASMXF",
+   "not comparable (home listing)",
+   null,
+   null,
+   3
+  ],
+  [
+   "TLK",
+   "not comparable (home listing)",
+   null,
+   null,
+   14965
+  ],
+  [
+   "BKH",
+   "not comparable (home listing)",
+   null,
+   null,
+   300
+  ],
+  [
+   "NTES",
+   "not comparable (home listing)",
+   null,
+   null,
+   14184
+  ],
+  [
+   "ADYYF",
+   "not comparable (home listing)",
+   null,
+   null,
+   1
+  ],
+  [
+   "QNC",
+   "not comparable (home listing)",
+   null,
+   null,
+   48772
+  ],
+  [
+   "SHW",
+   "not comparable (home listing)",
+   null,
+   null,
+   1616
+  ],
+  [
+   "HUBS",
+   "not comparable (home listing)",
+   null,
+   null,
+   8625
+  ],
+  [
+   "AAPG",
+   "not comparable (home listing)",
+   null,
+   null,
+   1000
+  ],
+  [
+   "MRNA",
+   "not comparable (home listing)",
+   null,
+   null,
+   144397
+  ],
+  [
+   "SENS",
+   "not comparable (home listing)",
+   null,
+   null,
+   100
+  ],
+  [
+   "ASAN",
+   "not comparable (home listing)",
+   null,
+   null,
+   257
+  ],
+  [
+   "SAR",
+   "not comparable (home listing)",
+   null,
+   null,
+   130
+  ],
+  [
+   "ONON",
+   "not comparable (home listing)",
+   null,
+   null,
+   318688
+  ],
+  [
+   "HSAI",
+   "not comparable (home listing)",
+   null,
+   null,
+   11911
+  ],
+  [
+   "NTCT",
+   "not comparable (home listing)",
+   null,
+   null,
+   3100
+  ],
+  [
+   "ITW",
+   "not comparable (home listing)",
+   null,
+   null,
+   584
+  ]
+ ],
+ "div": [
+  [
+   3.848465484064942,
+   "INIO",
+   -3.848465484064942,
+   13.529765484064942,
+   9.6813
+  ],
+  [
+   3.6697431192660437,
+   "SVRE",
+   -3.6697431192660437,
+   10.091743119266043,
+   6.422
+  ],
+  [
+   2.256130474102502,
+   "KNSA",
+   2.256130474102502,
+   14.508769525897499,
+   16.7649
+  ],
+  [
+   1.7472791443850237,
+   "BRUN",
+   1.7472791443850237,
+   7.620320855614976,
+   9.3676
+  ],
+  [
+   1.4245226415094336,
+   "BRAI",
+   1.4245226415094336,
+   47.160377358490564,
+   48.5849
+  ],
+  [
+   0.9999897959183688,
+   "IMSR",
+   -0.9999897959183688,
+   11.22448979591837,
+   10.2245
+  ],
+  [
+   0.9342706669369534,
+   "CLS",
+   -0.9342706669369534,
+   10.885870666936952,
+   9.9516
+  ],
+  [
+   0.6676573360040052,
+   "INOD",
+   0.6676573360040052,
+   -14.371557336004006,
+   -13.7039
+  ],
+  [
+   0.582013673318551,
+   "XYL",
+   0.582013673318551,
+   -8.185513673318551,
+   -7.6035
+  ],
+  [
+   0.4837730883813318,
+   "FER",
+   -0.4837730883813318,
+   10.275273088381331,
+   9.7915
+  ],
+  [
+   0.4699397537091059,
+   "WSO",
+   -0.4699397537091059,
+   -10.118560246290894,
+   -10.5885
+  ],
+  [
+   0.3586084388185711,
+   "JBLU",
+   0.3586084388185711,
+   14.345991561181428,
+   14.7046
+  ],
+  [
+   0.2766493775933636,
+   "SOFI",
+   0.2766493775933636,
+   10.995850622406637,
+   11.2725
+  ],
+  [
+   0.23924162679427496,
+   "MFIC",
+   -0.23924162679427496,
+   23.205741626794275,
+   22.9665
+  ],
+  [
+   4.7666863558504247e-05,
+   "HWKN",
+   -4.7666863558504247e-05,
+   10.750147666863558,
+   10.7501
+  ],
+  [
+   4.285714284435471e-05,
+   "ARTV",
+   -4.285714284435471e-05,
+   -32.14285714285715,
+   -32.1429
+  ],
+  [
+   3.930885528813377e-05,
+   "VGM",
+   -3.930885528813377e-05,
+   -7.9913606911447115,
+   -7.9914
+  ],
+  [
+   2.151076134815355e-05,
+   "CVLT",
+   -2.151076134815355e-05,
+   -7.589578489238652,
+   -7.5896
+  ],
+  [
+   2.1145374450526333e-05,
+   "ISD",
+   2.1145374450526333e-05,
+   -8.01762114537445,
+   -8.0176
+  ],
+  [
+   7.135575932792904e-06,
+   "SXC",
+   -7.135575932792904e-06,
+   8.053007135575934,
+   8.053
+  ],
+  [
+   5.893019041636194e-06,
+   "PII",
+   -5.893019041636194e-06,
+   8.014505893019042,
+   8.0145
+  ]
+ ],
+ "pair": [
+  [
+   1,
+   104,
+   0.0,
+   1.521346963319301
+  ],
+  [
+   2,
+   102,
+   0.0,
+   2.7597402597402585
+  ],
+  [
+   3,
+   105,
+   0.0,
+   1.053508073274915
+  ]
+ ],
+ "yp": [
+  [
+   1,
+   20,
+   0.0,
+   0.6493999999999964
+  ],
+  [
+   2,
+   20,
+   0.030050000000000132,
+   1.2967000000000013
+  ]
+ ]
+}
