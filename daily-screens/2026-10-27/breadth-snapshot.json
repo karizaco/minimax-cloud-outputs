@@ -1,0 +1,409 @@
+{
+ "cron_date": "2026-10-27",
+ "data_date": "2026-10-26",
+ "generated": "2026-10-27T18:35Z",
+ "source": "Nasdaq public chart API (api.nasdaq.com/api/quote/<SYM>/chart) for daily settled OHLC + live quote; Yahoo chart API for the volatility indices. Tier-1 MCPs (shibui-finance / tradingview-advanced / financekit) are not registered in this cloud sandbox.",
+ "breadth": {
+  "spx_pct_above_sma20": 71.5,
+  "spx_pct_above_sma50": 59.4,
+  "n_constituents": 502,
+  "n_missing": 1,
+  "live_n": 502,
+  "live_pct_above_sma20": 72.7,
+  "live_pct_above_sma50": 59.4,
+  "names_below_sma20": 143,
+  "names_below_sma50": 204
+ },
+ "index_summary": {
+  "pct_above_sma_20": 20.0,
+  "pct_above_sma_50": 20.0,
+  "indices_below_sma20": [
+   "SPY",
+   "QQQ",
+   "QQQE",
+   "IWM"
+  ],
+  "indices_below_sma50": [
+   "SPY",
+   "QQQ",
+   "QQQE",
+   "IWM"
+  ]
+ },
+ "indices": {
+  "SPY": {
+   "symbol": "SPY",
+   "data_date": "2026-10-26",
+   "close": 765.37,
+   "sma20": 770.1384999999998,
+   "sma50": 767.589,
+   "sma200": 727.3927500000002,
+   "atr14": 7.251364285714309,
+   "atr14_wilder": 7.258686174930939,
+   "bars": 519,
+   "atr_pct": 0.9474325209655864,
+   "atr_pct_median_252d": 1.034130325718538,
+   "atr_x_median": 0.9161635602430362,
+   "ext_from_50_pct": -0.2890869983806504,
+   "ext_atr_from_50": -0.30512674199321776,
+   "perf_1m_pct": -0.7752641472742572,
+   "perf_3m_pct": 3.308317360904889,
+   "perf_6m_pct": 7.019310094103504,
+   "perf_12m_pct": 13.935036322496131,
+   "live": {
+    "live": 769.425,
+    "prev_close": 765.37,
+    "chg_pct": 0.5298091119327841,
+    "live_vs_sma20": -0.0926456734729974,
+    "live_vs_sma50": 0.23919050429330008,
+    "above_sma20_now": false
+   }
+  },
+  "RSP": {
+   "symbol": "RSP",
+   "data_date": "2026-10-26",
+   "close": 217.29,
+   "sma20": 213.04149999999998,
+   "sma50": 215.24340000000004,
+   "sma200": 207.37810000000007,
+   "atr14": 2.0682071428571414,
+   "atr14_wilder": 2.0220219555896493,
+   "bars": 519,
+   "atr_pct": 0.9518188332905985,
+   "atr_pct_median_252d": 1.0094958020785183,
+   "atr_x_median": 0.9428655684657976,
+   "ext_from_50_pct": 0.9508305481143463,
+   "ext_atr_from_50": 0.9989616877270273,
+   "perf_1m_pct": 2.9273838283359277,
+   "perf_3m_pct": -0.1837475308925529,
+   "perf_6m_pct": 7.681252787551407,
+   "perf_12m_pct": 13.919471531928274,
+   "live": {
+    "live": 217.175,
+    "prev_close": 217.29,
+    "chg_pct": -0.0529246628928992,
+    "live_vs_sma20": 1.940232302157104,
+    "live_vs_sma50": 0.897402661359175,
+    "above_sma20_now": true
+   }
+  },
+  "QQQ": {
+   "symbol": "QQQ",
+   "data_date": "2026-10-26",
+   "close": 712.2,
+   "sma20": 734.0185,
+   "sma50": 725.4348,
+   "sma200": 677.7539000000002,
+   "atr14": 12.356892857142855,
+   "atr14_wilder": 11.484290307351344,
+   "bars": 519,
+   "atr_pct": 1.7350312913708021,
+   "atr_pct_median_252d": 1.6190709711919913,
+   "atr_x_median": 1.0716215176740762,
+   "ext_from_50_pct": -1.8243955211412453,
+   "ext_atr_from_50": -1.05150583174776,
+   "perf_1m_pct": -4.338482202820682,
+   "perf_3m_pct": 5.434573420776045,
+   "perf_6m_pct": 7.221896029989616,
+   "perf_12m_pct": 16.643191719348827,
+   "live": {
+    "live": 720.71,
+    "prev_close": 712.2,
+    "chg_pct": 1.194889076102217,
+    "live_vs_sma20": -1.8131014409037347,
+    "live_vs_sma50": -0.651305947826043,
+    "above_sma20_now": false
+   }
+  },
+  "QQQE": {
+   "symbol": "QQQE",
+   "data_date": "2026-10-26",
+   "close": 118.06,
+   "sma20": 119.886,
+   "sma50": 120.27940000000007,
+   "sma200": 112.83214999999998,
+   "atr14": 1.6585000000000005,
+   "atr14_wilder": 1.5088140047636485,
+   "bars": 519,
+   "atr_pct": 1.4047941724546844,
+   "atr_pct_median_252d": 1.2843500199636417,
+   "atr_x_median": 1.0937782930033764,
+   "ext_from_50_pct": -1.8452037506007373,
+   "ext_atr_from_50": -1.3135047018144286,
+   "perf_1m_pct": -2.445876714592621,
+   "perf_3m_pct": 1.3912744761250373,
+   "perf_6m_pct": 9.032138899150354,
+   "perf_12m_pct": 14.023565771682446,
+   "live": {
+    "live": 119.04,
+    "prev_close": 118.06,
+    "chg_pct": 0.83008639674742,
+    "live_vs_sma20": -0.7056703868675154,
+    "live_vs_sma50": -1.030434139179327,
+    "above_sma20_now": false
+   }
+  },
+  "IWM": {
+   "symbol": "IWM",
+   "data_date": "2026-10-26",
+   "close": 276.99,
+   "sma20": 277.04049999999995,
+   "sma50": 285.8522000000001,
+   "sma200": 278.3276499999999,
+   "atr14": 3.6289285714285597,
+   "atr14_wilder": 3.628817304272485,
+   "bars": 519,
+   "atr_pct": 1.3101298138664066,
+   "atr_pct_median_252d": 1.615059559391863,
+   "atr_x_median": 0.8111959749396022,
+   "ext_from_50_pct": -3.100273497982553,
+   "ext_atr_from_50": -2.3663864948108775,
+   "perf_1m_pct": -1.7661453346100697,
+   "perf_3m_pct": -5.583392984967784,
+   "perf_6m_pct": -0.05412426932235315,
+   "perf_12m_pct": 12.405648892135378,
+   "live": {
+    "live": 279.92,
+    "prev_close": 276.99,
+    "chg_pct": 1.0577999205747524,
+    "live_vs_sma20": 1.0393787189959824,
+    "live_vs_sma50": -2.07526826800706,
+    "above_sma20_now": true
+   }
+  }
+ },
+ "live_session": {
+  "as_of": "2026-10-27 14:35 ET",
+  "indices": [
+   {
+    "symbol": "SPY",
+    "live": 769.425,
+    "prev_close": 765.37,
+    "chg_pct": 0.5298091119327841,
+    "sma20": 770.1384999999998,
+    "sma50": 767.589,
+    "live_vs_sma20": -0.0926456734729974,
+    "live_vs_sma50": 0.23919050429330008,
+    "above_sma20_now": false
+   },
+   {
+    "symbol": "RSP",
+    "live": 217.175,
+    "prev_close": 217.29,
+    "chg_pct": -0.0529246628928992,
+    "sma20": 213.04149999999998,
+    "sma50": 215.24340000000004,
+    "live_vs_sma20": 1.940232302157104,
+    "live_vs_sma50": 0.897402661359175,
+    "above_sma20_now": true
+   },
+   {
+    "symbol": "QQQ",
+    "live": 720.71,
+    "prev_close": 712.2,
+    "chg_pct": 1.194889076102217,
+    "sma20": 734.0185,
+    "sma50": 725.4348,
+    "live_vs_sma20": -1.8131014409037347,
+    "live_vs_sma50": -0.651305947826043,
+    "above_sma20_now": false
+   },
+   {
+    "symbol": "QQQE",
+    "live": 119.04,
+    "prev_close": 118.06,
+    "chg_pct": 0.83008639674742,
+    "sma20": 119.886,
+    "sma50": 120.27940000000007,
+    "live_vs_sma20": -0.7056703868675154,
+    "live_vs_sma50": -1.030434139179327,
+    "above_sma20_now": false
+   },
+   {
+    "symbol": "IWM",
+    "live": 279.92,
+    "prev_close": 276.99,
+    "chg_pct": 1.0577999205747524,
+    "sma20": 277.04049999999995,
+    "sma50": 285.8522000000001,
+    "live_vs_sma20": 1.0393787189959824,
+    "live_vs_sma50": -2.07526826800706,
+    "above_sma20_now": true
+   }
+  ]
+ },
+ "sector_rotation": [
+  {
+   "sector": "Energy",
+   "etf": "XLE",
+   "perf_1m_pct": 12.250161186331399,
+   "perf_3m_pct": 20.96578078860518,
+   "perf_6m_pct": 22.67042451999295,
+   "composite": 18.63,
+   "n_members": 21,
+   "members_above_sma20_pct": 90.5,
+   "members_ext_from_50_pct": 5.88,
+   "live": 68.385,
+   "live_chg_pct": -1.8021252153934453
+  },
+  {
+   "sector": "Health Care",
+   "etf": "XLV",
+   "perf_1m_pct": 5.026362038664334,
+   "perf_3m_pct": 7.1864163577663565,
+   "perf_6m_pct": 24.968632371392708,
+   "composite": 12.39,
+   "n_members": 60,
+   "members_above_sma20_pct": 88.3,
+   "members_ext_from_50_pct": 4.94,
+   "live": 179.07,
+   "live_chg_pct": -0.11713520749665773
+  },
+  {
+   "sector": "Information Technology",
+   "etf": "XLK",
+   "perf_1m_pct": -5.069547052529688,
+   "perf_3m_pct": 8.90174761821263,
+   "perf_6m_pct": 16.036619542878494,
+   "composite": 6.62,
+   "n_members": 75,
+   "members_above_sma20_pct": 48.0,
+   "members_ext_from_50_pct": -0.75,
+   "live": 189.35,
+   "live_chg_pct": 1.6262344353799922
+  },
+  {
+   "sector": "Consumer Staples",
+   "etf": "XLP",
+   "perf_1m_pct": 7.18986107726054,
+   "perf_3m_pct": 1.0337698139214258,
+   "perf_6m_pct": 6.825358270585369,
+   "composite": 5.02,
+   "n_members": 33,
+   "members_above_sma20_pct": 90.9,
+   "members_ext_from_50_pct": 3.05,
+   "live": 87.09,
+   "live_chg_pct": -0.9890859481582428
+  },
+  {
+   "sector": "Financials",
+   "etf": "XLF",
+   "perf_1m_pct": 2.151714077315825,
+   "perf_3m_pct": -2.7430555555555514,
+   "perf_6m_pct": 8.125844431576912,
+   "composite": 2.51,
+   "n_members": 76,
+   "members_above_sma20_pct": 77.6,
+   "members_ext_from_50_pct": -0.1,
+   "live": 55.875,
+   "live_chg_pct": -0.25883612995359356
+  },
+  {
+   "sector": "Consumer Discretionary",
+   "etf": "XLY",
+   "perf_1m_pct": 3.3465991316931953,
+   "perf_3m_pct": 1.5825035561877643,
+   "perf_6m_pct": -3.0380176510522716,
+   "composite": 0.63,
+   "n_members": 47,
+   "members_above_sma20_pct": 66.0,
+   "members_ext_from_50_pct": -0.14,
+   "live": 115.37,
+   "live_chg_pct": 0.9714685804305963
+  },
+  {
+   "sector": "Materials",
+   "etf": "XLB",
+   "perf_1m_pct": 3.1726907630522216,
+   "perf_3m_pct": -1.8341612533435248,
+   "perf_6m_pct": -0.7724990343762062,
+   "composite": 0.19,
+   "n_members": 24,
+   "members_above_sma20_pct": 83.3,
+   "members_ext_from_50_pct": 0.02,
+   "live": 51.745,
+   "live_chg_pct": 0.7103931490852372
+  },
+  {
+   "sector": "Real Estate",
+   "etf": "XLRE",
+   "perf_1m_pct": 2.983638113570719,
+   "perf_3m_pct": -6.976744186046513,
+   "perf_6m_pct": -1.5865716256610818,
+   "composite": -1.86,
+   "n_members": 30,
+   "members_above_sma20_pct": 83.3,
+   "members_ext_from_50_pct": 0.04,
+   "live": 42.295,
+   "live_chg_pct": -1.1799065420560644
+  },
+  {
+   "sector": "Utilities",
+   "etf": "XLU",
+   "perf_1m_pct": 7.6942546190837735,
+   "perf_3m_pct": -6.524604569420045,
+   "perf_6m_pct": -7.880493613336226,
+   "composite": -2.24,
+   "n_members": 31,
+   "members_above_sma20_pct": 90.3,
+   "members_ext_from_50_pct": 2.05,
+   "live": 42.665,
+   "live_chg_pct": 0.27027027027027495
+  },
+  {
+   "sector": "Industrials",
+   "etf": "XLI",
+   "perf_1m_pct": -2.0360265211523787,
+   "perf_3m_pct": -8.51005534549838,
+   "perf_6m_pct": -3.21720479972174,
+   "composite": -4.59,
+   "n_members": 83,
+   "members_above_sma20_pct": 60.2,
+   "members_ext_from_50_pct": -0.35,
+   "live": 167.805,
+   "live_chg_pct": 0.506109247724005
+  },
+  {
+   "sector": "Communication Services",
+   "etf": "XLC",
+   "perf_1m_pct": -8.064801699716718,
+   "perf_3m_pct": -5.306829579648042,
+   "perf_6m_pct": -10.327260167515762,
+   "composite": -7.9,
+   "n_members": 22,
+   "members_above_sma20_pct": 36.4,
+   "members_ext_from_50_pct": -6.28,
+   "live": 103.655,
+   "live_chg_pct": -0.1877708233028341
+  }
+ ],
+ "volatility": {
+  "vix": {
+   "close": 18.39,
+   "data_date": "2026-10-26",
+   "live": 17.77,
+   "live_chg_pct": -3.3713974986405706
+  },
+  "vix3m": {
+   "close": 19.94,
+   "data_date": "2026-10-26",
+   "live": 19.62,
+   "live_chg_pct": -1.6048144433299913
+  },
+  "vix_ratio": 0.922,
+  "vix_ratio_live": 0.906
+ },
+ "regime": {
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false
+ },
+ "missing_constituents": [
+  {
+   "symbol": "VYLR",
+   "spx": "VYLR",
+   "reason": "insufficient_history (18 bars)"
+  }
+ ],
+ "_source": "nasdaq_public_chart_api"
+}

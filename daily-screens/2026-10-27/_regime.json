@@ -1,0 +1,104 @@
+{
+ "cron_date": "2026-10-27",
+ "data_date": "2026-10-26",
+ "generated": "2026-10-27T18:35Z",
+ "size_cut_pct": 0,
+ "uncertainty": false,
+ "uncertainty_note": "VIX/VIX3M ratio 0.922 (^VIX3M used as the long-end proxy; ^VXV returns 0 bars on Yahoo)",
+ "late_cycle": false,
+ "late_cycle_note": "code rule: any index ETF >6% above its 50-DMA (max 0.95%); max ATR%/median multiple = 1.09x",
+ "vix": 18.39,
+ "vix_bar_date": "2026-10-26",
+ "vix3m": 19.94,
+ "vix_ratio": 0.922,
+ "breadth_pct_above_sma20_spx": 71.5,
+ "breadth_denominator_note": "actual S&P 500 constituents (502 of 503, VYLR missing)",
+ "indices_below_sma20": [
+  "SPY",
+  "QQQ",
+  "QQQE",
+  "IWM"
+ ],
+ "index_detail": {
+  "SPY": {
+   "close": 765.37,
+   "sma20": 770.14,
+   "sma50": 767.59,
+   "ext_from_50_pct": -0.29,
+   "atr_pct": 0.95,
+   "atr_x_median": 0.92,
+   "bars": 519
+  },
+  "RSP": {
+   "close": 217.29,
+   "sma20": 213.04,
+   "sma50": 215.24,
+   "ext_from_50_pct": 0.95,
+   "atr_pct": 0.95,
+   "atr_x_median": 0.94,
+   "bars": 519
+  },
+  "QQQ": {
+   "close": 712.2,
+   "sma20": 734.02,
+   "sma50": 725.43,
+   "ext_from_50_pct": -1.82,
+   "atr_pct": 1.74,
+   "atr_x_median": 1.07,
+   "bars": 519
+  },
+  "QQQE": {
+   "close": 118.06,
+   "sma20": 119.89,
+   "sma50": 120.28,
+   "ext_from_50_pct": -1.85,
+   "atr_pct": 1.4,
+   "atr_x_median": 1.09,
+   "bars": 519
+  },
+  "IWM": {
+   "close": 276.99,
+   "sma20": 277.04,
+   "sma50": 285.85,
+   "ext_from_50_pct": -3.1,
+   "atr_pct": 1.31,
+   "atr_x_median": 0.81,
+   "bars": 519
+  }
+ },
+ "live_session_overlay": {
+  "as_of": "2026-10-27 14:35 ET",
+  "spx_pct_above_sma20_intraday": 72.7,
+  "vix": 17.77,
+  "vix3m": 19.62,
+  "vix_ratio_intraday": 0.906,
+  "indices": {
+   "SPY": {
+    "live": 769.425,
+    "chg_pct": 0.53,
+    "above_sma20_now": false
+   },
+   "RSP": {
+    "live": 217.175,
+    "chg_pct": -0.05,
+    "above_sma20_now": true
+   },
+   "QQQ": {
+    "live": 720.71,
+    "chg_pct": 1.19,
+    "above_sma20_now": false
+   },
+   "QQQE": {
+    "live": 119.04,
+    "chg_pct": 0.83,
+    "above_sma20_now": false
+   },
+   "IWM": {
+    "live": 279.92,
+    "chg_pct": 1.06,
+    "above_sma20_now": true
+   }
+  }
+ },
+ "_source": "nasdaq_public_chart_api"
+}
