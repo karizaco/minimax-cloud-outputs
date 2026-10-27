@@ -5,7 +5,8 @@ import csv
 import os
 from datetime import datetime, timezone
 
-OUT = "/workspace/daily-screens/2026-10-26"
+SESSION = os.environ.get("SCREENER_SESSION", "2026-10-27")
+OUT = f"/workspace/daily-screens/{SESSION}"
 DATA = "/workspace/data"
 reg = json.load(open(f"{DATA}/regime_raw.json"))
 tier = json.load(open(f"{DATA}/tier_out.json"))
@@ -31,6 +32,10 @@ def f0(v):
         return "—"
 
 
+_raw = json.load(open(f"{DATA}/tv_universe_raw.json"))
+scanner_rows = len(_raw["rows"])
+scanner_cov = round(100 * scanner_rows / _raw["total_reported"], 1)
+
 focus = list(csv.DictReader(open(f"{OUT}/focus.csv")))
 tier_a = list(csv.DictReader(open(f"{OUT}/tier-a.csv")))
 shorts = list(csv.DictReader(open(f"{OUT}/qullamaggie_parabolic_short.csv")))
@@ -38,7 +43,7 @@ longs = list(csv.DictReader(open(f"{OUT}/qullamaggie_parabolic_long.csv")))
 eps = list(csv.DictReader(open(f"{OUT}/qullamaggie_ep_gap.csv")))
 pw = list(csv.DictReader(open(f"{OUT}/peoplewish_adr_velocity.csv")))[:5]
 
-regime = json.load(open(f"{OUT}/_regime.json"))
+regime = json.load(open(f"{OUT}/_regime-screener.json"))
 b = reg["breadth"]
 vix = reg["vix"]
 
@@ -80,9 +85,9 @@ lines += [
     "",
     f"**Screen counts:** " + ", ".join(f"{k}={v}" for k, v in tier["screen_counts"].items()),
     "",
-    f"**Sources:** TradingView public scanner (20,095 rows, 100% of reported total) + Yahoo "
-    f"daily bars. MCP tier unbound this session — tier-2 fallback, chain terminated there. "
-    f"Full method and deviations: `daily-sweep.md`.",
+    f"**Sources:** TradingView public scanner ({scanner_rows:,} rows, {scanner_cov}% of the "
+    f"reported total) + Yahoo daily bars. MCP tier unbound this session — tier-2 fallback, chain "
+    f"terminated there. Full method and deviations: `daily-sweep.md`.",
     "",
     f"Regime payload from this sweep: `_regime-screener.json` (cron #10 owns `_regime.json` in "
     f"this directory).",
@@ -159,5 +164,5 @@ bl += [
 ]
 open(f"{OUT}/breadth.md", "w").write("\n".join(bl) + "\n")
 os.makedirs("/workspace/daily-screens/breadth", exist_ok=True)
-open("/workspace/daily-screens/breadth/2026-10-26.md", "w").write("\n".join(bl) + "\n")
-print("wrote _summary.md, breadth.md, breadth/2026-10-26.md")
+open(f"/workspace/daily-screens/breadth/{SESSION}.md", "w").write("\n".join(bl) + "\n")
+print(f"wrote _summary.md, breadth.md, breadth/{SESSION}.md")

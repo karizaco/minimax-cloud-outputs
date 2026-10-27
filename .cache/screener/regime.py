@@ -11,6 +11,7 @@ All inputs are local caches produced earlier in this run:
   data/sp500_tickers.json  (Wikipedia constituent list)
 """
 import json
+import os
 import statistics
 import sys
 from datetime import datetime, timezone
@@ -18,7 +19,7 @@ from datetime import datetime, timezone
 sys.path.insert(0, "/workspace/data")
 from yahoo_enrich import atr14  # noqa: E402
 
-SESSION = "2026-10-26"
+SESSION = os.environ.get("SCREENER_SESSION", "2026-10-27")  # overridable by the runner
 
 
 def load_tv():

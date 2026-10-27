@@ -7,6 +7,7 @@ rate rather than asserting the data is correct.
 """
 import json
 import random
+import statistics
 import sys
 import time
 from datetime import datetime, timezone
@@ -37,8 +38,8 @@ for r in raw["rows"]:
 idxfunds = [k for k, v in rows.items() if v["name"] in ("SPY", "RSP", "QQQ", "IWM", "QQQE", "DIA", "VTI", "VOO")]
 stocks = [k for k, v in rows.items() if v["type"] == "stock" and v["exchange"] in ("NYSE", "NASDAQ", "AMEX")
           and v["close"]]
-random.seed(20261026)
-sample = idxfunds + random.sample(stocks, 40)
+random.seed(20261027)
+sample = idxfunds + random.sample(stocks, 120)
 
 results = []
 for k in sample:
@@ -60,13 +61,15 @@ for k in sample:
         "yahoo_regularMarketTime": m.get("regularMarketTime"),
         "diff_pct": diff_pct,
     })
-    time.sleep(0.25)
+    time.sleep(0.1)
 
 ok = [r for r in results if r["diff_pct"] is not None and abs(r["diff_pct"]) < 0.005]
 bad = [r for r in results if r["diff_pct"] is not None and abs(r["diff_pct"]) >= 0.005]
 nodata = [r for r in results if r["diff_pct"] is None]
 bar_dates = sorted({r["yahoo_bar_date"] for r in results if r["yahoo_bar_date"]})
 
+gaps = [abs(r["diff_pct"]) for r in results if r["diff_pct"] is not None]
+signed = [r["diff_pct"] for r in results if r["diff_pct"] is not None]
 summary = {
     "checked": len(results),
     "agree_within_0.005pct": len(ok),
@@ -74,6 +77,12 @@ summary = {
     "no_data": len(nodata),
     "yahoo_bar_dates_seen": bar_dates,
     "agreement_rate_pct": round(100 * len(ok) / max(1, len(ok) + len(bad)), 2),
+    "gap_abs_mean_pct": round(statistics.mean(gaps), 4) if gaps else None,
+    "gap_abs_median_pct": round(statistics.median(gaps), 4) if gaps else None,
+    "gap_abs_max_pct": round(max(gaps), 4) if gaps else None,
+    "gap_signed_mean_pct": round(statistics.mean(signed), 4) if signed else None,
+    "rows_off_by_gt_0.5pct": sum(1 for g in gaps if g > 0.5),
+    "rows_off_by_gt_0.1pct": sum(1 for g in gaps if g > 0.1),
     "mismatches": bad,
 }
 print(json.dumps(summary, indent=2))

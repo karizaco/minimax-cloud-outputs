@@ -9,10 +9,14 @@ Rules learned the hard way (2026-10-26):
 """
 import json
 import subprocess
+import sys
 import time
 import urllib.parse
 
 UA = "Mozilla/5.0"
+
+sys.path.insert(0, "/workspace/data")
+from yahoo_enrich import ysym  # noqa: E402
 HOSTS = ["query2", "query1"]
 
 
@@ -38,7 +42,7 @@ def _curl(url, tries=3):
 
 def chart(symbol, rng="1y", interval="1d"):
     """Return (meta, bars) where bars = [(epoch, o, h, l, c, v), ...]."""
-    sym = urllib.parse.quote(symbol, safe="")
+    sym = urllib.parse.quote(ysym(symbol), safe="")
     for h in HOSTS:
         url = (f"https://{h}.finance.yahoo.com/v8/finance/chart/{sym}"
                f"?range={rng}&interval={interval}&includePrePost=false")

@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 sys.path.insert(0, "/workspace/data")
 from yahoo_enrich import atr14  # noqa: E402
 
-SESSION = "2026-10-26"
+SESSION = os.environ.get("SCREENER_SESSION", "2026-10-27")  # overridable by the runner
 OUTDIR = f"/workspace/daily-screens/{SESSION}"
 DATA = "/workspace/data"
 
@@ -361,7 +361,7 @@ def main():
                   "late_cycle": "max ATR%% extension vs 252d median ATR%% = %.2fx" % max(
                       (r.get("extension_x") or 0) for r in regime_raw["index_atr"]),
               }}
-    json.dump(regime, open(f"{OUTDIR}/_regime.json", "w"), indent=2)
+    json.dump(regime, open(f"{OUTDIR}/_regime-screener.json", "w"), indent=2)
 
     # ---------- writers ----------
     def write_csv(path, rows, cols):

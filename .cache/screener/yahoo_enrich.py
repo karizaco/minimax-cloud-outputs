@@ -29,11 +29,46 @@ COLS = ["name", "close", "change", "volume", "market_cap_basic", "_adr_proxy_pct
         "Perf.5D", "Perf.1M", "_ts"]
 
 
+# Yahoo symbol aliases for class shares / preferreds. TradingView writes "BRK.B" and
+# "ALL/PH"; Yahoo's chart endpoint only accepts "BRK-B" and "ALL-PH". Without this the
+# affected rows return 404 and are silently dropped from every screen.
+ALIASES = {
+    "BRK.B": "BRK-B", "BRK-B": "BRK-B", "BF.B": "BF-B", "HEI.A": "HEI-A",
+    "HEI-A": "HEI-A", "ALL/PH": "ALL-PH", "ALL-PH": "ALL-PH", "MFA/PB": "MFA-PB",
+    "MFA-PB": "MFA-PB", "NUE/PH": "NUE-PH", "NUE-PH": "NUE-PH", "PBF/PH": "PBF-PH",
+    "PBF-PH": "PBF-PH", "RDS.A": "RDS-A", "RDS-A": "RDS-A", "WFC/WS": "WFC-PW",
+    "BXP.PR": "BXP-PH", "AEP/CL": "AEP-CL", "KMB/WS": "KMB-PH", "MER.PR": "MER-PH",
+    "CMA/WS": "CMA-PH", "MET/WS": "MET-PH", "ES/WS": "ES-PH", "MS/WS": "MS-PH",
+    "USB/WS": "USB-PH", "TFC/WS": "TFC-PH", "DTE/WS": "DTE-PH", "PFE/WS": "PFE-PH",
+    "CVX/WS": "CVX-PH", "BAC/WS": "BAC-PW", "PNC/WS": "PNC-PH", "TFC/CL": "TFC-CL",
+    "SCHW/WS": "SCHW-PH", "KEY/WS": "KEY-PH", "FIT/WS": "FIT-PH", "KEY/CL": "KEY-CL",
+}
+
+
+def ysym(s):
+    """Map a TradingView ticker to the Yahoo symbol.
+
+    Explicit table first, then two general rules that cover the rest of the universe:
+      * preferreds  "BAC/PB"  -> "BAC-PB"
+      * class shares "BF.A"   -> "BF-A"
+    """
+    if s in ALIASES:
+        return ALIASES[s]
+    if "/" in s:
+        base, letter = s.split("/", 1)
+        letter = letter.strip()
+        if letter:
+            return f"{base}-{letter}"
+    if "." in s and not s.endswith("."):
+        return s.replace(".", "-")
+    return s
+
+
 def fetch(sym, tries=3):
     for i in range(tries):
         p = subprocess.run(
             ["curl", "-s", "--max-time", "45", "-H", f"User-Agent: {UA}",
-             f"https://query2.finance.yahoo.com/v8/finance/chart/{sym}?range=1y&interval=1d"],
+             f"https://query2.finance.yahoo.com/v8/finance/chart/{ysym(sym)}?range=1y&interval=1d"],
             capture_output=True, text=True)
         if p.returncode == 0 and p.stdout.strip():
             try:

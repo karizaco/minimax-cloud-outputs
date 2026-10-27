@@ -1,0 +1,10 @@
+{
+  "size_cut_pct": 0,
+  "uncertainty": null,
+  "late_cycle": false,
+  "_notes": {
+    "size_cut": "size_cut_pct=50 requires (index < 20-DMA) AND (breadth<40%); breadth=73.05%, indices below 20-DMA=['SPY', 'QQQ', 'QQQE']",
+    "uncertainty": "vix_vxv_ratio is null: ^VXV and ^VXVCLS return 0 bars from Yahoo (Not Found). VIX leg = 17.52.",
+    "late_cycle": "max ATR% extension vs 252d median ATR% = 1.07x"
+  }
+}
