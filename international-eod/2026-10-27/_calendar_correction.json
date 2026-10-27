@@ -1,0 +1,74 @@
+{
+ "date": "2026-10-27",
+ "source_calendar": "cloud-prompts/skills/eod-watchlist-snapshot/scripts/holiday_calendar.py",
+ "defect": {
+  "region": "eu-gr",
+  "calendar_says": "2026-10-27 (Ochi Day 2026)",
+  "actual": "2026-10-28 (Wednesday) \u2014 Ochi Day 2026",
+  "evidence": [
+   "timeanddate.com/holidays/greece/ochi-day -> 28 Oct 2026 (Wed), public holiday",
+   "holidays-info.com/greece/holidays/ochi-day/ -> October 28, 2026 Wednesday",
+   "markethours.io/market-holidays/athex -> next ASE closure: Ochi Day, Wednesday 2026-10-28",
+   "calendardate.com/gr_year2026_holidays.php -> Wed Oct 28, The Ochi Day, national holiday"
+  ],
+  "empirical_check": {
+   "method": "Yahoo /v8/finance/chart daily bars for ATHEX names; a 10-27 session bar exists and its close equals the TradingView screener close",
+   "samples": {
+    "ALPHA.AT": {
+     "yahoo_10_27_bar_close": 4.353,
+     "screener_close": 4.353,
+     "tv_change_pct": 1.8722,
+     "yahoo_change_pct": 1.872
+    },
+    "EUROB.AT": {
+     "yahoo_10_27_bar_close": 4.379,
+     "screener_close": 4.379,
+     "tv_change_pct": 1.5303,
+     "yahoo_change_pct": 1.53
+    },
+    "TPEIR.AT": {
+     "yahoo_10_27_bar_close": 9.792,
+     "screener_close": 9.792,
+     "tv_change_pct": 4.0595,
+     "yahoo_change_pct": 4.06
+    },
+    "GEKTERNA.AT": {
+     "yahoo_10_27_bar_close": 40.74,
+     "screener_close": 40.74,
+     "tv_change_pct": 2.3104,
+     "yahoo_change_pct": 2.31
+    },
+    "MOH.AT": {
+     "yahoo_10_27_bar_close": 69.3,
+     "screener_close": 69.3,
+     "tv_change_pct": 1.6875,
+     "yahoo_change_pct": 1.687
+    },
+    "ETE.AT": {
+     "yahoo_10_27_bar_close": 15.63,
+     "screener_close": 15.63,
+     "tv_change_pct": 1.4935,
+     "yahoo_change_pct": 1.494
+    }
+   }
+  },
+  "action": "eu-gr INCLUDED in 2026-10-27 output; the calendar entry (2026-10-27) is wrong and should be 2026-10-28",
+  "regions_with_correct_calendar_status": [
+   "au",
+   "jp",
+   "tw",
+   "ca",
+   "eu-de",
+   "eu-fr",
+   "eu-it",
+   "eu-es",
+   "eu-nl",
+   "eu-be",
+   "eu-at",
+   "eu-pt",
+   "eu-ie",
+   "eu-fi",
+   "eu-dk"
+  ]
+ }
+}

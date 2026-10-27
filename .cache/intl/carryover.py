@@ -24,16 +24,17 @@ from datetime import datetime, timezone
 
 CA = "/etc/ssl/certs/agent-identity/sandbox-gateway-ca.crt"
 UA = "Mozilla/5.0"
-DATE = os.environ.get("EOD_DATE", "2026-10-26")
+DATE = os.environ.get("EOD_DATE", "2026-10-27")
 OUT = f"/workspace/international-eod/{DATE}"
 DATA = "/workspace/data"
-FX = {"EUR": 1.117818, "JPY": 0.0063480, "AUD": 0.701902, "CAD": 1.402160,
-      "DKK": 0.149520}
-INDEX = {"au": ("^AXJO", 10), "jp": ("^N225", 9), "ca": ("^GSPTSE", -4),
-         "eu-de": ("^GDAXI", 2), "eu-fr": ("^FCHI", 2),
+FX = {"EUR": 1.1130, "JPY": 0.0063312, "AUD": 0.7026913,
+      "CAD": 0.7117944, "DKK": 0.1488804, "TWD": 0.0308604}
+INDEX = {"au": ("^AXJO", 10), "jp": ("^N225", 9), "tw": ("^TWII", 3),
+         "ca": ("^GSPTSE", -4), "eu-de": ("^GDAXI", 2), "eu-fr": ("^FCHI", 2),
          "eu-it": ("FTSEMIB.MI", 2), "eu-es": ("^IBEX", 2),
          "eu-nl": ("^AEX", 2), "eu-be": ("^BFX", 2),
-         "eu-pt": ("PSI20.LS", 1), "eu-fi": ("^OMXH25", 2),
+         "eu-at": ("^ATX", 2), "eu-pt": ("PSI20.LS", 1),
+         "eu-ie": ("^ISEQ", 1), "eu-fi": ("^OMXH25", 2),
          "eu-dk": ("^OMXC20", 2), "eu-gr": (None, 3)}
 
 

@@ -29,13 +29,14 @@ from datetime import datetime, timezone
 
 CA = "/etc/ssl/certs/agent-identity/sandbox-gateway-ca.crt"
 UA = "Mozilla/5.0"
-DATE = os.environ.get("EOD_DATE", "2026-10-26")
+DATE = os.environ.get("EOD_DATE", "2026-10-27")
 OUT = f"/workspace/international-eod/{DATE}"
 DATA = "/workspace/data"
 
 # region -> {TV venue -> Yahoo suffix}. None = cannot be mapped reliably.
 VENUES = {
     "au":    {"ASX": ".AX"},
+    "tw":    {"TWSE": ".TW", "TPEX": ".TWO"},
     "jp":    {"TSE": ".T", "NAG": ".T", "FSE": ".T", "SAPSE": ".T"},
     "ca":    {"TSX": ".TO", "NEO": ".NE", "TSXV": ".V", "CSE": ".CN"},
     "eu-de": {"XETR": ".DE", "LSX": ".L"},
@@ -48,6 +49,8 @@ VENUES = {
     "eu-es": {"BME": ".MC"},
     "eu-it": {"MIL": ".MI"},
     "eu-gr": {"ATHEX": ".AT", "ATH": ".AT"},
+    "eu-at": {"VIE": ".VI"},
+    "eu-ie": {"EURONEXT": ".IR"},
 }
 BATCH = 12
 
