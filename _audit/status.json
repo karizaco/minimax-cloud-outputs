@@ -1,0 +1,33 @@
+{
+  "audit_date_et": "2026-10-27",
+  "audit_run_et": "2026-10-28T07:02:00-04:00",
+  "origin_main_sha": "60a21fd",
+  "due": 14,
+  "delivered": 13,
+  "missing": 1,
+  "gaps": [
+    {
+      "routine": "16-unusual-options-flow",
+      "path": "options-flow/2026-10-27.md",
+      "label": "MISSING",
+      "cause": "artifact was created and pushed (commit 717cab6, 279 lines, 2026-10-27 22:55 ET) then deleted from main by commit 9fd37ea 'chore: cleanup' (2026-10-28 05:32 ET), which removed the whole options-flow/ directory; a 1-line stub options-flow/2026-10-28.md was added by 4ab6841 and removed by dab85b8. options-flow/ does not exist on origin/main.",
+      "blast_radius": [
+        "options-flow/2026-10-16.md",
+        "options-flow/2026-10-20.md",
+        "options-flow/2026-10-21.md",
+        "options-flow/2026-10-22.md",
+        "options-flow/2026-10-23.md",
+        "options-flow/2026-10-27.md"
+      ]
+    }
+  ],
+  "not_due": [
+    "19-earnings-reminder-daily (Mon)",
+    "15-earnings-reaction-scanner (Mon)",
+    "13-macro-calendar-midweek (Wed)",
+    "14-macro-calendar-week-ahead (Sun)",
+    "06-pattern-study-backlog (Sat)",
+    "22-weekly-market-recap-preview (Sun)"
+  ],
+  "audit_status": "gaps_found"
+}
