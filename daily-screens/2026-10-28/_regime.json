@@ -1,0 +1,26 @@
+{
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "breadth_pct_spx": 65.85635359116023,
+  "index_below_20sma": true,
+  "vix": 17.3,
+  "vix3m": 19.31,
+  "atr_extensions": {
+    "IWM.NYSE": {
+      "extension_pct": -1.8202741239059244
+    },
+    "QQQ.NASDAQ": {
+      "extension_pct": -0.5532342501141285
+    },
+    "QQQE.NASDAQ": {
+      "extension_pct": -0.7293658361248933
+    },
+    "RSP.NYSE": {
+      "extension_pct": 1.088401230609003
+    },
+    "SPY.NYSE": {
+      "extension_pct": 0.27767036233695613
+    }
+  }
+}
