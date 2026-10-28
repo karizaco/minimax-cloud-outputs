@@ -1,0 +1,68 @@
+{
+ "JP": [
+  {
+   "sym": "5029.T",
+   "name": "CIRCLACE INC",
+   "px": 1400.0,
+   "pct": 27.27,
+   "prev": 1100.0,
+   "band": 300,
+   "dir": "UP",
+   "exch": "JPX"
+  },
+  {
+   "sym": "3042.T",
+   "name": "SECUAVAIL INC",
+   "px": 1403.0,
+   "pct": 27.2,
+   "prev": 1103.0,
+   "band": 300,
+   "dir": "UP",
+   "exch": "JPX"
+  },
+  {
+   "sym": "7477.T",
+   "name": "MURAKI CORP",
+   "px": 1758.0,
+   "pct": 20.58,
+   "prev": 1458.0,
+   "band": 300,
+   "dir": "UP",
+   "exch": "JPX"
+  }
+ ],
+ "TW": [],
+ "HK": [],
+ "KR": [
+  {
+   "sym": "220260.KQ",
+   "name": "Chemtros",
+   "px": 4005.0,
+   "pct": -7.29,
+   "prev": 4320.0,
+   "band": 300,
+   "dir": "DOWN",
+   "exch": "KOE"
+  },
+  {
+   "sym": "009830.KS",
+   "name": "HANWHA SOLUTIONS",
+   "px": 26500.0,
+   "pct": -6.85,
+   "prev": 28450.0,
+   "band": 2000,
+   "dir": "DOWN",
+   "exch": "KSC"
+  },
+  {
+   "sym": "014915.KS",
+   "name": "SungmoonElec(1P)",
+   "px": 4705.0,
+   "pct": -5.71,
+   "prev": 4990.0,
+   "band": 300,
+   "dir": "DOWN",
+   "exch": "KSC"
+  }
+ ]
+}
