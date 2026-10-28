@@ -1,6 +1,0 @@
-repair candidates: 1835
-  500/1835 fixed=349 unresolved=151 (11.8/s)
-  1000/1835 fixed=679 unresolved=321 (7.9/s)
-  1500/1835 fixed=1089 unresolved=411 (6.7/s)
-DONE fixed=1193 unresolved=642 elapsed=296s
-statuses: {'ok': 17936, 'no_data': 642}
