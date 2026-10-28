@@ -352,15 +352,15 @@ by absolute pre-market move.
 | Sector | ETF | Pre-mkt % |
 |--------|-----|-----------|
 | Industrials | **XLI** | **+1.02%** |
-| Energy | **XLE** | +0.69% |
-| Technology | **XLK** | +0.53% |
-| Utilities | XLU | +0.14% |
-| Consumer Disc. | XLY | 0.00% |
-| Communication | XLC | -0.05% |
-| Financials | XLF | -0.27% |
-| Materials | XLB | -0.46% |
-| Consumer Staples | XLP | -0.54% |
-| Health Care | XLV | -0.65% |
+| Energy | **XLE** | **+0.69%** |
+| Technology | **XLK** | **+0.53%** |
+| Utilities | **XLU** | **+0.14%** |
+| Consumer Disc. | **XLY** | **0.00%** |
+| Communication | **XLC** | **-0.05%** |
+| Financials | **XLF** | **-0.27%** |
+| Materials | **XLB** | **-0.46%** |
+| Consumer Staples | **XLP** | **-0.54%** |
+| Health Care | **XLV** | **-0.65%** |
 
 **Read:** defensives and rate-sensitive sectors are being sold, industrials and
 energy bought. That is a *rotation into capex*, and it is the cleanest read on the
