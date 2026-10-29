@@ -1,0 +1,15 @@
+{
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "breadth_pct_spx": 65.85635359116023,
+  "index_below_20sma": true,
+  "vix": 16.91,
+  "vix3m": 19.22,
+  "vix_vix3m_ratio": 0.8798,
+  "index_pct_above_sma_20": 40.0,
+  "index_pct_above_sma_50": 40.0,
+  "n_largecap_proxy": 905,
+  "data_date": "2026-10-27",
+  "cron_date": "2026-10-28"
+}

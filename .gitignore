@@ -1,1 +1,16 @@
-_work/
+# Sandbox-local scratch — never an artifact.
+.plugin-cache/
+.cache/
+.skills/
+.skill_cache/
+.scratch/
+.home/
+.tmp/
+__pycache__/
+*.pyc
+helper_*.py
+# Root-level scratch scripts and archives from ad-hoc runs.
+*.zip
+*.log
+sp.json
+cron20_prompt_new.txt

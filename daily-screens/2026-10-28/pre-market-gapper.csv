@@ -1,0 +1,13 @@
+ticker,prior_close,pm_last,gap_pct,pm_volume,pm_high,pm_low,pm_timestamp,last_print_time,flagged,reason,stylists,_source,_status
+MXL,74.67,76.1,1.92,70344,77.5,75.51,"Oct 28, 2026 8:57 AM ET","08:42:40",no,"pm_vol>50k but gap<=4","jeff_sun_canslim, peoplewish_adr_velocity, stockbee_4pct_breakout",nasdaq_public_api,ok
+GLXY,17.18,17.5,1.86,109057,17.8,17.21,"Oct 28, 2026 8:56 AM ET","08:40:09",no,"pm_vol>50k but gap<=4","jeff_sun_canslim, peoplewish_adr_velocity, stockbee_4pct_breakout, stockbee_ep9m",nasdaq_public_api,ok
+ALAB,286.69,291.35,1.63,51815,296.0,287.98,"Oct 28, 2026 8:57 AM ET","08:41:41",no,"pm_vol>50k but gap<=4","jeff_sun_canslim, peoplewish_adr_velocity, stockbee_4pct_breakout",nasdaq_public_api,ok
+OUST,32.79,33.25,1.4,53899,33.9798,33.25,"Oct 28, 2026 8:57 AM ET","08:41:31",no,"pm_vol>50k but gap<=4","jeff_sun_canslim, peoplewish_adr_velocity, stockbee_4pct_breakout",nasdaq_public_api,ok
+SDGR,26.72,26.84,0.45,7707,26.97,26.6,"Oct 28, 2026 8:57 AM ET","08:41:45",no,"gap<=4","jeff_sun_canslim, peoplewish_adr_velocity, qullamaggie_rs_leaders",nasdaq_public_api,ok
+HRI,156.06,156.0,-0.04,1626,156.84,154.25,"Oct 28, 2026 8:44 AM ET","08:37:29",no,"gap<=4","jeff_sun_canslim, peoplewish_adr_velocity, stockbee_4pct_breakout",nasdaq_public_api,ok
+RKLB,58.31,58.2,-0.19,406391,59.09,58.1173,"Oct 28, 2026 8:56 AM ET","08:40:07",no,"pm_vol>50k but gap<=4","jeff_sun_canslim, peoplewish_adr_velocity, stockbee_4pct_breakout, stockbee_ep9m",nasdaq_public_api,ok
+RDW,8.89,8.86,-0.34,259313,9.02,8.81,"Oct 28, 2026 8:57 AM ET","08:40:58",no,"pm_vol>50k but gap<=4","jeff_sun_canslim, peoplewish_adr_velocity, stockbee_4pct_breakout, stockbee_ep9m",nasdaq_public_api,ok
+LUNR,11.56,11.52,-0.35,81620,11.7,11.48,"Oct 28, 2026 8:56 AM ET","08:42:13",no,"pm_vol>50k but gap<=4","jeff_sun_canslim, peoplewish_adr_velocity, stockbee_4pct_breakout",nasdaq_public_api,ok
+ON,78.67,76.925,-2.22,36915,78.15,76.803,"Oct 28, 2026 8:55 AM ET","08:42:09",no,"gap<=4","hernandez_theme_group, jeff_sun_canslim, stockbee_4pct_breakout, stockbee_ep9m",nasdaq_public_api,ok
+CRML,8.13,7.895,-2.89,278328,8.0009,7.74,"Oct 28, 2026 8:57 AM ET","08:40:54",no,"pm_vol>50k but gap<=4","peoplewish_adr_velocity, qullamaggie_parabolic_short, stockbee_4pct_breakout, stockbee_ep9m",nasdaq_public_api,ok
+CYPH,3.135,3.04,-3.03,221457,3.22,3.0206,"Oct 28, 2026 8:56 AM ET","08:41:41",no,"pm_vol>50k but gap<=4","peoplewish_adr_velocity, qullamaggie_rs_leaders, stockbee_ep9m",nasdaq_public_api,ok

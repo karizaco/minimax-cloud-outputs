@@ -1,0 +1,27 @@
+symbol,exchange,close,premarket_change_pct,premarket_volume,premarket_gap_pct,volume,market_cap,sector,industry
+FLYE,NASDAQ,2.32,149.61,60368871,13.39,133009087,3787135,Consumer Durables,Motor Vehicles
+PCRX,NASDAQ,36.39,44.13,6046124,0.36,28901927,1450574041,Health Technology,Pharmaceuticals: Major
+MRNO,NASDAQ,0.26,43.03,45373685,69.42,82751882,20726894,Consumer Services,Hotels/Resorts/Cruise lines
+OLB,NASDAQ,0.549,31.73,83838230,31.4,405692261,13194078,Technology Services,Internet Software/Services
+IPW,NASDAQ,0.9202,25.48,18229509,66.35,43910567,1161829,Retail Trade,Internet Retail
+HELE,NASDAQ,26.55,22.5,148210,-0.08,2028266,618404197,Consumer Durables,Home Furnishings
+HYPR,NASDAQ,0.9401,15.67,4295492,4.83,11058979,99696354,Health Technology,Medical Specialties
+PROF,NASDAQ,6.91,15.29,549332,20.77,2974283,252440210,Health Technology,Medical Specialties
+SOAR,AMEX,0.3083,13.89,41822693,3.25,85344166,16535129,Transportation,Airlines
+HAE,NYSE,119.47,13.07,89450,-0.2,2775910,5435532662,Health Technology,Medical Specialties
+WOLF,NYSE,31.02,11.57,1300836,17.05,22823595,1641906284,Electronic Technology,Semiconductors
+RCKT,NASDAQ,2.63,9.29,94309,2.56,3457078,288707200,Health Technology,Biotechnology
+MEDS,NASDAQ,3.4,6.94,5394271,2.08,14057956,10791569,Distribution Services,Medical Distributors
+RNA,NASDAQ,8.26,6.94,78009,7.82,649309,141292602,Health Technology,Biotechnology
+FNGR,NASDAQ,0.2,6.8,20465574,4.98,31611429,15232538,Technology Services,Packaged Software
+GLND,NASDAQ,2.605,6.27,133009,-2.58,2401479,113917157,Finance,Financial Conglomerates
+ENLV,NASDAQ,0.277,6.07,6750176,26.89,32661550,4843483,Health Technology,Biotechnology
+NCPL,NASDAQ,1.31,5.66,221560,-4.4,3681958,10280748,Commercial Services,Miscellaneous Commercial Services
+CYAB,NASDAQ,0.1724,5.34,703827,0.37,3405376,3033734,Technology Services,Packaged Software
+SKYQ,NASDAQ,2.52,5.31,108083,1.63,865741,22260141,Energy Minerals,Integrated Oil
+FRGT,NASDAQ,0.2564,5.07,1818686,22.16,9239747,157630,Finance,Financial Conglomerates
+SRFM,NYSE,0.9295,4.9,340209,2.41,4678868,123482900,Transportation,Airlines
+KAPA,AMEX,0.9595,4.55,156404,1.38,5820744,3248275,Health Technology,Pharmaceuticals: Major
+RYDE,AMEX,0.673009,4.25,52387,-3.0,224337,111871794,Technology Services,Internet Software/Services
+AISP,NASDAQ,2.29,4.21,108371,-1.4,2376300,78866604,Technology Services,Packaged Software
+QS,NASDAQ,4.58,4.2,952999,-1.11,22021623,2835539911,Producer Manufacturing,Electrical Products

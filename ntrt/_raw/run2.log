@@ -1,0 +1,7 @@
+[final_up] totalCount=197 returned=40
+[final_down] totalCount=212 returned=40
+G1 failed=1 G2 excluded=60 kept=19
+screener-only snapshot written: kept=19 at 2026-10-26 09:35:30 EDT
+cooldown 150s for Yahoo rate-limit window ...
+  XNCR   UNVERIFIED ['Too Many Requests']
+  SGRY   UNVERIFIED ['Too Many Requests']

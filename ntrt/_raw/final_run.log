@@ -1,0 +1,8 @@
+[final_up] totalCount=188 returned=40
+[final_down] totalCount=211 returned=40
+G1 failed=1 G2 excluded=58 kept=21
+cooldown 45s for Yahoo rate-limit window ...
+  spark chunk 0 ERROR: json: Expecting value: line 1 column 1 (char 0) :: Too Many Requests
+
+  spark chunk 1 ERROR: json: Expecting value: line 1 column 1 (char 0) :: Too Many Requests
+

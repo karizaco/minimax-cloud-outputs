@@ -1,0 +1,503 @@
+symbol,name,sector,data_date,close,sma20,sma50,above_sma20,above_sma50,perf_1m_pct,perf_3m_pct,atr_pct,atr_x_median,live_price,live_chg_pct,_source
+MMM,3M,Industrials,2026-10-26,172.79,165.91,168.94,true,true,1.91,-5.31,2.45,1.02,171.91,-0.51,nasdaq_public_chart_api
+AOS,A. O. Smith,Industrials,2026-10-26,61.91,58.24,58.95,true,true,5.56,-3.28,2.52,1.0,62.04,0.21,nasdaq_public_chart_api
+ABT,Abbott Laboratories,Health Care,2026-10-26,104.88,101.21,105.04,true,false,3.54,-2.23,2.75,1.21,103.86,-0.97,nasdaq_public_chart_api
+ABBV,AbbVie,Health Care,2026-10-26,286.74,276.11,266.87,true,true,8.47,8.94,2.44,0.97,286.42,-0.11,nasdaq_public_chart_api
+ACN,Accenture,Information Technology,2026-10-26,247.23,217.19,197.23,true,true,40.38,50.15,3.95,0.97,236.3,-4.42,nasdaq_public_chart_api
+ADBE,Adobe Inc.,Information Technology,2026-10-26,258.62,245.45,255.68,true,true,9.83,3.79,3.6,0.98,249.41,-3.56,nasdaq_public_chart_api
+AMD,Advanced Micro Devices,Information Technology,2026-10-26,531.28,583.39,542.62,false,false,-15.75,16.86,5.36,1.08,559.83,5.37,nasdaq_public_chart_api
+AES,AES Corporation,Utilities,2026-10-26,15.03,14.95,14.85,true,true,1.08,1.35,0.31,0.53,15.03,-0.03,nasdaq_public_chart_api
+AFL,Aflac,Financials,2026-10-26,120.93,116.44,116.4,true,true,6.34,-6.65,1.85,1.07,121.73,0.66,nasdaq_public_chart_api
+A,Agilent Technologies,Health Care,2026-10-26,175.96,171.96,161.96,true,true,1.83,25.2,2.65,0.92,178.05,1.19,nasdaq_public_chart_api
+APD,Air Products,Materials,2026-10-26,305.72,289.65,293.56,true,true,8.5,4.39,1.6,0.72,306.14,0.14,nasdaq_public_chart_api
+ABNB,Airbnb,Consumer Discretionary,2026-10-26,171.05,167.19,171.75,true,false,8.62,11.72,2.49,0.8,168.49,-1.5,nasdaq_public_chart_api
+AKAM,Akamai Technologies,Information Technology,2026-10-26,98.5,99.17,105.4,false,false,-13.55,-11.89,5.72,1.26,98.69,0.19,nasdaq_public_chart_api
+ALB,Albemarle Corporation,Materials,2026-10-26,93.42,99.61,114.94,false,false,-14.86,-17.44,3.5,0.69,99.12,6.1,nasdaq_public_chart_api
+ARE,Alexandria Real Estate Equities,Real Estate,2026-10-26,43.4,44.36,48.79,false,false,-13.08,-19.63,3.73,0.96,41.66,-4.01,nasdaq_public_chart_api
+ALGN,Align Technology,Health Care,2026-10-26,152.26,146.12,151.49,true,true,3.73,-13.29,2.58,0.68,152.25,-0.0,nasdaq_public_chart_api
+ALLE,Allegion,Industrials,2026-10-26,178.22,157.41,156.7,true,true,15.38,10.54,2.75,1.13,178.84,0.35,nasdaq_public_chart_api
+LNT,Alliant Energy,Utilities,2026-10-26,69.5,66.57,66.93,true,true,9.28,-5.81,1.66,1.0,69.65,0.22,nasdaq_public_chart_api
+ALL,Allstate,Financials,2026-10-26,255.95,236.86,245.71,true,true,12.46,-6.05,2.23,0.98,251.48,-1.75,nasdaq_public_chart_api
+GOOGL,Alphabet Inc. (Class A),Communication Services,2026-10-26,316.8,341.79,342.36,false,false,-7.89,-5.07,2.66,1.0,321.69,1.54,nasdaq_public_chart_api
+GOOG,Alphabet Inc. (Class C),Communication Services,2026-10-26,314.19,338.28,339.0,false,false,-7.88,-5.54,2.62,1.0,318.1,1.24,nasdaq_public_chart_api
+MO,Altria,Consumer Staples,2026-10-26,73.62,71.56,69.68,true,true,6.97,-1.6,2.07,0.99,73.33,-0.39,nasdaq_public_chart_api
+AMZN,Amazon,Consumer Discretionary,2026-10-26,249.09,254.58,255.38,false,false,-0.23,7.9,2.79,1.03,254.03,1.98,nasdaq_public_chart_api
+AMCR,Amcor,Materials,2026-10-26,46.19,43.11,44.03,true,true,8.66,-1.07,2.0,0.75,45.79,-0.87,nasdaq_public_chart_api
+AEE,Ameren,Utilities,2026-10-26,108.08,103.48,104.37,true,true,8.74,-3.94,1.63,0.96,108.14,0.05,nasdaq_public_chart_api
+AEP,American Electric Power,Utilities,2026-10-26,129.22,124.11,123.08,true,true,9.18,-2.86,1.82,1.01,129.04,-0.14,nasdaq_public_chart_api
+AXP,American Express,Financials,2026-10-26,315.05,310.55,318.64,true,false,1.99,-6.41,2.14,0.9,313.77,-0.4,nasdaq_public_chart_api
+AIG,American International Group,Financials,2026-10-26,81.13,78.12,76.68,true,true,9.38,0.37,1.7,0.79,79.72,-1.73,nasdaq_public_chart_api
+AMT,American Tower,Real Estate,2026-10-26,188.28,175.38,174.94,true,true,11.39,9.78,3.45,1.39,182.67,-2.98,nasdaq_public_chart_api
+AWK,American Water Works,Utilities,2026-10-26,141.7,132.44,135.13,true,true,8.24,2.65,2.11,0.9,139.92,-1.26,nasdaq_public_chart_api
+AMP,Ameriprise Financial,Financials,2026-10-26,493.6,494.54,524.81,false,false,0.12,-9.7,2.24,0.91,493.93,0.07,nasdaq_public_chart_api
+AME,Ametek,Industrials,2026-10-26,242.81,248.01,243.46,false,false,-3.16,0.57,2.44,1.12,245.34,1.04,nasdaq_public_chart_api
+AMGN,Amgen,Health Care,2026-10-26,444.63,422.64,417.85,true,true,7.24,13.11,2.5,1.04,446.49,0.42,nasdaq_public_chart_api
+APH,Amphenol,Information Technology,2026-10-26,75.27,82.71,81.4,false,false,-10.49,4.65,4.02,1.02,77.82,3.39,nasdaq_public_chart_api
+ADI,Analog Devices,Information Technology,2026-10-26,407.93,404.23,384.67,true,true,3.64,11.51,3.55,1.18,422.25,3.51,nasdaq_public_chart_api
+AON,Aon plc,Financials,2026-10-26,302.06,283.13,304.68,true,false,8.66,-20.77,2.16,0.89,299.27,-0.92,nasdaq_public_chart_api
+APA,APA Corporation,Energy,2026-10-26,51.66,46.74,44.86,true,true,20.87,47.9,3.22,0.82,50.77,-1.71,nasdaq_public_chart_api
+APO,Apollo Global Management,Financials,2026-10-26,114.37,114.58,123.65,false,false,-6.02,-8.28,3.32,0.99,114.42,0.04,nasdaq_public_chart_api
+AAPL,Apple Inc.,Information Technology,2026-10-26,343.91,339.18,330.23,true,true,0.83,1.13,1.86,0.86,345.45,0.45,nasdaq_public_chart_api
+AMAT,Applied Materials,Information Technology,2026-10-26,387.59,465.88,466.03,false,false,-20.08,-18.65,5.24,1.2,395.87,2.14,nasdaq_public_chart_api
+APP,AppLovin,Communication Services,2026-10-26,260.74,274.52,298.85,false,false,-16.09,-37.65,4.13,0.67,260.95,0.08,nasdaq_public_chart_api
+APTV,Aptiv,Consumer Discretionary,2026-10-26,43.61,44.02,45.0,false,false,-2.63,-26.58,2.83,0.81,43.67,0.14,nasdaq_public_chart_api
+ACGL,Arch Capital Group,Financials,2026-10-26,102.34,97.57,97.57,true,true,8.11,-3.89,1.99,1.02,100.22,-2.07,nasdaq_public_chart_api
+ADM,Archer Daniels Midland,Consumer Staples,2026-10-26,79.01,80.96,82.22,false,false,-2.6,-5.01,2.53,0.86,78.11,-1.15,nasdaq_public_chart_api
+ARES,Ares Management,Financials,2026-10-26,121.88,116.99,127.21,true,false,-0.11,-4.71,3.01,0.81,122.06,0.15,nasdaq_public_chart_api
+ANET,Arista Networks,Information Technology,2026-10-26,177.24,196.33,195.99,false,false,-14.19,4.44,5.29,1.14,187.61,5.85,nasdaq_public_chart_api
+AJG,Arthur J. Gallagher & Co.,Financials,2026-10-26,266.79,242.5,247.36,true,true,15.44,0.56,2.5,0.87,258.11,-3.25,nasdaq_public_chart_api
+AIZ,Assurant,Financials,2026-10-26,287.15,274.73,278.05,true,true,8.36,1.44,1.83,0.91,286.08,-0.37,nasdaq_public_chart_api
+T,AT&T,Communication Services,2026-10-26,20.85,23.3,24.67,false,false,-17.85,-15.45,4.36,1.85,20.97,0.58,nasdaq_public_chart_api
+ATO,Atmos Energy,Utilities,2026-10-26,171.29,163.21,164.11,true,true,8.96,-4.51,1.68,1.05,170.86,-0.25,nasdaq_public_chart_api
+ADSK,Autodesk,Information Technology,2026-10-26,249.45,233.01,232.75,true,true,19.13,5.08,3.02,0.85,242.8,-2.67,nasdaq_public_chart_api
+ADP,Automatic Data Processing,Industrials,2026-10-26,301.12,278.09,275.92,true,true,14.2,13.99,2.07,0.84,292.06,-3.01,nasdaq_public_chart_api
+AZO,AutoZone,Consumer Discretionary,2026-10-26,3190.07,2984.02,2954.53,true,true,11.07,2.29,2.45,0.91,3148.52,-1.3,nasdaq_public_chart_api
+AVY,Avery Dennison,Materials,2026-10-26,183.43,173.39,174.02,true,true,7.68,8.46,1.91,0.8,181.43,-1.09,nasdaq_public_chart_api
+AXON,Axon Enterprise,Industrials,2026-10-26,424.77,411.8,478.83,true,false,-1.24,-22.44,4.22,0.78,428.45,0.87,nasdaq_public_chart_api
+BKR,Baker Hughes,Energy,2026-10-26,56.01,55.82,58.79,true,false,-3.15,-4.19,2.95,0.96,57.95,3.45,nasdaq_public_chart_api
+BALL,Ball Corporation,Materials,2026-10-26,64.45,60.34,60.93,true,true,13.41,-3.65,2.31,0.99,63.88,-0.88,nasdaq_public_chart_api
+BAC,Bank of America,Financials,2026-10-26,50.52,52.66,57.45,false,false,-10.9,-19.32,2.64,1.28,50.74,0.45,nasdaq_public_chart_api
+BAX,Baxter International,Health Care,2026-10-26,25.29,24.57,24.74,true,true,8.22,3.78,2.97,0.86,24.98,-1.23,nasdaq_public_chart_api
+BDX,Becton Dickinson,Health Care,2026-10-26,196.39,187.44,185.63,true,true,6.84,18.07,2.1,0.87,195.55,-0.43,nasdaq_public_chart_api
+BRK-B,Berkshire Hathaway,Financials,2026-10-26,548.56,520.86,511.71,true,true,8.52,7.06,1.22,0.89,544.76,-0.69,nasdaq_public_chart_api
+BBY,Best Buy,Consumer Discretionary,2026-10-26,97.95,90.63,89.49,true,true,8.22,9.48,3.28,0.98,98.0,0.05,nasdaq_public_chart_api
+TECH,Bio-Techne,Health Care,2026-10-26,72.69,72.52,72.43,true,true,0.11,0.86,0.17,0.05,72.64,-0.07,nasdaq_public_chart_api
+BIIB,Biogen,Health Care,2026-10-26,252.26,232.1,224.23,true,true,10.83,22.69,2.95,0.99,252.8,0.21,nasdaq_public_chart_api
+BLK,BlackRock,Financials,2026-10-26,1127.66,1093.93,1103.45,true,true,3.81,2.74,2.39,0.99,1132.63,0.44,nasdaq_public_chart_api
+BX,Blackstone Inc.,Financials,2026-10-26,119.06,112.17,124.54,true,false,0.54,-11.08,3.46,1.02,117.06,-1.68,nasdaq_public_chart_api
+XYZ,"Block, Inc.",Financials,2026-10-26,74.55,76.42,78.34,false,false,-2.45,-10.29,3.2,0.85,74.36,-0.25,nasdaq_public_chart_api
+BE,Bloom Energy,Industrials,2026-10-26,203.92,254.35,247.78,false,false,-29.37,22.22,9.76,1.01,220.68,8.22,nasdaq_public_chart_api
+BNY,BNY Mellon,Financials,2026-10-26,147.18,143.73,152.61,true,false,-1.98,-5.95,2.28,1.11,147.92,0.5,nasdaq_public_chart_api
+BA,Boeing,Industrials,2026-10-26,188.31,189.33,200.26,false,false,-4.93,-15.01,2.21,0.75,169.66,-9.91,nasdaq_public_chart_api
+BKNG,Booking Holdings,Consumer Discretionary,2026-10-26,153.14,159.88,176.05,false,false,-6.59,-23.16,3.34,0.96,150.79,-1.53,nasdaq_public_chart_api
+BSX,Boston Scientific,Health Care,2026-10-26,45.58,43.77,45.42,true,true,3.78,-1.04,2.62,0.83,45.15,-0.95,nasdaq_public_chart_api
+BMY,Bristol Myers Squibb,Health Care,2026-10-26,61.61,60.31,63.15,true,false,-1.99,-3.13,3.2,1.33,61.33,-0.45,nasdaq_public_chart_api
+AVGO,Broadcom,Information Technology,2026-10-26,329.17,347.69,355.48,false,false,-6.7,-13.58,3.41,0.86,342.71,4.11,nasdaq_public_chart_api
+BR,Broadridge Financial Solutions,Industrials,2026-10-26,181.09,169.24,171.26,true,true,10.58,14.48,2.22,0.74,177.93,-1.74,nasdaq_public_chart_api
+BRO,Brown & Brown,Financials,2026-10-26,71.08,65.62,67.23,true,true,16.87,-3.49,2.9,1.02,67.25,-5.4,nasdaq_public_chart_api
+BF-B,Brown–Forman,Consumer Staples,2026-10-26,28.95,27.45,27.12,true,true,10.67,0.17,2.66,0.81,28.55,-1.38,nasdaq_public_chart_api
+BG,Bunge Global,Consumer Staples,2026-10-26,102.22,105.5,111.91,false,false,-6.22,-12.91,2.99,0.96,101.52,-0.68,nasdaq_public_chart_api
+BXP,"BXP, Inc.",Real Estate,2026-10-26,62.26,59.9,63.6,true,false,-1.8,-11.01,2.64,1.04,61.31,-1.52,nasdaq_public_chart_api
+CHRW,C.H. Robinson,Industrials,2026-10-26,140.15,142.38,146.37,false,false,-4.72,-17.24,3.16,1.0,141.62,1.05,nasdaq_public_chart_api
+CDNS,Cadence Design Systems,Information Technology,2026-10-26,322.17,335.17,318.78,false,true,-1.21,-6.54,3.57,1.03,346.68,7.61,nasdaq_public_chart_api
+CPT,Camden Property Trust,Real Estate,2026-10-26,102.0,98.35,101.69,true,true,3.95,-11.34,1.77,0.92,101.06,-0.92,nasdaq_public_chart_api
+COF,Capital One,Financials,2026-10-26,202.35,198.68,205.77,true,false,1.07,-4.74,2.59,0.95,204.22,0.92,nasdaq_public_chart_api
+CAH,Cardinal Health,Health Care,2026-10-26,251.54,241.89,236.6,true,true,14.22,8.18,2.24,0.97,248.94,-1.03,nasdaq_public_chart_api
+CCL,Carnival Corporation,Consumer Discretionary,2026-10-26,26.86,26.18,24.72,true,true,20.72,-4.85,3.36,0.85,27.84,3.65,nasdaq_public_chart_api
+CARR,Carrier Global,Industrials,2026-10-26,56.44,55.52,56.83,true,false,0.12,-10.64,2.38,0.72,57.3,1.53,nasdaq_public_chart_api
+CVNA,Carvana,Consumer Discretionary,2026-10-26,56.61,60.94,66.24,false,false,-12.99,-14.32,5.14,0.89,59.1,4.4,nasdaq_public_chart_api
+CASY,Casey's,Consumer Staples,2026-10-26,703.93,654.99,685.93,true,true,17.62,-17.85,2.62,1.0,697.22,-0.95,nasdaq_public_chart_api
+CAT,Caterpillar Inc.,Industrials,2026-10-26,692.13,774.66,796.45,false,false,-15.76,-17.69,4.18,1.26,713.01,3.02,nasdaq_public_chart_api
+CBOE,Cboe Global Markets,Financials,2026-10-26,335.25,298.89,291.93,true,true,29.93,12.73,3.46,1.23,324.5,-3.21,nasdaq_public_chart_api
+CBRE,CBRE Group,Real Estate,2026-10-26,122.88,130.19,138.4,false,false,-8.67,-16.44,3.96,1.32,122.45,-0.35,nasdaq_public_chart_api
+CDW,CDW Corporation,Information Technology,2026-10-26,163.23,146.25,145.04,true,true,20.53,13.33,3.18,0.83,160.66,-1.57,nasdaq_public_chart_api
+COR,Cencora,Health Care,2026-10-26,330.0,325.86,322.37,true,true,7.52,3.26,1.98,0.84,328.27,-0.52,nasdaq_public_chart_api
+CNC,Centene Corporation,Health Care,2026-10-26,68.03,66.85,65.82,true,true,10.05,6.45,3.43,0.91,69.32,1.9,nasdaq_public_chart_api
+CNP,CenterPoint Energy,Utilities,2026-10-26,41.2,39.13,39.01,true,true,11.83,-6.58,1.59,0.9,41.47,0.64,nasdaq_public_chart_api
+CF,CF Industries,Materials,2026-10-26,120.84,116.84,123.45,true,false,5.38,-1.69,3.45,0.93,120.45,-0.32,nasdaq_public_chart_api
+CRL,Charles River Laboratories,Health Care,2026-10-26,357.27,309.79,295.49,true,true,22.0,48.6,3.76,0.93,356.81,-0.13,nasdaq_public_chart_api
+SCHW,Charles Schwab Corporation,Financials,2026-10-26,89.73,94.78,102.24,false,false,-9.39,-15.33,2.32,1.0,89.64,-0.11,nasdaq_public_chart_api
+CHTR,Charter Communications,Communication Services,2026-10-26,102.18,108.08,127.46,false,false,-9.5,-27.0,5.0,1.12,105.57,3.32,nasdaq_public_chart_api
+CVX,Chevron Corporation,Energy,2026-10-26,232.01,216.65,211.06,true,true,13.48,23.69,2.14,1.04,228.96,-1.31,nasdaq_public_chart_api
+CMG,Chipotle Mexican Grill,Consumer Discretionary,2026-10-26,28.41,30.44,33.42,false,false,-9.32,-15.22,4.06,1.17,27.95,-1.64,nasdaq_public_chart_api
+CB,Chubb Limited,Financials,2026-10-26,356.74,345.13,341.96,true,true,7.01,-1.86,1.88,1.05,354.31,-0.68,nasdaq_public_chart_api
+CHD,Church & Dwight,Consumer Staples,2026-10-26,105.38,100.35,98.72,true,true,9.34,5.45,2.04,0.93,104.97,-0.39,nasdaq_public_chart_api
+CIEN,Ciena,Information Technology,2026-10-26,335.93,375.66,368.61,false,false,-5.88,-4.16,8.44,1.25,351.24,4.56,nasdaq_public_chart_api
+CI,Cigna,Health Care,2026-10-26,305.78,288.39,282.22,true,true,12.41,1.57,2.54,0.98,299.26,-2.13,nasdaq_public_chart_api
+CINF,Cincinnati Financial,Financials,2026-10-26,177.31,167.19,168.43,true,true,9.09,-2.91,1.77,0.95,182.9,3.15,nasdaq_public_chart_api
+CTAS,Cintas,Industrials,2026-10-26,225.93,207.2,203.22,true,true,13.02,5.13,1.74,0.85,213.43,-5.53,nasdaq_public_chart_api
+CSCO,Cisco,Information Technology,2026-10-26,110.24,111.02,110.2,false,true,3.32,-4.62,2.81,1.09,111.5,1.15,nasdaq_public_chart_api
+C,Citigroup,Financials,2026-10-26,121.04,125.82,130.88,false,false,-9.86,-8.63,2.85,1.06,122.84,1.49,nasdaq_public_chart_api
+CFG,Citizens Financial Group,Financials,2026-10-26,65.37,63.95,67.0,true,false,-0.24,-10.38,2.2,0.94,65.47,0.16,nasdaq_public_chart_api
+CLX,Clorox,Consumer Staples,2026-10-26,86.76,84.27,90.09,true,false,3.53,-13.52,2.54,0.86,87.05,0.33,nasdaq_public_chart_api
+CME,CME Group,Financials,2026-10-26,308.06,282.47,278.14,true,true,16.48,18.48,1.99,0.92,294.62,-4.36,nasdaq_public_chart_api
+CMS,CMS Energy,Utilities,2026-10-26,69.59,66.35,66.89,true,true,10.55,-6.43,1.75,1.03,68.96,-0.91,nasdaq_public_chart_api
+KO,Coca-Cola Company (The),Consumer Staples,2026-10-26,92.7,89.85,89.2,true,true,5.57,5.02,1.8,1.11,91.58,-1.21,nasdaq_public_chart_api
+CTSH,Cognizant,Information Technology,2026-10-26,69.34,62.94,61.72,true,true,20.95,37.83,3.98,1.08,66.32,-4.36,nasdaq_public_chart_api
+COHR,Coherent Corp.,Information Technology,2026-10-26,221.5,276.13,285.82,false,false,-25.13,-8.97,10.05,1.32,235.28,6.22,nasdaq_public_chart_api
+COIN,Coinbase,Financials,2026-10-26,159.6,177.7,179.78,false,false,-18.2,-4.94,6.28,1.0,160.42,0.51,nasdaq_public_chart_api
+CL,Colgate-Palmolive,Consumer Staples,2026-10-26,93.1,90.15,89.35,true,true,8.18,0.4,2.12,1.03,92.13,-1.04,nasdaq_public_chart_api
+CMCSA,Comcast,Communication Services,2026-10-26,22.05,21.64,23.72,true,false,0.64,-8.85,3.21,1.18,21.8,-1.11,nasdaq_public_chart_api
+FIX,Comfort Systems USA,Industrials,2026-10-26,1244.19,1555.02,1597.58,false,false,-25.0,-23.5,7.77,1.53,1285.87,3.35,nasdaq_public_chart_api
+COP,ConocoPhillips,Energy,2026-10-26,151.37,137.7,134.56,true,true,18.91,32.66,2.42,0.91,148.15,-2.13,nasdaq_public_chart_api
+ED,Consolidated Edison,Utilities,2026-10-26,115.42,108.27,107.17,true,true,11.95,3.07,1.86,1.0,114.58,-0.73,nasdaq_public_chart_api
+STZ,Constellation Brands,Consumer Staples,2026-10-26,135.62,124.81,125.47,true,true,19.35,2.73,2.73,1.0,130.67,-3.65,nasdaq_public_chart_api
+CEG,Constellation Energy,Utilities,2026-10-26,252.48,272.76,273.6,false,false,-4.1,-2.83,5.27,1.2,258.48,2.38,nasdaq_public_chart_api
+COO,Cooper Companies (The),Health Care,2026-10-26,61.14,57.24,61.62,true,false,10.4,-15.15,2.43,0.95,59.91,-2.0,nasdaq_public_chart_api
+CPRT,Copart,Industrials,2026-10-26,29.15,27.49,29.84,true,false,5.65,-5.02,3.04,1.06,28.95,-0.67,nasdaq_public_chart_api
+GLW,Corning Inc.,Information Technology,2026-10-26,127.74,146.03,150.45,false,false,-18.5,1.37,6.19,1.08,127.21,-0.41,nasdaq_public_chart_api
+CPAY,Corpay,Financials,2026-10-26,399.72,400.7,404.11,false,false,0.4,4.01,2.47,0.8,396.26,-0.86,nasdaq_public_chart_api
+CSGP,CoStar Group,Real Estate,2026-10-26,33.7,30.31,30.54,true,true,19.97,11.11,3.92,0.89,32.26,-4.29,nasdaq_public_chart_api
+COST,Costco,Consumer Staples,2026-10-26,1005.16,962.26,939.75,true,true,8.93,3.99,1.62,0.86,991.43,-1.37,nasdaq_public_chart_api
+CRH,CRH plc,Materials,2026-10-26,85.43,82.98,87.65,true,false,0.46,-17.38,2.48,0.84,85.85,0.49,nasdaq_public_chart_api
+CRWD,CrowdStrike,Information Technology,2026-10-26,261.83,255.81,235.7,true,true,3.85,44.02,5.08,1.15,267.6,2.2,nasdaq_public_chart_api
+CCI,Crown Castle,Real Estate,2026-10-26,87.47,75.75,74.71,true,true,28.94,15.47,4.56,1.66,86.39,-1.24,nasdaq_public_chart_api
+CSX,CSX Corporation,Industrials,2026-10-26,51.31,48.15,48.74,true,true,9.68,0.92,1.96,0.98,51.99,1.34,nasdaq_public_chart_api
+CMI,Cummins,Industrials,2026-10-26,522.13,525.5,544.61,false,false,-0.56,-18.62,2.88,0.93,528.38,1.2,nasdaq_public_chart_api
+CVS,CVS Health,Health Care,2026-10-26,92.53,89.59,91.52,true,true,3.81,-15.37,2.53,1.0,91.41,-1.21,nasdaq_public_chart_api
+DHR,Danaher Corporation,Health Care,2026-10-26,232.97,223.55,216.74,true,true,3.78,17.04,2.78,1.02,231.98,-0.42,nasdaq_public_chart_api
+DRI,Darden Restaurants,Consumer Discretionary,2026-10-26,213.25,206.25,210.82,true,true,6.76,3.03,2.28,0.86,213.79,0.25,nasdaq_public_chart_api
+DDOG,Datadog,Information Technology,2026-10-26,280.24,272.0,249.25,true,true,4.52,11.7,5.71,1.11,280.6,0.13,nasdaq_public_chart_api
+DVA,DaVita,Health Care,2026-10-26,184.03,180.56,180.61,true,true,3.12,-23.15,3.23,1.18,180.32,-2.01,nasdaq_public_chart_api
+DECK,Deckers Brands,Consumer Discretionary,2026-10-26,80.37,82.62,83.34,false,false,2.16,-22.66,3.91,1.11,79.81,-0.69,nasdaq_public_chart_api
+DE,Deere & Company,Industrials,2026-10-26,641.25,652.7,659.29,false,false,-7.13,0.22,3.08,1.11,638.89,-0.37,nasdaq_public_chart_api
+DELL,Dell Technologies,Information Technology,2026-10-26,467.09,520.46,512.4,false,false,-17.02,19.13,6.83,1.28,503.53,7.8,nasdaq_public_chart_api
+DAL,Delta Air Lines,Industrials,2026-10-26,79.16,80.23,80.76,false,false,-6.8,-11.42,3.85,1.14,80.86,2.15,nasdaq_public_chart_api
+DVN,Devon Energy,Energy,2026-10-26,51.64,49.05,48.65,true,true,9.76,21.05,2.8,0.91,51.06,-1.11,nasdaq_public_chart_api
+DXCM,Dexcom,Health Care,2026-10-26,78.57,84.13,86.6,false,false,-9.29,4.97,3.39,0.98,79.37,1.02,nasdaq_public_chart_api
+FANG,Diamondback Energy,Energy,2026-10-26,207.13,194.1,197.51,true,true,10.96,8.84,2.86,0.93,203.79,-1.61,nasdaq_public_chart_api
+DLR,Digital Realty,Real Estate,2026-10-26,174.53,176.51,182.6,false,false,-2.28,-9.65,2.83,1.13,177.49,1.7,nasdaq_public_chart_api
+DG,Dollar General,Consumer Staples,2026-10-26,128.42,127.29,125.74,true,true,2.87,1.94,3.78,1.19,127.25,-0.91,nasdaq_public_chart_api
+DLTR,Dollar Tree,Consumer Staples,2026-10-26,124.92,119.8,121.86,true,true,9.51,-1.45,3.32,0.91,123.99,-0.74,nasdaq_public_chart_api
+D,Dominion Energy,Utilities,2026-10-26,65.1,62.41,64.0,true,true,7.28,-7.82,1.89,0.99,65.25,0.22,nasdaq_public_chart_api
+DPZ,Domino's,Consumer Discretionary,2026-10-26,313.32,305.37,316.3,true,false,7.25,-10.6,3.25,1.11,310.8,-0.8,nasdaq_public_chart_api
+DASH,DoorDash,Consumer Discretionary,2026-10-26,168.44,188.19,201.31,false,false,-12.89,-13.85,5.04,1.16,172.87,2.63,nasdaq_public_chart_api
+DOV,Dover Corporation,Industrials,2026-10-26,202.51,192.99,193.6,true,true,5.54,-0.28,1.91,0.82,205.36,1.41,nasdaq_public_chart_api
+DOW,Dow Inc.,Materials,2026-10-26,33.99,29.36,29.72,true,true,21.31,17.82,2.94,0.76,33.85,-0.41,nasdaq_public_chart_api
+DHI,D. R. Horton,Consumer Discretionary,2026-10-26,146.52,138.03,141.02,true,true,3.54,-3.07,2.9,0.92,146.32,-0.14,nasdaq_public_chart_api
+DTE,DTE Energy,Utilities,2026-10-26,131.74,127.59,130.75,true,true,8.48,-9.82,1.52,0.89,131.96,0.17,nasdaq_public_chart_api
+DUK,Duke Energy,Utilities,2026-10-26,124.44,118.33,118.95,true,true,9.78,-3.71,1.66,1.02,124.16,-0.23,nasdaq_public_chart_api
+DD,DuPont,Industrials,2026-10-26,136.25,131.53,132.28,true,true,3.45,-3.21,2.06,0.76,137.79,1.13,nasdaq_public_chart_api
+ETN,Eaton Corporation,Industrials,2026-10-26,371.92,411.58,414.85,false,false,-15.47,-3.71,4.43,1.24,385.11,3.55,nasdaq_public_chart_api
+EBAY,eBay Inc.,Consumer Discretionary,2026-10-26,118.62,114.36,109.46,true,true,9.94,1.0,3.02,1.02,117.21,-1.19,nasdaq_public_chart_api
+ECHO,EchoStar,Communication Services,2026-10-26,89.26,91.1,90.52,false,false,-0.94,3.88,4.71,0.97,91.11,2.07,nasdaq_public_chart_api
+ECL,Ecolab,Materials,2026-10-26,288.89,283.31,280.67,true,true,3.36,2.12,1.83,0.86,293.24,1.51,nasdaq_public_chart_api
+EIX,Edison International,Utilities,2026-10-26,57.78,55.4,58.94,true,false,9.74,-27.58,2.6,1.07,58.23,0.78,nasdaq_public_chart_api
+EW,Edwards Lifesciences,Health Care,2026-10-26,90.56,87.01,88.04,true,true,4.95,8.22,2.23,0.86,90.68,0.13,nasdaq_public_chart_api
+ELV,Elevance Health,Health Care,2026-10-26,431.32,415.77,408.67,true,true,8.89,11.82,2.86,1.04,420.06,-2.61,nasdaq_public_chart_api
+EME,Emcor,Industrials,2026-10-26,665.93,743.77,754.43,false,false,-12.63,-5.65,4.48,1.24,666.66,0.11,nasdaq_public_chart_api
+EMR,Emerson Electric,Industrials,2026-10-26,161.7,160.74,156.31,true,true,2.19,6.51,2.67,0.97,165.84,2.56,nasdaq_public_chart_api
+ETR,Entergy,Utilities,2026-10-26,107.5,103.66,104.28,true,true,9.06,-4.29,1.55,0.79,108.1,0.56,nasdaq_public_chart_api
+EOG,EOG Resources,Energy,2026-10-26,163.68,150.8,147.99,true,true,16.62,17.22,2.4,0.91,161.77,-1.17,nasdaq_public_chart_api
+EQT,EQT Corporation,Energy,2026-10-26,54.85,52.75,53.02,true,true,7.95,6.17,2.67,0.93,55.43,1.06,nasdaq_public_chart_api
+EFX,Equifax,Industrials,2026-10-26,178.56,155.23,166.91,true,true,20.56,-4.52,3.63,1.0,175.77,-1.56,nasdaq_public_chart_api
+EQIX,Equinix,Real Estate,2026-10-26,967.65,1003.41,1027.97,false,false,-4.01,-6.49,3.1,1.28,994.43,2.77,nasdaq_public_chart_api
+ERIE,Erie Indemnity,Financials,2026-10-26,251.3,232.91,242.17,true,true,12.76,3.66,3.11,0.96,244.33,-2.77,nasdaq_public_chart_api
+ESS,Essex Property Trust,Real Estate,2026-10-26,275.3,271.69,275.91,true,false,1.36,-6.53,1.89,0.99,272.82,-0.9,nasdaq_public_chart_api
+EL,Estée Lauder Companies (The),Consumer Staples,2026-10-26,108.82,99.83,98.91,true,true,15.19,28.4,3.32,0.91,108.22,-0.55,nasdaq_public_chart_api
+EG,Everest Group,Financials,2026-10-26,397.61,379.19,376.04,true,true,7.34,-0.27,2.12,0.99,390.23,-1.86,nasdaq_public_chart_api
+EVRG,Evergy,Utilities,2026-10-26,84.61,81.46,81.14,true,true,8.42,-1.23,1.58,0.96,84.82,0.25,nasdaq_public_chart_api
+P,Everpure,Information Technology,2026-10-26,131.33,137.77,118.0,false,true,4.23,79.93,6.74,1.25,138.83,5.71,nasdaq_public_chart_api
+ES,Eversource Energy,Utilities,2026-10-26,67.55,65.66,67.79,true,false,6.09,-10.4,1.86,0.92,67.41,-0.21,nasdaq_public_chart_api
+EXC,Exelon,Utilities,2026-10-26,44.54,42.25,42.85,true,true,10.41,-5.85,1.79,0.92,44.27,-0.62,nasdaq_public_chart_api
+EXE,Expand Energy,Energy,2026-10-26,94.02,89.74,92.24,true,true,8.27,6.21,2.5,0.87,94.15,0.14,nasdaq_public_chart_api
+EXPE,Expedia Group,Consumer Discretionary,2026-10-26,283.97,276.39,289.54,true,false,7.5,-4.0,4.27,1.02,277.82,-2.17,nasdaq_public_chart_api
+EXPD,Expeditors International,Industrials,2026-10-26,196.43,193.86,190.81,true,true,4.79,14.59,1.91,0.89,198.56,1.09,nasdaq_public_chart_api
+EXR,Extra Space Storage,Real Estate,2026-10-26,143.37,136.29,138.5,true,true,7.51,-5.81,1.79,0.82,144.03,0.46,nasdaq_public_chart_api
+XOM,ExxonMobil,Energy,2026-10-26,184.54,171.95,166.27,true,true,14.91,20.58,2.13,0.94,180.96,-1.94,nasdaq_public_chart_api
+FFIV,"F5, Inc.",Information Technology,2026-10-26,461.6,457.81,429.09,true,true,4.18,14.41,3.19,0.99,453.52,-1.75,nasdaq_public_chart_api
+FDS,FactSet,Financials,2026-10-26,323.39,293.34,290.26,true,true,18.42,13.92,3.45,0.82,309.24,-4.38,nasdaq_public_chart_api
+FICO,Fair Isaac,Information Technology,2026-10-26,708.07,721.08,904.68,false,false,-17.96,-47.01,6.32,1.39,697.63,-1.47,nasdaq_public_chart_api
+FAST,Fastenal,Industrials,2026-10-26,52.47,51.08,50.42,true,true,4.05,9.09,2.9,1.29,51.34,-2.15,nasdaq_public_chart_api
+FRT,Federal Realty Investment Trust,Real Estate,2026-10-26,109.23,106.72,111.59,true,false,-1.17,-13.39,1.5,0.94,109.41,0.16,nasdaq_public_chart_api
+FDX,FedEx,Industrials,2026-10-26,300.58,292.89,305.93,true,false,5.15,-3.86,1.96,0.79,306.71,2.04,nasdaq_public_chart_api
+FDXF,FedEx Freight,Industrials,2026-10-26,109.45,111.35,120.93,false,false,-3.3,-27.51,3.67,0.83,107.01,-2.23,nasdaq_public_chart_api
+FERG,Ferguson Enterprises,Industrials,2026-10-26,229.52,224.06,225.61,true,true,3.04,-1.08,2.5,0.96,228.65,-0.38,nasdaq_public_chart_api
+FIS,Fidelity National Information Services,Financials,2026-10-26,36.87,34.98,37.29,true,false,4.12,-17.94,3.0,0.92,35.53,-3.62,nasdaq_public_chart_api
+FITB,Fifth Third Bancorp,Financials,2026-10-26,53.1,51.13,52.91,true,true,1.92,-8.13,2.11,0.96,53.62,0.98,nasdaq_public_chart_api
+FSLR,First Solar,Information Technology,2026-10-26,168.15,176.04,192.13,false,false,-5.38,-17.0,3.99,0.81,176.8,5.14,nasdaq_public_chart_api
+FE,FirstEnergy,Utilities,2026-10-26,46.18,44.95,45.47,true,true,6.65,-6.99,1.55,0.89,45.99,-0.4,nasdaq_public_chart_api
+FISV,Fiserv,Financials,2026-10-26,48.33,46.77,48.91,true,false,3.98,-10.85,2.58,0.74,47.39,-1.95,nasdaq_public_chart_api
+FLEX,Flex Ltd.,Information Technology,2026-10-26,76.99,102.71,108.04,false,false,-32.87,-32.04,9.02,1.82,82.24,6.82,nasdaq_public_chart_api
+F,Ford Motor Company,Consumer Discretionary,2026-10-26,11.58,12.1,13.06,false,false,-8.89,-22.59,2.61,0.91,11.7,0.99,nasdaq_public_chart_api
+FTNT,Fortinet,Information Technology,2026-10-26,183.33,181.72,171.01,true,true,5.69,22.24,3.75,1.01,185.24,1.04,nasdaq_public_chart_api
+FTV,Fortive,Industrials,2026-10-26,60.78,57.64,57.42,true,true,8.36,-5.16,2.01,0.86,61.2,0.69,nasdaq_public_chart_api
+FOXA,Fox Corporation (Class A),Communication Services,2026-10-26,65.33,63.83,65.46,true,false,3.58,13.18,2.86,1.03,64.21,-1.71,nasdaq_public_chart_api
+FOX,Fox Corporation (Class B),Communication Services,2026-10-26,58.15,57.06,58.47,true,false,2.85,12.63,2.77,1.03,57.18,-1.67,nasdaq_public_chart_api
+BEN,Franklin Resources,Financials,2026-10-26,30.99,31.77,32.96,false,false,-6.15,-7.02,2.6,0.97,31.34,1.11,nasdaq_public_chart_api
+FCX,Freeport-McMoRan,Materials,2026-10-26,65.16,70.07,71.86,false,false,-9.89,5.71,3.76,0.9,66.05,1.37,nasdaq_public_chart_api
+GRMN,Garmin,Consumer Discretionary,2026-10-26,292.92,283.05,284.14,true,true,-0.41,15.48,2.54,0.97,288.19,-1.61,nasdaq_public_chart_api
+IT,Gartner,Information Technology,2026-10-26,231.03,201.86,193.36,true,true,22.95,48.25,3.49,0.77,221.76,-4.01,nasdaq_public_chart_api
+GE,GE Aerospace,Industrials,2026-10-26,288.43,305.45,321.95,false,false,-11.82,-20.67,3.03,1.06,298.43,3.47,nasdaq_public_chart_api
+GEHC,GE HealthCare,Health Care,2026-10-26,71.98,67.7,68.33,true,true,8.03,12.28,2.47,0.88,70.86,-1.55,nasdaq_public_chart_api
+GEV,GE Vernova,Industrials,2026-10-26,855.12,946.1,945.37,false,false,-10.7,-9.36,5.79,1.27,888.65,3.98,nasdaq_public_chart_api
+GEN,Gen Digital,Information Technology,2026-10-26,24.41,23.33,26.6,true,false,12.9,-11.49,2.99,0.89,23.98,-1.74,nasdaq_public_chart_api
+GNRC,Generac,Industrials,2026-10-26,189.23,206.52,200.14,false,false,-9.09,-3.26,5.47,1.12,194.62,2.85,nasdaq_public_chart_api
+GD,General Dynamics,Industrials,2026-10-26,357.04,337.47,353.6,true,true,6.03,-9.19,1.74,0.86,355.43,-0.45,nasdaq_public_chart_api
+GIS,General Mills,Consumer Staples,2026-10-26,33.7,32.73,35.83,true,false,0.18,-10.49,3.21,1.19,33.1,-1.78,nasdaq_public_chart_api
+GM,General Motors,Consumer Discretionary,2026-10-26,76.31,80.28,83.16,false,false,-7.65,-15.49,2.95,1.0,80.59,5.61,nasdaq_public_chart_api
+GPC,Genuine Parts Company,Consumer Discretionary,2026-10-26,123.22,127.57,131.01,false,false,-4.93,-5.0,3.19,1.27,120.52,-2.19,nasdaq_public_chart_api
+GILD,Gilead Sciences,Health Care,2026-10-26,158.69,151.35,149.25,true,true,5.14,18.14,2.6,1.03,157.94,-0.47,nasdaq_public_chart_api
+GPN,Global Payments,Financials,2026-10-26,81.86,82.49,86.64,false,false,-5.35,-6.4,2.77,0.79,81.75,-0.13,nasdaq_public_chart_api
+GL,Globe Life,Financials,2026-10-26,156.82,165.56,169.58,false,false,-6.12,-12.47,2.67,1.31,156.93,0.07,nasdaq_public_chart_api
+GDDY,GoDaddy,Information Technology,2026-10-26,109.82,103.47,100.38,true,true,13.05,6.7,3.26,0.8,105.2,-4.21,nasdaq_public_chart_api
+GS,Goldman Sachs,Financials,2026-10-26,893.28,891.71,956.8,true,false,-4.51,-13.55,2.84,1.0,913.04,2.21,nasdaq_public_chart_api
+HAL,Halliburton,Energy,2026-10-26,35.44,32.91,34.19,true,true,8.18,13.48,2.91,0.9,35.39,-0.14,nasdaq_public_chart_api
+HIG,Hartford (The),Financials,2026-10-26,135.94,130.92,133.39,true,true,9.43,-5.22,1.75,0.95,133.76,-1.6,nasdaq_public_chart_api
+HAS,Hasbro,Consumer Discretionary,2026-10-26,117.96,98.67,94.38,true,true,33.91,22.44,2.9,1.11,118.92,0.81,nasdaq_public_chart_api
+HCA,HCA Healthcare,Health Care,2026-10-26,465.26,450.48,432.72,true,true,6.81,11.26,2.56,0.92,441.97,-5.01,nasdaq_public_chart_api
+DOC,Healthpeak Properties,Real Estate,2026-10-26,19.36,19.05,20.05,true,false,-4.68,-15.16,2.35,0.99,18.91,-2.3,nasdaq_public_chart_api
+HSIC,Henry Schein,Health Care,2026-10-26,84.51,84.87,86.85,false,false,-2.15,-1.4,2.39,1.0,83.89,-0.73,nasdaq_public_chart_api
+HSY,Hershey Company (The),Consumer Staples,2026-10-26,168.23,164.72,171.44,true,false,1.12,-8.27,2.33,0.96,163.14,-3.03,nasdaq_public_chart_api
+HPE,Hewlett Packard Enterprise,Information Technology,2026-10-26,58.72,63.59,59.4,false,false,-6.7,28.8,6.41,1.45,60.88,3.68,nasdaq_public_chart_api
+HLT,Hilton Worldwide,Consumer Discretionary,2026-10-26,351.89,334.29,323.22,true,true,12.08,9.14,2.11,0.95,342.22,-2.75,nasdaq_public_chart_api
+HD,Home Depot (The),Consumer Discretionary,2026-10-26,319.38,299.08,309.6,true,true,8.93,-7.28,2.37,0.96,318.94,-0.14,nasdaq_public_chart_api
+HONA,Honeywell Aerospace,Industrials,2026-10-26,168.64,159.02,159.98,true,true,6.21,-21.89,3.53,0.86,168.37,-0.16,nasdaq_public_chart_api
+HON,Honeywell Technologies,Industrials,2026-10-26,219.28,212.08,212.01,true,true,3.17,-11.24,2.54,1.15,217.61,-0.76,nasdaq_public_chart_api
+HRL,Hormel Foods,Consumer Staples,2026-10-26,20.95,20.09,21.08,true,false,6.29,-18.04,2.17,0.91,20.76,-0.91,nasdaq_public_chart_api
+HST,Host Hotels & Resorts,Real Estate,2026-10-26,25.06,23.38,22.77,true,true,11.78,-1.61,2.3,1.0,25.03,-0.12,nasdaq_public_chart_api
+HWM,Howmet Aerospace,Industrials,2026-10-26,194.36,217.89,235.97,false,false,-16.4,-32.05,4.35,1.39,192.12,-1.15,nasdaq_public_chart_api
+HPQ,HP Inc.,Information Technology,2026-10-26,34.09,31.52,31.56,true,true,8.91,20.5,3.73,0.96,33.7,-1.13,nasdaq_public_chart_api
+HUBB,Hubbell Incorporated,Industrials,2026-10-26,459.4,466.78,463.21,false,false,-1.55,-5.02,3.09,1.01,437.28,-4.81,nasdaq_public_chart_api
+HUM,Humana,Health Care,2026-10-26,417.22,410.75,398.35,true,true,4.85,7.33,4.69,1.27,413.27,-0.95,nasdaq_public_chart_api
+HBAN,Huntington Bancshares,Financials,2026-10-26,15.73,15.38,16.09,true,false,0.58,-9.08,2.06,0.89,15.73,0.03,nasdaq_public_chart_api
+HII,Huntington Ingalls Industries,Industrials,2026-10-26,281.05,268.29,279.14,true,true,6.45,-6.29,2.38,0.78,280.19,-0.31,nasdaq_public_chart_api
+IBM,IBM,Information Technology,2026-10-26,253.44,232.31,233.42,true,true,12.39,11.38,2.97,0.95,250.08,-1.33,nasdaq_public_chart_api
+IEX,IDEX Corporation,Industrials,2026-10-26,231.06,233.24,230.08,false,true,0.43,2.85,2.21,0.98,232.76,0.74,nasdaq_public_chart_api
+IDXX,Idexx Laboratories,Health Care,2026-10-26,570.21,535.87,533.39,true,true,9.81,0.12,2.23,0.76,564.12,-1.07,nasdaq_public_chart_api
+ITW,Illinois Tool Works,Industrials,2026-10-26,276.22,268.35,271.93,true,true,0.69,-6.42,2.0,0.99,273.91,-0.84,nasdaq_public_chart_api
+ILMN,"Illumina, Inc.",Health Care,2026-10-26,271.04,271.78,243.41,false,true,0.39,40.45,4.97,1.23,279.09,2.97,nasdaq_public_chart_api
+INCY,Incyte,Health Care,2026-10-26,113.31,114.5,121.13,false,false,-8.54,-12.79,2.82,0.94,115.88,2.27,nasdaq_public_chart_api
+IR,Ingersoll Rand,Industrials,2026-10-26,74.52,77.19,76.53,false,false,-2.05,-13.85,3.09,1.0,75.19,0.9,nasdaq_public_chart_api
+PODD,Insulet Corporation,Health Care,2026-10-26,149.26,138.24,140.62,true,true,9.65,-10.87,3.0,0.82,150.06,0.53,nasdaq_public_chart_api
+INTC,Intel,Information Technology,2026-10-26,90.47,102.81,101.87,false,false,-26.45,4.83,5.98,1.06,93.42,3.26,nasdaq_public_chart_api
+IBKR,Interactive Brokers,Financials,2026-10-26,80.59,85.42,89.22,false,false,-9.69,-11.35,3.72,1.03,82.39,2.24,nasdaq_public_chart_api
+ICE,Intercontinental Exchange,Financials,2026-10-26,160.05,156.29,157.23,true,true,3.72,4.8,2.05,0.91,156.03,-2.51,nasdaq_public_chart_api
+IFF,International Flavors & Fragrances,Materials,2026-10-26,93.69,87.67,86.08,true,true,9.34,18.22,1.95,0.7,93.17,-0.56,nasdaq_public_chart_api
+IP,International Paper,Materials,2026-10-26,33.4,32.8,35.38,true,false,-4.63,-24.25,2.71,0.75,33.35,-0.13,nasdaq_public_chart_api
+INTU,Intuit,Information Technology,2026-10-26,339.89,309.69,321.01,true,true,23.24,8.59,3.84,0.85,325.61,-4.2,nasdaq_public_chart_api
+ISRG,Intuitive Surgical,Health Care,2026-10-26,451.63,422.43,397.2,true,true,11.46,24.83,2.93,1.02,447.09,-1.01,nasdaq_public_chart_api
+IVZ,Invesco,Financials,2026-10-26,28.53,29.37,30.83,false,false,-7.73,-3.06,3.35,1.04,28.56,0.11,nasdaq_public_chart_api
+INVH,Invitation Homes,Real Estate,2026-10-26,27.52,26.69,27.71,true,false,3.38,-8.42,1.82,0.97,27.14,-1.4,nasdaq_public_chart_api
+IQV,IQVIA,Health Care,2026-10-26,273.6,266.21,263.96,true,true,1.19,12.62,2.87,0.89,272.09,-0.55,nasdaq_public_chart_api
+IRM,Iron Mountain,Real Estate,2026-10-26,113.08,112.89,115.38,true,false,1.53,-10.04,3.19,1.04,115.26,1.93,nasdaq_public_chart_api
+JBHT,J.B. Hunt,Industrials,2026-10-26,224.48,228.18,246.03,false,false,-0.43,-19.14,2.67,0.88,230.27,2.58,nasdaq_public_chart_api
+JBL,Jabil,Information Technology,2026-10-26,275.68,293.57,303.82,false,false,-12.96,-9.0,5.0,1.14,283.61,2.87,nasdaq_public_chart_api
+JKHY,Jack Henry & Associates,Financials,2026-10-26,162.35,151.23,156.74,true,true,9.85,3.13,2.67,0.92,158.36,-2.46,nasdaq_public_chart_api
+J,Jacobs Solutions,Industrials,2026-10-26,147.14,140.36,143.21,true,true,6.34,4.64,2.51,0.93,147.54,0.27,nasdaq_public_chart_api
+JNJ,Johnson & Johnson,Health Care,2026-10-26,266.3,258.74,265.32,true,true,-1.81,-0.16,2.75,1.46,268.52,0.83,nasdaq_public_chart_api
+JCI,Johnson Controls,Industrials,2026-10-26,147.5,151.41,146.81,false,true,-1.8,5.15,3.33,1.22,153.71,4.21,nasdaq_public_chart_api
+JPM,JPMorgan Chase,Financials,2026-10-26,334.04,333.57,344.83,true,false,-2.63,-6.51,1.95,0.93,336.43,0.72,nasdaq_public_chart_api
+KVUE,Kenvue,Consumer Staples,2026-10-26,19.5,18.26,18.37,true,true,9.55,-1.27,1.96,0.97,19.37,-0.69,nasdaq_public_chart_api
+KDP,Keurig Dr Pepper,Consumer Staples,2026-10-26,34.99,32.69,32.1,true,true,9.51,12.58,2.22,0.91,34.8,-0.53,nasdaq_public_chart_api
+KEY,KeyCorp,Financials,2026-10-26,21.21,20.28,21.04,true,true,2.91,-6.27,1.98,0.92,21.16,-0.21,nasdaq_public_chart_api
+KEYS,Keysight Technologies,Information Technology,2026-10-26,326.04,356.84,341.41,false,false,-9.97,6.84,4.65,1.36,334.56,2.61,nasdaq_public_chart_api
+KMB,Kimberly-Clark,Consumer Staples,2026-10-26,109.63,101.38,102.79,true,true,11.38,-3.06,2.41,1.05,108.73,-0.82,nasdaq_public_chart_api
+KIM,Kimco Realty,Real Estate,2026-10-26,23.65,22.57,23.08,true,true,5.39,-9.87,1.65,1.0,23.61,-0.15,nasdaq_public_chart_api
+KMI,Kinder Morgan,Energy,2026-10-26,33.94,32.61,31.93,true,true,10.37,7.37,2.56,1.18,33.91,-0.07,nasdaq_public_chart_api
+KKR,KKR & Co.,Financials,2026-10-26,91.62,89.85,98.21,true,false,-5.22,-10.75,3.1,0.86,91.91,0.32,nasdaq_public_chart_api
+KLAC,KLA Corporation,Information Technology,2026-10-26,149.21,180.97,181.34,false,false,-20.6,-21.8,5.37,1.24,153.75,3.04,nasdaq_public_chart_api
+KHC,Kraft Heinz,Consumer Staples,2026-10-26,24.73,23.05,24.14,true,true,4.66,-9.41,2.56,0.98,24.12,-2.45,nasdaq_public_chart_api
+KR,Kroger,Consumer Staples,2026-10-26,66.77,62.09,59.87,true,true,13.67,12.81,2.97,1.12,65.65,-1.68,nasdaq_public_chart_api
+LHX,L3Harris,Industrials,2026-10-26,260.23,241.93,250.4,true,true,9.48,-14.73,2.06,0.84,258.69,-0.59,nasdaq_public_chart_api
+LH,Labcorp,Health Care,2026-10-26,329.9,316.63,320.98,true,true,6.54,4.99,2.2,0.92,328.01,-0.57,nasdaq_public_chart_api
+LRCX,Lam Research,Information Technology,2026-10-26,237.5,296.09,300.49,false,false,-24.65,-11.91,6.39,1.3,240.54,1.28,nasdaq_public_chart_api
+LVS,Las Vegas Sands,Consumer Discretionary,2026-10-26,36.57,36.95,40.68,false,false,-6.21,-24.21,2.84,1.01,36.03,-1.46,nasdaq_public_chart_api
+LDOS,Leidos,Industrials,2026-10-26,139.86,123.98,129.51,true,true,13.15,18.16,2.75,0.91,139.34,-0.37,nasdaq_public_chart_api
+LEN,Lennar,Consumer Discretionary,2026-10-26,83.98,78.61,81.16,true,true,2.23,-4.19,3.58,1.06,83.8,-0.22,nasdaq_public_chart_api
+LII,Lennox International,Industrials,2026-10-26,365.64,360.67,373.4,true,false,-2.18,-32.8,3.09,0.91,368.59,0.81,nasdaq_public_chart_api
+LLY,Lilly (Eli),Health Care,2026-10-26,1279.14,1209.66,1188.58,true,true,8.08,4.79,3.16,1.02,1279.11,-0.0,nasdaq_public_chart_api
+LIN,Linde plc,Materials,2026-10-26,507.56,490.76,481.15,true,true,8.02,-0.71,1.41,0.75,506.99,-0.11,nasdaq_public_chart_api
+LYV,Live Nation Entertainment,Communication Services,2026-10-26,172.58,171.21,173.83,true,false,1.0,-4.58,2.16,0.78,171.91,-0.39,nasdaq_public_chart_api
+LMT,Lockheed Martin,Industrials,2026-10-26,635.2,533.32,540.67,true,true,22.26,9.27,2.88,1.16,624.5,-1.68,nasdaq_public_chart_api
+L,Loews Corporation,Financials,2026-10-26,111.42,108.43,108.68,true,true,6.3,-6.68,1.59,0.94,110.75,-0.6,nasdaq_public_chart_api
+LOW,Lowe's,Consumer Discretionary,2026-10-26,198.22,190.11,197.3,true,true,4.72,-9.17,2.62,1.01,198.11,-0.06,nasdaq_public_chart_api
+LULU,Lululemon Athletica,Consumer Discretionary,2026-10-26,102.91,96.43,103.91,true,false,1.59,-14.47,3.88,1.02,102.97,0.06,nasdaq_public_chart_api
+LITE,Lumentum,Information Technology,2026-10-26,818.1,948.6,923.08,false,false,-13.12,25.49,9.04,1.05,869.49,6.28,nasdaq_public_chart_api
+LYB,LyondellBasell,Materials,2026-10-26,67.35,61.32,62.65,true,true,15.84,15.68,2.68,0.71,67.45,0.16,nasdaq_public_chart_api
+MTB,M&T Bank,Financials,2026-10-26,221.8,218.3,228.26,true,false,0.28,-12.2,2.04,1.01,221.21,-0.27,nasdaq_public_chart_api
+MPC,Marathon Petroleum,Energy,2026-10-26,470.64,451.8,411.6,true,true,19.6,53.78,3.73,1.11,440.45,-6.41,nasdaq_public_chart_api
+MAR,Marriott International,Consumer Discretionary,2026-10-26,394.75,374.62,357.14,true,true,12.14,2.93,2.05,0.87,388.81,-1.5,nasdaq_public_chart_api
+MRSH,Marsh McLennan,Financials,2026-10-26,194.72,181.0,181.73,true,true,13.79,1.32,2.37,1.04,190.0,-2.42,nasdaq_public_chart_api
+MLM,Martin Marietta Materials,Materials,2026-10-26,503.92,489.68,502.67,true,true,4.05,-13.66,2.38,0.89,503.83,-0.02,nasdaq_public_chart_api
+MRVL,Marvell Technology,Information Technology,2026-10-26,233.78,255.88,243.19,false,false,-10.75,33.99,7.27,1.29,242.2,3.6,nasdaq_public_chart_api
+MAS,Masco,Industrials,2026-10-26,75.51,71.17,70.91,true,true,9.67,-7.47,2.77,0.95,75.31,-0.26,nasdaq_public_chart_api
+MA,Mastercard,Financials,2026-10-26,613.5,592.45,582.54,true,true,8.08,9.02,1.75,0.84,607.62,-0.96,nasdaq_public_chart_api
+MKC,McCormick & Company,Consumer Staples,2026-10-26,47.97,46.11,49.74,true,false,0.06,-6.91,2.76,0.96,47.33,-1.33,nasdaq_public_chart_api
+MCD,McDonald's,Consumer Discretionary,2026-10-26,250.83,238.99,249.35,true,true,6.06,-8.13,1.86,1.06,249.63,-0.48,nasdaq_public_chart_api
+MCK,McKesson,Health Care,2026-10-26,992.87,954.8,912.56,true,true,14.57,11.62,2.21,0.91,972.25,-2.08,nasdaq_public_chart_api
+MDT,Medtronic,Health Care,2026-10-26,94.79,90.98,91.44,true,true,6.94,9.1,2.72,1.22,94.45,-0.36,nasdaq_public_chart_api
+MRK,Merck & Co.,Health Care,2026-10-26,140.61,144.79,146.74,false,false,-5.49,6.67,3.41,1.34,141.99,0.98,nasdaq_public_chart_api
+META,Meta Platforms,Communication Services,2026-10-26,630.56,713.4,664.63,false,false,-16.11,6.26,4.11,1.3,622.78,-1.23,nasdaq_public_chart_api
+MET,MetLife,Financials,2026-10-26,100.04,98.59,97.31,true,true,2.4,2.62,2.28,1.09,100.21,0.17,nasdaq_public_chart_api
+MTD,Mettler Toledo,Health Care,2026-10-26,1669.62,1584.86,1471.22,true,true,10.45,20.26,2.2,0.79,1688.47,1.13,nasdaq_public_chart_api
+MGM,MGM Resorts,Consumer Discretionary,2026-10-26,28.54,29.58,35.99,false,false,-12.4,-38.23,3.35,1.04,27.96,-2.01,nasdaq_public_chart_api
+MCHP,Microchip Technology,Information Technology,2026-10-26,75.9,76.37,75.13,false,true,-3.55,0.25,4.2,1.0,79.9,5.27,nasdaq_public_chart_api
+MU,Micron Technology,Information Technology,2026-10-26,903.7,979.18,981.37,false,false,-16.5,10.14,5.64,0.96,932.64,3.2,nasdaq_public_chart_api
+MSFT,Microsoft,Information Technology,2026-10-26,532.6,527.87,509.17,true,true,3.18,35.4,2.09,0.89,531.13,-0.28,nasdaq_public_chart_api
+MAA,Mid-America Apartment Communities,Real Estate,2026-10-26,119.58,117.07,122.45,true,false,1.04,-11.84,1.72,0.92,118.4,-0.99,nasdaq_public_chart_api
+MRNA,Moderna,Health Care,2026-10-26,198.85,210.56,173.86,false,true,-0.02,256.33,11.68,1.78,200.26,0.71,nasdaq_public_chart_api
+MDLZ,Mondelez International,Consumer Staples,2026-10-26,62.97,61.32,61.82,true,true,4.51,0.78,2.16,1.01,62.05,-1.45,nasdaq_public_chart_api
+MPWR,Monolithic Power Systems,Information Technology,2026-10-26,1167.27,1312.13,1285.22,false,false,-14.64,-8.95,5.43,1.18,1199.51,2.76,nasdaq_public_chart_api
+MNST,Monster Beverage,Consumer Staples,2026-10-26,46.44,44.41,44.82,true,true,7.72,-4.97,2.24,1.03,45.48,-2.07,nasdaq_public_chart_api
+MCO,Moody's Corporation,Financials,2026-10-26,484.45,466.67,477.82,true,true,3.36,0.05,2.62,1.03,471.78,-2.62,nasdaq_public_chart_api
+MS,Morgan Stanley,Financials,2026-10-26,183.49,186.06,200.19,false,false,-6.53,-13.28,2.94,1.11,187.51,2.19,nasdaq_public_chart_api
+MOS,Mosaic Company (The),Materials,2026-10-26,17.71,19.42,22.34,false,false,-23.03,-23.27,3.93,0.97,18.59,5.0,nasdaq_public_chart_api
+MSI,Motorola Solutions,Information Technology,2026-10-26,485.62,457.03,464.84,true,true,6.29,10.29,1.7,0.81,482.69,-0.6,nasdaq_public_chart_api
+MSCI,MSCI,Financials,2026-10-26,617.67,569.79,563.03,true,true,12.03,6.61,2.22,0.89,603.54,-2.29,nasdaq_public_chart_api
+NDAQ,"Nasdaq, Inc.",Financials,2026-10-26,104.72,94.51,95.02,true,true,11.94,9.13,2.17,0.94,104.12,-0.57,nasdaq_public_chart_api
+NTAP,NetApp,Information Technology,2026-10-26,222.08,221.01,203.72,true,true,10.41,27.24,4.15,1.18,229.49,3.34,nasdaq_public_chart_api
+NFLX,Netflix,Communication Services,2026-10-26,63.9,68.89,73.98,false,false,-10.18,-11.73,3.45,1.17,62.69,-1.9,nasdaq_public_chart_api
+NEM,Newmont,Materials,2026-10-26,110.39,115.29,121.52,false,false,-9.09,20.62,3.57,0.92,112.17,1.61,nasdaq_public_chart_api
+NWSA,News Corp (Class A),Communication Services,2026-10-26,30.59,29.55,29.79,true,true,7.37,8.55,1.98,0.81,29.95,-2.09,nasdaq_public_chart_api
+NWS,News Corp (Class B),Communication Services,2026-10-26,33.47,32.47,33.12,true,true,5.42,5.22,1.89,0.77,32.78,-2.06,nasdaq_public_chart_api
+NEE,NextEra Energy,Utilities,2026-10-26,82.04,78.3,80.52,true,true,7.83,-8.11,1.87,0.92,82.2,0.2,nasdaq_public_chart_api
+NKE,"Nike, Inc.",Consumer Discretionary,2026-10-26,37.91,35.95,37.12,true,true,6.04,-11.94,2.77,0.94,37.44,-1.25,nasdaq_public_chart_api
+NI,NiSource,Utilities,2026-10-26,43.44,41.27,41.03,true,true,10.2,-5.01,1.71,0.92,43.46,0.05,nasdaq_public_chart_api
+NDSN,Nordson Corporation,Industrials,2026-10-26,321.98,327.71,322.59,false,false,-1.16,6.39,2.37,1.13,324.21,0.69,nasdaq_public_chart_api
+NSC,Norfolk Southern,Industrials,2026-10-26,333.99,321.28,326.55,true,true,6.71,-1.43,1.7,0.96,337.77,1.13,nasdaq_public_chart_api
+NTRS,Northern Trust,Financials,2026-10-26,169.55,167.92,176.83,true,false,-3.52,-6.25,2.41,1.04,170.72,0.69,nasdaq_public_chart_api
+NOC,Northrop Grumman,Industrials,2026-10-26,565.41,504.03,521.98,true,true,10.75,2.95,2.61,1.07,553.3,-2.14,nasdaq_public_chart_api
+NCLH,Norwegian Cruise Line Holdings,Consumer Discretionary,2026-10-26,15.25,15.2,15.44,true,false,4.38,-28.13,4.25,0.9,15.88,4.16,nasdaq_public_chart_api
+NRG,NRG Energy,Utilities,2026-10-26,93.61,100.33,106.32,false,false,-6.74,-26.61,5.16,1.23,95.45,1.97,nasdaq_public_chart_api
+NUE,Nucor,Materials,2026-10-26,257.35,251.29,252.48,true,true,4.08,-3.11,2.9,0.99,271.77,5.61,nasdaq_public_chart_api
+NVDA,Nvidia,Information Technology,2026-10-26,216.0,224.9,222.3,false,false,-4.03,9.64,2.84,0.87,217.71,0.79,nasdaq_public_chart_api
+NVR,"NVR, Inc.",Consumer Discretionary,2026-10-26,5727.77,5951.42,6149.3,false,false,-9.05,-11.49,3.82,1.44,5714.81,-0.23,nasdaq_public_chart_api
+NXPI,NXP Semiconductors,Information Technology,2026-10-26,245.83,234.92,230.56,true,true,3.26,-5.13,3.81,1.07,251.76,2.41,nasdaq_public_chart_api
+ORLY,O'Reilly Automotive,Consumer Discretionary,2026-10-26,91.05,87.3,87.29,true,true,5.73,-0.13,2.02,0.88,89.65,-1.54,nasdaq_public_chart_api
+OXY,Occidental Petroleum,Energy,2026-10-26,64.07,60.39,59.94,true,true,12.68,18.8,2.47,0.84,62.88,-1.86,nasdaq_public_chart_api
+ODFL,Old Dominion,Industrials,2026-10-26,182.47,182.58,186.04,false,false,5.29,-19.36,2.66,0.8,186.16,2.02,nasdaq_public_chart_api
+OMC,Omnicom Group,Communication Services,2026-10-26,79.83,77.81,80.39,true,false,4.83,-7.41,3.06,1.07,78.3,-1.92,nasdaq_public_chart_api
+ON,ON Semiconductor,Information Technology,2026-10-26,74.06,77.32,75.01,false,false,-4.07,-12.24,4.68,1.01,78.61,6.14,nasdaq_public_chart_api
+OKE,Oneok,Energy,2026-10-26,96.36,90.95,92.82,true,true,8.72,8.51,2.37,0.9,95.7,-0.68,nasdaq_public_chart_api
+ORCL,Oracle Corporation,Information Technology,2026-10-26,126.06,135.24,142.4,false,false,-8.05,5.09,5.22,1.03,131.74,4.5,nasdaq_public_chart_api
+OTIS,Otis Worldwide,Industrials,2026-10-26,75.27,68.77,69.39,true,true,14.15,2.26,1.86,0.86,74.46,-1.08,nasdaq_public_chart_api
+PCAR,Paccar,Industrials,2026-10-26,104.37,109.02,116.92,false,false,-6.23,-24.48,2.51,1.02,101.71,-2.55,nasdaq_public_chart_api
+PKG,Packaging Corporation of America,Materials,2026-10-26,253.74,234.49,237.21,true,true,6.98,0.2,1.93,0.73,252.6,-0.45,nasdaq_public_chart_api
+PLTR,Palantir Technologies,Information Technology,2026-10-26,198.84,196.08,185.25,true,true,4.83,60.96,4.58,1.01,199.47,0.32,nasdaq_public_chart_api
+PANW,Palo Alto Networks,Information Technology,2026-10-26,390.46,384.17,370.48,true,true,4.19,22.4,4.93,1.19,402.88,3.18,nasdaq_public_chart_api
+PH,Parker Hannifin,Industrials,2026-10-26,904.43,951.31,965.59,false,false,-7.55,-8.73,2.78,1.14,900.8,-0.4,nasdaq_public_chart_api
+PAYX,Paychex,Industrials,2026-10-26,115.7,106.92,113.7,true,true,14.14,-2.67,2.37,0.84,109.54,-5.32,nasdaq_public_chart_api
+PYPL,PayPal,Financials,2026-10-26,54.99,55.47,55.72,false,false,-0.09,-5.71,2.13,0.69,55.77,1.42,nasdaq_public_chart_api
+PNR,Pentair,Industrials,2026-10-26,55.22,53.19,56.7,true,false,2.91,-17.3,2.48,0.9,62.32,12.86,nasdaq_public_chart_api
+PEP,PepsiCo,Consumer Staples,2026-10-26,135.46,129.59,134.01,true,true,5.31,-5.18,2.39,1.2,132.7,-2.04,nasdaq_public_chart_api
+PFE,Pfizer,Health Care,2026-10-26,29.79,28.84,28.36,true,true,3.91,17.98,1.96,0.93,29.7,-0.29,nasdaq_public_chart_api
+PCG,PG&E Corporation,Utilities,2026-10-26,12.85,12.8,14.02,true,false,4.13,-27.73,3.14,1.26,13.01,1.21,nasdaq_public_chart_api
+PM,Philip Morris International,Consumer Staples,2026-10-26,201.87,197.41,192.76,true,true,5.98,0.85,2.82,1.11,203.16,0.64,nasdaq_public_chart_api
+PSX,Phillips 66,Energy,2026-10-26,288.85,279.47,263.6,true,true,12.94,40.32,3.21,1.05,270.84,-6.24,nasdaq_public_chart_api
+PNW,Pinnacle West Capital,Utilities,2026-10-26,105.34,99.99,97.8,true,true,14.82,0.01,1.76,0.98,105.71,0.35,nasdaq_public_chart_api
+PNC,PNC Financial Services,Financials,2026-10-26,225.84,220.38,231.7,true,false,0.09,-10.24,2.05,1.0,227.27,0.63,nasdaq_public_chart_api
+PPG,PPG Industries,Materials,2026-10-26,109.9,106.74,108.39,true,true,2.21,-7.65,2.39,0.92,111.81,1.73,nasdaq_public_chart_api
+PPL,PPL Corporation,Utilities,2026-10-26,34.92,34.11,34.11,true,true,9.02,-3.88,1.67,0.93,34.96,0.11,nasdaq_public_chart_api
+PFG,Principal Financial Group,Financials,2026-10-26,110.13,109.46,112.13,true,false,-4.04,-3.47,1.98,0.9,112.67,2.31,nasdaq_public_chart_api
+PG,Procter & Gamble,Consumer Staples,2026-10-26,159.92,153.3,148.67,true,true,9.36,7.42,2.07,1.15,158.99,-0.58,nasdaq_public_chart_api
+PGR,Progressive Corporation,Financials,2026-10-26,229.25,217.61,216.41,true,true,11.56,4.43,2.58,1.11,225.16,-1.79,nasdaq_public_chart_api
+PLD,Prologis,Real Estate,2026-10-26,126.31,128.51,134.05,false,false,-5.07,-14.14,2.35,1.14,126.17,-0.11,nasdaq_public_chart_api
+PRU,Prudential Financial,Financials,2026-10-26,115.79,114.28,117.53,true,false,-3.06,-6.57,2.18,1.06,115.12,-0.58,nasdaq_public_chart_api
+PTC,PTC Inc.,Information Technology,2026-10-26,194.25,183.32,159.3,true,true,40.64,52.34,0.47,0.14,194.31,0.03,nasdaq_public_chart_api
+PEG,Public Service Enterprise Group,Utilities,2026-10-26,72.11,70.49,71.38,true,true,7.59,-8.66,1.82,0.95,72.29,0.25,nasdaq_public_chart_api
+PSA,Public Storage,Real Estate,2026-10-26,306.97,292.13,299.41,true,true,6.6,-7.11,1.96,0.89,312.03,1.65,nasdaq_public_chart_api
+PHM,PulteGroup,Consumer Discretionary,2026-10-26,121.31,114.68,119.72,true,true,1.22,-9.97,3.17,1.04,121.5,0.15,nasdaq_public_chart_api
+Q,Qnity Electronics,Information Technology,2026-10-26,114.07,122.62,123.16,false,false,-8.52,-10.81,4.89,0.97,118.5,3.88,nasdaq_public_chart_api
+QCOM,Qualcomm,Information Technology,2026-10-26,179.6,177.78,176.39,true,true,-11.08,10.27,3.4,0.94,181.88,1.27,nasdaq_public_chart_api
+PWR,Quanta Services,Industrials,2026-10-26,563.93,646.27,639.18,false,false,-13.13,-4.15,5.56,1.45,579.0,2.67,nasdaq_public_chart_api
+DGX,Quest Diagnostics,Health Care,2026-10-26,242.95,234.43,237.77,true,true,2.81,2.97,2.64,1.18,240.21,-1.13,nasdaq_public_chart_api
+RL,Ralph Lauren Corporation,Consumer Discretionary,2026-10-26,386.95,372.85,359.8,true,true,8.36,2.51,2.54,0.8,389.94,0.77,nasdaq_public_chart_api
+RJF,Raymond James Financial,Financials,2026-10-26,158.07,157.82,166.11,true,false,-1.13,-10.79,1.96,0.81,158.82,0.47,nasdaq_public_chart_api
+RDDT,Reddit,Communication Services,2026-10-26,138.45,151.5,153.02,false,false,-7.6,-22.41,6.03,1.02,137.73,-0.52,nasdaq_public_chart_api
+O,Realty Income,Real Estate,2026-10-26,57.16,55.08,57.97,true,false,2.92,-13.04,1.74,1.09,56.85,-0.53,nasdaq_public_chart_api
+REG,Regency Centers,Real Estate,2026-10-26,73.67,72.31,73.88,true,false,0.6,-9.02,1.65,1.01,74.06,0.53,nasdaq_public_chart_api
+REGN,Regeneron Pharmaceuticals,Health Care,2026-10-26,807.67,769.03,791.46,true,true,2.49,16.18,2.7,0.96,808.82,0.14,nasdaq_public_chart_api
+RF,Regions Financial Corporation,Financials,2026-10-26,28.61,27.37,28.72,true,false,3.58,-8.51,2.01,0.9,28.59,-0.05,nasdaq_public_chart_api
+RSG,Republic Services,Industrials,2026-10-26,241.31,222.85,220.9,true,true,13.77,11.39,1.92,1.01,235.18,-2.54,nasdaq_public_chart_api
+RMD,ResMed,Health Care,2026-10-26,253.2,234.35,230.11,true,true,14.05,21.17,2.28,0.85,251.52,-0.66,nasdaq_public_chart_api
+RVTY,Revvity,Health Care,2026-10-26,160.39,154.35,140.95,true,true,6.14,43.83,3.48,0.99,161.76,0.85,nasdaq_public_chart_api
+HOOD,Robinhood Markets,Financials,2026-10-26,92.84,105.45,108.81,false,false,-22.24,0.09,5.64,0.96,96.07,3.48,nasdaq_public_chart_api
+ROK,Rockwell Automation,Industrials,2026-10-26,429.89,434.34,430.31,false,false,-0.98,-8.76,2.85,1.05,440.49,2.47,nasdaq_public_chart_api
+ROL,"Rollins, Inc.",Industrials,2026-10-26,34.55,32.24,33.69,true,true,15.05,-11.43,3.25,1.34,33.86,-2.0,nasdaq_public_chart_api
+ROP,Roper Technologies,Information Technology,2026-10-26,441.65,379.86,388.54,true,true,23.17,12.98,2.65,0.99,436.62,-1.14,nasdaq_public_chart_api
+ROST,Ross Stores,Consumer Discretionary,2026-10-26,234.11,230.91,231.5,true,true,-0.85,-6.74,2.41,1.14,229.52,-1.96,nasdaq_public_chart_api
+RCL,Royal Caribbean Group,Consumer Discretionary,2026-10-26,280.6,278.98,271.38,true,true,15.62,-12.99,3.25,0.78,297.4,5.99,nasdaq_public_chart_api
+RTX,RTX Corporation,Industrials,2026-10-26,197.48,187.89,196.6,true,true,4.27,-9.65,2.61,1.15,195.39,-1.06,nasdaq_public_chart_api
+SPGI,S&P Global,Financials,2026-10-26,450.65,415.13,418.76,true,true,11.74,6.2,2.08,0.81,449.45,-0.27,nasdaq_public_chart_api
+CRM,Salesforce,Information Technology,2026-10-26,247.61,236.55,236.01,true,true,5.81,36.42,3.46,0.87,241.78,-2.35,nasdaq_public_chart_api
+SNDK,Sandisk,Information Technology,2026-10-26,1255.58,1508.1,1585.74,false,false,-29.37,14.55,7.53,0.93,1296.35,3.25,nasdaq_public_chart_api
+SBAC,SBA Communications,Real Estate,2026-10-26,185.92,174.9,179.12,true,true,11.9,6.28,3.94,1.4,181.48,-2.39,nasdaq_public_chart_api
+SLB,Schlumberger,Energy,2026-10-26,53.08,49.6,52.46,true,true,2.99,6.2,2.98,0.95,53.83,1.41,nasdaq_public_chart_api
+STX,Seagate Technology,Information Technology,2026-10-26,644.21,759.1,816.5,false,false,-29.74,-13.79,6.66,1.04,672.46,4.39,nasdaq_public_chart_api
+SRE,Sempra,Utilities,2026-10-26,84.24,81.23,82.31,true,true,8.1,-6.98,1.57,0.76,84.48,0.28,nasdaq_public_chart_api
+NOW,ServiceNow,Information Technology,2026-10-26,158.18,143.01,138.17,true,true,16.63,42.99,3.92,0.82,155.44,-1.73,nasdaq_public_chart_api
+SHW,Sherwin-Williams,Materials,2026-10-26,335.16,327.64,331.07,true,true,1.84,-5.39,2.46,0.98,328.71,-1.92,nasdaq_public_chart_api
+SPG,Simon Property Group,Real Estate,2026-10-26,212.69,203.38,207.79,true,true,3.84,-10.14,1.74,0.98,211.99,-0.33,nasdaq_public_chart_api
+SKYD,Skydance,Communication Services,2026-10-26,7.49,7.57,8.21,false,false,-8.27,13.21,8.36,1.9,7.58,1.13,nasdaq_public_chart_api
+SWKS,Skyworks Solutions,Information Technology,2026-10-26,83.34,81.44,78.91,true,true,-6.72,28.85,4.09,0.98,85.28,2.32,nasdaq_public_chart_api
+SJM,J.M. Smucker Company (The),Consumer Staples,2026-10-26,128.64,122.7,123.71,true,true,6.31,4.55,2.41,0.99,127.08,-1.21,nasdaq_public_chart_api
+SW,Smurfit Westrock,Materials,2026-10-26,42.24,41.93,44.46,true,false,-8.99,-16.85,2.98,0.81,42.53,0.69,nasdaq_public_chart_api
+SNA,Snap-on,Industrials,2026-10-26,357.88,363.8,374.72,false,false,-3.07,-14.65,2.3,1.18,355.92,-0.55,nasdaq_public_chart_api
+SOLV,Solventum,Health Care,2026-10-26,85.81,86.85,88.51,false,false,-4.12,-0.42,2.54,0.95,83.48,-2.71,nasdaq_public_chart_api
+SO,Southern Company,Utilities,2026-10-26,92.57,87.75,87.73,true,true,11.69,-4.35,1.76,1.05,92.14,-0.46,nasdaq_public_chart_api
+LUV,Southwest Airlines,Industrials,2026-10-26,42.85,41.16,40.63,true,true,0.4,-7.47,3.74,1.02,43.45,1.41,nasdaq_public_chart_api
+SWK,Stanley Black & Decker,Industrials,2026-10-26,99.37,91.86,93.23,true,true,8.72,5.5,2.8,0.82,99.37,0.0,nasdaq_public_chart_api
+SBUX,Starbucks,Consumer Discretionary,2026-10-26,102.69,96.04,99.41,true,true,8.25,-0.4,2.6,1.0,102.57,-0.12,nasdaq_public_chart_api
+STT,State Street Corporation,Financials,2026-10-26,169.94,171.76,181.5,false,false,-6.29,-6.92,2.81,1.18,171.51,0.92,nasdaq_public_chart_api
+STLD,Steel Dynamics,Materials,2026-10-26,237.55,237.4,237.04,true,true,1.66,-8.54,3.5,1.09,244.02,2.72,nasdaq_public_chart_api
+STE,Steris,Health Care,2026-10-26,230.12,217.86,220.2,true,true,10.14,-0.1,2.36,0.99,229.09,-0.45,nasdaq_public_chart_api
+SYK,Stryker Corporation,Health Care,2026-10-26,306.13,287.53,295.14,true,true,12.4,-11.68,2.67,1.01,303.41,-0.89,nasdaq_public_chart_api
+SMCI,Supermicro,Information Technology,2026-10-26,32.69,38.25,38.44,false,false,-24.43,14.9,8.2,1.28,35.01,7.1,nasdaq_public_chart_api
+SYF,Synchrony Financial,Financials,2026-10-26,74.83,73.02,75.32,true,false,2.59,-2.97,2.67,0.98,75.5,0.89,nasdaq_public_chart_api
+SNPS,Synopsys,Information Technology,2026-10-26,454.33,469.73,431.53,false,true,6.71,18.37,3.78,1.0,473.3,4.18,nasdaq_public_chart_api
+SYY,Sysco,Consumer Staples,2026-10-26,82.16,79.79,80.53,true,true,4.72,-3.57,1.9,0.92,82.09,-0.09,nasdaq_public_chart_api
+TMUS,T-Mobile US,Communication Services,2026-10-26,146.93,158.45,169.68,false,false,-11.18,-19.44,4.55,1.71,146.67,-0.18,nasdaq_public_chart_api
+TROW,T. Rowe Price,Financials,2026-10-26,103.49,103.2,106.19,true,false,-1.91,-14.95,2.3,1.02,103.76,0.26,nasdaq_public_chart_api
+TTWO,Take-Two Interactive,Communication Services,2026-10-26,203.35,205.36,214.11,false,false,0.95,-17.88,3.14,1.01,200.98,-1.17,nasdaq_public_chart_api
+TPR,"Tapestry, Inc.",Consumer Discretionary,2026-10-26,110.9,115.94,119.03,false,false,-2.62,-26.51,2.96,0.87,110.45,-0.41,nasdaq_public_chart_api
+TRGP,Targa Resources,Energy,2026-10-26,304.68,288.33,289.11,true,true,9.66,16.45,2.73,1.0,302.38,-0.75,nasdaq_public_chart_api
+TGT,Target Corporation,Consumer Staples,2026-10-26,148.53,154.17,157.5,false,false,-5.67,3.0,3.01,1.05,148.27,-0.18,nasdaq_public_chart_api
+TEL,TE Connectivity,Information Technology,2026-10-26,213.86,214.41,209.93,false,true,-2.16,-0.2,2.55,0.82,220.31,3.01,nasdaq_public_chart_api
+TDY,Teledyne Technologies,Information Technology,2026-10-26,645.47,617.62,617.57,true,true,5.1,-0.65,2.49,0.98,649.75,0.66,nasdaq_public_chart_api
+TER,Teradyne,Information Technology,2026-10-26,309.0,374.64,372.26,false,false,-22.44,-3.63,7.02,1.23,326.54,5.67,nasdaq_public_chart_api
+TSLA,"Tesla, Inc.",Consumer Discretionary,2026-10-26,391.62,371.58,364.76,true,true,5.24,27.38,3.36,0.87,405.73,3.6,nasdaq_public_chart_api
+TXN,Texas Instruments,Information Technology,2026-10-26,298.12,284.83,272.77,true,true,7.21,7.6,3.44,1.09,307.44,3.13,nasdaq_public_chart_api
+TPL,Texas Pacific Land Corporation,Energy,2026-10-26,333.46,345.93,356.26,false,false,-2.23,-14.37,3.49,0.83,327.92,-1.66,nasdaq_public_chart_api
+TXT,Textron,Industrials,2026-10-26,78.11,75.93,78.88,true,false,1.98,-13.17,2.24,0.94,78.14,0.04,nasdaq_public_chart_api
+TMO,Thermo Fisher Scientific,Health Care,2026-10-26,684.89,672.42,646.89,true,true,1.47,18.82,3.02,1.09,697.29,1.81,nasdaq_public_chart_api
+TJX,TJX Companies,Consumer Discretionary,2026-10-26,143.7,140.71,136.22,true,true,10.49,-10.63,1.79,0.88,140.24,-2.41,nasdaq_public_chart_api
+TKO,TKO Group Holdings,Communication Services,2026-10-26,171.23,176.29,184.33,false,false,-6.26,-7.97,2.75,0.9,171.6,0.22,nasdaq_public_chart_api
+TSCO,Tractor Supply,Consumer Discretionary,2026-10-26,32.53,32.73,33.46,false,false,0.81,3.4,4.25,1.37,32.2,-1.03,nasdaq_public_chart_api
+TT,Trane Technologies,Industrials,2026-10-26,455.03,464.07,452.41,false,true,0.13,-3.19,3.16,1.15,460.24,1.14,nasdaq_public_chart_api
+TDG,TransDigm Group,Industrials,2026-10-26,1129.7,1113.32,1134.97,true,false,1.21,-13.63,2.43,0.95,1131.84,0.19,nasdaq_public_chart_api
+TRV,Travelers Companies (The),Financials,2026-10-26,400.17,377.15,372.05,true,true,10.23,0.74,2.11,1.07,396.0,-1.04,nasdaq_public_chart_api
+TRMB,Trimble Inc.,Information Technology,2026-10-26,63.37,60.19,59.31,true,true,9.54,8.55,2.6,0.83,63.23,-0.22,nasdaq_public_chart_api
+TFC,Truist Financial,Financials,2026-10-26,48.91,46.74,48.61,true,true,2.62,-7.7,1.93,0.9,48.8,-0.24,nasdaq_public_chart_api
+TWLO,Twilio,Information Technology,2026-10-26,263.65,275.68,255.56,false,true,-4.41,35.67,5.64,1.18,254.0,-3.66,nasdaq_public_chart_api
+TYL,Tyler Technologies,Information Technology,2026-10-26,386.38,349.18,348.57,true,true,18.68,15.91,2.92,0.75,379.0,-1.91,nasdaq_public_chart_api
+TSN,Tyson Foods,Consumer Staples,2026-10-26,56.4,53.55,53.9,true,true,10.76,-7.81,1.77,0.77,55.7,-1.23,nasdaq_public_chart_api
+USB,U.S. Bancorp,Financials,2026-10-26,59.7,57.88,60.17,true,false,0.62,-7.34,1.98,0.97,59.76,0.09,nasdaq_public_chart_api
+UBER,Uber,Industrials,2026-10-26,66.13,69.24,72.1,false,false,-5.01,-6.52,2.77,0.84,65.86,-0.4,nasdaq_public_chart_api
+UDR,"UDR, Inc.",Real Estate,2026-10-26,35.7,34.23,35.23,true,true,5.5,-8.46,1.94,1.01,35.48,-0.62,nasdaq_public_chart_api
+ULTA,Ulta Beauty,Consumer Discretionary,2026-10-26,625.33,578.65,555.21,true,true,14.7,24.69,2.73,0.92,628.0,0.43,nasdaq_public_chart_api
+UNP,Union Pacific Corporation,Industrials,2026-10-26,296.97,283.02,287.49,true,true,8.47,0.86,1.91,1.0,299.25,0.77,nasdaq_public_chart_api
+UAL,United Airlines Holdings,Industrials,2026-10-26,100.69,104.73,108.66,false,false,-11.67,-18.65,4.81,1.18,103.59,2.88,nasdaq_public_chart_api
+UPS,United Parcel Service,Industrials,2026-10-26,100.32,96.06,98.85,true,true,6.77,-4.94,2.05,0.84,105.78,5.44,nasdaq_public_chart_api
+URI,United Rentals,Industrials,2026-10-26,1121.9,1056.43,1044.79,true,true,7.15,2.81,3.56,1.16,1175.56,4.78,nasdaq_public_chart_api
+UNH,UnitedHealth Group,Health Care,2026-10-26,410.7,390.86,388.75,true,true,9.06,-4.22,3.29,1.22,409.75,-0.23,nasdaq_public_chart_api
+UHS,Universal Health Services,Health Care,2026-10-26,185.71,180.46,177.01,true,true,3.83,11.73,2.5,0.83,174.43,-6.07,nasdaq_public_chart_api
+VLO,Valero Energy,Energy,2026-10-26,426.76,427.36,394.11,false,true,10.22,42.79,4.14,1.17,392.82,-7.95,nasdaq_public_chart_api
+VEEV,Veeva Systems,Health Care,2026-10-26,318.18,299.39,278.42,true,true,13.36,58.14,3.08,0.8,312.63,-1.74,nasdaq_public_chart_api
+VTR,Ventas,Real Estate,2026-10-26,87.42,84.34,87.82,true,false,0.96,-10.92,2.11,1.02,83.39,-4.6,nasdaq_public_chart_api
+VLTO,Veralto,Industrials,2026-10-26,103.35,98.9,97.63,true,true,6.39,4.96,1.98,0.95,102.74,-0.59,nasdaq_public_chart_api
+VRSN,Verisign,Information Technology,2026-10-26,308.72,298.22,293.48,true,true,7.47,9.81,2.87,1.07,304.8,-1.27,nasdaq_public_chart_api
+VRSK,Verisk Analytics,Industrials,2026-10-26,196.19,179.86,180.85,true,true,15.94,-7.57,3.42,1.01,187.53,-4.41,nasdaq_public_chart_api
+VZ,Verizon,Communication Services,2026-10-26,43.1,44.72,47.44,false,false,-8.45,-10.56,3.61,1.65,43.78,1.59,nasdaq_public_chart_api
+VRTX,Vertex Pharmaceuticals,Health Care,2026-10-26,517.49,510.14,522.94,true,false,-1.65,5.53,2.8,1.1,517.5,0.0,nasdaq_public_chart_api
+VRT,Vertiv,Industrials,2026-10-26,199.78,227.99,245.82,false,false,-21.12,-25.89,5.92,1.04,210.32,5.28,nasdaq_public_chart_api
+VTRS,Viatris,Health Care,2026-10-26,18.29,17.89,17.23,true,true,2.58,2.41,2.66,0.97,18.75,2.49,nasdaq_public_chart_api
+VICI,Vici Properties,Real Estate,2026-10-26,24.02,23.12,24.33,true,false,2.17,-11.37,1.9,1.1,23.73,-1.21,nasdaq_public_chart_api
+V,Visa Inc.,Financials,2026-10-26,404.16,387.08,377.87,true,true,10.01,10.25,1.8,0.91,398.6,-1.38,nasdaq_public_chart_api
+VST,Vistra Corp.,Utilities,2026-10-26,141.73,150.3,145.07,false,false,2.36,-4.65,6.33,1.37,146.35,3.26,nasdaq_public_chart_api
+VMRK,Vivmark Residential,Real Estate,2026-10-26,62.78,61.14,63.12,true,false,2.06,-7.8,1.82,0.92,62.42,-0.57,nasdaq_public_chart_api
+VMC,Vulcan Materials Company,Materials,2026-10-26,261.48,251.01,255.87,true,true,6.73,-9.34,2.29,0.86,262.36,0.34,nasdaq_public_chart_api
+WRB,W. R. Berkley Corporation,Financials,2026-10-26,73.79,72.03,70.24,true,true,10.43,-3.12,2.15,1.01,72.06,-2.34,nasdaq_public_chart_api
+GWW,W. W. Grainger,Industrials,2026-10-26,1357.6,1306.93,1297.33,true,true,9.21,-2.95,2.1,0.98,1335.12,-1.66,nasdaq_public_chart_api
+WAB,Wabtec,Industrials,2026-10-26,277.67,285.22,286.64,false,false,-3.59,-9.2,2.9,1.21,277.81,0.05,nasdaq_public_chart_api
+WMT,Walmart,Consumer Staples,2026-10-26,120.29,112.77,109.53,true,true,11.4,6.36,2.14,0.97,118.97,-1.1,nasdaq_public_chart_api
+DIS,Walt Disney Company (The),Communication Services,2026-10-26,110.4,107.89,106.97,true,true,4.0,11.64,1.88,0.88,109.92,-0.44,nasdaq_public_chart_api
+WM,Waste Management,Industrials,2026-10-26,241.02,217.84,217.28,true,true,16.53,0.67,1.81,0.94,235.18,-2.43,nasdaq_public_chart_api
+WAT,Waters Corporation,Health Care,2026-10-26,455.98,439.38,425.01,true,true,5.18,18.78,3.03,1.0,465.83,2.16,nasdaq_public_chart_api
+WEC,WEC Energy Group,Utilities,2026-10-26,111.12,105.63,105.56,true,true,9.53,-2.19,1.68,1.0,110.99,-0.12,nasdaq_public_chart_api
+WFC,Wells Fargo,Financials,2026-10-26,82.65,81.8,84.52,true,false,-0.39,-4.86,2.52,1.05,82.75,0.13,nasdaq_public_chart_api
+WELL,Welltower,Real Estate,2026-10-26,240.61,231.03,233.89,true,true,3.99,-1.22,2.07,0.94,225.57,-6.25,nasdaq_public_chart_api
+WST,West Pharmaceutical Services,Health Care,2026-10-26,394.73,377.54,362.97,true,true,6.56,17.13,2.02,0.72,395.51,0.2,nasdaq_public_chart_api
+WDC,Western Digital,Information Technology,2026-10-26,356.13,390.19,429.95,false,false,-22.04,-23.17,5.94,0.88,382.54,7.41,nasdaq_public_chart_api
+WY,Weyerhaeuser,Real Estate,2026-10-26,19.58,19.09,21.23,true,false,-2.15,-20.44,2.63,1.04,19.23,-1.76,nasdaq_public_chart_api
+WSM,"Williams-Sonoma, Inc.",Consumer Discretionary,2026-10-26,249.96,243.46,235.38,true,true,7.79,5.77,2.67,0.78,250.23,0.11,nasdaq_public_chart_api
+WMB,Williams Companies,Energy,2026-10-26,71.75,71.28,72.1,true,false,3.6,2.27,3.04,1.26,73.66,2.66,nasdaq_public_chart_api
+WTW,Willis Towers Watson,Financials,2026-10-26,324.67,303.65,315.88,true,true,10.44,2.69,2.37,1.0,316.98,-2.37,nasdaq_public_chart_api
+WDAY,"Workday, Inc.",Information Technology,2026-10-26,208.5,193.39,193.56,true,true,10.06,30.57,3.25,0.65,205.3,-1.53,nasdaq_public_chart_api
+WYNN,Wynn Resorts,Consumer Discretionary,2026-10-26,74.2,75.91,84.68,false,false,-8.53,-25.07,3.09,0.97,72.12,-2.8,nasdaq_public_chart_api
+XEL,Xcel Energy,Utilities,2026-10-26,77.86,74.3,74.73,true,true,11.55,-3.07,1.7,0.9,77.78,-0.1,nasdaq_public_chart_api
+XYL,Xylem Inc.,Industrials,2026-10-26,108.24,103.74,106.97,true,true,5.47,-13.39,2.14,0.89,94.47,-12.72,nasdaq_public_chart_api
+YUM,Yum! Brands,Consumer Discretionary,2026-10-26,149.47,145.0,145.72,true,true,7.82,-0.54,2.19,1.01,148.76,-0.48,nasdaq_public_chart_api
+ZBRA,Zebra Technologies,Information Technology,2026-10-26,384.15,381.05,366.49,true,true,3.81,35.07,2.64,0.72,379.49,-1.21,nasdaq_public_chart_api
+ZBH,Zimmer Biomet,Health Care,2026-10-26,97.44,92.52,95.1,true,true,7.03,1.77,2.39,0.88,96.38,-1.09,nasdaq_public_chart_api
+ZTS,Zoetis,Health Care,2026-10-26,80.97,75.37,74.73,true,true,13.96,4.46,2.25,0.77,78.86,-2.6,nasdaq_public_chart_api

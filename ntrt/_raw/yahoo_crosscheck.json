@@ -1,0 +1,246 @@
+{
+ "checked_at_utc": "2026-10-26T13:07:53Z",
+ "today_et": "2026-10-26",
+ "results": [
+  {
+   "ticker": "XNCR",
+   "yahoo_symbol": "XNCR",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "SGRY",
+   "yahoo_symbol": "SGRY",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "BRAI",
+   "yahoo_symbol": "BRAI",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "RRC",
+   "yahoo_symbol": "RRC",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "GFUZ",
+   "yahoo_symbol": "GFUZ",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "ARKO",
+   "yahoo_symbol": "ARKO",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "PBLS",
+   "yahoo_symbol": "PBLS",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "XLAB",
+   "yahoo_symbol": "XLAB",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "XP",
+   "yahoo_symbol": "XP",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "STNE",
+   "yahoo_symbol": "STNE",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "INTR",
+   "yahoo_symbol": "INTR",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "PICS",
+   "yahoo_symbol": "PICS",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "PAGS",
+   "yahoo_symbol": "PAGS",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "NU",
+   "yahoo_symbol": "NU",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "AGBK",
+   "yahoo_symbol": "AGBK",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  },
+  {
+   "ticker": "AFYA",
+   "yahoo_symbol": "AFYA",
+   "daily": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "premarket": {
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "notes": [
+    "no yahoo daily ref",
+    "no yahoo premarket bar"
+   ],
+   "verdict": "UNVERIFIED"
+  }
+ ]
+}
