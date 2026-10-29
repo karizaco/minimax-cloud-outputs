@@ -1,0 +1,304 @@
+market,symbol,company,exchange,currency,tier,close,change_pct,volume,mcap_local_bn,mcap_usd_bn,earnings_next_date,earnings_driven,catalyst
+Japan,TSE:6574,"Convano, Inc.",TSE,JPY,REACTION,1120,15.4639,261400,493.8613,3.1276,2026-11-13,N,no fresh catalyst found
+Japan,TSE:4528,"ONO Pharmaceutical Co., Ltd.",TSE,JPY,REACTION,2224.5,-9.9939,9730600,1160.7337,7.3508,2027-02-01,Y,"Q2 FY2026 interim (Apr-Sep) printed Oct 29: H1 revenue ¥232.5bn, -9.6% YoY, as domestic goods sales fell 33.9% on drug-price revisions and the termination of the Bristol-Myers Squibb Forxiga co-promotion; core OP ¥73.6bn +5.1%, core profit ¥56.8bn; FY guidance left unchanged"
+Japan,TSE:6501,"Hitachi, Ltd.",TSE,JPY,REACTION,5071,-9.7687,45384300,25414.4852,160.9476,2027-02-03,Y,Q2 net profit ¥227.1bn vs ¥280.6bn on a one-off cost overrun on a social-infrastructure project in Digital Systems & Services; record revenue ¥2.904tn +15%; FY net-profit guidance raised for a 2nd time to ¥920bn; interim DPS raised to ¥32; 52% of the ¥550bn buyback done - worst Nikkei performer
+Japan,TSE:6301,Komatsu Ltd.,TSE,JPY,REACTION,6300,-7.5569,11510600,6075.6495,38.4765,2027-02-02,N,no company-specific catalyst found; moved with the Japan machinery/electrification complex after Hitachi's print
+Japan,TSE:7419,"Nojima Co.,Ltd.",TSE,JPY,REACTION,1300,7.438,2512100,370.4471,2.346,2026-10-29,Y(date),no fresh catalyst headline found; screener lists a Q3 earnings date of today (2026-10-29)
+Japan,TSE:2002,Nisshin Seifun Group Inc.,TSE,JPY,REACTION,2153,7.008,2765400,550.5035,3.4863,2027-02-02,N,no fresh catalyst found
+Japan,TSE:141A,TRIAL Holdings.Inc.,TSE,JPY,REACTION,4070,6.8241,2904000,468.1172,2.9645,2026-11-12,N,no fresh catalyst found
+Japan,TSE:6701,NEC Corporation,TSE,JPY,REACTION,4954,-6.387,19672000,7185.7744,45.5068,2027-02-01,N,no company-specific catalyst found; moved with the Japan electrical-equipment complex after Hitachi's print
+Japan,TSE:6857,Advantest Corp.,TSE,JPY,REACTION,37030,6.012,24991600,24366.1289,154.3084,2027-02-03,N,no fresh catalyst found
+Japan,TSE:7276,"Koito Manufacturing Co., Ltd.",TSE,JPY,REACTION,2359,-5.9597,5210700,707.8876,4.483,2027-01-28,N,no fresh catalyst found
+Japan,TSE:5471,"Daido Steel Co., Ltd.",TSE,JPY,REACTION,2166.5,-5.2482,2974000,470.6271,2.9804,2027-01-28,N,no fresh catalyst found
+Japan,TSE:7282,"Toyoda Gosei Co., Ltd.",TSE,JPY,REACTION,950.7,-4.9775,21350900,587.781,3.7224,2027-02-02,N,no fresh catalyst found
+Japan,TSE:5801,"Furukawa Electric Co., Ltd.",TSE,JPY,REACTION,3065,4.7505,29768800,2058.4387,13.0359,2026-11-09,N,no fresh catalyst found
+Japan,TSE:6723,Renesas Electronics Corporation,TSE,JPY,REACTION,2956.5,-4.629,32287600,5508.9607,34.8877,2027-02-11,N,no fresh catalyst found
+Japan,TSE:5344,"MARUWA CO., LTD.",TSE,JPY,REACTION,56250,4.1667,787700,666.2374,4.2192,2027-02-03,N,no fresh catalyst found
+Japan,TSE:5805,SWCC Corporation,TSE,JPY,REACTION,2378,4.0245,2379400,350.0917,2.2171,2026-11-11,N,no fresh catalyst found
+Japan,TSE:7389,"Aichi Financial Group, Inc.",TSE,JPY,NOTABLE,1749,3.9834,2902800,413.0578,2.6159,,N,no fresh catalyst found
+Japan,TSE:2212,"Yamazaki Baking Co., Ltd.",TSE,JPY,NOTABLE,3767,3.9172,1816500,734.3582,4.6506,2027-02-16,N,no fresh catalyst found
+Japan,TSE:7173,"Tokyo Kiraboshi Financial Group, Inc.",TSE,JPY,NOTABLE,1519,3.6153,2669000,423.4137,2.6814,2026-10-30,N,no fresh catalyst found
+Japan,TSE:6861,Keyence Corporation,TSE,JPY,NOTABLE,76360,-3.5737,1714800,19205.6582,121.6276,2026-10-29,N,no fresh catalyst found
+Japan,TSE:8972,KDX Realty Investment Corporation,TSE,JPY,NOTABLE,134700,-3.51,22865,563.872,3.5709,2027-06-22,N,no fresh catalyst found
+Japan,TSE:5838,"Rakuten Bank, Ltd.",TSE,JPY,NOTABLE,6061,3.4653,1815200,1022.3126,6.4742,2026-11-11,N,no fresh catalyst found
+Japan,TSE:1959,KRAFTIA CORPORATION,TSE,JPY,NOTABLE,8049,3.4443,537800,551.2512,3.491,2027-01-29,N,no fresh catalyst found
+Japan,TSE:6594,Nidec Corporation,TSE,JPY,NOTABLE,1865,3.4387,10368300,2066.7942,13.0888,,N,no fresh catalyst found
+Japan,TSE:4004,Resonac Holdings Corporation,TSE,JPY,NOTABLE,13985,3.3247,3191700,2544.5581,16.1144,2026-11-11,N,no fresh catalyst found
+Japan,TSE:2501,Sapporo Breweries Limited,TSE,JPY,NOTABLE,1943,3.2961,1782400,733.292,4.6439,2026-11-11,N,no fresh catalyst found
+Japan,TSE:6902,DENSO CORPORATION,TSE,JPY,NOTABLE,1868.5,3.2891,44742700,4980.7428,31.5426,2027-01-29,N,no fresh catalyst found
+Japan,TSE:8411,"Mizuho Financial Group, Inc.",TSE,JPY,NOTABLE,7889,3.2727,13207900,18441.6128,116.789,2026-11-13,N,no fresh catalyst found
+Japan,TSE:4816,"Toei Animation Co., Ltd.",TSE,JPY,NOTABLE,2900,-3.172,5938800,625.6515,3.9622,2026-10-30,N,no fresh catalyst found
+Japan,TSE:9533,"TOHO GAS Co., Ltd.",TSE,JPY,NOTABLE,1235.5,3.1302,1424700,438.7826,2.7788,2027-01-22,N,no fresh catalyst found
+Japan,TSE:8368,"Hyakugo Bank, Ltd.",TSE,JPY,NOTABLE,2183,3.0689,4264300,537.089,3.4013,2026-11-10,N,no fresh catalyst found
+Japan,TSE:9506,"Tohoku Electric Power Company, Incorporated",TSE,JPY,NOTABLE,1334.5,3.0502,4868400,647.243,4.0989,2026-10-30,N,no fresh catalyst found
+Japan,TSE:7380,"Juroku Financial Group,Inc.",TSE,JPY,NOTABLE,2455,3.0214,3724500,422.0512,2.6728,2026-11-09,N,no fresh catalyst found
+Japan,TSE:2810,House Foods Group Inc.,TSE,JPY,NOTABLE,4469,3.0198,1229100,394.9831,2.5014,2026-11-09,N,no fresh catalyst found
+Japan,TSE:6754,Anritsu Corporation,TSE,JPY,NOTABLE,3120,3.0043,3626500,403.1286,2.553,2027-02-04,N,no fresh catalyst found
+Japan,TSE:8604,"Nomura Holdings, Inc.",TSE,JPY,NOTABLE,1476.5,2.9997,18916000,4124.8931,26.1226,2027-02-03,N,no fresh catalyst found
+Japan,TSE:3132,MACNICA HOLDINGS INC.,TSE,JPY,NOTABLE,4114,-2.9946,1855900,755.9899,4.7876,2026-11-02,N,no fresh catalyst found
+Japan,TSE:2782,"Seria Co., Ltd.",TSE,JPY,NOTABLE,4215,-2.9919,3912900,326.9159,2.0703,2026-10-30,N,no fresh catalyst found
+Japan,TSE:5334,"Niterra Co.,Ltd.",TSE,JPY,NOTABLE,3640,2.9703,6313000,1406.3104,8.906,2026-10-30,N,no fresh catalyst found
+Japan,TSE:3038,"Kobe Bussan Co., Ltd.",TSE,JPY,NOTABLE,2852.5,-2.9432,4855800,651.9453,4.1287,2026-12-11,N,no fresh catalyst found
+Japan,TSE:3350,Metaplanet Inc.,TSE,JPY,NOTABLE,264,-2.9412,17117800,371.0776,2.35,2026-11-13,N,no fresh catalyst found
+Japan,TSE:8386,"Hyakujushi Bank, Ltd.",TSE,JPY,NOTABLE,2885,2.8887,2669000,319.6953,2.0246,2026-11-10,N,no fresh catalyst found
+Japan,TSE:6702,Fujitsu Limited,TSE,JPY,NOTABLE,4322,-2.8764,13938100,7719.763,48.8885,2027-02-04,N,no fresh catalyst found
+Japan,TSE:6981,"Murata Manufacturing Co., Ltd.",TSE,JPY,NOTABLE,6890,2.8205,35166400,12359.1372,78.2693,2026-10-30,N,no fresh catalyst found
+Japan,TSE:4704,Trend Micro Incorporated,TSE,JPY,NOTABLE,7308,-2.8191,1878700,987.3519,6.2528,2026-11-12,N,no fresh catalyst found
+Japan,TSE:25935,"ITO EN,Ltd. Preferred Class 1",TSE,JPY,NOTABLE,1835,-2.8072,83400,326.7807,2.0695,2026-12-01,N,no fresh catalyst found
+Japan,TSE:5832,"Chugin Financial Group,Inc.",TSE,JPY,NOTABLE,3550,2.7794,1236100,633.9112,4.0145,2027-01-29,N,no fresh catalyst found
+Japan,TSE:6454,"Max Co., Ltd.",TSE,JPY,NOTABLE,1872,-2.7532,545800,357.8862,2.2665,2027-01-29,N,no fresh catalyst found
+Japan,TSE:4088,Air Water Inc.,TSE,JPY,NOTABLE,2877,2.75,906100,633.2641,4.0104,,N,no fresh catalyst found
+Japan,TSE:6752,Panasonic Holdings Corporation,TSE,JPY,NOTABLE,3683,-2.7462,18931200,8841.2591,55.9909,2026-10-30,N,no fresh catalyst found
+Japan,TSE:9507,"Shikoku Electric Power Company, Incorporated",TSE,JPY,NOTABLE,2176.5,2.7378,1249400,402.8747,2.5514,2026-10-30,N,no fresh catalyst found
+Japan,TSE:8316,"Sumitomo Mitsui Financial Group, Inc.",TSE,JPY,NOTABLE,3245,2.7224,46511600,23941.7417,151.6208,2026-11-13,N,no fresh catalyst found
+Japan,TSE:6952,"Casio Computer Co., Ltd.",TSE,JPY,NOTABLE,2251.5,-2.6799,1716400,506.6721,3.2087,2026-11-12,N,no fresh catalyst found
+Japan,TSE:8334,"Gunma Bank, Ltd.",TSE,JPY,NOTABLE,2638,2.6659,1798800,977.9503,6.1933,2026-11-09,N,no fresh catalyst found
+Japan,TSE:6532,"BayCurrent, Inc",TSE,JPY,NOTABLE,11630,2.6478,3912300,1699.9543,10.7657,2027-01-08,N,no fresh catalyst found
+Japan,TSE:4502,Takeda Pharmaceutical Co. Ltd.,TSE,JPY,NOTABLE,6471,2.6003,6864000,10067.2955,63.7552,2027-01-28,N,no fresh catalyst found
+Japan,TSE:3635,"Koei Tecmo Holdings Co., Ltd.",TSE,JPY,NOTABLE,1652.5,-2.5936,3315600,567.345,3.5929,2027-02-01,N,no fresh catalyst found
+Japan,TSE:8306,"Mitsubishi UFJ Financial Group, Inc.",TSE,JPY,NOTABLE,3464,2.5763,56035200,38010.7172,240.7183,2026-11-13,N,no fresh catalyst found
+Japan,TSE:8366,"Shiga Bank, Ltd.",TSE,JPY,NOTABLE,2597,2.5671,5104500,582.1049,3.6864,2026-11-13,N,no fresh catalyst found
+Japan,TSE:6753,Sharp Corporation,TSE,JPY,NOTABLE,550.8,-2.565,14958200,367.0262,2.3243,2026-11-09,N,no fresh catalyst found
+Japan,TSE:8359,"Hachijuni Nagano Bank, Ltd.",TSE,JPY,NOTABLE,2463.5,2.475,3403400,1100.4774,6.9692,2026-11-06,N,no fresh catalyst found
+Japan,TSE:8473,SBI Holdings Incorporated,TSE,JPY,NOTABLE,2954.5,2.4623,11335800,1906.6378,12.0746,2026-11-02,N,no fresh catalyst found
+Japan,TSE:8136,Sanrio Co. Ltd.,TSE,JPY,NOTABLE,1229,-2.4603,18509000,1598.3575,10.1222,2026-11-06,N,no fresh catalyst found
+Japan,TSE:3626,TISI Inc.,TSE,JPY,NOTABLE,4352,-2.4434,1316800,940.6635,5.9571,2026-11-04,N,no fresh catalyst found
+Japan,TSE:7806,"MTG Co., Ltd.",TSE,JPY,NOTABLE,9250,2.4363,1507400,355.9022,2.2539,2026-11-11,N,no fresh catalyst found
+Japan,TSE:9412,SKY Perfect JSAT Corporation,TSE,JPY,NOTABLE,1851,-2.4249,2592200,537.5305,3.4041,2026-11-04,N,no fresh catalyst found
+Japan,TSE:8795,"T&D Holdings, Inc.",TSE,JPY,NOTABLE,4876,2.4155,3239200,2284.6413,14.4684,2026-11-13,N,no fresh catalyst found
+Japan,TSE:6305,"Hitachi Construction Machinery Co., Ltd.",TSE,JPY,NOTABLE,5105,-2.4087,2957600,1112.3791,7.0446,2026-10-29,N,no fresh catalyst found
+Japan,TSE:543A,ARCHION Corporation,TSE,JPY,NOTABLE,284,-2.4055,25803000,853.2398,5.4035,2026-11-10,N,no fresh catalyst found
+Japan,TSE:3563,FOOD & LIFE COMPANIES LTD.,TSE,JPY,NOTABLE,5616,2.3697,3420900,1246.5427,7.8942,2026-11-06,N,no fresh catalyst found
+Japan,TSE:9147,"Nippon Express Holdings, Inc.",TSE,JPY,NOTABLE,5816,-2.367,2256900,1404.2038,8.8927,2026-11-11,N,no fresh catalyst found
+Japan,TSE:8524,"North Pacific Bank, Ltd.",TSE,JPY,NOTABLE,1211,2.3669,5707100,434.8424,2.7538,2026-11-13,N,no fresh catalyst found
+Japan,TSE:4307,"Nomura Research Institute,Ltd.",TSE,JPY,NOTABLE,5992,-2.3627,6584500,3362.6853,21.2956,2027-02-04,N,no fresh catalyst found
+Japan,TSE:7167,"Mebuki Financial Group, Inc.",TSE,JPY,NOTABLE,1523.5,2.3514,5931800,1292.5586,8.1857,2026-11-11,N,no fresh catalyst found
+Japan,TSE:9697,"Capcom Co., Ltd.",TSE,JPY,NOTABLE,3745,-2.3468,5207400,1603.9316,10.1575,2027-02-03,N,no fresh catalyst found
+Japan,TSE:8035,Tokyo Electron Ltd.,TSE,JPY,NOTABLE,10035,2.3457,19975200,22813.1638,144.4736,2026-10-30,N,no fresh catalyst found
+Japan,TSE:7564,"Workman Co., Ltd.",TSE,JPY,NOTABLE,5030,-2.3301,2061600,420.2935,2.6617,2026-11-09,N,no fresh catalyst found
+Japan,TSE:4021,Nissan Chemical Corporation,TSE,JPY,NOTABLE,8063,-2.3259,1046800,1101.1867,6.9737,2026-11-09,N,no fresh catalyst found
+Japan,TSE:8341,"77 Bank, Ltd.",TSE,JPY,NOTABLE,3653,2.3249,1148700,811.2263,5.1374,2026-11-12,N,no fresh catalyst found
+Japan,TSE:8308,"Resona Holdings, Inc.",TSE,JPY,NOTABLE,2282,2.3089,16125900,5135.4409,32.5223,2026-11-10,N,no fresh catalyst found
+Japan,TSE:8354,"Fukuoka Financial Group, Inc.",TSE,JPY,NOTABLE,7050,2.3074,1424800,1309.9437,8.2958,2026-11-10,N,no fresh catalyst found
+Japan,TSE:8050,SEIKO GROUP CORPORATION,TSE,JPY,NOTABLE,11120,2.2999,1327800,898.3852,5.6894,2026-11-10,N,no fresh catalyst found
+Japan,TSE:7186,"Yokohama Financial Group, Inc.",TSE,JPY,NOTABLE,1701,2.285,5784200,1841.209,11.6602,2026-11-11,N,no fresh catalyst found
+Japan,TSE:3923,"RAKUS Co., Ltd.",TSE,JPY,NOTABLE,1092.5,-2.2809,2392900,396.2075,2.5091,2026-11-13,N,no fresh catalyst found
+Japan,TSE:5831,"Shizuoka Financial Group, Inc.",TSE,JPY,NOTABLE,3122,2.2601,2699700,1663.0884,10.5322,2026-11-10,N,no fresh catalyst found
+Japan,TSE:7181,"JAPAN POST INSURANCE Co., Ltd.",TSE,JPY,NOTABLE,1752.5,2.2462,8965700,1838.1725,11.641,2026-11-13,N,no fresh catalyst found
+Japan,TSE:7337,"Hirogin Holdings, Inc.",TSE,JPY,NOTABLE,2213,2.2407,1726700,658.4091,4.1696,2026-11-10,N,no fresh catalyst found
+Japan,TSE:7189,"Nishi-Nippon Financial Holdings, Inc.",TSE,JPY,NOTABLE,4554,2.2222,873100,601.1758,3.8072,2026-11-10,N,no fresh catalyst found
+Japan,TSE:8012,"Nagase & Co., Ltd.",TSE,JPY,NOTABLE,1280.5,2.1947,2415600,547.0787,3.4646,2026-11-06,N,no fresh catalyst found
+Japan,TSE:1605,Inpex Corporation,TSE,JPY,NOTABLE,4056,2.192,6709200,4752.5089,30.0972,2026-11-12,N,no fresh catalyst found
+Japan,TSE:5016,JX Advanced Metals Corporation,TSE,JPY,NOTABLE,3151,2.1725,23007900,2923.52,18.5144,2026-11-09,N,no fresh catalyst found
+Japan,TSE:8766,"Tokio Marine Holdings, Inc.",TSE,JPY,NOTABLE,567,2.1622,130675800,16083.5174,101.8554,2026-11-19,N,no fresh catalyst found
+Japan,TSE:5830,"Iyogin Holdings,Inc.",TSE,JPY,NOTABLE,3359,2.1594,1225900,996.3398,6.3097,2026-11-06,N,no fresh catalyst found
+Japan,TSE:8331,"Chiba Bank, Ltd.",TSE,JPY,NOTABLE,2540,2.1516,6790200,1702.2217,10.78,2026-11-09,N,no fresh catalyst found
+Japan,TSE:5076,INFRONEER Holdings Inc.,TSE,JPY,NOTABLE,2350,2.1295,10361600,680.3346,4.3085,2026-11-11,N,no fresh catalyst found
+Japan,TSE:6302,"Sumitomo Heavy Industries, Ltd.",TSE,JPY,NOTABLE,5412,-2.1161,1030500,677.3204,4.2894,2026-10-30,N,no fresh catalyst found
+Japan,TSE:6448,"Brother Industries, Ltd.",TSE,JPY,NOTABLE,4730,-2.1109,1746900,1195.1348,7.5687,2026-11-09,N,no fresh catalyst found
+Japan,TSE:2809,Kewpie Corporation,TSE,JPY,NOTABLE,4500,2.1103,606100,612.5947,3.8795,2027-01-14,N,no fresh catalyst found
+Japan,TSE:8418,"Yamaguchi Financial Group, Inc.",TSE,JPY,NOTABLE,3183,2.0847,1024500,609.5915,3.8605,2026-11-13,N,no fresh catalyst found
+Japan,TSE:4686,JUSTSYSTEMS CORPORATION,TSE,JPY,NOTABLE,4945,-2.0792,160100,324.3311,2.054,2026-11-06,N,no fresh catalyst found
+Japan,TSE:8015,Toyota Tsusho Corp.,TSE,JPY,NOTABLE,7247,-2.0676,7335100,6938.8387,43.943,2027-01-29,N,no fresh catalyst found
+Japan,TSE:8361,"Ogaki Kyoritsu Bank, Ltd.",TSE,JPY,NOTABLE,1586,2.0592,2408100,320.438,2.0293,2026-11-13,N,no fresh catalyst found
+Japan,TSE:5803,Fujikura Ltd,TSE,JPY,NOTABLE,4195,2.0433,42595700,7214.8743,45.6911,2026-11-10,N,no fresh catalyst found
+Japan,TSE:4062,"IBIDEN CO., LTD.",TSE,JPY,NOTABLE,9859,2.0284,31871000,5469.9646,34.6408,2027-02-04,N,no fresh catalyst found
+Japan,TSE:7013,IHI Corporation,TSE,JPY,NOTABLE,2336.5,-2.013,24364000,2527.9554,16.0093,2026-11-04,N,no fresh catalyst found
+Taiwan,TPEX:3105,Win Semiconductors Corp.,TPEX,TWD,REACTION,594,10,58591219,228.2204,7.0404,2026-10-29,Y(date),"TPEx limit up, closed at the day's high NT$594 from NT$540 (TPEx daily limit +/-10%); screener lists a Q3 earnings date of today; no fresh catalyst headline found"
+Taiwan,TPEX:6510,"Chunghwa Precision Test Tech Co., Ltd.",TPEX,TWD,REACTION,2880,-10,1751894,105.3732,3.2507,2027-02-11,N,"TPEx limit down, closed at the day's low NT$2,880 from NT$3,200 (TPEx daily limit +/-10%); no fresh catalyst found"
+Taiwan,TWSE:3406,"GeniuS Electronic Optical Co., Ltd.",TWSE,TWD,REACTION,1200,-9.7744,6476429,149.9483,4.6258,2026-11-17,N,no fresh catalyst found
+Taiwan,TWSE:2303,United Microelectronics Corp.,TWSE,TWD,REACTION,115.5,-9.7656,350078013,1605.0615,49.5145,2027-01-26,Y,"Q3 2026 results reported Oct 28 after the TWSE close, followed by a -3.24% move in the NYSE ADR in the prior US session; closed at the day's low on 350m shares"
+Taiwan,TPEX:6147,Chipbond Technology Corporation,TPEX,TWD,REACTION,203,-8.764,37131292,165.6685,5.1107,2026-10-29,Y(date),no fresh catalyst headline found; screener lists an earnings date of today
+Taiwan,TWSE:3008,"LARGAN Precision Co., Ltd.",TWSE,TWD,REACTION,5815,-8.2084,2410190,828.6066,25.5617,2027-01-14,N,no fresh catalyst found
+Taiwan,TWSE:3167,"Ta Liang Technology Co., Ltd.",TWSE,TWD,REACTION,946,-8.1553,3845081,92.1989,2.8442,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:3189,Kinsus Interconnect Technology Corp.,TWSE,TWD,REACTION,959,-7.343,18205518,545.3523,16.8236,2026-11-02,N,no fresh catalyst found
+Taiwan,TWSE:6442,EZconn Corp.,TWSE,TWD,REACTION,1305,-7.1174,2036923,110.7387,3.4162,2026-11-06,N,no fresh catalyst found
+Taiwan,TPEX:6548,"Chang Wah Technology Co., Ltd.",TPEX,TWD,REACTION,72.5,-6.932,4570670,73.3755,2.2636,2027-03-16,N,no fresh catalyst found
+Taiwan,TWSE:7769,"Hon. Precision, Inc.",TWSE,TWD,REACTION,5190,-6.7385,714043,1001.1602,30.8848,2027-03-22,N,no fresh catalyst found
+Taiwan,TPEX:5347,Vanguard International Semiconductor Corp,TPEX,TWD,REACTION,156.5,-6.5672,15720542,314.6491,9.7066,2026-11-05,N,no fresh catalyst found
+Taiwan,TWSE:3443,Global Unichip Corp.,TWSE,TWD,REACTION,7640,-6.4871,1914027,1094.8772,33.7759,2026-10-29,Y(date),no fresh catalyst headline found; screener lists an earnings date of today
+Taiwan,TPEX:6187,"All Ring Tech Co., Ltd.",TPEX,TWD,REACTION,1260,-6.3197,1111426,129.6482,3.9995,2026-11-11,N,no fresh catalyst found
+Taiwan,TWSE:2492,Walsin Technology Corporation,TWSE,TWD,REACTION,423,6.2814,55794528,192.7135,5.945,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:2368,Gold Circuit Electronics Ltd,TWSE,TWD,REACTION,1115,-5.9072,7863941,621.9721,19.1872,2026-11-16,N,no fresh catalyst found
+Taiwan,TPEX:7734,Ableprint Technology Co Ltd,TPEX,TWD,REACTION,2235,-5.8947,116745,65.9062,2.0331,2026-11-12,N,no fresh catalyst found
+Taiwan,TWSE:3665,BizLink Holding Inc.,TWSE,TWD,REACTION,1705,-5.8011,3089682,361.2369,11.1438,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:6515,"WinWay Technology Co., Ltd.",TWSE,TWD,REACTION,4655,-5.6738,573072,179.855,5.5483,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:3023,"SINBON Electronics Co., Ltd.",TWSE,TWD,REACTION,259.5,-5.6364,3505192,66.019,2.0366,2026-10-29,Y(date),no fresh catalyst headline found; screener lists an earnings date of today
+Taiwan,TWSE:1802,Taiwan Glass Industry Corp.,TWSE,TWD,REACTION,62,-5.4878,70354505,190.7688,5.885,2026-11-09,N,no fresh catalyst found
+Taiwan,TWSE:2455,"Visual Photonics Epitaxy Co., Ltd.",TWSE,TWD,REACTION,484,-5.4688,16970391,95.7355,2.9533,2026-10-29,Y(date),no fresh catalyst headline found; screener lists an earnings date of today
+Taiwan,TWSE:3037,Unimicron Technology Corp.,TWSE,TWD,REACTION,1040,-5.4545,15319072,1772.7155,54.6865,2027-02-23,N,no fresh catalyst found
+Taiwan,TWSE:4958,Zhen Ding Technology Holding Limited,TWSE,TWD,REACTION,520,-5.4545,19556771,622.2172,19.1948,2026-11-11,N,no fresh catalyst found
+Taiwan,TWSE:2376,"Gigabyte Technology Co., Ltd.",TWSE,TWD,REACTION,343,-5.3793,11235531,241.7472,7.4577,2026-11-13,N,no fresh catalyst found
+Taiwan,TPEX:6223,MPI Corporation,TPEX,TWD,REACTION,4840,-5.3763,686938,501.1744,15.4607,2026-11-05,N,no fresh catalyst found
+Taiwan,TWSE:3702,WPG Holding Co Ltd,TWSE,TWD,REACTION,110,-5.1724,15022832,203.1594,6.2673,2026-11-17,N,no fresh catalyst found
+Taiwan,TWSE:3481,Innolux Corp.,TWSE,TWD,REACTION,46,-5.0568,120207733,387.0766,11.9409,2026-10-29,Y(date),no fresh catalyst headline found; screener lists an earnings date of today
+Taiwan,TWSE:2377,"Micro-Star International Co., Ltd.",TWSE,TWD,REACTION,160,-5.0445,9480449,142.3583,4.3916,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:7610,"LIANYOU METALS CO.,LTD.",TWSE,TWD,NOTABLE,1330,-5,275610,81.6276,2.5181,2026-11-17,N,no fresh catalyst found
+Taiwan,TWSE:1519,"Fortune Electric Co., Ltd.",TWSE,TWD,NOTABLE,563,-4.8986,1749174,205.7016,6.3457,2026-11-11,N,no fresh catalyst found
+Taiwan,TPEX:1815,Fulltech Fiber Glass Corp.,TPEX,TWD,NOTABLE,137,-4.8611,112213959,88.5173,2.7307,2026-11-05,N,no fresh catalyst found
+Taiwan,TWSE:2313,"Compeq Manufacturing Co., Ltd.",TWSE,TWD,NOTABLE,213.5,-4.6875,17481151,276.3758,8.5259,2026-11-06,N,no fresh catalyst found
+Taiwan,TPEX:8358,CO-TECH DEVELOPMENT CORP.,TPEX,TWD,NOTABLE,438.5,-4.6739,1265751,112.3265,3.4652,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:2308,"Delta Electronics, Inc.",TWSE,TWD,NOTABLE,1480,-4.5161,17552692,4026.1924,124.204,2027-02-25,N,no fresh catalyst found
+Taiwan,TWSE:2454,MediaTek Inc,TWSE,TWD,NOTABLE,4045,-4.4864,6867223,6763.966,208.6615,2026-10-30,N,no fresh catalyst found
+Taiwan,TWSE:2360,Chroma Ate Inc.,TWSE,TWD,NOTABLE,1945,-4.4226,2980142,861.6999,26.5826,2026-10-29,N,no fresh catalyst found
+Taiwan,TPEX:3529,"eMemory Technology, Inc.",TPEX,TWD,NOTABLE,2540,-4.3315,515799,194.1323,5.9888,2027-02-09,N,no fresh catalyst found
+Taiwan,TPEX:6182,Wafer Works Corp.,TPEX,TWD,NOTABLE,100.5,-4.2857,13053587,65.6571,2.0255,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:6505,Formosa Petrochemical Corp,TWSE,TWD,NOTABLE,98.6,-4.2718,22372058,981.1739,30.2682,2026-10-29,N,no fresh catalyst found
+Taiwan,TWSE:6213,ITEQ Corporation,TWSE,TWD,NOTABLE,745,-4.2416,26067071,282.8786,8.7265,2026-11-03,N,no fresh catalyst found
+Taiwan,TWSE:7750,Syntec Technology Co. Ltd.,TWSE,TWD,NOTABLE,2090,4.2394,571068,143.8547,4.4378,2026-11-17,N,no fresh catalyst found
+Taiwan,TWSE:6196,Marketech International Corp.,TWSE,TWD,NOTABLE,567,-4.223,788150,130.4351,4.0238,2026-11-11,N,no fresh catalyst found
+Taiwan,TWSE:2409,AUO Corporation,TWSE,TWD,NOTABLE,34.05,-4.2194,283685066,266.3726,8.2173,2026-10-29,N,no fresh catalyst found
+Taiwan,TPEX:6488,"GlobalWafers Co., Ltd.",TPEX,TWD,NOTABLE,814,-4.1225,7652732,446.6596,13.779,2026-11-03,N,no fresh catalyst found
+Taiwan,TWSE:2892,First Financial Holding Co. Ltd.,TWSE,TWD,NOTABLE,44.45,3.8551,37167538,615.4413,18.9857,2026-12-02,N,no fresh catalyst found
+Taiwan,TWSE:2357,Asustek Computer Inc.,TWSE,TWD,NOTABLE,950,-3.8462,3022101,733.8471,22.6384,2026-11-05,N,no fresh catalyst found
+Taiwan,TWSE:8046,Nan Ya Printed Circuit Board Corporation,TWSE,TWD,NOTABLE,1250,-3.8462,5838016,840.0152,25.9136,2026-11-10,N,no fresh catalyst found
+Taiwan,TWSE:6285,WNC Corporation,TWSE,TWD,NOTABLE,227.5,-3.8055,3566476,114.3339,3.5271,2026-10-29,N,no fresh catalyst found
+Taiwan,TWSE:2356,Inventec Corporation,TWSE,TWD,NOTABLE,61.4,-3.7618,15484309,228.8809,7.0607,2026-11-06,N,no fresh catalyst found
+Taiwan,TPEX:3491,"Universal Microwave Technology, Inc.",TPEX,TWD,NOTABLE,1290,-3.7313,720431,92.2927,2.8471,2026-11-05,N,no fresh catalyst found
+Taiwan,TWSE:6278,Taiwan Surface Mounting Technology Corp.,TWSE,TWD,NOTABLE,275,-3.6778,11792043,83.4797,2.5753,2026-10-29,N,no fresh catalyst found
+Taiwan,TWSE:3532,Formosa Sumco Technology Corporation,TWSE,TWD,NOTABLE,394.5,-3.663,2834029,158.8239,4.8996,2026-11-11,N,no fresh catalyst found
+Taiwan,TWSE:2382,Quanta Computer Inc.,TWSE,TWD,NOTABLE,318,-3.6364,11705199,1352.8411,41.7338,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:2301,Lite-On Technology Corp.,TWSE,TWD,NOTABLE,252,-3.6329,10320249,588.0624,18.1411,2026-11-04,N,no fresh catalyst found
+Taiwan,TPEX:4749,Advanced Echem Materials Company Limited,TPEX,TWD,NOTABLE,695,-3.4722,650889,68.2077,2.1041,2026-11-18,N,no fresh catalyst found
+Taiwan,TWSE:2324,"Compal Electronics, Inc.",TWSE,TWD,NOTABLE,36.65,-3.4256,32730329,165.3531,5.101,2026-11-17,N,no fresh catalyst found
+Taiwan,TWSE:3017,"Asia Vital Components Co., Ltd.",TWSE,TWD,NOTABLE,3105,-3.4215,1871677,1262.4344,38.9448,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:2337,"Macronix International Co., Ltd.",TWSE,TWD,NOTABLE,100,-3.3816,65790774,203.92,6.2907,2027-02-17,N,no fresh catalyst found
+Taiwan,TWSE:6526,Airoha Technology Corp.,TWSE,TWD,NOTABLE,776,-3.3624,650806,134.507,4.1494,2027-03-30,N,no fresh catalyst found
+Taiwan,TWSE:6446,PharmaEssentia Corp.,TWSE,TWD,NOTABLE,1240,3.3333,2113054,495.063,15.2722,2026-11-11,N,no fresh catalyst found
+Taiwan,TWSE:6669,Wiwynn Corporation,TWSE,TWD,NOTABLE,1885,-3.3333,3547186,1092.3895,33.6991,2026-11-04,N,no fresh catalyst found
+Taiwan,TWSE:2345,Accton Technology Corp.,TWSE,TWD,NOTABLE,1755,-3.3058,3641602,1014.4178,31.2938,2026-11-05,N,no fresh catalyst found
+Taiwan,TWSE:8150,"ChipMOS Technologies, Inc.",TWSE,TWD,NOTABLE,97.2,-3.2836,11677343,70.8046,2.1842,2026-11-10,N,no fresh catalyst found
+Taiwan,TWSE:4938,Pegatron Corporation,TWSE,TWD,NOTABLE,104.5,-3.2407,8329981,288.9334,8.9133,2026-11-18,N,no fresh catalyst found
+Taiwan,TWSE:6409,Voltronic Power Technology Corp.,TWSE,TWD,NOTABLE,903,-3.2154,244620,81.9879,2.5292,2026-11-05,N,no fresh catalyst found
+Taiwan,TWSE:8210,"Chenbro Micom Co., Ltd.",TWSE,TWD,NOTABLE,756,-3.201,1327189,97.4963,3.0077,2026-11-05,N,no fresh catalyst found
+Taiwan,TWSE:3661,Alchip Technologies Ltd.,TWSE,TWD,NOTABLE,3680,-3.1579,1677288,326.3558,10.0677,2026-10-30,N,no fresh catalyst found
+Taiwan,TWSE:6919,Caliway Biopharmaceuticals Co Ltd,TWSE,TWD,NOTABLE,65.4,-3.1111,9402296,105.1097,3.2425,2027-03-02,N,no fresh catalyst found
+Taiwan,TWSE:3231,Wistron Corporation,TWSE,TWD,NOTABLE,188.5,-3.0848,25024632,655.6737,20.2269,2026-11-18,N,no fresh catalyst found
+Taiwan,TWSE:2615,Wan Hai Lines Ltd.,TWSE,TWD,NOTABLE,115,-2.9536,7347999,332.5283,10.2582,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:2449,"King Yuan Electronics Co., Ltd.",TWSE,TWD,NOTABLE,269.5,-2.8829,9365342,356.2773,10.9908,2026-10-30,N,no fresh catalyst found
+Taiwan,TWSE:1560,Kinik Co.,TWSE,TWD,NOTABLE,888,-2.8446,913839,137.3646,4.2376,2026-11-03,N,no fresh catalyst found
+Taiwan,TWSE:2467,C Sun Mfg. Ltd.,TWSE,TWD,NOTABLE,465.5,-2.8184,517047,77.0226,2.3761,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:3533,"Lotes Co., Ltd",TWSE,TWD,NOTABLE,1900,-2.8133,1803884,220.0053,6.7869,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:3030,"Test Research, Inc.",TWSE,TWD,NOTABLE,269,-2.7125,905010,65.3137,2.0149,2026-11-04,N,no fresh catalyst found
+Taiwan,TWSE:2059,"King Slide Works Co., Ltd.",TWSE,TWD,NOTABLE,9880,-2.6601,516615,967.2653,29.8392,2026-11-11,N,no fresh catalyst found
+Taiwan,TWSE:5269,Asmedia Technology Inc.,TWSE,TWD,NOTABLE,1465,-2.6578,386728,111.6053,3.4429,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:2441,"Greatek Electronics, Inc.",TWSE,TWD,NOTABLE,112.5,-2.5974,1431407,65.7017,2.0268,2026-10-29,N,no fresh catalyst found
+Taiwan,TWSE:6257,Sigurd Microelectronics Corp.,TWSE,TWD,NOTABLE,228,-2.5641,3259717,113.2355,3.4932,2026-11-04,N,no fresh catalyst found
+Taiwan,TWSE:3006,Elite Semiconductor Microelectronics Technology Inc.,TWSE,TWD,NOTABLE,282.5,2.5408,30717500,78.3703,2.4176,2027-03-03,N,no fresh catalyst found
+Taiwan,TWSE:6770,Powerchip Semiconductor Manufacturing Corp.,TWSE,TWD,NOTABLE,69.5,-2.5245,123139287,335.9714,10.3644,2026-10-29,N,no fresh catalyst found
+Taiwan,TWSE:8996,"Kaori Heat Treatment Co., Ltd.",TWSE,TWD,NOTABLE,1545,-2.5237,2855782,148.1999,4.5718,2026-11-10,N,no fresh catalyst found
+Taiwan,TPEX:3374,Xintec Inc.,TPEX,TWD,NOTABLE,487.5,-2.5,18878410,135.6822,4.1857,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:1717,"Eternal Materials Co., Ltd.",TWSE,TWD,NOTABLE,68.7,-2.4148,3827536,83.3709,2.5719,2026-11-06,N,no fresh catalyst found
+Taiwan,TPEX:5483,Sino-American Silicon Products Inc.,TPEX,TWD,NOTABLE,184,-2.3873,4857504,120.8703,3.7287,2026-11-06,N,no fresh catalyst found
+Taiwan,TWSE:3026,"Holy Stone Enterprise Co., Ltd.",TWSE,TWD,NOTABLE,767,2.1305,7027472,124.5836,3.8433,2026-11-11,N,no fresh catalyst found
+Taiwan,TPEX:3324,"AURAS Technology Co., Ltd.",TPEX,TWD,NOTABLE,1465,2.0906,5584616,130.2648,4.0185,2026-11-11,N,no fresh catalyst found
+Hong Kong,HKEX:1729,Time Interconnect Technology Limited,HKEX,HKD,REACTION,12.14,-9.8738,22383853,30.1435,3.8422,2027-03-26,N,reversed the prior session's +14.15% spike (HK$11.80 to HK$13.47) after a HK$2.88bn share placement; closed at the day's low HK$12.14 on 22.4m shares
+Hong Kong,HKEX:2442,Easy Smart Group Holdings Limited,HKEX,HKD,REACTION,57.35,-9.827,402600,25.9488,3.3076,,N,no fresh catalyst found
+Hong Kong,HKEX:1888,Kingboard Laminates Holdings Limited,HKEX,HKD,REACTION,37.22,-7.6427,43273100,127.0034,16.1885,2027-03-22,N,no fresh catalyst found
+Hong Kong,HKEX:992,Lenovo Group Limited,HKEX,HKD,REACTION,22.14,-6.8966,125478311,305.0034,38.8772,2026-11-19,N,no company-specific catalyst found; moved with the Hong Kong tech complex (HS Tech -2.84%)
+Hong Kong,HKEX:148,Kingboard Holdings Limited,HKEX,HKD,REACTION,45.6,-6.5957,13647433,54.7654,6.9807,2027-03-22,N,no fresh catalyst found
+Hong Kong,HKEX:3858,Jiaxin International Resources Investment Limited,HKEX,HKD,REACTION,36.38,-5.9948,1343200,17.6356,2.2479,2027-03-25,N,no fresh catalyst found
+Hong Kong,HKEX:83,Sino Land Co. Ltd.,HKEX,HKD,REACTION,10.03,-4.3851,5920452,100.5586,12.8177,2027-02-26,N,no fresh catalyst found
+Hong Kong,HKEX:175,Geely Automobile Holdings Limited,HKEX,HKD,REACTION,13.57,-4.3693,67108049,153.9486,19.6231,2027-03-24,N,no fresh catalyst found
+Hong Kong,HKEX:522,ASMPT Limited,HKEX,HKD,REACTION,113.2,-4.3111,4864877,49.616,6.3243,,N,no fresh catalyst found
+Hong Kong,HKEX:3774,Fameglow Holdings Limited,HKEX,HKD,NOTABLE,38.7,3.7534,1170000,31.6922,4.0396,,N,no fresh catalyst found
+Hong Kong,HKEX:326,China Star Entertainment Limited,HKEX,HKD,NOTABLE,8,3.4929,4869298,18.7754,2.3932,,N,no fresh catalyst found
+Hong Kong,HKEX:1548,Genscript Biotech Corporation,HKEX,HKD,NOTABLE,37.7,2.7248,58460801,83.3955,10.63,2027-03-24,N,no fresh catalyst found
+Hong Kong,HKEX:3696,InSilico Medicine Cayman TopCo,HKEX,HKD,NOTABLE,36.62,-2.6582,6625872,22.0122,2.8058,2027-03-29,N,no fresh catalyst found
+Hong Kong,HKEX:6055,"China Tobacco International (HK) Co., Ltd.",HKEX,HKD,NOTABLE,24.48,-2.6253,1296000,17.3888,2.2165,2027-03-11,N,no fresh catalyst found
+Hong Kong,HKEX:1876,Budweiser Brewing Co. APAC Ltd.,HKEX,HKD,NOTABLE,5.66,-2.4978,26941971,76.5334,9.7553,2027-03-03,N,no fresh catalyst found
+Hong Kong,HKEX:551,Yue Yuen Industrial (Holdings) Limited,HKEX,HKD,NOTABLE,13.38,2.3718,4011638,20.9519,2.6706,2027-03-17,N,no fresh catalyst found
+Hong Kong,HKEX:836,China Resources Power Holdings Co. Ltd.,HKEX,HKD,NOTABLE,19.47,2.3121,16239964,98.5194,12.5578,2027-03-24,N,no fresh catalyst found
+Hong Kong,HKEX:293,Cathay Pacific Airways Limited,HKEX,HKD,NOTABLE,13.37,2.2953,8471114,79.4803,10.131,2027-03-17,N,no fresh catalyst found
+Hong Kong,HKEX:780,Tongcheng Travel Holdings Limited,HKEX,HKD,NOTABLE,9.6,-2.2403,5928358,23.1194,2.9469,2026-11-24,N,no fresh catalyst found
+Hong Kong,HKEX:3330,Lingbao Gold Group Company Limited Class H,HKEX,HKD,NOTABLE,16.26,-2.0482,10451700,22.8944,2.9182,2027-04-01,N,no fresh catalyst found
+Hong Kong,HKEX:1070,TCL Electronics Holdings Limited,HKEX,HKD,NOTABLE,15.31,-2.0473,10418289,39.4022,5.0224,2027-03-19,N,no fresh catalyst found
+South Korea,KRX:047040,"Daewoo Engineering & Construction Co., Ltd",KRX,KRW,REACTION,11620,-18.5704,32503261,5795.7434,4.3244,2027-01-28,N,KHNP ended construction-contract negotiations with the Daewoo E&C / Doosan Enerbility 'Team Korea' consortium for the Czech Dukovany APR1000 project (~KRW 25-27tn) over cost-scope terms; KHNP will terminate the joint cooperation agreement and re-tender - now 68.7% below the April high
+South Korea,KRX:011790,"SKC Co., Ltd.",KRX,KRW,REACTION,72900,-12.0627,492427,3796.7029,2.8329,2027-02-09,Y,"Q3 revenue KRW 638.9bn +26.0% YoY but an operating loss of KRW 49.6bn vs a consensus loss of KRW 18.3bn, net loss KRW 128.5bn; copper-foil unit loss KRW 54.4bn on the Jeongeup plant shutdown and Malaysia start-up; battery copper-foil shipments -4% QoQ against +25% expected; SK Securities cut its target price to KRW 100,000"
+South Korea,KRX:009830,HANWHA SOLUTIONS CORPORATION,KRX,KRW,REACTION,23600,-11.6105,6938220,5978.7373,4.4609,2026-10-29,Y,Q3 revenue KRW 3.95tn +17.4% YoY and operating profit KRW 90.5bn (vs a KRW 7.4bn loss a year ago) but 57% below the Yonhap Infomax consensus; chemicals unit operating loss KRW 44.7bn; full-year operating profit guided below prior guidance
+South Korea,KRX:373220,LG Energy Solution Ltd.,KRX,KRW,REACTION,356000,-8.6008,900670,91143.0,68.0049,2026-11-03,N,LG Chem sold its LGES stake via a price-return swap (PRS)
+South Korea,KRX:052690,"KEPCO Engineering & Construction Co., Inc.",KRX,KRW,REACTION,88700,-7.7963,358875,3659.785,2.7307,2026-11-05,N,Team Korea Czech Dukovany consortium fallout
+South Korea,KRX:009835,HANWHA SOLUTIONS CORPORATION Pfd Registered Shs Non-Voting,KRX,KRW,REACTION,14200,-7.7922,13057,5978.7373,4.4609,2026-10-29,Y,"preference share of Hanwha Solutions (009830), same Q3 earnings reaction"
+South Korea,KRX:034020,"Doosan Enerbility Co., Ltd.",KRX,KRW,REACTION,56700,-7.6547,8100390,39324.5639,29.3414,2026-10-29,N,Team Korea Czech Dukovany consortium fallout - fell as much as 12.4% intraday before recovering
+South Korea,KRX:001440,"Taihan Cable & Solution Co., Ltd.",KRX,KRW,REACTION,20500,-7.2398,1620506,4105.2874,3.0631,2026-10-29,Y(date),no fresh catalyst headline found; screener lists an earnings date of today
+South Korea,KRX:018260,"SAMSUNG SDS CO., LTD.",KRX,KRW,REACTION,206500,-7.191,347800,17210.4171,12.8413,2026-10-29,Y(date),no fresh catalyst headline found; screener lists an earnings date of today; Samsung-group read-across from the 005930 shareholder-return disappointment
+South Korea,KRX:096770,"SK Innovation Co., Ltd",KRX,KRW,REACTION,129800,-7.0866,1129407,23266.7014,17.3601,2026-10-29,Y(date),no fresh catalyst headline found; screener lists an earnings date of today
+South Korea,KRX:277810,"Rainbow Robotics, Inc.",KRX,KRW,REACTION,378000,-6.5513,90376,7847.242,5.8551,2026-11-12,N,no fresh catalyst found
+South Korea,KRX:082740,"Hanwha Engine Co., Ltd.",KRX,KRW,REACTION,30950,-6.4955,820951,2761.385,2.0604,2026-11-12,N,no fresh catalyst found
+South Korea,KRX:138040,Meritz Financial Group Inc.,KRX,KRW,REACTION,131400,6.3968,237658,19937.258,14.8759,2026-11-11,N,no fresh catalyst found
+South Korea,KRX:066970,"L & F Co., Ltd.",KRX,KRW,REACTION,83400,-6.2921,328566,3466.438,2.5864,2026-11-10,N,no fresh catalyst found
+South Korea,KRX:352820,"HYBE Co., Ltd.",KRX,KRW,REACTION,158000,-5.9524,362482,7222.6305,5.3891,2026-11-03,N,no fresh catalyst found
+South Korea,KRX:443060,"HD Hyundai Marine Solution Co., Ltd.",KRX,KRW,REACTION,164600,-5.8352,119272,7805.3644,5.8239,2027-02-10,N,no fresh catalyst found
+South Korea,KRX:247540,"Ecopro BM Co., Ltd.",KRX,KRW,REACTION,92000,-5.641,430140,10400.3285,7.76,2026-11-05,N,no fresh catalyst found
+South Korea,KRX:011070,"LG Innotek Co., Ltd",KRX,KRW,REACTION,347500,-5.5707,293342,8708.5385,6.4977,2027-01-27,N,no fresh catalyst found
+South Korea,KRX:131290,"TSE Co., Ltd",KRX,KRW,REACTION,260500,-5.2727,78273,2966.0179,2.213,2026-11-18,N,no fresh catalyst found
+South Korea,KRX:000725,Hyundai Engineering and Construction Co Ltd Pfd Registered Shs Non-Voting,KRX,KRW,REACTION,43250,-5.2574,10670,10682.6224,7.9707,2026-10-30,N,Team Korea Czech Dukovany consortium fallout
+South Korea,KRX:000500,"Gaon Cable Co., Ltd.",KRX,KRW,REACTION,239500,-5.1485,107455,7518.8458,5.6101,2027-03-22,N,no fresh catalyst found
+South Korea,KRX:128940,"Hanmi Pharmaceutical Co., Ltd.",KRX,KRW,REACTION,388500,5.1421,158849,4685.339,3.4959,2027-02-10,N,no fresh catalyst found
+South Korea,KRX:000150,Doosan Corporation,KRX,KRW,REACTION,961000,-5.1333,141382,15293.8342,11.4113,2026-11-09,N,no fresh catalyst found
+South Korea,KRX:307950,Hyundai Autoever Corp.,KRX,KRW,REACTION,332500,-5,64506,9598.0902,7.1615,2026-10-30,N,no fresh catalyst found
+South Korea,KRX:454910,Doosan Robotics Inc.,KRX,KRW,REACTION,57500,-4.9587,291719,3921.6086,2.926,2026-10-29,Y(date),no fresh catalyst headline found; screener lists an earnings date of today
+South Korea,KRX:103590,"Iljin Electric Co., Ltd.",KRX,KRW,REACTION,56000,-4.9236,158406,2808.1911,2.0953,2026-11-16,N,no fresh catalyst found
+South Korea,KRX:192820,"COSMAX, Inc.",KRX,KRW,REACTION,248000,-4.7985,101159,2955.545,2.2052,2026-11-16,N,no fresh catalyst found
+South Korea,KRX:079550,LIG Defense&Aerospace,KRX,KRW,REACTION,427500,-4.7884,151173,9785.6673,7.3014,2026-11-06,N,no fresh catalyst found
+South Korea,KRX:010140,"Samsung Heavy Industries Co., Ltd",KRX,KRW,REACTION,15720,-4.785,5471854,14100.1275,10.5206,2026-10-29,Y(date),no fresh catalyst headline found; screener lists an earnings date of today
+South Korea,KRX:267260,HD Hyundai Electric,KRX,KRW,REACTION,440500,-4.7568,175273,16646.6249,12.4206,2027-02-24,N,no fresh catalyst found
+South Korea,KRX:003670,"POSCO FUTURE M CO., LTD.",KRX,KRW,REACTION,160900,-4.7365,237541,15023.0115,11.2092,2026-11-02,N,no fresh catalyst found
+South Korea,KRX:329180,"HD Hyundai Heavy Industries Co., Ltd.",KRX,KRW,REACTION,272000,-4.7285,477204,29966.4304,22.359,2027-02-10,N,no fresh catalyst found
+South Korea,KRX:064350,Hyundai Rotem Co.,KRX,KRW,REACTION,79000,-4.5894,498727,9036.9821,6.7428,2027-02-04,N,no fresh catalyst found
+South Korea,KRX:036930,"Jusung Engineering Co., Ltd",KRX,KRW,REACTION,177000,-4.5822,1170032,8330.1971,6.2154,2026-11-03,N,no fresh catalyst found
+South Korea,KRX:175330,"JB Financial Group Co., Ltd.",KRX,KRW,REACTION,25550,4.499,390483,4499.4783,3.3572,2027-02-11,N,no fresh catalyst found
+South Korea,KRX:062040,"Sanil Electric Co., Ltd.",KRX,KRW,REACTION,156800,-4.4485,210505,5018.5223,3.7445,2026-11-09,N,no fresh catalyst found
+South Korea,KRX:086520,"Ecopro Co., Ltd.",KRX,KRW,REACTION,73300,-4.4329,769643,10307.1816,7.6905,2026-11-05,N,no fresh catalyst found
+South Korea,KRX:298040,Hyosung Heavy Industries Corp.,KRX,KRW,REACTION,1911000,-4.3544,40388,18604.8583,13.8817,2026-10-29,Y(date),no fresh catalyst headline found; screener lists an earnings date of today
+South Korea,KRX:007660,"ISU Petasys Co., Ltd.",KRX,KRW,REACTION,92600,-4.3388,499517,7106.0123,5.302,2026-11-18,N,no fresh catalyst found
+South Korea,KRX:000720,"Hyundai Engineering & Construction Co., Ltd",KRX,KRW,REACTION,91400,-4.2932,1399906,10682.6224,7.9707,2026-10-30,N,no fresh catalyst found
+South Korea,KRX:006260,LS Corp.,KRX,KRW,REACTION,212500,-4.2793,122966,6157.1481,4.5941,2026-11-18,N,no fresh catalyst found
+South Korea,KRX:003230,"Samyang Foods Co., Ltd",KRX,KRW,REACTION,1142000,-4.1946,39915,8890.0885,6.6332,2026-11-18,N,no fresh catalyst found
+South Korea,KRX:005930,"Samsung Electronics Co., Ltd.",KRX,KRW,REACTION,232000,-4.1322,24761436,1542521.5805,1150.9287,2027-02-04,Y,"record Q3 operating profit KRW 107.44tn (+783% YoY) on revenue KRW 195.25tn (+126.9%), but no concrete shareholder-return plan beyond a KRW 3tn Q3 cash dividend - dragged the KOSPI below 6,000"
+South Korea,KRX:066570,LG Electronics Inc.,KRX,KRW,REACTION,155200,-4.0198,1083093,27372.1948,20.4233,2027-01-28,N,no fresh catalyst found
+South Korea,KRX:071050,KOREA INVESTMENT HOLDINGS CO LTD,KRX,KRW,NOTABLE,160000,3.8961,181582,8855.6057,6.6075,2026-11-05,N,no fresh catalyst found
+South Korea,KRX:086790,Hana Financial Group Inc.,KRX,KRW,NOTABLE,119700,3.8161,693441,29751.3233,22.1985,2027-01-29,N,no fresh catalyst found
+South Korea,KRX:042660,"Hanwha Ocean Co., Ltd.",KRX,KRW,NOTABLE,50500,-3.8095,1199196,16085.8523,12.0022,2027-03-16,N,no fresh catalyst found
+South Korea,KRX:010120,"LS Electric Co., Ltd.",KRX,KRW,NOTABLE,158400,-3.7667,542087,24474.7788,18.2615,2027-01-28,N,no fresh catalyst found
+South Korea,KRX:108490,"ROBOTIS Co., Ltd.",KRX,KRW,NOTABLE,265500,-3.6298,206276,3998.7121,2.9836,2026-11-18,N,no fresh catalyst found
+South Korea,KRX:240810,"Wonik IPS Co., Ltd.",KRX,KRW,NOTABLE,95900,-3.6181,467264,4841.2411,3.6122,2026-11-18,N,no fresh catalyst found
+South Korea,KRX:009540,HD KOREA SHIPBUILDING & OFFSHORE ENGINEERING CO. LTD.,KRX,KRW,NOTABLE,233000,-3.5197,242356,17077.5832,12.7422,2027-02-10,N,no fresh catalyst found
+South Korea,KRX:403870,"HPSP Co., Ltd.",KRX,KRW,NOTABLE,45650,-3.4884,1310639,3758.0022,2.804,2026-11-18,N,no fresh catalyst found
+South Korea,KRX:402340,"SK Square Co., Ltd.",KRX,KRW,NOTABLE,953000,3.4745,884398,121242.3085,90.4631,2026-11-12,N,no fresh catalyst found
+South Korea,KRX:096775,SK Innovation Co Ltd Pfd Registered Shs Non-voting,KRX,KRW,NOTABLE,66900,-3.4632,4873,23266.7014,17.3601,2026-10-29,N,no fresh catalyst found
+South Korea,KRX:326030,"SK Biopharmaceuticals Co., Ltd.",KRX,KRW,NOTABLE,77800,3.4574,205909,5889.1562,4.3941,2026-11-05,N,no fresh catalyst found
+South Korea,KRX:012450,"Hanwha Aerospace Co., Ltd.",KRX,KRW,NOTABLE,760000,-3.4307,191816,40490.1959,30.2111,2026-10-29,N,no fresh catalyst found
+South Korea,KRX:022100,POSCO DX COMPANY LTD.,KRX,KRW,NOTABLE,19130,-3.3838,151740,3006.086,2.2429,2026-11-02,N,no fresh catalyst found
+South Korea,KRX:000100,Yuhan Corporation,KRX,KRW,NOTABLE,74700,-3.3635,314470,5285.7251,3.9439,2026-11-03,N,no fresh catalyst found
+South Korea,KRX:267270,"HD Construction Equipment Co., Ltd.",KRX,KRW,NOTABLE,78200,-3.3375,370386,3842.5386,2.8671,2027-02-11,N,no fresh catalyst found
+South Korea,KRX:005935,Samsung Electronics Co Ltd Pfd Non-Voting,KRX,KRW,NOTABLE,183900,-3.2614,8621794,1542521.5805,1150.9287,2027-02-04,N,no fresh catalyst found
+South Korea,KRX:042700,"Hanmi Semiconductor Co., Ltd",KRX,KRW,NOTABLE,196900,-3.2432,592873,19302.5849,14.4023,2026-11-06,N,no fresh catalyst found
+South Korea,KRX:267250,"HD HYUNDAI CO.,LTD.",KRX,KRW,NOTABLE,140400,-3.2391,276470,10253.9887,7.6509,2027-02-09,N,no fresh catalyst found
+South Korea,KRX:222800,"Simmtech Co., Ltd.",KRX,KRW,NOTABLE,123400,-3.2157,557425,4958.9564,3.7,2026-11-06,N,no fresh catalyst found
+South Korea,KRX:316140,"Woori Financial Group, Inc.",KRX,KRW,NOTABLE,30800,3.01,2298592,22028.3049,16.4361,2027-02-10,N,no fresh catalyst found
+South Korea,KRX:0126Z0,"Samsung Epis Holdings Co., Ltd.",KRX,KRW,NOTABLE,307000,-3.0016,38143,7860.8899,5.8653,2027-02-01,N,no fresh catalyst found
+South Korea,KRX:009155,Samsung Electro-Mechanics Co Ltd Pfd Registered Shs Non-Voting,KRX,KRW,NOTABLE,449000,-2.9189,33044,96257.7345,71.8212,2027-01-27,N,no fresh catalyst found
+South Korea,KRX:001450,"Hyundai Marine & Fire Insurance Co., Ltd.",KRX,KRW,NOTABLE,43250,2.8537,414474,3122.7486,2.33,2026-11-12,N,no fresh catalyst found
+South Korea,KRX:058470,Leeno Industrial Inc.,KRX,KRW,NOTABLE,61700,-2.8346,537012,4819.3706,3.5959,2026-11-16,N,no fresh catalyst found
+South Korea,KRX:033780,KT & G Corporation,KRX,KRW,NOTABLE,193100,2.6582,337193,19526.7466,14.5696,2026-10-29,N,no fresh catalyst found
+South Korea,KRX:010950,S-Oil Corporation,KRX,KRW,NOTABLE,122300,-2.6274,457789,14416.3392,10.7565,2026-11-02,N,no fresh catalyst found
+South Korea,KRX:000660,SK hynix Inc.,KRX,KRW,NOTABLE,1526000,2.6227,4470577,1083822.9666,808.6778,2027-01-28,N,additional shareholder-return plan of KRW 6tn announced Oct 28; reclaimed the KRW 1.5mn level
+South Korea,KRX:005940,NH INVESTMENT & SECURITIES CO.LTD.,KRX,KRW,NOTABLE,24450,2.5157,560251,9157.6774,6.8329,2027-03-12,N,no fresh catalyst found
+South Korea,KRX:319660,PSK INC,KRX,KRW,NOTABLE,120300,-2.5122,202426,3574.4926,2.6671,2026-11-12,N,no fresh catalyst found
+South Korea,KRX:272210,"Hanwha Systems Co., Ltd.",KRX,KRW,NOTABLE,64600,-2.4169,666206,12378.9545,9.2364,2027-03-17,N,no fresh catalyst found
+South Korea,KRX:039490,"Kiwoom Securities Co., Ltd",KRX,KRW,NOTABLE,236500,2.381,77874,5854.0,4.3679,2026-10-30,N,no fresh catalyst found
+South Korea,KRX:028300,"HLB Co., Ltd.",KRX,KRW,NOTABLE,39700,-2.337,478003,5407.4511,4.0347,,N,no fresh catalyst found
+South Korea,KRX:005490,POSCO Holdings Inc.,KRX,KRW,NOTABLE,275500,-2.305,200203,20848.0772,15.5555,2026-11-02,N,no fresh catalyst found
+South Korea,KRX:000105,Yuhan Corporation Pfd Non-Voting,KRX,KRW,NOTABLE,63700,-2.3006,390,5285.7251,3.9439,2026-11-03,N,no fresh catalyst found
+South Korea,KRX:064400,"LG CNS Co., Ltd.",KRX,KRW,NOTABLE,77200,-2.2785,1421286,7653.9899,5.7109,2026-10-30,N,no fresh catalyst found
+South Korea,KRX:278470,"APR Co.,Ltd.",KRX,KRW,NOTABLE,282500,-2.2491,182889,10819.6271,8.0729,2026-10-30,N,no fresh catalyst found
+South Korea,KRX:047810,"Korea Aerospace Industries, Ltd.",KRX,KRW,NOTABLE,100400,-2.2395,242061,10010.6933,7.4693,2026-11-03,N,no fresh catalyst found
+South Korea,KRX:000880,Hanwha Corp,KRX,KRW,NOTABLE,91900,-2.234,48498,4488.0905,3.3487,2026-11-04,N,no fresh catalyst found
+South Korea,KRX:034220,"LG Display Co., Ltd",KRX,KRW,NOTABLE,7450,-2.231,1571093,3810.0,2.8428,2027-01-27,N,no fresh catalyst found
+South Korea,KRX:000810,"Samsung Fire & Marine Insurance Co., Ltd",KRX,KRW,NOTABLE,651000,2.1978,127392,24621.8054,18.3712,2026-11-12,N,no fresh catalyst found
+South Korea,KRX:028050,SAMSUNG E&A CO. LTD.,KRX,KRW,NOTABLE,62800,-2.1807,3269189,12583.2,9.3888,2027-01-28,N,no fresh catalyst found
+South Korea,KRX:018880,Hanon Systems,KRX,KRW,NOTABLE,3630,-2.1563,3677416,3806.9043,2.8405,2026-11-05,N,no fresh catalyst found
+South Korea,KRX:138930,"BNK Financial Group, Inc.",KRX,KRW,NOTABLE,13500,2.118,1426452,4004.0918,2.9876,2027-02-10,N,no fresh catalyst found
+South Korea,KRX:02826K,SAMSUNG C&T CORP Pfd 1 Non-Voting,KRX,KRW,NOTABLE,210500,-2.093,5405,50404.9064,37.6088,,N,no fresh catalyst found
+South Korea,KRX:016360,"Samsung Securities Co., Ltd.",KRX,KRW,NOTABLE,83500,2.0782,269709,7304.7402,5.4503,2026-11-18,N,no fresh catalyst found
