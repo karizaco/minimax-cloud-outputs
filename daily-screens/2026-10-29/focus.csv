@@ -1,0 +1,13 @@
+ticker,company,gics_sector,close_10_28,chg_10_28,volume_10_28,adr_pct_20d,velocity_14d,close_10_29,chg_10_29,n_stylists,n_origins,origins,setup_tags,market_cap_bn
+GMAB,Genmab,Health Care,$57.29,+28.25%,29283870,5.2,58.9,$56.49,-1.40%,4,5,"4% breakout, RS leader, 5d gainer, ADR + velocity, theme→group leader",,36.81
+PRME,Prime Medicine Inc,Health Care,$5.36,+23.22%,15200751,10.7,49.7,$5.24,-2.24%,3,3,"4% breakout, RS leader, theme→group leader",,0.97
+FIGS,Figs Inc - Class A,Health Care,$20.66,+0.88%,3220423,5.5,37.9,$21.55,+4.31%,3,3,"RS leader, ADR + velocity, CANSLIM",compression; higher-low base,3.45
+SDGR,Schrodinger Inc,Health Care,$30.87,+15.53%,3316534,8.1,17.0,$29.99,-2.85%,3,4,"4% breakout, RS leader, 5d gainer, ADR + velocity",MACD cross-up,2.31
+SGRY,Surgery Partners Inc,Health Care,$23.24,-0.51%,3105470,3.5,70.4,$23.21,-0.13%,2,2,"5d gainer, theme→group leader",,3.04
+LQDA,Liquidia Corp,Health Care,$45.72,+0.62%,2265027,9.2,63.2,$44.99,-1.60%,2,2,"ADR + velocity, theme→group leader",compression,4.07
+KIDS,OrthoPediatrics Corp,Health Care,$30.80,+29.30%,1794600,4.4,41.5,$31.52,+2.34%,2,2,"4% breakout, theme→group leader",gap-up ready,0.79
+RRC,Range Resources Corp,Energy,$55.88,-0.89%,14249371,3.2,37.1,$53.89,-3.56%,2,2,"5d gainer, theme→group leader",,13.06
+AXGN,Axogen Inc,Health Care,$49.25,+31.47%,9290559,4.5,36.1,$49.63,+0.77%,2,3,"4% breakout, gap up (EP), 5d gainer",gap-up ready,2.62
+NTSK,Netskope Inc - Class A,Information Technology,$26.52,+1.41%,5384946,6.1,35.2,$26.19,-1.24%,2,2,"RS leader, ADR + velocity",compression,10.71
+HRI,Herc Holdings Inc,Industrials,$166.17,+6.48%,1514727,5.9,34.2,$173.78,+4.58%,2,3,"RS leader, 5d gainer, ADR + velocity",,5.56
+ICLR,Icon Plc,Health Care,$214.16,+17.04%,3947667,4.9,30.2,$215.48,+0.62%,2,2,"4% breakout, RS leader",gap-up ready,16.52

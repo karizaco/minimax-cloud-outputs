@@ -1,0 +1,8 @@
+ticker,company,gics_sector,close_10_28,chg_10_28,volume_10_28,adr_pct_20d,velocity_14d,close_10_29,chg_10_29,n_stylists,n_origins,origins,setup_tags,market_cap_bn
+AXGN,Axogen Inc,Health Care,$49.25,+31.47%,9290559,4.5,36.1,$49.63,+0.77%,2,3,"4% breakout, gap up (EP), 5d gainer",gap-up ready,2.62
+GMAB,Genmab,Health Care,$57.29,+28.25%,29283870,5.2,58.9,$56.49,-1.40%,4,5,"4% breakout, RS leader, 5d gainer, ADR + velocity, theme→group leader",,36.81
+HRI,Herc Holdings Inc,Industrials,$166.17,+6.48%,1514727,5.9,34.2,$173.78,+4.58%,2,3,"RS leader, 5d gainer, ADR + velocity",,5.56
+RRC,Range Resources Corp,Energy,$55.88,-0.89%,14249371,3.2,37.1,$53.89,-3.56%,2,2,"5d gainer, theme→group leader",,13.06
+SDGR,Schrodinger Inc,Health Care,$30.87,+15.53%,3316534,8.1,17.0,$29.99,-2.85%,3,4,"4% breakout, RS leader, 5d gainer, ADR + velocity",MACD cross-up,2.31
+SGRY,Surgery Partners Inc,Health Care,$23.24,-0.51%,3105470,3.5,70.4,$23.21,-0.13%,2,2,"5d gainer, theme→group leader",,3.04
+VSAT,Viasat Inc,Information Technology,$78.26,+11.32%,4656493,6.1,16.1,$77.99,-0.35%,2,2,"5d gainer, ADR + velocity",,10.69

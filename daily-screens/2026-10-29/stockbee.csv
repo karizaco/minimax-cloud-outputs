@@ -1,0 +1,60 @@
+ticker,company,gics_sector,close_10_28,chg_10_28,volume_10_28,adr_pct_20d,velocity_14d,close_10_29,chg_10_29,n_stylists,n_origins,origins,setup_tags,market_cap_bn
+AXGN,Axogen Inc,Health Care,$49.25,+31.47%,9290559,4.5,36.1,$49.63,+0.77%,2,3,"4% breakout, gap up (EP), 5d gainer",gap-up ready,2.62
+BEAM,Beam Therapeutics Inc,Health Care,$28.78,+15.58%,5008039,5.5,17.0,—,—,1,1,4% breakout,,2.96
+BLCO,Bausch + Lomb Corp,Health Care,$20.40,+15.78%,4106325,3.2,19.0,—,—,1,1,4% breakout,gap-up ready,7.27
+DMAC,DiaMedica Therapeutics Inc,Health Care,$9.82,+13.00%,521280,6.4,22.6,—,—,1,1,4% breakout,,0.53
+DNA,Ginkgo Bioworks Holdings Inc - Class A,Health Care,$13.32,+18.19%,3776589,12.4,17.5,—,—,2,2,"4% breakout, RS leader",compression,0.87
+EAT,Brinker International Inc,Consumer Discretionary,$220.74,+12.21%,3550055,4.9,16.1,—,—,1,1,4% breakout,gap-up ready,9.47
+EVR,Evercore Inc - Class A,Financials,$292.38,+12.51%,1105089,3.5,9.6,—,—,1,1,4% breakout,,11.31
+FWRD,Forward Air Corp,Industrials,$17.54,+15.85%,584453,4.7,7.5,—,—,1,1,4% breakout,MACD cross-up,0.55
+GENB,Generate Biomedicines Inc,Health Care,$15.38,+16.43%,3940405,6.6,9.9,—,—,1,1,4% breakout,gap-up ready,1.97
+GMAB,Genmab,Health Care,$57.29,+28.25%,29283870,5.2,58.9,$56.49,-1.40%,4,5,"4% breakout, RS leader, 5d gainer, ADR + velocity, theme→group leader",,36.81
+HAYW,Hayward Holdings Inc,Consumer Discretionary,$14.79,+13.51%,8635798,3.0,29.3,—,—,1,1,4% breakout,gap-up ready,3.21
+HLP,Hongli Group Inc - Class A,Materials,$4.19,+15.11%,413442,7.6,69.0,—,—,1,1,4% breakout,,0.31
+ICLR,Icon Plc,Health Care,$214.16,+17.04%,3947667,4.9,30.2,$215.48,+0.62%,2,2,"4% breakout, RS leader",gap-up ready,16.52
+KIDS,OrthoPediatrics Corp,Health Care,$30.80,+29.30%,1794600,4.4,41.5,$31.52,+2.34%,2,2,"4% breakout, theme→group leader",gap-up ready,0.79
+NGNE,Neurogene Inc.,Health Care,$30.42,+12.71%,646310,9.0,14.8,—,—,1,1,4% breakout,,0.48
+OSW,OneSpaWorld Holdings Ltd,Consumer Discretionary,$28.07,+12.51%,1635770,2.9,19.4,—,—,2,2,"4% breakout, volume breakout",gap-up ready,2.85
+PRME,Prime Medicine Inc,Health Care,$5.36,+23.22%,15200751,10.7,49.7,$5.24,-2.24%,3,3,"4% breakout, RS leader, theme→group leader",,0.97
+REPL,Replimune Group Inc,Health Care,$16.06,+23.07%,7284662,7.0,23.2,$17.39,+8.28%,2,2,"4% breakout, RS leader",,1.35
+ROMA,Roma Green Finance Ltd,Industrials,$7.00,+49.25%,671786,8.6,-19.9,$6.62,-5.43%,1,1,4% breakout,gap-up ready,0.42
+SDGR,Schrodinger Inc,Health Care,$30.87,+15.53%,3316534,8.1,17.0,$29.99,-2.85%,3,4,"4% breakout, RS leader, 5d gainer, ADR + velocity",MACD cross-up,2.31
+SENS,Senseonics Holdings Inc,Health Care,$9.34,+12.12%,998902,6.1,3.5,—,—,1,1,4% breakout,MACD cross-up,0.39
+SKHY,SK Hynix Inc,Information Technology,$164.70,+13.30%,49982137,3.9,-3.4,—,—,1,2,"4% breakout, EP9M volume",compression; gap-up ready; MACD cross-up,1171.14
+SLMT,Brera Holdings PLC - Class B,Communication Services,$3.80,+13.77%,102901,9.0,19.5,—,—,1,1,4% breakout,compression,0.31
+STLA,Stellantis N.V,Consumer Discretionary,$4.68,+13.04%,119524473,3.5,3.5,—,—,2,3,"4% breakout, EP9M volume, gap up (EP)",gap-up ready; MACD cross-up,17.62
+VRT,Vertiv Holdings Co - Class A,Industrials,$242.94,+16.48%,19539837,4.2,-0.3,—,—,2,2,"4% breakout, gap up (EP)",gap-up ready; MACD cross-up,93.32
+WEN,Wendy`s Co - Class A,Consumer Discretionary,$7.07,+15.15%,34848029,3.7,13.7,—,—,1,2,"4% breakout, EP9M volume",gap-up ready,1.35
+WING,Wingstop Inc,Consumer Discretionary,$138.57,+12.18%,3778779,5.4,16.9,—,—,2,2,"4% breakout, ADR + velocity",gap-up ready; MACD cross-up,3.77
+AAL,American Airlines Group Inc,Industrials,$12.58,-0.24%,69085447,3.9,-1.7,—,—,1,1,EP9M volume,compression; higher-low base,8.33
+AAPL,Apple Inc,Information Technology,$343.83,-0.94%,35714331,1.7,1.0,—,—,1,1,EP9M volume,compression; higher-low base,5049.95
+AMZN,Amazon.com Inc,Consumer Discretionary,$254.60,+0.59%,34915856,2.2,0.2,—,—,1,1,EP9M volume,higher-low base,2738.76
+BRAI,Braiin Ltd,Information Technology,$3.60,+8.76%,57253643,22.0,-17.1,—,—,1,1,EP9M volume,gap-up ready,0.74
+BSX,Boston Scientific Corp,Health Care,$42.43,-5.84%,69837060,2.9,0.9,—,—,1,1,EP9M volume,,63.07
+CCC,CCC Intelligent Solutions Holdings Inc,Information Technology,$7.67,-0.39%,47825096,2.2,16.7,—,—,1,1,EP9M volume,compression; higher-low base,4.5
+CDE,Coeur Mining Inc,Materials,$14.42,+1.48%,38153759,4.2,-14.5,—,—,1,1,EP9M volume,,14.92
+CIFR,Cipher Mining Inc,Financials,$8.87,+4.60%,52819518,8.5,-34.3,—,—,1,1,EP9M volume,,3.63
+CRWV,CoreWeave Inc - Class A,Information Technology,$63.93,+7.32%,61645734,7.6,-21.6,—,—,1,1,EP9M volume,,34.88
+F,Ford Motor Company,Consumer Discretionary,$11.95,+2.05%,53912099,2.3,-2.4,—,—,1,1,EP9M volume,higher-low base,47.62
+GOOGL,Alphabet Inc - Class A,Communication Services,$324.89,+1.34%,63109029,2.2,-6.7,—,—,1,1,EP9M volume,higher-low base,3936.37
+HOOD,Robinhood Markets Inc - Class A,Financials,$91.43,-3.31%,39825895,4.5,-14.6,—,—,1,1,EP9M volume,,82.33
+INTC,Intel Corp,Information Technology,$95.53,+1.91%,82592443,4.5,-10.8,—,—,1,1,EP9M volume,,480.13
+IREN,IREN Limited,Financials,$28.84,+5.10%,56518016,7.3,-19.2,—,—,2,2,"EP9M volume, ADR + velocity",,10.31
+ITUB,Itau Unibanco Holding S.A.,Financials,$7.40,-3.52%,35421957,3.3,-24.7,—,—,1,1,EP9M volume,,72.34
+MARA,MARA Holdings Inc,Information Technology,$7.35,+3.67%,40955722,6.9,-25.8,—,—,1,1,EP9M volume,,2.8
+META,Meta Platforms Inc - Class A,Communication Services,$612.49,-1.24%,35110944,2.9,-15.0,—,—,1,1,EP9M volume,,1560.32
+NFLX,Netflix Inc,Communication Services,$61.99,-0.85%,41893783,2.6,-13.4,—,—,1,1,EP9M volume,,261.15
+NOK,Nokia Corp,Information Technology,$9.22,+3.71%,76457751,4.4,-9.1,—,—,1,1,EP9M volume,,51.69
+NU,Nu Holdings Ltd Class A,Financials,$11.97,-3.47%,89320355,3.9,-22.2,—,—,1,1,EP9M volume,,58.13
+NVDA,NVIDIA Corp,Information Technology,$215.38,-1.17%,93030154,2.2,-6.6,—,—,1,1,EP9M volume,higher-low base,5212.2
+ONDS,Ondas Holdings Inc,Information Technology,$6.86,+3.16%,51851234,5.8,0.1,—,—,2,2,"EP9M volume, ADR + velocity",compression,3.4
+ORCL,Oracle Corp,Information Technology,$144.54,+10.73%,81933839,4.7,6.5,—,—,2,2,"EP9M volume, CANSLIM",MACD cross-up,416.34
+PCG,PG&E Corp,Utilities,$13.15,+1.47%,39179458,2.9,3.8,—,—,1,1,EP9M volume,compression; higher-low base,35.24
+RIG,Transocean Ltd,Energy,$6.71,+3.87%,40663265,3.9,21.1,—,—,2,2,"EP9M volume, theme→group leader",,7.49
+SOFI,SoFi Technologies Inc,Financials,$17.14,+4.51%,82318823,4.0,9.8,—,—,2,2,"EP9M volume, CANSLIM",,21.99
+SPCX,Space Exploration Technologies Corp - Class A,Industrials,$145.23,-2.25%,98705832,4.4,-9.6,—,—,1,1,EP9M volume,,1914.39
+T,AT&T Inc,Communication Services,$20.70,-1.15%,54721428,2.5,-16.8,—,—,1,1,EP9M volume,,143.83
+TSLA,Tesla Inc,Consumer Discretionary,$404.22,-0.80%,35598772,2.9,7.8,—,—,1,1,EP9M volume,,1596.49
+VALE,Vale S.A.,Materials,$11.47,-3.12%,51849211,2.5,-14.5,—,—,1,1,EP9M volume,,48.96
+WULF,TeraWulf Inc,Financials,$13.42,+6.00%,50657501,8.0,-1.7,—,—,2,2,"EP9M volume, ADR + velocity",compression,6.65
+OBA,Oxley Bridge Acquisition Ltd - Class A,Financials,$10.38,+0.19%,56163,0.0,0.3,—,—,1,1,anticipation (coil),higher-low base,0.33
