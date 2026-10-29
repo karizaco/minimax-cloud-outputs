@@ -1,0 +1,38 @@
+ticker,section,oct28_close,oct28_chg_pct,after_hours_price,after_hours_chg_pct,premarket_price,premarket_chg_pct,premarket_asof,tier,catalyst
+AMZN,overnight,254.6,0.593,251.98,-1.029,251.87,-1.07,2026-10-29 06:45-07:00 ET,B,Reports after today's close - next test of the capex question
+BE,overnight,228.08,4.384,218.97,-3.956,218.97,-3.99,2026-10-29 06:45-07:00 ET,B,AI-credit/FCF sensitivity
+CRM,overnight,,,,,230.78,-4.68,2026-10-29 06:45-07:00 ET,B,SaaS sympathy off NOW/FTNT
+FTNT,overnight,174.08,-5.903,128.5,-26.183,128.12,-26.4,2026-10-29 06:45-07:00 ET,A,Product revenue +37% in Q3 vs +52% in Q2; beat on revenue/billings but smaller than desired
+GOOGL,overnight,324.89,1.344,291.89,-10.157,291.87,-10.16,2026-10-29 06:45-07:00 ET,A,Q3 miss: ads $96.3B vs $98.5B cons; FCF -$9.07B vs -$2.70B exp; FY capex maintained $195-205B
+INOD,overnight,,,,,46.35,-2.73,2026-10-29 06:45-07:00 ET,B,
+LITE,overnight,913.95,5.515,971.0,6.242,966.85,5.79,2026-10-29 06:45-07:00 ET,A,Marvell in advanced talks to acquire Lumentum (Bloomberg/Reuters); NO TERMS PUBLISHED
+META,overnight,612.49,-1.242,617.47,0.813,619.36,1.12,2026-10-29 06:45-07:00 ET,B,Capital raise absorbed; capex question now applies
+MRVL,overnight,,,,,222.89,-11.43,2026-10-29 06:45-07:00 ET,C,Acquirer leg of the LITE deal (-8% AH on price/execution/regulatory)
+MSFT,overnight,531.01,-0.06,546.16,2.853,546.51,2.92,2026-10-29 06:45-07:00 ET,B,"Q3 capex+leases $45.2B (+30% y/y) BELOW $50.67B cons; FCF -27% to $18.63B, still positive; Azure stronger"
+MU,overnight,983.23,5.865,957.81,-2.585,957.83,-2.58,2026-10-29 06:45-07:00 ET,B,Memory read-across: Alphabet capex burn
+NOW,overnight,150.13,-3.004,121.482,-18.934,121.2,-19.27,2026-10-29 06:45-07:00 ET,A,Q3 adj EPS $1.00 vs $1.17 cons; rev/RPO +20.5%; Q4 RPO guide 18.5% vs 19% cons
+PANW,overnight,,,,,370.01,-6.21,2026-10-29 06:45-07:00 ET,B,Cyber sympathy off FTNT
+RRC,overnight,,,,,55.77,-0.2,2026-10-29 06:45-07:00 ET,C,0.987x EQT all-stock; implied $55.49 vs $55.88 close; spread closed
+SGRY,overnight,,,,,23.23,-0.04,2026-10-29 06:45-07:00 ET,C,$23.50 cash take-private (Bon Secours/HealthSpan); -1.1% spread
+SNDK,overnight,1404.77,7.658,1376.69,-1.999,1374.5,-2.15,2026-10-29 06:45-07:00 ET,B,Memory read-across; reports FQ1 FY27 after today's close
+ULBI,overnight,15.61,145.44,15.53,0.0,15.57,-0.26,2026-10-29 06:45-07:00 ET,C,$16.00 cash tender offer by EnerSys; -2.7% spread
+WEN,overnight,7.07,15.147,7.09,0.283,7.09,0.28,2026-10-29 06:45-07:00 ET,C,Trian $7.35 cash offer; closed $7.07 BELOW terms
+XYL,overnight,,,,,88.52,0.33,2026-10-29 06:45-07:00 ET,B,
+ZS,overnight,,,,,239.36,-6.43,2026-10-29 06:45-07:00 ET,B,Cyber sympathy off FTNT
+ORCL,carry_forward_oct28_tierA,144.54,10.733,143.67,-0.464,143.67,-0.464,after-hours print (Oct 28 evening),CARRY,"Investor Day: FY30 rev >=$225B, cap on new raises $20B thru FY30"
+VRT,carry_forward_oct28_tierA,242.94,16.485,236.01,-2.916,236.01,-2.916,after-hours print (Oct 28 evening),CARRY,"Q3 beat, FY26 raised to $14.65B mid / adj EPS $7.15"
+SKHY,carry_forward_oct28_tierA,164.7,13.305,162.6,-1.275,162.6,-1.275,after-hours print (Oct 28 evening),CARRY,Q3 profit surge; ~100T won shareholder-return plan
+BSX,carry_forward_oct28_tierA,42.43,-5.837,42.7,0.613,42.7,0.613,after-hours print (Oct 28 evening),CARRY,Q3 guide cut (FY26 adj EPS $3.16-3.18) + Aug 25 cyberattack
+GMAB,carry_forward_oct28_tierA,57.29,28.252,56.58,-1.239,56.58,-1.239,after-hours print (Oct 28 evening),CARRY,"Ph3 LiGeR-HN1: HR 0.50, both endpoints met"
+LPLA,carry_forward_oct28_tierA,269.19,-15.232,272.36,0.0,272.36,0.0,after-hours print (Oct 28 evening),CARRY,Commonwealth retention cut to ~83%
+FFIV,carry_forward_oct28_tierA,365.53,-20.426,364.96,-0.156,364.96,-0.156,after-hours print (Oct 28 evening),CARRY,FY27 revenue guide 8-9% vs 11%; margin guide down
+FLEX,carry_forward_oct28_tierA,93.03,11.614,89.98,-3.279,89.98,-3.279,after-hours print (Oct 28 evening),CARRY,Q2 record; FY27 raised
+ICLR,carry_forward_oct28_tierA,214.16,17.04,215.0,0.0,215.0,0.0,after-hours print (Oct 28 evening),CARRY,"Record net business wins $3.15B, book-to-bill 1.56x, buyback raised"
+LII,carry_forward_oct28_tierA,332.64,-10.593,330.31,-0.7,330.31,-0.7,after-hours print (Oct 28 evening),CARRY,Q3 EPS miss + FY26 EPS cut to $21.00-21.50
+EAT,carry_forward_oct28_tierA,220.74,12.21,222.07,0.0,222.07,0.0,after-hours print (Oct 28 evening),CARRY,Q1 FY27: Chili's comps +10.1%; FY27 EPS raised
+ENPH,carry_forward_oct28_tierA,24.99,-16.028,24.87,-0.48,24.87,-0.48,after-hours print (Oct 28 evening),CARRY,Q3 miss; Q4 guide $225-255M vs ~$299M cons
+STLA,carry_forward_oct28_tierA,4.68,13.043,4.65,-1.064,4.65,-1.064,after-hours print (Oct 28 evening),CARRY,"Q3 beat, industrial FCF -EUR4.0B miss"
+CHRW,carry_forward_oct28_tierA,127.6,-11.136,127.0,-0.47,127.0,-0.47,after-hours print (Oct 28 evening),CARRY,Beat but SG&A guide raised; RXO deal pauses buybacks
+WING,carry_forward_oct28_tierA,138.57,12.184,135.09,0.0,135.09,0.0,after-hours print (Oct 28 evening),CARRY,FY26 domestic SSS guide -6.5/-7.0%
+CSGP,carry_forward_oct28_tierA,27.54,-13.964,27.88,1.235,27.88,1.235,after-hours print (Oct 28 evening),CARRY,Record adj EBITDA but net new bookings $37M vs $84M
+AXGN,carry_forward_oct28_tierA,49.25,31.474,49.48,0.0,49.48,0.0,after-hours print (Oct 28 evening),CARRY,Q3 beat-and-raise; $225M offering dilution
