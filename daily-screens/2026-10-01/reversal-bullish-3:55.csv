@@ -1,0 +1,2 @@
+symbol,exchange,close,open,high,low,volume,mcap,change_pct_tv,dcr,body_frac,tail_to_body,adr_pct,trend_20d_pct,close_20d_ago,drop_2d_pct,five_day_low,body_low_stop,_source
+CNC,NYSE,62.12,62.23,62.69,60.94,3580900,30686968569.000004,-0.14,0.674,0.063,10.73,3.23,-4.77,65.23,-0.66,61.25,62.12,tv_yahoo_fallback

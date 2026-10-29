@@ -1,0 +1,4 @@
+symbol,exchange,close,open,high,low,volume,mcap,change_pct_tv,dcr,body_frac,tail_to_body,adr_pct,trend_20d_pct,close_20d_ago,drop_2d_pct,five_day_low,body_low_stop,_source
+IREN,NASDAQ,40.65,40.76,40.97,39.33,36878700,15997297824,-0.56,0.802,0.067,12.0,6.02,2.65,39.6,-1.76,40.6,40.65,tv_yahoo_fallback
+AVTR,NYSE,15.03,14.94,15.19,14.57,10567400,10165672968.999998,-0.13,0.736,0.152,3.84,3.01,2.59,14.65,-1.38,14.67,14.94,tv_yahoo_fallback
+CNM,NYSE,41.38,41.3,41.82,40.85,1899700,7882643796.000001,-0.24,0.544,0.083,5.56,3.0,-5.46,43.77,-0.67,41.14,41.3,tv_yahoo_fallback

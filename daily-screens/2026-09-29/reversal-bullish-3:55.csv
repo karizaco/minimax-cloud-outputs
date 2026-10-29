@@ -1,0 +1,4 @@
+symbol,exchange,close,open,high,low,volume,mcap,change_pct_tv,dcr,body_frac,tail_to_body,adr_pct,trend_20d_pct,close_20d_ago,drop_2d_pct,five_day_low,body_low_stop,_source
+VSAT,NASDAQ,71.65,71.51,72.28,69.82,1317300,9870204255,-1.88,0.744,0.057,12.07,5.36,6.35,67.37,-2.81,71.55,71.51,tv_yahoo_fallback
+STLD,NASDAQ,230.39,229.99,233.03,227.1,1006500,33021359600.000004,-1.4,0.555,0.067,7.23,3.0,-1.82,234.67,-2.05,229.24,229.99,tv_yahoo_fallback
+EBAY,NASDAQ,107.32,107.57,108.73,105.72,3686000,47757399864,-0.54,0.532,0.083,6.4,3.19,1.61,105.62,-0.47,106.44,107.32,tv_yahoo_fallback

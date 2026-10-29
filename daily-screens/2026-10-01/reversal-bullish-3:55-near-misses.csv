@@ -1,0 +1,2 @@
+symbol,exchange,close,open,high,low,volume,mcap,change_pct_tv,dcr,body_frac,tail_to_body,adr_pct,trend_20d_pct,close_20d_ago,drop_2d_pct,five_day_low,body_low_stop,_source
+FIVE,NASDAQ,219.57,220.93,220.93,215.25,1074500,12088214909,-1.11,0.761,0.239,3.18,4.44,-10.41,245.08,-3.7,216.67,219.57,tv_yahoo_fallback
