@@ -1,0 +1,4 @@
+symbol,exchange,close,open,high,low,volume,mcap,change_pct_tv,dcr,body_frac,tail_to_body,adr_pct,trend_20d_pct,close_20d_ago,drop_2d_pct,five_day_low,body_low_stop,_source
+SSRM,NASDAQ,35.68,35.79,35.88,34.75,1745700,7275484493,-0.39,0.823,0.097,8.45,3.53,-8.54,39.01,-1.71,34.84,35.68,tv_yahoo_fallback
+INTU,NASDAQ,275.79,275.52,277.39,271.43,3398400,73701016636,-0.48,0.732,0.045,15.15,3.97,-20.75,348.0,-3.84,276.78,275.52,tv_yahoo_fallback
+HRB,NYSE,42.19,42.16,42.64,41.23,1843900,5200589103,-0.99,0.681,0.021,31.0,3.08,-19.65,52.51,-0.82,41.85,42.16,tv_yahoo_fallback

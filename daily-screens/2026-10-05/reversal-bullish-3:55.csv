@@ -1,0 +1,2 @@
+symbol,exchange,close,open,high,low,volume,mcap,change_pct_tv,dcr,body_frac,tail_to_body,adr_pct,trend_20d_pct,close_20d_ago,drop_2d_pct,five_day_low,body_low_stop,_source
+NYT,NYSE,62.7,62.75,63.51,58.95,5035400,10112480425.999998,-1.59,0.822,0.011,75.0,3.49,-6.5,67.06,-1.57,61.74,62.7,tv_yahoo_fallback

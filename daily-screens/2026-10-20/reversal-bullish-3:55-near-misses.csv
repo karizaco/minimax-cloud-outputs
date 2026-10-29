@@ -1,0 +1,2 @@
+symbol,exchange,close,open,high,low,volume,mcap,change_pct_tv,dcr,body_frac,tail_to_body,adr_pct,trend_20d_pct,close_20d_ago,drop_2d_pct,five_day_low,body_low_stop,_source
+GIL,NYSE,40.86,40.89,41.04,40.16,1375300,7566938455.421876,-0.2,0.795,0.034,23.33,3.69,-11.48,46.16,-2.69,40.76,40.86,tv_yahoo_fallback

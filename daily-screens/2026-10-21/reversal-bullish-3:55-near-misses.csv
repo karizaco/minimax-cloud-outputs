@@ -1,0 +1,2 @@
+symbol,close,open,high,low,volume,change_pct,dcr,body_frac,tail_to_body,adr_pct,trend_20d_pct,close_20d_ago,drop_2d_pct,five_day_low,body_low_stop,_source
+VRT,203.56,202.49,208.94,197.9,6765100,-1.22,0.513,0.097,4.29,3.63,-19.69,253.46,-1.39,204.38,202.49,yahoo_fallback

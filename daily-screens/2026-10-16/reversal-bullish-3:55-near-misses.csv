@@ -1,0 +1,5 @@
+symbol,exchange,close,open,high,low,volume,mcap,change_pct_tv,dcr,body_frac,tail_to_body,adr_pct,trend_20d_pct,close_20d_ago,drop_2d_pct,five_day_low,body_low_stop,_source
+VRT,NYSE,214.75,212.2,215.36,204.38,12903600,82676213737,-3.63,0.944,0.232,3.07,3.5,-11.07,241.49,-9.5,220.21,212.2,tv_yahoo_fallback
+CGNX,NASDAQ,55.67,55.38,55.9,53.12,3936600,9365021223,-2.79,0.917,0.104,7.79,3.42,-8.51,60.85,-7.23,56.89,55.38,tv_yahoo_fallback
+COHR,NYSE,250.6,249.84,252.28,235.55,9917100,49350951803,-4.83,0.9,0.045,18.8,6.49,-15.33,295.98,-13.58,261.9,249.84,tv_yahoo_fallback
+DELL,NYSE,473.39,471.21,482.0,452.42,16383200,300987411307,-6.8,0.709,0.074,8.62,4.52,-19.55,588.4,-17.31,502.32,471.21,tv_yahoo_fallback
