@@ -1,33 +1,90 @@
 {
-  "audit_date_et": "2026-10-27",
-  "audit_run_et": "2026-10-28T07:02:00-04:00",
-  "origin_main_sha": "60a21fd",
-  "due": 14,
-  "delivered": 13,
-  "missing": 1,
+  "audit_date_et": "2026-10-28",
+  "audit_run_et": "2026-10-29T07:07:19-04:00",
+  "origin_main_sha": "db0d091",
+  "origin_main_sha_full": "db0d091c72d1014373628ed4494e85ca626684aa",
+  "due": 15,
+  "delivered": 15,
+  "missing": 0,
+  "stale_routines": 2,
+  "never_delivered": [],
   "gaps": [
     {
-      "routine": "16-unusual-options-flow",
-      "path": "options-flow/2026-10-27.md",
-      "label": "MISSING",
-      "cause": "artifact was created and pushed (commit 717cab6, 279 lines, 2026-10-27 22:55 ET) then deleted from main by commit 9fd37ea 'chore: cleanup' (2026-10-28 05:32 ET), which removed the whole options-flow/ directory; a 1-line stub options-flow/2026-10-28.md was added by 4ab6841 and removed by dab85b8. options-flow/ does not exist on origin/main.",
-      "blast_radius": [
-        "options-flow/2026-10-16.md",
-        "options-flow/2026-10-20.md",
-        "options-flow/2026-10-21.md",
-        "options-flow/2026-10-22.md",
-        "options-flow/2026-10-23.md",
-        "options-flow/2026-10-27.md"
-      ]
+      "routine": "22-weekly-market-recap-preview",
+      "path": "weekly/{date}-preview.md",
+      "label": "never_delivered",
+      "reason": "NOT a delivery failure and NOT MISSING for the audited date. Live task 457174835322946 is enabled on `47 17 * * 0` (Sun 17:47 ET) with a matching window check (DAY_OF_WEEK=7, WEEKEND_ONLY=false) - the historical Friday-vs-Saturday contradiction is fixed. The task was created 2026-10-28 02:09 ET, i.e. AFTER the last Sunday (2026-10-25), so it has had ZERO scheduled fire opportunities; cron_read view=runs returns 0 runs. First fire is 2026-11-01 17:47 ET. The only weekly/ path ever committed to this repo (weekly/2026-10-28-preview.md, 8 bytes, content '{\"a\":1}') was a push-race test fixture added and deleted 14 seconds later on 2026-10-28 (0d6494d8 -> 1c0257e) - not an artifact. VERIFICATION DEADLINE: if weekly/2026-11-01-preview.md is absent after 2026-11-01 18:00 ET, this IS the cron-#22 failure mode recurring and must be escalated.",
+      "verify_after_et": "2026-11-01T18:00:00-05:00"
+    },
+    {
+      "routine": "14-macro-calendar-week-ahead",
+      "path": "macro-calendar/{date}-week-ahead.md",
+      "label": "stale",
+      "reason": "Newest artifact is 2026-10-18 (legacy local cron, published 09:03 ET, commit 30422cd); age 10d vs tolerance 9d. Live task 457172664209611 is enabled on `0 15 * * 0` (Sun 15:00 ET) with a matching window check (DAY_OF_WEEK=7), created 2026-10-28 02:09 ET, so again zero scheduled fire opportunities; cron_read view=runs returns 0 runs. First fire 2026-11-01 15:00 ET. SEPARATE HISTORICAL GAP: Sunday 2026-10-25 produced no week-ahead artifact and macro-calendar/2026-10-25-week-ahead.md appears in NO commit in the repo's history - that fire ran (or was scheduled) but its push never landed. VERIFICATION DEADLINE: if macro-calendar/2026-11-01-week-ahead.md is absent after 2026-11-01 16:00 ET, escalate.",
+      "verify_after_et": "2026-11-01T16:00:00-05:00"
     }
   ],
   "not_due": [
-    "19-earnings-reminder-daily (Mon)",
-    "15-earnings-reaction-scanner (Mon)",
-    "13-macro-calendar-midweek (Wed)",
-    "14-macro-calendar-week-ahead (Sun)",
-    "06-pattern-study-backlog (Sat)",
-    "22-weekly-market-recap-preview (Sun)"
+    {
+      "routine": "19-earnings-reminder-daily",
+      "path": "earnings/2026-10-28-reminders.md",
+      "reason": "Before 2026-10-29 this routine was `0 6 * * 1` (Mondays only); 2026-10-28 is a Wednesday."
+    },
+    {
+      "routine": "15-earnings-reaction-scanner",
+      "path": "earnings/2026-10-28-reactions.md",
+      "reason": "Before 2026-10-29 this routine was `0 8 * * 1` (Mondays only); 2026-10-28 is a Wednesday."
+    },
+    {
+      "routine": "14-macro-calendar-week-ahead",
+      "path": "macro-calendar/2026-10-28-week-ahead.md",
+      "reason": "Schedule `0 15 * * 0` (Sunday); audit date is Wednesday. See gaps[] for the STEP 4b finding."
+    },
+    {
+      "routine": "22-weekly-market-recap-preview",
+      "path": "weekly/2026-10-28-preview.md",
+      "reason": "Schedule `47 17 * * 0` (Sunday); audit date is Wednesday. See gaps[] for the STEP 4b finding."
+    },
+    {
+      "routine": "06-pattern-study-backlog",
+      "path": "daily-screens/2026-10-28/weekly-ipo.md",
+      "reason": "Schedule `0 15 * * 6` (Saturday); audit date is Wednesday."
+    },
+    {
+      "routine": "90-delivery-auditor",
+      "path": null,
+      "reason": "This cron. Writes no artifact by design."
+    }
   ],
-  "audit_status": "gaps_found"
+  "delivered_routines": [
+    "02-asia-pre-market-reactions",
+    "26-agentic-pre-market-brief",
+    "08-pre-market-gapper",
+    "25-ntrt-gap-brief-daily",
+    "07-focus-rvol-09:45",
+    "12-cross-asset-correlation",
+    "10-breadth-snapshot",
+    "13-macro-calendar-midweek",
+    "17-us-stocks-in-play",
+    "04-reversal-bullish-3:55",
+    "20-eod-watchlist-csv",
+    "05-eod-international-daily",
+    "16-unusual-options-flow",
+    "09-daily-sweep-18:30",
+    "23-agentic-post-market-brief"
+  ],
+  "audit_status": "gaps_found",
+  "audit_status_reason": "No due artifact is missing (missing=0). audit_status=gaps_found because STEP 4b raised two findings (never_delivered / stale) whose labels are MISSING-equivalent under the label table, even though both are pending-first-fire items rather than delivery failures - see each gap's reason.",
+  "audit_date_context": {
+    "dow": "Wednesday",
+    "us_trading_day": true,
+    "us_market_holiday": false,
+    "weekend": false
+  },
+  "notes": [
+    "CAVEAT - #15/#19 'Mondays only' is not corroborated by the delivery record. artifacts/ shows earnings reminders for 2026-10-20(Tue), 10-21(Wed), 10-22(Thu), 10-23(Fri) and 10-26(Sun) and earnings reactions for 2026-10-24(Sat) and 2026-10-26(Mon), i.e. weekday-capable pushes before 2026-10-29. Classified not_due per the audit contract (STEP 3 SCHEDULE CHANGES), but if the operator intends those to be scheduled weekday fires, then 2026-10-27 and 2026-10-28 are unexplained absences for #19 and the classification changes.",
+    "STEP 4b tolerance is per routine (5 for daily/Mon-Fri, 9 for weekly). The two weekly flags are the only STEP 4b hits; every other routine is within tolerance.",
+    "METHOD LIMITATION - cron_read view=list could not be paged past page 1: the numeric cursor '20' is coerced to a number by the mcp_invoke transport and fails cron_read's string schema, while a non-numeric cursor is ignored and returns page 1. Page 1 (20 tasks) contains all 20 artifact-producing roster routines plus their live schedules, so no roster blind spot; #90 itself is page 2 and is confirmed live by this run executing at 07:00 ET.",
+    "Read-only audit: no artifact was modified, deleted or re-pushed, and nothing was pushed to main."
+  ]
 }
