@@ -1,0 +1,11 @@
+ticker,name,close_1029,chg_1029_pct,close_1030,chg_1030_pct,rs_1m_pct,rs_3m_pct,n_stylists,stylists,origins,market_cap,gics_sector,rvol,flags,notes
+CVI,CVR Energy Inc.,56.82,,58.37,2.7279127067933775,11.43,59.52,2,ariel_hernandez|qullamaggie,C_qullamaggie_rs|ariel_hernandez,5712148635.18,Energy,0.75,wicky_breakout,
+GRAL,"GRAIL, Inc.",158.92,0.66,143.43,-9.747042537125585,13.42,131.8,3,ariel_hernandez|peoplewish|qullamaggie,C_qullamaggie_rs|E_qullamaggie_5d_gainers|G_peoplewish|ariel_hernandez,6820304959.559999,Health Care,0.78,wicky_breakout,GRAIL - no company release found; high-multiple biotech de-rating
+HPK,"HighPeak Energy, Inc.",10.45,,10.19,-2.48803827751196,28.06,46.15,2,ariel_hernandez|jeff_sun_canslim,jeff_sun_canslim|ariel_hernandez,1320442186.8,Energy,0.7,ma_shrink_5d,
+HTFL,"Heartflow, Inc.",60.53,2.42,59.05,-2.445068561044117,21.67,139.91,3,ariel_hernandez|peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish|ariel_hernandez,5220157318.84,Health Care,0.78,ma_shrink_5d,"med-tech leader, held on a down tape"
+IOVA,"Iovance Biotherapeutics, Inc.",9.56,-35.45,8.48,-11.297071129707113,-35.49,134.89,3,ariel_hernandez|qullamaggie|stockbee,B_stockbee_ep9m|F_qullamaggie_5d_losers|ariel_hernandez,4268562905.76,Health Care,4.27,—,biotech de-rating after a -35% session on 10-29
+KOD,Kodiak Sciences Inc,100.4,3.46,99.18,-1.2151394422310744,5.91,141.46,3,ariel_hernandez|peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish|ariel_hernandez,6282875476.400001,Health Care,0.84,—,"biotech leader, held on a down tape"
+MPC,Marathon Petroleum Corporation,432.51,,444.73,2.825368199579207,9.38,36.67,2,ariel_hernandez|jeff_sun_canslim,jeff_sun_canslim|ariel_hernandez,126265514003.84999,Energy,1.18,wicky_breakout,
+MRNA,"Moderna, Inc.",222.76,4.01,221.72,-0.46687017417848453,15.68,306.35,3,ariel_hernandez|peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish|ariel_hernandez,88388107054.84,Health Care,0.55,—,"large-cap biotech, held the line"
+REPX,"Riley Exploration Permian, Inc.",52.1,,53.27,2.245681381957777,30.22,52.03,2,ariel_hernandez|jeff_sun_canslim,jeff_sun_canslim|ariel_hernandez,1130358838.7,Energy,0.72,"wicky_breakout, ma_shrink_5d",
+TRMD,TORM plc,43.045,,42.69,-0.8247183180392704,13.13,42.02,2,ariel_hernandez|jeff_sun_canslim,jeff_sun_canslim|ariel_hernandez,4394894500.0,Energy,0.65,—,
