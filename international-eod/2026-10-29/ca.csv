@@ -1,0 +1,668 @@
+date,ticker,name,open,high,low,close,volume,change_pct,market_cap,pe_ratio,sector,currency,exchange
+2026-10-29,TSX:RY,Royal Bank of Canada,288.47,291.17,287.37,288.21,3674971,0.6285,283299447175,18.1742,Finance,CAD,TSX
+2026-10-29,TSX:RY.PR.S,Royal Bank of Canada Non-Cum Conv Red Pfd Registered Shs Series -BO- Reg S,25.93,26.02,25.9,25.92,3500,-0.0386,283299447175,1.6345,Finance,CAD,TSX
+2026-10-29,TSX:SHOP,"Shopify, Inc. Class A",232.75,235.91,227.63,233.7,876351,-0.7517,216085974175,113.3366,Commercial Services,CAD,TSX
+2026-10-29,TSX:TD.PF.A,Toronto-Dominion Bank Non Cum Pfd Registered Shs -A- Series -1-,25.16,25.24,25.16,25.23,2000,0.0000,213190059093,2.7063,Finance,CAD,TSX
+2026-10-29,TSX:TD,Toronto-Dominion Bank,177.45,178.95,177.1,178.13,4819622,0.7010,213190059093,19.1069,Finance,CAD,TSX
+2026-10-29,TSX:TD.PF.J,Toronto-Dominion Bank Non-Cum Conv Red Perp Pfd Series 18,25.42,25.5,25.42,25.42,3500,-0.1179,213190059093,2.7266,Finance,CAD,TSX
+2026-10-29,TSX:TD.PF.I,Toronto-Dominion Bank Non-Cum Conv Red Rate Reset Pfd Series 16,25.38,25.47,25.38,25.38,1827,0.0394,213190059093,2.7224,Finance,CAD,TSX
+2026-10-29,TSX:ENB.PR.V,Enbridge Inc. Cum Red Pref Registered Shs Series 1,25.22,25.3,25.14,25.3,4000,0.0000,153957112956,13.8062,Industrial Services,USD,TSX
+2026-10-29,TSX:ENB.PF.U,Enbridge Inc. Cum Red Pref Registered Shs Series L,25.05,25.1,25.05,25.1,17700,0.3599,153957112956,13.6970,Industrial Services,USD,TSX
+2026-10-29,TSX:ENB.PF.V,Enbridge Inc. Cum Red Pref Registered Shs Series 5,25.52,25.52,25.51,25.51,1500,-0.3516,153957112956,13.9208,Industrial Services,USD,TSX
+2026-10-29,TSX:BMO,Bank of Montreal,244.3,247.92,244.3,246.28,3887527,1.1625,120665008910,20.0730,Finance,CAD,TSX
+2026-10-29,TSX:BMO.PR.E,Bank of Montreal Non-Cum Conv Red Pfd Registered Shs B Series -44- Reg S,26.6,26.63,26.6,26.63,1200,0.1504,120665008910,2.1705,Finance,CAD,TSX
+2026-10-29,TSX:BNS,Bank of Nova Scotia,132.85,134.46,132.81,133.44,3678477,0.8846,116192708005,17.4286,Finance,CAD,TSX
+2026-10-29,TSX:CNQ,Canadian Natural Resources Limited,76.73,77.27,76.06,77.05,4652023,0.3517,112911440725,13.7036,Energy Minerals,CAD,TSX
+2026-10-29,TSX:ENB.PR.I,Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series I,22.73,22.73,22.73,22.73,0,0.0000,109826280027,8.7322,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PR.G,Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series G,23.75,23.75,23.75,23.75,0,0.0000,109826280027,9.1241,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PR.Z,Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series 4,23,23,23,23,200,-0.8621,109826280027,8.8360,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PR.H,Enbridge Inc. Cum Red Pref Registered Shs Series H,24.62,24.67,24.51,24.51,2100,-0.4468,109826280027,9.4161,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PF.K,Enbridge Inc. Cum Conv Red Perp Pfd Registered Shs Series -19-,25.44,25.5,25.44,25.5,1405,-0.1957,109826280027,9.7964,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PF.A,Enbridge Inc. Cum Red Pref Registered Shs Series 9,24.05,24.05,24.05,24.05,200,0.0000,109826280027,9.2393,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PR.D,Enbridge Inc. Cum Conv Red Pref Registered Shs Series D,23.32,23.37,23.32,23.32,29265,0.0000,109826280027,8.9589,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PR.A,Enbridge Inc. 5.5 % Cum Red Pfd Registered Shs Series A,24.4,24.4,24.4,24.4,200,-0.0819,109826280027,9.3738,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PR.J,Enbridge Inc. 4.4 % Cum Red Pfd Registered Shs Series -7-,24.63,24.67,24.4,24.5,14534,-0.5884,109826280027,9.4122,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PF.C,Enbridge Inc. Cum Red Pref Registered Shs Series 11,23.9,23.92,23.83,23.84,21700,-0.4593,109826280027,9.1587,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB,Enbridge Inc.,68.41,69.14,68.41,68.9,4052475,1.4877,109826280027,26.4695,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PR.N,Enbridge Inc. Cum Conv Red Pref Registered Shs Series N,25.3,25.4,25.3,25.3,6800,0.0791,109826280027,9.7196,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PR.F,Enbridge Inc. Cum Conv Red Pref Registered Shs Series F,23.79,23.88,23.72,23.72,4200,-0.3780,109826280027,9.1126,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PF.E,Enbridge Inc. Cum Red Pref Registered Shs Series 13,23.94,23.96,23.9,23.9,4000,0.0000,109826280027,9.1817,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PR.T,Enbridge Inc. Cum Conv Red Pref Registered Shs Series R,24.85,24.94,24.61,24.61,5813,-0.9259,109826280027,9.4545,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PF.G,Enbridge Inc. Cum Red Pref Registered Shs Series 15,24,24,23.9,23.9,2600,-0.4167,109826280027,9.1817,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PR.B,Enbridge Inc. Cum Red Pref Registered Shs Series B,23.8,23.85,23.75,23.75,2610,-0.2939,109826280027,9.1241,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PR.Y,Enbridge Inc. Cum Red Pref Registered Shs Series 3,22.9,22.9,22.9,22.9,163,-0.2613,109826280027,8.7975,Industrial Services,CAD,TSX
+2026-10-29,TSX:ENB.PR.P,Enbridge Inc. Cum Red Pfd Registered Shs Series P,24.32,24.34,24.25,24.25,2600,0.0000,109826280027,9.3162,Industrial Services,CAD,TSX
+2026-10-29,TSX:CM,Canadian Imperial Bank of Commerce,165.8,167.43,165.29,166.22,2241977,0.9781,106617276322,15.9641,Finance,CAD,TSX
+2026-10-29,TSX:CM.PR.S,Canadian Imperial Bank of Commerce Non-Cum Conv Red Perp Pfd A Series 47,25.37,25.39,25.3,25.34,5115,-0.0986,106617276322,2.4337,Finance,CAD,TSX
+2026-10-29,TSX:BN.PF.F,Brookfield Corporation Cum Red Pref Class A Series 40,25.1,25.1,25.1,25.1,100,-0.1194,94125435752,33.6822,Finance,CAD,TSX
+2026-10-29,TSX:BN.PF.G,"Brookfield Corporation Class A Preference Shares, Series 42",24.96,24.96,24.96,24.96,200,0.0000,94125435752,33.4944,Finance,CAD,TSX
+2026-10-29,TSX:BN,Brookfield Corporation,54.38,55.39,54.23,55.21,3233978,2.6017,94125435752,74.0875,Finance,CAD,TSX
+2026-10-29,TSX:BN.PF.A,Brookfield Corporation Cum Pfd A Series -32-,25.53,25.55,25.46,25.46,2400,-0.0393,94125435752,34.1653,Finance,CAD,TSX
+2026-10-29,TSX:BN.PF.I,Brookfield Corporation Cum Red Pref Registered Shs -A- Series -46-,25.2,25.255,25.19,25.2,4908,0.0000,94125435752,33.8164,Finance,CAD,TSX
+2026-10-29,TSX:BN.PF.N,Brookfield Corporation Pfd Registered Shs A Series 56,24.87,24.87,24.78,24.78,53750,-0.2014,94125435752,33.2528,Finance,CAD,TSX
+2026-10-29,TSX:BN.PR.R,Brookfield Corporation Cum Pfd Registered Shs -A- Series -24-,23.64,23.64,23.48,23.48,6003,-0.7188,94125435752,31.5083,Finance,CAD,TSX
+2026-10-29,TSX:BN.PR.N,Brookfield Corporation 4.75 % Cum Pref Registered Shs -A- Series -18-,20.11,20.14,20.11,20.14,200,0.1492,94125435752,27.0263,Finance,CAD,TSX
+2026-10-29,TSX:BN.PR.B,Brookfield Corporation Cum Red Pfd Registered A Series 2,14.71,14.78,14.71,14.72,4500,-0.2710,94125435752,19.7531,Finance,CAD,TSX
+2026-10-29,TSX:BN.PF.L,Brookfield Corporation Red Pref Registered Shs A Series -52- Non Vtg,21.98,21.98,21.98,21.98,0,0.0000,94125435752,29.4954,Finance,CAD,TSX
+2026-10-29,TSX:BN.PR.M,Brookfield Corporation 4.75 % Cum Conv Pfd Registered Shs -A- Series 17,20.15,20.15,20.13,20.14,1400,0.0497,94125435752,27.0263,Finance,CAD,TSX
+2026-10-29,TSX:BN.PF.B,Brookfield Corporation Cum Pfd Shs A Series -34-,25.19,25.19,25.05,25.05,2500,-0.1594,94125435752,33.6151,Finance,CAD,TSX
+2026-10-29,TSX:BN.PF.D,Brookfield Corporation Cum Red Pref Registered Shs -A- Series -37- Non Vtg,20.7,20.7,20.68,20.68,1496,-0.2412,94125435752,27.7509,Finance,CAD,TSX
+2026-10-29,TSX:BN.PF.J,Brookfield Corporation Cum Conv Red Pref Registered Shs -A- Series -48-,25.41,25.41,25.41,25.41,100,0.0000,94125435752,34.0982,Finance,CAD,TSX
+2026-10-29,TSX:BN.PF.K,Brookfield Corporation Red Pref Registered Shs A Series -51- Non Vtg,22.45,22.45,22.45,22.45,900,-0.1335,94125435752,30.1261,Finance,CAD,TSX
+2026-10-29,TSX:BN.PR.Z,Brookfield Corporation Cum Pref Registered Shs -A- Series -30-,25.2,25.24,25.2,25.21,1800,0.0397,94125435752,33.8298,Finance,CAD,TSX
+2026-10-29,TSX:BN.PF.C,Brookfield Corporation Cum Red Pfd Shs A Series -36-,20.6,20.6,20.48,20.48,1900,0.1467,94125435752,27.4826,Finance,CAD,TSX
+2026-10-29,TSX:BN.PR.X,Brookfield Corporation Cum Pref Registered Shs A Series 28,21.85,21.87,21.66,21.67,9200,-0.8692,94125435752,29.0794,Finance,CAD,TSX
+2026-10-29,TSX:BN.PR.T,Brookfield Corporation Cum Pref Registered Shs -A- Series -26-,23.68,23.71,23.68,23.71,400,-0.3782,94125435752,31.8170,Finance,CAD,TSX
+2026-10-29,TSX:BN.PR.C,Brookfield Corporation Cum Red Pfd Registered Shs A Series 4,14.73,14.8,14.73,14.78,2798,0.2034,94125435752,19.8336,Finance,CAD,TSX
+2026-10-29,TSX:BN.PF.M,Brookfield Corporation Pfd Registered Shs A cSeries -54,25.6,25.6,25.35,25.35,1420,-1.6298,94125435752,34.0177,Finance,CAD,TSX
+2026-10-29,TSX:BN.PF.E,Brookfield Corporation Cum Pref Shs A Non-Voting Series -38-,24.07,24.3,24.07,24.28,1600,-0.3693,94125435752,32.5819,Finance,CAD,TSX
+2026-10-29,TSX:BN.PR.K,Brookfield Corporation Cum Red Pfd Registered Shs -A- Series -13-,14.72,14.76,14.71,14.73,2200,-0.1356,94125435752,19.7665,Finance,CAD,TSX
+2026-10-29,TSX:AEM,Agnico Eagle Mines Limited,247.67,250.6,243,245.54,709860,-4.1159,93069375426,14.4320,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:SU,Suncor Energy Inc.,108.59,109.68,107.53,108.65,1809757,0.1198,90545035940,14.4936,Energy Minerals,CAD,TSX
+2026-10-29,TSX:CP,Canadian Pacific Kansas City Limited,125.22,128,120.82,123.7,1496336,-1.5911,78826055002,28.4971,Transportation,CAD,TSX
+2026-10-29,TSX:CNR,Canadian National Railway Company,174.82,176.47,170.92,173.68,932394,-0.2126,75134961154,22.3101,Transportation,CAD,TSX
+2026-10-29,TSX:MFC.PR.C,Manulife Financial Corporation 4 1/2 % Non Cum Red Pfd Shs A Series 3,20.48,20.48,20.41,20.41,1700,0.0000,74178467632,5.5161,Finance,CAD,TSX
+2026-10-29,TSX:MFC.PR.I,Manulife Financial Corporation Non Cum Conv Pfd Registered Shs 1 Series 9,25.6,25.6,25.48,25.48,800,-0.2349,74178467632,6.8863,Finance,CAD,TSX
+2026-10-29,TSX:MFC.PR.M,Manulife Financial Corp Non Cum Pfd Registered Shs 1 Series -17-,25.18,25.27,25.18,25.2,7300,0.0000,74178467632,6.8106,Finance,CAD,TSX
+2026-10-29,TSX:MFC,Manulife Financial Corporation,62.85,63.6,62.84,63.33,3103045,1.0531,74178467632,17.1158,Finance,CAD,TSX
+2026-10-29,TSX:MFC.PR.F,Manulife Financial Corporation Non Cum Pfd Registered Shs 1 Series 3,21.65,21.65,21.44,21.44,1100,-0.7407,74178467632,5.7944,Finance,CAD,TSX
+2026-10-29,TSX:MFC.PR.L,Manulife Financial Corporation Non-Cum Pfd Shs 1 Series -15-,24.75,24.75,24.75,24.75,100,0.0000,74178467632,6.6890,Finance,CAD,TSX
+2026-10-29,TSX:MFC.PR.N,Manulife Financial Corp Non Cum Red Pfd Registered Shs 1 Series -19-,24.42,24.42,24.42,24.42,100,0.2052,74178467632,6.5998,Finance,CAD,TSX
+2026-10-29,TSX:MFC.PR.B,Manulife Financial Corporation 4.65 % Non Cum Red Pfd Registered Shs A Series 2,21.11,21.11,20.99,21,21300,-0.7092,74178467632,5.6755,Finance,CAD,TSX
+2026-10-29,TSX:MFC.PR.J,Manulife Financial Corporation Non-Cum Conv Pfd Shs 1 Series -11-,25.5,25.5,25.5,25.5,100,0.1571,74178467632,6.8917,Finance,CAD,TSX
+2026-10-29,TSX:MFC.PR.K,Manulife Financial Corporation,25.86,26.09,25.86,25.99,675,0.4250,74178467632,7.0241,Finance,CAD,TSX
+2026-10-29,TSX:MFC.PR.Q,Manulife Financial Corp Non-Cum Rate Reset Class 1 Shs Series 25,25.71,25.71,25.56,25.56,400,-0.0391,74178467632,6.9079,Finance,CAD,TSX
+2026-10-29,TSX:TRP.PR.E,TC Energy Corporation Cum Red 1st Pfd Registered Shs Series 9,23.63,23.7,23.51,23.7,8975,1.1524,65645944025,7.1022,Industrial Services,CAD,TSX
+2026-10-29,TSX:TRP.PR.C,TC Energy Corporation Cum Red 1st Pfd Registered Shs Series 5,20.36,20.36,20.36,20.36,350,0.4440,65645944025,6.1013,Industrial Services,CAD,TSX
+2026-10-29,TSX:TRP,TC Energy Corporation,89.15,90.3,89.1,90.06,1924784,1.9701,65645944025,26.9883,Industrial Services,CAD,TSX
+2026-10-29,TSX:TRP.PR.H,TC Energy Corporation Cum Red 1st Pfd Registered Shs Series 4,19.01,19.01,19.01,19.01,0,0.0000,65645944025,5.6967,Industrial Services,CAD,TSX
+2026-10-29,TSX:TRP.PR.B,TC Energy Corporation Cum Red 1st Pfd Registered Shs Series 3,19.54,19.54,19.49,19.49,900,-0.5105,65645944025,5.8406,Industrial Services,CAD,TSX
+2026-10-29,TSX:TRP.PR.A,TC Energy Corporation Cum Red 1st Pfd Registered Shs Series 1,22.42,22.52,22.42,22.46,5500,0.8532,65645944025,6.7306,Industrial Services,CAD,TSX
+2026-10-29,TSX:TRP.PR.D,TC Energy Corporation Cum Conv Red 1st Pfd Registered Shs Series 7,24.38,24.63,24.38,24.55,4325,0.7800,65645944025,7.3569,Industrial Services,CAD,TSX
+2026-10-29,TSX:TRP.PR.F,TC Energy Corporation Cum Red 1st Pfd Registered Shs Series 2,21.7,21.71,21.7,21.71,1300,0.9767,65645944025,6.5058,Industrial Services,CAD,TSX
+2026-10-29,TSX:TRP.PR.L,TC Energy Corporation Cum Red 1st Pfd Registered Shs Series -10-,24,24,24,24,0,0.0000,65645944025,7.1921,Industrial Services,CAD,TSX
+2026-10-29,TSX:ABX,Barrick Mining Corporation,54.58,54.96,53.79,54.11,4395137,-2.5572,65197884106,10.0604,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:IMO,Imperial Oil Limited,183.98,185.03,179.38,183.62,890225,0.3059,63150923904,21.6283,Energy Minerals,CAD,TSX
+2026-10-29,TSX:GWO.PR.G,Great-West Lifeco Inc. 5.2 % Non Cum 1st Pfd Shs Series G,22.8,22.8,22.8,22.8,0,0.0000,59155679900,4.7006,Finance,CAD,TSX
+2026-10-29,TSX:GWO,Great-West Lifeco Inc.,93.01,93.98,92.76,93,714775,0.3128,59155679900,19.1737,Finance,CAD,TSX
+2026-10-29,TSX:GWO.PR.P,Great-West Lifeco Inc. 5.4 % Non-Cum 1st Pfd Shs Series P,23.74,23.74,23.61,23.61,400,-0.1691,59155679900,4.8676,Finance,CAD,TSX
+2026-10-29,TSX:GWO.PR.T,Great-West Lifeco Inc. Non-Cum Red 1st Pfd Registered Shs Series T,22.495,22.5,22.41,22.41,5100,-0.4000,59155679900,4.6202,Finance,CAD,TSX
+2026-10-29,TSX:GWO.PR.M,Great-West Lifeco Inc. 5.8 % Non-Cum 1st Pfd Shs Series M,25.02,25.04,25.02,25.04,1500,0.0400,59155679900,5.1625,Finance,CAD,TSX
+2026-10-29,TSX:GWO.PR.N,Great-West Lifeco Inc. Non-Cum 1st Pfd Shs Series N,20.7,20.7,20.7,20.7,300,0.1936,59155679900,4.2677,Finance,CAD,TSX
+2026-10-29,TSX:GWO.PR.R,Great-West Lifeco Inc. Non-Cum Red 1st Pfd Shs Series R,21.01,21.01,20.99,20.99,1400,0.1909,59155679900,4.3275,Finance,CAD,TSX
+2026-10-29,TSX:GWO.PR.L,Great-West Lifeco Inc. 5.65 % Non Cum First Pfd Shs Series L,24.41,24.45,24.4,24.45,2600,0.0000,59155679900,5.0408,Finance,CAD,TSX
+2026-10-29,TSX:GWO.PR.Y,Great-West Lifeco Inc. 4.50 % Non-Cum Red 1st Pfd Registered Shs Series -Y-,19.7,19.81,19.66,19.75,11589,0.2538,59155679900,4.0718,Finance,CAD,TSX
+2026-10-29,TSX:GWO.PF.A,Great-West Lifeco Inc. Non Cum Red Pfd Registered Shs Ser 24,24.84,24.85,24.84,24.85,5124,0.0403,59155679900,5.1233,Finance,CAD,TSX
+2026-10-29,TSX:GWO.PR.Q,Great-West Lifeco Inc. Non Cum 1st Pfd Registered Shs Series -Q-,22.48,22.48,22.48,22.48,0,0.0000,59155679900,4.6347,Finance,CAD,TSX
+2026-10-29,TSX:GWO.PR.S,Great-West Lifeco Inc. Non Cum 1st Pfd Registered Series S,22.78,22.79,22.78,22.79,700,0.3523,59155679900,4.6986,Finance,CAD,TSX
+2026-10-29,TSX:GWO.PR.Z,Great-West Lifeco Inc. 5.70 % Non Cum 1Pfd Registered Shs Series Z,25.1,25.1,25.1,25.1,240,1.7224,59155679900,5.1748,Finance,CAD,TSX
+2026-10-29,TSX:GWO.PR.I,Great-West Lifeco Inc. 4 1/2 % Non-Cum Red 1st Pfd Shs Series I,19.79,19.89,19.79,19.86,9500,-0.1006,59155679900,4.0945,Finance,CAD,TSX
+2026-10-29,TSX:GWO.PR.H,Great-West Lifeco Inc. 4.85 % Non-Cum Pfd Shs Series H,21.27,21.27,21.15,21.15,6900,-0.2829,59155679900,4.3605,Finance,CAD,TSX
+2026-10-29,TSX:CVE,Cenovus Energy Inc.,45.19,45.35,44.265,45.02,4254465,-0.3982,58569585729,12.5730,Energy Minerals,CAD,TSX
+2026-10-29,TSX:NA.PR.I,National Bank of Canada Non-Cum Conv Red Perp Pfd Registered Shs Series -47- Reg S,25.82,25.82,25.8,25.8,900,-0.0775,58491023717,2.1578,Finance,CAD,TSX
+2026-10-29,TSX:NA,National Bank of Canada,213,215.08,212.1,213.33,861120,0.7557,58491023717,17.8417,Finance,CAD,TSX
+2026-10-29,TSX:NA.PR.G,National Bank of Canada Non-Cum Conv Red Perp Pfd Registered Shs Series -42- Reg S,26.21,26.21,25.93,25.93,3800,-0.2692,58491023717,2.1686,Finance,CAD,TSX
+2026-10-29,TSX:NA.PR.C,National Bank of Canada Non-Cum Conv Red 1st Pfd Registered Shs Series -38-,25.77,26.08,25.77,25.9,2600,0.0000,58491023717,2.1661,Finance,CAD,TSX
+2026-10-29,TSX:NA.PR.S,National Bank of Canada Non-Cum First Pfd Shs Series -30-,25.64,25.68,25.63,25.68,2650,-0.0389,58491023717,2.1477,Finance,CAD,TSX
+2026-10-29,TSX:NA.PR.E,National Bank of Canada Non-Cum Conv Red Perp Pfd Registered Shs Series -40-,25.4,25.4,25.34,25.34,25900,-0.0789,58491023717,2.1193,Finance,CAD,TSX
+2026-10-29,TSX:NA.PR.K,National Bank of Canada Non-Cum Conv Red Perp Pfd Registered Shs Series -49- Reg S,27.93,27.93,27.93,27.93,200,-0.2144,58491023717,2.3359,Finance,CAD,TSX
+2026-10-29,TSX:WPM,Wheaton Precious Metals Corp,172.97,174.4,170.4,172.25,525354,-2.6946,57350566394,27.6436,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:L,Loblaw Companies Limited,68.32,68.88,67.84,68.5,941711,0.7649,55796899877,28.9923,Retail Trade,CAD,TSX
+2026-10-29,TSX:FFH.U,Fairfax Financial Holdings Limited,1769.29,1769.29,1769.29,1769.29,0,0.0000,55173985342,8.9008,Finance,USD,TSX
+2026-10-29,TSX:ATD,Alimentation Couche-Tard Inc.,80.29,80.75,79.56,80.47,1495158,0.2866,52543914780,16.8478,Retail Trade,CAD,TSX
+2026-10-29,TSX:CSU,Constellation Software Inc.,3315.27,3388.84,3296.77,3369.07,54658,0.6940,50579590221,53.8733,Technology Services,CAD,TSX
+2026-10-29,TSX:TRI.PR.B,Thomson Reuters Corporation Floating Rate Pfd Shs Series -II-,15.9,16,15.85,15.85,14107,-0.8135,50219583932,3.0776,Technology Services,CAD,TSX
+2026-10-29,TSX:TRI,Thomson Reuters Corporation,164.06,164.57,160.58,162.66,579921,0.1046,50219583932,31.5839,Technology Services,CAD,TSX
+2026-10-29,TSX:FNV,Franco-Nevada Corporation,327.7,330.08,320.75,323.59,286318,-3.1545,45972195521,30.6053,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:SLF.PR.E,Sun Life Financial Inc 4.5 % Non Cum Pfd Registered Shs A Series 5,20.22,20.47,20.22,20.47,76400,0.3923,44892212939,3.4733,Finance,CAD,TSX
+2026-10-29,TSX:SLF.PR.J,Sun Life Financial Inc Non Cum Pfd Shs A Series -9QR- Fltg Rt,20.2,20.2,20.2,20.2,0,0.0000,44892212939,3.4275,Finance,CAD,TSX
+2026-10-29,TSX:SLF.PR.H,Sun Life Financial Inc Non-Cum Pfd Shs A Series -10R-,25,25,24.84,24.84,1100,0.0000,44892212939,4.2148,Finance,CAD,TSX
+2026-10-29,TSX:SLF,Sun Life Financial Inc.,113.87,115.11,113.87,114.49,1779656,1.1574,44892212939,19.4265,Finance,CAD,TSX
+2026-10-29,TSX:SLF.PR.G,Sun Life Financial Inc Non Cum Pfd Shs A Series -8R-,21.43,21.43,21.42,21.42,500,0.8000,44892212939,3.6345,Finance,CAD,TSX
+2026-10-29,TSX:SLF.PR.D,Sun Life Financial Inc 4.45 % Non Cum Pfd Registered Shs A Series 4,20.11,20.26,20.11,20.24,20000,0.1980,44892212939,3.4343,Finance,CAD,TSX
+2026-10-29,TSX:SLF.PR.C,Sun Life Financial Inc 4.45 % Pfd Shs A Series 3,20.36,20.36,20.27,20.27,1600,-0.1478,44892212939,3.4394,Finance,CAD,TSX
+2026-10-29,TSX:WCN,"Waste Connections, Inc.",253.22,254.94,250.565,254.46,325396,1.2252,44862353550,41.0797,Industrial Services,CAD,TSX
+2026-10-29,TSX:POW.PR.A,Power Corporation of Canada 5.6 % Non Cum Pfd Shs Series A,24.56,24.56,24.35,24.39,700,0.6603,43066051125,6.0024,Finance,CAD,TSX
+2026-10-29,TSX:POW,Power Corporation of Canada,97.58,98.49,97,98.05,1028160,1.2913,43066051125,24.1300,Finance,CAD,TSX
+2026-10-29,TSX:POW.PR.D,Power Corporation of Canada 5 % Non Cum 1st Pfd Shs Series D,22.26,22.26,22.26,22.26,0,0.0000,43066051125,5.4782,Finance,CAD,TSX
+2026-10-29,TSX:POW.PR.B,Power Corporation of Canada 5.35 % Non Cum Pfd Shs Series B,23.37,23.44,23.37,23.4,600,-0.0427,43066051125,5.7587,Finance,CAD,TSX
+2026-10-29,TSX:POW.PR.I,Power Corporation of Canada 5.65 % Non Cum Pfd Registered Shs Series I,24.75,24.8,24.75,24.8,5800,0.0000,43066051125,6.1033,Finance,CAD,TSX
+2026-10-29,TSX:POW.PR.G,Power Corporation of Canada 5.6 % Non Cum Pfd Shs Series G,24.28,24.4,24.28,24.35,1600,-0.2049,43066051125,5.9925,Finance,CAD,TSX
+2026-10-29,TSX:POW.PR.E,Power Corporation of Canada Part.Pfd Shs,87,87,87,87,0,0.0000,43066051125,21.4106,Finance,CAD,TSX
+2026-10-29,TSX:POW.PR.C,Power Corporation of Canada 5.8 % Non Cum Pfd Shs Series C,25.25,25.25,25.25,25.25,0,0.0000,43066051125,6.2140,Finance,CAD,TSX
+2026-10-29,TSX:POW.PR.H,Power Corporation of Canada 5.75 % Non Cum Pfd Registered Shs Series H,24.9,25,24.9,25,1208,0.4016,43066051125,6.1525,Finance,CAD,TSX
+2026-10-29,TSX:FFH,Fairfax Financial Holdings Limited,2466.98,2510.9,2466.98,2501.97,51282,1.4809,39358711319,8.8611,Finance,CAD,TSX
+2026-10-29,TSX:FFH.PR.K,Fairfax Financial Holdings Limited Cum Pfd Registered Shs Series K,25.21,25.21,25.16,25.16,1595,-0.0794,39358711319,0.0891,Finance,CAD,TSX
+2026-10-29,TSX:DOL,Dollarama Inc.,203.4,206.25,203,205.89,432738,1.9308,38698206815,41.2820,Retail Trade,CAD,TSX
+2026-10-29,TSX:CLS,Celestica Inc.,408.05,409.1,391.4,396.12,378888,-5.8068,37832893381,26.9574,Electronic Technology,CAD,TSX
+2026-10-29,TSX:CCO,Cameco Corporation,117.28,118.53,115.82,116.63,912584,-0.5288,36428424282,143.1219,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:QSP.UN,Restaurant Brands International LP,105.67,105.67,105.67,105.67,0,0.0000,34627217337,21.1091,Consumer Services,CAD,TSX
+2026-10-29,TSX:IFC.PR.A,Intact Financial Corporation Non Cum Pfd Registered Shs A Series 1,23.77,23.77,23.66,23.66,2300,-0.3370,32896654007,1.3154,Finance,CAD,TSX
+2026-10-29,TSX:IFC.PR.I,Intact Financial Corporation 5.4 % Non-Cum Red Pfd Registered Shs A Series 9 Reg S,24.65,24.65,24.56,24.56,200,-0.4055,32896654007,1.3654,Finance,CAD,TSX
+2026-10-29,TSX:IFC.PR.E,Intact Financial Corporation 5.20% Non-Cum Red Pfd Registered Shs A Series 5,22.98,22.98,22.98,22.98,100,0.8337,32896654007,1.2776,Finance,CAD,TSX
+2026-10-29,TSX:IFC.PR.G,Intact Financial Corporation Non-Cum Conv Red Perp Pfd Registered Shs A Series 7 Reg S,25.41,25.51,25.41,25.51,1190,0.2752,32896654007,1.4182,Finance,CAD,TSX
+2026-10-29,TSX:IFC,Intact Financial Corporation,262.34,265.5,262,262.28,349970,0.2983,32896654007,14.5812,Finance,CAD,TSX
+2026-10-29,TSX:IFC.PR.F,Intact Financial Corporation 5.30 % Non-Cum Red Pfd Registered Shs A Series 6,23.5,23.5,23.5,23.5,200,0.0000,32896654007,1.3065,Finance,CAD,TSX
+2026-10-29,TSX:IFC.PR.K,Intact Financial Corporation 5.25% Non-Cum Red Pfd Registered Shs A Series -11- Reg S,23.3,23.57,23.2,23.2,1500,-0.8547,32896654007,1.2898,Finance,CAD,TSX
+2026-10-29,TSX:IFC.PR.M,Intact Financial Corporation Non-Cum Pfd Registered Shs Series 13,24.72,24.72,24.72,24.72,0,0.0000,32896654007,1.3743,Finance,CAD,TSX
+2026-10-29,TSX:NTR,Nutrien Ltd.,96.26,97.37,95.32,95.75,1162530,-0.7978,32784201610,14.0059,Process Industries,CAD,TSX
+2026-10-29,TSX:TECK.A,Teck Resources Limited Class A,88.5,90,88.5,88.57,7392,0.2944,30833724658,11.4259,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:TECK.B,Teck Resources Limited Class B,87.73,90.01,87.3,89.22,931913,1.2713,30833724658,11.5097,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:FTS.PR.G,Fortis Inc. Cum Red Reset 1st Pref Shs Series G,25.78,25.79,25.5,25.5,1100,0.0392,29243766991,7.4896,Utilities,CAD,TSX
+2026-10-29,TSX:FTS,Fortis Inc.,80.59,81.52,80.3,81.29,1718698,1.3086,29243766991,23.8758,Utilities,CAD,TSX
+2026-10-29,TSX:FTS.PR.M,Fortis Inc. Cum Red 1st Pref Shs Series M,25.43,25.47,25.31,25.31,1900,-0.2365,29243766991,7.4338,Utilities,CAD,TSX
+2026-10-29,TSX:FTS.PR.I,Fortis Inc. Cum Red 1st Pfd Shs Series I Fltg Rt,19.98,19.98,19.98,19.98,0,0.0000,29243766991,5.8684,Utilities,CAD,TSX
+2026-10-29,TSX:FTS.PR.F,Fortis Inc. 4.9 % Cum Red 1st Pref Registered Shs Series F,22.49,22.49,22.49,22.49,0,0.0000,29243766991,6.6056,Utilities,CAD,TSX
+2026-10-29,TSX:FTS.PR.H,Fortis Inc. Cum Red 1st Pfd Shs Series H,20.4,20.4,20.4,20.4,0,0.0000,29243766991,5.9917,Utilities,CAD,TSX
+2026-10-29,TSX:FTS.PR.K,Fortis Inc. Cum Red Pref Shs Series K,24.65,24.66,24.6,24.6,1300,-0.2837,29243766991,7.2253,Utilities,CAD,TSX
+2026-10-29,TSX:FTS.PR.J,Fortis Inc. Cum Red First Pfd Shs Series J,21.8,21.87,21.8,21.87,600,0.5517,29243766991,6.4235,Utilities,CAD,TSX
+2026-10-29,TSX:PPL.PF.A,Pembina Pipeline Corp Cum Conv Red Perp Pfd Registered Shs A Series -21-,25.59,25.59,25.55,25.55,3200,-0.1563,29052359944,9.0012,Industrial Services,CAD,TSX
+2026-10-29,TSX:PPL.PR.C,Pembina Pipeline Corp Cum Red Pfd Registered Shs A Series 3,25.53,25.54,25.52,25.52,1900,0.5516,29052359944,8.9907,Industrial Services,CAD,TSX
+2026-10-29,TSX:PPL.PR.A,Pembina Pipeline Corp Cum Red Pfd Shs A Series 1,25.59,25.6,25.54,25.54,4300,-0.2344,29052359944,8.9977,Industrial Services,CAD,TSX
+2026-10-29,TSX:PPL.PF.E,Pembina Pipeline Corp Cum Conv Red Perp Pfd Registered Shs A Series -25-,25.87,25.87,25.85,25.85,1600,-0.0773,29052359944,9.1069,Industrial Services,CAD,TSX
+2026-10-29,TSX:PPL.PR.E,Pembina Pipeline Corp Cum Red Pfd Registered Shs A Series 5,26.28,26.31,26.26,26.26,2100,0.0000,29052359944,9.2514,Industrial Services,CAD,TSX
+2026-10-29,TSX:PPL,Pembina Pipeline Corporation,70.39,71.39,70.38,71.17,1909270,1.6279,29052359944,25.0731,Industrial Services,CAD,TSX
+2026-10-29,TSX:PPL.PR.O,Pembina Pipeline Corp Cum Conv Red Perp Pfd Registered Shs A Series -15- Fltg Rt,25.41,25.41,25.41,25.41,100,-0.1179,29052359944,8.9519,Industrial Services,CAD,TSX
+2026-10-29,TSX:PPL.PR.G,Pembina Pipeline Corp Cum Red Pfd Registered Shs A Series 7,26.1,26.1,26.04,26.04,4700,-0.5348,29052359944,9.1739,Industrial Services,CAD,TSX
+2026-10-29,TSX:PPL.PR.Q,Pembina Pipeline Corp Cum Conv Red Perp Pfd Registered Shs A Series -17-,25.8,25.8,25.8,25.8,800,0.1164,29052359944,9.0893,Industrial Services,CAD,TSX
+2026-10-29,TSX:WN.PR.E,George Weston Ltd 4.75 % Cum Conv Red Pfd Registered Shs Series V,21.25,21.25,21.25,21.25,1400,0.7109,27897876888,8.2894,Retail Trade,CAD,TSX
+2026-10-29,TSX:WN,George Weston Limited,105.37,106.49,104.43,106.35,357830,1.3823,27897876888,41.4862,Retail Trade,CAD,TSX
+2026-10-29,TSX:WN.PR.A,George Weston Limited 5.8 % Pfd shs Series 1,25.51,25.51,25.51,25.51,60,0.0000,27897876888,9.9512,Retail Trade,CAD,TSX
+2026-10-29,TSX:WN.PR.C,George Weston Limited 5.2 % Cum Pfd Shs Series -III-,22.9,22.93,22.86,22.86,3200,-0.6087,27897876888,8.9175,Retail Trade,CAD,TSX
+2026-10-29,TSX:WN.PR.D,George Weston Limited 5.2 % Pfd Shs Series -IV-,22.95,22.95,22.95,22.95,557,-0.4338,27897876888,8.9526,Retail Trade,CAD,TSX
+2026-10-29,TSX:K,Kinross Gold Corporation,30.11,30.62,29.63,30.16,5650721,-6.2772,27231112334,8.2115,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:BBD.A,Bombardier Inc. Class A,335.5,347.5,335.5,347.5,3379,1.4599,24060344991,26.3677,Electronic Technology,CAD,TSX
+2026-10-29,TSX:BBD.PR.D,Bombardier Inc Cum Red Pfd Registered Shs Series 3,20.35,20.57,20.35,20.55,7900,0.9828,24060344991,1.5593,Electronic Technology,CAD,TSX
+2026-10-29,TSX:BBD.PR.C,Bombardier Inc 6.25 % Conv Cum Red Pfd Registered Shs Series 4,25.26,25.45,25.26,25.26,2383,-0.8245,24060344991,1.9167,Electronic Technology,CAD,TSX
+2026-10-29,TSX:BBD.B,Bombardier Inc. Class B,341.21,346.36,338.02,346.36,162618,1.9395,24060344991,26.2812,Electronic Technology,CAD,TSX
+2026-10-29,TSX:BBD.PR.B,Bombardier Inc Cum Red Pfd Shs Series 2 Fltg Rt,20.4,20.4,20.07,20.07,3050,-1.3759,24060344991,1.5229,Electronic Technology,CAD,TSX
+2026-10-29,TSX:H,Hydro One Limited,54.15,55,54.08,54.74,754456,1.5396,23077920121,23.2333,Utilities,CAD,TSX
+2026-10-29,TSX:FM,First Quantum Minerals Ltd.,35.18,35.28,33.41,34.46,3782902,-3.9844,21357643316,118.0541,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:LUN,Lundin Mining Corporation,31.86,31.97,31.235,31.57,1988902,-1.7123,19604603415,12.9560,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:TOU,Tourmaline Oil Corp.,67.75,68.23,67.42,68,866527,0.3838,18778305514,70.9146,Energy Minerals,CAD,TSX
+2026-10-29,TSX:BCE.PR.E,BCE Inc. Floating Rate Pfd Series AE,21.35,21.35,21.3,21.35,1300,0.2347,18686119203,3.1753,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.T,BCE Inc. Cum Conv Red Pfd Registered Series T,22.85,22.85,22.65,22.65,3800,-0.6579,18686119203,3.3686,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.F,BCE Inc. Pfd Registered Series AF,22.98,23,22.85,22.85,2030,-0.3054,18686119203,3.3984,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.H,BCE Inc. Floating Rate Cum Red 1st Pfd Registered Series AH,21.3,21.3,21.3,21.3,2800,0.2353,18686119203,3.1679,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.C,BCE Inc. Cum Conv Red 1st Pfd Series AC,21.4,21.61,21.4,21.61,3225,-0.6893,18686119203,3.2140,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.A,BCE Inc. 1St Pfd Series AA,21.38,21.53,21.38,21.53,3400,0.7959,18686119203,3.2021,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.R,BCE Inc. Cum Red 1st Pfd Series R,21.05,21.22,21.05,21.22,1625,0.3310,18686119203,3.1560,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.B,BCE Inc. Floating Rate Cum Red 1st Pfd Registered Series AB,21.38,21.39,21.38,21.39,300,0.4225,18686119203,3.1812,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.M,BCE Inc. Cum Red 1st Pfd Shs Series AM,22.3,22.3,22.26,22.26,2100,-0.2688,18686119203,3.3106,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.I,BCE Inc. Cum Red Pfd Series AI,22.29,22.29,22.29,22.29,100,-0.9333,18686119203,3.3151,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.D,BCE Inc. Pfd Registered Series AD,21.3,21.3,21.3,21.3,0,0.0000,18686119203,3.1679,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.Y,BCE Inc. Cum Red 1St Pfd Series Y Fltg Rt,21.3,21.3,21.3,21.3,9,0.0000,18686119203,3.1679,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.S,BCE Inc. Cum Red 1st Pfd Series S,21.5,21.5,21.5,21.5,0,0.0000,18686119203,3.1976,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.K,BCE Inc. Cum Red 1st Pfd Registered Series AK,22.2,22.34,22.2,22.32,10200,0.0897,18686119203,3.3196,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.G,BCE Inc. Cum Red Pfd Series AG,22.6,22.6,22.22,22.22,1325,-0.1797,18686119203,3.3047,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.L,BCE Inc. Cum Red Pfd Shs Series -AL- Fltg Rt,21.9,21.9,21.9,21.9,1300,-0.2278,18686119203,3.2571,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.Z,BCE Inc. Cum Red Pfd Series Z,22.25,22.25,22.25,22.25,100,1.2745,18686119203,3.3091,Communications,CAD,TSX
+2026-10-29,TSX:BCE.PR.Q,BCE Inc. Cum Red 1st Pfd Shs Series AQ,24.97,24.97,24.97,24.97,500,-0.1200,18686119203,3.7137,Communications,CAD,TSX
+2026-10-29,TSX:BCE,BCE Inc.,28.2,28.4,27.67,28.04,7818428,-0.1780,18686119203,4.1703,Communications,CAD,TSX
+2026-10-29,TSX:WSP,WSP Global Inc,183.99,188.12,183.39,187.4,438824,1.8644,17692817736,26.7127,Industrial Services,CAD,TSX
+2026-10-29,TSX:WCP,Whitecap Resources Inc.,20.45,20.45,19.3,19.61,11682376,-4.0137,17691220773,15.5216,Energy Minerals,CAD,TSX
+2026-10-29,TSX:PAAS,Pan American Silver Corp.,57.08,57.62,56.5,57.02,1288784,-2.7626,17309903825,12.4200,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:RCI.B,Rogers Communications Inc. Class B,43.95,44.5,43.28,43.99,3337639,0.4797,17003253849,26.6154,Communications,CAD,TSX
+2026-10-29,TSX:RCI.A,Rogers Communications Inc. Class A,44,44.78,44,44.78,1385,-1.4525,17003253849,27.0934,Communications,CAD,TSX
+2026-10-29,TSX:MG,Magna International Inc.,89.97,91.23,89.36,90.31,743116,0.9501,16940461515,23.7477,Producer Manufacturing,CAD,TSX
+2026-10-29,TSX:GIB.A,CGI Inc. Class A,110.44,111.48,109.35,111.48,490033,0.5139,16205657591,13.8254,Technology Services,CAD,TSX
+2026-10-29,TSX:LUG,Lundin Gold Inc.,85.91,86.84,84.33,85.87,332767,-1.8516,15093153853,16.1370,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:EMA.PR.J,Emera Incorporated Cum Conv Red Perp Pfd Registered Shs Series J Reg S,27.23,27.39,27.23,27.39,1800,0.4400,14938982547,8.6325,Utilities,CAD,TSX
+2026-10-29,TSX:EMA.PR.A,Emera Incorporated Cum Reset 1st Pfd Shs Series A,23,23,23,23,500,0.0000,14938982547,7.2489,Utilities,CAD,TSX
+2026-10-29,TSX:EMA,Emera Incorporated,68.45,69.17,68.42,69.09,1560930,1.3496,14938982547,21.7750,Utilities,CAD,TSX
+2026-10-29,TSX:EMA.PR.L,Emera Incorporated Cum Red Pfd Registered Shs Series L,20.69,20.8,20.61,20.8,1725,0.5317,14938982547,6.5555,Utilities,CAD,TSX
+2026-10-29,TSX:EMA.PR.C,Emera Incorporated Cum Reset 1st Pfd Shs Series C,25.87,25.95,25.85,25.92,2000,0.2320,14938982547,8.1692,Utilities,CAD,TSX
+2026-10-29,TSX:EMA.PR.H,Emera Incorporated Cum Conv Red Perp Pfd Registered Shs Series -H- Reg S,26.21,26.35,26.21,26.31,2800,0.4198,14938982547,8.2921,Utilities,CAD,TSX
+2026-10-29,TSX:EMA.PR.F,Emera Incorporated Cum Reset 1st Pfd Shs Series F,25.41,25.59,25.41,25.59,1000,0.5501,14938982547,8.0652,Utilities,CAD,TSX
+2026-10-29,TSX:EMA.PR.E,Emera Incorporated 4.5 % Cum Red 1st Pfd Registered Shs Non Vtg Series -E-,20.92,20.92,20.65,20.65,1706,0.0000,14938982547,6.5082,Utilities,CAD,TSX
+2026-10-29,TSX:MRU,Metro Inc.,95.25,95.63,94.16,95.35,217734,0.5908,14043055819,22.7040,Retail Trade,CAD,TSX
+2026-10-29,TSX:T,TELUS Corporation,12,12.12,11.89,12.08,6608612,0.7506,13590942683,,Communications,CAD,TSX
+2026-10-29,TSX:IGM,IGM Financial Inc.,82.93,84.57,82.85,83.35,273097,0.4580,13578537148,16.8879,Finance,CAD,TSX
+2026-10-29,TSX:IAG,iA Financial Corporation Inc.,219.46,220.93,216.02,217.07,138893,-0.2206,13554724158,18.6698,Finance,CAD,TSX
+2026-10-29,TSX:AGI,Alamos Gold Inc.,41.08,41.16,39.97,40.26,1687574,-9.0991,13225620328,11.5088,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:ALA.PR.G,AltaGas Ltd. Cum Red Pfd Shs Series G,25.81,25.81,25.81,25.81,100,0.0000,12510723112,13.1002,Utilities,CAD,TSX
+2026-10-29,TSX:ALA,AltaGas Ltd.,58.14,58.14,54.7,56.22,1155160,0.0178,12510723112,28.5352,Utilities,CAD,TSX
+2026-10-29,TSX:ATZ,"Aritzia, Inc.",152.53,157,151.75,156.84,664000,2.3225,12379480155,31.6222,Retail Trade,CAD,TSX
+2026-10-29,TSX:EQX,Equinox Gold Corp.,14.26,14.4,14.05,14.23,2086250,-2.8005,12192409633,11.8042,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:TIH,Toromont Industries Ltd.,205.59,205.59,200.66,202.78,294440,-1.6156,11992163040,32.2764,Distribution Services,CAD,TSX
+2026-10-29,TSX:CCL.A,CCL Industries Inc. Class A,95.49,95.49,95.49,95.49,1,0.0000,11653092483,20.4248,Process Industries,CAD,TSX
+2026-10-29,TSX:CCL.B,CCL Industries Inc. Class B,97.35,98.48,96.39,98.17,273083,1.3211,11653092483,20.9980,Process Industries,CAD,TSX
+2026-10-29,TSX:KEY,Keyera Corp.,54.54,55.45,54.53,55.07,683205,0.9533,11420408431,38.7817,Industrial Services,CAD,TSX
+2026-10-29,TSX:SAP,Saputo Inc.,40.04,40.43,39.88,40.08,630956,0.1750,11252455796,32.3617,Consumer Non-Durables,CAD,TSX
+2026-10-29,TSX:X,TMX Group Ltd.,56.8,57.94,56.8,57.06,431965,0.5285,11150675123,26.3703,Finance,CAD,TSX
+2026-10-29,TSX:QBR.A,Quebecor Inc. Class A,65.8,65.8,65.8,65.8,16,0.0000,10476621337,16.1124,Communications,CAD,TSX
+2026-10-29,TSX:QBR.B,Quebecor Inc. Class B,66,66.55,65.52,66.05,686120,0.4563,10476621337,16.1737,Communications,CAD,TSX
+2026-10-29,TSX:HBM,Hudbay Minerals Inc,32.14,32.87,31.63,32.66,1755866,-0.9703,10449366165,13.9103,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:IVN,Ivanhoe Mines Ltd. Class A,9.55,9.55,9.34,9.41,3977751,-3.0896,9880044517,69.7037,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:IMG,IAMGOLD Corporation,23.5,23.52,23.09,23.38,1079138,-3.2285,9841007082,8.5622,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:ATRL,Atkinsrealis Group Inc.,86.99,89.13,86.71,88.61,330742,1.6519,9836812194,33.9710,Industrial Services,CAD,TSX
+2026-10-29,TSX:CU.PR.K,Canadian Utilities Limited Cum Pfd Registered Shs Series -JJ-,24.7,24.8,24.7,24.8,3050,0.4049,9746462582,146.4855,Utilities,CAD,TSX
+2026-10-29,TSX:CU.PR.F,Canadian Utilities Ltd Cum Red Second Pfd Shs Series -CC-,21,21.01,21,21.01,500,0.0000,9746462582,124.0992,Utilities,CAD,TSX
+2026-10-29,TSX:CU.PR.G,Canadian Utilities Ltd Cum Red Second Pfd Shs Series -DD-,20.88,21.01,20.88,21,11950,0.0000,9746462582,124.0402,Utilities,CAD,TSX
+2026-10-29,TSX:CU.PR.H,Canadian Utilities Limited 5 1/4 % Cum Red Second Pfd Shs Series -EE-,23.68,23.69,23.68,23.69,7400,0.0422,9746462582,139.9291,Utilities,CAD,TSX
+2026-10-29,TSX:CU,Canadian Utilities Limited Class A,49.21,51.05,49.21,50.99,459128,1.6344,9746462582,301.1813,Utilities,CAD,TSX
+2026-10-29,TSX:CU.PR.E,Canadian Utilities Limited Cum Red Second Pfd Shs Series -BB-,22.79,22.85,22.79,22.85,3000,0.3073,9746462582,134.9675,Utilities,CAD,TSX
+2026-10-29,TSX:CU.PR.C,Canadian Utilities Ltd Cum Red Second Pfd Shs Series Y,25.02,25.17,25.02,25.03,2400,-0.0798,9746462582,147.8441,Utilities,CAD,TSX
+2026-10-29,TSX:CU.PR.D,Canadian Utilities Ltd Cum Red Second Pfd Shs Series -AA-,22.89,22.96,22.89,22.96,1300,0.2620,9746462582,135.6172,Utilities,CAD,TSX
+2026-10-29,TSX:CU.PR.J,Canadian Utilities Limited 4.75 % Cum Red 2nd Pfd Registered Shs Series -HH-,22,22.01,21.92,21.92,1800,0.3204,9746462582,129.4743,Utilities,CAD,TSX
+2026-10-29,TSX:FTT,Finning International Inc.,99.61,101.48,97.49,99.17,429956,-1.6658,9344950303,23.6869,Distribution Services,CAD,TSX
+2026-10-29,TSX:CGG,China Gold International Resources Corp. Ltd.,33.41,33.41,31.9,32.08,86658,-4.4100,9309008668,11.6084,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:TFII,TFI International Inc.,156.93,157.83,153.37,157.14,569240,0.2872,9187192027,27.9107,Transportation,CAD,TSX
+2026-10-29,TSX:GMIN,G Mining Ventures Corp,41.33,42.12,40.71,41.11,471525,-3.4750,9000789542,18.9055,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:ELD,Eldorado Gold Corporation,42.71,46.52,42.55,45.24,2107272,-6.2189,8992619780,10.8193,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:CAE,CAE Inc.,36,36.86,35.99,36.75,488222,1.9135,8243297571,41.3293,Commercial Services,CAD,TSX
+2026-10-29,TSX:DPM,DPM Metals Inc.,50.72,51.03,49.55,50.42,1019652,-3.0012,8134246844,12.0128,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:STN,Stantec Inc,101.03,101.55,100.195,101.02,388655,0.4275,8065410359,22.7877,Industrial Services,CAD,TSX
+2026-10-29,TSX:EMP.A,Empire Co Ltd Class A,49.91,50.265,49.46,49.88,323073,0.0201,7926097292,51.0909,Retail Trade,CAD,TSX
+2026-10-29,TSX:DSG,Descartes Systems Group Inc.,128.66,128.935,126,128.77,347639,-0.3637,7887078206,43.2042,Technology Services,CAD,TSX
+2026-10-29,TSX:AG,First Majestic Silver Corp.,21.49,21.685,21.19,21.44,1254401,-2.8546,7760206331,22.2476,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:CHP.UN,Choice Properties Real Estate Investment Trust,14.93,15.02,14.63,14.78,932278,-0.6052,7677901623,,Finance,CAD,TSX
+2026-10-29,TSX:CTC.A,"Canadian Tire Corporation, Limited Class A",202.85,205.68,201.99,204.17,155960,0.8596,7539836958,15.9961,Retail Trade,CAD,TSX
+2026-10-29,TSX:CTC,"Canadian Tire Corporation, Limited",219.19,219.19,219.19,219.19,162,1.0092,7539836958,17.1729,Retail Trade,CAD,TSX
+2026-10-29,TSX:SOBO,South Bow Corp,49.98,50.6,49.98,50.26,683252,1.1675,7392267389,17.4381,Industrial Services,CAD,TSX
+2026-10-29,TSX:GIL,Gildan Activewear Inc.,55.98,57.14,55.98,56.78,383565,1.7745,7370292855,77.1467,Consumer Non-Durables,CAD,TSX
+2026-10-29,TSX:TPX.A,Molson Coors Canada Inc. Class A,63,63,63,63,45,0.0000,7360964263,,Consumer Non-Durables,CAD,TSX
+2026-10-29,TSX:TPX.B,Molson Coors Canada Inc. Class B,55.35,55.35,55.35,55.35,700,-6.7082,7360964263,,Consumer Non-Durables,CAD,TSX
+2026-10-29,TSX:BLCO,Bausch + Lomb Corporation,28.89,29.73,28.69,28.75,8247,0.6653,7277563838,,Health Technology,CAD,TSX
+2026-10-29,TSX:CPX,Capital Power Corporation,62.38,63.54,62.29,63.44,303553,1.2771,7019063176,119.4277,Utilities,CAD,TSX
+2026-10-29,TSX:CPX.PR.C,Capital Power Corporation Cum Pfd Registered Shs Series 3,25.49,25.5,25.49,25.5,700,-0.9324,7019063176,48.0045,Utilities,CAD,TSX
+2026-10-29,TSX:CPX.PR.A,Capital Power Corporation Cum Pref Shs Series 1,24,24,24,24,7500,1.1378,7019063176,45.1807,Utilities,CAD,TSX
+2026-10-29,TSX:CPX.PR.E,Capital Power Corporation Cum Pfd Registered Shs Series 5,25.3,25.3,25.3,25.3,0,0.0000,7019063176,47.6280,Utilities,CAD,TSX
+2026-10-29,TSX:BTO,B2Gold Corp.,6.99,7.02,6.9,6.95,8770056,-2.9330,6749157135,9.1895,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:CS,Capstone Copper Corp.,11.74,11.905,11.53,11.77,2631515,-2.0799,6568464347,13.7404,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:OTEX,Open Text Corporation,37.43,37.93,36.81,37.91,684722,-0.1580,6558278781,10.6408,Technology Services,CAD,TSX
+2026-10-29,TSX:SCR,Strathcona Resources Ltd.,43.19,43.19,42.05,42.38,591267,-1.2351,6557777605,10.7245,Energy Minerals,CAD,TSX
+2026-10-29,TSX:EFN,Element Fleet Management Corporation,22.89,23.12,21.61,21.91,1950691,-4.1138,6378587779,21.5820,Finance,CAD,TSX
+2026-10-29,TSX:FSV,FirstService Corp,196,202.34,196,202.11,117989,3.9874,6339327999,44.3964,Finance,CAD,TSX
+2026-10-29,TSXV:ARTG,Artemis Gold Inc,37.21,37.5,36.64,36.87,186318,-2.9737,6321228388,15.8356,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:OR,OR Royalties Inc.,46.66,46.92,46.12,46.55,181643,-2.0000,6314670933,22.5097,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:DFY,Definity Financial Corp.,71.12,73.48,71.12,73.21,118842,2.8808,6172712364,19.0577,Finance,CAD,TSX
+2026-10-29,TSX:DSV,Discovery Mining Ltd.,10.34,10.49,10.24,10.38,1973517,-2.2599,6167624316,25.5728,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:PSK,PrairieSky Royalty Ltd,37.02,37.62,36.59,37.02,258149,-0.0810,6143422348,30.7296,Miscellaneous,CAD,TSX
+2026-10-29,TSX:TFPM,Triple Flag Precious Metals Corp.,40.96,41.38,40.47,40.76,120710,-2.3245,6132372265,14.8256,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:NXE,NexGen Energy Ltd.,12.3,12.36,11.985,12.06,2266267,-3.5971,5983655229,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:ACO.X,ATCO Ltd. Class I,80.45,82.47,80.45,82.44,147584,0.9428,5882312945,51.5766,Utilities,CAD,TSX
+2026-10-29,TSX:OGC,OceanaGold Corporation,35.55,35.7,34.82,35.35,363967,-2.7510,5768175349,6.7404,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:ONEX,Onex Corporation,103.77,105.4,103.77,104.51,126813,0.8686,5638398820,11.2744,Finance,CAD,TSX
+2026-10-29,TSXV:TOI,"Topicus.com, Inc.",94,95.725,93.5,94.85,81153,0.3173,5633842479,,Technology Services,CAD,TSXV
+2026-10-29,TSX:BB,BlackBerry Limited,12.72,13.33,12.51,12.85,3945424,-2.2814,5506735192,71.1123,Technology Services,CAD,TSX
+2026-10-29,TSX:WFG,West Fraser Timber Co. Ltd.,94.2,95.86,92.32,95.42,171462,-0.4694,5355157188,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:APTX,Apotex Health Corp.,33.1,33.92,32.85,33.67,229580,2.5899,5349699988,,Health Technology,CAD,TSX
+2026-10-29,TSX:TVE,Tamarack Valley Energy Ltd.,14.66,14.72,14.2,14.33,2706241,-2.5170,4952787075,18.6516,Energy Minerals,CAD,TSX
+2026-10-29,TSX:MX,Methanex Corporation,90.46,90.46,85.99,87.77,144610,-1.5811,4921691464,56.1118,Process Industries,CAD,TSX
+2026-10-29,TSX:ELF,E-L Financial Corporation Limited,19.63,19.85,19.63,19.75,20619,0.5089,4842986210,3.8531,Finance,CAD,TSX
+2026-10-29,TSX:ELF.PR.G,E-L Financial Corp Ltd 4.75 % Non Cum Red First Pfd Registered Shs Series 2,20.54,20.6,20.54,20.6,1700,0.4388,4842986210,4.0189,Finance,CAD,TSX
+2026-10-29,TSX:ELF.PR.H,E-L Financial Corp Ltd 5 1/2 % Non-Cum Red First Pfd Shs Series 3,23.55,23.55,23.55,23.55,0,0.0000,4842986210,4.5944,Finance,CAD,TSX
+2026-10-29,TSX:ELF.PR.F,E-L Financial Corp Ltd 5.3 % First Pfd Shs Series 1,22.87,22.87,22.87,22.87,100,-0.0437,4842986210,4.4617,Finance,CAD,TSX
+2026-10-29,TSX:CSH.UN,Chartwell Retirement Residences,20.55,20.9,20.3,20.61,331547,0.7331,4842845105,774.8120,Finance,CAD,TSX
+2026-10-29,TSXV:LMN,Lumine Group Inc.,26.2,26.6,25.75,26.15,68281,-0.9470,4832830849,44.4955,Technology Services,CAD,TSXV
+2026-10-29,TSX:CIGI,Colliers International Group Inc.,132.98,134.87,132.45,134.41,93340,2.3764,4786207579,46.0277,Finance,CAD,TSX
+2026-10-29,TSX:MDA,MDA Space Ltd,40.85,41.67,40.37,40.77,659216,-0.6337,4745407738,51.1929,Electronic Technology,CAD,TSX
+2026-10-29,TSX:EIF,Exchange Income Corporation,116,117,115.32,116.51,85763,0.6305,4656976983,32.3855,Transportation,CAD,TSX
+2026-10-29,TSX:MAU,Montage Gold Corp.,15.27,15.44,15.03,15.27,639305,-3.6593,4589737084,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:KNT,"K92 Mining, Inc.",25.55,25.55,24.95,25.33,420433,-3.1728,4585317462,12.5607,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:TXG,Torex Gold Resources Inc.,66.61,67.59,65.31,67.32,398072,-1.8802,4531892268,7.5667,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:GRGD,Groupe Dynamite Inc.,58.5,59.66,58.31,59.29,74359,1.4371,4520882558,20.2438,Distribution Services,CAD,TSX
+2026-10-29,TSX:REI.UN,RioCan Real Estate Investment Trust,21.27,21.39,21.06,21.22,1019187,0.0943,4402350331,24.5233,Finance,CAD,TSX
+2026-10-29,TSX:DOO,"BRP, Inc.",84.6,86.3,84.6,86.21,114590,2.0599,4287318510,57.8863,Producer Manufacturing,CAD,TSX
+2026-10-29,TSX:CG,Centerra Gold Inc.,28.99,29.075,28.31,28.52,351135,-3.6812,4131716603,6.5781,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:GEI,Gibson Energy Inc.,33.81,34.15,33.75,33.89,445220,0.9532,4130921532,33.9613,Distribution Services,CAD,TSX
+2026-10-29,TSX:TA.PR.F,TransAlta Corporation Cum First Pfd Shs Series C,25.1,25.1,25,25.08,2000,-0.0797,4126856913,,Utilities,CAD,TSX
+2026-10-29,TSX:TA.PR.G,TransAlta Corp Floating Rate Cum 1st Pfd Registered Shs Series D,24,24,24,24,0,0.0000,4126856913,,Utilities,CAD,TSX
+2026-10-29,TSX:TA,TransAlta Corporation,18.2,18.49,18.2,18.45,982930,0.8748,4126856913,,Utilities,CAD,TSX
+2026-10-29,TSX:TA.PR.E,TransAlta Corporation Cum First Pfd Shs Series B,20.99,20.99,20.99,20.99,0,0.0000,4126856913,,Utilities,CAD,TSX
+2026-10-29,TSX:TA.PR.J,TransAlta Corporation Cum Red Pfd Shs Series G,26.27,26.27,26.15,26.15,1500,-0.1908,4126856913,,Utilities,CAD,TSX
+2026-10-29,TSX:TA.PR.H,TransAlta Corporation Cum Red First Pfd Shs Series E,25.55,25.58,25.55,25.58,2673,0.1174,4126856913,,Utilities,CAD,TSX
+2026-10-29,TSX:TA.PR.D,TransAlta Corporation Cum First Pfd Shs Series A,21.15,21.15,21,21,900,-0.7092,4126856913,,Utilities,CAD,TSX
+2026-10-29,TSX:ATH,Athabasca Oil Corporation,11.94,11.97,11.88,11.94,2996580,0.0838,4119005059,24.6643,Energy Minerals,CAD,TSX
+2026-10-29,TSX:AQN.PR.D,Algonquin Power & Utilities Corp. Cum Pfd Series D,26,26,26,26,900,0.5025,4091646794,104.9657,Utilities,CAD,TSX
+2026-10-29,TSX:AQN,Algonquin Power & Utilities Corp.,7.44,7.62,7.44,7.6,4501894,2.0134,4091646794,30.6823,Utilities,CAD,TSX
+2026-10-29,TSX:AQN.PR.A,Algonquin Power & Utilities Corp. Cum Red Pfd Shs Series A,25.75,25.75,25.75,25.75,400,0.0777,4091646794,103.9564,Utilities,CAD,TSX
+2026-10-29,TSX:NPI,Northland Power Inc.,21.9,22.09,21.82,21.95,524205,0.1826,4087181956,,Utilities,CAD,TSX
+2026-10-29,TSX:NPI.PR.A,Northland Power Inc. Cum Pfd Shs Series 1,25,25,25,25,536,-0.0799,4087181956,,Utilities,CAD,TSX
+2026-10-29,TSX:NPI.PR.B,Northland Power Inc. Floating Rate Cum Red Pfd Registered Shs Series 2,23.93,23.93,23.93,23.93,0,0.0000,4087181956,,Utilities,CAD,TSX
+2026-10-29,TSX:AC,Air Canada,21.74,21.97,21.6,21.87,2804713,0.2291,3934090899,15.3668,Transportation,CAD,TSX
+2026-10-29,TSX:BTE,Baytex Energy Corp.,7.66,7.67,7.42,7.52,3381966,-1.6993,3815657429,,Energy Minerals,CAD,TSX
+2026-10-29,TSX:LNR,Linamar Corporation,89.51,90.94,88.665,89.24,106918,-0.7673,3783937277,7.7831,Producer Manufacturing,CAD,TSX
+2026-10-29,TSX:PEY,Peyto Exploration & Development Corp.,25.53,25.7,25.34,25.58,815347,0.6690,3739519500,10.7025,Energy Minerals,CAD,TSX
+2026-10-29,TSX:GRT.UN,Granite Real Estate Investment Trust,84.64,85.37,84.03,84.57,68554,0.3203,3733478948,14.1332,Finance,CAD,TSX
+2026-10-29,TSX:KXS,"Kinaxis, Inc.",191.57,192.76,187.61,192.64,213083,0.0831,3733082072,45.5209,Technology Services,CAD,TSX
+2026-10-29,TSX:SKE,Skeena Resources Limited,40.17,40.17,39,39.54,280524,-4.6770,3712443740,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:AYA,Aya Gold & Silver Inc.,34.14,34.51,33.29,34.15,415065,-3.3399,3630126501,32.3758,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:POU,Paramount Resources Ltd. Class A,34.79,34.79,34.39,34.63,212989,-0.4885,3625907072,43.8354,Energy Minerals,CAD,TSX
+2026-10-29,TSX:EQB,EQB Inc,118.67,120.17,118.02,119.5,281152,1.0400,3591214498,,Finance,CAD,TSX
+2026-10-29,TSX:RUS,Russel Metals Inc.,90.4,91.01,90,90.88,369821,0.4754,3542316988,23.2602,Distribution Services,CAD,TSX
+2026-10-29,TSX:FCR.UN,First Capital Real Estate Investment Trust,22.86,23.02,22.86,23.02,329209,0.6999,3466937553,4.7466,Finance,CAD,TSX
+2026-10-29,TSX:TPZ,Topaz Energy Corp,30.96,31.25,30.76,31.25,358079,0.8715,3423255515,37.1140,Energy Minerals,CAD,TSX
+2026-10-29,TSX:CAR.UN,Canadian Apartment Properties Real Estate Investment Trust,31.24,31.46,30.97,31.17,551309,0.2251,3411036274,,Finance,CAD,TSX
+2026-10-29,TSX:ARIS,Aris Mining Corp,22.41,22.41,21.62,22.17,594529,-3.6506,3387917389,11.6801,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:NGEX,NGEx Minerals Ltd.,21.34,21.71,20.95,21.53,160457,-1.2838,3373954129,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:ERO,Ero Copper Corp.,43.82,43.94,42.97,43.47,628593,-3.3356,3345990389,10.6211,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:SRU.UN,SmartCentres Real Estate Investment Trust,27.19,27.31,26.97,27.22,408206,0.5913,3291450848,32.1104,Finance,CAD,TSX
+2026-10-29,TSX:IPCO,International Petroleum Corp. (British Columbia),39.79,40.21,39.6,40.11,148898,1.9314,3167111212,154.9845,Energy Minerals,CAD,TSX
+2026-10-29,TSX:CEU,CES Energy Solutions Corp.,20.98,21.14,20.55,20.84,260089,-0.1916,3140694466,22.6941,Process Industries,CAD,TSX
+2026-10-29,TSX:EFX,Enerflex Ltd.,35.04,35.75,33.8,33.9,708214,-3.0875,3046858072,57.7611,Producer Manufacturing,CAD,TSX
+2026-10-29,TSX:WDO,Wesdome Gold Mines Ltd.,27.77,28.03,26.96,27.06,652557,-5.4838,3010103810,9.7799,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:CRT.UN,CT Real Estate Investment Trust,17.45,17.59,17.34,17.52,137261,0.8055,2983448001,9.9852,Finance,CAD,TSX
+2026-10-29,TSX:BDT,Bird Construction Inc.,75.54,77.39,74.5,76.15,369441,1.0885,2977214326,70.9759,Industrial Services,CAD,TSX
+2026-10-29,TSX:TKO,Trekor Metals Limited,10.99,11.05,10.8,11.03,790488,-2.4757,2953098142,370.1342,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:SEA,Seabridge Gold Inc,36.3,36.7,35.72,36.1,67226,-3.4501,2877183365,125.7402,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:FVI,Fortuna Mining Corp.,13.07,13.12,12.9,13.09,610551,-2.7489,2841716342,8.2126,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:AAUC,Allied Gold Corporation,27.83,28.14,27.225,27.52,462620,-2.6530,2810279356,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:SII,Sprott Inc.,149.28,150.69,147.38,149,40785,-1.3963,2773860988,26.3820,Finance,CAD,TSX
+2026-10-29,TSX:PBH,Premium Brands Holdings Corporation,73.23,73.71,72.57,72.9,107388,-0.0959,2714998591,44.3944,Distribution Services,CAD,TSX
+2026-10-29,TSX:SJ,Stella-Jones Inc.,67.58,68,66.79,67.89,94376,1.3435,2607663636,14.3972,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:ARE,Aecon Group Inc.,53.19,54.85,51.97,53.46,349573,0.3567,2605950533,,Industrial Services,CAD,TSX
+2026-10-29,TSX:BHC,Bausch Health Companies Inc.,10.64,12.65,10.64,12.41,3428765,28.3351,2579845145,,Health Technology,CAD,TSX
+2026-10-29,TSX:DIR.UN,Dream Industrial Real Estate Investment Trust,12.88,13.01,12.66,12.8,1126748,-0.0781,2560973619,22.2377,Finance,CAD,TSX
+2026-10-29,TSX:HWX,Headwater Exploration Inc.,14.7,14.89,14.305,14.4,790656,-2.5051,2505134612,18.5639,Energy Minerals,CAD,TSX
+2026-10-29,TSX:FIH.U,Fairfax India Holdings Corp,17.96,18.04,17.81,18,22791,-0.0555,2417284155,12.0736,Finance,USD,TSX
+2026-10-29,TSX:EDR,Endeavour Silver Corp.,10.77,10.96,10.62,10.82,774798,-2.7853,2351285173,44.5451,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:MFI,Maple Leaf Foods Inc.,26.43,27.04,26.43,27,366285,2.1566,2343530902,6.6259,Distribution Services,CAD,TSX
+2026-10-29,TSX:BYD,Boyd Group Services Inc,114.95,116.9,114.68,116.36,74030,1.0684,2286170533,184.4934,Consumer Services,CAD,TSX
+2026-10-29,TSX:RGSI,"Rockpoint Gas Storage, Inc. Class A",23.8,24.31,23.8,24.01,125018,0.2924,2265042667,4.2860,Industrial Services,CAD,TSX
+2026-10-29,TSX:ALS,Altius Minerals Corporation,51.17,51.99,50.46,51.57,116736,-1.2825,2189295542,8.2047,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:DML,Denison Mines Corp.,3.31,3.37,3.265,3.29,2542062,-2.0833,2169691835,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:BEI.UN,Boardwalk Real Estate Investment Trust,62.06,62.395,61.22,61.86,80546,0.2593,2168236645,,Finance,CAD,TSX
+2026-10-29,TSX:NFI,NFI Group Inc.,25.43,25.855,25.4,25.66,243309,1.0634,2158245101,39.5865,Producer Manufacturing,CAD,TSX
+2026-10-29,TSX:BDGI,Badger Infrastructure Solutions Ltd,88.77,89.67,87.53,88.34,83677,-0.8307,2138923124,35.4409,Industrial Services,CAD,TSX
+2026-10-29,TSX:HPS.A,Hammond Power Solutions Inc. Class A,251.5,251.5,241.895,245.02,71791,-2.6307,2137040808,47.3514,Producer Manufacturing,CAD,TSX
+2026-10-29,TSX:CRR.UN,Crombie Real Estate Investment Trust,15.94,16.07,15.82,16.07,331554,1.1965,2133962385,,Finance,CAD,TSX
+2026-10-29,TSX:SDE,Spartan Delta Corp,14.28,14.345,14.03,14.26,521549,-0.3494,2094473331,42.6435,Energy Minerals,CAD,TSX
+2026-10-29,TSX:VET,Vermilion Energy Inc.,19.13,19.14,18.69,18.89,678857,-1.0995,2083937652,,Energy Minerals,CAD,TSX
+2026-10-29,TSX:FRU,Freehold Royalties Ltd.,17.57,17.63,17.28,17.61,408728,0.1706,2056194314,20.6158,Miscellaneous,CAD,TSX
+2026-10-29,TSX:PMZ.UN,Primaris Real Estate Investment Trust,22.25,22.56,22.09,22.54,286532,1.9910,2041077026,26.7601,Finance,CAD,TSX
+2026-10-29,TSX:MTL,Mullen Group Ltd.,29.4,29.89,29.24,29.86,280329,1.2203,2028624250,23.4270,Transportation,CAD,TSX
+2026-10-29,TSX:PXT,Parex Resources Inc.,28.5,28.55,27.46,27.6,387006,-3.1919,1956093793,3.3481,Energy Minerals,CAD,TSX
+2026-10-29,TSX:WTE,Westshore Terminals Investment Corporation,43.87,44.59,43.43,44.3,51301,0.9802,1933081098,27.9372,Transportation,CAD,TSX
+2026-10-29,TSX:SGD,Snowline Gold Corp.,14,14.09,13.68,13.9,225913,-3.3380,1932945055,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:SVM,Silvercorp Metals Inc.,11.71,11.82,11.46,11.58,729308,-3.7406,1898392469,80.9224,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:NWC,North West Company Inc.,55.83,56.46,55.42,56.01,99703,0.3943,1892586733,19.1644,Retail Trade,CAD,TSX
+2026-10-29,TSX:ATS,ATS Corporation,26.8,27.03,26.5,26.66,222700,-0.5224,1875984883,55.6344,Producer Manufacturing,CAD,TSX
+2026-10-29,TSX:WPK,Winpak Ltd.,44.13,44.81,44.12,44.6,31562,1.4328,1840024232,13.9768,Process Industries,CAD,TSX
+2026-10-29,TSX:VNP,5N Plus Inc.,28.39,28.52,27.42,28.12,505604,-0.9510,1821386724,29.0526,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:HR.UN,H&R Real Estate Investment Trust,9.64,9.73,9.525,9.55,698688,-0.5208,1812292165,,Finance,CAD,TSX
+2026-10-29,TSX:SXGC,Southern Cross Gold Consolidated Ltd.,9.13,9.13,8.66,8.73,563152,-6.5310,1796654913,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:EXE,Extendicare Inc.,26.47,27.08,26.46,26.76,615493,1.7490,1783191255,20.4525,Health Services,CAD,TSX
+2026-10-29,TSX:TNZ,Tenaz Energy Corp,75.9,76.61,74.75,75.69,84217,-0.2635,1743686056,23.9283,Energy Minerals,CAD,TSX
+2026-10-29,TSX:KEL,Kelt Exploration Ltd.,11.82,11.86,11.6,11.84,572326,0.4241,1709196055,42.7746,Energy Minerals,CAD,TSX
+2026-10-29,TSX:TVK,"TerraVest Industries, Inc.",107.72,111.02,107.72,110.15,88025,1.6519,1676288887,26.2399,Producer Manufacturing,CAD,TSX
+2026-10-29,TSX:CJ,Cardinal Energy Ltd.,13.34,13.35,13.11,13.24,1098893,-0.8240,1672902078,38.3435,Energy Minerals,CAD,TSX
+2026-10-29,TSX:GFR,Greenfire Resources Ltd.,9.73,9.73,9.48,9.52,95215,-1.8557,1666499989,,Energy Minerals,CAD,TSX
+2026-10-29,TSX:CCA,Cogeco Communications Inc.,50,53.55,50,53.28,416452,-0.8929,1622114372,,Consumer Services,CAD,TSX
+2026-10-29,TSX:SIA,Sienna Senior Living Inc.,20,20.135,19.71,19.92,335354,0.3021,1570834050,37.9140,Health Services,CAD,TSX
+2026-10-29,TSX:CYB,Cymbria Corporation Class A,100.01,100.52,99.74,99.74,1110,-0.5087,1557001180,8.1502,Miscellaneous,CAD,TSX
+2026-10-29,TSX:SIS,Savaria Corporation,29.8,30.1,29.67,29.93,368203,0.6727,1532704517,24.7417,Consumer Durables,CAD,TSX
+2026-10-29,TSX:LUNR,LunR Royalties Corp,17.25,17.52,17.03,17.23,229508,-1.7114,1511746725,,Finance,CAD,TSX
+2026-10-29,TSX:TOY,Spin Master Corp,21.15,22,19.94,20.95,376535,-0.0477,1498386308,,Consumer Durables,CAD,TSX
+2026-10-29,TSX:RCH,Richelieu Hardware Ltd,37.73,37.95,37.23,37.94,51088,1.4710,1462939051,22.6683,Producer Manufacturing,CAD,TSX
+2026-10-29,TSX:KMP.UN,Killam Apartment REIT,17.09,17.22,16.87,17.07,274651,0.1173,1458943275,556.0261,Finance,CAD,TSX
+2026-10-29,TSX:MAL,Magellan Aerospace Corporation,35.57,35.71,35.09,35.22,43202,-1.2892,1452807719,33.7615,Electronic Technology,CAD,TSX
+2026-10-29,TSX:LSPD,Lightspeed Commerce Inc,15.03,15.33,14.75,15.31,374778,0.6575,1444186096,,Technology Services,CAD,TSX
+2026-10-29,TSX:BIR,Birchcliff Energy Ltd.,7.03,7.14,6.98,7.14,1496930,1.4205,1378314151,20.6537,Energy Minerals,CAD,TSX
+2026-10-29,TSX:TSU,Trisura Group Ltd.,40.5,40.92,40.44,40.76,55094,0.8911,1365264053,12.6254,Finance,CAD,TSX
+2026-10-29,TSX:JWEL,"Jamieson Wellness, Inc.",45.51,45.62,45.495,45.56,450437,0.0879,1347292839,24.8921,Health Technology,CAD,TSX
+2026-10-29,TSX:ORE,Orezone Gold Corporation,2.76,2.81,2.67,2.69,540763,-4.6099,1343999313,11.1111,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:PD,Precision Drilling Corporation,148.57,157.05,147.77,150.5,244150,1.9302,1325801154,,Industrial Services,CAD,TSX
+2026-10-29,TSX:ABRA,AbraSilver Resource Corp.,11.1,11.26,10.91,11.06,390765,-4.1594,1325076150,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:VLE,Valeura Energy Inc.,16.99,17.25,16.85,17.22,289270,0.8197,1294120513,21.8694,Energy Minerals,CAD,TSX
+2026-10-29,TSX:LB,Laurentian Bank of Canada,40.49,40.49,40.45,40.46,116588,0.0000,1292837346,,Finance,CAD,TSX
+2026-10-29,TSX:LB.PR.H,Laurentian Bank of Canada Non Cum Pfd Class A Series 13,25.35,25.36,25.35,25.36,400,0.0394,1292837346,,Finance,CAD,TSX
+2026-10-29,TSX:AAV,Advantage Energy Ltd,10.76,10.96,10.735,10.93,995693,1.3915,1286533821,22.7424,Energy Minerals,CAD,TSX
+2026-10-29,TSX:LNF,Leon's Furniture Limited,26.24,26.56,26.24,26.56,7014,1.3740,1282713352,11.5993,Retail Trade,CAD,TSX
+2026-10-29,TSX:CFP,Canfor Corporation,15.55,15.55,14.925,15.2,248146,-0.3932,1277353412,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:CRON,Cronos Group Inc,4.67,4.745,4.66,4.73,101718,0.4246,1237833453,18.6147,Health Technology,CAD,TSX
+2026-10-29,TSX:CAS,Cascades Inc.,17.23,17.41,16.88,17.36,396461,1.5799,1236438724,13.9955,Process Industries,CAD,TSX
+2026-10-29,TSX:LAS.A,"Lassonde Industries, Inc. Class A",251.48,253.17,248.3,253.17,1972,0.4683,1226245279,11.1774,Consumer Non-Durables,CAD,TSX
+2026-10-29,TSX:SOIL,Saturn Oil & Gas Inc.,9.45,9.5,9.27,9.36,323888,-1.3699,1205130796,45.3708,Energy Minerals,CAD,TSX
+2026-10-29,TSXV:BZ,Benz Mining Corp.,4.16,4.29,4.1,4.2,21226,-5.1919,1199791067,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:AIF,Altus Group Limited,49.15,50.33,49.15,50.26,91192,2.5087,1196914102,,Finance,CAD,TSX
+2026-10-29,TSX:CHE.UN,Chemtrade Logistics Income Fund,14.89,14.89,14.71,14.77,150174,-0.6057,1188959213,13.5442,Process Industries,CAD,TSX
+2026-10-29,TSX:VZLA,Vizsla Silver Corp.,4.45,4.655,4.38,4.6,885435,0.8772,1154966225,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:MEQ,Mainstreet Equity Corp.,173.99,177.48,170.27,175.02,12866,2.2671,1122245323,9.3098,Finance,CAD,TSX
+2026-10-29,CSE:HG,Hydrograph Clean Power Inc,4.18,4.73,3.93,4.31,1455020,0.9368,1106029001,,Producer Manufacturing,CAD,CSE
+2026-10-29,TSX:HMMC,Hemlo Mining Corp,5.09,5.105,4.89,4.93,559527,-5.5556,1103598706,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:GGD,"Gogold Resources, Inc.",3.44,3.45,3.36,3.4,696550,-4.2254,1097842268,22.2368,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:RIO,RIO2 Limited,2.72,2.72,2.65,2.66,613391,-4.6595,1092526096,18.9864,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:USA,Americas Gold and Silver Corporation,4.32,4.415,4.18,4.31,981985,-3.5794,1078284082,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:SVI,StorageVault Canada Inc.,4.12,4.155,4.05,4.09,401702,0.0000,1067134252,,Transportation,CAD,TSX
+2026-10-29,TSX:SGR.U,Slate Grocery REIT Class U,12.5,12.5,12.45,12.5,9400,0.0000,1054776850,18.1107,Finance,USD,TSX
+2026-10-29,TSX:SPB,Superior Plus Corp,6.92,7,6.83,6.96,637835,1.0160,1054764373,,Distribution Services,CAD,TSX
+2026-10-29,TSX:NUAG,New Pacific Metals Corp,7.65,7.77,7.42,7.46,133897,-5.2097,1041934038,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:TCW,Trican Well Service Ltd.,7.08,7.1,6.92,7.05,1182166,1.1478,1040826214,13.7749,Producer Manufacturing,CAD,TSX
+2026-10-29,TSX:TOT,Total Energy Services Inc.,40.09,40.37,39.7,40.01,109558,-0.1497,1040464459,16.8187,Industrial Services,CAD,TSX
+2026-10-29,TSX:MER,Meren Energy Inc.,2.18,2.18,2.13,2.16,301398,0.4651,1036968941,,Energy Minerals,CAD,TSX
+2026-10-29,TSXV:PNG,Kraken Robotics Inc,3.88,4.01,3.79,3.86,1120934,-0.7712,1030652395,,Electronic Technology,CAD,TSXV
+2026-10-29,TSX:CF.PR.C,Canaccord Genuity Group Inc Cum Pfd Shs Series C,25.18,25.18,25.18,25.18,600,-0.4350,1020045481,,Finance,CAD,TSX
+2026-10-29,TSX:CF,Canaccord Genuity Group Inc.,13.87,14.11,13.87,14.06,84530,1.2968,1020045481,,Finance,CAD,TSX
+2026-10-29,TSX:DHT.U,DRI Healthcare Trust,11.62,11.62,11.62,11.62,0,0.0000,992272432,,Miscellaneous,USD,TSX
+2026-10-29,TSX:XNDU,Xanadu Quantum Technologies Limited Class B,4.34,4.44,4.17,4.35,782770,-3.3333,975948248,,Finance,CAD,TSX
+2026-10-29,TSX:OM,Osisko Metals Incorporated,1.46,1.46,1.41,1.46,890551,-1.3514,962554389,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:VMET,Versamet Royalties Corp.,12.26,12.27,12.02,12.22,90141,-1.3721,961887951,9.5566,Miscellaneous,CAD,TSX
+2026-10-29,TSX:HSLV,Highlander Silver Corp,6.38,6.52,6.22,6.46,544852,-2.2693,959671005,156.4165,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:MUX,McEwen Inc.,21.31,21.57,20.92,21.15,19828,-2.9371,959127178,12.7349,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:LIF,Labrador Iron Ore Royalty Corporation,20.9,20.9,20.33,20.48,216562,-1.7274,951446123,17.0029,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:PET,Pet Valu Holdings Ltd.,19.78,19.93,19.6,19.76,110348,0.2028,945558724,13.7146,Retail Trade,CAD,TSX
+2026-10-29,TSX:AGTF,AGT Food and Ingredients Inc,19.795,19.88,19.57,19.8,12737,1.2270,943211407,,Consumer Non-Durables,CAD,TSX
+2026-10-29,TSX:BDI,Black Diamond Group Limited,19.45,19.805,19.45,19.66,133451,1.0797,941528768,56.7552,Consumer Durables,CAD,TSX
+2026-10-29,TSX:SGY,Surge Energy Inc.,12.89,12.99,12.72,12.81,956609,-2.0642,925496545,30.0422,Energy Minerals,CAD,TSX
+2026-10-29,TSX:FDY,Faraday Copper Corp,4.27,4.34,4.15,4.28,982439,-2.5057,921713663,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:ARG,Amerigo Resources Ltd,7.84,7.85,7.43,7.77,928072,-1.5209,908655839,12.5505,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:MATR,Mattr Corp,20.68,20.68,20.42,20.67,88959,0.1939,902302421,41.2822,Process Industries,CAD,TSX
+2026-10-29,TSX:ALC,Algoma Central Corporation,31.06,31.06,30.35,30.84,6147,-0.9316,900880660,6.7209,Transportation,CAD,TSX
+2026-10-29,TSX:CJT,Cargojet Inc.,85.83,86.38,85.23,86.24,21241,1.0783,900772114,27.9465,Transportation,CAD,TSX
+2026-10-29,TSX:MDI,Major Drilling Group International Inc.,14.95,14.99,14.67,14.82,67690,-1.7893,885236397,47.3029,Industrial Services,CAD,TSX
+2026-10-29,TSX:NEO,"Neo Performance Materials, Inc.",26.37,26.37,25.62,25.92,167521,-2.1148,872657091,,Process Industries,CAD,TSX
+2026-10-29,TSX:III,Imperial Metals Corporation,6.67,6.76,6.56,6.66,100491,-2.7737,870668385,11.1222,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:VITL.UN,Vital Infrastructure Property Trust,4.79,4.8,4.67,4.71,1413648,-1.2579,850698583,,Finance,CAD,TSX
+2026-10-29,TSX:AD.UN,Alaris Equity Partners Income Trust Trust Units Reg S 3c7,23.44,23.44,23.04,23.2,58759,-0.2580,842513377,7.1455,Finance,CAD,TSX
+2026-10-29,TSXV:OMG,Omai Gold Mines Corp.,1.72,1.72,1.63,1.66,1967247,-4.5977,839908858,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:MRC,Morguard Corporation,110,111.91,108.88,109.29,2035,-0.8707,839819399,5.6710,Finance,CAD,TSX
+2026-10-29,TSX:CADY,Cadillac Mines Corp.,4.22,4.24,3.98,4.04,256117,-6.0465,826238272,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:CVG,Clairvest Group Inc.,86.5,86.5,86.5,86.5,0,0.0000,825791860,8.3253,Finance,CAD,TSX
+2026-10-29,TSX:LGD,Liberty Gold Corp,2.02,2.06,2.01,2.04,1902690,-1.9231,815065560,49.5146,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:ASM,Avino Silver & Gold Mines Ltd.,6.49,6.57,6.35,6.46,450385,-3.7258,813032785,17.5591,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:PSI,Pason Systems Inc.,14.58,14.68,14.42,14.55,71579,-0.3425,808623802,23.8017,Technology Services,CAD,TSX
+2026-10-29,TSX:DXT,"Dexterra Group, Inc.",17.88,17.96,17.8,17.88,49536,-0.3900,799990040,25.7748,Consumer Durables,CAD,TSX
+2026-10-29,TSX:GUD,"Knight Therapeutics, Inc.",11.34,11.43,11.28,11.4,62809,0.7958,792538629,75.9494,Health Technology,CAD,TSX
+2026-10-29,TSX:LAC,Lithium Americas Corp,2.98,3.1,2.97,2.99,725994,-1.6447,787296064,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:OBE,Obsidian Energy Ltd,16.25,16.49,16.05,16.37,236579,-0.3652,782053344,41.9636,Energy Minerals,CAD,TSX
+2026-10-29,TSX:RFA,RFA Financial Inc.,23.8,24.28,23.62,24.05,9726,0.9232,776531435,,Finance,CAD,TSX
+2026-10-29,TSX:RFA.PR.I,RFA Financial Inc. Pfd Shs Series I,24,24.15,23.85,24.15,2973,1.0460,776531435,,Finance,CAD,TSX
+2026-10-29,TSX:RFA.PR.E,RFA Financial Inc. Pfd Shares Series E,23.26,23.26,23.26,23.26,0,0.0000,776531435,,Finance,CAD,TSX
+2026-10-29,TSXV:OGG,Osisko Gold Group Inc.,3.35,3.4,3.34,3.37,57418,-1.4620,770472970,103.3742,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:TALA,Talamore Mining Corporation,6.65,6.71,6.37,6.39,118306,-5.3333,770356781,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:RAY,"Stingray Group, Inc.",16,16.25,15.96,16.25,33506,1.1201,767504810,,Consumer Services,CAD,TSX
+2026-10-29,TSX:SEC,Senvest Capital Inc.,442,442,442,442,0,0.0000,765332282,1.7241,Finance,CAD,TSX
+2026-10-29,TSX:WELL,WELL Health Technologies Corp.,4.14,4.26,4.11,4.2,741770,1.4493,755887069,278.1457,Health Services,CAD,TSX
+2026-10-29,TSX:SGR.UN,Slate Grocery REIT Class U,17.46,17.54,17.4,17.45,101399,-0.4564,752431736,17.7989,Finance,CAD,TSX
+2026-10-29,TSXV:LGN,Logan Energy Corp,1.54,1.55,1.54,1.54,1132633,-0.6452,744675821,27.4021,Energy Minerals,CAD,TSXV
+2026-10-29,TSX:DCBO,"Docebo, Inc.",41.32,41.53,40.51,41.51,22983,-0.2403,740513351,26.0088,Technology Services,CAD,TSX
+2026-10-29,TSX:GOOS,"Canada Goose Holdings, Inc.",10.93,11.29,10.93,11.21,329713,3.0331,740412000,20.3633,Consumer Non-Durables,CAD,TSX
+2026-10-29,TSX:ET,Evertz Technologies Limited,13.71,13.71,13.53,13.68,44675,-0.0730,739451441,17.4690,Electronic Technology,CAD,TSX
+2026-10-29,TSXV:NCX,NorthIsle Copper and Gold Inc.,3.11,3.11,3.02,3.05,178165,-0.9740,732182490,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSXV:MTA,Metalla Royalty & Streaming Ltd.,10.61,10.82,10.48,10.82,6507,-1.2774,730986747,,Finance,CAD,TSXV
+2026-10-29,TSX:VBNK,VersaBank,31.41,31.69,31.18,31.63,19447,0.8288,725473761,29.9725,Finance,CAD,TSX
+2026-10-29,TSX:PRL,"Propel Holdings, Inc.",25.63,26.39,25.44,26.13,213334,1.9508,720104496,13.8820,Technology Services,CAD,TSX
+2026-10-29,TSX:ENGH,Enghouse Systems Limited,18.53,18.75,18.27,18.55,127204,-0.4294,716334498,14.4482,Technology Services,CAD,TSX
+2026-10-29,TSX:DHT.UN,DRI Healthcare Trust,18,18.25,18,18.1,30105,0.2770,707843814,,Miscellaneous,CAD,TSX
+2026-10-29,TSXV:FDR,"Founders Metals, Inc.",6.99,6.99,6.685,6.76,115402,-1.8868,707410498,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSXV:MKO,Mako Mining Corp.,11.39,11.39,10.79,10.95,67781,-2.9255,704934834,13.5135,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:SCZ,Santacruz Silver Mining Ltd.,10.11,10.185,9.9,10.09,163896,-3.9962,697215263,16.3586,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:TSAT,Telesat Corp.,63.42,64.79,56.75,59.48,77065,-6.8733,695293991,,Communications,CAD,TSX
+2026-10-29,TSX:MARI,Marimaca Copper Corp.,7.12,7.12,6.79,7.01,793306,-2.6389,694188291,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:CGY,Calian Group Ltd.,82.16,85.14,82.16,85.14,34874,2.6897,681507189,25.5162,Commercial Services,CAD,TSX
+2026-10-29,TSX:AGF.B,AGF Management Limited Class B,14.7,14.81,14.58,14.65,244197,-0.2723,666457426,6.8957,Finance,CAD,TSX
+2026-10-29,TSX:IFP,Interfor Corporation,14.14,14.24,13.7,14,99475,-1.3390,665727672,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:NFGC,New Found Gold Corp,2.37,2.38,2.29,2.36,446280,-2.0747,662222251,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:FF,First Mining Gold Corp.,0.63,0.63,0.595,0.6,1302963,-7.6923,659213541,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:FTG,Firan Technology Group Corporation,35.42,36.635,35.25,35.63,93732,0.5929,636058075,40.7666,Electronic Technology,CAD,TSX
+2026-10-29,TSX:MKP,MCAN Mortgage Corporation,21.55,21.87,21.55,21.84,112842,1.7707,623076791,10.3684,Finance,CAD,TSX
+2026-10-29,TSX:DBM,Doman Building Materials Group Ltd,9.86,10.02,9.67,9.93,166317,0.3030,620730828,10.3459,Distribution Services,CAD,TSX
+2026-10-29,TSX:TLG,Troilus Mining Corp,1.59,1.62,1.55,1.58,1001328,-2.4691,609897070,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:AW,"A&W Food Services of Canada, Inc.",35.74,36.15,35.63,36.15,15881,1.1755,609734100,15.3379,Consumer Services,CAD,TSX
+2026-10-29,TSX:ADEN,ADENTRA Inc,35.22,35.89,35,35.54,30324,0.9372,608980812,9.3438,Distribution Services,CAD,TSX
+2026-10-29,TSX:LMCU,Lumina Metals Corp.,7.61,7.61,7.23,7.33,150969,-4.8052,598831285,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:RSI,Rogers Sugar Inc.,6.5,6.59,6.5,6.59,135976,0.9188,598784793,13.8010,Process Industries,CAD,TSX
+2026-10-29,TSX:ESI,Ensign Energy Services Inc.,4.57,4.65,4.52,4.58,442969,0.6593,598285215,,Industrial Services,CAD,TSX
+2026-10-29,TSX:ISO,IsoEnergy Ltd.,12.57,12.71,12.22,12.34,158815,-2.9111,591664323,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:CGX,Cineplex Inc.,12.9,13.08,12.88,13.07,311910,1.0828,581119075,,Consumer Services,CAD,TSX
+2026-10-29,TSX:CFW,Calfrac Well Services Ltd.,7.89,7.98,7.8,7.93,96031,0.2528,569583616,13.0192,Industrial Services,CAD,TSX
+2026-10-29,TSX:BLDP,Ballard Power Systems Inc.,2.25,2.34,2.22,2.22,1448148,-2.2026,568527823,,Producer Manufacturing,CAD,TSX
+2026-10-29,TSX:CVVY,Cavvy Energy Ltd,2.65,2.655,2.59,2.59,326965,-2.6316,562866128,110.2128,Energy Minerals,CAD,TSX
+2026-10-29,TSX:WJX,Wajax Corporation,36.28,36.28,35.5,35.99,27668,-0.6350,559590330,12.2461,Distribution Services,CAD,TSX
+2026-10-29,TSXV:BYN,Banyan Gold Corp.,1.61,1.61,1.56,1.59,131577,-2.4540,550904142,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:GAU,"Galiano Gold, Inc.",2.87,2.88,2.78,2.87,399980,-2.3810,548627936,7.8544,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:MRG.UN,Morguard North American Residential Real Estate Investment Trust,14.56,14.6,14.39,14.55,26787,0.4141,539360471,7.0253,Finance,CAD,TSX
+2026-10-29,TSX:ITH,International Tower Hill Mines Ltd.,2.8,2.87,2.78,2.84,37675,-1.0453,535658929,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:HLF,High Liner Foods Incorporated,26.81,26.81,26.745,26.76,112445,-0.1865,535595471,21.9344,Consumer Non-Durables,CAD,TSX
+2026-10-29,TSX:LCFS,Tidewater Renewables Ltd.,20.47,20.62,20,20.25,7720,-1.1230,533774032,,Process Industries,CAD,TSX
+2026-10-29,TSXV:GSKR,Goldsky Resources Corp.,2.75,2.77,2.6,2.62,373639,-6.0932,533418775,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:APM,Andean Precious Metals Corp,4.89,4.91,4.79,4.89,177868,-2.2000,531481910,4.4475,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:AP.UN,Allied Properties Real Estate Investment Trust,4,4.55,3.62,4.32,10633378,-18.9493,531413457,,Finance,CAD,TSX
+2026-10-29,TSXV:GORO,Goldgroup Mining Inc.,4.55,4.65,4.48,4.58,136242,-1.0799,523929243,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:ASTL,Algoma Steel Group Inc.,6.86,7.21,6.76,6.98,1028356,0.5764,523097476,,Producer Manufacturing,CAD,TSX
+2026-10-29,TSX:MTY,MTY Food Group Inc.,32.02,32.11,31.62,32.03,59467,0.3761,519942487,6.6987,Consumer Services,CAD,TSX
+2026-10-29,TSXV:TAU,Thesis Gold & Silver Inc.,2.46,2.46,2.33,2.34,369576,-4.4898,515459078,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:WFC,Wall Financial Corporation,22.52,22.52,22.52,22.52,0,0.0000,511388112,19.6561,Finance,CAD,TSX
+2026-10-29,TSX:DRM,DREAM Unlimited Corp. Class A,17.08,17.27,16.85,17,25055,-0.3517,510443470,96.5909,Finance,CAD,TSX
+2026-10-29,TSXV:RML,Rusoro Mining Ltd.,1.09,1.1,1.05,1.1,22749,0.0000,502418185,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:DIV,Diversified Royalty Corp.,4.01,4.12,4.01,4.1,667429,1.7370,502201885,23.9207,Commercial Services,CAD,TSX
+2026-10-29,TSX:ATX,ATEX Resources Inc.,1.83,1.83,1.77,1.83,228473,-2.1390,502187121,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:GSY,goeasy Ltd.,43.43,45.09,43.43,44.54,100944,1.8756,500074978,,Finance,CAD,TSX
+2026-10-29,TSX:CHR,Chorus Aviation Inc.,30.68,31,30.68,31,37417,0.4211,497029863,15.7721,Transportation,CAD,TSX
+2026-10-29,TSX:NDM,Northern Dynasty Minerals Ltd.,1.2,1.2,1.12,1.14,656936,-6.5574,489233277,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSXV:ASE,Asante Gold Corporation,0.73,0.74,0.71,0.73,117099,-2.6667,483949408,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:APR.UN,Automotive Properties Real Estate Investment Trust,12.4,12.71,12.34,12.64,65292,1.7713,481617937,10.9770,Finance,CAD,TSX
+2026-10-29,TSX:MRE,Martinrea International Inc.,9.64,9.79,9.53,9.55,59982,-0.8307,480700067,5.5802,Producer Manufacturing,CAD,TSX
+2026-10-29,TSXV:ALDE,Aldebaran Resources Incorporation,3.53,3.56,3.445,3.48,79124,-3.8674,478878237,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:EPRX,"Eupraxia Pharmaceuticals, Inc.",10.18,10.46,9.935,10.14,83499,-1.3619,476803819,,Health Technology,CAD,TSX
+2026-10-29,TSX:ABXX,Abaxx Technologies Inc,16.5,17.14,16.32,16.41,70111,-3.1858,469015325,,Technology Services,CAD,TSX
+2026-10-29,TSXV:ITR,Integra Resources Corp,3.18,3.18,3.08,3.15,83546,-1.5625,463106501,64.1548,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:DLCG,"Dominion Lending Centres, Inc. (Canada) Class A",8.51,8.58,8.43,8.48,16893,0.8323,460616974,29.7231,Finance,CAD,TSX
+2026-10-29,TSX:ACQ,AutoCanada Inc.,28.05,29.81,28.05,29.74,37744,5.9494,460302552,23.9375,Retail Trade,CAD,TSX
+2026-10-29,TSX:NICU,Magna Mining Inc,2.03,2.05,1.97,2.04,156994,-0.4878,458048578,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:PMET,PMET Resources Inc.,3.3,3.3,3.2,3.28,254776,-3.2448,449661365,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:TWC,TWC Enterprises Limited,26,26,24.99,26,2099,-0.3067,448513316,10.3322,Consumer Services,CAD,TSX
+2026-10-29,TSX:HSTR,Heliostar Metals Ltd,2.21,2.21,2.13,2.15,407197,-4.0179,447339204,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSXV:THX,Thor Explorations Ltd.,0.97,0.97,0.91,0.92,209650,-2.1277,446973893,2.1551,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:PHX,PHX Energy Services Corp.,13.62,13.68,13.43,13.58,124192,0.4438,441378314,13.4389,Industrial Services,CAD,TSX
+2026-10-29,TSXV:REG,Regulus Resources Inc,4.78,4.79,4.65,4.79,28586,-0.2083,430353799,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:TMQ,Trilogy Metals Inc.,3.18,3.28,3.12,3.22,190049,-0.9231,420469274,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSXV:AUXX,Gold X2 Mining Inc.,5.5,5.79,5.5,5.59,34087,-3.7866,419370564,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:KITS,Kits Eyecare Ltd.,17.23,17.78,17.1,17.78,67170,3.0725,418460273,107.7576,Retail Trade,CAD,TSX
+2026-10-29,TSXV:AMX,Amex Gold Mining Inc.,3.8,3.8,3.56,3.6,59501,-3.7433,415388896,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSXV:SLG,San Lorenzo Gold Corp,5.9,5.95,5.68,5.95,58605,0.8475,414495582,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:DTOL,"D2L, Inc.",10.96,11.37,10.96,11.33,11605,2.7199,413406693,320.0565,Technology Services,CAD,TSX
+2026-10-29,TSX:PLZ.UN,Plaza Retail REIT,5.23,5.28,5.23,5.27,1043431,0.7648,412143664,9.5058,Finance,CAD,TSX
+2026-10-29,TSX:FEC,Frontera Energy Corporation,8.06,8.16,7.875,8.09,52632,-0.6143,410934909,,Energy Minerals,CAD,TSX
+2026-10-29,TSX:GTE,Gran Tierra Energy Inc.,16.19,16.19,15.66,15.89,48233,-1.7316,408867976,,Energy Minerals,CAD,TSX
+2026-10-29,TSX:IPO,InPlay Oil Corp,20.9,20.9,20.31,20.43,70662,-1.1611,407694794,,Energy Minerals,CAD,TSX
+2026-10-29,TSXV:ZDC,Zedcor Inc,4.99,5.17,4.92,5.16,159609,2.1782,406318112,,Finance,CAD,TSXV
+2026-10-29,TSX:WRN,Western Copper and Gold Corporation,2.45,2.48,2.38,2.4,629862,-4.0000,403359150,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSXV:FWZ,Fireweed Metals Corp.,2.5,2.5,2.36,2.43,164789,-2.0161,401738437,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:MRD,Melcor Developments Ltd.,18.81,18.82,18.69,18.82,7830,0.3733,400844969,6.2496,Finance,CAD,TSX
+2026-10-29,TSX:TCS,TECSYS Inc.,38.88,39,38.67,38.67,1305,-0.5145,399854732,88.9784,Commercial Services,CAD,TSX
+2026-10-29,TSX:TLRY,"Tilray Brands, Inc.",3.74,3.76,3.67,3.68,598063,-1.6043,397078815,,Process Industries,CAD,TSX
+2026-10-29,TSXV:TTS,Tintina Mines Limited,1.96,2.045,1.9,1.99,27624,2.0513,394386768,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:ETG,Entree Resources Ltd,2.61,2.67,2.58,2.66,151325,1.1407,391307381,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSXV:MOON,Blue Moon Metals Inc,6.11,6.11,5.62,5.68,183947,-8.2391,388005125,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:AI,Atrium Mortgage Investment Corp.,11.19,11.28,11.19,11.26,50092,0.3565,386956754,11.5915,Finance,CAD,TSX
+2026-10-29,TSX:BAMI,Blue Ant Media Corporation,5.35,5.81,5.24,5.51,55662,4.5541,386777014,,Consumer Services,CAD,TSX
+2026-10-29,TSX:PRV.UN,PRO Real Estate Investment Trust,6.75,6.77,6.66,6.73,34219,-0.1484,385002701,11.5675,Finance,CAD,TSX
+2026-10-29,TSX:NXR.UN,Nexus Industrial REIT,7.2,7.28,7.2,7.24,157413,0.5556,377456778,13.2093,Finance,CAD,TSX
+2026-10-29,TSXV:SLI,Standard Lithium Ltd.,2.14,2.14,2.03,2.05,120920,-4.2056,376736384,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:KBL,K-Bro Linen Inc.,40.74,41.26,40.74,41.21,6445,0.5858,374802099,24.5898,Commercial Services,CAD,TSX
+2026-10-29,TSX:TWM,Tidewater Midstream & Infrastructure Ltd.,23.52,23.89,22.96,23.37,70911,-0.6800,368201795,,Distribution Services,CAD,TSX
+2026-10-29,CSE:MAXX,Max Power Mining Corp,2.55,2.63,2.5,2.6,319348,-1.1407,364247075,,Non-Energy Minerals,CAD,CSE
+2026-10-29,TSXV:RDS,Radisson Mining Resources Inc.,0.98,0.98,0.94,0.95,285507,-3.0612,359555648,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:JAG,Jaguar Mining Inc.,5.75,5.75,5.55,5.61,55677,-4.7538,358531978,27.2066,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:BSX,Belo Sun Mining Corp.,0.88,0.89,0.87,0.87,287863,-3.3333,356879514,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:RM,Roxmore Resources Inc.,6.89,6.89,6.86,6.87,363548,-0.2903,355776412,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:ACT,Aduro Clean Technologies Inc,13.98,14.67,13.76,14.53,12648,4.2324,355776396,,Process Industries,CAD,TSX
+2026-10-29,TSX:SLVR,"Silver Tiger Metals, Inc.",0.74,0.74,0.7,0.72,2605384,-4.0000,352375105,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:FVL,Freegold Limited,0.85,0.86,0.83,0.83,181692,-2.3529,351142418,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:MAI,Mining Americas Inc.,4.3,4.35,4.1,4.14,309130,-6.3348,346752801,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:TRX,TRX Gold Corporation,1.42,1.435,1.39,1.39,43955,-4.7945,341950739,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:VHI,Vitalhub Corp.,7.55,7.75,7.495,7.71,70877,2.3904,340633830,66.4083,Technology Services,CAD,TSX
+2026-10-29,TSX:TCL.B,Transcontinental Inc. Class B,6.75,6.75,6.75,6.75,0,0.0000,340571955,1.6814,Consumer Services,CAD,TSX
+2026-10-29,TSX:TCL.A,Transcontinental Inc. Class A,5.61,5.68,5.5,5.6,247274,0.7194,340571955,1.3950,Consumer Services,CAD,TSX
+2026-10-29,TSX:NOA,North American Construction Group Ltd.,17.68,17.9,17.36,17.51,74962,-1.1293,340017755,16.3553,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:DRX,ADF Group Inc.,16.88,16.94,16.42,16.73,45214,0.7225,338322022,15.1075,Industrial Services,CAD,TSX
+2026-10-29,TSX:CVO,"Coveo Solutions, Inc.",4.8,4.82,4.7,4.77,216955,-1.0373,337336909,,Technology Services,CAD,TSX
+2026-10-29,TSX:NOU,Nouveau Monde Graphite Inc,1.4,1.415,1.39,1.41,65182,-1.3986,335772713,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:MRT.UN,Morguard Real Estate Investment Trust,6.91,7,6.89,7,5700,1.0101,334164486,39.4811,Finance,CAD,TSX
+2026-10-29,TSXV:CEI,"Coelacanth Energy, Inc.",0.72,0.72,0.72,0.72,283195,-1.3699,330088385,122.0339,Energy Minerals,CAD,TSXV
+2026-10-29,TSXV:CDPR,"Cerro de Pasco Resources, Inc.",0.68,0.68,0.65,0.66,333506,-3.6496,324593827,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:CSW.B,Corby Spirit and Wine Limited Class B,15.25,15.51,15.25,15.35,1118,0.3268,319030903,13.0683,Consumer Non-Durables,CAD,TSX
+2026-10-29,TSX:CSW.A,Corby Spirit and Wine Limited Class A,15.65,15.65,15.44,15.57,5808,-1.3308,319030903,13.2556,Consumer Non-Durables,CAD,TSX
+2026-10-29,CSE:SNDL,SNDL Inc.,1.83,1.86,1.83,1.84,36728,0.5464,317120827,,Process Industries,CAD,CSE
+2026-10-29,TSXV:CAD,Colonial Coal International Corp.,2.37,2.37,2.31,2.34,67845,-2.5000,317043597,,Energy Minerals,CAD,TSXV
+2026-10-29,TSX:PBL,Pollard Banknote Limited,16.36,16.6,16.36,16.48,10361,0.4878,316619037,16.6062,Consumer Services,CAD,TSX
+2026-10-29,TSX:CGO,Cogeco Inc.,46,47.2,43.51,46.95,159272,2.3545,315527661,,Communications,CAD,TSX
+2026-10-29,TSX:CPKR,Canada Packers Inc.,14.4,14.62,14.26,14.55,138318,-0.1373,309401278,43.1495,Consumer Non-Durables,CAD,TSX
+2026-10-29,TSXV:SICO,Silverco Mining Ltd.,7.93,7.94,7.66,7.83,51119,-0.5083,306057538,44.0382,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:TF,Timbercreek Financial Corp.,5.19,5.22,5.12,5.17,243050,0.1938,304607854,16.7803,Finance,CAD,TSX
+2026-10-29,TSXV:PML,Panoro Minerals Ltd.,1.35,1.36,1.3,1.36,109664,-1.4493,304401377,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:RBY,Rubellite Energy Corp.,4.5,4.52,4.4,4.45,20400,-1.3304,302098571,17.2014,Energy Minerals,CAD,TSX
+2026-10-29,TSX:WEED,Canopy Growth Corporation,0.95,0.97,0.94,0.94,316946,-0.5291,300543322,,Process Industries,CAD,TSX
+2026-10-29,TSX:ELVA,Electrovaya Inc.,7.96,8,7.62,7.89,175067,-1.8657,286762913,59.0127,Producer Manufacturing,CAD,TSX
+2026-10-29,TSXV:ECU,"Element 29 Resources, Inc.",2,2.09,1.98,2,367683,-0.9901,282805905,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:GBT,BMTC Group Inc. Class A,12.31,12.31,12.25,12.25,7448,-0.4874,279148057,10.0237,Retail Trade,CAD,TSX
+2026-10-29,TSXV:PCU,Pecoy Copper Corp.,1.77,1.83,1.77,1.83,69585,-1.6129,277958777,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:TBL,Taiga Building Products Ltd.,3.6,3.6,3.6,3.6,0,0.0000,277210467,13.5237,Distribution Services,CAD,TSX
+2026-10-29,TSX:JOY,"Journey Energy, Inc.",5.74,5.75,5.59,5.63,185903,-2.0870,276793496,14.6120,Energy Minerals,CAD,TSX
+2026-10-29,TSX:FC,Firm Capital Mortgage Investment Corporation,10.59,10.63,10.51,10.56,51587,0.0000,276762948,11.0971,Finance,CAD,TSX
+2026-10-29,TSXV:CBR,"Cabral Gold, Inc.",1.12,1.16,1.12,1.15,86870,0.0000,273660423,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSXV:KRY,Koryx Copper S.A.,3.15,3.27,3.05,3.09,51836,-1.9048,272464444,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSXV:SIG,Sitka Gold Corp.,0.89,0.89,0.85,0.85,290216,-3.4091,272381860,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSXV:QTWO,Q2 Metals Corp,1.56,1.56,1.5,1.52,241115,-3.1847,270607850,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:ACB,Aurora Cannabis Inc.,5.64,5.78,5.64,5.74,183929,0.5254,267796013,,Process Industries,CAD,TSX
+2026-10-29,TSX:VLN,Velan Inc.,17.23,17.25,17.23,17.25,625,0.0000,265619783,,Producer Manufacturing,CAD,TSX
+2026-10-29,TSXV:WGO,White Gold Corp.,1.62,1.63,1.55,1.55,167469,-5.4878,263833297,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:XLY,Auxly Cannabis Group Inc.,3.64,3.7,3.58,3.67,120675,2.5140,263644259,12.9820,Process Industries,CAD,TSX
+2026-10-29,TSX:ERD,Erdene Resource Development Corporation,5.48,5.5,5.44,5.5,11179,-1.0791,259784713,24.7080,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSXV:LA,Los Andes Copper Ltd.,11.76,11.99,11.5,11.6,4803,-3.4138,259678196,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:CKI,Clarke Inc.,23.75,24.14,23.75,23.9,6894,1.4431,258944335,4.0635,Consumer Services,CAD,TSX
+2026-10-29,NEO:MAXQ,Maritime Launch Services Inc,0.47,0.5,0.47,0.48,256963,2.1277,257461578,,Electronic Technology,CAD,NEO
+2026-10-29,TSX:ACX,ACT Energy Technologies Ltd.,9.21,9.35,9.09,9.23,280741,0.2172,257177621,13.5855,Industrial Services,CAD,TSX
+2026-10-29,TSXV:CUU,Copper Fox Metals Inc.,0.6,0.61,0.59,0.59,57783,-3.2787,256970186,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:CDR,Condor Energies Inc,4.1,4.17,4.1,4.16,18151,0.7264,254417125,,Energy Minerals,CAD,TSX
+2026-10-29,TSX:FLT,Volatus Aerospace Inc.,0.5,0.5,0.48,0.48,514218,-2.0408,253712843,,Electronic Technology,CAD,TSX
+2026-10-29,TSXV:BIG,Hercules Metals Corp,0.98,1.045,0.97,1.02,521918,0.9901,252521452,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:URB,Urbana Corporation,9.08,9.08,9.08,9.08,100,2.0225,251502740,3.4066,Finance,CAD,TSX
+2026-10-29,TSX:URB.A,Urbana Corporation Class A,8.44,8.54,8.31,8.35,1700,-0.5952,251502740,3.1327,Finance,CAD,TSX
+2026-10-29,TSXV:ALV,Alvopetro Energy Ltd.,9.44,9.51,9.4,9.46,13160,0.1058,251498743,9.2918,Energy Minerals,CAD,TSXV
+2026-10-29,CSE:PHOS,First Phosphate Corp.,1.84,1.84,1.72,1.76,253650,-4.3478,249940210,,Non-Energy Minerals,CAD,CSE
+2026-10-29,TSXV:PGLD,P2 Gold Inc.,1.19,1.265,1.16,1.25,497958,5.0420,248441222,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSXV:SVRS,Silver Storm Mining Ltd.,0.4,0.405,0.38,0.38,1303596,-5.0000,248349413,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSXV:DBG,Doubleview Gold Corp.,1.45,1.45,1.4,1.4,54328,-4.1096,245192083,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:CPH,Cipher Pharmaceuticals Inc.,13.57,13.67,13.4,13.5,23189,0.0000,244755022,8.7035,Health Technology,CAD,TSX
+2026-10-29,TSXV:SM,Sierra Madre Gold & Silver Ltd.,1.25,1.32,1.25,1.32,78233,0.0000,243678841,23.7838,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSXV:HITI,"High Tide, Inc.",3.72,3.77,3.7,3.73,31340,-1.3228,240371891,,Retail Trade,CAD,TSXV
+2026-10-29,TSXV:QNC,Quantum eMotion Corp.,1.52,1.62,1.5,1.54,234721,1.3158,237862885,,Electronic Technology,CAD,TSXV
+2026-10-29,TSX:ANRG,"Anaergia, Inc.",1.9,1.93,1.85,1.89,41199,-1.5625,237342291,21.2598,Industrial Services,CAD,TSX
+2026-10-29,TSX:QTRH,Quarterhill Inc,2.74,2.9,2.69,2.78,128382,2.2059,235425429,,Commercial Services,CAD,TSX
+2026-10-29,TSX:DC.A,Dundee Corporation Class A,3.63,3.63,3.51,3.55,59346,-2.7397,234253230,1.3689,Finance,CAD,TSX
+2026-10-29,TSX:BTB.UN,BTB Real Estate Investment Trust,3.66,3.72,3.64,3.7,120430,0.8174,231581495,12.8250,Finance,CAD,TSX
+2026-10-29,TSX:VCM,Vecima Networks Inc.,13.3,13.3,13.3,13.3,0,0.0000,230688094,101.9157,Consumer Durables,CAD,TSX
+2026-10-29,TSXV:NEXG,Nexgold Mining Corp.,1.25,1.25,1.22,1.23,106270,-1.6000,229804498,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:ADN,Acadian Timber Corp.,17.05,17.2,17.05,17.12,4235,-0.4651,228458832,6.4243,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSX:XTC,Exco Technologies Limited,8.55,8.58,8.53,8.55,5018,0.9445,226501785,13.1599,Producer Manufacturing,CAD,TSX
+2026-10-29,TSXV:CERT,Cerrado Gold Inc,2.3,2.3,2.25,2.28,220493,-1.7241,221696611,57.7215,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSXV:SASK,Atha Energy Corp.,0.91,0.91,0.88,0.9,270200,-1.0989,221497762,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:BRC,Blackrock Silver Corp,0.79,0.83,0.77,0.83,331405,2.4691,220671164,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSXV:TUD,Tudor Gold Corp.,0.74,0.74,0.7,0.72,256042,-4.0000,220589836,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:RIC,Richards Group Inc.,28.85,29.48,28.85,29.25,3089,1.3514,219215582,11.8685,Process Industries,CAD,TSX
+2026-10-29,TSX:GENM,Generation Mining Ltd.,0.435,0.44,0.43,0.43,940218,-2.2727,219035854,,Non-Energy Minerals,CAD,TSX
+2026-10-29,TSXV:UCU,Ucore Rare Metals Inc.,2,2.04,1.91,1.96,116334,-1.5075,216482191,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:D.UN,Dream Office Real Estate Investment Trust Class A,15.8,16,15.8,15.81,11251,-0.5660,216132324,,Finance,CAD,TSX
+2026-10-29,TSX:FSZ,Fiera Capital Corporation Class A,2.81,2.86,2.78,2.81,362448,-1.0563,214609455,16.5003,Finance,CAD,TSX
+2026-10-29,TSXV:CAMB,Cambria Gold Mines Inc.,0.71,0.72,0.675,0.68,360771,-5.5556,212202703,,Non-Energy Minerals,CAD,TSXV
+2026-10-29,TSX:CMG,Computer Modelling Group Ltd.,3.99,4.11,3.82,4.01,97951,-0.4963,211442875,21.1275,Technology Services,CAD,TSX
+2026-10-29,TSX:PRN,Profound Medical Corp,8.19,8.31,8.17,8.21,1927,1.4833,210831517,,Health Technology,CAD,TSX
+2026-10-29,TSXV:PALI,Palisades Goldcorp Ltd.,4.26,4.27,4.1,4.27,28318,0.7075,208709965,3.2398,Finance,CAD,TSXV
+2026-10-29,TSX:HMM.A,Hammond Manufacturing Co. Ltd. Class A,25.7,26.28,25.13,26.28,23629,2.4162,207471216,16.1574,Producer Manufacturing,CAD,TSX
+2026-10-29,TSX:HFPC.U,Helios Fairfax Partners Corp.,1.97,2,1.97,2,47609,4.7120,206836886,4.2056,Finance,USD,TSX
+2026-10-29,TSX:PIF,Polaris Renewable Energy Inc.,13.5,13.96,13.5,13.75,16967,0.0000,204928346,51.4403,Utilities,CAD,TSX
+2026-10-29,TSXV:LUCA,Luca Mining Corp,1.03,1.04,1,1.01,638650,-1.9417,202222283,,Non-Energy Minerals,CAD,TSXV

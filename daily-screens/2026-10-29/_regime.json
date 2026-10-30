@@ -1,0 +1,34 @@
+{
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "breadth_pct_spx": 63.77,
+  "breadth_pct_spx_50dma": 54.3,
+  "index_below_20sma": false,
+  "vix": 16.91,
+  "vix3m": 19.22,
+  "vix_vix3m_ratio": 0.88,
+  "atr_extensions": {
+    "IWM": {
+      "extension_pct": 0.7454376214006198
+    },
+    "QQQ": {
+      "extension_pct": 0.94615172470199
+    },
+    "QQQE": {
+      "extension_pct": 0.9452438454479543
+    },
+    "RSP": {
+      "extension_pct": 0.8540420340990083
+    },
+    "SPY": {
+      "extension_pct": 0.8320835351190432
+    }
+  },
+  "data_date": "2026-10-28",
+  "cron_date": "2026-10-29",
+  "breadth_universe": "NYSE/NASDAQ/AMEX, market cap > $10B, 908 names",
+  "vix_quote_time": "2026-10-28 16:00 ET settle (Cboe daily_prices history CSV)",
+  "fire_time_et": "18:32 ET",
+  "cross_reference": "intraday counterpart: daily-screens/2026-10-29/breadth-snapshot.md (cron #10, 14:00 ET)"
+}

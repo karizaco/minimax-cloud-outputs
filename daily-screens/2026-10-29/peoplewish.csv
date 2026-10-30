@@ -1,0 +1,181 @@
+ticker,company,gics_sector,close_10_28,chg_10_28,volume_10_28,adr_pct_20d,velocity_14d,close_10_29,chg_10_29,n_stylists,n_origins,origins,setup_tags,market_cap_bn
+LQDA,Liquidia Corp,Health Care,$45.72,+0.62%,2265027,9.2,63.2,$44.99,-1.60%,2,2,"ADR + velocity, theme→group leader",compression,4.07
+GMAB,Genmab,Health Care,$57.29,+28.25%,29283870,5.2,58.9,$56.49,-1.40%,4,5,"4% breakout, RS leader, 5d gainer, ADR + velocity, theme→group leader",,36.81
+FIGS,Figs Inc - Class A,Health Care,$20.66,+0.88%,3220423,5.5,37.9,$21.55,+4.31%,3,3,"RS leader, ADR + velocity, CANSLIM",compression; higher-low base,3.45
+IRON,Disc Medicine Inc,Health Care,$83.20,+4.13%,1100516,5.3,36.9,$82.84,-0.43%,1,1,ADR + velocity,compression,3.18
+NTSK,Netskope Inc - Class A,Information Technology,$26.52,+1.41%,5384946,6.1,35.2,$26.19,-1.24%,2,2,"RS leader, ADR + velocity",compression,10.71
+HRI,Herc Holdings Inc,Industrials,$166.17,+6.48%,1514727,5.9,34.2,$173.78,+4.58%,2,3,"RS leader, 5d gainer, ADR + velocity",,5.56
+DXC,DXC Technology Company,Information Technology,$16.09,+1.58%,2779262,5.0,30.1,—,—,2,2,"RS leader, ADR + velocity",compression,2.63
+CAI,Caris Life Sciences Inc - Class A,Health Care,$35.45,+5.29%,4250520,6.8,28.9,—,—,2,2,"RS leader, ADR + velocity",compression,10.02
+TENB,Tenable Holdings Inc,Information Technology,$48.72,+0.14%,5040364,5.4,24.9,—,—,2,2,"RS leader, ADR + velocity",,5.37
+SYRE,Spyre Therapeutics Inc,Health Care,$99.75,+0.71%,724549,5.7,24.8,—,—,1,1,ADR + velocity,compression,8.66
+ORKA,Oruka Therapeutics Inc.,Health Care,$95.97,+0.17%,798185,5.3,24.2,—,—,1,1,ADR + velocity,,5.79
+HTFL,Heartflow Inc,Health Care,$59.10,+2.21%,1644138,5.8,24.1,—,—,2,2,"RS leader, ADR + velocity",compression,5.1
+BSP,Bending Spoons S.p.A.,Information Technology,$47.02,+0.11%,1439493,9.6,23.7,—,—,1,1,ADR + velocity,compression,29.87
+RHI,Robert Half Inc,Industrials,$41.87,-0.21%,1786689,5.1,22.8,—,—,1,1,ADR + velocity,,4.28
+KRMN,Karman Holdings Inc,Industrials,$37.98,+0.66%,2093656,6.1,19.8,—,—,2,2,"ADR + velocity, CANSLIM",compression,5.03
+BLLN,Billiontoone Inc - Class A,Health Care,$114.00,-0.06%,453430,6.0,19.5,—,—,1,1,ADR + velocity,compression,5.24
+GRAL,GRAIL Inc,Health Care,$157.88,+4.83%,1151787,8.1,19.1,—,—,2,2,"RS leader, ADR + velocity",MACD cross-up,6.78
+LIFE,Ethos Technologies Inc - Class A,Financials,$42.83,+0.71%,1179546,6.3,18.2,—,—,1,1,ADR + velocity,compression,2.7
+SDGR,Schrodinger Inc,Health Care,$30.87,+15.53%,3316534,8.1,17.0,$29.99,-2.85%,3,4,"4% breakout, RS leader, 5d gainer, ADR + velocity",MACD cross-up,2.31
+KVYO,Klaviyo Inc - Series A,Information Technology,$20.55,+1.83%,3061859,5.0,17.0,—,—,2,2,"RS leader, ADR + velocity",compression; higher-low base,6.15
+WING,Wingstop Inc,Consumer Discretionary,$138.57,+12.18%,3778779,5.4,16.9,—,—,2,2,"4% breakout, ADR + velocity",gap-up ready; MACD cross-up,3.77
+VSAT,Viasat Inc,Information Technology,$78.26,+11.32%,4656493,6.1,16.1,$77.99,-0.35%,2,2,"5d gainer, ADR + velocity",,10.69
+CDNA,Caredx Inc,Health Care,$72.13,+2.27%,907804,6.3,16.0,—,—,2,2,"RS leader, ADR + velocity",compression; MACD cross-up,3.73
+VCYT,Veracyte Inc,Health Care,$50.31,+0.06%,1399989,5.2,15.4,—,—,1,1,ADR + velocity,,4.01
+EQPT,Equipmentshare.Com Inc - Class A,Industrials,$17.93,+1.24%,2133564,8.4,14.5,—,—,1,1,ADR + velocity,compression,4.53
+CLF,Cleveland-Cliffs Inc,Materials,$13.94,+0.29%,16647561,6.3,14.4,—,—,2,2,"RS leader, ADR + velocity",compression,7.95
+TWST,Twist Bioscience Corp,Health Care,$173.45,+8.51%,3490206,10.2,14.1,—,—,2,2,"RS leader, ADR + velocity",compression; MACD cross-up,10.8
+MANE,Veradermics Inc,Health Care,$143.83,+2.21%,397384,7.0,13.6,—,—,1,1,ADR + velocity,compression; higher-low base,6.01
+ABCL,AbCellera Biologics Inc,Health Care,$13.64,+6.31%,3058614,6.5,13.5,—,—,2,2,"RS leader, ADR + velocity",MACD cross-up,4.17
+RGEN,Repligen Corp,Health Care,$184.69,+5.06%,1448254,5.5,12.7,—,—,1,1,ADR + velocity,compression; MACD cross-up,10.42
+RBRK,Rubrik Inc - Class A,Information Technology,$136.00,+0.19%,3354683,5.0,12.5,—,—,2,2,"RS leader, ADR + velocity",,27.99
+SAIL,Sailpoint Inc,Information Technology,$22.28,-0.49%,2718225,5.3,11.3,—,—,1,1,ADR + velocity,,12.64
+IOVA,Iovance Biotherapeutics Inc,Health Care,$14.81,+1.58%,9706338,6.4,11.3,—,—,1,1,ADR + velocity,compression,6.61
+SEZL,Sezzle Inc,Financials,$130.02,+2.09%,307816,5.8,10.9,—,—,2,2,"ADR + velocity, CANSLIM",compression,4.37
+THRM,Gentherm Inc - Class A,Consumer Discretionary,$33.16,+4.21%,3304401,6.3,10.8,—,—,1,1,ADR + velocity,,1.02
+TEM,Tempus AI Inc - Class A,Health Care,$76.61,+6.18%,6920821,8.3,10.6,—,—,2,2,"RS leader, ADR + velocity",MACD cross-up,13.76
+GH,Guardant Health Inc,Health Care,$182.59,+2.54%,2321307,5.2,10.3,—,—,1,1,ADR + velocity,,24.21
+RXRX,Recursion Pharmaceuticals Inc - Class A,Health Care,$4.35,+7.41%,28496864,10.0,10.1,—,—,1,1,ADR + velocity,compression; MACD cross-up,2.31
+MNDY,Monday.Com Ltd,Information Technology,$97.82,-1.80%,854813,5.1,10.0,—,—,2,2,"RS leader, ADR + velocity",compression,4.7
+RNG,RingCentral Inc - Class A,Information Technology,$86.20,+0.70%,1234123,5.4,10.0,—,—,2,2,"RS leader, ADR + velocity",,7.2
+ILMN,Illumina Inc,Health Care,$288.79,+3.33%,2239437,5.5,9.2,—,—,1,1,ADR + velocity,,43.69
+BB,BlackBerry Ltd,Information Technology,$9.40,-1.57%,11287619,5.9,8.9,—,—,1,1,ADR + velocity,,5.51
+ADPT,Adaptive Biotechnologies Corp,Health Care,$28.37,+2.57%,2317531,6.0,8.7,—,—,1,1,ADR + velocity,,4.54
+AI,C3.ai Inc - Class A,Information Technology,$12.33,+0.33%,4250217,5.4,8.7,—,—,1,1,ADR + velocity,compression,1.92
+MRNA,Moderna Inc,Health Care,$214.16,+2.98%,12038620,10.3,8.7,—,—,2,2,"RS leader, ADR + velocity",,84.98
+TXG,10x Genomics Inc - Class A,Health Care,$83.62,+7.18%,5047435,9.3,8.2,—,—,2,2,"RS leader, ADR + velocity",compression; MACD cross-up,10.62
+VG,Venture Global Inc - Class A,Energy,$14.35,+3.91%,11282581,5.1,8.0,—,—,2,2,"ADR + velocity, CANSLIM",,35.65
+FIVN,Five9 Inc,Information Technology,$37.63,+1.35%,1252969,5.9,7.1,—,—,1,1,ADR + velocity,compression,2.88
+BRKR,Bruker Corp,Health Care,$62.00,+2.07%,2990657,5.1,7.0,—,—,1,1,ADR + velocity,,9.44
+FSLY,Fastly Inc - Class A,Information Technology,$27.03,-1.24%,3333086,7.6,6.9,—,—,1,1,ADR + velocity,,4.23
+WIX,Wix.com Ltd,Information Technology,$78.56,-0.80%,470437,5.1,6.0,—,—,1,1,ADR + velocity,compression,4.43
+MDB,MongoDB Inc - Class A,Information Technology,$393.44,+0.92%,993101,5.6,5.9,—,—,1,1,ADR + velocity,compression,31.65
+NTLA,Intellia Therapeutics Inc,Health Care,$13.32,+8.47%,4907503,6.7,5.7,—,—,1,1,ADR + velocity,MACD cross-up,1.86
+AMBA,Ambarella Inc,Information Technology,$66.27,-1.27%,2275721,5.1,5.4,—,—,1,1,ADR + velocity,compression,2.91
+HIMS,Hims & Hers Health Inc - Class A,Health Care,$29.32,+5.01%,12279101,5.9,4.5,—,—,1,1,ADR + velocity,compression,6.79
+VERA,Vera Therapeutics Inc - Class A,Health Care,$30.94,+3.17%,1277626,5.5,4.1,—,—,1,1,ADR + velocity,,2.22
+FROG,JFrog Ltd,Information Technology,$100.47,+0.01%,1414709,5.7,3.3,—,—,1,1,ADR + velocity,,12.17
+KOD,Kodiak Sciences Inc,Health Care,$97.04,+6.26%,976438,7.5,2.9,—,—,2,2,"RS leader, ADR + velocity",compression,6.07
+SPHR,Sphere Entertainment Co - Class A,Communication Services,$111.83,-2.53%,582237,5.6,2.4,—,—,1,1,ADR + velocity,compression; higher-low base,4.0
+CELC,Celcuity Inc,Health Care,$69.46,+2.04%,1138233,6.4,2.3,—,—,1,1,ADR + velocity,compression,3.39
+SNAP,Snap Inc - Class A,Communication Services,$5.96,-1.97%,34779748,5.5,1.7,—,—,1,1,ADR + velocity,,9.88
+OKTA,Okta Inc - Class A,Information Technology,$222.66,-1.51%,2312539,5.2,1.1,—,—,2,2,"RS leader, ADR + velocity",compression,38.7
+CRCL,Circle Internet Group Inc - Class A,Financials,$81.71,+0.16%,6769261,5.7,1.1,—,—,2,2,"ADR + velocity, CANSLIM",,20.31
+WDC,Western Digital Corp,Information Technology,$396.42,+4.08%,7435540,5.2,0.8,—,—,2,2,"ADR + velocity, CANSLIM",compression,142.93
+COCO,Vita Coco Company Inc (The),Consumer Staples,$56.37,+2.94%,952365,5.5,0.7,—,—,2,2,"ADR + velocity, CANSLIM",,3.24
+ONDS,Ondas Holdings Inc,Information Technology,$6.86,+3.16%,51851234,5.8,0.1,—,—,2,2,"EP9M volume, ADR + velocity",compression,3.4
+FICO,Fair Isaac Corp,Information Technology,$698.18,+0.93%,890401,5.9,-1.3,—,—,1,1,ADR + velocity,,16.19
+TNGX,Tango Therapeutics Inc,Health Care,$22.23,-2.88%,3309884,7.4,-1.5,—,—,1,1,ADR + velocity,,3.22
+WULF,TeraWulf Inc,Financials,$13.42,+6.00%,50657501,8.0,-1.7,—,—,2,2,"EP9M volume, ADR + velocity",compression,6.65
+WRBY,Warby Parker Inc - Class A,Consumer Discretionary,$24.43,-2.55%,2085365,5.1,-2.1,—,—,1,1,ADR + velocity,,3.0
+ERAS,Erasca Inc,Health Care,$15.12,-0.66%,3412302,6.6,-2.2,—,—,1,1,ADR + velocity,,4.7
+RUN,Sunrun Inc,Industrials,$7.42,-1.46%,11318652,5.1,-2.2,—,—,1,1,ADR + velocity,,1.77
+FTAI,FTAI Aviation Ltd - Class A,Industrials,$167.14,+5.34%,2197449,5.1,-2.3,—,—,1,1,ADR + velocity,,17.15
+QXO,QXO Inc,Industrials,$10.86,+2.07%,16415122,5.3,-2.3,—,—,1,1,ADR + velocity,,7.88
+CORZ,Core Scientific Inc - New,Information Technology,$15.00,+5.15%,15104035,6.8,-2.3,—,—,1,1,ADR + velocity,compression,4.77
+ASST,Strive Inc.,Financials,$27.53,+1.46%,4786906,6.6,-2.5,—,—,2,2,"RS leader, ADR + velocity",,1.12
+MMYT,MakeMyTrip Ltd,Consumer Discretionary,$42.41,+2.54%,824199,5.0,-2.6,—,—,1,1,ADR + velocity,,4.11
+TLN,Talen Energy Corp New,Utilities,$347.75,+0.58%,607989,5.2,-3.2,—,—,1,1,ADR + velocity,,15.79
+NXT,Nextpower Inc,Industrials,$82.08,+3.32%,4108617,5.0,-3.7,—,—,1,1,ADR + velocity,,12.33
+FLY,Firefly Aerospace Inc,Industrials,$19.85,-0.23%,1837950,6.3,-4.0,—,—,1,1,ADR + velocity,compression,3.18
+MSTR,Strategy Inc - Class A,Information Technology,$145.16,+2.66%,12207333,5.7,-4.2,—,—,1,1,ADR + velocity,,50.87
+INIO,Innio N.V.,Industrials,$18.35,+8.07%,8685147,7.5,-4.4,—,—,2,2,"ADR + velocity, CANSLIM",compression,13.76
+WGS,GeneDx Holdings Corp - Class A,Health Care,$64.69,+3.11%,575048,7.9,-4.5,—,—,1,1,ADR + velocity,MACD cross-up,1.92
+GLXY,Galaxy Digital,Financials,$19.09,+11.12%,10724067,7.6,-5.0,—,—,1,1,ADR + velocity,compression; MACD cross-up,7.44
+PCVX,Vaxcyte Inc,Health Care,$61.46,+1.30%,2212722,6.6,-5.5,—,—,1,1,ADR + velocity,,8.87
+NKTR,Nektar Therapeutics,Health Care,$38.55,+1.53%,405242,5.8,-5.5,—,—,1,1,ADR + velocity,higher-low base,1.3
+SEI,Solaris Energy Infrastructure Inc - Class A,Energy,$68.97,+5.57%,2066619,6.8,-5.6,—,—,1,1,ADR + velocity,,5.07
+COIN,Coinbase Global Inc - Class A,Financials,$162.32,+0.76%,5775190,5.1,-5.6,—,—,1,1,ADR + velocity,,42.76
+ALHC,Alignment Healthcare Inc,Health Care,$8.18,+1.61%,4655237,6.0,-6.1,—,—,2,2,"ADR + velocity, CANSLIM",,1.69
+NVAX,Novavax Inc,Health Care,$10.32,+2.99%,4748249,9.5,-6.3,—,—,1,1,ADR + velocity,,1.7
+XMTR,Xometry Inc - Class A,Industrials,$99.75,+2.69%,708399,6.0,-6.3,—,—,1,1,ADR + velocity,compression,5.25
+WHR,Whirlpool Corp,Consumer Discretionary,$27.31,-0.40%,7290260,5.1,-6.3,—,—,1,1,ADR + velocity,,1.78
+NESR,National Energy Services Reunited Corp,Energy,$21.74,+2.74%,1662422,6.2,-6.5,—,—,2,2,"ADR + velocity, CANSLIM",compression,2.19
+LBRT,Liberty Energy Inc - Class A,Energy,$17.61,+3.96%,4423129,5.8,-6.6,—,—,1,1,ADR + velocity,,2.87
+NET,Cloudflare Inc - Class A,Information Technology,$318.72,-2.77%,2204474,5.1,-6.8,—,—,1,1,ADR + velocity,,112.66
+QS,QuantumScape Corp - Class A,Consumer Discretionary,$4.24,+1.44%,10748920,5.7,-7.4,—,—,1,1,ADR + velocity,,2.63
+QNT,Quantinuum Inc - Class A,Information Technology,$38.33,-4.68%,2109021,6.8,-7.7,—,—,1,1,ADR + velocity,,9.94
+RDW,Redwire Corporation,Industrials,$9.01,+1.35%,9011271,5.9,-7.7,—,—,1,1,ADR + velocity,MACD cross-up,1.79
+SLS,SELLAS Life Sciences Group Inc,Health Care,$10.38,-14.71%,23771723,8.1,-7.8,—,—,1,1,ADR + velocity,,1.93
+TWLO,Twilio Inc Class A,Information Technology,$253.77,-0.31%,2135879,5.6,-8.0,—,—,1,1,ADR + velocity,higher-low base,38.52
+ACHR,Archer Aviation Inc - Class A,Industrials,$4.34,+2.60%,22024206,5.5,-8.1,—,—,1,1,ADR + velocity,,3.3
+SMMT,Summit Therapeutics Inc,Health Care,$15.77,+2.87%,3316818,5.3,-8.2,—,—,1,1,ADR + velocity,,12.24
+DK,Delek US Holdings Inc,Energy,$70.30,+0.00%,2306816,5.3,-8.2,—,—,1,1,ADR + velocity,,4.31
+BMNR,BitMine Immersion Technologies Inc,Financials,$22.05,+1.99%,21506105,5.4,-8.3,—,—,1,1,ADR + velocity,,11.85
+MRVL,Marvell Technology Inc,Information Technology,$251.65,+3.32%,16342282,5.8,-8.4,—,—,2,2,"ADR + velocity, CANSLIM",,220.14
+VKTX,Viking Therapeutics Inc,Health Care,$25.36,+1.89%,4216960,5.1,-8.5,—,—,1,1,ADR + velocity,,2.94
+VST,Vistra Corp,Utilities,$142.72,-2.69%,5656906,5.3,-8.6,—,—,1,1,ADR + velocity,,48.12
+DAVE,Dave Inc - Class A,Information Technology,$322.69,-1.76%,199434,5.7,-8.7,—,—,1,1,ADR + velocity,,4.1
+UEC,Uranium Energy Corp,Energy,$8.34,+3.73%,12566577,5.5,-8.8,—,—,1,1,ADR + velocity,MACD cross-up,4.13
+SEDG,Solaredge Technologies Inc,Information Technology,$29.49,-8.30%,4517812,5.8,-9.2,—,—,1,1,ADR + velocity,,1.79
+STX,Seagate Technology Holdings Plc,Information Technology,$697.97,+4.51%,10837928,5.7,-9.9,—,—,2,2,"ADR + velocity, CANSLIM",,156.51
+AXTI,AXT Inc,Information Technology,$64.38,+10.56%,12509776,8.4,-10.2,—,—,1,1,ADR + velocity,,4.21
+PRIM,Primoris Services Corp,Industrials,$73.76,+6.71%,1710825,5.2,-10.8,—,—,1,1,ADR + velocity,,4.0
+IBRX,ImmunityBio Inc,Health Care,$8.81,+2.09%,7166194,7.9,-11.1,—,—,1,1,ADR + velocity,,9.23
+AUR,Aurora Innovation Inc - Class A,Information Technology,$5.09,-0.59%,17910002,5.1,-11.2,—,—,1,1,ADR + velocity,MACD cross-up,9.98
+POWL,Powell Industries Inc,Industrials,$168.01,+4.12%,546703,5.2,-11.2,—,—,1,1,ADR + velocity,,6.12
+JOBY,Joby Aviation Inc,Industrials,$5.08,+1.40%,17301752,5.0,-11.7,—,—,1,1,ADR + velocity,,5.0
+PURR,Hyperliquid Strategies Inc,Financials,$9.97,+1.22%,9502260,6.4,-11.8,—,—,2,2,"ADR + velocity, volume breakout",,1.34
+RGTI,Rigetti Computing Inc,Information Technology,$12.40,-0.32%,10716457,5.3,-12.3,—,—,1,1,ADR + velocity,MACD cross-up,4.12
+SNDK,Sandisk Corp,Information Technology,"$1,404.77",+7.66%,9261242,5.2,-12.7,—,—,2,2,"ADR + velocity, CANSLIM",,208.03
+HUT,Hut 8 Corp,Financials,$69.46,+3.15%,5359715,8.4,-12.7,—,—,1,1,ADR + velocity,,7.82
+LITE,Lumentum Holdings Inc,Information Technology,$913.95,+5.52%,5948955,6.9,-12.8,—,—,1,1,ADR + velocity,,71.11
+MTRN,Materion Corp,Materials,$241.48,+2.48%,153215,5.7,-12.9,—,—,2,2,"ADR + velocity, CANSLIM",,5.02
+CYPH,Cypherpunk Technologies Inc,Information Technology,$3.24,+3.35%,10054967,12.1,15.3,—,—,1,1,ADR + velocity,compression,0.34
+VSH,Vishay Intertechnology Inc,Information Technology,$29.92,+0.98%,2414959,5.5,-13.4,—,—,1,1,ADR + velocity,,4.07
+LUMN,Lumen Technologies Inc,Communication Services,$4.80,+2.35%,11938790,6.2,-13.7,—,—,1,1,ADR + velocity,MACD cross-up,4.95
+INFQ,Infleqtion Inc,Information Technology,$9.63,-1.13%,5938418,6.1,-13.7,—,—,1,1,ADR + velocity,MACD cross-up,2.1
+VSEC,VSE Corp,Industrials,$146.11,-1.58%,414211,5.3,-14.0,—,—,1,1,ADR + velocity,higher-low base,4.1
+WOLF,Wolfspeed Inc (New),Information Technology,$26.64,+5.67%,3125816,9.1,-14.1,—,—,1,1,ADR + velocity,,1.29
+RIOT,Riot Platforms Inc,Information Technology,$14.45,+6.56%,24227125,7.5,-14.2,—,—,1,1,ADR + velocity,,5.46
+RKLB,Rocket Lab USA Inc,Industrials,$58.60,+0.50%,12404127,5.6,-14.3,—,—,1,1,ADR + velocity,,33.91
+ALAB,Astera Labs Inc,Information Technology,$297.20,+3.67%,3335396,6.7,-14.4,—,—,2,2,"ADR + velocity, CANSLIM",,50.94
+NVTS,Navitas Semiconductor Corp,Information Technology,$9.36,+0.11%,9627650,6.3,-14.4,—,—,1,1,ADR + velocity,MACD cross-up,2.19
+CAMT,Camtek Ltd,Information Technology,$128.78,-0.09%,602404,5.4,-14.4,—,—,1,1,ADR + velocity,,5.93
+APLD,Applied Digital Corporation,Information Technology,$20.39,+4.51%,29648626,7.1,-14.5,—,—,1,1,ADR + velocity,,5.94
+CIEN,CIENA Corp,Information Technology,$363.21,+3.43%,2787258,6.6,-14.7,—,—,2,2,"ADR + velocity, CANSLIM",,51.41
+OUST,Ouster Inc - Class A,Information Technology,$33.61,+2.50%,1765249,6.6,-15.0,—,—,1,1,ADR + velocity,,2.14
+PENG,Penguin Solutions Inc,Information Technology,$60.80,+3.07%,2294410,8.7,-15.0,—,—,1,1,ADR + velocity,,3.09
+DOCN,DigitalOcean Holdings Inc,Information Technology,$105.07,-1.24%,1709757,7.8,-15.2,—,—,1,1,ADR + velocity,,10.97
+TSEM,Tower Semiconductor Ltd,Information Technology,$193.52,+2.35%,1786297,6.1,-15.4,—,—,1,1,ADR + velocity,,21.78
+LUNR,Intuitive Machines Inc - Class A,Industrials,$11.59,+0.26%,5495272,6.5,-15.4,—,—,1,1,ADR + velocity,MACD cross-up,2.52
+FIGR,Figure Technology Solutions Inc - Class A,Information Technology,$23.33,+2.15%,5059862,6.1,-15.5,—,—,1,1,ADR + velocity,,5.14
+UUUU,Energy Fuels Inc,Energy,$8.39,+1.94%,8032200,5.4,-15.6,—,—,1,1,ADR + velocity,MACD cross-up,2.1
+PARR,Par Pacific Holdings Inc,Energy,$73.79,-0.99%,820696,5.9,-15.8,—,—,1,1,ADR + velocity,,3.7
+MAN,ManpowerGroup,Industrials,$45.75,-0.02%,547339,5.0,-15.8,—,—,1,1,ADR + velocity,MACD cross-up; higher-low base,2.13
+CLS,Celestica Inc,Information Technology,$299.80,+8.41%,6064651,6.2,-15.9,—,—,2,2,"ADR + velocity, CANSLIM",,34.47
+RMBS,Rambus Inc,Information Technology,$91.03,+2.38%,1976779,5.1,-16.1,—,—,1,1,ADR + velocity,,9.87
+SIMO,Silicon Motion Technology Corp,Information Technology,$219.61,+7.56%,1525444,6.1,-16.1,—,—,1,1,ADR + velocity,,7.4
+XE,X-Energy Inc - Class A,Industrials,$11.54,+0.00%,5806287,6.3,-16.2,—,—,1,1,ADR + velocity,,3.32
+SKYD,Skydance Corp - Class B,Communication Services,$7.77,+0.26%,15248498,7.9,-16.3,—,—,1,1,ADR + velocity,MACD cross-up,8.33
+SMCI,Super Micro Computer Inc,Information Technology,$35.81,+2.05%,30016233,5.5,-16.3,—,—,2,2,"ADR + velocity, CANSLIM",,21.54
+BE,Bloom Energy Corp - Class A,Industrials,$228.08,+4.38%,13466132,6.5,-16.4,—,—,1,1,ADR + velocity,,67.18
+SBET,SharpLink Gaming Inc,Consumer Discretionary,$7.36,-1.21%,13470937,5.5,-16.5,—,—,1,1,ADR + velocity,,1.45
+PL,Planet Labs PBC - Class A,Industrials,$14.33,-1.10%,7603264,5.2,-16.6,—,—,1,1,ADR + velocity,,5.11
+NBIS,Nebius Group N.V. - Class A,Information Technology,$182.34,+6.96%,25056755,7.1,-17.0,—,—,1,1,ADR + velocity,,46.3
+USAR,USA Rare Earth Inc - Class A,Materials,$10.48,+0.77%,12677844,5.9,-17.0,—,—,1,1,ADR + velocity,MACD cross-up,2.34
+POET,POET Technologies Inc,Information Technology,$5.84,+2.64%,6562094,6.0,-17.0,—,—,1,1,ADR + velocity,,0.89
+AMKR,AMKOR Technology Inc,Information Technology,$42.21,+5.68%,8602149,5.1,-17.2,—,—,1,1,ADR + velocity,,10.49
+UCTT,Ultra Clean Hldgs Inc,Information Technology,$55.88,+8.55%,4060404,6.8,-17.3,—,—,1,1,ADR + velocity,gap-up ready,2.51
+VICR,Vicor Corp,Industrials,$216.65,+2.19%,871870,8.3,-17.4,—,—,2,2,"ADR + velocity, CANSLIM",,9.99
+CTVA,Corteva Inc,Materials,$11.33,-2.58%,21872476,5.6,-17.6,—,—,1,1,ADR + velocity,,7.58
+UMAC,Unusual Machines Inc,Information Technology,$17.62,-1.40%,1835513,7.6,-17.6,—,—,1,1,ADR + velocity,MACD cross-up,0.84
+IONQ,IonQ Inc,Information Technology,$32.43,-1.58%,15218944,5.9,-17.8,—,—,1,1,ADR + velocity,,12.11
+PBF,PBF Energy Inc - Class A,Energy,$73.28,-0.48%,2913806,5.8,-18.0,—,—,1,1,ADR + velocity,,8.67
+CRDO,Credo Technology Group Holding Ltd,Information Technology,$173.69,+3.74%,5405403,7.5,-18.0,—,—,2,2,"ADR + velocity, CANSLIM",,32.39
+BTDR,Bitdeer Technologies Holding Company,Information Technology,$7.92,+5.04%,8119721,8.2,-18.5,—,—,1,1,ADR + velocity,,1.85
+ALM,Almonty Industries Inc.,Materials,$9.39,-1.78%,9550443,6.9,-18.8,—,—,1,1,ADR + velocity,MACD cross-up,2.47
+FLEX,Flex Ltd,Information Technology,$93.03,+11.61%,13125091,6.2,-18.9,—,—,1,1,ADR + velocity,gap-up ready,34.08
+MTSI,MACOM Technology Solutions Holdings Inc,Information Technology,$260.92,+2.05%,1089256,6.0,-19.0,—,—,2,2,"ADR + velocity, CANSLIM",,19.91
+IREN,IREN Limited,Financials,$28.84,+5.10%,56518016,7.3,-19.2,—,—,2,2,"EP9M volume, ADR + velocity",,10.31
+CLSK,Cleanspark Inc,Information Technology,$8.58,+4.76%,19456003,7.3,-19.3,—,—,1,1,ADR + velocity,,2.2
+QBTS,D-Wave Quantum Inc,Information Technology,$11.77,-2.97%,13985701,5.3,-19.4,—,—,1,1,ADR + velocity,MACD cross-up,4.35
+FORM,FormFactor Inc,Information Technology,$110.31,+3.24%,1621467,5.4,-19.6,—,—,2,2,"ADR + velocity, CANSLIM",,8.6
+MXL,MaxLinear Inc,Information Technology,$75.14,+0.63%,4332113,8.6,-19.8,—,—,1,1,ADR + velocity,,6.81
+COHR,Coherent Corp,Information Technology,$239.59,+1.61%,7442500,7.0,-20.8,—,—,1,1,ADR + velocity,,46.87
+LGN,Legence Corp - Class A,Industrials,$40.81,+7.23%,1581703,6.2,-20.8,—,—,1,1,ADR + velocity,,4.41
+MOD,Modine Manufacturing Company,Consumer Discretionary,$143.54,+5.15%,1380991,5.4,-21.1,—,—,1,1,ADR + velocity,,7.58
+LEU,Centrus Energy Corp - Class A,Energy,$111.97,+2.33%,668026,6.2,-21.2,—,—,1,1,ADR + velocity,,2.2
+OKLO,Oklo Inc,Utilities,$27.12,-0.77%,7084963,5.3,-21.6,—,—,1,1,ADR + velocity,higher-low base,4.72
+SMTC,Semtech Corp,Information Technology,$146.97,+1.82%,2250777,6.8,-21.6,—,—,1,1,ADR + velocity,,13.69

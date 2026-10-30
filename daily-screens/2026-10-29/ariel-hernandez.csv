@@ -1,0 +1,11 @@
+ticker,company,gics_sector,close_10_28,chg_10_28,volume_10_28,adr_pct_20d,velocity_14d,close_10_29,chg_10_29,n_stylists,n_origins,origins,setup_tags,market_cap_bn
+GMAB,Genmab,Health Care,$57.29,+28.25%,29283870,5.2,58.9,$56.49,-1.40%,4,5,"4% breakout, RS leader, 5d gainer, ADR + velocity, theme→group leader",,36.81
+KIDS,OrthoPediatrics Corp,Health Care,$30.80,+29.30%,1794600,4.4,41.5,$31.52,+2.34%,2,2,"4% breakout, theme→group leader",gap-up ready,0.79
+PRME,Prime Medicine Inc,Health Care,$5.36,+23.22%,15200751,10.7,49.7,$5.24,-2.24%,3,3,"4% breakout, RS leader, theme→group leader",,0.97
+RIG,Transocean Ltd,Energy,$6.71,+3.87%,40663265,3.9,21.1,—,—,2,2,"EP9M volume, theme→group leader",,7.49
+RRC,Range Resources Corp,Energy,$55.88,-0.89%,14249371,3.2,37.1,$53.89,-3.56%,2,2,"5d gainer, theme→group leader",,13.06
+SGRY,Surgery Partners Inc,Health Care,$23.24,-0.51%,3105470,3.5,70.4,$23.21,-0.13%,2,2,"5d gainer, theme→group leader",,3.04
+LQDA,Liquidia Corp,Health Care,$45.72,+0.62%,2265027,9.2,63.2,$44.99,-1.60%,2,2,"ADR + velocity, theme→group leader",compression,4.07
+HPK,HighPeak Energy Inc,Energy,$10.98,+2.71%,531669,6.2,25.8,—,—,2,2,"theme→group leader, CANSLIM",compression,1.39
+CNQ,Canadian Natural Resources Ltd,Energy,$54.81,+1.37%,5827290,2.4,11.7,—,—,2,2,"theme→group leader, CANSLIM",compression; higher-low base,114.32
+OVV,Ovintiv Inc,Energy,$71.34,+0.30%,2920134,2.8,12.6,—,—,2,2,"theme→group leader, CANSLIM",compression; higher-low base,20.05

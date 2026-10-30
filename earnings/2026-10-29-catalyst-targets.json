@@ -1,0 +1,85 @@
+{
+  "us": [
+    {
+      "name": "FTNT",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-28"
+    },
+    {
+      "name": "SFM",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-28"
+    },
+    {
+      "name": "PRCH",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-29"
+    },
+    {
+      "name": "NOW",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-28"
+    },
+    {
+      "name": "TDOC",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-28"
+    },
+    {
+      "name": "MRVL",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-27"
+    },
+    {
+      "name": "GOOGL",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-28"
+    },
+    {
+      "name": "GOOG",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-28"
+    }
+  ],
+  "eu": [
+    {
+      "name": "BINV",
+      "market": "sweden",
+      "chg": -61.55
+    },
+    {
+      "name": "PLX",
+      "market": "france",
+      "chg": -18.04
+    },
+    {
+      "name": "ENGCON_B",
+      "market": "sweden",
+      "chg": -17.74
+    },
+    {
+      "name": "CPS",
+      "market": "poland",
+      "chg": -14.94
+    },
+    {
+      "name": "HLN",
+      "market": "uk",
+      "chg": -14.55
+    }
+  ],
+  "au": [
+    {
+      "name": "MSB",
+      "chg": 23.4
+    },
+    {
+      "name": "ELS",
+      "chg": -18.44
+    },
+    {
+      "name": "CIA",
+      "chg": -17.26
+    }
+  ]
+}

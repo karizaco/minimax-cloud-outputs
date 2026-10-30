@@ -1,5 +1,13 @@
 # Reversal Bullish (Bonde) — 3:55 PM ET — 2026-10-26 (Mon)
 
+> **CORRECTION — added 2026-10-30.** This artifact was produced by a manual
+> (non-scheduled) execution of the pre-2026-10-28 cron prompt, and it applied Bonde's criteria
+> as literal SQL floors. On review against the *published* criterion and the routine's own
+> 2026-10-29 run, **two rules were not applied as filters**, and one name changes:
+> **CBRE (tail:body 13.0×) falls outside Bonde's published 3–5× tail band and is rejected.**
+> CELH remains the single clean qualifier; HIMS remains a floor-exact boundary pass. Full
+> correction at the foot of this document.
+
 **Data: 2026-10-26 (Mon) — FINAL 16:00 ET CLOSE** · **Universe:** 342 large/mega-caps · **Source:** `_source=tv_yahoo_fallback`_
 
 > **First live-window run of this cron.** Every prior fire (2026-09-28 → 2026-10-24) landed at ~04:55 ET pre-market, so the scan ran on the *previous* session's close and the artifact was a planning snapshot for the later 15:55 ET run. This fire landed at **15:55 ET — inside Bonde's 15:30–16:00 ET window** — so the scan ran on **today's live session bar**, refreshed at 15:59:54 ET and then re-pulled post-close at 16:01–16:02 ET for **final 16:00 closes**. All 341 symbols carried today's bar; zero stale. Every number below is a settled close, not an intraday print. The 15:58–16:00 ET MOC entry window Bonde specifies is the operative one for this list.
@@ -92,3 +100,63 @@ Deepest decliners in the universe (all idiosyncratic): `XP -47.4% · FICO -13.3%
 | 2026-10-26 | **Mon 10-26 (live)** | **3 — CELH, CBRE, HIMS** |
 
 **Open items carried in:** META (Day 3 on 10-21, 3-day exit deadline passed while the 10-22 run was dark) and FRO (Day 1 on 10-21, went untracked past Day 1). Neither is a red-day setup today, so neither re-appeared. **FORM** (a 10-16 pick at $113.34) is now materially lower — the 10-16 semicap/optical cluster has been hit hard. **FSLR** carried an Oct 29 earnings date inside its hold window and remains a pass.
+
+---
+
+## CORRECTION (added 2026-10-30)
+
+This artifact was written by a **manual** execution of the pre-2026-10-28 cron prompt in a
+separate Scout session, not by the scheduled routine. The scan itself was sound — 341
+large-caps, all 341 bars on today's session, final 16:00 ET closes — but **two of Bonde's
+published rules were implemented as literal SQL floors rather than as the criteria are
+published**, and one candidate changes as a result.
+
+### Rule 1 — the tail band (this one changes a name)
+
+The skill's criterion table is titled *"Tail 3-5x body — tail is 3 to 5 times the body"*, but
+the SQL form printed beside it encodes only the **lower** bound: `(LEAST(open, close) - low)
+>= 3 * ABS(close - open)`. This artifact implemented the SQL form, so it accepted any
+tail ≥ 3× with no ceiling.
+
+Bonde's published criterion is a **band**, and the scheduled routine's own 2026-10-29 run
+enforced it as one — it rejected JAN at tail:body 7.00× as *"outside the published 3–5× band"*.
+Applying the band to this artifact's candidates:
+
+| Symbol | DCR | Tail:Body | Body% | Stop dist | Verdict under the published band |
+|---|---|---|---|---|---|
+| **CELH** | 0.899 | **4.27** ✓ in band | 0.171 | 0.53% | **QUALIFIED** — unchanged |
+| **CBRE** | 0.509 | **13.00** ✗ outside 3–5× | 0.036 | 0.08% | **REJECTED** — tail band |
+| **HIMS** | 0.500 (floor-exact) | 4.14 ✓ in band | 0.097 | 0.25% | BOUNDARY PASS — DCR exactly 0.500 |
+
+The near-miss list changes too: **COIN** (tail:body 122.61) and **EGO** (3.15, in band) and
+**IONQ** (4.13, in band) — COIN falls outside the band as well, though it was already rejected
+on the long-term-trend filter, so the ranking is unchanged.
+
+**Net: CELH is the one clean qualifier from 2026-10-26. CBRE must be struck.**
+
+### Rule 2 — the 2.5% maximum-loss cap
+
+The skill states the stop discipline under output discipline rather than as a numbered filter:
+*"Bonde places stop at the low of the candle body next morning, sized so loss ≤ 2.5%."* This
+artifact computed `body_low_stop` but never filtered on the resulting risk distance. Re-checked:
+CELH 0.53%, CBRE 0.08%, HIMS 0.25% — **all three are inside the cap**, so this rule changes
+nothing here. It would have mattered on other dates: the scheduled routine rejected JAN at a
+4.07% stop distance on 2026-10-29 even though the setup *worked*.
+
+### Rule 3 — which bar is the signal bar
+
+This artifact scanned **today's live session bar** (Yahoo's in-progress bar at 15:57 ET,
+re-pulled post-close at 16:01–16:02 ET for settled closes). The routine's shibui path is
+**T+1** — the signal bar is the prior close — and the routine then resolves each setup
+against the *next* session's close. The 2026-10-29 run does this explicitly: VLO and VIRT
+are reported as `FAILED_STOP` because they broke their body-low stops on the session after the
+signal bar, and FDXF and G are reported as held. **This artifact contains no such
+next-session resolution check**, so it cannot say whether CELH held its body low after the
+signal day.
+
+**Where to look instead:** the scheduled routine's own 2026-10-29 artifact
+(`daily-screens/2026-10-29/reversal-bullish-3:55.md`) applies all of the above correctly and is
+the authoritative version of the workflow. This document is retained as a record of the
+manual scan, with its results corrected as noted.
+
+_Correction appended 2026-10-30 by the Scout session that produced the original scan._

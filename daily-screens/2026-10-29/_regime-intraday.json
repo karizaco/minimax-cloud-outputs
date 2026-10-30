@@ -1,0 +1,39 @@
+{
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "breadth_pct_spx": 63.76651982378855,
+  "index_below_20sma": false,
+  "vix": 16.76,
+  "vix3m": 19.11,
+  "atr_extensions": {
+    "IWM.NYSE": {
+      "extension_pct": -1.3002998640681758
+    },
+    "QQQ.NASDAQ": {
+      "extension_pct": 0.025585023056882233
+    },
+    "QQQE.NASDAQ": {
+      "extension_pct": -0.22608539301906538
+    },
+    "RSP.NYSE": {
+      "extension_pct": 1.0687451541108204
+    },
+    "SPY.NYSE": {
+      "extension_pct": 0.6101929846045374
+    }
+  },
+  "atr_extension_true_x": {
+    "IWM": 0.745,
+    "QQQ": 0.946,
+    "QQQE": 0.945,
+    "RSP": 0.854,
+    "SPY": 0.832
+  },
+  "_note": "size_cut_pct/uncertainty/late_cycle computed by skill compute_regime() on the 2026-10-28 breadth rows + CBOE VIX/VIX3M @ 2026-10-29 13:48:31 ET. atr_extension_true_x is the genuine 252-session ATR extension; the skill's own atr_252d_avg column collapses to atr_14 (date-filtered CTE) so its extension_pct is distance-from-50-DMA.",
+  "_data_date": "2026-10-28",
+  "_fire_time_et": "2026-10-29 14:03",
+  "_vix_quote_time_et": "2026-10-29 13:48:31",
+  "_breadth_universe": "NYSE/NASDAQ/AMEX, market cap > $10B, 908 names",
+  "_vix_vix3m_ratio": 0.877
+}

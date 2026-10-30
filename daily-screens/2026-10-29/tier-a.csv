@@ -1,0 +1,5 @@
+ticker,company,gics_sector,close_10_28,chg_10_28,volume_10_28,adr_pct_20d,velocity_14d,close_10_29,chg_10_29,n_stylists,n_origins,origins,setup_tags,market_cap_bn
+GMAB,Genmab,Health Care,$57.29,+28.25%,29283870,5.2,58.9,$56.49,-1.40%,4,5,"4% breakout, RS leader, 5d gainer, ADR + velocity, theme→group leader",,36.81
+SDGR,Schrodinger Inc,Health Care,$30.87,+15.53%,3316534,8.1,17.0,$29.99,-2.85%,3,4,"4% breakout, RS leader, 5d gainer, ADR + velocity",MACD cross-up,2.31
+PRME,Prime Medicine Inc,Health Care,$5.36,+23.22%,15200751,10.7,49.7,$5.24,-2.24%,3,3,"4% breakout, RS leader, theme→group leader",,0.97
+FIGS,Figs Inc - Class A,Health Care,$20.66,+0.88%,3220423,5.5,37.9,$21.55,+4.31%,3,3,"RS leader, ADR + velocity, CANSLIM",compression; higher-low base,3.45
