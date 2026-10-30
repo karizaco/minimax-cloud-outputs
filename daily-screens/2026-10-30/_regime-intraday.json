@@ -1,0 +1,39 @@
+{
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "breadth_pct_spx": 69.33187294633078,
+  "index_below_20sma": true,
+  "vix": 21.38,
+  "vix3m": 21.71,
+  "atr_extensions": {
+    "IWM.NYSE": {
+      "extension_pct": -0.22189307536217656
+    },
+    "QQQ.NASDAQ": {
+      "extension_pct": -1.388126101446629
+    },
+    "QQQE.NASDAQ": {
+      "extension_pct": -0.7053328091370923
+    },
+    "RSP.NYSE": {
+      "extension_pct": 2.3012670963157817
+    },
+    "SPY.NYSE": {
+      "extension_pct": 0.22510786418498985
+    }
+  },
+  "_source": "mcp_shibui_bridge+cboe_cdn+nasdaq",
+  "fire_time_et": "2026-10-30 14:03 ET",
+  "data_date": "2026-10-29",
+  "breadth_universe_n": 913,
+  "breadth_universe": "NYSE/NASDAQ/AMEX, market_cap > $10B",
+  "pct_above_sma_20": 69.33187294633078,
+  "pct_above_sma_50": 60.24096385542169,
+  "pct_above_sma_200": 59.91237677984665,
+  "vix_quote_time": "2026-10-30 13:47:31 ET",
+  "vix_source": "CBOE delayed-quote CDN _VIX/_VIX3M",
+  "vix_vix3m_ratio": 0.9848,
+  "cross_reference": "daily-screens/2026-10-30/breadth.md (cron #09, 18:30 ET)",
+  "note": "extension_pct in atr_extensions is distance-from-50-DMA (skill bug), not a true ATR extension; late_cycle false under both metrics."
+}
