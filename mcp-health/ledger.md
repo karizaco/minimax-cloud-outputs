@@ -8,6 +8,7 @@ a weekly file alone only shows Sunday's state.
 | 2026-10-21 | `catalog_unreachable` | unknown | not probed | not probed | Probe failed: `error: invalid signature` on `connectors/connected-tools/list`. **Not** evidence that no MCPs exist. |
 | 2026-10-25 | `catalog_ok total=15` | 0 | not probed | not probed | no change — 13 matrix + 2 email only |
 | 2026-10-31 | `catalog_ok total=133` | 0 | market-recap, stocktwits, shibui, tradier, fmp | Yahoo 200, TV scanner 200, Nasdaq 200, EDGAR 200 | **+118 `connector__github__*` tools.** Still 0 financial MCPs. Yahoo JSON no longer 429 (contract corrected). |
+| 2026-11-01 | `catalog_ok total=133` | 0 | market-recap, stocktwits, shibui, tradier, fmp, cftc-cot | bridge 200, Yahoo chart 200, Yahoo screener 200, TV scanner 200, Nasdaq 200, EDGAR 200, Treasury CSV 200, CoinGecko 200 | no change — same 133-tool catalog (118 github / 13 matrix / 2 email), 0 financial MCPs, all 6 packs answer, 8/8 endpoints 200. Refinements only: exact pack tool counts now measured (tradier 47, fmp 68, cftc-cot 47), and `get_quotes` confirmed to exist in market-recap only — a `get_quotes` request to the stocktwits pack is silently routed to market-recap. |
 
 ## Reading this table
 
@@ -28,3 +29,8 @@ a weekly file alone only shows Sunday's state.
 | `fmp` | `gateway.pipeworx.io/fmp/mcp` | — | `stock_screener` — **needs the user's own FMP API key** as `_apiKey` |
 
 Discover packs with `python3 mcp_bridge.py --list-packs`.
+
+**Note added 2026-11-01:** `--list-packs` is query-dependent and returns a relevance-ranked sample,
+not an inventory — the default query surfaced only 3 of the 6 live packs this run. Confirm a pack by
+calling its own tool. Exact tool counts measured 2026-11-01 (`tradier` 47, `fmp` 68, `cftc-cot` 47)
+and the full pack/endpoint tables are in `mcp-health/2026-W44.md`.
