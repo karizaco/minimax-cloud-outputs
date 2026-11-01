@@ -1,0 +1,61 @@
+ticker,name,sector,week_pct,close_2026-10-23,close_2026-10-30,market_cap,volume,flag
+IOVA,Iovance Biotherapeutics Inc,Health Care,-39.78,14.0813,8.48,3841000000,30757356,loser_mc_ge_2bn
+RDDT,Reddit Inc - Class A,Communication Services,-37.75,147.27,91.67,17640000000,33040857,loser_mc_ge_2bn
+NOW,ServiceNow Inc,Information Technology,-32.01,154.58,105.1,109100000000,34837213,loser_mc_ge_2bn
+ALNY,Alnylam Pharmaceuticals Inc,Health Care,-26.33,223.97,165.0,22080000000,6948338,loser_mc_ge_2bn
+SFM,Sprouts Farmers Market Inc,Consumer Staples,-25.65,66.85,49.7,4584000000,10209112,loser_mc_ge_2bn
+ASST,Strive Inc.,Financials,-25.53,29.81,22.2,2826000000,12525164,loser_mc_ge_2bn
+RSI,Rush Street Interactive Inc - Class A,Consumer Discretionary,-25.34,16.22,12.11,2807000000,13222308,loser_mc_ge_2bn
+FFIV,F5 Inc,Information Technology,-25.0,451.04,338.3,19160000000,2226525,loser_mc_ge_2bn
+INTC,Intel Corp,Information Technology,-23.87,86.375,65.76,347500000000,448164283,loser_mc_ge_2bn
+CORT,Corcept Therapeutics Inc,Health Care,-22.68,104.92,81.12,8769000000,1425908,loser_mc_ge_2bn
+FTNT,Fortinet Inc,Information Technology,-21.85,174.15,136.1,99840000000,8523568,loser_mc_ge_2bn
+BFAM,Bright Horizons Family Solutions Inc,Consumer Discretionary,-21.29,69.855,54.98,2674000000,7372685,loser_mc_ge_2bn
+TWLO,Twilio Inc Class A,Information Technology,-20.36,257.795,205.3,31530000000,7317871,loser_mc_ge_2bn
+RBLX,Roblox Corporation - Class A,Communication Services,-18.92,53.01,42.98,30700000000,29289922,loser_mc_ge_2bn
+ENPH,Enphase Energy Inc,Information Technology,-18.8,31.59,25.65,3394000000,6919542,loser_mc_ge_2bn
+CRCL,Circle Internet Group Inc - Class A,Financials,-17.42,87.74,72.46,18400000000,16137776,loser_mc_ge_2bn
+CACC,Credit Acceptance Corp,Financials,-15.39,549.45,464.9,4826000000,386173,loser_mc_ge_2bn
+SNAP,Snap Inc - Class A,Communication Services,-15.37,6.31,5.34,9031000000,47861686,loser_mc_ge_2bn
+COIN,Coinbase Global Inc - Class A,Financials,-15.33,169.48,143.5,37870000000,20701585,loser_mc_ge_2bn
+PINS,Pinterest Inc - Class A,Communication Services,-15.27,22.85,19.36,10970000000,34582111,loser_mc_ge_2bn
+AUGO,Aura Minerals Inc,Materials,-15.24,78.13,66.22,5549000000,1659902,loser_mc_ge_2bn
+XYL,Xylem Inc,Industrials,-14.82,108.47,92.39,21190000000,3248272,loser_mc_ge_2bn
+NHC,National Healthcare Corp,Health Care,-14.55,240.26,205.3,3215000000,135862,loser_mc_ge_2bn
+LAUR,Laureate Education Inc,Consumer Discretionary,-14.43,38.82,33.22,4576000000,3217319,loser_mc_ge_2bn
+DAN,Dana Inc,Consumer Discretionary,-14.16,26.91,23.1,2485000000,2230735,loser_mc_ge_2bn
+LOGI,Logitech International S.A.,Information Technology,-14.16,111.285,95.53,13550000000,1940567,loser_mc_ge_2bn
+HPQ,HP Inc,Information Technology,-13.99,33.45,28.77,25950000000,29882600,loser_mc_ge_2bn
+CIFR,Cipher Mining Inc,Financials,-13.98,8.475,7.29,3322000000,56335991,loser_mc_ge_2bn
+TEAM,Atlassian Corporation - Class A,Information Technology,-13.94,222.755,191.7,48340000000,4221586,loser_mc_ge_2bn
+DAVE,Dave Inc - Class A,Information Technology,-13.94,368.095,316.8,4041000000,384431,loser_mc_ge_2bn
+ENHA,Enhanced Group Inc Class A,Consumer Staples,725.44,1.14,9.41,3723000000,92192,winner_mc_ge_2bn
+SGRY,Surgery Partners Inc,Health Care,46.62,15.8297,23.21,3039000000,3388972,winner_mc_ge_2bn
+ADT,ADT Inc,Consumer Discretionary,42.91,6.91,9.875,7214000000,53877939,winner_mc_ge_2bn
+GKOS,Glaukos Corporation,Health Care,35.0,175.925,237.5,14060000000,2034459,winner_mc_ge_2bn
+AXGN,Axogen Inc,Health Care,32.36,37.3,49.37,2949000000,1810856,winner_mc_ge_2bn
+HRI,Herc Holdings Inc,Industrials,29.62,127.91,165.8,5547000000,690218,winner_mc_ge_2bn
+VSAT,Viasat Inc,Information Technology,29.4,59.52,77.02,10610000000,2582832,winner_mc_ge_2bn
+UWMC,UWM Holdings Corporation Class A,Financials,29.26,1.2301,1.59,2555000000,11283781,winner_mc_ge_2bn
+HAYW,Hayward Holdings Inc,Consumer Discretionary,28.34,12.56,16.12,3360000000,5842155,winner_mc_ge_2bn
+WING,Wingstop Inc,Consumer Discretionary,28.04,116.92,149.7,4051000000,1578536,winner_mc_ge_2bn
+CROX,Crocs Inc,Consumer Discretionary,26.94,118.56,150.5,7217000000,2118851,winner_mc_ge_2bn
+CDNA,Caredx Inc,Health Care,26.15,69.29,87.41,4522000000,3550433,winner_mc_ge_2bn
+PURR,Hyperliquid Strategies Inc,Financials,25.9,8.745,11.01,3064000000,30650598,winner_mc_ge_2bn
+MIR,Mirion Technologies Inc - Class A,Industrials,24.98,14.69,18.36,4506000000,6625787,winner_mc_ge_2bn
+FTAI,FTAI Aviation Ltd - Class A,Industrials,23.84,151.245,187.3,19230000000,2303769,winner_mc_ge_2bn
+RRC,Range Resources Corp,Energy,23.15,44.37,54.64,12770000000,5749371,winner_mc_ge_2bn
+ORKA,Oruka Therapeutics Inc.,Health Care,22.13,79.32,96.87,6414000000,632218,winner_mc_ge_2bn
+CTOS,Custom Truck One Source Inc,Industrials,22.03,8.67,10.58,2403000000,1097734,winner_mc_ge_2bn
+PNR,Pentair plc,Industrials,21.22,54.67,66.27,10580000000,4294235,winner_mc_ge_2bn
+SDGR,Schrodinger Inc,Health Care,20.89,22.45,27.14,2030000000,1943064,winner_mc_ge_2bn
+VRT,Vertiv Holdings Co - Class A,Industrials,20.73,192.655,232.6,89550000000,7610194,winner_mc_ge_2bn
+ACCV,Accelevation Holdings Corp - Class A,Industrials,20.67,12.0,14.48,3423000000,2165401,winner_mc_ge_2bn
+TENB,Tenable Holdings Inc,Information Technology,20.5,42.115,50.75,5590000000,3972502,winner_mc_ge_2bn
+SEI,Solaris Energy Infrastructure Inc - Class A,Energy,20.3,58.77,70.7,5413000000,3350534,winner_mc_ge_2bn
+INSM,Insmed Inc,Health Care,20.3,93.6,112.6,24590000000,5177666,winner_mc_ge_2bn
+BAH,Booz Allen Hamilton Holding Corp - Class A,Information Technology,20.07,73.68,88.47,10490000000,3727088,winner_mc_ge_2bn
+PVLA,Palvella Therapeutics Inc,Health Care,20.02,121.815,146.2,2106000000,292042,winner_mc_ge_2bn
+NCLH,Norwegian Cruise Line Holdings Ltd,Consumer Discretionary,19.95,14.6559,17.58,8073000000,28237875,winner_mc_ge_2bn
+XNCR,Xencor Inc,Health Care,19.55,24.943,29.82,2217000000,1285175,winner_mc_ge_2bn
+CVNA,Carvana Co. - Class A,Consumer Discretionary,18.8,57.45,68.25,75300000000,16949393,winner_mc_ge_2bn

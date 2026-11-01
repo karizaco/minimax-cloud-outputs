@@ -1,0 +1,26 @@
+# Weekly Recap TL;DR — 2026-11-01 (week of Oct 26–30, 2026 / 2026-W44)
+
+**One line:** a mega-cap-tech de-rating inside an otherwise rising market — the index fell, the breadth rose, and the AI-capex question is now the only question that matters.
+
+**Top 5**
+
+1. **Cap-weight lost, breadth won.** S&P 500 −0.57%, Nasdaq −2.00%, Dow −0.85%, Russell 2000 **+1.29%**; 9 of 11 S&P sectors up; 2,301 of 4,151 US names higher (median +0.40%).
+2. **Friday did the damage.** Nasdaq −2.86% (worst day since June), S&P −1.82%, VIX +12.91% to 19.42, 10-year down ~6bp to 4.93%.
+3. **AI capex had to prove its return.** GOOGL −12.6% Thu (worst day since listing; Q3 capex $51.4bn, FCF negative again), AMZN −1.4% Fri ($42.4bn TTM FCF deficit), INTC −28.58% Fri (Q4 guide $15–16bn vs $17.1bn; worst day since 1974).
+4. **A hawkish hold.** FOMC kept 3.75–4.00% on Oct 28, **10–2 with both dissents for a hike** (Warsh's first meeting). Q3 GDP +3.4%, Sept PCE 3.6% y/y. December hike odds ~75–85%. Oil >$104 on the Iran file.
+5. **Week ahead: midterms + payrolls + megacap earnings.** Elections Tue; ISM Mfg Mon; JOLTS Tue; ADP + ISM Services Wed; claims Thu; **payrolls Fri** (cons +55–65k vs +29k prior, U/E 4.2%). Apple & Palantir Mon, AMD Tue, Qualcomm & Arm Wed, Berkshire. Six Fed officials speak; RBA Mon, BoE Thu, OPEC meeting.
+
+**Week's best / worst (mc ≥ $2bn)**
+
+- Best: **ADT +42.9%** ($10/share cash take-private by Thrive Holdings), **GDYN +60.0%** (record Q3, AI revenue 31% of sales), GKOS +35.0% (sales +58%, FY guide raised), VSAT +29.4%, FTAI +23.8%, RRC +23.2%, VRT +20.7% (sales +61%, orders >100%).
+- Worst: **RDDT −37.8%** (US DAUs −2% y/y, soft Q4 guide), **NOW −32.0%** (cRPO growth 18.5% vs 19.4% est; worst day on record), ALNY −26.3% (TTR guide to low end), SFM −25.7% (comps −0.9%), TWLO −20.4%, INTC −23.9%, FTNT −21.9%, RBLX −18.9%.
+
+**Sector table (weekly):** XLV +3.12 · XLB +2.79 · XLU +2.04 · XLY +2.02 · XLI +1.69 · XLRE +1.41 · XLP +1.31 · XLF +1.09 · XLE +1.00 · **XLK −2.03 · XLC −5.32**.
+
+**Cross-asset (wk):** WTI +0.82% ($104.12) · gold −2.72% ($3,898.9) · copper +0.09% · DXY +0.07% · BTC −4.78% ($77,198).
+
+**Watch next:** GOOGL/AMZN/INTC post-earnings drift · COIN/CRCL after the $6.3bn Binance hack · ADT go-shop deadline Nov 28 · BOE hold-vs-hike (sources conflict) · WTI into OPEC.
+
+**Caveats:** the personal `research/watchlist.yaml` (12 names) is not reachable from the Cloud runtime, so the weekly performance table uses the full 4,151-name US universe instead; the earnings calendar has one source-conflict (BoE) and payrolls consensus is a range; the $1trn Nasdaq-100 value loss is a press estimate.
+
+**Full brief:** `weekly/2026-11-01-preview.md` · **movers CSV:** `weekly/2026-11-01-preview-movers.csv`
