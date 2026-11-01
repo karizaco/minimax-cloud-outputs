@@ -1,82 +1,77 @@
 {
-  "audit_date_et": "2026-10-30",
-  "audit_run_et": "2026-10-31T07:00:00-04:00",
-  "origin_main_sha": "e60e545",
-  "origin_main_sha_full": "e60e545",
-  "due": 16,
-  "delivered": 10,
-  "missing": 6,
-  "stale_routines": 1,
+  "audit_date_et": "2026-10-31",
+  "audit_run_et": "2026-11-01T07:03:52-05:00",
+  "origin_main_sha": "b95d0ae91910fca397f7ce102c1542306fac9ee0",
+  "due": 1,
+  "delivered": 1,
+  "missing": 0,
+  "stale_routines": 0,
   "never_delivered": [],
   "not_yet_fired": [
-    "22-weekly-market-recap-preview"
+    "22-weekly-market-recap-preview",
+    "14-macro-calendar-week-ahead"
   ],
-  "gaps": [
-    {
-      "routine": "08-pre-market-gapper",
-      "path": "daily-screens/2026-10-30/pre-market-gapper.md",
-      "label": "MISSING",
-      "cause": "quota exhausted (2067)",
-      "reason": "Session 457976265015536 ([cron] 08-stock-screener-pre-market-gapper.md, created 2026-10-30 08:31 ET) has status 2 and status_message 'The Token Plan usage limit has been reached ... (2067)'. No artifact, no commit by cron 08 on any ref for 2026-10-30. Same wall killed this routine's 2026-10-29 run (session 457622616023298, also 2067). Last successful delivery: 2026-10-28 (commit 5bb0723). Near-miss ruled out: daily-screens/2026-10-30/ contains no alternate-named gapper file."
-    },
-    {
-      "routine": "25-ntrt-gap-brief-daily",
-      "path": "ntrt/2026-10-30.md",
-      "label": "MISSING",
-      "cause": "quota exhausted (2067)",
-      "reason": "Session 457983151079669 ([cron] 25-ntrt-gap-brief-daily.md, created 2026-10-30 09:00 ET) has status 2 and status_message 'The Token Plan usage limit has been reached ... (2067)'. No artifact, no commit by cron 25 for 2026-10-30. The 2026-10-29 run died the same way (session 457629827952876). Last successful delivery: 2026-10-28 (commit 354b269). Near-miss ruled out: ntrt/ holds no dated .md for 2026-10-30."
-    },
-    {
-      "routine": "26-agentic-pre-market-brief",
-      "path": "daily-briefs/2026-10-30-pre-market.md",
-      "label": "MISSING",
-      "cause": "quota exhausted (2067)",
-      "reason": "Session 457975504863549 ([cron] 26-agentic-pre-market-brief.md, created 2026-10-30 08:30 ET) has status 2 and status_message 'The Token Plan usage limit has been reached ... (2067)'. No artifact, no commit by cron 26 for 2026-10-30. The 2026-10-29 run of this routine was healthy (session 457622018998377) and did land daily-briefs/2026-10-29-pre-market.md, so this is the quota wall, not a broken task. Last successful delivery: 2026-10-29."
-    },
-    {
-      "routine": "12-cross-asset-correlation",
-      "path": "cross-asset/2026-10-30.md",
-      "label": "MISSING",
-      "cause": "quota exhausted (2067)",
-      "reason": "Session 457998607171730 ([cron] 12-cross-asset-correlation-snapshot.md, created 2026-10-30 10:01 ET) has status 2 and status_message 'The Token Plan usage limit has been reached ... (2067)'. No artifact, no commit by cron 12 for 2026-10-30. The 2026-10-29 run died identically (session 457644553588855). Last successful delivery: 2026-10-28 (commit 07b3b92). Near-miss ruled out: cross-asset/ holds no dated .md for 2026-10-30."
-    },
-    {
-      "routine": "07-focus-rvol-09:45",
-      "path": "daily-screens/2026-10-30/focus-rvol-snapshot.md",
-      "label": "MISSING",
-      "cause": "push failed (session healthy)",
-      "reason": "Session 457993968722145 ([cron] 07-stock-screener-focus-rvol-09:45.md, created 2026-10-30 09:45 ET) is status 0 with an EMPTY status_message - the run itself completed. But no commit by cron 07 exists for 2026-10-30 on any ref, and the artifact is absent from origin/main. The only cron 07 commit in the repo history is 2026-10-28 (1ad8ecc). 2026-10-29 failed the same way (healthy session 457640803397829, no artifact), so this is a two-day silent push drop on a task whose runs and window check are fine - the artifact is being produced in the sandbox and lost on push, not skipped. Near-miss ruled out explicitly because the names look alike: daily-screens/2026-10-30/focus.md exists but belongs to cron 09 (commit bb5986a); on 2026-10-28 focus.md and focus-rvol-snapshot.md coexisted, so they are distinct artifacts."
-    },
-    {
-      "routine": "15-earnings-reaction-scanner",
-      "path": "earnings/2026-10-30-reactions.md",
-      "label": "MISSING",
-      "cause": "run dispatched, session record absent - cause undetermined (quota wall active 08:30-10:01 ET is the leading suspect)",
-      "reason": "cron_read view=runs for task 457570777166058 shows a run on 2026-10-30 08:00 ET (run_id 457968917311671, session_id 457969165033611, status 1). That session id appears in NEITHER the unarchived NOR the archived session list, so there is no status_message to read - the session record was never persisted. No earnings/2026-10-30-reactions.md and no earnings/2026-10-30-catalyst-targets.json on any ref, and no commit by cron 15 for 2026-10-30. The four neighbouring morning routines on 2026-10-30 (08:30, 08:31, 09:00, 10:01) all died on the Token Plan quota wall (2067), so the same wall is the leading explanation, but that is inference, not a confirmed status_message. Last successful delivery: 2026-10-29 (commit 253b848, session 457615144018145 healthy)."
-    },
-    {
-      "routine": "14-macro-calendar-week-ahead",
-      "path": "macro-calendar/2026-10-25-week-ahead.md",
-      "label": "MISSING",
-      "cause": "stale - newest artifact 2026-10-18 (age 12d, tolerance 7d); 2026-10-25 Sunday fire produced nothing",
-      "reason": "STEP 4b absolute stale finding, not a due-today gap (this routine is Sunday-only and 2026-10-30 is a Friday). Newest artifact on origin/main is macro-calendar/2026-10-18-week-ahead.md; the weekly/2026-10-25-week-ahead.md file exists in NO commit on ANY ref. Live task 457172664209611 is enabled on '0 15 * * 0' with a matching window check, but cron_read view=runs for it returns ZERO runs: the task instance was created 2026-10-28 02:09 ET, after the last Sunday, so the 2026-10-25 miss happened under the prior instance and this instance has not had a fire yet. VERIFICATION DEADLINE: if macro-calendar/2026-11-01-week-ahead.md is absent after 2026-11-01 16:00 ET, the cron-#22 failure mode is recurring and must be escalated."
-    }
-  ],
+  "gaps": [],
   "not_due": [
+    {"routine": "19-earnings-reminder-daily", "reason": "Schedule '0 6 * * 1-5' (Mon-Fri); audit date 2026-10-31 is a Saturday."},
+    {"routine": "02-asia-pre-market-reactions", "reason": "Schedule '30 6 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "15-earnings-reaction-scanner", "reason": "Schedule '0 8 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "26-agentic-pre-market-brief", "reason": "Schedule '30 8 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "08-pre-market-gapper", "reason": "Schedule '30 8 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "25-ntrt-gap-brief-daily", "reason": "Schedule '0 9 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "07-focus-rvol-09:45", "reason": "Schedule '45 9 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "12-cross-asset-correlation", "reason": "Schedule '0 10 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "10-breadth-snapshot", "reason": "Schedule '0 14 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "17-us-stocks-in-play", "reason": "Schedule '50 15 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "04-reversal-bullish-3:55", "reason": "Schedule '55 15 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "20-eod-watchlist-csv", "reason": "Schedule '0 16 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "05-eod-international-daily", "reason": "Schedule '30 16 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "16-unusual-options-flow", "reason": "Schedule '35 16 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "09-daily-sweep-18:30", "reason": "Schedule '30 18 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "23-agentic-post-market-brief", "reason": "Schedule '30 22 * * 1-5' (Mon-Fri); audit date is a Saturday."},
+    {"routine": "13-macro-calendar-midweek", "reason": "Schedule '0 14 * * 3' (Wednesday); audit date is a Saturday."},
+    {"routine": "14-macro-calendar-week-ahead", "reason": "Schedule '0 15 * * 0' (Sunday); first fire under the current task is 2026-11-01 - not_yet_fired, not a gap."},
+    {"routine": "22-weekly-market-recap-preview", "reason": "Schedule '47 17 * * 0' (Sunday); first fire under the current schedule is 2026-11-01 - not_yet_fired, not a gap."}
+  ],
+  "delivered_detail": [
+    {"routine": "06-pattern-study-backlog", "path": "daily-screens/2026-10-31/weekly-ipo.md", "commit": "4d4b5d9", "size_bytes": 7554, "note": "Only Saturday-due routine on 2026-10-31. Commit also carried peoplewish-backlog.md, peoplewish-backlog-run-full.json and weekly-high-short-float.md for the same date - all four belong to this one commit."}
+  ],
+  "stale_check": {
+    "method": "STEP 4b absolute check over all 20 artifact-producing routines against origin/main",
+    "stale": [],
+    "detail": [
+      {"routine": "06-pattern-study-backlog", "last": "2026-10-31", "age_days": 0, "tolerance": 7},
+      {"routine": "19-earnings-reminder-daily", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
+      {"routine": "02-asia-pre-market-reactions", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
+      {"routine": "25-ntrt-gap-brief-daily", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
+      {"routine": "10-breadth-snapshot", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
+      {"routine": "17-us-stocks-in-play", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
+      {"routine": "04-reversal-bullish-3:55", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
+      {"routine": "20-eod-watchlist-csv", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
+      {"routine": "05-eod-international-daily", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
+      {"routine": "16-unusual-options-flow", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
+      {"routine": "09-daily-sweep-18:30", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
+      {"routine": "23-agentic-post-market-brief", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
+      {"routine": "15-earnings-reaction-scanner", "last": "2026-10-29", "age_days": 2, "tolerance": 5},
+      {"routine": "26-agentic-pre-market-brief", "last": "2026-10-29", "age_days": 2, "tolerance": 5},
+      {"routine": "08-pre-market-gapper", "last": "2026-10-28", "age_days": 3, "tolerance": 5},
+      {"routine": "07-focus-rvol-09:45", "last": "2026-10-28", "age_days": 3, "tolerance": 5},
+      {"routine": "12-cross-asset-correlation", "last": "2026-10-28", "age_days": 3, "tolerance": 5},
+      {"routine": "13-macro-calendar-midweek", "last": "2026-10-28", "age_days": 3, "tolerance": 7}
+    ]
+  },
+  "watch_items": [
     {
-      "routine": "13-macro-calendar-midweek",
-      "reason": "Schedule '0 14 * * 3' (Wednesday); audit date 2026-10-30 is a Friday."
+      "routines": ["07-focus-rvol-09:45", "08-pre-market-gapper", "12-cross-asset-correlation"],
+      "note": "Three routines have not delivered since 2026-10-28, i.e. they missed both the 2026-10-29 and 2026-10-30 weekday fires. Their causes were already reported by the 2026-10-31 audit (07 push failed with a healthy session; 08 and 12 quota wall 2067). Not a gap for the 2026-10-31 audit date - they are Mon-Fri routines and 2026-10-31 is a Saturday - but their age crosses the 5-day stale tolerance on 2026-11-02 unless Monday 2026-11-02 lands. The 2026-10-30 quota wall is the suspected common cause; a routine that never fires at all looks identical from the outside."
     },
     {
-      "routine": "06-pattern-study-backlog",
-      "reason": "Schedule '0 15 * * 6' (Saturday); audit date is a Friday."
-    },
-    {
-      "routine": "22-weekly-market-recap-preview",
-      "reason": "Schedule '47 17 * * 0' (Sunday); first fire under the current schedule is 2026-11-01 - not_yet_fired, not a gap."
+      "routines": ["15-earnings-reaction-scanner", "26-agentic-pre-market-brief"],
+      "note": "Last artifacts are 2026-10-29; their 2026-10-30 fires were quota casualties per the previous audit. They are also Monday-only drift-sensitive tasks (the day-of-week field was corrupted to '1' by a web-GUI save on 2026-10-31 and repaired before Monday) - live schedules were re-verified as '1-5' at 2026-11-01 07:03 ET."
     }
   ],
-  "schedule_drift_note": "Six routines were narrowed to Monday-only at ~2026-10-31 02:00 ET (#02, #08, #12, #17, #20, #25). Their live schedules are now '* * 1'. This audit date (2026-10-30, Friday) predates that change, so the old Mon-Fri schedules applied and those routines WERE due on 2026-10-30 - no false gaps are attributed to the narrowing. The change takes effect from Monday 2026-11-02.",
-  "master_mirror": "skipped - origin/master has diverged from origin/main (contains merge commit 8bdb2d0 'merge main -> master' that is not on main), so a fast-forward is impossible. No artifact was touched.",
-  "audit_status": "gaps_found"
+  "schedule_drift_note": "All 23 live schedules were re-read from cron_read view=list at 2026-11-01 07:03 ET and every weekday routine now shows '1-5' (previously narrowed to '1'). The 2026-10-31 05:40-09:08 ET GUI corruption of fourteen routines was repaired before Monday 2026-11-02, so no routine misses a fire on account of it. Weekly routines are intact: 06 = '0 15 * * 6', 13 = '0 14 * * 3', 14 = '0 15 * * 0', 22 = '47 17 * * 0', 01 = '0 2 * * 0'. Every routine's timezone is America/New_York - no Etc/GMT-7 default.",
+  "verification_deadline": "macro-calendar/2026-11-01-week-ahead.md must exist on origin/main after 2026-11-01 16:00 ET (cron #14's first Sunday fire under task 457172664209611). It has not fired yet at audit time (07:03 ET). If it is absent after 16:00 ET, the cron-#22 failure mode is recurring and must be escalated. Likewise weekly/2026-11-01-preview.md after 2026-11-01 17:47 ET for cron #22.",
+  "master_mirror": "skipped - origin/master has diverged from origin/main (master holds merge commit 8bdb2d0 'merge main -> master: cron #17 us-stocks-in-play 2026-10-30', which is not on main, so a fast-forward is impossible). master is also missing 82 files that main carries. The only path present in master but absent from main is earnings/IMPROVEMENTS-cron19.md, which was intentionally dropped from main by commit 1094edc ('refs: point to cron #19 review docs in the migration repo; drop them from the artifact sink'). No artifact was modified; only the branch pointer was left alone.",
+  "audit_status": "ok"
 }
