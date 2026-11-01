@@ -190,3 +190,19 @@ Beyond the prompt body, the scheduler-level trigger was editable too:
   breaking all egress (curl, connector tools, git) until the proxy reissued it. The prompt's
   skill-fetch step should name `web_fetch` as the fallback when `curl` returns a certificate error,
   and pin `GIT_SSL_CAINFO` to the sandbox CA.
+
+---
+
+## Cross-check outcome (2026-11-01)
+
+Nine of the ten improvements were verified working on live artifacts produced 2026-10-26 →
+2026-10-30. The tenth — S&P 500 membership verification — was working but carried a defect in the
+rule I wrote: the constituent parse I specified matched 502 symbols and silently dropped **CBOE**
+(written `{{BZX link|CBOE}}` in the wikitext, not `{{NyseSymbol|…}}`). The 10-30 run found this on
+its own and reported it. Rule A is now corrected to 503 symbols with a five-ticker control check,
+in the live task, the repo prompt and `SKILL.md`.
+
+Full evidence table, the two out-of-routine failures found (cron #12's 498-file deletion recurred
+on 2026-10-26 with the old recipe, and cron #19 missed 10-27/10-28 entirely because its task was
+deleted and recreated), and the 10-27/10-28 backfill are documented in
+`earnings/CROSSCHECK-cron19.md`.
