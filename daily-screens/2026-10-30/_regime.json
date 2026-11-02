@@ -1,0 +1,35 @@
+{
+ "size_cut_pct": 0,
+ "uncertainty": false,
+ "late_cycle": false,
+ "breadth_pct_spx": 58.0,
+ "index_below_20sma": true,
+ "vix": 19.42,
+ "vix3m": 20.78,
+ "vix_vix3m_ratio": 0.9346,
+ "atr_extensions": {
+  "IWM": {
+   "atr_ext_multiple": 0.746,
+   "extension_pct": -0.222
+  },
+  "QQQ": {
+   "atr_ext_multiple": 0.978,
+   "extension_pct": -1.388
+  },
+  "QQQE": {
+   "atr_ext_multiple": 0.948,
+   "extension_pct": -0.705
+  },
+  "RSP": {
+   "atr_ext_multiple": 0.865,
+   "extension_pct": 2.301
+  },
+  "SPY": {
+   "atr_ext_multiple": 0.824,
+   "extension_pct": 0.225
+  }
+ },
+ "data_date": "2026-10-30",
+ "breadth_universe": "TradingView america scan, market_cap_basic > $10B, exchange NASDAQ/NYSE/AMEX, 1001 names",
+ "fire_time_et": "2026-10-30 18:30 ET"
+}

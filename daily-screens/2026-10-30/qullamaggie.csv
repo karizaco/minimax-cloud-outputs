@@ -1,0 +1,72 @@
+ticker,name,close_1029,chg_1029_pct,close_1030,chg_1030_pct,rs_1m_pct,rs_3m_pct,n_stylists,stylists,origins,market_cap,gics_sector,rvol,flags,notes
+ABCL,AbCellera Biologics Inc.,13.08,,12.27,-6.1926605504587195,-10.35,129.07,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,3994310140.44,Health Care,0.6,wicky_breakout,
+AMN,AMN Healthcare Services Inc,46.94,,47.11,0.36216446527482254,30.86,39.58,1,qullamaggie,C_qullamaggie_rs,1820617280.8799999,Health Care,0.53,"wicky_breakout, ma_shrink_5d",
+APPN,Appian Corporation,50.47,,49.1,-2.714483851793139,43.1,87.2,1,qullamaggie,C_qullamaggie_rs,3705109696.4,Information Technology,1.14,"wicky_breakout, ma_shrink_5d",
+APPS,"Digital Turbine, Inc.",10.57,6.66,8.87,-16.08325449385053,-4.77,31.14,1,qullamaggie,C_qullamaggie_rs,1275397118.03,Information Technology,1.15,ma_shrink_5d,Digital Turbine - ad-tech sympathy (APP -10.4% the same day)
+ASAN,"Asana, Inc.",11.26,,11.23,-0.26642984014209026,33.57,35.34,1,qullamaggie,C_qullamaggie_rs,2595540652.02,Information Technology,1.08,ma_shrink_5d,
+ASST,"Strive, Inc.",24.91,,22.195,-10.899237254114812,-15.3,124.21,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,1015684848.71,Financials,0.74,—,
+BHC,Bausch Health Companies Inc.,8.91,28.76,8.2,-7.968574635241311,52.83,29.32,2,qullamaggie|stockbee,A_stockbee_4pct|C_qullamaggie_rs,3332255898.51,Health Care,8.74,—,"earnings gap on 10-29 (+28.8%), gave back 8.0% on day 2"
+BLMN,"Bloomin' Brands, Inc.",10.69,,10.57,-1.1225444340505073,37.94,23.44,1,qullamaggie,C_qullamaggie_rs,915216728.03,Consumer Discretionary,1.0,—,
+CAI,"Caris Life Sciences, Inc.",36.14,,34.33,-5.008301051466526,17.99,130.63,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,10216080317.3,Health Care,1.05,wicky_breakout,
+CDNA,"CareDx, Inc.",71.52,-0.85,87.41,22.217561521252797,10.03,63.62,3,peoplewish|qullamaggie|tv_volume_breakout,C_qullamaggie_rs|G_peoplewish|TV_volume_breakout,3694686081.12,Health Care,1.27,ma_shrink_5d,"Q3 rev $139M +39% YoY (cons. $122M), adj EPS $0.70 beat by $0.44; FY26 rev guide raised to $520-530M; BTIG PT $92"
+CLF,Cleveland-Cliffs Inc.,14.26,,14.25,-0.07012622720897466,29.52,23.78,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,8134113008.82,Materials,0.72,ma_shrink_5d,
+CVI,CVR Energy Inc.,56.82,,58.37,2.7279127067933775,11.43,59.52,2,ariel_hernandez|qullamaggie,C_qullamaggie_rs|ariel_hernandez,5712148635.18,Energy,0.75,wicky_breakout,
+DNA,"Ginkgo Bioworks Holdings, Inc.",12.74,-4.35,11.21,-12.00941915227629,-0.7,57.48,1,qullamaggie,C_qullamaggie_rs,832234015.34,Health Care,0.83,wicky_breakout,
+DXC,DXC Technology Company,15.23,,14.98,-1.6414970453053184,40.63,35.5,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,2489798237.34,Information Technology,0.98,"wicky_breakout, ma_shrink_5d",
+FIGS,"FIGS, Inc.",21.56,4.36,21.31,-1.1595547309833025,55.56,101.5,3,jeff_sun_canslim|peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish|jeff_sun_canslim,3601538774.68,Health Care,1.09,"wicky_breakout, ma_shrink_5d",consensus names fade on day 2
+GKOS,Glaukos Corporation,242.48,33.65,237.6,-2.0125371164632115,47.68,45.44,2,qullamaggie|stockbee,A_stockbee_4pct|C_qullamaggie_rs|D_qullamaggie_ep|E_qullamaggie_5d_gainers,14302425043.76,Health Care,4.12,—,"earnings gap on 10-29 (+33.7%), gave back 2.0% on day 2"
+GLOB,Globant S.A.,43.68,,46.72,6.959706959706957,25.88,19.34,1,qullamaggie,C_qullamaggie_rs,1924409760.0,Information Technology,1.05,ma_shrink_5d,
+GMAB,Genmab A/S,56.49,,57.06,1.0090281465746154,58.35,95.67,2,peoplewish|qullamaggie,C_qullamaggie_rs|E_qullamaggie_5d_gainers|G_peoplewish,36291058811.700005,Health Care,0.97,wicky_breakout,
+GRAL,"GRAIL, Inc.",158.92,0.66,143.43,-9.747042537125585,13.42,131.8,3,ariel_hernandez|peoplewish|qullamaggie,C_qullamaggie_rs|E_qullamaggie_5d_gainers|G_peoplewish|ariel_hernandez,6820304959.559999,Health Care,0.78,wicky_breakout,GRAIL - no company release found; high-multiple biotech de-rating
+GTLB,GitLab Inc.,56.65,,54.09,-4.518976169461598,19.89,64.16,1,qullamaggie,C_qullamaggie_rs,9568185000.0,Information Technology,0.59,ma_shrink_5d,
+HRI,Herc Holdings Inc.,173.95,,165.76,-4.70824949698189,39.38,15.86,2,peoplewish|qullamaggie,C_qullamaggie_rs|E_qullamaggie_5d_gainers|G_peoplewish,5815399683.799999,Industrials,1.22,—,
+HTFL,"Heartflow, Inc.",60.53,2.42,59.05,-2.445068561044117,21.67,139.91,3,ariel_hernandez|peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish|ariel_hernandez,5220157318.84,Health Care,0.78,ma_shrink_5d,"med-tech leader, held on a down tape"
+ICLR,ICON plc,215.48,,211.36,-1.9120103953963135,26.76,31.74,1,qullamaggie,C_qullamaggie_rs,16625188955.32,Health Care,1.67,—,
+KNSA,"Kiniksa Pharmaceuticals International, plc",97.56,,92.24,-5.453054530545312,30.76,31.23,2,jeff_sun_canslim|qullamaggie,C_qullamaggie_rs|jeff_sun_canslim,7612022708.28,Health Care,1.68,—,
+KOD,Kodiak Sciences Inc,100.4,3.46,99.18,-1.2151394422310744,5.91,141.46,3,ariel_hernandez|peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish|ariel_hernandez,6282875476.400001,Health Care,0.84,—,"biotech leader, held on a down tape"
+KSS,Kohl's Corporation,24.5,,24.31,-0.7755102040816378,32.72,28.0,1,qullamaggie,C_qullamaggie_rs,2778299828.5,Consumer Discretionary,0.8,ma_shrink_5d,
+MIR,"Mirion Technologies, Inc.",18.67,,18.37,-1.6068559185859705,32.22,24.63,1,qullamaggie,C_qullamaggie_rs|E_qullamaggie_5d_gainers,4649532869.490001,Industrials,1.81,—,
+MRNA,"Moderna, Inc.",222.76,4.01,221.72,-0.46687017417848453,15.68,306.35,3,ariel_hernandez|peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish|ariel_hernandez,88388107054.84,Health Care,0.55,—,"large-cap biotech, held the line"
+MSTR,Strategy Inc,141.62,,130.51,-7.844937155768969,-7.49,51.82,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,49630427632.64,Information Technology,0.72,"wicky_breakout, ma_shrink_5d",
+NTSK,"Netskope, Inc.",26.19,,24.3,-7.216494845360827,50.17,108.02,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,10578760367.310001,Information Technology,1.03,—,
+OKTA,"Okta, Inc.",221.86,,208.24,-6.139006580726586,6.1,56.32,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,38560901998.9,Information Technology,1.07,—,
+OMER,Omeros Corporation,18.95,,18.44,-2.6912928759894355,-0.47,60.05,1,qullamaggie,C_qullamaggie_rs,1371512977.25,Health Care,3.11,—,
+P,"Everpure, Inc.",137.2,-1.01,126.98,-7.448979591836724,4.91,77.79,3,jeff_sun_canslim|peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish|jeff_sun_canslim,45605956670.399994,Information Technology,0.64,wicky_breakout,"Everpure - high-multiple tech, sold with AI complex"
+PRCH,"Porch Group, Inc.",20.89,28.16,20.56,-1.5797032072762174,25.39,44.57,2,qullamaggie|stockbee,A_stockbee_4pct|C_qullamaggie_rs,2753971399.16,Information Technology,3.87,—,
+PRME,"Prime Medicine, Inc.",5.24,,4.72,-9.923664122137414,71.52,79.45,1,qullamaggie,C_qullamaggie_rs,946435443.24,Health Care,1.66,—,
+PSIX,"Power Solutions International, Inc.",48.38,,45.73,-5.477470028937589,5.24,75.23,1,qullamaggie,C_qullamaggie_rs,1115180771.0,Industrials,0.7,wicky_breakout,
+QLYS,"Qualys, Inc.",230.29,,224.12,-2.679230535411867,23.02,59.09,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,8110124542.03,Information Technology,0.98,ma_shrink_5d,
+QMCO,Quantum Corporation,20.77,0.24,18.27,-12.036591237361579,-34.52,95.21,1,qullamaggie,C_qullamaggie_rs,817808365.0,Information Technology,0.39,ma_shrink_5d,storage sympathy
+RBRK,"Rubrik, Inc.",133.63,,124.15,-7.0942153707999625,16.74,84.67,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,27504871274.579998,Information Technology,1.11,wicky_breakout,
+REPL,"Replimune Group, Inc.",17.39,,17.61,1.265094882116152,31.34,55.27,1,qullamaggie,C_qullamaggie_rs,1638479435.26,Health Care,2.18,—,
+RNG,"RingCentral, Inc.",83.7,,81.42,-2.724014336917564,12.05,50.49,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,6989465759.400001,Information Technology,0.78,wicky_breakout,
+RPD,"Rapid7, Inc.",17.08,,16.56,-3.044496487119436,39.77,76.99,1,qullamaggie,C_qullamaggie_rs,1141466955.4399998,Information Technology,1.21,—,
+SDGR,"Schrodinger, Inc.",29.99,,27.14,-9.503167722574185,-3.41,98.08,2,peoplewish|qullamaggie,C_qullamaggie_rs|E_qullamaggie_5d_gainers|G_peoplewish,2240874512.7599998,Health Care,0.59,wicky_breakout,
+SG,"Sweetgreen, Inc.",11.41,,11.07,-2.9798422436459235,28.64,76.9,1,qullamaggie,C_qullamaggie_rs,1355823566.3700001,Consumer Discretionary,0.85,wicky_breakout,
+TDOC,"Teladoc Health, Inc.",8.73,26.89,8.51,-2.5200458190148987,50.52,30.1,2,qullamaggie|stockbee,A_stockbee_4pct|C_qullamaggie_rs,1575879249.51,Health Care,4.28,—,
+TEM,"Tempus AI, Inc.",77.84,,72.22,-7.219938335046254,-4.96,77.43,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,13977321463.28,Health Care,0.78,—,
+TENB,"Tenable Holdings, Inc.",51.78,,50.75,-1.9891850135187354,42.29,58.64,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,5709882761.940001,Information Technology,1.76,—,
+TWST,Twist Bioscience Corporation,173.45,0.0,152.78,-11.916978956471599,-10.24,89.46,2,peoplewish|qullamaggie,C_qullamaggie_rs|E_qullamaggie_5d_gainers|G_peoplewish,10800959413.3,Health Care,0.6,wicky_breakout,
+TXG,"10x Genomics, Inc.",81.55,-2.48,70.11,-14.02820355610055,-9.75,72.52,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,10353277212.949999,Health Care,0.47,wicky_breakout,biotech/tools sympathy
+VSTM,"Verastem, Inc.",9.66,,9.75,0.9316770186335388,20.0,66.55,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,848859352.74,Health Care,0.33,"wicky_breakout, ma_shrink_5d",
+ZETA,Zeta Global Holdings Corp.,32.74,,31.17,-4.795357361026268,3.71,51.57,1,qullamaggie,C_qullamaggie_rs,8160694511.540001,Information Technology,0.53,—,
+ZS,"Zscaler, Inc.",247.82,,237.83,-4.031151642321032,24.27,63.9,2,peoplewish|qullamaggie,C_qullamaggie_rs|G_peoplewish,40074854485.5,Information Technology,0.94,ma_shrink_5d,
+ADT,ADT Inc.,9.87,33.2,9.86,-0.10131712259371618,62.34,29.19,2,qullamaggie|stockbee,A_stockbee_4pct|B_stockbee_ep9m|D_qullamaggie_ep|E_qullamaggie_5d_gainers,7812048869.309999,Consumer Discretionary,10.82,—,"earnings gap on 10-29 (+33.2%), flat on day 2"
+CROX,"Crocs, Inc.",150.26,25.54,150.52,0.1730334087581654,28.09,17.38,2,qullamaggie|stockbee,A_stockbee_4pct|D_qullamaggie_ep,7466366508.48,Consumer Discretionary,3.98,—,
+CVNA,Carvana Co.,68.31,15.68,68.29,-0.029278290147849537,9.23,9.54,2,qullamaggie|stockbee,A_stockbee_4pct|D_qullamaggie_ep,75172680128.7,Consumer Discretionary,2.52,—,
+FTAI,FTAI Aviation Ltd.,196.01,17.27,187.27,-4.458956175705311,17.35,-4.85,3,peoplewish|qullamaggie|stockbee,A_stockbee_4pct|D_qullamaggie_ep|G_peoplewish,20107288341.719997,Industrials,1.8,—,"aerospace, sold with the tape"
+GEN,Gen Digital Inc.,28.2,15.81,29.13,3.2978723404255312,28.07,2.73,2,qullamaggie|stockbee,A_stockbee_4pct|D_qullamaggie_ep,16988634682.8,Information Technology,1.4,—,
+INSM,Insmed Incorporated,111.59,15.06,112.58,0.8871762702751097,-2.23,13.17,2,qullamaggie|stockbee,A_stockbee_4pct|D_qullamaggie_ep,24187406007.09,Health Care,3.04,—,
+PURR,Hyperliquid Strategies Inc,12.29,23.27,11.01,-10.414971521562242,0.16,97.91,3,peoplewish|qullamaggie|stockbee,A_stockbee_4pct|B_stockbee_ep9m|D_qullamaggie_ep|E_qullamaggie_5d_gainers|G_peoplewish,1654499107.59,Financials,4.26,—,"gave back the prior day's +23% on the Druckenmiller/Hyperliquid backing; 28.4M shares, IV30 112%"
+AXGN,"Axogen, Inc.",49.63,,49.37,-0.5238766874874171,18.39,17.58,2,jeff_sun_canslim|qullamaggie,E_qullamaggie_5d_gainers|jeff_sun_canslim,2668183890.19,Health Care,1.15,wicky_breakout,
+SGRY,"Surgery Partners, Inc.",23.21,,23.21,0,67.34,50.71,1,qullamaggie,E_qullamaggie_5d_gainers,3035593240.02,Health Care,0.67,wicky_breakout,
+VRT,"Vertiv Holdings, LLC",245.92,,232.5,-5.457059206245929,1.91,1.8,1,qullamaggie,E_qullamaggie_5d_gainers,94676291504.15999,Industrials,1.39,—,
+VSAT,"ViaSat, Inc.",77.99,,77.02,-1.2437491986152058,10.81,1.38,2,peoplewish|qullamaggie,E_qullamaggie_5d_gainers|G_peoplewish,10651012644.47,Information Technology,1.31,—,
+INTR,Inter & Co. Inc.,4.17,,4.01,-3.836930455635495,-21.91,-25.54,1,qullamaggie,F_qullamaggie_5d_losers,1841006515.41,Financials,0.89,wicky_breakout,
+IOVA,"Iovance Biotherapeutics, Inc.",9.56,-35.45,8.48,-11.297071129707113,-35.49,134.89,3,ariel_hernandez|qullamaggie|stockbee,B_stockbee_ep9m|F_qullamaggie_5d_losers|ariel_hernandez,4268562905.76,Health Care,4.27,—,biotech de-rating after a -35% session on 10-29
+NOW,"ServiceNow, Inc.",109.67,,105.12,-4.148810066563324,-18.16,-1.4,2,qullamaggie|stockbee,B_stockbee_ep9m|F_qullamaggie_5d_losers,113398780000.0,Information Technology,4.82,—,
+PAGS,PagSeguro Digital Ltd.,8.07,,7.94,-1.6109045848822785,-9.33,-16.29,1,qullamaggie,F_qullamaggie_5d_losers,2466819111.63,Industrials,0.62,wicky_breakout,
+SBS,Companhia de saneamento Basico Do Estado De Sao Paulo - Sabesp,4.64,,4.54,-2.155172413793096,-12.62,-14.86,1,qullamaggie,F_qullamaggie_5d_losers,15857428937.599998,Utilities,1.02,wicky_breakout,
+SFM,"Sprouts Farmers Market, Inc.",48.0,,49.7,3.5416666666666727,-27.66,-44.93,2,qullamaggie|tv_volume_breakout,F_qullamaggie_5d_losers|TV_volume_breakout,4475886000.0,Consumer Staples,6.09,—,
+STNE,StoneCo Ltd.,8.0,,7.75,-3.125,-14.35,-29.67,1,qullamaggie,F_qullamaggie_5d_losers,2029477128.0,Financials,0.84,wicky_breakout,
+XP,XP Inc.,15.05,,14.29,-5.049833887043199,-28.32,-11.78,1,qullamaggie,F_qullamaggie_5d_losers,7824329555.35,Financials,0.91,—,
