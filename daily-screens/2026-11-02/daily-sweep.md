@@ -1,7 +1,7 @@
 ---
 cron: 09-stock-screener-daily-sweep-18:30
 fire_time_et: 2026-11-02 18:30 ET
-generated_et: 2026-11-02 18:49:12 ET
+generated_et: 2026-11-02 18:53:34 ET
 cron_date: 2026-11-02
 screen_data_date: 2026-10-30 (shibui T+1 — the 2026-11-02 close is overlaid from the TradingView scanner)
 volatility_pair: VIX 21.15 / VIX3M 21.6 (ratio 0.9792), quote 2026-11-02T16:15:01 ET, CBOE delayed-quote CDN settled close — one pair, used everywhere
@@ -10,7 +10,7 @@ cross_reference: intraday counterpart: daily-screens/2026-11-02/breadth-snapshot
 
 # Daily screen sweep — end-of-day read (2026-11-02)
 
-**Cron #09 · fired 2026-11-02 18:30 ET · generated 2026-11-02 18:49:12 ET**
+**Cron #09 · fired 2026-11-02 18:30 ET · generated 2026-11-02 18:53:34 ET**
 
 ## What happened in the session
 
