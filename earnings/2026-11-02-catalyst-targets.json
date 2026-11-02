@@ -1,0 +1,85 @@
+{
+  "us": [
+    {
+      "name": "PGEN",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-04"
+    },
+    {
+      "name": "RSI",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-28"
+    },
+    {
+      "name": "CHRN",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-15"
+    },
+    {
+      "name": "COHR",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-12"
+    },
+    {
+      "name": "INIO",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-27"
+    },
+    {
+      "name": "TEM",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-02"
+    },
+    {
+      "name": "RIG",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-05"
+    },
+    {
+      "name": "WULF",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-05"
+    }
+  ],
+  "eu": [
+    {
+      "name": "ALO",
+      "market": "france",
+      "chg": -25.02
+    },
+    {
+      "name": "CBRAIN",
+      "market": "denmark",
+      "chg": 9.89
+    },
+    {
+      "name": "YUBICO",
+      "market": "sweden",
+      "chg": -8.86
+    },
+    {
+      "name": "BMAG",
+      "market": "austria",
+      "chg": 8.59
+    },
+    {
+      "name": "CMBN",
+      "market": "switzerland",
+      "chg": -8.02
+    }
+  ],
+  "au": [
+    {
+      "name": "HLI",
+      "chg": -7.93
+    },
+    {
+      "name": "NST",
+      "chg": -4.75
+    },
+    {
+      "name": "BOQCD",
+      "chg": -4.08
+    }
+  ]
+}
