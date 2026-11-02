@@ -1,7 +1,7 @@
 ---
 cron: 09-stock-screener-daily-sweep-18:30
 fire_time_et: 2026-11-02 18:30 ET
-generated_et: 2026-11-02 18:44:41 ET
+generated_et: 2026-11-02 18:49:12 ET
 cron_date: 2026-11-02
 screen_data_date: 2026-10-30 (shibui T+1 — the 2026-11-02 close is overlaid from the TradingView scanner)
 volatility_pair: VIX 21.15 / VIX3M 21.6 (ratio 0.9792), quote 2026-11-02T16:15:01 ET, CBOE delayed-quote CDN settled close — one pair, used everywhere
@@ -10,7 +10,7 @@ cross_reference: intraday counterpart: daily-screens/2026-11-02/breadth-snapshot
 
 # Daily screen sweep — end-of-day read (2026-11-02)
 
-**Cron #09 · fired 2026-11-02 18:30 ET · generated 2026-11-02 18:44:41 ET**
+**Cron #09 · fired 2026-11-02 18:30 ET · generated 2026-11-02 18:49:12 ET**
 
 ## What happened in the session
 
@@ -60,17 +60,17 @@ Highest relative volume (TV `relative_volume_10d_calc`, 10-day basis): **DUKU** 
 
 | Ticker | Stylists | Stylist names | Close 10-30 | Chg 10-30 | Close 11-02 | Chg 11-02 | RVOL 11-02 | RS 3M % | Vel 14D % | Flags |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CDNA | 3 |  ,  , ', ', ', ', ', ', ,, ,, a, a, b, c, e, e, e, e, e, g, g, h, i, i, k, l, l, l, m, o, o, p, p, q, s, s, t, u, w, {, } | 87.41 | +22.22% | 85.88 | -1.75% | 1.71 | 82.7 | 38.5 | — |
-| HTFL | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, a, a, d, e, e, e, e, e, e, g, g, h, h, i, i, i, l, l, l, l, m, n, n, o, p, p, q, r, r, s, u, w, z, {, } | 59.05 | -2.45% | 54.49 | -7.72% | 0.96 | 120.7 | 16.8 | ma_shrink_5d, wicky_breakout |
-| CAI | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, a, a, d, e, e, e, e, e, e, g, g, h, h, i, i, i, l, l, l, l, m, n, n, o, p, p, q, r, r, s, u, w, z, {, } | 34.33 | -5.01% | 32.10 | -6.50% | 1.10 | 110.4 | 15.6 | ma_shrink_5d, wicky_breakout |
-| QLYS | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, e, e, e, e, f, f, g, g, h, i, i, j, l, l, l, m, n, o, p, p, q, s, s, u, u, w, {, } | 224.12 | -2.68% | 207.60 | -7.37% | 1.00 | 44.7 | 13.9 | ma_shrink_5d, wicky_breakout |
-| PURR | 3 |  ,  , ', ', ', ', ', ', ,, ,, a, a, b, c, e, e, e, e, e, g, g, h, i, i, k, l, l, l, m, o, o, p, p, q, s, s, t, u, w, {, } | 11.01 | -10.41% | 9.71 | -11.81% | 0.97 | — | 5.9 | — |
-| MRNA | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, a, a, d, e, e, e, e, e, e, g, g, h, h, i, i, i, l, l, l, l, m, n, n, o, p, p, q, r, r, s, u, w, z, {, } | 221.72 | -0.47% | 220.83 | -0.40% | 0.44 | 302.1 | 3.7 | wicky_breakout |
-| NOW | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, b, c, e, e, e, e, f, f, g, g, i, j, k, l, l, m, n, o, q, s, s, t, u, u, {, } | 105.12 | -4.15% | 106.01 | +0.85% | 1.06 | — | — | — |
-| CVI | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, _, a, a, a, a, d, e, e, e, e, e, f, f, g, g, h, i, i, j, l, l, l, m, n, n, n, q, r, r, s, u, u, z, {, } | 58.37 | +2.73% | 55.92 | -4.20% | 1.04 | 77.5 | — | — |
-| KOD | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, a, a, d, e, e, e, e, e, e, g, g, h, h, i, i, i, l, l, l, l, m, n, n, o, p, p, q, r, r, s, u, w, z, {, } | 99.18 | -1.22% | 97.62 | -1.57% | 0.69 | 149.0 | -0.1 | wicky_breakout |
-| ABCL | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, a, a, d, e, e, e, e, e, e, g, g, h, h, i, i, i, l, l, l, l, m, n, n, o, p, p, q, r, r, s, u, w, z, {, } | 12.27 | -6.19% | 11.12 | -9.37% | 0.89 | 110.5 | -2.9 | wicky_breakout |
-| MTZ | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, b, c, e, e, e, e, e, f, f, h, i, j, k, l, n, o, o, p, p, s, s, s, t, u, w, {, } | 186.06 | +4.63% | 193.77 | +4.14% | 1.61 | — | -10.1 | ma_shrink_5d |
+| CDNA | 3 | peoplewish, qullamaggie, stockbee | 87.41 | +22.22% | 85.88 | -1.75% | 1.71 | 82.7 | 38.5 | — |
+| HTFL | 3 | ariel_hernandez, peoplewish, qullamaggie | 59.05 | -2.45% | 54.49 | -7.72% | 0.96 | 120.7 | 16.8 | ma_shrink_5d, wicky_breakout |
+| CAI | 3 | ariel_hernandez, peoplewish, qullamaggie | 34.33 | -5.01% | 32.10 | -6.50% | 1.10 | 110.4 | 15.6 | ma_shrink_5d, wicky_breakout |
+| QLYS | 3 | jeff_sun, peoplewish, qullamaggie | 224.12 | -2.68% | 207.60 | -7.37% | 1.00 | 44.7 | 13.9 | ma_shrink_5d, wicky_breakout |
+| PURR | 3 | peoplewish, qullamaggie, stockbee | 11.01 | -10.41% | 9.71 | -11.81% | 0.97 | — | 5.9 | — |
+| MRNA | 3 | ariel_hernandez, peoplewish, qullamaggie | 221.72 | -0.47% | 220.83 | -0.40% | 0.44 | 302.1 | 3.7 | wicky_breakout |
+| NOW | 3 | jeff_sun, qullamaggie, stockbee | 105.12 | -4.15% | 106.01 | +0.85% | 1.06 | — | — | — |
+| CVI | 3 | ariel_hernandez, jeff_sun, qullamaggie | 58.37 | +2.73% | 55.92 | -4.20% | 1.04 | 77.5 | — | — |
+| KOD | 3 | ariel_hernandez, peoplewish, qullamaggie | 99.18 | -1.22% | 97.62 | -1.57% | 0.69 | 149.0 | -0.1 | wicky_breakout |
+| ABCL | 3 | ariel_hernandez, peoplewish, qullamaggie | 12.27 | -6.19% | 11.12 | -9.37% | 0.89 | 110.5 | -2.9 | wicky_breakout |
+| MTZ | 3 | jeff_sun, peoplewish, stockbee | 186.06 | +4.63% | 193.77 | +4.14% | 1.61 | — | -10.1 | ma_shrink_5d |
 
 Eleven names cleared three independent stylist screens. The cluster is thematic rather than random: five of the eleven (HTFL, CAI, QLYS, MRNA, ABCL, KOD, CVI) carry a Health Care or Energy theme-leadership tag, which is exactly what the top-down theme ranking produced — the tiers and the theme funnel agree.
 
@@ -78,18 +78,18 @@ Eleven names cleared three independent stylist screens. The cluster is thematic 
 
 | Ticker | Stylists | Stylist names | Close 10-30 | Chg 10-30 | Close 11-02 | Chg 11-02 | RVOL 11-02 | RS 3M % | Vel 14D % | Flags |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CDNA | 3 |  ,  , ', ', ', ', ', ', ,, ,, a, a, b, c, e, e, e, e, e, g, g, h, i, i, k, l, l, l, m, o, o, p, p, q, s, s, t, u, w, {, } | 87.41 | +22.22% | 85.88 | -1.75% | 1.71 | 82.7 | 38.5 | — |
-| HTFL | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, a, a, d, e, e, e, e, e, e, g, g, h, h, i, i, i, l, l, l, l, m, n, n, o, p, p, q, r, r, s, u, w, z, {, } | 59.05 | -2.45% | 54.49 | -7.72% | 0.96 | 120.7 | 16.8 | ma_shrink_5d, wicky_breakout |
-| CAI | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, a, a, d, e, e, e, e, e, e, g, g, h, h, i, i, i, l, l, l, l, m, n, n, o, p, p, q, r, r, s, u, w, z, {, } | 34.33 | -5.01% | 32.10 | -6.50% | 1.10 | 110.4 | 15.6 | ma_shrink_5d, wicky_breakout |
-| QLYS | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, e, e, e, e, f, f, g, g, h, i, i, j, l, l, l, m, n, o, p, p, q, s, s, u, u, w, {, } | 224.12 | -2.68% | 207.60 | -7.37% | 1.00 | 44.7 | 13.9 | ma_shrink_5d, wicky_breakout |
-| PURR | 3 |  ,  , ', ', ', ', ', ', ,, ,, a, a, b, c, e, e, e, e, e, g, g, h, i, i, k, l, l, l, m, o, o, p, p, q, s, s, t, u, w, {, } | 11.01 | -10.41% | 9.71 | -11.81% | 0.97 | — | 5.9 | — |
-| MRNA | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, a, a, d, e, e, e, e, e, e, g, g, h, h, i, i, i, l, l, l, l, m, n, n, o, p, p, q, r, r, s, u, w, z, {, } | 221.72 | -0.47% | 220.83 | -0.40% | 0.44 | 302.1 | 3.7 | wicky_breakout |
-| NOW | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, b, c, e, e, e, e, f, f, g, g, i, j, k, l, l, m, n, o, q, s, s, t, u, u, {, } | 105.12 | -4.15% | 106.01 | +0.85% | 1.06 | — | — | — |
-| CVI | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, _, a, a, a, a, d, e, e, e, e, e, f, f, g, g, h, i, i, j, l, l, l, m, n, n, n, q, r, r, s, u, u, z, {, } | 58.37 | +2.73% | 55.92 | -4.20% | 1.04 | 77.5 | — | — |
-| KOD | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, a, a, d, e, e, e, e, e, e, g, g, h, h, i, i, i, l, l, l, l, m, n, n, o, p, p, q, r, r, s, u, w, z, {, } | 99.18 | -1.22% | 97.62 | -1.57% | 0.69 | 149.0 | -0.1 | wicky_breakout |
-| ABCL | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, a, a, a, a, d, e, e, e, e, e, e, g, g, h, h, i, i, i, l, l, l, l, m, n, n, o, p, p, q, r, r, s, u, w, z, {, } | 12.27 | -6.19% | 11.12 | -9.37% | 0.89 | 110.5 | -2.9 | wicky_breakout |
-| MTZ | 3 |  ,  , ', ', ', ', ', ', ,, ,, _, b, c, e, e, e, e, e, f, f, h, i, j, k, l, n, o, o, p, p, s, s, s, t, u, w, {, } | 186.06 | +4.63% | 193.77 | +4.14% | 1.61 | — | -10.1 | ma_shrink_5d |
-| LQDA | 2 |  , ', ', ', ', ,, a, a, e, e, e, g, g, h, i, i, l, l, l, m, o, p, p, q, s, u, w, {, } | 45.06 | +0.16% | 41.85 | -7.12% | 0.79 | -46.3 | 62.8 | ma_shrink_5d, wicky_breakout |
+| CDNA | 3 | peoplewish, qullamaggie, stockbee | 87.41 | +22.22% | 85.88 | -1.75% | 1.71 | 82.7 | 38.5 | — |
+| HTFL | 3 | ariel_hernandez, peoplewish, qullamaggie | 59.05 | -2.45% | 54.49 | -7.72% | 0.96 | 120.7 | 16.8 | ma_shrink_5d, wicky_breakout |
+| CAI | 3 | ariel_hernandez, peoplewish, qullamaggie | 34.33 | -5.01% | 32.10 | -6.50% | 1.10 | 110.4 | 15.6 | ma_shrink_5d, wicky_breakout |
+| QLYS | 3 | jeff_sun, peoplewish, qullamaggie | 224.12 | -2.68% | 207.60 | -7.37% | 1.00 | 44.7 | 13.9 | ma_shrink_5d, wicky_breakout |
+| PURR | 3 | peoplewish, qullamaggie, stockbee | 11.01 | -10.41% | 9.71 | -11.81% | 0.97 | — | 5.9 | — |
+| MRNA | 3 | ariel_hernandez, peoplewish, qullamaggie | 221.72 | -0.47% | 220.83 | -0.40% | 0.44 | 302.1 | 3.7 | wicky_breakout |
+| NOW | 3 | jeff_sun, qullamaggie, stockbee | 105.12 | -4.15% | 106.01 | +0.85% | 1.06 | — | — | — |
+| CVI | 3 | ariel_hernandez, jeff_sun, qullamaggie | 58.37 | +2.73% | 55.92 | -4.20% | 1.04 | 77.5 | — | — |
+| KOD | 3 | ariel_hernandez, peoplewish, qullamaggie | 99.18 | -1.22% | 97.62 | -1.57% | 0.69 | 149.0 | -0.1 | wicky_breakout |
+| ABCL | 3 | ariel_hernandez, peoplewish, qullamaggie | 12.27 | -6.19% | 11.12 | -9.37% | 0.89 | 110.5 | -2.9 | wicky_breakout |
+| MTZ | 3 | jeff_sun, peoplewish, stockbee | 186.06 | +4.63% | 193.77 | +4.14% | 1.61 | — | -10.1 | ma_shrink_5d |
+| LQDA | 2 | peoplewish, qullamaggie | 45.06 | +0.16% | 41.85 | -7.12% | 0.79 | -46.3 | 62.8 | ma_shrink_5d, wicky_breakout |
 
 Stalk (Master ∩ within 2% of the 10/20-DMA): **59** names — see `stalk.md`.
 Master (deduped union, capped at 200): **200** names — see `master.md`.
@@ -98,23 +98,23 @@ Master (deduped union, capped at 200): **200** names — see `master.md`.
 
 ### Stockbee / Bonde — 4% breakout · EP9M · anticipation coil
 
-- File: `stockbee.md` · 0 names in the merged output.
+- File: `stockbee.md` · 112 names in the merged output.
 
 ### Qullamägi — RS leaders · EP gap · 5-day gainers/losers
 
-- File: `qullamaggie.md` · 0 names in the merged output.
+- File: `qullamaggie.md` · 86 names in the merged output.
 
 ### peoplewish — ADR ≥ 5% · $50M ADV · 14-day velocity
 
-- File: `peoplewish.md` · 0 names in the merged output.
+- File: `peoplewish.md` · 93 names in the merged output.
 
 ### Jeff Sun — CANSLIM rebuild (EPS + revenue growth) and VCP compression
 
-- File: `jeff-sun.md` · 0 names in the merged output.
+- File: `jeff-sun.md` · 27 names in the merged output.
 
 ### Ariel Hernandez — theme → group → leaders
 
-- File: `ariel-hernandez.md` · 0 names in the merged output.
+- File: `ariel-hernandez.md` · 22 names in the merged output.
 
 ## Parabolic candidates
 
