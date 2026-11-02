@@ -1,77 +1,23 @@
 {
-  "audit_date_et": "2026-10-31",
-  "audit_run_et": "2026-11-01T07:03:52-05:00",
-  "origin_main_sha": "b95d0ae91910fca397f7ce102c1542306fac9ee0",
-  "due": 1,
-  "delivered": 1,
+  "audit_date_et": "2026-11-01",
+  "audit_run_et": "2026-11-02T07:01:00-04:00",
+  "origin_main_sha": "9666a41",
+  "due": 3,
+  "delivered": 3,
   "missing": 0,
   "stale_routines": 0,
   "never_delivered": [],
-  "not_yet_fired": [
-    "22-weekly-market-recap-preview",
-    "14-macro-calendar-week-ahead"
-  ],
+  "not_yet_fired": [],
+  "written_off": [],
   "gaps": [],
-  "not_due": [
-    {"routine": "19-earnings-reminder-daily", "reason": "Schedule '0 6 * * 1-5' (Mon-Fri); audit date 2026-10-31 is a Saturday."},
-    {"routine": "02-asia-pre-market-reactions", "reason": "Schedule '30 6 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "15-earnings-reaction-scanner", "reason": "Schedule '0 8 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "26-agentic-pre-market-brief", "reason": "Schedule '30 8 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "08-pre-market-gapper", "reason": "Schedule '30 8 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "25-ntrt-gap-brief-daily", "reason": "Schedule '0 9 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "07-focus-rvol-09:45", "reason": "Schedule '45 9 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "12-cross-asset-correlation", "reason": "Schedule '0 10 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "10-breadth-snapshot", "reason": "Schedule '0 14 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "17-us-stocks-in-play", "reason": "Schedule '50 15 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "04-reversal-bullish-3:55", "reason": "Schedule '55 15 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "20-eod-watchlist-csv", "reason": "Schedule '0 16 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "05-eod-international-daily", "reason": "Schedule '30 16 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "16-unusual-options-flow", "reason": "Schedule '35 16 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "09-daily-sweep-18:30", "reason": "Schedule '30 18 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "23-agentic-post-market-brief", "reason": "Schedule '30 22 * * 1-5' (Mon-Fri); audit date is a Saturday."},
-    {"routine": "13-macro-calendar-midweek", "reason": "Schedule '0 14 * * 3' (Wednesday); audit date is a Saturday."},
-    {"routine": "14-macro-calendar-week-ahead", "reason": "Schedule '0 15 * * 0' (Sunday); first fire under the current task is 2026-11-01 - not_yet_fired, not a gap."},
-    {"routine": "22-weekly-market-recap-preview", "reason": "Schedule '47 17 * * 0' (Sunday); first fire under the current schedule is 2026-11-01 - not_yet_fired, not a gap."}
+  "roster_desync": [],
+  "notes": [
+    "Audit date 2026-11-01 was a Sunday: only the Sunday-due routines (01, 14, 22) were due; Mon-Fri routines are weekend_no_us_session, not findings.",
+    "All three Sunday artifacts present and non-stub: mcp-health/2026-W44.md (8364 B), macro-calendar/2026-11-01-week-ahead.md (14422 B), weekly/2026-11-01-preview.md (23462 B).",
+    "#14 and #22 both hit their first fire under the current schedule on 2026-11-01 and both delivered, so not_yet_fired is empty.",
+    "STEP 4b stale check: 20 routines all within tolerance (max age 4d).",
+    "STEP 4c-0 roster check: all 22 roster schedules match tools/schedule-ground-truth.json - no ROSTER_DESYNC.",
+    "master mirror push skipped: origin/master is not a fast-forward of origin/main (it carries its own merge commit), so the pointer was left untouched."
   ],
-  "delivered_detail": [
-    {"routine": "06-pattern-study-backlog", "path": "daily-screens/2026-10-31/weekly-ipo.md", "commit": "4d4b5d9", "size_bytes": 7554, "note": "Only Saturday-due routine on 2026-10-31. Commit also carried peoplewish-backlog.md, peoplewish-backlog-run-full.json and weekly-high-short-float.md for the same date - all four belong to this one commit."}
-  ],
-  "stale_check": {
-    "method": "STEP 4b absolute check over all 20 artifact-producing routines against origin/main",
-    "stale": [],
-    "detail": [
-      {"routine": "06-pattern-study-backlog", "last": "2026-10-31", "age_days": 0, "tolerance": 7},
-      {"routine": "19-earnings-reminder-daily", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
-      {"routine": "02-asia-pre-market-reactions", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
-      {"routine": "25-ntrt-gap-brief-daily", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
-      {"routine": "10-breadth-snapshot", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
-      {"routine": "17-us-stocks-in-play", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
-      {"routine": "04-reversal-bullish-3:55", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
-      {"routine": "20-eod-watchlist-csv", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
-      {"routine": "05-eod-international-daily", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
-      {"routine": "16-unusual-options-flow", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
-      {"routine": "09-daily-sweep-18:30", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
-      {"routine": "23-agentic-post-market-brief", "last": "2026-10-30", "age_days": 1, "tolerance": 5},
-      {"routine": "15-earnings-reaction-scanner", "last": "2026-10-29", "age_days": 2, "tolerance": 5},
-      {"routine": "26-agentic-pre-market-brief", "last": "2026-10-29", "age_days": 2, "tolerance": 5},
-      {"routine": "08-pre-market-gapper", "last": "2026-10-28", "age_days": 3, "tolerance": 5},
-      {"routine": "07-focus-rvol-09:45", "last": "2026-10-28", "age_days": 3, "tolerance": 5},
-      {"routine": "12-cross-asset-correlation", "last": "2026-10-28", "age_days": 3, "tolerance": 5},
-      {"routine": "13-macro-calendar-midweek", "last": "2026-10-28", "age_days": 3, "tolerance": 7}
-    ]
-  },
-  "watch_items": [
-    {
-      "routines": ["07-focus-rvol-09:45", "08-pre-market-gapper", "12-cross-asset-correlation"],
-      "note": "Three routines have not delivered since 2026-10-28, i.e. they missed both the 2026-10-29 and 2026-10-30 weekday fires. Their causes were already reported by the 2026-10-31 audit (07 push failed with a healthy session; 08 and 12 quota wall 2067). Not a gap for the 2026-10-31 audit date - they are Mon-Fri routines and 2026-10-31 is a Saturday - but their age crosses the 5-day stale tolerance on 2026-11-02 unless Monday 2026-11-02 lands. The 2026-10-30 quota wall is the suspected common cause; a routine that never fires at all looks identical from the outside."
-    },
-    {
-      "routines": ["15-earnings-reaction-scanner", "26-agentic-pre-market-brief"],
-      "note": "Last artifacts are 2026-10-29; their 2026-10-30 fires were quota casualties per the previous audit. They are also Monday-only drift-sensitive tasks (the day-of-week field was corrupted to '1' by a web-GUI save on 2026-10-31 and repaired before Monday) - live schedules were re-verified as '1-5' at 2026-11-01 07:03 ET."
-    }
-  ],
-  "schedule_drift_note": "All 23 live schedules were re-read from cron_read view=list at 2026-11-01 07:03 ET and every weekday routine now shows '1-5' (previously narrowed to '1'). The 2026-10-31 05:40-09:08 ET GUI corruption of fourteen routines was repaired before Monday 2026-11-02, so no routine misses a fire on account of it. Weekly routines are intact: 06 = '0 15 * * 6', 13 = '0 14 * * 3', 14 = '0 15 * * 0', 22 = '47 17 * * 0', 01 = '0 2 * * 0'. Every routine's timezone is America/New_York - no Etc/GMT-7 default.",
-  "verification_deadline": "macro-calendar/2026-11-01-week-ahead.md must exist on origin/main after 2026-11-01 16:00 ET (cron #14's first Sunday fire under task 457172664209611). It has not fired yet at audit time (07:03 ET). If it is absent after 16:00 ET, the cron-#22 failure mode is recurring and must be escalated. Likewise weekly/2026-11-01-preview.md after 2026-11-01 17:47 ET for cron #22.",
-  "master_mirror": "skipped - origin/master has diverged from origin/main (master holds merge commit 8bdb2d0 'merge main -> master: cron #17 us-stocks-in-play 2026-10-30', which is not on main, so a fast-forward is impossible). master is also missing 82 files that main carries. The only path present in master but absent from main is earnings/IMPROVEMENTS-cron19.md, which was intentionally dropped from main by commit 1094edc ('refs: point to cron #19 review docs in the migration repo; drop them from the artifact sink'). No artifact was modified; only the branch pointer was left alone.",
   "audit_status": "ok"
 }
