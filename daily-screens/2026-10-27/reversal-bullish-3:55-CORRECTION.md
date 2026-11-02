@@ -232,6 +232,26 @@ tie-breaker promote one.
 | Yahoo JSON | `query1/query2.finance.yahoo.com` | ok (200) | no longer 429 as of 2026-10-31 |
 | Finviz screener | `finviz.com/screener.ashx` | **403** | unchanged — egress-IP block, not a browser issue |
 
+## IMPLEMENTED — 2026-11-02
+
+The corrected gate table above is now **live in the skill**, not just proposed:
+
+| File | Change |
+|---|---|
+| `cloud-prompts/skills/stock-screener-suite/SKILL.md` (§5) | criteria table replaced with the published gates (DR ≥ 0.60, hammer test, washout decline, $5 floor, 20-session trend lag); the tail:body ratio demoted to a description; the doji stop rule, the next-session resolution rule and the T+1 entry-window caveat added |
+| `cloud-prompts/skills/stock-screener-suite/references/filters.md` (§L) | same gate table in SQL form, with the published source quoted |
+| `cloud-prompts/skills/stock-screener-suite/scripts/screen.py` | `emit_reversal_bullish_sql()` rewritten as the canonical T+1-safe + Bonde-strict query (60-day window, `rn=1` per symbol, `shibui.valuation` reduced to each symbol's latest row, every gate applied in the query, doji-aware stop) |
+| `cloud-prompts/cron-prompts/04-reversal-bullish-3:55.md` | parity block naming the four changed gates and the two steps the SQL cannot do |
+
+Verified end-to-end after the push: the published `screen.py` fetched from raw.githubusercontent emits
+SQL that returns **CELH and CPNG** on the 2026-10-26 signal bar (HIMS and CBRE rejected), matching
+the Python reference implementation; `scripts/smoke_test.py` passes in full.
+
+**No platform prompt change was needed.** The deployed cron #04 prompt carries no inline gate list —
+it fetches the skill spec and says "follow the procedure verbatim", so the corrected gates flow from
+the skill. The deployed prompt was deliberately left untouched rather than hand-pasted through
+`cron_update`.
+
 ## Method
 
 - Primary source for this re-analysis: shibui via `mcp_bridge.py` (JSON-RPC over HTTPS), 6 queries.
