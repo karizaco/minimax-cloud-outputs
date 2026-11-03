@@ -162,7 +162,7 @@ Largest mover per region among liquid names:
 
 | Source | Query / URL | Status | Result |
 |---|---|---|---|
-| TradingView scanner (per-country) | `POST https://scanner.tradingview.com/{australia,japan,taiwan,canada,germany,france,italy,spain,netherlands,belgium,austria,portugal,ireland,finland,denmark,greece}/scan` with `country` + `type=stock` | `ok` | 16/16 regions HTTP 200, 14,398 stock rows pulled (0.07–1.94 s per call, no rate limit) |
+| TradingView scanner (per-country) | `POST https://scanner.tradingview.com/{australia,japan,taiwan,canada,germany,france,italy,spain,netherlands,belgium,austria,portugal,ireland,finland,denmark,greece}/scan` with `country` + `type=stock` | `ok` | 16/16 regions HTTP 200, 18,290 stock rows pulled (14,398 for the 15 written regions + 3,892 for Japan, which had no session); 0.07–1.94 s per call, no rate limit |
 | TradingView scanner (columns) | `name,description,close,open,high,low,change,change_abs,volume,market_cap_basic,exchange,currency,sector,price_earnings_ttm,type,country,pricescale,minmov` | `ok` | 18 columns for every row; the response carries no `columns` array, so rows are zipped positionally against the request list |
 | Yahoo Finance chart API (index levels) | `query1.finance.yahoo.com/v8/finance/chart/{^AXJO,^AORD,^TWII,^GSPTSE,^GDAXI,^FCHI,FTSEMIB.MI,^IBEX,^AEX,^BFX,^ATX,PSI20.LS,^ISEQ,^OMXH25,^OMXC20,^N225,^STOXX}` | `ok` | 16/17 series returned a 3 November bar (local-date conversion via `gmtoffset`); `^TWII`'s bar still serves 2 November and `^OMXC20` returns a single bar, so both were taken from the Yahoo quote page instead |
 | Yahoo Finance quote pages (verification) | `finance.yahoo.com/quote/{%5ETWII,%5EOMXC20}/` via `web_fetch` | `ok` | TAIEX 43,307.54 (prev 44,920.14); OMX Copenhagen 20 1,648.67 (prev 1,646.11) |
@@ -181,7 +181,7 @@ Largest mover per region among liquid names:
 
 Schema: `date,ticker,name,open,high,low,close,volume,change_pct,market_cap,pe_ratio,sector,currency,exchange`. `ticker` is `EXCHANGE:symbol` (e.g. `XETR:SAP`, `TWSE:2330`, `TSX:RY`). Empty cells mean the source had no value — nothing is imputed. `market_cap` is USD; the prices are in the listing currency named by `currency`.
 
-Integrity checks passed on all 15 files: no non-positive closes, no `high < max(open, close)` or `low > min(open, close)` violations, no `N/A` literals, every row dated 2026-11-03, every row carrying a positive USD market cap. 3,045 of the 3,057 tickers that exist in both today's and 2 November's file chain exactly from the prior close through `change_pct`; the 12 that do not are the stale-change carry-over rows listed in `_carryover.json`.
+Integrity checks passed on all 15 files: no non-positive closes, no `high < max(open, close)` or `low > min(open, close)` violations, no `N/A` literals, every row dated 2026-11-03, every row carrying a positive USD market cap. 3,045 of the 3,057 tickers that exist in both today's and 2 November's file chain from the prior close through `change_pct` (tolerance: the larger of 0.02 price units and 0.1% of price); **all 12 that do not are carry-over rows whose `change_pct` is a stale leftover**, and two further stale-change rows fall inside the tolerance.
 
 ---
 
