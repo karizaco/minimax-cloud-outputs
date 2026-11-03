@@ -1,0 +1,1972 @@
+{
+ "au": [
+  {
+   "ticker": "ASX:AXR",
+   "name": "Axiant Resources Limited",
+   "exchange": "ASX",
+   "reason": "no_market_cap",
+   "close": 0.135,
+   "volume": 35433
+  },
+  {
+   "ticker": "ASX:MNV",
+   "name": "Monvia Limited",
+   "exchange": "ASX",
+   "reason": "no_market_cap",
+   "close": 0.96,
+   "volume": 12499
+  },
+  {
+   "ticker": "ASX:NHU",
+   "name": "Neu Horizon Uranium Limited",
+   "exchange": "ASX",
+   "reason": "no_market_cap",
+   "close": 0.063,
+   "volume": 83081
+  },
+  {
+   "ticker": "ASX:DLY",
+   "name": "Daly Resources Limited",
+   "exchange": "ASX",
+   "reason": "no_market_cap",
+   "close": 0.105,
+   "volume": 66545
+  }
+ ],
+ "tw": [
+  {
+   "ticker": "TPEX:7921",
+   "name": "Recharge Power Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 74.3,
+   "volume": 10747
+  },
+  {
+   "ticker": "TPEX:7843",
+   "name": "EmBestor Technology, Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 94.8,
+   "volume": 42962
+  },
+  {
+   "ticker": "TPEX:5235",
+   "name": "Kentec, Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 48.05,
+   "volume": 194899
+  },
+  {
+   "ticker": "TPEX:7947",
+   "name": "PieceMakers Technology, Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 552,
+   "volume": 133305
+  },
+  {
+   "ticker": "TPEX:7826",
+   "name": "Twister5 Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 30.85,
+   "volume": 5300
+  },
+  {
+   "ticker": "TPEX:7889",
+   "name": "TSA international Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 64.6,
+   "volume": 8250
+  },
+  {
+   "ticker": "TPEX:7771",
+   "name": "Greenbase Technology Corp.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 45.9,
+   "volume": 8110
+  },
+  {
+   "ticker": "TPEX:7913",
+   "name": "QBit Semiconductor Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 268,
+   "volume": 24906
+  },
+  {
+   "ticker": "TPEX:7784",
+   "name": "Anbogen Therapeutics, Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 9.72,
+   "volume": 279267
+  },
+  {
+   "ticker": "TPEX:7927",
+   "name": "Linkage Electric Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 205,
+   "volume": 21605
+  },
+  {
+   "ticker": "TPEX:7716",
+   "name": "ITI International Transportation, Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 23.95,
+   "volume": 32449
+  },
+  {
+   "ticker": "TPEX:2940",
+   "name": "Sun Own Industrial Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 23.8,
+   "volume": 25000
+  },
+  {
+   "ticker": "TPEX:7849",
+   "name": "Shine Passion Engineering Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 164.5,
+   "volume": 5128
+  },
+  {
+   "ticker": "TPEX:7779",
+   "name": "Carry International Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 20.4,
+   "volume": 9000
+  },
+  {
+   "ticker": "TPEX:7758",
+   "name": "Keelgoal Energy Co Ltd",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 24.8,
+   "volume": 17050
+  },
+  {
+   "ticker": "TPEX:7965",
+   "name": "Kuen Tong Technology Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 607,
+   "volume": 175042
+  },
+  {
+   "ticker": "TPEX:7891",
+   "name": "BoYen Therapeutics, Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 23.45,
+   "volume": 4020
+  },
+  {
+   "ticker": "TPEX:2760",
+   "name": "Chu Yu Hsiang Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 5,
+   "volume": 37076
+  },
+  {
+   "ticker": "TPEX:7936",
+   "name": "Grenergy Enterprise Co. Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 15.8,
+   "volume": 82529
+  },
+  {
+   "ticker": "TPEX:7946",
+   "name": "Guang Teng Renewable Energy Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 31,
+   "volume": 7976
+  },
+  {
+   "ticker": "TPEX:7831",
+   "name": "Jesper Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 38.5,
+   "volume": 226
+  },
+  {
+   "ticker": "TPEX:7885",
+   "name": "Honlynn Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 23.55,
+   "volume": 12001
+  },
+  {
+   "ticker": "TPEX:7872",
+   "name": "Green Solution Technology Co",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 37.35,
+   "volume": 46964
+  },
+  {
+   "ticker": "TPEX:7963",
+   "name": "Tecobar Technology Co. Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 184.5,
+   "volume": 10211
+  },
+  {
+   "ticker": "TPEX:6963",
+   "name": "Texture Maker Enterprise Co Ltd",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 24.8,
+   "volume": 100
+  },
+  {
+   "ticker": "TPEX:6604",
+   "name": "Juoku Technology Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 24.05,
+   "volume": 134879
+  },
+  {
+   "ticker": "TPEX:7919",
+   "name": "Altasec Technology Corporation",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 36.6,
+   "volume": 35379
+  },
+  {
+   "ticker": "TPEX:7928",
+   "name": "AuthenX Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 196.5,
+   "volume": 160570
+  },
+  {
+   "ticker": "TPEX:7918",
+   "name": "XALLOY Advanced Materials Corporation",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 571,
+   "volume": 26426
+  },
+  {
+   "ticker": "TPEX:7418",
+   "name": "JG-SSG Co Ltd",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 67.3,
+   "volume": 7122
+  },
+  {
+   "ticker": "TPEX:6660",
+   "name": "HMD Biomedical, Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 10.6,
+   "volume": 13054
+  },
+  {
+   "ticker": "TPEX:6972",
+   "name": "Protrade Applied Materials Corp.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 23.3,
+   "volume": 1231
+  },
+  {
+   "ticker": "TPEX:6898",
+   "name": "ChainSea Information Integrated Co Ltd",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 71.6,
+   "volume": 488931
+  },
+  {
+   "ticker": "TPEX:7945",
+   "name": "Qsan Technology, Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 202.5,
+   "volume": 4415
+  },
+  {
+   "ticker": "TPEX:7782",
+   "name": "Speeding Rocket Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 25,
+   "volume": 9100
+  },
+  {
+   "ticker": "TPEX:6999",
+   "name": "Han Biomedical, Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 26.2,
+   "volume": 517
+  },
+  {
+   "ticker": "TPEX:7926",
+   "name": "Chunghwa Leading Photonics Tech Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 443.5,
+   "volume": 50029
+  },
+  {
+   "ticker": "TPEX:3194",
+   "name": "Hypernet Co Ltd",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 33,
+   "volume": 508
+  },
+  {
+   "ticker": "TPEX:7915",
+   "name": "U-LEAM, Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 279.5,
+   "volume": 39242
+  },
+  {
+   "ticker": "TPEX:7841",
+   "name": "CyberSoft Digital Services Corporation",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 25.4,
+   "volume": 3175
+  },
+  {
+   "ticker": "TPEX:7957",
+   "name": "TiMOTION Technology Co. Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 168.5,
+   "volume": 69090
+  },
+  {
+   "ticker": "TPEX:6563",
+   "name": "Image Match Design, Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 18.4,
+   "volume": 143434
+  },
+  {
+   "ticker": "TPEX:7706",
+   "name": "Acer Synergy Manpower Corp.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 31,
+   "volume": 100
+  },
+  {
+   "ticker": "TPEX:7422",
+   "name": "Smobio Technology Inc",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 28.5,
+   "volume": 18710
+  },
+  {
+   "ticker": "TPEX:7873",
+   "name": "Raytek Semiconductor, Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 109.5,
+   "volume": 277886
+  },
+  {
+   "ticker": "TPEX:7745",
+   "name": "Red Sunrise Co Ltd",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 12.9,
+   "volume": 1
+  },
+  {
+   "ticker": "TPEX:7899",
+   "name": "Certain Micro Application Technology Inc",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 303,
+   "volume": 140924
+  },
+  {
+   "ticker": "TPEX:7907",
+   "name": "Laienparts Technology Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 230,
+   "volume": 68873
+  },
+  {
+   "ticker": "TPEX:7949",
+   "name": "Yao Kuan Construction Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 59.6,
+   "volume": 201
+  },
+  {
+   "ticker": "TPEX:7735",
+   "name": "Taiwan AI Cloud Corporation",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 194,
+   "volume": 11505
+  },
+  {
+   "ticker": "TPEX:7942",
+   "name": "Toyo Automation Co. Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 498,
+   "volume": 230629
+  },
+  {
+   "ticker": "TPEX:7898",
+   "name": "InPsytech, Inc.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 355,
+   "volume": 60385
+  },
+  {
+   "ticker": "TPEX:7748",
+   "name": "Jollify Creative Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 13.2,
+   "volume": 1
+  },
+  {
+   "ticker": "TPEX:7904",
+   "name": "Citiesocial Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 10.8,
+   "volume": 10140
+  },
+  {
+   "ticker": "TPEX:7914",
+   "name": "Solming Green Energy Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 30.5,
+   "volume": 2017
+  },
+  {
+   "ticker": "TPEX:7847",
+   "name": "Li Yu Chu Co., Ltd.",
+   "exchange": "TPEX",
+   "reason": "no_market_cap",
+   "close": 15.3,
+   "volume": 22350
+  }
+ ],
+ "ca": [
+  {
+   "ticker": "TSX:BRF.PR.A",
+   "name": "Brookfield Renewable Power Preferred Equity Inc Pref Shs A Series 1",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 24.07,
+   "volume": 0
+  },
+  {
+   "ticker": "NEO:SCRI",
+   "name": "Silver Crown Royalties Inc",
+   "exchange": "NEO",
+   "reason": "no_market_cap",
+   "close": 39.5,
+   "volume": 10847
+  },
+  {
+   "ticker": "TSXV:MDK.P",
+   "name": "MDK Acquisition, Inc.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.01,
+   "volume": 564
+  },
+  {
+   "ticker": "TSXV:DRAX.P",
+   "name": "Draxos Capital Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.17,
+   "volume": 17000
+  },
+  {
+   "ticker": "TSX:CIU.PR.C",
+   "name": "CU Inc Cum Red Pfd Registered Shs Series 4",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 20.04,
+   "volume": 100
+  },
+  {
+   "ticker": "TSX:BPS.PR.C",
+   "name": "Brookfield Property Split Corp Pfd Shs Series 4",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 25.15,
+   "volume": 0
+  },
+  {
+   "ticker": "TSX:PWF.PR.H",
+   "name": "Power Financial Corp 5 3/4 % Non Cum Pfd Shs Series H",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 24.58,
+   "volume": 0
+  },
+  {
+   "ticker": "TSX:PVS.PR.L",
+   "name": "Partners Value Split Corp. 5.5 % Cum Red Pfd Registered Shs -AA- 2024-30.06.30 Class AA Series 14",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 25.25,
+   "volume": 6118
+  },
+  {
+   "ticker": "TSX:FTN.PR.A",
+   "name": "Financial 15 Split Corp 7.25 % Pfd Registered Shs 2003-1.12.20 Ext to 01.12.25",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.85,
+   "volume": 42318
+  },
+  {
+   "ticker": "TSX:PVS.PR.N",
+   "name": "Partners Value Split Corp. Pfd Registered Shs -AA- Series 18",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 25.02,
+   "volume": 47137
+  },
+  {
+   "ticker": "TSXV:NICE",
+   "name": "Ni-Co Energy Inc.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.405,
+   "volume": 7000
+  },
+  {
+   "ticker": "TSX:BK.PR.A",
+   "name": "Canadian Banc Corp Pfd Shs 2005-1.12.18 Fltg Rt",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.39,
+   "volume": 101424
+  },
+  {
+   "ticker": "TSXV:INXS",
+   "name": "GoldInxs Mining Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.08,
+   "volume": 11102
+  },
+  {
+   "ticker": "TSXV:HRC.P",
+   "name": "Hoshi Resource Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.03,
+   "volume": 10000
+  },
+  {
+   "ticker": "TSX:XMF.PR.C",
+   "name": "M-Split Corp Pfd Shs -II- 2010-1.12.14",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 5.5,
+   "volume": 0
+  },
+  {
+   "ticker": "TSX:BPO.PR.G",
+   "name": "Brookfield Office Properties Inc. Cum Red Pref Registered Shs -AAA- Series -GG-",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 23.89,
+   "volume": 3090
+  },
+  {
+   "ticker": "TSXV:ATLH.P",
+   "name": "Atlantic Horizon Capital Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.02,
+   "volume": 47572
+  },
+  {
+   "ticker": "TSXV:PVF.PR.V",
+   "name": "Partners Value Investments L.P. Pfd Registered Shs Series 1",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.77,
+   "volume": 506
+  },
+  {
+   "ticker": "TSX:DFN.PR.A",
+   "name": "Dividend 15 Split Corp. 7 % (Ex 5.5 %) Pfd Registered Shs 2004-1.12.19 Ext 01.12.29",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.88,
+   "volume": 47134
+  },
+  {
+   "ticker": "TSX:BPO.PR.P",
+   "name": "Brookfield Office Properties Inc. Cum Pfd Registered Shs -AAA- Series P",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 21.84,
+   "volume": 9200
+  },
+  {
+   "ticker": "TSX:EIT.PR.B",
+   "name": "Canoe EIT Income Fund 4.8 % Cum Red Perp Pfd Units Series 2 Reg S",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 25.45,
+   "volume": 550
+  },
+  {
+   "ticker": "TSXV:SHLL.P",
+   "name": "Shellron Capital Ltd.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.055,
+   "volume": 475
+  },
+  {
+   "ticker": "TSXV:TAG",
+   "name": "TruSilver Metals Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.38,
+   "volume": 49673
+  },
+  {
+   "ticker": "TSXV:JAY",
+   "name": "Blue Jay Gold Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.75,
+   "volume": 61120
+  },
+  {
+   "ticker": "TSX:PVS.PR.M",
+   "name": "Partners Value Split Corp. Cum Red Pfd Registered Shs -AA- 2025- Class AA Series 15",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 25.05,
+   "volume": 1940
+  },
+  {
+   "ticker": "TSXV:JUNO",
+   "name": "Juno Industries Ltd.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.85,
+   "volume": 57751
+  },
+  {
+   "ticker": "TSX:PWF.PF.A",
+   "name": "Power Financial Corporation 4.50 % Non-Cum Red 1st Pfd Registered Shs Series -23-",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 19.65,
+   "volume": 1901
+  },
+  {
+   "ticker": "TSX:PWF.PR.R",
+   "name": "Power Financial Corp 5 1/2 % Non Cum 1st Pfd Shs Series R",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 23.7,
+   "volume": 715
+  },
+  {
+   "ticker": "TSX:XTD.PR.A",
+   "name": "TDb Split Corp. Priority Equity Shs 2007-1.12.19",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 11.35,
+   "volume": 300
+  },
+  {
+   "ticker": "TSX:DF.PR.A",
+   "name": "Dividend 15 Split Corp II 7 % Pfd Shs 2006-1.12.29",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 11.43,
+   "volume": 31900
+  },
+  {
+   "ticker": "TSXV:GFTA",
+   "name": "Grafta Nanotech Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.115,
+   "volume": 20000
+  },
+  {
+   "ticker": "TSX:LCS.PR.A",
+   "name": "Brompton Lifeco Split Corp 7 % Pfd Shs A 2007-29.4.29",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.65,
+   "volume": 9301
+  },
+  {
+   "ticker": "TSX:BRF.PR.C",
+   "name": "Brookfield Renewable Power Preferred Equity Inc Cum Red Pfd Registered Shs A Series 3",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 25.95,
+   "volume": 0
+  },
+  {
+   "ticker": "TSXV:EVNT",
+   "name": "Eventer Technologies Ltd",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.95,
+   "volume": 200
+  },
+  {
+   "ticker": "TSX:PWF.PR.K",
+   "name": "Power Financial Corp 4.95 % Non Cum Pfd Shs Series K",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 21.39,
+   "volume": 0
+  },
+  {
+   "ticker": "TSX:PVS.PR.J",
+   "name": "Partners Value Split Corp. 4.40 % Cum Red Pfd Registered Shs -AA- 2021-29.02.28 Series -12- Reg S",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 25.03,
+   "volume": 483
+  },
+  {
+   "ticker": "TSXV:RTO.P",
+   "name": "Chrysalis 12, Inc.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.1,
+   "volume": 3000
+  },
+  {
+   "ticker": "TSX:BPO.PR.I",
+   "name": "Brookfield Office Properties Inc. Cum Conv Red Perp Pref Registered AAA Series II",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 22.7,
+   "volume": 700
+  },
+  {
+   "ticker": "TSXV:AAA.P",
+   "name": "First Tidal Acquisition Corp. Class A",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.06,
+   "volume": 200
+  },
+  {
+   "ticker": "TSXV:MFA.P",
+   "name": "Mayfair Acquisition Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.05,
+   "volume": 2800
+  },
+  {
+   "ticker": "TSX:PWF.PR.G",
+   "name": "Power Financial Corp 5.9 % Non Cum 1st Pfd Shs Series F",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 25.2,
+   "volume": 111
+  },
+  {
+   "ticker": "TSX:LFE.PR.B",
+   "name": "Canadian Life Companies Split Corp. 6.25 % Cum Pfd Registered Shs",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.99,
+   "volume": 29500
+  },
+  {
+   "ticker": "TSX:PWF.PR.F",
+   "name": "Power Financial Corp 5 1/4 % Non Cum Pfd Shs Series E",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 22.57,
+   "volume": 500
+  },
+  {
+   "ticker": "TSXV:MEGO.P",
+   "name": "Amego Capital Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.075,
+   "volume": 10000
+  },
+  {
+   "ticker": "TSXV:AMG.P",
+   "name": "AMG Acquisition Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.005,
+   "volume": 20000
+  },
+  {
+   "ticker": "TSX:PWF.PR.E",
+   "name": "Power Financial Corp 5 1/2 % Non Cum Pfd Shs Series D",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 23.7,
+   "volume": 1104
+  },
+  {
+   "ticker": "TSX:PVS.PR.K",
+   "name": "Partners Value Split Corp. 4.45 % Cum Red Pfd Registered Shs -AA- 2021-31.05.29 Series -13- Reg S",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 25.12,
+   "volume": 507
+  },
+  {
+   "ticker": "TSX:PWF.PR.Z",
+   "name": "Power Financial Corp 5.15% Non-Cum Red First Preferred Registered Shs Series V",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 22.22,
+   "volume": 1
+  },
+  {
+   "ticker": "TSX:LBS.PR.A",
+   "name": "Life & Banc Split Corp 7.25 % Cum Pfd Registered Shs 2006-29.11.18 Ext to 30.10.28",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.99,
+   "volume": 29601
+  },
+  {
+   "ticker": "TSXV:TOP.P",
+   "name": "Transition Opportunities Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.075,
+   "volume": 10000
+  },
+  {
+   "ticker": "TSX:EIT.PR.A",
+   "name": "Canoe EIT Income Fund 4.8 % Cum Red Perp Pfd Units Series 1",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 25.45,
+   "volume": 600
+  },
+  {
+   "ticker": "TSX:PGIC.PR.A",
+   "name": "Premium Global Income Split Fund Cum Red Pfd Registered Shs -A-",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.73,
+   "volume": 16258
+  },
+  {
+   "ticker": "TSXV:OAC.P",
+   "name": "Oa Capital Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.05,
+   "volume": 5000
+  },
+  {
+   "ticker": "TSX:BPS.PR.U",
+   "name": "Brookfield Property Split Corp Pfd Shs Series 1",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 24.97,
+   "volume": 0
+  },
+  {
+   "ticker": "TSX:PWF.PR.P",
+   "name": "Power Financial Corp Non-Cum 1st Pfd Shs Series P",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 20.94,
+   "volume": 15306
+  },
+  {
+   "ticker": "TSXV:NAIA",
+   "name": "Naia Relief, Inc.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.43,
+   "volume": 11000
+  },
+  {
+   "ticker": "TSX:PWF.PR.O",
+   "name": "Power Financial Corp 5.8 % Non-Cum 1st Pfd Shs Series O",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 24.81,
+   "volume": 2000
+  },
+  {
+   "ticker": "TSX:CIU.PR.A",
+   "name": "CU Inc 4.6 % Cum Red Pfd Registered Shs Series 1",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 20.92,
+   "volume": 0
+  },
+  {
+   "ticker": "TSX:CCS.PR.C",
+   "name": "Co-Operators General Insurance Company Non Cum Red Pref Registered Shs E Series C",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 22.43,
+   "volume": 200
+  },
+  {
+   "ticker": "TSX:FTU.PR.B",
+   "name": "US Financial 15 Split Corp 5 1/4% Cum Pfd Shs 2012-1.12.18",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 8.95,
+   "volume": 0
+  },
+  {
+   "ticker": "CSE:RLGC",
+   "name": "Great Red Lake Gold Corp.",
+   "exchange": "CSE",
+   "reason": "no_market_cap",
+   "close": 0.63,
+   "volume": 1000
+  },
+  {
+   "ticker": "TSX:YCM.PR.A",
+   "name": "Commerce Split Corp Pfd Shs I 2010-1.12.19",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 5.25,
+   "volume": 0
+  },
+  {
+   "ticker": "TSX:PVS.PR.H",
+   "name": "Partners Value Split Corp. 4.7 % Cum Red Pfd Registered Shs -AA- 2020-28.02.27 Series -10- Reg S",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 25.12,
+   "volume": 760
+  },
+  {
+   "ticker": "TSX:PWF.PR.L",
+   "name": "Power Financial Corp 5.1 % Non Cum 1st Pfd Shs Series L",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 22.2,
+   "volume": 701
+  },
+  {
+   "ticker": "TSX:PWF.PR.A",
+   "name": "Power Financial Corp Cum First Pfd Shs Series A Fltg Rt",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 15.45,
+   "volume": 450
+  },
+  {
+   "ticker": "TSX:BPO.PR.R",
+   "name": "Brookfield Office Properties Inc. Pref AAA Series R",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 23.8,
+   "volume": 2825
+  },
+  {
+   "ticker": "TSX:PIC.PR.A",
+   "name": "Premium Income Corp Pfd Registered Shs 1996-1.11.10 Ext to 01.11.24",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 16.4,
+   "volume": 35250
+  },
+  {
+   "ticker": "TSX:GDV.PR.A",
+   "name": "Global Dividend Growth Split Corp. 5 % Cum Red Pfd Registered Shs 2018-30.06.21 Ext to 30.06.26 Reg S",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.84,
+   "volume": 4500
+  },
+  {
+   "ticker": "TSX:BPO.PR.N",
+   "name": "Brookfield Office Properties Inc. Pfd AAA Series N",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 22.82,
+   "volume": 1710
+  },
+  {
+   "ticker": "TSX:YCM.PR.B",
+   "name": "Commerce Split Corp Pfd Shs -II- 2010-1.12.19",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 5.4,
+   "volume": 0
+  },
+  {
+   "ticker": "TSX:PWF.PR.T",
+   "name": "Power Financial Corp 4.2 % Non Cum Pfd Series T",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 24.88,
+   "volume": 2100
+  },
+  {
+   "ticker": "TSXV:ALFA.UN",
+   "name": "Margaux Real Estate Investment Trust",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.99,
+   "volume": 3200
+  },
+  {
+   "ticker": "TSX:DGS.PR.A",
+   "name": "Dividend Growth Split Corp. 6.75 % Cum Red Pfd Registered Shs -A- 2007-30.08.29",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.7,
+   "volume": 83012
+  },
+  {
+   "ticker": "TSX:MIC.PR.A",
+   "name": "Sagen MI Canada Inc 5.4 % Non-Cum Red Pfd Registered Shs A Series 1",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 21.99,
+   "volume": 2600
+  },
+  {
+   "ticker": "TSX:PWF.PR.S",
+   "name": "Power Financial Corp Non-Cum Red Pfd Shs Series S",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 20.9,
+   "volume": 1400
+  },
+  {
+   "ticker": "CSE:DGEN",
+   "name": "DGEN Technologies Corp.",
+   "exchange": "CSE",
+   "reason": "no_market_cap",
+   "close": 0.32,
+   "volume": 3000
+  },
+  {
+   "ticker": "TSXV:DBAY",
+   "name": "Elton Resources Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.14,
+   "volume": 44500
+  },
+  {
+   "ticker": "TSXV:CES.P",
+   "name": "Celestial Acquisition Corp",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.085,
+   "volume": 10500
+  },
+  {
+   "ticker": "TSXV:ADAD.P",
+   "name": "Adagio 2 Capital Inc.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.19,
+   "volume": 3
+  },
+  {
+   "ticker": "CSE:KARU",
+   "name": "Karus Mining Inc.",
+   "exchange": "CSE",
+   "reason": "no_market_cap",
+   "close": 0.23,
+   "volume": 23050
+  },
+  {
+   "ticker": "TSXV:EBCD.P",
+   "name": "Eureka Capital Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.005,
+   "volume": 50000
+  },
+  {
+   "ticker": "TSX:SBC.PR.A",
+   "name": "Brompton Split Banc Corp 6.25 % Cum Pfd Registered Shs 2005-30.11.12 Ext to 29.11.27",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.37,
+   "volume": 68300
+  },
+  {
+   "ticker": "TSX:VGC",
+   "name": "Valor Gold Corp",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 2.07,
+   "volume": 56390
+  },
+  {
+   "ticker": "TSX:FFN.PR.A",
+   "name": "North American Financial 15 Split Corp 7.5 % Pfd Registered Shs 2004-1.12.19 Ext to 01.12.2029",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.79,
+   "volume": 90796
+  },
+  {
+   "ticker": "TSX:XMF.PR.B",
+   "name": "M Split Corp Pfd I 2010-1.12.19",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 5.28,
+   "volume": 900
+  },
+  {
+   "ticker": "TSXV:MPV.P",
+   "name": "Matchpoint Ventures Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.2,
+   "volume": 1100
+  },
+  {
+   "ticker": "TSXV:SPSA.P",
+   "name": "SP Strategic Acquisition Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.015,
+   "volume": 3000
+  },
+  {
+   "ticker": "TSXV:NMB",
+   "name": "NorthMin Corporation",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.22,
+   "volume": 10000
+  },
+  {
+   "ticker": "TSX:PRM.PR.A",
+   "name": "Big Pharma Split Corp 5 % Cum Pfd Registered 2017-31.12.22",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.22,
+   "volume": 0
+  },
+  {
+   "ticker": "TSXV:ALZI",
+   "name": "Alzai Health Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.19,
+   "volume": 7000
+  },
+  {
+   "ticker": "NEO:ALGO",
+   "name": "Light AI Inc.",
+   "exchange": "NEO",
+   "reason": "no_market_cap",
+   "close": 0.05,
+   "volume": 146255
+  },
+  {
+   "ticker": "TSXV:MONA.P",
+   "name": "Monarch West Ventures, Inc.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.045,
+   "volume": 2000
+  },
+  {
+   "ticker": "TSX:BRF.PR.F",
+   "name": "Brookfield Renewable Power Preferred Equity Inc Cum Pref A Series 6",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 20.88,
+   "volume": 853
+  },
+  {
+   "ticker": "TSX:BPO.PR.Y",
+   "name": "Brookfield Office Properties Inc. Pref AAA Series Y",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 13.4,
+   "volume": 0
+  },
+  {
+   "ticker": "TSXV:RUCC.P",
+   "name": "Rupert's Crossing Capital Inc",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.125,
+   "volume": 10000
+  },
+  {
+   "ticker": "TSXV:VLLC",
+   "name": "Argentina Metals Corporation",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.365,
+   "volume": 7000
+  },
+  {
+   "ticker": "TSX:PVS.PR.V",
+   "name": "Partners Value Split Corp. Non-Cum Pfd Registered Shs Series 17",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 24.11,
+   "volume": 122
+  },
+  {
+   "ticker": "CSE:PGR",
+   "name": "Planet Green Metals Inc",
+   "exchange": "CSE",
+   "reason": "no_market_cap",
+   "close": 0.015,
+   "volume": 118000
+  },
+  {
+   "ticker": "TSXV:OCAL",
+   "name": "OCAL Financial Inc.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.12,
+   "volume": 1804
+  },
+  {
+   "ticker": "TSXV:MILE",
+   "name": "Twenty Mile Metals, Inc.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.15,
+   "volume": 3500
+  },
+  {
+   "ticker": "TSX:BPO.PR.E",
+   "name": "Brookfield Office Properties Inc. Cum Red Pref Registered Shs -AAA- Series -EE-",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 24.3,
+   "volume": 7700
+  },
+  {
+   "ticker": "TSXV:ATOI",
+   "name": "Asiatel Outsourcing Inc.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.135,
+   "volume": 11500
+  },
+  {
+   "ticker": "TSX:BPO.PR.A",
+   "name": "Brookfield Office Properties Inc. Cum Pref Shs AAA Series AA",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 22.8,
+   "volume": 5700
+  },
+  {
+   "ticker": "TSXV:GCV",
+   "name": "Golden Star Capital Ventures, Inc.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.3,
+   "volume": 2000
+  },
+  {
+   "ticker": "TSX:CSE.PR.A",
+   "name": "Capstone Infrastructure Corp Cum Pfd Shs Series A",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 23.08,
+   "volume": 3200
+  },
+  {
+   "ticker": "CSE:BRS",
+   "name": "BRS Resources Ltd",
+   "exchange": "CSE",
+   "reason": "no_market_cap",
+   "close": 0.35,
+   "volume": 15000
+  },
+  {
+   "ticker": "CSE:AIOS",
+   "name": "Algo8 AI Inc.",
+   "exchange": "CSE",
+   "reason": "no_market_cap",
+   "close": 0.66,
+   "volume": 106689
+  },
+  {
+   "ticker": "TSXV:EVOC.P",
+   "name": "Evocati Capital Resources, Inc.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.02,
+   "volume": 60000
+  },
+  {
+   "ticker": "TSXV:KPEN.P",
+   "name": "KP3993 Resources Inc",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.025,
+   "volume": 10
+  },
+  {
+   "ticker": "TSXV:PSVA",
+   "name": "Prospectiva Resources Ltd.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.5,
+   "volume": 273
+  },
+  {
+   "ticker": "TSXV:FINV.P",
+   "name": "Faction Investment Group Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.035,
+   "volume": 10000
+  },
+  {
+   "ticker": "CSE:ALTH",
+   "name": "Althea Copper Corp.",
+   "exchange": "CSE",
+   "reason": "no_market_cap",
+   "close": 0.05,
+   "volume": 70000
+  },
+  {
+   "ticker": "TSXV:CAPL.P",
+   "name": "Caplink Ventures Inc.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.05,
+   "volume": 10000
+  },
+  {
+   "ticker": "TSXV:MTAU",
+   "name": "Monteoro Minerals Limited",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.8,
+   "volume": 10000
+  },
+  {
+   "ticker": "TSXV:REH",
+   "name": "Responsible Energy Corporation",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 1,
+   "volume": 120
+  },
+  {
+   "ticker": "TSX:PVS.PR.U",
+   "name": "Partners Value Split Corp. Preference Shs Class AA Series -16-",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 24.77,
+   "volume": 2971
+  },
+  {
+   "ticker": "TSX:ESP.PR.A",
+   "name": "Brompton Energy Split Corp 8.25 % Cum Pfd",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.3,
+   "volume": 23525
+  },
+  {
+   "ticker": "TSX:BPO.PR.W",
+   "name": "Brookfield Office Properties Inc. Pref AAA Series W",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 13.3,
+   "volume": 0
+  },
+  {
+   "ticker": "CSE:FUTR",
+   "name": "Gold'n Futures Mineral Corp.",
+   "exchange": "CSE",
+   "reason": "no_market_cap",
+   "close": 0.25,
+   "volume": 51500
+  },
+  {
+   "ticker": "TSXV:TRV.P",
+   "name": "Treviso Capital Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.015,
+   "volume": 20000
+  },
+  {
+   "ticker": "TSX:BPS.PR.B",
+   "name": "Brookfield Property Split Corp Pfd Shs Series 3",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 25.15,
+   "volume": 414
+  },
+  {
+   "ticker": "TSX:BPO.PR.T",
+   "name": "Brookfield Office Properties Inc. Cum Pfd AAA Series T",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 24.02,
+   "volume": 10100
+  },
+  {
+   "ticker": "TSX:BRF.PR.E",
+   "name": "Brookfield Renewable Power Preferred Equity Inc Cum Red Pref Registered Shs A Series 5",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 20.85,
+   "volume": 433
+  },
+  {
+   "ticker": "TSX:BRF.PR.B",
+   "name": "Brookfield Renewable Power Preferred Equity Inc Floating Rate Pref Registered A Series 2 Fltg Rt",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 23.03,
+   "volume": 0
+  },
+  {
+   "ticker": "TSX:BPO.PR.X",
+   "name": "Brookfield Office Properties Inc. Pref AAA Series V",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 13.5,
+   "volume": 100
+  },
+  {
+   "ticker": "CSE:HRK",
+   "name": "Highrock Resources Ltd.",
+   "exchange": "CSE",
+   "reason": "no_market_cap",
+   "close": 0.025,
+   "volume": 10000
+  },
+  {
+   "ticker": "TSX:BPS.PR.A",
+   "name": "Brookfield Property Split Corp Pfd Shs Series 2",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 25.4,
+   "volume": 0
+  },
+  {
+   "ticker": "TSX:ENS.PR.A",
+   "name": "E Split Corp. 7.0 % Cum Pfd 2018-30.06.23",
+   "exchange": "TSX",
+   "reason": "no_market_cap",
+   "close": 10.5,
+   "volume": 8645
+  },
+  {
+   "ticker": "TSXV:ATR.P",
+   "name": "Aster Acquisition Corp.",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.09,
+   "volume": 528
+  },
+  {
+   "ticker": "CSE:NT",
+   "name": "Newterra Resources, Inc.",
+   "exchange": "CSE",
+   "reason": "no_market_cap",
+   "close": 0.14,
+   "volume": 10000
+  },
+  {
+   "ticker": "TSXV:AZC.P",
+   "name": "A2ZCryptocap Inc",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.04,
+   "volume": 8000
+  },
+  {
+   "ticker": "NEO:GDAI",
+   "name": "GuideAI Health Corp.",
+   "exchange": "NEO",
+   "reason": "no_market_cap",
+   "close": 0.93,
+   "volume": 1600
+  },
+  {
+   "ticker": "TSXV:WWA.P",
+   "name": "Whitewater Acquisition Corp",
+   "exchange": "TSXV",
+   "reason": "no_market_cap",
+   "close": 0.145,
+   "volume": 10000
+  }
+ ],
+ "eu-de": [
+  {
+   "ticker": "LSX:A426PD",
+   "name": "FIT Group AG",
+   "exchange": "LSX",
+   "reason": "no_market_cap",
+   "close": 71.6,
+   "volume": 1084
+  },
+  {
+   "ticker": "XETR:TKCC",
+   "name": "tk Accelis Group AG & Co. KGaA",
+   "exchange": "XETR",
+   "reason": "no_market_cap",
+   "close": 26.88,
+   "volume": 359729
+  },
+  {
+   "ticker": "XETR:0M0",
+   "name": "AVERDION SE",
+   "exchange": "XETR",
+   "reason": "no_market_cap",
+   "close": 1.53,
+   "volume": 0
+  }
+ ],
+ "eu-fr": [
+  {
+   "ticker": "EURONEXT:MLROT",
+   "name": "Roth Mions SA",
+   "exchange": "EURONEXT",
+   "reason": "no_market_cap",
+   "close": 0.278,
+   "volume": 3208
+  }
+ ],
+ "eu-it": [
+  {
+   "ticker": "MIL:ETI",
+   "name": "ETI S.P.A.",
+   "exchange": "MIL",
+   "reason": "no_market_cap",
+   "close": 4.42,
+   "volume": 16250
+  },
+  {
+   "ticker": "MIL:OPTS",
+   "name": "OPT S.P.A.",
+   "exchange": "MIL",
+   "reason": "no_market_cap",
+   "close": 0.865,
+   "volume": 10000
+  }
+ ],
+ "eu-es": [
+  {
+   "ticker": "BME:SCMIB",
+   "name": "Mistral Iberia Real Estate SOCIMI II SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 1.58,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL050",
+   "name": "Famoga Inversiones SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 15.7321,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL016",
+   "name": "Jungleland Value SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 18.0886,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL011",
+   "name": "Belona Inversiones Financieras SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 18.2697,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SCIBH",
+   "name": "Ibervalles Hoteles Socimi, S.A.",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 18.2,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL085",
+   "name": "Amposta Inversiones SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 11.4193,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL021",
+   "name": "Rosalita Capital SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 12.3224,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:HAN",
+   "name": "Hannun SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 0.132,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SCFRS",
+   "name": "Iniciativas Faro 2024 SOCIMI, S.A.",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 1.83,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL024",
+   "name": "Freecap Investment SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 20.3311,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL027",
+   "name": "Inversiones Focalizadas SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 2.7483,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL030",
+   "name": "Moonhealth SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 13.0307,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL051",
+   "name": "Invest Stella SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 2.1344,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL006",
+   "name": "Rho Investments SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 43.321,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SCRES",
+   "name": "INMUEBLES EN ALQUILER RESYDENZA SOCIMI, S.A.",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 0.835,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SCRN3",
+   "name": "Rentas Noblejas 3 SOCIMI",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 8.2,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL003",
+   "name": "Equilibria Investments SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 6.0436,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SCALF",
+   "name": "Alfil Patrimonial Socimi SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 7.3,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL044",
+   "name": "Prestige Inversiones SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 14.6083,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SCIG6",
+   "name": "Inbest GPF Multi Asset Class Prime VI SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 0.98,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SCBTT",
+   "name": "BETTER CONSULTANTS, S.A.",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 4.6,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL091",
+   "name": "Columbus Inversiones 2000 SIL",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 25.0601,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL086",
+   "name": "Mestre Patrimonio SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 0.9865,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL098",
+   "name": "Diale Inversones Financieras SICAV SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 18.7358,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SCGLR",
+   "name": "Grupo Lar Retail Investments Socimi, S.A.",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 19.8,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL065",
+   "name": "Turqueta Gestion SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 1.334,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL007",
+   "name": "Ursus-3C Valor SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 9.7748,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL014",
+   "name": "Fadair SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 21.4169,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL087",
+   "name": "Synergy Capital Investments SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 1.0416,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:AIG",
+   "name": "Andino Inversiones Global SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 2.8,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL018",
+   "name": "Polo Capital SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 20.6892,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SL028",
+   "name": "All You Need Is Love Tech Capital SIL SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 18.3334,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:S1013",
+   "name": "Brunara SICAV SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 27.5996,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SCIMS",
+   "name": "Inmobiliaria Marbella Socimi, S.A.",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 3.76,
+   "volume": 0
+  },
+  {
+   "ticker": "BME:SCASM",
+   "name": "Alquiler Seguro Asset Market Socimi SA",
+   "exchange": "BME",
+   "reason": "no_market_cap",
+   "close": 13.8,
+   "volume": 0
+  }
+ ],
+ "eu-nl": [],
+ "eu-be": [
+  {
+   "ticker": "EURONEXT:MCC",
+   "name": "Immo Mechelen City Center NV",
+   "exchange": "EURONEXT",
+   "reason": "no_market_cap",
+   "close": 510,
+   "volume": 1
+  }
+ ],
+ "eu-at": [
+  {
+   "ticker": "VIE:BIO",
+   "name": "Biogena Group Invest AG",
+   "exchange": "VIE",
+   "reason": "no_market_cap",
+   "close": 4.84,
+   "volume": 3327
+  },
+  {
+   "ticker": "VIE:BIOG",
+   "name": "BIOGENA GOOD VIBES AG",
+   "exchange": "VIE",
+   "reason": "no_market_cap",
+   "close": 5.86,
+   "volume": 4698
+  },
+  {
+   "ticker": "VIE:UKO",
+   "name": "UKO Microshops AG",
+   "exchange": "VIE",
+   "reason": "no_market_cap",
+   "close": 5.9,
+   "volume": 100
+  }
+ ],
+ "eu-pt": [],
+ "eu-ie": [],
+ "eu-fi": [
+  {
+   "ticker": "OMXHEX:EASOR",
+   "name": "Easor Oyj",
+   "exchange": "OMXHEX",
+   "reason": "no_market_cap",
+   "close": 0.4415,
+   "volume": 111381
+  },
+  {
+   "ticker": "OMXHEX:REAKTOR",
+   "name": "Reaktor Group Oyj",
+   "exchange": "OMXHEX",
+   "reason": "no_market_cap",
+   "close": 6.9,
+   "volume": 1798
+  },
+  {
+   "ticker": "OMXHEX:WISA",
+   "name": "Wisa Group Oyj",
+   "exchange": "OMXHEX",
+   "reason": "no_market_cap",
+   "close": 0.5011,
+   "volume": 50618114
+  },
+  {
+   "ticker": "OMXHEX:KPYOSK",
+   "name": "KPY OSK",
+   "exchange": "OMXHEX",
+   "reason": "no_market_cap",
+   "close": 2.96,
+   "volume": 5651
+  }
+ ],
+ "eu-dk": [
+  {
+   "ticker": "OMXCOP:BARDJU",
+   "name": "BAR DJUS A/S",
+   "exchange": "OMXCOP",
+   "reason": "no_market_cap",
+   "close": 2.6,
+   "volume": 100
+  }
+ ],
+ "eu-gr": []
+}
