@@ -1,0 +1,69 @@
+{
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "breadth_pct_spx": 65.18847006651885,
+  "index_below_20sma": true,
+  "vix": 20.51,
+  "vix3m": 21.12,
+  "atr_extensions": {
+    "SPY.NYSE": {
+      "extension_pct": -1.9710070879093031,
+      "atr_extension_multiple": -1.9199556167832252,
+      "close": 752.1,
+      "sma_50": 767.2219999999995,
+      "atr_252d_avg": 7.876223735492147
+    },
+    "RSP.NYSE": {
+      "extension_pct": 2.3081895850094734,
+      "atr_extension_multiple": 2.2900025247428144,
+      "close": 219.98,
+      "sma_50": 215.01700000000017,
+      "atr_252d_avg": 2.1672465188907197
+    },
+    "QQQ.NASDAQ": {
+      "extension_pct": -5.972744258399612,
+      "atr_extension_multiple": -3.9374022536184223,
+      "close": 681.09,
+      "sma_50": 724.3537999999994,
+      "atr_252d_avg": 10.98790451502396
+    },
+    "QQQE.NASDAQ": {
+      "extension_pct": -3.264580429211857,
+      "atr_extension_multiple": -2.62313843661617,
+      "close": 115.89,
+      "sma_50": 119.8010000000001,
+      "atr_252d_avg": 1.4909621030315363
+    },
+    "IWM.NYSE": {
+      "extension_pct": -1.6622372281391309,
+      "atr_extension_multiple": -1.0409626804314294,
+      "close": 279.14,
+      "sma_50": 283.8584000000001,
+      "atr_252d_avg": 4.532727338548329
+    }
+  },
+  "cron": "10-stock-screener-breadth-snapshot",
+  "date": "2026-11-03",
+  "read_type": "intraday",
+  "fire_time_et": "14:00",
+  "data_date": "2026-11-02",
+  "data_date_note": "shibui is end-of-day; its latest settled bar at this 14:00 ET fire is the 2026-11-02 close (Monday). The 2026-11-03 session is still in progress.",
+  "breadth_universe": "NYSE/NASDAQ/AMEX, market cap > $10B, 902 names",
+  "universe_n": 902,
+  "above_sma20": 588,
+  "below_sma20": 314,
+  "vix_quote_time_et": "2026-11-03 13:49:31",
+  "vix_source": "Cboe delayed-quote CDN _VIX.json / _VIX3M.json",
+  "vix_prev_close": 21.15,
+  "vix3m_prev_close": 21.6,
+  "vix_vix3m_ratio": 0.9711,
+  "live_tape_as_of_et": "2026-11-03 14:05:05 (market-recap bridge)",
+  "rsp_minus_spy_pp": -0.57,
+  "index_etfs_above_sma20_settled": "2/5 (40%)",
+  "index_etfs_above_sma20_live": "2/5 (40%)",
+  "index_etfs_above_sma50_settled": "1/5 (20%)",
+  "cross_reference": "daily-screens/2026-11-03/breadth.md (cron #09, 18:30 ET)",
+  "_source": "shibui via MCP-over-HTTP bridge + market-recap bridge + Cboe delayed-quote CDN",
+  "_note": "atr_extensions.extension_pct is the skill's column and remains distance-from-50-DMA, not an ATR multiple. atr_extension_multiple is computed here as (close - sma_50) / atr_252d_avg; the skill's 252-day ATR average is a genuine trailing window in the current emit_breadth_sql (it no longer collapses to atr_14). Used only for the late_cycle flag."
+}
