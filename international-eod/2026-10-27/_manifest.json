@@ -1,0 +1,274 @@
+{
+ "date": "2026-10-27",
+ "generated_at": "2026-11-03T05:36:15.242684+00:00",
+ "provenance": "RECONSTRUCTED on 2026-11-03 from this session's summary.md Coverage table and its CSVs \u2014 this session predates _manifest.json, which was introduced with the 2026-10-26 restatement. `written` is re-counted from the CSV; `excluded_below_floor` and `carryover_rows` were not recorded per region at run time and are left null rather than guessed.",
+ "market_cap_unit": "USD",
+ "price_currency": "listing (the `currency` column)",
+ "floors_usd": {
+  "au": {
+   "floor_usd": 300000000,
+   "min_volume": 100000
+  },
+  "jp": {
+   "floor_usd": 300000000,
+   "min_volume": null
+  },
+  "tw": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "ca": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "eu-de": {
+   "floor_usd": 300000000,
+   "min_volume": 50000
+  },
+  "eu-fr": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-it": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-es": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-nl": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-be": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-at": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-pt": {
+   "floor_usd": 50000000,
+   "min_volume": null
+  },
+  "eu-ie": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "eu-fi": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-dk": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-gr": {
+   "floor_usd": 50000000,
+   "min_volume": null
+  }
+ },
+ "regions": {
+  "au": {
+   "universe_rows": 1558,
+   "unique_instruments": 1557,
+   "written": 297,
+   "excluded_no_market_cap": 4,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 300000000,
+   "min_volume": 100000,
+   "file": "au.csv"
+  },
+  "ca": {
+   "universe_rows": 4261,
+   "unique_instruments": 2677,
+   "written": 656,
+   "excluded_no_market_cap": 140,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 65,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "ca.csv"
+  },
+  "eu-at": {
+   "universe_rows": 66,
+   "unique_instruments": 66,
+   "written": 51,
+   "excluded_no_market_cap": 2,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-at.csv"
+  },
+  "eu-be": {
+   "universe_rows": 102,
+   "unique_instruments": 102,
+   "written": 76,
+   "excluded_no_market_cap": 1,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-be.csv"
+  },
+  "eu-de": {
+   "universe_rows": 4281,
+   "unique_instruments": 497,
+   "written": 111,
+   "excluded_no_market_cap": 3,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 300000000,
+   "min_volume": 50000,
+   "file": "eu-de.csv"
+  },
+  "eu-dk": {
+   "universe_rows": 134,
+   "unique_instruments": 134,
+   "written": 75,
+   "excluded_no_market_cap": 1,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-dk.csv"
+  },
+  "eu-es": {
+   "universe_rows": 276,
+   "unique_instruments": 276,
+   "written": 144,
+   "excluded_no_market_cap": 36,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-es.csv"
+  },
+  "eu-fi": {
+   "universe_rows": 186,
+   "unique_instruments": 186,
+   "written": 101,
+   "excluded_no_market_cap": 3,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-fi.csv"
+  },
+  "eu-fr": {
+   "universe_rows": 545,
+   "unique_instruments": 544,
+   "written": 257,
+   "excluded_no_market_cap": 1,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-fr.csv"
+  },
+  "eu-gr": {
+   "universe_rows": 128,
+   "unique_instruments": 128,
+   "written": 86,
+   "excluded_no_market_cap": 0,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 50000000,
+   "min_volume": null,
+   "file": "eu-gr.csv"
+  },
+  "eu-ie": {
+   "universe_rows": 19,
+   "unique_instruments": 19,
+   "written": 17,
+   "excluded_no_market_cap": 0,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "eu-ie.csv"
+  },
+  "eu-it": {
+   "universe_rows": 393,
+   "unique_instruments": 393,
+   "written": 181,
+   "excluded_no_market_cap": 2,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-it.csv"
+  },
+  "eu-nl": {
+   "universe_rows": 77,
+   "unique_instruments": 77,
+   "written": 56,
+   "excluded_no_market_cap": 0,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-nl.csv"
+  },
+  "eu-pt": {
+   "universe_rows": 30,
+   "unique_instruments": 30,
+   "written": 27,
+   "excluded_no_market_cap": 0,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 50000000,
+   "min_volume": null,
+   "file": "eu-pt.csv"
+  },
+  "jp": {
+   "universe_rows": 3892,
+   "unique_instruments": 3865,
+   "written": 1392,
+   "excluded_no_market_cap": 2,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 6,
+   "floor_usd": 300000000,
+   "min_volume": null,
+   "file": "jp.csv"
+  },
+  "tw": {
+   "universe_rows": 2331,
+   "unique_instruments": 2330,
+   "written": 940,
+   "excluded_no_market_cap": 57,
+   "excluded_below_floor": null,
+   "carryover_rows": null,
+   "off_official_rows": 0,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "tw.csv"
+  }
+ },
+ "totals": {
+  "universe_rows": 18279,
+  "unique_instruments": 12881,
+  "written": 4467,
+  "excluded_no_market_cap": 252,
+  "off_official_rows": 71
+ }
+}
