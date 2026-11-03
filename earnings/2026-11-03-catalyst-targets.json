@@ -1,0 +1,75 @@
+{
+  "us": [
+    {
+      "name": "HLMN",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-02"
+    },
+    {
+      "name": "UPWK",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-02"
+    },
+    {
+      "name": "ECO",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-04"
+    },
+    {
+      "name": "PGR",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-14"
+    },
+    {
+      "name": "AESI",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-02"
+    },
+    {
+      "name": "ULCC",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-28"
+    }
+  ],
+  "eu": [
+    {
+      "name": "TMV",
+      "market": "germany",
+      "chg": -27.18
+    },
+    {
+      "name": "TRUE_B",
+      "market": "sweden",
+      "chg": -17.64
+    },
+    {
+      "name": "KABE_B",
+      "market": "sweden",
+      "chg": 16.19
+    },
+    {
+      "name": "RAY_B",
+      "market": "sweden",
+      "chg": -15.08
+    },
+    {
+      "name": "BCHN",
+      "market": "switzerland",
+      "chg": 14.53
+    }
+  ],
+  "au": [
+    {
+      "name": "QAN",
+      "chg": 6.36
+    },
+    {
+      "name": "BJY",
+      "chg": 6.14
+    },
+    {
+      "name": "HVN",
+      "chg": 5.81
+    }
+  ]
+}
