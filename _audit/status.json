@@ -1,109 +1,49 @@
 {
   "audit_date_et": "2026-11-02",
-  "audit_run_et": "2026-11-03T04:40:09-05:00",
-  "origin_main_sha": "b21b562",
+  "audit_run_et": "2026-11-03T07:03:00-04:00",
+  "origin_main_sha": "3a8c868",
   "due": 16,
   "delivered": 16,
   "missing": 0,
   "stale_routines": 0,
   "never_delivered": [],
   "not_yet_fired": [
-    "92a-preopen-catalyst-capture-0830",
-    "92b-preopen-catalyst-capture-0950"
+    "91-schedule-drift-guard",
+    "92a-preopen-catalyst-capture",
+    "92b-preopen-catalyst-capture"
   ],
-  "gaps": [],
+  "written_off": [],
   "roster_desync": [],
-  "delivered_detail": [
+  "gaps": [
     {
-      "routine": "02-asia-pre-market-reactions",
-      "path": "asia-pre-market/2026-11-02.md",
-      "size_bytes": 19551
-    },
-    {
-      "routine": "04-reversal-bullish-3:55",
-      "path": "daily-screens/2026-11-02/reversal-bullish-3:55.md",
-      "size_bytes": 12674
-    },
-    {
-      "routine": "05-eod-international-daily",
-      "path": "international-eod/2026-11-02/tw.csv",
-      "size_bytes": 121344
-    },
-    {
-      "routine": "07-stock-screener-focus-rvol-09:45",
-      "path": "daily-screens/2026-11-02/focus-rvol-snapshot.md",
-      "size_bytes": 8086
-    },
-    {
-      "routine": "08-stock-screener-pre-market-gapper",
-      "path": "daily-screens/2026-11-02/pre-market-gapper.md",
-      "size_bytes": 20034
-    },
-    {
-      "routine": "09-stock-screener-daily-sweep-18:30",
-      "path": "daily-screens/2026-11-02/daily-sweep.md",
-      "size_bytes": 12511
-    },
-    {
-      "routine": "10-stock-screener-breadth-snapshot",
-      "path": "daily-screens/2026-11-02/breadth-snapshot.md",
-      "size_bytes": 11324
-    },
-    {
-      "routine": "12-cross-asset-correlation-snapshot",
-      "path": "cross-asset/2026-11-02.md",
-      "size_bytes": 13233
-    },
-    {
-      "routine": "15-earnings-reaction-scanner",
-      "path": "earnings/2026-11-02-reactions.md",
-      "size_bytes": 20816
-    },
-    {
-      "routine": "16-unusual-options-flow-daily",
-      "path": "options-flow/2026-11-02.md",
-      "size_bytes": 16500
-    },
-    {
-      "routine": "17-us-stocks-in-play",
-      "path": "us-stocks-in-play/2026-11-02.md",
-      "size_bytes": 53171
-    },
-    {
-      "routine": "19-earnings-reminder-daily",
-      "path": "earnings/2026-11-02-reminders.md",
-      "size_bytes": 8372
+      "routine": "25-ntrt-gap-brief-daily",
+      "path": "ntrt/2026-11-02.md",
+      "label": "reconstructed",
+      "cause": "the 2026-11-02 09:00 ET fire died with a platform 500 before writing anything; the artifact was rebuilt on 2026-11-03 03:21 ET (~18h late) from the TradingView scanner's stored 02 Nov pre-market session"
     },
     {
       "routine": "20-eod-watchlist-csv-snapshot",
       "path": "us-eod/2026-11-02.csv",
-      "size_bytes": 545823
-    },
-    {
-      "routine": "23-agentic-post-market-brief",
-      "path": "daily-briefs/2026-11-02-post-market.md",
-      "size_bytes": 23394
-    },
-    {
-      "routine": "25-ntrt-gap-brief-daily",
-      "path": "ntrt/2026-11-02.md",
-      "size_bytes": 17307
-    },
-    {
-      "routine": "26-agentic-pre-market-brief",
-      "path": "daily-briefs/2026-11-02-pre-market.md",
-      "size_bytes": 25990
+      "label": "reconstructed",
+      "cause": "delayed replay - the session idled ~11h and rebuilt the file at 2026-11-03 03:48 ET; Nasdaq /info had already rolled over to the next session, so closes come from the TradingView scanner cross-checked against Cboe delayed quotes"
     }
   ],
-  "notes": [
-    "Audit date 2026-11-02 was a Monday: 16 artifact-producing routines were due; all 16 delivered. #90 (auditor) and #91 (guard) produce no artifact and are not counted as due.",
-    "#25 ntrt-gap-brief-daily: the 09:00 ET fire died with a platform 500 (session 459060282482944) and pushed nothing. Backfilled by a delayed replay on 2026-11-03 03:21 ET (commits 21923fc, f754e68); the artifact is labelled 'a reconstruction, produced ~18h late'.",
-    "#20 eod-watchlist-csv-snapshot: the 16:00 ET fire died with 'Request timed out.' (session 459163403620530). Backfilled by a delayed replay on 2026-11-03 03:48 ET (commit b21b562); the artifact is labelled a delayed replay and its closes were cross-checked 48/48 against the exchange delayed-quote service.",
-    "#19 earnings-reminder-daily and #91 schedule-drift-guard were NOT failures: their run records close in ~1 s at dispatch, but the sessions kept running (#19 committed earnings/2026-11-02-reminders.md at 06:09 ET; #91 completed the full guard check and reported 23/23 routines matching, 0 drift). A short run duration is NOT a failure signal - read the session's status_message.",
-    "#92a (08:30 ET) and #92b (09:50 ET) preopen-catalyst-capture did not exist on 2026-11-02 (their tasks were created 2026-11-02 ~10:25 ET, after both slots); their first fire is 2026-11-03 - not_yet_fired, not a gap.",
-    "The Token Plan quota wall (2067) did NOT recur on 2026-11-02: #02, #07, #08, #12, #15, #19, #26 all delivered.",
-    "This file replaces a broken stub on the audit/status branch ({\"audit\":1}, written by a 2026-11-03 03:39 ET replay). Written by the agent, not by cron #90, from the live origin/main tree; the 07:00 ET run of #90 will overwrite it with its own.",
-    "STEP 4b stale check: every routine with a known artifact path is within tolerance (max age 1d)."
+  "delivered_detail": [
+    {"routine": "02-asia-pre-market-reactions", "path": "asia-pre-market/2026-11-02.md", "size_bytes": 19551},
+    {"routine": "04-reversal-bullish-3:55", "path": "daily-screens/2026-11-02/reversal-bullish-3:55.md", "size_bytes": 12674},
+    {"routine": "05-eod-international-daily", "path": "international-eod/2026-11-02/", "size_bytes": null},
+    {"routine": "07-focus-rvol-09:45", "path": "daily-screens/2026-11-02/focus-rvol-snapshot.md", "size_bytes": 8086},
+    {"routine": "08-pre-market-gapper", "path": "daily-screens/2026-11-02/pre-market-gapper.md", "size_bytes": 20034},
+    {"routine": "09-daily-sweep-18:30", "path": "daily-screens/2026-11-02/daily-sweep.md", "size_bytes": 12511},
+    {"routine": "10-breadth-snapshot", "path": "daily-screens/2026-11-02/breadth-snapshot.md", "size_bytes": 11324},
+    {"routine": "12-cross-asset-correlation", "path": "cross-asset/2026-11-02.md", "size_bytes": 13233},
+    {"routine": "15-earnings-reaction-scanner", "path": "earnings/2026-11-02-reactions.md", "size_bytes": 20816},
+    {"routine": "16-unusual-options-flow", "path": "options-flow/2026-11-02.md", "size_bytes": 16500},
+    {"routine": "17-us-stocks-in-play", "path": "us-stocks-in-play/2026-11-02.md", "size_bytes": 53171},
+    {"routine": "19-earnings-reminder-daily", "path": "earnings/2026-11-02-reminders.md", "size_bytes": 8372},
+    {"routine": "23-agentic-post-market-brief", "path": "daily-briefs/2026-11-02-post-market.md", "size_bytes": 23394},
+    {"routine": "25-ntrt-gap-brief-daily", "path": "ntrt/2026-11-02.md", "size_bytes": 17307},
+    {"routine": "26-agentic-pre-market-brief", "path": "daily-briefs/2026-11-02-pre-market.md", "size_bytes": 25990}
   ],
   "audit_status": "ok"
 }
