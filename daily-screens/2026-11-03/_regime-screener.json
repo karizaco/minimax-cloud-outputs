@@ -1,0 +1,27 @@
+{
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "breadth_pct_spx": 65.18847006651885,
+  "index_below_20sma": true,
+  "vix": 20.83,
+  "vix3m": 21.27,
+  "atr_extensions": {},
+  "cron": "09-stock-screener-daily-sweep-18:30",
+  "fire_time_et": "2026-11-03 18:30 ET",
+  "cron_date": "2026-11-03",
+  "data_date": "2026-11-02",
+  "breadth_universe": "NYSE/NASDAQ/AMEX, market_cap > $10B, close > $3, 902 names",
+  "vix_quote_time": "2026-11-03 16:15:01 ET",
+  "vix_source": "CBOE delayed-quote CDN (settled close)",
+  "vix_vix3m_ratio": 0.9793,
+  "shibui_feed": "T+1 \u2014 screen/breadth data_date 2026-11-02 (latest shibui session); the 2026-11-03 settled close is overlaid from the TradingView scanner and cross-checked against the CBOE delayed-quote CDN",
+  "index_atr_extension_mult": {
+    "IWM": 0.817,
+    "QQQ": 1.214,
+    "QQQE": 1.115,
+    "RSP": 0.911,
+    "SPY": 0.991
+  },
+  "generated_et": "2026-11-03 19:43:30 ET"
+}
