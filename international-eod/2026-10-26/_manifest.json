@@ -1,0 +1,253 @@
+{
+ "date": "2026-10-26",
+ "generated_at": "2026-11-03T05:23:18.437401+00:00",
+ "restated": true,
+ "restatement_note": "Original artifact wrote market_cap in listing currency with the full universe; restated to the house convention (USD market_cap, per-region USD floor applied after conversion, no-cap rows excluded). The original is preserved in git history at commit 9291938.",
+ "market_cap_unit": "USD",
+ "price_currency": "listing (the `currency` column)",
+ "fx": {
+  "table": {
+   "EUR": 1.117818,
+   "JPY": 0.006348,
+   "AUD": 0.701902,
+   "CAD": 0.713222,
+   "DKK": 0.14952
+  },
+  "source": "Yahoo Finance v8/finance/chart, 2026-10-26 16:33 ET",
+  "note": "USDCAD=X and USDDKK=X quote local-per-USD and are inverted; the original run's table did not invert CAD"
+ },
+ "source": {
+  "primary": "tradingview_screener",
+  "endpoint": "scanner.tradingview.com/{country}/scan",
+  "cross_check": "yahoo_finance_spark"
+ },
+ "floors_usd": {
+  "au": {
+   "floor_usd": 300000000,
+   "min_volume": 100000
+  },
+  "jp": {
+   "floor_usd": 300000000,
+   "min_volume": null
+  },
+  "ca": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "eu-de": {
+   "floor_usd": 300000000,
+   "min_volume": 50000
+  },
+  "eu-fr": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-it": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-es": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-nl": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-be": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-pt": {
+   "floor_usd": 50000000,
+   "min_volume": null
+  },
+  "eu-fi": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-dk": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-gr": {
+   "floor_usd": 50000000,
+   "min_volume": null
+  }
+ },
+ "regions": {
+  "au": {
+   "universe_rows": 1558,
+   "unique_instruments": 1558,
+   "written": 302,
+   "excluded_no_market_cap": 4,
+   "excluded_below_floor": 1252,
+   "carryover_rows": 235,
+   "off_official_rows": 0,
+   "floor_usd": 300000000,
+   "min_volume": 100000,
+   "file": "au.csv"
+  },
+  "ca": {
+   "universe_rows": 4261,
+   "unique_instruments": 2667,
+   "written": 658,
+   "excluded_no_market_cap": 134,
+   "excluded_below_floor": 1875,
+   "carryover_rows": 939,
+   "off_official_rows": 67,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "ca.csv"
+  },
+  "eu-be": {
+   "universe_rows": 103,
+   "unique_instruments": 103,
+   "written": 75,
+   "excluded_no_market_cap": 1,
+   "excluded_below_floor": 27,
+   "carryover_rows": 10,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-be.csv"
+  },
+  "eu-de": {
+   "universe_rows": 4279,
+   "unique_instruments": 498,
+   "written": 115,
+   "excluded_no_market_cap": 3,
+   "excluded_below_floor": 380,
+   "carryover_rows": 1,
+   "off_official_rows": 0,
+   "floor_usd": 300000000,
+   "min_volume": 50000,
+   "file": "eu-de.csv"
+  },
+  "eu-dk": {
+   "universe_rows": 134,
+   "unique_instruments": 134,
+   "written": 75,
+   "excluded_no_market_cap": 1,
+   "excluded_below_floor": 58,
+   "carryover_rows": 6,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-dk.csv"
+  },
+  "eu-es": {
+   "universe_rows": 276,
+   "unique_instruments": 276,
+   "written": 144,
+   "excluded_no_market_cap": 36,
+   "excluded_below_floor": 96,
+   "carryover_rows": 73,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-es.csv"
+  },
+  "eu-fi": {
+   "universe_rows": 186,
+   "unique_instruments": 186,
+   "written": 100,
+   "excluded_no_market_cap": 3,
+   "excluded_below_floor": 83,
+   "carryover_rows": 1,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-fi.csv"
+  },
+  "eu-fr": {
+   "universe_rows": 544,
+   "unique_instruments": 542,
+   "written": 255,
+   "excluded_no_market_cap": 1,
+   "excluded_below_floor": 286,
+   "carryover_rows": 58,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-fr.csv"
+  },
+  "eu-gr": {
+   "universe_rows": 128,
+   "unique_instruments": 128,
+   "written": 86,
+   "excluded_no_market_cap": 0,
+   "excluded_below_floor": 42,
+   "carryover_rows": 9,
+   "off_official_rows": 0,
+   "floor_usd": 50000000,
+   "min_volume": null,
+   "file": "eu-gr.csv"
+  },
+  "eu-it": {
+   "universe_rows": 393,
+   "unique_instruments": 393,
+   "written": 181,
+   "excluded_no_market_cap": 2,
+   "excluded_below_floor": 210,
+   "carryover_rows": 76,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-it.csv"
+  },
+  "eu-nl": {
+   "universe_rows": 77,
+   "unique_instruments": 77,
+   "written": 56,
+   "excluded_no_market_cap": 0,
+   "excluded_below_floor": 21,
+   "carryover_rows": 4,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-nl.csv"
+  },
+  "eu-pt": {
+   "universe_rows": 30,
+   "unique_instruments": 30,
+   "written": 27,
+   "excluded_no_market_cap": 0,
+   "excluded_below_floor": 3,
+   "carryover_rows": 4,
+   "off_official_rows": 0,
+   "floor_usd": 50000000,
+   "min_volume": null,
+   "file": "eu-pt.csv"
+  },
+  "jp": {
+   "universe_rows": 3893,
+   "unique_instruments": 3865,
+   "written": 1395,
+   "excluded_no_market_cap": 2,
+   "excluded_below_floor": 2468,
+   "carryover_rows": 41,
+   "off_official_rows": 6,
+   "floor_usd": 300000000,
+   "min_volume": null,
+   "file": "jp.csv"
+  }
+ },
+ "totals": {
+  "universe_rows": 15862,
+  "unique_instruments": 10457,
+  "written": 3469,
+  "excluded_no_market_cap": 187,
+  "excluded_below_floor": 6801,
+  "carryover_rows": 1457,
+  "off_official_rows": 73
+ },
+ "invariants": {
+  "unique_instruments == written + excluded_no_market_cap + excluded_below_floor": true
+ },
+ "closed_regions": {
+  "tw": "Taiwan \u2014 \u5149\u5fa9\u7bc0 substitute public holiday; last session 2026-10-23, reopens 2026-10-27",
+  "eu-at": "Austria \u2014 National Day holiday",
+  "eu-ie": "Ireland \u2014 October bank holiday (last Monday in October)"
+ }
+}
