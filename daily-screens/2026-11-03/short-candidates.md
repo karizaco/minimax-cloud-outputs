@@ -1,7 +1,7 @@
 # Parabolic short candidates — 5-day gainers ≥ +25%
 
 - Cron: #09 stock_screener_daily_sweep_18_30
-- Fire: 2026-11-03 18:30 ET | Generated: 2026-11-03 19:43:30 ET
+- Fire: 2026-11-03 18:30 ET | Generated: 2026-11-03 19:45:09 ET
 - Screen data_date: 2026-11-02 (shibui, T+1) | Session close: 2026-11-03 (TradingView scanner)
 - Rows: 15
 

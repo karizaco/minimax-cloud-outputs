@@ -9,7 +9,23 @@
     "index_below_20sma": true,
     "vix": 20.83,
     "vix3m": 21.27,
-    "atr_extensions": {},
+    "atr_extensions": {
+      "IWM": {
+        "extension_pct": -1.6622372281391309
+      },
+      "QQQ": {
+        "extension_pct": -5.972744258399612
+      },
+      "QQQE": {
+        "extension_pct": -3.264580429211857
+      },
+      "RSP": {
+        "extension_pct": 2.3081895850094734
+      },
+      "SPY": {
+        "extension_pct": -1.9710070879093031
+      }
+    },
     "cron": "09-stock-screener-daily-sweep-18:30",
     "fire_time_et": "2026-11-03 18:30 ET",
     "cron_date": "2026-11-03",
@@ -26,7 +42,7 @@
       "RSP": 0.911,
       "SPY": 0.991
     },
-    "generated_et": "2026-11-03 19:43:30 ET"
+    "generated_et": "2026-11-03 19:45:09 ET"
   },
   "stylist_buckets": [
     "stockbee",
