@@ -1,0 +1,13 @@
+{
+ "cron_date": "2026-11-04",
+ "resolved_data_date": "2026-11-03",
+ "tiers": {
+  "master": 200,
+  "stalk": 17,
+  "focus": 12,
+  "tier_a": 8
+ },
+ "tier_a_truncated": true,
+ "tier_a_pool": 13,
+ "total_candidates": 848
+}

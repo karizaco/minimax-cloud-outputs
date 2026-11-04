@@ -1,0 +1,29 @@
+{
+ "regime": {
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "breadth_pct_spx": 71.0,
+  "index_below_20sma": true,
+  "vix": 16.61,
+  "vix3m": 18.8,
+  "atr_extensions": {
+   "IWM": {
+    "extension_pct": 0.2928769528368195
+   },
+   "QQQ": {
+    "extension_pct": -4.368359892840604
+   },
+   "QQQE": {
+    "extension_pct": -1.8391158328540764
+   },
+   "RSP": {
+    "extension_pct": 3.876930976935318
+   },
+   "SPY": {
+    "extension_pct": -0.03227919259244823
+   }
+  },
+  "_note": "breadth/index computed from TradingView settled 2026-11-04 close; vix from Cboe delayed-quote CDN"
+ }
+}
