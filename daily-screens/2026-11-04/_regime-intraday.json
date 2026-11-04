@@ -1,0 +1,116 @@
+{
+  "fire_time_et": "2026-11-04 14:00:54 ET",
+  "snapshot_time_et": "2026-11-04 14:50 ET (live layer) / 2026-11-03 close (shibui layer)",
+  "data_date": "2026-11-04 (live intraday); shibui breadth layer describes the 2026-11-03 settled session (T+1)",
+  "breadth_universe": "NYSE/NASDAQ/AMEX, market cap > $10B, 905 names (902 resolved live; shibui settled breadth on all 905)",
+  "vix_quote_time_et": "2026-11-04 14:50:16 ET",
+  "vix_source": "MCP bridge market-recap get_quotes (Yahoo keyless), cross-checked vs CBOE delayed-quote CDN (15-min delayed)",
+  "vix": 16.99,
+  "vix3m": 19.06,
+  "vix_vix3m_ratio": 0.8914,
+  "regime_intraday": {
+    "size_cut_pct": 0,
+    "uncertainty": false,
+    "late_cycle": false,
+    "breadth_pct_spx": 68.63,
+    "index_below_20sma": false,
+    "vix": 16.99,
+    "vix3m": 19.06,
+    "atr_extensions": {
+      "IWM": {
+        "extension_pct": -1.3068317302469357
+      },
+      "QQQ": {
+        "extension_pct": -5.339306261767247
+      },
+      "QQQE": {
+        "extension_pct": -3.1159967646843296
+      },
+      "RSP": {
+        "extension_pct": 1.9986639538517292
+      },
+      "SPY": {
+        "extension_pct": -1.6543604789113209
+      }
+    }
+  },
+  "regime_settled_2026_11_03": {
+    "size_cut_pct": 0,
+    "uncertainty": false,
+    "late_cycle": false,
+    "breadth_pct_spx": 63.97790055248619,
+    "index_below_20sma": true,
+    "vix": 16.99,
+    "vix3m": 19.06,
+    "atr_extensions": {
+      "IWM": {
+        "extension_pct": -1.3068317302469357
+      },
+      "QQQ": {
+        "extension_pct": -5.339306261767247
+      },
+      "QQQE": {
+        "extension_pct": -3.1159967646843296
+      },
+      "RSP": {
+        "extension_pct": 1.9986639538517292
+      },
+      "SPY": {
+        "extension_pct": -1.6543604789113209
+      }
+    }
+  },
+  "atr_extension_multiples_vs_252d_median_atr_pct": {
+    "IWM": -0.7809373699102026,
+    "QQQ": -3.3105646640443687,
+    "QQQE": -2.40676890429402,
+    "RSP": 1.9226270008487316,
+    "SPY": -1.5304884699091006
+  },
+  "atr_pct_now": {
+    "IWM": 1.3519074040707455,
+    "QQQ": 1.8637839465622874,
+    "QQQE": 1.3845106969099157,
+    "RSP": 0.9476341559699385,
+    "SPY": 1.0377361981002955
+  },
+  "atr_pct_252d_median": {
+    "IWM": 1.673414259068181,
+    "QQQ": 1.6128083283666947,
+    "QQQE": 1.2946804984578892,
+    "RSP": 1.039548471424479,
+    "SPY": 1.0809362575659112
+  },
+  "atr_extension_settled_close_2026_11_03": {
+    "IWM": 279.79,
+    "QQQ": 685.28,
+    "QQQE": 115.95,
+    "RSP": 219.26,
+    "SPY": 754.35
+  },
+  "sma_50_settled_2026_11_03": {
+    "IWM": 283.4948000000001,
+    "QQQ": 723.9329999999994,
+    "QQQE": 119.6792000000001,
+    "RSP": 214.96360000000016,
+    "SPY": 767.0395999999995
+  },
+  "live_breadth_pct_above_sma20_905universe": 68.63,
+  "live_breadth_pct_above_sma50_905universe": 64.86,
+  "settled_breadth_pct_above_sma20_905universe": 63.97790055248619,
+  "live_advance_decline_905universe": [
+    642,
+    260
+  ],
+  "market_wide_advance_decline_6091": [
+    4016,
+    1917,
+    158
+  ],
+  "notes": [
+    "compute_regime() reads row['symbol'] but emit_breadth_sql emits 'ticker'; without the key fix atr_extensions is {} and late_cycle is always False. Fixed here.",
+    "atr_252d_avg in emit_breadth_sql is degenerate (window over a single-row date-filtered CTE), so extension_pct is distance-from-50DMA. True ATR-extension multiples computed with a separate 252-session MEDIAN(atr_pct) window.",
+    "TradingView SMA20/SMA50 are live-updated (they include the in-progress close). Verified: SPY TV SMA20 767.6050 = mean(19 settled closes through 2026-11-03 + live 767.43) exactly; shibui SMA20 768.0945 = mean(20 settled closes) exactly.",
+    "3 names in the shibui universe have no TradingView row under their shibui ticker (BF-B, BRK-B, MOG-A -> TV uses BRK.B/BF.B/MOG.A)."
+  ]
+}
