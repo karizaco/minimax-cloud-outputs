@@ -36,9 +36,9 @@ Filter: S&P 500 constituents (live Wikipedia constituent list, 503 symbols) OR m
 | CRL | Charles River Laboratories International, Inc. | BMO 7:00 AM | 2.98 | $957M | $16.9B | pending |
 | FIS | Fidelity National Information Services, Inc. | BMO 7:30 AM | 1.61 | $3.43B | $20.1B | pending |
 | GWW | W.W. Grainger, Inc. | BMO 8:00 AM | 11.64 | $5.06B | $65.8B | pending |
-| NVO | Novo Nordisk A/S | BMO (reported ~01:00 ET) | 0.81 | $11.39B | $177.3B | **reported** |
+| NOVO-B.CO (NVO) | Novo Nordisk A/S | BMO (reported ~01:00 ET) | 0.81 | $11.39B | $177.3B | **reported** |
 | EMR | Emerson Electric Co. | BMO (time not supplied) | 1.85 | $5.12B | $92.8B | pending |
-| ITOCY | ITOCHU Corporation | BMO (reported ~01:00 ET) | 0.23 | ¥4,013.9B ($25.3B) | $99.3B | **reported** |
+| 8001.T (ITOCY) | ITOCHU Corporation | BMO (reported ~01:00 ET) | 0.23 | ¥4,013.9B ($25.3B) | $99.3B | **reported** |
 | QCOM | Qualcomm Incorporated | AMC 4:00 PM | 1.46 | $10.15B | $175.6B | pending |
 | MELI | MercadoLibre, Inc. | AMC 4:00 PM | 9.41 | $10.66B | $84.3B | pending |
 | EXPE | Expedia Group, Inc. | AMC 4:00 PM | 8.77 | $4.73B | $34.3B | pending |
@@ -68,18 +68,19 @@ Filter: S&P 500 constituents (live Wikipedia constituent list, 503 symbols) OR m
 | AMCR | Amcor plc | AMC (time not supplied) | 0.96 | $5.83B | $21.7B | pending |
 | NWSA | News Corp (Class B) | AMC (time not supplied) | 0.26 | $2.26B | $15.9B | pending |
 | VMRK | Vivmark Residential | AMC (time not supplied) | 0.97 | $1.18B | $48.0B | pending |
-| MITSY | Mitsui & Co., Ltd. | reported 22:00 ET Nov 3 | n/a | ¥4,017.7B ($25.3B) | $88.4B | **reported** |
+| 8031.T (MITSY) | Mitsui & Co., Ltd. | reported 22:00 ET Nov 3 | n/a | ¥4,017.7B ($25.3B) | $88.4B | **reported** |
 
 ## Already reported (before 06:00 ET)
 
 | Ticker | Company | Released | Actual | vs consensus |
 |---|---|---|---|---|
-| NVO | Novo Nordisk A/S | ~01:00-03:00 ET | Q3 rev **$12.19B**, EPS $0.58 GAAP / $0.89 adj, net profit $2.58B | rev beat (Zacks cons. $11.39B); FY26 adjusted sales/op-profit outlook raised to -2%/+2% CER |
-| ITOCY | ITOCHU Corporation | ~01:00 ET (JST Nov 4) | H1 FY3/27 rev ¥7,929,747M (+9.4%), profit ¥580,472M (+16.0%), EPS ¥70.84 | rev cons ¥4,013,870M per quarter |
-| MITSY | Mitsui & Co., Ltd. | 22:00 ET Nov 3 (12:00 JST Nov 4) | H1 FY3/27 rev ¥8,322,027M (+23.1%), profit ¥574,862M (+35.7%), EPS ¥202.88 | FY profit forecast raised to ¥1.05T |
+| NOVO-B.CO (NVO) | Novo Nordisk A/S | ~01:00-03:00 ET | Q3 rev **$12.19B**, EPS $0.58 GAAP / $0.89 adj, net profit $2.58B | rev beat (Zacks cons. $11.39B); FY26 adjusted sales/op-profit outlook raised to -2%/+2% CER |
+| 8001.T (ITOCY) | ITOCHU Corporation | ~01:00 ET (JST Nov 4) | H1 FY3/27 rev ¥7,929,747M (+9.4%), profit ¥580,472M (+16.0%), EPS ¥70.84 | rev cons ¥4,013,870M per quarter |
+| 8031.T (MITSY) | Mitsui & Co., Ltd. | 22:00 ET Nov 3 (12:00 JST Nov 4) | H1 FY3/27 rev ¥8,322,027M (+23.1%), profit ¥574,862M (+35.7%), EPS ¥202.88 | FY profit forecast raised to ¥1.05T |
 
 ## Notes
 
+- **Ticker convention (primary listing first):** ADR and OTC lines are shown on the issuer's PRIMARY listing with its exchange suffix, with the US line in parentheses - `8001.T (ITOCY)`, `8031.T (MITSY)`, `NOVO-B.CO (NVO)`. Dual-listed names keep the US ticker because that is their primary listing: CVE (NYSE, primary; TSX: CVE.TO), MFC (NYSE, primary; TSX: MFC), ARM (Nasdaq, primary; LSE: 0ADF.L).
 - **No watchlist section.** `research/watchlist.yaml` does not exist in this runtime, so the `## Your watchlist` section is omitted rather than shipped empty.
 - **Date-confirmed exclusion - SMMNY (Siemens Healthineers AG, ~$54.0B):** both aggregators listed it for Nov 4, but the issuer's own IR states Q4 FY2026 results are released **November 5, 2026, 7:00 am CET**. Removed from the roster.
 - **Near-threshold names checked (Rule B):** CVE confirmed Nov 4 BMO on Cenovus IR (call 8:30 a.m. ET); VMRK confirmed Nov 4 AMC on Vivmark's release-date PR; ITOCY and MITSY confirmed Nov 4 on each issuer's IR/TSE filings; NVO confirmed Nov 4 on novonordisk.com (call 07:00 ET).
@@ -101,6 +102,8 @@ Filter: S&P 500 constituents (live Wikipedia constituent list, 503 symbols) OR m
 | Yahoo Finance quoteSummary | `query1.finance.yahoo.com/v10/finance/quoteSummary/<TICKER>?modules=earningsTrend` | ok | EPS/revenue cross-check, 52/52 fetched |
 | Nasdaq earnings calendar API | `api.nasdaq.com/api/calendar/earnings?date=2026-11-04` | ok | 479 rows; EPS consensus + BMO/AMC + fiscal quarter; no revenue field |
 | Yahoo Finance earnings calendar page | `finance.yahoo.com/calendar/earnings?day=2026-11-04` | ok | 25 rows server-rendered; corroborates EPS for the largest names |
+| stockanalysis.com | `stockanalysis.com/quote/otc/<T>`, `/api/search?q=`, `/quote/<exch>/<sym>/` | ok | primary-listing mapping ("Main Listing" link), local listing + local-currency market cap, earnings date, filings feed |
+| Yahoo Finance quote (primary listings) | `query1.finance.yahoo.com/v7/finance/quote?symbols=8001.T,8031.T,NOVO-B.CO,SHL.DE,CVE.TO,MFC.TO` | ok | venue + local currency (JPY/EUR/DKK/CAD) + local-currency market cap |
 | Yahoo JSON v1 calendar endpoint | `query1.finance.yahoo.com/v1/finance/calendar/earnings` | failed: 404 | endpoint retired; replaced by the quoteSummary earningsTrend module |
 | Frankfurter FX API | `api.frankfurter.app` | failed: 522 | replaced with Yahoo FX close (DKK=X, JPY=X) |
 
