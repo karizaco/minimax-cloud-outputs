@@ -1,0 +1,77 @@
+{
+  "us": [
+    {
+      "name": "DUOL",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-03"
+    },
+    {
+      "name": "CBLL",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-03"
+    },
+    {
+      "name": "CIFR",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-02"
+    },
+    {
+      "name": "SEDG",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-05"
+    },
+    {
+      "name": "NVTS",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-03"
+    },
+    {
+      "name": "KD",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-05"
+    },
+    {
+      "name": "DJT",
+      "tag": "PRE_GAP",
+      "last_earnings": null
+    },
+    {
+      "name": "FIX",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-22"
+    }
+  ],
+  "eu": [
+    {
+      "name": "NOBI",
+      "market": "sweden",
+      "chg": -32.09
+    },
+    {
+      "name": "MTRO",
+      "market": "uk",
+      "chg": 16.64
+    },
+    {
+      "name": "ZZ_B",
+      "market": "sweden",
+      "chg": -13.96
+    },
+    {
+      "name": "PNDORA",
+      "market": "denmark",
+      "chg": 11.96
+    },
+    {
+      "name": "MMT",
+      "market": "france",
+      "chg": 11.86
+    }
+  ],
+  "au": [
+    {
+      "name": "BJY",
+      "chg": -4.01
+    }
+  ]
+}
