@@ -1,0 +1,13 @@
+symbol,close,rvol_intraday_live,rvol_tod_normalised,bucket,data_timestamp_et,prev_session,prev_rvol_tod_normalised,stylists,flags,session_volume_0930_0945,mean_prior10_window_volume,tv_average_volume_10d
+CVNA,75.2252,0.1272,2.0141,RVOL Required,"2026-11-04 09:45:00 ET (last completed 5m bar, stamped 09:40)",2026-11-03,0.6554,3,,1555831,791790.9,12227730
+CLF,13.7201,0.1064,1.7381,RVOL Required,"2026-11-04 09:45:00 ET (last completed 5m bar, stamped 09:40)",2026-11-03,1.0656,3,wicky_breakout,2202847,1334296.0,20703402.3
+VSEC,166.535,0.0837,1.6216,RVOL Required,"2026-11-04 09:45:00 ET (last completed 5m bar, stamped 09:40)",2026-11-03,0.2342,3,ma_shrink_5d,37964,20906.1,453678.8
+FIGS,22.145,0.0652,1.5445,RVOL Required,"2026-11-04 09:45:00 ET (last completed 5m bar, stamped 09:40)",2026-11-03,1.0187,3,"ma_shrink_5d,wicky_breakout",217319,140200.2,3330677.6
+KVYO,21.765,0.062,1.3172,Liquid,"2026-11-04 09:45:00 ET (last completed 5m bar, stamped 09:40)",2026-11-03,1.4147,3,ma_shrink_5d,262711,180904.1,4238907
+FTAI,191.55,0.0843,1.2035,Liquid,"2026-11-04 09:45:00 ET (last completed 5m bar, stamped 09:40)",2026-11-03,0.6581,3,,172242,136342.3,2043036.6000000015
+TEM,80.65,0.1019,0.9547,Liquid,"2026-11-04 09:45:00 ET (last completed 5m bar, stamped 09:40)",2026-11-03,1.615,3,,681516,651718.3,6685804
+WING,170.25,0.074,0.9424,Liquid,"2026-11-04 09:45:00 ET (last completed 5m bar, stamped 09:40)",2026-11-03,0.6765,3,,134929,138219.3,1822483.7
+CAI,34.005,0.0405,0.8041,Liquid,"2026-11-04 09:45:00 ET (last completed 5m bar, stamped 09:40)",2026-11-03,1.058,3,ma_shrink_5d,113258,128142.5,2798940.1
+MRNA,246.701,0.0987,0.7671,Liquid,"2026-11-04 09:45:00 ET (last completed 5m bar, stamped 09:40)",2026-11-03,0.7107,3,wicky_breakout,1582510,2071637.0,16025844.4
+HTFL,55.965,0.0441,0.7117,Liquid,"2026-11-04 09:45:00 ET (last completed 5m bar, stamped 09:40)",2026-11-03,2.0333,3,ma_shrink_5d,62690,80548.7,1421627.2
+KOD,100.39,0.0282,0.4318,Liquid,"2026-11-04 09:45:00 ET (last completed 5m bar, stamped 09:40)",2026-11-03,1.1943,3,wicky_breakout,20353,44533.6,722650
