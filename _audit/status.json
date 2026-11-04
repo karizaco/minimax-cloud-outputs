@@ -1,49 +1,31 @@
 {
-  "audit_date_et": "2026-11-02",
-  "audit_run_et": "2026-11-03T07:03:00-04:00",
-  "origin_main_sha": "3a8c868",
-  "due": 16,
+  "audit_date_et": "2026-11-03",
+  "audit_run_et": "2026-11-04T07:03:00-04:00",
+  "origin_main_sha": "eab7a57",
+  "due": 18,
   "delivered": 16,
-  "missing": 0,
-  "stale_routines": 0,
-  "never_delivered": [],
-  "not_yet_fired": [
-    "91-schedule-drift-guard",
+  "missing": 2,
+  "stale_routines": 2,
+  "never_delivered": [
     "92a-preopen-catalyst-capture",
     "92b-preopen-catalyst-capture"
   ],
+  "not_yet_fired": [],
   "written_off": [],
   "roster_desync": [],
   "gaps": [
     {
-      "routine": "25-ntrt-gap-brief-daily",
-      "path": "ntrt/2026-11-02.md",
-      "label": "reconstructed",
-      "cause": "the 2026-11-02 09:00 ET fire died with a platform 500 before writing anything; the artifact was rebuilt on 2026-11-03 03:21 ET (~18h late) from the TradingView scanner's stored 02 Nov pre-market session"
+      "routine": "92a-preopen-catalyst-capture",
+      "path": "preopen-feed/2026-11-03-0830.jsonl",
+      "label": "MISSING",
+      "cause": "routine fired (run 459404102430817, session 459406375739498, healthy status_message) but wrote nothing by design: XAI_API_KEY was unset at the 2026-11-03 08:30 ET fire, and the prompt's step-1 key check declines the fire without writing. The key was provisioned later, so 2026-11-04 08:30 ET is the first fire with a real key. No preopen-feed/ directory exists on origin/main at all."
     },
     {
-      "routine": "20-eod-watchlist-csv-snapshot",
-      "path": "us-eod/2026-11-02.csv",
-      "label": "reconstructed",
-      "cause": "delayed replay - the session idled ~11h and rebuilt the file at 2026-11-03 03:48 ET; Nasdaq /info had already rolled over to the next session, so closes come from the TradingView scanner cross-checked against Cboe delayed quotes"
+      "routine": "92b-preopen-catalyst-capture",
+      "path": "preopen-feed/2026-11-03-0950.jsonl",
+      "label": "MISSING",
+      "cause": "same cause as 92a: run 459424985919607 (session 459426227740946) fired at 09:50 ET with XAI_API_KEY unset and the step-1 key check declined it, so no file was written. Never delivered — the routine has produced no artifact on any date."
     }
   ],
-  "delivered_detail": [
-    {"routine": "02-asia-pre-market-reactions", "path": "asia-pre-market/2026-11-02.md", "size_bytes": 19551},
-    {"routine": "04-reversal-bullish-3:55", "path": "daily-screens/2026-11-02/reversal-bullish-3:55.md", "size_bytes": 12674},
-    {"routine": "05-eod-international-daily", "path": "international-eod/2026-11-02/", "size_bytes": null},
-    {"routine": "07-focus-rvol-09:45", "path": "daily-screens/2026-11-02/focus-rvol-snapshot.md", "size_bytes": 8086},
-    {"routine": "08-pre-market-gapper", "path": "daily-screens/2026-11-02/pre-market-gapper.md", "size_bytes": 20034},
-    {"routine": "09-daily-sweep-18:30", "path": "daily-screens/2026-11-02/daily-sweep.md", "size_bytes": 12511},
-    {"routine": "10-breadth-snapshot", "path": "daily-screens/2026-11-02/breadth-snapshot.md", "size_bytes": 11324},
-    {"routine": "12-cross-asset-correlation", "path": "cross-asset/2026-11-02.md", "size_bytes": 13233},
-    {"routine": "15-earnings-reaction-scanner", "path": "earnings/2026-11-02-reactions.md", "size_bytes": 20816},
-    {"routine": "16-unusual-options-flow", "path": "options-flow/2026-11-02.md", "size_bytes": 16500},
-    {"routine": "17-us-stocks-in-play", "path": "us-stocks-in-play/2026-11-02.md", "size_bytes": 53171},
-    {"routine": "19-earnings-reminder-daily", "path": "earnings/2026-11-02-reminders.md", "size_bytes": 8372},
-    {"routine": "23-agentic-post-market-brief", "path": "daily-briefs/2026-11-02-post-market.md", "size_bytes": 23394},
-    {"routine": "25-ntrt-gap-brief-daily", "path": "ntrt/2026-11-02.md", "size_bytes": 17307},
-    {"routine": "26-agentic-pre-market-brief", "path": "daily-briefs/2026-11-02-pre-market.md", "size_bytes": 25990}
-  ],
-  "audit_status": "ok"
+  "audit_status": "gaps_found"
 }
