@@ -1,0 +1,428 @@
+ticker,premarket_change_pct,premarket_close,prev_close,premarket_volume,avg_volume_30d,pct_of_adv,mkt_cap_usd,sector,exchange,catalyst,noise
+ALIT,28.36,12.99,10.12,77286,499298,15.479,272623625,Technology Services,NYSE,Alight Q3 results (rel vol ~32x); print ~16h old,false
+FTK,23.35,30.64,24.84,4245,385701,1.101,899715448,Industrial Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+RIOT,21.04,16.97,14.02,11883214,18384414,64.637,5261130534,Technology Services,NASDAQ,Q3 beat plus its largest lease announcement (08:05 ET release); options had priced ±13.5%,false
+DUOL,19.23,152.61,128.00,109769,953606,11.511,5988609598,Technology Services,NASDAQ,"Q3 rev $309M beat by $6.0M, GAAP EPS $0.54 missed by $0.02; guides Q4 bookings +13% and $84M adj EBITDA; Video Call to all paid subs",false
+LMB,16.19,58.00,49.92,8884,206493,4.302,595295654,Industrial Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+CRCT,15.41,6.89,5.97,7018,647547,1.084,1250383130,Distribution Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+OUST,14.91,33.30,28.98,136508,2622846,5.205,2089815441,Electronic Technology,NASDAQ,"Q3 2026 results reported Nov 3, 5:00 PM ET",false
+OPRT,14.74,11.52,10.04,100,707822,0.014,461712039,Finance,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+BRKR,14.69,64.80,56.50,92299,2279483,4.049,8608301239,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+KD,14.61,14.83,12.94,60814,4172709,1.457,2818568294,Technology Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+FNV,13.63,256.80,225.99,1426,639963,0.223,43587550598,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+HELE,13.22,33.45,29.54,39254,523189,7.503,690959366,Consumer Durables,NASDAQ,Empower Brands non-binding proposal to acquire all shares at $37.00 cash (EV ~$1.6B); it first bid $34.00 on Aug 19,false
+ARRY,13.15,5.25,4.64,3921633,7450428,52.636,714595662,Producer Manufacturing,NASDAQ,Q3 results plus a transformative merger with Shoals Technologies (SHLS) into an integrated energy-infrastructure platform,false
+FLYW,12.79,21.60,19.15,39514,1417493,2.788,2329935857,Commercial Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+LIVN,12.64,90.00,79.90,6661,609314,1.093,4401971507,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+NVTS,12.15,9.60,8.56,2266087,15535901,14.586,2234960258,Electronic Technology,NASDAQ,Q3 reported Nov 3 after close; guide was rev $13.5M ±$0.5M — the Q4 guide and cash burn are what matter,false
+TE,12.01,3.17,2.83,2816965,18719536,15.048,847581781,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+OCGN,11.38,0.83,0.75,188496,6850765,2.751,252705072,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+ARDX,10.89,3.36,3.03,26761,4366956,0.613,755038349,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+PCOR,10.81,70.00,63.17,40201,3107109,1.294,9599018393,Technology Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+TRNS,10.81,99.19,89.52,400,147142,0.272,837890490,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+XYZ,10.20,83.75,76.00,105382,4750179,2.218,45660570404,Commercial Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+PLUG,9.93,1.55,1.41,6163200,48867741,12.612,1970045172,Electronic Technology,NASDAQ,Clean-energy bid on the Democratic sweep (hydrogen); earnings due Nov 9,false
+FLNC,9.82,6.04,5.50,758897,6314063,12.019,1015280037,Producer Manufacturing,NASDAQ,Clean-energy bid on the Democratic sweep; negative forward earnings — a momentum print,false
+HL,9.77,14.50,13.21,423197,31957575,1.324,8874061019,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+VRDN,9.54,27.55,25.15,136133,2159359,6.304,2849300468,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+SCZM,9.31,7.40,6.77,29233,392099,7.456,629573330,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+AUGO,9.00,69.88,64.11,2544,860526,0.296,5371727609,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+RPM,8.97,114.80,105.35,2357,1260375,0.187,13435673391,Process Industries,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+USAS,8.86,2.95,2.71,244319,3657982,6.679,916407149,Non-Energy Minerals,AMEX,"No confirmed catalyst — issuer IR + wire scan — precious-metals complex bid (gold +2.9%, silver +4.4% overnight)",false
+CYH,8.78,2.23,2.05,30118,1544149,1.950,289104640,Health Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+GERN,8.60,1.01,0.93,392882,13543257,2.901,597500313,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+ITRG,8.50,2.17,2.00,29059,1491578,1.948,405746116,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+INNV,8.47,9.60,8.85,255,868496,0.029,1207640052,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+NRP,8.46,126.99,117.09,4098,21733,18.855,1551490691,Energy Minerals,NYSE,"No confirmed catalyst — issuer IR + wire scan — 4,098 shares pre-market",false
+ASM,8.43,4.63,4.27,151760,2892645,5.246,725281979,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+OSCR,8.39,35.13,32.41,451947,4642501,9.735,8863130058,Health Services,NYSE,"Health-insurer bid on the Democratic sweep (HCA, MOH, CNC also up); reports Nov 5",false
+HYMC,8.39,17.44,16.09,76467,1957019,3.907,1499323424,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+BDSX,8.22,22.78,21.05,2000,95583,2.092,222101024,Health Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+PACS,8.20,50.51,46.68,300,808875,0.037,7391105941,Health Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+UWMC,8.18,1.72,1.59,234520,13447096,1.744,2555068807,Finance,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+FSLR,8.13,201.02,185.90,189670,2358692,8.041,19980744714,Electronic Technology,NASDAQ,Solar bid on the Democratic sweep — CNBC ties the move to a policy shift; +8.55% at 06:34 ET,false
+AYA,8.12,24.90,23.03,11530,842438,1.369,3317153067,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+SMRT,8.03,1.48,1.37,36581,556427,6.574,262508168,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+ARIS,7.97,15.58,14.43,23616,1728913,1.366,2978351844,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+DNLI,7.87,20.98,19.45,4954,1778485,0.279,3109032287,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+EXK,7.82,7.58,7.03,1012896,6426784,15.761,2081895553,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan — precious-metals complex bid (gold +2.9%),false
+SSP,7.81,2.90,2.69,125,708568,0.018,249279586,Consumer Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+CSIQ,7.77,10.88,10.10,358086,1752745,20.430,685757215,Electronic Technology,NASDAQ,Clean-energy bid on the Democratic sweep,false
+IAUX,7.69,1.40,1.30,150903,6679013,2.259,1128695997,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+SSMR,7.63,11.85,11.01,200,621682,0.032,1582429990,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+GNK,7.50,26.66,24.80,100,506521,0.020,1080947773,Transportation,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+TFPM,7.45,30.36,28.25,3727,391913,0.951,5819585983,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+SLDP,7.39,2.18,2.03,433917,2905531,14.934,463207856,Producer Manufacturing,NASDAQ,No confirmed catalyst — issuer IR + wire scan — silver +4.4% overnight,false
+MUX,7.35,14.64,13.64,16735,1108120,1.510,836930865,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+IDR,7.32,20.39,19.00,2250,309401,0.727,300697229,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,true
+CDW,7.24,160.62,149.77,3482,1493553,0.233,18723861499,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+NEWP,7.23,5.19,4.84,1490,664328,0.224,898264762,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,true
+THM,7.22,1.93,1.80,29970,498500,6.012,470947463,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+PPTA,7.19,17.22,16.07,9356,1127430,0.830,2009664131,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+NG,7.13,6.16,5.75,79578,4212991,1.889,2523192055,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+RUN,7.09,9.30,8.68,816737,8703857,9.384,2090551902,Electronic Technology,NASDAQ,Clean-energy bid on the Democratic sweep; Q3 due after the close,false
+DC,6.94,5.55,5.19,14651,1139669,1.286,696357820,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+DB,6.92,36.38,34.03,65826,2488638,2.645,62532200147,Finance,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+UNIT,6.92,5.41,5.06,748,3984411,0.019,1228189212,Communications,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+CDE,6.79,14.32,13.41,203047,35994312,0.564,13784608979,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+KYTX,6.78,5.51,5.16,3192,957289,0.333,319112166,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+NFGC,6.67,1.60,1.50,88803,1049207,8.464,577791892,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+OGG,6.65,2.35,2.20,28218,2029453,1.390,694780235,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+MDLN,6.60,36.34,34.09,211084,9219179,2.290,44818377863,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+EQX,6.60,10.66,10.00,202836,11880123,1.707,11674598166,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+AG,6.60,15.03,14.10,319027,9645344,3.308,6949980006,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+HCA,6.51,493.00,462.86,25316,1222276,2.071,96687980337,Health Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+SKE,6.49,28.55,26.81,6002,578076,1.038,3363655038,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+PAAS,6.49,40.77,38.29,90410,3772293,2.397,15844537305,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+THC,6.47,283.94,266.69,3620,702865,0.515,21225323230,Health Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+AGI,6.46,28.83,27.08,28918,3380786,0.855,11335808776,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+BLDP,6.45,1.65,1.55,228026,2587831,8.811,544190643,Producer Manufacturing,NASDAQ,Clean-energy bid on the Democratic sweep,false
+EGO,6.43,33.78,31.74,39249,3504280,1.120,8294292388,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+ELE,6.41,15.03,14.12,9233,359335,2.569,1079773429,Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+AU,6.40,86.62,81.41,20715,2270093,0.913,41112660536,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+BTG,6.38,5.00,4.70,287999,20931494,1.376,6210518887,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+KGC,6.37,21.20,19.93,118546,8054931,1.472,23641777342,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+IAG,6.37,16.86,15.85,61045,4256213,1.434,9050350217,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+ENLT,6.36,68.87,64.75,7092,182461,3.887,9065777695,Utilities,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+OPEN,6.33,1.85,1.74,1638436,32990800,4.966,1689698461,Finance,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+SA,6.31,24.95,23.47,7854,519652,1.511,2531737517,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+SVM,6.29,8.45,7.95,73153,2113664,3.461,1758656485,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+CTGO,6.21,14.55,13.70,1437,332202,0.433,458137486,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,true
+TRX,6.20,0.98,0.92,35064,2074807,1.690,302978455,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+AEM,6.12,177.52,167.28,18299,1820285,1.005,85225327047,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+TREX,6.10,53.05,50.00,108883,1766630,6.163,5093259430,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+WPM,6.01,124.48,117.42,19277,1802104,1.070,53327461870,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+FSM,6.00,9.37,8.84,60493,5609542,1.078,2616263139,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+VZLA,5.94,3.21,3.03,76736,4056932,1.891,1075822302,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+ACRS,5.93,3.96,3.74,809,3506319,0.023,550523824,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+MOH,5.85,220.00,207.85,9538,865713,1.102,10849770477,Health Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+NEM,5.81,113.71,107.47,94771,5642540,1.680,111682098482,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+HSLV,5.76,4.22,3.99,27724,646205,4.290,812058438,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+NXT,5.71,101.50,96.02,47287,2357984,2.005,14458261982,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+JBIO,5.70,15.40,14.57,514,903838,0.057,926613886,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+VOXR,5.68,4.84,4.58,11957,522055,2.290,318288400,Finance,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+SMG,5.66,65.30,61.80,3348,1167172,0.287,3598012768,Process Industries,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+OR,5.63,33.98,32.17,6494,724451,0.896,5995172055,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+B,5.59,39.12,37.05,255316,7276652,3.509,60980017356,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+Z,5.58,32.71,30.98,11654,4655941,0.250,6981944593,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+NAMS,5.53,21.00,19.90,5668,1522682,0.372,2378789646,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+ZBH,5.51,102.41,97.06,12627,2103690,0.600,18512999352,Health Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ACHV,5.50,7.10,6.73,700,1341802,0.052,692533751,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+PRME,5.49,4.80,4.55,12787,5582431,0.229,825264755,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+OLMA,5.44,7.75,7.35,100,1318335,0.008,643107440,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+OGC,5.38,24.88,23.61,650,536238,0.121,5251985463,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+AMGN,5.36,486.00,461.26,28471,2707635,1.052,249371930382,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+KLC,5.34,2.17,2.06,11754,737026,1.595,244145073,Consumer Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+SHLS,5.31,8.92,8.47,716591,4413270,16.237,1425500683,Electronic Technology,NASDAQ,Transformative merger with Array Technologies (ARRY),false
+GROY,5.30,2.78,2.64,19148,1253809,1.527,611637139,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+RGLD,5.24,243.01,230.92,7130,587446,1.214,19565357159,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+LAW,5.22,5.44,5.17,200,190973,0.105,335635212,Technology Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+UBS,5.19,50.49,48.00,85603,2136807,4.006,146963629545,Finance,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+DBI,5.18,6.70,6.37,400,549580,0.073,325657850,Retail Trade,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+RBBN,5.06,1.66,1.58,2763,1487617,0.186,283094319,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+TLRY,4.96,2.78,2.65,359259,4342647,8.273,391636946,Process Industries,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+STRK,4.93,71.04,67.70,200,82057,0.244,57283923295,Finance,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+CNL,4.90,12.00,11.44,2501,177783,1.407,989012094,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+WSE,4.85,11.25,10.73,22582,2130605,1.060,12693068194,Commercial Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+GAU,4.79,1.97,1.88,21588,2470209,0.874,491792536,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,true
+LZ,4.78,7.01,6.69,100,2545647,0.004,1145761631,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+ANET,4.76,178.00,169.91,390788,5787738,6.752,214294677997,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan — Arista reports this week; no pre-print news found,false
+BMRN,4.74,58.30,55.66,4078,2480195,0.164,10774315506,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+VSH,4.74,28.51,27.22,48898,3689915,1.325,4174987760,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+YOU,4.71,50.01,47.76,47238,1507657,3.133,6461358564,Technology Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+ABEO,4.71,4.45,4.25,100,1064646,0.009,243032073,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+BKNG,4.70,162.99,155.67,63688,7596175,0.838,116967399995,Consumer Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+TRLV,4.68,12.08,11.54,140037,1694207,8.266,2222203627,Process Industries,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+CYPH,4.64,2.72,2.60,687850,14278374,4.817,280187381,Finance,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+FVRR,4.61,8.63,8.25,3602,853429,0.422,296593485,Technology Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+MMM,4.60,185.19,177.05,17065,3307223,0.516,91486968975,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+TGB,4.58,7.76,7.42,3265,4277895,0.076,2715892960,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,true
+VGZ,4.56,2.52,2.41,11900,2366630,0.503,351790952,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,true
+DFH,4.55,10.56,10.10,1842,1533206,0.120,914404714,Consumer Durables,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+NMM,4.55,91.00,87.04,3006,157131,1.913,2463537428,Transportation,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+NEXA,4.55,11.95,11.43,14410,585634,2.461,1513766421,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+HBM,4.52,22.41,21.44,24456,4645347,0.526,9522644715,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+WRN,4.49,1.63,1.56,10661,1075134,0.992,352833658,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,true
+CCXI,4.48,11.17,10.69,151238,3497708,4.324,595432993,Finance,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+RELY,4.41,26.50,25.38,108229,2890531,3.744,5372541050,Commercial Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+JBLU,4.40,3.32,3.18,475651,28950889,1.643,1199978867,Transportation,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+KMT,4.40,31.87,30.53,1263,1365778,0.092,2332187666,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+CGAU,4.39,20.47,19.61,24970,1150245,2.171,3794529719,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+RH,4.38,140.00,134.13,5307,829684,0.640,2539504691,Retail Trade,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+SLI,4.37,1.43,1.37,38365,2025415,1.894,338094278,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+ENPH,4.37,31.75,30.42,962097,6540906,14.709,4025000567,Producer Manufacturing,NASDAQ,Clean-energy bid on the Democratic sweep,false
+LKQ,4.36,20.10,19.26,8723,5027425,0.174,4861186911,Consumer Durables,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+CNC,4.33,70.40,67.48,83653,4644777,1.801,33407189841,Health Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+ACHC,4.32,30.90,29.62,1000,1603858,0.062,2757630168,Health Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+BEAM,4.29,27.46,26.33,1106,1827716,0.061,2719564245,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+UAL,4.29,111.81,107.21,45946,4885379,0.940,34831926039,Transportation,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+IE,4.29,8.03,7.70,10550,2389936,0.441,1228845056,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,true
+EMAT,4.27,1.71,1.64,5424,1249312,0.434,1028609012,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+MGM,4.26,32.34,31.02,45713,6368997,0.718,7848387185,Consumer Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ALC,4.26,75.45,72.37,4068,1714400,0.237,36163289975,Health Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+LAC,4.26,1.96,1.88,218606,7919319,2.760,682520748,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+MVST,4.25,0.63,0.60,59603,3206577,1.859,233212561,Producer Manufacturing,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+NMG,4.25,0.91,0.87,1100,436978,0.252,287321001,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+AMRZ,4.24,43.75,41.97,10568,4011922,0.263,22954468022,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+FRPT,4.24,72.55,69.60,16584,1037798,1.598,3344841943,Consumer Non-Durables,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+RGC,4.23,6.41,6.15,478,320297,0.149,3049688916,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+LEN,4.22,89.72,86.09,24541,5030595,0.488,20451407213,Consumer Durables,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ERO,4.20,31.72,30.44,8121,1327012,0.612,3174972226,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+RKT,4.20,14.39,13.81,372967,39725880,0.939,39191353985,Finance,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+SSRM,4.17,27.25,26.16,30239,2197538,1.376,5334267702,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+NKLR,4.14,2.39,2.29,9603,361671,2.655,253599592,Producer Manufacturing,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+IP,4.10,36.56,35.12,3819,5717055,0.067,18598493804,Process Industries,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+PACB,4.10,2.54,2.44,32466,18172239,0.179,758427046,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+YUMC,4.08,49.80,47.85,4210,1656559,0.254,16386620991,Consumer Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+DHX,4.07,5.11,4.91,1409,207616,0.679,213212769,Commercial Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+NN,4.06,10.25,9.85,12890,3372781,0.382,1662777638,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+PICS,4.04,6.96,6.69,1435,877986,0.163,866940661,Commercial Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+AEVA,4.03,9.30,8.94,30955,1590474,1.946,623169440,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+ULCC,4.02,6.73,6.47,26303,3358881,0.783,1490801445,Transportation,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+SAIL,4.00,19.75,18.99,5528,4546688,0.122,10841611553,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+CGC,3.99,0.73,0.71,94799,2346234,4.040,315067684,Process Industries,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+KARD,3.98,14.89,14.32,200,599370,0.033,1338972850,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+DHI,3.97,151.00,145.23,20929,3214977,0.651,39420596609,Consumer Durables,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+COMP,3.97,9.69,9.32,26749,15158561,0.176,7154447902,Finance,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+SYK,3.95,322.81,310.55,8347,2698877,0.309,118223588360,Health Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ZG,3.92,32.58,31.35,965,1132190,0.085,6981944593,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+NYT,3.92,69.75,67.12,135345,2533752,5.342,10825354158,Consumer Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+ALK,3.92,38.22,36.78,28943,4077458,0.710,4105805600,Transportation,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+RAL,3.91,74.10,71.31,6864,1291565,0.531,7889738629,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+LOGI,3.89,96.46,92.85,24085,1021479,2.358,12672629574,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+MWH,3.88,27.85,26.81,5655,1396683,0.405,5426119344,Industrial Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+SGML,3.88,5.75,5.54,16538,2740191,0.604,623065611,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+UHS,3.88,184.00,177.13,4420,659969,0.670,10437218831,Health Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+GORO,3.87,2.95,2.84,4195,1381324,0.304,450509003,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,true
+TOL,3.86,155.00,149.24,839,1103782,0.076,13752019260,Consumer Durables,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+VRTX,3.80,550.94,530.76,1069,1372593,0.078,134526921564,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+GOLD,3.78,40.60,39.12,9492,420351,2.258,1138253124,Finance,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+ISRG,3.78,457.42,440.75,12077,2291733,0.527,152783213982,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+BSX,3.77,45.14,43.50,63046,18470182,0.341,63052087097,Health Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+OVID,3.75,2.49,2.40,100,1789053,0.006,468714899,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+BLDR,3.74,65.99,63.61,4523,2593000,0.174,6844838286,Retail Trade,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+LAR,3.74,4.16,4.01,32941,1416625,2.325,647213988,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+AMZN,3.72,260.02,250.69,2781414,40542893,6.860,2710745515237,Retail Trade,NASDAQ,No confirmed catalyst — issuer IR + wire scan — mega-cap bid,false
+CCEP,3.71,115.70,111.56,17005,1752067,0.971,49445356700,Consumer Non-Durables,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+ABSI,3.70,10.37,10.00,21181,3993702,0.530,1716140137,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+HD,3.70,346.00,333.66,19032,5009910,0.380,332889127678,Retail Trade,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+LOW,3.70,221.27,213.38,17239,3273043,0.527,119717708698,Retail Trade,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+PHM,3.69,131.56,126.88,661,2063330,0.032,23356925854,Consumer Durables,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+AAL,3.66,13.29,12.82,1210738,63233919,1.915,8494767791,Transportation,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+ARKO,3.65,3.98,3.84,225,605775,0.037,430793164,Retail Trade,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+LTGO,3.64,15.10,14.57,709,285100,0.249,965981463,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+AXTA,3.64,36.48,35.20,200,1896959,0.011,7534387322,Process Industries,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+MBC,3.63,7.14,6.89,8116,2717833,0.299,1402049370,Consumer Durables,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+URG,3.61,0.76,0.73,124297,10652756,1.167,291833032,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+ALLO,3.57,1.16,1.12,8332,7262555,0.115,386949782,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+DAL,3.53,86.22,83.28,55572,6940346,0.801,54790939998,Transportation,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+VFF,3.51,2.95,2.85,6579,740810,0.888,348515945,Process Industries,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+SLDB,3.50,6.50,6.28,600,1336630,0.045,673374498,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+LUV,3.50,44.97,43.45,9707,6395087,0.152,21273224065,Transportation,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+FER,3.49,59.55,57.54,7982,2418173,0.330,41085460215,Industrial Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+CENX,3.48,34.49,33.33,6356,2014984,0.315,3299446661,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+ORLY,3.46,93.10,89.99,24908,5607757,0.444,72798382052,Retail Trade,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+UFPT,3.45,290.00,280.32,45,106285,0.042,2171299911,Process Industries,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+HNST,3.45,4.50,4.35,14720,1750097,0.841,466687067,Retail Trade,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+MAKO,3.45,7.50,7.25,400,130477,0.307,635142820,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+FATE,3.43,2.11,2.04,1300,1273069,0.102,244433853,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+GILD,3.43,173.21,167.47,6926,6089153,0.114,207719510716,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+SHW,3.41,352.51,340.87,7182,1786897,0.402,82350125513,Process Industries,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+DRTS,3.40,14.00,13.54,17126,472468,3.625,1252154242,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+SITE,3.39,115.50,111.71,1902,989546,0.192,4818268859,Distribution Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+HALO,3.39,132.98,128.62,301,2282750,0.013,14598112347,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+WHR,3.39,31.15,30.13,5904,4244708,0.139,1980647005,Consumer Durables,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ASTL,3.38,5.50,5.32,22284,1026487,2.171,562118996,Producer Manufacturing,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+WYNN,3.38,80.31,77.68,28223,2277026,1.239,7999011978,Consumer Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+GT,3.38,4.59,4.44,44412,8170726,0.544,1278270434,Consumer Durables,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+VMET,3.38,8.88,8.59,18557,237876,7.801,934845452,Miscellaneous,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+VKTX,3.37,26.97,26.09,33178,6815605,0.487,3327053859,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+PACK,3.36,3.08,2.98,225,684836,0.033,255643610,Process Industries,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ALNY,3.35,165.25,159.89,11980,2069744,0.579,21415278992,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+ALV,3.35,123.36,119.36,1660,850131,0.195,8594719590,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ACIU,3.35,2.16,2.09,1131,220570,0.513,212706747,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+CWH,3.33,4.97,4.81,33619,2485902,1.352,496843914,Retail Trade,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+INTR,3.32,4.04,3.91,115063,13280298,0.866,1720420571,Finance,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+SEZL,3.32,126.50,122.43,2892,501897,0.576,4136101855,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+NCLH,3.32,18.00,17.42,250355,22460231,1.115,8000578403,Consumer Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+XP,3.31,15.04,14.56,85646,18546226,0.462,7527746341,Finance,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+LBTYA,3.29,8.80,8.52,1696,4465793,0.038,2926937030,Communications,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+MANE,3.26,137.97,133.61,1093,770307,0.142,5582244011,Health Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+KHC,3.26,25.32,24.52,290536,13515868,2.150,29076398414,Consumer Non-Durables,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+RXRX,3.26,3.80,3.68,478264,27708983,1.726,2293993793,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+DG,3.26,134.77,130.52,4903,2146995,0.228,28794904474,Retail Trade,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ALB,3.22,93.09,90.19,45559,2320551,1.963,10642876495,Process Industries,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+TMQ,3.20,2.26,2.19,20152,1239358,1.626,397181032,Non-Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+JEF,3.17,50.10,48.56,1431,2418685,0.059,11152758126,Finance,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ANGX,3.17,3.58,3.47,41317,1479521,2.793,648044458,Consumer Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+CCL,3.16,30.12,29.20,239586,23721784,1.010,39262616163,Consumer Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+MRBK,3.16,17.98,17.43,200,75477,0.265,208061918,Finance,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+MRNA,3.14,235.61,228.44,128836,17658326,0.730,91201443200,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+RCL,3.11,322.91,313.17,13677,2710687,0.505,83763880147,Consumer Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ROST,3.10,238.79,231.60,789,2020975,0.039,73985345700,Retail Trade,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+DASH,3.10,189.00,183.32,14026,4395449,0.319,79928360173,Transportation,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+QMCO,3.10,18.22,17.67,3876,1966617,0.197,696374700,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+CRSP,3.08,51.53,49.99,13993,1467458,0.954,4849070591,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+GLSI,3.08,16.41,15.92,783,127541,0.614,233677078,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+QXO,3.07,12.07,11.71,141058,21764895,0.648,12149016402,Distribution Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+WVE,3.07,3.69,3.58,4863,3255399,0.149,706079710,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+NEE,3.06,86.91,84.33,77081,12768273,0.604,176865811079,Utilities,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+DECK,3.06,86.66,84.09,7517,3369257,0.223,11224331068,Consumer Non-Durables,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+SCCO,3.05,178.79,173.49,3172,1138603,0.279,148037865370,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ADSK,3.04,260.00,252.32,585,1845491,0.032,52734881531,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+LEN.B,3.04,87.70,85.11,8081,120425,6.710,20451407212,Consumer Durables,NYSE,"No confirmed catalyst — issuer IR + wire scan — rate-sensitive housing name, yields lower",false
+NTLA,3.04,12.22,11.86,27448,5162999,0.532,1661902538,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+NXRT,3.03,16.98,16.48,400,639388,0.063,422755600,Finance,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+JNJ,3.03,274.25,266.17,37800,7423708,0.509,640753815604,Health Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ABNB,3.03,172.02,166.96,4650,4114850,0.113,99973264080,Consumer Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+TOYO,3.03,5.10,4.95,67638,427822,15.810,211458786,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+STZ,3.01,142.29,138.13,85945,2441308,3.520,23374586791,Consumer Non-Durables,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+AVT,3.01,91.40,88.73,1150,1378234,0.083,7296521656,Distribution Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+BBWI,3.01,23.29,22.61,3434,6811202,0.050,4559200569,Retail Trade,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+PFGC,3.00,99.41,96.51,200,1398496,0.014,15227941487,Transportation,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+WGS,3.00,70.70,68.64,1001,848022,0.118,2047019147,Health Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+DOX,-35.61,40.20,62.43,217092,987573,21.982,6715657509,Technology Services,NASDAQ,FY27 outlook: pro forma constant-currency revenue to fall 7–11% on the T-Mobile dispute; declares $0.569 dividend,false
+NRIX,-33.54,17.16,25.82,141747,2418596,5.861,2820830041,Health Technology,NASDAQ,Sanofi scraps its inflammatory-disease programme — development discontinued,false
+FIS,-22.95,30.04,38.99,2157279,6334464,34.056,20107375177,Technology Services,NYSE,"FY26 guidance slashed: adj EPS to $5.82–5.89 (from $6.15–6.24), revenue to $13.445–13.505B; CFO James Kehoe exits Nov 5",false
+TBLA,-20.59,2.70,3.40,109251,1681678,6.497,918528376,Technology Services,NASDAQ,Q3 2026 results — full-page monetisation live at NBCUniversal and Fox News; Dianomi deal to close before year-end,false
+CBLL,-15.10,24.00,28.27,854,482931,0.177,1084948943,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+CIFR,-13.30,7.04,8.12,9340235,45343065,20.599,3705684660,Technology Services,NASDAQ,Sold with the neocloud/AI-datacenter complex on the Texas data-center result; no company-specific news found,false
+FIX,-13.16,1116.00,1285.13,12667,485675,2.608,44961430967,Industrial Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+USNA,-13.05,12.93,14.87,8013,175612,4.563,274746057,Health Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+SWKS,-12.05,75.11,85.40,161850,6043588,2.678,20083137697,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+DDOG,-12.01,194.04,220.52,874115,3194620,27.362,79183229921,Technology Services,NASDAQ,"Q3 beat (rev $1.20B +35%, adj EPS $0.81 vs $0.64) but Q4 guide implies ~25% growth, new large-contract wins fell and FCF margin slipped to 20.9%",false
+HUT,-11.92,56.15,63.75,240071,5771446,4.160,7857791090,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+CLSK,-11.53,7.21,8.15,2079992,16902657,12.306,2093059084,Technology Services,NASDAQ,"Bitcoin/AI-datacenter complex sold on the election; BTC +1.1%, so this is not a crypto tape read",false
+AUDC,-11.30,9.18,10.35,5017,116499,4.306,247993699,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+RWT,-11.25,2.76,3.11,216420,3373846,6.415,390654634,Finance,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+UNM,-11.13,80.90,91.03,877,1574504,0.056,14410667193,Finance,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+LIME,-10.91,22.70,25.48,1886,378030,0.499,1655797180,Consumer Durables,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+TRMB,-10.79,58.53,65.61,20002,1969014,1.016,15298929450,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+DJT,-10.76,5.31,5.95,778148,4223130,18.426,1653750588,Commercial Services,NASDAQ,Midterms: Democrats took both chambers and the president said he accepts the result; Bloomberg flags DJT falling on the election,false
+KODK,-10.73,7.74,8.67,18730,782038,2.395,848793020,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+BTDR,-9.97,6.23,6.92,613259,9864241,6.217,1880733165,Technology Services,NASDAQ,"No confirmed catalyst — issuer IR + wire scan (crypto miner, BTC +1.1%)",false
+MEC,-9.71,14.50,16.06,6175,503944,1.225,409535286,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+PXED,-9.36,21.20,23.39,10548,93685,11.259,843148073,Technology Services,NYSE,No confirmed catalyst — issuer IR + wire scan — listed as a top decliner in the 08:26 ET premarket movers list,false
+VST,-9.20,126.75,139.59,549879,6858067,8.018,46851315344,Utilities,NYSE,No confirmed catalyst — issuer IR + wire scan; earnings due Nov 6 — traded with the AI-datacenter power complex,false
+SEI,-9.18,63.00,69.37,97596,2718122,3.591,5561097629,Industrial Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+FRSH,-8.30,12.97,14.15,36722,6617977,0.555,3692028910,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+GSM,-8.29,3.54,3.86,1334,1189873,0.112,721281584,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+SEDG,-8.04,30.24,32.88,1074328,2565110,41.882,2022966574,Producer Manufacturing,NASDAQ,"Fell against a clean-energy bid elsewhere (FSLR +8.1%, PLUG +9.9%); heaviest pre-market book in the screen",false
+GLXY,-7.90,15.50,16.83,402453,6816030,5.905,6538118350,Finance,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+ENTX,-7.87,2.81,3.05,100,566462,0.018,530463386,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+ECG,-7.75,103.99,112.73,2319,574906,0.403,5756426306,Industrial Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+GEF,-7.69,75.00,81.25,150,370642,0.040,4405636660,Process Industries,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+HRMY,-7.51,34.24,37.02,41494,1010750,4.105,2155911295,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+CAMT,-7.49,103.95,112.37,5066,530341,0.955,5244102924,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+MOD,-7.45,116.11,125.45,309269,1575828,19.626,6673553262,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+IFRX,-7.41,1.50,1.62,199,831454,0.024,238736525,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+CORZ,-7.30,13.20,14.24,984164,14137180,6.962,4575887558,Technology Services,NASDAQ,Sold with the AI-datacenter power complex; no company news found,false
+URGN,-7.27,31.90,34.40,28372,1087107,2.610,1681491401,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+CRWV,-7.13,49.91,53.74,4178836,49865525,8.380,29639577035,Technology Services,NASDAQ,CoreWeave −6.4% per CNBC on the Texas result — Texas holds ~27% of planned US data-center gigawatts,false
+INIO,-7.10,17.01,18.31,91298,6175041,1.479,13732499599,Producer Manufacturing,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+VRT,-7.06,219.30,235.97,280319,6163791,4.548,90862701710,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+BRUN,-7.06,7.11,7.65,21285,3437782,0.619,641415332,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+GEV,-6.87,855.09,918.20,112363,2732911,4.111,243026482466,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+GEO,-6.80,26.16,28.07,67495,2476262,2.726,3694561657,Commercial Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+PWR,-6.62,613.50,657.00,14822,1159976,1.278,98994880508,Industrial Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+ALAB,-6.55,218.31,233.62,249249,4070062,6.124,40529589949,Electronic Technology,NASDAQ,"Q3 revenue $585M +154% y/y, adj EPS $1.32 vs $1.19 est — sold anyway; Needham cut its target to $300 (kept Buy)",false
+BMM,-6.34,3.25,3.47,279,260455,0.107,304908675,Non-Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+FPS,-6.34,25.42,27.14,141188,9141212,1.545,8262200014,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+SPCX,-6.27,132.45,141.31,9242647,95759689,9.652,1919140050964,Communications,NASDAQ,Democrat Gina Hinojosa won the Texas governor race promising an immediate data-center moratorium; SpaceX is building multiple GW in Texas,false
+IESC,-6.20,190.78,203.38,12636,374669,3.373,8192082730,Industrial Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+STRL,-6.13,339.01,361.14,46282,728168,6.356,11015838308,Industrial Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+NUAI,-6.12,2.61,2.78,371079,9940402,3.733,326070484,Industrial Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+ESTC,-6.05,85.00,90.47,4321,1853810,0.233,9588026218,Technology Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+RVLV,-6.04,20.23,21.53,100209,721919,13.881,1530469190,Retail Trade,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+METC,-5.93,6.34,6.74,64864,2078467,3.121,399505490,Energy Minerals,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+DIN,-5.89,33.23,35.31,5147,725774,0.709,446994608,Consumer Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+BRAI,-5.86,2.89,3.07,120547,4456856,2.705,632690887,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+LDOS,-5.73,127.00,134.72,880,1076212,0.082,16906310736,Technology Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+DELL,-5.68,385.20,408.40,254732,6558886,3.884,259665926903,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+QDEL,-5.68,13.29,14.09,600,2140463,0.028,966227845,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+IREN,-5.63,23.08,24.46,4596330,49777356,9.234,9896846510,Technology Services,NASDAQ,Iren −6% per CNBC on the data-center policy read; neocloud sold,false
+BTU,-5.61,19.50,20.66,5042,2060622,0.245,2518454013,Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+CAR,-5.61,103.21,109.34,200,412867,0.048,3862517623,Finance,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+NVT,-5.57,122.06,129.26,3736,2493132,0.150,20888165413,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+TLN,-5.54,337.50,357.28,9113,1128321,0.808,16899343670,Utilities,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+EME,-5.50,668.50,707.43,1401,402073,0.348,30972703696,Industrial Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+CEG,-5.47,249.00,263.40,100972,3745037,2.696,93324559898,Utilities,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+HLP,-5.46,3.81,4.03,1844,208214,0.886,301197165,Producer Manufacturing,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+CXW,-5.39,29.30,30.97,7769,1965592,0.395,3062731431,Commercial Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+BXBL,-5.29,1.97,2.08,339,126825,0.267,502434869,Consumer Durables,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+TSLA,-5.28,377.48,398.50,2607077,36640353,7.115,1575174085570,Consumer Durables,NASDAQ,Musk complex sold after the Texas result — Tesla −4.4% to −4.6% per CNBC,false
+XGN,-5.28,7.90,8.34,100,340193,0.029,202039338,Health Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+POWL,-5.23,154.80,163.34,2466,628967,0.392,5950894834,Producer Manufacturing,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+PLTR,-5.13,166.40,175.40,1171831,23798389,4.924,421574785967,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+MTZ,-5.10,188.00,198.10,13954,1525130,0.915,15907595835,Industrial Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+LITE,-4.99,646.25,680.16,201329,5475543,3.677,61610837566,Producer Manufacturing,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+CHRN,-4.97,13.00,13.68,2158,140443,1.537,1992320375,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+MARA,-4.90,6.81,7.16,2073966,35582851,5.829,2765903046,Technology Services,NASDAQ,"No confirmed catalyst — issuer IR + wire scan (BTC +1.1%, so not a crypto tape read)",false
+SM,-4.88,34.88,36.67,7814,2726246,0.287,8722108126,Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+APLD,-4.86,16.94,17.81,943776,25065224,3.765,5385514365,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+WYFI,-4.86,9.98,10.49,49666,1669389,2.975,475002263,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+DOCN,-4.85,86.11,90.50,55334,2768226,1.999,10640948738,Technology Services,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+CRL,-4.80,334.98,351.87,4266,1169219,0.365,16797876842,Commercial Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+SYRE,-4.78,94.52,99.27,1664,1278394,0.130,9161767437,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+CGEM,-4.76,15.00,15.75,5120,970843,0.527,1013586496,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+WCC,-4.72,335.01,351.61,3173,657735,0.482,17112796985,Distribution Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+CRDO,-4.67,143.87,150.91,217125,8433970,2.574,28363824868,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+GNRC,-4.58,199.69,209.28,6771,1125060,0.602,12360900104,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+KEEL,-4.57,2.09,2.19,1136079,26134164,4.347,1352485302,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+ETN,-4.52,374.00,391.70,30217,2388059,1.265,152136282349,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+CVS,-4.50,87.30,91.41,241238,8918178,2.705,116910683181,Retail Trade,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+NRG,-4.43,92.00,96.26,26622,3093357,0.861,20234861228,Utilities,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+CRTO,-4.42,14.50,15.17,1285,330102,0.389,743292967,Commercial Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+PODD,-4.37,148.10,154.86,55075,1505327,3.659,10740190624,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+ECHO,-4.36,97.50,101.94,49463,4163847,1.188,29645768022,Communications,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+WDC,-4.33,332.30,347.35,157145,8991748,1.748,130021191059,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+STX,-4.32,580.20,606.38,47662,5238580,0.910,139201267881,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+SSNC,-4.30,77.40,80.88,21195,1437020,1.475,18978895657,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+MLM,-4.24,520.73,543.77,203,885208,0.023,38618723353,Non-Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+MMSI,-4.23,80.60,84.16,300,715757,0.042,5042450228,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+NBIS,-4.13,145.37,151.64,1655440,20249221,8.175,41224126912,Technology Services,NASDAQ,Nebius −3% per CNBC on the data-center policy read,false
+EROC,-4.13,8.59,8.96,37976,2701075,1.406,1965824722,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+ECO,-4.09,89.45,93.26,26385,819802,3.218,3576405674,Transportation,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+XPEL,-4.07,40.76,42.49,223,201881,0.110,1171481102,Consumer Durables,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+MFA,-4.07,6.37,6.64,75267,2615255,2.878,671223884,Finance,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+EQH,-4.06,53.00,55.24,1100,2653698,0.041,15082462490,Finance,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ESLT,-3.99,726.44,756.62,80,98000,0.082,35470548447,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+TRMD,-3.92,38.68,40.26,63649,1961014,3.246,4115317126,Transportation,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+AADX,-3.89,10.63,11.06,8129,2155375,0.377,1906672281,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+MRVL,-3.86,165.34,171.97,841007,22712390,3.703,150800498269,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+KRMN,-3.82,38.00,39.51,3007,3122987,0.096,5236406528,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+LMT,-3.82,614.62,639.00,40319,1409433,2.861,147611964111,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+INBX,-3.76,78.03,81.08,14000,284942,4.913,1193307896,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+RXT,-3.74,2.58,2.69,33238,4572520,0.727,684333584,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+AESI,-3.69,7.84,8.14,35236,4124759,0.854,1017528176,Industrial Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+RARE,-3.67,16.02,16.63,16261,3757218,0.433,1639532905,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+FRO,-3.62,50.55,52.45,58921,4032932,1.461,11676570975,Transportation,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+SNDK,-3.62,1085.79,1126.52,577111,8399287,6.871,160291804064,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan — memory complex; no pre-print news found,false
+CLS,-3.61,250.56,259.94,55672,2742844,2.030,32781501590,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+AQST,-3.61,3.74,3.88,64695,2121889,3.049,486985217,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+ADUS,-3.60,121.99,126.55,374,222033,0.168,2363232867,Health Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+GLOO,-3.49,2.80,2.90,1000,584277,0.171,265440023,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+KOS,-3.47,2.50,2.59,68241,14786581,0.462,1542478053,Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+NANO,-3.47,3.62,3.75,2678,388938,0.689,482458419,Producer Manufacturing,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+HII,-3.45,306.01,316.93,1023,575121,0.178,12488962074,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+ORCL,-3.41,121.89,126.19,2030785,34823355,5.832,381565263820,Technology Services,NYSE,Oracle shed ~4.3% per CNBC on the data-center policy read; also selling $10B of stock and $10B of debt,false
+OC,-3.36,113.80,117.76,102516,1087665,9.425,9308773099,Process Industries,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+BWXT,-3.28,127.50,131.82,5545,1194829,0.464,12078034319,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+TNK,-3.22,92.50,95.58,164,394811,0.042,3314725197,Transportation,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+TKR,-3.19,111.97,115.66,1344,831723,0.162,8014872403,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+NOC,-3.17,532.86,550.30,5774,1016873,0.568,78178083614,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+OBE,-3.16,10.12,10.45,4894,660524,0.741,697282231,Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,true
+INTC,-3.14,58.65,60.55,5306419,116833283,4.542,321823245944,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+COHR,-3.13,200.99,207.49,273279,7307934,3.739,40861249048,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+REI,-3.10,1.25,1.29,97839,2879001,3.398,336096089,Energy Minerals,AMEX,No confirmed catalyst — issuer IR + wire scan,false
+RZAI,-3.10,3.75,3.87,18892,,,215339915,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+MDB,-3.09,325.00,335.37,39811,2648930,1.503,27016180385,Technology Services,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+ESAB,-3.09,73.70,76.05,2587,1178454,0.220,4727862029,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+CAT,-3.08,604.70,623.94,40365,2984500,1.352,286809536841,Producer Manufacturing,NYSE,No confirmed catalyst — issuer IR + wire scan,false
+AAOI,-3.08,62.00,63.97,761943,11157904,6.829,5431455355,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
+VET,-3.07,12.00,12.38,1113,1444046,0.077,1893500790,Energy Minerals,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+RTX,-3.05,197.60,203.82,30136,5041161,0.598,275042983143,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+FIRY,-3.04,12.11,12.49,100,176948,0.057,207611986,Technology Services,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+IMTX,-3.04,6.86,7.08,1197,1140175,0.105,1058673926,Health Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,true
+FN,-3.04,352.30,363.33,6795,978105,0.695,13019518096,Electronic Technology,NYSE,No confirmed catalyst — issuer IR + wire scan,true
+AXTI,-3.02,49.78,51.33,599875,9459479,6.342,3365873075,Electronic Technology,NASDAQ,No confirmed catalyst — issuer IR + wire scan,false
