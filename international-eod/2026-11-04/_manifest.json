@@ -1,0 +1,436 @@
+{
+ "date": "2026-11-04",
+ "generated_at": "2026-11-04T21:38:16.013070+00:00",
+ "provenance": "Written live by cron #05 (eod-international-daily) on 2026-11-04 at 16:30 ET. Source: TradingView public per-country scanner (country + type=stock filter), 16/16 HTTP 200. market_cap converted to USD with open.er-api rates dated 4 Nov 00:02 UTC; prices kept in the listing currency.",
+ "market_cap_unit": "USD",
+ "price_currency": "listing (the `currency` column)",
+ "change_pct_unit": "percent (TradingView `change` is already in percent units; verified against `change_abs` over 18,319 priced rows, worst error 6.8e-13)",
+ "fx_source": {
+  "provider": "open.er-api",
+  "updated_utc": "2026-11-04T00:02:31Z",
+  "per_usd": {
+   "EUR": 0.893426,
+   "AUD": 1.434205,
+   "CAD": 1.399422,
+   "JPY": 158.39919,
+   "DKK": 6.680451,
+   "TWD": 32.770816
+  },
+  "cross_check": {
+   "provider": "frankfurter",
+   "date": "2026-11-04",
+   "per_usd": {
+    "EUR": 0.88755,
+    "AUD": 1.4255,
+    "CAD": 1.3935,
+    "JPY": 158.25,
+    "DKK": 6.6334
+   },
+   "note": "no TWD rate; agreement within 0.71% on every other currency (widest: DKK)"
+  }
+ },
+ "floors_usd": {
+  "au": {
+   "floor_usd": 300000000,
+   "min_volume": 100000
+  },
+  "jp": {
+   "floor_usd": 300000000,
+   "min_volume": null
+  },
+  "tw": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "ca": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "eu-de": {
+   "floor_usd": 300000000,
+   "min_volume": 50000
+  },
+  "eu-fr": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-it": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-es": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-nl": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-be": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-at": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-pt": {
+   "floor_usd": 50000000,
+   "min_volume": null
+  },
+  "eu-ie": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "eu-fi": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-dk": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-gr": {
+   "floor_usd": 50000000,
+   "min_volume": null
+  }
+ },
+ "regions": {
+  "au": {
+   "universe_rows": 1551,
+   "unique_instruments": 1551,
+   "written": 303,
+   "excluded_no_market_cap": 4,
+   "excluded_below_floor": 1230,
+   "excluded_below_volume": 14,
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 300000000,
+   "min_volume": 100000,
+   "file": "au.csv",
+   "venues": [
+    "ASX"
+   ],
+   "venues_in_universe": [
+    "ASX"
+   ]
+  },
+  "jp": {
+   "universe_rows": 3896,
+   "unique_instruments": 3868,
+   "written": 1380,
+   "excluded_no_market_cap": 2,
+   "excluded_below_floor": 2376,
+   "excluded_below_volume": 0,
+   "carryover_rows": 0,
+   "off_official_rows": 110,
+   "floor_usd": 300000000,
+   "min_volume": null,
+   "file": "jp.csv",
+   "venues": [
+    "TSE"
+   ],
+   "venues_in_universe": [
+    "FSE",
+    "NAG",
+    "SAPSE",
+    "TSE"
+   ]
+  },
+  "tw": {
+   "universe_rows": 2332,
+   "unique_instruments": 2332,
+   "written": 891,
+   "excluded_no_market_cap": 56,
+   "excluded_below_floor": 1385,
+   "excluded_below_volume": 0,
+   "carryover_rows": 1,
+   "off_official_rows": 0,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "tw.csv",
+   "venues": [
+    "TPEX",
+    "TWSE"
+   ],
+   "venues_in_universe": [
+    "TPEX",
+    "TWSE"
+   ]
+  },
+  "ca": {
+   "universe_rows": 4289,
+   "unique_instruments": 2709,
+   "written": 661,
+   "excluded_no_market_cap": 134,
+   "excluded_below_floor": 1899,
+   "excluded_below_volume": 0,
+   "carryover_rows": 39,
+   "off_official_rows": 15,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "ca.csv",
+   "venues": [
+    "CSE",
+    "TSX",
+    "TSXV"
+   ],
+   "venues_in_universe": [
+    "CSE",
+    "NEO",
+    "TSX",
+    "TSXV"
+   ]
+  },
+  "eu-de": {
+   "universe_rows": 4303,
+   "unique_instruments": 498,
+   "written": 126,
+   "excluded_no_market_cap": 2,
+   "excluded_below_floor": 202,
+   "excluded_below_volume": 80,
+   "carryover_rows": 0,
+   "off_official_rows": 173,
+   "floor_usd": 300000000,
+   "min_volume": 50000,
+   "file": "eu-de.csv",
+   "venues": [
+    "XETR"
+   ],
+   "venues_in_universe": [
+    "DUS",
+    "FWB",
+    "GETTEX",
+    "HAM",
+    "HAN",
+    "LS",
+    "LSX",
+    "MUN",
+    "SWB",
+    "TRADEGATE",
+    "XETR"
+   ]
+  },
+  "eu-fr": {
+   "universe_rows": 547,
+   "unique_instruments": 547,
+   "written": 262,
+   "excluded_no_market_cap": 1,
+   "excluded_below_floor": 284,
+   "excluded_below_volume": 0,
+   "carryover_rows": 5,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-fr.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "venues_in_universe": [
+    "EURONEXT"
+   ]
+  },
+  "eu-it": {
+   "universe_rows": 392,
+   "unique_instruments": 392,
+   "written": 179,
+   "excluded_no_market_cap": 2,
+   "excluded_below_floor": 211,
+   "excluded_below_volume": 0,
+   "carryover_rows": 5,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-it.csv",
+   "venues": [
+    "MIL"
+   ],
+   "venues_in_universe": [
+    "MIL"
+   ]
+  },
+  "eu-es": {
+   "universe_rows": 273,
+   "unique_instruments": 273,
+   "written": 147,
+   "excluded_no_market_cap": 34,
+   "excluded_below_floor": 92,
+   "excluded_below_volume": 0,
+   "carryover_rows": 35,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-es.csv",
+   "venues": [
+    "BME"
+   ],
+   "venues_in_universe": [
+    "BME"
+   ]
+  },
+  "eu-nl": {
+   "universe_rows": 78,
+   "unique_instruments": 78,
+   "written": 56,
+   "excluded_no_market_cap": 0,
+   "excluded_below_floor": 22,
+   "excluded_below_volume": 0,
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-nl.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "venues_in_universe": [
+    "EURONEXT"
+   ]
+  },
+  "eu-be": {
+   "universe_rows": 100,
+   "unique_instruments": 100,
+   "written": 76,
+   "excluded_no_market_cap": 1,
+   "excluded_below_floor": 23,
+   "excluded_below_volume": 0,
+   "carryover_rows": 2,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-be.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "venues_in_universe": [
+    "EURONEXT"
+   ]
+  },
+  "eu-at": {
+   "universe_rows": 65,
+   "unique_instruments": 65,
+   "written": 51,
+   "excluded_no_market_cap": 3,
+   "excluded_below_floor": 11,
+   "excluded_below_volume": 0,
+   "carryover_rows": 2,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-at.csv",
+   "venues": [
+    "VIE"
+   ],
+   "venues_in_universe": [
+    "VIE"
+   ]
+  },
+  "eu-pt": {
+   "universe_rows": 31,
+   "unique_instruments": 31,
+   "written": 27,
+   "excluded_no_market_cap": 0,
+   "excluded_below_floor": 4,
+   "excluded_below_volume": 0,
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 50000000,
+   "min_volume": null,
+   "file": "eu-pt.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "venues_in_universe": [
+    "EURONEXT"
+   ]
+  },
+  "eu-ie": {
+   "universe_rows": 19,
+   "unique_instruments": 19,
+   "written": 17,
+   "excluded_no_market_cap": 0,
+   "excluded_below_floor": 2,
+   "excluded_below_volume": 0,
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "eu-ie.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "venues_in_universe": [
+    "EURONEXT"
+   ]
+  },
+  "eu-fi": {
+   "universe_rows": 188,
+   "unique_instruments": 188,
+   "written": 102,
+   "excluded_no_market_cap": 4,
+   "excluded_below_floor": 82,
+   "excluded_below_volume": 0,
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-fi.csv",
+   "venues": [
+    "OMXHEX"
+   ],
+   "venues_in_universe": [
+    "OMXHEX"
+   ]
+  },
+  "eu-dk": {
+   "universe_rows": 134,
+   "unique_instruments": 134,
+   "written": 76,
+   "excluded_no_market_cap": 1,
+   "excluded_below_floor": 57,
+   "excluded_below_volume": 0,
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-dk.csv",
+   "venues": [
+    "OMXCOP"
+   ],
+   "venues_in_universe": [
+    "OMXCOP"
+   ]
+  },
+  "eu-gr": {
+   "universe_rows": 128,
+   "unique_instruments": 128,
+   "written": 86,
+   "excluded_no_market_cap": 0,
+   "excluded_below_floor": 42,
+   "excluded_below_volume": 0,
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 50000000,
+   "min_volume": null,
+   "file": "eu-gr.csv",
+   "venues": [
+    "ATHEX"
+   ],
+   "venues_in_universe": [
+    "ATHEX"
+   ]
+  }
+ },
+ "totals": {
+  "universe_rows": 18326,
+  "unique_instruments": 12913,
+  "written": 4440,
+  "excluded_no_market_cap": 244,
+  "excluded_below_floor": 7922,
+  "excluded_below_volume": 94,
+  "off_official_rows": 298,
+  "carryover_rows": 89,
+  "regions_written": 16,
+  "regions_skipped": 0
+ }
+}

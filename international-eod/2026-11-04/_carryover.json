@@ -1,0 +1,915 @@
+{
+ "au": [],
+ "jp": [],
+ "tw": [
+  {
+   "ticker": "TWSE:1312A",
+   "name": "Grand Pacific Petrochemical Corp Pfd Shs A",
+   "exchange": "TWSE",
+   "close": "22.9",
+   "volume": 2000.0,
+   "change_pct": -0.4348,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session but change_pct non-zero - stale change leftover"
+  }
+ ],
+ "ca": [
+  {
+   "ticker": "TSX:BN.PR.B",
+   "name": "Brookfield Corporation Cum Red Pfd Registered A Series 2",
+   "exchange": "TSX",
+   "close": "14.72",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:BN.PF.E",
+   "name": "Brookfield Corporation Cum Pref Shs A Non-Voting Series -38-",
+   "exchange": "TSX",
+   "close": "24",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:CU.PR.G",
+   "name": "Canadian Utilities Ltd Cum Red Second Pfd Shs Series -DD-",
+   "exchange": "TSX",
+   "close": "20.98",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:GWO.PR.G",
+   "name": "Great-West Lifeco Inc. 5.2 % Non Cum 1st Pfd Shs Series G",
+   "exchange": "TSX",
+   "close": "22.8",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:FTS.PR.I",
+   "name": "Fortis Inc. Cum Red 1st Pfd Shs Series I Fltg Rt",
+   "exchange": "TSX",
+   "close": "19.98",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:BCE.PR.I",
+   "name": "BCE Inc. Cum Red Pfd Series AI",
+   "exchange": "TSX",
+   "close": "22.22",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:DHT.U",
+   "name": "DRI Healthcare Trust",
+   "exchange": "TSX",
+   "close": "11.62",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:ELF.PR.F",
+   "name": "E-L Financial Corp Ltd 5.3 % First Pfd Shs Series 1",
+   "exchange": "TSX",
+   "close": "23.04",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:WFC",
+   "name": "Wall Financial Corporation",
+   "exchange": "TSX",
+   "close": "22",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:SLF.PR.H",
+   "name": "Sun Life Financial Inc Non-Cum Pfd Shs A Series -10R-",
+   "exchange": "TSX",
+   "close": "24.7",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:SLF.PR.J",
+   "name": "Sun Life Financial Inc Non Cum Pfd Shs A Series -9QR- Fltg Rt",
+   "exchange": "TSX",
+   "close": "20.01",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:IFC.PR.E",
+   "name": "Intact Financial Corporation 5.20% Non-Cum Red Pfd Registered Shs A Series 5",
+   "exchange": "TSX",
+   "close": "23",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:GWO.PR.Y",
+   "name": "Great-West Lifeco Inc. 4.50 % Non-Cum Red 1st Pfd Registered Shs Series -Y-",
+   "exchange": "TSX",
+   "close": "19.82",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:CU.PR.D",
+   "name": "Canadian Utilities Ltd Cum Red Second Pfd Shs Series -AA-",
+   "exchange": "TSX",
+   "close": "22.72",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:CPX.PR.A",
+   "name": "Capital Power Corporation Cum Pref Shs Series 1",
+   "exchange": "TSX",
+   "close": "23.67",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:QSP.UN",
+   "name": "Restaurant Brands International LP",
+   "exchange": "TSX",
+   "close": "105.67",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:BCE.PR.G",
+   "name": "BCE Inc. Cum Red Pfd Series AG",
+   "exchange": "TSX",
+   "close": "22.22",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-10-29",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:PPL.PR.G",
+   "name": "Pembina Pipeline Corp Cum Red Pfd Registered Shs A Series 7",
+   "exchange": "TSX",
+   "close": "25.76",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:BCE.PR.A",
+   "name": "BCE Inc. 1St Pfd Series AA",
+   "exchange": "TSX",
+   "close": "21.2",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:BCE.PR.Q",
+   "name": "BCE Inc. Cum Red 1st Pfd Shs Series AQ",
+   "exchange": "TSX",
+   "close": "25",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:TRP.PR.L",
+   "name": "TC Energy Corporation Cum Red 1st Pfd Registered Shs Series -10-",
+   "exchange": "TSX",
+   "close": "23.29",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-10-30",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:BCE.PR.L",
+   "name": "BCE Inc. Cum Red Pfd Shs Series -AL- Fltg Rt",
+   "exchange": "TSX",
+   "close": "21.9",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-10-29",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:PPL.PR.Q",
+   "name": "Pembina Pipeline Corp Cum Conv Red Perp Pfd Registered Shs A Series -17-",
+   "exchange": "TSX",
+   "close": "25.99",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:ENB.PR.I",
+   "name": "Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series I",
+   "exchange": "TSX",
+   "close": "22.73",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:BCE.PR.E",
+   "name": "BCE Inc. Floating Rate Pfd Series AE",
+   "exchange": "TSX",
+   "close": "21.5",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:IFC.PR.K",
+   "name": "Intact Financial Corporation 5.25% Non-Cum Red Pfd Registered Shs A Series -11- Reg S",
+   "exchange": "TSX",
+   "close": "23.15",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:TRI.PR.B",
+   "name": "Thomson Reuters Corporation Floating Rate Pfd Shs Series -II-",
+   "exchange": "TSX",
+   "close": "15.89",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:ALA.PR.G",
+   "name": "AltaGas Ltd. Cum Red Pfd Shs Series G",
+   "exchange": "TSX",
+   "close": "25.8",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:GWO.PR.T",
+   "name": "Great-West Lifeco Inc. Non-Cum Red 1st Pfd Registered Shs Series T",
+   "exchange": "TSX",
+   "close": "22.5",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:GWO.PR.N",
+   "name": "Great-West Lifeco Inc. Non-Cum 1st Pfd Shs Series N",
+   "exchange": "TSX",
+   "close": "20.44",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:BCE.PR.Y",
+   "name": "BCE Inc. Cum Red 1St Pfd Series Y Fltg Rt",
+   "exchange": "TSX",
+   "close": "21.5",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:POW.PR.E",
+   "name": "Power Corporation of Canada Part.Pfd Shs",
+   "exchange": "TSX",
+   "close": "87",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:BCE.PR.D",
+   "name": "BCE Inc. Pfd Registered Series AD",
+   "exchange": "TSX",
+   "close": "21.52",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:MFC.PR.J",
+   "name": "Manulife Financial Corporation Non-Cum Conv Pfd Shs 1 Series -11-",
+   "exchange": "TSX",
+   "close": "25.5",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:TCL.B",
+   "name": "Transcontinental Inc. Class B",
+   "exchange": "TSX",
+   "close": "6.75",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-10-27",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:GWO.PR.Q",
+   "name": "Great-West Lifeco Inc. Non Cum 1st Pfd Registered Shs Series -Q-",
+   "exchange": "TSX",
+   "close": "22.45",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:ENB.PR.G",
+   "name": "Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series G",
+   "exchange": "TSX",
+   "close": "23.6",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-10-30",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:TA.PR.G",
+   "name": "TransAlta Corp Floating Rate Cum 1st Pfd Registered Shs Series D",
+   "exchange": "TSX",
+   "close": "24",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-10-28",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "TSX:TD.PF.J",
+   "name": "Toronto-Dominion Bank Non-Cum Conv Red Perp Pfd Series 18",
+   "exchange": "TSX",
+   "close": "25.5",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  }
+ ],
+ "eu-de": [],
+ "eu-fr": [
+  {
+   "ticker": "EURONEXT:FGRMC",
+   "name": "Eiffage SA",
+   "exchange": "EURONEXT",
+   "close": "114.7",
+   "volume": 1202.0,
+   "change_pct": 2.9161,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session but change_pct non-zero - stale change leftover"
+  },
+  {
+   "ticker": "EURONEXT:CROS",
+   "name": "Crosswood SA",
+   "exchange": "EURONEXT",
+   "close": "8.85",
+   "volume": 11.0,
+   "change_pct": -8.7629,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session but change_pct non-zero - stale change leftover"
+  },
+  {
+   "ticker": "EURONEXT:ACMC",
+   "name": "Accor SA",
+   "exchange": "EURONEXT",
+   "close": "52.72",
+   "volume": 100.0,
+   "change_pct": 3.332,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session but change_pct non-zero - stale change leftover"
+  },
+  {
+   "ticker": "EURONEXT:BLEE",
+   "name": "Bleecker S.A.",
+   "exchange": "EURONEXT",
+   "close": "101",
+   "volume": 60.0,
+   "change_pct": -0.9804,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session but change_pct non-zero - stale change leftover"
+  },
+  {
+   "ticker": "EURONEXT:ALPG",
+   "name": "PREATONI Group",
+   "exchange": "EURONEXT",
+   "close": "36.8",
+   "volume": 450.0,
+   "change_pct": 2.2222,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session but change_pct non-zero - stale change leftover"
+  }
+ ],
+ "eu-it": [
+  {
+   "ticker": "MIL:BF",
+   "name": "Fiere Internazionali Di Bologna S.P.A.",
+   "exchange": "MIL",
+   "close": "1.25",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "MIL:KMER",
+   "name": "KME Group S.p.A. Azioni di risp nominativa",
+   "exchange": "MIL",
+   "close": "1.47",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "MIL:RES",
+   "name": "Recupero Etico Sostenibile S.p.A",
+   "exchange": "MIL",
+   "close": "7.74",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "MIL:VARV",
+   "name": "SBE-Varvit S.p.A. Class A",
+   "exchange": "MIL",
+   "close": "6.8",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "MIL:YRM",
+   "name": "Rosetti Marino S.p.A.",
+   "exchange": "MIL",
+   "close": "236",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  }
+ ],
+ "eu-es": [
+  {
+   "ticker": "BME:GGC",
+   "name": "General de Galerias Comerciales SA",
+   "exchange": "BME",
+   "close": "161",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:STNA",
+   "name": "Santa Ana Global Enterprises SA",
+   "exchange": "BME",
+   "close": "15.4",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YZBL",
+   "name": "Zambal Spain SOCIMI SA",
+   "exchange": "BME",
+   "close": "0.915",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YADV",
+   "name": "ADVERO Properties Socimi SA",
+   "exchange": "BME",
+   "close": "13.7",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-10-28",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YDOA",
+   "name": "Inversiones Doalca SOCIMI SA",
+   "exchange": "BME",
+   "close": "26.8",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YATO",
+   "name": "Atom Hoteles SOCIMI SA",
+   "exchange": "BME",
+   "close": "16.8",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:CEV",
+   "name": "Compania Espanola de Viviendas en Alquiler, S.A.",
+   "exchange": "BME",
+   "close": "8.15",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YGOP",
+   "name": "GOP Properties SOCIMI SA",
+   "exchange": "BME",
+   "close": "18.6",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:SCHST",
+   "name": "NORDESTE PROPERTIES SOCIMI, S.A.",
+   "exchange": "BME",
+   "close": "11.8",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YORE",
+   "name": "Olimpo Real Estate SOCIMI, S.A.",
+   "exchange": "BME",
+   "close": "0.95",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YCPS",
+   "name": "Castellana Properties Socimi SA",
+   "exchange": "BME",
+   "close": "9.4",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:SCHLR",
+   "name": "HELIOS RE SOCIMI, S.A.",
+   "exchange": "BME",
+   "close": "8.3",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YENT",
+   "name": "Entrecampos Cuatro SOCIMI SA",
+   "exchange": "BME",
+   "close": "1.78",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YTAN",
+   "name": "TANDER INVERSIONES SOCIMI SA",
+   "exchange": "BME",
+   "close": "11.9",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:AMEN",
+   "name": "Aeternal Mentis SA",
+   "exchange": "BME",
+   "close": "7.5",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-10-29",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YTST",
+   "name": "Testa Residencial Socimi SA",
+   "exchange": "BME",
+   "close": "3.26",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YGMP",
+   "name": "Gmp Property SOCIMI SA",
+   "exchange": "BME",
+   "close": "62",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:GAM",
+   "name": "General de Alquiler de Maquinaria, S.A.",
+   "exchange": "BME",
+   "close": "1.41",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YADR",
+   "name": "Adriano Care SOCIMI SA",
+   "exchange": "BME",
+   "close": "9.85",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YEUR",
+   "name": "Euro Cervantes SOCIMI SAU",
+   "exchange": "BME",
+   "close": "31.6",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YTRM",
+   "name": "Torimbia SOCIMI SA",
+   "exchange": "BME",
+   "close": "26.6",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:ATSI",
+   "name": "Aplicaciones y Tratamiento de Sistemas, S.A.",
+   "exchange": "BME",
+   "close": "3.38",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YMRE",
+   "name": "Meridia Real Estate III SOCIMI SA",
+   "exchange": "BME",
+   "close": "0.77",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YSRR",
+   "name": "Serrano 61 Desarrollo Socimi SA",
+   "exchange": "BME",
+   "close": "19.8",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": null,
+   "reason": "zero volume and unchanged change - no print today"
+  },
+  {
+   "ticker": "BME:YSIL",
+   "name": "Silicius Real Estate Socimi SA",
+   "exchange": "BME",
+   "close": "10.5",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:SEC",
+   "name": "Secuoya Grupo de Comunicacion SA",
+   "exchange": "BME",
+   "close": "30.4",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-10-27",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YVIV",
+   "name": "Vivenio Residencial SOCIMI SA",
+   "exchange": "BME",
+   "close": "1.33",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YTRI",
+   "name": "Trivium Real Estate Socimi SA",
+   "exchange": "BME",
+   "close": "38.4",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YVCP",
+   "name": "Veracruz Properties Socimi SA",
+   "exchange": "BME",
+   "close": "31.2",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YISC",
+   "name": "ISC Fresh Water Investment SOCIMI S.A.",
+   "exchange": "BME",
+   "close": "15.1",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YIRG",
+   "name": "IRG10 SOCIMI SA",
+   "exchange": "BME",
+   "close": "5.65",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YHSP",
+   "name": "Hispanotels Inversiones SOCIMI SA",
+   "exchange": "BME",
+   "close": "8.55",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:SCAFS",
+   "name": "Ahorro Familiar S.A.",
+   "exchange": "BME",
+   "close": "27",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:SCTEM",
+   "name": "Tempore Properties SOCIMI SA",
+   "exchange": "BME",
+   "close": "2.58",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  },
+  {
+   "ticker": "BME:YEPSA",
+   "name": "Emperador Properties SOCIMI SA",
+   "exchange": "BME",
+   "close": "10.6",
+   "volume": 0.0,
+   "change_pct": 0,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session on zero volume - no print today"
+  }
+ ],
+ "eu-nl": [],
+ "eu-be": [
+  {
+   "ticker": "EURONEXT:ROU",
+   "name": "Roularta Media Group NV",
+   "exchange": "EURONEXT",
+   "close": "11.85",
+   "volume": 85.0,
+   "change_pct": -1.25,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session but change_pct non-zero - stale change leftover"
+  },
+  {
+   "ticker": "EURONEXT:ROCK",
+   "name": "WHITESTONE GROUP",
+   "exchange": "EURONEXT",
+   "close": "18.8",
+   "volume": 500.0,
+   "change_pct": 1.0753,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session but change_pct non-zero - stale change leftover"
+  }
+ ],
+ "eu-at": [
+  {
+   "ticker": "VIE:ACAG",
+   "name": "AUSTRIACARD HOLDINGS AG",
+   "exchange": "VIE",
+   "close": "9.76",
+   "volume": 223.0,
+   "change_pct": 0.3083,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session but change_pct non-zero - stale change leftover"
+  },
+  {
+   "ticker": "VIE:BHD",
+   "name": "Burgenland Holding AG",
+   "exchange": "VIE",
+   "close": "84",
+   "volume": 3.0,
+   "change_pct": 1.2048,
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged vs prior session but change_pct non-zero - stale change leftover"
+  }
+ ],
+ "eu-pt": [],
+ "eu-ie": [],
+ "eu-fi": [],
+ "eu-dk": [],
+ "eu-gr": []
+}
