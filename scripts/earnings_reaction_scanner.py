@@ -26,44 +26,136 @@ import json, subprocess, time, datetime, os, sys, re
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-10-26.2"
-SELF_HEALED = {"done": False, "from": None, "to": None}
+SCRIPT_VERSION = "2026-11-04.1"
+SELF_HEALED = {"done": False, "from": None, "to": None, "source": None}
 
 RAW_REPO = "https://raw.githubusercontent.com/karizaco/minimax-cloud-outputs"
+API_OWNER = "karizaco"
+API_REPO = "minimax-cloud-outputs"
 SCRIPT_PATH = "scripts/earnings_reaction_scanner.py"
 
 
+def _valid_script(text):
+    """True only for a body that really is this pipeline.
+
+    A GitHub 403/404 body is NOT empty. The unauthenticated contents API
+    returns one often from this egress IP (measured 2026-11-04: 8 of 20 calls
+    were HTTP 403 "API rate limit exceeded for 47.253.4.207"), so saving that
+    JSON as the script would break the run. Check the BODY, never the status.
+    """
+    if not text or "SCRIPT_VERSION" not in text:
+        return False
+    try:
+        compile(text, "<remote>", "exec")
+    except Exception:
+        return False
+    return True
+
+
+def _ver_key(v):
+    """Comparable key for a YYYY-MM-DD.N version string."""
+    return tuple(int(x) for x in re.findall(r"\d+", v or "")) or (0,)
+
+
+def _fetch_remote_script():
+    """Return (text, source) for the current shared-repo copy of this script.
+
+    Ordered by AUTHORITATIVENESS, not speed. Measured 2026-11-04 on a
+    same-path modification: the contents API and the GitHub connector served the
+    new bytes in 1s, raw.githubusercontent took 284s, and jsDelivr was still
+    serving the OLD bytes after 8 minutes (it was 15h stale on a real file
+    that day). The CDN copies are the LAST resort, not the default.
+    """
+    # 1. GitHub connector - authenticated, authoritative, not CDN-cached.
+    try:
+        args = json.dumps({"owner": API_OWNER, "repo": API_REPO,
+                           "path": SCRIPT_PATH, "ref": "refs/heads/main"})
+        r = subprocess.run(["mcode-tools", "connector", "call",
+                            "connector__github__get_file_contents", "--args", args],
+                           capture_output=True, text=True, timeout=90)
+        if r.returncode == 0 and r.stdout.strip():
+            blocks = json.loads(r.stdout)
+            text = ""
+            if isinstance(blocks, list):
+                for blk in blocks:
+                    if isinstance(blk, dict):
+                        res = blk.get("resource") or {}
+                        if isinstance(res, dict) and res.get("text"):
+                            text = res["text"]
+            if _valid_script(text):
+                return text, "connector"
+    except Exception:
+        pass
+    # 2. contents API with the sandbox token (5000/hr, not 60/hr).
+    token = os.environ.get("GITHUB_TOKEN", "")
+    if token:
+        try:
+            r = subprocess.run(["curl", "-sS", "-L", "--max-time", "30",
+                                "-H", "Accept: application/vnd.github.raw",
+                                "-H", "Authorization: Bearer " + token,
+                                f"https://api.github.com/repos/{API_OWNER}/{API_REPO}/contents/{SCRIPT_PATH}?ref=main"],
+                               capture_output=True, text=True, timeout=45)
+            if _valid_script(r.stdout):
+                return r.stdout, "api-token"
+        except Exception:
+            pass
+    # 3. contents API without a token (often 403 from this egress IP).
+    try:
+        r = subprocess.run(["curl", "-sS", "-L", "--max-time", "30",
+                            "-H", "Accept: application/vnd.github.raw",
+                            f"https://api.github.com/repos/{API_OWNER}/{API_REPO}/contents/{SCRIPT_PATH}?ref=main"],
+                           capture_output=True, text=True, timeout=45)
+        if _valid_script(r.stdout):
+            return r.stdout, "api"
+    except Exception:
+        pass
+    # 4. CDN copies - last resort; they can serve stale bytes for minutes to hours.
+    for ref in ("refs/heads/main", "main"):
+        try:
+            r = subprocess.run(["curl", "-sS", "-L", "--max-time", "30",
+                                f"{RAW_REPO}/{ref}/{SCRIPT_PATH}"],
+                               capture_output=True, text=True, timeout=45)
+            if _valid_script(r.stdout):
+                return r.stdout, "raw-" + ref
+        except Exception:
+            pass
+    return None, None
+
+
 def _self_heal():
-    """Replace this file with the current shared-repo copy if it is newer.
+    """Replace this file with the current shared-repo copy when it differs.
 
-    The cron fetches the pipeline from `raw/.../main/...`, and that URL is served
-    from a CDN cache entry that can keep returning a STALE copy for a long time
-    after a push - measured 2026-10-26: the `main` form still served the
-    pre-patch file while `refs/heads/main` and the commit SHA served the new one.
-    A stale fetch would silently undo a fix. The `refs/heads/main` form is not
-    cached the same way, so compare against that and re-exec if it differs.
+    The cron fetches the pipeline over HTTP and a CDN copy can serve stale
+    bytes after a push (measured 2026-11-04: raw.githubusercontent was 284s
+    behind on a same-path edit, jsDelivr 15h behind). A stale fetch silently
+    undoes a fix, so the authoritative copy is fetched and compared
+    BYTE-FOR-BYTE.
 
-    The content is compared byte-for-byte as well as by version, and the new
-    copy carries the remote's own SCRIPT_VERSION, so this cannot loop.
+    The previous guard compared SCRIPT_VERSION first and returned early when the
+    versions matched, which made the byte comparison unreachable - so a fix
+    pushed WITHOUT a version bump never reached the fleet. Content is compared
+    FIRST here. The version only decides whether the remote copy is NEWER (an
+    older copy is never adopted). The repo is the source of truth, so an equal
+    version with different content IS adopted - that is exactly the case the
+    old guard dropped on the floor.
     """
     try:
-        url = f"{RAW_REPO}/refs/heads/main/{SCRIPT_PATH}"
-        r = subprocess.run(["curl", "-sS", "-m", "30", url],
-                           capture_output=True, text=True)
-        if r.returncode != 0 or "SCRIPT_VERSION" not in r.stdout:
-            return
-        remote = re.search(r'SCRIPT_VERSION\s*=\s*"([^"]+)"', r.stdout)
-        if not remote or remote.group(1) == SCRIPT_VERSION:
-            return
         here = os.path.abspath(__file__)
         with open(here, "r") as fh:
-            if fh.read() == r.stdout:
-                return
+            local = fh.read()
+        remote, source = _fetch_remote_script()
+        if not remote or remote == local:
+            return
+        rver_m = re.search(r'SCRIPT_VERSION\s*=\s*"([^"]+)"', remote)
+        lver_m = re.search(r'SCRIPT_VERSION\s*=\s*"([^"]+)"', local)
+        rver = rver_m.group(1) if rver_m else ""
+        lver = lver_m.group(1) if lver_m else ""
+        if lver and rver and _ver_key(rver) < _ver_key(lver):
+            return                      # never downgrade to an older copy
         with open(here, "w") as fh:
-            fh.write(r.stdout)
-        SELF_HEALED["done"] = True
-        SELF_HEALED["from"] = SCRIPT_VERSION
-        SELF_HEALED["to"] = remote.group(1)
+            fh.write(remote)
+        # The re-exec replaces this process, so the flag travels in the env.
+        os.environ["_EARNINGS_SELF_HEALED"] = f"{lver or '?'}->{rver or '?'}|{source}"
         os.execv(sys.executable, [sys.executable, here] + sys.argv[1:])
     except Exception:
         return
@@ -71,7 +163,20 @@ def _self_heal():
 
 _self_heal()
 
-ET = datetime.timezone(datetime.timedelta(hours=-4))
+_h = os.environ.get("_EARNINGS_SELF_HEALED", "")
+if _h:
+    _parts = _h.split("|")
+    _v = _parts[0].split("->")
+    SELF_HEALED["done"] = True
+    SELF_HEALED["from"] = _v[0] if len(_v) > 0 else "?"
+    SELF_HEALED["to"] = _v[1] if len(_v) > 1 else "?"
+    SELF_HEALED["source"] = _parts[1] if len(_parts) > 1 else "?"
+
+try:  # ET is UTC-5 in winter and UTC-4 in summer. A fixed offset mislabeled
+    from zoneinfo import ZoneInfo      # every fire from 2026-11-01 to 2026-03-08
+    ET = ZoneInfo("America/New_York")
+except Exception:
+    ET = datetime.timezone(datetime.timedelta(hours=-4))
 RUN_DATE = datetime.datetime.now(ET).strftime("%Y-%m-%d")
 OUT_DIR = "/workspace/earnings"
 
@@ -621,7 +726,10 @@ A("")
 A(f"- scanner_calls: {health['scanner_calls']} | scanner_errors: {health['scanner_errors']}")
 A(f"- pipeline_version: {SCRIPT_VERSION}" +
   (f" | self-healed at start of run from {SELF_HEALED['from']} to {SELF_HEALED['to']} "
-   f"(the cron's cached raw URL served a stale copy)" if SELF_HEALED["done"] else ""))
+   f"via {SELF_HEALED['source']} (the cron's fetch served a stale copy)"
+   if SELF_HEALED["done"] else ""))
+A("- et_clock: zoneinfo America/New_York (DST-aware; a fixed UTC-4 mislabels every "
+  "winter fire)")
 A(f"- yahoo_calls: {health['yahoo_calls']} | yahoo_429: {health['yahoo_429']} | "
   f"yahoo_errors: {health['yahoo_errors']}")
 cc = health["cross_check"]
