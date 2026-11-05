@@ -1,31 +1,14 @@
 {
-  "audit_date_et": "2026-11-03",
-  "audit_run_et": "2026-11-04T07:03:00-04:00",
-  "origin_main_sha": "eab7a57",
-  "due": 18,
-  "delivered": 16,
-  "missing": 2,
-  "stale_routines": 2,
-  "never_delivered": [
-    "92a-preopen-catalyst-capture",
-    "92b-preopen-catalyst-capture"
-  ],
-  "not_yet_fired": [],
+  "audit_date_et": "2026-11-04",
+  "audit_run_et": "2026-11-05T07:03:00-04:00",
+  "origin_main_sha": "19e4463",
+  "due": 19,
+  "delivered": 19,
+  "missing": 0,
+  "stale_routines": 0,
+  "never_delivered": [],
+  "not_yet_fired": ["17-us-stocks-in-play-open"],
   "written_off": [],
-  "roster_desync": [],
-  "gaps": [
-    {
-      "routine": "92a-preopen-catalyst-capture",
-      "path": "preopen-feed/2026-11-03-0830.jsonl",
-      "label": "MISSING",
-      "cause": "routine fired (run 459404102430817, session 459406375739498, healthy status_message) but wrote nothing by design: XAI_API_KEY was unset at the 2026-11-03 08:30 ET fire, and the prompt's step-1 key check declines the fire without writing. The key was provisioned later, so 2026-11-04 08:30 ET is the first fire with a real key. No preopen-feed/ directory exists on origin/main at all."
-    },
-    {
-      "routine": "92b-preopen-catalyst-capture",
-      "path": "preopen-feed/2026-11-03-0950.jsonl",
-      "label": "MISSING",
-      "cause": "same cause as 92a: run 459424985919607 (session 459426227740946) fired at 09:50 ET with XAI_API_KEY unset and the step-1 key check declined it, so no file was written. Never delivered — the routine has produced no artifact on any date."
-    }
-  ],
-  "audit_status": "gaps_found"
+  "gaps": [],
+  "audit_status": "ok"
 }
