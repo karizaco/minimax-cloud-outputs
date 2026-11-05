@@ -181,7 +181,7 @@ No liquid name cleared ±5% in this region.
 | Ticker | Name | Change | Close | Volume | Mkt cap (USD) | US listing | Catalyst |
 |---|---|---|---|---|---|---|---|
 | `OMXHEX:IQMX` | IQM Quantum Computers Oyj Class A | **-11.96%** | 6.955 EUR | 227,281 | $1.67B | ADR | Q3 2026 report at 08:00 EET — backlog €102.5m (+52% YTD), Q3 revenue €8.9m (+51% y/y), FY26 guidance reaffirmed, cash €260.4m — and the shares still fell 12% from the €7.90 close of 4 Nov (Nasdaq Helsinki release, Yahoo/Nasdaq IQMX, 5 Nov) |
-| `OMXHEX:NOKIA` | Nokia Oyj | **-7.51%** | 6.846 EUR | 26,451,296 | $47.01B | none | No pre-close release; sold with the European AI/tech complex as the Nasdaq confirmed a correction. Nokia and NVIDIA announced a strategic partnership at 18:29 EET — AFTER the Helsinki close (Nokia IR, 5 Nov) |
+| `OMXHEX:NOKIA` | Nokia Oyj | **-7.51%** | 6.846 EUR | 26,451,296 | $47.01B | ADR | No pre-close release; sold with the European AI/tech complex as the Nasdaq confirmed a correction. Nokia and NVIDIA announced a strategic partnership at 18:29 EET — AFTER the Helsinki close (Nokia IR, 5 Nov) |
 
 ### eu-dk
 
@@ -368,10 +368,11 @@ Liquid names that cleared ±5% with **no sourced driver** — no company release
 - **Issuer-unresolved rows**: 220 rows (mostly Canada's preferred and Class B/C lines, plus Japan's subscription certificates and Germany's preferred lines) are DROPPED rather than given a borrowed cap: their issuer has no common line in the source under the same ticker root, so a carry would cross an issuer boundary.
 - **`no_market_cap` rows** (247) cannot be tested against a cap floor and are excluded rather than written blank.
 - **Off-official rows** (215) have no print on an official venue in their home market (Japan's NAG/FSE/SAPSE lines, Canada's NEO ATS lines, Germany's GETTEX/LSX/Lang & Schwarz lines) and are excluded as `stale_venue_print`.
-- **The cap cross-venue check found real disagreements.** Every issuer with a US line was compared after conversion; 48 pairs differ by more than 10%, mostly OTC quotations carrying a stale company cap. The largest are listed below — the primary line's cap is published in all cases and the US line's figure is recorded here.
+- **The cap cross-venue check found real disagreements.** Every issuer with a US line was compared after conversion; 49 pairs differ by more than 10%, mostly OTC quotations carrying a stale company cap. The largest are listed below — the primary line's cap is published in all cases and the US line's figure is recorded here.
 
 | Region | Line | US line | Primary cap (USD) | US-line cap (USD) | Delta |
 |---|---|---|---|---|---|
+| `tw` | `TWSE:1604` | OTC:SAXPY | $258M | $29.37B | 11288.6% |
 | `jp` | `TSE:4985` | OTC:FTEG | $689M | $3M | 99.5% |
 | `au` | `ASX:WOW` | OTC:WLWHY | $34.41B | $2.12B | 93.8% |
 | `jp` | `TSE:9984` | OTC:SOBKY | $153.79B | $70.31B | 54.3% |
@@ -379,7 +380,6 @@ Liquid names that cleared ±5% with **no sourced driver** — no company release
 | `ca` | `TSX:MKP` | OTC:MAMTF | $646M | $407M | 37.0% |
 | `au` | `ASX:L1G` | OTC:PTMGF | $2.12B | $1.36B | 35.9% |
 | `eu-nl` | `EURONEXT:ENVI` | OTC:ENVHF | $284M | $198M | 30.2% |
-| `jp` | `TSE:6890` | OTC:FRRZF | $2.71B | $2.01B | 25.7% |
 
 - **Index levels**: the ATHEX comes from Euronext Athens' own historical data because no Yahoo symbol exists for it; the Nikkei and TOPIX come from Jiji's closing report and the TAIEX from CNA/Taiwan Index Plus, because Yahoo's 5 Nov bars for ^N225 and ^TWII were still null at the time of the pull. Every other index level is Yahoo's settled daily bar and matches the press close where one was published (ASX 9,065.1; DAX 26,325.01; CAC 8,205.37; ASML €1,250.00; ASM International €635.80; Infineon €45.95; Soitec €91.64; Air France-KLM €12.64 — all exact).
 - **The session's shape**: it was not one global move. Australia rose on materials and gold (ASX 200 +2.61%, Materials +7.2%, best since March 2020, gold +5.2% in two sessions to US$4,136/oz); Taiwan fell 3.20% as dealers flagged AI data-centre deployment delays; Tokyo fell 1.79% in the Nikkei but rose 1.16% in the TOPIX as money left AI hardware; Europe closed lower with tech −3.9% and defence weak after Rheinmetall's guidance cut; Athens fell 1.92% on the Coca-Cola HBC Russian-exposure story.

@@ -750,7 +750,7 @@ date,ticker,name,open,high,low,close,volume,change_pct,market_cap,pe_ratio,secto
 2026-11-05,TWSE:8215,BenQ Materials Corp.,26.5,26.5,24.8,24.8,1011979,-6.4151,258891271,,Electronic Technology,TWD,TWSE,TWSE:8215,common,none,
 2026-11-05,TPEX:5287,"ADDCN Technology Co., Ltd.",130,130.5,128.5,128.5,156130,-0.7722,258640125,9.1858,Technology Services,TWD,TPEX,TPEX:5287,common,none,
 2026-11-05,TPEX:8227,Progate Group Corporation,210.5,211,193.5,193.5,1254412,-9.7902,258406819,37.5772,Electronic Technology,TWD,TPEX,TPEX:8227,common,none,
-2026-11-05,TWSE:1604,Sampo Corporation,23.2,23.3,23.15,23.2,132073,0.0000,257887835,13.2967,Consumer Durables,TWD,TWSE,TWSE:1604,common,none,
+2026-11-05,TWSE:1604,Sampo Corporation,23.2,23.3,23.15,23.2,132073,0.0000,257887835,13.2967,Consumer Durables,TWD,TWSE,TWSE:1604,common,ADR,
 2026-11-05,TWSE:2913,Taiwan Tea Corporation,10.8,10.85,10.65,10.65,2289016,-0.4673,257524130,,Distribution Services,TWD,TWSE,TWSE:2913,common,none,
 2026-11-05,TWSE:3645,"Taimide Tech, Inc.",60.8,61.5,57.8,57.9,752858,-6.3107,257475671,22.4540,Process Industries,TWD,TWSE,TWSE:3645,common,none,
 2026-11-05,TWSE:2107,Formosan Rubber Group Inc.,28.15,28.15,27.2,27.35,229726,-1.6187,257124937,14.5116,Finance,TWD,TWSE,TWSE:2107,common,none,

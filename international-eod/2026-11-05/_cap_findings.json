@@ -225,6 +225,14 @@
    "delta_pct": 13.89
   },
   {
+   "region": "tw",
+   "ticker": "TWSE:1604",
+   "us_line": "OTC:SAXPY",
+   "primary_cap_usd": 257887834.9108527,
+   "us_cap_usd": 29369864341.69403,
+   "delta_pct": 11288.62
+  },
+  {
    "region": "ca",
    "ticker": "TSX:MKP",
    "us_line": "OTC:MAMTF",
