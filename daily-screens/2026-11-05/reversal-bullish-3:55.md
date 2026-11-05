@@ -78,7 +78,7 @@ _No candidates, so there is no candidate gate matrix. The matrix below is the sa
 | Step | Filter | Left |
 |---|---|---|
 | 1 | NYSE/NASDAQ/AMEX, type=stock, mcap > $5B, close ≥ $5, avg vol(10d) > 1M | 917 |
-| 2 | DCR ≥ 0.60 (close in the top 40% of the day's range) | 22 |
+| 2 | DCR ≥ 0.60 (close in the top 40% of the day's range) | 43 |
 | 3 | + published shadow > body, hammer (lower ≥ 2× upper), body ≤ 0.30, volume ≥ 290k | 22 |
 | 4 | + 5-day low, decline+washout, ADR ≥ 3%, trend, minv3, avg vol 30d | 0 |
 
@@ -98,6 +98,11 @@ _No candidates, so there is no candidate gate matrix. The matrix below is the sa
 - **The tape was a broad risk-off session, and that is why the screen is empty.** At the 15:57 ET pull SPY was **-4.30%**, QQQ **-6.25%**, IWM **-4.54%**, DIA **-3.48%**, S&P 500 **-4.18%** (largest intraday decline of 2026 per StoneX), Bitcoin **-5.47%**, while the 10-year yield fell to 4.837% and WTI rose 3.22%. The driver was the AI/data-centre capex re-rating after the Democratic midterm win (CNBC/Reuters: fears of slower data-centre buildout, ~30% of 2028 additions seen at risk) ahead of Friday's Non-Farm Payrolls (consensus ~65k). **Read the near-misses in that light:** in a -4% index session most reversal-bullish candle shapes are the first bar of a breakdown, which is exactly what gates 5 and 8 exist to reject. The gate that did most of the killing today was **gate 8 (trend)**, which six names failed by a single gate.
 - **The 5-day-low gate and the washout gate are mutually reinforcing today.** 15 of the 22 survivors failed both gate 1 and gate 5: they were *bouncing* off lows, not reversing from a washout, so the bar that looked like a hammer was the bar that marked the bottom of a bounce.
 - **The candle survivors themselves are honest near-misses, not mistakes.** VIAV (-10.59%, DCR 0.728, ADR 7.29%), ZGN (-7.53%, DCR 0.852) and MTZ (-3.76%, DCR 0.901) all printed textbook hammer geometry and still failed a gate. Publishing them as ideas would have been exactly the padding Bonde's 1-3 rule exists to prevent.
+- **The funnel's step-2 count (43) was recomputed on a separate pull** a few minutes after the
+  screen run, because the screen applies the DCR and hammer/body/volume gates in one pass and
+  the two steps would otherwise be reported as the same number (which would read as "the
+  hammer tests dropped nobody"). The universe moved 917 -> 916 names between the two pulls, so
+  treat 43 as ±1–2 against the 917-name universe in step 1.
 - **Catalysts are sourced, not inferred.** The catalyst line is present only where news was read this run (U, VIAV, ZGN). For the remaining near-misses the line says "no company-specific catalyst sourced" — that is a statement about this run's coverage, not a claim that no catalyst exists.
 
 | Source | Used for | Status |
