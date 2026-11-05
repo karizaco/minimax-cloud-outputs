@@ -12,6 +12,7 @@ _REQUIRED_KEYS = (
     "gap_hard",
     "unusual_rvol",
     "soft_a_requires_catalyst",
+    "catalyst_min_score",
     "tech_watch_rvol_min",
     "tech_watch_rvol_max",
     "elevated_rvol_min",

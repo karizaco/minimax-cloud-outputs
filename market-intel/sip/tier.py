@@ -70,7 +70,7 @@ def _has_catalyst(row: CandidateRow) -> bool:
     return bool(row.catalyst and str(row.catalyst).strip())
 
 
-def _is_material_catalyst(row: CandidateRow) -> bool:
+def _is_material_catalyst(row: CandidateRow, min_score: float = 1) -> bool:
     if not _has_catalyst(row):
         return False
     text = str(row.catalyst)
@@ -81,7 +81,7 @@ def _is_material_catalyst(row: CandidateRow) -> bool:
     if score is None:
         score = materiality_score(text)
     try:
-        return float(score) >= 1
+        return float(score) >= float(min_score)
     except (TypeError, ValueError):
         return False
 
@@ -98,6 +98,7 @@ def assign_tiers(
 ) -> list[CandidateRow]:
     result: list[CandidateRow] = []
     requires_catalyst = bool(cfg.get("soft_a_requires_catalyst", True))
+    catalyst_min_score = float(cfg.get("catalyst_min_score", 1))
 
     for row in rows:
         move = abs(float(row.chg_pct))
@@ -105,10 +106,11 @@ def assign_tiers(
         soft = float(cfg.get("day_move_soft", 4.0))
         gap_soft = float(cfg.get("gap_soft", 3.0))
         elevated = float(cfg.get("elevated_rvol_min", 1.5))
+        rmin = float(cfg.get("tech_watch_rvol_min", 1.0))
         rmax = float(cfg.get("tech_watch_rvol_max", 2.0))
 
         catalyst = _has_catalyst(row)
-        material_catalyst = _is_material_catalyst(row)
+        material_catalyst = _is_material_catalyst(row, catalyst_min_score)
         limit_down = _has_flag(row, "LIMIT_DOWN")
         limit_up = _has_flag(row, "LIMIT_UP")
         limit_move = limit_up or limit_down
@@ -116,15 +118,7 @@ def assign_tiers(
         hard_move = move >= hard or limit_move
 
         if limit_down:
-            if material_catalyst and material_move:
-                tier = "Soft-A"
-            elif (
-                (move >= soft or limit_down)
-                and (row.rvol is None or row.rvol < rmax)
-            ):
-                tier = "TECH_WATCH"
-            else:
-                tier = "C"
+            tier = "C"
         elif material_catalyst and material_move:
             if row.rvol is not None and row.rvol >= elevated:
                 tier = "A"
@@ -146,8 +140,10 @@ def assign_tiers(
             r = row.rvol
             if r is not None and r >= rmax:
                 tier = "B"
-            else:
+            elif r is not None and rmin <= r < rmax:
                 tier = "TECH_WATCH"
+            else:
+                tier = "C"
         elif (
             not catalyst
             or (requires_catalyst and not material_catalyst)

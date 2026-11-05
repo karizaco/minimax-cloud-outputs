@@ -219,6 +219,7 @@ def _is_boilerplate_mops(headline: str) -> bool:
 def _attach_mops_catalysts(
     movers: dict[str, dict[str, Any]],
     rows: list[Mapping[str, Any]],
+    min_score: int = 1,
 ) -> None:
     grouped: dict[str, list[dict[str, Any]]] = {}
     for row in rows:
@@ -258,7 +259,7 @@ def _attach_mops_catalysts(
         eligible = [
             item
             for item in items
-            if _materiality_score(str(item.get("catalyst") or "")) >= 1
+            if _materiality_score(str(item.get("catalyst") or "")) >= min_score
             and not _is_boilerplate_mops(str(item.get("catalyst") or ""))
         ]
         if not eligible:
@@ -369,7 +370,7 @@ def build_candidates(
             dump_path = candidate
     if dump_path and dump_path.is_file():
         try:
-            rows = parse_tv_dump(_load_json_or_text(dump_path))
+            rows = parse_tv_dump(dump_path.read_text(encoding="utf-8"))
             for row in rows:
                 _add_mover(movers, row, source="tradingview")
             primary_ok = primary_ok or bool(rows)

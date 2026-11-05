@@ -10,6 +10,7 @@ midday:
     mcap_min: 1000000000
 
 soft_a_requires_catalyst: true
+catalyst_min_score: 1
 elevated_rvol_min: 1.5
 tech_watch_rvol_max: 2.0
 tech_watch_rvol_min: 1.0

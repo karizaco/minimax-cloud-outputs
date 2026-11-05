@@ -106,7 +106,7 @@ def test_soft_a_requires_material_catalyst() -> None:
     assert result[0].tier == "Soft-A"
 
 
-def test_limit_down_with_material_is_soft_a_never_a() -> None:
+def test_limit_down_with_material_is_c() -> None:
     result = run_pipeline(
         [
             _row(
@@ -120,16 +120,33 @@ def test_limit_down_with_material_is_soft_a_never_a() -> None:
         _cfg(),
         "open",
     )
-    assert result[0].tier == "Soft-A"
+    assert result[0].tier == "C"
 
 
 def test_tech_watch_rvol_band() -> None:
     cfg = _cfg()
-    # soft rvol no catalyst → TECH_WATCH
+    # rvol in [min, max) no catalyst → TECH_WATCH
     tw = run_pipeline([_row(catalyst=None, rvol=1.2, chg_pct=-5.0)], cfg, "open")
     assert tw[0].tier == "TECH_WATCH"
-    soft = run_pipeline([_row(catalyst=None, rvol=0.5, chg_pct=-8.0)], cfg, "open")
-    assert soft[0].tier == "TECH_WATCH"
+    # rvol below min or missing → not TECH_WATCH
+    below = run_pipeline([_row(catalyst=None, rvol=0.5, chg_pct=-8.0)], cfg, "open")
+    assert below[0].tier != "TECH_WATCH"
+    missing = run_pipeline([_row(catalyst=None, rvol=None, chg_pct=-8.0)], cfg, "open")
+    assert missing[0].tier != "TECH_WATCH"
     # strong rvol no catalyst → B
     b = run_pipeline([_row(catalyst=None, rvol=2.5, chg_pct=-5.0)], cfg, "open")
     assert b[0].tier == "B"
+
+
+def test_catalyst_min_score_from_cfg() -> None:
+    cfg = _cfg()
+    row = _row(
+        catalyst="Q3 EPS NT$3.00 record",
+        mops_materiality=1,
+        rvol=0.5,
+        chg_pct=-6.0,
+    )
+    assert run_pipeline([row], cfg, "open")[0].tier == "Soft-A"
+    cfg = {**cfg, "catalyst_min_score": 3}
+    assert run_pipeline([row], cfg, "open")[0].tier != "Soft-A"
+    assert run_pipeline([row], cfg, "open")[0].tier != "A"

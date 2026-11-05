@@ -11,6 +11,7 @@ elevated_rvol_min: 1.5
 tech_watch_rvol_min: 1.0
 tech_watch_rvol_max: 2.0
 soft_a_requires_catalyst: true
+catalyst_min_score: 1
 stale_halt_sessions: 5
 overnight_carry_max_age_sessions: 1
 
