@@ -57,7 +57,7 @@ import json, subprocess, time, datetime, os, sys, re
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-05.1"
+SCRIPT_VERSION = "2026-11-05.2"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -1048,11 +1048,27 @@ def parse_catalyst_file(path):
             s = line.strip()
             if s.startswith("|"):
                 cells = [c.strip() for c in re.split(r"(?<!\\)\|", s)]
+                # A markdown row starts with a pipe, so the FIRST split cell is
+                # always empty ("", "SEZL", "US", "...", "Y", ""). The old
+                # guard dropped every such row on its empty first cell, so the
+                # catalyst merge NEVER ran and every published row carried
+                # "pending catalyst lookup" - the agent's researched catalysts
+                # were silently discarded on every fire. Strip the leading
+                # empty cell before reading the ticker.
+                if cells and cells[0] == "":
+                    cells = cells[1:]
                 if len(cells) < 4:
                     continue
                 if cells[0].lower() in ("ticker", "") or set(cells[0]) <= set("-: "):
                     continue
-                mapping[cells[0]] = {"catalyst": cells[2], "earn": cells[3]}
+                # An UNFILLED skeleton row (the pipeline writes one when the
+                # file is missing) has an empty catalyst cell: it is not a
+                # research result, so it must fall through to the honest
+                # placeholder instead of publishing an empty cell.
+                if not cells[2]:
+                    continue
+                mapping[cells[0]] = {"catalyst": cells[2],
+                                     "earn": cells[3] if cells[3] else "—"}
             elif s and not note and not s.startswith("#"):
                 note = s
     return mapping, note
