@@ -1,0 +1,388 @@
+{
+ "cap_findings": [
+  {
+   "region": "au",
+   "ticker": "ASX:A4N",
+   "us_line": "OTC:ALHPF",
+   "primary_cap_usd": 355756884.8442422,
+   "us_cap_usd": 435598894.2857143,
+   "delta_pct": 22.44
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:WOW",
+   "us_line": "OTC:WLWHY",
+   "primary_cap_usd": 34412835293.66468,
+   "us_cap_usd": 2121382146.4550002,
+   "delta_pct": 93.84
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:RRL",
+   "us_line": "OTC:RGRNF",
+   "primary_cap_usd": 3223862075.60378,
+   "us_cap_usd": 3589392533.562603,
+   "delta_pct": 11.34
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:WAF",
+   "us_line": "OTC:WFRSF",
+   "primary_cap_usd": 2532764639.831991,
+   "us_cap_usd": 3623779057.4430375,
+   "delta_pct": 43.08
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:SRL",
+   "us_line": "OTC:SREMF",
+   "primary_cap_usd": 1387573402.1701083,
+   "us_cap_usd": 1552970341.8304348,
+   "delta_pct": 11.92
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:MGR",
+   "us_line": "OTC:MRVGF",
+   "primary_cap_usd": 5188106231.711585,
+   "us_cap_usd": 4392402847.782198,
+   "delta_pct": 15.34
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:L1G",
+   "us_line": "OTC:PTMGF",
+   "primary_cap_usd": 2116535019.2509625,
+   "us_cap_usd": 1357004599.897059,
+   "delta_pct": 35.89
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:COL",
+   "us_line": "OTC:CLEGF",
+   "primary_cap_usd": 19993776849.142456,
+   "us_cap_usd": 23050496020.110588,
+   "delta_pct": 15.29
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:REH",
+   "us_line": "OTC:REECF",
+   "primary_cap_usd": 7806521507.875393,
+   "us_cap_usd": 6249333607.051297,
+   "delta_pct": 19.95
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:OBM",
+   "us_line": "OTC:ESGFF",
+   "primary_cap_usd": 1737212837.241862,
+   "us_cap_usd": 1519985229.5249999,
+   "delta_pct": 12.5
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:CIA",
+   "us_line": "OTC:CIAFF",
+   "primary_cap_usd": 691972582.4291214,
+   "us_cap_usd": 812068050.5949008,
+   "delta_pct": 17.36
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:LTR",
+   "us_line": "OTC:LINRF",
+   "primary_cap_usd": 1340699089.9544976,
+   "us_cap_usd": 1572689079.7583334,
+   "delta_pct": 17.3
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:RMS",
+   "us_line": "OTC:RMLRF",
+   "primary_cap_usd": 4411328892.544627,
+   "us_cap_usd": 4966023872.453732,
+   "delta_pct": 12.57
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:4DX",
+   "us_line": "OTC:FDMDF",
+   "primary_cap_usd": 906566282.1141056,
+   "us_cap_usd": 1033012249.6790698,
+   "delta_pct": 13.95
+  },
+  {
+   "region": "au",
+   "ticker": "ASX:VUL",
+   "us_line": "OTC:VULNF",
+   "primary_cap_usd": 350157822.19110954,
+   "us_cap_usd": 409159180.6748326,
+   "delta_pct": 16.85
+  },
+  {
+   "region": "jp",
+   "ticker": "TSE:6787",
+   "us_line": "OTC:MKOEF",
+   "primary_cap_usd": 2562766945.033447,
+   "us_cap_usd": 2976636765.748072,
+   "delta_pct": 16.15
+  },
+  {
+   "region": "jp",
+   "ticker": "TSE:4186",
+   "us_line": "OTC:TOKCF",
+   "primary_cap_usd": 5948668553.849551,
+   "us_cap_usd": 5065872237.320114,
+   "delta_pct": 14.84
+  },
+  {
+   "region": "jp",
+   "ticker": "TSE:4985",
+   "us_line": "OTC:FTEG",
+   "primary_cap_usd": 688677781.5789473,
+   "us_cap_usd": 3368948,
+   "delta_pct": 99.51
+  },
+  {
+   "region": "jp",
+   "ticker": "TSE:9984",
+   "us_line": "OTC:SOBKY",
+   "primary_cap_usd": 153790264169.2162,
+   "us_cap_usd": 70310291791.45311,
+   "delta_pct": 54.28
+  },
+  {
+   "region": "jp",
+   "ticker": "TSE:5991",
+   "us_line": "OTC:NHKGF",
+   "primary_cap_usd": 3488097978.423577,
+   "us_cap_usd": 3914748546.6002655,
+   "delta_pct": 12.23
+  },
+  {
+   "region": "jp",
+   "ticker": "TSE:6890",
+   "us_line": "OTC:FRRZF",
+   "primary_cap_usd": 2708371948.876688,
+   "us_cap_usd": 2012790567.6290414,
+   "delta_pct": 25.68
+  },
+  {
+   "region": "jp",
+   "ticker": "TSE:6856",
+   "us_line": "OTC:HRIBF",
+   "primary_cap_usd": 5522120181.471664,
+   "us_cap_usd": 4779698898.927483,
+   "delta_pct": 13.44
+  },
+  {
+   "region": "jp",
+   "ticker": "TSE:6961",
+   "us_line": "OTC:ENPSF",
+   "primary_cap_usd": 485075505.0233497,
+   "us_cap_usd": 384413673.2788805,
+   "delta_pct": 20.75
+  },
+  {
+   "region": "jp",
+   "ticker": "TSE:1911",
+   "us_line": "OTC:SMFRF",
+   "primary_cap_usd": 4876964540.104758,
+   "us_cap_usd": 5555298889.157349,
+   "delta_pct": 13.91
+  },
+  {
+   "region": "jp",
+   "ticker": "TSE:6871",
+   "us_line": "OTC:MJPNF",
+   "primary_cap_usd": 2599749659.011738,
+   "us_cap_usd": 2114133002.9299467,
+   "delta_pct": 18.68
+  },
+  {
+   "region": "jp",
+   "ticker": "TSE:6525",
+   "us_line": "OTC:KOKSF",
+   "primary_cap_usd": 9594333990.04165,
+   "us_cap_usd": 7552893129.11739,
+   "delta_pct": 21.28
+  },
+  {
+   "region": "jp",
+   "ticker": "TSE:6324",
+   "us_line": "OTC:HSYDF",
+   "primary_cap_usd": 2995540480.0896125,
+   "us_cap_usd": 2685740480.8056173,
+   "delta_pct": 10.34
+  },
+  {
+   "region": "jp",
+   "ticker": "TSE:4565",
+   "us_line": "OTC:SOLTF",
+   "primary_cap_usd": 888394728.5561024,
+   "us_cap_usd": 1011820518.6878127,
+   "delta_pct": 13.89
+  },
+  {
+   "region": "ca",
+   "ticker": "TSX:MKP",
+   "us_line": "OTC:MAMTF",
+   "primary_cap_usd": 645516061.1485034,
+   "us_cap_usd": 406603252.0401806,
+   "delta_pct": 37.01
+  },
+  {
+   "region": "ca",
+   "ticker": "CSE:MAXX",
+   "us_line": "OTC:MAXXF",
+   "primary_cap_usd": 305833073.8937419,
+   "us_cap_usd": 262100334.4772727,
+   "delta_pct": 14.3
+  },
+  {
+   "region": "ca",
+   "ticker": "TSX:CDR",
+   "us_line": "OTC:CNPRF",
+   "primary_cap_usd": 236818974.65272805,
+   "us_cap_usd": 212952543.8851175,
+   "delta_pct": 10.08
+  },
+  {
+   "region": "ca",
+   "ticker": "TSX:SLF.PR.H",
+   "us_line": "NYSE:SLF",
+   "primary_cap_usd": 45593622960.76185,
+   "us_cap_usd": 40856762445.05729,
+   "delta_pct": 10.39
+  },
+  {
+   "region": "ca",
+   "ticker": "TSX:SLF.PR.J",
+   "us_line": "NYSE:SLF",
+   "primary_cap_usd": 45593622960.76185,
+   "us_cap_usd": 40856762445.05729,
+   "delta_pct": 10.39
+  },
+  {
+   "region": "ca",
+   "ticker": "TSX:SLF.PR.G",
+   "us_line": "NYSE:SLF",
+   "primary_cap_usd": 45593622960.76185,
+   "us_cap_usd": 40856762445.05729,
+   "delta_pct": 10.39
+  },
+  {
+   "region": "ca",
+   "ticker": "TSX:SLF",
+   "us_line": "NYSE:SLF",
+   "primary_cap_usd": 45593622960.76185,
+   "us_cap_usd": 40856762445.05729,
+   "delta_pct": 10.39
+  },
+  {
+   "region": "ca",
+   "ticker": "TSX:WEED",
+   "us_line": "NASDAQ:CGC",
+   "primary_cap_usd": 335186108.4061292,
+   "us_cap_usd": 301246957.11266667,
+   "delta_pct": 10.13
+  },
+  {
+   "region": "ca",
+   "ticker": "TSXV:UCU",
+   "us_line": "OTC:UURAF",
+   "primary_cap_usd": 227119209.5088071,
+   "us_cap_usd": 193671756.6153846,
+   "delta_pct": 14.73
+  },
+  {
+   "region": "ca",
+   "ticker": "TSX:NOA",
+   "us_line": "NYSE:NOA",
+   "primary_cap_usd": 308336183.58871543,
+   "us_cap_usd": 254067165.26,
+   "delta_pct": 17.6
+  },
+  {
+   "region": "ca",
+   "ticker": "TSX:TNZ",
+   "us_line": "OTC:ATUUF",
+   "primary_cap_usd": 1425258594.4436488,
+   "us_cap_usd": 1154692622.735437,
+   "delta_pct": 18.98
+  },
+  {
+   "region": "ca",
+   "ticker": "TSX:NWC",
+   "us_line": "OTC:NNWWF",
+   "primary_cap_usd": 1973408509.9527423,
+   "us_cap_usd": 1758743481.9413285,
+   "delta_pct": 10.88
+  },
+  {
+   "region": "ca",
+   "ticker": "TSX:CLS",
+   "us_line": "NYSE:CLS",
+   "primary_cap_usd": 29820392366.461407,
+   "us_cap_usd": 25933630020.83805,
+   "delta_pct": 13.03
+  },
+  {
+   "region": "ca",
+   "ticker": "TSX:GIL",
+   "us_line": "NYSE:GIL",
+   "primary_cap_usd": 8014460177.574108,
+   "us_cap_usd": 6485418395.7921915,
+   "delta_pct": 19.08
+  },
+  {
+   "region": "eu-de",
+   "ticker": "XETR:TUI1",
+   "us_line": "OTC:TUIFF",
+   "primary_cap_usd": 4247624128.177788,
+   "us_cap_usd": 3765138337.3746314,
+   "delta_pct": 11.36
+  },
+  {
+   "region": "eu-fr",
+   "ticker": "EURONEXT:TNG",
+   "us_line": "OTC:TRGNF",
+   "primary_cap_usd": 236753391.32386777,
+   "us_cap_usd": 207371237.37906066,
+   "delta_pct": 12.41
+  },
+  {
+   "region": "eu-fr",
+   "ticker": "EURONEXT:PLX",
+   "us_line": "OTC:PLXNF",
+   "primary_cap_usd": 2712888909.590886,
+   "us_cap_usd": 3199034612.6470585,
+   "delta_pct": 17.92
+  },
+  {
+   "region": "eu-es",
+   "ticker": "BME:OLE",
+   "us_line": "OTC:SOSCF",
+   "primary_cap_usd": 194174749.4247713,
+   "us_cap_usd": 173899992.96358383,
+   "delta_pct": 10.44
+  },
+  {
+   "region": "eu-nl",
+   "ticker": "EURONEXT:ENVI",
+   "us_line": "OTC:ENVHF",
+   "primary_cap_usd": 284041469.9265851,
+   "us_cap_usd": 198271133.39999998,
+   "delta_pct": 30.2
+  },
+  {
+   "region": "eu-nl",
+   "ticker": "EURONEXT:BAMNB",
+   "us_line": "OTC:KBAGF",
+   "primary_cap_usd": 3892474325.1585383,
+   "us_cap_usd": 3500640000,
+   "delta_pct": 10.07
+  }
+ ]
+}

@@ -1,0 +1,2021 @@
+{
+ "regions": {
+  "au": {
+   "rows": 306,
+   "live": 306,
+   "median": 3.2656,
+   "up": 259,
+   "down": 40,
+   "flat": 7,
+   "min": -13.2184,
+   "max": 50.8423,
+   "cap_weighted": 2.9085,
+   "movers": [
+    {
+     "ticker": "ASX:NXT",
+     "name": "Nextdc Limited",
+     "change": 50.8423,
+     "close": "9.85",
+     "volume": 81639234,
+     "cap": 3473003592,
+     "currency": "AUD",
+     "us": "OTC",
+     "exchange": "ASX",
+     "sector": "Technology Services"
+    },
+    {
+     "ticker": "ASX:NEU",
+     "name": "Neuren Pharmaceuticals Limited",
+     "change": 17.4924,
+     "close": "23.24",
+     "volume": 1096995,
+     "cap": 1755400347,
+     "currency": "AUD",
+     "us": "OTC",
+     "exchange": "ASX",
+     "sector": "Health Technology"
+    },
+    {
+     "ticker": "ASX:ZIP",
+     "name": "Zip Co Ltd.",
+     "change": 15.6757,
+     "close": "2.14",
+     "volume": 40639809,
+     "cap": 1613549369,
+     "currency": "AUD",
+     "us": "OTC",
+     "exchange": "ASX",
+     "sector": "Finance"
+    },
+    {
+     "ticker": "ASX:GMD",
+     "name": "Genesis Minerals Limited",
+     "change": 15.4331,
+     "close": "7.33",
+     "volume": 13888782,
+     "cap": 5223533283,
+     "currency": "AUD",
+     "us": "OTC",
+     "exchange": "ASX",
+     "sector": "Non-Energy Minerals"
+    },
+    {
+     "ticker": "ASX:OBM",
+     "name": "Ora Banda Mining Ltd.",
+     "change": 15.2344,
+     "close": "1.475",
+     "volume": 9133802,
+     "cap": 1737212837,
+     "currency": "AUD",
+     "us": "OTC",
+     "exchange": "ASX",
+     "sector": "Non-Energy Minerals"
+    },
+    {
+     "ticker": "ASX:RSG",
+     "name": "Resolute Mining Limited",
+     "change": 14.6789,
+     "close": "1.25",
+     "volume": 8305792,
+     "cap": 1630931134,
+     "currency": "AUD",
+     "us": "ADR",
+     "exchange": "ASX",
+     "sector": "Non-Energy Minerals"
+    }
+   ],
+   "below_gate": [
+    {
+     "ticker": "ASX:ENV",
+     "name": "Enova Mining Limited",
+     "change": 100.0,
+     "volume": 5373502,
+     "close": 0.002,
+     "currency": "AUD",
+     "cap_local": 2772762
+    },
+    {
+     "ticker": "ASX:BIT",
+     "name": "Biotron Limited",
+     "change": 100.0,
+     "volume": 4410574,
+     "close": 0.002,
+     "currency": "AUD",
+     "cap_local": 2785205
+    },
+    {
+     "ticker": "ASX:SPX",
+     "name": "Spenda Limited",
+     "change": 100.0,
+     "volume": 193750,
+     "close": 0.002,
+     "currency": "AUD",
+     "cap_local": 1238901
+    },
+    {
+     "ticker": "ASX:NAE",
+     "name": "New Age Exploration Limited",
+     "change": 100.0,
+     "volume": 8208592,
+     "close": 0.002,
+     "currency": "AUD",
+     "cap_local": 4342263
+    },
+    {
+     "ticker": "ASX:TMX",
+     "name": "Terrain Minerals Ltd",
+     "change": 50.0,
+     "volume": 762833,
+     "close": 0.003,
+     "currency": "AUD",
+     "cap_local": 8252072.999999999
+    },
+    {
+     "ticker": "ASX:ARV",
+     "name": "Artemis Resources Limited",
+     "change": 50.0,
+     "volume": 3639833,
+     "close": 0.003,
+     "currency": "AUD",
+     "cap_local": 11604130
+    }
+   ],
+   "carryover": [],
+   "excluded_counts": {
+    "below_cap_floor": 1239,
+    "issuer_unresolved": 3,
+    "below_volume": 10,
+    "no_market_cap": 4
+   }
+  },
+  "jp": {
+   "rows": 1375,
+   "live": 1375,
+   "median": 2.3622,
+   "up": 974,
+   "down": 392,
+   "flat": 9,
+   "min": -23.0643,
+   "max": 22.8013,
+   "cap_weighted": 1.2003,
+   "movers": [
+    {
+     "ticker": "TSE:6590",
+     "name": "Shibaura Mechatronics Corp.",
+     "change": -23.0643,
+     "close": "2335",
+     "volume": 4515100,
+     "cap": 1323186975,
+     "currency": "JPY",
+     "us": "OTC",
+     "exchange": "TSE",
+     "sector": "Producer Manufacturing"
+    },
+    {
+     "ticker": "TSE:5857",
+     "name": "ARE Holdings, Inc.",
+     "change": 22.8013,
+     "close": "3770",
+     "volume": 2252600,
+     "cap": 1613667519,
+     "currency": "JPY",
+     "us": "none",
+     "exchange": "TSE",
+     "sector": "Distribution Services"
+    },
+    {
+     "ticker": "TSE:485A",
+     "name": "PowerX, Inc.",
+     "change": -20.5882,
+     "close": "1620",
+     "volume": 7583300,
+     "cap": 1501313741,
+     "currency": "JPY",
+     "us": "none",
+     "exchange": "TSE",
+     "sector": "Producer Manufacturing"
+    },
+    {
+     "ticker": "TSE:6368",
+     "name": "Organo Corp.",
+     "change": -19.5571,
+     "close": "1725.5",
+     "volume": 6206900,
+     "cap": 3131376653,
+     "currency": "JPY",
+     "us": "ADR",
+     "exchange": "TSE",
+     "sector": "Producer Manufacturing"
+    },
+    {
+     "ticker": "TSE:6834",
+     "name": "Seikoh Giken Co., Ltd.",
+     "change": -17.4216,
+     "close": "4740",
+     "volume": 708800,
+     "cap": 1682872105,
+     "currency": "JPY",
+     "us": "none",
+     "exchange": "TSE",
+     "sector": "Producer Manufacturing"
+    },
+    {
+     "ticker": "TSE:6890",
+     "name": "Ferrotec Corporation",
+     "change": -17.2934,
+     "close": "6576",
+     "volume": 5141500,
+     "cap": 2708371949,
+     "currency": "JPY",
+     "us": "OTC",
+     "exchange": "TSE",
+     "sector": "Electronic Technology"
+    }
+   ],
+   "below_gate": [
+    {
+     "ticker": "TSE:4582",
+     "name": "Symbio Pharmaceuticals Limited",
+     "change": 71.4286,
+     "volume": 49877600,
+     "close": 72,
+     "currency": "JPY",
+     "cap_local": 3666095764
+    },
+    {
+     "ticker": "TSE:2667",
+     "name": "ImageONE Co., Ltd.",
+     "change": 47.619,
+     "volume": 6806100,
+     "close": 93,
+     "currency": "JPY",
+     "cap_local": 964395324
+    },
+    {
+     "ticker": "TSE:6668",
+     "name": "Adtec Plasma Technology Co., Ltd.",
+     "change": -16.5094,
+     "volume": 360200,
+     "close": 3540,
+     "currency": "JPY",
+     "cap_local": 36395564041
+    },
+    {
+     "ticker": "TSE:3909",
+     "name": "Showcase, Inc. (Japan)",
+     "change": -15.8571,
+     "volume": 1726500,
+     "close": 589,
+     "currency": "JPY",
+     "cap_local": 7129919529
+    },
+    {
+     "ticker": "TSE:3647",
+     "name": "ASULINA Co., Ltd.",
+     "change": -15.2672,
+     "volume": 2284400,
+     "close": 111,
+     "currency": "JPY",
+     "cap_local": 2800099014
+    },
+    {
+     "ticker": "TSE:6266",
+     "name": "Tazmo Co., Ltd.",
+     "change": -15.26,
+     "volume": 623100,
+     "close": 2510,
+     "currency": "JPY",
+     "cap_local": 43157539629
+    }
+   ],
+   "carryover": [],
+   "excluded_counts": {
+    "below_cap_floor": 2377,
+    "stale_venue_print": 111,
+    "issuer_unresolved": 3,
+    "no_market_cap": 3
+   }
+  },
+  "tw": {
+   "rows": 885,
+   "live": 884,
+   "median": -3.5875,
+   "up": 108,
+   "down": 742,
+   "flat": 34,
+   "min": -22.6044,
+   "max": 10.1828,
+   "cap_weighted": -3.4365,
+   "movers": [
+    {
+     "ticker": "TPEX:3595",
+     "name": "Alliance Material Co., Ltd.",
+     "change": -22.6044,
+     "close": "630",
+     "volume": 1218639,
+     "cap": 1007352370,
+     "currency": "TWD",
+     "us": "none",
+     "exchange": "TPEX",
+     "sector": "Consumer Durables"
+    },
+    {
+     "ticker": "TPEX:7861",
+     "name": "Bellwether Electronic Corp.",
+     "change": -15.5714,
+     "close": "591",
+     "volume": 340086,
+     "cap": 1377645967,
+     "currency": "TWD",
+     "us": "none",
+     "exchange": "TPEX",
+     "sector": "Electronic Technology"
+    },
+    {
+     "ticker": "TPEX:7924",
+     "name": "TLC BioSciences Corp",
+     "change": -10.3053,
+     "close": "352.5",
+     "volume": 277023,
+     "cap": 1599109682,
+     "currency": "TWD",
+     "us": "none",
+     "exchange": "TPEX",
+     "sector": "Health Technology"
+    },
+    {
+     "ticker": "TWSE:3653",
+     "name": "Jentech Precision Industrial Co., Ltd",
+     "change": -10.0,
+     "close": "5805",
+     "volume": 2440971,
+     "cap": 28693381019,
+     "currency": "TWD",
+     "us": "none",
+     "exchange": "TWSE",
+     "sector": "Electronic Technology"
+    },
+    {
+     "ticker": "TWSE:8046",
+     "name": "Nan Ya Printed Circuit Board Corporation",
+     "change": -10.0,
+     "close": "972",
+     "volume": 13927016,
+     "cap": 21260555490,
+     "currency": "TWD",
+     "us": "none",
+     "exchange": "TWSE",
+     "sector": "Electronic Technology"
+    },
+    {
+     "ticker": "TPEX:3081",
+     "name": "LandMark Optoelectronics Corp.",
+     "change": -10.0,
+     "close": "1890",
+     "volume": 4869389,
+     "cap": 6503299929,
+     "currency": "TWD",
+     "us": "none",
+     "exchange": "TPEX",
+     "sector": "Producer Manufacturing"
+    }
+   ],
+   "below_gate": [
+    {
+     "ticker": "TPEX:4117",
+     "name": "General Biologicals Corp.",
+     "change": 37.265,
+     "volume": 263245,
+     "close": 8.03,
+     "currency": "TWD",
+     "cap_local": 414322521
+    },
+    {
+     "ticker": "TPEX:6610",
+     "name": "TWi Biotechnology, Inc",
+     "change": -10.2625,
+     "volume": 1162480,
+     "close": 18.8,
+     "currency": "TWD",
+     "cap_local": 4683988422
+    },
+    {
+     "ticker": "TPEX:1595",
+     "name": "Chime Ball Technology Co., Ltd.",
+     "change": -10.0,
+     "volume": 1639089,
+     "close": 63,
+     "currency": "TWD",
+     "cap_local": 4013302536
+    },
+    {
+     "ticker": "TPEX:6865",
+     "name": "WebComm Technology Co., Ltd.",
+     "change": 10.0,
+     "volume": 739297,
+     "close": 36.3,
+     "currency": "TWD",
+     "cap_local": 511521285
+    },
+    {
+     "ticker": "TPEX:8272",
+     "name": "Changing Information Technology, Inc.",
+     "change": -10.0,
+     "volume": 496468,
+     "close": 92.7,
+     "currency": "TWD",
+     "cap_local": 1956768765
+    },
+    {
+     "ticker": "TPEX:4556",
+     "name": "Bright Sheland International Co Ltd",
+     "change": -10.0,
+     "volume": 577237,
+     "close": 90,
+     "currency": "TWD",
+     "cap_local": 4230284119
+    }
+   ],
+   "carryover": [
+    {
+     "ticker": "TWSE:3714",
+     "name": "Ennostar Inc.",
+     "exchange": "TWSE",
+     "close": "56.7",
+     "volume": "8311084",
+     "last_trade_date": "2026-11-04"
+    }
+   ],
+   "excluded_counts": {
+    "below_cap_floor": 1386,
+    "no_market_cap": 54,
+    "issuer_unresolved": 9
+   }
+  },
+  "ca": {
+   "rows": 605,
+   "live": 561,
+   "median": -0.9119,
+   "up": 135,
+   "down": 391,
+   "flat": 35,
+   "min": -31.1475,
+   "max": 8.6957,
+   "cap_weighted": -2.0413,
+   "movers": [
+    {
+     "ticker": "TSX:GIL",
+     "name": "Gildan Activewear Inc.",
+     "change": -18.8617,
+     "close": "49.04",
+     "volume": 2920434,
+     "cap": 8014460178,
+     "currency": "CAD",
+     "us": "NYSE",
+     "exchange": "TSX",
+     "sector": "Consumer Non-Durables"
+    },
+    {
+     "ticker": "TSX:TNZ",
+     "name": "Tenaz Energy Corp",
+     "change": -18.3657,
+     "close": "50.45",
+     "volume": 1354555,
+     "cap": 1425258594,
+     "currency": "CAD",
+     "us": "OTC",
+     "exchange": "TSX",
+     "sector": "Energy Minerals"
+    },
+    {
+     "ticker": "TSX:RUS",
+     "name": "Russel Metals Inc.",
+     "change": -13.6195,
+     "close": "76.87",
+     "volume": 481776,
+     "cap": 3498174867,
+     "currency": "CAD",
+     "us": "OTC",
+     "exchange": "TSX",
+     "sector": "Distribution Services"
+    },
+    {
+     "ticker": "TSX:CLS",
+     "name": "Celestica Inc.",
+     "change": -12.6605,
+     "close": "288.43",
+     "volume": 1109105,
+     "cap": 29820392366,
+     "currency": "CAD",
+     "us": "NYSE",
+     "exchange": "TSX",
+     "sector": "Electronic Technology"
+    },
+    {
+     "ticker": "TSX:LUN",
+     "name": "Lundin Mining Corporation",
+     "change": -11.4304,
+     "close": "28.05",
+     "volume": 5490369,
+     "cap": 19402248245,
+     "currency": "CAD",
+     "us": "ADR",
+     "exchange": "TSX",
+     "sector": "Non-Energy Minerals"
+    },
+    {
+     "ticker": "TSX:SLF",
+     "name": "Sun Life Financial Inc.",
+     "change": -10.2078,
+     "close": "102.83",
+     "volume": 3998622,
+     "cap": 45593622961,
+     "currency": "CAD",
+     "us": "NYSE",
+     "exchange": "TSX",
+     "sector": "Finance"
+    }
+   ],
+   "below_gate": [
+    {
+     "ticker": "TSXV:PUL",
+     "name": "Pulse Oil Corp.",
+     "change": 100.0,
+     "volume": 114128,
+     "close": 0.01,
+     "currency": "CAD",
+     "cap_local": 3117328
+    },
+    {
+     "ticker": "CSE:DATT",
+     "name": "Digital Asset Technologies Inc.",
+     "change": 100.0,
+     "volume": 100000,
+     "close": 0.01,
+     "currency": "CAD",
+     "cap_local": 373164
+    },
+    {
+     "ticker": "TSXV:PWRO",
+     "name": "Power One Resources Corp",
+     "change": 75.0,
+     "volume": 411000,
+     "close": 0.035,
+     "currency": "CAD",
+     "cap_local": 587809
+    },
+    {
+     "ticker": "TSXV:OVT",
+     "name": "Oculus Inc.",
+     "change": 50.0,
+     "volume": 111000,
+     "close": 0.045,
+     "currency": "CAD",
+     "cap_local": 3157793.3156201933
+    },
+    {
+     "ticker": "TSXV:DELX",
+     "name": "DelphX Capital Markets, Inc.",
+     "change": -50.0,
+     "volume": 513818,
+     "close": 0.005,
+     "currency": "CAD",
+     "cap_local": 2400602
+    },
+    {
+     "ticker": "CSE:NERD",
+     "name": "Nerds On Site, Inc.",
+     "change": 40.0,
+     "volume": 565000,
+     "close": 0.035,
+     "currency": "CAD",
+     "cap_local": 2428929
+    }
+   ],
+   "carryover": [
+    {
+     "ticker": "TSX:GWO.PR.S",
+     "name": "Great-West Lifeco Inc. Non Cum 1st Pfd Registered Series S",
+     "exchange": "TSX",
+     "close": "22.81",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:PPL.PR.Q",
+     "name": "Pembina Pipeline Corp Cum Conv Red Perp Pfd Registered Shs A Series -17-",
+     "exchange": "TSX",
+     "close": "25.99",
+     "volume": "0",
+     "last_trade_date": "2026-11-03"
+    },
+    {
+     "ticker": "TSX:PPL.PR.O",
+     "name": "Pembina Pipeline Corp Cum Conv Red Perp Pfd Registered Shs A Series -15- Fltg Rt",
+     "exchange": "TSX",
+     "close": "25.48",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:PPL.PR.E",
+     "name": "Pembina Pipeline Corp Cum Red Pfd Registered Shs A Series 5",
+     "exchange": "TSX",
+     "close": "25.91",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:PPL.PF.E",
+     "name": "Pembina Pipeline Corp Cum Conv Red Perp Pfd Registered Shs A Series -25-",
+     "exchange": "TSX",
+     "close": "25.85",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:TRP.PR.H",
+     "name": "TC Energy Corporation Cum Red 1st Pfd Registered Shs Series 4",
+     "exchange": "TSX",
+     "close": "19.24",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:TRP.PR.B",
+     "name": "TC Energy Corporation Cum Red 1st Pfd Registered Shs Series 3",
+     "exchange": "TSX",
+     "close": "19.16",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:TRP.PR.L",
+     "name": "TC Energy Corporation Cum Red 1st Pfd Registered Shs Series -10-",
+     "exchange": "TSX",
+     "close": "23.29",
+     "volume": "0",
+     "last_trade_date": "2026-10-30"
+    },
+    {
+     "ticker": "TSX:TRP.PR.F",
+     "name": "TC Energy Corporation Cum Red 1st Pfd Registered Shs Series 2",
+     "exchange": "TSX",
+     "close": "21.88",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:BN.PF.G",
+     "name": "Brookfield Corporation Class A Preference Shares, Series 42",
+     "exchange": "TSX",
+     "close": "24.9",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:BN.PF.D",
+     "name": "Brookfield Corporation Cum Red Pref Registered Shs -A- Series -37- Non Vtg",
+     "exchange": "TSX",
+     "close": "20.84",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:MFC.PR.F",
+     "name": "Manulife Financial Corporation Non Cum Pfd Registered Shs 1 Series 3",
+     "exchange": "TSX",
+     "close": "20.95",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:MFC.PR.M",
+     "name": "Manulife Financial Corp Non Cum Pfd Registered Shs 1 Series -17-",
+     "exchange": "TSX",
+     "close": "25.19",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:MFC.PR.J",
+     "name": "Manulife Financial Corporation Non-Cum Conv Pfd Shs 1 Series -11-",
+     "exchange": "TSX",
+     "close": "25.5",
+     "volume": "0",
+     "last_trade_date": "2026-11-03"
+    },
+    {
+     "ticker": "TSX:ELF.PR.H",
+     "name": "E-L Financial Corp Ltd 5 1/2 % Non-Cum Red First Pfd Shs Series 3",
+     "exchange": "TSX",
+     "close": "23.86",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:BCE.PR.K",
+     "name": "BCE Inc. Cum Red 1st Pfd Registered Series AK",
+     "exchange": "TSX",
+     "close": "22.25",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:BCE.PR.L",
+     "name": "BCE Inc. Cum Red Pfd Shs Series -AL- Fltg Rt",
+     "exchange": "TSX",
+     "close": "21.9",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "TSX:BCE.PR.T",
+     "name": "BCE Inc. Cum Conv Red Pfd Registered Series T",
+     "exchange": "TSX",
+     "close": "22.65",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:BCE.PR.C",
+     "name": "BCE Inc. Cum Conv Red 1st Pfd Series AC",
+     "exchange": "TSX",
+     "close": "21.43",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:BCE.PR.H",
+     "name": "BCE Inc. Floating Rate Cum Red 1st Pfd Registered Series AH",
+     "exchange": "TSX",
+     "close": "21.42",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:BCE.PR.E",
+     "name": "BCE Inc. Floating Rate Pfd Series AE",
+     "exchange": "TSX",
+     "close": "21.5",
+     "volume": "0",
+     "last_trade_date": "2026-11-03"
+    },
+    {
+     "ticker": "TSX:SLF.PR.J",
+     "name": "Sun Life Financial Inc Non Cum Pfd Shs A Series -9QR- Fltg Rt",
+     "exchange": "TSX",
+     "close": "20.01",
+     "volume": "0",
+     "last_trade_date": "2026-11-02"
+    },
+    {
+     "ticker": "TSX:SLF.PR.G",
+     "name": "Sun Life Financial Inc Non Cum Pfd Shs A Series -8R-",
+     "exchange": "TSX",
+     "close": "21",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:TD.PF.J",
+     "name": "Toronto-Dominion Bank Non-Cum Conv Red Perp Pfd Series 18",
+     "exchange": "TSX",
+     "close": "25.5",
+     "volume": "0",
+     "last_trade_date": "2026-11-03"
+    },
+    {
+     "ticker": "TSX:CU.PR.H",
+     "name": "Canadian Utilities Limited 5 1/4 % Cum Red Second Pfd Shs Series -EE-",
+     "exchange": "TSX",
+     "close": "23.42",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:ENB.PR.Y",
+     "name": "Enbridge Inc. Cum Red Pref Registered Shs Series 3",
+     "exchange": "TSX",
+     "close": "23.01",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:ENB.PR.I",
+     "name": "Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series I",
+     "exchange": "TSX",
+     "close": "22.73",
+     "volume": "0",
+     "last_trade_date": "2026-11-02"
+    },
+    {
+     "ticker": "TSX:ENB.PR.G",
+     "name": "Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series G",
+     "exchange": "TSX",
+     "close": "23.6",
+     "volume": "0",
+     "last_trade_date": "2026-10-30"
+    },
+    {
+     "ticker": "TSX:ENB.PR.Z",
+     "name": "Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series 4",
+     "exchange": "TSX",
+     "close": "22.95",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:CF.PR.C",
+     "name": "Canaccord Genuity Group Inc Cum Pfd Shs Series C",
+     "exchange": "TSX",
+     "close": "25.29",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:FFH.U",
+     "name": "Fairfax Financial Holdings Limited",
+     "exchange": "TSX",
+     "close": "1930",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:POW.PR.B",
+     "name": "Power Corporation of Canada 5.35 % Non Cum Pfd Shs Series B",
+     "exchange": "TSX",
+     "close": "23.45",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:POW.PR.E",
+     "name": "Power Corporation of Canada Part.Pfd Shs",
+     "exchange": "TSX",
+     "close": "87",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "TSX:NA.PR.I",
+     "name": "National Bank of Canada Non-Cum Conv Red Perp Pfd Registered Shs Series -47- Reg S",
+     "exchange": "TSX",
+     "close": "25.85",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:CVG",
+     "name": "Clairvest Group Inc.",
+     "exchange": "TSX",
+     "close": "86.12",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:CPX.PR.C",
+     "name": "Capital Power Corporation Cum Pfd Registered Shs Series 3",
+     "exchange": "TSX",
+     "close": "25.6",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:TA.PR.G",
+     "name": "TransAlta Corp Floating Rate Cum 1st Pfd Registered Shs Series D",
+     "exchange": "TSX",
+     "close": "24",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "TSX:TA.PR.E",
+     "name": "TransAlta Corporation Cum First Pfd Shs Series B",
+     "exchange": "TSX",
+     "close": "20.99",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:TA.PR.D",
+     "name": "TransAlta Corporation Cum First Pfd Shs Series A",
+     "exchange": "TSX",
+     "close": "21.22",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:RFA.PR.I",
+     "name": "RFA Financial Inc. Pfd Shs Series I",
+     "exchange": "TSX",
+     "close": "23.25",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:FTS.PR.I",
+     "name": "Fortis Inc. Cum Red 1st Pfd Shs Series I Fltg Rt",
+     "exchange": "TSX",
+     "close": "19.98",
+     "volume": "0",
+     "last_trade_date": "2026-11-03"
+    },
+    {
+     "ticker": "TSX:FTS.PR.H",
+     "name": "Fortis Inc. Cum Red 1st Pfd Shs Series H",
+     "exchange": "TSX",
+     "close": "20.45",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:FTS.PR.J",
+     "name": "Fortis Inc. Cum Red First Pfd Shs Series J",
+     "exchange": "TSX",
+     "close": "22.3",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "TSX:TWC",
+     "name": "TWC Enterprises Limited",
+     "exchange": "TSX",
+     "close": "26",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    }
+   ],
+   "excluded_counts": {
+    "below_cap_floor": 1774,
+    "issuer_unresolved": 192,
+    "no_market_cap": 134,
+    "stale_venue_print": 16
+   }
+  },
+  "eu-de": {
+   "rows": 121,
+   "live": 121,
+   "median": 0.0,
+   "up": 60,
+   "down": 58,
+   "flat": 3,
+   "min": -23.9829,
+   "max": 11.4677,
+   "cap_weighted": -0.4,
+   "movers": [
+    {
+     "ticker": "XETR:RHM",
+     "name": "Rheinmetall AG",
+     "change": -16.1351,
+     "close": "841.5",
+     "volume": 1102186,
+     "cap": 52544307024,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "XETR",
+     "sector": "Electronic Technology"
+    },
+    {
+     "ticker": "XETR:WAF",
+     "name": "Siltronic AG",
+     "change": -12.3144,
+     "close": "50.2",
+     "volume": 500475,
+     "cap": 2120489365,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "XETR",
+     "sector": "Electronic Technology"
+    },
+    {
+     "ticker": "XETR:NEM",
+     "name": "Nemetschek SE",
+     "change": -10.1717,
+     "close": "68",
+     "volume": 457150,
+     "cap": 9813513270,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "XETR",
+     "sector": "Technology Services"
+    },
+    {
+     "ticker": "XETR:SMHN",
+     "name": "SUSS MicroTec SE",
+     "change": -9.9757,
+     "close": "44.4",
+     "volume": 291971,
+     "cap": 1058171964,
+     "currency": "EUR",
+     "us": "OTC",
+     "exchange": "XETR",
+     "sector": "Producer Manufacturing"
+    },
+    {
+     "ticker": "XETR:AIXA",
+     "name": "AIXTRON SE",
+     "change": -9.8192,
+     "close": "28.93",
+     "volume": 1534553,
+     "cap": 4053603018,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "XETR",
+     "sector": "Producer Manufacturing"
+    },
+    {
+     "ticker": "XETR:S92",
+     "name": "SMA Solar Technology AG",
+     "change": -9.3629,
+     "close": "49.08",
+     "volume": 195713,
+     "cap": 2108990509,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "XETR",
+     "sector": "Producer Manufacturing"
+    }
+   ],
+   "below_gate": [
+    {
+     "ticker": "XETR:LEOW",
+     "name": "Leo International Precision Health Aktiengesellschaft",
+     "change": 12.7273,
+     "volume": 104501,
+     "close": 0.248,
+     "currency": "EUR",
+     "cap_local": 23443199
+    },
+    {
+     "ticker": "XETR:BRNK",
+     "name": "BRANICKS Group AG",
+     "change": -12.6404,
+     "volume": 178874,
+     "close": 0.311,
+     "currency": "EUR",
+     "cap_local": 29979871
+    },
+    {
+     "ticker": "XETR:LPK",
+     "name": "LPKF Laser & Electronics SE",
+     "change": -11.8049,
+     "volume": 432928,
+     "close": 9.04,
+     "currency": "EUR",
+     "cap_local": 251089614
+    },
+    {
+     "ticker": "XETR:TPG0",
+     "name": "Platform Group SE & Co. KGaA",
+     "change": 8.2759,
+     "volume": 1181109,
+     "close": 0.628,
+     "currency": "EUR",
+     "cap_local": 11938515
+    }
+   ],
+   "carryover": [],
+   "excluded_counts": {
+    "below_volume": 77,
+    "issuer_unresolved": 11,
+    "below_cap_floor": 200,
+    "stale_venue_print": 88,
+    "no_market_cap": 2
+   }
+  },
+  "eu-fr": {
+   "rows": 273,
+   "live": 268,
+   "median": 0.0,
+   "up": 127,
+   "down": 119,
+   "flat": 22,
+   "min": -16.7288,
+   "max": 12.0621,
+   "cap_weighted": 0.5766,
+   "movers": [
+    {
+     "ticker": "EURONEXT:SOI",
+     "name": "Soitec SA",
+     "change": -16.7288,
+     "close": "91.64",
+     "volume": 1022342,
+     "cap": 4423241464,
+     "currency": "EUR",
+     "us": "none",
+     "exchange": "EURONEXT",
+     "sector": "Electronic Technology"
+    },
+    {
+     "ticker": "EURONEXT:AF",
+     "name": "Air France-KLM SA",
+     "change": 12.0621,
+     "close": "12.635",
+     "volume": 4966125,
+     "cap": 3323484960,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "EURONEXT",
+     "sector": "Transportation"
+    },
+    {
+     "ticker": "EURONEXT:DEC",
+     "name": "JCDecaux SE",
+     "change": 5.7708,
+     "close": "26.76",
+     "volume": 386447,
+     "cap": 6079546228,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "EURONEXT",
+     "sector": "Commercial Services"
+    },
+    {
+     "ticker": "EURONEXT:OVH",
+     "name": "OVH Groupe S.A.",
+     "change": -5.3648,
+     "close": "13.23",
+     "volume": 197617,
+     "cap": 2388407079,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "EURONEXT",
+     "sector": "Technology Services"
+    }
+   ],
+   "below_gate": [
+    {
+     "ticker": "EURONEXT:ALSPW",
+     "name": "Spineway SA",
+     "change": 12.2112,
+     "volume": 212265,
+     "close": 0.102,
+     "currency": "EUR",
+     "cap_local": 3230985
+    },
+    {
+     "ticker": "EURONEXT:ALHUN",
+     "name": "Hunyvers",
+     "change": -8.5714,
+     "volume": 166460,
+     "close": 3.2,
+     "currency": "EUR",
+     "cap_local": 13559357
+    },
+    {
+     "ticker": "EURONEXT:AVT",
+     "name": "Avenir Telecom SA",
+     "change": -8.3582,
+     "volume": 138188,
+     "close": 0.0614,
+     "currency": "EUR",
+     "cap_local": 4949323
+    },
+    {
+     "ticker": "EURONEXT:ALKAL",
+     "name": "Kalray SA",
+     "change": -8.2489,
+     "volume": 123633,
+     "close": 3.17,
+     "currency": "EUR",
+     "cap_local": 63854077
+    },
+    {
+     "ticker": "EURONEXT:ALNFL",
+     "name": "NFL Biosciences SA",
+     "change": -8.1989,
+     "volume": 127942,
+     "close": 0.3415,
+     "currency": "EUR",
+     "cap_local": 4692692
+    },
+    {
+     "ticker": "EURONEXT:ALIMP",
+     "name": "Implanet SA",
+     "change": -8.1081,
+     "volume": 132126,
+     "close": 0.136,
+     "currency": "EUR",
+     "cap_local": 21285208
+    }
+   ],
+   "carryover": [
+    {
+     "ticker": "EURONEXT:FMONC",
+     "name": "Financiere Moncey",
+     "exchange": "EURONEXT",
+     "close": "108",
+     "volume": "79",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "EURONEXT:MLCHE",
+     "name": "Cheops Technology SA",
+     "exchange": "EURONEXT",
+     "close": "57",
+     "volume": "2",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "EURONEXT:BLEE",
+     "name": "Bleecker S.A.",
+     "exchange": "EURONEXT",
+     "close": "101",
+     "volume": "60",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "EURONEXT:CROS",
+     "name": "Crosswood SA",
+     "exchange": "EURONEXT",
+     "close": "8.85",
+     "volume": "11",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "EURONEXT:ALPG",
+     "name": "PREATONI Group",
+     "exchange": "EURONEXT",
+     "close": "36.8",
+     "volume": "450",
+     "last_trade_date": "2026-11-04"
+    }
+   ],
+   "excluded_counts": {
+    "below_cap_floor": 285,
+    "no_market_cap": 3
+   }
+  },
+  "eu-it": {
+   "rows": 179,
+   "live": 176,
+   "median": -0.7005,
+   "up": 53,
+   "down": 108,
+   "flat": 15,
+   "min": -9.2838,
+   "max": 5.4852,
+   "cap_weighted": -0.8189,
+   "movers": [
+    {
+     "ticker": "MIL:TPRO",
+     "name": "Technoprobe SpA",
+     "change": -9.2838,
+     "close": "20.52",
+     "volume": 4120241,
+     "cap": 16256832928,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "MIL",
+     "sector": "Electronic Technology"
+    },
+    {
+     "ticker": "MIL:ARIS",
+     "name": "Ariston Holding NV",
+     "change": -8.263,
+     "close": "3.042",
+     "volume": 2453841,
+     "cap": 1298951222,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "MIL",
+     "sector": "Producer Manufacturing"
+    }
+   ],
+   "below_gate": [
+    {
+     "ticker": "MIL:RN",
+     "name": "Risanamento S.p.A.",
+     "change": 35.7143,
+     "volume": 41155056,
+     "close": 0.0266,
+     "currency": "EUR",
+     "cap_local": 35296547
+    },
+    {
+     "ticker": "MIL:AEF",
+     "name": "Aeffe S.p.A.",
+     "change": -13.5021,
+     "volume": 291660,
+     "close": 0.1025,
+     "currency": "EUR",
+     "cap_local": 11663361
+    },
+    {
+     "ticker": "MIL:MTV",
+     "name": "Mondo TV S.p.A.",
+     "change": -6.5385,
+     "volume": 211122,
+     "close": 0.0243,
+     "currency": "EUR",
+     "cap_local": 2881592
+    },
+    {
+     "ticker": "MIL:SGC",
+     "name": "SG Company Societa Benefit S.p.A.",
+     "change": -5.4591,
+     "volume": 252750,
+     "close": 0.381,
+     "currency": "EUR",
+     "cap_local": 15077075
+    }
+   ],
+   "carryover": [
+    {
+     "ticker": "MIL:VARV",
+     "name": "SBE-Varvit S.p.A. Class A",
+     "exchange": "MIL",
+     "close": "6.8",
+     "volume": "0",
+     "last_trade_date": "2026-11-03"
+    },
+    {
+     "ticker": "MIL:YRM",
+     "name": "Rosetti Marino S.p.A.",
+     "exchange": "MIL",
+     "close": "236",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "MIL:BF",
+     "name": "Fiere Internazionali Di Bologna S.P.A.",
+     "exchange": "MIL",
+     "close": "1.25",
+     "volume": "0",
+     "last_trade_date": null
+    }
+   ],
+   "excluded_counts": {
+    "below_cap_floor": 211,
+    "no_market_cap": 2
+   }
+  },
+  "eu-es": {
+   "rows": 147,
+   "live": 114,
+   "median": 0.0,
+   "up": 56,
+   "down": 50,
+   "flat": 8,
+   "min": -21.0983,
+   "max": 11.5789,
+   "cap_weighted": 0.702,
+   "movers": [
+    {
+     "ticker": "BME:ROVI",
+     "name": "Laboratorios Farmaceuticos Rovi, S.A.",
+     "change": 8.3137,
+     "close": "69.05",
+     "volume": 610840,
+     "cap": 3618289370,
+     "currency": "EUR",
+     "us": "none",
+     "exchange": "BME",
+     "sector": "Health Technology"
+    },
+    {
+     "ticker": "BME:GEST",
+     "name": "Gestamp Automocion S.A.",
+     "change": -7.9125,
+     "close": "2.735",
+     "volume": 1583626,
+     "cap": 1915716856,
+     "currency": "EUR",
+     "us": "OTC",
+     "exchange": "BME",
+     "sector": "Producer Manufacturing"
+    }
+   ],
+   "below_gate": [
+    {
+     "ticker": "BME:CITY",
+     "name": "Club De Futbol Intercity SAD",
+     "change": -13.0045,
+     "volume": 11234483,
+     "close": 0.0194,
+     "currency": "EUR",
+     "cap_local": 5711944
+    }
+   ],
+   "carryover": [
+    {
+     "ticker": "BME:GGC",
+     "name": "General de Galerias Comerciales SA",
+     "exchange": "BME",
+     "close": "161",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:AMEN",
+     "name": "Aeternal Mentis SA",
+     "exchange": "BME",
+     "close": "7.5",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:SCHLR",
+     "name": "HELIOS RE SOCIMI, S.A.",
+     "exchange": "BME",
+     "close": "8.3",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YLFG",
+     "name": "LAFINCA GLOBAL ASSETS SOCIMI, S.A.",
+     "exchange": "BME",
+     "close": "4.18",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "BME:SCHST",
+     "name": "NORDESTE PROPERTIES SOCIMI, S.A.",
+     "exchange": "BME",
+     "close": "11.8",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YHTI",
+     "name": "Hotei Properties Group SOCIMI SA",
+     "exchange": "BME",
+     "close": "1.82",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "BME:YVCP",
+     "name": "Veracruz Properties Socimi SA",
+     "exchange": "BME",
+     "close": "31.2",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YSRR",
+     "name": "Serrano 61 Desarrollo Socimi SA",
+     "exchange": "BME",
+     "close": "19.8",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YVIV",
+     "name": "Vivenio Residencial SOCIMI SA",
+     "exchange": "BME",
+     "close": "1.33",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YIBI",
+     "name": "IBI LION Socimi S.A.",
+     "exchange": "BME",
+     "close": "1.33",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "BME:YENT",
+     "name": "Entrecampos Cuatro SOCIMI SA",
+     "exchange": "BME",
+     "close": "1.78",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YORE",
+     "name": "Olimpo Real Estate SOCIMI, S.A.",
+     "exchange": "BME",
+     "close": "0.95",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YZBL",
+     "name": "Zambal Spain SOCIMI SA",
+     "exchange": "BME",
+     "close": "0.915",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YTAN",
+     "name": "TANDER INVERSIONES SOCIMI SA",
+     "exchange": "BME",
+     "close": "11.9",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YDOA",
+     "name": "Inversiones Doalca SOCIMI SA",
+     "exchange": "BME",
+     "close": "26.8",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:SEC",
+     "name": "Secuoya Grupo de Comunicacion SA",
+     "exchange": "BME",
+     "close": "30.4",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:ALC",
+     "name": "Altia Consultores S.A.",
+     "exchange": "BME",
+     "close": "5.9",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "BME:YHSP",
+     "name": "Hispanotels Inversiones SOCIMI SA",
+     "exchange": "BME",
+     "close": "8.55",
+     "volume": "0",
+     "last_trade_date": "2026-11-03"
+    },
+    {
+     "ticker": "BME:YEPSA",
+     "name": "Emperador Properties SOCIMI SA",
+     "exchange": "BME",
+     "close": "10.6",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YSIL",
+     "name": "Silicius Real Estate Socimi SA",
+     "exchange": "BME",
+     "close": "10.5",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:SCTEM",
+     "name": "Tempore Properties SOCIMI SA",
+     "exchange": "BME",
+     "close": "2.58",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YTRM",
+     "name": "Torimbia SOCIMI SA",
+     "exchange": "BME",
+     "close": "26.6",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YIRG",
+     "name": "IRG10 SOCIMI SA",
+     "exchange": "BME",
+     "close": "5.65",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YEUR",
+     "name": "Euro Cervantes SOCIMI SAU",
+     "exchange": "BME",
+     "close": "31.6",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YISC",
+     "name": "ISC Fresh Water Investment SOCIMI S.A.",
+     "exchange": "BME",
+     "close": "15.1",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YFID",
+     "name": "Fidere Patrimonio Socimi SAU",
+     "exchange": "BME",
+     "close": "37.4",
+     "volume": "0",
+     "last_trade_date": "2026-11-04"
+    },
+    {
+     "ticker": "BME:YMRE",
+     "name": "Meridia Real Estate III SOCIMI SA",
+     "exchange": "BME",
+     "close": "0.77",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:STNA",
+     "name": "Santa Ana Global Enterprises SA",
+     "exchange": "BME",
+     "close": "15.4",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YTRI",
+     "name": "Trivium Real Estate Socimi SA",
+     "exchange": "BME",
+     "close": "38.4",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:SCAFS",
+     "name": "Ahorro Familiar S.A.",
+     "exchange": "BME",
+     "close": "27",
+     "volume": "0",
+     "last_trade_date": null
+    },
+    {
+     "ticker": "BME:YADR",
+     "name": "Adriano Care SOCIMI SA",
+     "exchange": "BME",
+     "close": "9.85",
+     "volume": "0",
+     "last_trade_date": "2026-11-02"
+    },
+    {
+     "ticker": "BME:YTST",
+     "name": "Testa Residencial Socimi SA",
+     "exchange": "BME",
+     "close": "3.26",
+     "volume": "0",
+     "last_trade_date": "2026-11-03"
+    },
+    {
+     "ticker": "BME:YGOP",
+     "name": "GOP Properties SOCIMI SA",
+     "exchange": "BME",
+     "close": "18.6",
+     "volume": "0",
+     "last_trade_date": "2026-11-03"
+    }
+   ],
+   "excluded_counts": {
+    "below_cap_floor": 90,
+    "no_market_cap": 34
+   }
+  },
+  "eu-nl": {
+   "rows": 62,
+   "live": 62,
+   "median": -0.4852,
+   "up": 21,
+   "down": 38,
+   "flat": 3,
+   "min": -7.3026,
+   "max": 4.5082,
+   "cap_weighted": -2.8171,
+   "movers": [
+    {
+     "ticker": "EURONEXT:BESI",
+     "name": "BE Semiconductor Industries N.V.",
+     "change": -7.3026,
+     "close": "140.9",
+     "volume": 1009011,
+     "cap": 13771969231,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "EURONEXT",
+     "sector": "Producer Manufacturing"
+    },
+    {
+     "ticker": "EURONEXT:ASM",
+     "name": "ASM International N.V.",
+     "change": -6.9924,
+     "close": "635.8",
+     "volume": 387395,
+     "cap": 37335818635,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "EURONEXT",
+     "sector": "Producer Manufacturing"
+    },
+    {
+     "ticker": "EURONEXT:ASML",
+     "name": "ASML Holding NV",
+     "change": -6.549,
+     "close": "1250",
+     "volume": 1602606,
+     "cap": 573481098401,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "EURONEXT",
+     "sector": "Electronic Technology"
+    }
+   ],
+   "below_gate": [
+    {
+     "ticker": "EURONEXT:EBUS",
+     "name": "Ebusco Holding N.V.",
+     "change": -7.215,
+     "volume": 1624538,
+     "close": 0.1286,
+     "currency": "EUR",
+     "cap_local": 36447111
+    }
+   ],
+   "carryover": [],
+   "excluded_counts": {
+    "below_cap_floor": 21
+   }
+  },
+  "eu-be": {
+   "rows": 77,
+   "live": 76,
+   "median": 0.0,
+   "up": 37,
+   "down": 33,
+   "flat": 6,
+   "min": -6.1708,
+   "max": 4.3269,
+   "cap_weighted": 0.5632,
+   "movers": [],
+   "below_gate": [],
+   "carryover": [
+    {
+     "ticker": "EURONEXT:ROCK",
+     "name": "WHITESTONE GROUP",
+     "exchange": "EURONEXT",
+     "close": "18.8",
+     "volume": "500",
+     "last_trade_date": "2026-11-04"
+    }
+   ],
+   "excluded_counts": {
+    "below_cap_floor": 23,
+    "no_market_cap": 3
+   }
+  },
+  "eu-at": {
+   "rows": 50,
+   "live": 50,
+   "median": 0.0,
+   "up": 18,
+   "down": 23,
+   "flat": 9,
+   "min": -18.1579,
+   "max": 8.5735,
+   "cap_weighted": 0.5475,
+   "movers": [
+    {
+     "ticker": "VIE:ATS",
+     "name": "AT & S Austria Technologie & Systemtechnik Aktiengesellschaft",
+     "change": -15.6202,
+     "close": "110.2",
+     "volume": 447534,
+     "cap": 5694831402,
+     "currency": "EUR",
+     "us": "none",
+     "exchange": "VIE",
+     "sector": "Electronic Technology"
+    },
+    {
+     "ticker": "VIE:VER",
+     "name": "VERBUND AG Class A",
+     "change": 8.5735,
+     "close": "75.35",
+     "volume": 342566,
+     "cap": 27061731076,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "VIE",
+     "sector": "Utilities"
+    }
+   ],
+   "below_gate": [],
+   "carryover": [],
+   "excluded_counts": {
+    "below_cap_floor": 12,
+    "no_market_cap": 3
+   }
+  },
+  "eu-pt": {
+   "rows": 27,
+   "live": 27,
+   "median": 0.0,
+   "up": 13,
+   "down": 11,
+   "flat": 3,
+   "min": -5.7143,
+   "max": 5.5684,
+   "cap_weighted": 0.4273,
+   "movers": [
+    {
+     "ticker": "EURONEXT:SON",
+     "name": "Sonae SGPS SA",
+     "change": 5.5684,
+     "close": "2.275",
+     "volume": 3602603,
+     "cap": 4837532906,
+     "currency": "EUR",
+     "us": "OTC",
+     "exchange": "EURONEXT",
+     "sector": "Technology Services"
+    }
+   ],
+   "below_gate": [],
+   "carryover": [],
+   "excluded_counts": {
+    "below_cap_floor": 4
+   }
+  },
+  "eu-ie": {
+   "rows": 17,
+   "live": 17,
+   "median": 0.1805,
+   "up": 10,
+   "down": 5,
+   "flat": 2,
+   "min": -3.0165,
+   "max": 2.6846,
+   "cap_weighted": -0.3348,
+   "movers": [],
+   "below_gate": [],
+   "carryover": [],
+   "excluded_counts": {
+    "below_cap_floor": 2
+   }
+  },
+  "eu-fi": {
+   "rows": 101,
+   "live": 101,
+   "median": -0.7878,
+   "up": 32,
+   "down": 64,
+   "flat": 5,
+   "min": -12.2857,
+   "max": 16.0237,
+   "cap_weighted": -0.8674,
+   "movers": [
+    {
+     "ticker": "OMXHEX:IQMX",
+     "name": "IQM Quantum Computers Oyj Class A",
+     "change": -11.962,
+     "close": "6.955",
+     "volume": 227281,
+     "cap": 1667013401,
+     "currency": "EUR",
+     "us": "ADR",
+     "exchange": "OMXHEX",
+     "sector": "Electronic Technology"
+    },
+    {
+     "ticker": "OMXHEX:NOKIA",
+     "name": "Nokia Oyj",
+     "change": -7.5115,
+     "close": "6.846",
+     "volume": 26451296,
+     "cap": 47014356178,
+     "currency": "EUR",
+     "us": "none",
+     "exchange": "OMXHEX",
+     "sector": "Electronic Technology"
+    }
+   ],
+   "below_gate": [
+    {
+     "ticker": "OMXHEX:SBI",
+     "name": "Sunborn International Plc",
+     "change": -21.3693,
+     "volume": 207333,
+     "close": 0.0758,
+     "currency": "EUR",
+     "cap_local": 54812720
+    },
+    {
+     "ticker": "OMXHEX:MODU",
+     "name": "Modulight Oyj",
+     "change": 11.8812,
+     "volume": 116864,
+     "close": 1.13,
+     "currency": "EUR",
+     "cap_local": 42991469
+    },
+    {
+     "ticker": "OMXHEX:ESENSE",
+     "name": "Enersense International Oyj",
+     "change": -11.811,
+     "volume": 175847,
+     "close": 4.48,
+     "currency": "EUR",
+     "cap_local": 83782036
+    },
+    {
+     "ticker": "OMXHEX:EAGLE",
+     "name": "Eagle Filters Group Plc Class A",
+     "change": -7.5,
+     "volume": 176965,
+     "close": 0.0666,
+     "currency": "EUR",
+     "cap_local": 21001699
+    },
+    {
+     "ticker": "OMXHEX:EEZY",
+     "name": "Eezy Oyj",
+     "change": -5.4286,
+     "volume": 1011950,
+     "close": 0.1655,
+     "currency": "EUR",
+     "cap_local": 21915963
+    },
+    {
+     "ticker": "OMXHEX:FARON",
+     "name": "Faron Pharmaceuticals Oy",
+     "change": -5.087,
+     "volume": 1070079,
+     "close": 0.3545,
+     "currency": "EUR",
+     "cap_local": 75776170
+    }
+   ],
+   "carryover": [],
+   "excluded_counts": {
+    "below_cap_floor": 83,
+    "no_market_cap": 4
+   }
+  },
+  "eu-dk": {
+   "rows": 75,
+   "live": 74,
+   "median": -0.1055,
+   "up": 32,
+   "down": 37,
+   "flat": 5,
+   "min": -14.6091,
+   "max": 15.4297,
+   "cap_weighted": -1.5094,
+   "movers": [
+    {
+     "ticker": "OMXCOP:GN",
+     "name": "GN Store Nord A/S",
+     "change": 11.6112,
+     "close": "124",
+     "volume": 3923310,
+     "cap": 2428189060,
+     "currency": "DKK",
+     "us": "ADR",
+     "exchange": "OMXCOP",
+     "sector": "Electronic Technology"
+    }
+   ],
+   "below_gate": [
+    {
+     "ticker": "OMXCOP:PEG",
+     "name": "Pharma Equity Group A/S Class A",
+     "change": 8.2857,
+     "volume": 240141,
+     "close": 0.0758,
+     "currency": "DKK",
+     "cap_local": 85928444
+    }
+   ],
+   "carryover": [
+    {
+     "ticker": "OMXCOP:PRIMOF",
+     "name": "Prime Office A/S",
+     "exchange": "OMXCOP",
+     "close": "232",
+     "volume": "790",
+     "last_trade_date": "2026-11-04"
+    }
+   ],
+   "excluded_counts": {
+    "below_cap_floor": 58,
+    "no_market_cap": 1
+   }
+  },
+  "eu-gr": {
+   "rows": 86,
+   "live": 86,
+   "median": -0.5724,
+   "up": 24,
+   "down": 52,
+   "flat": 10,
+   "min": -7.3879,
+   "max": 10.0,
+   "cap_weighted": -0.3982,
+   "movers": [],
+   "below_gate": [],
+   "carryover": [],
+   "excluded_counts": {
+    "below_cap_floor": 40,
+    "issuer_unresolved": 2
+   }
+  }
+ }
+}
