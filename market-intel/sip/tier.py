@@ -61,35 +61,43 @@ def drop_noise(rows: Iterable[CandidateRow]) -> list[CandidateRow]:
 
 
 def _has_catalyst(row: CandidateRow) -> bool:
-    return bool(row.catalyst and row.catalyst.strip())
+    return bool(row.catalyst and str(row.catalyst).strip())
+
+
+def _has_flag(row: CandidateRow, *names: str) -> bool:
+    wanted = {name.upper() for name in names}
+    return any(str(flag).upper() in wanted for flag in row.flags)
 
 
 def assign_tiers(rows: Iterable[CandidateRow], cfg: dict[str, Any], slot: str) -> list[CandidateRow]:
-    result = []
+    result: list[CandidateRow] = []
     for row in rows:
         move = abs(float(row.chg_pct))
-        rvol = row.rvol if row.rvol is not None else 0.0
         hard = float(cfg.get("day_move_hard", 5.0))
         soft = float(cfg.get("day_move_soft", 4.0))
         gap_soft = float(cfg.get("gap_soft", 3.0))
-        gap_hard = float(cfg.get("gap_hard", 4.0))
-        unusual = float(cfg.get("unusual_rvol", 3.0))
-        rmin = float(cfg.get("tech_watch_rvol_min", 1.0))
+        elevated = float(cfg.get("elevated_rvol_min", 1.5))
         rmax = float(cfg.get("tech_watch_rvol_max", 2.0))
-        catalyst = _has_catalyst(row)
-        gap = abs(float(row.flags and row.chg_pct or 0.0))
 
-        if catalyst and move >= hard and rvol >= unusual:
-            tier = "A"
-        elif catalyst and move >= soft:
-            tier = "Soft-A" if not cfg.get("soft_a_requires_catalyst", True) or catalyst else "Soft-A"
-        elif move >= gap_soft or gap >= gap_soft:
-            if rmin <= rvol <= rmax and not catalyst:
-                tier = "TECH_WATCH"
+        catalyst = _has_catalyst(row)
+        limit_move = _has_flag(row, "LIMIT_UP", "LIMIT_DOWN")
+        material_move = move >= soft or limit_move
+        hard_move = move >= hard or limit_move
+
+        if catalyst and material_move:
+            if row.rvol is not None and row.rvol >= elevated:
+                tier = "A"
+            elif hard_move:
+                tier = "Soft-A"
             else:
                 tier = "B"
+        elif not catalyst and (move >= gap_soft or limit_move):
+            tier = "B" if row.rvol is not None and row.rvol >= rmax else "TECH_WATCH"
+        elif not catalyst and row.rvol is not None and row.rvol >= elevated:
+            tier = "B"
         else:
             tier = "C"
+
         row.tier = tier
         result.append(row)
     return result

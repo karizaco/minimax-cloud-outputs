@@ -9,6 +9,7 @@ def row(
     chg_pct: float,
     dollar_vol: float,
     catalyst: str | None,
+    rvol: float | None = 2.0,
     tier: str | None = None,
 ) -> CandidateRow:
     return CandidateRow(
@@ -18,7 +19,7 @@ def row(
         last=100.0,
         chg_pct=chg_pct,
         dollar_vol=dollar_vol,
-        rvol=2.0,
+        rvol=rvol,
         catalyst=catalyst,
         catalyst_time="09:30" if catalyst else None,
         flags=[],
@@ -28,13 +29,39 @@ def row(
     )
 
 
-def test_soft_a_requires_catalyst() -> None:
+def test_soft_a_requires_catalyst_and_soft_rvol() -> None:
     cfg = load_market("taiwan")
 
     result = run_pipeline(
         [
-            row("1001", chg_pct=4.5, dollar_vol=31_000_000.0, catalyst=None),
-            row("1002", chg_pct=4.5, dollar_vol=32_000_000.0, catalyst="order"),
+            row(
+                "1001",
+                chg_pct=6.0,
+                dollar_vol=31_000_000.0,
+                catalyst=None,
+                rvol=0.8,
+            ),
+            row(
+                "1002",
+                chg_pct=6.0,
+                dollar_vol=32_000_000.0,
+                catalyst="order",
+                rvol=0.8,
+            ),
+            row(
+                "1003",
+                chg_pct=6.0,
+                dollar_vol=33_000_000.0,
+                catalyst="order",
+                rvol=None,
+            ),
+            row(
+                "1004",
+                chg_pct=6.0,
+                dollar_vol=34_000_000.0,
+                catalyst="order",
+                rvol=2.0,
+            ),
         ],
         cfg,
         "open",
@@ -46,7 +73,54 @@ def test_soft_a_requires_catalyst() -> None:
     by_ticker = {item.ticker: item for item in result}
     assert by_ticker["1001"].tier != "Soft-A"
     assert by_ticker["1002"].tier == "Soft-A"
+    assert by_ticker["1003"].tier == "Soft-A"
+    assert by_ticker["1004"].tier == "A"
     assert by_ticker["1002"].catalyst == "order"
+
+
+def test_a_requires_catalyst_elevated_rvol_and_material_move() -> None:
+    cfg = load_market("taiwan")
+
+    result = run_pipeline(
+        [
+            row(
+                "2001",
+                chg_pct=4.5,
+                dollar_vol=31_000_000.0,
+                catalyst="news",
+                rvol=2.0,
+            ),
+            row(
+                "2002",
+                chg_pct=3.9,
+                dollar_vol=32_000_000.0,
+                catalyst="news",
+                rvol=2.0,
+            ),
+            row(
+                "2003",
+                chg_pct=4.5,
+                dollar_vol=33_000_000.0,
+                catalyst=None,
+                rvol=2.0,
+            ),
+            row(
+                "2004",
+                chg_pct=4.5,
+                dollar_vol=34_000_000.0,
+                catalyst="news",
+                rvol=1.4,
+            ),
+        ],
+        cfg,
+        "open",
+    )
+
+    by_ticker = {item.ticker: item for item in result}
+    assert by_ticker["2001"].tier == "A"
+    assert by_ticker["2002"].tier != "A"
+    assert by_ticker["2003"].tier != "A"
+    assert by_ticker["2004"].tier != "A"
 
 
 def test_pipeline_sorts_by_tier_then_dollar_volume_descending() -> None:
@@ -54,10 +128,34 @@ def test_pipeline_sorts_by_tier_then_dollar_volume_descending() -> None:
 
     result = run_pipeline(
         [
-            row("1001", chg_pct=5.0, dollar_vol=31_000_000.0, catalyst="news"),
-            row("1002", chg_pct=5.0, dollar_vol=33_000_000.0, catalyst="news"),
-            row("1003", chg_pct=3.5, dollar_vol=32_000_000.0, catalyst="order"),
-            row("1004", chg_pct=3.5, dollar_vol=34_000_000.0, catalyst="order"),
+            row(
+                "1001",
+                chg_pct=6.0,
+                dollar_vol=31_000_000.0,
+                catalyst="news",
+                rvol=2.0,
+            ),
+            row(
+                "1002",
+                chg_pct=6.0,
+                dollar_vol=33_000_000.0,
+                catalyst="news",
+                rvol=2.0,
+            ),
+            row(
+                "1003",
+                chg_pct=3.5,
+                dollar_vol=32_000_000.0,
+                catalyst="order",
+                rvol=0.8,
+            ),
+            row(
+                "1004",
+                chg_pct=3.5,
+                dollar_vol=34_000_000.0,
+                catalyst="order",
+                rvol=0.8,
+            ),
         ],
         cfg,
         "open",
@@ -86,9 +184,27 @@ def test_pipeline_drops_rows_below_floors() -> None:
 
     result = run_pipeline(
         [
-            row("1001", chg_pct=4.0, dollar_vol=31_000_000.0, catalyst=None),
-            row("1002", chg_pct=3.5, dollar_vol=32_000_000.0, catalyst="order"),
-            row("1003", chg_pct=9.0, dollar_vol=100.0, catalyst="news"),
+            row(
+                "1001",
+                chg_pct=6.0,
+                dollar_vol=31_000_000.0,
+                catalyst=None,
+                rvol=0.8,
+            ),
+            row(
+                "1002",
+                chg_pct=3.5,
+                dollar_vol=32_000_000.0,
+                catalyst="order",
+                rvol=0.8,
+            ),
+            row(
+                "1003",
+                chg_pct=9.0,
+                dollar_vol=100.0,
+                catalyst="news",
+                rvol=2.0,
+            ),
         ],
         cfg,
         "open",

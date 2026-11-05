@@ -183,19 +183,55 @@ def parse_mops_items(
         if not isinstance(item, Mapping):
             continue
         ticker = str(
-            _first(item, "ticker", "code", "symbol", "公司代號", default="")
+            _first(
+                item,
+                "ticker",
+                "code",
+                "sym",
+                "symbol",
+                "公司代號",
+                default="",
+            )
         ).strip()
         headline = str(
-            _first(item, "headline", "subject", "subj", "title", "主旨", default="")
+            _first(
+                item,
+                "catalyst",
+                "headline",
+                "subject",
+                "subj",
+                "title",
+                "主旨",
+                default="",
+            )
         ).strip()
         if not ticker and not headline:
             continue
         result.append(
             {
                 "ticker": _symbol_code(ticker),
+                "code": _symbol_code(ticker),
                 "headline": headline,
+                "catalyst": headline,
                 "time": str(
-                    _first(item, "time", "發言時間", "datetime", default="")
+                    _first(
+                        item,
+                        "catalyst_time",
+                        "time",
+                        "發言時間",
+                        "datetime",
+                        default="",
+                    )
+                ).strip(),
+                "catalyst_time": str(
+                    _first(
+                        item,
+                        "catalyst_time",
+                        "time",
+                        "發言時間",
+                        "datetime",
+                        default="",
+                    )
                 ).strip(),
                 "raw": dict(item),
             }
@@ -254,17 +290,26 @@ def parse_fx_json(obj: Any) -> float:
             raise ParseError(source, f"invalid JSON: {exc}") from exc
 
     if isinstance(obj, Mapping):
+        base_code = str(obj.get("base_code") or obj.get("baseCode") or "").upper()
+
         for key in ("usd_twd", "usdTwd", "USD_TWD", "rate", "price", "value"):
             if key in obj:
                 value = _number(obj[key])
                 if value is not None:
                     return value
+
         rates = _first(obj, "rates", "quotes", "data")
         if isinstance(rates, Mapping):
-            for key in ("USDTWD", "USD/TWD", "TWD=X"):
+            if base_code == "USD":
+                value = _number(rates.get("TWD"))
+                if value is not None:
+                    return value
+
+            for key in ("USDTWD", "USD/TWD", "TWD=X", "TWD"):
                 value = _number(rates.get(key))
                 if value is not None:
                     return value
+
     elif isinstance(obj, list):
         for item in obj:
             if not isinstance(item, Mapping):

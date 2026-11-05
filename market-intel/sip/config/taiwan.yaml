@@ -9,6 +9,7 @@ midday:
     turnover_min: 100000000
     mcap_min: 1000000000
 soft_a_requires_catalyst: true
+elevated_rvol_min: 1.5
 tech_watch_rvol_max: 2.0
 tech_watch_rvol_min: 1.0
 day_move_hard: 5.0

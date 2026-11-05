@@ -7,6 +7,10 @@ from collections.abc import Mapping, Sequence
 from typing import Any
 
 
+_TIER_NAMES = ("Tier A", "Soft-A", "TECH_WATCH", "Tier B", "Tier C")
+_TIER_KEYS = ("A", "Soft-A", "TECH_WATCH", "B", "C")
+
+
 def _number(value: Any, default: float = 0.0) -> float:
     try:
         result = float(value)
@@ -22,19 +26,55 @@ def _first(row: Mapping[str, Any], *keys: str, default: Any = "") -> Any:
     return default
 
 
+def _tier_name(tier: str) -> str:
+    value = str(tier).strip()
+    upper = value.upper()
+    if upper == "A" or upper.startswith("TIER A"):
+        return "A"
+    if upper.startswith("SOFT-A") or upper.startswith("SOFT_A"):
+        return "Soft-A"
+    if upper.startswith("TECH_WATCH"):
+        return "TECH_WATCH"
+    if upper.startswith("B") or upper.startswith("TIER B"):
+        return "B"
+    return "C"
+
+
+def _tier_heading(tier: str) -> str:
+    key = _tier_name(tier)
+    return {
+        "A": "Tier A",
+        "Soft-A": "Soft-A",
+        "TECH_WATCH": "TECH_WATCH",
+        "B": "Tier B",
+        "C": "Tier C",
+    }[key]
+
+
 def display_ticker(row: Mapping[str, Any]) -> str:
-    """Return a bare four-digit ticker, or an XXXX.TPEX symbol."""
-    ticker = str(_first(row, "ticker", "symbol", "code", default="")).strip().upper()
+    """Return an explicit display ticker or an XXXX[.TPEX] symbol."""
+    explicit = str(_first(row, "display_ticker", default="")).strip().upper()
+    if explicit:
+        return explicit
+
+    ticker = str(_first(row, "symbol", "ticker", "code", default="")).strip().upper()
     if ticker.endswith(".TPEX"):
         return ticker
+    if ticker.endswith(".TWO"):
+        return f"{ticker[:-4]}.TPEX"
+    if ticker.endswith(".TW"):
+        return ticker[:-3]
+
     digits = "".join(character for character in ticker if character.isdigit())
     if len(digits) == 4:
+        venue = str(_first(row, "venue", "board", default="")).strip().upper()
+        if venue in {"TPEX", "TPE", "OTC", "上櫃"}:
+            return f"{digits}.TPEX"
         return digits
     return ticker
 
 
 def format_move(value: Any) -> str:
-    """Format a percentage move with an explicit sign."""
     number = _number(value)
     sign = "+" if number > 0 else ""
     if number == 0:
@@ -47,13 +87,24 @@ def format_move(value: Any) -> str:
 
 
 def format_rvol(value: Any) -> str:
-    """Format relative volume."""
+    if value is None or value == "":
+        return "—"
     number = _number(value)
     return f"{number:.1f}x"
 
 
+def format_twd(value: Any) -> str:
+    number = _number(value)
+    if abs(number) >= 1_000_000_000:
+        return f"TWD {number / 1_000_000_000:.1f}bn".replace(".0bn", "bn")
+    if abs(number) >= 1_000_000:
+        return f"TWD {number / 1_000_000:.1f}m".replace(".0m", "m")
+    if abs(number) >= 1_000:
+        return f"TWD {number / 1_000:.0f}k"
+    return f"TWD {number:.0f}"
+
+
 def format_turnover_usd(twd: Any, fx: Any) -> str:
-    """Convert TWD turnover to US dollars and format it compactly."""
     twd_value = _number(twd)
     rate = _number(fx)
     if rate <= 0:
@@ -75,6 +126,18 @@ def format_turnover_usd(twd: Any, fx: Any) -> str:
     return f"{sign}US${absolute:.0f}"
 
 
+def _company(row: Mapping[str, Any]) -> str:
+    english = str(_first(row, "company_en", "english_name", "en", default="")).strip()
+    chinese = str(_first(row, "company_zh", "name", default="")).strip()
+    if english and chinese:
+        return f"{english} ({chinese})"
+    return english or chinese or "—"
+
+
+def _catalyst(row: Mapping[str, Any]) -> str:
+    return str(_first(row, "catalyst", "why", default="—") or "—").replace("|", "\\|")
+
+
 def _rows(
     rows_by_tier: Mapping[str, Sequence[Mapping[str, Any]]]
     | Sequence[Mapping[str, Any]],
@@ -85,8 +148,7 @@ def _rows(
             result: list[tuple[str, Mapping[str, Any]]] = []
             for row in candidates:
                 if isinstance(row, Mapping):
-                    tier = str(row.get("tier", "Tier 1"))
-                    result.append((tier, row))
+                    result.append((str(row.get("tier", "C")), row))
             return result
 
         result = []
@@ -97,8 +159,7 @@ def _rows(
 
     result = []
     for row in rows_by_tier or []:
-        tier = str(row.get("tier", "Tier 1"))
-        result.append((tier, row))
+        result.append((str(row.get("tier", "C")), row))
     return result
 
 
@@ -108,28 +169,32 @@ def render_chat(
     *,
     skipped: Sequence[Any] | None = None,
     header: str = "",
+    fx: Any = None,
 ) -> str:
     """Render SIP chat tables using the locked Taiwan-market columns."""
     lines: list[str] = []
     if header:
         lines.extend([str(header).strip(), ""])
 
-    groups: dict[str, list[Mapping[str, Any]]] = {}
+    groups: dict[str, list[Mapping[str, Any]]] = {name: [] for name in _TIER_KEYS}
     for tier, row in _rows(rows_by_tier):
-        groups.setdefault(tier, []).append(row)
+        groups.setdefault(_tier_name(tier), []).append(row)
 
-    for tier, rows in groups.items():
+    for tier in _TIER_KEYS:
+        rows = groups.get(tier, [])
         if not rows:
             continue
-        lines.append(f"### {tier}")
+        lines.append(f"## {_tier_heading(tier)}")
         lines.append("")
-        lines.append("| Ticker | Last | Move | RelVol | Turnover |")
-        lines.append("|---|---:|---:|---:|---:|")
+        if tier in {"A", "Soft-A"}:
+            lines.append("| Ticker | Company | Move | RelVol | Turnover | Catalyst |")
+            lines.append("|---|---|---:|---:|---:|---|")
+        else:
+            lines.append("| Ticker | Company | Move | RelVol | Turnover |")
+            lines.append("|---|---|---:|---:|---:|")
         for row in rows:
-            ticker = display_ticker(row)
-            last = _number(_first(row, "last", "price", default=0))
             move = _first(row, "chg_pct", "change_pct", "move", default=0)
-            rvol = _first(row, "rvol", "relative_volume", default=0)
+            rvol = _first(row, "rvol", "relative_volume", default=None)
             twd = _first(
                 row,
                 "turnover_twd",
@@ -138,16 +203,117 @@ def render_chat(
                 "dollar_vol",
                 default=0,
             )
-            fx = _first(row, "fx", "fx_rate", default=32.824)
-            lines.append(
-                f"| {ticker} | {last:.1f} | {format_move(move)} | "
-                f"{format_rvol(rvol)} | {format_turnover_usd(twd, fx)} |"
-            )
+            row_fx = _first(row, "fx", "fx_rate", default=fx)
+            values = [
+                display_ticker(row),
+                _company(row),
+                format_move(move),
+                format_rvol(rvol),
+                format_turnover_usd(twd, row_fx),
+            ]
+            if tier in {"A", "Soft-A"}:
+                values.append(_catalyst(row))
+            lines.append("| " + " | ".join(values) + " |")
         lines.append("")
 
     if skipped:
-        lines.append("### Skipped")
+        details: list[str] = []
+        for item in skipped:
+            if isinstance(item, Mapping):
+                ticker = display_ticker(item)
+                reason = _first(item, "reason", "status", default="skipped")
+                details.append(f"{ticker}: {reason}" if ticker else str(reason))
+            else:
+                details.append(str(item))
+        lines.append("⚠️ Skipped: " + "; ".join(details))
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def _source_rows(run_dict: Mapping[str, Any]) -> list[Mapping[str, Any]]:
+    for key in ("candidates", "rows", "results", "stocks", "data"):
+        value = run_dict.get(key)
+        if isinstance(value, list):
+            return [row for row in value if isinstance(row, Mapping)]
+    return []
+
+
+def render_digest(run_dict: Mapping[str, Any]) -> str:
+    """Render a fuller SIP digest, including source-health information."""
+    rows = _source_rows(run_dict)
+    metadata = (
+        run_dict.get("metadata")
+        if isinstance(run_dict.get("metadata"), Mapping)
+        else {}
+    )
+    fx = _first(
+        run_dict,
+        "fx",
+        "fx_rate",
+        default=_first(metadata, "fx", "fx_rate", default=None),
+    )
+    date = _first(run_dict, "date", default=_first(metadata, "date", default=""))
+    slot = _first(run_dict, "slot", default=_first(metadata, "slot", default=""))
+
+    lines = ["# SIP Market Digest", ""]
+    header_bits = []
+    if date:
+        header_bits.append(f"Date: {date}")
+    if slot:
+        header_bits.append(f"Slot: {slot}")
+    if fx:
+        header_bits.append(f"FX: {fx} TWD/USD")
+    if header_bits:
+        lines.extend([" | ".join(header_bits), ""])
+
+    groups: dict[str, list[Mapping[str, Any]]] = {name: [] for name in _TIER_KEYS}
+    for row in rows:
+        groups.setdefault(_tier_name(str(row.get("tier", "C"))), []).append(row)
+
+    for tier in _TIER_KEYS:
+        tier_rows = groups.get(tier, [])
+        if not tier_rows:
+            continue
+        lines.extend([f"## {_tier_heading(tier)}", ""])
+        if tier in {"A", "Soft-A"}:
+            lines.append(
+                "| Ticker | Company | Board | Price | Chg% | RVol | TWD | US$ | Catalyst |"
+            )
+            lines.append("|---|---|---|---:|---:|---:|---:|---:|---|")
+        else:
+            lines.append(
+                "| Ticker | Company | Board | Price | Chg% | RVol | TWD | US$ | Why |"
+            )
+            lines.append("|---|---|---|---:|---:|---:|---:|---:|---|")
+        for row in tier_rows:
+            twd = _first(
+                row,
+                "turnover_twd",
+                "twd_turnover",
+                "turnover",
+                "dollar_vol",
+                default=0,
+            )
+            row_fx = _first(row, "fx", "fx_rate", default=fx)
+            values = [
+                display_ticker(row),
+                _company(row),
+                str(_first(row, "board", "venue", default="—")),
+                f"{_number(_first(row, 'last', 'price', default=0)):.2f}",
+                format_move(
+                    _first(row, "chg_pct", "change_pct", "move", default=0)
+                ),
+                format_rvol(_first(row, "rvol", "relative_volume", default=None)),
+                format_twd(twd),
+                format_turnover_usd(twd, row_fx),
+                _catalyst(row),
+            ]
+            lines.append("| " + " | ".join(values) + " |")
         lines.append("")
+
+    skipped = run_dict.get("skipped")
+    if skipped:
+        lines.extend(["## ⚠️ Skipped", ""])
         for item in skipped:
             if isinstance(item, Mapping):
                 ticker = display_ticker(item)
@@ -156,68 +322,6 @@ def render_chat(
             else:
                 lines.append(f"- {item}")
         lines.append("")
-
-    return "\n".join(lines).rstrip() + "\n"
-
-
-def _source_rows(run_dict: Mapping[str, Any]) -> list[Mapping[str, Any]]:
-    for key in ("rows", "results", "candidates", "stocks", "data"):
-        value = run_dict.get(key)
-        if isinstance(value, list):
-            return [row for row in value if isinstance(row, Mapping)]
-    if isinstance(run_dict.get("items"), list):
-        return [row for row in run_dict["items"] if isinstance(row, Mapping)]
-    return []
-
-
-def render_digest(run_dict: Mapping[str, Any]) -> str:
-    """Render a fuller SIP digest, including source-health information."""
-    rows = _source_rows(run_dict)
-    lines = ["# SIP Market Digest", ""]
-
-    metadata = (
-        run_dict.get("metadata")
-        if isinstance(run_dict.get("metadata"), Mapping)
-        else {}
-    )
-    as_of = _first(
-        metadata,
-        "as_of",
-        "timestamp",
-        default=_first(run_dict, "as_of", "timestamp", default=""),
-    )
-    if as_of:
-        lines.extend([f"As of: {as_of}", ""])
-
-    lines.extend(["## Movers", ""])
-    if rows:
-        lines.append("| Ticker | Last | Move | RelVol | Turnover |")
-        lines.append("|---|---:|---:|---:|---:|")
-        for row in rows:
-            fx = _first(
-                row,
-                "fx",
-                "fx_rate",
-                default=_first(metadata, "fx", "fx_rate", default=32.824),
-            )
-            twd = _first(
-                row,
-                "turnover_twd",
-                "twd_turnover",
-                "turnover",
-                "dollar_vol",
-                default=0,
-            )
-            lines.append(
-                f"| {display_ticker(row)} | "
-                f"{_number(_first(row, 'last', 'price', default=0)):.1f} | "
-                f"{format_move(_first(row, 'chg_pct', 'change_pct', 'move', default=0))} | "
-                f"{format_rvol(_first(row, 'rvol', 'relative_volume', default=0))} | "
-                f"{format_turnover_usd(twd, fx)} |"
-            )
-    else:
-        lines.append("No candidate rows were available.")
-    lines.append("")
 
     source_health = run_dict.get("source_health")
     if source_health is None:
@@ -247,5 +351,8 @@ def render_digest(run_dict: Mapping[str, Any]) -> str:
             lines.append(f"| {source} | {status} | {message} |")
     else:
         lines.append("No source-health details were provided.")
+
+    if fx:
+        lines.extend(["", f"## FX", "", f"USD/TWD: {fx}"])
 
     return "\n".join(lines).rstrip() + "\n"

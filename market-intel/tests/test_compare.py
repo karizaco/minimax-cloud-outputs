@@ -11,14 +11,14 @@ def test_compare_shadow_and_live_markdown_digests(tmp_path: Path) -> None:
         """
 # Shadow digest
 
-## Tier A
+## A
 
 | Ticker | Price | Change | Turnover | Catalyst | Why |
 |---|---|---:|---:|---|---|
 | `2330` | 1,000 | 6.0% | 500M | earnings | order strength |
 | `2317` | 1,100 | 7.0% | 700M | demand | capacity expansion |
 
-## Tier B
+## B
 
 | Ticker | Price | Change | Turnover |
 |---|---|---:|---:|
@@ -31,18 +31,18 @@ def test_compare_shadow_and_live_markdown_digests(tmp_path: Path) -> None:
         """
 # Live digest
 
-## Tier A
+## A
 
 | Ticker | Price | Change | Turnover | Catalyst | Why |
 |---|---|---:|---:|---|---|
 | `2330` | 1,010 | 6.2% | 520M | earnings | order strength |
 | `2454` | 1,800 | 8.0% | 900M | demand | new product |
 
-## Tier Soft-A
+## Soft-A (`SOFT_A`)
 
 | Ticker | Price | Change | Turnover | Catalyst |
 |---|---|---:|---:|---|
-| `2317` | 1,090 | 5.0% | 600M | demand |
+| `2317` | 1,090 | 6.0% | 600M | demand |
 """.strip(),
         encoding="utf-8",
     )
@@ -50,11 +50,11 @@ def test_compare_shadow_and_live_markdown_digests(tmp_path: Path) -> None:
     result = compare(shadow, live)
 
     assert isinstance(result, dict)
-    assert result["tiers"]["Tier A"]["both"] == ["2330"]
-    assert result["tiers"]["Tier A"]["only_shadow"] == ["2317"]
-    assert result["tiers"]["Tier A"]["only_live"] == ["2454"]
-    assert result["tiers"]["Tier Soft-A"]["only_live"] == ["2317"]
-    assert result["tiers"]["Tier B"]["only_shadow"] == ["1101"]
+    assert result["tiers"]["A"]["both"] == ["2330"]
+    assert result["tiers"]["A"]["only_shadow"] == ["2317"]
+    assert result["tiers"]["A"]["only_live"] == ["2454"]
+    assert result["tiers"]["Soft-A"]["only_live"] == ["2317"]
+    assert result["tiers"]["B"]["only_shadow"] == ["1101"]
     assert result["summary"]["both"] == 1
     assert result["summary"]["only_shadow"] == 2
     assert result["summary"]["only_live"] == 2

@@ -25,13 +25,31 @@ def _venue(value: Any) -> str:
     return "TWSE" if venue in {"", "TWSE", "TSE", "上市"} else venue
 
 
-def _candidate_to_row(candidate: Mapping[str, Any], asof: Any = None) -> CandidateRow:
+def _candidate_to_row(
+    candidate: Mapping[str, Any],
+    asof: Any = None,
+    fx: Any = None,
+) -> CandidateRow:
     price = candidate.get("last", candidate.get("price"))
     change = candidate.get("chg_pct", candidate.get("change_percent"))
     turnover = candidate.get("dollar_vol", candidate.get("turnover"))
+    dollar_vol = _as_float(turnover)
+
     flags = candidate.get("flags") or []
     if not isinstance(flags, list):
         flags = list(flags)
+    flags = [str(flag) for flag in flags]
+
+    if candidate.get("limit_up") and "LIMIT_UP" not in flags:
+        flags.append("LIMIT_UP")
+    if candidate.get("limit_down") and "LIMIT_DOWN" not in flags:
+        flags.append("LIMIT_DOWN")
+
+    usd_turnover = (
+        dollar_vol / float(fx)
+        if fx is not None and float(fx) > 0
+        else None
+    )
 
     return CandidateRow(
         ticker=str(candidate.get("ticker") or candidate.get("symbol") or ""),
@@ -39,7 +57,7 @@ def _candidate_to_row(candidate: Mapping[str, Any], asof: Any = None) -> Candida
         instrument_type=str(candidate.get("instrument_type") or "common"),
         last=_as_float(price),
         chg_pct=_as_float(change),
-        dollar_vol=_as_float(turnover),
+        dollar_vol=dollar_vol,
         rvol=(
             _as_float(candidate.get("rvol"))
             if candidate.get("rvol") is not None
@@ -47,7 +65,7 @@ def _candidate_to_row(candidate: Mapping[str, Any], asof: Any = None) -> Candida
         ),
         catalyst=candidate.get("catalyst"),
         catalyst_time=candidate.get("catalyst_time"),
-        flags=list(flags),
+        flags=flags,
         source=str(candidate.get("source") or ""),
         asof=str(candidate.get("asof") or asof or ""),
         tier=candidate.get("tier"),
@@ -59,11 +77,7 @@ def _candidate_to_row(candidate: Mapping[str, Any], asof: Any = None) -> Candida
             if candidate.get("mcap_twd") is not None
             else None
         ),
-        usd_turnover=(
-            _as_float(candidate.get("usd_turnover"))
-            if candidate.get("usd_turnover") is not None
-            else None
-        ),
+        usd_turnover=usd_turnover,
         display_ticker=candidate.get("display_ticker", candidate.get("symbol")),
         why=candidate.get("why"),
     )
@@ -89,11 +103,12 @@ def _pipeline_rows(result: Any) -> list[CandidateRow]:
 def _valid_rows(
     candidates: list[Mapping[str, Any]],
     date: str,
+    fx: Any = None,
 ) -> list[CandidateRow]:
     rows: list[CandidateRow] = []
     for candidate in candidates:
         try:
-            row = _candidate_to_row(candidate, date)
+            row = _candidate_to_row(candidate, date, fx=fx)
             validation_result = validate_row(row)
             if validation_result is False:
                 continue
@@ -109,6 +124,25 @@ def _rows_by_tier(rows: list[CandidateRow]) -> dict[str, list[dict[str, Any]]]:
         tier = row.tier or "C"
         grouped.setdefault(tier, []).append(row.asdict())
     return grouped
+
+
+def _source_health(value: Any) -> list[dict[str, Any]]:
+    result: list[dict[str, Any]] = []
+    if isinstance(value, Mapping):
+        for source, detail in value.items():
+            if isinstance(detail, Mapping):
+                item = dict(detail)
+                item.setdefault("source", source)
+            else:
+                item = {"source": source, "status": "ok" if detail in (True, "ok", "healthy") else str(detail)}
+            result.append(item)
+    elif isinstance(value, list):
+        for detail in value:
+            if isinstance(detail, Mapping):
+                result.append(dict(detail))
+            else:
+                result.append({"source": "unknown", "status": str(detail)})
+    return result
 
 
 def run_shadow(
@@ -134,15 +168,23 @@ def run_shadow(
         asof=date,
     )
     cfg = load_market(market_name)
-    rows = _valid_rows(built.get("candidates", []), date)
+    fx = built.get("fx")
+    rows = _valid_rows(built.get("candidates", []), date, fx=fx)
     pipeline = run_pipeline(rows, cfg, slot)
     output_rows = _pipeline_rows(pipeline)
-    candidate_dicts = [row.asdict() for row in output_rows]
 
-    source_health = built.get("source_health", [])
-    fx = built.get("fx")
+    candidate_dicts: list[dict[str, Any]] = []
+    for row in output_rows:
+        candidate = row.asdict()
+        candidate["fx"] = fx
+        candidate["usd_turnover"] = (
+            row.dollar_vol / float(fx) if fx is not None and float(fx) > 0 else None
+        )
+        candidate_dicts.append(candidate)
+
+    source_health = _source_health(built.get("source_health", []))
     meta = dict(built.get("meta") or {})
-    meta.update({"date": date, "slot": slot, "market": market_name})
+    meta.update({"date": date, "slot": slot, "market": market_name, "fx": fx})
 
     payload: dict[str, Any] = {
         "date": date,
@@ -160,6 +202,7 @@ def run_shadow(
         "fx": fx,
         "date": date,
         "slot": slot,
+        "metadata": meta,
     }
 
     json_path = root / f"{date}-{slot}.json"
@@ -172,7 +215,7 @@ def run_shadow(
     )
     md_path.write_text(render_digest(run_dict), encoding="utf-8")
     chat_path.write_text(
-        render_chat(_rows_by_tier(output_rows)),
+        render_chat(_rows_by_tier(output_rows), fx=fx),
         encoding="utf-8",
     )
 

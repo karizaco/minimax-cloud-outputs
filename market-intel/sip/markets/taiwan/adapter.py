@@ -44,12 +44,14 @@ def _venue(symbol: str, board: str | None = None) -> str:
     board_value = str(board or "").strip().upper()
     if board_value in {"TPEX", "TPE", "OTC", "上櫃"}:
         return "TPEx"
-    if board_value in {"TWSE", "TSE", "上市"}:
+    if board_value in {"TWSE", "TSE", "TAI", "上市"}:
         return "TWSE"
 
-    upper = str(symbol or "").upper()
+    upper = str(symbol or "").strip().upper()
     if upper.endswith((".TWO", ".TPEX")) or upper.startswith(("TPEX:", "TPE:")):
         return "TPEx"
+    if upper.endswith(".TW") or upper.startswith("TWSE:"):
+        return "TWSE"
     return "TWSE"
 
 
@@ -73,10 +75,8 @@ def _number(value: Any) -> float | None:
 def _turnover(row: Mapping[str, Any]) -> float | None:
     value = _number(row.get("turnoverK", row.get("turn")))
     if value is None:
-        return _number(row.get("turnover", row.get("dollar_vol")))
+        value = _number(row.get("turnover", row.get("dollar_vol")))
 
-    # turn/turnoverK are normally expressed in thousands of TWD. Some
-    # upstream sources already provide the full TWD amount.
     return value if abs(value) >= 100_000 else value * 1_000
 
 
@@ -94,18 +94,30 @@ def _candidate(
     roster: Mapping[str, Any] | None = None,
 ) -> dict[str, Any]:
     roster = roster or {}
-    symbol = str(row.get("symbol") or row.get("sym") or row.get("code") or "")
+
+    # ``sym`` commonly contains the exchange suffix (for example 1815.TWO),
+    # so it must take precedence over a bare code when attaching candidates.
+    symbol = str(
+        row.get("sym")
+        or row.get("symbol")
+        or row.get("ticker")
+        or row.get("code")
+        or ""
+    )
     code = _ticker(symbol)
     board = row.get("board") or row.get("market")
     venue = _venue(symbol, str(board) if board is not None else None)
     display = display_ticker(code, venue)
 
+    roster_item = roster.get(code, {})
     english = str(
         row.get("en")
         or row.get("english_name")
-        or roster.get(code, {}).get("english_name", "")
-        if isinstance(roster.get(code), Mapping)
-        else row.get("en") or row.get("english_name") or ""
+        or (
+            roster_item.get("english_name", "")
+            if isinstance(roster_item, Mapping)
+            else ""
+        )
     ).strip()
     if not english:
         english = english_name(code, venue)
@@ -122,6 +134,20 @@ def _candidate(
     rvol = _number(row.get("rv", row.get("rvol")))
     mcap = _number(row.get("mcap", row.get("mcap_twd")))
 
+    flags = [str(flag) for flag in (row.get("flags") or [])]
+    limit_up = bool(row.get("limitUp", row.get("lu", False)))
+    limit_down = bool(row.get("limitDown", row.get("ld", False)))
+    if limit_up and "LIMIT_UP" not in flags:
+        flags.append("LIMIT_UP")
+    if limit_down and "LIMIT_DOWN" not in flags:
+        flags.append("LIMIT_DOWN")
+
+    catalyst = (
+        row.get("catalyst")
+        or row.get("headline")
+        or row.get("subj")
+    )
+
     result: dict[str, Any] = {
         "symbol": display,
         "display_ticker": display,
@@ -129,6 +155,7 @@ def _candidate(
         "venue": venue,
         "board": venue,
         "instrument_type": _instrument_type(row, code),
+        "tier": str(row.get("tier") or row.get("grade") or "C"),
         "name": str(row.get("name") or "").strip(),
         "english_name": english,
         "company_en": english or None,
@@ -141,16 +168,17 @@ def _candidate(
         "dollar_vol": turnover if turnover is not None else 0.0,
         "rvol": rvol,
         "volume": _number(row.get("volume", row.get("vol"))),
-        "limit_up": bool(row.get("limitUp", row.get("lu", False))),
-        "limit_down": bool(row.get("limitDown", row.get("ld", False))),
+        "limit_up": limit_up,
+        "limit_down": limit_down,
         "previous_close": previous,
         "day_high": _number(row.get("dayHigh", row.get("hi"))),
         "day_low": _number(row.get("dayLow", row.get("lo"))),
         "mcap_twd": mcap,
+        "day_move_hard": _number(row.get("day_move_hard")),
         "source": source,
-        "catalyst": row.get("catalyst"),
-        "catalyst_time": row.get("catalyst_time"),
-        "flags": list(row.get("flags") or []),
+        "catalyst": catalyst,
+        "catalyst_time": row.get("catalyst_time") or row.get("time"),
+        "flags": flags,
         "raw": dict(row),
     }
     result["why"] = row.get("why")
@@ -188,23 +216,82 @@ def _add_mover(
     movers.setdefault(ticker, item)
 
 
+def _materiality_score(headline: str) -> int:
+    text = headline.upper()
+    terms = (
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "QUARTER",
+        "財報",
+        "EPS",
+        "合併",
+        "增資",
+        "FOREIGN",
+        "重大",
+        "收購",
+        "DIVIDEND",
+        "配息",
+        "RESTRUCTUR",
+        "重整",
+    )
+    return sum(1 for term in terms if term in text)
+
+
 def _attach_mops_catalysts(
     movers: dict[str, dict[str, Any]],
     rows: list[Mapping[str, Any]],
 ) -> None:
+    grouped: dict[str, list[dict[str, Any]]] = {}
+
     for row in rows:
-        item = _candidate(row, source="mops")
-        ticker = str(item.get("ticker") or "").strip()
-        target = movers.get(ticker)
-        if not ticker or target is None:
+        ticker = _ticker(
+            str(
+                row.get("sym")
+                or row.get("symbol")
+                or row.get("ticker")
+                or row.get("code")
+                or ""
+            )
+        )
+        headline = str(
+            row.get("catalyst")
+            or row.get("headline")
+            or row.get("subj")
+            or ""
+        ).strip()
+        catalyst_time = row.get("catalyst_time") or row.get("time")
+        raw = row.get("raw")
+        if not ticker or not headline:
             continue
 
-        for field in ("catalyst", "catalyst_time", "why"):
-            value = item.get(field)
-            if value is not None:
-                target[field] = value
+        grouped.setdefault(ticker, []).append(
+            {
+                "ticker": ticker,
+                "catalyst": headline,
+                "catalyst_time": catalyst_time,
+                "raw": dict(raw) if isinstance(raw, Mapping) else dict(row),
+            }
+        )
 
-        target.setdefault("raw", {})["mops"] = dict(row)
+    for ticker, items in grouped.items():
+        target = movers.get(ticker)
+        if target is None:
+            continue
+
+        selected = max(
+            items,
+            key=lambda item: (
+                _materiality_score(str(item.get("catalyst") or "")),
+                str(item.get("catalyst_time") or ""),
+            ),
+        )
+        catalyst = str(selected.get("catalyst") or "").strip()
+        if catalyst:
+            target["catalyst"] = catalyst
+        target["catalyst_time"] = selected.get("catalyst_time")
+        target.setdefault("raw", {})["mops"] = dict(selected.get("raw") or {})
 
 
 def build_candidates(
@@ -227,13 +314,7 @@ def build_candidates(
                 for row in rows:
                     _add_mover(movers, row, source="cmoney")
                 primary_ok = bool(rows)
-                health.append(
-                    SourceHealth(
-                        "cmoney",
-                        "ok" if rows else "empty",
-                        len(rows),
-                    )
-                )
+                health.append(SourceHealth("cmoney", "ok" if rows else "empty", len(rows)))
             except (OSError, ParseError, ValueError) as exc:
                 health.append(SourceHealth("cmoney", "blocked", detail=str(exc)))
         else:
@@ -243,17 +324,9 @@ def build_candidates(
         if mops_path.is_file():
             try:
                 parsed = parse_mops_items(_load_json_or_text(mops_path))
-                mops_rows = (
-                    parsed if isinstance(parsed, list) else list(parsed.values())
-                )
+                mops_rows = parsed if isinstance(parsed, list) else list(parsed.values())
                 mops_rows = [row for row in mops_rows if isinstance(row, Mapping)]
-                health.append(
-                    SourceHealth(
-                        "mops",
-                        "ok" if mops_rows else "empty",
-                        len(mops_rows),
-                    )
-                )
+                health.append(SourceHealth("mops", "ok" if mops_rows else "empty", len(mops_rows)))
             except (OSError, ParseError, ValueError) as exc:
                 health.append(SourceHealth("mops", "blocked", detail=str(exc)))
         else:
@@ -266,13 +339,7 @@ def build_candidates(
                 for row in rows:
                     _add_mover(movers, row, source="yahoo")
                 primary_ok = primary_ok or bool(rows)
-                health.append(
-                    SourceHealth(
-                        "yahoo",
-                        "ok" if rows else "empty",
-                        len(rows),
-                    )
-                )
+                health.append(SourceHealth("yahoo", "ok" if rows else "empty", len(rows)))
             except (OSError, ParseError, ValueError) as exc:
                 health.append(SourceHealth("yahoo", "blocked", detail=str(exc)))
         else:
@@ -281,9 +348,7 @@ def build_candidates(
         cmoney_path = directory / "cmoney_change_up.html"
         if cmoney_path.is_file():
             try:
-                rows = parse_cmoney_change_up_html(
-                    cmoney_path.read_text(encoding="utf-8")
-                )
+                rows = parse_cmoney_change_up_html(cmoney_path.read_text(encoding="utf-8"))
                 for row in rows:
                     _add_mover(movers, row, source="cmoney")
                 primary_ok = primary_ok or bool(rows)
@@ -302,6 +367,10 @@ def build_candidates(
                         detail=str(exc),
                     )
                 )
+        else:
+            health.append(
+                SourceHealth("cmoney_change_up", "skipped", detail="fixture not found")
+            )
 
         fx_payload, _ = _read_fixture(directory, ("fx.json",))
         fx: float | None = None
@@ -340,18 +409,13 @@ def build_candidates(
                 _add_mover(movers, row, source="tradingview")
             primary_ok = primary_ok or bool(rows)
             health.append(
-                SourceHealth(
-                    "tradingview",
-                    "ok" if rows else "empty",
-                    len(rows),
-                )
+                SourceHealth("tradingview", "ok" if rows else "empty", len(rows))
             )
         except (OSError, ParseError, ValueError) as exc:
             health.append(SourceHealth("tradingview", "blocked", detail=str(exc)))
     else:
         health.append(SourceHealth("tradingview", "skipped", detail="dump not found"))
 
-    # MOPS is an enrichment source only. It must never introduce a new mover.
     _attach_mops_catalysts(movers, mops_rows)
 
     if not primary_ok and not any(

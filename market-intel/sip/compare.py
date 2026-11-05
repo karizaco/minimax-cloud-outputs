@@ -19,21 +19,36 @@ def _read_markdown(value: str | Path) -> str:
     return value
 
 
+def _normalize_tier(title: str) -> str | None:
+    value = re.sub(r"`[^`]*`", "", title).strip()
+    value = re.sub(r"\s*\([^)]*\)\s*", "", value).strip()
+    upper = value.upper().replace("_", "-")
+    if upper.startswith("SOFT-A"):
+        return "Soft-A"
+    if upper.startswith("TECH-WATCH") or upper.startswith("TECH WATCH"):
+        return "TECH_WATCH"
+    if upper.startswith("TIER A") or upper == "A":
+        return "A"
+    if upper.startswith("TIER B") or upper == "B":
+        return "B"
+    if upper.startswith("TIER C") or upper == "C":
+        return "C"
+    return None
+
+
 def parse_tier_tables(md: str | Path) -> dict[str, list[str]]:
     text = _read_markdown(md)
     tiers: dict[str, list[str]] = defaultdict(list)
     current: str | None = None
     in_table = False
+    ticker_column = 0
 
     for line in text.splitlines():
         heading = re.match(r"^#{1,6}\s+(.+?)\s*$", line)
         if heading:
-            title = heading.group(1).strip()
-            if re.search(r"\b(?:A|B|C)\b|TECH_WATCH", title, re.I):
-                current = title
-                in_table = False
-            else:
-                current = None
+            current = _normalize_tier(heading.group(1))
+            in_table = False
+            ticker_column = 0
             continue
 
         if "|" not in line:
@@ -45,10 +60,17 @@ def parse_tier_tables(md: str | Path) -> dict[str, list[str]]:
         if all(re.fullmatch(r":?-{3,}:?", cell) for cell in cells):
             in_table = True
             continue
-        if not in_table or current is None or not cells:
+        if not in_table or current is None:
             continue
 
-        ticker = re.sub(r"[`*\[\]]", "", cells[0]).strip()
+        header = [re.sub(r"[`*\[\]]", "", cell).strip().lower() for cell in cells]
+        if "ticker" in header or "symbol" in header:
+            ticker_column = header.index("ticker") if "ticker" in header else header.index("symbol")
+            continue
+        if ticker_column >= len(cells):
+            ticker_column = 0
+
+        ticker = re.sub(r"[`*\[\]]", "", cells[ticker_column]).strip()
         if not ticker or re.fullmatch(r"(?:ticker|symbol)", ticker, re.I):
             continue
         tiers[current].append(ticker)
@@ -91,15 +113,15 @@ def compare(shadow_md: str | Path, live_md: str | Path) -> dict:
 
         tier_presence: dict[str, dict[str, bool]] = {}
         for ticker in tiers[tier]["both"]:
-            sc, sw = _presence(shadow_text, ticker)
-            lc, lw = _presence(live_text, ticker)
+            shadow_catalyst, shadow_why = _presence(shadow_text, ticker)
+            live_catalyst, live_why = _presence(live_text, ticker)
             tier_presence[ticker] = {
-                "shadow_catalyst": sc,
-                "live_catalyst": lc,
-                "catalyst_diff": sc != lc,
-                "shadow_why": sw,
-                "live_why": lw,
-                "why_diff": sw != lw,
+                "shadow_catalyst": shadow_catalyst,
+                "live_catalyst": live_catalyst,
+                "catalyst_diff": shadow_catalyst != live_catalyst,
+                "shadow_why": shadow_why,
+                "live_why": live_why,
+                "why_diff": shadow_why != live_why,
             }
         presence[tier] = tier_presence
 

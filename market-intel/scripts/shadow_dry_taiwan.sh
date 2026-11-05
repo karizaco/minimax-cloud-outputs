@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+ROOT="/workspace/market-intel"
 export PYTHONPATH="/workspace/market-intel${PYTHONPATH:+:$PYTHONPATH}"
 
-ROOT="/workspace/market-intel"
-FIXTURES="${FIXTURES:-$ROOT/fixtures/taiwan/slim}"
+FIXTURES="${FIXTURES:-$ROOT/tests/fixtures/taiwan-2026-11-05-open}"
 OUT_ROOT="${OUT_ROOT:-/home/box/taiwan-in-play/shadow}"
 DATE="${DATE:-$(TZ=Asia/Taipei date +%F)}"
 SLOT="${SLOT:-open}"
-LIVE_DIGEST="${LIVE_DIGEST:-$OUT_ROOT/$DATE-$SLOT.live.md}"
+LIVE_DIGEST="${LIVE_DIGEST:-/home/box/taiwan-in-play/$DATE-$SLOT.md}"
 
-if [[ -x "$ROOT/.venv/bin/python" ]]; then
+if [[ -x "/workspace/sip-rebuild/.venv/bin/python" ]]; then
+    PYTHON="/workspace/sip-rebuild/.venv/bin/python"
+elif [[ -x "$ROOT/.venv/bin/python" ]]; then
     PYTHON="$ROOT/.venv/bin/python"
 elif [[ -x "$ROOT/venv/bin/python" ]]; then
     PYTHON="$ROOT/venv/bin/python"
