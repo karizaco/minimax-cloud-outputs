@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Iterable
 
+from .catalyst_gate import is_boilerplate_mops, materiality_score
 from .schema import CandidateRow, TIER_ORDER, validate_row
 
 _NOISE_TYPES = {"etf", "warrant", "pref", "emerging", "tdr", "fund_wrapper"}
@@ -50,16 +51,6 @@ def apply_floors(
             continue
         if row.dollar_vol < turnover_min:
             continue
-
-        # Market-cap is a soft warning only. A row below the market-cap
-        # minimum remains eligible when it clears the turnover floor.
-        if (
-            row.mcap_twd is not None
-            and row.mcap_twd < mcap_min
-            and row.dollar_vol >= turnover_min
-        ):
-            pass
-
         result.append(row)
     return result
 
@@ -79,6 +70,22 @@ def _has_catalyst(row: CandidateRow) -> bool:
     return bool(row.catalyst and str(row.catalyst).strip())
 
 
+def _is_material_catalyst(row: CandidateRow) -> bool:
+    if not _has_catalyst(row):
+        return False
+    text = str(row.catalyst)
+    if is_boilerplate_mops(text):
+        return False
+
+    score = getattr(row, "mops_materiality", None)
+    if score is None:
+        score = materiality_score(text)
+    try:
+        return float(score) >= 1
+    except (TypeError, ValueError):
+        return False
+
+
 def _has_flag(row: CandidateRow, *names: str) -> bool:
     wanted = {name.upper() for name in names}
     return any(str(flag).upper() in wanted for flag in row.flags)
@@ -90,12 +97,9 @@ def assign_tiers(
     slot: str,
 ) -> list[CandidateRow]:
     result: list[CandidateRow] = []
-    for row in rows:
-        if _has_flag(row, "LIMIT_DOWN"):
-            row.tier = "C"
-            result.append(row)
-            continue
+    requires_catalyst = bool(cfg.get("soft_a_requires_catalyst", True))
 
+    for row in rows:
         move = abs(float(row.chg_pct))
         hard = float(cfg.get("day_move_hard", 5.0))
         soft = float(cfg.get("day_move_soft", 4.0))
@@ -104,25 +108,50 @@ def assign_tiers(
         rmax = float(cfg.get("tech_watch_rvol_max", 2.0))
 
         catalyst = _has_catalyst(row)
-        limit_move = _has_flag(row, "LIMIT_UP", "LIMIT_DOWN")
+        material_catalyst = _is_material_catalyst(row)
+        limit_down = _has_flag(row, "LIMIT_DOWN")
+        limit_up = _has_flag(row, "LIMIT_UP")
+        limit_move = limit_up or limit_down
         material_move = move >= soft or limit_move
         hard_move = move >= hard or limit_move
 
-        if catalyst and material_move:
+        if limit_down:
+            if material_catalyst and material_move:
+                tier = "Soft-A"
+            elif (
+                (move >= soft or limit_down)
+                and (row.rvol is None or row.rvol < rmax)
+            ):
+                tier = "TECH_WATCH"
+            else:
+                tier = "C"
+        elif material_catalyst and material_move:
             if row.rvol is not None and row.rvol >= elevated:
                 tier = "A"
             elif hard_move:
                 tier = "Soft-A"
             else:
                 tier = "B"
-        elif not catalyst and (move >= gap_soft or limit_move):
-            if row.rvol is not None and row.rvol >= elevated:
-                tier = "B"
-            elif row.chg_pct > 0:
+        elif (
+            catalyst
+            and not material_catalyst
+            and not requires_catalyst
+            and material_move
+        ):
+            tier = "B"
+        elif (
+            not catalyst
+            or (requires_catalyst and not material_catalyst)
+        ) and (move >= gap_soft or limit_up):
+            r = row.rvol
+            if r is not None and r >= rmax:
                 tier = "B"
             else:
                 tier = "TECH_WATCH"
-        elif not catalyst and row.rvol is not None and row.rvol >= elevated:
+        elif (
+            not catalyst
+            or (requires_catalyst and not material_catalyst)
+        ) and row.rvol is not None and row.rvol >= elevated and move >= 2.0:
             tier = "B"
         else:
             tier = "C"
@@ -136,10 +165,7 @@ def sort_tiers(rows: Iterable[CandidateRow]) -> list[CandidateRow]:
     order = {name: index for index, name in enumerate(TIER_ORDER)}
     return sorted(
         rows,
-        key=lambda row: (
-            order.get(row.tier or "C", len(order)),
-            -row.dollar_vol,
-        ),
+        key=lambda row: (order.get(row.tier or "C", len(order)), -row.dollar_vol),
     )
 
 

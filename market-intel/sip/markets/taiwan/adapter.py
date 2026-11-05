@@ -7,6 +7,8 @@ import re
 from pathlib import Path
 from typing import Any, Mapping
 
+from sip.catalyst_gate import is_boilerplate_mops, materiality_score
+
 from .fetch import SourceHealth, fetch_yahoo_ranks
 from .names import display_ticker, english_name
 from .parse import (
@@ -59,7 +61,7 @@ def _ticker(symbol: str) -> str:
     value = str(symbol or "").strip().upper()
     for prefix in ("TWSE:", "TPEX:", "TPE:"):
         if value.startswith(prefix):
-            value = value[len(prefix) :]
+            value = value[len(prefix):]
     return value.split(".")[0]
 
 
@@ -76,7 +78,6 @@ def _turnover(row: Mapping[str, Any]) -> float | None:
     value = _number(row.get("turnoverK", row.get("turn")))
     if value is None:
         value = _number(row.get("turnover", row.get("dollar_vol")))
-
     return value if abs(value) >= 100_000 else value * 1_000
 
 
@@ -94,9 +95,6 @@ def _candidate(
     roster: Mapping[str, Any] | None = None,
 ) -> dict[str, Any]:
     roster = roster or {}
-
-    # ``sym`` commonly contains the exchange suffix (for example 1815.TWO),
-    # so it must take precedence over a bare code when attaching candidates.
     symbol = str(
         row.get("sym")
         or row.get("symbol")
@@ -142,12 +140,7 @@ def _candidate(
     if limit_down and "LIMIT_DOWN" not in flags:
         flags.append("LIMIT_DOWN")
 
-    catalyst = (
-        row.get("catalyst")
-        or row.get("headline")
-        or row.get("subj")
-    )
-
+    catalyst = row.get("catalyst") or row.get("headline") or row.get("subj")
     result: dict[str, Any] = {
         "symbol": display,
         "display_ticker": display,
@@ -211,32 +204,16 @@ def _add_mover(
 ) -> None:
     item = _candidate(row, source=source)
     ticker = str(item.get("ticker") or "").strip()
-    if not ticker:
-        return
-    movers.setdefault(ticker, item)
+    if ticker:
+        movers.setdefault(ticker, item)
 
 
 def _materiality_score(headline: str) -> int:
-    text = headline.upper()
-    terms = (
-        "Q1",
-        "Q2",
-        "Q3",
-        "Q4",
-        "QUARTER",
-        "財報",
-        "EPS",
-        "合併",
-        "增資",
-        "FOREIGN",
-        "重大",
-        "收購",
-        "DIVIDEND",
-        "配息",
-        "RESTRUCTUR",
-        "重整",
-    )
-    return sum(1 for term in terms if term in text)
+    return materiality_score(headline)
+
+
+def _is_boilerplate_mops(headline: str) -> bool:
+    return is_boilerplate_mops(headline)
 
 
 def _attach_mops_catalysts(
@@ -244,7 +221,6 @@ def _attach_mops_catalysts(
     rows: list[Mapping[str, Any]],
 ) -> None:
     grouped: dict[str, list[dict[str, Any]]] = {}
-
     for row in rows:
         ticker = _ticker(
             str(
@@ -265,7 +241,6 @@ def _attach_mops_catalysts(
         raw = row.get("raw")
         if not ticker or not headline:
             continue
-
         grouped.setdefault(ticker, []).append(
             {
                 "ticker": ticker,
@@ -280,18 +255,28 @@ def _attach_mops_catalysts(
         if target is None:
             continue
 
+        eligible = [
+            item
+            for item in items
+            if _materiality_score(str(item.get("catalyst") or "")) >= 1
+            and not _is_boilerplate_mops(str(item.get("catalyst") or ""))
+        ]
+        if not eligible:
+            continue
+
         selected = max(
-            items,
+            eligible,
             key=lambda item: (
                 _materiality_score(str(item.get("catalyst") or "")),
                 str(item.get("catalyst_time") or ""),
             ),
         )
         catalyst = str(selected.get("catalyst") or "").strip()
-        if catalyst:
-            target["catalyst"] = catalyst
+        score = _materiality_score(catalyst)
+        target["catalyst"] = catalyst
         target["catalyst_time"] = selected.get("catalyst_time")
         target.setdefault("raw", {})["mops"] = dict(selected.get("raw") or {})
+        target["raw"]["mops_materiality"] = score
 
 
 def build_candidates(
@@ -352,43 +337,23 @@ def build_candidates(
                 for row in rows:
                     _add_mover(movers, row, source="cmoney")
                 primary_ok = primary_ok or bool(rows)
-                health.append(
-                    SourceHealth(
-                        "cmoney_change_up",
-                        "ok" if rows else "empty",
-                        len(rows),
-                    )
-                )
+                health.append(SourceHealth("cmoney_change_up", "ok" if rows else "empty", len(rows)))
             except (OSError, ParseError, ValueError) as exc:
-                health.append(
-                    SourceHealth(
-                        "cmoney_change_up",
-                        "blocked",
-                        detail=str(exc),
-                    )
-                )
+                health.append(SourceHealth("cmoney_change_up", "blocked", detail=str(exc)))
         else:
-            health.append(
-                SourceHealth("cmoney_change_up", "skipped", detail="fixture not found")
-            )
+            health.append(SourceHealth("cmoney_change_up", "skipped", detail="fixture not found"))
 
         fx_payload, _ = _read_fixture(directory, ("fx.json",))
         fx: float | None = None
         if fx_payload is not None:
             try:
-                parsed_fx = parse_fx_json(fx_payload)
-                if isinstance(parsed_fx, Mapping):
-                    rate = parsed_fx.get("rate", parsed_fx.get("TWD"))
+                parsed = parse_fx_json(fx_payload)
+                if isinstance(parsed, Mapping):
+                    rate = parsed.get("rate", parsed.get("TWD"))
                     fx = _number(rate)
                 else:
-                    fx = _number(parsed_fx)
-                health.append(
-                    SourceHealth(
-                        "fx",
-                        "ok" if fx is not None else "empty",
-                        detail=str(fx) if fx is not None else None,
-                    )
-                )
+                    fx = _number(parsed)
+                health.append(SourceHealth("fx", "ok" if fx is not None else "empty", detail=str(fx) if fx is not None else None))
             except (OSError, ParseError, ValueError, TypeError) as exc:
                 health.append(SourceHealth("fx", "blocked", detail=str(exc)))
         else:
@@ -408,9 +373,7 @@ def build_candidates(
             for row in rows:
                 _add_mover(movers, row, source="tradingview")
             primary_ok = primary_ok or bool(rows)
-            health.append(
-                SourceHealth("tradingview", "ok" if rows else "empty", len(rows))
-            )
+            health.append(SourceHealth("tradingview", "ok" if rows else "empty", len(rows)))
         except (OSError, ParseError, ValueError) as exc:
             health.append(SourceHealth("tradingview", "blocked", detail=str(exc)))
     else:

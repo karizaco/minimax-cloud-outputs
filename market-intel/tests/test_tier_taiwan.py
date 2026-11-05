@@ -11,6 +11,7 @@ def row(
     catalyst: str | None,
     rvol: float | None = 2.0,
     tier: str | None = None,
+    mops_materiality: int | None = None,
 ) -> CandidateRow:
     return CandidateRow(
         ticker=ticker,
@@ -26,6 +27,7 @@ def row(
         source="test",
         asof="2026-01-01T09:35:00+08:00",
         tier=tier,
+        mops_materiality=mops_materiality,
     )
 
 
@@ -45,21 +47,21 @@ def test_soft_a_requires_catalyst_and_soft_rvol() -> None:
                 "1002",
                 chg_pct=6.0,
                 dollar_vol=32_000_000.0,
-                catalyst="order",
+                catalyst="Q3 EPS beat / 合併財務報告", mops_materiality=2,
                 rvol=0.8,
             ),
             row(
                 "1003",
                 chg_pct=6.0,
                 dollar_vol=33_000_000.0,
-                catalyst="order",
+                catalyst="Q3 EPS beat / 合併財務報告", mops_materiality=2,
                 rvol=None,
             ),
             row(
                 "1004",
                 chg_pct=6.0,
                 dollar_vol=34_000_000.0,
-                catalyst="order",
+                catalyst="Q3 EPS beat / 合併財務報告", mops_materiality=2,
                 rvol=2.0,
             ),
         ],
@@ -75,7 +77,7 @@ def test_soft_a_requires_catalyst_and_soft_rvol() -> None:
     assert by_ticker["1002"].tier == "Soft-A"
     assert by_ticker["1003"].tier == "Soft-A"
     assert by_ticker["1004"].tier == "A"
-    assert by_ticker["1002"].catalyst == "order"
+    assert "Q3" in (by_ticker["1002"].catalyst or "")
 
 
 def test_a_requires_catalyst_elevated_rvol_and_material_move() -> None:
@@ -87,14 +89,14 @@ def test_a_requires_catalyst_elevated_rvol_and_material_move() -> None:
                 "2001",
                 chg_pct=4.5,
                 dollar_vol=31_000_000.0,
-                catalyst="news",
+                catalyst="Q3 EPS / 合併財務報告", mops_materiality=2,
                 rvol=2.0,
             ),
             row(
                 "2002",
                 chg_pct=3.9,
                 dollar_vol=32_000_000.0,
-                catalyst="news",
+                catalyst="Q3 EPS / 合併財務報告", mops_materiality=2,
                 rvol=2.0,
             ),
             row(
@@ -108,7 +110,7 @@ def test_a_requires_catalyst_elevated_rvol_and_material_move() -> None:
                 "2004",
                 chg_pct=4.5,
                 dollar_vol=34_000_000.0,
-                catalyst="news",
+                catalyst="Q3 EPS / 合併財務報告", mops_materiality=2,
                 rvol=1.4,
             ),
         ],
@@ -132,28 +134,28 @@ def test_pipeline_sorts_by_tier_then_dollar_volume_descending() -> None:
                 "1001",
                 chg_pct=6.0,
                 dollar_vol=31_000_000.0,
-                catalyst="news",
+                catalyst="Q3 EPS / 合併財務報告", mops_materiality=2,
                 rvol=2.0,
             ),
             row(
                 "1002",
                 chg_pct=6.0,
                 dollar_vol=33_000_000.0,
-                catalyst="news",
+                catalyst="Q3 EPS / 合併財務報告", mops_materiality=2,
                 rvol=2.0,
             ),
             row(
                 "1003",
                 chg_pct=3.5,
                 dollar_vol=32_000_000.0,
-                catalyst="order",
+                catalyst="Q3 EPS beat / 合併財務報告", mops_materiality=2,
                 rvol=0.8,
             ),
             row(
                 "1004",
                 chg_pct=3.5,
                 dollar_vol=34_000_000.0,
-                catalyst="order",
+                catalyst="Q3 EPS beat / 合併財務報告", mops_materiality=2,
                 rvol=0.8,
             ),
         ],
@@ -195,14 +197,14 @@ def test_pipeline_drops_rows_below_floors() -> None:
                 "1002",
                 chg_pct=3.5,
                 dollar_vol=32_000_000.0,
-                catalyst="order",
+                catalyst="Q3 EPS beat / 合併財務報告", mops_materiality=2,
                 rvol=0.8,
             ),
             row(
                 "1003",
                 chg_pct=9.0,
                 dollar_vol=100.0,
-                catalyst="news",
+                catalyst="Q3 EPS / 合併財務報告", mops_materiality=2,
                 rvol=2.0,
             ),
         ],

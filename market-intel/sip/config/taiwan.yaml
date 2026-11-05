@@ -26,6 +26,13 @@ chat_top_n:
   B: 10
   C: 5
 
+digest_top_n:
+  A: 10
+  Soft-A: 8
+  TECH_WATCH: 12
+  B: 10
+  C: 5
+
 display:
   currency: USD
   exchange_suffix:

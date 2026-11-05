@@ -44,6 +44,7 @@ class CandidateRow:
     usd_turnover: float | None = None
     display_ticker: str | None = None
     why: str | None = None
+    mops_materiality: int | None = None
 
     def asdict(self) -> dict[str, Any]:
         return asdict(self)

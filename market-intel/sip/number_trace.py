@@ -10,7 +10,6 @@ import sys
 from pathlib import Path
 from typing import Any, Iterable
 
-
 _NUMBER_RE = re.compile(
     r"(?<![A-Za-z0-9])"
     r"(?P<sign>[+-])?"
@@ -28,9 +27,9 @@ _ALLOWED_FIELDS = {
     "dollar_vol",
     "usd_turnover",
     "turnover_usd",
-    "ticker",
-    "symbol",
 }
+
+_TICKER_FIELDS = {"ticker", "symbol", "display_ticker"}
 
 _MM_TO_USD = 1_000_000.0
 _BN_TO_USD = 1_000_000_000.0
@@ -68,7 +67,6 @@ def extract_numbers(text: str) -> list[dict[str, Any]]:
             continue
         if match.group("sign") == "-":
             number = -number
-
         suffix = (match.group("suffix") or "").lower()
         currency = match.group("currency")
         if suffix == "%":
@@ -81,13 +79,11 @@ def extract_numbers(text: str) -> list[dict[str, Any]]:
             kind = "currency"
         else:
             kind = "number"
-
         normalized = number
         if suffix == "m":
             normalized *= _MM_TO_USD
         elif suffix == "bn":
             normalized *= _BN_TO_USD
-
         found.append(
             {
                 "raw": raw,
@@ -155,6 +151,32 @@ def collect_allowed_numbers(run: dict | list) -> set[float]:
     return allowed
 
 
+def collect_ticker_codes(run: dict | list) -> set[float]:
+    """Collect numeric ticker codes from ticker/symbol/display_ticker fields."""
+    codes: set[float] = set()
+    for field, value in _walk(run):
+        if field not in _TICKER_FIELDS:
+            continue
+        if isinstance(value, dict):
+            values = value.values()
+        elif isinstance(value, (list, tuple, set)):
+            values = value
+        else:
+            values = (value,)
+        for ticker in values:
+            if isinstance(ticker, str):
+                ticker = ticker.strip()
+                if re.fullmatch(r"\d+(?:\.\d+)?", ticker):
+                    number = _as_float(ticker)
+                    if number is not None:
+                        codes.add(number)
+            else:
+                number = _as_float(ticker)
+                if number is not None and float(number).is_integer():
+                    codes.add(number)
+    return codes
+
+
 def _context_for(text: str, span: list[int], radius: int = 36) -> str:
     start, end = span
     left = max(0, start - radius)
@@ -162,14 +184,24 @@ def _context_for(text: str, span: list[int], radius: int = 36) -> str:
     return " ".join(text[left:right].split())
 
 
-def _matches(number: dict[str, Any], allowed: set[float]) -> bool:
+def _matches(
+    number: dict[str, Any],
+    allowed: set[float],
+    ticker_codes: set[float] | None = None,
+) -> bool:
     value = float(number["value"])
-    tolerance = max(1e-9, abs(value) * 1e-9)
+    if (
+        number["kind"] == "number"
+        and ticker_codes
+        and any(math.isclose(value, code, rel_tol=1e-9, abs_tol=1e-9)
+                for code in ticker_codes)
+    ):
+        return True
 
+    tolerance = max(1e-9, abs(value) * 1e-9)
     for candidate in allowed:
         if not math.isclose(value, candidate, rel_tol=1e-9, abs_tol=tolerance):
             continue
-
         if number["kind"] == "percent":
             if value > 0 and candidate <= 0:
                 continue
@@ -177,7 +209,6 @@ def _matches(number: dict[str, Any], allowed: set[float]) -> bool:
                 continue
             if value == 0 and candidate != 0:
                 continue
-
         return True
     return False
 
@@ -189,6 +220,7 @@ def check_chat(
     fx_rate: float | None = None,
 ) -> dict[str, Any]:
     allowed = collect_allowed_numbers(run_json)
+    ticker_codes = collect_ticker_codes(run_json)
     if fx_rate is not None:
         fx = _as_float(fx_rate)
         if fx is not None and fx > 0:
@@ -196,7 +228,7 @@ def check_chat(
 
     offenders: list[dict[str, Any]] = []
     for number in extract_numbers(chat_md):
-        if _matches(number, allowed):
+        if _matches(number, allowed, ticker_codes):
             continue
         reason = {
             "percent": "percentage is not represented by the run",

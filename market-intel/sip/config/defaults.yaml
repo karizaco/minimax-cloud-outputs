@@ -13,3 +13,10 @@ tech_watch_rvol_max: 2.0
 soft_a_requires_catalyst: true
 stale_halt_sessions: 5
 overnight_carry_max_age_sessions: 1
+
+digest_top_n:
+  A: 10
+  Soft-A: 10
+  TECH_WATCH: 8
+  B: 10
+  C: 5
