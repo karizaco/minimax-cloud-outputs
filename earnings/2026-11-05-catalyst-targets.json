@@ -1,0 +1,59 @@
+{
+  "us": [
+    {
+      "name": "SEZL",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-04"
+    },
+    {
+      "name": "APP",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-04"
+    },
+    {
+      "name": "LYNX",
+      "tag": "PRE_GAP",
+      "last_earnings": null
+    },
+    {
+      "name": "TRIP",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-05"
+    },
+    {
+      "name": "FOUR",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-06"
+    }
+  ],
+  "eu": [
+    {
+      "name": "YUBICO",
+      "chg": 31.21
+    },
+    {
+      "name": "LXS",
+      "chg": 18.67
+    },
+    {
+      "name": "RHM",
+      "chg": -16.44
+    }
+  ],
+  "au": [
+    {
+      "name": "CYL",
+      "chg": 18.34
+    },
+    {
+      "name": "VUL",
+      "chg": 18.18
+    }
+  ],
+  "budget": {
+    "US": 5,
+    "EU": 3,
+    "AU": 2
+  },
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-05.md"
+}
