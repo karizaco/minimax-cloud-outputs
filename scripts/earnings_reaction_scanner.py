@@ -1408,7 +1408,7 @@ A(f"- catalyst_budget: {CATALYST_BUDGET['US']} US + {CATALYST_BUDGET['EU']} EU +
   f"{CATALYST_BUDGET['AU']} AU = "
   f"{CATALYST_BUDGET['US']+CATALYST_BUDGET['EU']+CATALYST_BUDGET['AU']} lookups per run")
 A(f"- one_table_rule: each name appears exactly once, in exactly one table, with its")
-A(f"  catalyst in that row's last column. There is no separate `## Catalysts` section.")
+A(f"  catalyst in that row's last column. There is no separate catalysts section.")
 A(f"- data_date: US regular session close of the prior trading day; extended-hours columns")
 A(f"  carry the prior session's prints")
 A(f"- deprecations: mcp__tradingview-advanced__*, mcp__tradingview__*, mcp__financekit__*,")
