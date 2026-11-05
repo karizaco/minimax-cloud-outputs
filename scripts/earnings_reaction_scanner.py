@@ -47,6 +47,14 @@ Verified behaviours this script encodes (see memory topic
 """
 import json, subprocess, time, datetime, os, sys, re
 
+# ==== PURE-HELPERS-BEGIN ============================================================
+# Everything between these two markers is side-effect free: no network call is
+# made, no file is written and no process is re-executed (the self-heal CALL
+# sits below the END marker). The regression test imports THIS EXACT BLOCK, so
+# it tests the shipped code rather than a copy of it - and it can never trigger
+# the self-heal, which would otherwise overwrite the file under test. The block
+# is SELF-CONTAINED: every name it uses is defined inside it.
+
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
 SCRIPT_VERSION = "2026-11-05.1"
@@ -62,12 +70,6 @@ API_REPO = "minimax-cloud-outputs"
 SCRIPT_PATH = "scripts/earnings_reaction_scanner.py"
 
 
-# ==== PURE-HELPERS-BEGIN ============================================================
-# Everything between these two markers is side-effect free: no network call is
-# made, no file is written and no process is re-executed (the self-heal CALL
-# sits below the END marker). The regression test imports THIS EXACT BLOCK, so
-# it tests the shipped code rather than a copy of it - and it can never trigger
-# the self-heal, which would otherwise overwrite the file under test.
 try:  # ET is UTC-5 in winter and UTC-4 in summer. A fixed offset mislabeled
     from zoneinfo import ZoneInfo      # every fire from 2026-11-01 to 2026-03-08
     ET = ZoneInfo("America/New_York")
