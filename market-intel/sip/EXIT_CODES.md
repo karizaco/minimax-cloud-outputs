@@ -2,9 +2,12 @@
 
 | Code | Meaning |
 |---:|---|
-| 0 | Success. The requested operation completed and all required validation passed. |
-| 2 | Usage or input error. A file was missing, unreadable, malformed, or the command was invoked incorrectly. |
-| 3 | Minimax model failure. The draft command ran but the model did not produce a usable response. |
-| 4 | Minimax infrastructure or provider failure. The draft command could not complete because of an external service, dependency, or execution problem. |
-| 5 | Validation failure. The draft was produced, but it violated a required check such as the number trace. |
-| 6 | Internal SIP failure. An unexpected internal error prevented the pipeline from completing. |
+| 0 | Success |
+| 2 | Usage error, invalid input, configuration error, unsafe output path, or other Minimax input/other error |
+| 3 | Minimax quota exhausted |
+| 4 | Minimax rate limited |
+| 5 | Number-trace validation failed, empty Minimax draft, or draft validation failed |
+| 6 | Adapter failure or internal hard failure |
+
+Routine operation must fall back on **any nonzero exit code**. A failure must not
+silently become a successful run.

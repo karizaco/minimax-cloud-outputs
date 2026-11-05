@@ -19,6 +19,13 @@ def _read_markdown(value: str | Path) -> str:
     return value
 
 
+def _normalize_ticker(value: str) -> str:
+    ticker = str(value or "").strip()
+    ticker = ticker.replace("`", "").replace("*", "")
+    ticker = ticker.replace("[", "").replace("]", "")
+    return ticker.upper()
+
+
 def _normalize_tier(title: str) -> str | None:
     value = re.sub(r"`[^`]*`", "", title).strip()
     value = re.sub(r"\s*\([^)]*\)\s*", "", value).strip()
@@ -42,6 +49,7 @@ def parse_tier_tables(md: str | Path) -> dict[str, list[str]]:
     current: str | None = None
     in_table = False
     ticker_column = 0
+    catalyst_column: int | None = None
 
     for line in text.splitlines():
         heading = re.match(r"^#{1,6}\s+(.+?)\s*$", line)
@@ -49,11 +57,13 @@ def parse_tier_tables(md: str | Path) -> dict[str, list[str]]:
             current = _normalize_tier(heading.group(1))
             in_table = False
             ticker_column = 0
+            catalyst_column = None
             continue
 
         if "|" not in line:
             in_table = False
             continue
+
         cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
         if not cells:
             continue
@@ -63,29 +73,97 @@ def parse_tier_tables(md: str | Path) -> dict[str, list[str]]:
         if not in_table or current is None:
             continue
 
-        header = [re.sub(r"[`*\[\]]", "", cell).strip().lower() for cell in cells]
+        header = [
+            re.sub(r"[`*\[\]]", "", cell).strip().lower()
+            for cell in cells
+        ]
         if "ticker" in header or "symbol" in header:
-            ticker_column = header.index("ticker") if "ticker" in header else header.index("symbol")
+            ticker_column = (
+                header.index("ticker")
+                if "ticker" in header
+                else header.index("symbol")
+            )
+            catalyst_column = (
+                header.index("catalyst")
+                if "catalyst" in header
+                else None
+            )
             continue
+
         if ticker_column >= len(cells):
             ticker_column = 0
 
-        ticker = re.sub(r"[`*\[\]]", "", cells[ticker_column]).strip()
-        if not ticker or re.fullmatch(r"(?:ticker|symbol)", ticker, re.I):
+        ticker = _normalize_ticker(cells[ticker_column])
+        if not ticker or ticker in {"TICKER", "SYMBOL"}:
             continue
         tiers[current].append(ticker)
+
     return dict(tiers)
 
 
+def _table_rows(text: str) -> list[list[str]]:
+    rows: list[list[str]] = []
+    for line in text.splitlines():
+        if "|" not in line:
+            continue
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if not cells or all(
+            re.fullmatch(r":?-{3,}:?", cell) for cell in cells
+        ):
+            continue
+        rows.append(cells)
+    return rows
+
+
 def _presence(text: str, ticker: str) -> tuple[bool, bool]:
-    lines = text.splitlines()
-    positions = [i for i, line in enumerate(lines) if ticker.lower() in line.lower()]
+    wanted = _normalize_ticker(ticker)
+    rows = _table_rows(text)
     catalyst = False
     why = False
-    for position in positions:
-        window = "\n".join(lines[position : position + 8]).lower()
-        catalyst |= bool(re.search(r"catalyst", window))
-        why |= bool(re.search(r"\bwhy\b|reason", window))
+
+    for index, cells in enumerate(rows):
+        header = [
+            re.sub(r"[`*\[\]]", "", cell).strip().lower()
+            for cell in cells
+        ]
+        has_header = "ticker" in header or "symbol" in header
+        if has_header:
+            ticker_column = (
+                header.index("ticker")
+                if "ticker" in header
+                else header.index("symbol")
+            )
+            catalyst_column = (
+                header.index("catalyst") if "catalyst" in header else None
+            )
+        else:
+            ticker_column = 0
+            catalyst_column = None
+
+        if ticker_column >= len(cells):
+            continue
+
+        cell_ticker = _normalize_ticker(cells[ticker_column])
+        if cell_ticker != wanted:
+            continue
+
+        if catalyst_column is not None and catalyst_column < len(cells):
+            catalyst_value = cells[catalyst_column].strip()
+            catalyst = catalyst_value.lower() not in {"", "-", "—", "n/a", "na"}
+        else:
+            catalyst = bool(cells) and cells[-1].strip().lower() not in {
+                "",
+                "-",
+                "—",
+                "n/a",
+                "na",
+            }
+
+        window = " ".join(cells).lower()
+        why = why or bool(re.search(r"\bwhy\b|reason", window))
+        if index + 1 < len(rows):
+            continue
+
     return catalyst, why
 
 
@@ -101,6 +179,7 @@ def compare(shadow_md: str | Path, live_md: str | Path) -> dict:
 
     tiers: dict[str, dict[str, list[str]]] = {}
     presence: dict[str, dict[str, dict[str, bool]]] = {}
+
     for tier in tier_names:
         shadow_tickers = shadow.get(tier, [])
         live_tickers = live.get(tier, [])
@@ -140,6 +219,7 @@ def compare(shadow_md: str | Path, live_md: str | Path) -> dict:
             for item in tier.values()
         ),
     }
+
     return {
         "shadow": str(shadow_path),
         "live": str(live_path),

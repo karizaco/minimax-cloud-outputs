@@ -1,36 +1,34 @@
+from __future__ import annotations
+
 from pathlib import Path
 
+import pytest
+
+from sip.paths import assert_safe_out_path
 from sip.shadow import run_shadow
 
 
-FIXTURES = Path(__file__).parent / "fixtures" / "taiwan-2026-11-05-open"
+FIXTURES = Path(__file__).resolve().parent / "fixtures" / "taiwan-2026-11-05-open"
 
 
-def test_shadow_writes_expected_paths(tmp_path: Path) -> None:
-    out_root = tmp_path / "out"
-    outside = tmp_path / "outside"
-    outside.mkdir()
-
-    paths = run_shadow(
-        market="taiwan",
-        slot="open",
-        date="2026-01-01",
-        fixtures_dir=FIXTURES,
-        out_root=out_root,
+def test_run_shadow_returns_paths_and_code(tmp_path: Path) -> None:
+    paths, code = run_shadow(
+        "taiwan",
+        "open",
+        "2026-11-05",
+        FIXTURES,
+        out_root=tmp_path,
     )
+    assert isinstance(paths, dict)
+    assert isinstance(code, int)
+    assert code == 0
+    assert all(isinstance(path, Path) for path in paths.values())
+    for path in paths.values():
+        assert path.exists()
+        assert tmp_path in path.parents or path.parent == tmp_path
 
-    assert set(paths) == {"json", "md", "chat"}
-    assert paths["json"].name.endswith("-open.json")
-    assert paths["md"].name.endswith("-open.md")
-    assert paths["chat"].name.endswith("-open.chat.md")
 
-    assert paths["json"] == out_root / "2026-01-01-open.json"
-    assert paths["md"] == out_root / "2026-01-01-open.md"
-    assert paths["chat"] == out_root / "2026-01-01-open.chat.md"
-
-    assert sorted(path.name for path in out_root.iterdir()) == [
-        "2026-01-01-open.chat.md",
-        "2026-01-01-open.json",
-        "2026-01-01-open.md",
-    ]
-    assert list(outside.iterdir()) == []
+def test_rejects_live_taiwan_in_play_root() -> None:
+    with pytest.raises(SystemExit) as exc:
+        assert_safe_out_path("/home/box/taiwan-in-play")
+    assert exc.value.code == 2

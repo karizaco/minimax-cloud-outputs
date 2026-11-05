@@ -1,40 +1,48 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
 from sip.number_trace import check_chat
 
 
-def test_check_chat_accepts_run_and_chat() -> None:
-    run = {
-        "date": "2026-01-01",
+def _run(*, last: float = 100.0, chg_pct: float = 5.0) -> dict:
+    return {
+        "date": "2026-11-05",
         "slot": "open",
-        "fx": 32.824,
         "candidates": [
             {
                 "ticker": "2330",
-                "display_ticker": "2330",
                 "venue": "TWSE",
                 "instrument_type": "common",
-                "last": 1000.0,
-                "chg_pct": 5.25,
-                "dollar_vol": 100_000_000.0,
-                "usd_turnover": 3_046_930.0,
-                "rvol": 1.75,
-                "catalyst": "AI demand",
-                "catalyst_time": "09:30",
+                "last": last,
+                "chg_pct": chg_pct,
+                "dollar_vol": 50_000_000.0,
+                "rvol": 1.2,
+                "catalyst": None,
                 "flags": [],
                 "source": "test",
-                "asof": "2026-01-01T09:35:00+08:00",
-                "tier": "A",
+                "asof": "2026-11-05T09:30:00+08:00",
+                "tier": "B",
             }
         ],
     }
-    chat = """
-2330 台積電 | 1000.0 | +5.25% | RVOL 1.75 | 3.05M USD
-AI demand at 09:30
-"""
 
-    result = check_chat(run, chat)
-    if isinstance(result, tuple):
-        ok, _report = result
-    else:
-        ok = result if isinstance(result, bool) else bool(result.get("ok"))
 
-    assert ok
+def test_signed_change_is_accepted() -> None:
+    result = check_chat(_run(chg_pct=2.5), "# Picks\n\n- 2330: +2.5%\n")
+    assert result["ok"] is True
+    assert result["offenders"] == []
+
+
+def test_negative_percent_does_not_match_positive() -> None:
+    result = check_chat(_run(chg_pct=5.0), "# Picks\n\n- 2330: -5%\n")
+    assert result["ok"] is False
+    assert result["offenders"]
+
+
+def test_garbage_number_is_rejected() -> None:
+    chat = "99.9% on US$777m, 12.3x, 1,234.5"
+    result = check_chat(_run(last=100.0, chg_pct=1.0), chat)
+    assert result["ok"] is False
+    assert len(result["offenders"]) >= 3

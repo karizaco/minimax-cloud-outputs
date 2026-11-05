@@ -6,9 +6,19 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from .paths import assert_safe_out_path
+
 
 def _load_json(path: str | Path) -> Any:
     return json.loads(Path(path).read_text(encoding="utf-8"))
+
+
+def _adapter_error() -> type[BaseException] | None:
+    try:
+        from .markets.taiwan.adapter import AdapterError
+    except (ImportError, AttributeError):
+        return None
+    return AdapterError
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -38,9 +48,9 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         if args.command == "shadow":
-            from sip.shadow import run_shadow
+            from .shadow import run_shadow
 
-            paths = run_shadow(
+            result = run_shadow(
                 market=args.market,
                 slot=args.slot,
                 date=args.date,
@@ -49,17 +59,21 @@ def main(argv: list[str] | None = None) -> int:
                 tv_dump=args.tv_dump,
                 require_mmx_chat=args.require_mmx_chat,
             )
+            if isinstance(result, tuple):
+                paths, code = result
+            else:
+                paths, code = result, 0
             for name, path in paths.items():
                 print(f"{name}: {path}")
-            return 0
+            return int(code)
 
         if args.command == "compare":
-            from sip.compare import compare, print_report
+            from .compare import compare, print_report
 
             result = compare(args.shadow, args.live)
             print_report(result)
             if args.json_out:
-                path = Path(args.json_out)
+                path = assert_safe_out_path(args.json_out, label="compare output")
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_text(
                     json.dumps(result, ensure_ascii=False, indent=2, default=str),
@@ -67,7 +81,7 @@ def main(argv: list[str] | None = None) -> int:
                 )
             return 0
 
-        from sip.number_trace import check_chat
+        from .number_trace import check_chat
 
         run_data = _load_json(args.run)
         chat_text = Path(args.chat).read_text(encoding="utf-8")
@@ -82,8 +96,17 @@ def main(argv: list[str] | None = None) -> int:
             report = {"ok": ok}
 
         print(json.dumps(report, ensure_ascii=False, indent=2, default=str))
-        return 0 if ok else 1
+        return 0 if ok else 5
+    except SystemExit:
+        raise
     except Exception as exc:
+        adapter_error = _adapter_error()
+        if adapter_error is not None and isinstance(exc, adapter_error):
+            print(f"error: {exc}", file=sys.stderr)
+            return 6
+        if isinstance(exc, (FileNotFoundError, ValueError, json.JSONDecodeError)):
+            print(f"error: {exc}", file=sys.stderr)
+            return 2
         print(f"error: {exc}", file=sys.stderr)
         return 2
 

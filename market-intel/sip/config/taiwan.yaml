@@ -8,6 +8,7 @@ midday:
     price_min: 5
     turnover_min: 100000000
     mcap_min: 1000000000
+
 soft_a_requires_catalyst: true
 elevated_rvol_min: 1.5
 tech_watch_rvol_max: 2.0
@@ -17,6 +18,14 @@ day_move_soft: 4.0
 gap_soft: 3.0
 gap_hard: 4.0
 unusual_rvol: 3.0
+
+chat_top_n:
+  A: 10
+  Soft-A: 10
+  TECH_WATCH: 10
+  B: 10
+  C: 5
+
 display:
   currency: USD
   exchange_suffix:
@@ -24,5 +33,6 @@ display:
     TPEx: ".TPEX"
   price_decimals: 2
   turnover_compact: true
+
 fx:
   note: "USD values use the session FX rate; Taiwan session turnover is TWD."

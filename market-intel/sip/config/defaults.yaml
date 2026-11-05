@@ -1,5 +1,15 @@
 fund_wrapper:
   drop: true
 buyout_near_chat_cap: 2
+
+gap_hard: 4.0
+gap_soft: 3.0
+day_move_hard: 5.0
+day_move_soft: 4.0
+unusual_rvol: 3.0
+elevated_rvol_min: 1.5
+tech_watch_rvol_min: 1.0
+tech_watch_rvol_max: 2.0
+soft_a_requires_catalyst: true
 stale_halt_sessions: 5
 overnight_carry_max_age_sessions: 1

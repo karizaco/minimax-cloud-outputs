@@ -34,27 +34,42 @@ def _floors(cfg: dict[str, Any], slot: str) -> dict[str, float]:
     return section.get("floors", section) if isinstance(section, dict) else {}
 
 
-def apply_floors(rows: Iterable[CandidateRow], cfg: dict[str, Any], slot: str) -> list[CandidateRow]:
+def apply_floors(
+    rows: Iterable[CandidateRow],
+    cfg: dict[str, Any],
+    slot: str,
+) -> list[CandidateRow]:
     floors = _floors(cfg, slot)
     price_min = float(floors.get("price_min", 0))
     turnover_min = float(floors.get("turnover_min", 0))
     mcap_min = float(floors.get("mcap_min", 0))
-    result = []
+
+    result: list[CandidateRow] = []
     for row in rows:
-        if row.last < price_min or row.dollar_vol < turnover_min:
+        if row.last < price_min:
             continue
-        if row.mcap_twd is not None and row.mcap_twd < mcap_min and row.dollar_vol < turnover_min:
+        if row.dollar_vol < turnover_min:
             continue
+
+        # Market-cap is a soft warning only. A row below the market-cap
+        # minimum remains eligible when it clears the turnover floor.
+        if (
+            row.mcap_twd is not None
+            and row.mcap_twd < mcap_min
+            and row.dollar_vol >= turnover_min
+        ):
+            pass
+
         result.append(row)
     return result
 
 
 def drop_noise(rows: Iterable[CandidateRow]) -> list[CandidateRow]:
-    result = []
+    result: list[CandidateRow] = []
     for row in rows:
         if row.instrument_type.lower() in _NOISE_TYPES:
             continue
-        if any(flag.lower() in {"etf", "warrant", "pref", "emerging", "tdr", "fund_wrapper"} for flag in row.flags):
+        if any(flag.lower() in _NOISE_TYPES for flag in row.flags):
             continue
         result.append(row)
     return result
@@ -69,9 +84,18 @@ def _has_flag(row: CandidateRow, *names: str) -> bool:
     return any(str(flag).upper() in wanted for flag in row.flags)
 
 
-def assign_tiers(rows: Iterable[CandidateRow], cfg: dict[str, Any], slot: str) -> list[CandidateRow]:
+def assign_tiers(
+    rows: Iterable[CandidateRow],
+    cfg: dict[str, Any],
+    slot: str,
+) -> list[CandidateRow]:
     result: list[CandidateRow] = []
     for row in rows:
+        if _has_flag(row, "LIMIT_DOWN"):
+            row.tier = "C"
+            result.append(row)
+            continue
+
         move = abs(float(row.chg_pct))
         hard = float(cfg.get("day_move_hard", 5.0))
         soft = float(cfg.get("day_move_soft", 4.0))
@@ -92,7 +116,12 @@ def assign_tiers(rows: Iterable[CandidateRow], cfg: dict[str, Any], slot: str) -
             else:
                 tier = "B"
         elif not catalyst and (move >= gap_soft or limit_move):
-            tier = "B" if row.rvol is not None and row.rvol >= rmax else "TECH_WATCH"
+            if row.rvol is not None and row.rvol >= elevated:
+                tier = "B"
+            elif row.chg_pct > 0:
+                tier = "B"
+            else:
+                tier = "TECH_WATCH"
         elif not catalyst and row.rvol is not None and row.rvol >= elevated:
             tier = "B"
         else:
@@ -105,10 +134,20 @@ def assign_tiers(rows: Iterable[CandidateRow], cfg: dict[str, Any], slot: str) -
 
 def sort_tiers(rows: Iterable[CandidateRow]) -> list[CandidateRow]:
     order = {name: index for index, name in enumerate(TIER_ORDER)}
-    return sorted(rows, key=lambda row: (order.get(row.tier or "C", len(order)), -row.dollar_vol))
+    return sorted(
+        rows,
+        key=lambda row: (
+            order.get(row.tier or "C", len(order)),
+            -row.dollar_vol,
+        ),
+    )
 
 
-def run_pipeline(rows: Iterable[CandidateRow], cfg: dict[str, Any], slot: str) -> list[CandidateRow]:
+def run_pipeline(
+    rows: Iterable[CandidateRow],
+    cfg: dict[str, Any],
+    slot: str,
+) -> list[CandidateRow]:
     result = normalize_rows(rows)
     result = drop_noise(result)
     result = dedupe(result)

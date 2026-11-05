@@ -1,108 +1,139 @@
-"""Draft SIP chat with Minimax and validate every numeric claim."""
-
 from __future__ import annotations
 
-import argparse
 import json
+import os
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
-from typing import Any, Sequence
+from typing import Any
 
 from .number_trace import check_chat
+from .paths import assert_safe_out_path
 
 
-def _prompt_template() -> str:
-    return (
-        Path(__file__).parent
-        / "templates"
-        / "prompts"
-        / "chat_system.txt"
-    ).read_text(encoding="utf-8")
+DEFAULT_CHAT_SYSTEM = """You are the SIP Taiwan-market chat writer.
+Summarize the supplied run JSON accurately. Use only facts present in RUN_JSON.
+Do not invent prices, catalysts, tickers, or numbers. Preserve exact ticker names.
+Return a concise Markdown chat digest. Every numeric claim must be supported by RUN_JSON.
+"""
+
+
+def _compact_json(value: Any) -> str:
+    return json.dumps(value, ensure_ascii=False, separators=(",", ":"), default=str)
+
+
+def _load_run(path: str | Path) -> Any:
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+
+
+def _executable_for(mmx_bin: str | Path) -> list[str]:
+    binary = str(mmx_bin)
+    if binary.endswith(".py"):
+        return [sys.executable, binary]
+    return [binary]
 
 
 def draft_chat(
     run_json_path: str | Path,
     out_chat_path: str | Path,
     *,
-    mmx_bin: str | Path = "/workspace/market-intel/bin/mmx_chat.py",
+    mmx_bin: str | Path = "mmx_chat.py",
+    chat_system_text: str = DEFAULT_CHAT_SYSTEM,
 ) -> int:
-    """Run Minimax, validate its draft, and atomically publish valid output."""
-    run_path = Path(run_json_path)
-    output_path = Path(out_chat_path)
-
-    try:
-        run_json: Any = json.loads(run_path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as exc:
-        print(f"draft_mmx: unable to read run: {exc}", file=sys.stderr)
-        return 2
-
-    prompt = _prompt_template()
-    prompt_path = run_path.with_suffix(run_path.suffix + ".prompt.txt")
-    try:
-        prompt_path.write_text(prompt, encoding="utf-8")
-    except OSError as exc:
-        print(f"draft_mmx: unable to write prompt: {exc}", file=sys.stderr)
-        return 2
-
-    command = [
-        str(mmx_bin),
-        "--lane",
-        "bulk",
-        "--run",
-        str(run_path),
-        "--out",
-        str(output_path),
-    ]
-
-    try:
-        completed = subprocess.run(command, check=False)
-    except OSError as exc:
-        print(f"draft_mmx: unable to execute Minimax: {exc}", file=sys.stderr)
-        return 2
-
-    if completed.returncode != 0:
-        failed_path = output_path.with_suffix(output_path.suffix + ".failed")
-        if output_path.exists():
-            try:
-                failed_path.write_text(output_path.read_text(encoding="utf-8"), encoding="utf-8")
-                output_path.unlink()
-            except OSError:
-                pass
-        return completed.returncode
-
-    try:
-        chat = output_path.read_text(encoding="utf-8")
-    except OSError as exc:
-        print(f"draft_mmx: unable to read draft: {exc}", file=sys.stderr)
-        return 2
-
-    result = check_chat(run_json, chat)
-    if not result["ok"]:
-        failed_path = output_path.with_suffix(output_path.suffix + ".failed")
-        try:
-            failed_path.write_text(chat, encoding="utf-8")
-            output_path.unlink()
-        except OSError as exc:
-            print(f"draft_mmx: unable to preserve invalid draft: {exc}", file=sys.stderr)
-        print(json.dumps(result, ensure_ascii=False, indent=2), file=sys.stderr)
-        return 5
-
-    return 0
-
-
-def main(argv: Sequence[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Draft and validate SIP chat with Minimax")
-    parser.add_argument("--run", required=True, help="Run JSON path")
-    parser.add_argument("--out", required=True, help="Output chat Markdown path")
-    parser.add_argument(
-        "--mmx-bin",
-        default="/workspace/market-intel/bin/mmx_chat.py",
-        help="Minimax chat command",
+    """Generate a chat draft with mmx_chat and atomically publish it on success."""
+    source = Path(run_json_path).expanduser().resolve()
+    output = assert_safe_out_path(out_chat_path, label="draft output")
+    prompt_path = assert_safe_out_path(
+        output.with_suffix(output.suffix + ".prompt.txt"),
+        label="draft prompt",
     )
-    args = parser.parse_args(argv)
-    return draft_chat(args.run, args.out, mmx_bin=args.mmx_bin)
+    output.parent.mkdir(parents=True, exist_ok=True)
+
+    try:
+        run_data = _load_run(source)
+    except (OSError, ValueError, json.JSONDecodeError):
+        return 2
+
+    user_prompt = (
+        chat_system_text.strip()
+        + "\n\nRUN_JSON:\n"
+        + _compact_json(run_data)
+    )
+    prompt_path.write_text(user_prompt, encoding="utf-8")
+
+    failed_path = output.with_suffix(output.suffix + ".failed")
+    temp_path = output.with_suffix(output.suffix + ".tmp")
+    failed_path.unlink(missing_ok=True)
+    temp_path.unlink(missing_ok=True)
+
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            prefix=".mmx-chat-",
+            suffix=".md",
+            dir=output.parent,
+            delete=False,
+        ) as handle:
+            generated_path = Path(handle.name)
+
+        command = [
+            *_executable_for(mmx_bin),
+            "--system",
+            chat_system_text,
+            "--user",
+            user_prompt,
+            "--lane",
+            "bulk",
+            "--reasoning-effort",
+            "low",
+            "--out",
+            str(generated_path),
+        ]
+        completed = subprocess.run(
+            command,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        if completed.returncode != 0:
+            generated_path.unlink(missing_ok=True)
+            temp_path.unlink(missing_ok=True)
+            return int(completed.returncode)
+
+        content = generated_path.read_text(encoding="utf-8")
+        generated_path.unlink(missing_ok=True)
+
+        if not content.strip():
+            temp_path.unlink(missing_ok=True)
+            failed_path.write_text(
+                completed.stdout + ("\n" + completed.stderr if completed.stderr else ""),
+                encoding="utf-8",
+            )
+            return 5
+
+        temp_path.write_text(content, encoding="utf-8")
+
+        result = check_chat(run_data, content)
+        if not result.get("ok", False):
+            temp_path.unlink(missing_ok=True)
+            failed_path.write_text(
+                json.dumps(result, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+            return 5
+
+        os.replace(temp_path, output)
+        return 0
+    except Exception:
+        temp_path.unlink(missing_ok=True)
+        return 2
 
 
-if __name__ == "__main__":
-    raise SystemExit(main())
+def draft_mmx(run_dict: dict[str, Any]) -> str:
+    """Compatibility helper for callers that only need a deterministic draft."""
+    return json.dumps(run_dict, ensure_ascii=False, indent=2, default=str)
+
+
+__all__ = ["DEFAULT_CHAT_SYSTEM", "draft_chat", "draft_mmx"]

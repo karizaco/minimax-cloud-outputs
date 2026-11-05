@@ -41,23 +41,23 @@ def _tier_name(tier: str) -> str:
 
 
 def _tier_heading(tier: str) -> str:
-    key = _tier_name(tier)
     return {
         "A": "Tier A",
         "Soft-A": "Soft-A",
         "TECH_WATCH": "TECH_WATCH",
         "B": "Tier B",
         "C": "Tier C",
-    }[key]
+    }[_tier_name(tier)]
 
 
 def display_ticker(row: Mapping[str, Any]) -> str:
-    """Return an explicit display ticker or an XXXX[.TPEX] symbol."""
     explicit = str(_first(row, "display_ticker", default="")).strip().upper()
     if explicit:
         return explicit
 
-    ticker = str(_first(row, "symbol", "ticker", "code", default="")).strip().upper()
+    ticker = str(
+        _first(row, "symbol", "ticker", "code", default="")
+    ).strip().upper()
     if ticker.endswith(".TPEX"):
         return ticker
     if ticker.endswith(".TWO"):
@@ -127,7 +127,9 @@ def format_turnover_usd(twd: Any, fx: Any) -> str:
 
 
 def _company(row: Mapping[str, Any]) -> str:
-    english = str(_first(row, "company_en", "english_name", "en", default="")).strip()
+    english = str(
+        _first(row, "company_en", "english_name", "en", default="")
+    ).strip()
     chinese = str(_first(row, "company_zh", "name", default="")).strip()
     if english and chinese:
         return f"{english} ({chinese})"
@@ -135,7 +137,9 @@ def _company(row: Mapping[str, Any]) -> str:
 
 
 def _catalyst(row: Mapping[str, Any]) -> str:
-    return str(_first(row, "catalyst", "why", default="—") or "—").replace("|", "\\|")
+    return str(
+        _first(row, "catalyst", "why", default="—") or "—"
+    ).replace("|", "\\|")
 
 
 def _rows(
@@ -145,22 +149,69 @@ def _rows(
     if isinstance(rows_by_tier, Mapping):
         candidates = rows_by_tier.get("candidates")
         if isinstance(candidates, list):
-            result: list[tuple[str, Mapping[str, Any]]] = []
-            for row in candidates:
-                if isinstance(row, Mapping):
-                    result.append((str(row.get("tier", "C")), row))
-            return result
+            return [
+                (str(row.get("tier", "C")), row)
+                for row in candidates
+                if isinstance(row, Mapping)
+            ]
 
-        result = []
+        result: list[tuple[str, Mapping[str, Any]]] = []
         for tier, rows in rows_by_tier.items():
             for row in rows or []:
                 result.append((str(tier), row))
         return result
 
-    result = []
-    for row in rows_by_tier or []:
-        result.append((str(row.get("tier", "C")), row))
-    return result
+    return [
+        (str(row.get("tier", "C")), row)
+        for row in rows_by_tier or []
+    ]
+
+
+def _turnover(row: Mapping[str, Any]) -> float:
+    return _number(
+        _first(
+            row,
+            "turnover_twd",
+            "twd_turnover",
+            "turnover",
+            "dollar_vol",
+            default=0,
+        )
+    )
+
+
+def _is_material_c(
+    row: Mapping[str, Any],
+    midday_turnover_floor: float,
+) -> bool:
+    flags = {
+        str(flag).upper()
+        for flag in _first(row, "flags", default=[]) or []
+    }
+    if flags & {"LIMIT_UP", "LIMIT_DOWN"}:
+        return True
+    if flags & {"HALT", "HALTED", "FRESH_HALT", "FRESH_HALTED"}:
+        return True
+    return _turnover(row) >= midday_turnover_floor
+
+
+def _top_n(
+    rows: Sequence[Mapping[str, Any]],
+    limit: Any,
+) -> list[Mapping[str, Any]]:
+    try:
+        count = int(limit)
+    except (TypeError, ValueError):
+        return list(rows)
+    if count < 0:
+        return list(rows)
+    return sorted(
+        rows,
+        key=lambda row: (
+            -_turnover(row),
+            str(_first(row, "ticker", "symbol", default="")),
+        ),
+    )[:count]
 
 
 def render_chat(
@@ -170,30 +221,55 @@ def render_chat(
     skipped: Sequence[Any] | None = None,
     header: str = "",
     fx: Any = None,
+    top_n: Mapping[str, Any] | None = None,
+    midday_turnover_floor: float = 100_000_000,
 ) -> str:
     """Render SIP chat tables using the locked Taiwan-market columns."""
     lines: list[str] = []
     if header:
         lines.extend([str(header).strip(), ""])
 
-    groups: dict[str, list[Mapping[str, Any]]] = {name: [] for name in _TIER_KEYS}
+    groups: dict[str, list[Mapping[str, Any]]] = {
+        name: [] for name in _TIER_KEYS
+    }
     for tier, row in _rows(rows_by_tier):
         groups.setdefault(_tier_name(tier), []).append(row)
 
+    limits = top_n or {}
+
     for tier in _TIER_KEYS:
-        rows = groups.get(tier, [])
+        rows = list(groups.get(tier, []))
+
+        if tier == "C":
+            rows = [
+                row
+                for row in rows
+                if _is_material_c(row, midday_turnover_floor)
+            ]
+
+        rows = _top_n(rows, limits.get(tier, len(rows)))
         if not rows:
             continue
+
         lines.append(f"## {_tier_heading(tier)}")
         lines.append("")
         if tier in {"A", "Soft-A"}:
-            lines.append("| Ticker | Company | Move | RelVol | Turnover | Catalyst |")
+            lines.append(
+                "| Ticker | Company | Move | RelVol | Turnover | Catalyst |"
+            )
             lines.append("|---|---|---:|---:|---:|---|")
         else:
             lines.append("| Ticker | Company | Move | RelVol | Turnover |")
             lines.append("|---|---|---:|---:|---:|")
+
         for row in rows:
-            move = _first(row, "chg_pct", "change_pct", "move", default=0)
+            move = _first(
+                row,
+                "chg_pct",
+                "change_pct",
+                "move",
+                default=0,
+            )
             rvol = _first(row, "rvol", "relative_volume", default=None)
             twd = _first(
                 row,
@@ -222,7 +298,9 @@ def render_chat(
             if isinstance(item, Mapping):
                 ticker = display_ticker(item)
                 reason = _first(item, "reason", "status", default="skipped")
-                details.append(f"{ticker}: {reason}" if ticker else str(reason))
+                details.append(
+                    f"{ticker}: {reason}" if ticker else str(reason)
+                )
             else:
                 details.append(str(item))
         lines.append("⚠️ Skipped: " + "; ".join(details))
@@ -266,9 +344,13 @@ def render_digest(run_dict: Mapping[str, Any]) -> str:
     if header_bits:
         lines.extend([" | ".join(header_bits), ""])
 
-    groups: dict[str, list[Mapping[str, Any]]] = {name: [] for name in _TIER_KEYS}
+    groups: dict[str, list[Mapping[str, Any]]] = {
+        name: [] for name in _TIER_KEYS
+    }
     for row in rows:
-        groups.setdefault(_tier_name(str(row.get("tier", "C"))), []).append(row)
+        groups.setdefault(
+            _tier_name(str(row.get("tier", "C"))), []
+        ).append(row)
 
     for tier in _TIER_KEYS:
         tier_rows = groups.get(tier, [])
@@ -285,6 +367,7 @@ def render_digest(run_dict: Mapping[str, Any]) -> str:
                 "| Ticker | Company | Board | Price | Chg% | RVol | TWD | US$ | Why |"
             )
             lines.append("|---|---|---|---:|---:|---:|---:|---:|---|")
+
         for row in tier_rows:
             twd = _first(
                 row,
@@ -326,6 +409,7 @@ def render_digest(run_dict: Mapping[str, Any]) -> str:
     source_health = run_dict.get("source_health")
     if source_health is None:
         source_health = run_dict.get("health", {})
+
     lines.extend(["## Source health", ""])
     if isinstance(source_health, Mapping) and source_health:
         lines.append("| Source | Status | Detail |")
@@ -333,7 +417,9 @@ def render_digest(run_dict: Mapping[str, Any]) -> str:
         for source, detail in source_health.items():
             if isinstance(detail, Mapping):
                 status = _first(detail, "status", "state", default="unknown")
-                message = _first(detail, "detail", "message", "error", default="")
+                message = _first(
+                    detail, "detail", "message", "error", default=""
+                )
             else:
                 status = "ok" if detail in (True, "ok", "healthy") else str(detail)
                 message = ""
@@ -345,7 +431,9 @@ def render_digest(run_dict: Mapping[str, Any]) -> str:
             if isinstance(detail, Mapping):
                 source = _first(detail, "source", "name", default="unknown")
                 status = _first(detail, "status", "state", default="unknown")
-                message = _first(detail, "detail", "message", "error", default="")
+                message = _first(
+                    detail, "detail", "message", "error", default=""
+                )
             else:
                 source, status, message = "unknown", str(detail), ""
             lines.append(f"| {source} | {status} | {message} |")
@@ -353,6 +441,6 @@ def render_digest(run_dict: Mapping[str, Any]) -> str:
         lines.append("No source-health details were provided.")
 
     if fx:
-        lines.extend(["", f"## FX", "", f"USD/TWD: {fx}"])
+        lines.extend(["", "## FX", "", f"USD/TWD: {fx}"])
 
     return "\n".join(lines).rstrip() + "\n"

@@ -56,27 +56,21 @@ def _display_forms(value: float, kind: str) -> set[float]:
                 math.ceil(value),
             }
         )
-    if kind == "percent":
-        forms.update({round(value), round(value, 1)})
     return {float(item) for item in forms if math.isfinite(float(item))}
 
 
 def extract_numbers(text: str) -> list[dict[str, Any]]:
-    """Return numeric tokens found in *text*."""
     found: list[dict[str, Any]] = []
     for match in _NUMBER_RE.finditer(text or ""):
         raw = match.group(0)
         number = _as_float(match.group("number").replace(",", ""))
         if number is None:
             continue
-
-        sign = match.group("sign")
-        if sign == "-":
+        if match.group("sign") == "-":
             number = -number
 
         suffix = (match.group("suffix") or "").lower()
         currency = match.group("currency")
-
         if suffix == "%":
             kind = "percent"
         elif suffix == "x":
@@ -93,8 +87,6 @@ def extract_numbers(text: str) -> list[dict[str, Any]]:
             normalized *= _MM_TO_USD
         elif suffix == "bn":
             normalized *= _BN_TO_USD
-        elif suffix == "x":
-            normalized = number
 
         found.append(
             {
@@ -133,40 +125,33 @@ def _currency_candidates(value: float) -> set[float]:
 
 
 def collect_allowed_numbers(run: dict | list) -> set[float]:
-    """Collect exact and rounded numeric forms represented by the run."""
     allowed: set[float] = set()
-
     for field, value in _walk(run):
         if field not in _ALLOWED_FIELDS:
             continue
-
         if isinstance(value, dict):
             for nested in value.values():
                 number = _as_float(nested)
                 if number is not None:
                     allowed.update(_display_forms(number, "number"))
             continue
-
         if isinstance(value, (list, tuple, set)):
             for nested in value:
                 number = _as_float(nested)
                 if number is not None:
                     allowed.update(_display_forms(number, "number"))
             continue
-
         number = _as_float(value)
         if number is None:
             continue
-
         if field in {"dollar_vol", "usd_turnover", "turnover_usd"}:
             allowed.update(_currency_candidates(number))
         elif field == "chg_pct":
-            allowed.update(_display_forms(abs(number), "percent"))
+            allowed.update(_display_forms(number, "percent"))
         elif field == "rvol":
             allowed.update(_display_forms(number, "multiple"))
         else:
             allowed.update(_display_forms(number, "number"))
-
     return allowed
 
 
@@ -179,18 +164,22 @@ def _context_for(text: str, span: list[int], radius: int = 36) -> str:
 
 def _matches(number: dict[str, Any], allowed: set[float]) -> bool:
     value = float(number["value"])
-    kind = number["kind"]
-    candidates = set(allowed)
-
-    if kind == "multiple":
-        candidates.update(_display_forms(value, "multiple"))
-    elif kind == "currency":
-        candidates.update(_currency_candidates(value))
-    else:
-        candidates.update(_display_forms(value, kind))
-
     tolerance = max(1e-9, abs(value) * 1e-9)
-    return any(math.isclose(value, candidate, rel_tol=1e-9, abs_tol=tolerance) for candidate in candidates)
+
+    for candidate in allowed:
+        if not math.isclose(value, candidate, rel_tol=1e-9, abs_tol=tolerance):
+            continue
+
+        if number["kind"] == "percent":
+            if value > 0 and candidate <= 0:
+                continue
+            if value < 0 and candidate >= 0:
+                continue
+            if value == 0 and candidate != 0:
+                continue
+
+        return True
+    return False
 
 
 def check_chat(
@@ -199,9 +188,7 @@ def check_chat(
     *,
     fx_rate: float | None = None,
 ) -> dict[str, Any]:
-    """Check numeric claims in *chat_md* against values present in the run."""
     allowed = collect_allowed_numbers(run_json)
-
     if fx_rate is not None:
         fx = _as_float(fx_rate)
         if fx is not None and fx > 0:
@@ -211,39 +198,33 @@ def check_chat(
     for number in extract_numbers(chat_md):
         if _matches(number, allowed):
             continue
-
-        raw = number["raw"]
         reason = {
             "percent": "percentage is not represented by the run",
             "multiple": "multiple is not represented by the run",
             "currency": "currency amount is not represented by the run",
         }.get(number["kind"], "number is not represented by the run")
-
         offenders.append(
             {
-                "raw": raw,
+                "raw": number["raw"],
                 "context": _context_for(chat_md, number["span"]),
                 "reason": reason,
             }
         )
-
     return {"ok": not offenders, "offenders": offenders}
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Check SIP chat numbers against a run")
-    parser.add_argument("--run", required=True, help="Run JSON path")
-    parser.add_argument("--chat", required=True, help="Chat Markdown path")
-    parser.add_argument("--fx", type=float, default=None, help="Optional TWD/USD rate")
+    parser.add_argument("--run", required=True)
+    parser.add_argument("--chat", required=True)
+    parser.add_argument("--fx", type=float, default=None)
     args = parser.parse_args(argv)
-
     try:
         run = json.loads(Path(args.run).read_text(encoding="utf-8"))
         chat = Path(args.chat).read_text(encoding="utf-8")
     except (OSError, json.JSONDecodeError) as exc:
         print(f"number_trace: {exc}", file=sys.stderr)
         return 2
-
     result = check_chat(run, chat, fx_rate=args.fx)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0 if result["ok"] else 5
