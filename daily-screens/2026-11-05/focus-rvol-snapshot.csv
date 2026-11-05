@@ -1,0 +1,13 @@
+symbol,close,rvol_intraday_live,rvol_now,rvol_prev,rvol_at_09_38,rvol_trend,rvol_trend_delta,prev_session_rvol,bucket,tier,pm_vol,pm_vol_source,data_timestamp,stylists,flags,rvol_tod_normalised
+FN,314.55,0.1925,2.3288,2.1574,0.1396,ACCELERATING,0.1714,n/a,RVOL Required,WATCH,0,not_subtracted,"2026-11-05 09:45 ET (last completed 5m bar, stamped 09:40)","peoplewish, stockbee",,2.3288
+EVER,30.81,0.1676,2.3184,2.6976,0.1571,DECELERATING,-0.3791,n/a,RVOL Required,WATCH,0,not_subtracted,"2026-11-05 09:45 ET (last completed 5m bar, stamped 09:40)","jeff_sun, stockbee",,2.3184
+APLD,15.095,0.2066,1.8758,1.8069,0.1471,ACCELERATING,0.0689,n/a,RVOL Required,WATCH,0,not_subtracted,"2026-11-05 09:45 ET (last completed 5m bar, stamped 09:40)","peoplewish, stockbee",,1.8758
+AEHR,53.85,0.2541,1.7970,1.8555,0.2054,DECELERATING,-0.0585,n/a,RVOL Required,WATCH,0,not_subtracted,"2026-11-05 09:45 ET (last completed 5m bar, stamped 09:40)","peoplewish, qullamaggie, stockbee",,1.7970
+CIFR,5.99,0.1731,1.7954,1.6597,0.1123,ACCELERATING,0.1357,n/a,RVOL Required,WATCH,0,not_subtracted,"2026-11-05 09:45 ET (last completed 5m bar, stamped 09:40)","peoplewish, stockbee",,1.7954
+AEIS,198.5,0.0965,1.5809,1.7413,0.0854,DECELERATING,-0.1604,n/a,RVOL Required,WATCH,0,not_subtracted,"2026-11-05 09:45 ET (last completed 5m bar, stamped 09:40)","jeff_sun, peoplewish, stockbee",,1.5809
+ECG,75.01,0.0701,1.5056,1.7137,0.0548,DECELERATING,-0.2081,n/a,RVOL Required,WATCH,0,not_subtracted,"2026-11-05 09:45 ET (last completed 5m bar, stamped 09:40)","jeff_sun, peoplewish, stockbee",,1.5056
+CLSK,6.36,0.1336,1.4819,1.4352,0.0969,STABLE,0.0466,n/a,Liquid,NEAR MISS,0,not_subtracted,"2026-11-05 09:45 ET (last completed 5m bar, stamped 09:40)","peoplewish, stockbee",,1.4819
+FISV,62.445,0.0918,1.2999,1.3135,0.0726,STABLE,-0.0135,n/a,Liquid,NEAR MISS,0,not_subtracted,"2026-11-05 09:45 ET (last completed 5m bar, stamped 09:40)","hernandez, jeff_sun, stockbee",,1.2999
+BETA,24.39,0.0957,1.2011,1.4318,0.0809,DECELERATING,-0.2307,n/a,Liquid,WATCH,0,not_subtracted,"2026-11-05 09:45 ET (last completed 5m bar, stamped 09:40)","jeff_sun, stockbee",,1.2011
+CORZ,11.88,0.0926,1.0916,1.0233,0.0635,ACCELERATING,0.0682,n/a,Liquid,WATCH,0,not_subtracted,"2026-11-05 09:45 ET (last completed 5m bar, stamped 09:40)","peoplewish, stockbee",,1.0916
+FRVO,8.225,0.0508,0.6479,0.6728,0.0409,STABLE,-0.0248,n/a,Liquid,-,0,not_subtracted,"2026-11-05 09:45 ET (last completed 5m bar, stamped 09:40)","peoplewish, stockbee",,0.6479
