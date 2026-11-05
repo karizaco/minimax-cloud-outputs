@@ -1,0 +1,378 @@
+"""Taiwan market candidate adapter."""
+
+from __future__ import annotations
+
+import json
+import re
+from pathlib import Path
+from typing import Any, Mapping
+
+from .fetch import SourceHealth, fetch_yahoo_ranks
+from .names import display_ticker, english_name
+from .parse import (
+    ParseError,
+    parse_cmoney_change_up_html,
+    parse_fx_json,
+    parse_mops_items,
+    parse_tpex_roster,
+    parse_tv_dump,
+    parse_twse_roster,
+    parse_yahoo_rank_html,
+)
+
+
+class AdapterError(RuntimeError):
+    pass
+
+
+def _read_fixture(directory: Path, names: tuple[str, ...]) -> tuple[Any, Path | None]:
+    for name in names:
+        path = directory / name
+        if not path.is_file():
+            continue
+        try:
+            return json.loads(path.read_text(encoding="utf-8")), path
+        except (OSError, ValueError):
+            try:
+                return path.read_text(encoding="utf-8"), path
+            except OSError:
+                continue
+    return None, None
+
+
+def _venue(symbol: str, board: str | None = None) -> str:
+    board_value = str(board or "").strip().upper()
+    if board_value in {"TPEX", "TPE", "OTC", "上櫃"}:
+        return "TPEx"
+    if board_value in {"TWSE", "TSE", "上市"}:
+        return "TWSE"
+
+    upper = str(symbol or "").upper()
+    if upper.endswith((".TWO", ".TPEX")) or upper.startswith(("TPEX:", "TPE:")):
+        return "TPEx"
+    return "TWSE"
+
+
+def _ticker(symbol: str) -> str:
+    value = str(symbol or "").strip().upper()
+    for prefix in ("TWSE:", "TPEX:", "TPE:"):
+        if value.startswith(prefix):
+            value = value[len(prefix) :]
+    return value.split(".")[0]
+
+
+def _number(value: Any) -> float | None:
+    if value is None or value == "":
+        return None
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def _turnover(row: Mapping[str, Any]) -> float | None:
+    value = _number(row.get("turnoverK", row.get("turn")))
+    if value is None:
+        return _number(row.get("turnover", row.get("dollar_vol")))
+
+    # turn/turnoverK are normally expressed in thousands of TWD. Some
+    # upstream sources already provide the full TWD amount.
+    return value if abs(value) >= 100_000 else value * 1_000
+
+
+def _instrument_type(row: Mapping[str, Any], code: str) -> str:
+    name = str(row.get("name") or "")
+    if re.match(r"^00\d{2,}", code) or "正2" in name or "反1" in name:
+        return "etf"
+    return str(row.get("instrument_type") or "common")
+
+
+def _candidate(
+    row: Mapping[str, Any],
+    *,
+    source: str,
+    roster: Mapping[str, Any] | None = None,
+) -> dict[str, Any]:
+    roster = roster or {}
+    symbol = str(row.get("symbol") or row.get("sym") or row.get("code") or "")
+    code = _ticker(symbol)
+    board = row.get("board") or row.get("market")
+    venue = _venue(symbol, str(board) if board is not None else None)
+    display = display_ticker(code, venue)
+
+    english = str(
+        row.get("en")
+        or row.get("english_name")
+        or roster.get(code, {}).get("english_name", "")
+        if isinstance(roster.get(code), Mapping)
+        else row.get("en") or row.get("english_name") or ""
+    ).strip()
+    if not english:
+        english = english_name(code, venue)
+
+    price = _number(row.get("price"))
+    previous = _number(row.get("previousClose", row.get("pc")))
+    change_percent = _number(row.get("changePercent"))
+    if change_percent is None:
+        change_percent = _number(row.get("chg"))
+    if change_percent is None and price is not None and previous not in (None, 0):
+        change_percent = (price / previous - 1.0) * 100.0
+
+    turnover = _turnover(row)
+    rvol = _number(row.get("rv", row.get("rvol")))
+    mcap = _number(row.get("mcap", row.get("mcap_twd")))
+
+    result: dict[str, Any] = {
+        "symbol": display,
+        "display_ticker": display,
+        "ticker": code,
+        "venue": venue,
+        "board": venue,
+        "instrument_type": _instrument_type(row, code),
+        "name": str(row.get("name") or "").strip(),
+        "english_name": english,
+        "company_en": english or None,
+        "company_zh": str(row.get("name") or "").strip() or None,
+        "price": price,
+        "last": price if price is not None else 0.0,
+        "change_percent": change_percent,
+        "chg_pct": change_percent if change_percent is not None else 0.0,
+        "turnover": turnover,
+        "dollar_vol": turnover if turnover is not None else 0.0,
+        "rvol": rvol,
+        "volume": _number(row.get("volume", row.get("vol"))),
+        "limit_up": bool(row.get("limitUp", row.get("lu", False))),
+        "limit_down": bool(row.get("limitDown", row.get("ld", False))),
+        "previous_close": previous,
+        "day_high": _number(row.get("dayHigh", row.get("hi"))),
+        "day_low": _number(row.get("dayLow", row.get("lo"))),
+        "mcap_twd": mcap,
+        "source": source,
+        "catalyst": row.get("catalyst"),
+        "catalyst_time": row.get("catalyst_time"),
+        "flags": list(row.get("flags") or []),
+        "raw": dict(row),
+    }
+    result["why"] = row.get("why")
+    return result
+
+
+def _load_json_or_text(path: Path) -> Any:
+    text = path.read_text(encoding="utf-8")
+    try:
+        return json.loads(text)
+    except ValueError:
+        return text
+
+
+def _rows(payload: Any, key: str = "candidates") -> list[dict[str, Any]]:
+    if isinstance(payload, list):
+        return [row for row in payload if isinstance(row, Mapping)]
+    if isinstance(payload, Mapping):
+        rows = payload.get(key, [])
+        if isinstance(rows, list):
+            return [row for row in rows if isinstance(row, Mapping)]
+    return []
+
+
+def _add_mover(
+    movers: dict[str, dict[str, Any]],
+    row: Mapping[str, Any],
+    *,
+    source: str,
+) -> None:
+    item = _candidate(row, source=source)
+    ticker = str(item.get("ticker") or "").strip()
+    if not ticker:
+        return
+    movers.setdefault(ticker, item)
+
+
+def _attach_mops_catalysts(
+    movers: dict[str, dict[str, Any]],
+    rows: list[Mapping[str, Any]],
+) -> None:
+    for row in rows:
+        item = _candidate(row, source="mops")
+        ticker = str(item.get("ticker") or "").strip()
+        target = movers.get(ticker)
+        if not ticker or target is None:
+            continue
+
+        for field in ("catalyst", "catalyst_time", "why"):
+            value = item.get(field)
+            if value is not None:
+                target[field] = value
+
+        target.setdefault("raw", {})["mops"] = dict(row)
+
+
+def build_candidates(
+    fixtures_dir: str | Path | None = None,
+    tv_dump_path: str | Path | None = None,
+    slot: str = "open",
+    asof: Any = None,
+) -> dict[str, Any]:
+    health: list[SourceHealth] = []
+    movers: dict[str, dict[str, Any]] = {}
+    mops_rows: list[Mapping[str, Any]] = []
+    primary_ok = False
+    directory = Path(fixtures_dir) if fixtures_dir else None
+
+    if directory:
+        cands_path = directory / "cands.json"
+        if cands_path.is_file():
+            try:
+                rows = _rows(_load_json_or_text(cands_path))
+                for row in rows:
+                    _add_mover(movers, row, source="cmoney")
+                primary_ok = bool(rows)
+                health.append(
+                    SourceHealth(
+                        "cmoney",
+                        "ok" if rows else "empty",
+                        len(rows),
+                    )
+                )
+            except (OSError, ParseError, ValueError) as exc:
+                health.append(SourceHealth("cmoney", "blocked", detail=str(exc)))
+        else:
+            health.append(SourceHealth("cmoney", "skipped", detail="fixture not found"))
+
+        mops_path = directory / "mops_items.json"
+        if mops_path.is_file():
+            try:
+                parsed = parse_mops_items(_load_json_or_text(mops_path))
+                mops_rows = (
+                    parsed if isinstance(parsed, list) else list(parsed.values())
+                )
+                mops_rows = [row for row in mops_rows if isinstance(row, Mapping)]
+                health.append(
+                    SourceHealth(
+                        "mops",
+                        "ok" if mops_rows else "empty",
+                        len(mops_rows),
+                    )
+                )
+            except (OSError, ParseError, ValueError) as exc:
+                health.append(SourceHealth("mops", "blocked", detail=str(exc)))
+        else:
+            health.append(SourceHealth("mops", "skipped", detail="fixture not found"))
+
+        yahoo_path = directory / "yahoo_rank.html"
+        if yahoo_path.is_file():
+            try:
+                rows = parse_yahoo_rank_html(yahoo_path.read_text(encoding="utf-8"))
+                for row in rows:
+                    _add_mover(movers, row, source="yahoo")
+                primary_ok = primary_ok or bool(rows)
+                health.append(
+                    SourceHealth(
+                        "yahoo",
+                        "ok" if rows else "empty",
+                        len(rows),
+                    )
+                )
+            except (OSError, ParseError, ValueError) as exc:
+                health.append(SourceHealth("yahoo", "blocked", detail=str(exc)))
+        else:
+            health.append(SourceHealth("yahoo", "skipped", detail="fixture not found"))
+
+        cmoney_path = directory / "cmoney_change_up.html"
+        if cmoney_path.is_file():
+            try:
+                rows = parse_cmoney_change_up_html(
+                    cmoney_path.read_text(encoding="utf-8")
+                )
+                for row in rows:
+                    _add_mover(movers, row, source="cmoney")
+                primary_ok = primary_ok or bool(rows)
+                health.append(
+                    SourceHealth(
+                        "cmoney_change_up",
+                        "ok" if rows else "empty",
+                        len(rows),
+                    )
+                )
+            except (OSError, ParseError, ValueError) as exc:
+                health.append(
+                    SourceHealth(
+                        "cmoney_change_up",
+                        "blocked",
+                        detail=str(exc),
+                    )
+                )
+
+        fx_payload, _ = _read_fixture(directory, ("fx.json",))
+        fx: float | None = None
+        if fx_payload is not None:
+            try:
+                parsed_fx = parse_fx_json(fx_payload)
+                if isinstance(parsed_fx, Mapping):
+                    rate = parsed_fx.get("rate", parsed_fx.get("TWD"))
+                    fx = _number(rate)
+                else:
+                    fx = _number(parsed_fx)
+                health.append(
+                    SourceHealth(
+                        "fx",
+                        "ok" if fx is not None else "empty",
+                        detail=str(fx) if fx is not None else None,
+                    )
+                )
+            except (OSError, ParseError, ValueError, TypeError) as exc:
+                health.append(SourceHealth("fx", "blocked", detail=str(exc)))
+        else:
+            health.append(SourceHealth("fx", "skipped", detail="fixture not found"))
+    else:
+        fx = None
+        health.append(SourceHealth("fx", "skipped", detail="fixtures not configured"))
+
+    dump_path = Path(tv_dump_path) if tv_dump_path else None
+    if dump_path is None and directory:
+        candidate = directory / "tv-dump.json"
+        if candidate.is_file():
+            dump_path = candidate
+    if dump_path and dump_path.is_file():
+        try:
+            rows = parse_tv_dump(_load_json_or_text(dump_path))
+            for row in rows:
+                _add_mover(movers, row, source="tradingview")
+            primary_ok = primary_ok or bool(rows)
+            health.append(
+                SourceHealth(
+                    "tradingview",
+                    "ok" if rows else "empty",
+                    len(rows),
+                )
+            )
+        except (OSError, ParseError, ValueError) as exc:
+            health.append(SourceHealth("tradingview", "blocked", detail=str(exc)))
+    else:
+        health.append(SourceHealth("tradingview", "skipped", detail="dump not found"))
+
+    # MOPS is an enrichment source only. It must never introduce a new mover.
+    _attach_mops_catalysts(movers, mops_rows)
+
+    if not primary_ok and not any(
+        item["source"] in {"yahoo", "cmoney", "tradingview"}
+        for item in movers.values()
+    ):
+        raise AdapterError("all primary Taiwan movers sources failed")
+
+    candidates = sorted(
+        movers.values(),
+        key=lambda item: abs(float(item.get("change_percent") or 0)),
+        reverse=True,
+    )
+    return {
+        "candidates": candidates,
+        "source_health": [item.to_dict() for item in health],
+        "fx": fx,
+        "meta": {
+            "market": "TW",
+            "slot": slot,
+            "asof": asof,
+            "count": len(candidates),
+        },
+    }
