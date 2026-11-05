@@ -1,0 +1,1104 @@
+symbol,stylists,n_stylists,origins,screen_close_resolved,chg_pct_resolved,today_close,today_change,today_volume,rvol_10d,velocity_14d,adr_pct_20d,m1,m2,rs_1m,rs_3m,rs_6m,rs_12m,eps_growth_yoy,revenue_growth_yoy,sma10,sma20,sma50,atr_14,market_cap,sector,perf_1m,perf_3m,flag_wicky_breakout,flag_atr_shrink,flag_ma_shrink_5d,data_date,source
+VRDN,hernandez|peoplewish|qullamaggie|stockbee,4,A_stockbee_4pct|B_stockbee_ep9m|C_qullamaggie_rs|D_qullamaggie_ep|G_peoplewish|H_hernandez_theme,28.55,,28.55,-1.7381,3437518,1.1193,48.5429,5.317,12.3857,5.2165,50.2632,24.2385,,,,,25.3833,22.1298,21.796,1.3241,3234494252.6381,Health Technology,50.2632,24.2385,False,False,True,2026-11-04,mcp+tv
+XNCR,hernandez|peoplewish|qullamaggie|stockbee,4,A_stockbee_4pct|C_qullamaggie_rs|G_peoplewish|H_hernandez_theme,34.05,14.3277,34.05,-2.7976,1433197,0.6265,45.9583,6.4408,,,32.1817,68.3976,169.2544,151.2912,,,30.5635,26.788,25.9245,1.9447,2531733222.3708,Health Technology,32.1817,68.3976,False,False,True,2026-11-04,mcp+tv
+LQDA,hernandez|peoplewish|qullamaggie|stockbee,4,A_stockbee_4pct|C_qullamaggie_rs|G_peoplewish|H_hernandez_theme,44.49,12.2749,44.49,-6.0996,2140427,0.6855,36.2277,8.304,,,59.1771,-50.5337,12.4347,87.8668,,,44.3696,38.0505,51.4321,4.0403,3982250528.1192,Health Technology,59.1771,-50.5337,,False,,2026-11-04,mcp+tv
+CVNA,jeff_sun|peoplewish|qullamaggie|stockbee,4,A_stockbee_4pct|B_stockbee_ep9m|E_qullamaggie_5d_gainers|G_peoplewish|jeff_sun_canslim,77.56,8.8103,72.08,-7.0655,15889618,1.1439,27.9446,5.0015,31.3463,,11.7953,3.8168,,,0.8182,0.4238,68.3155,62.563,65.8484,3.6712,79523057593.638,Retail Trade,11.7953,3.8168,,False,,2026-11-04,mcp+tv
+KYMR,hernandez|peoplewish|qullamaggie|stockbee,4,A_stockbee_4pct|C_qullamaggie_rs|G_peoplewish|H_hernandez_theme,128.12,7.2075,128.12,-5.967,1728928,1.6372,25.9941,5.0848,,,15.3922,20.1763,57.9527,128.148,,,125.6022,115.549,115.3844,6.3333,10937783630.7118,Health Technology,15.3922,20.1763,,False,,2026-11-04,mcp+tv
+COCO,hernandez|jeff_sun|peoplewish|stockbee,4,A_stockbee_4pct|G_peoplewish|H_hernandez_theme|jeff_sun_canslim,65.47,9.6834,63.63,-2.8104,1088824,0.6709,13.5252,5.583,,,15.0633,-0.5315,,,0.4524,0.3374,58.9983,58.4772,57.2991,3.2794,3630973354.2638,Consumer Non-Durables,15.0633,-0.5315,,False,,2026-11-04,mcp+tv
+MRNA,hernandez|peoplewish|qullamaggie|stockbee,4,A_stockbee_4pct|B_stockbee_ep9m|C_qullamaggie_rs|G_peoplewish|H_hernandez_theme,241.46,,241.46,-6.5485,11986994,0.7014,9.2516,9.7335,,,19.4814,340.7009,429.5757,937.2541,,,225.4015,221.1713,187.7825,19.9577,96399495078.8536,Health Technology,19.4814,340.7009,,False,,2026-11-04,mcp+tv
+BMI,peoplewish|qullamaggie|stockbee,3,A_stockbee_4pct|C_qullamaggie_rs|G_peoplewish,163.75,7.3207,159.55,-2.5649,759740,1.0026,29.059,5.2821,,,32.3446,19.3774,32.3232,-9.9929,,,153.7491,140.817,134.1128,7.5974,4557330682.4461,Producer Manufacturing,27.4157,16.9979,,False,,2026-11-04,mcp+tv
+NXT,peoplewish|qullamaggie|stockbee,3,A_stockbee_4pct|B_stockbee_ep9m|E_qullamaggie_5d_gainers|G_peoplewish,106.7,,99.58,-6.6729,4765923,1.2239,27.861,5.7662,29.9951,,18.2099,-1.2789,,,,,88.864,83.954,83.1772,6.1841,14994310948.8887,Electronic Technology,18.2099,-1.2789,,False,,2026-11-04,mcp+tv
+KD,peoplewish|qullamaggie|stockbee,3,A_stockbee_4pct|B_stockbee_ep9m|C_qullamaggie_rs|D_qullamaggie_ep|G_peoplewish,16.84,,16.18,-3.9192,6533601,1.3001,27.6725,5.527,15.2241,4.0048,38.4089,13.3053,,,,,14.3585,13.5685,12.8932,0.9496,3524299604.9489,Technology Services,38.4089,13.3053,False,False,False,2026-11-04,mcp+tv
+VSXY,peoplewish|qullamaggie|stockbee,3,A_stockbee_4pct|C_qullamaggie_rs|G_peoplewish,108.95,8.3756,106.31,-2.4231,1398881,0.9196,20.3468,5.0172,,,28.0409,16.4991,111.4713,202.5548,,,99.1795,92.2975,86.3926,4.8515,8479714651.3525,Retail Trade,20.3555,13.737,,False,,2026-11-04,mcp+tv
+RUN,jeff_sun|peoplewish|stockbee,3,B_stockbee_ep9m|G_peoplewish|TV_volume_breakout,9.87,,9.87,12.2867,36004682,3.0561,15.0524,6.0876,,,29.0196,0.8687,,,,,8.0329,7.6607,8.0938,0.53,2377159730.5529,Electronic Technology,29.0196,0.8687,,False,,2026-11-04,mcp+tv
+BRKR,peoplewish|qullamaggie|stockbee,3,A_stockbee_4pct|D_qullamaggie_ep|G_peoplewish,63.79,12.9027,58.06,-8.9826,3263537,1.1505,12.8228,5.3284,15.7345,3.2545,-10.2211,11.6109,,,,,,57.8802,58.9715,3.8713,8845981895.4792,Health Technology,-10.2211,11.6109,,,,2026-11-04,mcp+tv
+NTSK,peoplewish|qullamaggie|stockbee,3,A_stockbee_4pct|C_qullamaggie_rs|G_peoplewish,22.77,4.2582,21.67,-4.8309,6433122,0.9882,11.3447,6.8451,,,15.9369,68.9169,115.8294,-6.1418,,,23.838,22.2077,18.8393,1.5003,8854096148.0242,Technology Services,15.0823,53.579,,False,,2026-11-04,mcp+tv
+DUOL,peoplewish|qullamaggie|stockbee,3,A_stockbee_4pct|B_stockbee_ep9m|D_qullamaggie_ep|G_peoplewish,161.27,,157.02,-2.6353,2380625,1.2276,8.2858,5.1347,24.9961,7.577,6.9182,27.6793,,,,,139.4707,141.524,144.9528,9.9817,7346339874.6801,Technology Services,6.9182,27.6793,False,False,False,2026-11-04,mcp+tv
+DXC,peoplewish|qullamaggie|stockbee,3,A_stockbee_4pct|C_qullamaggie_rs|G_peoplewish,14.88,7.9826,15.17,1.9489,4426801,0.9227,7.9043,5.5218,,,25.7819,34.1749,29.7297,12.1326,,,15.0565,14.43,12.505,0.8328,2358490121.3992,Technology Services,29.1064,35.205,,False,,2026-11-04,mcp+tv
+OUST,peoplewish|qullamaggie|stockbee,3,A_stockbee_4pct|D_qullamaggie_ep|G_peoplewish,33.54,15.735,30.52,-9.0042,4951889,1.6767,7.0539,6.8913,14.7688,2.3625,-31.6614,-33.4206,,,,,,31.4935,35.3984,2.8846,2227873674.0799,Electronic Technology,-31.6614,-33.4206,,,,2026-11-04,mcp+tv
+SEZL,jeff_sun|peoplewish|stockbee,3,A_stockbee_4pct|G_peoplewish|TV_volume_breakout|jeff_sun_canslim,136.69,11.6475,155,13.3953,1968090,3.1931,3.2636,6.7854,,,38.0969,17.1049,,,0.4756,0.5165,130.688,129.8185,121.2775,8.7613,5236427324.3105,Technology Services,38.0969,17.1049,,False,,2026-11-04,mcp+tv
+ENPH,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|E_qullamaggie_5d_gainers|G_peoplewish,31.55,,28.97,-8.1775,11359005,1.051,2.3686,6.1025,26.2505,,-13.2894,-29.599,,,,,28.6736,30.2175,33.1627,2.2205,3833144752.2029,Producer Manufacturing,-13.2894,-29.599,,False,,2026-11-04,mcp+tv
+BB,jeff_sun|peoplewish|stockbee,3,A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish|jeff_sun_canslim,8.76,6.9597,8.37,-4.4521,26906075,2.1607,0.6897,6.3021,,,-9.2191,-6.8966,,,2.0,0.26,8.7045,8.706,8.452,0.5738,4913459751.8698,Technology Services,-9.2191,-6.8966,,False,,2026-11-04,mcp+tv
+AFRM,jeff_sun|peoplewish|stockbee,3,A_stockbee_4pct|G_peoplewish|jeff_sun_canslim,75.59,5.0299,69.66,-7.845,7313819,2.1432,-0.4347,5.0269,,,-8.7444,-10.6694,,,21.9524,0.3304,73.3445,74.1195,72.8662,3.7144,23615975222.2892,Finance,-8.7444,-10.6694,,False,,2026-11-04,mcp+tv
+RIOT,peoplewish|qullamaggie|stockbee,3,A_stockbee_4pct|B_stockbee_ep9m|D_qullamaggie_ep|G_peoplewish,15.37,,14.76,-3.9688,48829056,1.7073,-0.8387,8.3582,11.3766,3.846,-24.1521,-32.7256,,,,,13.6167,14.3372,18.3707,1.4221,5538821937.3064,Technology Services,-24.1521,-32.7256,,False,,2026-11-04,mcp+tv
+ASST,peoplewish|qullamaggie|stockbee,3,A_stockbee_4pct|C_qullamaggie_rs|G_peoplewish,22.92,10.939,20.59,-10.1658,10270142,1.4353,-10.6433,7.5181,,,-22.958,86.1901,40.7862,-9.7638,,,23.6088,25.9785,26.9457,2.1784,2621809760.4162,Finance,-31.7421,62.126,,False,,2026-11-04,mcp+tv
+AUGO,jeff_sun|peoplewish|stockbee,3,A_stockbee_4pct|G_peoplewish|jeff_sun_canslim,72.39,12.9153,71.27,-1.5472,1466588,1.6941,-15.3036,5.7086,,,-17.1279,1.9308,,,22.6364,0.7642,72.0773,80.407,83.0873,5.3106,5971658396.7976,Non-Energy Minerals,-17.1279,1.9308,,False,,2026-11-04,mcp+tv
+AXTI,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|F_qullamaggie_5d_losers|G_peoplewish,47.54,,36.72,-22.7598,20233719,1.724,-17.9071,10.3689,-26.1572,,-58.1681,-53.6012,,,,,53.6913,57.8195,65.128,6.8357,2407848379.0273,Electronic Technology,-58.1681,-53.6012,,False,,2026-11-04,mcp+tv
+GLXY,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|F_qullamaggie_5d_losers|G_peoplewish,13.97,,12.98,-7.0866,17538450,1.907,-23.4521,9.2157,-26.8203,,-43.5038,-36.5281,,,,,16.0824,17.1083,21.3275,1.7833,5042470480.8346,Finance,-43.5038,-36.5281,,False,,2026-11-04,mcp+tv
+SNDK,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|F_qullamaggie_5d_losers|G_peoplewish,1037.4,,806.43,-22.2643,30229935,3.0851,-25.6253,6.0191,-26.1516,,-52.5629,-38.4075,,,,,1179.9416,1327.861,1531.2915,99.0813,114746405169.8713,Electronic Technology,-52.5629,-38.4075,,False,,2026-11-04,mcp+tv
+LITE,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|F_qullamaggie_5d_losers|G_peoplewish,626.75,,509.7,-18.6757,9947056,1.3268,-27.9217,8.1001,-31.424,,-53.6556,-41.4138,,,,,763.9976,854.5778,911.0811,77.7532,46229788444.2663,Producer Manufacturing,-53.6556,-41.4138,,False,,2026-11-04,mcp+tv
+DDOG,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|F_qullamaggie_5d_losers|G_peoplewish,188.72,,174.6,-7.482,10133304,2.0901,-29.1192,6.057,-32.2151,,-37.1942,-25.642,,,,,236.2856,260.179,250.0854,17.1347,62694502838.1263,Technology Services,-37.1942,-25.642,,False,,2026-11-04,mcp+tv
+AAOI,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|F_qullamaggie_5d_losers|G_peoplewish,59.27,,46.89,-20.8875,29156276,2.3238,-29.2129,9.1574,-27.9129,,-62.7842,-67.0901,,,,,68.4496,79.6225,95.5616,8.0299,3981255881.6928,Electronic Technology,-62.7842,-67.0901,,False,,2026-11-04,mcp+tv
+MRVL,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|F_qullamaggie_5d_losers|G_peoplewish,159.8,,133.55,-16.4268,65988571,2.0816,-33.7589,6.4529,-36.4991,,-50.7659,-39.0308,,,,,196.6584,231.0022,238.5414,17.7495,117110000496.6104,Electronic Technology,-50.7659,-39.0308,,False,,2026-11-04,mcp+tv
+CIFR,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|F_qullamaggie_5d_losers|G_peoplewish,6.5,,5.55,-14.6154,81840399,1.5084,-35.259,10.3707,-26.7193,,-64.4003,-70.3684,,,,,7.6035,9.273,13.654,1.1385,2532826373.3077,Technology Services,-64.4003,-70.3684,,False,,2026-11-04,mcp+tv
+HUT,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|F_qullamaggie_5d_losers|G_peoplewish,48.94,,45.95,-6.1095,12226015,1.9974,-35.6814,9.9321,-29.5422,,-49.9728,-51.0545,,,,,60.1751,68.9357,82.4094,7.6632,5663772398.8169,Technology Services,-49.9728,-51.0545,,False,,2026-11-04,mcp+tv
+MOD,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|F_qullamaggie_5d_losers|G_peoplewish,98.56,,91.39,-7.2748,4687121,1.8276,-36.0042,6.7433,-31.3362,,-51.3883,-49.2032,,,,,125.4333,145.4975,162.3443,11.3653,4861666259.9111,Producer Manufacturing,-51.3883,-49.2032,,False,,2026-11-04,mcp+tv
+NRIX,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|F_qullamaggie_5d_losers|G_peoplewish,15.95,,14.84,-6.9592,7087475,1.7003,-36.0721,5.6679,-41.4894,,-35.6461,-41.2742,,,,,24.4316,24.5345,24.7308,1.8973,1621267150.1618,Health Technology,-35.6461,-41.2742,,False,,2026-11-04,mcp+tv
+INTC,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|F_qullamaggie_5d_losers|G_peoplewish,58.27,,52.25,-10.3312,268075979,1.6378,-38.9011,5.0156,-39.0035,,-55.3648,-48.9397,,,,,72.7924,88.2385,99.3856,6.4236,277708752181.6415,Electronic Technology,-55.3648,-48.9397,,False,,2026-11-04,mcp+tv
+IOVA,peoplewish|qullamaggie|stockbee,3,B_stockbee_ep9m|F_qullamaggie_5d_losers|G_peoplewish,8.7,,7.74,-11.0345,23375794,1.2426,-40.8967,7.7992,-41.2559,,-45.5313,17.8082,,,,,10.2433,12.911,11.3862,1.1445,3505998834.3931,Health Technology,-45.5313,17.8082,,False,,2026-11-04,mcp+tv
+ACHC,hernandez|jeff_sun|stockbee,3,A_stockbee_4pct|H_hernandez_theme|TV_volume_breakout,34.79,8.8791,34.79,7.876,5539108,2.5357,,,,,20.652,14.8943,,,,,30.338,30.441,29.1844,1.4508,3238958502.7941,Health Services,20.652,14.8943,,False,,2026-11-04,mcp+tv
+ADMA,hernandez|jeff_sun|stockbee,3,B_stockbee_ep9m|H_hernandez_theme|TV_volume_breakout,13.21,,13.21,26.0496,14997805,3.8713,,,,,29.5098,32.4975,,,,,11.095,10.8598,10.07,0.4777,2958837496.2462,Health Technology,29.5098,32.4975,,False,,2026-11-04,mcp+tv
+CLX,hernandez|jeff_sun|stockbee,3,A_stockbee_4pct|H_hernandez_theme|jeff_sun_canslim,99.16,5.7143,99.7,0.5446,2479187,0.7843,,,,,20.2074,-5.8812,,,1.1385,0.3331,91.0618,87.3815,87.8774,2.9538,12078396216.3635,Consumer Non-Durables,20.2074,-5.8812,,False,,2026-11-04,mcp+tv
+CROX,hernandez|qullamaggie|stockbee,3,A_stockbee_4pct|E_qullamaggie_5d_gainers|H_hernandez_theme,152.93,4.0557,152.93,-4.3231,1371300,0.786,,3.5362,33.545,,28.9895,13.9568,,,,,144.6105,127.868,122.3196,6.144,6992730273.8193,Consumer Non-Durables,28.9895,13.9568,,False,,2026-11-04,mcp+tv
+LIVN,hernandez|qullamaggie|stockbee,3,A_stockbee_4pct|D_qullamaggie_ep|H_hernandez_theme,91.14,17.8849,91.14,-3.2381,1242600,1.4134,,,12.234,5.8668,18.6719,20.8273,,,,,82.7767,79.637,78.852,3.5499,5021222602.1291,Health Technology,18.6719,20.8273,False,False,False,2026-11-04,mcp+tv
+PVLA,hernandez|qullamaggie|stockbee,3,A_stockbee_4pct|C_qullamaggie_rs|H_hernandez_theme,156.85,6.1139,156.85,-3.3461,269521,1.0316,,5.8963,,,17.271,-1.3522,24.6677,111.1921,,,147.7565,134.7025,141.9776,8.384,2259958654.4198,Health Technology,17.271,-1.3522,,False,,2026-11-04,mcp+tv
+VCEL,hernandez|jeff_sun|stockbee,3,A_stockbee_4pct|H_hernandez_theme|TV_volume_breakout,51.78,10.6839,51.78,13.8522,2682393,3.7031,,,,,25.1329,15.503,,,,,42.2482,41.3755,40.558,1.8153,2651478324.0923,Health Technology,25.1329,15.503,,False,,2026-11-04,mcp+tv
+RH,peoplewish|stockbee,2,A_stockbee_4pct|G_peoplewish,144.9,8.0295,137.43,-5.1553,770888,0.879,22.932,5.4502,,,16.2789,-28.4219,,,,,143.0945,129.4525,130.8242,7.9743,2601983914.1832,Retail Trade,16.2789,-28.4219,,False,,2026-11-04,mcp+tv
+AMC,peoplewish|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish,3.52,,3.08,-12.5,41157615,1.6738,16.5563,5.6564,,,8.4507,19.3798,,,,,3.1718,3.0335,2.8536,0.1812,2749222196.875,Consumer Services,8.4507,19.3798,,False,,2026-11-04,mcp+tv
+WHR,peoplewish|stockbee,2,A_stockbee_4pct|G_peoplewish,32.65,8.3638,31.54,-3.3997,4342232,0.6768,16.4408,5.5151,,,4.2989,-27.3272,,,,,29.9438,28.625,32.115,1.7975,2073335917.9253,Consumer Durables,4.2989,-27.3272,,False,,2026-11-04,mcp+tv
+SKYD,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,8.39,,8.15,-2.8605,16196761,0.7747,15.5647,6.7447,,,-15.4074,-8.1246,,,,,7.9978,7.9415,9.3836,0.5367,41093754905.1669,Consumer Services,-15.4074,-8.1246,,False,,2026-11-04,mcp+tv
+QXO,peoplewish|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish,12.66,,11.64,-8.0569,18926057,1.0502,13.2379,5.3037,,,-4.1975,-25.5278,,,,,11.4787,10.9425,11.8326,0.661,12076391866.6066,Distribution Services,-4.1975,-25.5278,,False,,2026-11-04,mcp+tv
+JBLU,peoplewish|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish,3.56,,3.49,-1.9663,26073284,0.6109,13.0159,8.674,,,-16.1058,-42.5514,,,,,3.0613,3.0848,3.8823,0.2789,1316957890.8174,Transportation,-16.1058,-42.5514,,False,,2026-11-04,mcp+tv
+EAT,peoplewish|stockbee,2,A_stockbee_4pct|G_peoplewish,220.44,6.2822,212.66,-3.5293,1146453,0.7013,7.5789,5.0504,,,9.5113,-7.0298,,,,,210.5545,201.257,207.294,10.832,8834470234.7055,Consumer Services,9.5113,-7.0298,,False,,2026-11-04,mcp+tv
+CLF,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,12.84,,11.27,-12.2274,23783073,1.0264,5.679,6.2871,,,-12.5,-8.8925,,,,,13.844,13.374,12.5314,0.861,6430492586.6215,Non-Energy Minerals,-12.5,-8.8925,,False,,2026-11-04,mcp+tv
+JOBY,peoplewish|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish,5.05,,5.3,4.9505,45026931,2.6204,4.9896,5.1779,,,-8.9347,-36.9048,,,,,4.9298,4.9095,5.7858,0.2663,5267534788.0792,Electronic Technology,-8.9347,-36.9048,,False,,2026-11-04,mcp+tv
+QS,peoplewish|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish,4.43,,4.11,-7.2235,18481426,1.1804,4.7281,6.1803,,,-12.0856,-27.768,,,,,4.1635,4.1453,4.7193,0.2627,2556904290.6704,Producer Manufacturing,-12.0856,-27.768,,False,,2026-11-04,mcp+tv
+VKTX,peoplewish|stockbee,2,A_stockbee_4pct|G_peoplewish,27.97,7.2058,25.79,-7.7941,4839316,1.1312,2.1922,5.6618,,,-12.5466,-23.7433,,,,,26.4525,26.355,30.103,1.7404,3288797103.71,Health Technology,-12.5466,-23.7433,,False,,2026-11-04,mcp+tv
+NVTS,peoplewish|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish,9.33,,7.86,-15.7556,21757853,1.5701,1.0834,6.8923,,,-37.2204,-38.8802,,,,,8.7816,9.1543,10.6645,0.7797,2118329230.5338,Electronic Technology,-37.2204,-38.8802,,False,,2026-11-04,mcp+tv
+PCVX,peoplewish|stockbee,2,A_stockbee_4pct|G_peoplewish,65.68,8.0086,61.92,-5.7247,1833806,0.8908,0.6282,5.2217,,,-15.5828,3.355,,,,,62.0458,64.0277,61.6354,3.5352,9745568021.7296,Health Technology,-15.5828,3.355,,False,,2026-11-04,mcp+tv
+WIX,peoplewish|stockbee,2,A_stockbee_4pct|G_peoplewish,80.52,7.7912,76.69,-4.7566,775993,1.1671,-0.7641,5.2835,,,2.8016,20.9049,,,,,77.856,77.4867,78.0234,4.2144,3209438802.6552,Technology Services,2.8016,20.9049,,False,,2026-11-04,mcp+tv
+PURR,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,9.69,,8.76,-9.5975,28247888,1.4357,-1.1224,7.5764,,,-31.7225,28.4457,,,,,10.1733,9.9165,11.3583,0.9913,2437656226.3901,Finance,-31.7225,28.4457,,False,,2026-11-04,mcp+tv
+ACHR,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,4.12,,3.87,-6.068,32275594,1.6593,-3.5129,5.7704,,,-18.3544,-27.7985,,,,,4.1722,4.2165,4.9386,0.2612,2979992037.4296,Electronic Technology,-18.3544,-27.7985,,False,,2026-11-04,mcp+tv
+RBLX,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,49.31,,47.65,-3.3665,11422663,0.9594,-3.5596,5.6204,,,7.4166,29.5189,,,,,48.5093,49.9315,46.7864,3.2145,34103741424.6481,Technology Services,7.4166,29.5189,,False,,2026-11-04,mcp+tv
+FIG,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,22.13,,18.44,-16.6742,30145441,2.717,-3.7408,5.2262,,,-16.9743,-23.3742,,,,,22.2827,22.491,23.0308,1.2349,9828696964.0054,Technology Services,-16.9743,-23.3742,,False,,2026-11-04,mcp+tv
+VG,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,12.0,,11.52,-4.0,14589651,0.7816,-4.0,5.4248,,,-13.7079,-13.1222,,,,,13.4762,13.317,13.7464,0.8082,28801069762.56,Industrial Services,-13.7079,-13.1222,,False,,2026-11-04,mcp+tv
+VRT,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,205.55,,176.73,-14.0209,19266222,2.1222,-4.2841,5.1157,,,-30.2,-37.9721,,,,,223.7942,220.716,240.4672,15.7281,68051724492.8598,Electronic Technology,-30.2,-37.9721,,False,,2026-11-04,mcp+tv
+RKLB,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,52.37,,45.99,-12.1825,36577378,2.3276,-5.2127,6.1674,,,-38.4831,-41.6371,,,,,54.7629,56.7495,63.249,4.0344,27523164621.2859,Electronic Technology,-38.4831,-41.6371,,False,,2026-11-04,mcp+tv
+MSTR,peoplewish|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish,142.54,,129.3,-9.2886,25838372,1.5283,-5.7836,5.9191,,,-22.0239,27.5903,,,,,,142.5665,144.5958,10.0074,54610415589.9741,Finance,-22.0239,27.5903,,,,2026-11-04,mcp+tv
+RXRX,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,3.88,,3.5,-9.7938,25338654,1.1901,-6.7308,9.5883,,,-27.2349,7.5566,,,,,3.9371,3.8785,3.7665,0.364,2181787600.3866,Health Technology,-27.2349,7.5566,,False,,2026-11-04,mcp+tv
+BMNR,peoplewish|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish,21.73,,19,-12.5633,50700600,1.7528,-6.9777,5.7651,,,-28.972,0.7423,,,,,21.0271,22.2085,24.253,1.4915,11461300966.9581,Finance,-28.972,0.7423,,False,,2026-11-04,mcp+tv
+FUN,peoplewish|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish,7.93,,,,,,-7.2515,7.7398,,,,,,,,,7.5831,8.4165,11.3004,0.6662,,,,,,False,,2026-11-04,mcp+tv
+WULF,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,11.7,,10.08,-13.8462,94148925,1.9624,-7.29,9.0917,,,-32.417,-45.5724,,,,,12.0644,12.351,14.432,1.2009,5029604303.0154,Technology Services,-32.417,-45.5724,,False,,2026-11-04,mcp+tv
+GDS,peoplewish|stockbee,2,A_stockbee_4pct|G_peoplewish,23.37,6.9076,,,,,-7.7014,5.2991,,,,,,,,,22.5927,24.5487,28.7795,1.4896,,,,,,False,,2026-11-04,mcp+tv
+ORCL,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,123.73,,115.16,-6.9264,56618191,1.0844,-7.9869,5.4625,,,-19.9889,-20.7542,,,,,128.7215,131.6495,140.5072,8.0347,348213456879.1846,Technology Services,-19.9889,-20.7542,,False,,2026-11-04,mcp+tv
+SNAP,peoplewish|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish,5.92,,5.09,-14.0203,81425628,1.8426,-8.0745,5.6082,,,-10.7018,-3.5985,,,,,5.7589,6.0915,5.7606,0.3398,8608196787.3834,Technology Services,-10.7018,-3.5985,,False,,2026-11-04,mcp+tv
+LUMN,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,4.47,,3.98,-10.962,25236837,1.8867,-8.2136,6.6973,,,-30.4196,-35.9098,,,,,4.7025,4.751,5.6601,0.3143,4105152636.7964,Communications,-30.4196,-35.9098,,False,,2026-11-04,mcp+tv
+DAVE,peoplewish|stockbee,2,A_stockbee_4pct|G_peoplewish,336.22,6.8315,275.34,-18.1072,1471518,4.1296,-8.8835,5.6089,,,-25.8044,-24.5665,,,,,326.9818,348.722,351.8045,21.7911,3512101136.4279,Finance,-25.8044,-24.5665,,False,,2026-11-04,mcp+tv
+HIMS,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,26.66,,24.06,-9.7524,17541028,1.9053,-9.258,6.7827,,,-20.0133,-20.3047,,,,,27.2218,28.3845,28.6586,1.9326,5613520709.0368,Health Services,-20.0133,-20.3047,,False,,2026-11-04,mcp+tv
+INIO,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,14.74,,13.33,-9.5658,10441365,1.1709,-10.6667,8.3478,,,-31.0398,-49.5076,,,,,16.6869,16.991,18.7498,1.6741,9997499844.4532,Producer Manufacturing,-31.0398,-49.5076,,False,,2026-11-04,mcp+tv
+IBRX,peoplewish|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish,8.93,,8.01,-10.3024,12543828,1.4167,-10.7,7.7107,,,-22.4213,8.2432,,,,,8.4496,8.962,8.7389,0.6451,8489289083.2206,Health Technology,-22.4213,8.2432,,False,,2026-11-04,mcp+tv
+RGTI,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,11.21,,9.85,-12.132,23516826,1.9393,-11.2431,5.8514,,,-35.5366,-41.2817,,,,,11.4352,12.0623,14.1784,0.8045,3287622078.1044,Electronic Technology,-35.5366,-41.2817,,False,,2026-11-04,mcp+tv
+SOUN,peoplewish|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish,4.32,,4.26,-1.3889,28650146,1.9819,-11.6564,5.2184,,,-28.6432,-40.8333,,,,,4.2629,4.5975,5.6178,0.2541,1916477748.6528,Technology Services,-28.6432,-40.8333,,False,,2026-11-04,mcp+tv
+CORZ,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,12.76,,11.38,-10.815,34117837,2.2715,-11.726,7.6705,,,-32.2619,-47.3879,,,,,13.584,14.0348,15.9179,1.1826,3656854085.5517,Technology Services,-32.2619,-47.3879,,False,,2026-11-04,mcp+tv
+UEC,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,7.19,,6.48,-9.8748,24907123,2.4471,-11.9951,5.954,,,-32.9886,-41.4634,,,,,7.6591,7.9785,9.5482,0.5536,3211388594.637,Non-Energy Minerals,-32.9886,-41.4634,,False,,2026-11-04,mcp+tv
+CRCL,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,76.12,,69.48,-8.7231,17488453,1.7208,-12.4756,5.8124,,,-17.0883,5.834,,,,,77.0067,81.5395,86.3812,5.3495,17725245049.5985,Technology Services,-17.0883,5.834,,False,,2026-11-04,mcp+tv
+FRVO,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,8.9,,7.79,-12.4719,9549200,1.3307,-13.2554,7.9489,,,-42.7206,-66.4802,,,,,8.6428,9.7848,13.4094,0.9583,2296205192.3315,Utilities,-42.7206,-66.4802,,True,,2026-11-04,mcp+tv
+RDW,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,7.72,,6.19,-19.8187,26076266,2.2577,-13.3558,6.2858,,,-41.327,-50.161,,,,,8.3098,8.645,9.984,0.6323,1547454242.9106,Electronic Technology,-41.327,-50.161,,False,,2026-11-04,mcp+tv
+IONQ,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,29.54,,26.43,-10.5281,35836018,2.0072,-14.0029,6.4296,,,-39.3251,-34.5549,,,,,30.3855,32.487,37.3944,2.3598,11349245448.3697,Electronic Technology,-39.3251,-34.5549,,False,,2026-11-04,mcp+tv
+HPE,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,50.09,,44.16,-11.8387,28004052,1.994,-14.5659,5.1266,,,-36.7063,-17.4271,,,,,54.858,59.5495,59.615,3.6526,58620842287.5177,Electronic Technology,-36.7063,-17.4271,,False,,2026-11-04,mcp+tv
+BE,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,200.4,,167.52,-16.4072,37183295,1.9533,-15.1926,7.3224,,,-43.2616,-30.2509,,,,,208.8475,228.055,247.972,19.9981,49528405064.1533,Electronic Technology,-43.2616,-30.2509,,False,,2026-11-04,mcp+tv
+SMCI,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,29.6,,27.08,-8.5135,62481987,1.502,-15.6455,6.1344,,,-38.2651,-9.5524,,,,,32.2971,34.7687,37.8423,2.4811,17790623073.1689,Electronic Technology,-38.2651,-9.5524,,False,,2026-11-04,mcp+tv
+UUUU,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,7.18,,6.59,-8.2173,13438497,1.5236,-16.2194,6.0236,,,-41.0555,-52.4874,,,,,7.6311,8.296,10.9002,0.5811,1745216095.046,Non-Energy Minerals,-41.0555,-52.4874,,False,,2026-11-04,mcp+tv
+BSP,peoplewish|stockbee,2,A_stockbee_4pct|G_peoplewish,46.58,6.4686,45.09,-3.1988,1882335,1.1084,-16.4784,8.9701,,,38.6105,-1.0099,,,,,45.7933,45.0475,40.6941,3.9594,29612369848.4556,Technology Services,38.6105,-1.0099,,False,,2026-11-04,mcp+tv
+SMR,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,5.13,,4.37,-14.8148,41866673,1.5142,-16.5854,6.7658,,,-45.3066,-54.8787,,,,,5.4616,5.854,7.6392,0.4673,1877890759.6667,Producer Manufacturing,-45.3066,-54.8787,,False,,2026-11-04,mcp+tv
+NVAX,peoplewish|stockbee,2,A_stockbee_4pct|G_peoplewish,10.65,10.0207,9.78,-8.169,8206308,1.5316,-16.9267,8.0626,,,-20.8097,26.1935,,,,,10.0456,10.953,10.512,0.8567,1613169127.8254,Health Technology,-20.8097,26.1935,,False,,2026-11-04,mcp+tv
+ONDS,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,5.27,,4.52,-14.2315,64534879,1.5326,-17.0079,6.705,,,-39.2473,-49.4407,,,,,6.0751,6.291,7.0139,0.4433,2632008073.6319,Electronic Technology,-39.2473,-49.4407,,False,,2026-11-04,mcp+tv
+GFS,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,40.34,,36.36,-9.8661,13682165,2.7462,-17.2683,5.2707,,,-25.5376,-28.9566,,,,,43.2158,45.8105,46.178,2.5348,19952587802.1418,Electronic Technology,-25.5376,-28.9566,,False,,2026-11-04,mcp+tv
+MARA,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,6.87,,5.875,-14.4833,42432535,1.1443,-17.527,7.1287,,,-47.4508,-46.175,,,,,6.9433,7.7395,10.097,0.6412,2269508446.5066,Technology Services,-47.4508,-46.175,,False,,2026-11-04,mcp+tv
+COIN,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,151.5,,136.82,-9.6898,12464747,1.3746,-17.5779,5.5911,,,-27.4203,-7.685,,,,,151.4138,165.7635,177.3726,10.5158,36225010480,Finance,-27.4203,-7.685,,False,,2026-11-04,mcp+tv
+APLD,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,16.61,,14.17,-14.6899,49689015,1.9781,-18.5385,7.9732,,,-43.9921,-52.6087,,,,,17.9343,19.724,23.4106,1.764,4284825584.0704,Technology Services,-43.9921,-52.6087,,False,,2026-11-04,mcp+tv
+QBTS,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,10.38,,9.05,-12.8131,25229605,2.0758,-19.0012,5.7723,,,-42.5397,-54.1075,,,,,10.8855,12.0203,14.8943,0.7935,3435621012.4855,Electronic Technology,-42.5397,-54.1075,,False,,2026-11-04,mcp+tv
+ASTS,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,35.62,,30.2,-15.2162,33380651,2.4235,-19.883,8.5251,,,-49.6918,-56.2762,,,,,38.9535,42.6495,53.3414,3.89,11752858015.8843,Communications,-49.6918,-56.2762,,False,,2026-11-04,mcp+tv
+VIAV,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,29.38,,26.3,-10.4833,14227397,2.1696,-20.2064,7.2861,,,-44.7014,-36.9305,,,,,30.6971,34.8643,37.1225,2.745,6467751548.6794,Technology Services,-44.7014,-36.9305,,False,,2026-11-04,mcp+tv
+DELL,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,372.36,,316.91,-14.8915,14132440,2.2721,-21.3418,5.5639,,,-43.5877,-28.7763,,,,,429.2453,479.5665,510.8284,32.3928,201495413535.1401,Electronic Technology,-43.5877,-28.7763,,False,,2026-11-04,mcp+tv
+VST,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,120.29,,112.89,-6.1518,15288142,2.0485,-21.9757,5.0774,,,-25.4704,-18.5586,,,,,136.3084,146.908,144.7458,8.1388,37889857211.8349,Utilities,-25.4704,-18.5586,,False,,2026-11-04,mcp+tv
+COHR,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,195.09,,169.76,-12.9838,17157527,1.9776,-22.1508,7.4438,,,-49.5077,-52.8471,,,,,213.5542,240.26,274.5596,20.056,33431034384.3158,Electronic Technology,-49.5077,-52.8471,,False,,2026-11-04,mcp+tv
+BTDR,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,6.53,,5.31,-18.683,16987234,1.6592,-22.2156,9.0719,,,-51.7711,-51.8367,,,,,6.9383,7.82,9.9956,0.7698,1443163773.928,Technology Services,-51.7711,-51.8367,,False,,2026-11-04,mcp+tv
+CRDO,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,136.5,,112.33,-17.707,16668647,1.8961,-23.5294,7.9037,,,-47.2629,-53.4171,,,,,151.6544,171.3812,183.3501,15.484,21112639123.4012,Technology Services,-47.2629,-53.4171,,False,,2026-11-04,mcp+tv
+AUR,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,4.08,,4.03,-1.2255,38772670,1.5597,-24.4444,6.2308,,,-30.6368,-41.847,,,,,4.4553,4.9445,5.5924,0.3237,8142404384.1005,Technology Services,-30.6368,-41.847,,False,,2026-11-04,mcp+tv
+NBIS,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,141.52,,120.37,-14.9449,47567109,2.2124,-24.8872,7.684,,,-49.2581,-39.0115,,,,,155.4916,174.776,205.3513,15.5678,32723215022.9301,Technology Services,-49.2581,-39.0115,,False,,2026-11-04,mcp+tv
+USAR,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,8.2,,7.42,-9.5122,22490292,1.6316,-26.0595,7.2403,,,-46.2514,-59.5861,,,,,,10.0033,13.4487,0.8666,2783068074.2951,Producer Manufacturing,-46.2514,-59.5861,,,,2026-11-04,mcp+tv
+OKLO,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,22.12,,19.2,-13.2007,19163446,2.2439,-26.2912,6.1222,,,-48.6219,-56.6494,,,,,24.7424,27.8835,34.3896,1.9579,3571539100.4702,Producer Manufacturing,-48.6219,-56.6494,,False,,2026-11-04,mcp+tv
+CLSK,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,6.8,,5.68,-16.4706,35167053,1.897,-27.2727,8.1516,,,-54.5236,-59.3414,,,,,7.7149,8.6365,11.2436,0.8298,1458721041.9647,Technology Services,-54.5236,-59.3414,,False,,2026-11-04,mcp+tv
+IREN,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,21.71,,18.03,-16.9507,127462789,2.3033,-28.562,8.4308,,,-56.0029,-54.3197,,,,,24.4385,28.0572,36.6763,2.6953,7295181591.0304,Technology Services,-56.0029,-54.3197,,False,,2026-11-04,mcp+tv
+BTU,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,17.02,,16.02,-5.8754,6142028,2.0093,-29.1424,5.1785,,,-36.7548,-30.8589,,,,,20.9873,22.865,25.3238,1.3161,1952838077.1821,Energy Minerals,-36.7548,-30.8589,,False,,2026-11-04,mcp+tv
+CVI,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,43.01,,39.84,-7.3704,6394099,2.8307,-30.2691,6.2447,,,-29.0851,29.4347,,,,,53.4627,58.1585,52.9476,3.9543,4005139007.6652,Energy Minerals,-29.0851,29.4347,,False,,2026-11-04,mcp+tv
+CRWV,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,48.42,,43.66,-9.8306,84566707,1.51,-30.5209,8.573,,,-50.7223,-51.0703,,,,,54.6393,63.0053,77.2557,5.7637,24080086415.9075,Technology Services,-50.7223,-51.0703,,False,,2026-11-04,mcp+tv
+FPS,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,22.44,,18.21,-18.8503,25007051,1.9681,-30.6766,8.0418,,,-54.2347,-53.4628,,,,,25.7989,30.1085,32.9638,2.8282,5543650303.0829,Producer Manufacturing,-54.2347,-53.4628,,False,,2026-11-04,mcp+tv
+CBRS,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,91.85,,81.71,-11.0397,16342896,1.4488,-35.3942,7.6348,,,-54.283,-62.4701,,,,,104.0129,123.2953,163.2285,10.9187,18290663283.5509,Technology Services,-54.283,-62.4701,,False,,2026-11-04,mcp+tv
+RDDT,peoplewish|stockbee,2,A_stockbee_4pct|G_peoplewish,101.89,5.9698,93.81,-7.9301,8289858,0.793,-36.063,5.5731,,,-38.0792,-38.8063,,,,,111.0031,138.7115,146.781,9.2072,18114122459.8693,Technology Services,-38.0792,-38.8063,,False,,2026-11-04,mcp+tv
+INTR,peoplewish|stockbee,2,B_stockbee_ep9m|G_peoplewish,3.96,,3.78,-4.5455,11838715,0.614,-41.4201,5.7028,,,-44.5341,-34.9398,,,,,4.2464,5.9525,5.7424,0.4372,1663219866.0,Finance,-44.5341,-34.9398,,False,,2026-11-04,mcp+tv
+ADT,qullamaggie|stockbee,2,B_stockbee_ep9m|E_qullamaggie_5d_gainers,9.9,,9.9,0,23681490,0.6615,,2.356,33.6032,,58.6538,29.2428,,,,,9.0998,7.5485,7.1216,0.2884,6690286687.0,Commercial Services,58.6538,29.2428,,False,,2026-11-04,mcp+tv
+AG,jeff_sun|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|jeff_sun_canslim,15.39,9.1489,14.89,-3.2489,18095754,1.7392,,,,,-15.5417,-19.9462,,,1.0,0.5725,14.8715,15.627,17.8796,0.7987,7339375958.1887,Non-Energy Minerals,-15.5417,-19.9462,,False,,2026-11-04,mcp+tv
+ALC,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,76.55,6.826,76.55,-0.9831,2633109,1.366,,,,,19.3111,8.8285,,,,,72.5122,68.427,67.6956,1.7045,38252035195.9719,Health Technology,19.3111,8.8285,,False,,2026-11-04,mcp+tv
+ALGT,jeff_sun|stockbee,2,A_stockbee_4pct|TV_volume_breakout,87.59,9.495,87.59,7.4328,1246031,2.4128,,,,,13.0631,-8.9785,,,,,74.5773,71.9348,75.282,4.4037,2394513942.0253,Transportation,13.0631,-8.9785,,False,,2026-11-04,mcp+tv
+ANET,jeff_sun|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|jeff_sun_canslim,178.48,5.0438,159.16,-10.8247,14829679,1.8356,,,,,-23.4808,-19.6162,,,0.3521,0.3769,175.3378,185.4785,194.1154,9.4724,200736504023.1392,Electronic Technology,-23.4808,-19.6162,,False,,2026-11-04,mcp+tv
+APO,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,122.76,8.111,117.27,-4.4721,6043254,1.3849,,,,,1.4798,-8.5329,,,1.18,0.6368,117.0065,114.963,121.3926,4.5179,69253003780.8123,Finance,1.4798,-8.5329,,False,,2026-11-04,mcp+tv
+APP,jeff_sun|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|TV_volume_breakout|jeff_sun_canslim,271.75,10.688,356.1,31.0396,22189721,4.4792,,,,,25.9506,5.4986,,,0.5579,0.5282,250.9996,262.749,290.8236,14.1752,119169218665.285,Technology Services,25.9506,5.4986,,False,,2026-11-04,mcp+tv
+ARDT,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,15.9,10.9308,15.9,22.4018,2470923,5.5633,,,,,49.5767,37.5433,,,,,12.1373,11.9445,11.2218,0.5071,2242629988.7067,Health Services,49.5767,37.5433,,False,,2026-11-04,mcp+tv
+ARHS,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,13.15,9.0381,12.94,-1.597,4352843,2.0933,,4.5826,,,32.5605,35.8471,73.2543,33.3671,,,12.3231,11.037,9.7157,0.5795,1834267349.2989,Consumer Durables,25.2662,32.7179,,False,,2026-11-04,mcp+tv
+ARQT,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,34.05,6.4062,27,-20.7048,7602174,4.0163,,4.8524,,,42.3495,28.8309,40.8771,37.5202,,,32.1616,30.199,27.1133,1.3988,3393682930.3084,Health Technology,6.4249,1.3133,,False,,2026-11-04,mcp+tv
+ARRY,qullamaggie|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|C_qullamaggie_rs,5.33,,5.3,-0.56,17725779,,,6.8481,,,31.2808,1.5238,-34.4403,-36.6231,,,4.0189,3.6145,3.9968,0.3536,,,,,False,False,False,2026-11-04,mcp+tv
+AS,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,32.05,5.1164,31.32,-2.2777,6285822,1.1903,,,,,13.3961,-14.7523,,,5.0,0.3206,29.9353,29.306,28.5384,0.9757,18222665279.4197,Consumer Durables,13.3961,-14.7523,,False,,2026-11-04,mcp+tv
+ASAN,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,11.64,4.3946,11.17,-4.0378,5521057,1.2342,,5.4075,,,25.296,34.1014,70.4246,-17.0349,,,11.4393,10.861,9.9094,0.617,2557596318.3213,Technology Services,20.8874,24.1111,,False,,2026-11-04,mcp+tv
+ASTH,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,39.67,8.0044,39.01,-1.6637,529029,1.8664,,,,,5.1058,12.9415,,,1.1053,0.4852,37.3355,37.3905,37.051,1.7048,1935066239.758,Health Services,5.1058,12.9415,,False,,2026-11-04,mcp+tv
+ATAT,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,35.06,4.9072,,,,,,,,,,,,,0.3956,0.4909,33.1189,32.8315,32.9888,1.1645,,,,,,False,,2026-11-04,mcp+tv
+ATLC,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,99.75,7.8495,96.45,-3.3083,151913,1.7339,,,,,2.8252,-13.2644,,,0.6738,0.8278,93.7358,92.3475,92.2502,4.1124,1463150186.8556,Finance,2.8252,-13.2644,,False,,2026-11-04,mcp+tv
+AYA,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,25.64,11.333,24.545,-4.2707,1041814,1.52,,,,,-9.761,-7.2724,,,3.8,1.8611,24.1711,25.2645,26.874,1.4611,3535368138.9943,Non-Energy Minerals,-9.761,-7.2724,,False,,2026-11-04,mcp+tv
+B,jeff_sun|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|jeff_sun_canslim,40.13,8.3131,40.34,0.5233,12786157,1.5998,,,,,0.2236,-6.642,,,0.5532,0.4377,38.4498,39.455,41.5932,1.455,66394976311.0901,Non-Energy Minerals,0.2236,-6.642,,False,,2026-11-04,mcp+tv
+BAM,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,54.11,6.2022,52.46,-3.0493,4107341,1.5845,,,,,16.5778,-1.9256,,,0.4737,0.6083,49.9545,47.2215,47.1426,1.5264,85941653991.8109,Finance,16.5778,-1.9256,,False,,2026-11-04,mcp+tv
+BDX,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,213.55,5.5609,213.55,2.0842,3990481,1.9423,,,,,16.4712,21.8475,,,,,199.6865,194.2065,187.2668,4.2828,58168204018.7753,Health Technology,16.4712,21.8475,,False,,2026-11-04,mcp+tv
+BFC,jeff_sun|stockbee,2,K_stockbee_anticipation|jeff_sun_canslim,149.6,1.1563,147.45,-1.4372,132554,1.2809,,,,,-2.9423,-4.1724,,,0.2924,0.57,149.1295,147.515,150.1678,4.233,1634206724.0836,Finance,-2.9423,-4.1724,,False,,2026-11-04,mcp+tv
+BLBD,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,60.99,5.4278,59.19,-2.9513,497913,0.9731,,,,,3.4067,-11.5247,,,3.6638,0.2994,57.8456,57.1198,58.5575,2.195,1855432713.9287,Consumer Durables,3.4067,-11.5247,,False,,2026-11-04,mcp+tv
+BOOT,qullamaggie|stockbee,2,A_stockbee_4pct|E_qullamaggie_5d_gainers,145.56,8.9603,138.82,-4.6304,1018456,0.9148,,4.6223,28.4731,,12.4777,-14.7559,,,,,130.3809,121.92,129.7406,6.5952,4151340106.4373,Retail Trade,12.4777,-14.7559,,False,,2026-11-04,mcp+tv
+BRBR,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,10.22,8.4926,9.81,-4.0117,3505882,1.086,,5.2298,,,32.8999,-15.6069,-7.9279,-66.3705,,,9.4896,9.181,9.0864,0.5143,1140689154.4785,Consumer Non-Durables,26.0925,-19.7874,,False,,2026-11-04,mcp+tv
+BX,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,125.57,6.2442,119.82,-4.5791,10495382,1.7227,,,,,6.214,-11.3101,,,0.5714,0.3589,119.9576,114.665,121.313,4.222,148984817378.9539,Finance,6.214,-11.3101,,False,,2026-11-04,mcp+tv
+CAG,hernandez|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|H_hernandez_theme,15.51,,15.51,1.5717,12388609,1.1344,,,,,17.2336,4.8682,,,,,14.5878,14.262,14.5902,0.5146,7404653045.5305,Consumer Non-Durables,17.2336,4.8682,,False,,2026-11-04,mcp+tv
+CAPR,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,8.92,8.2524,,,,,,8.2882,,,15.0968,113.3971,-74.0547,46.9522,,,7.2087,6.872,8.1166,0.7159,,,,,,False,,2026-11-04,mcp+tv
+CCEP,hernandez|stockbee,2,K_stockbee_anticipation|H_hernandez_theme,117.29,,117.29,1.2517,2606257,1.3873,,,,,15.2161,8.765,,,,,113.04,110.491,106.351,2.7118,51479154941.3617,Consumer Non-Durables,15.2161,8.765,,False,,2026-11-04,mcp+tv
+CNC,hernandez|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|H_hernandez_theme,74.17,,74.17,-2.4207,7705637,1.1142,,,,,15.4577,15.764,,,,,69.3871,68.879,66.394,3.1665,36719194084.9764,Health Services,15.4577,15.764,,False,,2026-11-04,mcp+tv
+COAG,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,45.57,4.6172,45.57,1.0645,456496,0.9177,,,,,47.9065,-13.2165,,,,,41.067,35.5102,37.5813,2.7688,2128671143.8669,Health Technology,47.9065,-13.2165,,False,,2026-11-04,mcp+tv
+COMP,jeff_sun|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|jeff_sun_canslim,10.04,7.7253,9.22,-8.1673,19598086,1.4249,,,,,-1.4957,-27.5727,,,0.7143,1.0903,9.4962,9.389,9.7918,0.5197,7077683644.5319,Finance,-1.4957,-27.5727,,False,,2026-11-04,mcp+tv
+CON,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,42.15,8.4932,42.15,-3.2369,1898530,1.4048,,,,,15.3846,22.9939,,,,,40.9413,39.287,36.7032,1.1566,5374872519.0255,Health Services,15.3846,22.9939,,False,,2026-11-04,mcp+tv
+CPB,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,23.43,5.9199,23.43,0.7309,5787697,0.9542,,,,,21.9677,3.8564,,,,,21.7015,20.393,20.7999,0.701,6987638625.1277,Consumer Non-Durables,21.9677,3.8564,,False,,2026-11-04,mcp+tv
+CPRI,qullamaggie|stockbee,2,A_stockbee_4pct|E_qullamaggie_5d_gainers,21.23,5.8325,21.13,-0.471,3984977,0.9282,,4.4738,38.8489,,48.0729,40.8667,,,,,18.4236,16.4825,15.0402,0.9343,2183779133.1319,Retail Trade,48.0729,40.8667,,False,,2026-11-04,mcp+tv
+CRCT,jeff_sun|stockbee,2,A_stockbee_4pct|TV_volume_breakout,9.25,48.7437,9.25,4.1667,3658155,2.6403,,,,,42.0891,53.3997,,,,,6.6067,6.459,6.1269,0.4372,1937360889.5833,Distribution Services,42.0891,53.3997,False,False,False,2026-11-04,mcp+tv
+DASH,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,198.59,8.3297,179.92,-9.4013,18788076,2.9322,,,,,-6.3794,-15.232,,,0.8772,0.3395,182.9633,185.759,195.5606,9.6213,78445940009.0236,Transportation,-6.3794,-15.232,,False,,2026-11-04,mcp+tv
+DNUT,jeff_sun|stockbee,2,A_stockbee_4pct|TV_volume_breakout,4.6,7.6453,,,,,,,,,,,,,,,3.2363,3.0653,3.1055,0.1362,,,,,,False,,2026-11-04,mcp+tv
+DOX,qullamaggie|stockbee,2,B_stockbee_ep9m|F_qullamaggie_5d_losers,43.66,,43.83,0.3894,5449446,2.9124,,,-29.8184,,-25.0513,-26.0752,,,,,59.1844,60.3748,60.2731,2.9348,4714836875.7897,Technology Services,-25.0513,-26.0752,,False,,2026-11-04,mcp+tv
+DT,qullamaggie|stockbee,2,B_stockbee_ep9m|F_qullamaggie_5d_losers,46.78,,43.7,-6.584,8974515,0.8356,,,-25.5214,,-28.1723,-12.8788,,,,,55.5433,60.9245,57.5944,2.7626,12539457818.307,Technology Services,-28.1723,-12.8788,,False,,2026-11-04,mcp+tv
+ENOV,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,24.42,16.898,28.62,17.199,5591814,2.9781,,5.2984,,,34.1758,-7.1836,-1.7304,-22.1797,,,21.7516,20.3585,19.788,1.3158,1650500832.1622,Health Technology,50.5523,11.2753,False,False,False,2026-11-04,mcp+tv
+EQX,jeff_sun|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|jeff_sun_canslim,11.28,12.8,11.28,0,18975664,1.2332,,,,,0,-2.1683,,,4.8,1.6933,10.314,10.65,11.5318,0.5554,13168947364.4287,Non-Energy Minerals,0,-2.1683,,False,,2026-11-04,mcp+tv
+ETSY,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,96.24,7.0999,91.53,-4.894,4453664,1.159,,4.5792,,,34.8088,16.9949,48.1299,57.5639,,,,87.1945,79.4586,4.3565,7890423948.9342,Retail Trade,29.1337,9.1853,,,,2026-11-04,mcp+tv
+EW,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,100.82,4.3912,100.82,1.4592,9233784,1.7705,,,,,15.1702,12.7236,,,,,,90.467,88.6768,2.9829,58112652067.499,Health Technology,15.1702,12.7236,,,,2026-11-04,mcp+tv
+FISV,qullamaggie|stockbee,2,B_stockbee_ep9m|E_qullamaggie_5d_gainers,62.05,,62.74,1.112,11496173,1.2917,,3.1005,29.649,,35.5661,16.7039,,,,,,50.0605,49.1356,2.0709,33363043830.7984,Commercial Services,35.5661,16.7039,,,,2026-11-04,mcp+tv
+FIZZ,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,37.16,4.2936,37.16,-1.3015,407629,1.4054,,,,,24.5308,16.6353,,,,,,34.96,32.5658,1.1434,3478744801.6552,Consumer Non-Durables,24.5308,16.6353,,,,2026-11-04,mcp+tv
+FNV,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,242.14,7.1463,250.69,3.531,1113822,1.9576,,,,,3.7238,3.1434,,,0.4375,0.5726,,237.574,249.0896,8.4101,48351535556.5151,Non-Energy Minerals,3.7238,3.1434,,,,2026-11-04,mcp+tv
+FSLR,qullamaggie|stockbee,2,A_stockbee_4pct|D_qullamaggie_ep,194.51,4.6315,195.76,0.6426,6576445,2.0749,,,10.8123,3.6858,10.2873,-24.4491,,,,,,178.4385,187.173,10.1237,21040508892.9161,Electronic Technology,10.2873,-24.4491,,,,2026-11-04,mcp+tv
+FSM,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,9.59,8.4842,9.48,-1.147,5540484,1.0219,,,,,-15.3571,-7.3314,,,1.0833,0.3819,,9.8735,10.977,0.497,2805675807.0157,Non-Energy Minerals,-15.3571,-7.3314,,,,2026-11-04,mcp+tv
+GEHC,hernandez|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|H_hernandez_theme,83.75,,83.75,-2.4007,6225565,1.1952,,,,,26.8171,19.2425,,,,,78.3409,72.2335,68.9143,2.4943,37866543683.8364,Health Technology,26.8171,19.2425,,False,,2026-11-04,mcp+tv
+GILD,hernandez|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|H_hernandez_theme,167.57,,167.57,-3.9603,11352979,1.55,,,,,15.4779,26.8509,,,,,166.9227,158.282,152.2855,4.841,207843537974.6131,Health Technology,15.4779,26.8509,,False,,2026-11-04,mcp+tv
+GLBE,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,44.93,8.0568,43.33,-3.5611,1882375,1.2555,,,,,8.2438,4.4096,,,3.6667,0.3915,,41.1955,39.7376,1.8615,7278027143.0394,Retail Trade,8.2438,4.4096,,,,2026-11-04,mcp+tv
+GLOB,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,48.04,4.9596,49.24,2.4979,2537707,2.144,,4.9242,,,35.0956,28.9664,18.0634,-20.9478,,,,42.693,39.3256,2.2231,2126161278.7702,Technology Services,37.6573,34.2055,,,,2026-11-04,mcp+tv
+GPK,qullamaggie|stockbee,2,B_stockbee_ep9m|E_qullamaggie_5d_gainers,11.75,,11.54,-1.7872,12673654,1.1743,,4.1652,37.5878,,33.5648,-2.616,,,,,,9.073,9.4312,0.5109,3416878910.3523,Process Industries,33.5648,-2.616,,,,2026-11-04,mcp+tv
+HAE,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,124.11,5.9361,124.11,-2.5977,1302139,1.9965,,,,,18.2901,45.0731,,,,,,120.037,111.172,4.0631,5646638948.5517,Health Technology,18.2901,45.0731,,,,2026-11-04,mcp+tv
+HCA,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,507.48,10.3357,507.48,-0.6305,1656955,0.9728,,,,,17.036,25.5207,,,,,,468.1535,442.1004,17.4331,106008769363.0268,Health Services,17.036,25.5207,,,,2026-11-04,mcp+tv
+HELE,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,37.04,25.3893,37.77,1.97,1359309,,,6.0212,,,46.2875,28.5219,44.744,93.2186,,,,,,,,,,,,,,2026-11-04,mcp+tv
+HGV,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,43.76,4.7893,43.6,-0.3656,1730100,1.0559,,,,,26.8917,-5.2586,,,12.5,0.5085,,37.1045,37.5384,1.6245,3305870612.7239,Finance,26.8917,-5.2586,,,,2026-11-04,mcp+tv
+HL,jeff_sun|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|jeff_sun_canslim,14.95,13.1718,14.45,-3.3445,31261198,0.9908,,,,,-15.4971,-14.2942,,,1.0,0.5245,14.09,14.9475,17.305,0.8262,9707053726.9933,Non-Energy Minerals,-15.4971,-14.2942,,False,,2026-11-04,mcp+tv
+HSAI,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,13.08,8.3679,,,,,,,,,,,,,0.254,0.285,,,,,,,,,,,,2026-11-04,mcp+tv
+IAG,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,17.47,10.2208,17.5,0.1717,8962747,1.6904,,,,,-5.5586,1.4493,,,1.8571,0.4751,,17.2145,18.6836,0.9256,9992499813.4191,Non-Energy Minerals,-5.5586,1.4493,,,,2026-11-04,mcp+tv
+INDB,jeff_sun|stockbee,2,K_stockbee_anticipation|jeff_sun_canslim,86.42,3.065,84.4,-2.3374,377108,0.9817,,,,,5.3551,0.7882,,,0.4167,0.415,,81.4215,81.1711,2.0208,3955926023.9296,Finance,5.3551,0.7882,,,,2026-11-04,mcp+tv
+IRTC,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,130.19,6.0378,130.19,-2.8433,796211,1.3234,,,,,18.8624,-1.0489,,,,,,118.0315,115.4545,5.1296,4291453629.6941,Health Technology,18.8624,-1.0489,,,,2026-11-04,mcp+tv
+IRWD,jeff_sun|stockbee,2,A_stockbee_4pct|TV_volume_breakout,4.03,7.7143,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ISRG,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,468.52,9.3817,468.52,-2.8168,4696884,1.6685,,,,,15.6269,25.0888,,,,,,439.73,408.2152,15.7822,162409511788.6089,Health Technology,15.6269,25.0888,,,,2026-11-04,mcp+tv
+JD,jeff_sun|stockbee,2,B_stockbee_ep9m|TV_volume_breakout,28.64,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+KARO,jeff_sun|stockbee,2,K_stockbee_anticipation|jeff_sun_canslim,65.07,1.6084,63.16,-2.9353,41181,0.666,,,,,2.7159,-0.7698,,,0.2909,0.3378,,63.292,63.7137,2.3924,1951220882.3562,Technology Services,2.7159,-0.7698,,,,2026-11-04,mcp+tv
+KDP,hernandez|stockbee,2,B_stockbee_ep9m|H_hernandez_theme,36.89,,36.89,0.2718,23222674,1.0679,,,,,19.0768,23.5432,,,,,,34.684,32.7744,1.0566,50200874226.3664,Consumer Non-Durables,19.0768,23.5432,,,,2026-11-04,mcp+tv
+KHC,hernandez|stockbee,2,B_stockbee_ep9m|H_hernandez_theme,25.32,,25.32,-0.4717,18928312,1.3946,,,,,15.5637,1.7072,,,,,,23.915,24.019,0.7014,30025057485.3585,Consumer Non-Durables,15.5637,1.7072,,,,2026-11-04,mcp+tv
+KMB,hernandez|stockbee,2,B_stockbee_ep9m|H_hernandez_theme,110.46,,110.46,1.5351,8603149,1.12,,,,,15.1945,1.8205,,,,,,106.1797,102.6164,3.1729,67782663104.2237,Consumer Non-Durables,15.1945,1.8205,,,,2026-11-04,mcp+tv
+KSS,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,25.36,7.3666,23.9,-5.7571,4020902,0.8981,,4.9303,,,29.19,37.4526,75.9889,54.6341,,,,22.954,20.0342,1.2207,2709697027.7721,Retail Trade,20.6461,28.7022,,,,2026-11-04,mcp+tv
+KTB,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,79.18,6.5523,79.18,-3.3919,1714439,2.1565,,,,,23.6029,0.9949,,,,,,74.1595,70.4666,3.3593,4327473715.4558,Consumer Non-Durables,23.6029,0.9949,,,,2026-11-04,mcp+tv
+LADR,jeff_sun|stockbee,2,K_stockbee_anticipation|jeff_sun_canslim,9.36,2.7442,9.15,-2.2436,1982486,0.836,,,,,6.5192,-4.2887,,,2.5333,0.8621,,9.084,9.2344,0.2487,1152826727.6603,Finance,6.5192,-4.2887,,,,2026-11-04,mcp+tv
+LULU,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,111.77,4.7779,111.77,-0.2588,3311335,0.8802,,,,,19.7386,-10.2537,,,,,,101.9735,102.2474,4.2517,12945878757.5187,Consumer Non-Durables,19.7386,-10.2537,,,,2026-11-04,mcp+tv
+MD,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,31.84,7.1895,31.84,-2.9268,905863,0.9909,,,,,21.2029,20.6518,,,,,,28.8215,27.3112,1.1771,2487490953.7512,Health Services,21.2029,20.6518,,,,2026-11-04,mcp+tv
+MDT,hernandez|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|H_hernandez_theme,104.84,,104.84,-0.1143,11646587,1.3929,,,,,19.177,22.6773,,,,,98.432,94.9165,92.2168,2.5829,134108173439.7138,Health Technology,19.177,22.6773,,False,,2026-11-04,mcp+tv
+META,jeff_sun|stockbee,2,B_stockbee_ep9m|jeff_sun_canslim,630.0,1.4444,605.08,-3.9556,28529601,0.967,,,,,-18.9694,3.3194,,,2.5741,0.2607,,668.0993,674.1369,24.4231,1546730336935.1113,Technology Services,-18.9694,3.3194,,,,2026-11-04,mcp+tv
+MICC,hernandez|stockbee,2,K_stockbee_anticipation|H_hernandez_theme,20.11,,20.11,-0.149,1384946,1.4456,,,,,16.6473,5.8421,,,,,,19.0005,18.9422,0.5206,12312544043.1477,Consumer Non-Durables,16.6473,5.8421,,,,2026-11-04,mcp+tv
+MS,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,193.97,4.2345,182.44,-5.9442,10865528,1.6791,,,,,-4.4867,-14.644,,,0.6279,0.2713,,185.163,195.8486,6.0123,286534114689.418,Finance,-4.4867,-14.644,,,,2026-11-04,mcp+tv
+NBBK,jeff_sun|stockbee,2,K_stockbee_anticipation|jeff_sun_canslim,22.72,1.9291,,,,,,,,,,,,,0.359,0.486,,,,,,,,,,,,2026-11-04,mcp+tv
+NKE,hernandez|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|H_hernandez_theme,39.56,,39.56,-2.2969,28261154,1.2086,,,,,17.3887,-5.8544,,,,,,37.528,36.9058,1.214,58758822305.7693,Consumer Non-Durables,17.3887,-5.8544,,,,2026-11-04,mcp+tv
+NOW,qullamaggie|stockbee,2,B_stockbee_ep9m|F_qullamaggie_5d_losers,108.81,,102.36,-5.9278,24967412,0.9738,,,-27.5228,,-26.0725,-15.8673,,,,,,135.9255,137.0242,7.6369,106249677616.2095,Technology Services,-26.0725,-15.8673,,,,2026-11-04,mcp+tv
+NTST,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,18.64,4.0179,18.84,1.073,2409494,1.2356,,,,,7.4729,-10.4137,,,7.0,0.3717,,17.4635,18.2992,0.4414,2373459016.5901,Finance,7.4729,-10.4137,,,,2026-11-04,mcp+tv
+OGC,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,25.78,9.191,27.45,6.4779,1013984,1.4918,,,,,2.6168,-0.2906,,,1.0408,0.497,,25.918,27.542,1.2354,6106184298.4795,Non-Energy Minerals,2.6168,-0.2906,,,,2026-11-04,mcp+tv
+ONC,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,377.78,6.4169,,,,,,,,,,,,,1.2857,0.2963,,,,,,,,,,,,2026-11-04,mcp+tv
+ONON,hernandez|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|H_hernandez_theme,37.54,,37.54,-2.7965,12570352,1.1647,,,,,17.3859,-1.2105,,,,,34.8915,34.5735,31.179,1.3646,12364644061.1709,Consumer Non-Durables,17.3859,-1.2105,,False,,2026-11-04,mcp+tv
+OR,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,34.5,7.2428,35.21,2.058,850173,1.0391,,,,,1.7042,4.11,,,0.9412,0.6205,,33.9995,35.126,1.3013,6561703798.5267,Non-Energy Minerals,1.7042,4.11,,,,2026-11-04,mcp+tv
+PAAS,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,41.49,8.3573,40.58,-2.1933,8062597,1.6561,,,,,-10.8524,-20.5404,,,0.3846,0.3842,,42.1175,46.174,2.0158,16792147556.4678,Non-Energy Minerals,-10.8524,-20.5404,,,,2026-11-04,mcp+tv
+PACS,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,50.2,7.6692,50.2,-0.1194,1563269,1.6139,,,,,16.2306,7.4486,,,,,,47.1485,44.5014,2.0985,7967920738.7585,Health Services,16.2306,7.4486,,,,2026-11-04,mcp+tv
+PFG,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,117.31,4.1275,112.82,-3.8275,1325762,0.8744,,,,,2.0072,-1.45,,,2.0729,0.2539,,110.2248,112.334,2.9508,23960312264.7092,Finance,2.0072,-1.45,,,,2026-11-04,mcp+tv
+PRME,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,4.97,9.2308,,,,,,10.9308,,,42.0,68.4746,45.7478,8.9912,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PRVA,jeff_sun|stockbee,2,A_stockbee_4pct|TV_volume_breakout,23.94,4.3316,23.94,6.875,3338672,3.0201,,,,,15.9884,8.5222,,,,,,22.1145,20.9718,0.7528,3057956684.9438,Finance,15.9884,8.5222,,,,2026-11-04,mcp+tv
+PTLO,jeff_sun|stockbee,2,A_stockbee_4pct|TV_volume_breakout,7.02,4.6065,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PTON,jeff_sun|stockbee,2,B_stockbee_ep9m|TV_volume_breakout,5.66,,5.66,3.663,18221731,2.3963,,,,,11.8577,1.982,,,,,,5.2895,5.1284,0.242,2522120680.0879,Consumer Services,11.8577,1.982,,,,2026-11-04,mcp+tv
+PVH,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,92.28,6.8057,92.28,-5.1593,915664,1.0653,,,,,22.7617,7.7157,,,,,,86.568,79.1666,3.3496,4257599329.866,Consumer Non-Durables,22.7617,7.7157,,,,2026-11-04,mcp+tv
+QNST,jeff_sun|stockbee,2,A_stockbee_4pct|TV_volume_breakout|jeff_sun_canslim,19.26,5.3034,20.32,5.5036,2407038,2.7628,,,,,35.4667,3.1996,,,5.6,0.4267,17.5764,16.604,16.8448,0.697,1162779348.7352,Commercial Services,35.4667,3.1996,,False,,2026-11-04,mcp+tv
+REAL,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,13.57,6.8504,13,-4.2004,5787563,1.0659,,5.7543,,,44.2083,6.2647,4.3846,13.9379,,,,11.0515,10.159,0.7418,1621269326.6765,Retail Trade,38.0042,-4.5521,,,,2026-11-04,mcp+tv
+RGLD,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,246.08,6.565,261.28,6.1769,1077602,1.6115,,,,,10.4498,14.3057,,,0.3831,1.1491,,236.8485,244.428,9.1008,22137695293.9272,Non-Energy Minerals,10.4498,14.3057,,,,2026-11-04,mcp+tv
+RKT,qullamaggie|stockbee,2,B_stockbee_ep9m|C_qullamaggie_rs|E_qullamaggie_5d_gainers,15.01,,14.82,-1.2658,51644600,1.1976,,4.5828,29.7321,,26.3427,4.1462,,,,,13.1009,11.8035,12.3776,0.6623,42057629056.481,Finance,26.3427,4.1462,,False,,2026-11-04,mcp+tv
+SDGR,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,28.52,4.9301,28.77,0.8766,2212920,1.3245,,7.5253,,,-1.3149,60.1348,119.7227,38.7835,,,,25.9455,25.6116,2.1919,2152157914.9776,Technology Services,-12.7785,59.1261,,,,2026-11-04,mcp+tv
+SEPN,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,47.35,9.5652,47.35,-1.1069,533993,1.6767,,,,,24.7037,18.4342,,,,,,41.0687,39.3549,2.5334,2210153382.736,Health Technology,24.7037,18.4342,,,,2026-11-04,mcp+tv
+SGRY,hernandez|stockbee,2,B_stockbee_ep9m|H_hernandez_theme,23.17,,23.17,0.0432,5902510,0.5714,,,,,72.5242,54.0559,,,,,,18.6495,15.8508,0.6723,2986029134.0078,Health Services,72.5242,54.0559,,,,2026-11-04,mcp+tv
+SHOP,jeff_sun|stockbee,2,B_stockbee_ep9m|jeff_sun_canslim,153.03,7.3367,143.75,-6.0642,12212552,1.2413,,,,,-13.414,-3.1497,,,0.8,0.3158,,166.2615,152.6236,9.0375,184937542500.2644,Commercial Services,-13.414,-3.1497,,,,2026-11-04,mcp+tv
+SOFI,jeff_sun|stockbee,2,B_stockbee_ep9m|jeff_sun_canslim,17.38,3.6374,16.04,-7.71,77825809,1.1878,,,,,0.1874,-13.1094,,,0.3333,0.4254,,15.6278,16.4119,0.8696,20797742599.4799,Finance,0.1874,-13.1094,,,,2026-11-04,mcp+tv
+STE,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,254.12,7.158,254.12,2.5049,1652556,2.2162,,,,,20.0491,10.7759,,,,,,228.089,220.1878,6.6225,24776727509.2511,Health Technology,20.0491,10.7759,,,,2026-11-04,mcp+tv
+STZ,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,144.56,5.3283,144.56,-0.6392,2235814,0.8742,,,,,26.9964,8.7653,,,,,,133.4255,125.9272,4.261,24462682073.2531,Consumer Non-Durables,26.9964,8.7653,,,,2026-11-04,mcp+tv
+SVM,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,8.64,8.6792,8.34,-3.4722,3588557,1.2975,,,,,-21.3949,-28.0414,,,2.375,0.7049,,9.0025,10.587,0.5028,1844930090.4377,Non-Energy Minerals,-21.3949,-28.0414,,,,2026-11-04,mcp+tv
+SYK,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,335.08,9.3705,335.08,-1.3455,4459384,1.3268,,,,,19.9413,-0.4723,,,,,,301.6705,292.1988,12.0466,127561941177.7559,Health Technology,19.9413,-0.4723,,,,2026-11-04,mcp+tv
+TDOC,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,9.7,9.1114,9.41,-2.9897,10413200,1.5079,,5.6127,,,68.1109,45.2096,42.6471,19.1646,,,,6.974,6.4624,0.511,1715383407.5371,Health Services,61.6838,38.3824,,,,2026-11-04,mcp+tv
+TECK,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,64.46,4.2873,59.91,-7.0586,4900649,1.5153,,,,,-12.2198,-10.3949,,,4.4607,0.3044,,63.2645,65.5074,2.5334,29415253555.7335,Non-Energy Minerals,-12.2198,-10.3949,,,,2026-11-04,mcp+tv
+TFX,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,152.15,7.0882,152.15,1.5213,1417531,1.647,,,,,21.1385,10.0463,,,,,,134.994,131.869,4.4774,6446960203.1541,Health Technology,21.1385,10.0463,,,,2026-11-04,mcp+tv
+TSN,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,60.11,5.3897,60.11,0.1333,5718662,1.6957,,,,,15.8635,2.4544,,,,,,55.899,53.8008,1.2543,20725964575.6783,Consumer Non-Durables,15.8635,2.4544,,,,2026-11-04,mcp+tv
+TTAN,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,87.76,5.5188,82.21,-6.3241,1576766,1.1881,,4.6534,,,27.7996,2.5353,39.6563,-7.4066,,,,80.03,74.1932,4.154,7930626180.7787,Technology Services,14.1806,-6.1101,,,,2026-11-04,mcp+tv
+UAA,hernandez|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|H_hernandez_theme,5.57,,5.57,-3.4662,12654310,1.4644,,,,,17.5105,-8.6885,,,,,5.1464,4.914,4.8748,0.2322,2354738240.286,Consumer Non-Durables,17.5105,-8.6885,,False,,2026-11-04,mcp+tv
+UPBD,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,24.14,7.48,24.88,3.0655,1571286,0.8972,,4.5205,,,57.1615,23.7314,26.9858,20.6397,,,,18.1617,17.5853,1.0189,1450563167.8144,Finance,61.3489,27.852,,,,2026-11-04,mcp+tv
+VERX,jeff_sun|stockbee,2,A_stockbee_4pct|TV_volume_breakout,17.59,4.325,17.59,10.4899,4999070,3.5851,,,,,42.3139,49.1942,,,,,,14.5565,13.3585,0.7918,2853420475.9673,Technology Services,42.3139,49.1942,,,,2026-11-04,mcp+tv
+VFC,hernandez|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|H_hernandez_theme,20.32,,20.32,-2.9145,16884411,1.4561,,,,,41.7015,36.9272,,,,,18.9087,17.3205,15.0572,0.7553,7998745990.6507,Consumer Non-Durables,41.7015,36.9272,,False,,2026-11-04,mcp+tv
+VIA,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,39.2,7.5446,37.73,-3.75,983373,1.537,,4.565,,,27.1489,81.8182,126.1973,-27.3132,,,,34.9075,30.9858,1.7297,3075206893.4125,Technology Services,21.7097,71.5,,,,2026-11-04,mcp+tv
+VYX,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,9.43,7.1591,9.86,4.5599,9055282,3.2032,,5.4855,,,40.1189,12.5298,34.1394,-16.843,,,,8.1165,7.8306,0.5348,1361369112.5769,Technology Services,43.7318,17.2414,,,,2026-11-04,mcp+tv
+WGO,qullamaggie|stockbee,2,A_stockbee_4pct|C_qullamaggie_rs,34.09,8.0165,,,,,,5.3066,,,36.6333,8.9485,6.698,-7.7152,,,,,,,,,,,,,,2026-11-04,mcp+tv
+WPM,jeff_sun|stockbee,2,A_stockbee_4pct|jeff_sun_canslim,131.5,11.9911,132.46,0.73,3236618,1.2831,,,,,-3.4407,-0.6003,,,0.8571,0.8465,,128.2375,139.0334,5.7962,60158028643.4741,Non-Energy Minerals,-3.4407,-0.6003,,,,2026-11-04,mcp+tv
+XRAY,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,10.09,9.4553,10.09,-5.2582,7854764,1.8244,,,,,17.5991,-24.476,,,,,,9.2263,9.6318,0.421,2011480596.1446,Health Technology,17.5991,-24.476,,,,2026-11-04,mcp+tv
+XYZ,qullamaggie|stockbee,2,A_stockbee_4pct|B_stockbee_ep9m|D_qullamaggie_ep,87.63,,84.04,-4.0968,9223577,1.3353,,,10.5263,3.9099,9.8562,6.4336,,,,,78.2418,77.376,77.8774,3.0532,50804029011.3874,Commercial Services,9.8562,6.4336,False,False,False,2026-11-04,mcp+tv
+YOU,qullamaggie|stockbee,2,A_stockbee_4pct|E_qullamaggie_5d_gainers,59.08,23.7018,56.5,-4.367,2557741,1.4343,,4.3442,29.9033,,36.8702,6.0038,,,,,,46.4995,43.6526,2.9086,7643776863.8964,Technology Services,36.8702,6.0038,,,,2026-11-04,mcp+tv
+ZBH,hernandez|stockbee,2,A_stockbee_4pct|H_hernandez_theme,106.85,13.4865,106.85,-2.9959,3623754,1.2828,,,,,16.8909,10.6337,,,,,,96.5515,95.0024,3.4931,20380322047.9696,Health Technology,16.8909,10.6337,,,,2026-11-04,mcp+tv
+A,stockbee,1,K_stockbee_anticipation,177.17,,171.78,-3.0423,2698825,1.3376,,,,,-0.573,21.4594,,,,,,174.548,165.5694,5.3405,48429734433.7859,Health Technology,-0.573,21.4594,,,,2026-11-04,mcp+tv
+AAL,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,13.63,,12.93,-5.1357,57977022,0.8573,,,,,-0.6149,-20.5774,,,,,,12.4897,12.8945,0.6105,8567656090.3448,Transportation,-0.6149,-20.5774,,,,2026-11-04,mcp+tv
+AAP,stockbee,1,A_stockbee_4pct,50.75,6.6849,48.12,-5.1823,3040193,1.8035,,,,,19.5825,-16.1818,,,,,,45.2515,43.2666,2.1149,2906448073.0097,Retail Trade,19.5825,-16.1818,,,,2026-11-04,mcp+tv
+AAPL,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,349.51,,344.17,-1.5279,75478720,1.4165,,,,,3.5783,10.5057,,,,,,343.0978,335.4579,8.8692,5001541095001.793,Electronic Technology,3.5783,10.5057,,,,2026-11-04,mcp+tv
+ABBV,stockbee,1,K_stockbee_anticipation,294.83,,288.24,-2.2352,7967244,1.4334,,,,,7.6567,18.3154,,,,,,285.7175,271.2852,7.5543,509497673436.4368,Health Technology,7.6567,18.3154,,,,2026-11-04,mcp+tv
+ABG,stockbee,1,A_stockbee_4pct,208.88,5.6176,207.03,-0.8857,321390,0.7196,,,,,20.9853,-3.9839,,,,,,181.4645,188.3548,9.0869,3717135663.2411,Retail Trade,20.9853,-3.9839,,,,2026-11-04,mcp+tv
+ABNB,stockbee,1,A_stockbee_4pct,176.37,5.6361,170.13,-3.538,9215413,2.5603,,,,,3.5358,3.2969,,,,,,170.2587,168.9572,5.6121,101871407900.842,Consumer Services,3.5358,3.2969,,,,2026-11-04,mcp+tv
+ABSI,stockbee,1,A_stockbee_4pct,10.48,4.8,9.39,-10.4008,5114728,1.2712,,,,,-20.2209,9.8246,,,,,,9.7845,9.5532,1.0242,1611455518.2395,Health Technology,-20.2209,9.8246,,,,2026-11-04,mcp+tv
+ABT,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,115.51,,113.6,-1.6535,10282863,1.2047,,,,,12.9674,6.1385,,,,,,104.993,104.0426,3.1347,196571546604.3805,Health Technology,12.9674,6.1385,,,,2026-11-04,mcp+tv
+ABUS,stockbee,1,A_stockbee_4pct,4.06,4.6392,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ABX,stockbee,1,A_stockbee_4pct,9.05,4.9884,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ACAD,stockbee,1,A_stockbee_4pct,21.47,4.3753,21.24,-1.0713,6026438,3.4757,,,,,5.3571,-25.6563,,,,,,20.0845,23.0289,0.7242,3659768946.6288,Health Technology,5.3571,-25.6563,,,,2026-11-04,mcp+tv
+ACEL,stockbee,1,A_stockbee_4pct,13.42,13.1535,13.77,2.608,1193894,1.9815,,,,,26.5625,11.498,,,,,,11.4075,11.3482,0.4342,1105008678.3353,Consumer Services,26.5625,11.498,,,,2026-11-04,mcp+tv
+ACT,stockbee,1,K_stockbee_anticipation,48.24,,47.77,-0.9743,480750,0.9555,,,,,3.8704,-0.8921,,,,,,46.874,47.4248,1.2556,6567595292.3957,Finance,3.8704,-0.8921,,,,2026-11-04,mcp+tv
+ADC,stockbee,1,K_stockbee_anticipation,69.96,,70.46,0.7147,1777562,0.9885,,,,,7.5725,-7.5934,,,,,,67.046,68.3088,1.3153,9166918344.3719,Finance,7.5725,-7.5934,,,,2026-11-04,mcp+tv
+ADSK,stockbee,1,A_stockbee_4pct,270.09,7.0426,269.16,-0.3443,3827367,1.9128,,,,,21.287,9.8612,,,,,,246.427,233.1572,9.6202,56254439237.6341,Technology Services,21.287,9.8612,,,,2026-11-04,mcp+tv
+ADUR,stockbee,1,A_stockbee_4pct,9.87,5.6745,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ADV,stockbee,1,A_stockbee_4pct,39.67,36.0892,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+AEG,stockbee,1,A_stockbee_4pct,8.58,4.5067,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+AEM,stockbee,1,A_stockbee_4pct,183.45,9.6664,189.06,3.0581,3314409,1.5202,,,,,2.9458,6.5367,,,,,,180.9615,189.489,8.022,96321736072.9735,Non-Energy Minerals,2.9458,6.5367,,,,2026-11-04,mcp+tv
+AEO,stockbee,1,A_stockbee_4pct,21.36,9.3142,20.37,-4.6348,3330701,0.7473,,,,,12.318,14.7606,,,,,,18.7505,17.4404,0.8256,3413468905.8553,Retail Trade,12.318,14.7606,,,,2026-11-04,mcp+tv
+AERO,stockbee,1,A_stockbee_4pct,15.89,7.6558,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+AES,stockbee,1,B_stockbee_ep9m|K_stockbee_anticipation,14.9,,14.89,-0.0671,12967431,1.3055,,,,,0.0538,1.1549,,,,,,14.9595,14.8842,0.0607,10624978070.2101,Utilities,0.0538,1.1549,,,,2026-11-04,mcp+tv
+AESI,stockbee,1,B_stockbee_ep9m,6.73,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+AEVA,stockbee,1,A_stockbee_4pct,9.49,6.1521,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+AGI,stockbee,1,A_stockbee_4pct,30.0,10.7829,31.08,3.6,7512789,1.6887,,,,,-4.5455,-6.8764,,,,,,30.6505,33.1514,1.4036,13008882899.857,Non-Energy Minerals,-4.5455,-6.8764,,,,2026-11-04,mcp+tv
+AGNC,stockbee,1,B_stockbee_ep9m|K_stockbee_anticipation,8.87,,8.82,-0.5637,26763278,1.092,,,,,1.3793,-17.1831,,,,,,8.744,9.4128,0.2468,11234965811.6212,Finance,1.3793,-17.1831,,,,2026-11-04,mcp+tv
+AIZ,stockbee,1,A_stockbee_4pct,308.52,4.184,306.87,-0.5348,493964,1.1869,,,,,15.3083,3.5394,,,,,,286.1185,280.0188,6.7588,15135983165.9738,Finance,15.3083,3.5394,,,,2026-11-04,mcp+tv
+AJG,stockbee,1,A_stockbee_4pct,288.38,5.4599,288.11,-0.0936,2706353,1.2265,,,,,27.5896,16.1921,,,,,,260.526,249.5596,8.0933,73875729362.5209,Finance,27.5896,16.1921,,,,2026-11-04,mcp+tv
+ALB,stockbee,1,A_stockbee_4pct,94.97,5.2999,98.37,3.5801,4519959,1.6857,,,,,-6.6787,-23.8917,,,,,,95.3925,108.277,3.921,11608157733.3484,Process Industries,-6.6787,-23.8917,,,,2026-11-04,mcp+tv
+ALDF,stockbee,1,K_stockbee_anticipation,10.75,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ALGN,stockbee,1,A_stockbee_4pct,164.9,8.7874,159.37,-3.3535,1387247,1.224,,,,,12.264,-5.7819,,,,,,151.0028,150.2355,5.6711,11321620209.2767,Health Technology,12.264,-5.7819,,,,2026-11-04,mcp+tv
+ALIT,stockbee,1,A_stockbee_4pct,12.75,25.9881,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ALK,stockbee,1,A_stockbee_4pct,40.0,8.7548,38.7,-3.25,3742559,0.9655,,,,,-3.0075,-24.7082,,,,,,36.316,38.8226,2.0309,4320138173.445,Transportation,-3.0075,-24.7082,,,,2026-11-04,mcp+tv
+ALLT,stockbee,1,A_stockbee_4pct,8.66,4.7158,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ALUB,stockbee,1,K_stockbee_anticipation,10.16,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ALV,stockbee,1,A_stockbee_4pct,125.68,5.2949,124.03,-1.3129,945784,0.9293,,,,,8.2003,1.9816,,,,,,116.802,117.0712,3.5042,8930990850.0087,Producer Manufacturing,8.2003,1.9816,,,,2026-11-04,mcp+tv
+AMD,stockbee,1,B_stockbee_ep9m,488.78,,404.4,-17.2634,70568208,2.572,,,,,-37.5964,-18.7854,,,,,,535.251,547.3663,35.1621,660172878478.0997,Electronic Technology,-37.5964,-18.7854,,,,2026-11-04,mcp+tv
+AMRZ,stockbee,1,A_stockbee_4pct,44.15,5.1942,42.65,-3.3975,4319696,0.7919,,,,,14.2819,-10.2105,,,,,,39.4605,39.5658,1.3863,23326377567.4168,Non-Energy Minerals,14.2819,-10.2105,,,,2026-11-04,mcp+tv
+AMT,stockbee,1,A_stockbee_4pct,194.86,4.0419,193.99,-0.4465,3354874,0.8432,,,,,19.1146,13.7705,,,,,,184.9495,176.9876,5.5737,89965491308.4061,Finance,19.1146,13.7705,,,,2026-11-04,mcp+tv
+AMTB,stockbee,1,K_stockbee_anticipation,30.07,,29.54,-1.7626,452559,0.8644,,,,,0.3397,1.6867,,,,,,29.4395,29.3,0.8884,1152570343.5318,Finance,0.3397,1.6867,,,,2026-11-04,mcp+tv
+AMX,stockbee,1,K_stockbee_anticipation,25.03,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+AMZN,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,266.03,,260.21,-2.1877,85435733,1.5367,,,,,2.6875,-4.6396,,,,,,254.435,253.8894,9.4605,2813686546786.0605,Retail Trade,2.6875,-4.6396,,,,2026-11-04,mcp+tv
+ANF,stockbee,1,A_stockbee_4pct,171.09,8.6217,157.59,-7.8906,1248539,1.2331,,,,,12.0919,44.578,,,,,,158.3485,147.4004,7.0577,6687233734.9274,Retail Trade,12.0919,44.578,,,,2026-11-04,mcp+tv
+AORT,stockbee,1,A_stockbee_4pct,26.45,11.5563,25.33,-4.2344,1127742,2.0295,,,,,10.9505,-5.8364,,,,,,22.953,23.6776,1.2323,1234995133.0431,Health Technology,10.9505,-5.8364,,,,2026-11-04,mcp+tv
+AOS,stockbee,1,A_stockbee_4pct,67.07,5.0595,66.57,-0.7455,3056671,1.5487,,,,,16.2998,5.6667,,,,,,61.1835,59.2236,1.9405,8942353284.0631,Producer Manufacturing,16.2998,5.6667,,,,2026-11-04,mcp+tv
+APH,stockbee,1,B_stockbee_ep9m,79.01,,71.64,-9.3279,26101442,1.5679,,,,,-19.2334,-16.5278,,,,,,79.9655,81.3769,4.022,176897879333.4282,Electronic Technology,-19.2334,-16.5278,,,,2026-11-04,mcp+tv
+APLE,stockbee,1,K_stockbee_anticipation,18.82,,18.15,-3.56,3740115,1.5133,,,,,10.3343,11.8299,,,,,,17.795,16.6598,0.4065,4284900983.7832,Finance,10.3343,11.8299,,,,2026-11-04,mcp+tv
+APPF,stockbee,1,A_stockbee_4pct,236.85,5.8595,233.22,-1.5326,464051,0.972,,,,,13.7437,19.3246,,,,,,213.7327,212.6056,10.6011,8269083546.7068,Technology Services,13.7437,19.3246,,,,2026-11-04,mcp+tv
+ARCC,stockbee,1,K_stockbee_anticipation,19.46,,19.35,-0.5653,7012950,1.2769,,,,,2.6525,-1.2755,,,,,,18.7925,19.1728,0.3777,13974472733.9337,Finance,2.6525,-1.2755,,,,2026-11-04,mcp+tv
+ARCI,stockbee,1,K_stockbee_anticipation,10.08,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ARDX,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,3.29,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ARE,stockbee,1,A_stockbee_4pct,46.0,8.7985,45.17,-1.8043,2935536,0.8996,,,,,-2.0598,-7.2485,,,,,,42.5895,47.3508,2.0321,7866836313.047,Finance,-2.0598,-7.2485,,,,2026-11-04,mcp+tv
+ARES,stockbee,1,A_stockbee_4pct,136.85,6.1429,133.72,-2.2872,3411390,1.4303,,,,,13.4182,-3.2417,,,,,,121.8915,125.2688,4.8736,29947629412.9651,Finance,13.4182,-3.2417,,,,2026-11-04,mcp+tv
+ARIS,stockbee,1,A_stockbee_4pct,15.72,8.9397,15.28,-2.799,3719211,2.0271,,,,,-13.8184,-9.6393,,,,,,16.1725,17.7768,0.9273,3153792004.8552,Non-Energy Minerals,-13.8184,-9.6393,,,,2026-11-04,mcp+tv
+ARKO,stockbee,1,A_stockbee_4pct,4.04,5.2083,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ARLO,stockbee,1,A_stockbee_4pct,15.22,11.0139,14.84,-2.4967,2243280,0.9112,,,,,16.575,-7.1339,,,,,,13.087,13.0668,0.8014,1596981461.703,Electronic Technology,16.575,-7.1339,,,,2026-11-04,mcp+tv
+ARTC,stockbee,1,K_stockbee_anticipation,10.01,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ASH,stockbee,1,A_stockbee_4pct,76.44,4.6836,76.28,-0.2093,1264307,2.3034,,,,,9.9928,5.4611,,,,,,72.82,71.578,1.8683,3493118321.6782,Consumer Non-Durables,9.9928,5.4611,,,,2026-11-04,mcp+tv
+ASM,stockbee,1,A_stockbee_4pct,4.74,11.007,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ASO,stockbee,1,A_stockbee_4pct,67.69,11.2225,67.81,0.1773,1543477,1.2094,,,,,30.5294,42.9987,,,,,,59.498,52.9401,2.4179,4175664800.2767,Retail Trade,30.5294,42.9987,,,,2026-11-04,mcp+tv
+ASX,stockbee,1,B_stockbee_ep9m,37.51,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ATEC,stockbee,1,A_stockbee_4pct,8.28,10.8434,7.8,-5.7971,4087187,0.5069,,,,,-27.5766,-16.4435,,,,,,10.083,10.0079,0.7899,1210090647.2464,Health Technology,-27.5766,-16.4435,,,,2026-11-04,mcp+tv
+ATHM,stockbee,1,A_stockbee_4pct,22.49,12.6754,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+AU,stockbee,1,A_stockbee_4pct,87.91,7.9843,88.56,0.7394,4432208,1.7353,,,,,-5.425,-8.0278,,,,,,87.958,96.2626,3.843,44723464008.5952,Non-Energy Minerals,-5.425,-8.0278,,,,2026-11-04,mcp+tv
+AUB,stockbee,1,K_stockbee_anticipation,40.17,,39.21,-2.3898,1330486,0.9537,,,,,1.6593,-6.42,,,,,,38.922,39.1006,1.0142,5487719133.5773,Finance,1.6593,-6.42,,,,2026-11-04,mcp+tv
+AURA,stockbee,1,A_stockbee_4pct,6.65,6.5705,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+AVA,stockbee,1,A_stockbee_4pct,40.17,5.4054,40.91,1.8422,2039489,2.738,,,,,15.7939,6.5087,,,,,,37.3245,36.6974,0.7735,3426328139.7481,Utilities,15.7939,6.5087,,,,2026-11-04,mcp+tv
+AVAH,stockbee,1,A_stockbee_4pct,14.23,7.1536,13.67,-3.9353,2320944,1.1215,,,,,10.778,46.9892,,,,,,12.926,13.109,0.5322,2984033499.1511,Health Services,10.778,46.9892,,,,2026-11-04,mcp+tv
+AVGO,stockbee,1,B_stockbee_ep9m,325.48,,291.53,-10.4307,53648718,2.3735,,,,,-20.5705,-31.9491,,,,,,335.5175,349.4427,14.2081,1391656366710.194,Electronic Technology,-20.5705,-31.9491,,,,2026-11-04,mcp+tv
+AVNT,stockbee,1,A_stockbee_4pct,47.86,10.659,45.32,-5.3071,1074610,1.3239,,,,,7.9562,3.7071,,,,,,41.339,41.5528,1.6531,4156729762.6394,Process Industries,7.9562,3.7071,,,,2026-11-04,mcp+tv
+AVO,stockbee,1,A_stockbee_4pct,11.71,6.6485,11.51,-1.7079,661028,1.093,,,,,-9.9374,-9.8669,,,,,,11.6932,12.3441,0.4631,1009178453.7874,Process Industries,-9.9374,-9.8669,,,,2026-11-04,mcp+tv
+AVTR,stockbee,1,B_stockbee_ep9m,15.65,,15.14,-3.2588,7463725,0.6383,,,,,-5.0784,13.5784,,,,,,16.268,15.5774,0.5492,10259101790.8716,Health Technology,-5.0784,13.5784,,,,2026-11-04,mcp+tv
+BABA,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,105.29,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BAC,stockbee,1,B_stockbee_ep9m,51.63,,49.76,-3.6219,61805278,1.6729,,,,,-8.3103,-20.6506,,,,,,51.2225,55.475,1.3451,343354406165.293,Finance,-8.3103,-20.6506,,,,2026-11-04,mcp+tv
+BAX,stockbee,1,B_stockbee_ep9m,26.5,,25.65,-3.2075,10102938,1.127,,,,,5.4687,-4.7531,,,,,,24.952,24.5066,1.0886,13269981473.2528,Health Technology,5.4687,-4.7531,,,,2026-11-04,mcp+tv
+BBIO,stockbee,1,A_stockbee_4pct,77.89,5.2141,74.27,-4.6476,3383554,0.9885,,,,,9.6236,-11.2876,,,,,,69.3988,69.8497,2.7034,14467853910.3853,Health Technology,9.6236,-11.2876,,,,2026-11-04,mcp+tv
+BBNX,stockbee,1,A_stockbee_4pct,16.95,12.2517,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BBVA,stockbee,1,A_stockbee_4pct,25.47,6.125,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BBWI,stockbee,1,A_stockbee_4pct,23.54,4.1132,22.08,-6.2022,7648368,1.3032,,,,,25.0283,9.3069,,,,,,20.879,18.8946,0.9564,4452328605.757,Retail Trade,25.0283,9.3069,,,,2026-11-04,mcp+tv
+BBY,stockbee,1,A_stockbee_4pct,101.36,7.9791,99.4,-1.9337,3276162,1.1024,,,,,14.1872,24.8273,,,,,,94.846,91.2558,3.6626,20846934191.9889,Retail Trade,14.1872,24.8273,,,,2026-11-04,mcp+tv
+BCPC,stockbee,1,A_stockbee_4pct,182.58,4.0283,179.71,-1.5719,543206,1.6337,,,,,7.4949,0.1896,,,,,,171.9455,170.0564,4.4133,5710703075.2579,Consumer Non-Durables,7.4949,0.1896,,,,2026-11-04,mcp+tv
+BCRX,stockbee,1,B_stockbee_ep9m,8.24,,7.63,-7.4029,15360794,2.8702,,,,,-6.3804,-19.6842,,,,,,8.1027,8.5077,0.3834,1949732838.9272,Health Technology,-6.3804,-19.6842,,,,2026-11-04,mcp+tv
+BCS,stockbee,1,A_stockbee_4pct,23.7,5.8036,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BDCI,stockbee,1,K_stockbee_anticipation,10.2,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BDN,stockbee,1,A_stockbee_4pct,3.2,5.9603,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BEAG,stockbee,1,K_stockbee_anticipation,10.59,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BEKE,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,18.57,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BEN,stockbee,1,A_stockbee_4pct,33.87,4.6663,32.21,-4.9011,7816320,2.2677,,,,,-2.3347,-5.2647,,,,,,31.6215,32.6022,0.9658,16365156571.4573,Finance,-2.3347,-5.2647,,,,2026-11-04,mcp+tv
+BF-B,stockbee,1,A_stockbee_4pct,30.68,5.9758,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BFLY,stockbee,1,A_stockbee_4pct,6.77,5.7812,6.07,-10.3397,6664714,1.2742,,,,,-36.1725,-29.0058,,,,,,7.209,7.8506,0.6161,1623493975.0827,Health Technology,-36.1725,-29.0058,,,,2026-11-04,mcp+tv
+BFST,stockbee,1,K_stockbee_anticipation,32.98,,32.28,-2.1225,204511,1.1123,,,,,4.1963,2.0163,,,,,,31.608,31.2076,0.7467,1040710441.7029,Finance,4.1963,2.0163,,,,2026-11-04,mcp+tv
+BHRB,stockbee,1,K_stockbee_anticipation,71.9,,69.86,-2.8373,104716,0.792,,,,,0.8081,-5.4285,,,,,,70.205,70.2772,1.9237,1410727569.9182,Finance,0.8081,-5.4285,,,,2026-11-04,mcp+tv
+BIDU,stockbee,1,A_stockbee_4pct,80.43,4.4953,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BIIB,stockbee,1,K_stockbee_anticipation,254.46,,243.93,-4.1382,1220868,0.8549,,,,,8.6403,17.6247,,,,,,242.779,229.47,8.0717,36057787447.3432,Health Technology,8.6403,17.6247,,,,2026-11-04,mcp+tv
+BILI,stockbee,1,A_stockbee_4pct,13.88,5.2312,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BILL,stockbee,1,A_stockbee_4pct,51.87,4.1148,50.89,-1.8893,1841114,1.2698,,,,,13.6953,6.0208,,,,,,48.064,47.1972,1.9317,4369922408.4265,Technology Services,13.6953,6.0208,,,,2026-11-04,mcp+tv
+BIRK,stockbee,1,A_stockbee_4pct,37.27,4.8973,37.1,-0.4561,1661844,0.8749,,,,,8.9574,-1.0139,,,,,,33.906,33.1486,1.4065,6599638105.6748,Consumer Non-Durables,8.9574,-1.0139,,,,2026-11-04,mcp+tv
+BKD,stockbee,1,A_stockbee_4pct,11.19,7.9074,10.81,-3.3959,9322060,1.7447,,,,,2.1739,-24.5112,,,,,,10.1895,10.9542,0.4277,2581614327.1108,Health Services,2.1739,-24.5112,,,,2026-11-04,mcp+tv
+BKNG,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,170.97,,168.72,-1.316,12139206,1.4023,,,,,6.4211,-18.5891,,,,,,158.3465,167.3322,6.6751,125477272912.0112,Consumer Services,6.4211,-18.5891,,,,2026-11-04,mcp+tv
+BKR,stockbee,1,B_stockbee_ep9m,49.87,,46.2,-7.3591,17571464,1.6729,,,,,-19.2166,-25.5919,,,,,,54.653,57.2046,2.1653,45880225311.3134,Industrial Services,-19.2166,-25.5919,,,,2026-11-04,mcp+tv
+BLDR,stockbee,1,A_stockbee_4pct,69.5,9.2596,65.5,-5.7554,2435766,0.7336,,,,,15.9497,-10.957,,,,,,57.6755,59.025,3.3782,7048214172.0504,Retail Trade,15.9497,-10.957,,,,2026-11-04,mcp+tv
+BLK,stockbee,1,A_stockbee_4pct,1224.37,5.4292,1170.67,-4.3859,905959,1.3076,,,,,8.4948,3.3677,,,,,,1134.434,1104.691,32.9121,190206000232.1532,Finance,8.4948,3.3677,,,,2026-11-04,mcp+tv
+BMY,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,64.19,,63.13,-1.6513,9016001,0.8147,,,,,7.1089,-1.7279,,,,,,60.9365,62.4438,1.7983,129043142436.2329,Health Technology,7.1089,-1.7279,,,,2026-11-04,mcp+tv
+BN,stockbee,1,A_stockbee_4pct,43.1,6.0531,41.76,-3.109,4632267,0.7574,,,,,12.7126,-5.8399,,,,,,38.397,38.192,1.1559,102416967904.0797,Finance,12.7126,-5.8399,,,,2026-11-04,mcp+tv
+BNED,stockbee,1,A_stockbee_4pct,13.21,5.68,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BNTC,stockbee,1,A_stockbee_4pct,9.28,10.4762,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BNTX,stockbee,1,A_stockbee_4pct,90.7,4.3488,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BOBS,stockbee,1,A_stockbee_4pct,18.33,7.5704,19.47,6.2193,2532668,2.9864,,,,,37.5,6.802,,,,,,15.856,15.466,0.9967,2544477296.3437,Retail Trade,37.5,6.802,,,,2026-11-04,mcp+tv
+BORR,stockbee,1,B_stockbee_ep9m,3.33,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BP,stockbee,1,B_stockbee_ep9m,45.61,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BRCB,stockbee,1,A_stockbee_4pct,10.99,11.2348,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BRK-B,stockbee,1,K_stockbee_anticipation,579.09,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BRSP,stockbee,1,A_stockbee_4pct,3.67,5.4598,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BSBR,stockbee,1,A_stockbee_4pct,4.76,6.4877,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BSX,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,45.82,,44.64,-2.5753,22487891,0.8908,,,,,5.1095,-9.8182,,,,,,44.2135,44.4112,1.7877,64704486189.8106,Health Technology,5.1095,-9.8182,,,,2026-11-04,mcp+tv
+BTE,stockbee,1,B_stockbee_ep9m,4.44,,4.22,-4.955,19946172,0.9903,,,,,-9.4421,2.9268,,,,,,5.1315,4.9206,0.2252,2950623960.5226,Energy Minerals,-9.4421,2.9268,,,,2026-11-04,mcp+tv
+BTG,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,5.11,,5.27,3.1311,39479757,1.5871,,,,,1.5414,21.1494,,,,,,5.043,5.2344,0.25,6963709387.5483,Non-Energy Minerals,1.5414,21.1494,,,,2026-11-04,mcp+tv
+BUR,stockbee,1,A_stockbee_4pct,4.16,9.7625,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BURL,stockbee,1,A_stockbee_4pct,258.38,7.7032,250.77,-2.9453,1564122,1.1326,,,,,-8.0823,-32.2152,,,,,,252.492,255.6332,10.3169,15752167246.8722,Retail Trade,-8.0823,-32.2152,,,,2026-11-04,mcp+tv
+BUSE,stockbee,1,K_stockbee_anticipation,29.365,,28.67,-2.3668,1067688,1.0548,,,,,-2.7146,-7.4265,,,,,,29.4563,29.7721,0.6879,2330201740.7591,Finance,-2.7146,-7.4265,,,,2026-11-04,mcp+tv
+BVN,stockbee,1,A_stockbee_4pct,28.8,7.6233,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+BXP,stockbee,1,A_stockbee_4pct,65.96,5.3169,65.24,-1.0916,1368581,0.7859,,,,,9.555,-5.9807,,,,,,61.1085,62.7554,1.7985,10417021848.997,Finance,9.555,-5.9807,,,,2026-11-04,mcp+tv
+BY,stockbee,1,K_stockbee_anticipation,39.05,,38.04,-2.5864,319846,1.2204,,,,,0.8751,-2.7607,,,,,,37.85,37.7558,0.8639,1699418654.1019,Finance,0.8751,-2.7607,,,,2026-11-04,mcp+tv
+C,stockbee,1,B_stockbee_ep9m,124.74,,118.45,-5.0425,16985520,1.7757,,,,,-8.4055,-11.4856,,,,,,123.6125,129.1842,3.7267,198692381716.641,Finance,-8.4055,-11.4856,,,,2026-11-04,mcp+tv
+CAAP,stockbee,1,A_stockbee_4pct,25.14,5.9418,24.68,-1.8298,276117,0.7076,,,,,-3.8192,-6.8328,,,,,,24.4015,24.3672,0.923,4027241073.2713,Transportation,-3.8192,-6.8328,,,,2026-11-04,mcp+tv
+CAES,stockbee,1,K_stockbee_anticipation,10.06,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CAKE,stockbee,1,A_stockbee_4pct,115.39,4.6906,110.71,-4.0558,1451801,0.7262,,,,,0.6455,3.9531,,,,,,112.0677,107.8729,4.9618,5519493003.4289,Consumer Services,0.6455,3.9531,,,,2026-11-04,mcp+tv
+CAL,stockbee,1,A_stockbee_4pct,14.71,11.6932,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CALY,stockbee,1,A_stockbee_4pct,16.6,4.534,15.92,-4.0964,2571241,1.3771,,,,,10.4788,-7.603,,,,,,14.5565,14.754,0.501,2841887437.1614,Consumer Durables,10.4788,-7.603,,,,2026-11-04,mcp+tv
+CAR,stockbee,1,A_stockbee_4pct,119.81,9.5756,120.44,0.5258,580236,1.1795,,,,,10.7698,-13.9714,,,,,,106.359,114.5844,6.1466,4254633515.4702,Finance,10.7698,-13.9714,,,,2026-11-04,mcp+tv
+CARG,stockbee,1,A_stockbee_4pct,36.52,8.1433,36.15,-1.0131,1784034,1.3876,,,,,22.8756,-9.625,,,,,,31.682,32.2219,1.4934,3220006373.6665,Technology Services,22.8756,-9.625,,,,2026-11-04,mcp+tv
+CARS,stockbee,1,A_stockbee_4pct,12.75,10.2941,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CASK,stockbee,1,A_stockbee_4pct,17.89,5.3592,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CBIO,stockbee,1,A_stockbee_4pct,13.82,5.8193,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CBRE,stockbee,1,A_stockbee_4pct,141.11,4.1249,136.35,-3.3733,2827604,0.9002,,,,,5.0139,-8.058,,,,,,130.91,135.2842,5.0417,39295560022.3985,Finance,5.0139,-8.058,,,,2026-11-04,mcp+tv
+CBSH,stockbee,1,K_stockbee_anticipation,56.16,,55.22,-1.6738,968558,0.8931,,,,,-0.0181,-6.1523,,,,,,55.348,56.1799,1.1588,7843628722.2169,Finance,-0.0181,-6.1523,,,,2026-11-04,mcp+tv
+CC,stockbee,1,A_stockbee_4pct,13.79,5.3476,12.75,-7.5417,3584654,1.4287,,,,,-8.5366,-17.2615,,,,,,13.1075,14.0256,0.6607,1919127325.1813,Process Industries,-8.5366,-17.2615,,,,2026-11-04,mcp+tv
+CCC,stockbee,1,B_stockbee_ep9m,7.69,,7.67,-0.2601,19438480,0.8537,,,,,15.512,16.9207,,,,,,7.632,7.1536,0.1219,4533286027.9376,Technology Services,15.512,16.9207,,,,2026-11-04,mcp+tv
+CCI,stockbee,1,A_stockbee_4pct,92.17,6.4565,90.95,-1.3236,5603284,0.8722,,,,,34.0062,21.6885,,,,,,84.2415,76.8592,3.2123,38695171893.2272,Finance,34.0062,21.6885,,,,2026-11-04,mcp+tv
+CCL,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,31.32,,29.59,-5.5236,25149851,1.1336,,,,,14.0709,1.0933,,,,,,27.619,25.1912,1.1699,39787012690.8321,Consumer Services,14.0709,1.0933,,,,2026-11-04,mcp+tv
+CCOI,stockbee,1,A_stockbee_4pct,6.79,14.89,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CCU,stockbee,1,A_stockbee_4pct,10.98,5.8824,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CCXI,stockbee,1,A_stockbee_4pct,11.26,5.3321,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CDE,stockbee,1,B_stockbee_ep9m,14.58,,14.63,0.3429,41805251,1.0402,,,,,-15.5799,-13.1751,,,,,,14.714,17.5522,0.8912,15038689828.6612,Non-Energy Minerals,-15.5799,-13.1751,,,,2026-11-04,mcp+tv
+CDW,stockbee,1,A_stockbee_4pct,168.75,12.6728,158.39,-6.1393,2766810,1.5185,,,,,18.3693,12.1981,,,,,,156.1123,148.5657,8.0151,19801511239.3857,Technology Services,18.3693,12.1981,,,,2026-11-04,mcp+tv
+CG,stockbee,1,A_stockbee_4pct,42.75,4.5232,39.96,-6.5263,4650050,1.4137,,,,,1.6277,-18.7805,,,,,,38.678,40.8318,1.5049,14239059675.0821,Finance,1.6277,-18.7805,,,,2026-11-04,mcp+tv
+CGON,stockbee,1,A_stockbee_4pct,67.71,5.6978,64.8,-4.2977,931576,1.0093,,,,,-6.3178,-13.5654,,,,,,62.821,68.2958,3.146,5743896107.3992,Health Technology,-6.3178,-13.5654,,,,2026-11-04,mcp+tv
+CHCO,stockbee,1,K_stockbee_anticipation,144.54,,142.05,-1.7227,131142,0.9204,,,,,-0.2248,-2.048,,,,,,141.973,142.2142,3.0954,1999495737.1025,Finance,-0.2248,-2.048,,,,2026-11-04,mcp+tv
+CHCT,stockbee,1,A_stockbee_4pct,14.51,11.1026,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CHEF,stockbee,1,A_stockbee_4pct,106.84,5.8346,103.35,-3.2666,369108,0.6017,,,,,-7.6985,-5.6767,,,,,,108.0515,110.0665,5.1392,4491889986.5972,Distribution Services,-7.6985,-5.6767,,,,2026-11-04,mcp+tv
+CHT,stockbee,1,K_stockbee_anticipation,48.98,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CHTR,stockbee,1,A_stockbee_4pct,120.25,5.6771,125.86,4.6653,4491566,1.9807,,,,,12.7071,-19.3205,,,,,,109.633,121.5394,5.4577,22166811167.0521,Consumer Services,12.7071,-19.3205,,,,2026-11-04,mcp+tv
+CHWY,stockbee,1,A_stockbee_4pct,23.4,6.1224,23,-1.7094,9462615,1.3949,,,,,25.9584,-2.6249,,,,,,21.291,20.8292,0.9364,9244326584.8718,Retail Trade,25.9584,-2.6249,,,,2026-11-04,mcp+tv
+CHYM,stockbee,1,A_stockbee_4pct,29.87,5.922,30.18,1.0378,8300682,2.9978,,,,,6.6808,-1.5495,,,,,,29.4375,29.9787,1.2911,11425698500.8785,Technology Services,6.6808,-1.5495,,,,2026-11-04,mcp+tv
+CIM,stockbee,1,A_stockbee_4pct,8.68,4.7045,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CIVB,stockbee,1,K_stockbee_anticipation,28.81,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CLBR,stockbee,1,K_stockbee_anticipation,10.1,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CLOV,stockbee,1,A_stockbee_4pct,4.69,9.324,4.48,-4.4776,8256200,2.034,,,,,-4.2735,-5.0847,,,,,,4.6235,4.5289,0.2727,2379584290.3881,Finance,-4.2735,-5.0847,,,,2026-11-04,mcp+tv
+CMCSA,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,24.85,,24.95,0.4024,35853313,1.0039,,,,,14.7126,-0.1601,,,,,,22.355,23.181,0.743,88597610709.1247,Consumer Services,14.7126,-0.1601,,,,2026-11-04,mcp+tv
+CME,stockbee,1,K_stockbee_anticipation,308.27,,307.24,-0.3341,2110512,1.0782,,,,,14.0333,17.0126,,,,,,296.101,282.6012,6.7919,109971605554.7166,Finance,14.0333,17.0126,,,,2026-11-04,mcp+tv
+CMG,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,35.2,,35.4,0.5682,25340837,1.0506,,,,,15.0845,6.1469,,,,,,30.5835,32.8138,1.2374,44780115106.6023,Consumer Services,15.0845,6.1469,,,,2026-11-04,mcp+tv
+CMPR,stockbee,1,A_stockbee_4pct,63.32,7.1404,61.92,-2.211,387312,1.0873,,,,,-18.7934,-35.894,,,,,,72.3632,77.9581,4.128,1524530913.7941,Commercial Services,-18.7934,-35.894,,,,2026-11-04,mcp+tv
+CNH,stockbee,1,B_stockbee_ep9m,11.71,,11.25,-3.9283,12924650,0.6678,,,,,-15.7303,3.8781,,,,,,11.5515,12.5426,0.5138,13924417007.152,Producer Manufacturing,-15.7303,3.8781,,,,2026-11-04,mcp+tv
+CNI,stockbee,1,K_stockbee_anticipation,128.97,,126.49,-1.9229,2559040,1.8033,,,,,5.9025,0.2695,,,,,,122.924,121.5904,2.6881,75856055570.5987,Transportation,5.9025,0.2695,,,,2026-11-04,mcp+tv
+CNM,stockbee,1,A_stockbee_4pct,48.63,8.3798,46.95,-3.4547,3434191,1.6277,,,,,11.7857,2.7577,,,,,,42.797,42.4698,1.5858,8943695620.95,Distribution Services,11.7857,2.7577,,,,2026-11-04,mcp+tv
+CNMD,stockbee,1,A_stockbee_4pct,53.66,13.6142,52.83,-1.5468,406920,0.8699,,,,,10.4537,5.7869,,,,,,47.2255,46.9986,2.359,1574509487.9491,Health Technology,10.4537,5.7869,,,,2026-11-04,mcp+tv
+CNP,stockbee,1,B_stockbee_ep9m,41.04,,39.97,-2.6072,20696311,2.1633,,,,,5.0184,-2.1542,,,,,,40.7505,39.3382,0.8832,26495299748.7978,Utilities,5.0184,-2.1542,,,,2026-11-04,mcp+tv
+CNQ,stockbee,1,B_stockbee_ep9m,49.64,,48.92,-1.4504,10389873,1.4719,,,,,1.9591,8.6628,,,,,,53.1185,50.835,1.5649,100848575552.663,Energy Minerals,1.9591,8.6628,,,,2026-11-04,mcp+tv
+COKE,stockbee,1,K_stockbee_anticipation,204.18,,212.5,4.0748,865972,1.5162,,,,,9.1311,14.2473,,,,,,206.564,198.255,8.2435,14144912774.8188,Consumer Non-Durables,9.1311,14.2473,,,,2026-11-04,mcp+tv
+COLD,stockbee,1,A_stockbee_4pct,15.19,4.3269,15.81,4.0816,11240782,3.2509,,,,,10.5594,9.4118,,,,,,14.308,14.3584,0.4522,4513447533.4898,Finance,10.5594,9.4118,,,,2026-11-04,mcp+tv
+COO,stockbee,1,A_stockbee_4pct,64.42,5.9017,63.51,-1.4126,2381355,0.7649,,,,,12.0501,-13.0595,,,,,,59.2107,59.3726,1.855,12076763011.3137,Health Technology,12.0501,-13.0595,,,,2026-11-04,mcp+tv
+COP,stockbee,1,B_stockbee_ep9m,136.94,,135.46,-1.0808,9227600,1.2949,,,,,5.6713,17.1698,,,,,,144.626,136.7882,4.2508,162733183958.1712,Energy Minerals,5.6713,17.1698,,,,2026-11-04,mcp+tv
+COUR,stockbee,1,B_stockbee_ep9m,3.9,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CPA,stockbee,1,A_stockbee_4pct,145.89,7.1617,141.8,-2.8035,456387,1.2246,,,,,3.4583,-0.9085,,,,,,134.241,132.4028,5.2809,5833446791.9076,Transportation,3.4583,-0.9085,,,,2026-11-04,mcp+tv
+CPNG,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,17.05,,16.42,-3.695,36494637,2.4372,,,,,14.5848,-1.1439,,,,,,14.7105,14.741,0.6796,29432760489.3314,Retail Trade,14.5848,-1.1439,,,,2026-11-04,mcp+tv
+CPRT,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,32.62,,32.48,-0.4292,17763075,1.5756,,,,,18.0662,13.151,,,,,,28.8938,29.4664,0.9962,30088756153.5451,Retail Trade,18.0662,13.151,,,,2026-11-04,mcp+tv
+CPS,stockbee,1,A_stockbee_4pct,22.04,7.3028,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CRGY,stockbee,1,B_stockbee_ep9m,11.73,,11.14,-5.0298,12590403,1.7146,,,,,-17.6644,-0.0897,,,,,,13.206,13.5208,0.5873,4706167744.3666,Energy Minerals,-17.6644,-0.0897,,,,2026-11-04,mcp+tv
+CRH,stockbee,1,A_stockbee_4pct,98.8,5.6346,95.45,-3.3907,7056374,1.1696,,,,,14.8754,-2.1327,,,,,,86.8585,87.1836,3.2455,63496279332.5132,Non-Energy Minerals,14.8754,-2.1327,,,,2026-11-04,mcp+tv
+CRSR,stockbee,1,A_stockbee_4pct,13.32,8.2047,12.8,-3.9039,3493568,2.9357,,,,,-6.0895,0.9305,,,,,,13.308,13.1684,0.7423,1384665105.1051,Technology Services,-6.0895,0.9305,,,,2026-11-04,mcp+tv
+CRVS,stockbee,1,A_stockbee_4pct,10.57,7.528,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CSCO,stockbee,1,B_stockbee_ep9m,103.61,,95.72,-7.6151,37436835,1.9433,,,,,-15.6875,-21.4637,,,,,,108.023,109.1827,3.4917,376847725950.1388,Electronic Technology,-15.6875,-21.4637,,,,2026-11-04,mcp+tv
+CSGP,stockbee,1,A_stockbee_4pct,32.58,4.023,32.05,-1.6268,6558824,0.8403,,,,,15.704,6.6733,,,,,,31.488,30.282,1.7164,12894911535.3008,Technology Services,15.704,6.6733,,,,2026-11-04,mcp+tv
+CSIQ,stockbee,1,A_stockbee_4pct,10.78,6.7327,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CSV,stockbee,1,A_stockbee_4pct,35.98,5.0204,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CSW,stockbee,1,A_stockbee_4pct,295.35,5.6708,276.65,-6.3315,116893,0.7864,,,,,-9.1849,-20.7738,,,,,,290.3605,294.6944,12.2598,4507221418.041,Process Industries,-9.1849,-20.7738,,,,2026-11-04,mcp+tv
+CSX,stockbee,1,B_stockbee_ep9m|K_stockbee_anticipation,52.05,,50.83,-2.3439,21155706,1.4309,,,,,7.2816,0.8932,,,,,,50.0125,48.8382,1.2089,93699928795.0651,Transportation,7.2816,0.8932,,,,2026-11-04,mcp+tv
+CTBI,stockbee,1,K_stockbee_anticipation,70.71,,69.35,-1.9233,149773,1.0131,,,,,-8.9058,-11.1695,,,,,,71.7045,74.3308,2.1944,1259947558.5667,Finance,-8.9058,-11.1695,,,,2026-11-04,mcp+tv
+CTGO,stockbee,1,A_stockbee_4pct,15.22,11.0949,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CTRN,stockbee,1,A_stockbee_4pct,57.78,16.3512,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CTSH,stockbee,1,B_stockbee_ep9m,65.78,,66.54,1.1554,7926190,1.0294,,,,,13.8214,17.0037,,,,,,65.7025,62.4436,2.7821,29745403995.4716,Technology Services,13.8214,17.0037,,,,2026-11-04,mcp+tv
+CTVA,stockbee,1,B_stockbee_ep9m,12.26,,12.04,-1.7945,16345356,0.7764,,,,,-7.9511,4.7643,,,,,,12.438,12.509,0.5514,8034292002.9462,Process Industries,-7.9511,4.7643,,,,2026-11-04,mcp+tv
+CVBF,stockbee,1,K_stockbee_anticipation,23.37,,22.86,-2.1823,2000159,1.27,,,,,3.3921,0.6605,,,,,,22.3865,22.3102,0.5226,4011792710.8806,Finance,3.3921,0.6605,,,,2026-11-04,mcp+tv
+CVE,stockbee,1,B_stockbee_ep9m,28.39,,27.61,-2.7474,13409069,1.903,,,,,-11.5914,-1.2871,,,,,,31.872,32.0106,1.2091,50152617735.4299,Energy Minerals,-11.5914,-1.2871,,,,2026-11-04,mcp+tv
+CVS,stockbee,1,B_stockbee_ep9m,79.96,,81.33,1.7134,19923950,1.8398,,,,,-6.3018,-14.5693,,,,,,90.0505,90.5634,3.201,104018656310.5149,Retail Trade,-6.3018,-14.5693,,,,2026-11-04,mcp+tv
+CVX,stockbee,1,B_stockbee_ep9m,216.96,,212.93,-1.8575,10449271,1.318,,,,,3.5828,14.3494,,,,,,224.358,214.6372,5.4803,415426442855.688,Energy Minerals,3.5828,14.3494,,,,2026-11-04,mcp+tv
+CWBC,stockbee,1,K_stockbee_anticipation,26.74,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CWCO,stockbee,1,K_stockbee_anticipation,27.39,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+CZR,stockbee,1,K_stockbee_anticipation,29.36,,29.18,-0.6131,5311278,0.8547,,,,,-1.6846,-2.7333,,,,,,29.101,29.426,0.2476,5947091699.7813,Consumer Services,-1.6846,-2.7333,,,,2026-11-04,mcp+tv
+D,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,69.75,,69.64,-0.1577,5916797,1.1326,,,,,13.9025,4.8479,,,,,,64.698,63.8966,1.4397,61252979028.5953,Utilities,13.9025,4.8479,,,,2026-11-04,mcp+tv
+DAKT,stockbee,1,A_stockbee_4pct,20.32,4.2586,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+DAL,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,89.24,,85.36,-4.3478,7759641,1.2125,,,,,1.3295,-7.519,,,,,,80.05,80.6684,3.2875,56159397151.4783,Transportation,1.3295,-7.519,,,,2026-11-04,mcp+tv
+DB,stockbee,1,A_stockbee_4pct,36.73,7.9342,36.42,-0.844,5084295,1.7761,,,,,3.202,-4.8589,,,,,,33.2245,36.0656,1.112,66923973527.4213,Finance,3.202,-4.8589,,,,2026-11-04,mcp+tv
+DBI,stockbee,1,A_stockbee_4pct,7.25,13.8148,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+DC,stockbee,1,A_stockbee_4pct,5.71,10.0193,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+DCH,stockbee,1,A_stockbee_4pct,4.79,5.7395,4.42,-7.7244,5510007,1.2245,,,,,-22.7273,-28.8245,,,,,,4.893,5.564,0.2862,1050212386.4426,Producer Manufacturing,-22.7273,-28.8245,,,,2026-11-04,mcp+tv
+DDI,stockbee,1,K_stockbee_anticipation,13.76,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+DECK,stockbee,1,A_stockbee_4pct,89.11,5.9698,87.74,-1.5374,2936484,0.6824,,,,,8.5488,-9.5277,,,,,,84.255,82.3346,3.1858,11711533566.5059,Consumer Non-Durables,8.5488,-9.5277,,,,2026-11-04,mcp+tv
+DEI,stockbee,1,A_stockbee_4pct,10.58,7.4112,10.42,-1.5123,2899935,1.3761,,,,,7.2016,-9.9395,,,,,,9.926,10.2422,0.3372,1745196396.5936,Finance,7.2016,-9.9395,,,,2026-11-04,mcp+tv
+DFH,stockbee,1,A_stockbee_4pct,12.81,26.8317,12.46,-2.7322,1972019,1.4459,,,,,24.6,-12.8062,,,,,,9.8125,11.1108,0.9252,1128067592.0874,Consumer Durables,24.6,-12.8062,,,,2026-11-04,mcp+tv
+DG,stockbee,1,A_stockbee_4pct,141.64,8.5198,138,-2.5699,3559110,1.4325,,,,,14.2668,8.5332,,,,,,131.906,127.4064,5.1576,30445116995.0579,Retail Trade,14.2668,8.5332,,,,2026-11-04,mcp+tv
+DGICA,stockbee,1,K_stockbee_anticipation,19.1,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+DHI,stockbee,1,A_stockbee_4pct,156.99,8.0975,157.63,0.4077,4403782,1.1486,,,,,19.227,7.6267,,,,,,143.4325,141.1172,5.6145,42786401182.673,Consumer Durables,19.227,7.6267,,,,2026-11-04,mcp+tv
+DIS,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,118.95,,117.22,-1.4544,11749723,1.4663,,,,,13.3436,12.2582,,,,,,111.455,107.8384,2.4175,202402232011.55,Consumer Services,13.3436,12.2582,,,,2026-11-04,mcp+tv
+DJT,stockbee,1,B_stockbee_ep9m,4.49,,4.02,-10.4677,17657890,2.6587,,,,,-53.7399,-59.8,,,,,,6.3985,7.9451,0.4893,1117323905.1314,Commercial Services,-53.7399,-59.8,,,,2026-11-04,mcp+tv
+DKNG,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,23.11,,23.52,1.7741,23496381,2.1202,,,,,19.8777,2.7299,,,,,,20.65,21.6202,1.0169,11676600059.5067,Consumer Services,19.8777,2.7299,,,,2026-11-04,mcp+tv
+DKS,stockbee,1,A_stockbee_4pct,147.65,7.7108,141.07,-4.4565,1557774,0.6462,,,,,2.8957,-28.7633,,,,,,141.601,136.1962,5.8852,12544919927.9519,Retail Trade,2.8957,-28.7633,,,,2026-11-04,mcp+tv
+DLTR,stockbee,1,A_stockbee_4pct,147.0,9.6442,137.94,-6.1633,3861599,1.7655,,,,,21.4688,7.7993,,,,,,127.604,122.2464,5.5469,25881722865.0873,Retail Trade,21.4688,7.7993,,,,2026-11-04,mcp+tv
+DLX,stockbee,1,A_stockbee_4pct,23.42,6.503,27.7,18.275,1023500,2.2222,,,,,21.6513,6.0896,,,,,,23.2435,23.3844,1.0183,1270219207.2161,Commercial Services,21.6513,6.0896,,,,2026-11-04,mcp+tv
+DMAC,stockbee,1,A_stockbee_4pct,10.77,7.7,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+DNA,stockbee,1,A_stockbee_4pct,11.65,8.2714,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+DNLI,stockbee,1,A_stockbee_4pct,20.96,7.7635,19.72,-5.916,2249460,1.3283,,,,,-1.0537,-22.3928,,,,,,18.888,20.2487,0.9565,3160929361.8664,Health Technology,-1.0537,-22.3928,,,,2026-11-04,mcp+tv
+DOCS,stockbee,1,A_stockbee_4pct,34.67,6.3497,33.18,-4.2977,2657638,1.1789,,,,,14.1776,-14.6276,,,,,,32.4875,28.9572,1.361,5914201179.4231,Technology Services,14.1776,-14.6276,,,,2026-11-04,mcp+tv
+DOO,stockbee,1,A_stockbee_4pct,67.21,8.1416,65.21,-2.9757,171098,1.0695,,,,,18.0699,1.9225,,,,,,58.184,58.6714,2.1743,4639710984.4505,Producer Manufacturing,18.0699,1.9225,,,,2026-11-04,mcp+tv
+DOW,stockbee,1,B_stockbee_ep9m,32.7,,31.98,-2.2018,9946548,1.0191,,,,,13.6057,7.3154,,,,,,31.6135,30.0638,1.0888,23149745557.0771,Process Industries,13.6057,7.3154,,,,2026-11-04,mcp+tv
+DPZ,stockbee,1,A_stockbee_4pct,340.69,5.4474,341.63,0.2759,771771,1.2072,,,,,13.5172,-3.7499,,,,,,313.822,313.2415,9.7851,11239370965.5173,Consumer Services,13.5172,-3.7499,,,,2026-11-04,mcp+tv
+DQ,stockbee,1,A_stockbee_4pct,12.02,9.872,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+DRDB,stockbee,1,K_stockbee_anticipation,10.77,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+DRH,stockbee,1,K_stockbee_anticipation,14.63,,13.98,-4.4429,5237792,1.4633,,,,,12.199,9.1335,,,,,,13.7825,12.9139,0.3633,2869890284.7396,Finance,12.199,9.1335,,,,2026-11-04,mcp+tv
+DRI,stockbee,1,A_stockbee_4pct,230.61,5.1142,228.67,-0.8412,1039009,1.2383,,,,,14.0385,8.2462,,,,,,215.334,210.8656,5.7165,25872461700.767,Consumer Services,14.0385,8.2462,,,,2026-11-04,mcp+tv
+DRVN,stockbee,1,A_stockbee_4pct,11.91,5.5383,12.08,1.4274,1373693,0.8801,,,,,2.5467,-6.9337,,,,,,11.8538,12.1166,0.6179,1992956110.7842,Consumer Services,2.5467,-6.9337,,,,2026-11-04,mcp+tv
+DVA,stockbee,1,A_stockbee_4pct,192.66,5.7584,194.82,1.1211,633449,0.6489,,,,,8.3055,7.0793,,,,,,184.7515,182.3448,7.2469,12254178529.8748,Health Services,8.3055,7.0793,,,,2026-11-04,mcp+tv
+DVN,stockbee,1,B_stockbee_ep9m,44.12,,42.88,-2.8105,14066700,1.3543,,,,,-9.6788,0.6809,,,,,,49.4885,48.7526,1.6945,47167998858.0236,Energy Minerals,-9.6788,0.6809,,,,2026-11-04,mcp+tv
+DXCM,stockbee,1,A_stockbee_4pct,88.48,6.641,84.46,-4.5434,4922276,0.8127,,,,,-2.1094,2.3882,,,,,,82.9595,85.4044,3.1416,31499436551.6216,Health Technology,-2.1094,2.3882,,,,2026-11-04,mcp+tv
+EBAY,stockbee,1,A_stockbee_4pct,125.15,5.505,123.35,-1.4383,3918032,0.8469,,,,,15.7021,10.5584,,,,,,119.834,112.1588,4.0059,54150650660.3636,Retail Trade,15.7021,10.5584,,,,2026-11-04,mcp+tv
+ED,stockbee,1,K_stockbee_anticipation,120.3,,121.44,0.9476,4617147,2.0107,,,,,17.107,12.4028,,,,,,113.6045,108.6622,2.2558,44754250832.1516,Utilities,17.107,12.4028,,,,2026-11-04,mcp+tv
+EGO,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,33.54,,34.66,3.3393,4788484,0.8316,,,,,-9.1243,-9.1004,,,,,,34.192,38.6838,1.9514,9057346401.6079,Non-Energy Minerals,-9.1243,-9.1004,,,,2026-11-04,mcp+tv
+EGP,stockbee,1,K_stockbee_anticipation,201.0,,193.86,-3.5522,712426,0.9561,,,,,-1.1019,-3.2152,,,,,,198.217,198.5928,4.5183,10424752281.3707,Finance,-1.1019,-3.2152,,,,2026-11-04,mcp+tv
+EH,stockbee,1,A_stockbee_4pct,4.08,6.8063,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+EIKN,stockbee,1,A_stockbee_4pct,6.39,15.1351,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+EL,stockbee,1,A_stockbee_4pct,112.04,6.3099,107.65,-3.9182,4576618,0.9872,,,,,14.4726,25.9212,,,,,,105.873,100.6448,4.418,39004873138.5068,Consumer Non-Durables,14.4726,25.9212,,,,2026-11-04,mcp+tv
+ELE,stockbee,1,A_stockbee_4pct,15.49,9.7025,15.5,0.0646,458589,1.2437,,,,,-14.8819,-17.7719,,,,,,16.0023,18.6059,0.8543,1185303686.0555,Energy Minerals,-14.8819,-17.7719,,,,2026-11-04,mcp+tv
+ELS,stockbee,1,K_stockbee_anticipation,62.5,,62.98,0.768,2081777,0.8449,,,,,7.8055,-4.2566,,,,,,60.25,60.416,1.4258,12267597970.7277,Finance,7.8055,-4.2566,,,,2026-11-04,mcp+tv
+ELV,stockbee,1,A_stockbee_4pct,434.18,4.9378,432,-0.5021,2113393,1.5182,,,,,8.9039,10.6586,,,,,,426.8725,412.3414,13.5154,93336144177.3274,Health Services,8.9039,10.6586,,,,2026-11-04,mcp+tv
+ELVN,stockbee,1,A_stockbee_4pct,47.25,5.3982,44.79,-5.2063,1585854,0.8077,,,,,-1.3001,-25.5733,,,,,,42.1625,47.4754,2.0007,3281797321.4413,Health Technology,-1.3001,-25.5733,,,,2026-11-04,mcp+tv
+EMA,stockbee,1,K_stockbee_anticipation,51.3,,51.19,-0.2144,654254,0.4111,,,,,7.1369,-0.5826,,,,,,48.3115,48.5672,0.9073,15725568557.8902,Utilities,7.1369,-0.5826,,,,2026-11-04,mcp+tv
+EMBC,stockbee,1,A_stockbee_4pct,6.52,7.2368,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ENLT,stockbee,1,A_stockbee_4pct,67.65,4.4788,64.61,-4.4937,369739,1.6608,,,,,-5.3333,-23.3934,,,,,,68.5798,70.959,3.0756,9046176006.2598,Utilities,-5.3333,-23.3934,,,,2026-11-04,mcp+tv
+ENR,stockbee,1,A_stockbee_4pct,25.19,4.6531,24.47,-2.8583,1388624,1.4035,,,,,14.2924,11.6332,,,,,,22.707,21.9014,0.9532,1675794769.3017,Consumer Non-Durables,14.2924,11.6332,,,,2026-11-04,mcp+tv
+EPC,stockbee,1,A_stockbee_4pct,29.66,6.1941,28.56,-3.7087,494255,0.9147,,,,,5.1159,1.7456,,,,,,28.2115,27.8016,1.1311,1316299347.0182,Consumer Non-Durables,5.1159,1.7456,,,,2026-11-04,mcp+tv
+EQT,stockbee,1,B_stockbee_ep9m,52.52,,50.62,-3.6177,7299965,0.582,,,,,-1.3255,-1.8802,,,,,,54.154,53.1136,1.7627,31665312851.5404,Energy Minerals,-1.3255,-1.8802,,,,2026-11-04,mcp+tv
+ESNT,stockbee,1,K_stockbee_anticipation,69.34,,68.6,-1.0672,1067072,1.2359,,,,,12.0366,4.5891,,,,,,65.6045,65.6898,1.7724,6165527255.9475,Finance,12.0366,4.5891,,,,2026-11-04,mcp+tv
+ESRT,stockbee,1,A_stockbee_4pct,5.27,4.3564,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ETD,stockbee,1,A_stockbee_4pct,21.38,5.5281,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ETOR,stockbee,1,A_stockbee_4pct,23.72,5.0487,22.685,-4.3634,1904056,1.7465,,,,,-12.75,-36.6695,,,,,,23.9398,26.7181,0.8848,1837714702.8396,Technology Services,-12.75,-36.6695,,,,2026-11-04,mcp+tv
+EVH,stockbee,1,A_stockbee_4pct,4.8,11.6279,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+EVOX,stockbee,1,K_stockbee_anticipation,10.14,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+EVR,stockbee,1,A_stockbee_4pct,311.03,4.6534,290.13,-6.7196,624379,0.9317,,,,,8.4558,-7.0215,,,,,,271.593,272.5936,12.8705,11157768703.1197,Finance,8.4558,-7.0215,,,,2026-11-04,mcp+tv
+EVTC,stockbee,1,A_stockbee_4pct,34.73,11.1004,34.03,-2.0155,795198,1.5436,,,,,16.1433,10.2008,,,,,,31.6285,29.8598,1.3395,2033379059.4644,Commercial Services,16.1433,10.2008,,,,2026-11-04,mcp+tv
+EXC,stockbee,1,B_stockbee_ep9m,46.24,,46.53,0.6272,12507919,1.2523,,,,,13.4878,3.1479,,,,,,44.1685,43.0103,0.9113,48153746526.1661,Utilities,13.4878,3.1479,,,,2026-11-04,mcp+tv
+EXK,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,7.83,,7.59,-3.0651,10251609,1.7413,,,,,-12.6582,-20.1053,,,,,,7.8805,9.0528,0.4877,2247736489.5233,Non-Energy Minerals,-12.6582,-20.1053,,,,2026-11-04,mcp+tv
+EXPE,stockbee,1,A_stockbee_4pct,315.88,10.5364,272.48,-13.7394,5237856,3.0707,,,,,4.159,-12.5209,,,,,,285.831,282.9948,16.1951,32702747041.7895,Consumer Services,4.159,-12.5209,,,,2026-11-04,mcp+tv
+EYE,stockbee,1,A_stockbee_4pct,17.94,6.8493,17.85,-0.5017,2527305,1.1689,,,,,7.2716,-20.4545,,,,,,17.302,16.9687,0.8988,1411387279.6154,Retail Trade,7.2716,-20.4545,,,,2026-11-04,mcp+tv
+F,stockbee,1,B_stockbee_ep9m,12.67,,12.53,-1.105,54154111,1.131,,,,,2.7049,-9.3343,,,,,,12.1395,12.7766,0.3783,50035016259.0055,Consumer Durables,2.7049,-9.3343,,,,2026-11-04,mcp+tv
+FAST,stockbee,1,B_stockbee_ep9m|K_stockbee_anticipation,53.21,,52.9,-0.5826,11991994,1.6683,,,,,4.4835,4.5971,,,,,,51.8895,50.615,1.365,60692249028.8818,Distribution Services,4.4835,4.5971,,,,2026-11-04,mcp+tv
+FBIN,stockbee,1,B_stockbee_ep9m,47.47,,47.04,-0.9058,4814900,1.4158,,,,,21.9917,-6.5183,,,,,,42.4125,41.2232,1.8313,5615234338.3392,Producer Manufacturing,21.9917,-6.5183,,,,2026-11-04,mcp+tv
+FBP,stockbee,1,K_stockbee_anticipation,26.53,,25.93,-2.2616,1316328,0.6177,,,,,-4.282,-10.2458,,,,,,26.854,27.1864,0.6292,3913380185.1195,Finance,-4.282,-10.2458,,,,2026-11-04,mcp+tv
+FBYD,stockbee,1,A_stockbee_4pct,7.72,9.9715,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FCX,stockbee,1,B_stockbee_ep9m,62.6,,57.9,-7.508,27266670,2.3592,,,,,-20.5107,-17.2503,,,,,,66.8735,70.2192,2.9098,83145408679.0447,Non-Energy Minerals,-20.5107,-17.2503,,,,2026-11-04,mcp+tv
+FIS,stockbee,1,B_stockbee_ep9m,29.76,,29.39,-1.2433,18194070,1.8208,,,,,-12.6857,-30.9932,,,,,,35.942,36.4704,1.8691,15156597476.4607,Technology Services,-12.6857,-30.9932,,,,2026-11-04,mcp+tv
+FISI,stockbee,1,K_stockbee_anticipation,40.44,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FIVE,stockbee,1,A_stockbee_4pct,252.01,6.698,241.26,-4.2657,628697,0.7588,,,,,12.1357,4.216,,,,,,228.9892,231.395,9.2922,13282336239.6425,Retail Trade,12.1357,4.216,,,,2026-11-04,mcp+tv
+FLNC,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,6.06,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FLO,stockbee,1,A_stockbee_4pct,7.1,5.6548,7.1,0,6244277,1.0603,,,,,26.7857,-2.069,,,,,,6.25,6.1494,0.2821,1505607653,Consumer Non-Durables,26.7857,-2.069,,,,2026-11-04,mcp+tv
+FLYW,stockbee,1,A_stockbee_4pct,21.81,13.8903,21.26,-2.5218,4828159,2.4522,,,,,16.4932,15.6063,,,,,,19.146,18.3917,0.8425,2586654626.4759,Commercial Services,16.4932,15.6063,,,,2026-11-04,mcp+tv
+FMBH,stockbee,1,K_stockbee_anticipation,51.94,,50.86,-2.0793,186729,1.2474,,,,,1.9852,-1.7388,,,,,,50.158,50.0444,1.2629,1353241994.2002,Finance,1.9852,-1.7388,,,,2026-11-04,mcp+tv
+FMNB,stockbee,1,K_stockbee_anticipation,15.84,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FMS,stockbee,1,A_stockbee_4pct,23.19,6.7188,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FNB,stockbee,1,K_stockbee_anticipation,18.45,,17.86,-3.1978,4694144,0.8064,,,,,2.1739,-5.5526,,,,,,17.7735,17.8198,0.4395,6266021125.4114,Finance,2.1739,-5.5526,,,,2026-11-04,mcp+tv
+FND,stockbee,1,A_stockbee_4pct,53.41,10.9242,51.47,-3.6323,2968161,0.7615,,,,,9.6974,-15.2897,,,,,,47.188,47.4822,2.5994,5364934626.7059,Retail Trade,9.6974,-15.2897,,,,2026-11-04,mcp+tv
+FNF,stockbee,1,A_stockbee_4pct,43.28,4.5663,42.89,-0.9011,6098744,2.1843,,,,,9.1904,-17.8667,,,,,,40.3985,41.8698,1.2181,11502789299.0268,Finance,9.1904,-17.8667,,,,2026-11-04,mcp+tv
+FNKO,stockbee,1,A_stockbee_4pct,6.56,4.4586,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FNLC,stockbee,1,K_stockbee_anticipation,37.15,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FNRN,stockbee,1,A_stockbee_4pct,18.35,4.8571,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FOSL,stockbee,1,A_stockbee_4pct,7.62,13.9013,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FOUR,stockbee,1,A_stockbee_4pct,44.82,8.026,42.79,-4.5292,7846367,3.6924,,,,,13.8941,-2.0824,,,,,,39.8715,40.2948,2.4693,3378703234.6399,Commercial Services,13.8941,-2.0824,,,,2026-11-04,mcp+tv
+FOXF,stockbee,1,A_stockbee_4pct,17.37,7.4212,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FR,stockbee,1,K_stockbee_anticipation,55.51,,53.92,-2.8643,2097504,0.843,,,,,-7.4494,-14.5348,,,,,,56.7705,59.3236,1.2616,7388707942.494,Finance,-7.4494,-14.5348,,,,2026-11-04,mcp+tv
+FRSH,stockbee,1,B_stockbee_ep9m,13.26,,12.7,-4.2232,9475056,1.7594,,,,,-7.3669,7.2635,,,,,,14.3862,13.4773,0.6555,3331691608.7104,Technology Services,-7.3669,7.2635,,,,2026-11-04,mcp+tv
+FSCO,stockbee,1,K_stockbee_anticipation,5.1,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FSTR,stockbee,1,A_stockbee_4pct,41.65,14.2348,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FSV,stockbee,1,A_stockbee_4pct,155.25,4.2646,153.62,-1.0499,135258,0.6717,,,,,19.3953,7.0746,,,,,,140.7155,136.3918,4.6027,6438341178.1701,Finance,19.3953,7.0746,,,,2026-11-04,mcp+tv
+FTDR,stockbee,1,A_stockbee_4pct,92.86,4.7963,95.98,3.3599,1469280,2.0125,,,,,22.1586,6.0552,,,,,,83.759,80.6171,3.6069,6612379989.3045,Consumer Durables,22.1586,6.0552,,,,2026-11-04,mcp+tv
+FUBO,stockbee,1,A_stockbee_4pct,8.23,7.7225,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FUL,stockbee,1,A_stockbee_4pct,52.57,4.742,50.22,-4.4702,774158,1.1653,,,,,-1.3553,-15.3263,,,,,,50.37,51.0578,1.7203,2703298231.1984,Process Industries,-1.3553,-15.3263,,,,2026-11-04,mcp+tv
+FVAV,stockbee,1,K_stockbee_anticipation,10.0831,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FVRR,stockbee,1,A_stockbee_4pct,8.71,5.5758,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+FWDI,stockbee,1,A_stockbee_4pct,6.43,4.5528,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+GABC,stockbee,1,K_stockbee_anticipation,50.76,,50.56,-0.394,279683,1.761,,,,,2.5974,-0.158,,,,,,49.7305,49.4574,1.2672,1899994876.4823,Finance,2.5974,-0.158,,,,2026-11-04,mcp+tv
+GBX,stockbee,1,A_stockbee_4pct,44.05,5.9913,42.88,-2.6561,888885,1.2607,,,,,5.2787,-9.7073,,,,,,39.34,41.0822,1.5319,1329219945.6109,Producer Manufacturing,5.2787,-9.7073,,,,2026-11-04,mcp+tv
+GCGR,stockbee,1,K_stockbee_anticipation,10.04,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+GCO,stockbee,1,A_stockbee_4pct,39.3,7.5828,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+GDDY,stockbee,1,A_stockbee_4pct,118.32,4.2926,120.12,1.5213,2033041,1.0637,,,,,21.0155,32.0871,,,,,,109.5875,102.9454,5.0399,14567517404.6024,Technology Services,21.0155,32.0871,,,,2026-11-04,mcp+tv
+GDRX,stockbee,1,A_stockbee_4pct,3.72,6.5903,3.49,-6.1828,1328083,1.1421,,,,,3.869,-7.672,,,,,,3.5008,3.4353,0.1466,1190597430.0511,Health Services,3.869,-7.672,,,,2026-11-04,mcp+tv
+GENI,stockbee,1,B_stockbee_ep9m,7.01,,5.92,-15.5492,22198622,3.4163,,,,,-5.5821,-23.0169,,,,,,6.483,6.5578,0.4639,1643551796.9301,Technology Services,-5.5821,-23.0169,,,,2026-11-04,mcp+tv
+GFF,stockbee,1,A_stockbee_4pct,107.52,5.2055,102.4,-4.7619,300526,0.8322,,,,,7.7441,-3.8498,,,,,,97.254,96.2004,3.5476,4638178761.9048,Producer Manufacturing,7.7441,-3.8498,,,,2026-11-04,mcp+tv
+GFL,stockbee,1,K_stockbee_anticipation,45.29,,46.12,1.8326,5247834,0.9591,,,,,8.8249,10.9721,,,,,,44.411,43.0942,1.3499,20109086242.7372,Industrial Services,8.8249,10.9721,,,,2026-11-04,mcp+tv
+GGB,stockbee,1,B_stockbee_ep9m,4.6,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+GIC,stockbee,1,A_stockbee_4pct,47.57,7.7952,47.18,-0.8198,330885,2.1723,,,,,7.3981,19.3222,,,,,,44.435,42.265,1.6048,1797951527.0212,Retail Trade,7.3981,19.3222,,,,2026-11-04,mcp+tv
+GIII,stockbee,1,A_stockbee_4pct,33.14,5.7435,32.02,-3.3796,436774,0.8989,,,,,17.6773,-10.3332,,,,,,29.4115,28.6776,0.9639,1372905722.2746,Consumer Non-Durables,17.6773,-10.3332,,,,2026-11-04,mcp+tv
+GIL,stockbee,1,A_stockbee_4pct,43.27,6.5501,35.02,-19.0663,8958634,7.886,,,,,-14.4393,-40.1368,,,,,,40.704,44.2206,2.1827,6485418395.7922,Consumer Non-Durables,-14.4393,-40.1368,,,,2026-11-04,mcp+tv
+GIS,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,35.85,,36.46,1.7015,10414131,1.2251,,,,,14.4741,1.6448,,,,,,33.6025,35.0104,1.1546,19494692067.7211,Consumer Non-Durables,14.4741,1.6448,,,,2026-11-04,mcp+tv
+GLRE,stockbee,1,A_stockbee_4pct,16.37,7.0634,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+GLW,stockbee,1,B_stockbee_ep9m,118.77,,103.43,-12.9157,21453952,1.8221,,,,,-35.7598,-36.5032,,,,,,131.0195,145.4244,8.3009,89094715638.8902,Electronic Technology,-35.7598,-36.5032,,,,2026-11-04,mcp+tv
+GM,stockbee,1,A_stockbee_4pct,92.43,4.6298,89.33,-3.3539,11316153,1.3164,,,,,9.7016,2.8081,,,,,,83.067,83.3612,3.0704,75354271588.0827,Consumer Durables,9.7016,2.8081,,,,2026-11-04,mcp+tv
+GMED,stockbee,1,A_stockbee_4pct,87.1,9.4496,81.44,-6.4983,4075186,3.3065,,,,,5.7525,-7.5806,,,,,,79.398,77.427,3.0842,10934290135.5334,Health Technology,5.7525,-7.5806,,,,2026-11-04,mcp+tv
+GMRS,stockbee,1,A_stockbee_4pct,12.39,8.7796,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+GNL,stockbee,1,K_stockbee_anticipation,7.09,,7.11,0.2821,4691425,1.5373,,,,,-12.7607,-21.3496,,,,,,7.265,8.1466,0.2091,1644669990.2158,Finance,-12.7607,-21.3496,,,,2026-11-04,mcp+tv
+GO,stockbee,1,A_stockbee_4pct,13.69,7.1205,13.14,-4.0175,2160206,0.9297,,,,,14.8601,36.0248,,,,,,12.9102,12.1067,0.5822,1301970231.1381,Retail Trade,14.8601,36.0248,,,,2026-11-04,mcp+tv
+GOLD,stockbee,1,A_stockbee_4pct,41.43,5.9049,37.51,-9.4617,1364131,2.0635,,,,,-10.3918,-12.8688,,,,,,39.1325,42.33,1.7044,1091407877.9788,Finance,-10.3918,-12.8688,,,,2026-11-04,mcp+tv
+GOOGL,stockbee,1,B_stockbee_ep9m,288.93,,282.57,-2.2012,53095010,1.0587,,,,,-18.6545,-20.7866,,,,,,320.7852,334.0453,10.8918,3445042294652.984,Technology Services,-18.6545,-20.7866,,,,2026-11-04,mcp+tv
+GOOS,stockbee,1,A_stockbee_4pct,8.91,7.7388,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+GPGI,stockbee,1,A_stockbee_4pct,12.78,9.4178,13.62,6.5728,3408129,1.9287,,,,,4.9307,-12.2423,,,,,,12.1345,12.491,0.8189,3948303164.1315,Producer Manufacturing,4.9307,-12.2423,,,,2026-11-04,mcp+tv
+GRAB,stockbee,1,B_stockbee_ep9m,3.36,,3.48,3.5714,148462763,2.1408,,,,,9.6063,-5.4348,,,,,,2.943,3.0732,0.1521,14158439030.5357,Transportation,9.6063,-5.4348,,,,2026-11-04,mcp+tv
+GRMN,stockbee,1,A_stockbee_4pct,289.15,6.5245,286.4,-0.9511,1469673,1.4252,,,,,0.1679,-6.046,,,,,,282.335,281.7104,9.9899,55187931964.774,Electronic Technology,0.1679,-6.046,,,,2026-11-04,mcp+tv
+GRPN,stockbee,1,A_stockbee_4pct,17.31,11.6774,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+GSAT,stockbee,1,K_stockbee_anticipation,84.58,,83.53,-1.2414,1863433,1.7815,,,,,-0.0837,0.6386,,,,,,83.1885,82.7418,1.1199,10822429783.7991,Communications,-0.0837,0.6386,,,,2026-11-04,mcp+tv
+GSHD,stockbee,1,A_stockbee_4pct,56.35,7.8882,56.88,0.9406,373644,0.8799,,,,,26.6533,-14.1952,,,,,,47.8927,51.7729,3.0688,2020138931.1162,Finance,26.6533,-14.1952,,,,2026-11-04,mcp+tv
+GSK,stockbee,1,A_stockbee_4pct,51.15,5.0308,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+GT,stockbee,1,B_stockbee_ep9m,4.55,,4.45,-2.1978,14601323,1.7627,,,,,-5.9197,-35.5072,,,,,,4.3958,4.9874,0.2258,1281149458.5275,Consumer Durables,-5.9197,-35.5072,,,,2026-11-04,mcp+tv
+GTN,stockbee,1,A_stockbee_4pct,4.98,6.1834,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+GUAC,stockbee,1,K_stockbee_anticipation,9.87,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+GWRE,stockbee,1,A_stockbee_4pct,170.62,5.9488,167.35,-1.9165,1207992,1.0703,,,,,1.4242,2.0427,,,,,,171.354,165.0458,7.8693,13828330098.8609,Technology Services,1.4242,2.0427,,,,2026-11-04,mcp+tv
+GWW,stockbee,1,A_stockbee_4pct,1489.39,6.5387,1451.39,-2.5514,523403,1.9886,,,,,12.8073,13.7952,,,,,,1355.9255,1309.7416,37.443,68361835001.6213,Distribution Services,12.8073,13.7952,,,,2026-11-04,mcp+tv
+GXO,stockbee,1,A_stockbee_4pct,56.96,9.4753,55.18,-3.125,2859505,1.7538,,,,,19.1793,17.4292,,,,,,49.293,47.4114,1.7632,6328294909.5312,Transportation,19.1793,17.4292,,,,2026-11-04,mcp+tv
+HACQ,stockbee,1,K_stockbee_anticipation,10.025,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+HAL,stockbee,1,B_stockbee_ep9m,33.0,,31.92,-3.2727,10592416,1.0116,,,,,-1.7846,-0.8388,,,,,,33.916,34.1684,1.1072,26401872861.7891,Industrial Services,-1.7846,-0.8388,,,,2026-11-04,mcp+tv
+HAPN,stockbee,1,A_stockbee_4pct,16.69,7.0558,16.18,-3.0557,2134882,0.668,,,,,3.6515,-18.1174,,,,,,14.9238,15.7162,0.6832,1863977116.9766,Finance,3.6515,-18.1174,,,,2026-11-04,mcp+tv
+HASI,stockbee,1,A_stockbee_4pct,40.38,5.1836,39.68,-1.7335,2370619,2.1721,,,,,10.3142,-0.2514,,,,,,37.087,37.2796,1.0128,5098713025.6166,Finance,10.3142,-0.2514,,,,2026-11-04,mcp+tv
+HBAN,stockbee,1,B_stockbee_ep9m,16.06,,15.61,-2.802,26233268,1.1908,,,,,1.9595,-9.8209,,,,,,15.5995,15.8699,0.3843,31460193255.9832,Finance,1.9595,-9.8209,,,,2026-11-04,mcp+tv
+HBCP,stockbee,1,K_stockbee_anticipation,61.91,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+HCM,stockbee,1,A_stockbee_4pct,13.92,6.422,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+HD,stockbee,1,A_stockbee_4pct,355.44,6.5276,349.94,-1.5474,7478108,1.6964,,,,,23.5533,-0.4466,,,,,,318.458,309.0908,9.2065,349131513701.0345,Retail Trade,23.5533,-0.4466,,,,2026-11-04,mcp+tv
+HDB,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,24.33,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+HDL,stockbee,1,K_stockbee_anticipation,9.9,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+HFWA,stockbee,1,K_stockbee_anticipation,29.18,,28.56,-2.1247,402237,1.162,,,,,2.0364,-3.4483,,,,,,28.201,28.2532,0.7031,1158875526.9993,Finance,2.0364,-3.4483,,,,2026-11-04,mcp+tv
+HGTY,stockbee,1,A_stockbee_4pct,18.71,9.8649,18.36,-1.8707,797780,1.8928,,,,,32.9471,36.1008,,,,,,15.7575,14.4642,0.6521,6310373900.248,Finance,32.9471,36.1008,,,,2026-11-04,mcp+tv
+HIG,stockbee,1,K_stockbee_anticipation,138.11,,137.09,-0.7385,1656387,0.7178,,,,,8.7239,-4.7192,,,,,,134.1455,132.7946,3.0012,36659701949.8581,Finance,8.7239,-4.7192,,,,2026-11-04,mcp+tv
+HLF,stockbee,1,A_stockbee_4pct,15.31,6.4673,14.9,-2.678,2034579,1.1027,,,,,18.254,28.4483,,,,,,13.836,12.8586,0.6503,1562947314.8922,Consumer Non-Durables,18.254,28.4483,,,,2026-11-04,mcp+tv
+HLI,stockbee,1,A_stockbee_4pct,154.06,4.9884,147.22,-4.4398,1135896,1.1934,,,,,14.7467,15.1866,,,,,,134.7995,132.7058,5.4328,10213266930.7762,Finance,14.7467,15.1866,,,,2026-11-04,mcp+tv
+HLN,stockbee,1,B_stockbee_ep9m,9.23,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+HLNE,stockbee,1,A_stockbee_4pct,94.99,7.1759,90.13,-5.1163,760566,1.1734,,,,,2.3042,-9.626,,,,,,84.7685,89.7588,4.1782,5025227032.5897,Finance,2.3042,-9.626,,,,2026-11-04,mcp+tv
+HMN,stockbee,1,A_stockbee_4pct,50.2,5.751,53.17,5.9163,568379,1.8151,,,,,16.3457,-2.3328,,,,,,46.9175,47.622,1.6655,2153441012.7944,Finance,16.3457,-2.3328,,,,2026-11-04,mcp+tv
+HOMB,stockbee,1,K_stockbee_anticipation,30.45,,30.07,-1.2479,1758168,1.1605,,,,,4.8466,-2.0202,,,,,,29.5165,29.3792,0.6305,6015492271.8916,Finance,4.8466,-2.0202,,,,2026-11-04,mcp+tv
+HOOD,stockbee,1,B_stockbee_ep9m,87.41,,78.39,-10.3192,32168127,1.4949,,,,,-31.8407,-15.628,,,,,,95.587,106.5484,5.6655,70589510937.1668,Finance,-31.8407,-15.628,,,,2026-11-04,mcp+tv
+HOV,stockbee,1,A_stockbee_4pct,110.55,9.0559,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+HPP,stockbee,1,A_stockbee_4pct,10.56,6.9909,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+HPQ,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,29.93,,29.44,-1.6372,18022674,1.1834,,,,,-6.3911,3.9915,,,,,,30.9495,31.6696,1.5958,26548727770.836,Technology Services,-6.3911,3.9915,,,,2026-11-04,mcp+tv
+HQY,stockbee,1,A_stockbee_4pct,108.84,6.6745,103.46,-4.943,1382806,1.4851,,,,,13.1576,-0.4522,,,,,,98.4765,95.3174,3.4701,8557724016.898,Finance,13.1576,-0.4522,,,,2026-11-04,mcp+tv
+HSBC,stockbee,1,A_stockbee_4pct,89.37,5.7758,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+HSLV,stockbee,1,A_stockbee_4pct,4.38,9.7744,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+HST,stockbee,1,B_stockbee_ep9m,26.11,,24.63,-5.6683,18464954,1.989,,,,,9.0788,5.7308,,,,,,24.5835,23.1625,0.5951,16874614111.6109,Finance,9.0788,5.7308,,,,2026-11-04,mcp+tv
+HSY,stockbee,1,A_stockbee_4pct,174.5,4.1542,177.43,1.6791,2494533,1.2441,,,,,10.3215,-2.6233,,,,,,167.809,168.524,4.7192,35659998383.8187,Consumer Non-Durables,10.3215,-2.6233,,,,2026-11-04,mcp+tv
+HVMC,stockbee,1,K_stockbee_anticipation,10.3,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+HWC,stockbee,1,K_stockbee_anticipation,73.26,,71.41,-2.5253,607309,0.7507,,,,,-2.6979,-6.9273,,,,,,72.68,73.44,1.9677,5728728380.6515,Finance,-2.6979,-6.9273,,,,2026-11-04,mcp+tv
+HYMC,stockbee,1,A_stockbee_4pct,17.47,8.5768,17.02,-2.5758,2977118,1.4672,,,,,-10.9367,-35.6035,,,,,,16.9218,19.432,1.3331,1585984053.6371,Non-Energy Minerals,-10.9367,-35.6035,,,,2026-11-04,mcp+tv
+IACO,stockbee,1,K_stockbee_anticipation,10.0,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+IBP,stockbee,1,A_stockbee_4pct,235.42,10.8067,223.08,-5.2417,952563,2.3995,,,,,16.5578,-8.8986,,,,,,199.7005,204.9488,10.6828,5929282949.818,Industrial Services,16.5578,-8.8986,,,,2026-11-04,mcp+tv
+ICL,stockbee,1,A_stockbee_4pct,4.58,5.0459,4.65,1.5284,2152402,0.9049,,,,,-8.4646,-12.4294,,,,,,4.7785,5.165,0.1367,6001840384.3559,Process Industries,-8.4646,-12.4294,,,,2026-11-04,mcp+tv
+ICUI,stockbee,1,A_stockbee_4pct,172.62,6.6675,167.65,-2.8792,529572,2.0191,,,,,3.1375,-8.0614,,,,,,164.547,162.9656,6.3056,4192429501.5653,Health Technology,3.1375,-8.0614,,,,2026-11-04,mcp+tv
+IDR,stockbee,1,A_stockbee_4pct,20.06,5.5789,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+IDT,stockbee,1,K_stockbee_anticipation,83.99,,81.82,-2.5836,183281,1.1708,,,,,1.5388,23.5392,,,,,,82.102,75.9162,2.305,2172407079.0432,Communications,1.5388,23.5392,,,,2026-11-04,mcp+tv
+IEAG,stockbee,1,K_stockbee_anticipation,10.07,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+IEX,stockbee,1,K_stockbee_anticipation,233.69,,222.6,-4.7456,829358,0.8438,,,,,-5.7219,-5.1878,,,,,,234.1185,230.064,6.7425,16350594466.8698,Producer Manufacturing,-5.7219,-5.1878,,,,2026-11-04,mcp+tv
+IIIV,stockbee,1,A_stockbee_4pct,19.02,4.8512,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+INFY,stockbee,1,B_stockbee_ep9m,12.24,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ING,stockbee,1,A_stockbee_4pct,32.84,6.2783,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+INNV,stockbee,1,A_stockbee_4pct,9.79,10.6215,9.09,-7.1502,521003,0.8596,,,,,0.8879,-17.663,,,,,,9.1495,9.6933,0.466,1240389554.3596,Technology Services,0.8879,-17.663,,,,2026-11-04,mcp+tv
+IOT,stockbee,1,A_stockbee_4pct,42.81,4.1352,41.09,-4.0178,4589838,1.1933,,,,,-3.7705,3.999,,,,,,42.1915,40.7324,1.9806,24062519005.9925,Technology Services,-3.7705,3.999,,,,2026-11-04,mcp+tv
+IP,stockbee,1,B_stockbee_ep9m,35.65,,34.24,-3.9551,5949056,0.8556,,,,,6.6002,-15.1004,,,,,,33.9485,34.484,1.3888,18132473646.8466,Process Industries,6.6002,-15.1004,,,,2026-11-04,mcp+tv
+IPXG,stockbee,1,K_stockbee_anticipation,10.215,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+IRD,stockbee,1,A_stockbee_4pct,4.27,8.6514,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+IRMD,stockbee,1,A_stockbee_4pct,88.58,9.2097,85.54,-3.4319,128000,0.832,,,,,-1.7685,-6.4114,,,,,,86.039,85.3442,3.2035,1093898686.0912,Health Technology,-1.7685,-6.4114,,,,2026-11-04,mcp+tv
+ISTR,stockbee,1,K_stockbee_anticipation,28.49,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ITUB,stockbee,1,B_stockbee_ep9m,7.28,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+IVR,stockbee,1,K_stockbee_anticipation,5.52,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+IVZ,stockbee,1,A_stockbee_4pct,29.44,4.1755,27.08,-8.0163,8821869,1.4574,,,,,-11.8776,-14.923,,,,,,28.538,30.1818,1.0864,11902443657.8546,Finance,-11.8776,-14.923,,,,2026-11-04,mcp+tv
+JACS,stockbee,1,K_stockbee_anticipation,10.855,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+JAKK,stockbee,1,A_stockbee_4pct,34.02,7.4882,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+JBGS,stockbee,1,A_stockbee_4pct,12.29,4.8635,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+JBI,stockbee,1,A_stockbee_4pct,5.0,6.8376,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+JBS,stockbee,1,A_stockbee_4pct,12.96,6.2295,12.8,-1.2346,5390295,0.7317,,,,,6.6667,-9.0909,,,,,,12.586,12.4248,0.437,13719799526.9136,Consumer Non-Durables,6.6667,-9.0909,,,,2026-11-04,mcp+tv
+JBTM,stockbee,1,A_stockbee_4pct,126.27,6.9541,126.82,0.4356,949152,1.7172,,,,,15.1653,4.0105,,,,,,110.0535,111.242,4.1084,6477696194.6279,Producer Manufacturing,15.1653,4.0105,,,,2026-11-04,mcp+tv
+JEF,stockbee,1,A_stockbee_4pct,51.17,5.3748,48.6,-5.0225,3303965,1.5152,,,,,5.2632,-13.8451,,,,,,46.1465,48.0172,2.0135,11161944197.4125,Finance,5.2632,-13.8451,,,,2026-11-04,mcp+tv
+JHX,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,29.52,,28.66,-2.9133,12439310,1.5159,,,,,12.7459,-4.2432,,,,,,26.3835,26.8608,0.9742,16637775737.3726,Non-Energy Minerals,12.7459,-4.2432,,,,2026-11-04,mcp+tv
+JILL,stockbee,1,A_stockbee_4pct,23.65,5.0644,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+JJSF,stockbee,1,A_stockbee_4pct,91.01,4.5972,91.13,0.1319,301714,1.3521,,,,,15.6913,-0.7947,,,,,,83.3455,82.0874,2.673,1702454995.0364,Consumer Non-Durables,15.6913,-0.7947,,,,2026-11-04,mcp+tv
+JKHY,stockbee,1,A_stockbee_4pct,179.16,10.8252,180.26,0.614,1209699,1.2484,,,,,24.9896,15.4847,,,,,,159.3185,156.8956,5.3924,12638389290.0376,Technology Services,24.9896,15.4847,,,,2026-11-04,mcp+tv
+JKS,stockbee,1,A_stockbee_4pct,10.65,4.8228,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+JLL,stockbee,1,A_stockbee_4pct,390.33,4.2325,375.25,-3.8634,926490,1.3723,,,,,23.9512,3.0765,,,,,,325.2425,330.786,14.2441,17141164723.6729,Finance,23.9512,3.0765,,,,2026-11-04,mcp+tv
+JMIA,stockbee,1,A_stockbee_4pct,5.43,5.2326,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+JNJ,stockbee,1,B_stockbee_ep9m,276.32,,272.32,-1.4476,9656075,1.3268,,,,,7.1493,6.4207,,,,,,263.936,265.578,7.1499,655558759016.8303,Health Technology,7.1493,6.4207,,,,2026-11-04,mcp+tv
+JOE,stockbee,1,A_stockbee_4pct,70.45,5.0395,69.8,-0.9226,255344,1.001,,,,,4.852,3.2239,,,,,,68.179,66.478,2.0626,3945434551.3016,Finance,4.852,3.2239,,,,2026-11-04,mcp+tv
+JPM,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,352.11,,337.34,-4.1947,12952459,2.0228,,,,,1.3855,-5.1776,,,,,,336.9555,342.2236,7.9832,896712522153.1315,Finance,1.3855,-5.1776,,,,2026-11-04,mcp+tv
+KAI,stockbee,1,A_stockbee_4pct,308.56,9.1128,299.45,-2.9524,171633,1.1412,,,,,11.7184,-10.2207,,,,,,269.9445,274.2708,11.6819,3536240153.0787,Producer Manufacturing,11.7184,-10.2207,,,,2026-11-04,mcp+tv
+KBH,stockbee,1,A_stockbee_4pct,53.12,8.5633,52.06,-1.9955,1421076,1.0939,,,,,16.0241,-9.0655,,,,,,45.885,47.6362,1.9718,3163307839.8373,Consumer Durables,16.0241,-9.0655,,,,2026-11-04,mcp+tv
+KBON,stockbee,1,K_stockbee_anticipation,10.125,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+KC,stockbee,1,A_stockbee_4pct,8.1,6.4389,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+KEP,stockbee,1,A_stockbee_4pct,11.3,6.7044,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+KEY,stockbee,1,B_stockbee_ep9m,21.55,,20.96,-2.7378,14542159,0.8765,,,,,3.2512,-7.2977,,,,,,20.757,20.8922,0.4955,22133334489.6297,Finance,3.2512,-7.2977,,,,2026-11-04,mcp+tv
+KGC,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,21.42,,21.59,0.7937,12686142,1.3081,,,,,-9.0181,-20.625,,,,,,22.529,25.4872,1.0828,25433842145.9007,Non-Energy Minerals,-9.0181,-20.625,,,,2026-11-04,mcp+tv
+KIM,stockbee,1,B_stockbee_ep9m,25.88,,25.63,-0.966,10007143,1.368,,,,,16.5,5.0841,,,,,,23.589,23.1636,0.4871,17030874768.3501,Finance,16.5,5.0841,,,,2026-11-04,mcp+tv
+KKR,stockbee,1,A_stockbee_4pct,101.34,5.5735,98.3,-2.9998,7317420,1.7127,,,,,8.98,-4.8126,,,,,,92.0,96.2766,3.5489,88237578268.4675,Finance,8.98,-4.8126,,,,2026-11-04,mcp+tv
+KLAC,stockbee,1,B_stockbee_ep9m,149.79,,129.8,-13.3454,34547515,2.3939,,,,,-37.396,-34.4378,,,,,,162.4795,175.7416,9.1918,169124512243.6091,Electronic Technology,-37.396,-34.4378,,,,2026-11-04,mcp+tv
+KLAR,stockbee,1,A_stockbee_4pct,13.89,5.0681,13.53,-2.5918,5510040,1.0087,,,,,3.125,-34.1285,,,,,,13.291,13.4666,0.5529,5107682068.1793,Commercial Services,3.125,-34.1285,,,,2026-11-04,mcp+tv
+KMI,stockbee,1,B_stockbee_ep9m,31.52,,30.19,-4.2195,19324801,1.1273,,,,,-3.7922,-2.801,,,,,,33.2465,32.0996,0.9955,67254726850.3855,Industrial Services,-3.7922,-2.801,,,,2026-11-04,mcp+tv
+KMTS,stockbee,1,A_stockbee_4pct,30.5,5.1362,28.53,-6.459,730866,1.2018,,,,,-0.523,11.4018,,,,,,28.586,26.9014,1.8204,1699298099.7462,Health Technology,-0.523,11.4018,,,,2026-11-04,mcp+tv
+KO,stockbee,1,B_stockbee_ep9m|K_stockbee_anticipation,95.8,,95.73,-0.0731,31026076,1.6544,,,,,10.5427,10.6577,,,,,,92.897,89.8114,1.7189,411821124486.3445,Consumer Non-Durables,10.5427,10.6577,,,,2026-11-04,mcp+tv
+KOF,stockbee,1,K_stockbee_anticipation,116.4,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+KR,stockbee,1,K_stockbee_anticipation,68.97,,69.43,0.667,6874465,1.1539,,,,,18.5824,22.4515,,,,,,65.1545,61.4336,1.9013,41004573061.4856,Retail Trade,18.5824,22.4515,,,,2026-11-04,mcp+tv
+KREF,stockbee,1,A_stockbee_4pct,5.78,10.9405,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+KRG,stockbee,1,K_stockbee_anticipation,25.91,,25.7,-0.8105,2002969,0.9817,,,,,6.4182,-4.1402,,,,,,24.7205,25.0432,0.5705,5087744688.9232,Finance,6.4182,-4.1402,,,,2026-11-04,mcp+tv
+KT,stockbee,1,A_stockbee_4pct,18.46,4.3527,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+LAD,stockbee,1,A_stockbee_4pct,315.64,5.6465,316.52,0.2788,254726,0.6568,,,,,6.0511,-15.4436,,,,,,294.3755,317.5812,14.2596,6843256558.7836,Retail Trade,6.0511,-15.4436,,,,2026-11-04,mcp+tv
+LAR,stockbee,1,A_stockbee_4pct,4.2,4.7382,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+LAW,stockbee,1,A_stockbee_4pct,5.73,10.8317,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+LAZ,stockbee,1,A_stockbee_4pct,40.66,6.0788,38.53,-5.2386,1342673,0.7076,,,,,9.243,-11.7297,,,,,,37.515,38.3564,1.7875,3762929290.8052,Finance,9.243,-11.7297,,,,2026-11-04,mcp+tv
+LBTYA,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,9.58,,9.71,1.357,9017399,1.624,,,,,7.7094,-9.8422,,,,,,8.176,9.2414,0.4221,3220008041.334,Communications,7.7094,-9.8422,,,,2026-11-04,mcp+tv
+LCID,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,3.37,,2.98,-11.5727,19080338,1.7335,,,,,-28.7081,-57.9096,,,,,,3.2883,3.8929,0.293,1174329127.911,Consumer Durables,-28.7081,-57.9096,,,,2026-11-04,mcp+tv
+LCLN,stockbee,1,A_stockbee_4pct,27.25,5.253,26.83,-1.5413,667831,2.4361,,,,,10.1396,14.0731,,,,,,24.6425,24.8382,1.2762,2741799646.3666,Finance,10.1396,14.0731,,,,2026-11-04,mcp+tv
+LE,stockbee,1,A_stockbee_4pct,10.19,6.8134,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+LEGN,stockbee,1,A_stockbee_4pct,22.77,6.0056,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+LEN,stockbee,1,A_stockbee_4pct,92.19,7.0856,91.59,-0.6508,4014262,0.9848,,,,,22.2015,6.5744,,,,,,82.0725,81.299,3.6565,21729327804.3794,Consumer Durables,22.2015,6.5744,,,,2026-11-04,mcp+tv
+LFST,stockbee,1,A_stockbee_4pct,14.21,6.2827,13.43,-5.4891,11035177,3.3112,,,,,10.082,23.211,,,,,,12.8258,12.5857,0.5936,5132330171.6502,Health Services,10.082,23.211,,,,2026-11-04,mcp+tv
+LGIH,stockbee,1,A_stockbee_4pct,48.9,12.388,47.15,-3.5787,358350,0.7953,,,,,1.507,-21.5605,,,,,,43.679,47.6775,3.0615,1097197372.7577,Consumer Durables,1.507,-21.5605,,,,2026-11-04,mcp+tv
+LIF,stockbee,1,A_stockbee_4pct,48.05,6.6119,46.87,-2.4558,728564,1.2797,,,,,9.5605,-23.2143,,,,,,44.135,42.7766,2.138,3818984861.426,Technology Services,9.5605,-23.2143,,,,2026-11-04,mcp+tv
+LINE,stockbee,1,A_stockbee_4pct,38.61,6.2173,39.53,2.3828,1741347,2.0515,,,,,13.0074,-3.2313,,,,,,35.354,36.2867,1.0366,9001377310.5183,Finance,13.0074,-3.2313,,,,2026-11-04,mcp+tv
+LKFT,stockbee,1,A_stockbee_4pct,34.09,6.0342,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+LKQ,stockbee,1,A_stockbee_4pct,20.94,8.7227,20.54,-1.9102,4529106,0.4908,,,,,-8.3036,-15.264,,,,,,20.286,22.3226,1.0505,5184256516.9016,Consumer Durables,-8.3036,-15.264,,,,2026-11-04,mcp+tv
+LMAT,stockbee,1,A_stockbee_4pct,87.92,9.0819,83.49,-5.0387,533765,1.6708,,,,,3.0232,3.4701,,,,,,83.068,81.4591,3.0432,1909354224.7292,Health Technology,3.0232,3.4701,,,,2026-11-04,mcp+tv
+LMB,stockbee,1,A_stockbee_4pct,58.11,16.4062,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+LMND,stockbee,1,A_stockbee_4pct,45.9,11.0305,41.48,-9.6296,2858079,2.4539,,,,,-12.7655,-20.9152,,,,,,44.4755,46.9624,2.5309,3210411658.4296,Finance,-12.7655,-20.9152,,,,2026-11-04,mcp+tv
+LMRI,stockbee,1,A_stockbee_4pct,13.1,16.7558,13.21,0.8397,485569,1.1719,,,,,20.86,15.3712,,,,,,11.278,11.1151,0.6058,1269150444.4557,Health Services,20.86,15.3712,,,,2026-11-04,mcp+tv
+LOCO,stockbee,1,A_stockbee_4pct,16.47,5.9164,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+LOGI,stockbee,1,A_stockbee_4pct,100.12,7.8298,98.17,-1.9477,1623560,0.9884,,,,,-3.4235,-6.2593,,,,,,102.9703,101.8564,3.9121,13398728972.3082,Electronic Technology,-3.4235,-6.2593,,,,2026-11-04,mcp+tv
+LOW,stockbee,1,A_stockbee_4pct,229.38,7.4984,227.24,-0.9329,5275843,1.5262,,,,,26.4271,3.8479,,,,,,201.754,196.7864,6.2686,127493917335.9554,Retail Trade,26.4271,3.8479,,,,2026-11-04,mcp+tv
+LPLA,stockbee,1,A_stockbee_4pct,311.48,4.6429,300.89,-3.3999,1215893,0.7222,,,,,-9.335,-15.4186,,,,,,311.403,325.4717,13.4006,23429828466.2479,Finance,-9.335,-15.4186,,,,2026-11-04,mcp+tv
+LPX,stockbee,1,A_stockbee_4pct,78.82,6.8166,76.97,-2.3471,1756906,1.1043,,,,,17.1359,-0.6839,,,,,,71.731,68.757,3.1469,5382294826.2482,Non-Energy Minerals,17.1359,-0.6839,,,,2026-11-04,mcp+tv
+LQDT,stockbee,1,A_stockbee_4pct,46.76,5.3628,44.72,-4.3627,251459,1.2025,,,,,3.4467,6.3749,,,,,,44.2873,43.0933,1.3829,1401149877.8871,Retail Trade,3.4467,6.3749,,,,2026-11-04,mcp+tv
+LRCX,stockbee,1,B_stockbee_ep9m,221.43,,185.2,-16.3618,31394436,2.354,,,,,-46.3344,-40.6163,,,,,,255.256,286.7306,16.1111,231346465345.9531,Producer Manufacturing,-46.3344,-40.6163,,,,2026-11-04,mcp+tv
+LRN,stockbee,1,A_stockbee_4pct,79.24,5.5829,74.87,-5.5149,1501257,1.4572,,,,,-5.503,-6.1897,,,,,,79.9605,80.7586,3.1867,3148197390.0515,Consumer Services,-5.503,-6.1897,,,,2026-11-04,mcp+tv
+LSPD,stockbee,1,A_stockbee_4pct,11.56,5.2823,10.45,-9.6021,2151183,2.6225,,,,,1.8519,0.7715,,,,,,10.897,10.3546,0.4808,1390924988.3922,Technology Services,1.8519,0.7715,,,,2026-11-04,mcp+tv
+LTH,stockbee,1,A_stockbee_4pct,47.39,6.3271,47.75,0.7597,3636552,0.9126,,,,,18.722,9.8964,,,,,,42.672,41.7446,1.7926,10724817004.0884,Consumer Services,18.722,9.8964,,,,2026-11-04,mcp+tv
+LTM,stockbee,1,A_stockbee_4pct,47.78,8.3692,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+LU,stockbee,1,A_stockbee_4pct,8.51,4.2892,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+LUV,stockbee,1,A_stockbee_4pct,46.42,6.8354,44.44,-4.2654,6209506,0.8663,,,,,4.9598,-5.2856,,,,,,41.9495,41.0584,1.7628,21757929197.0047,Transportation,4.9598,-5.2856,,,,2026-11-04,mcp+tv
+LVS,stockbee,1,A_stockbee_4pct,40.74,6.482,40.92,0.4418,9256411,1.2563,,,,,11.5899,-11.2364,,,,,,37.4825,39.3514,1.1001,25656436452.866,Consumer Services,11.5899,-11.2364,,,,2026-11-04,mcp+tv
+LWAC,stockbee,1,K_stockbee_anticipation,10.39,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+LYCA,stockbee,1,A_stockbee_4pct,28.92,4.7826,28.8,-0.4149,189794,,,,,,0.8757,0.8757,,,,,,,,,1661200053.112,Health Technology,0.8757,0.8757,,,,2026-11-04,mcp+tv
+LYEL,stockbee,1,A_stockbee_4pct,15.43,43.2683,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+LYFT,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,18.74,,17.84,-4.8026,19106679,1.8353,,,,,12.5907,6.0642,,,,,,16.86,16.2007,0.7353,6753158025.7289,Transportation,12.5907,6.0642,,,,2026-11-04,mcp+tv
+LYG,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,5.27,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+M,stockbee,1,A_stockbee_4pct,25.7,7.6214,24.19,-5.8755,6499932,1.2782,,,,,7.6547,-4.6887,,,,,,23.8065,22.9264,1.0102,6317863006.3121,Retail Trade,7.6547,-4.6887,,,,2026-11-04,mcp+tv
+MAA,stockbee,1,A_stockbee_4pct,122.15,4.0992,121.69,-0.3766,1838460,1.7598,,,,,4.267,-8.7644,,,,,,118.011,120.4094,2.5389,14115213881.8069,Finance,4.267,-8.7644,,,,2026-11-04,mcp+tv
+MAC,stockbee,1,A_stockbee_4pct,25.9,4.6888,25.02,-3.3977,5228310,1.8594,,,,,9.21,5.6588,,,,,,23.704,23.1968,0.5903,7094655762.9498,Finance,9.21,5.6588,,,,2026-11-04,mcp+tv
+MAGN,stockbee,1,A_stockbee_4pct,12.66,6.5657,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MAKO,stockbee,1,A_stockbee_4pct,7.89,8.8276,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MANU,stockbee,1,A_stockbee_4pct,22.86,6.2762,22.33,-2.3185,368100,1.5093,,,,,10.929,1.9635,,,,,,20.996,20.7654,0.6434,3851732885.8084,Consumer Services,10.929,1.9635,,,,2026-11-04,mcp+tv
+MAS,stockbee,1,A_stockbee_4pct,86.82,5.6461,83.83,-3.4439,2939128,1.0897,,,,,22.4511,10.6229,,,,,,76.1265,72.0984,2.8045,16159833932.0471,Producer Manufacturing,22.4511,10.6229,,,,2026-11-04,mcp+tv
+MATV,stockbee,1,A_stockbee_4pct,12.1,8.3259,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MBC,stockbee,1,A_stockbee_4pct,7.51,8.9985,7.08,-5.7257,2932123,1.1948,,,,,0,-22.3684,,,,,,6.9035,7.1928,0.4695,1440712631.5846,Consumer Durables,0,-22.3684,,,,2026-11-04,mcp+tv
+MBLY,stockbee,1,B_stockbee_ep9m,5.34,,5.13,-3.9326,12426499,1.4612,,,,,-31.2332,-40.2098,,,,,,6.6215,7.4142,0.3916,4361381736.5225,Technology Services,-31.2332,-40.2098,,,,2026-11-04,mcp+tv
+MBVI,stockbee,1,K_stockbee_anticipation,10.28,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MCD,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,280.22,,278.04,-0.778,7305781,1.2955,,,,,19.154,1.2859,,,,,,251.012,248.4444,5.9352,196752637814.9878,Consumer Services,19.154,1.2859,,,,2026-11-04,mcp+tv
+MCHP,stockbee,1,B_stockbee_ep9m,75.34,,64.85,-13.9235,44053854,3.6204,,,,,-21.0734,-20.2827,,,,,,75.363,75.1908,4.1322,35214110343.0787,Electronic Technology,-21.0734,-20.2827,,,,2026-11-04,mcp+tv
+MCK,stockbee,1,A_stockbee_4pct,1069.44,6.9847,1072,0.2394,1285626,1.789,,,,,16.3952,24.0253,,,,,,997.052,934.2858,28.4831,124984861804.7726,Distribution Services,16.3952,24.0253,,,,2026-11-04,mcp+tv
+MCO,stockbee,1,A_stockbee_4pct,528.34,4.8939,515.34,-2.4605,1176267,1.1857,,,,,14.2053,8.9514,,,,,,485.72,477.5494,14.2821,88844617370.4294,Commercial Services,14.2053,8.9514,,,,2026-11-04,mcp+tv
+MDLN,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,40.35,,39.76,-1.4622,14220226,1.1029,,,,,10.5058,14.8469,,,,,,35.075,34.681,1.6679,52272767041.8637,Health Technology,10.5058,14.8469,,,,2026-11-04,mcp+tv
+MDLZ,stockbee,1,B_stockbee_ep9m,67.38,,66.82,-0.8311,12642631,1.5011,,,,,14.7124,7.049,,,,,,63.6315,62.0042,1.563,84583317030.7076,Consumer Non-Durables,14.7124,7.049,,,,2026-11-04,mcp+tv
+MELI,stockbee,1,A_stockbee_4pct,1739.88,4.6758,1530.28,-12.0468,2158393,2.892,,,,,-17.7539,-15.9441,,,,,,1765.6857,1816.4534,78.7666,77580299676.5753,Retail Trade,-17.7539,-15.9441,,,,2026-11-04,mcp+tv
+MET,stockbee,1,K_stockbee_anticipation,102.89,,99.75,-3.0518,4037337,1.1708,,,,,2.634,0.2613,,,,,,100.4995,98.1054,2.5096,63388823262.6907,Finance,2.634,0.2613,,,,2026-11-04,mcp+tv
+MFA,stockbee,1,K_stockbee_anticipation,6.61,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MGA,stockbee,1,A_stockbee_4pct,65.63,4.2242,62.81,-4.2968,1071695,0.9312,,,,,-3.6656,-8.3333,,,,,,64.579,64.7298,2.143,16246452730.3402,Producer Manufacturing,-3.6656,-8.3333,,,,2026-11-04,mcp+tv
+MGEE,stockbee,1,A_stockbee_4pct,77.59,4.9506,78.36,0.9924,347442,2.0406,,,,,10.6936,-3.0438,,,,,,73.2035,73.5298,1.7441,2960755027.7407,Utilities,10.6936,-3.0438,,,,2026-11-04,mcp+tv
+MGM,stockbee,1,A_stockbee_4pct,32.82,5.8027,32.54,-0.8531,5862822,0.7869,,,,,6.7235,-26.9421,,,,,,29.418,33.8592,1.2583,8232963019.3888,Consumer Services,6.7235,-26.9421,,,,2026-11-04,mcp+tv
+MH,stockbee,1,A_stockbee_4pct,12.76,4.5045,11.23,-11.9906,1218242,2.3584,,,,,-11.5051,-1.3181,,,,,,13.6145,13.25,0.7395,2148397945.453,Commercial Services,-11.5051,-1.3181,,,,2026-11-04,mcp+tv
+MHK,stockbee,1,A_stockbee_4pct,153.36,5.5036,150.88,-1.6171,1656683,0.9124,,,,,20.0127,13.0018,,,,,,128.451,126.8742,5.9931,8771177205.6933,Producer Manufacturing,20.0127,13.0018,,,,2026-11-04,mcp+tv
+MIRM,stockbee,1,A_stockbee_4pct,96.97,11.4213,93.54,-3.5372,871311,1.3799,,,,,14.1567,-1.485,,,,,,84.8865,89.4058,4.3502,6106482422.1136,Health Technology,14.1567,-1.485,,,,2026-11-04,mcp+tv
+MITK,stockbee,1,A_stockbee_4pct,19.09,5.3532,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MKC,stockbee,1,A_stockbee_4pct,50.48,5.4302,50.06,-0.832,4088963,1.2067,,,,,9.4208,-3.7678,,,,,,47.0645,48.5998,1.5455,13473400050.668,Consumer Non-Durables,9.4208,-3.7678,,,,2026-11-04,mcp+tv
+MLCO,stockbee,1,A_stockbee_4pct,4.71,12.1429,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MLKN,stockbee,1,A_stockbee_4pct,22.77,6.2529,21.99,-3.4256,414592,0.9172,,,,,3.7754,-7.1368,,,,,,21.3308,21.2002,0.9717,1512907568.1989,Producer Manufacturing,3.7754,-7.1368,,,,2026-11-04,mcp+tv
+MMED,stockbee,1,B_stockbee_ep9m,19.29,,18.155,-5.8839,10043428,1.2893,,,,,-8.2617,-1.1704,,,,,,18.4222,20.0826,0.9429,5107908495.1887,Health Technology,-8.2617,-1.1704,,,,2026-11-04,mcp+tv
+MMM,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,193.95,,187.77,-3.1864,4540589,1.1298,,,,,14.7879,4.1893,,,,,,172.065,168.861,5.3693,97026306682.3185,Producer Manufacturing,14.7879,4.1893,,,,2026-11-04,mcp+tv
+MMS,stockbee,1,A_stockbee_4pct,68.51,4.6593,69.22,1.0363,880204,1.7078,,,,,26.8928,16.4732,,,,,,62.539,58.6232,2.1534,3624204355.739,Commercial Services,26.8928,16.4732,,,,2026-11-04,mcp+tv
+MMSI,stockbee,1,A_stockbee_4pct,90.63,7.6877,89.62,-1.1144,940187,0.949,,,,,2.4814,1.7369,,,,,,89.955,88.3226,3.0193,5369585979.5324,Health Technology,2.4814,1.7369,,,,2026-11-04,mcp+tv
+MMYT,stockbee,1,A_stockbee_4pct,50.75,11.5385,51.28,1.0443,3347382,3.8458,,,,,13.2259,-14.6613,,,,,,44.8362,47.7817,2.5642,4823328083.7896,Technology Services,13.2259,-14.6613,,,,2026-11-04,mcp+tv
+MNPR,stockbee,1,A_stockbee_4pct,72.81,4.178,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MNRO,stockbee,1,A_stockbee_4pct,12.11,4.1273,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MNST,stockbee,1,B_stockbee_ep9m,48.75,,47.83,-1.8872,17410677,1.8539,,,,,10.6024,1.9938,,,,,,46.1485,44.7282,1.1469,93701445575.8193,Consumer Non-Durables,10.6024,1.9938,,,,2026-11-04,mcp+tv
+MNTN,stockbee,1,A_stockbee_4pct,10.37,6.5776,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MOBI,stockbee,1,A_stockbee_4pct,11.24,12.7382,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MOH,stockbee,1,A_stockbee_4pct,226.42,8.9343,216.64,-4.3194,927483,0.7608,,,,,11.2915,13.537,,,,,,208.7945,201.7548,10.793,11308608073.6741,Health Services,11.2915,13.537,,,,2026-11-04,mcp+tv
+MOS,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,21.62,,22.33,3.284,19122332,1.6527,,,,,4.8357,-4.0395,,,,,,18.7485,21.7518,0.961,7098610372.6573,Process Industries,4.8357,-4.0395,,,,2026-11-04,mcp+tv
+MPB,stockbee,1,K_stockbee_anticipation,35.03,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MQ,stockbee,1,A_stockbee_4pct,18.6,4.4944,18.44,-0.8602,1001076,1.1665,,,,,8.0258,10.4853,,,,,,18.4705,17.2642,0.7046,1914270084.2645,Commercial Services,8.0258,10.4853,,,,2026-11-04,mcp+tv
+MRK,stockbee,1,B_stockbee_ep9m,150.36,,146.94,-2.2745,11533130,1.0268,,,,,4.8598,14.9406,,,,,,145.77,146.4142,4.7762,362526200910.2067,Health Technology,4.8598,14.9406,,,,2026-11-04,mcp+tv
+MSBI,stockbee,1,K_stockbee_anticipation,33.44,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MSCI,stockbee,1,A_stockbee_4pct,674.3,5.3956,655.91,-2.7273,1049134,1.7714,,,,,17.9694,15.6257,,,,,,603.3815,573.9338,16.7069,46897564150.8091,Commercial Services,17.9694,15.6257,,,,2026-11-04,mcp+tv
+MSFT,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,555.8,,535.93,-3.575,42398185,1.5001,,,,,0.7994,7.3556,,,,,,531.6305,516.1348,15.5605,3979920243047.758,Technology Services,0.7994,7.3556,,,,2026-11-04,mcp+tv
+MTA,stockbee,1,A_stockbee_4pct,7.88,10.5189,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+MTG,stockbee,1,K_stockbee_anticipation,29.13,,29.35,0.7552,3013304,1.3086,,,,,8.143,-3.1353,,,,,,28.1515,28.8628,0.7337,6020414098.1308,Finance,8.143,-3.1353,,,,2026-11-04,mcp+tv
+MTN,stockbee,1,A_stockbee_4pct,161.08,5.0339,158.54,-1.5769,458363,0.7968,,,,,13.5104,7.755,,,,,,151.509,143.834,4.9227,5662660787.4245,Consumer Services,13.5104,7.755,,,,2026-11-04,mcp+tv
+MU,stockbee,1,B_stockbee_ep9m,795.23,,656.39,-17.4591,76893607,2.8423,,,,,-38.337,-27.3583,,,,,,895.9565,966.5436,58.009,742654867674.4426,Electronic Technology,-38.337,-27.3583,,,,2026-11-04,mcp+tv
+MUX,stockbee,1,A_stockbee_4pct,14.93,9.4575,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+NAVN,stockbee,1,A_stockbee_4pct,27.06,9.1129,25.42,-6.0606,2269146,1.1356,,,,,16.2855,-10.6503,,,,,,25.6955,24.19,1.2169,6625354057.7273,Technology Services,16.2855,-10.6503,,,,2026-11-04,mcp+tv
+NBTB,stockbee,1,K_stockbee_anticipation,54.0,,52.97,-1.9074,355250,1.0494,,,,,3.5177,0.0189,,,,,,51.897,51.4714,1.2056,2751292643.2539,Finance,3.5177,0.0189,,,,2026-11-04,mcp+tv
+NCLH,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,18.6,,17.76,-4.5161,27756449,1.0409,,,,,18.0066,-9.6183,,,,,,16.162,15.4484,0.8471,8156732188.6968,Consumer Services,18.0066,-9.6183,,,,2026-11-04,mcp+tv
+NDSN,stockbee,1,K_stockbee_anticipation,330.7,,310.49,-6.1113,438349,1.1439,,,,,-7.1584,0.4172,,,,,,325.6455,322.7686,8.8589,17294097260.7947,Producer Manufacturing,-7.1584,0.4172,,,,2026-11-04,mcp+tv
+NEE,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,88.45,,88.25,-0.2261,19279497,1.3639,,,,,14.6104,5.1973,,,,,,81.397,80.4332,1.8183,185087240012.8321,Utilities,14.6104,5.1973,,,,2026-11-04,mcp+tv
+NEM,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,118.11,,119.71,1.3547,12573601,1.7663,,,,,3.1983,8.3152,,,,,,114.0625,119.1212,4.6417,124401823080.2753,Non-Energy Minerals,3.1983,8.3152,,,,2026-11-04,mcp+tv
+NEWP,stockbee,1,A_stockbee_4pct,5.54,14.4628,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+NEXA,stockbee,1,A_stockbee_4pct,11.9,4.112,11.31,-4.958,1036594,1.5136,,,,,-10.0239,-22.6931,,,,,,12.055,12.5782,0.5905,1497873772.3966,Non-Energy Minerals,-10.0239,-22.6931,,,,2026-11-04,mcp+tv
+NFLX,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,66.39,,65.56,-1.2502,49936067,1.0699,,,,,-2.8885,-10.3392,,,,,,66.5905,71.3609,2.041,269210741352.6833,Technology Services,-2.8885,-10.3392,,,,2026-11-04,mcp+tv
+NG,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,6.1,,6.07,-0.4918,6216021,1.2285,,,,,-8.8589,-17.6055,,,,,,6.2785,6.9426,0.3869,2663613135.9213,Non-Energy Minerals,-8.8589,-17.6055,,,,2026-11-04,mcp+tv
+NGVC,stockbee,1,A_stockbee_4pct,29.6,5.9413,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+NIO,stockbee,1,B_stockbee_ep9m,3.3,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+NLY,stockbee,1,B_stockbee_ep9m|K_stockbee_anticipation,18.93,,18.85,-0.4226,15017409,1.3894,,,,,2.893,-16.9604,,,,,,18.3185,19.9416,0.4761,14851217338.8959,Finance,2.893,-16.9604,,,,2026-11-04,mcp+tv
+NNI,stockbee,1,A_stockbee_4pct,127.58,4.1129,127.01,-0.4468,147548,1.0616,,,,,1.6487,-1.847,,,,,,124.97,125.3922,2.7994,4544346561.7058,Finance,1.6487,-1.847,,,,2026-11-04,mcp+tv
+NNN,stockbee,1,K_stockbee_anticipation,41.63,,41.46,-0.4084,3252732,1.0137,,,,,2.4463,-11.2586,,,,,,41.2745,42.059,0.8498,7957476535.166,Finance,2.4463,-11.2586,,,,2026-11-04,mcp+tv
+NOAH,stockbee,1,A_stockbee_4pct,7.05,4.1359,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+NOK,stockbee,1,B_stockbee_ep9m,8.26,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+NPAC,stockbee,1,K_stockbee_anticipation,10.555,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+NPCE,stockbee,1,A_stockbee_4pct,13.34,8.3672,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+NRC,stockbee,1,A_stockbee_4pct,27.07,12.4636,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+NRDS,stockbee,1,A_stockbee_4pct,11.81,8.9483,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+NRG,stockbee,1,B_stockbee_ep9m,83.25,,80.55,-3.2432,9760531,2.531,,,,,-20.2475,-32.3109,,,,,,97.341,102.5612,4.7716,16932454142.7135,Utilities,-20.2475,-32.3109,,,,2026-11-04,mcp+tv
+NSIT,stockbee,1,A_stockbee_4pct,175.62,4.9417,152.72,-13.0395,610350,1.4767,,,,,-4.1847,2.1607,,,,,,169.3447,162.6855,8.4962,4482156285.9091,Technology Services,-4.1847,2.1607,,,,2026-11-04,mcp+tv
+NTES,stockbee,1,A_stockbee_4pct,121.26,4.3276,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+NU,stockbee,1,B_stockbee_ep9m,11.99,,11.74,-2.0851,99781645,0.9155,,,,,-24.0129,-17.3821,,,,,,13.7025,14.0662,0.6772,56709886795.2927,Finance,-24.0129,-17.3821,,,,2026-11-04,mcp+tv
+NVDA,stockbee,1,B_stockbee_ep9m,200.13,,181.6,-9.259,303754509,2.8114,,,,,-24.9897,-18.0283,,,,,,213.679,220.64,7.3437,4376560106780.401,Electronic Technology,-24.9897,-18.0283,,,,2026-11-04,mcp+tv
+NVO,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,42.18,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+NVRI,stockbee,1,A_stockbee_4pct,20.51,7.7772,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+NVST,stockbee,1,A_stockbee_4pct,27.19,9.7699,24.96,-8.2015,5487980,1.4883,,,,,5.3609,-9.5652,,,,,,23.743,24.4324,1.0246,4009018027.922,Health Technology,5.3609,-9.5652,,,,2026-11-04,mcp+tv
+NWBI,stockbee,1,K_stockbee_anticipation,15.84,,15.31,-3.346,1403905,0.9519,,,,,1.5252,-1.859,,,,,,15.179,15.2232,0.3517,2243824706.8617,Finance,1.5252,-1.859,,,,2026-11-04,mcp+tv
+NWG,stockbee,1,A_stockbee_4pct,16.55,6.9121,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+O,stockbee,1,B_stockbee_ep9m,59.22,,59.5,0.4728,7576434,1.0079,,,,,10.1852,-4.4944,,,,,,56.498,57.1582,0.9989,56584326850.1773,Finance,10.1852,-4.4944,,,,2026-11-04,mcp+tv
+OBA,stockbee,1,K_stockbee_anticipation,10.39,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+OBIO,stockbee,1,A_stockbee_4pct,6.0,7.9137,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+OC,stockbee,1,A_stockbee_4pct,127.8,8.5258,124.26,-2.77,2050715,1.5442,,,,,6.1326,-17.7086,,,,,,116.3375,122.4284,5.4352,9822589604.9061,Process Industries,6.1326,-17.7086,,,,2026-11-04,mcp+tv
+OCUL,stockbee,1,A_stockbee_4pct,7.14,4.6921,6.43,-9.944,3129958,1.37,,,,,-11.9178,-26.9318,,,,,,6.91,8.4843,0.4735,1412130051.4846,Health Technology,-11.9178,-26.9318,,,,2026-11-04,mcp+tv
+ODD,stockbee,1,A_stockbee_4pct,21.57,7.5274,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+OEC,stockbee,1,A_stockbee_4pct,5.87,6.7273,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+OFG,stockbee,1,K_stockbee_anticipation,51.51,,50.69,-1.5919,367736,1.012,,,,,-1.1505,-3.6495,,,,,,51.2295,51.6232,1.2998,2142437693.1188,Finance,-1.1505,-3.6495,,,,2026-11-04,mcp+tv
+OFIX,stockbee,1,A_stockbee_4pct,9.72,10.9589,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+OLLI,stockbee,1,A_stockbee_4pct,94.11,5.7653,93,-1.1795,1275436,0.8175,,,,,7.5145,18.8043,,,,,,90.1683,83.6893,3.9133,5524423326.4903,Retail Trade,7.5145,18.8043,,,,2026-11-04,mcp+tv
+ON,stockbee,1,B_stockbee_ep9m,71.24,,63.01,-11.5525,26046194,2.2875,,,,,-27.4914,-21.4584,,,,,,73.6345,74.4536,4.1838,24528814655.6527,Electronic Technology,-27.4914,-21.4584,,,,2026-11-04,mcp+tv
+ONB,stockbee,1,K_stockbee_anticipation,25.89,,25.05,-3.2445,3938883,0.8281,,,,,0.4008,-5.8625,,,,,,25.0435,25.1997,0.6557,9475362566.1935,Finance,0.4008,-5.8625,,,,2026-11-04,mcp+tv
+OPRT,stockbee,1,A_stockbee_4pct,13.01,29.5817,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ORC,stockbee,1,K_stockbee_anticipation,4.96,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ORLY,stockbee,1,B_stockbee_ep9m,92.34,,91.49,-0.9205,10410696,1.3488,,,,,9.6345,-1.1133,,,,,,89.291,87.2927,2.2637,73613535691.6531,Retail Trade,9.6345,-1.1133,,,,2026-11-04,mcp+tv
+OSCR,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,35.19,,33.18,-5.7118,11552300,2.265,,,,,1.9982,25.2075,,,,,,32.534,31.8292,1.9832,9073700871.243,Health Services,1.9982,25.2075,,,,2026-11-04,mcp+tv
+OWL,stockbee,1,B_stockbee_ep9m,10.65,,9.89,-7.1362,26406743,1.0842,,,,,9.2818,-14.0,,,,,,9.584,9.9706,0.4812,15494713445.5005,Finance,9.2818,-14.0,,,,2026-11-04,mcp+tv
+OXM,stockbee,1,A_stockbee_4pct,30.48,8.0468,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+OXY,stockbee,1,B_stockbee_ep9m,57.33,,56.36,-1.692,13247274,1.4546,,,,,-2.0337,1.0942,,,,,,61.6935,60.1086,1.8308,56339565107.5967,Energy Minerals,-2.0337,1.0942,,,,2026-11-04,mcp+tv
+PAR,stockbee,1,A_stockbee_4pct,19.0,4.7987,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PATH,stockbee,1,B_stockbee_ep9m,13.51,,13.01,-3.701,24895032,1.073,,,,,-1.5885,-8.5091,,,,,,13.5525,14.0384,0.5848,6780235657,Technology Services,-1.5885,-8.5091,,,,2026-11-04,mcp+tv
+PATK,stockbee,1,A_stockbee_4pct,84.68,4.0295,83.11,-1.854,803262,0.7515,,,,,24.0818,-3.5847,,,,,,71.3638,72.2191,3.1707,2669348867.5308,Consumer Durables,24.0818,-3.5847,,,,2026-11-04,mcp+tv
+PAYP,stockbee,1,A_stockbee_4pct,15.96,8.4976,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PBA,stockbee,1,K_stockbee_anticipation,48.73,,47.63,-2.2573,1280826,1.4002,,,,,3.1176,-0.1677,,,,,,49.4745,48.0078,1.0523,27699465171.0516,Industrial Services,3.1176,-0.1677,,,,2026-11-04,mcp+tv
+PBH,stockbee,1,A_stockbee_4pct,53.28,7.5495,44.32,-16.8168,1719271,3.0801,,,,,-3.4423,-19.3449,,,,,,48.7755,48.328,2.1792,2099638818.2342,Health Technology,-3.4423,-19.3449,,,,2026-11-04,mcp+tv
+PBR,stockbee,1,B_stockbee_ep9m,19.61,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PBYI,stockbee,1,A_stockbee_4pct,10.69,4.5988,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PCAP,stockbee,1,K_stockbee_anticipation,10.44,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PCG,stockbee,1,B_stockbee_ep9m,13.4,,13.23,-1.2687,28964277,0.8503,,,,,6.7797,-21.9008,,,,,,13.123,13.2704,0.3986,29138143935.7881,Utilities,6.7797,-21.9008,,,,2026-11-04,mcp+tv
+PCOR,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,75.6,,75.6,0,9407296,2.5226,,,,,39.4319,33.9001,,,,,,61.555,57.2848,3.1457,11487823285,Technology Services,39.4319,33.9001,,,,2026-11-04,mcp+tv
+PDM,stockbee,1,A_stockbee_4pct,10.07,5.3347,9.86,-2.0854,1665026,1.0406,,,,,9.6774,4.1183,,,,,,9.364,9.3288,0.2883,1220911198.3198,Finance,9.6774,4.1183,,,,2026-11-04,mcp+tv
+PEN,stockbee,1,K_stockbee_anticipation,322.45,,321.11,-0.4156,310538,0.6261,,,,,1.2646,-1.1756,,,,,,321.781,320.2754,2.7428,12656354207.7583,Health Technology,1.2646,-1.1756,,,,2026-11-04,mcp+tv
+PEP,stockbee,1,B_stockbee_ep9m,142.42,,142.71,0.2036,13164382,1.4047,,,,,13.5684,3.7589,,,,,,134.076,133.2976,3.2258,194476778291.6902,Consumer Non-Durables,13.5684,3.7589,,,,2026-11-04,mcp+tv
+PFE,stockbee,1,B_stockbee_ep9m|K_stockbee_anticipation,30.79,,29.88,-2.9555,52895372,1.4287,,,,,8.7336,13.9588,,,,,,29.699,28.7152,0.7203,170311628110.5658,Health Technology,8.7336,13.9588,,,,2026-11-04,mcp+tv
+PFGC,stockbee,1,A_stockbee_4pct,109.57,13.5323,109.68,0.1004,3136704,1.4621,,,,,17.3174,-3.8991,,,,,,97.9445,95.73,3.3828,17305984672.2395,Transportation,17.3174,-3.8991,,,,2026-11-04,mcp+tv
+PG,stockbee,1,B_stockbee_ep9m|K_stockbee_anticipation,167.32,,167.1,-0.1315,16246186,1.5017,,,,,12.8901,15.3209,,,,,,159.525,151.5564,3.2883,387301590195.9915,Consumer Non-Durables,12.8901,15.3209,,,,2026-11-04,mcp+tv
+PGEN,stockbee,1,B_stockbee_ep9m,5.055,,4.22,-16.5183,26634762,3.4466,,,,,-45.828,-40.1418,,,,,,6.4035,7.0293,0.5827,1510908694.2671,Health Technology,-45.828,-40.1418,,,,2026-11-04,mcp+tv
+PHG,stockbee,1,A_stockbee_4pct,31.06,9.1356,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PHM,stockbee,1,A_stockbee_4pct,135.97,7.1642,135.15,-0.6031,2589691,1.0463,,,,,18.5838,4.1297,,,,,,119.538,119.4682,4.6691,24879323974.7459,Consumer Durables,18.5838,4.1297,,,,2026-11-04,mcp+tv
+PHR,stockbee,1,A_stockbee_4pct,13.18,7.7678,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PICS,stockbee,1,A_stockbee_4pct,7.26,8.5202,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PII,stockbee,1,A_stockbee_4pct,67.7,7.6312,64.3,-5.0222,900675,0.8122,,,,,21.7111,-8.1691,,,,,,56.556,56.596,2.6287,3660339587.966,Consumer Durables,21.7111,-8.1691,,,,2026-11-04,mcp+tv
+PINS,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,21.22,,19.79,-6.7389,13766353,0.7419,,,,,-2.5123,-15.1736,,,,,,21.439,20.397,1.0392,11349719880.5316,Technology Services,-2.5123,-15.1736,,,,2026-11-04,mcp+tv
+PK,stockbee,1,K_stockbee_anticipation,16.96,,15.55,-8.3137,6110678,1.3436,,,,,0.9085,6.2158,,,,,,16.2445,15.6788,0.512,3130810911.5743,Finance,0.9085,6.2158,,,,2026-11-04,mcp+tv
+PKX,stockbee,1,A_stockbee_4pct,51.6,4.3267,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PLAY,stockbee,1,A_stockbee_4pct,8.78,6.8127,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PLGO,stockbee,1,A_stockbee_4pct,27.42,4.977,27.89,1.7141,587890,1.7491,,,,,13.5124,10.2807,,,,,,25.7195,24.9094,0.5875,2307293200.3924,Finance,13.5124,10.2807,,,,2026-11-04,mcp+tv
+PLNT,stockbee,1,A_stockbee_4pct,57.34,4.1977,60.07,4.7611,2698423,1.7293,,,,,43.2968,16.5729,,,,,,52.3325,49.0578,1.9573,4537265661.0607,Consumer Services,43.2968,16.5729,,,,2026-11-04,mcp+tv
+PLSE,stockbee,1,A_stockbee_4pct,57.06,9.3103,53.07,-6.9926,534317,1.4389,,,,,3.531,40.2484,,,,,,51.451,51.4524,3.6132,3858323354.7129,Health Technology,3.531,40.2484,,,,2026-11-04,mcp+tv
+PLTR,stockbee,1,B_stockbee_ep9m,171.7,,154.99,-9.7321,49836865,1.8447,,,,,-18.8725,-3.1736,,,,,,192.5485,186.3922,9.7176,373447983340.5428,Technology Services,-18.8725,-3.1736,,,,2026-11-04,mcp+tv
+PMT,stockbee,1,A_stockbee_4pct,8.28,4.943,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PMTS,stockbee,1,A_stockbee_4pct,28.24,14.3783,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PNTG,stockbee,1,A_stockbee_4pct,44.04,6.9192,40,-9.1735,1700966,5.2797,,,,,-1.1125,3.4126,,,,,,41.446,40.1887,1.9329,1397162962.7611,Health Services,-1.1125,3.4126,,,,2026-11-04,mcp+tv
+PODD,stockbee,1,A_stockbee_4pct,165.02,6.5608,156.12,-5.3933,1319303,0.9488,,,,,14.9886,13.1304,,,,,,146.523,141.9052,6.2536,10827577147.7125,Health Technology,14.9886,13.1304,,,,2026-11-04,mcp+tv
+PONY,stockbee,1,A_stockbee_4pct,4.75,4.3956,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+POOL,stockbee,1,A_stockbee_4pct,219.26,5.7949,216.66,-1.1858,677223,0.6534,,,,,35.4125,7.3584,,,,,,187.0445,177.0407,7.559,7739550668.2133,Distribution Services,35.4125,7.3584,,,,2026-11-04,mcp+tv
+PPG,stockbee,1,A_stockbee_4pct,127.27,4.9736,123.27,-3.1429,2339625,0.9288,,,,,16.3473,4.8393,,,,,,113.0145,109.6042,3.8586,27230341529.7096,Process Industries,16.3473,4.8393,,,,2026-11-04,mcp+tv
+PPHC,stockbee,1,A_stockbee_4pct,12.62,14.9362,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PPL,stockbee,1,B_stockbee_ep9m,35.72,,36,0.7839,13410889,1.7482,,,,,8.6301,3.1519,,,,,,35.0745,34.176,0.5929,27091613719.1489,Utilities,8.6301,3.1519,,,,2026-11-04,mcp+tv
+PPLI,stockbee,1,A_stockbee_4pct,41.99,9.0649,41.01,-2.3339,1641168,1.3592,,,,,-2.1708,-5.4197,,,,,,38.897,38.874,1.6677,3077540683.7283,Technology Services,-2.1708,-5.4197,,,,2026-11-04,mcp+tv
+PR,stockbee,1,B_stockbee_ep9m,22.43,,21.34,-4.8596,19810924,2.1113,,,,,-3.7872,6.6467,,,,,,24.3995,23.3838,0.9027,17873466769.1244,Energy Minerals,-3.7872,6.6467,,,,2026-11-04,mcp+tv
+PRCT,stockbee,1,A_stockbee_4pct,21.66,7.3872,20.27,-6.4174,3108201,2.7609,,,,,13.7486,1.1477,,,,,,19.3265,19.3196,1.3701,1160937054.8846,Health Technology,13.7486,1.1477,,,,2026-11-04,mcp+tv
+PRKS,stockbee,1,A_stockbee_4pct,34.19,5.0384,37.86,10.7341,1327536,1.79,,,,,9.9942,-13.3638,,,,,,32.3725,34.5142,2.0069,1716621874.9032,Consumer Services,9.9942,-13.3638,,,,2026-11-04,mcp+tv
+PRLD,stockbee,1,A_stockbee_4pct,4.08,7.9365,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PRMB,stockbee,1,B_stockbee_ep9m,21.02,,22.15,5.3758,10597662,1.9926,,,,,10.6394,-6.6189,,,,,,19.8205,20.2966,0.7194,8017053696.8459,Consumer Non-Durables,10.6394,-6.6189,,,,2026-11-04,mcp+tv
+PRU,stockbee,1,A_stockbee_4pct,126.63,6.5819,122.46,-3.2931,2679966,1.3152,,,,,7.5342,1.2066,,,,,,116.4225,117.0126,3.1462,42248699083.2182,Finance,7.5342,1.2066,,,,2026-11-04,mcp+tv
+PS,stockbee,1,A_stockbee_4pct,52.82,13.2019,50.34,-4.6952,515323,1.5256,,,,,-9.2973,29.7423,,,,,,47.591,47.1322,3.653,20135999934.2397,Finance,-9.2973,29.7423,,,,2026-11-04,mcp+tv
+PSFE,stockbee,1,A_stockbee_4pct,6.57,9.6828,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PSNY,stockbee,1,A_stockbee_4pct,4.71,7.5342,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+PTEN,stockbee,1,B_stockbee_ep9m,10.65,,9.95,-6.5728,7947714,0.9238,,,,,-12.7958,0.5051,,,,,,11.7197,11.8233,0.6571,3775217156.23,Energy Minerals,-12.7958,0.5051,,,,2026-11-04,mcp+tv
+PYPL,stockbee,1,B_stockbee_ep9m,60.2,,58.96,-2.0598,11241577,0.9396,,,,,8.4122,-1.223,,,,,,57.0427,55.1398,1.5631,48975615473.7143,Commercial Services,8.4122,-1.223,,,,2026-11-04,mcp+tv
+PZZA,stockbee,1,A_stockbee_4pct,19.99,7.7047,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+QCOM,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,173.19,,156.75,-9.4925,40079931,3.0689,,,,,-13.8878,-3.8756,,,,,,173.9625,178.0928,8.9526,167383840463.7883,Electronic Technology,-13.8878,-3.8756,,,,2026-11-04,mcp+tv
+QFIN,stockbee,1,A_stockbee_4pct,5.505,4.4592,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+QSR,stockbee,1,A_stockbee_4pct,78.38,5.4771,78.55,0.2169,3813697,1.2065,,,,,12.3587,7.3821,,,,,,74.2155,74.2562,1.9103,35447806166.2739,Consumer Services,12.3587,7.3821,,,,2026-11-04,mcp+tv
+QTWO,stockbee,1,A_stockbee_4pct,74.47,4.5486,75.62,1.5442,1148182,1.2014,,,,,28.6711,17.5319,,,,,,66.1955,62.1408,2.4869,4671920413.4543,Technology Services,28.6711,17.5319,,,,2026-11-04,mcp+tv
+RCAT,stockbee,1,B_stockbee_ep9m,4.0,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+RCEL,stockbee,1,A_stockbee_4pct,16.32,6.4579,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+RCL,stockbee,1,A_stockbee_4pct,333.15,6.3799,322.73,-3.1277,2583306,1.0251,,,,,15.3431,-0.1887,,,,,,293.997,274.2792,12.453,86320897229.5536,Consumer Services,15.3431,-0.1887,,,,2026-11-04,mcp+tv
+RDN,stockbee,1,K_stockbee_anticipation,36.56,,37.27,1.942,1284247,1.0143,,,,,10.8237,2.8138,,,,,,34.965,34.8024,1.0195,4930870206.3903,Finance,10.8237,2.8138,,,,2026-11-04,mcp+tv
+RDNT,stockbee,1,A_stockbee_4pct,80.26,9.6748,78.01,-2.8034,1050711,1.3667,,,,,9.457,13.6841,,,,,,71.9515,72.5552,2.7777,6139212540.8309,Health Services,9.457,13.6841,,,,2026-11-04,mcp+tv
+REAX,stockbee,1,A_stockbee_4pct,16.99,11.5561,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+RELX,stockbee,1,A_stockbee_4pct,41.08,4.264,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+RELY,stockbee,1,A_stockbee_4pct,27.08,6.6982,21.545,-20.4394,11520538,4.0757,,,,,-6.6912,-16.7504,,,,,,24.467,23.6607,1.4368,4560732877.1401,Commercial Services,-6.6912,-16.7504,,,,2026-11-04,mcp+tv
+RERE,stockbee,1,A_stockbee_4pct,4.3,5.1345,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+REYN,stockbee,1,A_stockbee_4pct,25.13,4.3171,24.53,-2.3876,1742392,1.3276,,,,,9.5578,-7.0129,,,,,,23.181,22.592,0.8255,5170702692.1556,Consumer Non-Durables,9.5578,-7.0129,,,,2026-11-04,mcp+tv
+REZI,stockbee,1,A_stockbee_4pct,20.51,6.6008,19.59,-4.4856,1667698,1.2332,,,,,4.8154,-23.7743,,,,,,17.8455,18.4054,0.776,2974690238.3857,Distribution Services,4.8154,-23.7743,,,,2026-11-04,mcp+tv
+RF,stockbee,1,B_stockbee_ep9m,29.03,,28.41,-2.1357,10341559,1.0495,,,,,4.4869,-9.2622,,,,,,28.0495,28.3718,0.6449,24203317792.7723,Finance,4.4869,-9.2622,,,,2026-11-04,mcp+tv
+RGR,stockbee,1,A_stockbee_4pct,49.91,10.6161,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+RIG,stockbee,1,B_stockbee_ep9m,5.45,,5.1,-6.422,66606462,1.3835,,,,,-6.422,-0.9709,,,,,,5.986,5.7484,0.3169,5696301985.7064,Industrial Services,-6.422,-0.9709,,,,2026-11-04,mcp+tv
+RIVN,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,14.06,,13.29,-5.4765,44691314,1.1746,,,,,-8.8477,-15.0256,,,,,,12.637,14.2712,0.6892,19398199762.8947,Consumer Durables,-8.8477,-15.0256,,,,2026-11-04,mcp+tv
+RJET,stockbee,1,A_stockbee_4pct,20.5,7.2737,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+RJF,stockbee,1,A_stockbee_4pct,168.69,4.3422,164.82,-2.2941,1256128,0.9556,,,,,2.3155,-7.4305,,,,,,158.804,163.6946,4.2636,31645440458.2404,Finance,2.3155,-7.4305,,,,2026-11-04,mcp+tv
+RL,stockbee,1,A_stockbee_4pct,412.06,4.4777,381.78,-7.3484,1470022,2.6415,,,,,3.9876,-3.4837,,,,,,385.8615,363.4764,12.5895,22729299195.8201,Consumer Non-Durables,3.9876,-3.4837,,,,2026-11-04,mcp+tv
+RMD,stockbee,1,A_stockbee_4pct,240.51,5.9142,239.31,-0.4989,1669906,0.9978,,,,,6.8825,15.5083,,,,,,241.5175,231.867,8.1492,33660643604.0854,Health Technology,6.8825,15.5083,,,,2026-11-04,mcp+tv
+RMIX,stockbee,1,A_stockbee_4pct,11.71,5.1167,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+RMNI,stockbee,1,A_stockbee_4pct,5.26,7.3469,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ROCK,stockbee,1,A_stockbee_4pct,43.58,6.6047,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ROIV,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,38.23,,36.62,-4.2114,10177003,1.3348,,,,,2.1194,2.0624,,,,,,35.792,36.664,1.452,26451467872.056,Health Technology,2.1194,2.0624,,,,2026-11-04,mcp+tv
+ROL,stockbee,1,B_stockbee_ep9m,38.38,,38.76,0.9901,7706225,0.9712,,,,,30.527,5.4694,,,,,,34.384,33.592,1.1877,18529035881.5247,Commercial Services,30.527,5.4694,,,,2026-11-04,mcp+tv
+ROST,stockbee,1,A_stockbee_4pct,245.74,6.1054,235.23,-4.2769,3104755,1.3721,,,,,4.5978,-7.1558,,,,,,232.4095,230.8738,7.2214,75144960273.2122,Retail Trade,4.5978,-7.1558,,,,2026-11-04,mcp+tv
+RPAY,stockbee,1,A_stockbee_4pct,4.75,5.0885,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+RSG,stockbee,1,K_stockbee_anticipation,245.41,,249.42,1.634,1921129,1.2898,,,,,17.2252,16.6823,,,,,,234.5605,224.3668,5.4507,75983222247.469,Industrial Services,17.2252,16.6823,,,,2026-11-04,mcp+tv
+RSVR,stockbee,1,A_stockbee_4pct,10.35,5.1829,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+RWT,stockbee,1,A_stockbee_4pct,3.26,4.8232,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SA,stockbee,1,A_stockbee_4pct,25.34,7.9676,25.53,0.7498,890767,1.5092,,,,,-6.8248,-17.5121,,,,,,25.698,28.3356,1.4271,2753952234.7959,Non-Energy Minerals,-6.8248,-17.5121,,,,2026-11-04,mcp+tv
+SAH,stockbee,1,A_stockbee_4pct,64.05,5.5537,62.8,-1.9516,250044,0.8036,,,,,1.7993,-23.9525,,,,,,62.3755,66.7064,3.2647,1985491309.4333,Retail Trade,1.7993,-23.9525,,,,2026-11-04,mcp+tv
+SAP,stockbee,1,A_stockbee_4pct,240.04,4.2247,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SBAC,stockbee,1,A_stockbee_4pct,195.48,5.8422,193.08,-1.2277,1169875,0.7852,,,,,18.8185,5.1062,,,,,,184.288,179.7498,7.1012,20162765096.7858,Finance,18.8185,5.1062,,,,2026-11-04,mcp+tv
+SBCF,stockbee,1,K_stockbee_anticipation,34.27,,33.6,-1.9551,911191,0.9253,,,,,2.8152,-3.0862,,,,,,32.9195,33.1571,0.9169,3250262482.3577,Finance,2.8152,-3.0862,,,,2026-11-04,mcp+tv
+SBGI,stockbee,1,A_stockbee_4pct,14.1,4.6771,14.17,0.4965,2221315,3.7833,,,,,11.7508,-3.8018,,,,,,12.801,13.1578,0.6042,1024746941.3539,Consumer Services,11.7508,-3.8018,,,,2026-11-04,mcp+tv
+SBH,stockbee,1,A_stockbee_4pct,19.24,7.486,18.74,-2.5988,1496939,1.0901,,,,,16.181,17.5659,,,,,,17.2565,16.691,0.6922,1754481722.7817,Retail Trade,16.181,17.5659,,,,2026-11-04,mcp+tv
+SBS,stockbee,1,B_stockbee_ep9m,4.62,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SBSW,stockbee,1,A_stockbee_4pct,9.38,9.0698,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SBUX,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,109.7,,106.16,-3.227,13519712,1.5492,,,,,12.8761,2.0475,,,,,,100.2428,99.1823,2.8381,121033010040.7176,Consumer Services,12.8761,2.0475,,,,2026-11-04,mcp+tv
+SCHW,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,93.37,,92.58,-0.8461,13262933,1.6343,,,,,-5.9242,-13.5332,,,,,,91.8,98.8204,2.1919,160101903201.0562,Finance,-5.9242,-13.5332,,,,2026-11-04,mcp+tv
+SDHI,stockbee,1,K_stockbee_anticipation,10.59,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SE,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,80.19,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SEIC,stockbee,1,K_stockbee_anticipation,108.62,,105.18,-3.167,638909,0.7457,,,,,2.0373,0.6507,,,,,,105.0018,105.6569,2.6307,12473071441.9019,Finance,2.0373,0.6507,,,,2026-11-04,mcp+tv
+SF,stockbee,1,A_stockbee_4pct,72.94,6.2646,71.85,-1.4944,1872469,1.1851,,,,,1.5404,-13.7248,,,,,,68.2825,72.5222,2.1554,10781883544.4646,Finance,1.5404,-13.7248,,,,2026-11-04,mcp+tv
+SFD,stockbee,1,A_stockbee_4pct,19.72,7.4074,19.6,-0.6085,2067891,0.8327,,,,,4.4776,-21.6,,,,,,18.5787,19.4941,0.5577,7718495642.2312,Consumer Non-Durables,4.4776,-21.6,,,,2026-11-04,mcp+tv
+SGHC,stockbee,1,B_stockbee_ep9m,11.55,,11.56,0.0866,5973068,1.2028,,,,,1.1374,-11.6883,,,,,,11.054,12.0618,0.4246,5873597361.5758,Consumer Services,1.1374,-11.6883,,,,2026-11-04,mcp+tv
+SGI,stockbee,1,A_stockbee_4pct,69.81,6.8248,67.87,-2.779,4146706,1.4181,,,,,8.4359,3.6183,,,,,,64.1565,64.4014,2.6864,15626332703.4666,Consumer Durables,8.4359,3.6183,,,,2026-11-04,mcp+tv
+SHLS,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,9.16,,8.995,-1.8013,15451031,2.1462,,,,,10.0979,4.2294,,,,,,7.9095,7.6821,0.6642,1513858090.5115,Electronic Technology,10.0979,4.2294,,,,2026-11-04,mcp+tv
+SHO,stockbee,1,K_stockbee_anticipation,13.01,,12.35,-5.073,3122746,1.2833,,,,,8.8106,9.6803,,,,,,12.3335,11.608,0.3068,2296407689.9462,Finance,8.8106,9.6803,,,,2026-11-04,mcp+tv
+SHOE,stockbee,1,A_stockbee_4pct,15.9,11.8143,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SHOO,stockbee,1,A_stockbee_4pct,46.98,6.7,38.995,-16.9966,5236973,3.8759,,,,,-15.0065,-19.3985,,,,,,44.1265,43.7976,2.169,2853540733.1185,Consumer Non-Durables,-15.0065,-19.3985,,,,2026-11-04,mcp+tv
+SHW,stockbee,1,A_stockbee_4pct,363.5,6.6389,349.01,-3.9862,3088757,1.3233,,,,,8.9431,-4.4881,,,,,,334.917,329.6156,11.7871,84316653612.6465,Process Industries,8.9431,-4.4881,,,,2026-11-04,mcp+tv
+SIG,stockbee,1,A_stockbee_4pct,128.4,7.9899,121.92,-5.0467,629912,0.8523,,,,,20.4148,29.5505,,,,,,115.824,104.2218,4.6621,4546913872.785,Retail Trade,20.4148,29.5505,,,,2026-11-04,mcp+tv
+SII,stockbee,1,A_stockbee_4pct,112.74,7.2183,112.3,-0.3903,285343,2.1441,,,,,-3.9268,-3.348,,,,,,108.475,118.6106,4.6294,2889779802.2469,Finance,-3.9268,-3.348,,,,2026-11-04,mcp+tv
+SIRI,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,33.4,,33.22,-0.5389,6020443,1.0183,,,,,26.2158,11.2898,,,,,,28.1552,27.7777,0.9068,11178089510.7569,Consumer Services,26.2158,11.2898,,,,2026-11-04,mcp+tv
+SITE,stockbee,1,A_stockbee_4pct,118.16,5.7739,113.96,-3.5545,989962,0.8585,,,,,29.265,10.4264,,,,,,101.356,96.1522,4.2672,4915315912.8768,Distribution Services,29.265,10.4264,,,,2026-11-04,mcp+tv
+SKE,stockbee,1,A_stockbee_4pct,29.37,9.5487,29.35,-0.0681,777378,1.2334,,,,,-3.802,-10.9527,,,,,,29.76,30.8058,1.6841,3682330105.0341,Non-Energy Minerals,-3.802,-10.9527,,,,2026-11-04,mcp+tv
+SKHY,stockbee,1,B_stockbee_ep9m,143.07,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SKY,stockbee,1,A_stockbee_4pct,96.17,11.3465,93.16,-3.1299,995865,1.1861,,,,,8.4517,0.5288,,,,,,81.2285,83.973,3.8041,5056737027.916,Consumer Durables,8.4517,0.5288,,,,2026-11-04,mcp+tv
+SKYW,stockbee,1,A_stockbee_4pct,82.41,6.0618,79.91,-3.0336,408871,0.9413,,,,,-18.2757,-30.0201,,,,,,90.7345,94.7469,4.0969,3039309604.7799,Transportation,-18.2757,-30.0201,,,,2026-11-04,mcp+tv
+SLB,stockbee,1,B_stockbee_ep9m,51.56,,49.64,-3.7238,18779940,1.3733,,,,,0,-2.762,,,,,,50.9875,52.301,1.7352,73270114427.3825,Industrial Services,0,-2.762,,,,2026-11-04,mcp+tv
+SLG,stockbee,1,A_stockbee_4pct,53.78,8.9326,51.55,-4.1465,940714,0.8463,,,,,7.1058,-6.7643,,,,,,48.974,50.7412,2.2124,3938260462.4312,Finance,7.1058,-6.7643,,,,2026-11-04,mcp+tv
+SLM,stockbee,1,A_stockbee_4pct,18.68,4.1829,17.525,-6.1831,3844057,0.6357,,,,,-23.4716,-35.9466,,,,,,20.3185,22.9457,0.9489,3203941003.6871,Finance,-23.4716,-35.9466,,,,2026-11-04,mcp+tv
+SLSR,stockbee,1,A_stockbee_4pct,7.27,5.0578,7.01,-3.5763,332916,1.3836,,,,,-2.095,-14.5122,,,,,,6.7845,7.267,0.3977,1171172041.2031,Non-Energy Minerals,-2.095,-14.5122,,,,2026-11-04,mcp+tv
+SMA,stockbee,1,A_stockbee_4pct,38.14,4.0655,38.7,1.4683,887738,1.2594,,,,,18.0238,12.3041,,,,,,35.09,33.4646,0.8796,2296549415.8128,Finance,18.0238,12.3041,,,,2026-11-04,mcp+tv
+SMBK,stockbee,1,K_stockbee_anticipation,49.53,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SMG,stockbee,1,A_stockbee_4pct,67.19,8.7217,66.38,-1.2055,1905713,1.4805,,,,,34.7544,7.0818,,,,,,57.776,55.596,2.4802,3864661799.9161,Process Industries,34.7544,7.0818,,,,2026-11-04,mcp+tv
+SNDA,stockbee,1,A_stockbee_4pct,37.01,8.725,34.06,-7.9708,1199062,2.6662,,,,,-7.7715,-15.6722,,,,,,34.568,36.6742,1.4907,1636514427.2164,Health Services,-7.7715,-15.6722,,,,2026-11-04,mcp+tv
+SNDX,stockbee,1,B_stockbee_ep9m,10.45,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SNN,stockbee,1,A_stockbee_4pct,32.46,7.5903,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SO,stockbee,1,B_stockbee_ep9m,93.12,,93.34,0.2363,15868009,2.3858,,,,,10.8551,1.2364,,,,,,91.32,88.1048,1.8157,107374889050.6282,Utilities,10.8551,1.2364,,,,2026-11-04,mcp+tv
+SOLV,stockbee,1,A_stockbee_4pct,89.35,5.4153,87.18,-2.4287,1880669,1.4625,,,,,-1.4358,6.3819,,,,,,85.6185,87.7364,2.6798,14840105367.316,Health Services,-1.4358,6.3819,,,,2026-11-04,mcp+tv
+SON,stockbee,1,A_stockbee_4pct,51.63,5.7342,51.37,-0.5036,1351844,0.7537,,,,,7.0431,-9.9088,,,,,,49.723,50.0414,1.5728,5079246480.0362,Process Industries,7.0431,-9.9088,,,,2026-11-04,mcp+tv
+SONO,stockbee,1,A_stockbee_4pct,16.77,5.207,16.33,-2.6237,1231827,0.95,,,,,-9.2778,6.3151,,,,,,17.1788,16.6845,0.7028,1931740678.2093,Consumer Durables,-9.2778,6.3151,,,,2026-11-04,mcp+tv
+SORN,stockbee,1,K_stockbee_anticipation,10.075,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SPB,stockbee,1,A_stockbee_4pct,91.57,7.7167,89.07,-2.7302,437811,1.1535,,,,,16.8898,-7.6995,,,,,,81.0475,82.9966,2.9007,2048217722.3746,Consumer Durables,16.8898,-7.6995,,,,2026-11-04,mcp+tv
+SPCX,stockbee,1,B_stockbee_ep9m,135.92,,123.62,-9.0494,169580455,1.5471,,,,,-28.13,7.5284,,,,,,146.659,149.3148,8.0447,1678891048071.8796,Communications,-28.13,7.5284,,,,2026-11-04,mcp+tv
+SPOT,stockbee,1,A_stockbee_4pct,627.66,4.5943,614.41,-2.111,1737832,0.7619,,,,,27.7333,28.8233,,,,,,558.2165,535.8278,22.686,126496162785.6506,Technology Services,27.7333,28.8233,,,,2026-11-04,mcp+tv
+SQM,stockbee,1,A_stockbee_4pct,57.56,7.1681,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SRCE,stockbee,1,K_stockbee_anticipation,89.21,,87.35,-2.085,107798,0.9114,,,,,0.9243,-2.1179,,,,,,86.6478,86.2202,2.0843,2103817651.1602,Finance,0.9243,-2.1179,,,,2026-11-04,mcp+tv
+SRE,stockbee,1,B_stockbee_ep9m,82.9,,79.83,-3.7033,11768159,2.9309,,,,,1.863,-4.7829,,,,,,83.4865,82.1712,1.7663,52200869144.8158,Utilities,1.863,-4.7829,,,,2026-11-04,mcp+tv
+SRRK,stockbee,1,A_stockbee_4pct,46.09,4.7976,45.5,-1.2801,1455720,1.1902,,,,,4.4057,-14.6341,,,,,,42.3425,47.3768,1.9861,5541230181.5578,Health Technology,4.4057,-14.6341,,,,2026-11-04,mcp+tv
+SRTA,stockbee,1,A_stockbee_4pct,5.22,17.5676,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SRZN,stockbee,1,A_stockbee_4pct,31.65,5.0797,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SSRM,stockbee,1,A_stockbee_4pct,28.15,7.607,27.92,-0.8171,3162013,1.2492,,,,,-18.3148,-7.5497,,,,,,30.0595,33.4903,1.6341,5571827526.6728,Non-Energy Minerals,-18.3148,-7.5497,,,,2026-11-04,mcp+tv
+STAA,stockbee,1,A_stockbee_4pct,27.17,7.946,26.72,-1.6562,1450804,2.3543,,,,,18.3872,16.275,,,,,,23.362,22.6486,1.2264,1339847303.3434,Health Technology,18.3872,16.275,,,,2026-11-04,mcp+tv
+STBA,stockbee,1,K_stockbee_anticipation,52.16,,50.89,-2.4348,215148,0.9065,,,,,3.0579,-1.0538,,,,,,49.8903,49.6907,1.267,1794660856.9323,Finance,3.0579,-1.0538,,,,2026-11-04,mcp+tv
+STEP,stockbee,1,A_stockbee_4pct,46.4,4.5516,42.81,-7.7371,1494779,2.0481,,,,,-7.8364,-15.9104,,,,,,43.0925,45.6806,2.4468,5166168451.2142,Finance,-7.8364,-15.9104,,,,2026-11-04,mcp+tv
+STLA,stockbee,1,B_stockbee_ep9m,4.65,,4.44,-4.5161,43809801,0.9023,,,,,-1.9868,-18.6068,,,,,,4.4,4.7288,0.2176,16711799110.8159,Consumer Durables,-1.9868,-18.6068,,,,2026-11-04,mcp+tv
+STLN,stockbee,1,A_stockbee_4pct,6.94,9.4637,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+STM,stockbee,1,B_stockbee_ep9m,45.6,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+STNE,stockbee,1,A_stockbee_4pct,7.69,4.0595,7.49,-2.6008,6308100,0.6931,,,,,-35.8183,-32.6439,,,,,,9.9482,9.9576,0.6114,1821779433.2523,Commercial Services,-35.8183,-32.6439,,,,2026-11-04,mcp+tv
+STRZ,stockbee,1,A_stockbee_4pct,25.38,8.6473,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+STUB,stockbee,1,A_stockbee_4pct,6.59,8.7459,6.28,-4.7041,7206603,1.3607,,,,,12.5448,-30.6077,,,,,,5.911,5.9082,0.3094,2399525040.8558,Technology Services,12.5448,-30.6077,,,,2026-11-04,mcp+tv
+STWD,stockbee,1,K_stockbee_anticipation,12.95,,12.88,-0.5405,7647023,1.3441,,,,,-1.3783,-19.0955,,,,,,12.47,13.8408,0.3669,4767775945.2108,Finance,-1.3783,-19.0955,,,,2026-11-04,mcp+tv
+SUI,stockbee,1,A_stockbee_4pct,121.24,5.1518,122.08,0.6928,1297309,0.8494,,,,,9.0584,1.7164,,,,,,116.455,115.7176,3.0127,14572174616.5358,Finance,9.0584,1.7164,,,,2026-11-04,mcp+tv
+SVV,stockbee,1,A_stockbee_4pct,10.06,8.172,9.1,-9.5427,2699716,1.1475,,,,,-1.8339,-20.1754,,,,,,9.478,9.5516,0.5374,1403730878.161,Retail Trade,-1.8339,-20.1754,,,,2026-11-04,mcp+tv
+SW,stockbee,1,A_stockbee_4pct,45.19,4.0765,44.51,-1.5048,6582067,1.0418,,,,,5.1749,-5.4989,,,,,,42.099,43.577,1.6482,23273937078.6911,Process Industries,5.1749,-5.4989,,,,2026-11-04,mcp+tv
+SWBI,stockbee,1,A_stockbee_4pct,14.49,10.0228,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SWIM,stockbee,1,A_stockbee_4pct,8.18,11.7486,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+SWK,stockbee,1,A_stockbee_4pct,118.33,13.1046,115.27,-2.586,3222846,1.4707,,,,,28.1917,13.7907,,,,,,98.671,94.392,4.2222,17407689207.9956,Consumer Durables,28.1917,13.7907,,,,2026-11-04,mcp+tv
+SWKS,stockbee,1,B_stockbee_ep9m,82.92,,81.21,-2.0622,7806046,1.7422,,,,,-4.9342,20.3824,,,,,,82.0315,81.842,4.4238,19097793293.0297,Electronic Technology,-4.9342,20.3824,,,,2026-11-04,mcp+tv
+SYF,stockbee,1,B_stockbee_ep9m,75.03,,74.07,-1.2795,6014727,1.4519,,,,,2.0951,-5.2329,,,,,,74.4235,74.6398,2.2524,23065756582.515,Finance,2.0951,-5.2329,,,,2026-11-04,mcp+tv
+T,stockbee,1,B_stockbee_ep9m,21.83,,21.82,-0.0458,50446184,0.9147,,,,,-9.7974,-7.1489,,,,,,22.0505,24.0294,0.6803,146989854153.9075,Communications,-9.7974,-7.1489,,,,2026-11-04,mcp+tv
+TBCH,stockbee,1,A_stockbee_4pct,16.96,7.2061,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+TCBK,stockbee,1,K_stockbee_anticipation,53.91,,52.44,-2.7268,272686,0.7148,,,,,0.1145,-8.6411,,,,,,52.534,52.7538,1.2915,1676330121.6539,Finance,0.1145,-8.6411,,,,2026-11-04,mcp+tv
+TCMD,stockbee,1,A_stockbee_4pct,27.18,9.6852,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+TCPC,stockbee,1,A_stockbee_4pct,4.37,4.0476,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+TDAY,stockbee,1,A_stockbee_4pct,6.07,6.1189,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+TECX,stockbee,1,A_stockbee_4pct,20.3,6.9547,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+TEVA,stockbee,1,B_stockbee_ep9m,41.85,,41.78,-0.1673,13708504,1.9249,,,,,5.372,19.3714,,,,,,40.968,39.404,1.3065,48686073964.2143,Health Technology,5.372,19.3714,,,,2026-11-04,mcp+tv
+TFII,stockbee,1,A_stockbee_4pct,100.25,4.145,96.64,-3.601,467269,1.0049,,,,,-16.3942,-30.1431,,,,,,108.878,119.1382,4.5911,7943134407.6082,Transportation,-16.3942,-30.1431,,,,2026-11-04,mcp+tv
+TFPM,stockbee,1,A_stockbee_4pct,30.14,6.6903,30.79,2.1566,575735,1.2213,,,,,0.7197,-8.9592,,,,,,29.909,31.4524,1.1117,6342833654.8047,Non-Energy Minerals,0.7197,-8.9592,,,,2026-11-04,mcp+tv
+TGLS,stockbee,1,A_stockbee_4pct,42.81,8.0515,45.13,5.4193,804881,2.3952,,,,,27.5579,0.8041,,,,,,38.7665,37.816,1.6335,2002175202.3492,Producer Manufacturing,27.5579,0.8041,,,,2026-11-04,mcp+tv
+THC,stockbee,1,A_stockbee_4pct,292.25,9.5842,286.46,-1.9812,1068475,0.9435,,,,,9.8727,11.6847,,,,,,270.898,265.0478,11.6262,22798777745.839,Health Services,9.8727,11.6847,,,,2026-11-04,mcp+tv
+TILE,stockbee,1,A_stockbee_4pct,40.16,5.8513,37.82,-5.8267,612359,1.5032,,,,,7.5654,0.1854,,,,,,36.444,35.7808,1.2875,2186013420.1783,Producer Manufacturing,7.5654,0.1854,,,,2026-11-04,mcp+tv
+TJX,stockbee,1,A_stockbee_4pct,144.76,5.1806,138.59,-4.2622,10014740,1.9705,,,,,2.7049,-13.6296,,,,,,142.7595,135.7728,3.7156,152445390739.5762,Retail Trade,2.7049,-13.6296,,,,2026-11-04,mcp+tv
+TLX,stockbee,1,A_stockbee_4pct,9.67,7.0875,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+TMDX,stockbee,1,A_stockbee_4pct,72.755,8.0413,68.98,-5.1886,1685217,1.6788,,,,,-17.7537,-14.8395,,,,,,71.783,79.6851,3.9525,2391891356.5883,Health Technology,-17.7537,-14.8395,,,,2026-11-04,mcp+tv
+TMO,stockbee,1,K_stockbee_anticipation,706.16,,676.94,-4.1379,2835691,1.3765,,,,,-0.938,17.1176,,,,,,685.3225,659.5304,21.2244,250817002917.4435,Health Technology,-0.938,17.1176,,,,2026-11-04,mcp+tv
+TNDM,stockbee,1,A_stockbee_4pct,19.05,7.932,17.99,-5.5643,3022769,1.1282,,,,,7.2749,3.4503,,,,,,17.5935,17.7389,1.103,1251720849.8299,Health Technology,7.2749,3.4503,,,,2026-11-04,mcp+tv
+TNET,stockbee,1,A_stockbee_4pct,66.77,4.1979,67.33,0.8387,326594,0.7016,,,,,4.8101,2.1235,,,,,,68.879,67.4198,3.4097,3084396740.5191,Commercial Services,4.8101,2.1235,,,,2026-11-04,mcp+tv
+TOL,stockbee,1,A_stockbee_4pct,158.49,6.1981,155.6,-1.8235,1289916,1.1278,,,,,14.3445,1.8925,,,,,,140.388,138.3616,4.9716,14338074190.6013,Consumer Durables,14.3445,1.8925,,,,2026-11-04,mcp+tv
+TOST,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,35.37,,35.16,-0.5937,14842479,1.3987,,,,,16.9272,0.8606,,,,,,32.324,31.8606,1.444,20427959382.687,Technology Services,16.9272,0.8606,,,,2026-11-04,mcp+tv
+TPB,stockbee,1,A_stockbee_4pct,70.4,4.6218,67.47,-4.1619,258186,0.8116,,,,,16.2274,-21.5191,,,,,,63.9245,65.9856,3.1482,1352700768.4901,Consumer Non-Durables,16.2274,-21.5191,,,,2026-11-04,mcp+tv
+TRAX,stockbee,1,A_stockbee_4pct,49.04,5.8265,45.43,-7.3613,571202,0.9173,,,,,37.5833,-1.0886,,,,,,41.0223,39.1222,3.184,1908873340.5899,Health Technology,37.5833,-1.0886,,,,2026-11-04,mcp+tv
+TREE,stockbee,1,A_stockbee_4pct,38.35,32.8369,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+TREX,stockbee,1,A_stockbee_4pct,57.15,14.3,56.01,-1.9948,4957158,1.9585,,,,,25.8935,15.1521,,,,,,49.0415,46.123,2.2874,5705469365.894,Non-Energy Minerals,25.8935,15.1521,,,,2026-11-04,mcp+tv
+TRIN,stockbee,1,A_stockbee_4pct,17.94,5.2199,17.74,-1.1148,1435411,1.7484,,,,,1.2557,0.3394,,,,,,16.7895,17.4188,0.3996,1679864034.8383,Miscellaneous,1.2557,0.3394,,,,2026-11-04,mcp+tv
+TRIP,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,10.2,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+TRN,stockbee,1,A_stockbee_4pct,31.91,6.8296,30.5,-4.4187,1169665,1.0262,,,,,16.7688,-0.813,,,,,,26.91,27.3344,1.1375,2384675457.3958,Producer Manufacturing,16.7688,-0.813,,,,2026-11-04,mcp+tv
+TRNS,stockbee,1,A_stockbee_4pct,108.13,20.7887,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+TROW,stockbee,1,A_stockbee_4pct,112.57,5.9682,108.71,-3.429,2628883,1.1403,,,,,4.3482,-4.824,,,,,,104.034,105.3361,3.0014,23190661541.1762,Finance,4.3482,-4.824,,,,2026-11-04,mcp+tv
+TROX,stockbee,1,A_stockbee_4pct,3.55,4.4118,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+TRUP,stockbee,1,A_stockbee_4pct,33.675,8.2102,34.72,3.1032,733923,1.8283,,,,,41.3105,24.4444,,,,,,29.2353,26.9955,1.219,1523256921.5097,Finance,41.3105,24.4444,,,,2026-11-04,mcp+tv
+TRV,stockbee,1,K_stockbee_anticipation,409.25,,402.89,-1.5541,2080095,1.4186,,,,,11.9015,4.9275,,,,,,392.043,377.2042,8.6014,82570834990.3861,Finance,11.9015,4.9275,,,,2026-11-04,mcp+tv
+TSCO,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,36.58,,36.61,0.082,10732738,0.7028,,,,,16.5924,7.8351,,,,,,33.7123,33.3357,1.4253,19075279019.7857,Retail Trade,16.5924,7.8351,,,,2026-11-04,mcp+tv
+TSHA,stockbee,1,A_stockbee_4pct,4.36,6.6015,4.09,-6.1927,6742778,2.6891,,,,,-9.3126,-36.5891,,,,,,4.0292,4.6673,0.2813,1332659165.0917,Health Technology,-9.3126,-36.5891,,,,2026-11-04,mcp+tv
+TSLA,stockbee,1,B_stockbee_ep9m,385.19,,343.69,-10.7739,79215835,1.9677,,,,,-10.0229,6.6234,,,,,,381.6465,372.0689,16.4424,1358523425097.668,Consumer Durables,-10.0229,6.6234,,,,2026-11-04,mcp+tv
+TSM,stockbee,1,B_stockbee_ep9m,395.75,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+TTAM,stockbee,1,A_stockbee_4pct,14.3,4.5322,11.68,-18.3217,1104505,3.435,,,,,-14.0545,-26.4484,,,,,,13.4915,13.8802,0.6411,2153353707.5916,Non-Energy Minerals,-14.0545,-26.4484,,,,2026-11-04,mcp+tv
+TTD,stockbee,1,B_stockbee_ep9m,13.23,,12.81,-3.1746,14826675,1.12,,,,,6.4396,-0.4662,,,,,,12.621,13.0748,0.6021,6056509663.6667,Technology Services,6.4396,-0.4662,,,,2026-11-04,mcp+tv
+TTE,stockbee,1,K_stockbee_anticipation,90.46,,88.75,-1.8903,1647540,1.1212,,,,,4.6333,3.5589,,,,,,91.0025,89.7458,2.0329,198106661550.9379,Energy Minerals,4.6333,3.5589,,,,2026-11-04,mcp+tv
+TTWO,stockbee,1,A_stockbee_4pct,208.9,7.1337,213.36,2.135,5884869,2.3371,,,,,4.9432,-8.6253,,,,,,203.029,207.8882,7.3111,39894145136.1616,Technology Services,4.9432,-8.6253,,,,2026-11-04,mcp+tv
+TXN,stockbee,1,B_stockbee_ep9m,311.49,,278.15,-10.7034,19187299,2.0345,,,,,-5.8555,-1.9701,,,,,,291.357,278.842,12.1131,254165207848.4377,Electronic Technology,-5.8555,-1.9701,,,,2026-11-04,mcp+tv
+TXRH,stockbee,1,A_stockbee_4pct,196.45,6.4827,191.79,-2.3721,2453755,1.9154,,,,,19.8687,-6.2702,,,,,,173.3445,173.0537,6.0412,12589273803.1258,Consumer Services,19.8687,-6.2702,,,,2026-11-04,mcp+tv
+U,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,42.46,,48.8,14.9317,50541219,4.7491,,,,,6.3644,14.7156,,,,,,41.7925,42.328,2.5844,21476339233.707,Technology Services,6.3644,14.7156,,,,2026-11-04,mcp+tv
+UAL,stockbee,1,A_stockbee_4pct,115.76,7.975,110.49,-4.5525,6315774,1.1998,,,,,-1.3306,-15.0338,,,,,,103.3722,107.3204,5.3394,35897580560.8528,Transportation,-1.3306,-15.0338,,,,2026-11-04,mcp+tv
+UBER,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,69.87,,68.78,-1.56,30079583,1.4359,,,,,-1.1213,-3.5208,,,,,,68.383,70.3118,2.0727,140487294748.5579,Transportation,-1.1213,-3.5208,,,,2026-11-04,mcp+tv
+UBS,stockbee,1,A_stockbee_4pct,50.67,5.5625,48.77,-3.7498,3852220,1.7572,,,,,0.041,-9.3157,,,,,,47.674,49.8266,1.1959,149321162069.3195,Finance,0.041,-9.3157,,,,2026-11-04,mcp+tv
+UBSI,stockbee,1,K_stockbee_anticipation,49.23,,48.39,-1.7063,1003009,1.1084,,,,,4.0645,0.0827,,,,,,47.5842,47.1505,1.0838,6591326948.2919,Finance,4.0645,0.0827,,,,2026-11-04,mcp+tv
+UCB,stockbee,1,K_stockbee_anticipation,37.66,,36.96,-1.8587,996800,0.8528,,,,,8.8019,4.142,,,,,,35.731,34.9846,0.9132,4428807158.5428,Finance,8.8019,4.142,,,,2026-11-04,mcp+tv
+UDR,stockbee,1,K_stockbee_anticipation,37.22,,37.01,-0.5642,6597855,1.1862,,,,,9.174,-2.8099,,,,,,35.146,34.9386,0.7791,11728054648.0916,Finance,9.174,-2.8099,,,,2026-11-04,mcp+tv
+UFPI,stockbee,1,A_stockbee_4pct,86.31,6.3455,82.97,-3.8698,528228,0.9906,,,,,6.0049,-9.5596,,,,,,79.822,80.3628,2.954,4576748811.9379,Non-Energy Minerals,6.0049,-9.5596,,,,2026-11-04,mcp+tv
+UFPT,stockbee,1,A_stockbee_4pct,329.82,17.6584,299.82,-9.0959,176112,1.453,,,,,-3.3306,-5.2701,,,,,,293.535,291.144,15.1489,2322342810.7062,Process Industries,-3.3306,-5.2701,,,,2026-11-04,mcp+tv
+UHS,stockbee,1,A_stockbee_4pct,196.46,10.9129,198.59,1.0842,1315962,1.4069,,,,,13.9946,17.8716,,,,,,183.0015,178.1734,7.4999,11701729245.6258,Health Services,13.9946,17.8716,,,,2026-11-04,mcp+tv
+UL,stockbee,1,K_stockbee_anticipation,66.92,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+UMC,stockbee,1,B_stockbee_ep9m,16.06,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+UNFI,stockbee,1,A_stockbee_4pct,48.29,7.0732,46.01,-4.7215,616677,0.9973,,,,,2.4493,-2.4799,,,,,,46.718,45.7226,1.842,2775189145.9729,Distribution Services,2.4493,-2.4799,,,,2026-11-04,mcp+tv
+UNH,stockbee,1,B_stockbee_ep9m,409.38,,395.72,-3.3368,6873125,1.3989,,,,,4.4033,-1.4605,,,,,,404.078,390.6662,12.6098,354574084929.4005,Health Services,4.4033,-1.4605,,,,2026-11-04,mcp+tv
+UNIT,stockbee,1,A_stockbee_4pct,5.45,7.7075,5.365,-1.5596,9253529,2.3504,,,,,-33.188,-44.1727,,,,,,5.5,7.7456,0.3874,1302220348.5367,Communications,-33.188,-44.1727,,,,2026-11-04,mcp+tv
+UNM,stockbee,1,B_stockbee_ep9m,74.79,,73.95,-1.1231,6421308,2.7029,,,,,-17.4849,-17.4297,,,,,,89.916,91.6426,3.3135,11706787501.077,Finance,-17.4849,-17.4297,,,,2026-11-04,mcp+tv
+UPS,stockbee,1,A_stockbee_4pct,114.31,4.7083,111.04,-2.8606,7694753,1.3029,,,,,19.0522,7.5969,,,,,,102.288,99.7774,2.6159,94470780432.3037,Transportation,19.0522,7.5969,,,,2026-11-04,mcp+tv
+URBN,stockbee,1,A_stockbee_4pct,91.78,5.8349,87.57,-4.5871,873825,0.8342,,,,,7.4215,12.7462,,,,,,87.6455,81.7776,3.2184,7501261787.6127,Retail Trade,7.4215,12.7462,,,,2026-11-04,mcp+tv
+USAS,stockbee,1,A_stockbee_4pct,3.08,13.6531,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+USFD,stockbee,1,A_stockbee_4pct,109.93,8.455,106.85,-2.8018,5882692,2.1317,,,,,12.0961,0.4513,,,,,,102.082,99.2516,3.4794,23114937388.6496,Distribution Services,12.0961,0.4513,,,,2026-11-04,mcp+tv
+USPH,stockbee,1,A_stockbee_4pct,89.18,5.2396,97.2,8.993,307206,1.7604,,,,,14.7309,26.9592,,,,,,86.842,83.7148,3.4294,1450486252.532,Health Services,14.7309,26.9592,,,,2026-11-04,mcp+tv
+V,stockbee,1,B_stockbee_ep9m,436.57,,422.59,-3.2022,15031532,2.144,,,,,14.5882,14.6753,,,,,,407.0005,384.983,9.1052,809541900147.6943,Finance,14.5882,14.6753,,,,2026-11-04,mcp+tv
+VALE,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,11.43,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+VC,stockbee,1,A_stockbee_4pct,80.28,7.6572,77.48,-3.4878,878830,1.0176,,,,,-12.8655,-25.0894,,,,,,80.6755,89.2422,3.548,1914370800.1325,Producer Manufacturing,-12.8655,-25.0894,,,,2026-11-04,mcp+tv
+VCYT,stockbee,1,A_stockbee_4pct,52.52,4.4343,24,-54.3031,14979300,12.0276,,,,,-50,-48.9362,,,,,,45.947,44.4951,4.4795,4222121272.0,Health Technology,-50,-48.9362,,,,2026-11-04,mcp+tv
+VEL,stockbee,1,A_stockbee_4pct,16.75,6.2817,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+VERA,stockbee,1,A_stockbee_4pct,31.97,4.1029,30.14,-5.7241,1420084,0.8923,,,,,0.5337,-8.1378,,,,,,29.4305,31.6993,1.7485,2171988998.0244,Health Technology,0.5337,-8.1378,,,,2026-11-04,mcp+tv
+VICI,stockbee,1,B_stockbee_ep9m,25.25,,25.21,-0.1584,13405307,1.2628,,,,,11.6475,-5.2256,,,,,,23.816,24.0394,0.5445,27758367252.1485,Finance,11.6475,-5.2256,,,,2026-11-04,mcp+tv
+VIK,stockbee,1,A_stockbee_4pct,91.17,6.2092,86.16,-5.4952,6482048,1.9399,,,,,5.7957,-18.8089,,,,,,85.1795,84.1216,3.1819,38482340369.6795,Consumer Services,5.7957,-18.8089,,,,2026-11-04,mcp+tv
+VIPS,stockbee,1,A_stockbee_4pct,13.77,5.5982,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+VIR,stockbee,1,A_stockbee_4pct,11.77,4.902,11.02,-6.3721,2933330,1.8077,,,,,-7.395,24.239,,,,,,10.9785,11.0144,0.6511,1864759925.8267,Health Technology,-7.395,24.239,,,,2026-11-04,mcp+tv
+VLRS,stockbee,1,A_stockbee_4pct,7.43,7.6812,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+VMC,stockbee,1,A_stockbee_4pct,297.69,4.5994,285.51,-4.0915,1747818,1.2364,,,,,15.5817,1.8914,,,,,,265.3485,256.8568,8.924,36643616050.6875,Non-Energy Minerals,15.5817,1.8914,,,,2026-11-04,mcp+tv
+VMD,stockbee,1,A_stockbee_4pct,10.11,6.9276,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+VMET,stockbee,1,A_stockbee_4pct,9.11,6.0536,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+VNET,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,3.52,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+VOD,stockbee,1,A_stockbee_4pct,16.28,4.2254,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+VOXR,stockbee,1,A_stockbee_4pct,4.91,7.2052,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+VRTS,stockbee,1,A_stockbee_4pct,128.89,7.0159,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+VTEX,stockbee,1,A_stockbee_4pct,4.19,5.5416,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+VTMX,stockbee,1,K_stockbee_anticipation,37.01,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+VZ,stockbee,1,B_stockbee_ep9m,46.17,,46.12,-0.1083,25667718,0.8313,,,,,0.3263,-0.4748,,,,,,44.243,46.6948,1.2361,191148858844.992,Communications,0.3263,-0.4748,,,,2026-11-04,mcp+tv
+VZLA,stockbee,1,A_stockbee_4pct,3.29,8.5809,3.19,-3.0395,4650971,1.0773,,,,,-9.375,-14.2473,,,,,,3.2375,3.633,0.2006,1132631438.8783,Non-Energy Minerals,-9.375,-14.2473,,,,2026-11-04,mcp+tv
+W,stockbee,1,A_stockbee_4pct,123.56,10.9953,113.38,-8.2389,2873704,1.1821,,,,,6.0122,7.3369,,,,,,112.307,105.7256,6.4669,15529449640.7334,Retail Trade,6.0122,7.3369,,,,2026-11-04,mcp+tv
+WASH,stockbee,1,K_stockbee_anticipation,40.28,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+WAT,stockbee,1,K_stockbee_anticipation,467.6,,453.08,-3.1052,1149784,0.9741,,,,,1.6467,13.1003,,,,,,451.5445,433.7862,15.7546,44514253312.5377,Health Technology,1.6467,13.1003,,,,2026-11-04,mcp+tv
+WD,stockbee,1,A_stockbee_4pct,38.34,9.0134,39.83,3.8863,1223401,2.4707,,,,,19.3229,-9.9684,,,,,,34.1945,36.6676,1.6956,1367194413.6886,Finance,19.3229,-9.9684,,,,2026-11-04,mcp+tv
+WDFC,stockbee,1,A_stockbee_4pct,233.0,5.2251,227.33,-2.4335,148876,0.8891,,,,,9.6941,-2.5631,,,,,,211.5715,205.64,6.9923,3044513322.3504,Process Industries,9.6941,-2.5631,,,,2026-11-04,mcp+tv
+WEN,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,7.65,,7.94,3.7908,12072681,1.2884,,,,,29.5269,12.1469,,,,,,6.7447,6.9467,0.3104,1513919319.4484,Consumer Services,29.5269,12.1469,,,,2026-11-04,mcp+tv
+WENN,stockbee,1,K_stockbee_anticipation,10.47,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+WEST,stockbee,1,A_stockbee_4pct,10.36,9.3981,10.37,0.0965,754945,1.5083,,,,,25.393,48.1429,,,,,,9.2482,8.4639,0.4084,1012395979.8475,Consumer Non-Durables,25.393,48.1429,,,,2026-11-04,mcp+tv
+WEYS,stockbee,1,A_stockbee_4pct,64.59,23.5463,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+WFC,stockbee,1,B_stockbee_ep9m,87.43,,84.8,-3.0081,16319064,1.2306,,,,,3.6042,-1.92,,,,,,83.3895,84.4238,2.2063,254556909872.5289,Finance,3.6042,-1.92,,,,2026-11-04,mcp+tv
+WFG,stockbee,1,A_stockbee_4pct,69.74,5.9235,69.23,-0.7313,149528,0.688,,,,,5.2608,-1.8293,,,,,,67.0095,68.2048,2.2458,5420973837.8625,Non-Energy Minerals,5.2608,-1.8293,,,,2026-11-04,mcp+tv
+WLTH,stockbee,1,A_stockbee_4pct,11.165,7.047,10.6,-5.0605,1328474,0.7223,,,,,-0.8419,9.1658,,,,,,10.6677,10.2859,0.4996,1655470230.2015,Technology Services,-0.8419,9.1658,,,,2026-11-04,mcp+tv
+WM,stockbee,1,K_stockbee_anticipation,238.49,,241.27,1.1657,2554765,0.9921,,,,,16.7417,6.1087,,,,,,229.1635,219.0024,5.4415,95937378927.0948,Industrial Services,16.7417,6.1087,,,,2026-11-04,mcp+tv
+WMB,stockbee,1,B_stockbee_ep9m,67.86,,64.25,-5.3198,17199297,1.7899,,,,,-9.0845,-10.0644,,,,,,71.783,71.9626,2.804,80325512288.5315,Industrial Services,-9.0845,-10.0644,,,,2026-11-04,mcp+tv
+WMG,stockbee,1,A_stockbee_4pct,32.55,4.5615,31.92,-1.9355,1926989,1.0212,,,,,15.2763,20.7262,,,,,,30.574,29.014,0.9372,16697663129.2903,Commercial Services,15.2763,20.7262,,,,2026-11-04,mcp+tv
+WMK,stockbee,1,A_stockbee_4pct,79.62,7.0017,79.21,-0.5149,214652,1.1197,,,,,6.3793,4.8584,,,,,,75.8315,73.6038,2.3646,1960019706.309,Retail Trade,6.3793,4.8584,,,,2026-11-04,mcp+tv
+WMS,stockbee,1,A_stockbee_4pct,144.07,5.9338,122.63,-14.8817,2726195,3.9001,,,,,-5.8431,-18.0828,,,,,,130.7755,130.2766,5.5417,9246957572.1321,Producer Manufacturing,-5.8431,-18.0828,,,,2026-11-04,mcp+tv
+WMT,stockbee,1,B_stockbee_ep9m,129.17,,127.72,-1.1226,42039099,1.9349,,,,,22.2201,15.4688,,,,,,119.8745,112.0244,2.9676,1013298036730.1322,Retail Trade,22.2201,15.4688,,,,2026-11-04,mcp+tv
+WOOF,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,3.14,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+WPC,stockbee,1,K_stockbee_anticipation,65.36,,65.29,-0.1071,1963167,1.0194,,,,,2.0156,-8.7746,,,,,,64.1755,66.0402,1.294,15024435992.935,Finance,2.0156,-8.7746,,,,2026-11-04,mcp+tv
+WRB,stockbee,1,K_stockbee_anticipation,76.71,,76.98,0.352,1919571,0.9333,,,,,10.3656,7.6945,,,,,,74.0365,71.0522,1.6134,28599284217.7528,Finance,10.3656,7.6945,,,,2026-11-04,mcp+tv
+WSE,stockbee,1,A_stockbee_4pct,11.58,7.9217,11.05,-4.5769,2971759,1.6985,,,,,-5.3128,-11.8117,,,,,,11.2458,11.6974,0.369,13071613103.5924,Commercial Services,-5.3128,-11.8117,,,,2026-11-04,mcp+tv
+WSFS,stockbee,1,K_stockbee_anticipation,81.08,,79.13,-2.405,339322,0.8951,,,,,2.3145,-2.5012,,,,,,77.8255,77.8738,1.8168,3996676652.0628,Finance,2.3145,-2.5012,,,,2026-11-04,mcp+tv
+WSM,stockbee,1,A_stockbee_4pct,270.08,6.4564,258.61,-4.2469,1054477,1.0913,,,,,7.4408,4.9596,,,,,,252.011,238.3358,9.0584,30458870882.1442,Retail Trade,7.4408,4.9596,,,,2026-11-04,mcp+tv
+WTBA,stockbee,1,K_stockbee_anticipation,31.13,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+WU,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,6.59,,7.02,6.525,24869084,2.9313,,,,,15.4605,-2.6352,,,,,,6.249,6.4336,0.2577,2189390401.0379,Finance,15.4605,-2.6352,,,,2026-11-04,mcp+tv
+WWW,stockbee,1,A_stockbee_4pct,23.5,8.6454,21.69,-7.7021,968920,0.9292,,,,,13.9181,14.2782,,,,,,20.317,19.7804,0.9308,1780018861.9902,Consumer Non-Durables,13.9181,14.2782,,,,2026-11-04,mcp+tv
+WY,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,21.75,,21.63,-0.5517,8933869,0.9624,,,,,17.2358,-15.7382,,,,,,19.7625,20.6242,0.6716,15581040593.7007,Finance,17.2358,-15.7382,,,,2026-11-04,mcp+tv
+WYNN,stockbee,1,A_stockbee_4pct,82.38,6.0505,79.32,-3.7145,3756200,1.4941,,,,,1.9275,-21.5818,,,,,,75.6538,80.8869,2.9092,8167888858.3219,Consumer Services,1.9275,-21.5818,,,,2026-11-04,mcp+tv
+XEL,stockbee,1,B_stockbee_ep9m,80.5,,80.37,-0.1615,10218218,1.2687,,,,,12.0296,4.7985,,,,,,77.296,74.8878,1.5629,51587449601.4112,Utilities,12.0296,4.7985,,,,2026-11-04,mcp+tv
+XOM,stockbee,1,B_stockbee_ep9m,169.27,,165.3,-2.3454,18764188,1.2734,,,,,1.3737,8.294,,,,,,177.511,168.6358,4.8524,674295481741.1698,Energy Minerals,1.3737,8.294,,,,2026-11-04,mcp+tv
+XP,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,15.17,,14.78,-2.5709,14029589,0.4475,,,,,-49.4701,-12.6478,,,,,,23.6692,22.1831,1.7529,7641489579.0943,Finance,-49.4701,-12.6478,,,,2026-11-04,mcp+tv
+XPEV,stockbee,1,B_stockbee_ep9m,9.85,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+XRN,stockbee,1,A_stockbee_4pct,31.63,4.1145,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+XXI,stockbee,1,A_stockbee_4pct,5.83,5.8076,5.34,-8.4048,1888185,1.3071,,,,,-21.0059,18.6667,,,,,,5.7675,6.0138,0.3782,3478897758.3293,Finance,-21.0059,18.6667,,,,2026-11-04,mcp+tv
+XYL,stockbee,1,A_stockbee_4pct,101.05,4.9652,100.05,-0.9896,2775225,0.5895,,,,,-2.6372,-17.0536,,,,,,100.901,103.8456,3.7864,22944926895.3474,Producer Manufacturing,-2.6372,-17.0536,,,,2026-11-04,mcp+tv
+XZO,stockbee,1,A_stockbee_4pct,19.33,8.6565,17.23,-10.8639,593766,1.8497,,,,,9.3968,0.7013,,,,,,16.968,16.3272,1.0057,1552180434.0455,Technology Services,9.3968,0.7013,,,,2026-11-04,mcp+tv
+YELP,stockbee,1,A_stockbee_4pct,22.05,11.1952,20.52,-6.9388,3319065,2.6799,,,,,10.7991,-24.3084,,,,,,19.6535,19.8926,1.098,1113489490.7755,Technology Services,10.7991,-24.3084,,,,2026-11-04,mcp+tv
+YETI,stockbee,1,A_stockbee_4pct,48.33,7.7592,46.95,-2.8554,1758940,1.5424,,,,,15.2996,-8.7109,,,,,,43.0065,41.9022,1.6302,3426824292.1167,Producer Manufacturing,15.2996,-8.7109,,,,2026-11-04,mcp+tv
+YEXT,stockbee,1,A_stockbee_4pct,7.83,4.4,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+YUM,stockbee,1,A_stockbee_4pct,166.31,5.9232,166.09,-0.1323,2637383,1.0159,,,,,21.207,9.6304,,,,,,152.4805,146.6654,4.1725,45326141792.5253,Consumer Services,21.207,9.6304,,,,2026-11-04,mcp+tv
+ZD,stockbee,1,A_stockbee_4pct,56.75,5.1121,54.28,-4.3524,763200,1.6925,,,,,-2.4618,-4.6716,,,,,,56.5015,56.4106,1.9789,1861109680.8472,Technology Services,-2.4618,-4.6716,,,,2026-11-04,mcp+tv
+ZG,stockbee,1,A_stockbee_4pct,34.45,9.8884,31.21,-9.4049,1909907,1.3998,,,,,9.4704,-8.8227,,,,,,32.019,31.7232,1.7539,6926927859.9344,Technology Services,9.4704,-8.8227,,,,2026-11-04,mcp+tv
+ZGN,stockbee,1,A_stockbee_4pct,14.88,6.9734,13.96,-6.1828,4820192,4.1417,,,,,10.1815,-5.9933,,,,,,13.339,12.8082,0.572,5917235349.1452,Consumer Non-Durables,10.1815,-5.9933,,,,2026-11-04,mcp+tv
+ZIP,stockbee,1,A_stockbee_4pct,4.51,7.381,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ZKP,stockbee,1,K_stockbee_anticipation,10.045,,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
+ZTS,stockbee,1,A_stockbee_4pct|B_stockbee_ep9m,89.2,,82.11,-7.9484,10086577,2.4351,,,,,14.2321,5.3773,,,,,,79.6565,75.6034,2.6754,33929788823.9354,Health Technology,14.2321,5.3773,,,,2026-11-04,mcp+tv
+ZVRA,stockbee,1,A_stockbee_4pct,11.17,8.8694,,,,,,,,,,,,,,,,,,,,,,,,,,2026-11-04,mcp+tv
