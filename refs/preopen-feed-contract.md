@@ -12,6 +12,41 @@ karizaco/minimax-cloud-outputs  →  branch main  →  preopen-feed/{YYYY-MM-DD}
 One file per checkpoint (0830 / 0920 / 0950 ET). Each checkpoint owns its own file, so two
 captures can never clobber each other and the consumer merges them oldest-first.
 
+## The companion files
+
+Each checkpoint writes up to THREE files, all named for the same `{YYYY-MM-DD}-{HHMM}` slot:
+
+| File | What it is | Written when |
+|---|---|---|
+| `{date}-{HHMM}.jsonl` | the tape — the machine contract below | every successful checkpoint |
+| `{date}-{HHMM}.md` | the **human digest** — the top movers, their catalyst and their `conf` | every successful checkpoint |
+| `{date}-{HHMM}.SKIPPED.md` | the trail a fail-closed checkpoint leaves behind | when `XAI_API_KEY` is unset |
+
+**Only the `.jsonl` is the machine contract.** The `.md` digest is for a person; the consumer
+(`preopen_feed.py`) reads the JSONL and never the digest. The `.SKIPPED.md` marker means no tape
+was written on purpose — it is NOT a missing artifact.
+
+### The digest
+
+```
+| Ticker | % | Conf | Catalyst | When it broke |
+```
+
+Top 15 rows by `|%|` descending. The header carries the record count, the Grok-vs-scanner
+split, the `unverified` count and the measured Grok cost. `conf` is the tape's own token
+(`high | medium | low | unverified`); an `unverified` row is marked `⚠ unverified` so it is
+obvious that the catalyst could not be tied to a scanner price.
+
+### The expected tape size
+
+**≈678 rows** on a normal 08:30 checkpoint (measured 2026-11-04: 406 gainers / 271 losers /
+1 flat; the 2026-11-05 08:30 tape was 700). A quiet session lands lower, a violent one higher.
+
+**A tape of ~120 rows is the REGRESSION SIGNATURE**, not a quiet market: it means the scanner
+call went back to sorting by `premarket_volume` (the pre-2026-11-05 procedure), which buries
+the biggest movers under a wall of noise. The digest of such a tape carries a `DEVIATION`
+banner. Do not publish it as if it were complete.
+
 ## Record schema
 
 One JSON object per line.
@@ -50,8 +85,8 @@ Unknown `cat` values are coerced to `other` on read.
 
 | Writer | Writes | When |
 |---|---|---|
-| cron `92a` (platform) | `preopen-feed/{date}-0830.jsonl` | 08:30 ET, Mon–Fri |
-| cron `92b` (platform) | `preopen-feed/{date}-0950.jsonl` | 09:50 ET, Mon–Fri |
+| cron `92a` (platform) | `preopen-feed/{date}-0830.jsonl` + `.md` | 08:30 ET, Mon–Fri |
+| cron `92b` (platform) | `preopen-feed/{date}-0950.jsonl` + `.md` | 09:50 ET, Mon–Fri |
 | n8n workflow (optional) | `preopen-feed/{date}-{HHMM}.jsonl` | your cadence |
 | cron `17` (`us-stocks-in-play`) | **reads only** | 15:50 ET |
 
@@ -93,8 +128,14 @@ Reference sessions (the selftest fixtures):
 1. **The feed is optional.** Its absence is `absent`, never a reason to abort a digest.
 2. **Prices are never taken from Grok.** The scanner is the source of truth; a >2pp disagreement
    becomes `unverified`.
-3. **No key ⇒ no tape.** If `XAI_API_KEY` is unset the capture writes nothing rather than an
-   empty file that would read as "no news".
+3. **No key ⇒ no tape, but a trail.** If `XAI_API_KEY` is unset the capture writes NO JSONL
+   (an empty tape would read as "no news" to the consumer) and writes
+   `preopen-feed/{date}-{HHMM}.SKIPPED.md` naming the reason. A consumer that sees the marker
+   must treat the checkpoint as *deliberately declined*, never as missing.
+7. **One snapshot per checkpoint.** Every number in a tape comes from the same scanner snapshot,
+   taken movers-sorted in BOTH directions. A record whose price came from a different call than
+   its neighbours is a spliced tape (measured 2026-11-04: four records drifted, CRIS +93.3 →
+   +97.5 and DKI +48.0 → +69.9, purely because the tape moved between two calls).
 4. **Append only.** Never rewrite an earlier checkpoint's rows.
 5. **No backfilling.** A missing checkpoint is normal.
 6. **The scanner's `premarket_*` columns are LIVE ONLY** — blank for a past date. The 09:30 /
