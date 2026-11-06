@@ -1,0 +1,709 @@
+ticker,name,premarket_last,premarket_high,premarket_low,prior_close,gap_pct,prior_session_change_pct,premarket_volume,avg_volume_30d,pct_of_adv,market_cap,sector,exchange,liquid_screen,quality_screen,has_news,key_level,invalidation,setup_theme,setup_published
+AAOI,"Applied Optoelectronics, Inc.",56.79,59.52,55.91,59.27,-4.18424,-7.35,,,,4.75599e+09,Information Technology,,pass,pass,no,55.91,59.52,,no
+AAON,"AAON, Inc.",56.51,57.7,56.51,58.25,-2.98712,-15.68,,,,4.77136e+09,Industrials,,not-verifiable,pass,no,56.51,57.7,,no
+AAP,"Advance Auto Parts, Inc.",48.21,50.8,45.5,50.84,-5.00493,6.87,,,,3.06565e+09,Consumer Discretionary,,not-verifiable,pass,no,45.5,50.8,,no
+AAPL,Apple Inc,353.91,355.35,348.9,349.5,1.2618,5.31,,,,5.02288e+12,Information Technology,,not-verifiable,pass,no,,,,no
+AARD,"Aardvark Therapeutics, Inc.",1.17,1.18,1.16,1.26,-7.14286,2.44,,,,2.74886e+07,Health Care,,not-verifiable,fail,no,1.16,1.18,,no
+ABSI,Absci Corporation,10.03,10.518,10,10.48,-4.29389,4.8,,,,1.63388e+09,Health Care,,not-verifiable,pass,no,10,10.518,,no
+ABTC,American Bitcoin Corp. Class A,6.05,6.4,5.97,6.24,-3.04487,-5.6,,,,4.42213e+08,Information Technology,,not-verifiable,pass,no,5.97,6.4,,no
+ABTS,Abits Group Inc,0.3706,0.39,0.356,0.3896,-4.8768,,,,,,,,not-verifiable,fail,no,0.356,0.39,,no
+ACCV,Accelevation Holdings Corp. Class A,11.25,11.4,11.03,11.7,-3.84615,-17.08,,,,2.5155e+09,Industrials,,pass,pass,no,11.03,11.4,,no
+ACDC,ProFrac Holding Corp. Class A,3.68,3.59,3.5,3.97,-7.30479,-4.8,,,,7.18255e+08,Energy,,not-verifiable,pass,no,3.5,3.59,,no
+ACHC,"Acadia Healthcare Company, Inc.",37.49,37.25,33.5,32.25,16.2481,8.88,,,,2.96594e+09,Health Care,,not-verifiable,pass,no,37.25,33.5,,no
+ACMR,"ACM Research, Inc. Class A",41.67,49,40.85,44.43,-6.21202,-1.99,,,,2.94237e+09,Information Technology,,not-verifiable,pass,no,40.85,49,,no
+ACTG,Acacia Research Corporation,4.5,,,4.36,3.21101,2.11,,,,4.21129e+08,Industrials,,not-verifiable,pass,no,4.36,4.36,,no
+ACTU,"Actuate Therapeutics, Inc.",0.3895,0.3895,0.3895,0.3699,5.29873,5.69,,,,2.03445e+07,Health Care,,not-verifiable,fail,no,0.3895,0.3895,,no
+ADGM,"Adagio Medical Holdings, Inc",0.0695,0.084,0.069,0.0862,-19.3735,0,237741,2.16917e+06,10.96,1.8e+06,Health Technology,,pass,fail,no,0.069,0.084,,yes
+ADI,"Analog Devices, Inc.",388.44,400.75,387.2,406.2,-4.38165,-3.23,,,,1.97874e+11,Information Technology,,pass,pass,no,387.2,400.75,,no
+ADMA,"ADMA Biologics, Inc.",12.01,13.86,11.8673,10.48,14.5992,-5.67,221434,3.27081e+06,6.77,2.8e+09,Health Technology,,pass,pass,no,13.86,11.8673,C5,yes
+ADPT,Adaptive Biotechnologies Corp.,28,29.0497,27,26.71,4.82965,3.53,,,,4.27479e+09,Health Care,,not-verifiable,pass,no,29.0497,27,,no
+ADTN,"ADTRAN Holdings, Inc.",4.58,4.71,4.54,4.73,-3.17125,-6.52,,,,3.83121e+08,Information Technology,,not-verifiable,pass,no,4.54,4.71,,no
+AEHL,Antelope Enterprise Holdings Limited Class A,12.77,13.48,8.88,6.27,103.668,,4.04702e+06,1.00873e+06,401.2,2.009e+08,Producer Manufacturing,,pass,pass,no,13.48,8.88,C4,yes
+AEHR,Aehr Test Systems,56.6,59.3,56,60.84,-6.9691,-6.56,,,,1.91362e+09,Information Technology,,pass,pass,no,56,59.3,,no
+AEIS,"Advanced Energy Industries, Inc.",200.5,209.11,200.5,211.6,-5.22783,-11.15,,,,8.47307e+09,Information Technology,,not-verifiable,pass,no,200.5,209.11,,no
+AG,First Majestic Silver Corp.,15.81,15.79,15,15.39,2.72904,,,,,,,,not-verifiable,fail,no,15.79,15,,no
+AGL,agilon health inc,105,108.99,108.99,95.99,9.11358,9.34,,,,1.60148e+09,Health Care,,not-verifiable,pass,no,108.99,108.99,,no
+AGMH,"AGM Group Holdings, Inc. Class A",0.49,0.535,0.4899,0.5028,-2.54574,,,,,,,,not-verifiable,fail,no,0.4899,0.535,,no
+AGNT,"AGNT, Inc.",4.15,4.24,4.13,4.27,-2.8103,8.93,,,,7.01663e+08,Real Estate,,not-verifiable,pass,no,4.13,4.24,,no
+AGX,"Argan, Inc.",279.31,285.99,281.5,290.6,-3.90491,-16.54,,,,4.07441e+09,Industrials,,pass,pass,no,281.5,285.99,,no
+AHR,"American Healthcare REIT, Inc.",54.8,56.75,55.6,56.38,-2.78517,2.64,,,,1.08657e+10,Real Estate,,not-verifiable,pass,no,55.6,56.75,,no
+AIAI,AIAI Holdings Corporation Class A,1.19,1.3,1.15,1.13,5.30973,-16.3,,,,7.94548e+07,Industrials,,not-verifiable,fail,no,1.3,1.15,,no
+AIBZ,Bitzero Holdings Inc.,2.8,2.93,2.8,2.93,-4.43686,,,,,,,,not-verifiable,fail,no,2.8,2.93,,no
+AIOK,AI OKTO Corp.,10.75,12.88,10.72,11.21,-4.10348,,,,,,,,not-verifiable,fail,no,10.72,12.88,,no
+AIP,"Arteris, Inc.",17.23,18.07,16.9444,18.1,-4.80663,-2.84,,,,8.35713e+08,Information Technology,,not-verifiable,pass,no,16.9444,18.07,,no
+AISP,Airship AI Holdings Inc Class A,1.8996,1.9,1.8,1.85,2.68108,-9.76,,,,6.37132e+07,Information Technology,,not-verifiable,fail,no,1.9,1.8,,no
+AKAM,"Akamai Technologies, Inc.",83.6,85.5,83.1,85.93,-2.71151,-0.69,,,,1.2493e+10,Information Technology,,not-verifiable,pass,no,83.1,85.5,,no
+AKBA,"Akebia Therapeutics, Inc.",0.5098,0.7355,0.4798,0.6947,-26.6158,-4.28,688765,7.82687e+06,8.8,1.317e+08,Health Technology,,pass,pass,no,0.4798,0.7355,C5,yes
+ALAB,"Astera Labs, Inc.",211.33,218,207.78,223.3,-5.34779,-4.43,,,,3.82703e+10,Information Technology,,not-verifiable,pass,no,207.78,218,,no
+ALB,Albemarle Corporation,99.75,99.5,96.34,95.19,5.03317,5.54,,,,1.12262e+10,Materials,,not-verifiable,pass,no,99.5,96.34,,no
+ALGM,"Allegro MicroSystems, Inc.",29.59,30.54,29.59,31.25,-5.312,-7.16,,,,5.82506e+09,Information Technology,,pass,pass,no,29.59,30.54,,no
+ALMR,"Alamar Biosciences, Inc.",26.01,26.01,26.01,27.39,-5.03834,-9.36,,,,1.89843e+09,Health Care,,not-verifiable,pass,no,26.01,26.01,,no
+ALMU,"Aeluma, Inc.",7.01,7.2,7,7.26,-3.44353,-3.2,,,,1.32897e+08,Information Technology,,not-verifiable,pass,no,7,7.2,,no
+ALNT,Allient Inc.,89.32,92.88,89.32,79.56,12.2675,-9.61,,,,1.35224e+09,Industrials,,pass,pass,no,92.88,89.32,C2,yes
+ALNY,"Alnylam Pharmaceuticals, Inc",168,168.87,162.09,161.1,4.296,0.74,,,,2.1554e+10,Health Care,,not-verifiable,pass,no,168.87,162.09,,no
+ALTO,"Alto Ingredients, Inc.",3.83,3.84,3.69,3.5,9.42857,-1.41,,,,2.71198e+08,Energy,,not-verifiable,pass,no,3.84,3.69,,no
+AMAT,"Applied Materials, Inc.",346.65,361.86,345.22,369.4,-6.15864,-3.28,,,,2.93289e+11,Information Technology,,pass,pass,no,345.22,361.86,,no
+AMBA,"Ambarella, Inc.",58.67,59.53,58.65,60.92,-3.69337,-1.74,,,,2.67245e+09,Information Technology,,not-verifiable,pass,no,58.65,59.53,,no
+AMBQ,"Ambiq Micro, Inc.",40,41.31,40,41.53,-3.70727,-7.05,,,,8.87735e+08,Information Technology,,pass,pass,no,40,41.31,,no
+AMC,"AMC Entertainment Holdings, Inc. Class A",3.62,3.58,3.41,3.525,2.84091,7.47,,,,3.14197e+09,Communication Services,,not-verifiable,pass,no,3.58,3.41,,no
+AMCR,Amcor PLC,45.3,45.5,43.16,48.5,-6.59794,,,,,,,,not-verifiable,fail,no,43.16,45.5,,no
+AMD,"Advanced Micro Devices, Inc.",452.02,478.69,450.1,488.8,-7.52077,1.01,1.28167e+06,,,6.9934e+11,Information Technology,,pass,pass,no,450.1,478.69,C1,yes
+AMKR,"Amkor Technology, Inc.",33.72,34.9303,33.33,35.66,-5.44027,-5.21,,,,8.85982e+09,Information Technology,,not-verifiable,pass,no,33.33,34.9303,,no
+AMLX,"Amylyx Pharmaceuticals, Inc.",30.9,30,29.8779,29.4,5.10204,0.68,,,,3.26888e+09,Health Care,,not-verifiable,pass,no,30,29.8779,,no
+AMPL,Amplitude Inc Class A,18.5,18.57,17.37,17.19,7.62071,2.08,,,,2.27972e+09,Information Technology,,not-verifiable,pass,no,18.57,17.37,,no
+AMPX,Amprius Technologies Inc,8.08,8.48,8.19,8.46,-4.60449,-4.19,,,,1.19817e+09,Industrials,,not-verifiable,pass,no,8.19,8.48,,no
+AMPY,Amplify Energy Corp.,3.59,3.59,3.59,3.485,3.16092,-7.31,,,,1.43887e+08,Energy,,not-verifiable,pass,no,3.59,3.59,,no
+AMSS,AMASS Brands Inc,0.2806,0.33,0.2806,0.325,-13.6615,15.95,,,,3.7129e+06,Consumer Staples,,not-verifiable,fail,no,0.2806,0.33,,no
+AMTX,"Aemetis, Inc.",1.73,1.78,1.28,1.25,38.4,8.7,771552,937146,82.33,1.342e+08,Process Industries,,pass,pass,yes,1.78,1.28,C4,yes
+AMZN,Amazon.com Inc,271.51,272.8,264.1,266,2.07143,6.12,,,,2.80671e+12,Consumer Discretionary,,not-verifiable,pass,no,,,,no
+ANET,Arista Networks Inc,168,178.48,170.28,178.5,-5.87181,5.05,93420,,,2.0753e+11,Information Technology,,pass,pass,no,170.28,178.48,C1,yes
+ANIP,"ANI Pharmaceuticals, Inc.",73.8,75,68.478,71.65,3.0007,-0.87,,,,1.62971e+09,Health Care,,not-verifiable,pass,no,75,68.478,,no
+ANVS,Annovis Bio Inc,0.87,0.9765,0.82,1.2,-28.0992,10.09,203562,1.0173e+06,20.01,3.03e+07,Health Technology,,pass,fail,yes,0.82,0.9765,C5,yes
+AOSL,Alpha and Omega Semiconductor Limited,20,20.46,20.3,21.17,-5.52669,-4.38,,,,6.33609e+08,Information Technology,,not-verifiable,pass,no,20.3,20.46,,no
+APA,APA Corporation,45.69,45.9695,44.6085,44.49,2.69724,-6.87,,,,1.57259e+10,Energy,,not-verifiable,pass,no,45.9695,44.6085,,no
+APH,Amphenol Corporation Class A,76.77,79.01,76.8664,79.07,-2.83508,-6.08,,,,1.94984e+11,Information Technology,,pass,pass,no,76.8664,79.01,,no
+APLD,Applied Digital Corporation,16,16.6,15.75,16.61,-3.67249,-6.74,,,,4.8413e+09,Information Technology,,pass,pass,no,15.75,16.6,,no
+APP,AppLovin Corp. Class A,350,350.25,309,271.8,28.7948,10.69,1.04108e+06,4.77996e+06,21.78,1.2033e+11,Technology Services,,pass,pass,yes,350.25,309,C2,yes
+APPN,Appian Corporation Class A,55.1,58.9766,46,49.82,10.5982,2.43,,,,3.65739e+09,Information Technology,,not-verifiable,pass,no,58.9766,46,,no
+APPS,"Digital Turbine, Inc.",10,10.05,9.35,9.54,4.8218,3.81,,,,1.15112e+09,Information Technology,,not-verifiable,pass,no,10.05,9.35,,no
+AQST,"Aquestive Therapeutics, Inc.",3.96,,,3.8,4.21053,-2.06,,,,4.7671e+08,Health Care,,not-verifiable,pass,no,3.8,3.8,,no
+ARAY,Accuray Incorporated,0.1236,0.1266,0.1126,0.1491,-17.1026,3.97,343464,1.50642e+07,2.28,1.42e+07,Health Technology,,pass,fail,no,0.1126,0.1266,,yes
+ARCT,"Arcturus Therapeutics Holdings, Inc.",10.57,,,10.87,-2.75989,13.94,,,,3.08959e+08,Health Care,,not-verifiable,pass,no,10.87,10.87,,no
+ARHS,"Arhaus, Inc. Class A",12.68,12.9,11.2643,13.15,-3.57414,9.04,,,,1.86125e+09,Consumer Discretionary,,pass,pass,no,11.2643,12.9,,no
+ARKO,ARKO Corp,3.79,3.9,3.85,4.04,-6.18812,5.21,,,,4.5323e+08,Consumer Discretionary,,not-verifiable,pass,no,3.85,3.9,,no
+ARQ,"Arq, Inc.",2.4903,2.69,2.21,1.85,34.6108,0.54,3.3545e+06,478312,701.32,1.079e+08,Process Industries,,pass,pass,yes,2.69,2.21,C4,yes
+ARQT,Arcutis Biotherapeutics Inc,29,30.49,28,34.05,-14.8311,6.41,,,,4.25909e+09,Health Care,,not-verifiable,pass,no,28,30.49,,no
+ASM,Avino Silver & Gold Mines Ltd.,4.8899,4.98,4.76,4.74,3.16245,,,,,,,,not-verifiable,fail,no,4.98,4.76,,no
+ASPN,Aspen Aerogels Inc,5.3,5.9089,4.8,4.805,10.4167,-3.12,,,,3.98226e+08,Energy,,not-verifiable,pass,no,5.9089,4.8,,no
+ASTI,"Ascent Solar Technologies, Inc.",1.6513,1.75,1.65,1.73,-4.54913,16.11,,,,1.63691e+07,Information Technology,,not-verifiable,fail,no,1.65,1.75,,no
+ASTS,"AST SpaceMobile, Inc. Class A",34.7,35.48,34.2268,35.62,-2.58282,-4.12,,,,1.3825e+10,Communication Services,,not-verifiable,pass,no,34.2268,35.48,,no
+ASYS,"Amtech Systems, Inc.",12.01,12.2,12.1203,12.35,-2.75304,-3.52,,,,1.79064e+08,Information Technology,,not-verifiable,pass,no,12.1203,12.2,,no
+ATCH,"AtlasClear Holdings, Inc.",0.1444,0.1555,0.1406,0.1421,2.92231,3.05,,,,2.1363e+07,Information Technology,,not-verifiable,fail,no,0.1555,0.1406,,no
+ATLX,Atlas Lithium Corporation,1.78,1.7999,1.78,1.73,2.89017,9.84,,,,5.10192e+07,Materials,,not-verifiable,fail,no,1.7999,1.78,,no
+ATOM,Atomera Incorporated,2.75,2.831,2.75,2.86,-3.84615,-6.23,,,,1.11609e+08,Information Technology,,not-verifiable,pass,no,2.75,2.831,,no
+AUGO,Aura Minerals Inc,74.5,75.0482,75.0482,72.39,2.91477,12.92,,,,6.0655e+09,Materials,,not-verifiable,pass,no,75.0482,75.0482,,no
+AVGO,Broadcom Inc.,311.1,321.1,311.1,325.5,-4.41809,-2,438629,,,1.47562e+12,Information Technology,,pass,pass,no,311.1,321.1,C1,yes
+AVTX,Avalo Therapeutics Inc,6.7,6.91,6.7,7.07,-5.23338,-2.48,,,,3.71639e+08,Health Care,,not-verifiable,pass,no,6.7,6.91,,no
+AXG,Solowin Holdings Class A,1.48,1.61,1.48,1.71,-13.4503,,,,,,,,not-verifiable,fail,no,1.48,1.61,,no
+AXTI,"AXT, Inc.",43.93,46.4,43.93,47.54,-7.59361,-7.38,,,,3.11022e+09,Information Technology,,pass,pass,no,43.93,46.4,,no
+AYA,Aya Gold & Silver Inc.,26.37,26.64,26.01,25.64,2.84711,,,,,,,,not-verifiable,fail,no,26.64,26.01,,no
+BAER,"Bridger Aerospace Group Holdings, Inc.",0.3048,0.3048,0.2772,0.2772,9.95671,-9.14,,,,1.59772e+07,Information Technology,,not-verifiable,fail,no,0.3048,0.2772,,no
+BATRK,Atlanta Braves Holdings Inc Class C,52.5,52.5235,52.5,50.73,3.48906,-1.93,,,,3.25524e+09,Communication Services,,not-verifiable,pass,no,52.5235,52.5,,no
+BB,BlackBerry Limited,8.43,8.72,8.4497,8.76,-3.76712,,,,,,,,not-verifiable,fail,no,8.4497,8.72,,no
+BBTX,"Bambusa Therapeutics, Inc.",15.6,,,16.07,-2.9247,0.44,,,,6.49017e+08,Health Care,,not-verifiable,pass,no,16.07,16.07,,no
+BCRX,"BioCryst Pharmaceuticals, Inc.",8.5,8.58,8.49,8.24,3.15534,-3.85,,,,2.0943e+09,Health Care,,not-verifiable,pass,no,8.58,8.49,,no
+BDAI,"Biddance AI Systems, Inc. Class A",2.07,2.18,2.07,2,3.5,,,,,,,,not-verifiable,fail,no,2.18,2.07,,no
+BDMD,Baird Medical Investment Holdings Ltd,0.1022,0.1804,0.0935,0.1091,-6.32447,,8.24515e+07,1.02091e+07,807.63,3.8e+06,Health Technology,,pass,fail,no,0.0935,0.1804,,yes
+BE,Bloom Energy Corporation Class A,188.01,194.5,187.13,200.4,-6.18263,-6.38,,,,5.90086e+10,Industrials,,pass,pass,no,187.13,194.5,,no
+BEAM,"Beam Therapeutics, Inc.",26.91,27.7,26.91,27.79,-3.16661,5.55,,,,2.87036e+09,Health Care,,not-verifiable,pass,no,26.91,27.7,,no
+BESS,Bimergen Energy Corporation,2.89,2.873,2.85,2.78,2.84698,1.46,,,,1.97313e+07,Utilities,,not-verifiable,fail,no,2.873,2.85,,no
+BGC,"BGC Group, Inc. Class A",11.99,11.9,11.9,11.27,6.38864,1.08,,,,5.39897e+09,Financials,,not-verifiable,pass,no,11.9,11.9,,no
+BIVI,BioVie Inc. Class A,1.28,1.35,1.2532,1.34,-4.47761,-22.54,,,,1.01061e+07,Health Care,,not-verifiable,fail,no,1.2532,1.35,,no
+BKSY,BlackSky Technology Inc Class A,19.36,21.1061,16.76,16.78,15.4442,-3.78,82742,916301,9.03,7.647e+08,Technology Services,,pass,pass,no,21.1061,16.76,C5,yes
+BKV,BKV Corporation,18.44,,,19.1,-3.4555,-3.61,,,,2.08983e+09,Energy,,not-verifiable,pass,no,19.1,19.1,,no
+BLDP,Ballard Power Systems Inc.,1.545,1.6023,1.54,1.59,-2.83019,,,,,,,,not-verifiable,fail,no,1.54,1.6023,,no
+BLLN,"BillionToOne, Inc. Class A",100.8,114.3,100.5,113.9,-11.4935,3.11,,,,5.23843e+09,Health Care,,not-verifiable,pass,no,100.5,114.3,,no
+BLNE,"Beeline Holdings, Inc.",0.72,0.72,0.6505,0.6921,4.03121,-0.7,,,,2.15788e+07,Consumer Staples,,not-verifiable,fail,no,0.72,0.6505,,no
+BLNK,Blink Charging Co,0.478,0.495,0.4666,0.4514,5.89278,6.21,180767,1.41335e+06,12.79,6.34e+07,Producer Manufacturing,,pass,fail,no,0.495,0.4666,,yes
+BLZE,"Backblaze, Inc. Class A",8,8.3,8,8.4,-4.7619,0.24,,,,5.1996e+08,Information Technology,,not-verifiable,pass,no,8,8.3,,no
+BROS,"Dutch Bros, Inc. Class A",37.55,39.45,36.23,43.92,-14.6397,0.78,,,,7.67055e+09,Consumer Discretionary,,not-verifiable,pass,no,36.23,39.45,C3,yes
+BRUN,Boost Run Inc. Class A,6.28,6.57,6.15,6.645,-5.49285,-13.14,,,,4.08194e+08,Information Technology,,not-verifiable,pass,no,6.15,6.57,,no
+BRVE,"Braveheart Bio, Inc.",19.54,19.76,19.54,20.1,-2.81025,-6.01,,,,1.81023e+09,Health Care,,not-verifiable,pass,no,19.54,19.76,,no
+BSY,"Bentley Systems, Incorporated Class B",45.46,46.7999,44.25,43.64,4.17049,3.58,,,,1.32577e+10,Information Technology,,not-verifiable,pass,no,46.7999,44.25,,no
+BTDR,Bitdeer Technologies Group Class A,6.3,6.6,6.22,6.53,-3.52221,,,,,,,,not-verifiable,fail,no,6.22,6.6,,no
+BTG,B2Gold Corp.,5.24,5.36,5.14,5.11,2.54403,,,,,,,,not-verifiable,fail,no,5.36,5.14,,no
+BTMD,biote Corp. Class A,1.05,,,1.23,-14.6341,9.82,,,,4.6225e+07,Health Care,,not-verifiable,fail,no,1.23,1.23,,no
+BURU,"Nuburu, Inc.",0.2265,0.2404,0.2238,0.2345,-4.83193,-6.57,763564,5.22989e+07,1.46,2.8e+06,Electronic Technology,,pass,fail,no,0.2238,0.2404,,yes
+BW,Babcock & Wilcox Enterprises Inc,3.5,3.69,3.5,3.685,-5.14905,-12.88,,,,5.01943e+08,Industrials,,not-verifiable,pass,no,3.5,3.69,,no
+BYND,"Beyond Meat, Inc.",6.74,7.03,6.7,7.15,-5.73427,-1.65,,,,1.22823e+08,Consumer Staples,,not-verifiable,pass,no,6.7,7.03,,no
+BZFD,"BuzzFeed, Inc. Class A",0.6902,0.8514,0.61,0.9207,-25.0353,0.08,968002,310815,311.44,5.17e+07,Technology Services,,pass,fail,no,0.61,0.8514,,yes
+CAH,"Cardinal Health, Inc.",271.08,268.99,267.5,262,3.4933,3.59,,,,6.13643e+10,Health Care,,not-verifiable,pass,no,268.99,267.5,,no
+CAI,"Caris Life Sciences, Inc.",27.5,29.46,25.93,33.22,-17.2185,1.13,,,,9.39065e+09,Health Care,,not-verifiable,pass,no,25.93,29.46,,no
+CAMT,Camtek Ltd,96.51,100.22,96.51,101.46,-4.87877,,12412,,,4.39e+09,,,pass,pass,no,96.51,100.22,C1,yes
+CAPR,"Capricor Therapeutics, Inc.",8.63,8.95,8.63,8.92,-3.25112,8.25,,,,5.16574e+08,Health Care,,not-verifiable,pass,no,8.63,8.95,,no
+CATX,"Perspective Therapeutics, Inc.",0.918,0.95,0.89,0.8748,5.49299,-0.59,,,,9.97676e+07,Health Care,,not-verifiable,fail,no,0.95,0.89,,no
+CAVA,"CAVA Group, Inc.",56.46,57.98,54.24,61.77,-8.9061,2.42,,,,7.19459e+09,Consumer Discretionary,,not-verifiable,pass,no,54.24,57.98,C3,yes
+CBRS,"Cerebras Systems, Inc. Class A",88.4,90.99,87.4399,91.85,-3.75612,-6.1,,,,2.0807e+10,Information Technology,,not-verifiable,pass,no,87.4399,90.99,,no
+CCLD,"CareCloud, Inc.",2.09,2.2,1.9,1.8,16.1111,4.65,305517,229298,133.24,9.36e+07,Technology Services,,pass,fail,no,2.2,1.9,,yes
+CCOI,Cogent Communications Holdings Inc,6,6.6,6.43,6.79,-11.6348,14.89,,,,3.40027e+08,Communication Services,,not-verifiable,pass,no,6.43,6.6,,no
+CDNS,"Cadence Design Systems, Inc.",319.51,325.88,319.23,329.5,-3.03775,1.78,,,,9.07475e+10,Information Technology,,not-verifiable,pass,no,319.23,325.88,,no
+CDRE,"Cadre Holdings, Inc.",33,,,30.86,7.00389,-0.64,,,,1.32073e+09,Industrials,,not-verifiable,pass,no,30.86,30.86,,no
+CDT,CDT Equity Inc.,0.0438,0.0858,0.0425,0.0509,-13.9489,-24.03,4.92415e+07,1.3576e+07,362.71,375700,Health Technology,,pass,fail,no,0.0425,0.0858,,yes
+CELH,"Celsius Holdings, Inc.",32.84,34.3925,30.49,30.75,6.79675,2.57,,,,7.86094e+09,Consumer Staples,,not-verifiable,pass,no,34.3925,30.49,,no
+CENN,Cenntro Inc.,0.1486,0.1586,0.1347,0.177,-16.0452,-40.54,1.21558e+06,4.196e+06,28.97,2.3e+06,Consumer Durables,,pass,fail,no,0.1347,0.1586,,yes
+CERT,"Certara, Inc.",11.93,11.94,10.4,11.09,7.57439,2.02,,,,1.72521e+09,Health Care,,not-verifiable,pass,no,11.94,10.4,,no
+CETX,"Cemtrex, Inc.",0.9513,1.03,0.9604,0.9911,-4.01574,-13.06,,,,1.70582e+06,Information Technology,,not-verifiable,fail,no,0.9604,1.03,,no
+CEVA,"CEVA, Inc.",26.5,27.55,26.71,28.02,-5.4247,-4.17,,,,7.8062e+08,Information Technology,,not-verifiable,pass,no,26.71,27.55,,no
+CF,"CF Industries Holdings, Inc.",116.5,113.8,112.52,111.5,4.3159,-4.51,,,,1.71358e+10,Materials,,not-verifiable,pass,no,113.8,112.52,,no
+CG,Carlyle Group Inc,40.93,41.03,40.93,42.75,-4.25731,4.52,,,,1.53889e+10,Financials,,not-verifiable,pass,no,40.93,41.03,,no
+CGAU,Centerra Gold Inc.,22,22.1801,21.77,21.41,2.75572,,,,,,,,not-verifiable,fail,no,22.1801,21.77,,no
+CGNX,Cognex Corporation,50.76,51.07,50,53.06,-4.33472,-8.69,,,,8.83022e+09,Information Technology,,not-verifiable,pass,no,50,51.07,,no
+CHPT,"ChargePoint Holdings, Inc.",11.03,11.44,11.22,11.4,-3.33041,5.65,,,,2.95233e+08,Industrials,,not-verifiable,pass,no,11.22,11.44,,no
+CHRD,Chord Energy Corporation,136.89,136.05,131.523,132.3,3.44593,-8,,,,7.45007e+09,Energy,,not-verifiable,pass,no,136.05,131.523,,no
+CHRS,"Coherus Oncology, Inc.",0.8267,0.86,0.8267,0.8502,-2.76406,5.54,,,,1.31143e+08,Health Care,,not-verifiable,pass,no,0.8267,0.86,,no
+CHYM,"Chime Financial, Inc. Class A",32.01,32.9,31.9,29.87,7.16438,5.92,,,,1.1381e+10,Financials,,not-verifiable,pass,no,32.9,31.9,,no
+CIEN,Ciena Corporation,256.03,272.24,256.43,271,-5.95431,-9.69,,,,3.83608e+10,Information Technology,,pass,pass,no,256.43,272.24,,no
+CIFR,Cipher Digital Inc.,6.19,6.5,6.16,6.5,-4.76923,-19.95,,,,2.6977e+09,Financials,,pass,pass,no,6.16,6.5,,no
+CIM,Chimera Investment Corporation,7.88,8.51,7.78,8.67,-9.21659,4.58,,,,7.25211e+08,Financials,,not-verifiable,pass,no,7.78,8.51,,no
+CION,CION Investment Corp.,6.64,6.9,6.6508,7.045,-5.8156,3.15,,,,3.50765e+08,Financials,,not-verifiable,pass,no,6.6508,6.9,,no
+CISS,C3is Inc.,0.4557,0.4914,0.4557,0.4912,-7.2272,,,,,,,,not-verifiable,fail,no,0.4557,0.4914,,no
+CJMB,"Callan JMB, Inc.",0.3129,0.3425,0.3058,0.3346,-6.48536,-7.87,,,,1.88919e+06,Industrials,,not-verifiable,fail,no,0.3058,0.3425,,no
+CLMT,"Calumet, Inc.",44.89,45,44.5,43.6,2.95872,-7.88,,,,3.79962e+09,Energy,,pass,pass,no,45,44.5,,no
+CLOV,Clover Health Investments Corp. Class A,4.56,4.65,4.4709,4.69,-2.77186,9.32,,,,2.47015e+09,Health Care,,not-verifiable,pass,no,4.4709,4.65,,no
+CLS,Celestica Inc.,225.5,236.41,225.2,236.41,-4.61486,,,,,,,,not-verifiable,fail,no,225.2,236.41,,no
+CLWT,Euro Tech Holdings Co. Ltd.,1.31,1.27,1.25,1.35,-2.96296,,,,,,,,not-verifiable,fail,no,1.25,1.27,,no
+CLYM,"Climb Bio, Inc.",10.48,10.48,9.32,9.33,12.3258,-4.31,,,,5.34241e+08,Health Care,,not-verifiable,pass,no,10.48,9.32,,no
+CMI,Cummins Inc.,443.4,472,440,472.3,-6.02747,-5.68,,,,6.51667e+10,Industrials,,not-verifiable,pass,no,440,472,,no
+CMRC,"Commerce.com, Inc.",3.575,3.6,3.6,3.45,3.62319,4.55,,,,2.84667e+08,Information Technology,,not-verifiable,pass,no,3.6,3.6,,no
+CNR,"Core Natural Resources, Inc.",78.2,80.17,75.5,80.08,-2.51808,-3.91,,,,4.03679e+09,Industrials,,not-verifiable,pass,no,75.5,80.17,,no
+CNSY,"Cerenome, Inc.",0.85,0.8902,0.82,0.8916,-4.66577,-31.42,,,,6.13698e+06,Health Care,,not-verifiable,fail,no,0.82,0.8902,,no
+CNTX,"Context Therapeutics, Inc.",0.2141,0.215,0.21,0.2035,5.20885,4.9,,,,1.86974e+07,Health Care,,not-verifiable,fail,no,0.215,0.21,,no
+CODX,"Co-Diagnostics, Inc.",0.39,0.39,0.384,0.3614,7.91367,-4.89,,,,3.1885e+06,Health Care,,not-verifiable,fail,no,0.39,0.384,,no
+COF,Capital One Financial Corp,211.79,211,206.31,206.4,2.6562,-1.11,,,,1.28435e+11,Financials,,pass,pass,no,211,206.31,,no
+COHR,Coherent Corp.,184.24,205.3,186.5,195.2,-5.56154,-5.93,,,,3.81849e+10,Information Technology,,not-verifiable,pass,no,186.5,205.3,,no
+COHU,"Cohu, Inc.",42,42.75,40.4635,43.98,-4.50205,-12.09,,,,2.08194e+09,Information Technology,,pass,pass,no,40.4635,42.75,,no
+COLD,"Americold Realty Trust, Inc.",15.63,15.86,15.15,15.16,2.89664,4.16,,,,4.32667e+09,Real Estate,,not-verifiable,pass,no,15.86,15.15,,no
+COLL,"Collegium Pharmaceutical, Inc.",25.76,25.99,24.811,23.67,8.82974,-0.25,,,,7.67708e+08,Health Care,,not-verifiable,pass,no,25.99,24.811,,no
+COSM,Cosmos Health Inc,0.31,0.3271,0.3109,0.3276,-5.37241,,,,,,,,not-verifiable,fail,no,0.3109,0.3271,,no
+COTY,Coty Inc. Class A,3.76,3.55,3.47,3.48,8.35735,5.78,,,,3.06402e+09,Consumer Staples,,not-verifiable,pass,no,3.55,3.47,,no
+CPAY,"Corpay, Inc.",453.53,428.02,421.34,418.9,8.34448,3.02,,,,2.73781e+10,Financials,,not-verifiable,pass,no,428.02,421.34,,no
+CPS,Cooper-Standard Holdings Inc.,19,19.07,18.5,22.14,-13.7931,7.79,,,,3.93102e+08,Consumer Discretionary,,not-verifiable,pass,no,18.5,19.07,,no
+CRBU,"Caribou Biosciences, Inc.",0.432,,,0.4444,-2.79028,-3.27,,,,4.40758e+07,Health Care,,not-verifiable,fail,no,0.4444,0.4444,,no
+CRCL,"Circle Internet Group, Inc. Class A",73.5,75.85,73.57,76.17,-3.44193,1.26,,,,1.8934e+10,Financials,,not-verifiable,pass,no,73.57,75.85,,no
+CRDO,Credo Technology Group Holding Ltd.,129.94,133.75,128.9,136.5,-4.80586,-9.55,,,,2.54542e+10,Information Technology,,pass,pass,no,128.9,133.75,,no
+CRIS,"Curis, Inc.",0.968,1.18,0.8059,1.11,-12.7928,55.48,4.45398e+06,7.872e+06,56.58,7.3e+06,Health Technology,,pass,fail,no,0.8059,1.18,,yes
+CRML,Critical Metals Corp.,6.17,6.36,6.15,6.37,-3.13972,,,,,,,,not-verifiable,fail,no,6.15,6.36,,no
+CRNT,Ceragon Networks Ltd,2.23,2.21,2.01,2,11.5,,,,,,,,not-verifiable,fail,no,2.21,2.01,,no
+CRON,Cronos Group Inc,3.71,3.77,3.57,3.51,5.69801,,,,,,,,not-verifiable,fail,no,3.77,3.57,,no
+CRWD,"CrowdStrike Holdings, Inc. Class A",231.53,238.55,231,241,-3.92946,-1.5,,,,2.454e+11,Information Technology,,pass,pass,no,231,238.55,,no
+CRWV,"CoreWeave, Inc. Class A",46.51,48.42,46.11,48.42,-3.94465,-9.9,,,,2.64165e+10,Information Technology,,pass,pass,no,46.11,48.42,,no
+CSCO,"Cisco Systems, Inc.",100.6,102.59,100,103.6,-2.90512,0.62,,,,4.08372e+11,Information Technology,,pass,pass,no,100,102.59,,no
+CSGP,"CoStar Group, Inc.",33.63,33.71,32.42,32.58,3.22284,4.02,,,,1.32013e+10,Real Estate,,not-verifiable,pass,no,33.71,32.42,,no
+CSV,Carriage Services Inc.,30.5,32,32,35.93,-15.2307,4.87,,,,5.70293e+08,Consumer Discretionary,,not-verifiable,pass,no,32,32,,no
+CTM,"Castellum, Inc.",0.503,0.5085,0.4865,0.4862,2.65306,1.29,,,,4.60426e+07,Information Technology,,not-verifiable,fail,no,0.5085,0.4865,,no
+CTRI,"Centuri Holdings, Inc.",22.09,22.09,21.6626,20.54,7.54625,-6.55,,,,2.0732e+09,Industrials,,not-verifiable,pass,no,22.09,21.6626,,no
+CTSH,Cognizant Technology Solutions Corporation Class A,67.64,68.22,66.0103,65.78,2.82761,3.05,,,,2.96302e+10,Information Technology,,not-verifiable,pass,no,68.22,66.0103,,no
+CURB,Curbline Properties Corp.,29,30.45,29.85,30.16,-3.84615,4.4,,,,3.46955e+09,Real Estate,,not-verifiable,pass,no,29.85,30.45,,no
+CXAI,CXApp Inc. Class A,1.43,1.47,1.38,1.54,-7.14286,4.05,,,,3.59961e+06,Information Technology,,not-verifiable,fail,no,1.38,1.47,,no
+CYAB,"Cyabra, Inc.",0.0981,0.1037,0.0976,0.1011,-2.96736,,,,,,,,not-verifiable,fail,no,0.0976,0.1037,,no
+CYH,"Community Health Systems, Inc.",2.3,2.38,2.3,2.375,-3.36134,15.85,,,,3.34897e+08,Health Care,,not-verifiable,pass,no,2.3,2.38,,no
+CYPH,Cypherpunk Technologies Inc.,2.72,2.94,2.71,2.87,-5.22648,10.38,,,,3.05553e+08,Information Technology,,not-verifiable,pass,no,2.71,2.94,,no
+CYTK,"Cytokinetics, Incorporated",60.5,63.1,59.5,63.6,-4.87421,2.07,,,,7.91391e+09,Health Care,,not-verifiable,pass,no,59.5,63.1,,no
+DASH,"DoorDash, Inc. Class A",191.51,203.29,191.51,198.6,-3.56513,8.33,,,,8.60482e+10,Consumer Discretionary,,pass,pass,no,191.51,203.29,,no
+DAVE,"Dave, Inc. Class A",294.62,310.51,295.5,336.2,-12.3729,6.83,,,,4.27478e+09,Information Technology,,not-verifiable,pass,no,295.5,310.51,C3,yes
+DAVI,Davion Healthcare PLC,1.58,1.69,1.5879,1.67,-5.38922,,,,,,,,not-verifiable,fail,no,1.5879,1.69,,no
+DB,Deutsche Bank Aktiengesellschaft,37.77,38,36.88,36.73,2.83147,,,,,,,,not-verifiable,fail,no,38,36.88,,no
+DC,Dakota Gold Corp,5.88,5.88,5.801,5.725,2.97723,10.31,,,,7.66738e+08,Materials,,not-verifiable,pass,no,5.88,5.801,,no
+DDD,3D Systems Corporation,2.07,2.65,2,2.635,-21.5909,-3.48,423496,2.46362e+06,17.19,3.049e+08,Technology Services,,pass,pass,no,2,2.65,C5,yes
+DDOG,"Datadog, Inc. Class A",183.01,187.44,181,188.7,-3.02565,-14.42,,,,6.71768e+10,Information Technology,,pass,pass,no,181,187.44,,no
+DELL,"Dell Technologies, Inc. Class C",350,370,349.577,371.4,-6.00494,-9.06,,,,2.40714e+11,Information Technology,,pass,pass,no,349.577,370,,no
+DFNS,T3 Defense Inc.,2.77,2.9,2.69,2.85,-2.80702,-18.34,,,,9.26334e+06,Industrials,,not-verifiable,fail,no,2.69,2.9,,no
+DIOD,Diodes Incorporated,75.67,76.83,75.61,79.46,-4.7697,-5.67,,,,3.65077e+09,Information Technology,,not-verifiable,pass,no,75.61,76.83,,no
+DK,Delek US Holdings Inc,70.0869,70.0869,64,65.43,7.06829,-7.65,,,,4.01004e+09,Energy,,not-verifiable,pass,no,70.0869,64,,no
+DKI,DarkIris Inc. Class A,1.82,2.0496,1.68,2.08,-12.5,,253124,2.56979e+06,9.85,1.7e+06,Technology Services,,pass,fail,no,1.68,2.0496,,yes
+DLTR,"Dollar Tree, Inc.",143,147.28,143,147,-2.72109,9.64,,,,2.82497e+10,Consumer Staples,,not-verifiable,pass,no,143,147.28,,no
+DLX,Deluxe Corporation,25.09,26.85,24.76,23.46,7.13066,6.66,,,,1.07387e+09,Industrials,,not-verifiable,pass,no,26.85,24.76,,no
+DOCN,"DigitalOcean Holdings, Inc.",80,83.33,80.1194,84.07,-4.78458,-7.1,,,,9.88491e+09,Information Technology,,pass,pass,no,80.1194,83.33,,no
+DTIL,"Precision BioSciences, Inc.",8.4,8.793,7.73,8.12,3.44828,16.5,,,,2.09514e+08,Health Care,,not-verifiable,pass,no,8.793,7.73,,no
+ECG,"Everus Construction Group, Inc.",77.43,79.5,76.113,79.72,-2.86037,-29.29,,,,4.06878e+09,Industrials,,not-verifiable,pass,no,76.113,79.5,,no
+ECPG,"Encore Capital Group, Inc.",108.75,108.55,106.83,99.93,8.82618,0.1,,,,2.14254e+09,Financials,,not-verifiable,pass,no,108.55,106.83,,no
+ECVT,Ecovyst Inc,10.6,10.6,10.6,9.98,6.31896,-0.7,,,,1.09235e+09,Materials,,not-verifiable,pass,no,10.6,10.6,,no
+ECX,"ECARX Holdings, Inc.",0.75,0.835,0.75,0.7033,6.64013,,,,,,,,not-verifiable,fail,no,0.835,0.75,,no
+EGO,Eldorado Gold Corporation,34.49,34.75,34,33.54,2.83244,,,,,,,,not-verifiable,fail,no,34.75,34,,no
+EHGO,Eshallgo Inc Class A,1.98,2.32,1.86,2.32,-14.6552,,,,,,,,not-verifiable,fail,no,1.86,2.32,,no
+EHTH,"eHealth, Inc.",0.5501,0.61,0.5501,0.6347,-13.3291,9.37,,,,2.0146e+07,Financials,,not-verifiable,fail,no,0.5501,0.61,,no
+ELAB,PMGC Holdings Inc.,1.82,2.1268,1.8155,1.92,-5.20833,-1.03,,,,1.55439e+06,Health Care,,not-verifiable,fail,no,1.8155,2.1268,,no
+ELBM,Electra Battery Materials Corp,0.42,0.439,0.42,0.4332,-3.04709,,,,,,,,not-verifiable,fail,no,0.42,0.439,,no
+ELPW,Elong Power Holding Limited Class A,3.49,4.84,2.73,2.51,39.0438,,2.89609e+07,3.19315e+06,906.97,3.6e+06,Producer Manufacturing,,pass,fail,yes,4.84,2.73,C4,yes
+EME,"EMCOR Group, Inc.",616,632.93,629,639.2,-3.63707,-9.64,,,,2.81964e+10,Industrials,,not-verifiable,pass,no,629,632.93,,no
+ENOV,Enovis Corporation,27.47,27.25,25.77,24.4,12.4898,16.8,,,,1.40453e+09,Health Care,,pass,pass,no,27.25,25.77,,yes
+ENTG,"Entegris, Inc.",136.66,140.34,136.66,142.9,-4.34661,-6.47,,,,2.18305e+10,Information Technology,,pass,pass,no,136.66,140.34,,no
+ENVX,Enovix Corporation,2.7,2.83,2.72,2.79,-3.22581,-5.1,,,,6.08648e+08,Industrials,,not-verifiable,pass,no,2.72,2.83,,no
+EOG,"EOG Resources, Inc.",150.806,149.5,146,147,2.54719,-5.24,,,,7.83177e+10,Energy,,not-verifiable,pass,no,149.5,146,,no
+EOLS,"Evolus, Inc.",6.42,6.73,6.18,7.47,-14.0562,1.36,,,,4.91935e+08,Health Care,,not-verifiable,pass,no,6.18,6.73,,no
+EOSE,"Eos Energy Enterprises, Inc. Class A",2.02,2.49,1.97,2.14,-5.60748,12.63,,,,7.2656e+08,Industrials,,not-verifiable,pass,no,1.97,2.49,,no
+EPAM,"EPAM Systems, Inc.",156.2,172,132.48,137.4,13.7158,-0.56,,,,7.17839e+09,Information Technology,,not-verifiable,pass,no,172,132.48,C2,yes
+ERII,"Energy Recovery, Inc.",6.85,6.8,6.65,7.17,-4.46304,0,,,,3.6958e+08,Industrials,,not-verifiable,pass,no,6.65,6.8,,no
+EROC,"ERock, Inc. Class A",7.4801,7.94,7.46,7.935,-5.79219,-11.44,,,,3.81871e+08,Industrials,,pass,pass,no,7.46,7.94,,no
+ETN,Eaton Corp. Plc,342,351.99,344,352.6,-3.1381,-9.99,,,,1.36934e+11,Industrials,,pass,pass,no,344,351.99,,no
+ETR,Entergy Corporation,115,115,111.4,111.9,2.77033,2.71,,,,5.22021e+10,Utilities,,not-verifiable,pass,no,115,111.4,,no
+EVEX,"Eve Holding, Inc.",1.73,1.69,1.6103,1.685,2.97619,10.13,,,,5.86893e+08,Industrials,,not-verifiable,pass,no,1.69,1.6103,,no
+EVH,Evolent Health Inc Class A,4.34,4.7514,4.18,4.8,-9.58333,11.63,,,,5.39909e+08,Health Care,,not-verifiable,pass,no,4.18,4.7514,,no
+EVMN,"Evommune, Inc.",6.65,7.23,6.37,6.05,10.0993,1.85,,,,2.17911e+08,Health Care,,not-verifiable,pass,no,7.23,6.37,,no
+EVTL,Vertical Aerospace Ltd.,0.4123,0.4155,0.4003,0.4011,2.79232,,,,,,,,not-verifiable,fail,no,0.4155,0.4003,,no
+EWTX,"Edgewise Therapeutics, Inc.",43,43.55,40.85,37.53,14.575,-0.4,,,,4.03797e+09,Health Care,,not-verifiable,pass,no,43.55,40.85,,no
+EXPE,"Expedia Group, Inc.",285,304,283.26,315.9,-9.77586,10.54,28209,,,3.326e+10,Consumer Discretionary,,pass,pass,no,283.26,304,C3,yes
+EXTR,"Extreme Networks, Inc.",22.23,22.61,22.29,22.84,-2.67075,0.13,,,,2.98041e+09,Information Technology,,not-verifiable,pass,no,22.29,22.61,,no
+FA,First Advantage Corp.,23.5,23.9938,23.11,22.47,4.58389,2.98,,,,3.85444e+09,Industrials,,not-verifiable,pass,no,23.9938,23.11,,no
+FATE,"Fate Therapeutics, Inc.",1.97,2.039,2.039,2.09,-5.74163,2.45,,,,2.43609e+08,Health Care,,not-verifiable,pass,no,2.039,2.039,,no
+FCEL,"FuelCell Energy, Inc.",10.03,10.6,9.99,10.54,-4.83871,-5.98,,,,7.1259e+08,Industrials,,not-verifiable,pass,no,9.99,10.6,,no
+FICO,Fair Isaac Corporation,649.9,701.03,620,703.1,-7.29355,-2.94,,,,1.63053e+10,Information Technology,,not-verifiable,pass,no,620,701.03,C3,yes
+FIG,"Figma, Inc. Class A",20.89,21.4,20.3,22.21,-5.60325,5.61,,,,1.17352e+10,Information Technology,,not-verifiable,pass,no,20.3,21.4,,no
+FIX,"Comfort Systems USA, Inc.",1030.78,1091.31,1030.06,1090,-5.54654,-15.22,,,,3.83467e+10,Industrials,,pass,pass,no,1030.06,1091.31,,no
+FLEX,Flex Ltd,74.73,76,73.6332,77.24,-3.24961,,,,,,,,not-verifiable,fail,no,73.6332,76,,no
+FLNA,"Filana Therapeutics, Inc.",0.59,0.6,0.572,0.572,3.14685,-3.75,,,,2.76321e+07,Health Care,,not-verifiable,fail,no,0.6,0.572,,no
+FLNC,"Fluence Energy, Inc. Class A",5.8,6.22,5.73,6.06,-4.29043,10.18,,,,1.11692e+09,Industrials,,not-verifiable,pass,no,5.73,6.22,,no
+FLS,Flowserve Corporation,79,81.09,79,81.18,-2.68539,0.19,,,,1.0319e+10,Industrials,,not-verifiable,pass,no,79,81.09,,no
+FLY,"Firefly Aerospace, Inc.",16.7,17.12,16.65,17.16,-2.68065,0.85,,,,2.74964e+09,Industrials,,not-verifiable,pass,no,16.65,17.12,,no
+FLYE,"Fly-E Group, Inc.",2.72,3.36,1.8182,1.72,59.9906,-1.157,1.19543e+07,6.6956e+06,178.54,3.8e+06,Consumer Durables,,pass,fail,no,3.36,1.8182,C4,yes
+FN,Fabrinet,322.2,334.08,321.541,341.64,-5.6902,,,,,,,,not-verifiable,fail,no,321.541,334.08,,no
+FNV,Franco-Nevada Corporation,248.859,249.99,245.31,242.14,2.77476,,,,,,,,not-verifiable,fail,no,249.99,245.31,,no
+FORM,"FormFactor, Inc.",79.9,82.7,79.27,85.24,-6.26466,-11.93,,,,6.64486e+09,Information Technology,,pass,pass,no,79.27,82.7,,no
+FOUR,"Shift4 Payments, Inc. Class A",39.55,44.75,37,44.81,-11.7581,8,63225,,,3.05e+09,Industrials,,pass,pass,yes,37,44.75,C3,yes
+FPS,"Forgent Power Solutions, Inc. Class A",21.27,22.26,21.16,22.44,-5.2139,-17.34,,,,6.82986e+09,Industrials,,pass,pass,no,21.16,22.26,,no
+FRVO,Fervo Energy Company Class A,8.63,8.91,8.61,8.9,-3.03371,-4.51,,,,2.62234e+09,Utilities,,not-verifiable,pass,no,8.61,8.91,,no
+FSK,FS KKR Capital Corp.,11.94,11.8,11.55,11.44,4.18848,2.79,,,,3.20396e+09,Financials,,not-verifiable,pass,no,11.8,11.55,,no
+FSLR,"First Solar, Inc.",202.27,206,192.69,194.5,3.98951,4.63,,,,2.09039e+10,Information Technology,,not-verifiable,pass,no,206,192.69,,no
+FSLY,"Fastly, Inc. Class A",17.15,18.62,17.05,21.04,-18.4692,-0.17,,,,3.29198e+09,Information Technology,,not-verifiable,pass,no,17.05,18.62,,no
+FTCI,"FTC Solar, Inc.",1.241,1.2596,1.12,1.38,-10.0725,-4.83,439150,3.57323e+06,12.29,2.29e+07,Technology Services,,pass,fail,no,1.12,1.2596,,yes
+FTI,TechnipFMC plc,67.2,67.5,67.2,64.5,4.18605,-3.35,,,,2.52966e+10,Energy,,not-verifiable,pass,no,67.5,67.2,,no
+FUN,Six Flags Entertainment Corporation,9.2,9.5,7.8423,7.95,16.0151,6.57,1.18086e+06,5.36509e+06,22.01,9.833e+08,Consumer Services,,pass,pass,no,9.5,7.8423,C5,yes
+FURY,Fury Gold Mines Limited,0.55,0.57,0.5495,0.522,5.36398,,,,,,,,not-verifiable,fail,no,0.57,0.5495,,no
+FWONA,Liberty Media Corporation Series A,98.01,98.22,98.22,91.03,7.6678,3.63,,,,2.28126e+10,Communication Services,,not-verifiable,pass,no,98.22,98.22,,no
+FWONK,Liberty Media Corporation Series C,105.77,109.99,101,98.93,6.91398,3.53,,,,2.48026e+10,Communication Services,,not-verifiable,pass,no,109.99,101,,no
+G,Genpact Limited,42.2654,42.2654,40.85,40.79,3.64247,1.42,,,,6.91417e+09,Industrials,,not-verifiable,pass,no,42.2654,40.85,,no
+GAU,"Galiano Gold, Inc.",2.15,2.19,2.11,2.08,3.36538,,,,,,,,not-verifiable,fail,no,2.19,2.11,,no
+GCT,"GigaCloud Technology, Inc. Class A",64.8,64.24,62.31,57.88,11.9558,5.77,,,,2.12926e+09,Consumer Discretionary,,not-verifiable,pass,no,64.24,62.31,,no
+GCTS,"GCT Semiconductor Holding, Inc. Class A",1.11,1.14,1.12,1.13,-2.63158,5.61,,,,9.38819e+07,Information Technology,,not-verifiable,fail,no,1.12,1.14,,no
+GEO,GEO Group Inc,26.7,28.6,27.05,27.53,-3.01489,-1.92,,,,3.67851e+09,Industrials,,not-verifiable,pass,no,27.05,28.6,,no
+GEV,GE Vernova Inc.,801.39,832.83,798.96,832.8,-3.77508,-9.3,,,,2.21808e+11,Industrials,,pass,pass,no,798.96,832.83,,no
+GFS,GlobalFoundries Inc.,38.7,39.9,38.7,40.34,-4.06544,-5.95,,,,2.21231e+10,Information Technology,,not-verifiable,pass,no,38.7,39.9,,no
+GIL,Gildan Activewear Inc.,32.23,40,32.4,43.27,-25.5142,,225826,1.61882e+06,13.95,6.07e+09,Consumer Non-Durables,,pass,pass,no,32.4,40,C5,yes
+GILT,Gilat Satellite Networks Ltd.,6.82,6.91,6.82,7.06,-3.39943,,,,,,,,not-verifiable,fail,no,6.82,6.91,,no
+GLDG,GoldMining Inc.,0.78,0.8141,0.7679,0.7469,4.43165,,,,,,,,not-verifiable,fail,no,0.8141,0.7679,,no
+GLW,Corning Inc,113.82,118.77,113.86,118.8,-4.16772,-5.83,,,,1.02324e+11,Information Technology,,pass,pass,no,113.86,118.77,,no
+GLXY,Galaxy Digital Inc. Class A,13.61,14.07,13.4201,13.97,-2.57695,-16.99,,,,5.4469e+09,Financials,,pass,pass,no,13.4201,14.07,,no
+GNL,Global Net Lease Inc,7.3,7.3,7.3,7.11,2.96192,2.75,,,,1.50683e+09,Real Estate,,not-verifiable,pass,no,7.3,7.3,,no
+GNS,Genius Group Limited,0.1179,0.1231,0.115,0.115,2.52174,,,,,,,,not-verifiable,fail,no,0.1231,0.115,,no
+GOAI,Eva Live Inc,0.87,0.869,0.8096,0.7993,7.47375,-3.12,,,,2.92027e+07,Communication Services,,not-verifiable,fail,no,0.869,0.8096,,no
+GOLD,"Gold.com, Inc.",37.76,40.05,38.75,41.64,-8.85832,6.44,,,,1.18566e+09,Financials,,not-verifiable,pass,no,38.75,40.05,,no
+GOOGL,Alphabet Inc - Class A,293.27,295.08,286.46,288.9,1.51263,3.18,,,,3.45583e+12,Communication Services,,not-verifiable,pass,no,,,,no
+GOOS,"Canada Goose Holdings, Inc.",8.57,9.04,8.59,8.91,-3.81594,,,,,,,,not-verifiable,fail,no,8.59,9.04,,no
+GPGI,"GPGI, Inc. Class A",11.08,13.71,11.08,12.8,-13.302,9.59,,,,3.71023e+09,Industrials,,pass,pass,no,11.08,13.71,,no
+GPUS,"Hyperscale Data, Inc.",0.1544,0.1641,0.1507,0.1609,-4.39628,-5.41,2.14917e+06,4.67212e+07,4.6,2.85e+07,Producer Manufacturing,,pass,fail,no,0.1507,0.1641,,yes
+GRAL,GRAIL Inc,119.5,127,119.01,143.7,-16.8175,3.03,,,,6.1654e+09,Health Care,,not-verifiable,pass,no,119.01,127,,no
+GRNT,"Granite Ridge Resources, Inc.",4.79,4.71,4.71,4.625,3.45572,-9.49,,,,6.10019e+08,Energy,,not-verifiable,pass,no,4.71,4.71,,no
+GROY,Gold Royalty Corp.,3.37,3.22,2.98,2.89,16.609,,227585,1.2909e+06,17.63,7.321e+08,Non-Energy Minerals,,pass,pass,no,3.22,2.98,C5,yes
+GRSD,Grandstand Limited,0.88,0.88,0.88,0.85,3.52941,,,,,,,,not-verifiable,fail,no,0.88,0.88,,no
+GSM,Ferroglobe PLC,3.03,3.18,3.03,2.93,3.41297,,,,,,,,not-verifiable,fail,no,3.18,3.03,,no
+GT,Goodyear Tire & Rubber Company,4.71,4.71,4.26,4.55,3.51648,2.48,,,,1.30785e+09,Consumer Discretionary,,not-verifiable,pass,no,4.71,4.26,,no
+GTM,ZoomInfo Technologies Inc,4.52,4.78,4.49,4.26,6.10329,0.47,,,,1.2555e+09,Communication Services,,not-verifiable,pass,no,4.78,4.49,,no
+GXAI,Gaxos.ai Inc.,0.4003,0.4533,0.4033,0.447,-10.4474,0.52,116167,157408,73.8,4.4e+06,Technology Services,,pass,fail,no,0.4033,0.4533,,yes
+HAIN,"Hain Celestial Group, Inc.",0.155,0.1632,0.15,0.1502,3.19574,3.73,,,,1.35561e+07,Consumer Staples,,not-verifiable,fail,no,0.1632,0.15,,no
+HIHO,Highway Holdings Limited,0.9249,0.9663,0.829,0.84,10.1071,,210854,27796.6,758.56,4.1e+06,Producer Manufacturing,,pass,fail,no,0.9663,0.829,,yes
+HIMX,"Himax Technologies, Inc.",7.76,,,10.4399,-25.67,,325081,1.09381e+06,29.72,1.78e+09,Electronic Technology,,pass,pass,no,10.4399,10.4399,,yes
+HIVE,HIVE Digital Technologies Ltd,1.76,1.83,1.76,1.82,-3.2967,,,,,,,,not-verifiable,fail,no,1.76,1.83,,no
+HLIT,Harmonic Inc.,9.88,10.14,9.76,10.21,-3.23213,0.2,,,,1.10775e+09,Information Technology,,not-verifiable,pass,no,9.76,10.14,,no
+HLLY,Holley Inc.,2.76,2.785,2.785,2.9,-4.82759,7.41,,,,3.55416e+08,Consumer Discretionary,,not-verifiable,pass,no,2.785,2.785,,no
+HLP,"Hongli Group, Inc. Class A",3.02,3.5,2.84,2.93,3.07167,,,,,,,,not-verifiable,fail,no,3.5,2.84,,no
+HLSQ,Tessera Defense and Homeland Security Inc,0.139,0.1693,0.144,0.144,-3.47222,,,,,,,,not-verifiable,fail,no,0.144,0.1693,,no
+HMH,"HMH Holding, Inc. Class A",14.35,14.7,14,15.4,-6.81818,-7.56,,,,6.77637e+08,Energy,,not-verifiable,pass,no,14,14.7,,no
+HNST,"Honest Company, Inc.",4.65,4.81,4.4999,4.44,4.72973,2.07,,,,4.88749e+08,Consumer Staples,,not-verifiable,pass,no,4.81,4.4999,,no
+HOS,"Hornbeck Offshore Services, Inc.",5.9,,,6.145,-3.90879,-1.68,,,,2.00778e+09,Energy,,not-verifiable,pass,no,6.145,6.145,,no
+HPAI,Helport AI Limited,0.291,0.3099,0.2433,0.33,-11.8182,,1.66043e+06,5.94283e+06,27.94,1.2e+07,Technology Services,,pass,fail,no,0.2433,0.3099,,yes
+HPE,Hewlett Packard Enterprise Co.,47.6,50.09,47.46,50.07,-4.97105,-5.71,,,,6.63029e+10,Information Technology,,not-verifiable,pass,no,47.46,50.09,,no
+HTZ,Hertz Global Holdings Inc,2.13,2.47,1.9501,2.26,-5.75221,9.18,,,,7.13628e+08,Industrials,,not-verifiable,pass,no,1.9501,2.47,,no
+HUBC,Hub Cyber Security Ltd.,0.0789,0.0904,0.0788,0.095,-16.9474,,1.61613e+06,2.34902e+07,6.88,136500,Commercial Services,,pass,fail,no,0.0788,0.0904,,yes
+HUBS,"HubSpot, Inc.",223.59,209,191,216,3.20809,-4.5,,,,1.1063e+10,Information Technology,,not-verifiable,pass,no,209,191,C3,yes
+HXHX,Haoxin Holdings Limited Class A,0.159,0.1656,0.15,0.174,-8.62069,,,,,,,,not-verifiable,fail,no,0.15,0.1656,,no
+HYPR,"Hyperfine, Inc. Class A",0.73,0.74,0.73,0.7503,-2.70558,8.36,,,,7.44825e+07,Health Care,,not-verifiable,fail,no,0.73,0.74,,no
+IAUX,i-80 Gold Corp,1.4177,1.44,1.4177,1.375,2.73188,5.77,,,,1.19061e+09,Materials,,not-verifiable,pass,no,1.44,1.4177,,no
+IBTA,"Ibotta, Inc. Class A",60,60,60,62.64,-4.80723,3.79,,,,1.45794e+09,Communication Services,,not-verifiable,pass,no,60,60,,no
+ICHR,"Ichor Holdings, Ltd.",31.99,32.85,31.83,33.71,-5.10234,-7.72,,,,1.26258e+09,Information Technology,,pass,pass,no,31.83,32.85,,no
+IE,Ivanhoe Electric Inc.,7.56,7.83,7.56,7.75,-2.57732,0.65,,,,1.22676e+09,Materials,,not-verifiable,pass,no,7.56,7.83,,no
+IESC,"IES Holdings, Inc.",162.1,168,161.16,169.1,-4.12255,-16.87,,,,6.73706e+09,Industrials,,pass,pass,no,161.16,168,,no
+IGC,"IGC Pharma, Inc.",0.2018,0.207,0.192,0.193,3.48718,3.76,,,,1.90676e+07,Industrials,,not-verifiable,fail,no,0.207,0.192,,no
+ILMN,"Illumina, Inc.",220.24,226.43,220.24,226.5,-2.78097,-4.9,,,,3.42075e+10,Health Care,,not-verifiable,pass,no,220.24,226.43,,no
+IMAX,IMAX Corporation,53.13,54.5813,52.95,51.76,2.64683,,,,,,,,not-verifiable,fail,no,54.5813,52.95,,no
+IMSR,Terrestrial Energy Inc.,2.77,2.8607,2.76,2.87,-3.48432,0.35,,,,3.04034e+08,Utilities,,not-verifiable,pass,no,2.76,2.8607,,no
+IMXI,"International Money Express, Inc.",7.5,7.55,7.3,8.31,-9.74729,-1.66,,,,2.50085e+08,Industrials,,not-verifiable,pass,no,7.3,7.55,,no
+INDI,"indie Semiconductor, Inc. Class A",1.54,1.62,1.54,1.59,-3.14465,6,,,,3.60777e+08,Information Technology,,not-verifiable,pass,no,1.54,1.62,,no
+INFQ,"Infleqtion, Inc.",8.1505,8.54,8.13,8.56,-4.78388,1.42,,,,1.86777e+09,Information Technology,,not-verifiable,pass,no,8.13,8.54,,no
+INGR,Ingredion Incorporated,92.49,96.02,88,97.46,-5.00205,0.7,,,,6.14542e+09,Consumer Staples,,not-verifiable,pass,no,88,96.02,,no
+INIO,INNIO N.V.,14.09,14.95,14,14.74,-4.40977,,,,,,,,not-verifiable,fail,no,14,14.95,,no
+INLF,Inlif Limited Class A,0.2627,0.2917,0.254,0.3072,-14.4857,,1.04176e+06,3.23528e+07,3.22,370300,Producer Manufacturing,,pass,fail,no,0.254,0.2917,,yes
+INO,"Inovio Pharmaceuticals, Inc.",1.57,1.67,1.53,1.62,-3.08642,-2.41,,,,1.33283e+08,Health Care,,not-verifiable,pass,no,1.53,1.67,,no
+INOD,Innodata Inc.,41.34,44.8915,42,43.3,-4.52656,3.34,,,,1.41398e+09,Industrials,,not-verifiable,pass,no,42,44.8915,,no
+INTC,Intel Corporation,56.46,57.61,55.91,58.27,-3.10623,-3.77,,,,2.93914e+11,Information Technology,,pass,pass,no,55.91,57.61,C1,yes
+INVZ,Innoviz Technologies Ltd.,0.2276,0.2313,0.2156,0.2156,5.56586,,,,,,,,not-verifiable,fail,no,0.2313,0.2156,,no
+IOVA,Iovance Biotherapeutics Inc,8.23,9.43,8.2,8.7,-5.4023,-1.47,,,,3.88457e+09,Health Care,,not-verifiable,pass,no,8.2,9.43,,no
+IPDN,"Professional Diversity Network, Inc.",1.47,1.6,1.45,1.64,-10.3659,3.8,,,,1.09193e+06,Industrials,,not-verifiable,fail,no,1.45,1.6,,no
+IREN,IREN Limited,20.71,21.68,20.38,21.71,-4.60617,,,,,,,,not-verifiable,fail,no,20.38,21.68,,no
+IRM,"Iron Mountain, Inc.",110.26,119.02,110,118.8,-7.07905,1.82,,,,3.53489e+10,Real Estate,,not-verifiable,pass,no,110,119.02,,no
+IRWD,"Ironwood Pharmaceuticals, Inc. Class A",4.33,4.34,4.0498,3.77,14.8541,7.71,202410,1.72705e+06,11.72,6.866e+08,Health Technology,,pass,pass,no,4.34,4.0498,C5,yes
+ISPC,iSpecimen Inc,0.82,0.8282,0.82,0.8528,-2.72835,7.99,,,,2.12317e+06,Health Care,,not-verifiable,fail,no,0.82,0.8282,,no
+IWM,IWM,284.19,286.13,283.71,284.02,0.0598588,1.51184,,,,,,,not-verifiable,fail,no,,,,no
+JAGX,"Jaguar Health, Inc.",0.46,0.4909,0.4499,0.4988,-7.77867,-10.53,203864,3.39773e+06,6,1e+06,Health Technology,,pass,fail,no,0.4499,0.4909,,yes
+JAN,"Janus Living, Inc. Class A",29.04,29,28.45,30.06,-3.42534,1.55,,,,8.66151e+09,Real Estate,,not-verifiable,pass,no,28.45,29,,no
+JBL,Jabil Inc.,249.98,254.9,250.25,258.4,-3.31838,-4.9,,,,2.70759e+10,Information Technology,,not-verifiable,pass,no,250.25,254.9,,no
+JBLU,JetBlue Airways Corporation,3.75,3.76,3.67,3.56,5.33708,11.95,,,,1.34323e+09,Industrials,,not-verifiable,pass,no,3.76,3.67,,no
+JDZG,Jiade Limited Class A,0.3527,0.6391,0.35,0.3016,16.943,,5.14165e+07,3.91083e+06,1314.72,1.9e+06,Commercial Services,,pass,fail,no,0.6391,0.35,,yes
+JLHL,Julong Holding Limited Class A,8.07,8.15,7.15,7.1,13.662,,,,,,,,not-verifiable,fail,no,8.15,7.15,,no
+JOBY,"Joby Aviation, Inc.",5.77,5.86,5.24,5.05,14.2574,4.12,,,,4.9674e+09,Industrials,,not-verifiable,pass,no,5.86,5.24,,no
+JSPR,"Jasper Therapeutics, Inc.",0.485,0.5,0.48,0.5111,-5.10663,6.48,,,,1.43092e+07,Health Care,,not-verifiable,fail,no,0.48,0.5,,no
+JYD,Jayud Global Logistics Limited Class A,1.59,1.68,1.39,1.41,12.766,,,,,,,,not-verifiable,fail,no,1.68,1.39,,no
+KAZR,Skyline Builders Group Holding Ltd. Class A,1.27,1.28,1.11,1.135,11.8943,,,,,,,,not-verifiable,fail,no,1.28,1.11,,no
+KEEL,Keel Infrastructure Corp.,1.99,2.16,1.92,2.1,-5.2381,-4.11,,,,1.26804e+09,Financials,,not-verifiable,pass,no,1.92,2.16,,no
+KEYS,Keysight Technologies Inc,277.81,283,279.51,285.9,-2.81606,-6.3,,,,4.88556e+10,Information Technology,,not-verifiable,pass,no,279.51,283,,no
+KGC,Kinross Gold Corporation,21.96,22.05,21.68,21.42,2.52101,,,,,,,,not-verifiable,fail,no,22.05,21.68,,no
+KLAC,KLA Corporation,141.58,147.07,141.28,149.8,-5.48101,-4.13,,,,1.95663e+11,Information Technology,,pass,pass,no,141.28,147.07,,no
+KLIC,"Kulicke & Soffa Industries, Inc.",64.33,67,64.4,68.44,-6.00526,,,,,,,,not-verifiable,fail,no,64.4,67,,no
+KLRA,"Kailera Therapeutics, Inc.",13.63,13.63,13.63,12.8,6.48438,1.75,,,,1.65844e+09,Health Care,,not-verifiable,pass,no,13.63,13.63,,no
+KMDA,Kamada Ltd,7.02,7.37,7,7.42,-5.39084,,,,,,,,not-verifiable,fail,no,7,7.37,,no
+KOPN,Kopin Corporation,3.21,3.35,3.23,3.35,-4.1791,-6.94,,,,6.12783e+08,Information Technology,,not-verifiable,pass,no,3.23,3.35,,no
+KPTI,"Karyopharm Therapeutics, Inc.",0.053,0.0857,0.0448,0.0729,-27.2977,-17.44,5.13695e+06,7.2751e+06,70.61,1.3e+06,Health Technology,,pass,fail,no,0.0448,0.0857,C5,yes
+KRMN,Karman Holdings Inc.,33.2524,34.16,33.54,34.23,-2.6854,-13.36,,,,4.53638e+09,Industrials,,not-verifiable,pass,no,33.54,34.16,,no
+KRP,Kimbell Royalty Partners LP,15,15.46,14.86,15.48,-3.10078,,,,,,,,not-verifiable,fail,no,14.86,15.46,,no
+KRRO,"Korro Bio, Inc.",16.02,16,16,16.62,-3.61011,4.79,,,,2.39703e+08,Health Care,,not-verifiable,pass,no,16,16,,no
+KSCP,"Knightscope, Inc. Class A",0.4984,0.4989,0.4715,0.46,8.34783,2.22,,,,1.08644e+07,Information Technology,,not-verifiable,fail,no,0.4989,0.4715,,no
+KTB,"Kontoor Brands, Inc.",76.92,78.82,77.82,81.6,-6.14934,6.08,,,,4.51022e+09,Consumer Discretionary,,not-verifiable,pass,no,77.82,78.82,,no
+KVYO,"Klaviyo, Inc. Class A",20.47,20.83,19.8,21.36,-4.16667,0.14,,,,6.39262e+09,Information Technology,,not-verifiable,pass,no,19.8,20.83,,no
+LABT,Lakewood-Amedex Biotherapeutics Inc.,0.385,0.4428,0.18,0.1914,101.149,-1.85,1.49157e+08,1.33292e+07,1119.02,453600,Health Technology,,pass,fail,no,0.4428,0.18,C4,yes
+LAES,SEALSQ Corp.,1.38,1.42,1.38,1.43,-3.4965,,,,,,,,not-verifiable,fail,no,1.38,1.42,,no
+LASR,"nLIGHT, Inc.",31.51,32.32,31.0001,32.99,-4.48621,-9.64,,,,1.86092e+09,Information Technology,,pass,pass,no,31.0001,32.32,,no
+LCII,LCI Industries,98.99,99.9,98.9,104.2,-5.07288,2.33,,,,2.531e+09,Consumer Discretionary,,not-verifiable,pass,no,98.9,99.9,,no
+LEU,Centrus Energy Corp. Class A,95.89,91.92,87,92.46,3.57529,-3.36,,,,1.81895e+09,Energy,,not-verifiable,pass,no,91.92,87,,no
+LFST,"Lifestance Health Group, Inc.",15,15.03,14.53,14.21,5.55947,6.28,,,,5.51113e+09,Health Care,,not-verifiable,pass,no,15.03,14.53,,no
+LFTO,"Liftoff Mobile, Inc.",16.55,16.55,16.15,15.69,5.4812,7.47,,,,2.61208e+09,Communication Services,,not-verifiable,pass,no,16.55,16.15,,no
+LGN,Legence Corp. Class A,30.66,31.2994,30.56,32.13,-4.57516,-17.95,,,,3.47126e+09,Industrials,,pass,pass,no,30.56,31.2994,,no
+LIME,"Neutron Holdings, Inc.",19.1,19.6,18.79,18.39,3.86079,-27.83,,,,1.17744e+09,Industrials,,pass,pass,no,19.6,18.79,,yes
+LIMN,"Liminatus Pharma, Inc. Class A",2.9412,2.9412,2.9412,2.73,5.25336,-2.15,,,,2.76318e+06,Health Care,,not-verifiable,fail,no,2.9412,2.9412,,no
+LITE,"Lumentum Holdings, Inc.",594.16,615.89,592.77,626.8,-5.19984,-7.85,,,,4.87612e+10,Information Technology,,pass,pass,no,592.77,615.89,C1,yes
+LMAT,"LeMaitre Vascular, Inc.",82,82,82,87.92,-6.73339,9.08,,,,2.00904e+09,Health Care,,pass,pass,no,82,82,C3,yes
+LNC,Lincoln National Corp,40.5349,40.5,39.6,41.54,-2.56034,-1.63,,,,7.943e+09,Financials,,not-verifiable,pass,no,39.6,40.5,,no
+LODE,Comstock Inc.,1.67,1.685,1.44,1.495,12.0805,7.55,,,,1.1349e+08,Materials,,not-verifiable,pass,no,1.685,1.44,,no
+LPG,Dorian LPG Ltd.,52,51.7855,51,49.47,5.19927,-4.79,,,,2.11646e+09,Energy,,not-verifiable,pass,no,51.7855,51,,no
+LPTH,"LightPath Technologies, Inc. Class A",6.85,7.04,6.8,7.1,-3.52113,-9.09,,,,4.45805e+08,Information Technology,,not-verifiable,pass,no,6.8,7.04,,no
+LRCX,Lam Research Corporation,207.34,216.65,207,221.4,-6.36318,-4.03,,,,2.7708e+11,Information Technology,,pass,pass,no,207,216.65,,no
+LRMR,"Larimar Therapeutics, Inc.",2.62,2.62,2.62,2.76,-5.07246,8.66,,,,2.86717e+08,Health Care,,not-verifiable,pass,no,2.62,2.62,,no
+LSCC,Lattice Semiconductor Corporation,101.9,104.18,101.9,107.2,-4.98834,1.26,,,,1.46941e+10,Information Technology,,not-verifiable,pass,no,101.9,104.18,,no
+LSPD,Lightspeed Commerce Inc,10.52,11.62,10.5199,11.56,-8.99654,,,,,,,,not-verifiable,fail,no,10.5199,11.62,,no
+LTGO,"Latigo Biotherapeutics, Inc.",13.5,14.16,13.74,14.04,-3.84615,-3.64,,,,9.30843e+08,Health Care,,not-verifiable,pass,no,13.74,14.16,,no
+LTH,"Life Time Group Holdings, Inc.",49,48.99,48,47.39,3.39734,6.33,,,,1.05899e+10,Consumer Discretionary,,not-verifiable,pass,no,48.99,48,,no
+LUMN,"Lumen Technologies, Inc.",4.251,4.4816,4.22,4.47,-4.89933,-5.89,,,,4.60549e+09,Communication Services,,not-verifiable,pass,no,4.22,4.4816,,no
+LUNG,Pulmonx Corp.,2.92,2.92,2.8009,2.83,3.18021,4.04,,,,1.19531e+08,Health Care,,not-verifiable,pass,no,2.92,2.8009,,no
+LUNR,"Intuitive Machines, Inc. Class A",9.57,9.97,9.58,9.93,-3.62538,-5.25,,,,2.15502e+09,Industrials,,not-verifiable,pass,no,9.58,9.97,,no
+LWLG,"Lightwave Logic, Inc.",4.08,4.26,4,4.3,-5.11628,-8.12,,,,6.62542e+08,Materials,,not-verifiable,pass,no,4,4.26,,no
+LXRX,"Lexicon Pharmaceuticals, Inc.",1.54,1.61,1.4801,1.48,4.05405,1.37,,,,6.57411e+08,Health Care,,not-verifiable,pass,no,1.61,1.4801,,no
+LYNX,Lyntris Inc,11.5,12.1,11.11,9.4,22.4707,-19.73,22859,466510,4.9,1.32e+09,Technology Services,,pass,pass,yes,12.1,11.11,C2,yes
+LZ,"LegalZoom.com, Inc.",5.195,5.86,5.14,6.9,-24.7101,3.14,40332,2.52075e+06,1.6,1.01e+09,Technology Services,,pass,pass,no,5.14,5.86,C5,yes
+MAIR,Madison Air Solutions Corp. Class A,25,25.99,24.25,23.62,5.88734,-5.52,,,,1.18399e+10,Industrials,,not-verifiable,pass,no,25.99,24.25,,no
+MASK,3 E Network Technology Group Ltd. Class A,1.53,2.1556,1.5,1.64,-6.70732,,2.26993e+06,791800,286.68,2.2e+06,Technology Services,,pass,fail,no,1.5,2.1556,,yes
+MATV,"Mativ Holdings, Inc.",11.75,11.72,11.7,12.11,-2.89256,8.42,,,,6.67472e+08,Materials,,not-verifiable,pass,no,11.7,11.72,,no
+MBI,MBIA Inc.,4.35,4.36,4.36,4.48,-3.76106,1.13,,,,2.28184e+08,Financials,,not-verifiable,pass,no,4.36,4.36,,no
+MBUU,"Malibu Boats, Inc. Class A",20.01,22.14,20,24.75,-19.1515,2.65,,,,4.86017e+08,Consumer Discretionary,,not-verifiable,pass,no,20,22.14,,no
+MDA,MDA Space Ltd,28.29,29.3,26.23,26.23,7.8536,,,,,,,,not-verifiable,fail,no,29.3,26.23,,no
+MDB,"MongoDB, Inc. Class A",320,325,317.69,328.4,-2.55192,-2.08,,,,2.64122e+10,Information Technology,,not-verifiable,pass,no,317.69,325,,no
+MDU,"MDU Resources Group, Inc.",19,,,19.86,-4.13724,1.07,,,,4.15086e+09,Utilities,,not-verifiable,pass,no,19.86,19.86,,no
+MEDS,"DataMeds AI, Inc.",1.62,1.7,1.44,1.49,8.72483,-17.22,,,,7.72197e+06,Health Care,,not-verifiable,fail,no,1.7,1.44,,no
+MEGL,Magic Empire Global Ltd. Class A,0.1408,0.1495,0.1403,0.145,-2.89655,,,,,,,,not-verifiable,fail,no,0.1403,0.1495,,no
+MELI,"MercadoLibre, Inc.",1601,1648,1570,1739.88,-7.98216,,,,,,,,not-verifiable,fail,no,1570,1648,C3,yes
+MERC,Mercer International Inc.,0.2383,0.2498,0.2277,0.25,-4.68,,527955,2.41075e+07,2.19,1.5e+07,Process Industries,,pass,fail,no,0.2277,0.2498,,yes
+MGNI,"Magnite, Inc.",25.89,26,24.4,22.79,13.6025,2.01,,,,3.26387e+09,Communication Services,,not-verifiable,pass,no,26,24.4,,no
+MGNX,"MacroGenics, Inc.",2.4,2.4,2.4,2.31,3.8961,-0.86,,,,1.46831e+08,Health Care,,not-verifiable,pass,no,2.4,2.4,,no
+MGRX,"Mangoceuticals, Inc.",0.21528,0.2153,0.1902,0.2071,3.94978,-5,,,,3.55537e+06,Health Care,,not-verifiable,fail,no,0.2153,0.1902,,no
+MIDD,Middleby Corporation,135,135.845,135,127.6,5.84085,3.93,,,,5.76711e+09,Industrials,,not-verifiable,pass,no,135.845,135,,no
+MIR,"Mirion Technologies, Inc. Class A",17.1846,17.95,17.1846,17.97,-4.37062,-5.67,,,,4.47521e+09,Industrials,,not-verifiable,pass,no,17.1846,17.95,,no
+MITK,"Mitek Systems, Inc.",18.4133,18.4133,18.4133,19.09,-3.54479,5.35,,,,8.62082e+08,Information Technology,,not-verifiable,pass,no,18.4133,18.4133,,no
+MKSI,MKS Inc.,188,200.03,186,195,-3.56502,-4.99,,,,1.31677e+10,Information Technology,,not-verifiable,pass,no,186,200.03,,no
+MLYS,"Mineralys Therapeutics, Inc.",17.55,17.5,16.85,17,3.23529,6.32,,,,1.40247e+09,Health Care,,not-verifiable,pass,no,17.5,16.85,,no
+MNDY,monday.com Ltd.,93.36,96.8,92.73,96.8,-3.55372,,,,,,,,not-verifiable,fail,no,92.73,96.8,,no
+MNTK,"Montauk Renewables, Inc.",2.59,2.6686,2.42,2.66,-2.63158,7.26,,,,3.78627e+08,Utilities,,not-verifiable,pass,no,2.42,2.6686,,no
+MNTN,"MNTN, Inc Class A",5.1,6.42,5.39,10.39,-50.8197,6.78,715507,812707,88.04,7.757e+08,Technology Services,,pass,pass,yes,5.39,6.42,C3,yes
+MOBX,"Mobix Labs, Inc.",0.6369,0.65,0.59,0.5945,4.42696,-0.83,283308,6.33799e+06,4.47,1.38e+07,Electronic Technology,,pass,fail,no,0.65,0.59,,yes
+MOD,Modine Manufacturing Company,94.69,98.18,95.32,98.56,-3.92654,-21.43,,,,5.20552e+09,Consumer Discretionary,,pass,pass,no,95.32,98.18,,no
+MPWR,"Monolithic Power Systems, Inc.",1202,1239.77,1199.21,1261,-4.68487,-5.06,,,,6.19569e+10,Information Technology,,not-verifiable,pass,no,1199.21,1239.77,,no
+MRAM,"Everspin Technologies, Inc.",12.22,12.7575,12.3,13.03,-6.21642,-3.84,,,,3.05522e+08,Information Technology,,not-verifiable,pass,no,12.3,12.7575,,no
+MRNO,Murano Global Investments PLC,0.21,0.2027,0.2014,0.2169,-3.18119,,,,,,,,not-verifiable,fail,no,0.2014,0.2027,,no
+MRVI,"Maravai Lifesciences Holdings, Inc. Class A",7.12,7.95,7,7.72,-7.77202,3.62,,,,1.99323e+09,Health Care,,not-verifiable,pass,no,7,7.95,,no
+MRVL,"Marvell Technology, Inc.",151.32,156.7,150,159.8,-5.30663,-7.08,,,,1.39793e+11,Information Technology,,pass,pass,no,150,156.7,C1,yes
+MSFT,Microsoft Corporation,554.23,559.94,550.12,555.8,-0.282476,6.68,,,,3.97957e+12,Information Technology,,not-verifiable,pass,no,,,,no
+MTDR,Matador Resources Company,52.2,52.2,50.75,50.37,3.63311,-7.25,,,,6.25486e+09,Energy,,not-verifiable,pass,no,52.2,50.75,,no
+MTEK,Maris-Tech Ltd.,0.297,0.35,0.277,0.26,14.2308,,457546,1.85919e+06,24.61,3.2e+06,Consumer Durables,,pass,fail,no,0.35,0.277,,yes
+MTRX,Matrix Service Company,9.51,,,9.13,4.1621,-4.5,,,,2.56862e+08,Energy,,not-verifiable,pass,no,9.13,9.13,,no
+MTSI,"MACOM Technology Solutions Holdings, Inc.",217.5,238,214.4,233.1,-6.70441,-1,,,,1.77868e+10,Information Technology,,not-verifiable,pass,no,214.4,238,,no
+MTVA,MetaVia Inc.,1.384,1.42,1.28,1.34,3.28358,6.35,,,,6.92026e+06,Health Care,,not-verifiable,fail,no,1.42,1.28,,no
+MU,"Micron Technology, Inc.",752.54,780.74,748.74,795.2,-5.36826,-7,,,,8.98127e+11,Information Technology,,pass,pass,no,748.74,780.74,C1,yes
+MUX,McEwen Inc.,15.34,15.44,15.25,14.93,2.74615,,,,,,,,not-verifiable,fail,no,15.44,15.25,,no
+MX,Magnachip Semiconductor Corporation,2.31,2.47,2.35,2.41,-4.14938,,,,,,,,not-verifiable,fail,no,2.35,2.47,,no
+MXL,"MaxLinear, Inc.",52.275,55.7644,52,56.85,-8.04749,-11.13,,,,5.15591e+09,Information Technology,,pass,pass,no,52,55.7644,,no
+MYGN,"Myriad Genetics, Inc.",6.51,6.8075,6.57,6.02,8.13953,-0.33,,,,5.68578e+08,Health Care,,not-verifiable,pass,no,6.8075,6.57,,no
+NAGE,"Niagen Bioscience, Inc.",2.3,2.31,2.2959,2.52,-8.73016,6.78,,,,2.00704e+08,Health Care,,not-verifiable,pass,no,2.2959,2.31,,no
+NATR,"Nature's Sunshine Products, Inc.",10.01,10.7,10.42,12.84,-22.0405,6.38,,,,2.2579e+08,Consumer Staples,,not-verifiable,pass,no,10.42,10.7,,no
+NBIS,Nebius Group N.V. Class A,134.01,138.99,133.01,141.52,-5.30667,,,,,,,,not-verifiable,fail,no,133.01,138.99,,no
+NCPL,NetCapital Inc,1.34,1.4398,1.33,1.41,-4.96454,-9.62,,,,9.68374e+06,Financials,,not-verifiable,fail,no,1.33,1.4398,,no
+NET,Cloudflare Inc Class A,250.94,266.58,254.61,266.8,-5.86691,-2.49,46104,,,8.605e+10,Information Technology,,pass,pass,no,254.61,266.58,C1,yes
+NEWP,New Pacific Metals Corp,5.68,5.7751,5.5,5.54,2.52708,,,,,,,,not-verifiable,fail,no,5.7751,5.5,,no
+NG,Novagold Resources Inc,6.29,6.42,6.2,6.09,3.11475,5.91,,,,2.67217e+09,Materials,,not-verifiable,pass,no,6.42,6.2,,no
+NIVF,NewGenIvf Group Limited Class A,0.675,0.71,0.675,0.6925,-2.52708,,,,,,,,not-verifiable,fail,no,0.675,0.71,,no
+NNBR,"NN, Inc.",3.1,3.19,3.12,3.23,-4.02477,-13.17,,,,2.66736e+08,Industrials,,not-verifiable,pass,no,3.12,3.19,,no
+NNE,Nano Nuclear Energy Inc.,10.44,10.96,10.43,10.95,-4.65753,-4.2,,,,5.70312e+08,Industrials,,not-verifiable,pass,no,10.43,10.96,,no
+NOA,North American Construction Group Ltd.,9.83,,,11.43,-13.9983,,,,,,,,not-verifiable,fail,no,11.43,11.43,,no
+NSC,Norfolk Southern Corporation,333.82,344.43,338.98,344.2,-2.99878,0.94,,,,7.73035e+10,Industrials,,not-verifiable,pass,no,338.98,344.43,,no
+NSPR,InspireMD Inc.,0.8199,0.8199,0.7935,0.781,4.98079,,,,,,,,not-verifiable,fail,no,0.8199,0.7935,,no
+NTAP,"NetApp, Inc.",181.31,185.3,181.38,187.7,-3.38893,-1.63,,,,3.67683e+10,Information Technology,,not-verifiable,pass,no,181.38,185.3,,no
+NTCT,"NetScout Systems, Inc.",36.75,,,38.1,-3.54331,0.45,,,,2.72397e+09,Information Technology,,not-verifiable,pass,no,38.1,38.1,,no
+NTGR,"NETGEAR, Inc.",20.5,,,22.32,-8.15412,2.29,,,,5.99067e+08,Information Technology,,not-verifiable,pass,no,22.32,22.32,,no
+NTR,Nutrien Ltd.,70.22,71.6,70.99,72.07,-2.56695,,,,,,,,not-verifiable,fail,no,70.99,71.6,,no
+NTRA,"Natera, Inc.",377.86,391.99,377.86,391,-3.36803,0.62,,,,5.60015e+10,Health Care,,not-verifiable,pass,no,377.86,391.99,,no
+NTSK,"Netskope, Inc. Class A",22.13,22.76,21.5,22.77,-2.81072,4.26,,,,9.19734e+09,Information Technology,,not-verifiable,pass,no,21.5,22.76,,no
+NUAI,"New Era Energy & Digital, Inc.",2.11,2.25,2.08,2.19,-3.65297,-21.22,,,,2.21827e+08,Energy,,not-verifiable,pass,no,2.08,2.25,,no
+NUR,Nuran Wireless Inc,0.55,0.55,0.5,0.5015,9.67099,,239233,1.16813e+06,20.48,6.3e+06,Distribution Services,,pass,fail,no,0.55,0.5,,yes
+NUVB,"Nuvation Bio, Inc. Class A",4.44,4.75,4.35,4.73,-6.13108,0.85,,,,1.65173e+09,Health Care,,not-verifiable,pass,no,4.35,4.75,,no
+NVAX,"Novavax, Inc.",10.32,11.3999,10.2232,10.65,-3.09859,10.02,,,,1.75127e+09,Health Care,,pass,pass,no,10.2232,11.3999,,no
+NVDA,NVIDIA Corp,196,200,195.86,200.1,-2.04898,-3.17,,,,4.39472e+12,Information Technology,,not-verifiable,pass,no,,,,no
+NVMI,Nova Ltd.,280,299,279,295.35,-5.19722,,,,,,,,not-verifiable,fail,no,279,299,,no
+NVT,nVent Electric plc,108.17,110.11,106.51,112.82,-4.12161,,,,,,,,not-verifiable,fail,no,106.51,110.11,,no
+NVTS,Navitas Semiconductor Corporation,8.74,9.11,8.72,9.33,-6.32369,9,,,,2.18054e+09,Information Technology,,pass,pass,no,8.72,9.11,,no
+NWCL,Newcleo plc,5.24,5.24,5.21,5.06,3.55731,,,,,,,,not-verifiable,fail,no,5.24,5.21,,no
+NWGL,CL Workshop Group Limited,0.039,,,0.0555002,-29.73,,7.58228e+06,4.33026e+07,17.51,3.1e+06,Non-Energy Minerals,,pass,fail,no,0.0555002,0.0555002,,yes
+NWS,News Corporation Class B,32.17,33.7355,32.23,33.39,-3.65379,4.15,,,,1.79644e+10,Communication Services,,not-verifiable,pass,no,32.23,33.7355,,no
+NWSA,News Corporation Class A,28.61,30.58,28.29,30.56,-6.38089,3.73,,,,1.673e+10,Communication Services,,not-verifiable,pass,no,28.29,30.58,,no
+NXDR,"Nextdoor Holdings, Inc. Class A",2.33,2.45,2.17,2.44,-4.5082,5.17,,,,9.30586e+08,Information Technology,,not-verifiable,pass,no,2.17,2.45,,no
+NXPI,NXP Semiconductors NV,258.35,260.54,256.09,265.01,-2.51311,,,,,,,,not-verifiable,fail,no,256.09,260.54,,no
+NXST,"Nexstar Media Group, Inc.",190,,,185.1,2.63613,3.67,,,,5.65337e+09,Communication Services,,not-verifiable,pass,no,185.1,185.1,,no
+OBE,Obsidian Energy Ltd,9.78,9.8381,9.42,9.21,6.18893,,,,,,,,not-verifiable,fail,no,9.8381,9.42,,no
+OCGN,Ocugen Inc,0.9196,0.9697,0.88,0.8745,5.15723,17.35,,,,2.96037e+08,Health Care,,not-verifiable,pass,no,0.9697,0.88,,no
+OCUL,Ocular Therapeutix Inc,7.35,7.35,6.97,7.14,2.94118,4.69,,,,1.56338e+09,Health Care,,not-verifiable,pass,no,7.35,6.97,,no
+OGC,OceanaGold Corporation,27,27.02,26.2,25.78,4.73235,,,,,,,,not-verifiable,fail,no,27.02,26.2,,no
+OKTA,"Okta, Inc. Class A",184,189.27,182.29,191,-3.69013,0.72,,,,3.32059e+10,Information Technology,,not-verifiable,pass,no,182.29,189.27,,no
+OLB,"OLB Group, Inc.",0.1831,0.2,0.183,0.1899,-3.58083,7.71,,,,4.56146e+06,Information Technology,,not-verifiable,fail,no,0.183,0.2,,no
+OMH,Ohmyhome Limited Class A,16.2,18.3,11.05,15.55,4.18006,,2.37076e+06,3.37714e+06,70.2,3.12e+07,Finance,,pass,fail,no,18.3,11.05,,yes
+ON,ON Semiconductor Corporation,68.68,71.24,68.4,71.24,-3.59349,-1.87,,,,2.77346e+10,Information Technology,,not-verifiable,pass,no,68.4,71.24,,no
+ONCO,Onconetix Inc,0.6258,6.84,6.025,0.6583,-4.93696,15.69,,,,3.87526e+06,Health Care,,not-verifiable,fail,no,6.025,6.84,,no
+ONDS,Ondas Inc.,5.09,5.3,5.03,5.27,-3.41556,-8.98,,,,2.61267e+09,Information Technology,,pass,pass,no,5.03,5.3,,no
+ONT,"Onterris, Inc.",16.85,17.2,16.85,16.1,4.46373,2.61,,,,5.81842e+08,Industrials,,not-verifiable,pass,no,17.2,16.85,,no
+ONTO,"Onto Innovation, Inc.",174.07,181,173.391,184.7,-5.81647,-8.73,,,,9.18913e+09,Information Technology,,pass,pass,no,173.391,181,,no
+OPK,"OPKO Health, Inc.",1.72,1.74,1.67,1.77,-2.82486,2.91,,,,1.33651e+09,Health Care,,not-verifiable,pass,no,1.67,1.74,,no
+OPNW,"OpenWorld, Inc.",0.7557,0.76,0.6602,0.7084,6.67702,0.78,,,,9.49777e+06,Information Technology,,not-verifiable,fail,no,0.76,0.6602,,no
+OPTT,"Ocean Power Technologies, Inc.",0.4513,0.4758,0.4225,0.4365,2.80182,-4.67,,,,3.31774e+06,Industrials,,not-verifiable,fail,no,0.4758,0.4225,,no
+OPTU,"Optimum Communications, Inc. Class A",0.6701,0.671,0.6701,0.6843,-2.92626,1.38,,,,3.2605e+08,Communication Services,,not-verifiable,pass,no,0.6701,0.671,,no
+OPTX,"Syntec Optics Holdings, Inc. Class A",4.4393,4.4393,4.26,4.56,-2.64693,-9.52,,,,1.83676e+08,Information Technology,,not-verifiable,pass,no,4.26,4.4393,,no
+OSCR,"Oscar Health, Inc. Class A",33.85,37.5,33.39,35.19,-3.8079,8.58,,,,1.06095e+10,Health Care,,pass,pass,no,33.39,37.5,,no
+OSS,"One Stop Systems, Inc.",4.5,4.61,4.45,4.66,-3.43348,-4.9,,,,1.16221e+08,Information Technology,,not-verifiable,pass,no,4.45,4.61,,no
+OSTX,OS Therapies Incorporated,0.97,1.1907,0.8999,1.16,-15.6522,-0.8621,300338,637119,47.14,3.95e+07,Health Technology,,pass,fail,no,0.8999,1.1907,,yes
+OUST,"Ouster, Inc.",31.56,32.91,31.49,33.54,-5.9034,15.73,,,,2.13559e+09,Information Technology,,pass,pass,no,31.49,32.91,,no
+P,"Everpure, Inc. Class A",104,109.6,106.18,111.6,-6.95178,-5.1,,,,3.7113e+10,Information Technology,,not-verifiable,pass,no,106.18,109.6,,no
+PACB,"Pacific Biosciences of California, Inc.",2.29,2.55,2.23,2.55,-10.1961,4.51,,,,7.92034e+08,Health Care,,not-verifiable,pass,no,2.23,2.55,,no
+PACK,Ranpak Holdings Corp Class A,3.48,3.48,3.48,3.37,3.57143,13.09,,,,2.89005e+08,Materials,,not-verifiable,pass,no,3.48,3.48,,no
+PANW,"Palo Alto Networks, Inc.",337.01,344.75,337.01,348,-3.16918,-0.62,,,,2.83653e+11,Information Technology,,not-verifiable,pass,no,337.01,344.75,,no
+PARA,"Parabolic Technologies, Inc. Class A",0.218,0.2799,0.2004,0.319,-31.6614,-88.27,3.85406e+06,5.80518e+06,66.39,121400,Technology Services,,pass,fail,no,0.2004,0.2799,,yes
+PASW,"Ping An Biomedical Co., Ltd. Class A",2.6,3.05,2.4857,2.93,-11.2628,,,,,,,,not-verifiable,fail,no,2.4857,3.05,,no
+PAYC,"Paycom Software, Inc.",251.06,244,238,267.6,-6.37679,1.75,,,,1.27452e+10,Industrials,,not-verifiable,pass,no,238,244,,no
+PCT,PureCycle Technologies Inc,2.305,2.55,2.27,2.79,-17.3835,-10.58,,,,5.04609e+08,Materials,,not-verifiable,pass,no,2.27,2.55,,no
+PD,"PagerDuty, Inc.",16.5,17.45,16.94,17,-2.94118,2.32,,,,1.3107e+09,Information Technology,,not-verifiable,pass,no,16.94,17.45,,no
+PDFS,"PDF Solutions, Inc.",37.01,39.39,37.23,39.79,-6.98668,-5.69,,,,1.58846e+09,Information Technology,,not-verifiable,pass,no,37.23,39.39,,no
+PENG,Penguin Solutions Incorporation,45,47.9,45.27,48.35,-6.92865,-9.1,39338,,,2.48e+09,Information Technology,,pass,pass,no,45.27,47.9,C5,yes
+PESI,"Perma-Fix Environmental Services, Inc.",13.25,13.25,13,12.81,3.43482,-1.84,,,,2.37812e+08,Industrials,,not-verifiable,pass,no,13.25,13,,no
+PGEN,Precigen Inc,4.72,5.08,4.72,5.055,-6.6271,-3.71,,,,1.80216e+09,Health Care,,not-verifiable,pass,no,4.72,5.08,,no
+PGNY,"Progyny, Inc.",33.06,32.22,30.2,30.1,9.83389,3.58,,,,2.3578e+09,Health Care,,not-verifiable,pass,no,32.22,30.2,,no
+PH,Parker-Hannifin Corporation,960,985.55,910.19,909.5,5.47248,-3.76,11848,,,1.1884e+11,Industrials,,pass,pass,no,985.55,910.19,C5,yes
+PL,Planet Labs PBC Class A,12.2,12.65,12.3141,12.64,-3.55731,-6.4,,,,4.50671e+09,Industrials,,pass,pass,no,12.3141,12.65,,no
+PLAB,"Photronics, Inc.",26.24,27.0129,26.3,27.38,-4.16362,-2.21,,,,1.61443e+09,Information Technology,,not-verifiable,pass,no,26.3,27.0129,,no
+PLBY,"Playboy, Inc.",1.41,,,1.37,2.91971,3.4,,,,1.58875e+08,Consumer Discretionary,,not-verifiable,pass,no,1.37,1.37,,no
+PLCE,"Children's Place, Inc.",0.265,0.3668,0.24,0.241,9.95851,-11.36,2.97095e+07,4.66353e+06,637.06,7.3e+06,Retail Trade,,pass,fail,no,0.3668,0.24,,yes
+PLG,Platinum Group Metals Ltd.,1.07,1.07,1.04,1.04,2.88462,,,,,,,,not-verifiable,fail,no,1.07,1.04,,no
+PLTK,Playtika Holding Corp.,2.38,2.4,2.255,2.12,12.2642,,,,,,,,not-verifiable,fail,no,2.4,2.255,,no
+PLTR,Palantir Technologies Inc. Class A,166.65,170,166.02,171.7,-2.94118,-2.11,,,,4.12605e+11,Information Technology,,pass,pass,no,166.02,170,,no
+PMAX,Powell Max Limited Class A,0.87,0.9801,0.7751,1.04,-16.3462,,426891,2.09878e+06,20.34,1.6e+06,Communications,,pass,fail,no,0.7751,0.9801,,yes
+POET,POET Technologies Inc.,4.68,4.84,4.67,4.88,-4.09836,,,,,,,,not-verifiable,fail,no,4.67,4.84,,no
+POWI,"Power Integrations, Inc.",44.3,,,46.8,-5.34188,-0.4,,,,2.6077e+09,Information Technology,,not-verifiable,pass,no,46.8,46.8,,no
+POWL,"Powell Industries, Inc.",136,144.23,135.5,143.1,-4.96157,-12.39,,,,5.21337e+09,Industrials,,pass,pass,no,135.5,144.23,,no
+PPTA,Perpetua Resources Corp.,16.88,17.3053,16.88,16.35,3.24159,1.77,,,,2.0453e+09,Materials,,not-verifiable,pass,no,17.3053,16.88,,no
+PR,Permian Resources Corporation Class A,23.26,23,22.27,22.4,3.7004,-6.67,,,,1.87553e+10,Energy,,not-verifiable,pass,no,23,22.27,,no
+PRIM,Primoris Services Corporation,65.465,68.55,66.49,68.38,-4.36085,-14.06,,,,3.70995e+09,Industrials,,not-verifiable,pass,no,66.49,68.55,,no
+PRMB,Primo Brands Corporation Class A,22,22.56,20.7,21,4.66223,1.99,,,,7.62024e+09,Consumer Staples,,not-verifiable,pass,no,22.56,20.7,,no
+PRME,"Prime Medicine, Inc.",4.79,4.9564,4.5,4.97,-3.62173,9.23,,,,8.97669e+08,Health Care,,not-verifiable,pass,no,4.5,4.9564,,no
+PROK,ProKidney Corp. Class A,1.0824,1.0824,1.0824,1.12,-3.35714,4.67,,,,3.38307e+08,Health Care,,not-verifiable,pass,no,1.0824,1.0824,,no
+PROP,Prairie Operating Co.,0.41604,0.4199,0.41,0.3988,4.32297,-2.16,,,,3.89756e+07,Financials,,not-verifiable,fail,no,0.4199,0.41,,no
+PRVA,"Privia Health Group, Inc.",23.19,23.19,23.19,22.4,3.52679,4.33,,,,2.82268e+09,Health Care,,not-verifiable,pass,no,23.19,23.19,,no
+PSEC,Prospect Capital Corporation,1.495,1.56,1.49,1.44,3.81944,-7.1,,,,7.21451e+08,Financials,,not-verifiable,pass,no,1.56,1.49,,no
+PSIX,"Power Solutions International, Inc.",38.4305,39.0015,38.4024,39.67,-3.12453,-19.75,,,,9.14411e+08,Industrials,,not-verifiable,pass,no,38.4024,39.0015,,no
+PTLO,"Portillo's, Inc. Class A",6.13,6.1999,5.79,5.45,12.4771,4.61,,,,4.1314e+08,Consumer Discretionary,,not-verifiable,pass,no,6.1999,5.79,,no
+PTON,"Peloton Interactive, Inc. Class A",5.96,6.06,5.47,5.46,9.15751,2.82,,,,2.27767e+09,Consumer Discretionary,,not-verifiable,pass,no,6.06,5.47,C2,yes
+PURR,"Hyperliquid Strategies, Inc",9.12,9.78,9.07,9.69,-5.88235,-4.63,,,,2.69645e+09,Financials,,not-verifiable,pass,no,9.07,9.78,,no
+PWR,"Quanta Services, Inc.",558.84,577,559.98,580.3,-3.72131,-11.67,,,,8.72443e+10,Industrials,,not-verifiable,pass,no,559.98,577,,no
+PZZA,"Papa John's International, Inc.",18.79,19.99,18.25,19.99,-6.003,7.7,,,,6.57711e+08,Consumer Discretionary,,not-verifiable,pass,no,18.25,19.99,,no
+Q,"Qnity Electronics, Inc.",113,117.005,112.99,118.8,-4.86614,-0.09,,,,2.48653e+10,Information Technology,,not-verifiable,pass,no,112.99,117.005,,no
+QBTS,D-Wave Quantum Inc.,10.04,10.38,9.91,10.38,-3.27553,0.1,,,,3.8397e+09,Information Technology,,not-verifiable,pass,no,9.91,10.38,,no
+QCOM,QUALCOMM Incorporated,150.06,158.59,150.06,173.2,-13.3553,5.33,586461,,,1.6716e+11,Information Technology,,pass,pass,no,150.06,158.59,C1,yes
+QMCO,Quantum Corporation,16,16.63,16,16.77,-4.59153,-5.09,,,,6.6031e+08,Information Technology,,not-verifiable,pass,no,16,16.63,,no
+QNST,"QuinStreet, Inc.",20,20.2,19.65,19.26,3.84216,5.3,,,,1.1064e+09,Communication Services,,not-verifiable,pass,no,20.2,19.65,,no
+QTEX,QTREX Quantum Ltd.,1.04,1.0399,0.934,1.01,2.9703,,,,,,,,not-verifiable,fail,no,1.0399,0.934,,no
+QUBT,Quantum Computing Inc.,6.22,6.4007,6.21,6.43,-3.26594,0,,,,1.45019e+09,Information Technology,,not-verifiable,pass,no,6.21,6.4007,,no
+QURE,uniQure N.V.,22.38,22.99,22.431,23.03,-2.82241,,,,,,,,not-verifiable,fail,no,22.431,22.99,,no
+RANI,"Rani Therapeutics Holdings, Inc. Class A",0.551,0.56,0.56,0.5728,-3.80587,3.06,,,,7.09601e+07,Health Care,,not-verifiable,fail,no,0.56,0.56,,no
+RBRK,"Rubrik, Inc. Class A",113.98,117.99,113.1,119,-4.21044,2.13,,,,2.44915e+10,Information Technology,,not-verifiable,pass,no,113.1,117.99,,no
+RCT,RedCloud Holdings plc,0.0299,0.0307,0.0276,0.0334,-10.479,,4.25626e+06,3.98526e+07,10.68,2.3e+06,Technology Services,,pass,fail,no,0.0276,0.0307,,yes
+RDVT,"Red Violet, Inc.",76.8,,,80,-4,0.53,,,,1.12871e+09,Industrials,,not-verifiable,pass,no,80,80,,no
+RDW,Redwire Corp,7.24,7.72,7.25,7.715,-6.21762,-4.99,,,,1.53466e+09,Industrials,,not-verifiable,pass,no,7.25,7.72,,no
+REAL,"RealReal, Inc.",13.97,14,13.4437,13.57,2.94768,6.85,,,,1.65108e+09,Consumer Discretionary,,not-verifiable,pass,no,14,13.4437,,no
+REAX,Real REMAX Group Inc.,15.51,16.3,15.51,16.99,-8.71101,,,,,,,,not-verifiable,fail,no,15.51,16.3,,no
+RELY,"Remitly Global, Inc.",22.46,26,22.03,27.08,-17.0606,6.7,,,,5.70199e+09,Financials,,not-verifiable,pass,no,22.03,26,,no
+REPX,Riley Exploration Permian Inc,40,42.42,40,42.45,-6.71642,-9.55,,,,9.20993e+08,Energy,,not-verifiable,pass,no,40,42.42,,no
+RGLD,"Royal Gold, Inc.",258.89,259.97,247.99,246.1,5.20562,6.57,,,,2.0884e+10,Materials,,not-verifiable,pass,no,259.97,247.99,,no
+RGNX,"REGENXBIO, Inc.",7.14,8.0031,6.78,7.71,-7.393,1.05,,,,3.98589e+08,Health Care,,not-verifiable,pass,no,6.78,8.0031,,no
+RGTI,"Rigetti Computing, Inc.",10.77,11.14,10.72,11.21,-3.92507,1.13,,,,3.72619e+09,Information Technology,,not-verifiable,pass,no,10.72,11.14,,no
+RILY,"BRC Group Holdings, Inc.",4.03,4,3.9,3.83,5.22193,1.86,,,,1.4221e+08,Financials,,not-verifiable,pass,no,4,3.9,,no
+RIOT,"Riot Platforms, Inc.",14.86,15.59,14.71,15.37,-3.31815,9.63,,,,5.81218e+09,Information Technology,,pass,pass,no,14.71,15.59,,no
+RKLB,Rocket Lab Corporation,50.59,52.12,50.47,52.37,-3.39889,-3.78,,,,3.03092e+10,Industrials,,not-verifiable,pass,no,50.47,52.12,,no
+RL,Ralph Lauren Corporation Class A,395,419,376.5,412.2,-4.14017,4.52,,,,2.4535e+10,Consumer Discretionary,,not-verifiable,pass,no,376.5,419,,no
+RMBS,Rambus Inc.,78.91,81.02,78.25,82.9,-4.81303,-5.99,,,,8.99147e+09,Information Technology,,not-verifiable,pass,no,78.25,81.02,,no
+ROAD,"Construction Partners, Inc. Class A",88.97,92.45,85.66,99.24,-10.3486,3.06,,,,5.61051e+09,Industrials,,not-verifiable,pass,no,85.66,92.45,,no
+ROCK,"Gibraltar Industries, Inc.",32.01,36.69,32,43.58,-26.5489,6.6,18444,381074,4.84,1.07e+09,Producer Manufacturing,,pass,pass,no,32,36.69,C5,yes
+ROK,"Rockwell Automation, Inc.",406,443.91,405.99,444.1,-8.53384,-0.52,,,,4.94134e+10,Industrials,,not-verifiable,pass,no,405.99,443.91,,no
+ROOT,"Root, Inc. Class A",48,54,48,57.15,-16.0105,6.09,,,,9.04473e+08,Financials,,not-verifiable,pass,no,48,54,,no
+RPD,Rapid7 Inc.,17,17.4463,16.23,15.04,13.0319,1.35,,,,1.00513e+09,Information Technology,,not-verifiable,pass,no,17.4463,16.23,C2,yes
+RSI,"Rush Street Interactive, Inc. Class A",12.662,12.662,12.18,12.35,2.52632,-1.44,,,,2.8624e+09,Consumer Discretionary,,not-verifiable,pass,no,12.662,12.18,,no
+RUN,Sunrun Inc.,10.49,11.0868,9.71,8.79,19.3402,1.27,2.60981e+06,9.40135e+06,27.76,2.33e+09,Electronic Technology,,pass,pass,no,11.0868,9.71,C5,yes
+RVMD,"Revolution Medicines, Inc.",210,217,204.2,199.7,5.15774,2.82,,,,4.24555e+10,Health Care,,not-verifiable,pass,no,217,204.2,,no
+RXRX,"Recursion Pharmaceuticals, Inc. Class A",3.77,3.9,3.77,3.88,-2.83505,5.43,,,,2.09865e+09,Health Care,,not-verifiable,pass,no,3.77,3.9,,no
+RXT,"Rackspace Technology, Inc.",2.7,2.84,2.7,2.81,-3.91459,4.66,,,,7.00315e+08,Information Technology,,not-verifiable,pass,no,2.7,2.84,,no
+RYDE,Ryde Group Limited Class A,0.6603,0.76,0.63,0.7,-5.67143,,,,,,,,not-verifiable,fail,no,0.63,0.76,,no
+RZAI,"Roze AI, Inc.",2.44,2.7279,2.45,2.51,-2.78884,,,,,,,,not-verifiable,fail,no,2.45,2.7279,,no
+RZLV,Rezolve AI PLC,1.32,1.36,1.31,1.37,-3.64964,,,,,,,,not-verifiable,fail,no,1.31,1.36,,no
+S,"SentinelOne, Inc. Class A",22.81,23.4,22.6492,23.5,-2.89485,1.69,,,,8.05589e+09,Information Technology,,not-verifiable,pass,no,22.6492,23.4,,no
+SA,Seabridge Gold Inc,25.99,26.25,25.63,25.34,2.56511,,,,,,,,not-verifiable,fail,no,26.25,25.63,,no
+SABR,Sabre Corporation,1.97,1.97,1.77,1.74,13.2184,4.19,,,,6.87845e+08,Industrials,,not-verifiable,pass,no,1.97,1.77,C2,yes
+SAIQ,WISeSat.Space Holdings Corp.,3.7493,3.9992,3.6981,3.955,-5.20101,,,,,,,,not-verifiable,fail,no,3.6981,3.9992,,no
+SANM,Sanmina Corporation,139,139,139,143.8,-3.3178,-12.6,,,,7.70575e+09,Information Technology,,pass,pass,no,139,139,,no
+SCSC,"ScanSource, Inc.",55.32,56.6,56.6,56.98,-2.9133,0.42,,,,1.15809e+09,Information Technology,,not-verifiable,pass,no,56.6,56.6,,no
+SDEV,Stablecoin Development Corporation,0.9107,0.9883,0.913,0.9629,-5.82213,1.36,303993,3.45447e+07,0.88,6.53e+07,Finance,,pass,fail,no,0.913,0.9883,,yes
+SECZ,Securitize Corp.,7.79,8.15,7.7,8.06,-3.10945,3.33,,,,1.31266e+09,Information Technology,,not-verifiable,pass,no,7.7,8.15,,no
+SES,SES AI Corporation Class A,0.7633,0.8,0.755062,0.7837,-2.60304,2.83,,,,2.89407e+08,Consumer Discretionary,,not-verifiable,pass,no,0.755062,0.8,,no
+SEZL,Sezzle Inc.,172.66,179.9,170.01,136.7,26.315,11.65,44326,508909,8.71,5.61e+09,Technology Services,,pass,pass,yes,179.9,170.01,C2,yes
+SG,"Sweetgreen, Inc. Class A",11.49,11.74,11.48,11.78,-2.62712,3.29,,,,1.40038e+09,Consumer Discretionary,,not-verifiable,pass,no,11.48,11.74,,no
+SGI,Somnigroup International Inc.,67.95,70.02,67.95,69.83,-2.66437,6.86,,,,1.46881e+10,Consumer Discretionary,,not-verifiable,pass,no,67.95,70.02,,no
+SGRX,SANGRIX INC. Class A,0.61,0.7044,0.61,0.7011,-12.9939,-7.27,,,,2.55275e+06,Financials,,not-verifiable,fail,no,0.61,0.7044,,no
+SHAZ,"SharonAI Holdings, Inc. Class A",22.98,24.6,22.7,24.42,-5.89681,2.65,,,,8.74322e+08,Information Technology,,not-verifiable,pass,no,22.7,24.6,,no
+SHFS,SHF Holdings Inc Class A,0.02725,0.0318,0.0264,0.0318,-14.3082,-23.56,2.70961e+07,9.79258e+07,27.67,2.5e+06,Finance,,pass,fail,no,0.0264,0.0318,,yes
+SKE,Skeena Resources Limited,30.24,30.29,30.16,29.37,2.96221,,,,,,,,not-verifiable,fail,no,30.29,30.16,,no
+SKYQ,"Sky Quarry, Inc.",1.929,1.9462,1.84,1.81,6.57459,-15.02,,,,1.58737e+07,Energy,,not-verifiable,fail,no,1.9462,1.84,,no
+SLF,Sun Life Financial Inc.,78,81.06,76.5841,81.98,-4.85484,,,,,,,,not-verifiable,fail,no,76.5841,81.06,,no
+SLG,SL Green Realty Corp.,55.5,55.5,55.5,53.81,3.19821,8.99,,,,3.82721e+09,Real Estate,,not-verifiable,pass,no,55.5,55.5,,no
+SLI,Standard Lithium Ltd.,1.49,1.5,1.47,1.44,3.47222,,,,,,,,not-verifiable,fail,no,1.5,1.47,,no
+SLQT,SelectQuote Inc,0.51,0.5179,0.4799,0.4851,3.7851,18.32,370046,1.4249e+06,25.97,8.15e+07,Finance,,pass,fail,no,0.5179,0.4799,,yes
+SMCI,"Super Micro Computer, Inc.",28.3,29.31,28.2,29.6,-4.39189,-5.7,,,,1.7802e+10,Information Technology,,not-verifiable,pass,no,28.2,29.31,,no
+SMR,NuScale Power Corporation Class A,4.94,5.11,4.96,5.12,-3.7037,-4.66,,,,1.87126e+09,Industrials,,not-verifiable,pass,no,4.96,5.11,,no
+SMTC,Semtech Corporation,103.92,108.4,103,111,-6.34463,-12.92,,,,1.03361e+10,Information Technology,,pass,pass,no,103,108.4,,no
+SMX,SMX (Security Matters) Public Limited Company,1.44,1.53,1.17,1.18,22.0339,,1.63866e+06,670869,244.26,1.4e+06,Technology Services,,pass,fail,no,1.53,1.17,,yes
+SNAP,"Snap, Inc. Class A",5.29,5.43,5.17,5.91,-10.6419,5.72,,,,9.79382e+09,Communication Services,,not-verifiable,pass,no,5.17,5.43,C3,yes
+SNDK,Sandisk Corporation,963,1017.77,953.2,1037,-7.17178,-7.91,,,,1.51895e+11,Information Technology,,pass,pass,no,953.2,1017.77,C1,yes
+SNOW,"Snowflake, Inc.",281.32,288.82,280.64,290.6,-3.19339,-1.5,,,,1.00725e+11,Information Technology,,pass,pass,no,280.64,288.82,,no
+SNPS,"Synopsys, Inc.",451.2,457.79,451.2,463,-2.53807,0.02,,,,8.86454e+10,Information Technology,,pass,pass,no,451.2,457.79,,no
+SNWV,"Sanuwave Health, Inc.",5.04,5.63,5,5.73,-12.0419,-3.37,,,,4.92721e+07,Health Care,,not-verifiable,fail,no,5,5.63,,no
+SPCX,Space Exploration Technologies Corp,131.32,135,131.32,135.9,-3.38434,-3.81,,,,1.79167e+12,Industrials,,pass,pass,no,131.32,135,,no
+SPHR,Sphere Entertainment Co. Class A,105.42,106.68,103.5,108.8,-3.15113,3.57,,,,3.89419e+09,Communication Services,,not-verifiable,pass,no,103.5,106.68,,no
+SPT,"Sprout Social, Inc. Class A",10.4,,,10.78,-3.52505,-9.64,,,,6.47938e+08,Information Technology,,not-verifiable,pass,no,10.78,10.78,,no
+SPWR,SunPower Inc.,0.2594,0.2622,0.2446,0.242,7.19008,7.08,340580,2.45022e+06,13.9,7.52e+07,Industrial Services,,pass,fail,no,0.2622,0.2446,,yes
+SRTM,Stratum Holdings Corp.,0.1901,0.1949,0.1795,0.1851,2.70124,0.6,,,,259936,Real Estate,,not-verifiable,fail,no,0.1949,0.1795,,no
+SSRM,SSR Mining Inc,28.91,28.9714,28.5672,28.15,2.69982,7.61,,,,5.84087e+09,Materials,,not-verifiable,pass,no,28.9714,28.5672,,no
+SSTK,"Shutterstock, Inc.",3.56,4.15,3.48,4.36,-18.3486,6.86,,,,1.60178e+08,Communication Services,,not-verifiable,pass,no,3.48,4.15,,no
+STAA,STAAR Surgical Company,28.1,29.8,27.48,27.17,3.42289,7.95,,,,1.35275e+09,Health Care,,not-verifiable,pass,no,29.8,27.48,,no
+STAK,STAK INC. Class A,1.47,1.48,1.47,1.43,2.7972,,,,,,,,not-verifiable,fail,no,1.48,1.47,,no
+STEX,Streamex Corp.,0.372538,0.415,0.36,0.361,3.19612,-5,,,,3.76432e+07,Information Technology,,not-verifiable,fail,no,0.415,0.36,,no
+STRL,"Sterling Infrastructure, Inc.",272.54,281.2,265.546,283.7,-3.92019,-21.46,,,,8.67674e+09,Industrials,,pass,pass,no,265.546,281.2,,no
+STX,Seagate Technology Holdings PLC,520.65,542.51,520,557.1,-6.5361,-8.13,,,,1.26255e+11,Information Technology,,pass,pass,no,520,542.51,C1,yes
+SVCO,"Silvaco Group, Inc.",6.06,6,5.81,5.82,4.12371,-4.75,,,,1.90205e+08,Information Technology,,not-verifiable,pass,no,6,5.81,,no
+SWKS,"Skyworks Solutions, Inc.",80.32,82.13,80.25,82.92,-3.13555,-2.9,,,,1.24717e+10,Information Technology,,not-verifiable,pass,no,80.25,82.13,,no
+SWMR,"Swarmer, Inc.",7.28,7.75,7.28,7.73,-5.82147,-16.16,,,,8.66553e+07,Information Technology,,not-verifiable,fail,no,7.28,7.75,,no
+TAOX,TAO Synergies Inc.,2.81,3.1695,3.1695,2.67,5.24345,-0.37,,,,1.99501e+07,Information Technology,,not-verifiable,fail,no,3.1695,3.1695,,no
+TASK,"TaskUs, Inc. Class A",9.6,9.6,9.54,8.63,11.2399,3.73,,,,7.9032e+08,Industrials,,not-verifiable,pass,no,9.6,9.54,,no
+TBI,"TrueBlue, Inc.",13.28,13.2774,12.2,9.75,34.9593,1.67,100372,202608,49.54,3.76e+08,Commercial Services,,pass,pass,no,13.2774,12.2,C4,yes
+TBLA,Taboola.com Ltd.,2.66,2.7301,2.66,2.74,-2.91971,-19.41,,,,7.48909e+08,Communication Services,,not-verifiable,pass,no,2.66,2.7301,,no
+TDAY,"USA TODAY Co., Inc.",5.695,6,5.62,6.09,-6.17792,6.47,,,,8.93416e+08,Communication Services,,not-verifiable,pass,no,5.62,6,,no
+TDUP,"thredUP, Inc. Class A",1.75,1.76,1.6,2.19,-20.0913,9.5,147978,1.63331e+06,9.06,2.075e+08,Retail Trade,,pass,pass,no,1.6,1.76,C5,yes
+TE,T1 Energy Inc.,2.62,2.81,2.6,2.735,-4.0293,-3.36,,,,7.63807e+08,Industrials,,not-verifiable,pass,no,2.6,2.81,,no
+TEAD,Teads Holding Co.,0.195,0.325,0.1899,0.2753,-29.1682,9.68,273928,1.66623e+06,16.44,1.76e+07,Technology Services,,pass,fail,no,0.1899,0.325,,yes
+TEAM,Atlassian Corp Class A,185.08,188,184.41,189.9,-2.52791,-0.61,,,,4.81854e+10,Information Technology,,not-verifiable,pass,no,184.41,188,,no
+TEM,"Tempus AI, Inc. Class A",72.38,74.8,72.38,75.61,-4.27192,-2.81,,,,1.36427e+10,Health Care,,not-verifiable,pass,no,72.38,74.8,,no
+TER,"Teradyne, Inc.",241.68,244.69,238.25,251,-3.70931,-6.82,,,,3.924e+10,Information Technology,,pass,pass,no,238.25,244.69,,no
+TFPM,Triple Flag Precious Metals Corp.,30.91,31.14,30.5744,30.14,2.55474,,,,,,,,not-verifiable,fail,no,31.14,30.5744,,no
+THM,International Tower Hill Mines Ltd.,1.8,1.95,1.74,1.74,3.44828,,,,,,,,not-verifiable,fail,no,1.95,1.74,,no
+TIC,"TIC Solutions, Inc.",10.4,10.89,10.41,10.71,-2.80374,1.42,,,,2.36855e+09,Industrials,,not-verifiable,pass,no,10.41,10.89,,no
+TIGO,Millicom International Cellular SA,80.5,82.01,73.5,77.09,4.4234,-0.54,,,,1.30282e+10,Communication Services,,not-verifiable,pass,no,82.01,73.5,,no
+TKO,"TKO Group Holdings, Inc. Class A",199,198.88,195,193.5,2.85301,3.39,,,,3.69906e+10,Communication Services,,not-verifiable,pass,no,198.88,195,,no
+TLN,Talen Energy Corp,317.75,323.01,317.746,326.8,-2.76333,-8.54,,,,1.56574e+10,Utilities,,not-verifiable,pass,no,317.746,323.01,,no
+TLSA,Tiziana Life Sciences Ltd.,0.66,0.66,0.6564,0.638,3.44828,,,,,,,,not-verifiable,fail,no,0.66,0.6564,,no
+TNYA,"Tenaya Therapeutics, Inc.",0.38515,0.4005,0.3708,0.3699,4.12274,2.66,,,,8.02679e+07,Health Care,,not-verifiable,fail,no,0.4005,0.3708,,no
+TPC,Tutor Perini Corporation,80.9,84,77.99,83.01,-2.68255,0.19,,,,4.36755e+09,Industrials,,not-verifiable,pass,no,77.99,84,,no
+TPL,Texas Pacific Land Corporation,304.94,304,299.363,286.9,6.01078,-13.57,,,,1.97915e+10,Energy,,pass,pass,no,304,299.363,,yes
+TPR,"Tapestry, Inc.",142,146.04,127,125.3,13.319,3.53,,,,2.53142e+10,Consumer Discretionary,,not-verifiable,pass,no,146.04,127,C2,yes
+TPVG,TriplePoint Venture Growth BDC Corp.,4.41,4.55,4.43,4.66,-5.56745,3.56,,,,1.89191e+08,Financials,,not-verifiable,pass,no,4.43,4.55,,no
+TREX,"Trex Company, Inc.",59,58.69,57.16,57.13,3.2371,14.26,,,,5.93573e+09,Industrials,,pass,pass,no,58.69,57.16,,yes
+TRIP,"TripAdvisor, Inc.",8.04,9.61,7.94,10.2,-21.1765,8.05,410270,3.3033e+06,12.42,9.939e+08,Consumer Services,,pass,pass,yes,7.94,9.61,C3,yes
+TROX,Tronox Holdings Plc,3.33,3.61,3.52,3.56,-6.19718,4.71,,,,5.67906e+08,Materials,,not-verifiable,pass,no,3.52,3.61,,no
+TRP,TC Energy Corporation,65.7617,65.7617,65.7617,62.61,5.03386,,,,,,,,not-verifiable,fail,no,65.7617,65.7617,,no
+TRX,TRX Gold Corporation,0.9999,1.01,0.98,0.9745,2.60646,,,,,,,,not-verifiable,fail,no,1.01,0.98,,no
+TSEM,Tower Semiconductor Ltd,141.6,147.5,142.04,148.8,-4.83871,,,,,,,,not-verifiable,fail,no,142.04,147.5,,no
+TSLA,"Tesla, Inc.",374,379.79,372.27,385.2,-2.90506,-3.34,,,,1.52133e+12,Consumer Discretionary,,pass,pass,no,372.27,379.79,,no
+TSQ,"Townsquare Media, Inc. Class A",2.11,2.24,2.16,2.185,-3.21101,-27.41,,,,3.9229e+07,Communication Services,,not-verifiable,fail,no,2.16,2.24,,no
+TSSI,"TSS, Inc.",6.66,6.8,6.65,6.85,-2.77372,-2.56,,,,1.92307e+08,Information Technology,,not-verifiable,pass,no,6.65,6.8,,no
+TTMI,"TTM Technologies, Inc.",68.95,71.62,69,73.38,-6.03707,-10.11,,,,7.7305e+09,Information Technology,,pass,pass,no,69,71.62,,no
+TWLO,"Twilio, Inc. Class A",207.07,213.5,207.07,213.4,-3.01171,-0.16,,,,3.27776e+10,Information Technology,,not-verifiable,pass,no,207.07,213.5,,no
+TWST,Twist Bioscience Corp.,135.24,141.49,135.24,142.6,-5.14799,1.63,,,,8.87864e+09,Health Care,,not-verifiable,pass,no,135.24,141.49,,no
+TXG,10x Genomics Inc Class A,62,66.7,60.71,67.52,-8.17536,3.42,,,,8.57208e+09,Health Care,,not-verifiable,pass,no,60.71,66.7,,no
+TXN,Texas Instruments Incorporated,302.79,307.16,299.5,311.5,-2.79303,-0.32,,,,2.84468e+11,Information Technology,,pass,pass,no,299.5,307.16,,no
+TYGO,"Tigo Energy, Inc.",0.83,0.93,0.812,0.9967,-16.7252,8.91,,,,7.56603e+07,Information Technology,,not-verifiable,fail,no,0.812,0.93,,no
+U,"Unity Software, Inc.",48.05,54.35,40.68,42.47,13.1653,4.92,,,,1.85396e+10,Information Technology,,not-verifiable,pass,yes,54.35,40.68,C2,yes
+UCTT,"Ultra Clean Holdings, Inc.",41.5,42.8,41.3,44.04,-5.76748,-8.29,,,,1.994e+09,Information Technology,,pass,pass,no,41.3,42.8,,no
+UIS,Unisys Corporation,2.65,2.6,2.51,2.35,12.766,-0.42,,,,1.71327e+08,Information Technology,,not-verifiable,pass,no,2.6,2.51,,no
+ULCC,"Frontier Group Holdings, Inc.",7.66,7.66,7.29,7.09,8.03949,9.58,129952,,,1.63e+09,Industrials,,pass,pass,no,7.66,7.29,C2,yes
+UMAC,Unusual Machines Inc.,12.42,12.9,12.3,13.04,-4.6815,-10.81,,,,6.23233e+08,Information Technology,,not-verifiable,pass,no,12.3,12.9,,no
+UNP,Union Pacific Corporation,300.5,308.98,304.66,308.5,-2.60266,1.67,,,,1.83272e+11,Industrials,,not-verifiable,pass,no,304.66,308.98,,no
+UPBD,"Upbound Group, Inc.",25,24.98,24.6,24.14,3.56255,7.48,,,,1.40735e+09,Consumer Discretionary,,not-verifiable,pass,no,24.98,24.6,,no
+USDE,"StablecoinX, Inc. Class A",7.7,8.4,7.43,8.16,-5.63725,4.08,,,,2.75995e+08,Financials,,not-verifiable,pass,no,7.43,8.4,,no
+VCEL,Vericel Corporation,50.27,48.99,47,45.48,10.5321,10.68,10330,,,2.79e+09,Health Care,,pass,pass,no,48.99,47,C2,yes
+VCTR,"Victory Capital Holdings, Inc. Class A",114.45,,,120.2,-4.77577,3.84,,,,7.51561e+09,Financials,,not-verifiable,pass,no,120.2,120.2,,no
+VCYT,"Veracyte, Inc.",29.41,39,29.34,52.52,-44.0023,4.43,195413,1.31858e+06,14.82,4.22e+09,Health Technology,,pass,pass,yes,29.34,39,C5,yes
+VECO,Veeco Instruments Inc.,34.75,36,34.272,36,-3.47222,-3.72,,,,2.19721e+09,Information Technology,,not-verifiable,pass,no,34.272,36,,no
+VELO,"Velo3D, Inc.",5.26,5.6,5.201,5.645,-6.82019,-4.4,,,,1.68227e+08,Industrials,,not-verifiable,pass,no,5.201,5.6,,no
+VERI,"Veritone, Inc.",0.55,0.57,0.55,0.5646,-2.5859,1.82,,,,5.24846e+07,Information Technology,,not-verifiable,fail,no,0.55,0.57,,no
+VERX,"Vertex, Inc. Class A",18.2,18.7,17.96,15.92,14.3216,4.33,,,,2.57613e+09,Information Technology,,not-verifiable,pass,no,18.7,17.96,,no
+VIAV,Viavi Solutions Inc,26.18,29.1,26.18,29.38,-10.8918,-2.23,,,,6.87221e+09,Information Technology,,not-verifiable,pass,no,26.18,29.1,,no
+VICR,Vicor Corporation,151.15,154.75,148,159.1,-4.97894,-11.14,,,,7.3342e+09,Industrials,,pass,pass,no,148,154.75,,no
+VIR,"Vir Biotechnology, Inc.",12.16,12.1852,12.1535,11.77,3.31351,4.9,,,,1.98503e+09,Health Care,,not-verifiable,pass,no,12.1852,12.1535,,no
+VIRT,"Virtu Financial, Inc. Class A",55.51,56,53.95,53.04,4.6766,-0.37,,,,8.225e+09,Financials,,not-verifiable,pass,no,56,53.95,,no
+VISN,"Vistance Networks, Inc.",5.83,6.57,5.5601,6.44,-9.47205,-1.08,,,,1.45267e+09,Information Technology,,not-verifiable,pass,no,5.5601,6.57,,no
+VITL,"Vital Farms, Inc.",10.8,10.8,10.6,10.5,2.85714,4.79,,,,4.50781e+08,Consumer Staples,,not-verifiable,pass,no,10.8,10.6,,no
+VIVK,"Vivakor, Inc.",0.44,0.4885,0.4385,0.4826,-8.82719,-27.45,154782,2.16478e+06,7.15,701000,Process Industries,,pass,fail,no,0.4385,0.4885,,yes
+VJET,"Flyte Aviation, Inc.",0.5897,0.616,0.5506,0.56,5.30357,,,,,,,,not-verifiable,fail,no,0.616,0.5506,,no
+VNOM,"Viper Energy, Inc.",42.173,42.47,41.5,41.06,2.71067,-7.04,,,,1.47416e+10,Energy,,not-verifiable,pass,no,42.47,41.5,,no
+VNRX,VolitionRX Ltd,0.21,0.2198,0.2023,0.2031,3.39734,,,,,5.68146e+06,Health Care,,not-verifiable,fail,no,0.2198,0.2023,,no
+VNT,Vontier Corp,42.24,42.84,39.01,37.58,12.4002,2.79,,,,5.2612e+09,Information Technology,,not-verifiable,pass,no,42.84,39.01,,no
+VPG,"Vishay Precision Group, Inc.",47.05,49.37,47.05,49.38,-4.69921,-8.97,,,,6.56737e+08,Information Technology,,not-verifiable,pass,no,47.05,49.37,,no
+VRAX,Virax Biolabs Group Ltd. Class A,1.33,1.55,1.2207,1.2,10.8333,,1.75274e+06,609945,287.36,1.6e+06,Finance,,pass,fail,no,1.55,1.2207,,yes
+VRT,Vertiv Holdings Co. Class A,195,203.5,196.45,205.6,-5.13257,-12.88,,,,7.9142e+10,Industrials,,pass,pass,no,196.45,203.5,,no
+VSAT,"ViaSat, Inc.",64.58,65.9,65.9,66.79,-3.30888,-11.23,,,,9.12144e+09,Information Technology,,not-verifiable,pass,no,65.9,65.9,,no
+VSH,"Vishay Intertechnology, Inc.",24.04,25.36,24.26,25.86,-6.96594,-5,,,,3.5197e+09,Information Technology,,not-verifiable,pass,no,24.26,25.36,,no
+VST,Vistra Corp.,116.45,120.78,116.552,120.2,-3.19229,-13.86,,,,4.05428e+10,Utilities,,pass,pass,no,116.552,120.78,,no
+WATR,Air Water Ventures Limited,1.45,1.6,1.3101,1.55,-6.45161,,,,,,,,not-verifiable,fail,no,1.3101,1.6,,no
+WDC,Western Digital Corporation,303.96,316,303,323.8,-6.13594,-6.77,,,,1.16754e+11,Information Technology,,pass,pass,no,303,316,C1,yes
+WFF,WF Holding Limited,1.2398,1.3003,1.2398,1.32,-6.07576,,170710,3.67118e+06,4.65,7.1e+06,Process Industries,,pass,fail,no,1.2398,1.3003,,yes
+WGS,GeneDx Holdings Corp. Class A,67,69,67,69.34,-3.37468,1.02,,,,2.05857e+09,Health Care,,not-verifiable,pass,no,67,69,,no
+WMS,"Advanced Drainage Systems, Inc.",122.15,135,124.4,144,-15.2148,5.9,,,,1.10321e+10,Industrials,,not-verifiable,pass,no,124.4,135,,no
+WORX,SCWorx Corp.,1.44,1.62,1.44,1.55,-7.09677,,,,,,,,not-verifiable,fail,no,1.44,1.62,,no
+WRBY,"Warby Parker, Inc. Class A",25.75,26.2,21.55,21.27,20.9488,-3.05,331654,3.13177e+06,10.59,3.14e+09,Retail Trade,,pass,pass,yes,26.2,21.55,C2,yes
+WU,Western Union Company,7.07,6.84,6.67,6.6,7.28376,5.6,,,,2.06207e+09,Financials,,not-verifiable,pass,no,6.84,6.67,,no
+WULF,TeraWulf Inc.,11.27,11.76,11.22,11.7,-3.67521,-6.62,,,,5.79773e+09,Financials,,pass,pass,no,11.22,11.76,,no
+WW,"WW International, Inc.",14.49,14.75,12.4,12.13,19.4559,-6.55,,,,1.21141e+08,Consumer Discretionary,,not-verifiable,pass,no,14.75,12.4,,no
+WYFI,"WhiteFiber, Inc.",8.89,9.34,8.71,9.15,-2.84153,-12.77,,,,3.5332e+08,Information Technology,,not-verifiable,pass,no,8.71,9.34,,no
+XE,"X-Energy, Inc. Class A",9.76,10.12,9.76,10.05,-2.88557,-8.47,,,,4.08398e+09,Industrials,,not-verifiable,pass,no,9.76,10.12,,no
+XERS,"Xeris Biopharma Holdings, Inc.",12.5,12.56,10.55,10.46,19.5029,1.06,168699,3.02328e+06,5.58,2.46e+09,Health Technology,,pass,pass,no,12.56,10.55,C5,yes
+XFOR,"X4 Pharmaceuticals, Inc.",3.13,3.09,3.09,3.24,-3.39506,2.21,,,,3.05596e+08,Health Care,,not-verifiable,pass,no,3.09,3.09,,no
+XHLD,"TEN Holdings, Inc.",0.6599,0.71,0.6053,0.6251,5.56711,-19.9,,,,7.48866e+06,Communication Services,,not-verifiable,fail,no,0.71,0.6053,,no
+XRX,Xerox Holdings Corporation,1.21,1.22,1.17,1.18,2.54237,-3.28,,,,1.5432e+08,Information Technology,,not-verifiable,pass,no,1.22,1.17,,no
+XTND,Xtend AI Robotics Inc,1.0812,1.16,1.0805,1.12,-5.98261,-23.81,,,,2.86502e+08,Information Technology,,not-verifiable,pass,no,1.0805,1.16,,no
+XXII,"22nd Century Group, Inc",2.24,2.77,2.15,0.042,-8.04583,-13.04,,,,1.34189e+06,Consumer Staples,,not-verifiable,fail,no,2.15,2.77,,no
+YDKG,Yueda Digital Holding Class A,0.9489,1.0677,0.92,0.9942,-4.55643,,,,,,,,not-verifiable,fail,no,0.92,1.0677,,no
+YFOR,YYForce Limited Class A,0.12,0.1245,0.1164,0.128,-6.25,,433761,5.77578e+06,7.51,1.5e+06,Commercial Services,,pass,fail,no,0.1164,0.1245,,yes
+YMAT,"J-Star Holding Co., Ltd. Class A",1.21,1.3197,1.21,1.26,-3.96825,,,,,,,,not-verifiable,fail,no,1.21,1.3197,,no
+YYAI,AiRWA Inc.,0.929,0.93,0.8778,0.8906,4.3117,10.06,,,,4.08066e+06,Consumer Discretionary,,not-verifiable,fail,no,0.93,0.8778,,no
+Z,"Zillow Group, Inc. Class C",31,32.06,28.57,33.9,-8.55457,9.43,,,,7.62326e+09,Real Estate,,pass,pass,no,28.57,32.06,,no
+ZG,"Zillow Group, Inc. Class A",31.52,31.88,28.34,34.45,-8.50508,9.89,71766,,,6.99e+09,Real Estate,,pass,pass,no,28.34,31.88,C3,yes
+ZGN,Ermenegildo Zegna N.V.,13.6,14.13,13.26,14.88,-8.60215,,,,,,,,not-verifiable,fail,no,13.26,14.13,,no
+ZNB,Zeta Network Group Class A,1.19,1.8298,0.9665,0.622,91.3183,,4.72111e+07,4.16665e+06,1133.07,5.6e+06,Technology Services,,pass,fail,no,1.8298,0.9665,C4,yes
+ZS,"Zscaler, Inc.",215.8,222.82,215.8,224.4,-3.84958,-0.29,,,,3.62941e+10,Information Technology,,not-verifiable,pass,no,215.8,222.82,,no
+ZTS,"Zoetis, Inc. Class A",85,93.2,85.45,89.17,-4.70852,7.45,,,,3.73826e+10,Health Care,,not-verifiable,pass,no,85.45,93.2,,no
+ZURA,Zura Bio Limited Class A,4.1749,4.1749,3.97,4.02,3.85323,0.75,,,,3.85233e+08,Health Care,,not-verifiable,pass,no,4.1749,3.97,,no
+ZVIA,Zevia PBC Class A,1.39,1.39,1.34,1.19,15.8333,1.71,,,,9.16111e+07,Consumer Staples,,not-verifiable,fail,no,1.39,1.34,,no
