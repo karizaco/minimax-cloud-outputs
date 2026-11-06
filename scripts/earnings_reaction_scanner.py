@@ -57,7 +57,7 @@ import json, subprocess, time, datetime, os, sys, re
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-06.1"
+SCRIPT_VERSION = "2026-11-06.2"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -614,6 +614,10 @@ def cross_check(name, tv_pct, tv_close, suffix, region, live_session=False, venu
     y = yahoo_pct(sym, live_session=live_session, now_et=NOW_ET)
     if y is None:
         health["cross_check"]["unverified"] += 1
+        # The row cannot be published: its base is unverifiable. Count the drop HERE,
+        # in the function that decides, so every pass counts it - the US headline,
+        # US QUIET, EU and AU passes all drop a row whose cross_check returns None.
+        health["rows_dropped_unresolved_ref"] += 1
         degrade("yahoo_chart_api.reference_close_unresolved",
                 f"{sym}: the reference close could not be resolved (429 or a bad body)")
         return None
@@ -907,19 +911,17 @@ us_ref = {}
 tagged_keep = []
 for sym, c in tagged:
     r = cross_check(c["name"], c["change"], c["close"], "", "US", live_session=False, venue="US")
+    # The reference close is a HARD GATE: a row whose base could not be resolved
+    # cannot be published (it would carry '—' in the Ref close / Ref source /
+    # Ref asof / US tradeable columns and break ARTIFACT FORMAT CONTRACT v2).
+    # The EU and AU passes already filtered their rows on the same gate; the US
+    # headline pass did not, so a row whose Yahoo lookup failed was rendered
+    # with dashes. It is dropped here instead; cross_check() counts the drop in
+    # one place, so every pass counts it the same way.
     if r:
         us_ref[sym] = r
         attach_us(r, c)
         tagged_keep.append((sym, c))
-    else:
-        # The reference close is a HARD GATE: a row whose base could not be
-        # resolved cannot be published (it would carry '—' in the Ref close /
-        # Ref source / Ref asof / US tradeable columns and break
-        # ARTIFACT FORMAT CONTRACT v2). The EU and AU passes already filtered
-        # their rows on the same gate; the US headline pass did not, so a row
-        # whose Yahoo lookup failed was rendered with dashes. Drop it here and
-        # count the drop instead of publishing an unverifiable move.
-        health["rows_dropped_unresolved_ref"] += 1
     time.sleep(0.35)
 tagged = tagged_keep
 quiet_keep = []
