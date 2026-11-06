@@ -3,7 +3,7 @@
 ## TL;DR
 
 - **Asia took the full force of the post-midterm AI rout; the west barely flinched.** **4,392 instruments printed across the 16 regions** and the tape split three ways: Tokyo fell 5.96% (the Nikkei's third-largest point drop on record, and the index's close put it in a bear market more than 20% below its June peak) with a **-4.94% median name**, Taipei fell 4.51% after a record 3,737.67-point intraday drop, while **Canada's median name rose +0.28%** and the TSX gained 0.52% — Europe fell about 1%.
-- **The most consequential single move is Japan Tobacco (TSE:2914, -19.31%)** — Vladimir Putin's 5 November decree put four Japan Tobacco International plants under temporary management, and Russia is ~10% of JT revenue and ~25% of its operating profit; the shares hit the limit down with pro-rata allocation and no trades. For a US trader the rout's reachable names are the ADRs: **TSMC, BHP, SAP, ASML and ASMI all closed lower**, and TSMC opened at its limit-down price before recovering to -4.69%.
+- **The most consequential single move is Japan Tobacco (TSE:2914, -19.31%)** — Vladimir Putin's 5 November decree put four Japan Tobacco International plants under temporary management, and Russia is ~10% of JT revenue and ~25% of its operating profit; the shares hit the limit down with pro-rata allocation and no trades. For a US trader the rout's reachable names are the ADRs and they did split: **TSMC closed -4.69%** after opening at its limit-down price, **BHP -2.34%** and **SAP -2.32%**, while Europe's chip complex bounced into the close (**ASML +2.69%**).
 - **Read the numbers with the unit convention in mind: `market_cap` is USD while every price is in the listing currency** (`currency` column) — a ¥5,092 close and a C$29.58 close are not comparable, the caps are — and note that this file carries **18 columns**, the same schema as the 5 Nov session, so the archive's column count changes only on 5 Nov, not today.
 
 ## Market context
@@ -88,9 +88,9 @@ Liquid names (volume ≥ 100k **and** market cap ≥ $1B) whose move cleared ±5
 
 | Ticker | Name | Change | Close | Volume | Mkt cap (USD) | US listing | Catalyst |
 |---|---|---|---|---|---|---|---|
-| `ASX:MI6` | Minerals 260 Limited | **-8.54%** | 0.75 AUD | 10,740,760 | $1.23B | none | No company-specific release found; sold with the critical-minerals complex as the AI-trade unwind pulled capital out of the metals — the ASX Materials index -0.9%, WA1 Resources -9.0%, Lynas -7.1%, copper -1.0% and nickel -1.4% overnight (MarketIndex evening wrap, 6 Nov; FNArena ASX losers, 6 Nov) |
-| `ASX:SRL` | Sunrise Energy Metals Limited | **-8.24%** | 11.58 AUD | 712,114 | $1.36B | none | No company-specific release found; the same critical-minerals de-rating — and SRL committed A$456m to develop the Syerston scandium mine in NSW this week (MarketIndex evening wrap and FNArena, 6 Nov) |
-| `ASX:SGM` | Sims Ltd. | **-7.22%** | 19.65 AUD | 883,195 | $2.78B | OTC | No company-specific release found; sold with the AI-trade unwind and the resources complex — Goodman Group -3.2%, South32 -3.4% (TradingEconomics, 6 Nov) |
+| `ASX:MI6` | Minerals 260 Limited | **-8.54%** | 0.75 AUD | 10,740,760 | $1.23B | OTC | No company-specific release found; sold with the critical-minerals complex as the AI-trade unwind pulled capital out of the metals — the ASX Materials index -0.9%, WA1 Resources -9.0%, Lynas -7.1%, copper -1.0% and nickel -1.4% overnight (MarketIndex evening wrap, 6 Nov; FNArena ASX losers, 6 Nov) |
+| `ASX:SRL` | Sunrise Energy Metals Limited | **-8.24%** | 11.58 AUD | 712,114 | $1.36B | OTC | No company-specific release found; the same critical-minerals de-rating — and SRL committed A$456m to develop the Syerston scandium mine in NSW this week (MarketIndex evening wrap and FNArena, 6 Nov) |
+| `ASX:SGM` | Sims Ltd. | **-7.22%** | 19.65 AUD | 883,195 | $2.78B | ADR | No company-specific release found; sold with the AI-trade unwind and the resources complex — Goodman Group -3.2%, South32 -3.4% (TradingEconomics, 6 Nov) |
 | `ASX:IMD` | Imdex Ltd | **-6.98%** | 3.2 AUD | 974,789 | $1.14B | none | No company-specific release found; sold with the resources complex as base metals fell overnight (aluminium -1.0%, copper -1.0%, tin -2.5%) (MarketIndex evening wrap, 6 Nov) |
 | `ASX:IGO` | IGO Limited | **-5.88%** | 4.96 AUD | 8,260,386 | $2.51B | none | No company-specific release found; the mining complex fell with copper -1.0% overnight and BHP -2.3% / Rio Tinto -2.0% (MarketIndex evening wrap and TradingEconomics, 6 Nov) |
 
@@ -98,11 +98,11 @@ Liquid names (volume ≥ 100k **and** market cap ≥ $1B) whose move cleared ±5
 
 | Ticker | Name | Change | Close | Volume | Mkt cap (USD) | US listing | Catalyst |
 |---|---|---|---|---|---|---|---|
-| `TSE:2914` | Japan Tobacco Inc. | **-19.31%** | 6269 JPY | 2,794,400 | $82.79B | none | Russia's Putin decree of 5 Nov placed four Japan Tobacco International units (JTI Donskoy Tabak, JTI Yelets, Kres Neva, Petro) under temporary management; Russia is ~10% of JT revenue and ~25% of operating profit. The shares hit the limit down with pro-rata allocation and no trades executed (Investing.com, Tokyo market summary, 6 Nov) |
-| `TSE:6963` | ROHM Company Limited | **-15.00%** | 2759 JPY | 21,082,000 | $8.42B | none | H1 FY2026 results on 5 Nov: sales ¥279.5bn (+14.4%), operating profit ¥17.5bn (+128.5%), FY guidance raised to ¥550bn sales and ¥50bn operating profit — the stock still fell with the AI-hardware rout (ROHM IR, 2Slides deck, 6 Nov) |
+| `TSE:2914` | Japan Tobacco Inc. | **-19.31%** | 6269 JPY | 2,794,400 | $82.79B | ADR | Russia's Putin decree of 5 Nov placed four Japan Tobacco International units (JTI Donskoy Tabak, JTI Yelets, Kres Neva, Petro) under temporary management; Russia is ~10% of JT revenue and ~25% of operating profit. The shares hit the limit down with pro-rata allocation and no trades executed (Investing.com, Tokyo market summary, 6 Nov) |
+| `TSE:6963` | ROHM Company Limited | **-15.00%** | 2759 JPY | 21,082,000 | $8.42B | ADR | H1 FY2026 results on 5 Nov: sales ¥279.5bn (+14.4%), operating profit ¥17.5bn (+128.5%), FY guidance raised to ¥550bn sales and ¥50bn operating profit — the stock still fell with the AI-hardware rout (ROHM IR, 2Slides deck, 6 Nov) |
 | `TSE:3563` | FOOD & LIFE COMPANIES LTD. | **-14.66%** | 5092 JPY | 8,908,800 | $8.18B | none | FY2026 (Sept year-end) results on 6 Nov: revenue ¥515.3bn (+26.9%) and operating profit ¥51.5bn (+47.0%), both record highs, plus the first FY2029 medium-term plan (¥831bn revenue / ¥88bn operating profit) — the shares fell anyway on the plan (company release, StockAnalysis, 6 Nov) |
 | `TSE:8056` | BIPROGY Inc. | **-12.82%** | 4337 JPY | 2,310,100 | $2.76B | none | H1 net profit fell 27% and progress against the full-year plan came in below the historical average (note.com TSE Prime losers analysis, 6 Nov) |
-| `TSE:2802` | Ajinomoto Co., Inc. | **-12.40%** | 4268 JPY | 11,561,800 | $29.23B | OTC | No company-specific release found; defensive staples were sold with the broad risk-off — the TSE's largest decliners were Ajinomoto -12.50%, Yamaha -12.27% and Sumitomo Dainippon -12.12%, with 98% of the Prime market lower (TradingEconomics, note.com market wrap, 6 Nov) |
+| `TSE:2802` | Ajinomoto Co., Inc. | **-12.40%** | 4268 JPY | 11,561,800 | $29.23B | ADR | No company-specific release found; defensive staples were sold with the broad risk-off — the TSE's largest decliners were Ajinomoto -12.50%, Yamaha -12.27% and Sumitomo Dainippon -12.12%, with 98% of the Prime market lower (TradingEconomics, note.com market wrap, 6 Nov) |
 | `TSE:6834` | Seikoh Giken Co., Ltd. | **-11.92%** | 4175 JPY | 1,869,300 | $1.68B | none | No company-specific release found; sold in a market-wide risk-off rather than on company news — 1,523 of 1,544 TSE Prime names fell and all 33 industry groups were lower (note.com market wrap, Aju Press, 6 Nov) |
 
 ### tw
@@ -120,22 +120,22 @@ Liquid names (volume ≥ 100k **and** market cap ≥ $1B) whose move cleared ±5
 | Ticker | Name | Change | Close | Volume | Mkt cap (USD) | US listing | Catalyst |
 |---|---|---|---|---|---|---|---|
 | `TSX:TSU` | Trisura Group Ltd. | **-29.92%** | 29.58 CAD | 1,400,076 | $1.44B | OTC | Q3 2026 results (released 5 Nov, call 6 Nov): gross premiums written C$802m, down 6%; total book value fell 1.6% to C$989m, below the C$1bn reached in Q2, on unrealised bond losses as yields rose; operating EPS C$0.73 (+3%) (Q3 earnings call, Yahoo/Quartr, 6 Nov) |
-| `TSX:PXT` | Parex Resources Inc. | **-16.55%** | 19.81 CAD | 3,126,112 | $1.64B | OTC | Q3 2026 results on 6 Nov: adjusted EBITDA C$238m beat, but wider differentials and higher costs pressured the cash-flow outlook; Q4 dividend C$0.385 declared (Quartr, Dow Jones Newswires, GlobeNewswire, 6 Nov) |
+| `TSX:PXT` | Parex Resources Inc. | **-16.55%** | 19.81 CAD | 3,126,112 | $1.64B | ADR | Q3 2026 results on 6 Nov: adjusted EBITDA C$238m beat, but wider differentials and higher costs pressured the cash-flow outlook; Q4 dividend C$0.385 declared (Quartr, Dow Jones Newswires, GlobeNewswire, 6 Nov) |
 | `TSX:IMG` | IAMGOLD Corporation | **+8.09%** | 26.44 CAD | 3,516,390 | $9.94B | NYSE | Q3 2026 results on 5 Nov: attributable production 186,900oz, revenue US$856.5m, net earnings US$297.0m, mine-site free cash flow US$404.3m and liquidity US$1.61bn — plus irrevocable notice to repurchase 50% of Franco-Nevada's 7.5% Côté Gold royalty for ~US$525m; gold US$4,097/oz (Newsfile/Nasdaq, 6 Nov) |
 
 ### eu-de
 
 | Ticker | Name | Change | Close | Volume | Mkt cap (USD) | US listing | Catalyst |
 |---|---|---|---|---|---|---|---|
-| `XETR:HAG` | HENSOLDT AG | **-6.22%** | 77.44 EUR | 331,447 | $10.50B | OTC | The 9M 2026 statement (5 Nov) delivered a record €10.37bn backlog and a raised ~€2.8bn revenue target, but the raise landed ~1% below consensus; the stock kept falling with a post-midterm de-rating in European defence (Goldman's defence basket -4.1%, its largest day in over four months). Capital Markets Day is 10 Nov (Investing.com, ad-hoc-news, 6 Nov) |
-| `XETR:AIXA` | AIXTRON SE | **+5.12%** | 30.41 EUR | 1,025,347 | $4.03B | OTC | No company-specific release found; recovered with the European chip complex, which bounced on the morning of 6 Nov (ASML +2.6%, Infineon +2.3%, ASM +1.7%, BE Semiconductor +1.7%) after yesterday's -9.82% (AI Business Brief, 6 Nov) |
+| `XETR:HAG` | HENSOLDT AG | **-6.22%** | 77.44 EUR | 331,447 | $10.50B | ADR | The 9M 2026 statement (5 Nov) delivered a record €10.37bn backlog and a raised ~€2.8bn revenue target, but the raise landed ~1% below consensus; the stock kept falling with a post-midterm de-rating in European defence (Goldman's defence basket -4.1%, its largest day in over four months). Capital Markets Day is 10 Nov (Investing.com, ad-hoc-news, 6 Nov) |
+| `XETR:AIXA` | AIXTRON SE | **+5.12%** | 30.41 EUR | 1,025,347 | $4.03B | ADR | No company-specific release found; recovered with the European chip complex, which bounced on the morning of 6 Nov (ASML +2.6%, Infineon +2.3%, ASM +1.7%, BE Semiconductor +1.7%) after yesterday's -9.82% (AI Business Brief, 6 Nov) |
 
 ### eu-fr
 
 | Ticker | Name | Change | Close | Volume | Mkt cap (USD) | US listing | Catalyst |
 |---|---|---|---|---|---|---|---|
-| `EURONEXT:TEP` | Teleperformance SE | **-15.30%** | 68.44 EUR | 814,995 | $5.50B | none | The Q3 update and 2026 outlook cut the year: like-for-like revenue is now expected to fall 1.5-2.5% in 2026 against a previous 0-2% growth forecast, on a sharper decline in Trust & Safety content moderation and faster offshoring; Q3 LFL revenue fell 1.2%. TP ICAP Midcap cut its growth forecasts through 2030 (Reuters, Investing.com, 6 Nov) |
-| `EURONEXT:AF` | Air France-KLM SA | **+7.08%** | 13.53 EUR | 3,469,485 | $3.31B | none | Rebound: a fifth session of gains that took the stock 27% higher over five sessions and the top of the SBF 120, after two brokers raised their price targets (Reuters, Zesteinvest/ideal-investisseur, 6 Nov) |
+| `EURONEXT:TEP` | Teleperformance SE | **-15.30%** | 68.44 EUR | 814,995 | $5.50B | ADR | The Q3 update and 2026 outlook cut the year: like-for-like revenue is now expected to fall 1.5-2.5% in 2026 against a previous 0-2% growth forecast, on a sharper decline in Trust & Safety content moderation and faster offshoring; Q3 LFL revenue fell 1.2%. TP ICAP Midcap cut its growth forecasts through 2030 (Reuters, Investing.com, 6 Nov) |
+| `EURONEXT:AF` | Air France-KLM SA | **+7.08%** | 13.53 EUR | 3,469,485 | $3.31B | ADR | Rebound: a fifth session of gains that took the stock 27% higher over five sessions and the top of the SBF 120, after two brokers raised their price targets (Reuters, Zesteinvest/ideal-investisseur, 6 Nov) |
 
 ### eu-it
 
@@ -165,13 +165,13 @@ No liquid name cleared ±5% in this region with a sourced driver.
 
 | Ticker | Name | Change | Close | Volume | Mkt cap (USD) | US listing | Catalyst |
 |---|---|---|---|---|---|---|---|
-| `EURONEXT:GL9` | Glanbia PLC | **-8.48%** | 19.42 EUR | 1,129,687 | $5.80B | OTC | Morgan Stanley downgraded Glanbia from equal-weight to underweight, warning that competition could pressure margins next year — two days after Q3 results raised full-year EPS growth guidance to 22-24% constant currency (Irish Times, 6 Nov) |
+| `EURONEXT:GL9` | Glanbia PLC | **-8.48%** | 19.42 EUR | 1,129,687 | $5.80B | ADR | Morgan Stanley downgraded Glanbia from equal-weight to underweight, warning that competition could pressure margins next year — two days after Q3 results raised full-year EPS growth guidance to 22-24% constant currency (Irish Times, 6 Nov) |
 
 ### eu-fi
 
 | Ticker | Name | Change | Close | Volume | Mkt cap (USD) | US listing | Catalyst |
 |---|---|---|---|---|---|---|---|
-| `OMXHEX:OUT1V` | Outokumpu Oyj | **-15.65%** | 3.794 EUR | 5,436,505 | $2.40B | OTC | Q3 2026 in line (adjusted EBITDA €101m) but the Q4 warning was the trigger: adjusted EBITDA is guided to roughly the prior year's level (€10m), deliveries are expected to fall 5-15% and European demand is weak with high customer inventories; Nordea, Citigroup and JPMorgan cut targets (Finwire, Reuters, MarketScreener, 6 Nov) |
+| `OMXHEX:OUT1V` | Outokumpu Oyj | **-15.65%** | 3.794 EUR | 5,436,505 | $2.40B | ADR | Q3 2026 in line (adjusted EBITDA €101m) but the Q4 warning was the trigger: adjusted EBITDA is guided to roughly the prior year's level (€10m), deliveries are expected to fall 5-15% and European demand is weak with high customer inventories; Nordea, Citigroup and JPMorgan cut targets (Finwire, Reuters, MarketScreener, 6 Nov) |
 
 ### eu-dk
 
@@ -340,6 +340,7 @@ Liquid names that cleared ±5% with **no sourced driver** — no company release
 | Press closing reports (Jiji, CNA/Focus Taiwan, Euronext Athens, euro2day, eKathimerini, TradingEconomics) | index closes | ok | Nikkei, TOPIX, TAIEX and the ATHEX taken from the market's own close |
 | Yahoo chart API (close verification) | chart/{2914.T,6963.T,3563.T,…,TSU.TO,VNP.TO,TEP.PA,GL9.IR,OUT1V.HE,AG1.DE,…} | ok | every JP/TW/CA/EU name checked matched the scanner's close **to the cent** and its change; the ASX names' daily bars repeat the prior session, so the ASX change rests on the scanner |
 | Press (Reuters, AP, Investing.com, Financial Post/FNArena, MarketIndex, note.com, Irish Times, Finwire, Quartr, Dow Jones Newswires, Newsfile, Focus Taiwan, The Blade) | catalyst and market-context checks | ok | every catalyst published in this report is attributed to one of these |
+| Cross-venue cap check | America scanner caps vs the published primary cap, per issuer | ok | 955 published rows carry a US line; 73 pairs differ by more than 10% (40 above the $100M threshold) — listed in the caveats with both issuer names |
 | MCP catalog probe | probe_mcp.py | ok | catalog_ok total=135 finance_tools=0 — the bridge is reachable, but the per-country scanner HTTP API is the source of record for this routine |
 
 ### Caveats
@@ -350,23 +351,23 @@ Liquid names that cleared ±5% with **no sourced driver** — no company release
 - **`no_market_cap` rows** (247) cannot be tested against a cap floor and are excluded rather than written blank.
 - **Off-official rows** (215) have no print on an official venue in their home market (Japan's NAG/FSE/SAPSE lines, Canada's NEO ATS lines, Germany's GETTEX/LSX/Lang & Schwarz lines) and are excluded as `stale_venue_print`.
 - **Below-floor and below-volume rows**: 7,818 names fell below the cap floor and 104 below the region's volume gate; the hardest movers among them are published under `## Below the gate`.
-- **The cap cross-venue check found real disagreements.** Every issuer with a US line was compared after conversion; 38 pairs differ by more than 10%, mostly OTC quotations carrying a stale company cap. The largest are listed below — the primary line's cap is published in all cases and the US line's figure is recorded here.
+- **The cap cross-venue check found real disagreements — and some false pairings, which is why it is published as a finding and not a verdict.** Every issuer with a US line was compared after conversion: 73 pairs differ by more than 10%, 40 of them with both caps above $100M. The largest are listed below with BOTH issuer names, because most of them are **name collisions between different companies** (Taiwan's First Financial Holding against the US First Financial Corporation; Italy's Iren against IREN Limited; SoftBank Corp against SoftBank Group) rather than cap errors — while the Woolworths and Heineken rows are the same group quoted on a stale OTC figure. The primary line's cap is published in every case and the US line's figure is recorded here, so the reader can see which pair was made.
 
-| Region | Line | US line | Primary cap (USD) | US-line cap (USD) | Delta |
+| Region | Line (issuer) | US line (issuer) | Primary cap (USD) | US-line cap (USD) | Delta |
 |---|---|---|---|---|---|
-| `ca` | `TSX:TSU` | OTC:TRRSF | $1.44B | $0.98B | 47.3% |
-| `eu-nl` | `EURONEXT:ENVI` | OTC:ENVHF | $0.28B | $0.20B | 42.5% |
-| `jp` | `TSE:6961` | OTC:ENPSF | $0.49B | $0.38B | 26.3% |
-| `jp` | `TSE:6368` | OTC:ORGJF | $3.13B | $2.49B | 26.0% |
-| `ca` | `TSX:TNZ` | OTC:ATUUF | $1.42B | $1.13B | 25.2% |
-| `ca` | `TSX:GIL` | NYSE:GIL | $7.96B | $6.44B | 23.7% |
-| `jp` | `TSE:6871` | OTC:MJPNF | $2.60B | $2.11B | 23.1% |
-| `ca` | `TSX:NOA` | NYSE:NOA | $0.31B | $0.25B | 22.8% |
+| `tw` | `TWSE:2892` First Financial Holding | NASDAQ:THFF First Financial Corp | $18.47B | $0.91B | 1937.0% |
+| `au` | `ASX:WOW` Woolworths Group | OTC:WLWHY Woolworths Holdings | $33.78B | $2.12B | 1492.2% |
+| `eu-pt` | `EURONEXT:NVG` Navigator Company | NYSE:NVGS Navigator Holdings | $2.43B | $1.21B | 101.6% |
+| `jp` | `TSE:4768` Otsuka Corp | OTC:OTSKY Otsuka Holdings | $8.98B | $39.44B | 77.2% |
+| `eu-it` | `MIL:IRE` Iren SpA | NASDAQ:IREN IREN Limited | $3.51B | $8.76B | 59.9% |
+| `jp` | `TSE:9434` SoftBank Corp | OTC:SFTBY SoftBank Group | $70.38B | $153.77B | 54.2% |
+| `au` | `ASX:L1G` | OTC:PTMGF | $2.08B | $1.36B | 53.1% |
+| `eu-nl` | `EURONEXT:HEIO` Heineken Holding | OTC:HEINY Heineken NV | $24.52B | $51.59B | 52.5% |
 
 - **Index levels**: the Nikkei and TOPIX come from Jiji's 15:33 JST closing report and the TAIEX from CNA/Focus Taiwan, because Yahoo's 6 Nov bars for ^N225 and ^TWII were still null at the time of the pull; the ATHEX comes from Euronext Athens' own historical data and a third-party live quote of 2,587.93 (−2.11%) was rejected as not venue-official; ^OMXC20 serves a single 6 Nov bar, so its prior close is taken from the 5 Nov archive. Every other index level is Yahoo's settled daily bar.
 - **The ASX change rests on the scanner, not on Yahoo.** Yahoo's ASX daily bars repeat the prior session's close, so the 6 Nov bar carries no change; the published ASX moves were cross-checked against FNArena, AFR and MarketIndex (Minerals 260 A$0.750 −8.54%, Sunrise Energy Metals A$11.58 −8.24%, Sims A$19.65 −7.22%) and agree to the cent.
 - **The session's shape**: it was one global story with three different expressions. Asia sold the AI complex — Tokyo fell 5.96% with 98% of the Prime market lower, Taipei fell 4.51% after a record intraday point drop, and Korea halted trading for 20 minutes — while Europe fell only about 1% on its smaller AI weight and Canada was higher on a gold and silver bid. Inside the rout, the company-specific stories were Japan's tobacco and consumer names: Japan Tobacco lost control of four Russian plants, and Food & Life fell 14.66% on a record FY and its first FY2029 plan.
-- **Sector rotation** (mean `change_pct` per sector over the liquid subset, volume ≥ 100k, same rows as the movers list): the least-bad sectors were Health Services -0.05% (18), Non-Energy Minerals -0.08% (279) and Communications -0.85% (34); the worst were Electronic Technology -4.73% (455), Producer Manufacturing -4.17% (368), Commercial Services -4.02% (109) and Distribution Services -3.69% (114). The only sector that rose outright was Energy Minerals, which was dragged under by the gold complex's -2.2% move.
+- **Sector rotation** (mean `change_pct` per sector over the liquid subset, volume ≥ 100k, same rows as the movers list): the least-bad sectors were Health Services -0.05% (18), Non-Energy Minerals -0.08% (279) and Communications -0.85% (34); the worst were Electronic Technology -4.73% (455), Producer Manufacturing -4.17% (368), Commercial Services -4.02% (109) and Distribution Services -3.69% (114). **No sector rose outright** — even Energy Minerals (-0.96%) was dragged under by the gold complex's -2.2% move.
 - **The cross-session check passed**: the per-region written row counts land within 1-3% of the 5 Nov session (jp 1,375 vs 1,375, tw 882 vs 885, ca 633 vs 605, eu-de 112 vs 121, eu-fr 272 vs 273, eu-it 179 vs 179, eu-es 147 vs 147, eu-nl 62 vs 62, eu-be 77 vs 77, eu-at 50 vs 50, eu-ie 17 vs 17, eu-fi 101 vs 101, eu-dk 75 vs 75, eu-gr 86 vs 86, au 297 vs 306) — which is what a correct FX conversion and floor application looks like.
 - **The build-time assertion passes with 0 failures and 97 warnings**, and every warning is the same heuristic one: the checker's issuer-name reduction cuts a carried cap's source description at the first class word, so a Canadian preferred line described as “… Non-Cum Conv Red Pfd …” reduces to a different string than its common line even though the carry is legitimate (same ticker root, same issuer, and the cap is the company-level figure the contract requires).
 - **`us_listing` is the America scanner's answer, matched on the ISSUER (never the ticker — ASX:CAT is Caterpillar while NYSE:CAT is a different company). The scanner's US set does not carry every primary US line, so an issuer whose only US line in the source is an OTC quotation publishes `OTC`; `ADR` means the US line is a depositary receipt (`type=dr`).

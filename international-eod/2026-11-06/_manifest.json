@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "generated_at": "2026-11-06T21:39:55Z",
+ "generated_at": "2026-11-06T21:43:44Z",
  "provenance": "TradingView per-country scanner (16 regions, one response each) + the America scanner for US listings and the cross-venue cap check; FX from Frankfurter (2026-11-06) and open.er-api (TWD); index levels from Yahoo settled bars plus the market's own closing reports",
  "market_cap_unit": "USD",
  "price_currency": "listing (the `currency` column)",
