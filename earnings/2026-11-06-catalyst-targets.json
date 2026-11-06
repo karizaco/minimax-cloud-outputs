@@ -1,0 +1,59 @@
+{
+  "us": [
+    {
+      "name": "FROG",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-06"
+    },
+    {
+      "name": "NET",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-06"
+    },
+    {
+      "name": "LASR",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-06"
+    },
+    {
+      "name": "IREN",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-27"
+    },
+    {
+      "name": "VCEL",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-07-30"
+    }
+  ],
+  "eu": [
+    {
+      "name": "TEP",
+      "chg": -17.92
+    },
+    {
+      "name": "BTS_B",
+      "chg": 15.87
+    },
+    {
+      "name": "MOVE",
+      "chg": -12.5
+    }
+  ],
+  "au": [
+    {
+      "name": "DVP",
+      "chg": -10.13
+    },
+    {
+      "name": "WA1",
+      "chg": -9.85
+    }
+  ],
+  "budget": {
+    "US": 5,
+    "EU": 3,
+    "AU": 2
+  },
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-06.md"
+}
