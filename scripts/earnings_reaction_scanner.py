@@ -57,7 +57,7 @@ import json, subprocess, time, datetime, os, sys, re
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-05.2"
+SCRIPT_VERSION = "2026-11-06.1"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -127,7 +127,8 @@ health = {"scanner_calls": 0, "scanner_errors": 0, "yahoo_calls": 0, "yahoo_erro
           "unverified": 0, "stale": 0, "drift": [], "by_mode": {}, "mismatch_detail": []},
           "premarket_check": {"checked": 0, "within_1pp": 0, "within_3pp": 0,
                               "outliers": [], "unavailable": 0},
-          "rows_dropped_stale_ref": 0, "us_line_index_ok": True}
+          "rows_dropped_stale_ref": 0, "rows_dropped_unresolved_ref": 0,
+          "us_line_index_ok": True}
 DEGRADED = []          # list of (source, detail) - each degraded source counted once
 
 
@@ -903,12 +904,24 @@ def attach_us(row, c):
 
 
 us_ref = {}
+tagged_keep = []
 for sym, c in tagged:
     r = cross_check(c["name"], c["change"], c["close"], "", "US", live_session=False, venue="US")
     if r:
         us_ref[sym] = r
         attach_us(r, c)
+        tagged_keep.append((sym, c))
+    else:
+        # The reference close is a HARD GATE: a row whose base could not be
+        # resolved cannot be published (it would carry '—' in the Ref close /
+        # Ref source / Ref asof / US tradeable columns and break
+        # ARTIFACT FORMAT CONTRACT v2). The EU and AU passes already filtered
+        # their rows on the same gate; the US headline pass did not, so a row
+        # whose Yahoo lookup failed was rendered with dashes. Drop it here and
+        # count the drop instead of publishing an unverifiable move.
+        health["rows_dropped_unresolved_ref"] += 1
     time.sleep(0.35)
+tagged = tagged_keep
 quiet_keep = []
 for sym, c in quiet[:15]:
     r = cross_check(c["name"], c["change"], c["close"], "", "US", live_session=False, venue="US")
@@ -1387,6 +1400,9 @@ if cc["mismatch_detail"]:
 A(f"- rows_dropped_stale_ref: {health['rows_dropped_stale_ref']} "
   f"(rows whose screener-implied reference close disagreed with Yahoo's by more than "
   f"{REF_CLOSE_TOLERANCE_PCT}%; they are dropped, not published)")
+A(f"- rows_dropped_unresolved_ref: {health['rows_dropped_unresolved_ref']} "
+  f"(rows whose reference close could not be resolved from Yahoo at all - the base of the "
+  f"move is unverifiable, so the row is dropped rather than published with a '—' base)")
 if cross_region_dropped:
     A(f"- cross_region_rows_dropped: {cross_region_dropped} (the same name on a US venue "
       f"and a foreign venue - the US row is kept so the name appears exactly once)")
@@ -1449,6 +1465,7 @@ A(f"`earnings-reaction target=earnings-reactions:{RUN_DATE} candidates={len(us)}
   f"asx_reactions={len([r for r in au if abs(g(r['d'],'change'))>3])} "
   f"catalyst_lookups={len(catalysts)} bod={len(bod)} "
   f"rows_dropped_stale_ref={health['rows_dropped_stale_ref']} "
+  f"rows_dropped_unresolved_ref={health['rows_dropped_unresolved_ref']} "
   f"degraded_sources={len(DEGRADED)}`")
 A("")
 
