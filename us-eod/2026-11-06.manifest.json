@@ -78,6 +78,7 @@
     "NO_HISTORY",
     "NO_PRIOR_CLOSE",
     "EX_DISTRIBUTION",
+    "SPLIT_ADJUSTED",
     "NO_PE",
     "NO_SECTOR",
     "OK"
@@ -90,6 +91,7 @@
     "NO_HISTORY",
     "NO_PRIOR_CLOSE",
     "EX_DISTRIBUTION",
+    "SPLIT_ADJUSTED",
     "NO_PE",
     "NO_SECTOR",
     "OK"
@@ -100,11 +102,12 @@
     "HIGH_LOW_UNAVAILABLE": 136,
     "RANGE_ADJUSTED": 255,
     "NO_HISTORY": 121,
-    "NO_PRIOR_CLOSE": 2,
-    "EX_DISTRIBUTION": 55,
+    "NO_PRIOR_CLOSE": 0,
+    "EX_DISTRIBUTION": 54,
+    "SPLIT_ADJUSTED": 6,
     "NO_PE": 2266,
     "NO_SECTOR": 365,
-    "OK": 2356
+    "OK": 2354
   },
   "populated_counts": {
     "date": 4892,
@@ -139,36 +142,36 @@
     "data_quality": 4892
   },
   "populated_and_ok_counts": {
-    "date": 2356,
-    "ticker": 2356,
-    "name": 2356,
-    "open": 2144,
-    "high": 2356,
-    "low": 2356,
-    "close": 2356,
-    "volume": 2356,
-    "change_pct": 2356,
-    "market_cap": 2356,
-    "pe_ratio": 2356,
-    "sector": 2356,
-    "currency": 2356,
-    "exchange": 2356,
-    "rel_volume": 2353,
-    "pct_from_52w_high": 2356,
-    "pct_from_52w_low": 2356,
-    "sma_20": 2354,
-    "sma_50": 2352,
-    "sma_200": 2325,
-    "pct_vs_sma_50": 2352,
-    "pct_vs_sma_200": 2325,
-    "atr_14": 2355,
-    "atr_pct": 2355,
-    "gap_pct": 2144,
-    "avg_daily_dollar_volume": 2353,
-    "float_shares": 2114,
-    "market_cap_usd": 2356,
-    "cap_source_symbol": 2356,
-    "data_quality": 2356
+    "date": 2354,
+    "ticker": 2354,
+    "name": 2354,
+    "open": 2142,
+    "high": 2354,
+    "low": 2354,
+    "close": 2354,
+    "volume": 2354,
+    "change_pct": 2354,
+    "market_cap": 2354,
+    "pe_ratio": 2354,
+    "sector": 2354,
+    "currency": 2354,
+    "exchange": 2354,
+    "rel_volume": 2352,
+    "pct_from_52w_high": 2354,
+    "pct_from_52w_low": 2354,
+    "sma_20": 2353,
+    "sma_50": 2351,
+    "sma_200": 2324,
+    "pct_vs_sma_50": 2351,
+    "pct_vs_sma_200": 2324,
+    "atr_14": 2354,
+    "atr_pct": 2354,
+    "gap_pct": 2142,
+    "avg_daily_dollar_volume": 2352,
+    "float_shares": 2112,
+    "market_cap_usd": 2354,
+    "cap_source_symbol": 2354,
+    "data_quality": 2354
   },
   "market_cap_currency": "USD",
   "market_cap_conversion": "none - the US file is already USD; market_cap_usd == market_cap (FX identity, no conversion applied)",
@@ -178,11 +181,54 @@
   "issuer_groups": 4580,
   "history_misses": 121,
   "change_pct_rule": "the session's PRICE change against the prior session's SETTLED close (--prior-csv); a quote service's previous_close is dividend-adjusted and a bar whose date was not asserted is stale - neither is an anchor",
-  "change_pct_corrected": 245,
+  "change_pct_corrected": 239,
   "change_pct_filled": 22,
-  "change_pct_unverified": 2,
+  "change_pct_unverified": 0,
   "prior_session": "2026-11-05",
-  "ex_distribution_rows": 55,
+  "ex_distribution_rows": 54,
+  "split_adjusted_rows": 8,
+  "split_adjusted_detail": [
+    {
+      "ticker": "CDT",
+      "anchor_before": 0.0423,
+      "split_adjusted_prior_close": 0.846
+    },
+    {
+      "ticker": "JSPR",
+      "anchor_before": 0.4692,
+      "split_adjusted_prior_close": 14.076
+    },
+    {
+      "ticker": "JSPR",
+      "anchor_before": 0.4692,
+      "split_adjusted_prior_close": 14.076
+    },
+    {
+      "ticker": "LVLU",
+      "anchor_before": 10.47,
+      "split_adjusted_prior_close": 10.995
+    },
+    {
+      "ticker": "ONCO",
+      "anchor_before": 0.549,
+      "split_adjusted_prior_close": 5.49
+    },
+    {
+      "ticker": "ONCO",
+      "anchor_before": 0.549,
+      "split_adjusted_prior_close": 5.447
+    },
+    {
+      "ticker": "REBN",
+      "anchor_before": 1.26,
+      "split_adjusted_prior_close": 1.3599
+    },
+    {
+      "ticker": "YHGJ",
+      "anchor_before": 3.11,
+      "split_adjusted_prior_close": 3.29
+    }
+  ],
   "ex_distribution_detail": [
     {
       "ticker": "AB",
@@ -353,11 +399,6 @@
       "ticker": "LW",
       "prior_published_close": 55.08,
       "quote_adjusted_prior_close": 54.7
-    },
-    {
-      "ticker": "MDRR",
-      "prior_published_close": 10.55,
-      "quote_adjusted_prior_close": 10.254
     },
     {
       "ticker": "MPLX",
