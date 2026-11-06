@@ -1,0 +1,54 @@
+# The user's watchlist — PUBLISHED FILE, fetched at run time.
+#
+# This is the single source of truth for every routine's "watchlist" section:
+#   #16 unusual-options-flow-daily  -> Pass A leg (the watchlist's option chains, legacy method)
+#   #19 earnings-reminder-daily     -> "Your watchlist" section
+#   #23 agentic-post-market-brief    -> "Watchlist EOD review" section
+#   #26 agentic-pre-market-brief     -> the brief's watchlist section
+#
+# Published at: refs/watchlist.yaml on branch main of karizaco/minimax-cloud-outputs
+# Schema + publish instructions: research/watchlist.README.md (maxhermes-migration)
+#
+# HOW TO EDIT: change this file, commit it to the outputs repo at refs/watchlist.yaml, and the
+# next fire of every routine above picks it up. Nothing else has to change.
+#
+# RULES
+#   - ticker is the plain US symbol ("AAPL", not "NASDAQ:AAPL").
+#   - earnings_flag: true marks a name the earnings reminder always highlights.
+#   - note is free text carried into the brief.
+#   - unknown keys are ignored, so the file can grow without a routine change.
+#   - never publish a file with no real tickers: that turns an honest "no watchlist today"
+#     into an empty section that reads as a bug.
+#
+# SEED (2026-11-06) — WHY THIS LIST IS WHAT IT IS
+#   The original watchlist lived only on the local Mavis host
+#   (research/watchlist.yaml, a 12-name list) and was never reachable from the Cloud runtime,
+#   which is why cron #16's Pass A leg had never run there and #19/#23/#26 shipped no
+#   watchlist section at all. This file restores that leg with the names the fleet already
+#   tracks for the options series (the routine's 8), so the published numbers do not move.
+#   REPLACE IT with the real list: these tickers are a seed, not a substitute.
+version: 1
+updated: 2026-11-06
+
+watchlist:
+  - ticker: AAPL
+    note: "mega-cap core; earnings flag"
+    earnings_flag: true
+  - ticker: MSFT
+    note: "mega-cap core; earnings flag"
+    earnings_flag: true
+  - ticker: NVDA
+    note: "mega-cap core; earnings flag"
+    earnings_flag: true
+  - ticker: GOOGL
+    note: "mega-cap core; earnings flag"
+    earnings_flag: true
+  - ticker: AMZN
+    note: "mega-cap core; earnings flag"
+    earnings_flag: true
+  - ticker: IWM
+    note: "small-cap beta leg"
+  - ticker: GLD
+    note: "gold leg"
+  - ticker: TLT
+    note: "duration leg"
