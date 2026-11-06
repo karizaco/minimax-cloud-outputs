@@ -201,9 +201,9 @@ Gate A (liquidity) and Gate B (market cap >= $100M) applied as pinned. 23 names 
 | SABR | Sabre Corporation | 1.74 | 1.97 | 1.77-1.97 | +13.22% | $687.85M | 1.97 | 1.77 |
 | U | Unity Software, Inc. | 42.47 | 48.05 | 40.68-54.35 | +13.17% | $18.54B | 54.35 | 40.68 |
 
-### Thin tape — cleared Gate A, below the $100M cap (17 gainers, 31 decliners)
+### Thin tape — gainers that cleared Gate A, below the $100M cap (17)
 
-Real moves on sub-$100M caps. They never top a headline table, but they carry the largest gaps on the board, so they are published here rather than hidden.
+Real moves on sub-$100M caps. They never top a headline table, but they carry the largest gaps on the board, so they are published here rather than hidden. The thin DECLINERS sit under the top-losers table in section 4.
 
 | Ticker | Name | Prior close | Pre-market last | PM range | Gap % | %ADV | Mkt cap | Key level | Invalidation |
 |---|---|---|---|---|---|---|---|---|---|
@@ -224,37 +224,6 @@ Real moves on sub-$100M caps. They never top a headline table, but they carry th
 | MOBX | Mobix Labs, Inc. | 0.5945 | 0.6369 | 0.59–0.65 | +4.43% | 4.47 | $13.80M | 0.65 | 0.59 |
 | OMH | Ohmyhome Limited Class A | 15.55 | 16.2 | 11.05–18.3 | +4.18% | 70.2 | $31.20M | 18.3 | 11.05 |
 | SLQT | SelectQuote Inc | 0.4851 | 0.51 | 0.4799–0.5179 | +3.79% | 25.97 | $81.50M | 0.5179 | 0.4799 |
-| PARA | Parabolic Technologies, Inc. Class A | 0.319 | 0.218 | 0.2004–0.2799 | -31.66% | 66.39 | $121.40K | 0.2004 | 0.2799 |
-| NWGL | CL Workshop Group Limited | 0.0555 | 0.039 | n/p | -29.73% | 17.51 | $3.10M | 0.0555 | 0.0555 |
-| TEAD | Teads Holding Co. | 0.2753 | 0.195 | 0.1899–0.325 | -29.17% | 16.44 | $17.60M | 0.1899 | 0.325 |
-| ANVS | Annovis Bio Inc | 1.2 | 0.87 | 0.82–0.9765 | -28.10% | 20.01 | $30.30M | 0.82 | 0.9765 |
-| KPTI | Karyopharm Therapeutics, Inc. | 0.0729 | 0.053 | 0.0448–0.0857 | -27.30% | 70.61 | $1.30M | 0.0448 | 0.0857 |
-| BZFD | BuzzFeed, Inc. Class A | 0.9207 | 0.6902 | 0.61–0.8514 | -25.04% | 311.44 | $51.70M | 0.61 | 0.8514 |
-| ADGM | Adagio Medical Holdings, Inc | 0.0862 | 0.0695 | 0.069–0.084 | -19.37% | 10.96 | $1.80M | 0.069 | 0.084 |
-| ARAY | Accuray Incorporated | 0.1491 | 0.1236 | 0.1126–0.1266 | -17.10% | 2.28 | $14.20M | 0.1126 | 0.1266 |
-| HUBC | Hub Cyber Security Ltd. | 0.095 | 0.0789 | 0.0788–0.0904 | -16.95% | 6.88 | $136.50K | 0.0788 | 0.0904 |
-| PMAX | Powell Max Limited Class A | 1.04 | 0.87 | 0.7751–0.9801 | -16.35% | 20.34 | $1.60M | 0.7751 | 0.9801 |
-| CENN | Cenntro Inc. | 0.177 | 0.1486 | 0.1347–0.1586 | -16.05% | 28.97 | $2.30M | 0.1347 | 0.1586 |
-| OSTX | OS Therapies Incorporated | 1.16 | 0.97 | 0.8999–1.1907 | -15.65% | 47.14 | $39.50M | 0.8999 | 1.1907 |
-| INLF | Inlif Limited Class A | 0.3072 | 0.2627 | 0.254–0.2917 | -14.49% | 3.22 | $370.30K | 0.254 | 0.2917 |
-| SHFS | SHF Holdings Inc Class A | 0.0318 | 0.0272 | 0.0264–0.0318 | -14.31% | 27.67 | $2.50M | 0.0264 | 0.0318 |
-| CDT | CDT Equity Inc. | 0.0509 | 0.0438 | 0.0425–0.0858 | -13.95% | 362.71 | $375.70K | 0.0425 | 0.0858 |
-| CRIS | Curis, Inc. | 1.11 | 0.968 | 0.8059–1.18 | -12.79% | 56.58 | $7.30M | 0.8059 | 1.18 |
-| DKI | DarkIris Inc. Class A | 2.08 | 1.82 | 1.68–2.0496 | -12.50% | 9.85 | $1.70M | 1.68 | 2.0496 |
-| HPAI | Helport AI Limited | 0.33 | 0.291 | 0.2433–0.3099 | -11.82% | 27.94 | $12.00M | 0.2433 | 0.3099 |
-| RCT | RedCloud Holdings plc | 0.0334 | 0.0299 | 0.0276–0.0307 | -10.48% | 10.68 | $2.30M | 0.0276 | 0.0307 |
-| GXAI | Gaxos.ai Inc. | 0.447 | 0.4003 | 0.4033–0.4533 | -10.45% | 73.8 | $4.40M | 0.4033 | 0.4533 |
-| FTCI | FTC Solar, Inc. | 1.38 | 1.241 | 1.12–1.2596 | -10.07% | 12.29 | $22.90M | 1.12 | 1.2596 |
-| VIVK | Vivakor, Inc. | 0.4826 | 0.44 | 0.4385–0.4885 | -8.83% | 7.15 | $701.00K | 0.4385 | 0.4885 |
-| JAGX | Jaguar Health, Inc. | 0.4988 | 0.46 | 0.4499–0.4909 | -7.78% | 6 | $1.00M | 0.4499 | 0.4909 |
-| MASK | 3 E Network Technology Group Ltd. Class A | 1.64 | 1.53 | 1.5–2.1556 | -6.71% | 286.68 | $2.20M | 1.5 | 2.1556 |
-| BDMD | Baird Medical Investment Holdings Ltd | 0.1091 | 0.1022 | 0.0935–0.1804 | -6.32% | 807.63 | $3.80M | 0.0935 | 0.1804 |
-| YFOR | YYForce Limited Class A | 0.128 | 0.12 | 0.1164–0.1245 | -6.25% | 7.51 | $1.50M | 0.1164 | 0.1245 |
-| WFF | WF Holding Limited | 1.32 | 1.2398 | 1.2398–1.3003 | -6.08% | 4.65 | $7.10M | 1.2398 | 1.3003 |
-| SDEV | Stablecoin Development Corporation | 0.9629 | 0.9107 | 0.913–0.9883 | -5.82% | 0.88 | $65.30M | 0.913 | 0.9883 |
-| BURU | Nuburu, Inc. | 0.2345 | 0.2265 | 0.2238–0.2404 | -4.83% | 1.46 | $2.80M | 0.2238 | 0.2404 |
-| MERC | Mercer International Inc. | 0.25 | 0.2383 | 0.2277–0.2498 | -4.68% | 2.19 | $15.00M | 0.2277 | 0.2498 |
-| GPUS | Hyperscale Data, Inc. | 0.1609 | 0.1544 | 0.1507–0.1641 | -4.40% | 4.6 | $28.50M | 0.1507 | 0.1641 |
 
 ### Yesterday's tape — 2026-11-04 session (prior session, not pre-market)
 
