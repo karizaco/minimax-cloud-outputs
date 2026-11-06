@@ -2,7 +2,7 @@
 date: 2026-11-05
 cron: 19-earnings-reminder-daily
 fire_time_et: 06:00
-snapshot_et: 05:52
+snapshot_et: 09:28
 source: EarningsWhispers earnings calendar + Yahoo Finance + Nasdaq earnings API; issuer IR pages, EDGAR filings and press releases; TradingView scanner; Cboe delayed-quote option chains
 primary_source: Yahoo Finance (market cap) | EarningsWhispers (EPS est, revenue est, release time) | issuer filings (release time, date confirmation)
 status: ok
@@ -134,7 +134,7 @@ US-listed common shares in the $40B-$50B band the $50B floor excluded, on the 20
 
 ## Notes
 
-- **This brief was reconstructed after the fact.** The fire instant was 2026-11-05 06:00:43 ET; the snapshot was read on 2026-11-06 at 05:52 ET. Every market-based field is re-anchored to the **2026-11-04 close**, the last completed session before that fire, so the file states what a reader saw at 06:00 ET on Nov 5. Consensus figures are the pre-print estimates captured from the EarningsWhispers company pages and the Nasdaq calendar.
+- **This brief was reconstructed after the fact.** The fire instant was 2026-11-05 06:00:43 ET; the market data was read on 2026-11-06 between 05:26 and 09:28 ET. Every market-based field is re-anchored to the **2026-11-04 close**, the last completed session before that fire, so the file states what a reader saw at 06:00 ET on Nov 5. Consensus figures are the pre-print estimates captured from the EarningsWhispers company pages and the Nasdaq calendar.
 - **Ranked by reaction potential, not by size.** AKAM tops the screen at 14.23 and AXON follows at 13.35; the ranking is the 0.6 x average absolute move + 0.4 x implied move composite, not a market-cap list.
 - **The implied-move column is `n/a` for the 24 pre-market names.** The contract's instrument for a pre-market print is the option expiry **on** the report date - the Nov 5 expiry, which expired with the print and is no longer quoted in the Cboe chain. A missing implied move is substituted by the average absolute move, so those 24 rows score exactly their average and are **not** comparable with the 19 after-market rows, which carry a live 6 Nov implied move. The after-market rows measured on the 2026-11-20 expiry instead (NTRA, MNST, SOLV, MTD, SPG, CPT, AEE, REG, ED) carry a longer-dated, therefore smaller, measure - their scores are conservative.
 - **Only two names had printed before the fire.** Canadian Natural released at 04:00 ET and Duke Energy's Item 2.02 8-K, carrying the Q3 release, was furnished to EDGAR at 17:56 ET on Nov 4 - before this brief's 06:00:43 ET fire, so Duke's numbers were public (reported and adjusted EPS $1.99 against a $1.87 consensus). Every other Item 2.02 8-K on the roster was accepted between 06:15 and 08:09 ET on Nov 5, i.e. after the fire.
@@ -156,7 +156,7 @@ US-listed common shares in the $40B-$50B band the $50B floor excluded, on the 20
 | S&P 500 constituent list | Wikipedia MediaWiki wikitext | ok | 503 symbols; BRK.B, GOOGL, GOOG, FOX and CBOE all present |
 | EDGAR submissions | `data.sec.gov/submissions/CIK<cik>.json` | ok | Item 2.02 acceptance times for every roster name; gzip-decoded |
 | Issuer IR pages / press releases | 18 issuer-owned pages | ok | every Pass B date and every "reports today" flag confirmed on the issuer's own page or filing |
-| Yahoo chart API | `query1.finance.yahoo.com/v8/finance/chart/<SYM>` | ok | daily bars for the reaction columns; last bar 2026-11-04 |
+| Yahoo chart API | `query1.finance.yahoo.com/v8/finance/chart/<SYM>` | ok | daily bars for the reaction columns; the fire window ends at the 2026-11-04 bar |
 | Yahoo quote v7 | `query1.finance.yahoo.com/v7/finance/quote` | ok | market caps, cookie + crumb handshake |
 | Yahoo quoteSummary | `.../v10/finance/quoteSummary/<SYM>` | ok | `earningsHistory` for the prior-result and actual-vs-consensus columns |
 | Nasdaq earnings-surprise | `api.nasdaq.com/api/company/<SYM>/earnings-surprise` | ok | past report dates per name (M/D/YYYY format) |
