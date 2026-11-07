@@ -11,7 +11,9 @@ to the most recent close. Maintained by cron #6 stock-screener-pattern-study-bac
   not have a real 10-yr baseline).
 - **Trigger:** `(current_close / 10y_min_close) - 1 >= 10.0` (i.e., 1000%+ from trough).
 - **Min close filter:** `min_close_10y >= $0.50` (avoids micro-cap noise that hit 1000% off a sub-penny base).
-- **Sort:** current gain from 10y low, descending. Scan cap 200 rows per run; top 100 get shape tags.
+- **Sort:** current gain from 10y low, descending. The scan is PAGED until every passing row is collected
+  (shibui's server ceiling is 200 rows per query, so a 200-row result means "at least 200" — never a
+  complete set); the top 100 by gain get shape tags.
 - **Security type:** newly-tagged names are restricted to `type = 'Common Stock'`. Leveraged ETNs and
   ETFs inflate a 10-year return mechanically and have no chart shape worth studying, so they are
   excluded from the tag list (the raw scan still records them in the run JSON).
@@ -24,33 +26,33 @@ to the most recent close. Maintained by cron #6 stock-screener-pattern-study-bac
 
 ## Run manifest
 
-- **Run date (ET):** 2026-10-31 (Saturday weekly cron)
-- **Latest shibui data:** 2026-10-30 (T+1 lag vs cron date)
+- **Run date (ET):** 2026-11-07 (Saturday weekly cron fire, 15:00 ET slot)
+- **Latest shibui data:** 2026-11-06 (T+1 lag vs cron date)
 - **Source:** shibui MCP (streamable-http `https://mcp.shibui.finance/mcp`), `stock_data_query`
-- **Scan:** 200 rows returned by the 10y scan; 100 shape-tagged
-- **Newly tagged this run:** 3 common stocks (already-known names carried forward: 97; new non-equity rows excluded: 0)
-- **Cumulative backlog size:** 100
-- **Prior backlog source:** pattern-study/peoplewish-1000pct-backlog.md (2026-10-24 run)
+- **Scan:** 328 rows scanned (rows_passing 328 = rows_kept 328 — complete); top 100 shape-tagged
+- **Newly tagged this run:** 5 common stocks (prior backlog carried forward: 100 names, of which 85 reappear in this week's tagged window; new non-equity rows excluded: 2)
+- **Cumulative backlog size:** 105
+- **Prior backlog source:** pattern-study/peoplewish-1000pct-backlog.md (2026-10-31 run)
 - **Source tag:** `_source=mcp`
 
-## Newly tagged entries (2026-10-31 run)
+## Newly tagged entries (2026-11-07 run)
 
 | # | Ticker | Name | Type | Exchange | Sector | Current | 10y Low | Peak Gain | Gain | 60d High | Contraction | YTD Low | Last Day | Tags |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | BBW | Build-A-Bear Workshop Inc. | Common Stock | NYSE | Consumer Discretionary | $27.61 | $1.02 | 7,336% | 2,607% | $40.18 | 0.31 | $23.19 | +0.47% | VCP |
-| 2 | PWR | Quanta Services Inc | Common Stock | NYSE | Industrials | $620.73 | $23.80 | 3,199% | 2,508% | $724.80 | 0.63 | $408.36 | -2.27% | VCP, coil, EP |
-| 3 | CROX | Crocs Inc | Common Stock | NASDAQ | Consumer Discretionary | $150.52 | $5.94 | 2,940% | 2,434% | $154.05 | 0.81 | $75.13 | +0.17% | breakout, coil, EP |
+| 1 | VCEL | Vericel Corp | Common Stock | NASDAQ | Health Care | $54.62 | $2.05 | 3,208% | 2,564% | $55.60 | 0.89 | $28.95 | +5.48% | breakout, EP, big_day |
+| 2 | RIOT | Riot Platforms Inc | Common Stock | NASDAQ | Information Technology | $16.71 | $0.65 | 11,885% | 2,471% | $25.39 | 0.40 | $11.50 | +13.21% | VCP, big_day |
+| 3 | SMMT | Summit Therapeutics Inc | Common Stock | NASDAQ | Health Care | $16.33 | $0.68 | 5,296% | 2,301% | $19.09 | 0.34 | $12.07 | +15.08% | VCP, coil, big_day |
+| 4 | PRAX | Praxis Precision Medicines Inc | Common Stock | NASDAQ | Health Care | $277.62 | $12.05 | 7,391% | 2,203% | $392.70 | 0.26 | $236.79 | +5.72% | VCP, big_day |
+| 5 | HWM | Howmet Aerospace Inc | Common Stock | NYSE | Industrials | $205.81 | $9.19 | 3,083% | 2,138% | $293.40 | 0.37 | $183.52 | +2.44% | VCP |
 
-### Excluded from tagging (non-Common-Stock, 0)
+### Excluded from tagging (non-Common-Stock, 10)
 
-No newly-discovered non-Common-Stock names in this week's top-100. All 11 non-equity rows in the tagged
-window (ZCSH, USD, GBTC, ARGX, TECL, LTM, VIST, IVT, SOXL, TQQQ, FNGO) were already known from previous
-runs, so nothing new was added to the exclusion ledger.
+New non-equity names excluded this run: ZCSH, FNGO. Already-known non-equity rows in the tagged window: GBTC, ARGX, USD, LTM, IVT, VIST, TECL, TQQQ.
 
-## Carried forward (first tagged on or before 2026-10-31)
+## Carried forward (first tagged on or before 2026-11-07)
 
 | Ticker | Name | Type | Exchange | Sector | Current | 10y Low | Peak Gain | Gain | 60d High | Contraction | YTD Low | Last Day | Tags | First Tagged |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | NVDA | NVIDIA Corp | Common Stock | NASDAQ | Information Technology | $233.95 | $1.63 | 14,330% | 14,220% | $233.95 | 0.86 | $164.27 | +1.34% | breakout | 2026-10-03 |
 | CLS | Celestica Inc | Common Stock | NYSE | Information Technology | $387.32 | $2.83 | 16,593% | 13,586% | $387.32 | 1.01 | $244.51 | +3.81% | breakout, EP | 2026-10-03 |
 | BE | Bloom Energy Corp - Class A | Common Stock | NYSE | Industrials | $289.15 | $2.67 | 12,853% | 10,730% | $291.25 | 1.08 | $88.86 | +4.17% | breakout, EP | 2026-10-03 |
@@ -139,7 +141,10 @@ runs, so nothing new was added to the exclusion ledger.
 | MPC | Marathon Petroleum Corp | Common Stock | NYSE | Energy | $457.22 | $16.62 | 2,818% | 2,651% | $484.92 | 0.98 | $162.33 | -0.45% | EP | 2026-10-24 |
 | FET | Forum Energy Technologies Inc | Common Stock | NYSE | Energy | $87.17 | $3.20 | 15,088% | 2,624% | $87.37 | 1.39 | $35.70 | +6.88% | breakout, EP, big_day | 2026-10-24 |
 | FTAI | FTAI Aviation Ltd - Class A | Common Stock | NASDAQ | Industrials | $154.37 | $5.67 | 5,368% | 2,623% | $201.27 | 1.42 | $146.48 | -1.99% | — | 2026-10-24 |
+| BBW | Build-A-Bear Workshop Inc. | Common Stock | NYSE | Consumer Discretionary | $27.61 | $1.02 | 7,336% | 2,607% | $40.18 | 0.31 | $23.19 | +0.47% | VCP | 2026-10-31 |
 | TPC | Tutor Perini Corp | Common Stock | NYSE | Industrials | $76.86 | $2.91 | 3,306% | 2,541% | $91.95 | 1.10 | $66.77 | -0.03% | — | 2026-10-24 |
+| PWR | Quanta Services Inc | Common Stock | NYSE | Industrials | $620.73 | $23.80 | 3,199% | 2,508% | $724.80 | 0.63 | $408.36 | -2.27% | VCP, coil, EP | 2026-10-31 |
+| CROX | Crocs Inc | Common Stock | NASDAQ | Consumer Discretionary | $150.52 | $5.94 | 2,940% | 2,434% | $154.05 | 0.81 | $75.13 | +0.17% | breakout, coil, EP | 2026-10-31 |
 | ASTH | Astrana Health Inc. | Common Stock | NASDAQ | Health Care | $37.45 | $1.50 | 7,873% | 2,400% | $39.60 | 0.86 | $18.08 | -1.47% | EP | 2026-10-24 |
 | CNR | Core Natural Resources Inc | Common Stock | NYSE | Industrials | $92.10 | $3.69 | 3,513% | 2,396% | $102.66 | 1.04 | $77.50 | +4.24% | — | 2026-10-24 |
 | AAMI | Acadian Asset Management Inc. | Common Stock | NYSE | Financials | $92.35 | $3.73 | 2,509% | 2,376% | $97.31 | 0.87 | $45.85 | -0.47% | EP | 2026-10-24 |
@@ -151,18 +156,18 @@ runs, so nothing new was added to the exclusion ledger.
 
 ## Notes
 - Rows in **Carried forward** are frozen at the values they carried when first tagged — they are a discovery ledger, not a live quote sheet. Re-scan for live values via the daily sweep.
-- 3 of the 89 shape-tagged common stocks were new this week; 86 were already in the backlog and are not duplicated; 0 new non-equity names were excluded.
-- Full 200-row scan (including untagged ranks 101-200) is preserved in `peoplewish-backlog-run-full.json` in this directory.
+- 5 of the 90 shape-tagged common stocks were new this week; 85 were already in the backlog and are not duplicated; 2 new non-equity names were excluded (the tagged window holds 100 names: 90 common stocks + 10 ETFs/ADRs/REITs).
+- Full 328-row scan (including untagged ranks 101-328) is preserved in `peoplewish-backlog-run-full.json` in this directory.
 - Cross-reference: the peoplewish screener (filter G) uses 14d velocity as primary sort; this backlog is the multi-year analogue.
 - Market note: the 10y-trough basis means the 1000% set is sensitive to drawdown. A name dropping 50% off its high can fall out of the top ranks without ever leaving the backlog.
-- Backlog maturity note: the discovery rate has fallen from 22 new names (2026-10-24) to 3 (2026-10-31) as the 10-year universe saturates — 86 of the 100 tagged slots are now names already known.
-- ⚠ = tagged before the Common-Stock filter was applied. The 9 legacy rows are ETFs / ADRs / a REIT and are retained for ledger continuity but should be ignored for stock-pattern research: USD, GBTC, SOXL, TECL, ARGX, LTM, TQQQ, VIST, IVT.
+- Backlog maturity note: the discovery rate is 5 new names this week (prior run: 3) as the 10-year universe saturates — 85 of the 100 tagged slots are now names already known.
+- ⚠ = tagged before the Common-Stock filter was applied. The 9 legacy rows are ETFs / ADRs / a REIT and are retained for ledger continuity but should be ignored for stock-pattern research: ARGX, GBTC, IVT, LTM, SOXL, TECL, TQQQ, USD, VIST.
 
 ## Source health
 
 | Source | Query / URL | Status | Result |
 |---|---|---|---|
-| shibui MCP (`stock_data_query` via mcp_bridge.py) | 10y scan over `shibui.stock_quotes` + `shibui.general_info` + `shibui.valuation` | ok | 200 rows scanned, 100 shape-tagged, `_source=mcp` |
-| shibui MCP (date resolve) | `SELECT MAX(date) FROM shibui.stock_quotes` | ok | 2026-10-30 (T+1 lag vs cron date 2026-10-31) |
+| shibui MCP (`stock_data_query` via mcp_bridge.py) | 10y scan over `shibui.stock_quotes` + `shibui.general_info` + `shibui.valuation` (pages 1-3) | ok | 328 rows scanned, 100 shape-tagged, `_source=mcp` |
+| shibui MCP (date resolve) | `SELECT MAX(date) FROM shibui.stock_quotes` | ok | 2026-11-06 (T+1 lag vs cron date 2026-11-07) |
 | Finviz fallback | not invoked | n/a | primary path succeeded — no fallback chain entered |
 | web_search / web_fetch | not invoked | n/a | not needed; no MCP errors to recover from |
