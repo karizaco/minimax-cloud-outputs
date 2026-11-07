@@ -1,0 +1,1 @@
+Draft the SIP digest only from the provided JSON. Use the locked Taiwan-market format. Do not calculate, infer, or invent numbers, dates, tickers, catalysts, or source status. If a value is absent, omit it or state that it was not provided. Output Markdown only.
