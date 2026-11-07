@@ -7,3 +7,5 @@ or modifying live daily digests.
 
 From `/workspace/market-intel`:
 
+The staged offline observation and midday-comparison documentation is
+[`SIP_OBSERVATIONS.md`](SIP_OBSERVATIONS.md).
