@@ -1,10 +1,10 @@
 {
- "audit_date_et": "2026-11-05",
- "audit_run_et": "2026-11-06T07:05:18-05:00",
- "origin_main_sha": "5640c80",
+ "audit_date_et": "2026-11-06",
+ "audit_run_et": "2026-11-07T07:05:26-05:00",
+ "origin_main_sha": "aa18742",
  "due": 20,
- "delivered": 19,
- "missing": 1,
+ "delivered": 20,
+ "missing": 0,
  "skipped_by_design_count": 0,
  "stale_routines": 0,
  "never_delivered": [],
@@ -12,17 +12,13 @@
  "written_off": [],
  "skipped_by_design": [],
  "roster_gap": [],
- "gaps": [
-  {
-   "routine": "19-earnings-reminder-daily",
-   "path": "earnings/2026-11-05-reminders.md",
-   "label": "MISSING",
-   "cause": "timeout",
-   "gap_age_hours": 25.1,
-   "streak": 1
-  }
- ],
+ "gaps": [],
  "routines": {
+  "19-earnings-reminder-daily": {
+   "routine": "19-earnings-reminder-daily",
+   "state": "delivered",
+   "streak": 0
+  },
   "02-asia-pre-market-reactions": {
    "routine": "02-asia-pre-market-reactions",
    "state": "delivered",
@@ -142,12 +138,7 @@
    "routine": "22-weekly-market-recap-preview",
    "state": "not_due",
    "streak": 0
-  },
-  "19-earnings-reminder-daily": {
-   "routine": "19-earnings-reminder-daily",
-   "state": "missing",
-   "streak": 1
   }
  },
- "audit_status": "gaps_found"
+ "audit_status": "ok"
 }
