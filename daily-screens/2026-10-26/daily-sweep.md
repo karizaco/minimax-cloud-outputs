@@ -174,7 +174,7 @@ The composite (1M + 3M + 6M, equal weight) puts Energy, Healthcare and Technolog
 |---|---|
 | `daily-sweep.md` | This report. |
 | `_summary.md` | Four-bullet digest for the pre-market brief. |
-| `breadth.md`, `daily-screens/breadth/2026-10-26.md` | Breadth + regime detail. |
+| `breadth.md`, `archive/daily-screens-breadth/2026-10-26.md` | Breadth + regime detail. The second path was `daily-screens/breadth/2026-10-26.md` until 2026-11-08, when that series was archived. |
 | `_regime-screener.json` | `size_cut_pct` / `uncertainty` / `late_cycle` payload from **this** sweep. **Not** named `_regime.json`: that path in this directory is owned by cron #10 (`stock-screener-breadth-snapshot`, written 18:08Z) and overwriting a sibling cron's artifact would destroy it. |
 | `master.md` / `.csv` | Union of all screens, deduped, cap 200. |
 | `stalk.md` / `.csv` | Master, within 2% of 10/20-DMA, with a setup tag (13). |

@@ -112,7 +112,7 @@ status: ok
 
 Older artifacts have no front matter and instead carry a provenance line inside the first few lines
 (`_summary.md` style: "**Cron date**: … · **Data session**: … · **Fired at**: … · **Generated**: …").
-Both styles carry the same information; the 2026-10-22 `daily-screens/_summary.md` is the clearest
+Both styles carry the same information; `daily-screens/2026-10-22/_summary.md` is the clearest
 example of the older form, including an explicit "**Schedule deviation**" note.
 
 ## High-value entry points
@@ -218,7 +218,7 @@ unreachable, those three files are links to nowhere.
 The files in `refs/` that hold real content are `preopen-feed-contract.md` (the tape contract),
 `plan-sources-and-mcp-tracking.md` (a 268-line proposal with live probe evidence), `watchlist.yaml`
 (the published source of truth for four routines' watchlist sections — note it is currently a **seed**
-list of 8 tickers, not the real 12-name personal list) and `archive/skipped-markers/README.md`.
+list of 8 tickers, not the real 12-name personal list) and `refs/archive/skipped-markers/README.md`.
 
 ## Conventions and known drift
 

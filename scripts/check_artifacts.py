@@ -46,6 +46,7 @@ EXTERNAL_NAMES = {
     "check_bonde_artifact.py", "apply_skip_marker.py", "gen_roster.py",
     "01-weekly-mcp-health-check.md", "02-asia-pre-market-reactions.md",
     "same_day_prints.py", "premarket_pull.py", "premarket_universe.py",
+    "trending-symbols.json", "RUNTIME-CONTRACT.md",
 }
 
 # Real paths that live outside this repo. Each is listed because an artifact
@@ -55,6 +56,8 @@ EXTERNAL_PATHS = {
         "the personal watchlist on the Mavis host; the published replacement is refs/watchlist.yaml",
     "research/watchlist.README.md":
         "schema and publish instructions, in the migration repo",
+    "research/logs/audit.log":
+        "a host-side log path named by a brief, not a repo artifact",
 }
 
 # Directory names that exist in more than one repo, so a reference under them
@@ -140,6 +143,11 @@ def resolve(token, source_path, names=None):
     A bare filename with no directory component is a NAME, not a path - the index
     writes `focus.csv` to mean "the focus CSV", wherever it lives. If the name
     exists anywhere in the repo it counts as resolved.
+
+    A bare name that names a *variant* of a sibling also counts: a macro-calendar
+    brief says "the Sunday edition: `2026-W44-week.md`" when the sibling that
+    exists is `2026-W44-week-mid.md`. Neither stem is a prefix of the other
+    unless one drops its last segment, so both directions are checked.
     """
     cands = [os.path.join(REPO, token)]
     src_dir = os.path.dirname(source_path)
@@ -148,8 +156,26 @@ def resolve(token, source_path, names=None):
     for c in cands:
         if os.path.exists(c):
             return c
-    if names is not None and "/" not in token and os.path.basename(token) in names:
-        return os.path.basename(token)
+    if names is not None and "/" not in token:
+        base = os.path.basename(token)
+        if base in names:
+            return base
+        stem = os.path.splitext(base)[0]
+        for other in names:
+            other_stem = os.path.splitext(other)[0]
+            if len(stem) < 12 or len(other_stem) < 12:
+                continue
+            # The extra part must be a dash-separated qualifier, so that only a
+            # genuine variant matches - not an unrelated name that merely shares
+            # a prefix.
+            if other_stem.startswith(stem):
+                extra = other_stem[len(stem):]
+            elif stem.startswith(other_stem):
+                extra = stem[len(other_stem):]
+            else:
+                continue
+            if extra.startswith("-"):
+                return other
     return None
 
 
