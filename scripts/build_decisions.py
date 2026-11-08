@@ -96,7 +96,7 @@ def build(date_dir, date):
         return None
 
     thresholds = find_dict(res, "thresholds")
-    stylists = find_value(res, "stylist_buckets") or []
+    stylists = res.get("stylist_buckets")
     if not isinstance(stylists, list):
         stylists = []
     counts = find_dict(res, "counts")

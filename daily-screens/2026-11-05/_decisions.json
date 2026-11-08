@@ -5,7 +5,13 @@
  "session_lag_days": 1,
  "derived_from": "daily-screens/2026-11-05/_results.json",
  "rules": {
-  "stylists": [],
+  "stylists": [
+   "stockbee",
+   "qullamaggie",
+   "jeff_sun",
+   "hernandez",
+   "peoplewish"
+  ],
   "focus": {
    "min_stylists": 2,
    "max_names": 12
