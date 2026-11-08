@@ -15,7 +15,7 @@
 - **Biggest risk day: Tuesday Nov 10** (`HIGH_IMPACT_DAY`) — CPI *and* the **10-year note auction ($42bn)** on the same day, plus the Dallas/KC energy conference (Logan, Schmid). The **$42bn 10y** is the coupon auction most sensitive to a hot core CPI print.
 - **Second: Friday Nov 13** (`HIGH_IMPACT_DAY`) — **PPI**, the confirmation print for the CPI surprise, with a **$25bn 30-year bond** the day before.
 - **Wednesday Nov 11 is Veterans Day: the US BOND market is fully closed (SIFMA recommendation), the STOCK market trades a normal session.** Federal Reserve statistical releases due Wed move to Thu Nov 12, and the **EIA petroleum report moves to Thu Nov 12, 12:00 PM ET**. *This corrects the Nov 1 edition's next-week preview, which said "US markets closed" — the equity market is open.*
-- **Fed speakers: 13 distinct officials across 19 slots** (Mon 3, Tue 6, Wed 0, Thu 5, Fri 5). Tuesday carries two voters after CPI (Paulson 6:30 PM, Bowman 3:30 PM and 6:30 PM) and Wednesday is completely silent — into a holiday-shortened session.
+- **Fed speakers: 13 distinct officials across 20 slots** (Mon 3, Tue 7, Wed 0, Thu 5, Fri 5). Tuesday carries two voters after CPI (Paulson 6:30 PM, Bowman 3:30 PM and 6:30 PM) and Wednesday is completely silent — into a holiday-shortened session.
 - **Not in this window:** retail sales, durable goods, new home sales, industrial production, ISM, consumer sentiment, JOLTS, Beige Book. Retail sales and IP land Tue Nov 17, the FOMC minutes Wed Nov 18, U. Michigan prelim Fri Nov 20.
 
 ---
