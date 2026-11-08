@@ -1,0 +1,49 @@
+{
+ "_schema": "daily-screens-manifest-v1",
+ "date": "2026-10-31",
+ "data_as_of": null,
+ "session_lag_days": null,
+ "canonical": {
+  "brief": null,
+  "summary": null,
+  "machine": [],
+  "raw": []
+ },
+ "screens": {
+  "weekly-ipo": {
+   "role": "weekly IPO refresh (pattern-study cron)",
+   "files": [
+    "weekly-ipo.md"
+   ],
+   "components": [],
+   "paired": false,
+   "note": "no .csv for this screen"
+  }
+ },
+ "files": [
+  {
+   "name": "peoplewish-backlog-run-full.json",
+   "bytes": 93552,
+   "role": "unclassified"
+  },
+  {
+   "name": "peoplewish-backlog.md",
+   "bytes": 21781,
+   "role": "unclassified"
+  },
+  {
+   "name": "weekly-high-short-float.md",
+   "bytes": 5413,
+   "role": "unclassified"
+  },
+  {
+   "name": "weekly-ipo.md",
+   "bytes": 7632,
+   "role": "weekly IPO refresh (pattern-study cron)"
+  }
+ ],
+ "notes": [
+  "weekly-ipo has no matching .csv in this directory",
+  "no _source-health.json - source health for this run exists only in the prose table in daily-sweep.md"
+ ]
+}

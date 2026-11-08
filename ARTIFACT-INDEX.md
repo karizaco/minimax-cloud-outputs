@@ -57,7 +57,7 @@ All 21 top-level directories. "Live" means the routine is still producing into i
 
 | Directory | Written by | Contents | Live? |
 |---|---|---|---|
-| `daily-screens/` | cron #09 daily screener sweep (18:30 ET), #10 intraday breadth | Dated dirs, each with ~40 files: `daily-sweep.md`, `_summary.md`, `_regime.json`, `_results.json`, `_cache.json`, `breadth.md`, and per-stylist `.md`+`.csv` pairs | **Yes** — largest family (~500 files) |
+| `daily-screens/` | cron #09 daily screener sweep (18:30 ET), #10 intraday breadth | Dated dirs, each with ~40 files: `daily-sweep.md`, `_summary.md`, `_regime.json`, `_results.json`, `_cache.json`, `breadth.md`, `_manifest.json`, `_decisions.json`, and per-stylist `.md`+`.csv` pairs | **Yes** — largest family (~500 files) |
 | `daily-briefs/` | cron #26 pre-market brief (+09:20 refresh), #23 post-market | `<date>-pre-market.md` + `.csv`, `<date>-pre-market-refresh.md`, `<date>-post-market.md` | **Yes** |
 | `ntrt/` | cron #17 pre-open gap brief | `<date>.md` + `<date>.csv`; `_pipeline/` (10 scripts); `_raw/` (~30 JSON intermediates + 4 logs) | **Yes** |
 | `us-eod/` | cron #20 EOD US snapshot (16:00 ET) | `<date>.csv` + `<date>.md` (early days used `.meta.md`), per-market subdirs, `2026-11-06.manifest.json` + `.acceptance.txt` | **Yes** |
@@ -76,9 +76,10 @@ All 21 top-level directories. "Live" means the routine is still producing into i
 | `research/` | ad-hoc research | `047040-jan-2026-catalyst.md` — one note | **No** — one-off |
 | `weekly/` | weekly recap routine | `2026-11-01-preview.md`, `-preview-tldr.md`, `-preview-movers.csv` | **Pilot** — one edition only |
 | `data2/` | earlier data work | `_stale_bars.json`, `_assemble_stats.json`, `yahoo_prices_2026-10-21.json` | **No** — superseded |
-| `refs/` | standing documentation | Contracts, pointers, `watchlist.yaml`, and `archive/skipped-markers/` | **Yes** (mixed) |
+| `refs/` | standing documentation | Contracts, pointers, `watchlist.yaml`, `artifact-contract.md`, `decisions-contract.md`, and `archive/skipped-markers/` | **Yes** (mixed) |
 | `cron-prompts/` | prompt engineering | 3 `.HARDENED.md` prompt files | **Yes** |
-| `scripts/` | routine engineering | 5 Python scripts | **Yes** |
+| `scripts/` | routine engineering | 5 pipeline scripts plus 3 repo-consistency tools | **Yes** |
+| `archive/` | retired artifact families | `README.md` (the convention) and `daily-screens-breadth/` | **No** — by design |
 
 Read the "Live?" column as a statement about the **routine**, not about the files. A directory can be
 live and still contain fossils inside it (`us-eod/` is live and still carries the superseded
@@ -134,6 +135,39 @@ Two more are worth knowing about even though they are single files:
 `refs/preopen-feed-contract.md` (the tape's schema and tolerances, including a named regression
 signature) and `research/047040-jan-2026-catalyst.md` (the best-written research note here — a catalyst
 chain, a day-by-day tape, and an explicit resolution of a source conflict).
+
+## Tooling
+
+Three scripts keep the repo honest about itself. All are read-only against the artifacts
+and safe to run on any checkout; none of them invents a value.
+
+| Script | What it does | When it fails |
+|---|---|---|
+| `scripts/check_artifacts.py` | Three checks: `index` (this file names every top-level directory and every path it cites resolves), `links` (every backticked file reference inside every `.md` resolves), `convention` (basenames are Windows-safe; no filename in a dated directory repeats that directory's date) | `index` and `convention` exit non-zero on a finding; `links` exits non-zero on any in-repo reference that does not resolve |
+| `scripts/build_screen_manifest.py` | Writes `daily-screens/<date>/_manifest.json` for every dated directory: the brief, the machine artifacts, which screens are present, whether each has a matching `.csv`, whether a screen is split into components, and the session lag | Never — it reports shape differences as notes, because they are real properties of the data, not errors |
+| `scripts/build_decisions.py` | Writes `daily-screens/<date>/_decisions.json`: the thresholds that produced each published tier, the names a cap dropped, the per-branch coverage assertion, the regime flags, and the session lag | Never |
+
+```bash
+python3 scripts/check_artifacts.py                    # all three checks
+python3 scripts/check_artifacts.py links              # find broken in-text references
+python3 scripts/build_screen_manifest.py              # regenerate the dated manifests
+python3 scripts/build_decisions.py                    # regenerate the decision records
+```
+
+The `links` check is the one that pays for itself. Commit `6569109` renamed 76 colon
+paths to underscores but left the prose pointing at the old names; twenty in-repo
+references were still broken when it landed, and this check finds that class of rot
+before the next commit rather than a reader finding it later.
+
+Two contracts govern the shape of what these scripts check:
+
+- **`refs/artifact-contract.md`** — the naming rules (Windows-safe basenames, no clock
+  time in a filename, one filename shape per dated directory, a `_manifest.json` per
+  dated directory, cross-repo references keeping their own repo's spelling) and the
+  rule that a rename updates the prose in the same commit.
+- **`refs/decisions-contract.md`** — the `_decisions.json` schema, and why the record
+  holds *decisions* (the rule, and what it excluded) rather than a second copy of the
+  data.
 
 ## Where the decision trail lives
 
@@ -207,11 +241,11 @@ against these files.
   `stockbee_coil` / `stockbee_ep9m` as separate files, while `2026-11-06` has a single `stockbee`
   file whose branches are listed inside it. `2026-10-19` is markdown-only with no screen CSVs at
   all. Do not assume a fixed file set per date.
-- **`daily-screens/breadth/` is a separate, unrelated series.** Two files (`2026-10-26.md`,
-  `2026-10-27.md`) holding a *different* breadth universe (S&P 500 membership, 502 tickers) from the
-  dated directories' breadth (986 names above $10B). It is date-named like `cross-asset/<date>.md`,
-  not screen-named, and it stopped after 2026-10-27. Treat the two breadth series as distinct
-  products, not as drift.
+- **`daily-screens/breadth/` was a separate, unrelated series — now archived.** Two files
+  (`2026-10-26.md`, `2026-10-27.md`) held a *different* breadth universe (S&P 500 membership,
+  502 tickers) from the dated directories' breadth (986 names above $10B), and the cron #10
+  prompt explicitly forbids that path. It moved to `archive/daily-screens-breadth/` on
+  2026-11-08. Treat the two breadth series as distinct products, not as drift.
 - **`us-eod/` format evolution.** Early days are `<date>.csv` + `<date>.meta.md`; later days are
   `<date>.csv` + `<date>.md`. The 2026-11-06 edition adds `2026-11-06.manifest.json` and
   `2026-11-06.acceptance.txt` — the first file in the repo to carry a machine acceptance gate.
@@ -243,15 +277,30 @@ against these files.
      (the 2026-10-31 backlog run instead of the 2026-11-07 one). Committing the worktree as-is
      would have reverted live fleet output. Always `git checkout --` a file whose worktree copy looks
      older than the commit you are building on.
+- **The upstream fix for colon-named artifacts already exists, and its deployment is still
+  pending.** In `karizaco/maxhermes-migration` the generator writes `reversal-bullish-3_55.*`
+  (`tools/reversal_bullish.py`, `ARTIFACT_STEM`), the skill documents the Windows-safe basename,
+  `push_artifact.sh` sanitises illegal basenames before a push, and the migration repo uses the
+  same sparse-checkout trick to exclude the three colon-named prompt files from a Windows checkout.
+  `docs/DEPLOY-HANDOFF-windows-safe-filenames.md` lists the five remaining steps, which all need
+  MiniMax Cloud access (`cron_update`, `cron_read`) that this machine does not have. So the
+  colon-named **files** are gone from this repo, but the **deployment** that stops the fleet
+  producing them is not finished. Until it is, expect another manual rename.
 
 ## Maintenance notes
 
-- This index is hand-written. If a routine is added, a directory is retired or a filename convention
-  changes, update the directory map and the drift section.
-- The repo is shared across crons and several jobs commit to `main` daily. Per `AGENTS.md`, the push
-  procedure is `git fetch origin main` → `git merge origin/main --allow-unrelated-histories -X ours`
-  → `git push origin main`. **Never force-push** to this repo — it would destroy other crons'
-  artifacts.
+- This index is hand-written, but `scripts/check_artifacts.py --mode index` now fails if it
+  stops naming a top-level directory, and if any path it cites stops resolving. That is
+  the check that keeps this file from becoming the kind of stale map it warns about
+  elsewhere in this repo.
+- The repo is shared across crons and several jobs commit to `main` daily. **Check
+  `git merge-base HEAD origin/main` before merging.** The recipe in `AGENTS.md`
+  (`git merge origin/main --allow-unrelated-histories -X ours`) is written for a fresh
+  `git init` with unrelated history; on a clone that shares a common ancestor, `-X ours`
+  discards the other crons' commits and silently drops their artifacts. Use a plain
+  `git merge origin/main` and verify with
+  `git diff --diff-filter=D --name-only <merge-base> origin/main` that nothing was
+  deleted. **Never force-push** — it would destroy other crons' artifacts.
 - When reviewing an artifact, read the front matter or the provenance line first, then the caveats
   section, then the tables. In this repo the caveats section is where the real information is, and it
   is deliberately near the top for that reason.

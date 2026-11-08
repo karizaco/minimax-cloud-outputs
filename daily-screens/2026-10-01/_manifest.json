@@ -1,0 +1,79 @@
+{
+ "_schema": "daily-screens-manifest-v1",
+ "date": "2026-10-01",
+ "data_as_of": null,
+ "session_lag_days": null,
+ "canonical": {
+  "brief": null,
+  "summary": null,
+  "machine": [],
+  "raw": []
+ },
+ "screens": {
+  "focus-rvol-snapshot": {
+   "role": "intraday RVOL re-rank (cron #07)",
+   "files": [
+    "focus-rvol-snapshot.md"
+   ],
+   "components": [],
+   "paired": false,
+   "note": "no .csv for this screen"
+  },
+  "pre-market-gapper": {
+   "role": "pre-market gapper (cron #08)",
+   "files": [
+    "pre-market-gapper.csv",
+    "pre-market-gapper.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "reversal-bullish-3_55": {
+   "role": "Bonde reversal-bullish scan (cron #04)",
+   "files": [
+    "reversal-bullish-3_55.csv",
+    "reversal-bullish-3_55.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  }
+ },
+ "files": [
+  {
+   "name": "focus-rvol-snapshot.md",
+   "bytes": 1820,
+   "role": "intraday RVOL re-rank (cron #07)"
+  },
+  {
+   "name": "pre-market-gapper.csv",
+   "bytes": 2954,
+   "role": "pre-market gapper (cron #08)"
+  },
+  {
+   "name": "pre-market-gapper.md",
+   "bytes": 3898,
+   "role": "pre-market gapper (cron #08)"
+  },
+  {
+   "name": "reversal-bullish-3_55-near-misses.csv",
+   "bytes": 313,
+   "role": "unclassified"
+  },
+  {
+   "name": "reversal-bullish-3_55.csv",
+   "bytes": 311,
+   "role": "Bonde reversal-bullish scan (cron #04)"
+  },
+  {
+   "name": "reversal-bullish-3_55.md",
+   "bytes": 2425,
+   "role": "Bonde reversal-bullish scan (cron #04)"
+  }
+ ],
+ "notes": [
+  "focus-rvol-snapshot has no matching .csv in this directory",
+  "no _source-health.json - source health for this run exists only in the prose table in daily-sweep.md"
+ ]
+}

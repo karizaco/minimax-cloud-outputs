@@ -1,0 +1,44 @@
+{
+ "_schema": "daily-screens-manifest-v1",
+ "date": "2026-10-09",
+ "data_as_of": null,
+ "session_lag_days": null,
+ "canonical": {
+  "brief": null,
+  "summary": null,
+  "machine": [],
+  "raw": []
+ },
+ "screens": {
+  "reversal-bullish-3_55": {
+   "role": "Bonde reversal-bullish scan (cron #04)",
+   "files": [
+    "reversal-bullish-3_55.csv",
+    "reversal-bullish-3_55.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  }
+ },
+ "files": [
+  {
+   "name": "reversal-bullish-3_55-near-misses.csv",
+   "bytes": 1247,
+   "role": "unclassified"
+  },
+  {
+   "name": "reversal-bullish-3_55.csv",
+   "bytes": 1804,
+   "role": "Bonde reversal-bullish scan (cron #04)"
+  },
+  {
+   "name": "reversal-bullish-3_55.md",
+   "bytes": 5706,
+   "role": "Bonde reversal-bullish scan (cron #04)"
+  }
+ ],
+ "notes": [
+  "no _source-health.json - source health for this run exists only in the prose table in daily-sweep.md"
+ ]
+}

@@ -1,0 +1,483 @@
+{
+ "_schema": "daily-screens-manifest-v1",
+ "date": "2026-10-26",
+ "data_as_of": null,
+ "session_lag_days": null,
+ "canonical": {
+  "brief": "daily-sweep.md",
+  "summary": "_summary.md",
+  "machine": [
+   "_regime.json",
+   "_regime-screener.json"
+  ],
+  "raw": []
+ },
+ "screens": {
+  "ariel-hernandez": {
+   "role": "Hernandez theme funnel",
+   "files": [
+    "ariel-hernandez.csv",
+    "ariel-hernandez.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "breadth": {
+   "role": "breadth + regime detail (cron #09)",
+   "files": [
+    "breadth.md"
+   ],
+   "components": [],
+   "paired": false,
+   "note": "no .csv for this screen"
+  },
+  "breadth-snapshot": {
+   "role": "intraday breadth snapshot (cron #10)",
+   "files": [
+    "breadth-snapshot.csv",
+    "breadth-snapshot.json",
+    "breadth-snapshot.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "focus": {
+   "role": "convergence tier - >=2 stylists",
+   "files": [
+    "focus.csv",
+    "focus.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "focus-rvol-snapshot": {
+   "role": "intraday RVOL re-rank (cron #07)",
+   "files": [
+    "focus-rvol-snapshot.md"
+   ],
+   "components": [],
+   "paired": false,
+   "note": "no .csv for this screen"
+  },
+  "jeff-sun": {
+   "role": "Sun CANSLIM screen",
+   "files": [
+    "jeff-sun.csv",
+    "jeff-sun.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "long-reversal-candidates": {
+   "role": "parabolic long candidates",
+   "files": [
+    "long-reversal-candidates.md"
+   ],
+   "components": [],
+   "paired": false,
+   "note": "no .csv for this screen"
+  },
+  "master": {
+   "role": "deduped union of all branches, capped",
+   "files": [
+    "master.csv",
+    "master.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "peoplewish": {
+   "role": "peoplewish ADR/velocity screen",
+   "files": [
+    "peoplewish.csv",
+    "peoplewish.md"
+   ],
+   "components": [
+    "peoplewish_adr_velocity.csv",
+    "peoplewish_adr_velocity.md"
+   ],
+   "paired": true,
+   "note": "split into 2 component file(s)"
+  },
+  "pre-market-gapper": {
+   "role": "pre-market gapper (cron #08)",
+   "files": [
+    "pre-market-gapper.csv",
+    "pre-market-gapper.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "qullamaggie": {
+   "role": "Qullamaggie stylist screen",
+   "files": [
+    "qullamaggie.csv",
+    "qullamaggie.md"
+   ],
+   "components": [
+    "qullamaggie_ep_gap.csv",
+    "qullamaggie_ep_gap.md",
+    "qullamaggie_parabolic_long.csv",
+    "qullamaggie_parabolic_long.md",
+    "qullamaggie_parabolic_short.csv",
+    "qullamaggie_parabolic_short.md",
+    "qullamaggie_rs_leaders.csv",
+    "qullamaggie_rs_leaders.md"
+   ],
+   "paired": true,
+   "note": "split into 8 component file(s)"
+  },
+  "reversal-bullish-3_55": {
+   "role": "Bonde reversal-bullish scan (cron #04)",
+   "files": [
+    "reversal-bullish-3_55.csv",
+    "reversal-bullish-3_55.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "short-candidates": {
+   "role": "parabolic short candidates",
+   "files": [
+    "short-candidates.md"
+   ],
+   "components": [],
+   "paired": false,
+   "note": "no .csv for this screen"
+  },
+  "stalk": {
+   "role": "master intersect near 20/50-DMA",
+   "files": [
+    "stalk.csv",
+    "stalk.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "stockbee": {
+   "role": "Bonde stylist screen",
+   "files": [
+    "stockbee.csv",
+    "stockbee.md"
+   ],
+   "components": [
+    "stockbee_4pct_breakout.csv",
+    "stockbee_4pct_breakout.md",
+    "stockbee_ep9m.csv",
+    "stockbee_ep9m.md"
+   ],
+   "paired": true,
+   "note": "split into 4 component file(s)"
+  },
+  "tier-a": {
+   "role": "convergence tier - >=3 stylists",
+   "files": [
+    "tier-a.csv",
+    "tier-a.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  }
+ },
+ "files": [
+  {
+   "name": "_regime-screener.json",
+   "bytes": 2373,
+   "role": "regime flags, screener source"
+  },
+  {
+   "name": "_regime.json",
+   "bytes": 2373,
+   "role": "regime flags and their inputs"
+  },
+  {
+   "name": "_summary.md",
+   "bytes": 2131,
+   "role": "machine digest of the brief"
+  },
+  {
+   "name": "ariel-hernandez.csv",
+   "bytes": 23364,
+   "role": "Hernandez theme funnel"
+  },
+  {
+   "name": "ariel-hernandez.md",
+   "bytes": 3566,
+   "role": "Hernandez theme funnel"
+  },
+  {
+   "name": "bonde_anticipation_coil.csv",
+   "bytes": 2345,
+   "role": "unclassified"
+  },
+  {
+   "name": "bonde_anticipation_coil.md",
+   "bytes": 843,
+   "role": "unclassified"
+  },
+  {
+   "name": "breadth-snapshot.csv",
+   "bytes": 63167,
+   "role": "intraday breadth snapshot (cron #10)"
+  },
+  {
+   "name": "breadth-snapshot.json",
+   "bytes": 8942,
+   "role": "intraday breadth snapshot (cron #10)"
+  },
+  {
+   "name": "breadth-snapshot.md",
+   "bytes": 9747,
+   "role": "intraday breadth snapshot (cron #10)"
+  },
+  {
+   "name": "breadth.md",
+   "bytes": 5318,
+   "role": "breadth + regime detail (cron #09)"
+  },
+  {
+   "name": "daily-sweep.md",
+   "bytes": 18484,
+   "role": "the narrative brief"
+  },
+  {
+   "name": "focus-rvol-snapshot.md",
+   "bytes": 7048,
+   "role": "intraday RVOL re-rank (cron #07)"
+  },
+  {
+   "name": "focus.csv",
+   "bytes": 8923,
+   "role": "convergence tier - >=2 stylists"
+  },
+  {
+   "name": "focus.md",
+   "bytes": 1995,
+   "role": "convergence tier - >=2 stylists"
+  },
+  {
+   "name": "hernandez_compression_vcp.csv",
+   "bytes": 3190,
+   "role": "unclassified"
+  },
+  {
+   "name": "hernandez_compression_vcp.md",
+   "bytes": 962,
+   "role": "unclassified"
+  },
+  {
+   "name": "hernandez_theme_group.csv",
+   "bytes": 20550,
+   "role": "unclassified"
+  },
+  {
+   "name": "hernandez_theme_group.md",
+   "bytes": 3478,
+   "role": "unclassified"
+  },
+  {
+   "name": "jeff-sun.csv",
+   "bytes": 221849,
+   "role": "Sun CANSLIM screen"
+  },
+  {
+   "name": "jeff-sun.md",
+   "bytes": 9703,
+   "role": "Sun CANSLIM screen"
+  },
+  {
+   "name": "jeff_sun_canslim.csv",
+   "bytes": 221849,
+   "role": "unclassified"
+  },
+  {
+   "name": "jeff_sun_canslim.md",
+   "bytes": 12385,
+   "role": "unclassified"
+  },
+  {
+   "name": "long-reversal-candidates.md",
+   "bytes": 746,
+   "role": "parabolic long candidates"
+  },
+  {
+   "name": "master.csv",
+   "bytes": 130594,
+   "role": "deduped union of all branches, capped"
+  },
+  {
+   "name": "master.md",
+   "bytes": 23461,
+   "role": "deduped union of all branches, capped"
+  },
+  {
+   "name": "peoplewish.csv",
+   "bytes": 127086,
+   "role": "peoplewish ADR/velocity screen"
+  },
+  {
+   "name": "peoplewish.md",
+   "bytes": 11573,
+   "role": "peoplewish ADR/velocity screen"
+  },
+  {
+   "name": "peoplewish_adr_velocity.csv",
+   "bytes": 127086,
+   "role": "peoplewish ADR/velocity screen component"
+  },
+  {
+   "name": "peoplewish_adr_velocity.md",
+   "bytes": 13099,
+   "role": "peoplewish ADR/velocity screen component"
+  },
+  {
+   "name": "pre-market-gapper.csv",
+   "bytes": 972,
+   "role": "pre-market gapper (cron #08)"
+  },
+  {
+   "name": "pre-market-gapper.md",
+   "bytes": 6186,
+   "role": "pre-market gapper (cron #08)"
+  },
+  {
+   "name": "qullamaggie.csv",
+   "bytes": 19796,
+   "role": "Qullamaggie stylist screen"
+  },
+  {
+   "name": "qullamaggie.md",
+   "bytes": 3517,
+   "role": "Qullamaggie stylist screen"
+  },
+  {
+   "name": "qullamaggie_ep_gap.csv",
+   "bytes": 1736,
+   "role": "Qullamaggie stylist screen component"
+  },
+  {
+   "name": "qullamaggie_ep_gap.md",
+   "bytes": 702,
+   "role": "Qullamaggie stylist screen component"
+  },
+  {
+   "name": "qullamaggie_parabolic_long.csv",
+   "bytes": 1744,
+   "role": "Qullamaggie stylist screen component"
+  },
+  {
+   "name": "qullamaggie_parabolic_long.md",
+   "bytes": 745,
+   "role": "Qullamaggie stylist screen component"
+  },
+  {
+   "name": "qullamaggie_parabolic_short.csv",
+   "bytes": 1077,
+   "role": "Qullamaggie stylist screen component"
+  },
+  {
+   "name": "qullamaggie_parabolic_short.md",
+   "bytes": 625,
+   "role": "Qullamaggie stylist screen component"
+  },
+  {
+   "name": "qullamaggie_rs_leaders.csv",
+   "bytes": 21862,
+   "role": "Qullamaggie stylist screen component"
+  },
+  {
+   "name": "qullamaggie_rs_leaders.md",
+   "bytes": 3916,
+   "role": "Qullamaggie stylist screen component"
+  },
+  {
+   "name": "reversal-bullish-3_55-near-misses.csv",
+   "bytes": 766,
+   "role": "unclassified"
+  },
+  {
+   "name": "reversal-bullish-3_55.csv",
+   "bytes": 852,
+   "role": "Bonde reversal-bullish scan (cron #04)"
+  },
+  {
+   "name": "reversal-bullish-3_55.md",
+   "bytes": 14288,
+   "role": "Bonde reversal-bullish scan (cron #04)"
+  },
+  {
+   "name": "short-candidates.md",
+   "bytes": 609,
+   "role": "parabolic short candidates"
+  },
+  {
+   "name": "stalk.csv",
+   "bytes": 9333,
+   "role": "master intersect near 20/50-DMA"
+  },
+  {
+   "name": "stalk.md",
+   "bytes": 2032,
+   "role": "master intersect near 20/50-DMA"
+  },
+  {
+   "name": "stockbee.csv",
+   "bytes": 88052,
+   "role": "Bonde stylist screen"
+  },
+  {
+   "name": "stockbee.md",
+   "bytes": 12129,
+   "role": "Bonde stylist screen"
+  },
+  {
+   "name": "stockbee_4pct_breakout.csv",
+   "bytes": 44758,
+   "role": "Bonde stylist screen component"
+  },
+  {
+   "name": "stockbee_4pct_breakout.md",
+   "bytes": 7245,
+   "role": "Bonde stylist screen component"
+  },
+  {
+   "name": "stockbee_ep9m.csv",
+   "bytes": 99575,
+   "role": "Bonde stylist screen component"
+  },
+  {
+   "name": "stockbee_ep9m.md",
+   "bytes": 13433,
+   "role": "Bonde stylist screen component"
+  },
+  {
+   "name": "tier-a.csv",
+   "bytes": 6107,
+   "role": "convergence tier - >=3 stylists"
+  },
+  {
+   "name": "tier-a.md",
+   "bytes": 1414,
+   "role": "convergence tier - >=3 stylists"
+  }
+ ],
+ "notes": [
+  "breadth has no matching .csv in this directory",
+  "focus-rvol-snapshot has no matching .csv in this directory",
+  "long-reversal-candidates has no matching .csv in this directory",
+  "peoplewish is published as 2 component file(s) with no aggregate - a consumer globbing peoplewish.csv will not see it",
+  "qullamaggie is published as 8 component file(s) with no aggregate - a consumer globbing qullamaggie.csv will not see it",
+  "short-candidates has no matching .csv in this directory",
+  "stockbee is published as 4 component file(s) with no aggregate - a consumer globbing stockbee.csv will not see it",
+  "no _source-health.json - source health for this run exists only in the prose table in daily-sweep.md"
+ ]
+}

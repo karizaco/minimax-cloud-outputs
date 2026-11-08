@@ -1,0 +1,384 @@
+{
+ "_schema": "daily-screens-manifest-v1",
+ "date": "2026-10-22",
+ "data_as_of": null,
+ "session_lag_days": null,
+ "canonical": {
+  "brief": "daily-sweep.md",
+  "summary": "_summary.md",
+  "machine": [
+   "_regime.json"
+  ],
+  "raw": [
+   "_breadth_raw.json"
+  ]
+ },
+ "screens": {
+  "ariel-hernandez": {
+   "role": "Hernandez theme funnel",
+   "files": [
+    "ariel-hernandez.md"
+   ],
+   "components": [],
+   "paired": false,
+   "note": "no .csv for this screen"
+  },
+  "breadth": {
+   "role": "breadth + regime detail (cron #09)",
+   "files": [
+    "breadth.md"
+   ],
+   "components": [],
+   "paired": false,
+   "note": "no .csv for this screen"
+  },
+  "focus": {
+   "role": "convergence tier - >=2 stylists",
+   "files": [
+    "focus.csv",
+    "focus.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "focus-rvol-snapshot": {
+   "role": "intraday RVOL re-rank (cron #07)",
+   "files": [
+    "focus-rvol-snapshot.md"
+   ],
+   "components": [],
+   "paired": false,
+   "note": "no .csv for this screen"
+  },
+  "jeff-sun": {
+   "role": "Sun CANSLIM screen",
+   "files": [
+    "jeff-sun.csv",
+    "jeff-sun.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "long-reversal-candidates": {
+   "role": "parabolic long candidates",
+   "files": [
+    "long-reversal-candidates.csv",
+    "long-reversal-candidates.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "master": {
+   "role": "deduped union of all branches, capped",
+   "files": [
+    "master.csv",
+    "master.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "peoplewish": {
+   "role": "peoplewish ADR/velocity screen",
+   "files": [
+    "peoplewish.csv",
+    "peoplewish.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "pre-market-gapper": {
+   "role": "pre-market gapper (cron #08)",
+   "files": [
+    "pre-market-gapper.csv",
+    "pre-market-gapper.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "qullamaggie": {
+   "role": "Qullamaggie stylist screen",
+   "files": [],
+   "components": [
+    "qullamaggie_ep.csv",
+    "qullamaggie_ep.md"
+   ],
+   "paired": false,
+   "note": "split into 2 component file(s)"
+  },
+  "reversal-bullish-3_55": {
+   "role": "Bonde reversal-bullish scan (cron #04)",
+   "files": [
+    "reversal-bullish-3_55.csv",
+    "reversal-bullish-3_55.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "short-candidates": {
+   "role": "parabolic short candidates",
+   "files": [
+    "short-candidates.csv",
+    "short-candidates.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "stalk": {
+   "role": "master intersect near 20/50-DMA",
+   "files": [
+    "stalk.csv",
+    "stalk.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "stockbee": {
+   "role": "Bonde stylist screen",
+   "files": [],
+   "components": [
+    "stockbee_4pct.csv",
+    "stockbee_4pct.md",
+    "stockbee_coil.csv",
+    "stockbee_coil.md",
+    "stockbee_ep9m.csv",
+    "stockbee_ep9m.md"
+   ],
+   "paired": false,
+   "note": "split into 6 component file(s)"
+  },
+  "tier-a": {
+   "role": "convergence tier - >=3 stylists",
+   "files": [
+    "tier-a.csv",
+    "tier-a.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  },
+  "volume-breakout": {
+   "role": "KSE volume-breakout cross-check",
+   "files": [
+    "volume-breakout.csv",
+    "volume-breakout.md"
+   ],
+   "components": [],
+   "paired": true,
+   "note": null
+  }
+ },
+ "files": [
+  {
+   "name": "_breadth_raw.json",
+   "bytes": 8446,
+   "role": "raw breadth input"
+  },
+  {
+   "name": "_regime.json",
+   "bytes": 1329,
+   "role": "regime flags and their inputs"
+  },
+  {
+   "name": "_summary.md",
+   "bytes": 2019,
+   "role": "machine digest of the brief"
+  },
+  {
+   "name": "ariel-hernandez.md",
+   "bytes": 3170,
+   "role": "Hernandez theme funnel"
+  },
+  {
+   "name": "breadth.md",
+   "bytes": 2551,
+   "role": "breadth + regime detail (cron #09)"
+  },
+  {
+   "name": "daily-sweep.md",
+   "bytes": 13027,
+   "role": "the narrative brief"
+  },
+  {
+   "name": "focus-rvol-snapshot.md",
+   "bytes": 3179,
+   "role": "intraday RVOL re-rank (cron #07)"
+  },
+  {
+   "name": "focus.csv",
+   "bytes": 4411,
+   "role": "convergence tier - >=2 stylists"
+  },
+  {
+   "name": "focus.md",
+   "bytes": 2224,
+   "role": "convergence tier - >=2 stylists"
+  },
+  {
+   "name": "jeff-sun.csv",
+   "bytes": 5123,
+   "role": "Sun CANSLIM screen"
+  },
+  {
+   "name": "jeff-sun.md",
+   "bytes": 2529,
+   "role": "Sun CANSLIM screen"
+  },
+  {
+   "name": "kullamagi_momentum.csv",
+   "bytes": 5056,
+   "role": "unclassified"
+  },
+  {
+   "name": "kullamagi_momentum.md",
+   "bytes": 2390,
+   "role": "unclassified"
+  },
+  {
+   "name": "long-reversal-candidates.csv",
+   "bytes": 3439,
+   "role": "parabolic long candidates"
+  },
+  {
+   "name": "long-reversal-candidates.md",
+   "bytes": 1657,
+   "role": "parabolic long candidates"
+  },
+  {
+   "name": "master.csv",
+   "bytes": 63931,
+   "role": "deduped union of all branches, capped"
+  },
+  {
+   "name": "master.md",
+   "bytes": 20123,
+   "role": "deduped union of all branches, capped"
+  },
+  {
+   "name": "peoplewish.csv",
+   "bytes": 5057,
+   "role": "peoplewish ADR/velocity screen"
+  },
+  {
+   "name": "peoplewish.md",
+   "bytes": 2505,
+   "role": "peoplewish ADR/velocity screen"
+  },
+  {
+   "name": "pre-market-gapper.csv",
+   "bytes": 3782,
+   "role": "pre-market gapper (cron #08)"
+  },
+  {
+   "name": "pre-market-gapper.md",
+   "bytes": 4155,
+   "role": "pre-market gapper (cron #08)"
+  },
+  {
+   "name": "qullamaggie_ep.csv",
+   "bytes": 5080,
+   "role": "Qullamaggie stylist screen component"
+  },
+  {
+   "name": "qullamaggie_ep.md",
+   "bytes": 2509,
+   "role": "Qullamaggie stylist screen component"
+  },
+  {
+   "name": "reversal-bullish-3_55.csv",
+   "bytes": 171,
+   "role": "Bonde reversal-bullish scan (cron #04)"
+  },
+  {
+   "name": "reversal-bullish-3_55.md",
+   "bytes": 3447,
+   "role": "Bonde reversal-bullish scan (cron #04)"
+  },
+  {
+   "name": "short-candidates.csv",
+   "bytes": 630,
+   "role": "parabolic short candidates"
+  },
+  {
+   "name": "short-candidates.md",
+   "bytes": 773,
+   "role": "parabolic short candidates"
+  },
+  {
+   "name": "stalk.csv",
+   "bytes": 17435,
+   "role": "master intersect near 20/50-DMA"
+  },
+  {
+   "name": "stalk.md",
+   "bytes": 5643,
+   "role": "master intersect near 20/50-DMA"
+  },
+  {
+   "name": "stockbee_4pct.csv",
+   "bytes": 4163,
+   "role": "Bonde stylist screen component"
+  },
+  {
+   "name": "stockbee_4pct.md",
+   "bytes": 2071,
+   "role": "Bonde stylist screen component"
+  },
+  {
+   "name": "stockbee_coil.csv",
+   "bytes": 5176,
+   "role": "Bonde stylist screen component"
+  },
+  {
+   "name": "stockbee_coil.md",
+   "bytes": 2258,
+   "role": "Bonde stylist screen component"
+  },
+  {
+   "name": "stockbee_ep9m.csv",
+   "bytes": 5065,
+   "role": "Bonde stylist screen component"
+  },
+  {
+   "name": "stockbee_ep9m.md",
+   "bytes": 2615,
+   "role": "Bonde stylist screen component"
+  },
+  {
+   "name": "tier-a.csv",
+   "bytes": 956,
+   "role": "convergence tier - >=3 stylists"
+  },
+  {
+   "name": "tier-a.md",
+   "bytes": 830,
+   "role": "convergence tier - >=3 stylists"
+  },
+  {
+   "name": "volume-breakout.csv",
+   "bytes": 5169,
+   "role": "KSE volume-breakout cross-check"
+  },
+  {
+   "name": "volume-breakout.md",
+   "bytes": 2227,
+   "role": "KSE volume-breakout cross-check"
+  }
+ ],
+ "notes": [
+  "ariel-hernandez has no matching .csv in this directory",
+  "breadth has no matching .csv in this directory",
+  "focus-rvol-snapshot has no matching .csv in this directory",
+  "qullamaggie is published as 2 component file(s) with no aggregate - a consumer globbing qullamaggie.csv will not see it",
+  "stockbee is published as 6 component file(s) with no aggregate - a consumer globbing stockbee.csv will not see it",
+  "no _source-health.json - source health for this run exists only in the prose table in daily-sweep.md"
+ ]
+}

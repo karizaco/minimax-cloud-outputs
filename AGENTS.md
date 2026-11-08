@@ -36,6 +36,24 @@ Standing conventions for this cloud workspace. Applies to every session run here
   in the artifact body, not only in a deviations list.
 - Read-only by default. No trade, direction, or sizing language unless the task explicitly asks for it.
 
+### Artifact naming and shape
+
+- **Basenames must be Windows-safe** — no `: < > " | ? *`, and never a bare clock time.
+  `:` is illegal in a Windows filename and this repo is checked out on Windows, while
+  the crons run on Linux and will emit one without complaint. The routine's *name*
+  (`04-reversal-bullish-3:55`) keeps its colon — that is a task id, not a filename.
+- **No filename inside a dated directory repeats that directory's date.** The date is
+  already in the directory name.
+- **A dated directory carries a `_manifest.json`** naming the brief, the machine
+  artifacts, and any screen published as components rather than as an aggregate.
+- **A rename updates the prose that references it, in the same commit.** A renamed file
+  with stale in-text references is a broken link, not a rename.
+- **A routine may leave a machine-readable decision record** — the rules it applied
+  and what they excluded — beside the artifact it explains.
+
+Full rules: `refs/artifact-contract.md` and `refs/decisions-contract.md`.
+Check them all with `python3 scripts/check_artifacts.py`.
+
 ## Git — shared outputs repo
 
 `karizaco/minimax-cloud-outputs` is **shared across crons** — several other cron jobs commit to `main`.
