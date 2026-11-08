@@ -1,0 +1,50 @@
+{
+ "_schema": "daily-screens-decisions-v1",
+ "date": "2026-11-03",
+ "data_as_of": "2026-11-02",
+ "session_lag_days": 1,
+ "derived_from": "daily-screens/2026-11-03/_results.json",
+ "rules": {
+  "stylists": [],
+  "focus": {
+   "min_stylists": 2,
+   "max_names": 12
+  },
+  "tier_a": {
+   "min_stylists": 3,
+   "max_names": 8
+  }
+ },
+ "counts": {
+  "candidates": 868,
+  "master": 200,
+  "focus": 12,
+  "tier_a": 8,
+  "tier_a_pool": 12,
+  "stalk": 48,
+  "short": 15,
+  "long": 11
+ },
+ "dropped": {
+  "tier_a_truncated": true,
+  "tier_a_pool_size": 12,
+  "tier_a_published": 8,
+  "tier_a": []
+ },
+ "screen_coverage": {},
+ "regime": {
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "breadth_pct_spx": 65.18847006651885
+ },
+ "source_health": {
+  "machine_file": null,
+  "prose_only": true
+ },
+ "notes": [
+  "Tier-A was truncated by its cap: 12 names met the >=3-stylist rule, 8 were published, 0 were dropped. The dropped names are listed under dropped.tier_a.",
+  "session lag 1 day(s): the screen metrics describe the 2026-11-02 session, the 'today' columns are the 2026-11-03 settled close",
+  "source health for this run exists only in the prose table in daily-sweep.md; there is no _source-health.json"
+ ]
+}

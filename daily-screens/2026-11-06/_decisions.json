@@ -1,0 +1,111 @@
+{
+ "_schema": "daily-screens-decisions-v1",
+ "date": "2026-11-06",
+ "data_as_of": "2026-11-05",
+ "session_lag_days": 1,
+ "derived_from": "daily-screens/2026-11-06/_results.json",
+ "rules": {
+  "stylists": [],
+  "focus": {
+   "min_stylists": 2,
+   "max_names": 12
+  },
+  "tier_a": {
+   "min_stylists": 3,
+   "max_names": 8
+  }
+ },
+ "counts": {
+  "candidates": 900,
+  "master": 200,
+  "focus": 12,
+  "tier_a": 8,
+  "tier_a_pool": 12,
+  "stalk": 2,
+  "short_candidates": 7,
+  "long_reversal_candidates": 92
+ },
+ "dropped": {
+  "tier_a_truncated": true,
+  "tier_a_pool_size": 12,
+  "tier_a_published": 8,
+  "tier_a": [
+   "JOBY",
+   "WRBY",
+   "VRDN",
+   "XNCR"
+  ]
+ },
+ "screen_coverage": {
+  "A_stockbee_4pct": {
+   "rows_passing": 83,
+   "rows_kept": 83,
+   "complete": true
+  },
+  "B_stockbee_ep9m": {
+   "rows_passing": 364,
+   "rows_kept": 364,
+   "complete": true
+  },
+  "C_qullamaggie_rs": {
+   "rows_passing": 57,
+   "rows_kept": 57,
+   "complete": true
+  },
+  "D_qullamaggie_ep": {
+   "rows_passing": 12,
+   "rows_kept": 12,
+   "complete": true
+  },
+  "E_qullamaggie_5d_gainers": {
+   "rows_passing": 7,
+   "rows_kept": 7,
+   "complete": true
+  },
+  "F_qullamaggie_5d_losers": {
+   "rows_passing": 92,
+   "rows_kept": 92,
+   "complete": true
+  },
+  "G_peoplewish": {
+   "rows_passing": 315,
+   "rows_kept": 315,
+   "complete": true
+  },
+  "H_hernandez_theme": {
+   "rows_passing": 99,
+   "rows_kept": 99,
+   "complete": true
+  },
+  "K_stockbee_anticipation": {
+   "rows_passing": 181,
+   "rows_kept": 181,
+   "complete": true
+  },
+  "TV_volume_breakout": {
+   "rows_passing": 14,
+   "rows_kept": 14,
+   "complete": true
+  },
+  "jeff_sun_canslim": {
+   "rows_passing": 27,
+   "rows_kept": 27,
+   "complete": true
+  }
+ },
+ "regime": {
+  "size_cut_pct": 0,
+  "uncertainty": true,
+  "late_cycle": false,
+  "breadth_pct_spx": 57.26
+ },
+ "source_health": {
+  "machine_file": null,
+  "prose_only": true
+ },
+ "notes": [
+  "Tier-A was truncated by its cap: 12 names met the >=3-stylist rule, 8 were published, 4 were dropped. The dropped names are listed under dropped.tier_a.",
+  "session lag 1 day(s): the screen metrics describe the 2026-11-05 session, the 'today' columns are the 2026-11-06 settled close",
+  "source health for this run exists only in the prose table in daily-sweep.md; there is no _source-health.json"
+ ]
+}

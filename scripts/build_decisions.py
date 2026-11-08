@@ -43,6 +43,48 @@ def as_int(v):
         return None
 
 
+def find_value(obj, key):
+    """Find a scalar under `key`, at the top level or one level down.
+
+    The _results.json layout has changed between runs: `candidates` is a list of
+    candidate records in some and an object in others, and the tier lists sit
+    beside it rather than inside it. Rather than hard-coding one shape, look in
+    the top level first and then one level down.
+    """
+    if key in obj and not isinstance(obj[key], (list, dict)):
+        return obj[key]
+    for val in obj.values():
+        if isinstance(val, dict) and key in val and not isinstance(val[key], (list, dict)):
+            return val[key]
+    return None
+
+
+def find_dict(obj, key):
+    """Find a mapping under `key`, at the top level or one level down."""
+    v = obj.get(key)
+    if isinstance(v, dict):
+        return v
+    for val in obj.values():
+        if isinstance(val, dict):
+            inner = val.get(key)
+            if isinstance(inner, dict):
+                return inner
+    return {}
+
+
+def find_list(obj, key):
+    """Find a list of ticker strings under `key`, at the top level or one level down."""
+    v = obj.get(key)
+    if isinstance(v, list):
+        return v
+    for val in obj.values():
+        if isinstance(val, dict):
+            inner = val.get(key)
+            if isinstance(inner, list):
+                return inner
+    return []
+
+
 def build(date_dir, date):
     results_path = os.path.join(date_dir, "_results.json")
     if not os.path.exists(results_path):
@@ -53,12 +95,13 @@ def build(date_dir, date):
     except (OSError, ValueError):
         return None
 
-    thresholds = res.get("thresholds") or {}
-    stylists = res.get("stylist_buckets") or []
-    counts = res.get("counts") or {}
-    candidates = res.get("candidates") or {}
-    coverage = res.get("screen_coverage") or {}
-    regime = res.get("regime") or {}
+    thresholds = find_dict(res, "thresholds")
+    stylists = find_value(res, "stylist_buckets") or []
+    if not isinstance(stylists, list):
+        stylists = []
+    counts = find_dict(res, "counts")
+    coverage = find_dict(res, "screen_coverage")
+    regime = find_dict(res, "regime")
 
     rules = {
         "stylists": stylists,
@@ -73,12 +116,12 @@ def build(date_dir, date):
     }
 
     # The truncation decision: a pool of names met the rule, the cap cut it.
-    published = candidates.get("tier_a") or []
-    pool_members = res.get("tier_a_pool_members") or []
-    pool_size = res.get("tier_a_pool")
+    published = find_list(res, "tier_a")
+    pool_members = find_list(res, "tier_a_pool_members")
+    pool_size = find_value(res, "tier_a_pool")
     if pool_size is None:
         pool_size = counts.get("tier_a_pool")
-    truncated = bool(res.get("tier_a_truncated"))
+    truncated = bool(find_value(res, "tier_a_truncated"))
     dropped_names = [n for n in pool_members if n not in published]
 
     coverage_out = {}

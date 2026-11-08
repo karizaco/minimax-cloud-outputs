@@ -44,7 +44,22 @@ EXTERNAL_NAMES = {
     "mcp_bridge.py", "preopen_feed.py", "push_artifact.sh", "verify_delivery.sh",
     "probe_mcp.py", "relvol_screen.py", "reversal_bullish.py", "screen.py",
     "check_bonde_artifact.py", "apply_skip_marker.py", "gen_roster.py",
+    "01-weekly-mcp-health-check.md", "02-asia-pre-market-reactions.md",
+    "same_day_prints.py", "premarket_pull.py", "premarket_universe.py",
 }
+
+# Real paths that live outside this repo. Each is listed because an artifact
+# points at it and a reader following the pointer today would not find it here.
+EXTERNAL_PATHS = {
+    "research/watchlist.yaml":
+        "the personal watchlist on the Mavis host; the published replacement is refs/watchlist.yaml",
+    "research/watchlist.README.md":
+        "schema and publish instructions, in the migration repo",
+}
+
+# Directory names that exist in more than one repo, so a reference under them
+# cannot be resolved to "this repo" without guessing.
+AMBIGUOUS_DIRS = {"scripts"}
 
 # Path segments that are placeholders rather than literal directories.
 TEMPLATE_SEGMENTS = {"YYYY", "yyyy", "Wnn", "WNN", "cron_date", "date", "HHMM"}
@@ -78,9 +93,30 @@ def walk_files(ext):
 def is_external(token):
     if token.startswith(EXTERNAL_PREFIXES):
         return True
+    if token in EXTERNAL_PATHS:
+        return True
     if os.path.basename(token) in EXTERNAL_NAMES and "/" not in token:
         return True
     return False
+
+
+def is_repo_candidate(token, repo_dirs):
+    """Is this token claiming to be a path in THIS repo?
+
+    A path with a directory is a candidate when it starts with a directory that
+    exists here - unless that directory name is ambiguous across repos.
+
+    A bare name is a candidate only when it is artifact-shaped (it carries a
+    dash). A runtime scratch file (`avg10.json`, `company_tickers.json`,
+    `_VIX.json`) is not an artifact, and neither is a migration-repo prompt
+    (`SKILL.md`), so those are not this check's business.
+    """
+    if "/" in token:
+        first = token.split("/")[0]
+        if first in AMBIGUOUS_DIRS:
+            return False
+        return first in repo_dirs
+    return "-" in token
 
 
 def has_placeholder(token):
@@ -154,7 +190,9 @@ def check_links():
     checked = 0
     external = 0
     placeholder = 0
+    not_ours = 0
     names = all_basenames()
+    repo_dirs = set(repo_top_dirs())
 
     for md in walk_files(".md"):
         rel = os.path.relpath(md, REPO)
@@ -175,14 +213,17 @@ def check_links():
                 if is_external(token):
                     external += 1
                     continue
+                if not is_repo_candidate(token, repo_dirs):
+                    not_ours += 1
+                    continue
                 checked += 1
                 if resolve(token, md, names) is None:
                     findings.append(
                         "links: %s:%d -> `%s` does not resolve" % (rel, lineno, token)
                     )
 
-    print("links: %d in-repo references checked, %d external skipped, %d templated skipped"
-          % (checked, external, placeholder))
+    print("links: %d in-repo references checked, %d external skipped, "
+          "%d templated skipped, %d not a path in this repo" % (checked, external, placeholder, not_ours))
     return findings, checked
 
 

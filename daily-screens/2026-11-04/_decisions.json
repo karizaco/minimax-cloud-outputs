@@ -1,0 +1,46 @@
+{
+ "_schema": "daily-screens-decisions-v1",
+ "date": "2026-11-04",
+ "data_as_of": null,
+ "session_lag_days": null,
+ "derived_from": "daily-screens/2026-11-04/_results.json",
+ "rules": {
+  "stylists": [],
+  "focus": {
+   "min_stylists": null,
+   "max_names": null
+  },
+  "tier_a": {
+   "min_stylists": null,
+   "max_names": null
+  }
+ },
+ "counts": {
+  "master": 200,
+  "stalk": 17,
+  "focus": 12,
+  "tier_a": 8,
+  "total_candidates": 848
+ },
+ "dropped": {
+  "tier_a_truncated": true,
+  "tier_a_pool_size": 13,
+  "tier_a_published": 8,
+  "tier_a": []
+ },
+ "screen_coverage": {},
+ "regime": {
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "breadth_pct_spx": 71.0
+ },
+ "source_health": {
+  "machine_file": null,
+  "prose_only": true
+ },
+ "notes": [
+  "Tier-A was truncated by its cap: 13 names met the >=None-stylist rule, 8 were published, 0 were dropped. The dropped names are listed under dropped.tier_a.",
+  "source health for this run exists only in the prose table in daily-sweep.md; there is no _source-health.json"
+ ]
+}
