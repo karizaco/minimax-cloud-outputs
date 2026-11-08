@@ -45,7 +45,7 @@ passing all eight of Bonde's published criteria, out of 25 that cleared the five
 | `peoplewish.md` / `.csv` | peoplewish — ADR + dollar volume + velocity |
 | `short-candidates.md` | parabolic short |
 | `long-reversal-candidates.md` | parabolic long |
-| `reversal-bullish-3:55.md` / `.csv` | Bonde 8-criteria reversal bullish + full reject funnel |
+| `reversal-bullish-3_55.md` / `.csv` | Bonde 8-criteria reversal bullish + full reject funnel |
 | `master.md` / `.csv` | deduped union (capped 200) |
 | `stalk.md` / `.csv` | master ∩ near 20/50-DMA |
 | `focus.md` / `.csv` | master ∩ ≥3 screens or top-5 velocity |
@@ -68,7 +68,7 @@ passing all eight of Bonde's published criteria, out of 25 that cleared the five
 
 The sweep is a screening procedure. Steps 6 (pre-market gapper, 09:00 ET), 7 (intraday RVOL re-rank, 09:45–11:15 ET)
 and the reversal-bullish entry window (15:30–16:00 ET) are all either outside this fire time or require a live
-feed. `reversal-bullish-3:55.md` is computed on the 2026-10-22 settled close, so it is valid for next-session
+feed. `reversal-bullish-3_55.md` is computed on the 2026-10-22 settled close, so it is valid for next-session
 execution, not for an entry that has already passed.
 
 ## Source health — read before using this list

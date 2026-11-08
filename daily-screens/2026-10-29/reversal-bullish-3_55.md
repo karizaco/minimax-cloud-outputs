@@ -111,5 +111,5 @@ Two details that change the numbers and are worth stating explicitly:
 
 ## Files
 
-- `daily-screens/2026-10-29/reversal-bullish-3:55.md` — this report
-- `daily-screens/2026-10-29/reversal-bullish-3:55.csv` — 5 rows, one per mechanical passer, with every criterion metric, the live 10-29 quote, the body-low stop, the verdict and `_source`
+- `daily-screens/2026-10-29/reversal-bullish-3_55.md` — this report
+- `daily-screens/2026-10-29/reversal-bullish-3_55.csv` — 5 rows, one per mechanical passer, with every criterion metric, the live 10-29 quote, the body-low stop, the verdict and `_source`

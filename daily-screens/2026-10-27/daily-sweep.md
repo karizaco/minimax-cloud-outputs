@@ -17,7 +17,7 @@
 | 6 | `ADR = AVG((high-low)/close, 20)` computed in SQL | Same formula, computed from Yahoo daily bars | No bar-level SQL available. | **Not a proxy** — true ADR, same definition. |
 | 7 | Anticipation (coil) uses `avg(close,7)/avg(close,65)` and a 10-day base | `close/SMA50` and the 1-month range | The scanner exposes no 7/65-day averages. | Coil screen is a **coarser approximation**; 3 names qualified. |
 | 8 | Hernandez step 3 = `yahoo-finance get_financial_statements` per candidate | Scanner `price_earnings_ttm` + `earnings_per_share_diluted_yoy_growth_ttm` | Avoids 30 extra single-ticker calls. | Fundamentals overlay is thinner than the spec's. |
-| 9 | 3:55 PM reversal-bullish scan (Bonde, 8 criteria) | **Not run by this cron** | The cron fired at 18:33 ET; that screen is only valid 15:30–16:00 ET. | Cron #4 owns `reversal-bullish-3:55.{md,csv}` in this directory — it was written today on a different (Nasdaq) path, flagged `degraded=true` there. |
+| 9 | 3:55 PM reversal-bullish scan (Bonde, 8 criteria) | **Not run by this cron** | The cron fired at 18:33 ET; that screen is only valid 15:30–16:00 ET. | Cron #4 owns `reversal-bullish-3_55.{md,csv}` in this directory — it was written today on a different (Nasdaq) path, flagged `degraded=true` there. |
 | 10 | IPO + high-short-float weekly refresh | **Not run** | Sunday-only screens; today is Tuesday. | No `ipo.md` / `high-short-float.md`. |
 | 11 | Pre-market gapper (09:00 ET) and live RVOL re-rank (09:45–11:15 ET) | **Not run by this cron** | Outside this cron's window. | Cron #8 / cron #7 own those files in this directory. |
 
@@ -196,7 +196,7 @@ The composite table is unchanged in shape from yesterday — Energy, Healthcare,
 | `short-candidates.md`, `long-reversal-candidates.md` | Kullamägi parabolic short / long (the same rows as the two sub-screen files, in the skill's naming). |
 | `<screen_name>.md` / `.csv` | One file per individual sub-screen (11 screens). |
 
-**Not produced by this cron, by design:** `ipo.md`, `high-short-float.md` (Sunday-only), `reversal-bullish-3:55.{md,csv}` (15:30–16:00 ET only — cron #4 owns it), `focus-rvol-snapshot.md` (09:45–11:15 ET only — cron #7 owns it), `pre-market-gapper.{md,csv}` (09:00 ET only — cron #8 owns it).
+**Not produced by this cron, by design:** `ipo.md`, `high-short-float.md` (Sunday-only), `reversal-bullish-3_55.{md,csv}` (15:30–16:00 ET only — cron #4 owns it), `focus-rvol-snapshot.md` (09:45–11:15 ET only — cron #7 owns it), `pre-market-gapper.{md,csv}` (09:00 ET only — cron #8 owns it).
 
 **Next step for the trader:** the 07:37 ET pre-market brief reads `_summary.md`; Tier-A + regime should be prepended there from `_regime-screener.json` (and cron #10's `_regime.json`, which covers the same ground from a different date — see the corroboration note below).
 

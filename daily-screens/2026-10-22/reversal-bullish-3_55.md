@@ -73,5 +73,5 @@ a sandbox network policy change worth escalating rather than re-running into.
 
 ---
 
-_No CSV rows. See `reversal-bullish-3:55.csv` (header only)._
+_No CSV rows. See `reversal-bullish-3_55.csv` (header only)._
 _Cloud Mavis cron #4 — audit log intentionally skipped per cron prompt._

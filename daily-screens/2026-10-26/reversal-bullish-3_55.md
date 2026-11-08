@@ -155,7 +155,7 @@ next-session resolution check**, so it cannot say whether CELH held its body low
 signal day.
 
 **Where to look instead:** the scheduled routine's own 2026-10-29 artifact
-(`daily-screens/2026-10-29/reversal-bullish-3:55.md`) applies all of the above correctly and is
+(`daily-screens/2026-10-29/reversal-bullish-3_55.md`) applies all of the above correctly and is
 the authoritative version of the workflow. This document is retained as a record of the
 manual scan, with its results corrected as noted.
 

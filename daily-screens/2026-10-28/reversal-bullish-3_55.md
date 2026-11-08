@@ -217,6 +217,6 @@ CELH ($28.00), ELF ($113.17) and GEN ($24.25).
 
 ## Files
 
-- `daily-screens/2026-10-28/reversal-bullish-3:55.md` — this report
-- `daily-screens/2026-10-28/reversal-bullish-3:55.csv` — one row per passer with all filter metrics, 10-28
+- `daily-screens/2026-10-28/reversal-bullish-3_55.md` — this report
+- `daily-screens/2026-10-28/reversal-bullish-3_55.csv` — one row per passer with all filter metrics, 10-28
   close-bar metrics, and the decision notes

@@ -17,7 +17,7 @@
 | 6 | `ADR = AVG((high-low)/close, 20)` computed in SQL | Same formula, computed from Yahoo daily bars | No bar-level SQL available. | **Not a proxy** — true ADR, same definition. |
 | 7 | Anticipation (coil) uses `avg(close,7)/avg(close,65)` and a 10-day base | `close/SMA50` and the 1-month range | The scanner exposes no 7/65-day averages. | Coil screen is a **coarser approximation**; 3 names qualified. |
 | 8 | Hernandez step 3 = `yahoo-finance get_financial_statements` per candidate | Scanner `price_earnings_ttm` + `earnings_per_share_diluted_yoy_growth_ttm` | Avoids 30 extra single-ticker calls. | Fundamentals overlay is thinner than the spec's. |
-| 9 | 3:55 PM reversal-bullish scan (Bonde, 8 criteria) | **Not run** | The cron fired at 18:33 ET; that screen is only valid 15:30–16:00 ET. | No `reversal-bullish-3:55` file. Not a failure — out of window. |
+| 9 | 3:55 PM reversal-bullish scan (Bonde, 8 criteria) | **Not run** | The cron fired at 18:33 ET; that screen is only valid 15:30–16:00 ET. | No `reversal-bullish-3_55` file. Not a failure — out of window. |
 | 10 | IPO + high-short-float weekly refresh | **Not run** | Sunday-only screens; today is Monday. | No `ipo.md` / `high-short-float.md`. |
 | 11 | Pre-market gapper (09:00 ET) and live RVOL re-rank (09:45–11:15 ET) | **Not run** | Outside this cron's window. | No `focus-rvol-snapshot.md`. |
 
@@ -184,7 +184,7 @@ The composite (1M + 3M + 6M, equal weight) puts Energy, Healthcare and Technolog
 | `short-candidates.md`, `long-reversal-candidates.md` | Kullamägi parabolic short / long (the same rows as the two sub-screen files, in the skill's naming). |
 | `<screen_name>.md` / `.csv` | One file per individual sub-screen (11 screens). |
 
-**Not produced, by design:** `ipo.md`, `high-short-float.md` (Sunday-only), `reversal-bullish-3:55.{md,csv}` (15:30–16:00 ET only), `focus-rvol-snapshot.md` (09:45–11:15 ET only).
+**Not produced, by design:** `ipo.md`, `high-short-float.md` (Sunday-only), `reversal-bullish-3_55.{md,csv}` (15:30–16:00 ET only), `focus-rvol-snapshot.md` (09:45–11:15 ET only).
 
 **Next step for the trader:** the 07:37 ET pre-market brief reads `_summary.md`; Tier-A + regime should be prepended there from `_regime-screener.json` (and cron #10's `_regime.json`, which covers the same ground from a different date — see the corroboration note below).
 

@@ -92,8 +92,8 @@ descriptive 3–5x band even though it satisfies the SQL gate. CELH (4.85x) and 
 
 ## Files
 
-- `daily-screens/2026-10-27/reversal-bullish-3:55.md` (this file)
-- `daily-screens/2026-10-27/reversal-bullish-3:55.csv` (one row per candidate, `_source=nasdaq_public_api`)
+- `daily-screens/2026-10-27/reversal-bullish-3_55.md` (this file)
+- `daily-screens/2026-10-27/reversal-bullish-3_55.csv` (one row per candidate, `_source=nasdaq_public_api`)
 
 ## Fallback and errors
 

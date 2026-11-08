@@ -7,7 +7,7 @@
 > mechanical tie-breaker instead of a discretionary read. One name changes, one verdict
 > changes, and two structural defects are documented below.
 >
-> The original artifact is retained unedited at `reversal-bullish-3:55.md` / `.csv`.
+> The original artifact is retained unedited at `reversal-bullish-3_55.md` / `.csv`.
 
 ## What the original run applied (the 8 gates, verbatim)
 

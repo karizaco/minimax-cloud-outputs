@@ -196,6 +196,6 @@ the TradingView snapshot drift, both disclosed above and neither affecting the p
 
 ## Files
 
-- `daily-screens/2026-11-02/reversal-bullish-3:55.md` (this file)
-- `daily-screens/2026-11-02/reversal-bullish-3:55.csv` — 3 canonical passers + 1 live-bar near-miss, with
+- `daily-screens/2026-11-02/reversal-bullish-3_55.md` (this file)
+- `daily-screens/2026-11-02/reversal-bullish-3_55.csv` — 3 canonical passers + 1 live-bar near-miss, with
   every gate value, both stop treatments, and a `verdict` column
