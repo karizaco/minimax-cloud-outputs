@@ -148,10 +148,26 @@ def build(date_dir, date):
 
     notes = []
     if truncated:
+        rule = rules["tier_a"]["min_stylists"]
+        rule_txt = "the %s-stylist rule" % rule if rule is not None else "the tier rule"
         notes.append(
-            "Tier-A was truncated by its cap: %s names met the >=%s-stylist rule, %d were "
-            "published, %d were dropped. The dropped names are listed under dropped.tier_a."
-            % (pool_size, rules["tier_a"]["min_stylists"], len(published), len(dropped_names))
+            "Tier-A was truncated by its cap: %s names met %s, %d were published, %d were "
+            "dropped. The dropped names are listed under dropped.tier_a."
+            % (pool_size, rule_txt, len(published), len(dropped_names))
+        )
+    if truncated and pool_members and not dropped_names:
+        notes.append(
+            "the cap removed names, but this run's _results.json does not carry the pool "
+            "members, so the dropped names cannot be listed from it"
+        )
+    if not thresholds:
+        notes.append(
+            "this run's _results.json does not carry the thresholds, so the rule that "
+            "produced each tier is not recorded here"
+        )
+    if not coverage:
+        notes.append(
+            "this run's _results.json does not carry the per-branch coverage assertion"
         )
     if lag:
         notes.append(

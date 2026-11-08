@@ -40,7 +40,9 @@
   "prose_only": true
  },
  "notes": [
-  "Tier-A was truncated by its cap: 13 names met the >=None-stylist rule, 8 were published, 0 were dropped. The dropped names are listed under dropped.tier_a.",
+  "Tier-A was truncated by its cap: 13 names met the tier rule, 8 were published, 0 were dropped. The dropped names are listed under dropped.tier_a.",
+  "this run's _results.json does not carry the thresholds, so the rule that produced each tier is not recorded here",
+  "this run's _results.json does not carry the per-branch coverage assertion",
   "source health for this run exists only in the prose table in daily-sweep.md; there is no _source-health.json"
  ]
 }

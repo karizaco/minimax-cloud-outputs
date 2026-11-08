@@ -110,7 +110,7 @@
   "prose_only": true
  },
  "notes": [
-  "Tier-A was truncated by its cap: 12 names met the >=3-stylist rule, 8 were published, 4 were dropped. The dropped names are listed under dropped.tier_a.",
+  "Tier-A was truncated by its cap: 12 names met the 3-stylist rule, 8 were published, 4 were dropped. The dropped names are listed under dropped.tier_a.",
   "session lag 1 day(s): the screen metrics describe the 2026-11-05 session, the 'today' columns are the 2026-11-06 settled close",
   "source health for this run exists only in the prose table in daily-sweep.md; there is no _source-health.json"
  ]
