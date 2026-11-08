@@ -1,9 +1,9 @@
 {
- "audit_date_et": "2026-11-06",
- "audit_run_et": "2026-11-07T07:05:26-05:00",
- "origin_main_sha": "aa18742",
- "due": 20,
- "delivered": 20,
+ "audit_date_et": "2026-11-07",
+ "audit_run_et": "2026-11-08T07:07:48-05:00",
+ "origin_main_sha": "8ea9098",
+ "due": 1,
+ "delivered": 1,
  "missing": 0,
  "skipped_by_design_count": 0,
  "stale_routines": 0,
@@ -16,102 +16,102 @@
  "routines": {
   "19-earnings-reminder-daily": {
    "routine": "19-earnings-reminder-daily",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "02-asia-pre-market-reactions": {
    "routine": "02-asia-pre-market-reactions",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "15-earnings-reaction-scanner": {
    "routine": "15-earnings-reaction-scanner",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "26-agentic-pre-market-brief": {
    "routine": "26-agentic-pre-market-brief",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "08-pre-market-gapper": {
    "routine": "08-pre-market-gapper",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "92a-preopen-catalyst-capture": {
    "routine": "92a-preopen-catalyst-capture",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "25-ntrt-gap-brief-daily": {
    "routine": "25-ntrt-gap-brief-daily",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "26b-agentic-pre-market-brief-refresh": {
    "routine": "26b-agentic-pre-market-brief-refresh",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "07-focus-rvol-09:45": {
    "routine": "07-focus-rvol-09:45",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "92b-preopen-catalyst-capture": {
    "routine": "92b-preopen-catalyst-capture",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "17-us-stocks-in-play-open": {
    "routine": "17-us-stocks-in-play-open",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "12-cross-asset-correlation": {
    "routine": "12-cross-asset-correlation",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "10-breadth-snapshot": {
    "routine": "10-breadth-snapshot",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "17-us-stocks-in-play": {
    "routine": "17-us-stocks-in-play",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "04-reversal-bullish-3:55": {
    "routine": "04-reversal-bullish-3:55",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "20-eod-watchlist-csv": {
    "routine": "20-eod-watchlist-csv",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "05-eod-international-daily": {
    "routine": "05-eod-international-daily",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "16-unusual-options-flow": {
    "routine": "16-unusual-options-flow",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "09-daily-sweep-18:30": {
    "routine": "09-daily-sweep-18:30",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "23-agentic-post-market-brief": {
    "routine": "23-agentic-post-market-brief",
-   "state": "delivered",
+   "state": "not_due",
    "streak": 0
   },
   "01-weekly-mcp-health-check": {
@@ -131,7 +131,7 @@
   },
   "06-pattern-study-backlog": {
    "routine": "06-pattern-study-backlog",
-   "state": "not_due",
+   "state": "delivered",
    "streak": 0
   },
   "22-weekly-market-recap-preview": {
