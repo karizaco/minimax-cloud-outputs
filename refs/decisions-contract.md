@@ -32,6 +32,20 @@ model reasoning. A decision record says *what rule ran and what it excluded*; th
 artifact it sits beside says *what that means*. Keeping the two apart is what stops
 the record from becoming a second, divergent copy of the data.
 
+## Coverage — and where it stops
+
+`_decisions.json` exists only for a dated directory that has a `_results.json`. As of
+2026-11-08 that is **4 of the 31** dated directories (2026-11-03 through 2026-11-06).
+The earlier 27 predate `_results.json`, and a decision record cannot be built for
+them without inventing one — so none is.
+
+There is a second limit, inside a run. A record is only as good as the `_results.json`
+it came from. The 2026-11-04 file predates the current schema: it carries no
+thresholds, no per-branch coverage and no tier-A pool members. Its record says so,
+rather than presenting `null` thresholds as if they were a rule and an empty dropped
+list as if nothing had been dropped. **A record that states what it does not know is
+useful; one that silently omits it is worse than no record at all.**
+
 ## The schema
 
 `_schema: "daily-screens-decisions-v1"`. Written by `scripts/build_decisions.py`,

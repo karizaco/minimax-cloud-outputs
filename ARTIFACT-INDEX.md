@@ -157,7 +157,24 @@ python3 scripts/build_decisions.py                    # regenerate the decision 
 The `links` check is the one that pays for itself. Commit `6569109` renamed 76 colon
 paths to underscores but left the prose pointing at the old names; twenty in-repo
 references were still broken when it landed, and this check finds that class of rot
-before the next commit rather than a reader finding it later.
+before the next commit rather than a reader finding it later. It earned its keep the
+first time it ran: it caught that archiving `daily-screens/breadth/` had invalidated two
+references to it, in the 2026-10-26 and 2026-10-27 briefs.
+
+**State as of 2026-11-08:** all three checks are clean. The link check examines 619
+in-repo references, skips 205 that point at another repo or at a host path, 2 that
+are templated, and 557 that are not paths in this repo at all — each category is
+counted and printed rather than silently dropped. The convention check records 112
+shape differences across the dated directories; none is an error, and all are now
+visible in `_manifest.json` instead of only in a glob's silence.
+
+**The decision records cover less than you might expect.** Only 4 of the 31 dated
+directories have a `_results.json` — 2026-11-03 through 2026-11-06 — and only those
+4 have a `_decisions.json`. The earlier 27 directories predate that artifact, and no
+decision record can be built for them without inventing one. The 2026-11-04 record
+shows the other limit: that run's `_results.json` predates the current schema, so it
+carries no thresholds, no per-branch coverage and no tier-A pool members, and the
+record says so rather than presenting nulls as facts.
 
 Two contracts govern the shape of what these scripts check:
 
