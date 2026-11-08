@@ -1,0 +1,257 @@
+# Artifact Index — minimax-cloud-outputs
+
+**Source:** direct read of the working tree at `C:\Users\admin\Projects\minimax-cloud-outputs`, 2026-11-08.
+**Build time:** 2026-11-08. **Covers:** artifacts dated 2026-09-28 → 2026-11-06 (the full tracked range).
+**Standard applied:** `AGENTS.md` (provenance line, deviations near the top, tables for data + prose for interpretation).
+
+> **Deviations and known gaps in this index, stated up front.**
+>
+> 1. **This is a hand-written map, not a generated one.** No build script regenerates it, so it will
+>    go stale as routines are added or directories retired. Treat it as accurate as of the date above.
+> 2. **Directory file counts are approximate** for the large families. The shape of every directory is
+>    verified from files that were opened; the counts are not shell-verified.
+> 3. **This index does not re-derive any number.** Every figure quoted below is copied from the artifact
+>    named next to it. Where two artifacts disagree, both are cited and the disagreement is stated.
+> 4. **The routines' own prompts and skills live in another repo** (`karizaco/maxhermes-migration`).
+>    Several files in `refs/` are pointers to it rather than copies — see *Pointers vs content* below.
+
+---
+
+## What this repo is
+
+`minimax-cloud-outputs` is the **shared artifact bus** for a fleet of roughly twenty cron-driven market
+screening and analysis routines covering the US, Asia-Pacific and Europe. The routines run on a
+schedule, write one artifact per fire, and push here. Multiple crons commit to `main` on the same day,
+so this repo is a **ledger of what was produced and published**, not a codebase with a build.
+
+Two things are true here that are not true of most repos:
+
+- **Artifacts are dated by the session they describe, not the day they were written.** A `2026-11-06`
+  artifact may describe the `2026-11-05` session. Several artifacts carry two dates explicitly (for
+  example `daily-screens/2026-11-06/daily-sweep.md` reads "the screen itself is one session behind:
+  shibui's newest settled session at fire time was **2026-11-05**, so every screen metric below
+  describes the 2026-11-05 tape while every 'today' figure is the 2026-11-06 settled close").
+  Always read the date line before trusting a number.
+- **The repo has no history of the routines themselves.** Only their outputs. If you want to know what
+  a routine does, read `cron-prompts/` and `scripts/`, or the skill in the migration repo.
+
+## The three artifact kinds
+
+Almost every file in this repo falls into one of three kinds. Telling them apart is the fastest way
+to know what to do with a file you have found.
+
+| Kind | File shapes | What it gives you | Rule of thumb |
+|---|---|---|---|
+| **Narrative brief** | `.md` with tables + prose | The **read**: what happened, why, what was excluded, what is uncertain | Read this first. It is the only layer that explains itself. |
+| **Data snapshot** | `.csv`, most `.json` | The **numbers**: wide universe tables at a point in time | Read only when you need to recompute. Stale on arrival; never has caveats attached. |
+| **Provenance record** | `_manifest.json`, `ledger.md`, `.acceptance.txt`, `.log`, `SKIPPED_*.md`, `_excluded.json` | The **audit trail**: floors, exclusions, QC results, skip reasons | Read when you doubt the brief. This is where the failure modes live. |
+
+**A fourth kind sits alongside them: the specification.** `cron-prompts/*.HARDENED.md`,
+`scripts/*.py` and `ntrt/_pipeline/*.py` encode the routines' actual decision rules — window gates,
+volume floors, caps, ranking order. These are not artifacts; they are the procedures the artifacts
+were produced by, and they are the closest thing this repo has to a record of how the routines think.
+
+## Directory map
+
+All 21 top-level directories. "Live" means the routine is still producing into it.
+
+| Directory | Written by | Contents | Live? |
+|---|---|---|---|
+| `daily-screens/` | cron #09 daily screener sweep (18:30 ET), #10 intraday breadth | Dated dirs, each with ~40 files: `daily-sweep.md`, `_summary.md`, `_regime.json`, `_results.json`, `_cache.json`, `breadth.md`, and per-stylist `.md`+`.csv` pairs | **Yes** — largest family (~500 files) |
+| `daily-briefs/` | cron #26 pre-market brief (+09:20 refresh), #23 post-market | `<date>-pre-market.md` + `.csv`, `<date>-pre-market-refresh.md`, `<date>-post-market.md` | **Yes** |
+| `ntrt/` | cron #17 pre-open gap brief | `<date>.md` + `<date>.csv`; `_pipeline/` (10 scripts); `_raw/` (~30 JSON intermediates + 4 logs) | **Yes** |
+| `us-eod/` | cron #20 EOD US snapshot (16:00 ET) | `<date>.csv` + `<date>.md` (early days used `.meta.md`), per-market subdirs, `2026-11-06.manifest.json` + `.acceptance.txt` | **Yes** |
+| `international-eod/` | cron #05 EOD international | Per-date dir: 16 region `.csv`, `summary.md`, `_manifest.json`, `_excluded.json`, `_carryover.json` | **Yes** |
+| `us-stocks-in-play/` | cron #17 (pre-close / open / midday) | `<date>.md`, `-open.md`, `-midday.md`, `-candidates.csv`, `-open-candidates.csv`, `-close-candidates.csv`, `logs.jsonl` | **Yes** |
+| `earnings/` | cron #15 reaction scanner, #19 reminder | `<date>-reactions.md`, `<date>-reminders.md`, `<date>-catalyst-targets.json` | **Yes** |
+| `preopen-feed/` | cron 92a / 92b checkpoints (08:30, 09:50 ET) | `<date>-<HHMM>.jsonl` tape + `<date>-<HHMM>.md` digest | **Yes** |
+| `options-flow/` | cron #16 unusual options flow | `<date>.md` | **Yes** |
+| `asia-pre-market/` | cron #02 Asia pre-market reactions | `<date>.md` (+ one `.csv`) | **Yes** |
+| `cross-asset/` | cross-asset routine | `<date>.md` | **Yes** |
+| `macro-calendar/` | macro calendar routine | `week-ahead` / `midweek` `.md` (6 files) | **Yes**, low cadence |
+| `mcp-health/` | cron #01 weekly MCP health check | `2026-W44.md` + `ledger.md` (append-only) | **Yes**, weekly |
+| `data_cross/` | cross-asset compute pipeline | Per-ticker JSON (`SPY`, `QQQ`, `IWM`, `TLT`, `GLD`, `UUP`, `EEM`, `VIX`) + `compute.py`, `mats.json`, `meta.json` at the root; `2026-10-27/` subdir holds the dated CSVs plus `compute.py` and `compute_qc.py` | **Partly** — root copy is stale |
+| `catalog/` | cron #15 catalyst table (spliced into reactions) | `catalysts/<date>.md` — **2 files only** | Partly — see *Fossils* |
+| `pattern-study/` | cron #06 Saturday pattern-study backlog | `peoplewish-1000pct-backlog.md` — one cumulative ledger | **Yes** (1 file by design) |
+| `research/` | ad-hoc research | `047040-jan-2026-catalyst.md` — one note | **No** — one-off |
+| `weekly/` | weekly recap routine | `2026-11-01-preview.md`, `-preview-tldr.md`, `-preview-movers.csv` | **Pilot** — one edition only |
+| `data2/` | earlier data work | `_stale_bars.json`, `_assemble_stats.json`, `yahoo_prices_2026-10-21.json` | **No** — superseded |
+| `refs/` | standing documentation | Contracts, pointers, `watchlist.yaml`, and `archive/skipped-markers/` | **Yes** (mixed) |
+| `cron-prompts/` | prompt engineering | 3 `.HARDENED.md` prompt files | **Yes** |
+| `scripts/` | routine engineering | 5 Python scripts | **Yes** |
+
+Read the "Live?" column as a statement about the **routine**, not about the files. A directory can be
+live and still contain fossils inside it (`us-eod/` is live and still carries the superseded
+`.meta.md` shape), and a directory can be dead and still hold its best content (`research/`). The
+column tells you whether new files will keep arriving; it does not tell you whether what is already
+there is worth reading. For that, use *Fossils, one-offs and superseded shapes* below — and note that
+two of the smallest directories on this list, `pattern-study/` and `research/`, hold some of the most
+substantive prose in the repo.
+
+## How to read an artifact
+
+The newest artifacts use YAML front matter. It is the fastest way to know what you are holding.
+
+```yaml
+---
+date: 2026-11-06
+cron: 26-agentic-pre-market-brief
+contract: premarket-brief-artifact-v2
+fire_time_et: 2026-11-06 08:30
+snapshot_et: 08:36
+source: TradingView america scanner + MCP-bridge market-recap
+status: ok
+---
+```
+
+- `fire_time_et` — when the routine woke up. `snapshot_et` — when the data was pulled. These differ
+  (the 08:30 brief pulled at 08:36), and the gap matters when you are judging staleness.
+- `status` — `ok` means the routine completed its contract. Anything else is worth reading.
+- `source` — the data path, not the format. Check this before trusting a number.
+
+Older artifacts have no front matter and instead carry a provenance line inside the first few lines
+(`_summary.md` style: "**Cron date**: … · **Data session**: … · **Fired at**: … · **Generated**: …").
+Both styles carry the same information; the 2026-10-22 `daily-screens/_summary.md` is the clearest
+example of the older form, including an explicit "**Schedule deviation**" note.
+
+## High-value entry points
+
+If you are new to this repo, open these in order. Each is a full artifact; together they cover the
+routine, the pre-market, the close, the international session, the option flow and the weekly synthesis.
+
+| # | File | Why it is worth the time |
+|---|---|---|
+| 1 | `daily-screens/2026-11-06/daily-sweep.md` | The richest artifact in the repo. Regime read with the rule stated, leadership table where each theme carries its contradicting evidence, catalyst table with live source URLs, per-endpoint source health, coverage assertions for all 11 screen branches, 11 numbered caveats. |
+| 2 | `ntrt/2026-11-06.md` | The only brief that publishes its own **funnel**: 834 names screened → 28 clear the actionable gate, with the 729 volume failures and the 76 sub-floor names shown rather than hidden. Flags section names ten names with no confirmed driver. |
+| 3 | `us-eod/2026-11-06.md` | Full universe snapshot with a column-by-column coverage table, a closed `data_quality` vocabulary, and a **self-reported repair** (233 rows had published a change that was not the session's price change). |
+| 4 | `daily-briefs/2026-11-06-pre-market.md` | The only artifact that scores **yesterday's own published thesis** against its invalidation level — HELD / BROKE / PARTIAL / UNJUDGED per name. Nothing else here closes that loop. |
+| 5 | `international-eod/2026-11-06/summary.md` | 16 regions in one read, with a coverage/exclusion table read from `_excluded.json` rather than estimated, plus per-region USD floors and the JT limit-down detail. |
+| 6 | `options-flow/2026-11-06.md` | Front matter documents the entire method (composite formula, filters, bias thresholds, universe definitions) before a single row of output. |
+| 7 | `us-eod/2026-11-06.acceptance.txt` | 28 machine QC checks, "28 checks passed, 0 failed". The only programmatic acceptance gate in the repo. |
+| 8 | `weekly/2026-11-01-preview-tldr.md` | The only cross-week synthesis: sector table, best/worst with market caps, cross-asset strip, and a caveat about the unreachable watchlist. |
+
+Two more are worth knowing about even though they are single files:
+`refs/preopen-feed-contract.md` (the tape's schema and tolerances, including a named regression
+signature) and `research/047040-jan-2026-catalyst.md` (the best-written research note here — a catalyst
+chain, a day-by-day tape, and an explicit resolution of a source conflict).
+
+## Where the decision trail lives
+
+This repo stores **outputs, not reasoning transcripts**. There is no model transcript, no
+chain-of-thought and no agent message log anywhere in the tree — a repo-wide search for
+`I will`, `Let me`, `thinking`, `reasoning`, `assistant`, `tool_use`, `tool_call`, `Thinking:` and
+`<thinking>` returns no content hits. What exists instead, in descending order of fidelity:
+
+| Tier | Where | What it preserves |
+|---|---|---|
+| **Decision records** | `international-eod/<date>/_manifest.json`, `_excluded.json`, `_calendar_correction.json`; `us-eod/<date>.manifest.json`; `daily-screens/<date>/_regime.json`, `_source-health.json`, `_results.json`; `us-stocks-in-play/logs.jsonl` | Per-region floors, FX tables with corrections, exclusion counts by reason, calendar/holiday notes, restatement notes, regime flags, run ledger with error counts |
+| **Reasoning in prose** | The caveat sections of every narrative brief | Why a screen did or did not run, what was degraded, what a flag means. E.g. `daily-screens/2026-10-22/_summary.md`: "**Not run.** The skill gates this scan to weekdays 15:30–16:00 ET. This fire landed at 07:32 ET, outside the window. No names are reported rather than a loose substitute being presented as the real scan." |
+| **Post-hoc reviews** | `refs/preopen-feed-contract.md`, `refs/plan-sources-and-mcp-tracking.md`, `refs/cron19-earnings-reminder-review.md` | Contracts and proposals written *about* the routines, including live probe evidence and an explicit "Decisions needed" list. Not run traces. |
+| **Execution traces** | `ntrt/_raw/{cc,yc,run2,final_run}.log` | Tool-level retries and rate-limit events. Four files, all from 2026-10-26, 4–130 lines. No reasoning. |
+| **The procedure itself** | `cron-prompts/*.HARDENED.md`, `scripts/*.py`, `ntrt/_pipeline/*.py` | The encoded decision rules — window gates with rationale comments, volume floors, caps, ranking order. `ntrt/_pipeline/write_brief.py` contains the QC classifier verbatim (`REF MISMATCH`, `stale print`, `thin book`, `cross-checked`). |
+
+**The useful consequence:** the *rules* are fully recoverable from this repo. The *deliberation* that
+applied them is not. If you need to know why a particular number appeared, the manifest and the
+caveat section are where to look — not a transcript, because there isn't one.
+
+## Fossils, one-offs and superseded shapes
+
+| Path | What it is | Why it is inert |
+|---|---|---|
+| `refs/archive/skipped-markers/` (32 files) | Skip markers from when the day-of-week gate lived in the prompt | **Self-declared fossil**, and archived as such. Its own README: "These are fossils. The day-of-week now lives in the scheduler, so the weekend branches that produced most of these can no longer fire." Historical audit value only — kept out of `refs/` so it does not read as live state. |
+| `data2/` (4 files) | `_stale_bars.json` (4,497-line list of stale bar stamps), `_assemble_stats.json`, one Yahoo price dump | No consumer; superseded by `us-eod/`, which does the same job with provenance. |
+| `data_cross/` root level | Per-ticker JSON + `mats.json` + `meta.json`, all dated 2026-10-23 | A stale generation sitting beside the live one. The `data_cross/2026-10-27/` subdir is current; the root is not. |
+| `weekly/` | One edition (2026-11-01) | A **weekly** routine that produced exactly one issue. High-quality content, no cadence. |
+| `catalog/catalysts/` | 2 files (2026-10-24, 2026-10-26) against 12 dates of `earnings/*-reactions.md` | The splice path the cron #15 prompt specifies was effectively abandoned. Worth checking if you rely on it. |
+| `research/` | One note | A single deep-dive, not a recurring family. The content is excellent; the family has no repeat. |
+| `us-eod/<date>.meta.md` (2026-10-20 → 2026-10-27) | The earlier run-metadata format | Superseded by `<date>.md`, which folds the same content into a fuller report. |
+| `ntrt/_raw/*.log` | Four execution logs from 2026-10-26 | Superseded by later briefs. Kept as a worked example of the pipeline degrading loudly. |
+
+Two families look thin but are **not** disposable. `pattern-study/peoplewish-1000pct-backlog.md` is one
+file by design — it is an explicitly cumulative ledger ("a long-lived log", with methodology, run
+manifest, carried-forward table and a saturation note). `research/047040-jan-2026-catalyst.md` is a
+single self-contained note whose value is in its content, not its repeatability.
+
+## Pointers vs content
+
+Several `refs/` files deliberately hold a URL instead of a copy. `refs/cron-ops.md`,
+`refs/sources-us-stocks-in-play.md` and `refs/cron19-earnings-reminder-review.md` all point into
+`karizaco/maxhermes-migration`. The stated reason is sound — `refs/sources-us-stocks-in-play.md`
+says "Read it there rather than keeping a second copy here — a copy is what goes stale" — but the
+practical consequence is that **this repo cannot be read standalone**. If the migration repo is
+unreachable, those three files are links to nowhere.
+
+The files in `refs/` that hold real content are `preopen-feed-contract.md` (the tape contract),
+`plan-sources-and-mcp-tracking.md` (a 268-line proposal with live probe evidence), `watchlist.yaml`
+(the published source of truth for four routines' watchlist sections — note it is currently a **seed**
+list of 8 tickers, not the real 12-name personal list) and `archive/skipped-markers/README.md`.
+
+## Conventions and known drift
+
+Things that are true for most of the repo but not all of it. Worth knowing before you write a script
+against these files.
+
+- **`daily-screens/` filename convention (normalised 2026-11-08).** Inside a dated directory the
+  convention is now **unprefixed** for both `.md` and `.csv`: `focus.md`, `focus.csv`, `master.csv`,
+  `reversal-bullish-3_55.md`, and so on. Two exceptions were normalised on 2026-11-08:
+  `daily-screens/2026-10-23/` carried nine CSVs with a `2026-10-23-` prefix that no other date's
+  CSVs carry, and the `reversal-bullish-3:55` **filenames** had already been renamed to
+  `reversal-bullish-3_55` (commit `6569109`, for Windows validity) while the **in-text references**
+  still pointed at the old colon form. All 20 in-repo references were rewritten.
+  **Do not blanket-replace `3:55` → `3_55`.** The remaining `3:55` occurrences are correct and must
+  stay: the cron *name* (`cron: "#4 reversal-bullish-3:55"`), the clock time ("3:55 PM
+  reversal-bullish scan"), and the external migration-repo prompt path
+  (`cloud-prompts/cron-prompts/04-reversal-bullish-3:55.md` — that repo lives on a Linux sandbox,
+  where the colon is valid and the filename is unchanged).
+- **Screen output still changes shape across dates.** `2026-10-22` has `stockbee_4pct` /
+  `stockbee_coil` / `stockbee_ep9m` as separate files, while `2026-11-06` has a single `stockbee`
+  file whose branches are listed inside it. `2026-10-19` is markdown-only with no screen CSVs at
+  all. Do not assume a fixed file set per date.
+- **`daily-screens/breadth/` is a separate, unrelated series.** Two files (`2026-10-26.md`,
+  `2026-10-27.md`) holding a *different* breadth universe (S&P 500 membership, 502 tickers) from the
+  dated directories' breadth (986 names above $10B). It is date-named like `cross-asset/<date>.md`,
+  not screen-named, and it stopped after 2026-10-27. Treat the two breadth series as distinct
+  products, not as drift.
+- **`us-eod/` format evolution.** Early days are `<date>.csv` + `<date>.meta.md`; later days are
+  `<date>.csv` + `<date>.md`. The 2026-11-06 edition adds `2026-11-06.manifest.json` and
+  `2026-11-06.acceptance.txt` — the first file in the repo to carry a machine acceptance gate.
+- **`daily-briefs/` three shapes.** `-pre-market.md` (the brief), `-pre-market-refresh.md` (a 09:20 ET
+  re-pull that explicitly carries "no catalysts and no news"), and `-pre-market.csv` (the morning
+  screen the refresh diffs against). The refresh is not a second brief.
+- **`international-eod/` manifest churn.** `_manifest.json` appears from 2026-10-26; `_excluded.json`
+  and `_carryover.json` from 2026-11-03; `_calendar_correction.json` from 2026-10-27; `_cap_findings.json`
+  and `_digest.json` only on 2026-11-05. Earlier dates have `STUB_*.md` placeholders instead —
+  `international-eod/2026-10-22/STUB_skill_fetch_failed.md` is a well-written no-data declaration
+  naming three blockers (expired TLS cert in the sandbox egress, MCP tools not registered, fire 11h
+  before the post-close window) and explicitly declining to synthesise rows.
+- **`.gitignore` ignores `*.log`, but `ntrt/_raw/*.log` is tracked.** Those four files were added
+  before the ignore rule and gitignore does not affect already-tracked paths. Any *new* execution log
+  will therefore be silently untracked unless the rule is negated.
+- **This clone uses a sparse checkout that excludes colon-named paths.** `core.sparseCheckout=true`
+  with the pattern `/*` + `!*:*`, which is a deliberate Windows workaround: `:` is illegal in a
+  Windows filename, so any artifact named `…3:55…` is excluded from materialising on disk. Two
+  consequences to know before you trust `git status` here:
+  1. **The index can go stale against HEAD.** A sparse checkout that was materialised before a
+     rename leaves the index holding the old (colon) paths with the `skip-worktree` bit set, while
+     HEAD holds the new ones. `git status` then reports a *staged rename in the wrong direction* and
+     shows nothing wrong with the worktree. On 2026-11-08 this state was found: 84 artifacts appeared
+     staged for renaming back to `3:55`, which would have re-introduced the Windows-invalid names
+     that commit `6569109` had just fixed. The repair is `git reset` (index ← HEAD) followed by
+     `git checkout -- <path>` to restore the files that the stale index had hidden.
+  2. **A stale checkout can silently roll a file back.** `pattern-study/peoplewish-1000pct-backlog.md`
+     and `refs/preopen-feed-contract.md` were present on disk at an *older* revision than HEAD
+     (the 2026-10-31 backlog run instead of the 2026-11-07 one). Committing the worktree as-is
+     would have reverted live fleet output. Always `git checkout --` a file whose worktree copy looks
+     older than the commit you are building on.
+
+## Maintenance notes
+
+- This index is hand-written. If a routine is added, a directory is retired or a filename convention
+  changes, update the directory map and the drift section.
+- The repo is shared across crons and several jobs commit to `main` daily. Per `AGENTS.md`, the push
+  procedure is `git fetch origin main` → `git merge origin/main --allow-unrelated-histories -X ours`
+  → `git push origin main`. **Never force-push** to this repo — it would destroy other crons'
+  artifacts.
+- When reviewing an artifact, read the front matter or the provenance line first, then the caveats
+  section, then the tables. In this repo the caveats section is where the real information is, and it
+  is deliberately near the top for that reason.
