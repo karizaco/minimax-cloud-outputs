@@ -1,0 +1,48 @@
+# Weekly Brief TL;DR — 2026-W45 (week ended Fri 2026-11-06)
+
+**Week:** Mon Nov 2 → Fri Nov 6, 5 sessions · **Basis:** Fri Oct 30 close → Fri Nov 6 close · **Forward week:** Nov 9–13
+
+## Top 5
+
+1. **The AI trade broke on politics.** Democrats took the House and Senate on Nov 3, and newly elected governors in data-centre-heavy states campaigned on slowing construction. Thursday Nov 5 priced that into capex: **S&P 500 −4.4%, Nasdaq −5.5%, SOX −12%, NDX −6.4%** (worst Nasdaq day since March 2020), ~**$3trn of market value** gone, Mag-7 **−$1trn**, NVDA **−$440bn**.
+
+2. **Friday was a bounce, not a reversal.** S&P +0.3%, Nasdaq +1.1%, Dow −0.5%. All three majors still fell on the week — a **fourth straight weekly loss** — and the Nasdaq closed in **correction territory**.
+
+3. **The fracture is inside the market.** Week: **S&P −2.7%, Nasdaq −3.4%, Dow −0.9%, Russell 2000 −2.1%, VIX 19.42 → 25.64 (+32%)**. Energy worst (**XLE −12.0%**, WTI **−12.8%** to $90.83 on US–Iran diplomacy); technology worst among large caps (**XLK −8.2%**, **SMH −11.2%**); defensives positive (**XLRE +1.9%, XLY +1.9%, XLF +1.2%, XLP +0.7%**).
+
+4. **The labour report fought the political one.** October payrolls **+165k vs a 65k consensus**, unemployment **4.1%**, AHE +3.1% y/y → **December hike odds ~67% → ~77%** (CME FedWatch). Yet the 10-year still fell **7bp to 4.86%** and gold rose **+4.5%**. Daly, Hammack, Barkin, Williams and Logan all leaned hawkish; Chair Warsh has declined to guide.
+
+5. **Next week is the audit.** **CPI Tue 08:30, PPI Fri 08:30**; CoreWeave Tue; **Cisco and Applied Materials Thu**; ~a dozen Fed speakers in five days. Consensus is split — FactSet 3.9% y/y headline vs the Cleveland Fed nowcast at 3.7% headline / 2.5% core.
+
+## Index week-over-week
+
+| | 10-30 | 11-06 | Week |
+|---|---:|---:|---:|
+| S&P 500 | 7,580.07 | 7,376.86 | **−2.68%** |
+| Nasdaq | 25,437.00 | 24,579.42 | **−3.37%** |
+| Dow | 51,770.31 | 51,285.73 | **−0.94%** |
+| Russell 2000 | 2,811.84 | 2,754.11 | **−2.05%** |
+| VIX | 19.42 | 25.64 | **+32.0%** |
+| WTI | 104.12 | 90.83 | **−12.8%** |
+| Gold (futures) | 3,898.90 | 4,074.90 | **+4.5%** |
+| 10-yr yield | 4.929% | 4.859% | **−7.0bp** |
+| Dollar index | 101.88 | 102.30 | **+0.4%** |
+
+## Next week — the calendar that matters
+
+- **Mon Nov 9:** CEG, KKR, B, FERG, NRG (BMO); OXY, TTWO, SKYD, RKLB (AMC); 3-yr Treasury auction 13:00.
+- **Tue Nov 10:** **CPI 08:30**; TDG, SE, ONON (BMO); **CRWV (AMC)**; 10-yr Treasury auction 13:00.
+- **Wed Nov 11:** US bond market closed (Veterans Day), equities open; CTVA (AMC).
+- **Thu Nov 12:** claims 08:30, existing home sales 10:00, **$25bn 30-yr auction 13:00**; NBIS (BMO); **CSCO, AMAT, CBRS (AMC)**.
+- **Fri Nov 13:** **PPI 08:30**; Baker Hughes 13:00. No major reports.
+- **Fed speakers:** Goolsbee, Barkin, Waller, Logan, Schmid, Paulson, Hammack, Daly, Williams, Jefferson — plus Bowman, Barr, Collins.
+- **Ex-dividends:** none published in the window for the 30-name universe checked.
+
+## Caveats
+
+- `research/watchlist.yaml` does not exist in the Cloud runtime → the watchlist section is **omitted**, not shipped empty; the deployed ETF universe is substituted and labelled as such.
+- Sector weekly performance is published **twice** (TradingView sector indices `Perf.W`, and SPDR-ETF proxies) because the two views differ at the margin; neither was merged into one number.
+- One weekly recap published **partial-week (Wed→Thu)** figures; rejected in favour of the full Friday-to-Friday computation, which matches AP/CNBC.
+- **Degraded sources: 2** (TradingView sector/earnings column filters; missing watchlist file).
+
+_Full brief: `weekly/2026-11-08-preview.md` · cron #22 weekly-market-recap-preview · read-only recap, not investment advice._

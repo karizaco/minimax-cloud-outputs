@@ -13,6 +13,13 @@ market_open_at_pull: true
 
 # Pre-market refresh — Thursday 2026-11-05 (09:20 ET checkpoint · screen pulled 10:10 ET)
 
+> **UPDATE — 2026-11-06 05:55 ET: the baseline resolved.** Cron #26's 08:30 ET fire was
+> quota-killed, not dead: the platform resumed that conversation IN PLACE on 2026-11-06 and
+> the morning brief was published at 05:52 ET (commit `73d1c5aa`, fix-forward `2adb42ef`),
+> rebuilt for the 11-05 fire and citing THIS artifact and cron #92a's 10:10:24 ET checkpoint
+> as its screen sources. The note below describes the state as it stood at this file's pull
+> (10:10 ET) — at that moment the baseline had indeed not landed.
+
 **This file was pulled at 2026-11-05 10:10:37 ET, not at 09:20 ET.** The platform created this fire at 09:20:12 ET but the first tool call did not execute until 10:09 ET — a 49-minute stall that spans the 09:30 open. Two consequences, stated up front:
 
 1. **The 09:20 ET baseline does not exist.** Cron #26's 08:30 ET morning brief failed at 08:30:30 ET with `42212: Token Plan usage limit reached (2056)` and published neither `daily-briefs/2026-11-05-pre-market.md` nor its CSV. There is no same-screen 08:30 snapshot to diff against, so this file publishes the refreshed screen alone, with no "changed since" section. §5 substitutes a clearly-labelled cross-check against a *different* screen (cron #15's 08:22 ET file), not a same-screen baseline.
