@@ -1,0 +1,14 @@
+{
+  "_schema": "swst-new-companies-index-v1",
+  "updated": "2026-11-09",
+  "runs": [
+    {
+      "date": "2026-11-09",
+      "run_id": "2026-11-09Tweekly",
+      "status": "ok",
+      "found": 121,
+      "new": 111,
+      "path": "2026-11-09/"
+    }
+  ]
+}
