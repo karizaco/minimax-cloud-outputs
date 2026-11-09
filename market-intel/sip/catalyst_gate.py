@@ -23,6 +23,9 @@ _MATERIAL_TERMS = (
     "HALT",
     "MATERIAL",
     "SIGNIFICANT",
+    "BUYBACK",
+    "REPURCHASE",
+    "TREASURY",
     "財報",
     "獲利",
     "每股盈餘",
@@ -40,6 +43,8 @@ _MATERIAL_TERMS = (
     "停牌",
     "配息",
     "重整",
+    "庫藏股",
+    "買回",
 )
 
 _BOILERPLATE_PATTERNS = (

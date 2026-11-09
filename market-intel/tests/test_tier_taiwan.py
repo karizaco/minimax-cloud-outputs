@@ -47,21 +47,24 @@ def test_soft_a_requires_catalyst_and_soft_rvol() -> None:
                 "1002",
                 chg_pct=6.0,
                 dollar_vol=32_000_000.0,
-                catalyst="Q3 EPS beat / 合併財務報告", mops_materiality=2,
+                catalyst="Q3 EPS beat / 合併財務報告",
+                mops_materiality=2,
                 rvol=0.8,
             ),
             row(
                 "1003",
                 chg_pct=6.0,
                 dollar_vol=33_000_000.0,
-                catalyst="Q3 EPS beat / 合併財務報告", mops_materiality=2,
+                catalyst="Q3 EPS beat / 合併財務報告",
+                mops_materiality=2,
                 rvol=None,
             ),
             row(
                 "1004",
                 chg_pct=6.0,
                 dollar_vol=34_000_000.0,
-                catalyst="Q3 EPS beat / 合併財務報告", mops_materiality=2,
+                catalyst="Q3 EPS beat / 合併財務報告",
+                mops_materiality=2,
                 rvol=2.0,
             ),
         ],
@@ -89,14 +92,16 @@ def test_a_requires_catalyst_elevated_rvol_and_material_move() -> None:
                 "2001",
                 chg_pct=4.5,
                 dollar_vol=31_000_000.0,
-                catalyst="Q3 EPS / 合併財務報告", mops_materiality=2,
+                catalyst="Q3 EPS / 合併財務報告",
+                mops_materiality=2,
                 rvol=2.0,
             ),
             row(
                 "2002",
                 chg_pct=3.9,
                 dollar_vol=32_000_000.0,
-                catalyst="Q3 EPS / 合併財務報告", mops_materiality=2,
+                catalyst="Q3 EPS / 合併財務報告",
+                mops_materiality=2,
                 rvol=2.0,
             ),
             row(
@@ -110,7 +115,8 @@ def test_a_requires_catalyst_elevated_rvol_and_material_move() -> None:
                 "2004",
                 chg_pct=4.5,
                 dollar_vol=34_000_000.0,
-                catalyst="Q3 EPS / 合併財務報告", mops_materiality=2,
+                catalyst="Q3 EPS / 合併財務報告",
+                mops_materiality=2,
                 rvol=1.4,
             ),
         ],
@@ -125,6 +131,96 @@ def test_a_requires_catalyst_elevated_rvol_and_material_move() -> None:
     assert "2004" not in by_ticker or by_ticker["2004"].tier != "A"
 
 
+def test_soft_a_hard_move_floor_and_limit_up_buyback() -> None:
+    cfg = load_market("taiwan")
+    catalyst = "Q3 EPS / 合併財務報告"
+
+    below = run_pipeline(
+        [row("2101", chg_pct=3.9, dollar_vol=31_000_000.0, catalyst=catalyst, mops_materiality=2, rvol=0.5)],
+        cfg,
+        "open",
+    )
+    assert all(item.tier != "Soft-A" for item in below)
+
+    at_floor = run_pipeline(
+        [row("2102", chg_pct=4.0, dollar_vol=31_000_000.0, catalyst=catalyst, mops_materiality=2, rvol=0.5)],
+        cfg,
+        "open",
+    )
+    assert at_floor[0].tier == "Soft-A"
+
+    limit_up = run_pipeline(
+        [row("2103", chg_pct=9.5, dollar_vol=31_000_000.0, catalyst="庫藏股買回", mops_materiality=1, rvol=0.5)],
+        cfg,
+        "open",
+    )
+    assert limit_up[0].tier == "Soft-A"
+
+
+def test_liquid_tech_watch_band_and_move_floor() -> None:
+    cfg = load_market("taiwan")
+
+    liquid = run_pipeline(
+        [
+            row(
+                "2201",
+                chg_pct=3.5,
+                dollar_vol=2_870_000_000,
+                catalyst=None,
+                rvol=0.307,
+            )
+        ],
+        cfg,
+        "open",
+    )
+    assert liquid[0].tier == "TECH_WATCH"
+
+    below_rvol = run_pipeline(
+        [
+            row(
+                "2202",
+                chg_pct=3.5,
+                dollar_vol=2_870_000_000,
+                catalyst=None,
+                rvol=0.25,
+            )
+        ],
+        cfg,
+        "open",
+    )
+    assert all(item.tier != "TECH_WATCH" for item in below_rvol)
+
+    thin = run_pipeline(
+        [
+            row(
+                "2203",
+                chg_pct=2.4,
+                dollar_vol=2_499_999_999,
+                catalyst=None,
+                rvol=0.3,
+            )
+        ],
+        cfg,
+        "open",
+    )
+    assert all(item.tier != "TECH_WATCH" for item in thin)
+
+    above_band = run_pipeline(
+        [
+            row(
+                "2204",
+                chg_pct=3.5,
+                dollar_vol=2_870_000_000,
+                catalyst=None,
+                rvol=2.0,
+            )
+        ],
+        cfg,
+        "open",
+    )
+    assert above_band[0].tier == "B"
+
+
 def test_pipeline_sorts_by_tier_then_dollar_volume_descending() -> None:
     cfg = load_market("taiwan")
 
@@ -134,28 +230,32 @@ def test_pipeline_sorts_by_tier_then_dollar_volume_descending() -> None:
                 "1001",
                 chg_pct=6.0,
                 dollar_vol=31_000_000.0,
-                catalyst="Q3 EPS / 合併財務報告", mops_materiality=2,
+                catalyst="Q3 EPS / 合併財務報告",
+                mops_materiality=2,
                 rvol=2.0,
             ),
             row(
                 "1002",
                 chg_pct=6.0,
                 dollar_vol=33_000_000.0,
-                catalyst="Q3 EPS / 合併財務報告", mops_materiality=2,
+                catalyst="Q3 EPS / 合併財務報告",
+                mops_materiality=2,
                 rvol=2.0,
             ),
             row(
                 "1003",
                 chg_pct=3.5,
                 dollar_vol=32_000_000.0,
-                catalyst="Q3 EPS beat / 合併財務報告", mops_materiality=2,
+                catalyst="Q3 EPS beat / 合併財務報告",
+                mops_materiality=2,
                 rvol=0.8,
             ),
             row(
                 "1004",
                 chg_pct=3.5,
                 dollar_vol=34_000_000.0,
-                catalyst="Q3 EPS beat / 合併財務報告", mops_materiality=2,
+                catalyst="Q3 EPS beat / 合併財務報告",
+                mops_materiality=2,
                 rvol=0.8,
             ),
         ],
@@ -197,14 +297,16 @@ def test_pipeline_drops_rows_below_floors() -> None:
                 "1002",
                 chg_pct=5.0,
                 dollar_vol=32_000_000.0,
-                catalyst="Q3 EPS beat / 合併財務報告", mops_materiality=2,
+                catalyst="Q3 EPS beat / 合併財務報告",
+                mops_materiality=2,
                 rvol=0.8,
             ),
             row(
                 "1003",
                 chg_pct=9.0,
                 dollar_vol=100.0,
-                catalyst="Q3 EPS / 合併財務報告", mops_materiality=2,
+                catalyst="Q3 EPS / 合併財務報告",
+                mops_materiality=2,
                 rvol=2.0,
             ),
         ],

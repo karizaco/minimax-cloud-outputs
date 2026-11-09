@@ -65,8 +65,12 @@ Outputs:
 
 ## Quality gates (Soft-A / digest-cap follow-up)
 - MOPS attach requires materiality score ≥1 and not boilerplate (取得有價證券 / 機器設備 / 董事改派 / …)
+- Buyback and repurchase headlines are material catalysts, including 庫藏股 and 買回
 - `soft_a_requires_catalyst: true` enforced; Soft-A/A need material catalyst
-- TECH_WATCH uses `tech_watch_rvol_min/max` (~1.0–2.0); rvol ≥ max → B
+- Soft-A hard-move floor is 4.0% (not 5.0%); 3.9% is not Soft-A on the hard path alone, while 4.0% is Soft-A with a material catalyst and soft rvol
+- TECH_WATCH uses `tech_watch_rvol_min/max` (0.3–2.0); rvol ≥ max → B
+- Large liquid names use `tech_watch_liquid_turnover_min` (NT$2.5B) and `tech_watch_move_min` (2.0%); thinner names continue to use `gap_soft`
+- Nov 9 live actuals motivating the widened band: 2330/2344/2408/3443/2454/2303/2383/2308/3037 had rvol 0.300–0.581 and turnover NT$2.87B–29.3B
 - Missing MOPS remains a coverage cascade for TECH_WATCH; no heuristic change was made
 - Digest tables capped via `digest_top_n` (chat via `chat_top_n`)
 - LIMIT_DOWN → C first

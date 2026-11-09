@@ -103,12 +103,16 @@ def assign_tiers(
 
     for row in rows:
         move = abs(float(row.chg_pct))
-        hard = float(cfg.get("day_move_hard", 5.0))
+        hard = float(cfg.get("day_move_hard", 4.0))
         soft = float(cfg.get("day_move_soft", 4.0))
         gap_soft = float(cfg.get("gap_soft", 3.0))
         elevated = float(cfg.get("elevated_rvol_min", 1.5))
-        rmin = float(cfg.get("tech_watch_rvol_min", 1.0))
+        rmin = float(cfg.get("tech_watch_rvol_min", 0.3))
         rmax = float(cfg.get("tech_watch_rvol_max", 2.0))
+        liquid_turnover_min = float(
+            cfg.get("tech_watch_liquid_turnover_min", 2_500_000_000)
+        )
+        tech_watch_move_min = float(cfg.get("tech_watch_move_min", 2.0))
 
         catalyst = _has_catalyst(row)
         material_catalyst = _is_material_catalyst(row, catalyst_min_score)
@@ -127,6 +131,10 @@ def assign_tiers(
                 tier = "Soft-A"
             else:
                 tier = "B"
+        elif limit_up:
+            # LIMIT_UP without a material catalyst is a limit/halt watch.
+            # It must not be promoted into TECH_WATCH/B by the rvol band.
+            tier = "C"
         elif (
             catalyst
             and not material_catalyst
@@ -137,19 +145,29 @@ def assign_tiers(
         elif (
             not catalyst
             or (requires_catalyst and not material_catalyst)
-        ) and (move >= gap_soft or limit_up):
-            r = row.rvol
-            if r is not None and r >= rmax:
+        ):
+            is_liquid = float(row.dollar_vol or 0) >= liquid_turnover_min
+            move_ok = (
+                (move >= tech_watch_move_min or limit_up)
+                if is_liquid
+                else (move >= gap_soft or limit_up)
+            )
+            if move_ok:
+                r = row.rvol
+                if r is not None and r >= rmax:
+                    tier = "B"
+                elif r is not None and rmin <= r < rmax:
+                    tier = "TECH_WATCH"
+                else:
+                    tier = "C"
+            elif (
+                row.rvol is not None
+                and row.rvol >= elevated
+                and move >= 2.0
+            ):
                 tier = "B"
-            elif r is not None and rmin <= r < rmax:
-                tier = "TECH_WATCH"
             else:
                 tier = "C"
-        elif (
-            not catalyst
-            or (requires_catalyst and not material_catalyst)
-        ) and row.rvol is not None and row.rvol >= elevated and move >= 2.0:
-            tier = "B"
         else:
             tier = "C"
 

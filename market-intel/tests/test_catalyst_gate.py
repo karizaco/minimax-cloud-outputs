@@ -14,6 +14,16 @@ def test_boilerplate_denied() -> None:
     )
 
 
+def test_buyback_is_material_but_boilerplate_is_not() -> None:
+    assert materiality_score("公告本公司董事會決議買回庫藏股") >= 1
+    assert materiality_score("本公司董事會通過買回公司股份") >= 1
+    assert materiality_score("COMPANY BOARD APPROVED BUYBACK") >= 1
+    assert materiality_score("SHARE REPURCHASE ANNOUNCEMENT") >= 1
+    assert materiality_score("TREASURY SHARE REPURCHASE") >= 1
+    assert is_boilerplate_mops("公告本公司取得有價證券")
+    assert not is_boilerplate_mops("公告本公司董事會決議買回庫藏股")
+
+
 def test_q3_financials_material() -> None:
     assert materiality_score("公告本公司董事會通過115年第3季合併財務報告") >= 1
     assert not is_boilerplate_mops("公告本公司董事會通過115年第3季合併財務報告")
@@ -56,12 +66,14 @@ def _cfg() -> dict:
     return {
         "open": {"floors": {"price_min": 0, "turnover_min": 0, "mcap_min": 0}},
         "soft_a_requires_catalyst": True,
-        "day_move_hard": 5.0,
+        "day_move_hard": 4.0,
         "day_move_soft": 4.0,
         "gap_soft": 3.0,
         "elevated_rvol_min": 1.5,
-        "tech_watch_rvol_min": 1.0,
+        "tech_watch_rvol_min": 0.3,
         "tech_watch_rvol_max": 2.0,
+        "tech_watch_liquid_turnover_min": 2_500_000_000,
+        "tech_watch_move_min": 2.0,
     }
 
 
@@ -87,10 +99,8 @@ def _row(**kwargs) -> CandidateRow:
 
 
 def test_soft_a_requires_material_catalyst() -> None:
-    # tape alone → not Soft-A
     result = run_pipeline([_row(catalyst=None, rvol=0.5, chg_pct=-6.0)], _cfg(), "open")
     assert all(r.tier != "Soft-A" for r in result)
-    # material + hard move + soft rvol → Soft-A
     result = run_pipeline(
         [
             _row(
@@ -98,6 +108,40 @@ def test_soft_a_requires_material_catalyst() -> None:
                 mops_materiality=2,
                 rvol=0.5,
                 chg_pct=-6.0,
+            )
+        ],
+        _cfg(),
+        "open",
+    )
+    assert result[0].tier == "Soft-A"
+
+
+def test_soft_a_hard_move_floor_is_four_percent() -> None:
+    catalyst = "Q3 EPS NT$3.00 record"
+    below = run_pipeline(
+        [_row(catalyst=catalyst, mops_materiality=2, rvol=0.5, chg_pct=3.9)],
+        _cfg(),
+        "open",
+    )
+    assert all(r.tier != "Soft-A" for r in below)
+
+    at_floor = run_pipeline(
+        [_row(catalyst=catalyst, mops_materiality=2, rvol=0.5, chg_pct=4.0)],
+        _cfg(),
+        "open",
+    )
+    assert at_floor[0].tier == "Soft-A"
+
+
+def test_limit_up_buyback_is_soft_a() -> None:
+    result = run_pipeline(
+        [
+            _row(
+                catalyst="公告本公司董事會決議買回庫藏股",
+                mops_materiality=1,
+                flags=["LIMIT_UP"],
+                rvol=0.5,
+                chg_pct=9.5,
             )
         ],
         _cfg(),
@@ -125,17 +169,45 @@ def test_limit_down_with_material_is_c() -> None:
 
 def test_tech_watch_rvol_band() -> None:
     cfg = _cfg()
-    # rvol in [min, max) no catalyst → TECH_WATCH
     tw = run_pipeline([_row(catalyst=None, rvol=1.2, chg_pct=-5.0)], cfg, "open")
     assert tw[0].tier == "TECH_WATCH"
-    # rvol below min or missing → not TECH_WATCH
-    below = run_pipeline([_row(catalyst=None, rvol=0.5, chg_pct=-8.0)], cfg, "open")
+    below = run_pipeline([_row(catalyst=None, rvol=0.2, chg_pct=-8.0)], cfg, "open")
     assert all(r.tier != "TECH_WATCH" for r in below)
     missing = run_pipeline([_row(catalyst=None, rvol=None, chg_pct=-8.0)], cfg, "open")
     assert all(r.tier != "TECH_WATCH" for r in missing)
-    # strong rvol no catalyst → B
     b = run_pipeline([_row(catalyst=None, rvol=2.5, chg_pct=-5.0)], cfg, "open")
     assert b[0].tier == "B"
+
+
+def test_liquid_name_tech_watch_uses_two_percent_move_floor() -> None:
+    cfg = _cfg()
+    liquid = run_pipeline(
+        [
+            _row(
+                catalyst=None,
+                rvol=0.3,
+                chg_pct=3.5,
+                dollar_vol=2_500_000_000,
+            )
+        ],
+        cfg,
+        "open",
+    )
+    assert liquid[0].tier == "TECH_WATCH"
+
+    thin = run_pipeline(
+        [
+            _row(
+                catalyst=None,
+                rvol=0.3,
+                chg_pct=2.4,
+                dollar_vol=2_499_999_999,
+            )
+        ],
+        cfg,
+        "open",
+    )
+    assert all(r.tier != "TECH_WATCH" for r in thin)
 
 
 def test_catalyst_min_score_from_cfg() -> None:
