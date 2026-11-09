@@ -33,6 +33,8 @@ crons commit to. Keeping them here makes the provenance unambiguous: if it is in
 | **Gap reconciliation** | `<date>/gap-reconciliation.{md,csv}` | Did this morning's pre-market gaps hold into the close? | `earnings/<date>-reactions.md`, `us-eod/<date>.csv` |
 | **Sector flow** | `<date>/sector-flow.{md,csv}` | Which sectors gained the board today, and does the board agree with the tape? | `daily-screens/<date>/master.csv`, `us-stocks-in-play/<date>.md` |
 | **Ledger** | `<date>/ledger.{md,jsonl}` | What do we know about one name today, across every routine that saw it? | five families — see the ledger's own source line |
+| **Setup card** | `<date>/setup-card.{md,csv}` | Which published Stalk and Tier-A names are actually a setup, and which morning gaps were never looked up? | `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md`, `us-eod/<date>.csv` |
+| **Setup journal** | `setup-journal.{md,csv}` | What did the next session do to each published setup? | the same boards, joined to the next `us-eod/<date>.csv` |
 | **Charts** | `charts/*.html` | The correlation matrix and the regime series, drawn | `cross-asset/<date>.md`, `daily-screens/<date>/_regime.json` |
 
 Each dated directory carries a `_manifest.json` naming its files and what each

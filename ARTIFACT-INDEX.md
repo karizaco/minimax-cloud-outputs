@@ -159,7 +159,7 @@ python3 scripts/build_derived.py                      # regenerate every derived
 
 ### The derived views — joins the routines never make
 
-The five builders under `derived/` answer questions that no single routine can,
+The builders under `derived/` answer questions that no single routine can,
 because each one is a join across families that fire at different times of day.
 They are described in `derived/README.md`; the short version:
 
@@ -169,6 +169,8 @@ They are described in `derived/README.md`; the short version:
 | `derived/<date>/gap-reconciliation.md` | Did the morning's pre-market gaps hold into the close? | The 08:30 scanner, the 15:50 digest and the 18:30 sweep each hold one piece |
 | `derived/<date>/sector-flow.md` | Which sectors gained the board, and does the board agree with the ETF tape? | The sweep describes the rotation in prose and never tabulates it |
 | `derived/<date>/ledger.md` | What do we know about one name today, across every routine? | Each routine is a column; nothing is a row |
+| `derived/<date>/setup-card.md` | Which published names are a setup, and which morning gaps were never looked up? | The sweep leads with Tier-A. The skill's setup tier is Stalk, and the catalyst budget is invisible in the brief |
+| `derived/setup-journal.md` | What did the next session do to each published setup? | The skill names a setup-journal. No routine writes one |
 | `derived/charts/*.html` | What does the correlation matrix actually look like? | `cross-asset/` computes it and renders it as a table of 28 numbers |
 
 **The measurement that motivated them.** Across the 12 dates that carry a readable

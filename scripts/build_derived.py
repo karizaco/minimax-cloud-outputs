@@ -28,6 +28,7 @@ BUILDERS = (
     ("build_gap_reconciliation", "pre-market gap vs the settled close"),
     ("build_sector_flow", "the board by sector, against the ETF tape"),
     ("build_ledger", "one row per name per session"),
+    ("build_setups", "the setup card and the next-session journal"),
     ("build_charts", "the renders of what is already computed"),
 )
 
@@ -38,6 +39,8 @@ ROLES = {
     "sector-flow.csv": "machine - the same rows",
     "ledger.md": "brief - coverage, and the names several routines saw",
     "ledger.jsonl": "machine - one record per name, `_meta` on the first line",
+    "setup-card.md": "brief - published Stalk and Tier-A, session-stamped, with unchecked gaps",
+    "setup-card.csv": "machine - the same rows, including tags that could not be recomputed",
     "_manifest.json": "this file",
 }
 
@@ -47,6 +50,8 @@ SOURCES = {
     "ledger": ["daily-screens/<date>/{master,focus,tier-a}.csv",
                "earnings/<date>-reactions.md", "us-eod/<date>.csv",
                "us-stocks-in-play/<date>-candidates.csv", "options-flow/<date>.md"],
+    "setup-card": ["daily-screens/<date>/{stalk,tier-a}.csv",
+                   "earnings/<date>-reactions.md", "us-eod/<date>.csv"],
 }
 
 
