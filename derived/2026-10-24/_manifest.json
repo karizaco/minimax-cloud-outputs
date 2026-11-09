@@ -52,6 +52,6 @@
  "notes": [
   "Every file here is DERIVED. No cron writes into this directory, and nothing in it is a new measurement - each value is copied from the artifacts named in `joined_from`.",
   "A view absent from this manifest was not built for this date, which means a source it needs does not exist. The view's own brief states which one.",
-  "Not built for this date: sector-flow."
+  "Not built for this date: client-safe, sector-flow, setup-card."
  ]
 }

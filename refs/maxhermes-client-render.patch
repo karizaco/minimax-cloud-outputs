@@ -1,0 +1,411 @@
+Proposes the reply-format change for the desktop chat client.
+
+The reply is rendered by the Minimax Code desktop client, which supports bold,
+italics and ordered/unordered lists. It does not render tables, coloured text or
+flag glyphs. The shared DELIVERY block nevertheless mandates a markdown table for
+3+ comparable numeric rows.
+
+This replaces the DELIVERY section of cloud-prompts/_shared/PROMPT-BLOCKS.md only.
+No skill logic changes, no threshold changes, no artifact format changes - the
+artifact keeps its tables and its glyphs, because GitHub renders both.
+
+Apply with:
+  git apply maxhermes-client-render.patch
+or, from the migration repo root:
+  git apply -p1 refs/maxhermes-client-render.patch
+
+--- a/cloud-prompts/_shared/PROMPT-BLOCKS.md
++++ b/cloud-prompts/_shared/PROMPT-BLOCKS.md
+@@ -394,6 +394,14 @@
+ from their own prompt — do not "fix" them to this one. The list, with the reason for each,
+ is in `cloud-prompts/cron-prompts/README.md`.
+ 
++**THE REPLY AND THE ARTIFACT ARE DIFFERENT DOCUMENTS AND MUST NOT SHARE A FORMAT.** The
++artifact is read in a file viewer that renders full markdown — tables, headings and colour
++all work there, and the artifact should keep using them. The reply is read in a chat client
++whose renderer supports **bold, italics and lists only**: no tables, no coloured text, no flag
++glyphs. A table that reads correctly in the artifact arrives as raw pipe characters in the
++reply. A flag glyph arrives as a tofu box, or as nothing at all — and it takes its meaning
++with it. So the same rows are carried as a table in the artifact and as a list in the reply.
++
+ 1. **Prose opener** — 2-4 sentences: the headline finding of the run, then the caveat that most
+    changes how it should be read. Complete sentences; no label lists, no clipped fragments.
+ 2. **`### Signal`** — tiered bullets, ONE ticker per line, each line a short clause naming the
+@@ -416,16 +424,30 @@
+    `errors:` MUST equal it exactly** — one entry per degraded source, not one
+    per run. Three degraded sources are `errors: 3`, never `errors: 1`.
+ 
+-**Formatting rules — the reply is rendered in a chat client, not read as a diff.**
+-- Use a compact markdown **table** whenever there are 3+ comparable numeric rows (index
+-  levels, sector rotation, futures, breadth). Header row, `|---|` separator, numbers
+-  right-aligned. A table beats prose for anything the reader is going to compare.
+-- Keep every bullet to **one short line**. Never cram three facts into a 300-character
+-  line with two em-dashes and three numbers — split it into two bullets, or move the
+-  detail to the artifact file.
++**Formatting rules — the reply is rendered in a chat client, not read as a diff, and not
++rendered in a file viewer.**
++- **No table in the reply.** When there are 3+ comparable numeric rows (index levels, sector
++  rotation, futures, breadth), carry them as a **list**, one line per row:
++  `- **SPY** +0.32% · **QQQ** +1.40% · **IWM** +0.99%`. The full table belongs in the
++  artifact, and the reply says how many rows there are. A table is the right construct in the
++  artifact and the wrong one here.
++- **No colour and no flag glyph in the reply.** Write the word, not the symbol:
++  `strong` / `elevated` / `moderate` / `mild` / `uncorrelated` for a correlation band,
++  `ok` / `warning` / `failed` / `critical` for a status, `+` / `-` for a delta. Where a skill's
++  ARTIFACT uses a glyph, the reply spells the word.
++- **Keep every bullet to one short line — at most 30 words.** Never cram three facts into a
++  300-character line with two em-dashes and three numbers — split it into two bullets, or move
++  the detail to the artifact file. When a bullet is over the cap, split it at a clause
++  boundary (a semicolon, a colon, a dash, or a comma that is not inside brackets), never
++  mid-sentence.
++- **A paragraph in the reply is a smell.** The reply is read in a column. If a passage needs
++  more than two sentences to say, it belongs in the artifact, or it becomes bullets.
+ - Bold only the numbers that carry the story (the headline move, the level that matters),
+-  not every figure in the table.
++  not every figure.
+ - Blank line between the header and the first bullet under it, so the section renders as a
+   heading rather than a run-on block.
+ 
++**The reply is checked, not trusted.** `tools/check_reply_format.py` asserts the rules above
++against the saved reply text. A reply that fails the check is fixed before it is sent.
++
+ Do not narrate tool calls. Tool call → result → write → push → reply.
+
+The second file in this patch is `tools/check_reply_format.py` - a NEW file, a
+standalone verifier for the reply rules the DELIVERY block now states. It is
+deliberately a separate implementation, in the same shape as the per-routine
+checkers already in tools/: the routine renders the reply, this verifies it,
+and neither imports the other.
+
+It is the same tool that lives in the outputs repo at
+scripts/check_reply_format.py, trimmed to the reply case so it has no
+dependency on the artifact bus.
+
+  python3 tools/check_reply_format.py --reply /workspace/reply.txt
+
+It exits 1 on any finding. Wire it into the routines that already save their
+reply text (cron #23 saves /workspace/reply.txt; the others can do the same)
+and run it before the reply is sent.
+
+--- /dev/null
++++ b/tools/check_reply_format.py
+@@ -0,0 +1,319 @@
++#!/usr/bin/env python3
++"""Check a routine's chat reply against what the desktop client can actually render.
++
++Why: the chat reply is emitted at fire time into the agent's chat, which is
++rendered by the Minimax Code desktop client. That client supports a narrow
++subset of markdown — bold, italics, and ordered/unordered lists. It does not
++render coloured text, and flag glyphs either vanish or arrive as tofu. The
++shared `## DELIVERY` block in the migration repo nevertheless mandates a
++markdown table for 3+ comparable numeric rows, and five skills mandate flag
++glyphs. This checker measures the gap between the two.
++
++It is deliberately the same shape as the per-routine checkers already in
++`karizaco/maxhermes-migration/tools/` — a standalone verifier that never imports
++the thing it verifies — so a reply can be checked at fire time, and an artifact
++can be checked after the fact.
++
++TWO PROFILES, because the artifact and the reply have different jobs:
++
++  reply    the chat text. The client renders it. Tables, headings and glyphs
++           are unavailable, so a reply must survive losing all three.
++  artifact the file in the repo. GitHub renders it. A wide table is fine there
++           and the file is not read in a narrow column.
++
++Usage:
++  python3 tools/check_reply_format.py --reply /workspace/reply.txt
++  python3 tools/check_reply_format.py --reply /workspace/reply.txt --json
++
++Exit: 0 clean, 1 findings, 2 the checker could not run.
++"""
++import argparse
++import glob
++import json
++import os
++import re
++import sys
++
++
++# Flag glyphs, and the word each one carries. The word is what a reader
++# without colour needs; the glyph was standing in for the colour on a client
++# that stripped it.
++GLYPH_WORDS = {
++    "\U0001F7E5": "strong", "\U0001F7E7": "elevated", "\U0001F7E8": "moderate",
++    "\U0001F7E9": "mild", "\U0001F7E6": "uncorrelated",
++    "⚠️": "warning", "⚠": "warning",
++    "✅": "ok", "❌": "failed", "\U0001F534": "critical",
++    "\U0001F7E2": "good", "➕": "+", "➖": "-",
++}
++# The variation selector (U+FE0F) is part of some glyphs' presentation, so it
++# is matched and dropped with them rather than left to render as a stray mark.
++GLYPH_RE = re.compile(
++    "(" + "|".join(re.escape(k) for k in sorted(GLYPH_WORDS, key=len, reverse=True)) + ")"
++    "️?"
++)
++
++# The house's own ticker vocabulary, lifted from the migration repo's
++# check_postmarket_brief.py so this file does not invent a second definition.
++NON_TICKERS = set("""
++A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
++AD AH AM AM AN AO AP AR AS AT AU AV AW AX AY AZ
++BA BB BE BI BK BL BM BN BO BP BQ BR BS BT BU BV BW BX BY BZ
++CA CB CC CD CE CF CG CH CI CJ CK CL CM CN CO CP CQ CR CS CT CU CV CW CX CY CZ
++DA DB DC DD DE DF DG DH DI DJ DK DL DM DN DO DP DQ DR DS DT DU DV DW DX DY DZ
++EA EB EC ED EE EF EG EH EI EJ EK EL EM EN EO EP EQ ER ES ET EU EV EW EX EY EZ
++FA FB FC FD FE FG FH FI FL FM FN FO FP FQ FR FS FT FU FV FW FX FY FZ
++GA GB GC GD GE GF GG GH GI GJ GK GL GM GN GO GP GQ GR GS GT GU GV GW GX GY GZ
++HA HB HC HD HE HF HG HH HI HJ HK HL HM HN HO HP HQ HR HS HT HU HV HW HX HY HZ
++IA IB IC ID IE IF IG IH II IJ IK IL IM IN IO IP IQ IR IS IT IU IV IW IX IY IZ
++JA JB JC JD JE JF JG JH JI JK JL JM JN JO JP JQ JR JS JT JU JV JW JX JY JZ
++KA KB KC KD KE KF KG KH KI KJ KK KL KM KN KO KP KQ KR KS KT KU KV KW KX KY KZ
++LA LB LC LD LE LF LG LH LI LJ LK LL LM LN LO LP LQ LR LS LT LU LV LW LX LY LZ
++MA MB MC MD ME MF MG MH MI MJ MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ
++NA NB NC ND NE NF NG NH NI NJ NK NL NM NN NO NP NQ NR NS NT NU NV NW NX NY NZ
++OA OB OC OD OE OF OG OH OI OJ OK OL OM ON OO OP OQ OR OS OT OU OV OW OX OY OZ
++PA PB PC PD PE PF PG PH PI PJ PK PL PM PN PO PP PQ PR PS PT PU PV PW PX PY PZ
++QA QB QC QD QE QF QG QH QI QJ QK QL QM QN QO QP QQ QR QS QT QU QV QW QX QY QZ
++RA RB RC RD RE RF RG RH RI RJ RK RL RM RN RO RP RQ RR RS RT RU RV RW RX RY RZ
++SA SB SC SD SE SF SG SH SI SJ SK SL SM SN SO SP SQ SR SS ST SU SV SW SX SY SZ
++TA TB TC TD TE TF TG TH TI TJ TK TL TM TN TO TP TQ TR TS TT TU TV TW TX TY TZ
++UA UB UC UD UE UF UG UH UI UJ UK UL UM UN UO UP UQ UR US UT UU UV UW UX UY UZ
++VA VB VC VD VE VF VG VH VI VJ VK VL VM VN VO VR VS VT VU VV VW VX VY VZ
++WA WB WC WD WE WF WG WH WI WK WL WM WN WO WP WQ WR WS WT WU WV WW WX WY WZ
++XA XB XC XD XE XF XG XH XI XJ XK XL XM XN XO XP XQ XR XS XT XU XV XW XX XY XZ
++YA YB YC YD YE YF YG YH YI YJ YK YL YM YN YO YP YQ YR YS YT YU YV YW YX YY YZ
++AI AMC AMT APR APRIL AUG BEAR BULL BPS BUY CASH CATALYST CFTC CLOSE CONS CPI
++CSM DAILY DEC DEEP DECL DEF DIAM DOWN DRR DUP EAST EBITDA EPS EST ETF ETFS
++EVEN EX EXP FED FOMC FRIDAY GAAP GAP GDP GMT GUID GUIDANCE HALT HIGH HOLD HOUR
++IPO ISM IV JPM JUN JUL LHS LIQ LIQUID LOW MA MAY MORNING MOVE NASDAQ NASDAQ100
++NFP NIKKEI NO NYSE OCT OHM OHLC OPEN OPTS OPTIONS PC PE PMI PPO POST PRE PRICE
++PRIOR PT PUT PWR RANGE READ REFL REITS REV RICH RISK RUMOR SB SELL SENT SEP
++SELL SHORT SIDE SOLD SPOT SPX STOP TAPE THIN THOUS TICK TICKER TIME TON TOMORROW
++TUES TUE UP USD VIX VXN VOLUME WATCH YIELD YOY YTD ZONE
++""".split())
++TICKER_RE = re.compile(r"(?<![A-Za-z0-9$.])[A-Z]{1,5}(?![A-Za-z0-9])")
++LEVEL_RE = re.compile(r"(?<![\w.])\$?\d{1,7}\.\d{2,}(?![\w])")
++
++HEADING_RE = re.compile(r"^(#{1,6})\s+(\S.*)$")
++BULLET_RE = re.compile(r"^\s*[-*]\s+(\S.*)$")
++ORDERED_RE = re.compile(r"^\s*\d+[.)]\s+(\S.*)$")
++TABLE_RE = re.compile(r"^\s*\|.*\|\s*$")
++TABLE_SEP_RE = re.compile(r"^\s*\|[\s:|-]+\|\s*$")
++QUOTE_RE = re.compile(r"^\s*>\s?(\S.*)$")
++
++# Any emoji at all is unusable in the client: the font may not carry it, so it
++# arrives as a tofu box. This is the broad set - the FLAG set above is the
++# subset that also carries a MEANING the text depends on.
++ANY_EMOJI_RE = re.compile(
++    "[\U0001F300-\U0001FAFF\U00002600-\U000027BF\U0001F1E6-\U0001F1FF]"
++    "️?"
++)
++
++PROFILES = {
++    # The reply is read in the desktop client. Everything it uses must survive
++    # the client dropping tables, headings and colour.
++    "reply": {
++        "max_words_paragraph": 55,
++        # 30 words is roughly a screen line in the desktop client. The house
++        # rule in the migration repo is "one short line ... never cram three
++        # facts into a 300-character line", so 30 words sits inside it.
++        "max_words_bullet": 30,
++        "max_words_sentence": 30,
++        "max_table_columns": 0,      # 0 = tables are not available
++        "allow_headings": False,
++        "allow_glyphs": False,
++    },
++    # The artifact is read on GitHub, where a wide table is exactly right.
++    "artifact": {
++        "max_words_paragraph": 90,
++        "max_words_bullet": 45,
++        "max_words_sentence": 40,
++        "max_table_columns": 12,
++        "allow_headings": True,
++        "allow_glyphs": True,
++    },
++}
++
++
++def tickers_in(text):
++    return [m.group(0) for m in TICKER_RE.finditer(text) if m.group(0) not in NON_TICKERS]
++
++
++def blocks_of(lines):
++    """Split a document into (kind, payload) blocks: prose, bullet, heading, table."""
++    out = []
++    i = 0
++    while i < len(lines):
++        line = lines[i]
++        if TABLE_RE.match(line) and i + 1 < len(lines) and TABLE_SEP_RE.match(lines[i + 1]):
++            tbl = []
++            while i < len(lines) and TABLE_RE.match(lines[i]):
++                tbl.append(lines[i])
++                i += 1
++            out.append(("table", tbl))
++            continue
++        m = HEADING_RE.match(line)
++        if m:
++            out.append(("heading", m.group(2)))
++            i += 1
++            continue
++        if BULLET_RE.match(line):
++            b = []
++            while i < len(lines) and (BULLET_RE.match(lines[i]) or ORDERED_RE.match(lines[i])):
++                b.append(lines[i])
++                i += 1
++            out.append(("bullet", b))
++            continue
++        if ORDERED_RE.match(line):
++            b = []
++            while i < len(lines) and (BULLET_RE.match(lines[i]) or ORDERED_RE.match(lines[i])):
++                b.append(lines[i])
++                i += 1
++            out.append(("bullet", b))
++            continue
++        s = line.strip()
++        if s:
++            para = []
++            while i < len(lines) and lines[i].strip() and not HEADING_RE.match(lines[i]) \
++                    and not BULLET_RE.match(lines[i]) and not ORDERED_RE.match(lines[i]) \
++                    and not TABLE_RE.match(lines[i]):
++                para.append(lines[i].strip())
++                i += 1
++            if not para:
++                # A pipe-row without a separator is not a table and not prose.
++                # Consume it so the scan cannot stall on it.
++                i += 1
++                continue
++            out.append(("prose", " ".join(para)))
++            continue
++        i += 1
++    return out
++
++
++def check(text, profile="reply", name="<text>"):
++    """Every violation in one text, as a list of (rule, detail)."""
++    p = PROFILES[profile]
++    fails = []
++    lines = text.splitlines()
++
++    if not p["allow_glyphs"]:
++        for g in GLYPH_RE.findall(text):
++            word = GLYPH_WORDS.get(g)
++            if word is None:
++                continue
++            # The glyph itself is named by codepoint, not printed: a console that
++            # cannot encode it would crash on the very finding that reports it.
++            fails.append(("RENDER_GLYPH",
++                          "U+%04X (%s) — the client renders this as a box or drops it; "
++                          "write \"%s\" instead"
++                          % (ord(g[0]), g, word)))
++        for g in ANY_EMOJI_RE.findall(text):
++            if g not in GLYPH_WORDS:
++                fails.append(("RENDER_EMOJI",
++                              "U+%04X — no meaning to a reader without the glyph; "
++                              "delete it or spell the word" % ord(g[0])))
++
++    if not p["allow_headings"]:
++        for kind, payload in blocks_of(lines):
++            if kind == "heading":
++                fails.append(("RENDER_HEADING",
++                              "`%s` — a `###` heading may not render; "
++                              "use a bold label instead" % payload[:60]))
++
++    widest = 0
++    for kind, payload in blocks_of(lines):
++        if kind != "table":
++            continue
++        cols = payload[0].count("|") - 1
++        widest = max(widest, cols)
++        if cols > p["max_table_columns"]:
++            fails.append(("RENDER_TABLE",
++                          "a %d-column table — %s"
++                          % (cols, "tables are not available in the reply"
++                             if p["max_table_columns"] == 0
++                             else "narrow it to %d columns" % p["max_table_columns"])))
++
++    for kind, payload in blocks_of(lines):
++        if kind == "prose":
++            n = len(payload.split())
++            if n > p["max_words_paragraph"]:
++                fails.append(("RENDER_LONG_PARAGRAPH",
++                              "a %d-word paragraph (max %d) — split it into bullets"
++                              % (n, p["max_words_paragraph"])))
++            for sent in re.split(r"(?<=[.!?])\s+", payload):
++                w = len(sent.split())
++                if w > p["max_words_sentence"]:
++                    fails.append(("RENDER_LONG_SENTENCE",
++                                  "a %d-word sentence (max %d) — \"%s\""
++                                  % (w, p["max_words_sentence"], sent[:70])))
++        elif kind == "bullet":
++            for raw in payload:
++                body = re.sub(r"^\s*(?:[-*]|\d+[.)])\s+", "", raw)
++                n = len(body.split())
++                if n > p["max_words_bullet"]:
++                    fails.append(("RENDER_LONG_BULLET",
++                                  "a %d-word bullet (max %d) — \"%s\""
++                                  % (n, p["max_words_bullet"], body[:60])))
++
++    # The house's own rule, scoped where the house scopes it: ONE ticker per
++    # bullet applies to the reply's `### Signal` section (the migration repo's
++    # check_postmarket_brief.py applies it there and nowhere else). Applying it
++    # to a whole artifact would flag every table row that names a second
++    # instrument, which is not what the rule is about.
++    signal = None
++    for i, l in enumerate(lines):
++        if l.strip().startswith("### Signal"):
++            signal = i
++            break
++    if signal is not None:
++        end = len(lines)
++        for i in range(signal + 1, len(lines)):
++            if lines[i].strip().startswith("### "):
++                end = i
++                break
++        for raw in lines[signal + 1:end]:
++            body = re.sub(r"^\s*(?:[-*]|\d+[.)])\s+", "", raw)
++            tk = tickers_in(body)
++            if len(tk) > 1:
++                fails.append(("ONE_TICKER_PER_BULLET",
++                              "%s in one `### Signal` bullet" % ", ".join(tk)))
++
++    return fails
++
++
++def main(argv):
++    # The findings quote the offending glyph. A console that cannot encode it
++    # would crash on the very finding that reports it, so stdout is widened
++    # rather than left to the platform default.
++    try:
++        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
++    except (AttributeError, ValueError):
++        pass
++    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
++    ap.add_argument("--reply", help="path to a saved chat reply")
++    ap.add_argument("--profile", choices=sorted(PROFILES), default="reply")
++    ap.add_argument("--json", action="store_true")
++    ap.add_argument("--top", type=int, default=10)
++    args = ap.parse_args(argv[1:])
++
++    if not args.reply:
++        ap.error("give --reply <file>")
++    if not os.path.exists(args.reply):
++        print("no such file: %s" % args.reply, file=sys.stderr)
++        return 2
++    text = open(args.reply, encoding="utf-8", errors="replace").read()
++    fails = check(text, args.profile, args.reply)
++    if args.json:
++        print(json.dumps({"file": args.reply, "profile": args.profile,
++                          "findings": [{"rule": r, "detail": d} for r, d in fails]}, indent=1))
++        return 1 if fails else 0
++    if not fails:
++        print("clean (%s profile): %s" % (args.profile, args.reply))
++        return 0
++    print("%d finding(s) in %s (%s profile)" % (len(fails), args.reply, args.profile))
++    for rule, detail in fails:
++        print("  [%s] %s" % (rule, detail))
++    return 1
++
++
++if __name__ == "__main__":
++    sys.exit(main(sys.argv))

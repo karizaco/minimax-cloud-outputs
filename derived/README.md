@@ -36,6 +36,7 @@ crons commit to. Keeping them here makes the provenance unambiguous: if it is in
 | **Setup card** | `<date>/setup-card.{md,csv}` | Which published Stalk and Tier-A names are actually a setup, and which morning gaps were never looked up? | `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md`, `us-eod/<date>.csv` |
 | **Setup journal** | `setup-journal.{md,csv}` | What did the next session do to each published setup? | the same boards, joined to the next `us-eod/<date>.csv` |
 | **Charts** | `charts/*.html` | The correlation matrix and the regime series, drawn | `cross-asset/<date>.md`, `daily-screens/<date>/_regime.json` |
+| **Client-safe twins** | `client-safe/<same path as the original>` | The same artifacts, rendered for a client that shows bold, italics and lists only | every narrative artifact — see `refs/client-render-contract.md` |
 
 Each dated directory carries a `_manifest.json` naming its files and what each
 view was joined from, per `refs/artifact-contract.md` Rule 3.
@@ -74,6 +75,28 @@ A rebuild that changes nothing writes nothing: the provenance line carries the
 build **date**, not a clock time, so re-running the builders on the same day
 produces no diff. That is deliberate — this repo is shared across crons, and
 timestamp churn would bury real changes.
+
+## The client-safe twins
+
+`derived/client-safe/` holds a second copy of every narrative artifact, rendered
+for the Minimax Code desktop client - which shows **bold, italics and lists
+only**, so a markdown table arrives as raw pipe characters and a flag glyph
+arrives as a tofu box.
+
+The original stays canonical and is untouched. The twin is the one to open when
+you are reading in the client: headings become bold labels, tables become bullet
+lists, the correlation bands become the words they stood for (`strong`,
+`moderate`, `mild`), and long prose is broken at clause boundaries into
+bullets.
+
+The renderer removes 86% of the reply-profile findings across the published
+artifacts, and **every** finding that is a hard rendering failure - glyphs,
+emoji, headings, tables, over-long paragraphs, over-long sentences - goes to
+zero. What remains are long bullets that are a single atomic clause, which are
+left whole because splitting them would mangle them.
+
+`refs/client-render-contract.md` has the measurement, the dependency map, and
+the reviewable patch for the routine definitions in the migration repo.
 
 ## Caveats that apply to everything here
 

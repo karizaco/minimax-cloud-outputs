@@ -147,7 +147,9 @@ and safe to run on any checkout; none of them invents a value.
 | `scripts/check_artifacts.py` | Three checks: `index` (this file names every top-level directory and every path it cites resolves), `links` (every backticked file reference inside every `.md` resolves), `convention` (basenames are Windows-safe; no filename in a dated directory repeats that directory's date) | `index` and `convention` exit non-zero on a finding; `links` exits non-zero on any in-repo reference that does not resolve |
 | `scripts/build_screen_manifest.py` | Writes `daily-screens/<date>/_manifest.json` for every dated directory: the brief, the machine artifacts, which screens are present, whether each has a matching `.csv`, whether a screen is split into components, and the session lag | Never — it reports shape differences as notes, because they are real properties of the data, not errors |
 | `scripts/build_decisions.py` | Writes `daily-screens/<date>/_decisions.json`: the thresholds that produced each published tier, the names a cap dropped, the per-branch coverage assertion, the regime flags, and the session lag | Never |
-| `scripts/build_derived.py` | Runs the five derived-view builders and writes a `_manifest.json` into each dated `derived/` directory | Reports a builder that raised, and keeps going |
+| `scripts/build_derived.py` | Runs the derived-view builders and writes a `_manifest.json` into each dated `derived/` directory | Reports a builder that raised, and keeps going |
+| `scripts/check_reply_format.py` | Measures any reply or artifact against what the Minimax Code desktop client can render: glyphs, headings, tables, bullet and sentence length | Nothing — it reports; it never fails a build on its own |
+| `scripts/render_client_safe.py` | Renders an artifact into the client's subset: headings become bold labels, tables become lists, glyphs become words | Nothing — it writes a new file and leaves the original alone |
 
 ```bash
 python3 scripts/check_artifacts.py                    # all three checks
@@ -172,6 +174,7 @@ They are described in `derived/README.md`; the short version:
 | `derived/<date>/setup-card.md` | Which published names are a setup, and which morning gaps were never looked up? | The sweep leads with Tier-A. The skill's setup tier is Stalk, and the catalyst budget is invisible in the brief |
 | `derived/setup-journal.md` | What did the next session do to each published setup? | The skill names a setup-journal. No routine writes one |
 | `derived/charts/*.html` | What does the correlation matrix actually look like? | `cross-asset/` computes it and renders it as a table of 28 numbers |
+| `derived/client-safe/**` | How does this artifact read in a chat client that shows bold, italics and lists only? | The artifacts are written for a file viewer. The reply is not |
 
 **The measurement that motivated them.** Across the 12 dates that carry a readable
 Tier-A board, the most persistent name appears **4 times and most appear once** —

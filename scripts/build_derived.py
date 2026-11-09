@@ -29,6 +29,7 @@ BUILDERS = (
     ("build_sector_flow", "the board by sector, against the ETF tape"),
     ("build_ledger", "one row per name per session"),
     ("build_setups", "the setup card and the next-session journal"),
+    ("build_client_safe", "the client-safe twin of every narrative artifact"),
     ("build_charts", "the renders of what is already computed"),
 )
 
@@ -41,6 +42,7 @@ ROLES = {
     "ledger.jsonl": "machine - one record per name, `_meta` on the first line",
     "setup-card.md": "brief - published Stalk and Tier-A, session-stamped, with unchecked gaps",
     "setup-card.csv": "machine - the same rows, including tags that could not be recomputed",
+    "client-safe/": "the same artifacts rendered for a client that shows bold, italics and lists only",
     "_manifest.json": "this file",
 }
 
@@ -52,6 +54,10 @@ SOURCES = {
                "us-stocks-in-play/<date>-candidates.csv", "options-flow/<date>.md"],
     "setup-card": ["daily-screens/<date>/{stalk,tier-a}.csv",
                    "earnings/<date>-reactions.md", "us-eod/<date>.csv"],
+    "client-safe": ["daily-screens/<date>/daily-sweep.md", "daily-briefs/<date>.md",
+                    "us-stocks-in-play/<date>.md", "ntrt/<date>.md",
+                    "earnings/<date>.md", "weekly/<date>.md", "cross-asset/<date>.md",
+                    "options-flow/<date>.md", "international-eod/<date>/summary.md"],
 }
 
 

@@ -25,6 +25,17 @@
     "daily-screens/<date>/master.csv",
     "us-stocks-in-play/<date>.md"
    ]
+  },
+  "setup-card": {
+   "files": [
+    "setup-card.csv",
+    "setup-card.md"
+   ],
+   "joined_from": [
+    "daily-screens/<date>/{stalk,tier-a}.csv",
+    "earnings/<date>-reactions.md",
+    "us-eod/<date>.csv"
+   ]
   }
  },
  "files": [
@@ -47,11 +58,21 @@
    "name": "sector-flow.md",
    "bytes": 4694,
    "role": "brief - the board's sector mix against the ETF tape"
+  },
+  {
+   "name": "setup-card.csv",
+   "bytes": 21313,
+   "role": "machine - the same rows, including tags that could not be recomputed"
+  },
+  {
+   "name": "setup-card.md",
+   "bytes": 8790,
+   "role": "brief - published Stalk and Tier-A, session-stamped, with unchecked gaps"
   }
  ],
  "notes": [
   "Every file here is DERIVED. No cron writes into this directory, and nothing in it is a new measurement - each value is copied from the artifacts named in `joined_from`.",
   "A view absent from this manifest was not built for this date, which means a source it needs does not exist. The view's own brief states which one.",
-  "Not built for this date: gap-reconciliation."
+  "Not built for this date: client-safe, gap-reconciliation."
  ]
 }
