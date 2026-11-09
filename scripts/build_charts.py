@@ -178,8 +178,38 @@ def latest_matrix():
     return None
 
 
+def read_breadth_pctile(date):
+    """1-year breadth percentile from breadth-snapshot.md, or None.
+
+    The percentile is the more interpretable number - where today sits in the
+    trailing 1-year distribution - but it is only published in the snapshot
+    markdown, not in _regime.json. Only sessions from 2026-11-05 onward carry
+    it; earlier snapshots predate the contract that added the column.
+    """
+    path = os.path.join(J.REPO, SCREENS, date, "breadth-snapshot.md")
+    if not os.path.exists(path):
+        return None
+    try:
+        text = open(path, encoding="utf-8").read()
+    except OSError:
+        return None
+    for line in text.splitlines():
+        if "breadth_pctile_1y" in line and "50dma" not in line:
+            m = re.search(r"\|\s*([0-9.]+)\s*\|", line)
+            if m:
+                try:
+                    return float(m.group(1))
+                except ValueError:
+                    pass
+    return None
+
+
 def read_regime_series():
-    """Breadth and VIX per session, with the gaps kept as gaps."""
+    """Breadth, VIX and the 1-year breadth percentile per session.
+
+    The percentile is read from breadth-snapshot.md and is None for sessions
+    that predate the contract which added it. A None is a gap, not a zero.
+    """
     out = []
     for date in J.dated_dirs(SCREENS):
         path = os.path.join(J.REPO, SCREENS, date, "_regime.json")
@@ -197,6 +227,7 @@ def read_regime_series():
             "vix3m": d.get("vix3m"),
             "uncertainty": d.get("uncertainty"),
             "schema": d.get("_schema"),
+            "pctile": read_breadth_pctile(date),
             "source": "%s/%s/_regime.json" % (SCREENS, date),
         })
     return out
@@ -479,7 +510,7 @@ def nice_axis(lo, hi, target=4):
 
 
 def line_chart(series, title, y_label, color_var, fmt="%.1f", unit="", y_pad=0.08,
-               flags=None, flag_label=""):
+               flags=None, flag_label="", annotations=None):
     """One measure over time. Single series, so no legend box - the title names it.
 
     `series` is a list of (date, value_or_None). A None breaks the path rather
@@ -551,6 +582,14 @@ def line_chart(series, title, y_label, color_var, fmt="%.1f", unit="", y_pad=0.0
     for i, v in pts:
         parts.append('<circle cx="%.1f" cy="%.1f" r="4.5" fill="%s" '
                      'stroke="var(--surface)" stroke-width="2"/>' % (px(i), py(v), color_var))
+        if annotations and annotations[i] is not None:
+            label = annotations[i]
+            # Place above the point, shifted right so it does not collide with
+            # the endpoint label on the last point.
+            lx = px(i) + 6
+            ly = py(v) - 10
+            parts.append('<text x="%.1f" y="%.1f" fill="var(--secondary)" '
+                         'font-size="10">%s</text>' % (lx, ly, label))
 
     last_i, last_v = pts[-1]
     parts.append('<text x="%.1f" y="%.1f" text-anchor="end" fill="var(--primary)" '
@@ -589,11 +628,25 @@ def render_regime(series):
     n_vix = sum(1 for s in series if s["vix"] is not None)
     missing = [s["date"] for s in series if s["breadth"] is None]
 
+    n_pctile = sum(1 for s in series if s.get("pctile") is not None)
+
     body = []
     body.append("<h2>Breadth — share of S&amp;P 500 names above their 20-DMA</h2>")
+    pctile_annotations = [
+        ("%.0fth" % s["pctile"]) if s.get("pctile") is not None else None
+        for s in series
+    ]
     body.append(line_chart(breadth, "Breadth percentage by session", "breadth %",
                            "var(--series1)", "%.1f%%", unit="%", flags=flags,
-                           flag_label="regime flag: uncertainty"))
+                           flag_label="regime flag: uncertainty",
+                           annotations=pctile_annotations))
+    if n_pctile:
+        body.append(
+            '<p style="color:var(--secondary);font-size:12px;margin:4px 0 0">'
+            '1-year percentile annotated where the snapshot publishes one '
+            '(%d of %d sessions). '
+            'A percentile says where the level sits in its own history; '
+            'the raw percentage does not.</p>' % (n_pctile, len(series)))
     body.append('<div class="legend">'
                 '<span><span class="line" style="background:var(--series1)"></span>breadth %</span>'
                 '<span><span class="line" style="background:var(--warn)"></span>'
@@ -609,11 +662,13 @@ def render_regime(series):
                 '</span></div>')
 
     rows = ["<table class='dataview'><thead><tr><th>Session</th><th>Breadth %</th>"
+            "<th>1y pctile</th>"
             "<th>VIX</th><th>VIX3M</th><th>uncertainty</th></tr></thead><tbody>"]
     for s in series:
-        rows.append("<tr><th>%s</th><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>" % (
+        rows.append("<tr><th>%s</th><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>" % (
             html.escape(s["date"]),
             "—" if s["breadth"] is None else "%.2f" % s["breadth"],
+            "—" if s.get("pctile") is None else "%.1f" % s["pctile"],
             "—" if s["vix"] is None else "%.2f" % s["vix"],
             "—" if s["vix3m"] is None else "%.2f" % s["vix3m"],
             "yes" if s["uncertainty"] else ("no" if s["uncertainty"] is False else "—")))
