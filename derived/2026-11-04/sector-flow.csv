@@ -1,0 +1,21 @@
+sector,count,share_pct,prev_count,prev_share_pct,share_delta_pp,median_change_pct,n_with_change,tape_median_pct,board_vs_tape_pp
+Technology Services,40,20.0,,,,1.36,40,,
+Health Technology,39,19.5,,,,6.56,39,3.23,3.33
+Electronic Technology,32,16.0,,,,-7.12,32,-3.31,-3.81
+Industrial Services,15,7.5,,,,-11.65,15,,
+Producer Manufacturing,10,5.0,,,,-11.89,10,,
+Commercial Services,9,4.5,,,,2.89,9,,
+Finance,9,4.5,,,,9.62,9,3.38,6.24
+Health Services,8,4.0,,,,10.62,8,3.23,7.39
+Transportation,6,3.0,,,,10.72,6,,
+Consumer Durables,5,2.5,,,,12.39,5,4.39,8.0
+Consumer Services,5,2.5,,,,9.83,5,4.39,5.44
+Retail Trade,5,2.5,,,,11.0,5,4.39,6.61
+Energy Minerals,3,1.5,,,,-6.67,3,-4.96,
+Process Industries,3,1.5,,,,10.66,3,,
+Utilities,3,1.5,,,,-8.54,3,,
+Communications,2,1.0,,,,11.62,2,3.65,7.97
+Consumer Non-Durables,2,1.0,,,,7.53,2,3.76,3.77
+Non-Energy Minerals,2,1.0,,,,13.74,2,,
+Distribution Services,1,0.5,,,,48.74,1,4.39,44.35
+Miscellaneous,1,0.5,,,,-13.36,1,,

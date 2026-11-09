@@ -1,0 +1,7 @@
+ticker,pre_mkt_pct,open_gap_pct,settled_change_pct,settled_close,outcome,tag,prior_close,prior_change_pct,move_vs_avg,catalyst_status,us_tradeable,venue,matched,catalyst
+HLMN,-4.65,,-0.4768,8.35,faded,PRE_GAP,8.39,7.56,,absent,,NASDAQ,exact,
+UPWK,4.64,,2.16,9.93,faded,PRE_GAP,9.72,6.23,,absent,,NASDAQ,exact,
+ECO,3.52,,,,no_close,PRE_GAP,91.25,-9.95,,absent,,NYSE,,
+PGR,-3.47,,-2.028,229.2,held,PRE_GAP,233.92,1.14,,absent,,NYSE,exact,
+AESI,-2.43,,-0.9721,8.15,faded,PRE_GAP,8.23,-10.74,,absent,,NYSE,exact,
+ULCC,-2.42,,-12.92,6.47,extended,PRE_GAP,7.43,15.19,,absent,,NASDAQ,exact,

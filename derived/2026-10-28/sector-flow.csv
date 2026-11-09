@@ -1,0 +1,12 @@
+sector,count,share_pct,prev_count,prev_share_pct,share_delta_pp,median_change_pct,n_with_change,tape_median_pct,board_vs_tape_pp
+Information Technology,65,32.5,,,,0.53,14,,
+Health Care,47,23.5,,,,6.7,7,,
+Industrials,26,13.0,,,,3.32,6,,
+(unlabelled),18,9.0,,,,6.03,4,,
+Financials,12,6.0,,,,4.51,1,,
+Energy,11,5.5,,,,,0,,
+Consumer Discretionary,9,4.5,,,,-0.83,1,,
+Communication Services,4,2.0,,,,,0,,
+Materials,4,2.0,,,,0.77,1,,
+Utilities,3,1.5,,,,,0,,
+Consumer Staples,1,0.5,,,,,0,,

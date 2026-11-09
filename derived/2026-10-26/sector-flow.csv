@@ -1,0 +1,19 @@
+sector,count,share_pct,prev_count,prev_share_pct,share_delta_pp,median_change_pct,n_with_change,tape_median_pct,board_vs_tape_pp
+Electronic Technology,52,26.0,4,2.0,24.0,3.77,52,1.69,2.08
+Technology Services,50,25.0,36,18.0,7.0,3.01,50,1.21,
+Health Technology,29,14.5,29,14.5,0.0,4.11,29,,
+Finance,10,5.0,37,18.5,-13.5,0.54,10,,
+Industrial Services,8,4.0,8,4.0,0.0,4.4,8,,
+Non-Energy Minerals,7,3.5,,,,4.88,7,,
+Producer Manufacturing,7,3.5,7,3.5,0.0,3.72,7,,
+Energy Minerals,6,3.0,3,1.5,1.5,6.22,6,,
+Transportation,6,3.0,5,2.5,0.5,3.19,6,,
+Consumer Services,4,2.0,7,3.5,-1.5,3.04,4,,
+Process Industries,4,2.0,6,3.0,-1.0,3.39,4,,
+Retail Trade,4,2.0,13,6.5,-4.5,4.61,4,,
+Commercial Services,3,1.5,13,6.5,-5.0,4.36,3,,
+Communications,3,1.5,2,1.0,0.5,-0.85,3,-1.57,
+Consumer Durables,2,1.0,11,5.5,-4.5,5.05,2,,
+Distribution Services,2,1.0,2,1.0,0.0,1.99,2,,
+Health Services,2,1.0,2,1.0,0.0,28.36,2,,
+Consumer Non-Durables,1,0.5,12,6.0,-5.5,3.12,1,-0.34,3.46

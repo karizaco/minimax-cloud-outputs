@@ -1,0 +1,57 @@
+{
+ "_schema": "derived-manifest-v1",
+ "date": "2026-10-23",
+ "generated_by": "scripts/build_derived.py",
+ "views": {
+  "ledger": {
+   "files": [
+    "ledger.jsonl",
+    "ledger.md"
+   ],
+   "joined_from": [
+    "daily-screens/<date>/{master,focus,tier-a}.csv",
+    "earnings/<date>-reactions.md",
+    "us-eod/<date>.csv",
+    "us-stocks-in-play/<date>-candidates.csv",
+    "options-flow/<date>.md"
+   ]
+  },
+  "sector-flow": {
+   "files": [
+    "sector-flow.csv",
+    "sector-flow.md"
+   ],
+   "joined_from": [
+    "daily-screens/<date>/master.csv",
+    "us-stocks-in-play/<date>.md"
+   ]
+  }
+ },
+ "files": [
+  {
+   "name": "ledger.jsonl",
+   "bytes": 121145,
+   "role": "machine - one record per name, `_meta` on the first line"
+  },
+  {
+   "name": "ledger.md",
+   "bytes": 3695,
+   "role": "brief - coverage, and the names several routines saw"
+  },
+  {
+   "name": "sector-flow.csv",
+   "bytes": 956,
+   "role": "machine - the same rows"
+  },
+  {
+   "name": "sector-flow.md",
+   "bytes": 5873,
+   "role": "brief - the board's sector mix against the ETF tape"
+  }
+ ],
+ "notes": [
+  "Every file here is DERIVED. No cron writes into this directory, and nothing in it is a new measurement - each value is copied from the artifacts named in `joined_from`.",
+  "A view absent from this manifest was not built for this date, which means a source it needs does not exist. The view's own brief states which one.",
+  "Not built for this date: gap-reconciliation."
+ ]
+}

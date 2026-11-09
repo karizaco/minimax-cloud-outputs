@@ -76,6 +76,7 @@ All 21 top-level directories. "Live" means the routine is still producing into i
 | `research/` | ad-hoc research | `047040-jan-2026-catalyst.md` — one note | **No** — one-off |
 | `weekly/` | weekly recap routine | `2026-11-01-preview.md`, `-preview-tldr.md`, `-preview-movers.csv` | **Pilot** — one edition only |
 | `data2/` | earlier data work | `_stale_bars.json`, `_assemble_stats.json`, `yahoo_prices_2026-10-21.json` | **No** — superseded |
+| `derived/` | **not a cron** — `scripts/build_derived.py` | Views joined from the families above: `persistence.{md,json}`, per-date `gap-reconciliation.*`, `sector-flow.*`, `ledger.*`, and `charts/*.html`. See `derived/README.md` | **Yes**, on demand |
 | `refs/` | standing documentation | Contracts, pointers, `watchlist.yaml`, `artifact-contract.md`, `decisions-contract.md`, and `archive/skipped-markers/` | **Yes** (mixed) |
 | `cron-prompts/` | prompt engineering | 3 `.HARDENED.md` prompt files | **Yes** |
 | `scripts/` | routine engineering | 5 pipeline scripts plus 3 repo-consistency tools | **Yes** |
@@ -146,13 +147,41 @@ and safe to run on any checkout; none of them invents a value.
 | `scripts/check_artifacts.py` | Three checks: `index` (this file names every top-level directory and every path it cites resolves), `links` (every backticked file reference inside every `.md` resolves), `convention` (basenames are Windows-safe; no filename in a dated directory repeats that directory's date) | `index` and `convention` exit non-zero on a finding; `links` exits non-zero on any in-repo reference that does not resolve |
 | `scripts/build_screen_manifest.py` | Writes `daily-screens/<date>/_manifest.json` for every dated directory: the brief, the machine artifacts, which screens are present, whether each has a matching `.csv`, whether a screen is split into components, and the session lag | Never — it reports shape differences as notes, because they are real properties of the data, not errors |
 | `scripts/build_decisions.py` | Writes `daily-screens/<date>/_decisions.json`: the thresholds that produced each published tier, the names a cap dropped, the per-branch coverage assertion, the regime flags, and the session lag | Never |
+| `scripts/build_derived.py` | Runs the five derived-view builders and writes a `_manifest.json` into each dated `derived/` directory | Reports a builder that raised, and keeps going |
 
 ```bash
 python3 scripts/check_artifacts.py                    # all three checks
 python3 scripts/check_artifacts.py links              # find broken in-text references
 python3 scripts/build_screen_manifest.py              # regenerate the dated manifests
 python3 scripts/build_decisions.py                    # regenerate the decision records
+python3 scripts/build_derived.py                      # regenerate every derived view
 ```
+
+### The derived views — joins the routines never make
+
+The five builders under `derived/` answer questions that no single routine can,
+because each one is a join across families that fire at different times of day.
+They are described in `derived/README.md`; the short version:
+
+| View | The question it answers | Why no routine answers it |
+|---|---|---|
+| `derived/persistence.md` | How long has this name been on the board, and what left today? | Every dated screen is a snapshot with no memory of yesterday's |
+| `derived/<date>/gap-reconciliation.md` | Did the morning's pre-market gaps hold into the close? | The 08:30 scanner, the 15:50 digest and the 18:30 sweep each hold one piece |
+| `derived/<date>/sector-flow.md` | Which sectors gained the board, and does the board agree with the ETF tape? | The sweep describes the rotation in prose and never tabulates it |
+| `derived/<date>/ledger.md` | What do we know about one name today, across every routine? | Each routine is a column; nothing is a row |
+| `derived/charts/*.html` | What does the correlation matrix actually look like? | `cross-asset/` computes it and renders it as a table of 28 numbers |
+
+**The measurement that motivated them.** Across the 12 dates that carry a readable
+Tier-A board, the most persistent name appears **4 times and most appear once** —
+the published lists had no way to show which names were converging and which were
+one-day visitors. And on 2026-11-06 the earnings scanner published **5** sourced
+catalysts against **193** rows marked "no catalyst lookup (outside the per-run
+budget)". Both facts were in the artifacts already; neither was legible until a
+join put them in one place.
+
+**What they are not.** None of them is a cron product, none is a new measurement,
+and none states a direction. A dated directory under `derived/` does not mean a
+routine fired that day — it means the builders found enough sources to join.
 
 The `links` check is the one that pays for itself. Commit `6569109` renamed 76 colon
 paths to underscores but left the prose pointing at the old names; twenty in-repo

@@ -1,0 +1,57 @@
+{
+ "_schema": "derived-manifest-v1",
+ "date": "2026-10-24",
+ "generated_by": "scripts/build_derived.py",
+ "views": {
+  "gap-reconciliation": {
+   "files": [
+    "gap-reconciliation.csv",
+    "gap-reconciliation.md"
+   ],
+   "joined_from": [
+    "earnings/<date>-reactions.md",
+    "us-eod/<date>.csv"
+   ]
+  },
+  "ledger": {
+   "files": [
+    "ledger.jsonl",
+    "ledger.md"
+   ],
+   "joined_from": [
+    "daily-screens/<date>/{master,focus,tier-a}.csv",
+    "earnings/<date>-reactions.md",
+    "us-eod/<date>.csv",
+    "us-stocks-in-play/<date>-candidates.csv",
+    "options-flow/<date>.md"
+   ]
+  }
+ },
+ "files": [
+  {
+   "name": "gap-reconciliation.csv",
+   "bytes": 3241,
+   "role": "machine - the same rows with the full catalyst text"
+  },
+  {
+   "name": "gap-reconciliation.md",
+   "bytes": 7240,
+   "role": "brief - every PRE_GAP name and the path its gap took"
+  },
+  {
+   "name": "ledger.jsonl",
+   "bytes": 31435,
+   "role": "machine - one record per name, `_meta` on the first line"
+  },
+  {
+   "name": "ledger.md",
+   "bytes": 3595,
+   "role": "brief - coverage, and the names several routines saw"
+  }
+ ],
+ "notes": [
+  "Every file here is DERIVED. No cron writes into this directory, and nothing in it is a new measurement - each value is copied from the artifacts named in `joined_from`.",
+  "A view absent from this manifest was not built for this date, which means a source it needs does not exist. The view's own brief states which one.",
+  "Not built for this date: sector-flow."
+ ]
+}

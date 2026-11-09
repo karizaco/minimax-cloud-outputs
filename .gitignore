@@ -14,3 +14,6 @@ helper_*.py
 *.log
 sp.json
 cron20_prompt_new.txt
+
+# Browser-automation scratch (screenshots taken while checking the derived charts).
+.playwright-mcp/

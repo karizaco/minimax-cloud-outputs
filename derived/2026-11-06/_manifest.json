@@ -1,0 +1,76 @@
+{
+ "_schema": "derived-manifest-v1",
+ "date": "2026-11-06",
+ "generated_by": "scripts/build_derived.py",
+ "views": {
+  "gap-reconciliation": {
+   "files": [
+    "gap-reconciliation.csv",
+    "gap-reconciliation.md"
+   ],
+   "joined_from": [
+    "earnings/<date>-reactions.md",
+    "us-eod/<date>.csv"
+   ]
+  },
+  "ledger": {
+   "files": [
+    "ledger.jsonl",
+    "ledger.md"
+   ],
+   "joined_from": [
+    "daily-screens/<date>/{master,focus,tier-a}.csv",
+    "earnings/<date>-reactions.md",
+    "us-eod/<date>.csv",
+    "us-stocks-in-play/<date>-candidates.csv",
+    "options-flow/<date>.md"
+   ]
+  },
+  "sector-flow": {
+   "files": [
+    "sector-flow.csv",
+    "sector-flow.md"
+   ],
+   "joined_from": [
+    "daily-screens/<date>/master.csv",
+    "us-stocks-in-play/<date>.md"
+   ]
+  }
+ },
+ "files": [
+  {
+   "name": "gap-reconciliation.csv",
+   "bytes": 29147,
+   "role": "machine - the same rows with the full catalyst text"
+  },
+  {
+   "name": "gap-reconciliation.md",
+   "bytes": 19215,
+   "role": "brief - every PRE_GAP name and the path its gap took"
+  },
+  {
+   "name": "ledger.jsonl",
+   "bytes": 851690,
+   "role": "machine - one record per name, `_meta` on the first line"
+  },
+  {
+   "name": "ledger.md",
+   "bytes": 6905,
+   "role": "brief - coverage, and the names several routines saw"
+  },
+  {
+   "name": "sector-flow.csv",
+   "bytes": 1022,
+   "role": "machine - the same rows"
+  },
+  {
+   "name": "sector-flow.md",
+   "bytes": 6557,
+   "role": "brief - the board's sector mix against the ETF tape"
+  }
+ ],
+ "notes": [
+  "Every file here is DERIVED. No cron writes into this directory, and nothing in it is a new measurement - each value is copied from the artifacts named in `joined_from`.",
+  "A view absent from this manifest was not built for this date, which means a source it needs does not exist. The view's own brief states which one."
+ ]
+}
