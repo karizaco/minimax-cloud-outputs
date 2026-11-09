@@ -86,7 +86,7 @@
  },
  "regions": {
   "au": {
-   "universe_rows": 295,
+   "universe_rows": 1545,
    "unique_instruments": 1545,
    "written": 295,
    "excluded": {
@@ -110,7 +110,7 @@
    ]
   },
   "jp": {
-   "universe_rows": 1358,
+   "universe_rows": 3902,
    "unique_instruments": 3869,
    "written": 1358,
    "excluded": {
@@ -134,7 +134,7 @@
    ]
   },
   "tw": {
-   "universe_rows": 846,
+   "universe_rows": 2334,
    "unique_instruments": 2334,
    "written": 846,
    "excluded": {
@@ -159,7 +159,7 @@
    ]
   },
   "ca": {
-   "universe_rows": 629,
+   "universe_rows": 4299,
    "unique_instruments": 2690,
    "written": 629,
    "excluded": {
@@ -185,7 +185,7 @@
    ]
   },
   "eu-de": {
-   "universe_rows": 108,
+   "universe_rows": 4307,
    "unique_instruments": 929,
    "written": 108,
    "excluded": {
@@ -210,7 +210,7 @@
    ]
   },
   "eu-fr": {
-   "universe_rows": 258,
+   "universe_rows": 547,
    "unique_instruments": 547,
    "written": 258,
    "excluded": {
@@ -234,7 +234,7 @@
    ]
   },
   "eu-it": {
-   "universe_rows": 180,
+   "universe_rows": 392,
    "unique_instruments": 392,
    "written": 180,
    "excluded": {
@@ -258,7 +258,7 @@
    ]
   },
   "eu-es": {
-   "universe_rows": 147,
+   "universe_rows": 275,
    "unique_instruments": 275,
    "written": 147,
    "excluded": {
@@ -282,7 +282,7 @@
    ]
   },
   "eu-nl": {
-   "universe_rows": 56,
+   "universe_rows": 78,
    "unique_instruments": 78,
    "written": 56,
    "excluded": {
@@ -306,7 +306,7 @@
    ]
   },
   "eu-be": {
-   "universe_rows": 77,
+   "universe_rows": 100,
    "unique_instruments": 100,
    "written": 77,
    "excluded": {
@@ -330,7 +330,7 @@
    ]
   },
   "eu-at": {
-   "universe_rows": 51,
+   "universe_rows": 65,
    "unique_instruments": 65,
    "written": 51,
    "excluded": {
@@ -354,7 +354,7 @@
    ]
   },
   "eu-pt": {
-   "universe_rows": 27,
+   "universe_rows": 32,
    "unique_instruments": 32,
    "written": 27,
    "excluded": {
@@ -378,7 +378,7 @@
    ]
   },
   "eu-ie": {
-   "universe_rows": 17,
+   "universe_rows": 19,
    "unique_instruments": 19,
    "written": 17,
    "excluded": {
@@ -402,7 +402,7 @@
    ]
   },
   "eu-fi": {
-   "universe_rows": 100,
+   "universe_rows": 188,
    "unique_instruments": 188,
    "written": 100,
    "excluded": {
@@ -426,7 +426,7 @@
    ]
   },
   "eu-dk": {
-   "universe_rows": 75,
+   "universe_rows": 134,
    "unique_instruments": 134,
    "written": 75,
    "excluded": {
@@ -450,7 +450,7 @@
    ]
   },
   "eu-gr": {
-   "universe_rows": 84,
+   "universe_rows": 130,
    "unique_instruments": 130,
    "written": 84,
    "excluded": {

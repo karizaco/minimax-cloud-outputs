@@ -12,23 +12,23 @@
 
 | Region | Venues | Universe | Unique instruments | Written | Floor (USD) | Excluded: no cap | Excluded: below floor | Excluded: below volume | Excluded: issuer unresolved | Excluded: cap mismatch | Carry-over rows | Off-official rows |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| `au` | ASX | 295 | 1,545 | **295** | $300M + vol ≥ 100,000 | 4 | 1,218 | 17 | 11 | 0 | 1 | 0 |
-| `jp` | TSE | 1,358 | 3,869 | **1,358** | $300M | 2 | 2,497 | 0 | 12 | 0 | 1 | 0 |
-| `tw` | TWSE, TPEX | 846 | 2,334 | **846** | $200M | 53 | 1,418 | 0 | 17 | 0 | 1 | 0 |
-| `ca` | TSX, TSXV, CSE | 629 | 2,690 | **629** | $200M | 33 | 1,856 | 0 | 172 | 0 | 44 | 0 |
-| `eu-de` | XETR, FWB | 108 | 929 | **108** | $300M + vol ≥ 50,000 | 4 | 462 | 323 | 32 | 0 | 0 | 0 |
-| `eu-fr` | EURONEXT | 258 | 547 | **258** | $100M | 3 | 284 | 0 | 2 | 0 | 4 | 0 |
-| `eu-it` | MIL | 180 | 392 | **180** | $100M | 2 | 209 | 0 | 1 | 0 | 4 | 0 |
-| `eu-es` | BME | 147 | 275 | **147** | $100M | 35 | 93 | 0 | 0 | 0 | 32 | 0 |
-| `eu-nl` | EURONEXT | 56 | 78 | **56** | $100M | 0 | 21 | 0 | 1 | 0 | 0 | 0 |
-| `eu-be` | EURONEXT | 77 | 100 | **77** | $100M | 1 | 22 | 0 | 0 | 0 | 2 | 0 |
-| `eu-at` | VIE | 51 | 65 | **51** | $100M | 3 | 11 | 0 | 0 | 0 | 1 | 0 |
-| `eu-pt` | EURONEXT | 27 | 32 | **27** | $50M | 0 | 5 | 0 | 0 | 0 | 0 | 0 |
-| `eu-ie` | EURONEXT | 17 | 19 | **17** | $200M | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
-| `eu-fi` | OMXHEX | 100 | 188 | **100** | $100M | 4 | 83 | 0 | 1 | 0 | 0 | 0 |
-| `eu-dk` | OMXCOP | 75 | 134 | **75** | $100M | 1 | 58 | 0 | 0 | 0 | 1 | 0 |
-| `eu-gr` | ATHEX | 84 | 130 | **84** | $50M | 0 | 44 | 0 | 2 | 0 | 1 | 0 |
-| **total** | | **4,308** | **13,327** | **4,308** | | **145** | **8,283** | **340** | **251** | **0** | **92** | **0** |
+| `au` | ASX | 1,545 | 1,545 | **295** | $300M + vol ≥ 100,000 | 4 | 1,218 | 17 | 11 | 0 | 1 | 0 |
+| `jp` | TSE | 3,902 | 3,869 | **1,358** | $300M | 2 | 2,497 | 0 | 12 | 0 | 1 | 0 |
+| `tw` | TWSE, TPEX | 2,334 | 2,334 | **846** | $200M | 53 | 1,418 | 0 | 17 | 0 | 1 | 0 |
+| `ca` | TSX, TSXV, CSE | 4,299 | 2,690 | **629** | $200M | 33 | 1,856 | 0 | 172 | 0 | 44 | 0 |
+| `eu-de` | XETR, FWB | 4,307 | 929 | **108** | $300M + vol ≥ 50,000 | 4 | 462 | 323 | 32 | 0 | 0 | 0 |
+| `eu-fr` | EURONEXT | 547 | 547 | **258** | $100M | 3 | 284 | 0 | 2 | 0 | 4 | 0 |
+| `eu-it` | MIL | 392 | 392 | **180** | $100M | 2 | 209 | 0 | 1 | 0 | 4 | 0 |
+| `eu-es` | BME | 275 | 275 | **147** | $100M | 35 | 93 | 0 | 0 | 0 | 32 | 0 |
+| `eu-nl` | EURONEXT | 78 | 78 | **56** | $100M | 0 | 21 | 0 | 1 | 0 | 0 | 0 |
+| `eu-be` | EURONEXT | 100 | 100 | **77** | $100M | 1 | 22 | 0 | 0 | 0 | 2 | 0 |
+| `eu-at` | VIE | 65 | 65 | **51** | $100M | 3 | 11 | 0 | 0 | 0 | 1 | 0 |
+| `eu-pt` | EURONEXT | 32 | 32 | **27** | $50M | 0 | 5 | 0 | 0 | 0 | 0 | 0 |
+| `eu-ie` | EURONEXT | 19 | 19 | **17** | $200M | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
+| `eu-fi` | OMXHEX | 188 | 188 | **100** | $100M | 4 | 83 | 0 | 1 | 0 | 0 | 0 |
+| `eu-dk` | OMXCOP | 134 | 134 | **75** | $100M | 1 | 58 | 0 | 0 | 0 | 1 | 0 |
+| `eu-gr` | ATHEX | 130 | 130 | **84** | $50M | 0 | 44 | 0 | 2 | 0 | 1 | 0 |
+| **total** | | **18,347** | **13,327** | **4,308** | | **145** | **8,283** | **340** | **251** | **0** | **92** | **0** |
 
 `Universe` is every instrument the source returns for that country's own listings (the scanner's issuer-country filter, so a foreign company's local line is not counted); `Unique instruments` collapses the same line quoted on several venues down to one line per issuer and share class; `Written` applies the per-region USD market-cap floor plus the region's volume gate. Every excluded row carries a reason from the closed set in `_excluded.json`, and the counts above are read from that file rather than estimated.
 
@@ -355,7 +355,7 @@ Liquid names that cleared ±5% with **no sourced driver** — no company release
 
 | Source | Query / URL | Status | Result |
 |---|---|---|---|
-| TradingView per-country scanner | POST scanner.tradingview.com/{country}/scan, types=["stock"], filter country=<region country> | ok | 16 regions, 4,308 rows pulled |
+| TradingView per-country scanner | POST scanner.tradingview.com/{country}/scan, types=["stock"], filter country=<region country> | ok | 16 regions, 18,347 rows pulled |
 | TradingView America scanner | POST scanner.tradingview.com/america/scan, types=["stock","dr"] | ok | 13,470 rows — the source for `us_listing` and the cross-venue cap second reading |
 | Frankfurter | api.frankfurter.dev/v1/latest?base=USD | ok | 2026-11-09 table: AUD, CAD, DKK, EUR, JPY |
 | open.er-api | open.er-api.com/v6/latest/USD | ok | TWD 32.851408 (09 Nov 2026 00:02 UTC) |
