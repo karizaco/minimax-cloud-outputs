@@ -1,0 +1,45 @@
+{
+  "_schema": "intl-stocks-in-play-index-v1",
+  "runs": [
+    {
+      "date": "2026-11-09",
+      "path": "2026-11-09/",
+      "run_id": "2026-11-09Tmidday",
+      "slots": [
+        {
+          "counts": {
+            "by_tier": {
+              "A": 1,
+              "B": 5,
+              "C": 6,
+              "SOFT_A": 6,
+              "TECH_WATCH": 8
+            },
+            "candidates": 26,
+            "on_watchlist": 0,
+            "unparsed_items": 0
+          },
+          "slot": "open",
+          "status": "degraded"
+        },
+        {
+          "counts": {
+            "by_tier": {
+              "A": 3,
+              "B": 3,
+              "C": 3,
+              "SOFT_A": 5,
+              "TECH_WATCH": 13
+            },
+            "candidates": 27,
+            "on_watchlist": 0,
+            "unparsed_items": 0
+          },
+          "slot": "midday",
+          "status": "degraded"
+        }
+      ]
+    }
+  ],
+  "updated": "2026-11-09"
+}

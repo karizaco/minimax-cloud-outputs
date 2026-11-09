@@ -1,0 +1,20 @@
+rank,tier,ticker,tv_symbol,company,venue,segment,price_raw,chg_pct,gap_pct,rvol,turnover_raw,mcap_raw,catalyst,flags,on_watchlist,parse,section
+1,SOFT_A,DNL,ASX:DNL,,,,3.54 TV,-7.33,-7.07,0.22,A$4.29m TV,A$6.69B TV,"08:29 PS FY26 results (Appendix 4E/presentation, ANN). WEB: FY26 underlying explosives EBIT A$485.1m (+12%), FY27 EBIT guide A$515–555m (Quartr summary). Sold off despite growth/guide → Soft-A (soft RVol).",,false,table,Soft-A
+2,SOFT_A,VNT,ASX:VNT,,,,5.29 MI,-7.68,,,A$2.21m MI,A$4.31B MI,"08:13 PS strategy/simplification/FY26 outlook (ANN). WEB: ≥A$60m annualised savings by Dec 2027, ~A$30m one-off costs, 3 sectors from 1 Dec; 2H FY26 revenue expected below pcp (Telecom/Energy deferrals); FY26 NPATA +7–10% growth kept.",,false,table,Soft-A
+3,SOFT_A,EOS,ASX:EOS,,,,7.27 TV,3.56,5.56,0.27,A$5.50m TV,A$1.61B TV,08:22 PS: new Middle East counter-drone order US$16m (ANN). Gap clears 4%; RVol soft.,,true,table,Soft-A
+4,SOFT_A,ANZ,ASX:ANZ,,,,40.11 TV,-0.57,0.72,0.11,A$20.8m TV,A$121.6B TV,07:30 PS FY26 result + dividend (ANN); figures not pulled this run (unverified). Muted tape → Soft-A low priority.,,false,table,Soft-A
+5,SOFT_A,PLA,ASX:PLA,,,,0.38 TV,0.0,-5.26,2.45,A$169k TV,A$354m TV,10:36 PS: A$50m equity raise + DFC financing term sheet after trading halt (ANN). Dilutive; gap −5.3% then back to flat; just over floor.,,false,table,Soft-A
+6,TECH_WATCH,PDN,ASX:PDN,,,,,6.77,3.89,0.13,,,,,false,list,TECH_WATCH
+7,B,NXT,ASX:NXT,,,,,-1.54,-1.9,,,,,,false,list,Tier B
+8,B,AMX,ASX:AMX,,,,,8.96,,253.0,,,,,false,list,Tier B
+9,B,IMM,ASX:IMM,,,,,23.8,,,,,,,false,list,Tier B
+10,B,NMR,ASX:NMR,,,,,20.5,,,,,,,false,list,Tier B
+11,B,LYC,ASX:LYC,,,,,3.74,,,,,,,false,list,Tier B
+12,C,SSM,ASX:SSM,,,,,,,,,,"Halted since 4:37pm 06/11 (MI halts list; may be stale vs ANN). 09:04 PS: acquire Programmed (Persol) for A$975m (EV A$1,092m), A$475m equity raise at A$2.03; completion ~1 Mar 2027 (WEB, stockwirex). Last 2.20 TV (−1.35%, A$2.98m) — resumption status not verified. Watch reopen/bookbuild price vs A$2.03.",,false,table,Tier C
+13,C,SET,ASX:SET,,,,,,,,,,"Placement + entitlement offer after halt (LIC-type, Solaris Equity Income Plus) — likely fund wrapper; file only.",,false,table,Tier C
+14,C,BB1,ASX:BB1,,,,,,,,,,"Trading halts on MI list; small, not chatted.",,false,table,Tier C
+15,C,KNI,ASX:KNI,,,,,,,,,,"Trading halts on MI list; small, not chatted.",,false,table,Tier C
+16,C,WCE,ASX:WCE,,,,,,,,,,"Trading halts on MI list; small, not chatted.",,false,table,Tier C
+17,C,CTN,ASX:CTN,,,,,,,,,,"Trading halts on MI list; small, not chatted.",,false,table,Tier C
+18,C,MEL,ASX:MEL,,,,,,,,,,"Trading halts on MI list; small, not chatted.",,false,table,Tier C
+19,C,NS1,ASX:NS1,,,,,,,,,,Voluntary administration + suspension (PS overnight).,,false,table,Tier C

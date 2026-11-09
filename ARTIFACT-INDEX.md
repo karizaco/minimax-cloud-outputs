@@ -62,6 +62,7 @@ All 21 top-level directories. "Live" means the routine is still producing into i
 | `ntrt/` | cron #17 pre-open gap brief | `<date>.md` + `<date>.csv`; `_pipeline/` (10 scripts); `_raw/` (~30 JSON intermediates + 4 logs) | **Yes** |
 | `us-eod/` | cron #20 EOD US snapshot (16:00 ET) | `<date>.csv` + `<date>.md` (early days used `.meta.md`), per-market subdirs, `2026-11-06.manifest.json` + `.acceptance.txt` | **Yes** |
 | `international-eod/` | cron #05 EOD international | Per-date dir: 16 region `.csv`, `summary.md`, `_manifest.json`, `_excluded.json`, `_carryover.json` | **Yes** |
+| `asx-stocks-in-play/`<br>`europe-stocks-in-play/`<br>`tokyo-stocks-in-play/`<br>`taiwan-stocks-in-play/` | Grok Bot (Fundamental agent) open/midday digests | Dated `YYYY-MM-DD/` with `<slot>.md`, `<slot>-candidates.{json,csv}`, `_manifest.json`; root `latest`, `history`, `_index`; tier vocabulary shared with `us-stocks-in-play/`; contract `refs/intl-stocks-in-play-contract.md`; consumers should read `<family>/latest.json` | **Yes** — weekdays |
 | `us-stocks-in-play/` | cron #17 (pre-close / open / midday) | `<date>.md`, `-open.md`, `-midday.md`, `-candidates.csv`, `-open-candidates.csv`, `-close-candidates.csv`, `logs.jsonl` | **Yes** |
 | `earnings/` | cron #15 reaction scanner, #19 reminder | `<date>-reactions.md`, `<date>-reminders.md`, `<date>-catalyst-targets.json` | **Yes** |
 | `preopen-feed/` | cron 92a / 92b checkpoints (08:30, 09:50 ET) | `<date>-<HHMM>.jsonl` tape + `<date>-<HHMM>.md` digest | **Yes** |
