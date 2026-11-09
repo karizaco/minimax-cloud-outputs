@@ -64,9 +64,24 @@ Check them all with `python3 scripts/check_artifacts.py`.
 
   ```bash
   git fetch origin main
-  git merge origin/main --allow-unrelated-histories -X ours
+  git merge origin/main --no-edit
   git push origin main
   ```
 
+  **Do NOT use `-X ours`.** That strategy silently discards every commit the
+  other crons pushed since your last fetch. It is appropriate when histories are
+  genuinely unrelated and you want to keep yours outright — it is **not**
+  appropriate for a shared repo where the other commits are real artifacts you
+  must keep. The error it causes (cron artifacts disappearing from `origin/main`)
+  is silent and only visible by diffing tree counts after the push.
+
+  If you see `--allow-unrelated-histories` needed, your clone has lost the shared
+  base; do **not** combine it with `-X ours` — use it with the default merge
+  strategy and then inspect the result before pushing.
+
 - **Never force-push** to that repo — it would destroy other crons' artifacts.
-- Verify after pushing: `git ls-tree -r --name-only origin/main | grep <your-dir>`.
+- **Always verify** after pushing that other crons' work survived:
+  ```bash
+  git log --oneline origin/main | head -6   # other crons still present
+  git ls-tree -r --name-only origin/main | grep <your-dir>   # your work landed
+  ```
