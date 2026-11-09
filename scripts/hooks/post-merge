@@ -1,0 +1,74 @@
+#!/bin/sh
+# post-merge hook: regenerate the derived views after a merge brings in new artifacts.
+#
+# Installed by `python3 scripts/install_hooks.py`. The tracked source of this
+# file is scripts/hooks/post-merge.
+#
+# WHY IT EXISTS. Every file under derived/ is JOINED from the cron artifacts.
+# When a cron's artifact lands, the join that was built before it is stale -
+# and a stale derived view is indistinguishable from a fresh one, because it
+# still carries a plausible build date. Regenerating on merge closes that gap.
+#
+# The builders are idempotent: a rebuild that changes nothing writes nothing,
+# so this hook produces no diff noise when the sources are unchanged. The
+# provenance line carries the build DATE, not a clock time, for the same
+# reason.
+#
+# WHAT IT DOES NOT DO. It does not push. It commits locally; the commit rides
+# along with your next push, which keeps the shared-repo push sequence in one
+# place instead of two racing ones.
+
+cd "$(git rev-parse --show-toplevel)" || exit 0
+
+if [ ! -f scripts/build_derived.py ]; then
+    exit 0
+fi
+
+PY=""
+for candidate in python3 python; do
+    if command -v "$candidate" >/dev/null 2>&1; then
+        if "$candidate" -c 'import sys; sys.exit(0 if sys.version_info >= (3, 7) else 1)' >/dev/null 2>&1; then
+            PY="$candidate"
+            break
+        fi
+    fi
+done
+if [ -z "$PY" ]; then
+    echo "post-merge: no python3/python >= 3.7 found - derived/ NOT regenerated." >&2
+    exit 0
+fi
+
+LOG="$(git rev-parse --git-dir)/post-merge.log"
+
+if ! "$PY" scripts/build_derived.py >"$LOG" 2>&1; then
+    echo "post-merge: build_derived.py FAILED - derived/ NOT regenerated. Tail of the log:" >&2
+    tail -20 "$LOG" >&2
+    exit 0
+fi
+tail -2 "$LOG"
+
+# Only commit if the builders actually changed something. `git add -u` stages
+# modifications to tracked files only; a new untracked file is not swept in.
+if [ -z "$(git status --porcelain -- derived/ 2>/dev/null)" ]; then
+    echo "post-merge: derived/ unchanged, nothing to commit."
+    exit 0
+fi
+
+git add -u -- derived/ 2>/dev/null
+# The pathspec keeps the commit to derived/: anything else already staged stays
+# staged and is not swept into this commit. --no-verify skips the pre-commit
+# hook, which would re-run the generators and the checker for no new reason.
+git commit -q --no-verify --only -m "chore(derived): regenerate views after merge
+
+Auto-committed by .git/hooks/post-merge. The builders are idempotent;
+this commit exists only because a source artifact changed.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>" -- derived/ 2>/dev/null \
+    || git commit -q --no-verify -m "chore(derived): regenerate views after merge
+
+Auto-committed by .git/hooks/post-merge. The builders are idempotent;
+this commit exists only because a source artifact changed.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>" -- derived/
+
+echo "post-merge: derived/ updated and committed."

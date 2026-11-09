@@ -85,3 +85,29 @@ Check them all with `python3 scripts/check_artifacts.py`.
   git log --oneline origin/main | head -6   # other crons still present
   git ls-tree -r --name-only origin/main | grep <your-dir>   # your work landed
   ```
+
+## Git hooks
+
+Two hooks live in `scripts/hooks/` and are **tracked in the repo**. They are
+not active until they are installed:
+
+```bash
+python3 scripts/install_hooks.py          # install into .git/hooks/
+python3 scripts/install_hooks.py --check  # report what is installed
+```
+
+| Hook | When | What it does |
+|---|---|---|
+| `pre-commit` | every commit | regenerates `daily-screens/<date>/{_manifest,_decisions}.json` from the artifacts the cron published, runs `check_artifacts.py`, and blocks the commit on a finding (`--no-verify` is the escape) |
+| `post-merge` | every merge and every `git pull` | regenerates `derived/` and commits it if the builders wrote anything. It does not push. |
+
+**`core.hooksPath` overrides `.git/hooks/` entirely.** A clone with that
+setting pointing at a scratch directory has no working hooks at all — the
+files in `.git/hooks/` are never consulted. `install_hooks.py` clears an
+override that points outside the repo. Check the state at any time with
+`python3 scripts/install_hooks.py --check`; it says which hook is installed,
+and whether the tracked copy has drifted from it.
+
+The builders are idempotent and carry the build **date**, not a clock time, so
+the `post-merge` hook produces no diff when nothing changed and a same-day
+rebuild is silent.

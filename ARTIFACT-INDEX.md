@@ -150,6 +150,7 @@ and safe to run on any checkout; none of them invents a value.
 | `scripts/build_derived.py` | Runs the derived-view builders and writes a `_manifest.json` into each dated `derived/` directory | Reports a builder that raised, and keeps going |
 | `scripts/check_reply_format.py` | Measures any reply or artifact against what the Minimax Code desktop client can render: glyphs, headings, tables, bullet and sentence length | Nothing — it reports; it never fails a build on its own |
 | `scripts/render_client_safe.py` | Renders an artifact into the client's subset: headings become bold labels, tables become lists, glyphs become words | Nothing — it writes a new file and leaves the original alone |
+| `scripts/install_hooks.py` | Installs the tracked git hooks into `.git/hooks/` and clears a `core.hooksPath` that points outside the repo | Never — it reports; it never removes a hook it did not write |
 
 ```bash
 python3 scripts/check_artifacts.py                    # all three checks

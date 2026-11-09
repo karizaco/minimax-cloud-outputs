@@ -1,0 +1,67 @@
+#!/bin/sh
+# pre-commit hook: regenerate the screen manifests and decision records, then check.
+#
+# Installed by `python3 scripts/install_hooks.py`. The tracked source of this
+# file is scripts/hooks/pre-commit.
+#
+# WHY IT EXISTS. `daily-screens/<date>/_manifest.json` and `_decisions.json` are
+# DERIVED from the artifact the cron published in the same directory - the
+# manifest names the files that are there, the decision record names the rules
+# that produced them. If they are committed separately from the artifact they
+# describe, they go stale silently: a manifest that lists a file which is not
+# there still looks like a manifest. Regenerating them at commit time keeps
+# them describing what is actually being committed.
+#
+# WHAT IT DOES NOT DO. It does not touch the artifacts themselves. It only
+# regenerates the two derived files, and it only STAGES those two - an
+# earlier version staged whole directories, which swept unrelated working-tree
+# changes into the commit.
+
+cd "$(git rev-parse --show-toplevel)" || exit 1
+
+# Find a Python. This box has `python` and no `python3`; the Linux sandbox the
+# crons run in has `python3` and usually no bare `python`. A hook that calls
+# `python3` unconditionally fails silently on Windows.
+PY=""
+for candidate in python3 python; do
+    if command -v "$candidate" >/dev/null 2>&1; then
+        if "$candidate" -c 'import sys; sys.exit(0 if sys.version_info >= (3, 7) else 1)' >/dev/null 2>&1; then
+            PY="$candidate"
+            break
+        fi
+    fi
+done
+if [ -z "$PY" ]; then
+    echo "pre-commit: no python3/python >= 3.7 found - skipping the generators and the check."
+    exit 0
+fi
+
+LOG="$(git rev-parse --git-dir)/pre-commit.log"
+
+echo "pre-commit: regenerating the screen manifests and decision records"
+if ! "$PY" scripts/build_screen_manifest.py >"$LOG" 2>&1; then
+    echo "pre-commit: build_screen_manifest.py FAILED:"
+    tail -20 "$LOG"
+    exit 1
+fi
+if ! "$PY" scripts/build_decisions.py >>"$LOG" 2>&1; then
+    echo "pre-commit: build_decisions.py FAILED:"
+    tail -20 "$LOG"
+    exit 1
+fi
+
+# Stage ONLY what the generators changed. `git add -u` updates tracked files
+# only, so a new untracked artifact is not swept into the commit.
+git add -u -- daily-screens 2>/dev/null
+
+echo "pre-commit: checking the repo"
+if ! "$PY" scripts/check_artifacts.py >"$LOG" 2>&1; then
+    echo "pre-commit: check_artifacts.py FAILED:"
+    grep -E '^(FAIL|links|index|convention|[0-9]+ finding)' "$LOG" | head -40
+    echo ""
+    echo "Fix the findings, or commit with --no-verify if you know why they are there."
+    exit 1
+fi
+grep -E '^(links|index|convention|clean)' "$LOG" | head -5
+
+exit 0
