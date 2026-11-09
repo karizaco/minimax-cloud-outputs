@@ -1,0 +1,59 @@
+{
+  "us": [
+    {
+      "name": "CECO",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-10"
+    },
+    {
+      "name": "VIR",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-04"
+    },
+    {
+      "name": "IBRX",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-04"
+    },
+    {
+      "name": "REF",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-09-10"
+    },
+    {
+      "name": "IMVT",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-06"
+    }
+  ],
+  "eu": [
+    {
+      "name": "KNOS",
+      "chg": -11.83
+    },
+    {
+      "name": "AUTO",
+      "chg": 10.46
+    },
+    {
+      "name": "BAMI",
+      "chg": 10.38
+    }
+  ],
+  "au": [
+    {
+      "name": "VNT",
+      "chg": -16.23
+    },
+    {
+      "name": "SLX",
+      "chg": 12.12
+    }
+  ],
+  "budget": {
+    "US": 5,
+    "EU": 3,
+    "AU": 2
+  },
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-09.md"
+}
