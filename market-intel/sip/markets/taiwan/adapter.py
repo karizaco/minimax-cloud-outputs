@@ -15,6 +15,7 @@ from .parse import (
     ParseError,
     parse_cmoney_change_up_html,
     parse_fx_json,
+    parse_mops_browser_text,
     parse_mops_items,
     parse_tpex_roster,
     parse_tv_dump,
@@ -280,6 +281,18 @@ def _attach_mops_catalysts(
         target["raw"]["mops_materiality"] = score
 
 
+def _load_mops_rows(path: Path) -> list[dict[str, Any]]:
+    payload = _load_json_or_text(path)
+    if isinstance(payload, str):
+        rows = parse_mops_browser_text(payload)
+        if rows:
+            return rows
+    parsed = parse_mops_items(payload)
+    if isinstance(parsed, list):
+        return [row for row in parsed if isinstance(row, Mapping)]
+    return [row for row in parsed.values() if isinstance(row, Mapping)]
+
+
 def build_candidates(
     fixtures_dir: str | Path | None = None,
     tv_dump_path: str | Path | None = None,
@@ -306,20 +319,48 @@ def build_candidates(
         else:
             health.append(SourceHealth("cmoney", "skipped", detail="fixture not found"))
 
-        mops_path = directory / "mops_items.json"
-        if mops_path.is_file():
+        mops_names = (
+            "mops_items.json",
+            "mops-browser.txt",
+            "mops_browser.txt",
+            "mops-browser.md",
+        )
+        mops_path = next(
+            (directory / name for name in mops_names if (directory / name).is_file()),
+            None,
+        )
+        if mops_path is not None:
             try:
-                parsed = parse_mops_items(_load_json_or_text(mops_path))
-                mops_rows = parsed if isinstance(parsed, list) else list(parsed.values())
-                mops_rows = [row for row in mops_rows if isinstance(row, Mapping)]
-                health.append(SourceHealth("mops", "ok" if mops_rows else "empty", len(mops_rows)))
+                mops_rows = _load_mops_rows(mops_path)
+                health.append(
+                    SourceHealth("mops", "ok" if mops_rows else "empty", len(mops_rows))
+                )
             except (OSError, ParseError, ValueError) as exc:
                 health.append(SourceHealth("mops", "blocked", detail=str(exc)))
         else:
-            health.append(SourceHealth("mops", "skipped", detail="fixture not found"))
+            health.append(
+                SourceHealth(
+                    "mops",
+                    "coverage_failed",
+                    detail=(
+                        "MOPS fixture missing; required one of: "
+                        + ", ".join(mops_names)
+                    ),
+                )
+            )
 
-        yahoo_path = directory / "yahoo_rank.html"
-        if yahoo_path.is_file():
+        yahoo_names = (
+            "yahoo_rank.html",
+            "yahoo-tai-turnover.html",
+            "yahoo-tai-change-up.html",
+            "yahoo-two-turnover.html",
+            "yahoo-two-change-up.html",
+        )
+        yahoo_path = next(
+            (directory / name for name in yahoo_names if (directory / name).is_file()),
+            None,
+        )
+        if yahoo_path is not None:
             try:
                 rows = parse_yahoo_rank_html(yahoo_path.read_text(encoding="utf-8"))
                 for row in rows:
@@ -354,7 +395,13 @@ def build_candidates(
                     fx = _number(rate)
                 else:
                     fx = _number(parsed)
-                health.append(SourceHealth("fx", "ok" if fx is not None else "empty", detail=str(fx) if fx is not None else None))
+                health.append(
+                    SourceHealth(
+                        "fx",
+                        "ok" if fx is not None else "empty",
+                        detail=str(fx) if fx is not None else None,
+                    )
+                )
             except (OSError, ParseError, ValueError, TypeError) as exc:
                 health.append(SourceHealth("fx", "blocked", detail=str(exc)))
         else:
@@ -374,7 +421,9 @@ def build_candidates(
             for row in rows:
                 _add_mover(movers, row, source="tradingview")
             primary_ok = primary_ok or bool(rows)
-            health.append(SourceHealth("tradingview", "ok" if rows else "empty", len(rows)))
+            health.append(
+                SourceHealth("tradingview", "ok" if rows else "empty", len(rows))
+            )
         except (OSError, ParseError, ValueError) as exc:
             health.append(SourceHealth("tradingview", "blocked", detail=str(exc)))
     else:

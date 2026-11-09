@@ -76,3 +76,65 @@ def test_mops_catalysts_are_attached_and_tiered(tmp_path: Path) -> None:
     assert by_ticker["1815"].tier == "A"
     assert by_ticker["3019"].catalyst == "Major acquisition announcement"
     assert by_ticker["1815"].catalyst == "Quarterly earnings release"
+
+
+def test_missing_mops_is_coverage_failed(tmp_path: Path) -> None:
+    fixtures = tmp_path / "fixtures"
+    fixtures.mkdir()
+    (fixtures / "cands.json").write_text(
+        json.dumps(
+            [
+                {
+                    "ticker": "6538",
+                    "name": "倉和",
+                    "price": 100,
+                    "chg": 6.1,
+                    "rv": 1.2,
+                    "turn": 40_000_000,
+                }
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    result = build_candidates(fixtures, slot="open")
+    mops_health = next(
+        item for item in result["source_health"] if item["source"] == "mops"
+    )
+    assert mops_health["status"] in {"coverage_failed", "missing"}
+    assert "mops_items.json" in mops_health["detail"]
+    assert "mops-browser.txt" in mops_health["detail"]
+
+
+def test_mops_browser_text_is_discovered_and_attached(tmp_path: Path) -> None:
+    fixtures = tmp_path / "fixtures"
+    fixtures.mkdir()
+    (fixtures / "cands.json").write_text(
+        json.dumps(
+            [
+                {
+                    "ticker": "6538",
+                    "name": "倉和",
+                    "price": 100,
+                    "chg": 6.1,
+                    "rv": 1.2,
+                    "turn": 40_000_000,
+                }
+            ]
+        ),
+        encoding="utf-8",
+    )
+    (fixtures / "mops-browser.txt").write_text(
+        "11/06 17:47 | 6538 | 倉和 | 公告本公司董事會通過民國115年度第3季合併財務報告\n",
+        encoding="utf-8",
+    )
+
+    result = build_candidates(fixtures, slot="open")
+    candidate = next(item for item in result["candidates"] if item["ticker"] == "6538")
+    assert candidate["catalyst"] == "公告本公司董事會通過民國115年度第3季合併財務報告"
+    assert candidate["catalyst_time"] == "11/06 17:47"
+    mops_health = next(
+        item for item in result["source_health"] if item["source"] == "mops"
+    )
+    assert mops_health["status"] == "ok"
+    assert mops_health["count"] == 1

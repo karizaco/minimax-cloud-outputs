@@ -6,6 +6,7 @@ from .catalyst_gate import is_boilerplate_mops, materiality_score
 from .schema import CandidateRow, TIER_ORDER, validate_row
 
 _NOISE_TYPES = {"etf", "warrant", "pref", "emerging", "tdr", "fund_wrapper"}
+_C_MATERIAL_FLAGS = {"LIMIT_UP", "LIMIT_DOWN", "TOB_GAP", "HALT"}
 
 
 def normalize_rows(rows: Iterable[dict[str, Any] | CandidateRow]) -> list[CandidateRow]:
@@ -165,6 +166,43 @@ def sort_tiers(rows: Iterable[CandidateRow]) -> list[CandidateRow]:
     )
 
 
+def _has_material_c_flag(row: CandidateRow) -> bool:
+    for flag in row.flags:
+        normalized = str(flag).upper()
+        if normalized in _C_MATERIAL_FLAGS:
+            return True
+        if normalized.startswith("OVERNIGHT_PROMOTED"):
+            return True
+        if normalized.startswith("TOB_GAP"):
+            return True
+        if normalized.startswith("HALT"):
+            return True
+    return False
+
+
+def trim_c_watch(
+    rows: Iterable[CandidateRow],
+    cfg: dict[str, Any],
+) -> list[CandidateRow]:
+    """Keep material C watches and enforce the engine or digest C cap."""
+    result = list(rows)
+    material_c = [row for row in result if row.tier == "C" and _has_material_c_flag(row)]
+    engine_caps = cfg.get("engine_top_n") or {}
+    digest_caps = cfg.get("digest_top_n") or {}
+    cap_value = engine_caps.get("C", digest_caps.get("C", 8))
+    cap = max(0, int(cap_value))
+    selected_c = sorted(
+        material_c,
+        key=lambda row: (-float(row.dollar_vol or 0), row.ticker),
+    )[:cap]
+    selected_ids = {id(row) for row in selected_c}
+    return [
+        row
+        for row in result
+        if row.tier != "C" or id(row) in selected_ids
+    ]
+
+
 def run_pipeline(
     rows: Iterable[CandidateRow],
     cfg: dict[str, Any],
@@ -175,4 +213,5 @@ def run_pipeline(
     result = dedupe(result)
     result = apply_floors(result, cfg, slot)
     result = assign_tiers(result, cfg, slot)
+    result = trim_c_watch(result, cfg)
     return sort_tiers(result)

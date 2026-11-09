@@ -89,7 +89,7 @@ def _row(**kwargs) -> CandidateRow:
 def test_soft_a_requires_material_catalyst() -> None:
     # tape alone → not Soft-A
     result = run_pipeline([_row(catalyst=None, rvol=0.5, chg_pct=-6.0)], _cfg(), "open")
-    assert result[0].tier != "Soft-A"
+    assert all(r.tier != "Soft-A" for r in result)
     # material + hard move + soft rvol → Soft-A
     result = run_pipeline(
         [
@@ -130,9 +130,9 @@ def test_tech_watch_rvol_band() -> None:
     assert tw[0].tier == "TECH_WATCH"
     # rvol below min or missing → not TECH_WATCH
     below = run_pipeline([_row(catalyst=None, rvol=0.5, chg_pct=-8.0)], cfg, "open")
-    assert below[0].tier != "TECH_WATCH"
+    assert all(r.tier != "TECH_WATCH" for r in below)
     missing = run_pipeline([_row(catalyst=None, rvol=None, chg_pct=-8.0)], cfg, "open")
-    assert missing[0].tier != "TECH_WATCH"
+    assert all(r.tier != "TECH_WATCH" for r in missing)
     # strong rvol no catalyst → B
     b = run_pipeline([_row(catalyst=None, rvol=2.5, chg_pct=-5.0)], cfg, "open")
     assert b[0].tier == "B"
@@ -148,5 +148,6 @@ def test_catalyst_min_score_from_cfg() -> None:
     )
     assert run_pipeline([row], cfg, "open")[0].tier == "Soft-A"
     cfg = {**cfg, "catalyst_min_score": 3}
-    assert run_pipeline([row], cfg, "open")[0].tier != "Soft-A"
-    assert run_pipeline([row], cfg, "open")[0].tier != "A"
+    result = run_pipeline([row], cfg, "open")
+    assert all(r.tier != "Soft-A" for r in result)
+    assert all(r.tier != "A" for r in result)

@@ -20,6 +20,9 @@ gap_soft: 3.0
 gap_hard: 4.0
 unusual_rvol: 3.0
 
+engine_top_n:
+  C: 5
+
 chat_top_n:
   A: 10
   Soft-A: 10

@@ -46,3 +46,27 @@ def test_garbage_number_is_rejected() -> None:
     result = check_chat(_run(last=100.0, chg_pct=1.0), chat)
     assert result["ok"] is False
     assert len(result["offenders"]) >= 3
+
+
+def test_percent_tolerance_accepts_rounded_value() -> None:
+    result = check_chat(_run(chg_pct=6.06), "Change: 6.1%")
+    assert result["ok"] is True
+    assert result["offenders"] == []
+
+
+def test_percent_tolerance_accepts_unrounded_value() -> None:
+    result = check_chat(_run(chg_pct=6.1), "Change: 6.06%")
+    assert result["ok"] is True
+    assert result["offenders"] == []
+
+
+def test_percent_true_mismatch_is_rejected() -> None:
+    result = check_chat(_run(chg_pct=6.1), "Change: 5.0%")
+    assert result["ok"] is False
+    assert result["offenders"]
+
+
+def test_percent_tolerance_still_rejects_wrong_sign() -> None:
+    result = check_chat(_run(chg_pct=6.1), "Change: -6.06%")
+    assert result["ok"] is False
+    assert result["offenders"]

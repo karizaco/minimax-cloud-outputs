@@ -157,6 +157,38 @@ def parse_cmoney_change_up_html(
     raise ParseError(source, "page shell contained no change rows")
 
 
+def parse_mops_browser_text(text: str) -> list[dict[str, Any]]:
+    """Parse MOPS browser pipe text into catalyst rows."""
+    rows: list[dict[str, Any]] = []
+    pattern = re.compile(
+        r"^(?P<time>\d{1,2}/\d{1,2}(?:\s+\d{1,2}:\d{2})?)\s*\|\s*"
+        r"(?P<ticker>\d{4})\s*\|\s*(?P<company>[^|]+?)\s*\|\s*"
+        r"(?P<headline>.+?)\s*$"
+    )
+    for raw_line in str(text or "").splitlines():
+        match = pattern.match(raw_line.strip())
+        if not match:
+            continue
+        values = match.groupdict()
+        headline = values["headline"].strip()
+        company = values["company"].strip()
+        if not headline or not company:
+            continue
+        ticker = values["ticker"]
+        rows.append(
+            {
+                "ticker": ticker,
+                "code": ticker,
+                "headline": headline,
+                "catalyst": headline,
+                "time": values["time"],
+                "catalyst_time": values["time"],
+                "raw": {**values, "company": company},
+            }
+        )
+    return rows
+
+
 def parse_mops_items(
     json_obj_or_list: Any,
 ) -> list[dict[str, Any]]:
@@ -165,6 +197,15 @@ def parse_mops_items(
         try:
             payload = json.loads(json_obj_or_list)
         except (ValueError, json.JSONDecodeError) as exc:
+            text = json_obj_or_list.decode("utf-8", errors="replace") if isinstance(
+                json_obj_or_list, bytes
+            ) else json_obj_or_list
+            if "|" in text and re.search(
+                r"^\s*\d{1,2}/\d{1,2}(?:\s+\d{1,2}:\d{2})?\s*\|",
+                text,
+                re.MULTILINE,
+            ):
+                return parse_mops_browser_text(text)
             raise ParseError(source, f"invalid JSON: {exc}") from exc
     else:
         payload = json_obj_or_list

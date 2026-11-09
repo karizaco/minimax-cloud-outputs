@@ -19,6 +19,27 @@ Return a concise Markdown chat digest. Every numeric claim must be supported by 
 """
 
 
+def resolve_mmx_bin(mmx_bin: str | Path | None = None) -> Path:
+    """Resolve the chat executable to an absolute path.
+
+    An explicit path or configured environment path takes precedence. The
+    resolver itself does not require the file to exist; draft_chat reports a
+    missing executable with exit code 2.
+    """
+    if mmx_bin:
+        return Path(mmx_bin).expanduser().resolve()
+
+    configured = os.environ.get("SIP_MMX_CHAT") or os.environ.get("MMX_CHAT_BIN")
+    if configured:
+        return Path(configured).expanduser().resolve()
+
+    workspace = Path("/workspace/market-intel/bin/mmx_chat.py")
+    if workspace.is_file():
+        return workspace.resolve()
+
+    return (Path(__file__).resolve().parents[2] / "bin" / "mmx_chat.py").resolve()
+
+
 def _compact_json(value: Any) -> str:
     return json.dumps(value, ensure_ascii=False, separators=(",", ":"), default=str)
 
@@ -38,7 +59,7 @@ def draft_chat(
     run_json_path: str | Path,
     out_chat_path: str | Path,
     *,
-    mmx_bin: str | Path = "mmx_chat.py",
+    mmx_bin: str | Path = resolve_mmx_bin(),
     chat_system_text: str = DEFAULT_CHAT_SYSTEM,
 ) -> int:
     """Generate a chat draft with mmx_chat and atomically publish it on success."""
@@ -49,6 +70,10 @@ def draft_chat(
         label="draft prompt",
     )
     output.parent.mkdir(parents=True, exist_ok=True)
+
+    resolved_mmx = resolve_mmx_bin(mmx_bin)
+    if not resolved_mmx.is_file():
+        return 2
 
     try:
         run_data = _load_run(source)
@@ -79,7 +104,7 @@ def draft_chat(
             generated_path = Path(handle.name)
 
         command = [
-            *_executable_for(mmx_bin),
+            *_executable_for(resolved_mmx),
             "--system",
             chat_system_text,
             "--user",
@@ -136,4 +161,9 @@ def draft_mmx(run_dict: dict[str, Any]) -> str:
     return json.dumps(run_dict, ensure_ascii=False, indent=2, default=str)
 
 
-__all__ = ["DEFAULT_CHAT_SYSTEM", "draft_chat", "draft_mmx"]
+__all__ = [
+    "DEFAULT_CHAT_SYSTEM",
+    "draft_chat",
+    "draft_mmx",
+    "resolve_mmx_bin",
+]

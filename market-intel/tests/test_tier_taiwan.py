@@ -73,7 +73,7 @@ def test_soft_a_requires_catalyst_and_soft_rvol() -> None:
     assert all(isinstance(item, CandidateRow) for item in result)
 
     by_ticker = {item.ticker: item for item in result}
-    assert by_ticker["1001"].tier != "Soft-A"
+    assert "1001" not in by_ticker or by_ticker["1001"].tier != "Soft-A"
     assert by_ticker["1002"].tier == "Soft-A"
     assert by_ticker["1003"].tier == "Soft-A"
     assert by_ticker["1004"].tier == "A"
@@ -120,9 +120,9 @@ def test_a_requires_catalyst_elevated_rvol_and_material_move() -> None:
 
     by_ticker = {item.ticker: item for item in result}
     assert by_ticker["2001"].tier == "A"
-    assert by_ticker["2002"].tier != "A"
-    assert by_ticker["2003"].tier != "A"
-    assert by_ticker["2004"].tier != "A"
+    assert "2002" not in by_ticker or by_ticker["2002"].tier != "A"
+    assert "2003" not in by_ticker or by_ticker["2003"].tier != "A"
+    assert "2004" not in by_ticker or by_ticker["2004"].tier != "A"
 
 
 def test_pipeline_sorts_by_tier_then_dollar_volume_descending() -> None:
@@ -195,7 +195,7 @@ def test_pipeline_drops_rows_below_floors() -> None:
             ),
             row(
                 "1002",
-                chg_pct=3.5,
+                chg_pct=5.0,
                 dollar_vol=32_000_000.0,
                 catalyst="Q3 EPS beat / 合併財務報告", mops_materiality=2,
                 rvol=0.8,
@@ -217,3 +217,4 @@ def test_pipeline_drops_rows_below_floors() -> None:
     assert all(item.last >= 50.0 for item in result)
     assert all(item.dollar_vol >= 1_000_000.0 for item in result)
     assert "1003" not in {item.ticker for item in result}
+    assert any(item.tier != "C" for item in result)

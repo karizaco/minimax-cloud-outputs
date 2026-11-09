@@ -1,4 +1,8 @@
-"""Trace numeric claims in generated chat text against a SIP run."""
+"""Trace numeric claims in generated chat text against a SIP run.
+
+Percentage claims use PERCENT_TOLERANCE = 0.05 percentage points while
+retaining the requirement that positive and negative changes do not match.
+"""
 
 from __future__ import annotations
 
@@ -9,6 +13,9 @@ import re
 import sys
 from pathlib import Path
 from typing import Any, Iterable
+
+
+PERCENT_TOLERANCE = 0.05
 
 _NUMBER_RE = re.compile(
     r"(?<![A-Za-z0-9])"
@@ -193,15 +200,15 @@ def _matches(
     if (
         number["kind"] == "number"
         and ticker_codes
-        and any(math.isclose(value, code, rel_tol=1e-9, abs_tol=1e-9)
-                for code in ticker_codes)
+        and any(
+            math.isclose(value, code, rel_tol=1e-9, abs_tol=1e-9)
+            for code in ticker_codes
+        )
     ):
         return True
 
     tolerance = max(1e-9, abs(value) * 1e-9)
     for candidate in allowed:
-        if not math.isclose(value, candidate, rel_tol=1e-9, abs_tol=tolerance):
-            continue
         if number["kind"] == "percent":
             if value > 0 and candidate <= 0:
                 continue
@@ -209,6 +216,12 @@ def _matches(
                 continue
             if value == 0 and candidate != 0:
                 continue
+            if abs(value - candidate) > PERCENT_TOLERANCE:
+                continue
+        elif not math.isclose(
+            value, candidate, rel_tol=1e-9, abs_tol=tolerance
+        ):
+            continue
         return True
     return False
 
