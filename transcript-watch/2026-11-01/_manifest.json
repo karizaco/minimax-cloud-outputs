@@ -1,0 +1,66 @@
+{
+  "_schema": "transcript-watch-manifest-v1",
+  "date": "2026-11-01",
+  "producer": "grok-bot/weekly-transcript-watch",
+  "run_id": "2026-11-01Tweekly",
+  "generated_at": "2026-11-01T20:00:00+07:00",
+  "provenance": "Source: Grok Bot box archive /home/box/agent-data/shared-research/transcript-watch/2026-11-01.md (StockAnalysis transcript pages and shared earnings cache); built 2026-11-01T20:00:00+07:00; covered session 2026-10-26 through 2026-11-01.",
+  "canonical": {
+    "brief": "brief.md",
+    "machine": [
+      "transcripts.json"
+    ]
+  },
+  "files": [
+    {
+      "name": "_manifest.json",
+      "role": "provenance"
+    },
+    {
+      "name": "brief.md",
+      "role": "public weekly digest"
+    },
+    {
+      "name": "summary-ccj-q3-2026-earnings.md",
+      "role": "short public brief"
+    },
+    {
+      "name": "summary-chrs-study-result-oct28.md",
+      "role": "short public brief"
+    },
+    {
+      "name": "summary-cour-q3-2026-earnings.md",
+      "role": "short public brief"
+    },
+    {
+      "name": "summary-mstr-q3-2026-earnings.md",
+      "role": "short public brief"
+    },
+    {
+      "name": "summary-orcl-investor-day-2026.md",
+      "role": "short public brief"
+    },
+    {
+      "name": "transcripts.csv",
+      "role": "tabular transcript index"
+    },
+    {
+      "name": "transcripts.json",
+      "role": "canonical machine data"
+    }
+  ],
+  "counts": {
+    "new_transcripts": 44,
+    "auto_briefed": 5,
+    "core_items": 3,
+    "by_tag": {
+      "earnings call": 40,
+      "investor day / update": 3,
+      "study / data update": 1
+    },
+    "on_watchlist": 40
+  },
+  "notes": [
+    "none"
+  ]
+}

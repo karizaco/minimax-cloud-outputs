@@ -75,6 +75,7 @@ All 21 top-level directories. "Live" means the routine is still producing into i
 | `pattern-study/` | cron #06 Saturday pattern-study backlog | `peoplewish-1000pct-backlog.md` — one cumulative ledger | **Yes** (1 file by design) |
 | `research/` | ad-hoc research | `047040-jan-2026-catalyst.md` — one note | **No** — one-off |
 | `weekly/` | weekly recap routine | Two editions: `2026-11-01-preview.{md,csv}` and `2026-11-08-preview.md`; the second lacks the movers CSV that the first carries | **Active** — weekly cadence established |
+| `transcript-watch/` | Grok Bot weekly transcript watch | Dated dir with `brief.md`, `transcripts.{json,csv}`, `summary-<slug>.md` (TL;DR only — full transcripts and long summaries stay off this public repo); contract `refs/transcript-watch-contract.md`; consumers should read `transcript-watch/latest.json` | **Yes** — weekly |
 | `data2/` | earlier data work | `_stale_bars.json`, `_assemble_stats.json`, `yahoo_prices_2026-10-21.json` | **No** — superseded |
 | `derived/` | **not a cron** — `scripts/build_derived.py` | Views joined from the families above: `persistence.{md,json}`, per-date `gap-reconciliation.*`, `sector-flow.*`, `ledger.*`, and `charts/*.html`. See `derived/README.md` | **Yes**, on demand |
 | `refs/` | standing documentation | Contracts, pointers, `watchlist.yaml`, `artifact-contract.md`, `decisions-contract.md`, and `archive/skipped-markers/` | **Yes** (mixed) |

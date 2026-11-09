@@ -1,0 +1,23 @@
+{
+  "_schema": "transcript-watch-index-v1",
+  "updated": "2026-11-01",
+  "runs": [
+    {
+      "date": "2026-11-01",
+      "run_id": "2026-11-01Tweekly",
+      "status": "ok",
+      "counts": {
+        "new_transcripts": 44,
+        "auto_briefed": 5,
+        "core_items": 3,
+        "by_tag": {
+          "earnings call": 40,
+          "investor day / update": 3,
+          "study / data update": 1
+        },
+        "on_watchlist": 40
+      },
+      "path": "2026-11-01/"
+    }
+  ]
+}
