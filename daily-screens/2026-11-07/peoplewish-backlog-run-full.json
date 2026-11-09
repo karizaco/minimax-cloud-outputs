@@ -24,6 +24,7 @@
   "ANET",
   "APP",
   "AR",
+  "ARGX",
   "ARWR",
   "ASTH",
   "ATI",
@@ -54,15 +55,18 @@
   "FIX",
   "FRHC",
   "FTAI",
+  "GBTC",
   "GME",
   "HRTG",
   "HUT",
   "IESC",
   "INOD",
+  "IVT",
   "KINS",
   "KOD",
   "KRYS",
   "LEU",
+  "LTM",
   "MDGL",
   "MEDP",
   "MNPR",
@@ -92,26 +96,28 @@
   "SMCI",
   "STRL",
   "SYRE",
+  "TECL",
   "THC",
   "TPC",
+  "TQQQ",
   "TRGP",
   "TSLA",
+  "USD",
+  "VIST",
   "VKTX",
   "VRT",
   "WGS",
   "XPEL"
  ],
- "prior_backlog_size": 100,
  "cumulative_backlog_size": 105,
- "tagged_common_stock": 90,
  "rows_full": [
   {
    "symbol": "NVDA.NASDAQ",
    "ticker": "NVDA",
    "name": "NVIDIA Corp",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 186.64,
    "min_close_10y": 1.6942,
    "max_close_10y": 239.24,
@@ -122,7 +128,7 @@
    "ytd_low": 164.27,
    "last_day_pct": 2.78,
    "volume": 180212285,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -130,9 +136,9 @@
    "symbol": "CDNA.NASDAQ",
    "ticker": "CDNA",
    "name": "Caredx Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 78.56,
    "min_close_10y": 0.786,
    "max_close_10y": 95.6,
@@ -143,7 +149,7 @@
    "ytd_low": 15.56,
    "last_day_pct": 2.92,
    "volume": 1126412,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "EP"
@@ -153,9 +159,9 @@
    "symbol": "CVNA.NYSE",
    "ticker": "CVNA",
    "name": "Carvana Co. - Class A",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Consumer Discretionary",
+   "security_type": "Common Stock",
    "current_close": 73.57,
    "min_close_10y": 0.744,
    "max_close_10y": 95.69,
@@ -166,15 +172,15 @@
    "ytd_low": 54.464,
    "last_day_pct": 2.07,
    "volume": 7642384,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "FRHC.NASDAQ",
    "ticker": "FRHC",
    "name": "Freedom Holding Corp",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Financials",
+   "security_type": "Common Stock",
    "current_close": 178.85,
    "min_close_10y": 1.85,
    "max_close_10y": 190.14,
@@ -185,7 +191,7 @@
    "ytd_low": 107.975,
    "last_day_pct": 0.95,
    "volume": 121765,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "EP"
@@ -195,9 +201,9 @@
    "symbol": "CLS.NYSE",
    "ticker": "CLS",
    "name": "Celestica Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 206.68,
    "min_close_10y": 2.83,
    "max_close_10y": 472.4,
@@ -208,7 +214,7 @@
    "ytd_low": 197.5,
    "last_day_pct": 0.51,
    "volume": 3689323,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -216,9 +222,9 @@
    "symbol": "LEU.NYSE",
    "ticker": "LEU",
    "name": "Centrus Energy Corp - Class A",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Energy",
+   "security_type": "Common Stock",
    "current_close": 104.6,
    "min_close_10y": 1.44,
    "max_close_10y": 436.0,
@@ -229,7 +235,7 @@
    "ytd_low": 84.86,
    "last_day_pct": 17.49,
    "volume": 1321179,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -238,9 +244,9 @@
    "symbol": "AMD.NASDAQ",
    "ticker": "AMD",
    "name": "Advanced Micro Devices Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 449.04,
    "min_close_10y": 6.295,
    "max_close_10y": 649.42,
@@ -251,7 +257,7 @@
    "ytd_low": 188.22,
    "last_day_pct": 11.04,
    "volume": 45270289,
-   "tags": [
+   "tags_live": [
     "EP",
     "big_day"
    ]
@@ -260,9 +266,9 @@
    "symbol": "KOD.NASDAQ",
    "ticker": "KOD",
    "name": "Kodiak Sciences Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 99.3,
    "min_close_10y": 1.4,
    "max_close_10y": 164.47,
@@ -273,7 +279,7 @@
    "ytd_low": 20.88,
    "last_day_pct": 9.1,
    "volume": 1054625,
-   "tags": [
+   "tags_live": [
     "VCP",
     "breakout",
     "coil",
@@ -285,9 +291,9 @@
    "symbol": "AMR.NYSE",
    "ticker": "AMR",
    "name": "Alpha Metallurgical Resources Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Materials",
+   "security_type": "Common Stock",
    "current_close": 147.93,
    "min_close_10y": 2.1,
    "max_close_10y": 442.21,
@@ -298,7 +304,7 @@
    "ytd_low": 133.64,
    "last_day_pct": 3.25,
    "volume": 292809,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -306,9 +312,9 @@
    "symbol": "ZCSH.NYSE",
    "ticker": "ZCSH",
    "name": "The Zcash ETF Shares",
-   "type": "ETF",
    "exchange": "NYSE",
    "gics_sector": null,
+   "security_type": "ETF",
    "current_close": 35.59,
    "min_close_10y": 0.5227,
    "max_close_10y": 41.5633,
@@ -319,7 +325,7 @@
    "ytd_low": 4.5242,
    "last_day_pct": 7.26,
    "volume": 1342703,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP",
     "big_day"
@@ -329,9 +335,9 @@
    "symbol": "AXSM.NASDAQ",
    "ticker": "AXSM",
    "name": "Axsome Therapeutics Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 132.37,
    "min_close_10y": 2.0,
    "max_close_10y": 255.17,
@@ -342,7 +348,7 @@
    "ytd_low": 123.0001,
    "last_day_pct": 1.98,
    "volume": 718344,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -350,9 +356,9 @@
    "symbol": "BE.NYSE",
    "ticker": "BE",
    "name": "Bloom Energy Corp - Class A",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 173.24,
    "min_close_10y": 2.67,
    "max_close_10y": 345.85,
@@ -363,7 +369,7 @@
    "ytd_low": 88.86,
    "last_day_pct": 3.41,
    "volume": 22986272,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP"
    ]
@@ -372,9 +378,9 @@
    "symbol": "DAVE.NASDAQ",
    "ticker": "DAVE",
    "name": "Dave Inc - Class A",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 278.59,
    "min_close_10y": 4.545,
    "max_close_10y": 457.6,
@@ -385,7 +391,7 @@
    "ytd_low": 152.21,
    "last_day_pct": 1.18,
    "volume": 429300,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -393,9 +399,9 @@
    "symbol": "ATLC.NASDAQ",
    "ticker": "ATLC",
    "name": "Atlanticus Holdings Corp",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Financials",
+   "security_type": "Common Stock",
    "current_close": 91.23,
    "min_close_10y": 1.63,
    "max_close_10y": 111.79,
@@ -406,7 +412,7 @@
    "ytd_low": 47.5,
    "last_day_pct": -5.41,
    "volume": 416997,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -414,9 +420,9 @@
    "symbol": "TRGP.NYSE",
    "ticker": "TRGP",
    "name": "Targa Resources Corp",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Energy",
+   "security_type": "Common Stock",
    "current_close": 264.59,
    "min_close_10y": 4.73,
    "max_close_10y": 314.99,
@@ -427,7 +433,7 @@
    "ytd_low": 173.57,
    "last_day_pct": -2.66,
    "volume": 2608446,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -435,9 +441,9 @@
    "symbol": "GBTC.NYSE",
    "ticker": "GBTC",
    "name": "Grayscale Investments LLC",
-   "type": "ETF",
    "exchange": "NYSE",
    "gics_sector": null,
+   "security_type": "ETF",
    "current_close": 58.44,
    "min_close_10y": 1.0604,
    "max_close_10y": 98.43,
@@ -448,7 +454,7 @@
    "ytd_low": 44.98,
    "last_day_pct": -0.39,
    "volume": 1768424,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil"
    ]
@@ -457,9 +463,9 @@
    "symbol": "AR.NYSE",
    "ticker": "AR",
    "name": "Antero Resources Corp",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Energy",
+   "security_type": "Common Stock",
    "current_close": 36.08,
    "min_close_10y": 0.6691,
    "max_close_10y": 48.31,
@@ -470,15 +476,15 @@
    "ytd_low": 31.15,
    "last_day_pct": -0.82,
    "volume": 3264390,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "DAC.NYSE",
    "ticker": "DAC",
    "name": "Danaos Corporation",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 148.11,
    "min_close_10y": 2.78,
    "max_close_10y": 170.22,
@@ -489,7 +495,7 @@
    "ytd_low": 93.34,
    "last_day_pct": -0.54,
    "volume": 198407,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "EP"
@@ -499,9 +505,9 @@
    "symbol": "AEHR.NASDAQ",
    "ticker": "AEHR",
    "name": "Aehr Test Systems",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 53.57,
    "min_close_10y": 1.06,
    "max_close_10y": 145.61,
@@ -512,7 +518,7 @@
    "ytd_low": 20.985,
    "last_day_pct": 8.97,
    "volume": 2992567,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP",
     "big_day"
@@ -522,9 +528,9 @@
    "symbol": "WGS.NASDAQ",
    "ticker": "WGS",
    "name": "GeneDx Holdings Corp - Class A",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 62.37,
    "min_close_10y": 1.24,
    "max_close_10y": 851.73,
@@ -535,7 +541,7 @@
    "ytd_low": 32.21,
    "last_day_pct": -3.09,
    "volume": 1204342,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP"
    ]
@@ -544,9 +550,9 @@
    "symbol": "MNPR.NASDAQ",
    "ticker": "MNPR",
    "name": "Monopar Therapeutics Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 71.42,
    "min_close_10y": 1.4465,
    "max_close_10y": 135.0,
@@ -557,7 +563,7 @@
    "ytd_low": 50.07,
    "last_day_pct": 6.25,
    "volume": 94209,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -566,9 +572,9 @@
    "symbol": "INOD.NASDAQ",
    "ticker": "INOD",
    "name": "Innodata Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 37.03,
    "min_close_10y": 0.78,
    "max_close_10y": 121.5,
@@ -579,7 +585,7 @@
    "ytd_low": 34.2301,
    "last_day_pct": -4.12,
    "volume": 3430118,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -587,9 +593,9 @@
    "symbol": "ARGX.NASDAQ",
    "ticker": "ARGX",
    "name": "argenx SE",
-   "type": "ADR",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "ADR",
    "current_close": 927.21,
    "min_close_10y": 19.765,
    "max_close_10y": 1058.9,
@@ -600,7 +606,7 @@
    "ytd_low": 661.85,
    "last_day_pct": 3.63,
    "volume": 377964,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil"
    ]
@@ -609,9 +615,9 @@
    "symbol": "ARWR.NASDAQ",
    "ticker": "ARWR",
    "name": "Arrowhead Pharmaceuticals Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 58.16,
    "min_close_10y": 1.24,
    "max_close_10y": 90.47,
@@ -622,7 +628,7 @@
    "ytd_low": 54.02,
    "last_day_pct": 1.22,
    "volume": 1363197,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -630,9 +636,9 @@
    "symbol": "USD.NYSE",
    "ticker": "USD",
    "name": "PROSHARES ULTRA SEMICONDUCTORS",
-   "type": "ETF",
    "exchange": "NYSE",
    "gics_sector": null,
+   "security_type": "ETF",
    "current_close": 53.83,
    "min_close_10y": 1.1783,
    "max_close_10y": 113.53,
@@ -643,7 +649,7 @@
    "ytd_low": 42.555,
    "last_day_pct": 7.08,
    "volume": 1860852,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -652,9 +658,9 @@
    "symbol": "ESEA.NASDAQ",
    "ticker": "ESEA",
    "name": "Euroseas Ltd",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 63.4,
    "min_close_10y": 1.4076,
    "max_close_10y": 79.39,
@@ -665,7 +671,7 @@
    "ytd_low": 51.6501,
    "last_day_pct": 0.28,
    "volume": 39872,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -673,9 +679,9 @@
    "symbol": "LTM.NYSE",
    "ticker": "LTM",
    "name": "LATAM Airlines Group SA",
-   "type": "ADR",
    "exchange": "NYSE",
    "gics_sector": "Industrials",
+   "security_type": "ADR",
    "current_close": 47.67,
    "min_close_10y": 1.1,
    "max_close_10y": 68.46,
@@ -686,7 +692,7 @@
    "ytd_low": 41.44,
    "last_day_pct": 1.27,
    "volume": 1244102,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil"
    ]
@@ -695,9 +701,9 @@
    "symbol": "PLSE.NASDAQ",
    "ticker": "PLSE",
    "name": "Pulse Biosciences Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 53.29,
    "min_close_10y": 1.23,
    "max_close_10y": 57.06,
@@ -708,7 +714,7 @@
    "ytd_low": 13.17,
    "last_day_pct": 0.41,
    "volume": 428499,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "EP"
@@ -718,9 +724,9 @@
    "symbol": "APP.NASDAQ",
    "ticker": "APP",
    "name": "Applovin Corp - Class A",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 391.22,
    "min_close_10y": 9.3,
    "max_close_10y": 733.6,
@@ -731,7 +737,7 @@
    "ytd_low": 225.19,
    "last_day_pct": 9.86,
    "volume": 11481117,
-   "tags": [
+   "tags_live": [
     "breakout",
     "EP",
     "big_day"
@@ -741,9 +747,9 @@
    "symbol": "MTDR.NYSE",
    "ticker": "MTDR",
    "name": "Matador Resources Company",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Energy",
+   "security_type": "Common Stock",
    "current_close": 50.41,
    "min_close_10y": 1.2,
    "max_close_10y": 73.37,
@@ -754,15 +760,15 @@
    "ytd_low": 39.72,
    "last_day_pct": 1.08,
    "volume": 2411352,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "PMTS.NASDAQ",
    "ticker": "PMTS",
    "name": "CPI Card Group Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 24.36,
    "min_close_10y": 0.58,
    "max_close_10y": 45.01,
@@ -773,7 +779,7 @@
    "ytd_low": 10.81,
    "last_day_pct": -1.38,
    "volume": 105403,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -781,9 +787,9 @@
    "symbol": "NUTX.NASDAQ",
    "ticker": "NUTX",
    "name": "Nutex Health Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 180.56,
    "min_close_10y": 4.34,
    "max_close_10y": 24750.0,
@@ -794,7 +800,7 @@
    "ytd_low": 83.99,
    "last_day_pct": -6.75,
    "volume": 168324,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -802,9 +808,9 @@
    "symbol": "NTRA.NASDAQ",
    "ticker": "NTRA",
    "name": "Natera Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 310.67,
    "min_close_10y": 7.5,
    "max_close_10y": 436.0,
@@ -815,7 +821,7 @@
    "ytd_low": 181.0,
    "last_day_pct": -14.59,
    "volume": 5777243,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -823,9 +829,9 @@
    "symbol": "ENPH.NASDAQ",
    "ticker": "ENPH",
    "name": "Enphase Energy Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 28.465,
    "min_close_10y": 0.7,
    "max_close_10y": 336.0,
@@ -836,7 +842,7 @@
    "ytd_low": 23.83,
    "last_day_pct": -1.74,
    "volume": 7506602,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -844,9 +850,9 @@
    "symbol": "MU.NASDAQ",
    "ticker": "MU",
    "name": "Micron Technology Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 690.0,
    "min_close_10y": 16.99,
    "max_close_10y": 1213.56,
@@ -857,7 +863,7 @@
    "ytd_low": 294.86,
    "last_day_pct": 5.12,
    "volume": 44887890,
-   "tags": [
+   "tags_live": [
     "EP",
     "big_day"
    ]
@@ -866,9 +872,9 @@
    "symbol": "CELH.NASDAQ",
    "ticker": "CELH",
    "name": "Celsius Holdings Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Consumer Staples",
+   "security_type": "Common Stock",
    "current_close": 32.16,
    "min_close_10y": 0.8,
    "max_close_10y": 96.11,
@@ -879,7 +885,7 @@
    "ytd_low": 23.555,
    "last_day_pct": 7.06,
    "volume": 7926288,
-   "tags": [
+   "tags_live": [
     "coil",
     "big_day"
    ]
@@ -888,9 +894,9 @@
    "symbol": "SHOP.NASDAQ",
    "ticker": "SHOP",
    "name": "Shopify Inc - Class A",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 148.91,
    "min_close_10y": 3.79,
    "max_close_10y": 179.22,
@@ -901,7 +907,7 @@
    "ytd_low": 94.0,
    "last_day_pct": 3.59,
    "volume": 7974808,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP"
    ]
@@ -910,9 +916,9 @@
    "symbol": "SYRE.NASDAQ",
    "ticker": "SYRE",
    "name": "Spyre Therapeutics Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 103.86,
    "min_close_10y": 2.66,
    "max_close_10y": 275.875,
@@ -923,7 +929,7 @@
    "ytd_low": 28.0,
    "last_day_pct": 7.53,
    "volume": 1635370,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "EP",
@@ -934,9 +940,9 @@
    "symbol": "STRL.NASDAQ",
    "ticker": "STRL",
    "name": "Sterling Infrastructure Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 252.82,
    "min_close_10y": 6.58,
    "max_close_10y": 993.74,
@@ -947,7 +953,7 @@
    "ytd_low": 239.355,
    "last_day_pct": 3.47,
    "volume": 1659663,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -955,9 +961,9 @@
    "symbol": "PRCH.NASDAQ",
    "ticker": "PRCH",
    "name": "Porch Group Inc - Class A",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 19.73,
    "min_close_10y": 0.525,
    "max_close_10y": 25.66,
@@ -968,7 +974,7 @@
    "ytd_low": 6.36,
    "last_day_pct": -2.86,
    "volume": 1252787,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -976,9 +982,9 @@
    "symbol": "KRYS.NASDAQ",
    "ticker": "KRYS",
    "name": "Krystal Biotech Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 300.88,
    "min_close_10y": 8.19,
    "max_close_10y": 378.15,
@@ -989,7 +995,7 @@
    "ytd_low": 235.605,
    "last_day_pct": 0.21,
    "volume": 234158,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -997,9 +1003,9 @@
    "symbol": "XPEL.NASDAQ",
    "ticker": "XPEL",
    "name": "XPEL Inc - Reg S",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Consumer Discretionary",
+   "security_type": "Common Stock",
    "current_close": 38.39,
    "min_close_10y": 1.05,
    "max_close_10y": 101.4,
@@ -1010,7 +1016,7 @@
    "ytd_low": 36.99,
    "last_day_pct": -4.17,
    "volume": 677652,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -1018,9 +1024,9 @@
    "symbol": "RYTM.NASDAQ",
    "ticker": "RYTM",
    "name": "Rhythm Pharmaceuticals Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 112.28,
    "min_close_10y": 3.12,
    "max_close_10y": 117.62,
@@ -1031,7 +1037,7 @@
    "ytd_low": 74.5,
    "last_day_pct": 6.91,
    "volume": 4935695,
-   "tags": [
+   "tags_live": [
     "EP",
     "big_day"
    ]
@@ -1040,9 +1046,9 @@
    "symbol": "GME.NYSE",
    "ticker": "GME",
    "name": "Gamestop Corporation - Class A",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Consumer Discretionary",
+   "security_type": "Common Stock",
    "current_close": 25.12,
    "min_close_10y": 0.7,
    "max_close_10y": 86.8775,
@@ -1053,7 +1059,7 @@
    "ytd_low": 17.79,
    "last_day_pct": 3.93,
    "volume": 5563553,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil"
    ]
@@ -1062,9 +1068,9 @@
    "symbol": "FIX.NYSE",
    "ticker": "FIX",
    "name": "Comfort Systems USA Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 1017.5,
    "min_close_10y": 28.7,
    "max_close_10y": 2066.51,
@@ -1075,7 +1081,7 @@
    "ytd_low": 938.4,
    "last_day_pct": 5.45,
    "volume": 1147313,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -1084,9 +1090,9 @@
    "symbol": "MOD.NYSE",
    "ticker": "MOD",
    "name": "Modine Manufacturing Company",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Consumer Discretionary",
+   "security_type": "Common Stock",
    "current_close": 96.61,
    "min_close_10y": 2.744,
    "max_close_10y": 282.5875,
@@ -1097,7 +1103,7 @@
    "ytd_low": 87.84,
    "last_day_pct": 5.71,
    "volume": 2971615,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -1106,9 +1112,9 @@
    "symbol": "CAMT.NASDAQ",
    "ticker": "CAMT",
    "name": "Camtek Ltd",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 97.05,
    "min_close_10y": 2.83,
    "max_close_10y": 207.46,
@@ -1119,7 +1125,7 @@
    "ytd_low": 89.13,
    "last_day_pct": 5.58,
    "volume": 899027,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -1128,9 +1134,9 @@
    "symbol": "ATI.NYSE",
    "ticker": "ATI",
    "name": "ATI Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 175.79,
    "min_close_10y": 5.23,
    "max_close_10y": 231.78,
@@ -1141,7 +1147,7 @@
    "ytd_low": 114.75,
    "last_day_pct": 4.43,
    "volume": 1481010,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP"
    ]
@@ -1150,9 +1156,9 @@
    "symbol": "AXTI.NASDAQ",
    "ticker": "AXTI",
    "name": "AXT Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 38.88,
    "min_close_10y": 1.16,
    "max_close_10y": 140.83,
@@ -1163,7 +1169,7 @@
    "ytd_low": 14.62,
    "last_day_pct": 5.88,
    "volume": 11257939,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP",
     "big_day"
@@ -1173,9 +1179,9 @@
    "symbol": "AAOI.NASDAQ",
    "ticker": "AAOI",
    "name": "Applied Optoelectronics Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 50.13,
    "min_close_10y": 1.5,
    "max_close_10y": 223.1,
@@ -1186,7 +1192,7 @@
    "ytd_low": 31.67,
    "last_day_pct": 6.91,
    "volume": 21625989,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP",
     "big_day"
@@ -1196,9 +1202,9 @@
    "symbol": "IVT.NYSE",
    "ticker": "IVT",
    "name": "InvenTrust Properties Corp",
-   "type": "REIT",
    "exchange": "NYSE",
    "gics_sector": "Real Estate",
+   "security_type": "REIT",
    "current_close": 31.51,
    "min_close_10y": 0.95,
    "max_close_10y": 36.73,
@@ -1209,7 +1215,7 @@
    "ytd_low": 27.75,
    "last_day_pct": -0.57,
    "volume": 511549,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil"
    ]
@@ -1218,9 +1224,9 @@
    "symbol": "VRT.NYSE",
    "ticker": "VRT",
    "name": "Vertiv Holdings Co - Class A",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 182.86,
    "min_close_10y": 5.57,
    "max_close_10y": 376.23,
@@ -1231,7 +1237,7 @@
    "ytd_low": 158.77,
    "last_day_pct": 3.47,
    "volume": 9559021,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -1239,9 +1245,9 @@
    "symbol": "BELFB.NASDAQ",
    "ticker": "BELFB",
    "name": "Bel Fuse Inc - Class B",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 206.79,
    "min_close_10y": 6.44,
    "max_close_10y": 333.04,
@@ -1252,7 +1258,7 @@
    "ytd_low": 166.41,
    "last_day_pct": 5.54,
    "volume": 422556,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -1261,9 +1267,9 @@
    "symbol": "SITM.NASDAQ",
    "ticker": "SITM",
    "name": "SiTime Corp",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 416.915,
    "min_close_10y": 13.0,
    "max_close_10y": 901.48,
@@ -1274,7 +1280,7 @@
    "ytd_low": 305.21,
    "last_day_pct": 17.44,
    "volume": 1645866,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -1283,9 +1289,9 @@
    "symbol": "ANET.NYSE",
    "ticker": "ANET",
    "name": "Arista Networks Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 170.8,
    "min_close_10y": 5.3375,
    "max_close_10y": 216.74,
@@ -1296,7 +1302,7 @@
    "ytd_low": 115.42,
    "last_day_pct": 7.31,
    "volume": 11923926,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -1305,9 +1311,9 @@
    "symbol": "FTAI.NASDAQ",
    "ticker": "FTAI",
    "name": "FTAI Aviation Ltd - Class A",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 180.27,
    "min_close_10y": 5.67,
    "max_close_10y": 310.04,
@@ -1318,7 +1324,7 @@
    "ytd_low": 146.48,
    "last_day_pct": 10.97,
    "volume": 3211674,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -1327,9 +1333,9 @@
    "symbol": "PSIX.NASDAQ",
    "ticker": "PSIX",
    "name": "Power Solutions International Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 39.16,
    "min_close_10y": 1.25,
    "max_close_10y": 115.78,
@@ -1340,7 +1346,7 @@
    "ytd_low": 25.281,
    "last_day_pct": 9.17,
    "volume": 1117179,
-   "tags": [
+   "tags_live": [
     "EP",
     "big_day"
    ]
@@ -1349,9 +1355,9 @@
    "symbol": "TPC.NYSE",
    "ticker": "TPC",
    "name": "Tutor Perini Corp",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 89.89,
    "min_close_10y": 2.91,
    "max_close_10y": 99.11,
@@ -1362,7 +1368,7 @@
    "ytd_low": 66.77,
    "last_day_pct": 9.82,
    "volume": 1283290,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "big_day"
@@ -1372,9 +1378,9 @@
    "symbol": "MDGL.NASDAQ",
    "ticker": "MDGL",
    "name": "Madrigal Pharmaceuticals Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 399.63,
    "min_close_10y": 13.11,
    "max_close_10y": 602.83,
@@ -1385,15 +1391,15 @@
    "ytd_low": 353.54,
    "last_day_pct": -0.12,
    "volume": 1086324,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "VIST.NYSE",
    "ticker": "VIST",
    "name": "Vista Energy S.A.B. de C.V",
-   "type": "ADR",
    "exchange": "NYSE",
    "gics_sector": "Energy",
+   "security_type": "ADR",
    "current_close": 57.42,
    "min_close_10y": 1.9,
    "max_close_10y": 79.25,
@@ -1404,15 +1410,15 @@
    "ytd_low": 43.71,
    "last_day_pct": 0.14,
    "volume": 1243743,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "TECL.NYSE",
    "ticker": "TECL",
    "name": "DIREXION DAILY TECHNOLOGY BULL 3X SHARES",
-   "type": "ETF",
    "exchange": "NYSE",
    "gics_sector": null,
+   "security_type": "ETF",
    "current_close": 129.91,
    "min_close_10y": 4.301,
    "max_close_10y": 273.28,
@@ -1423,7 +1429,7 @@
    "ytd_low": 75.16,
    "last_day_pct": 4.24,
    "volume": 1327195,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -1431,9 +1437,9 @@
    "symbol": "TSLA.NASDAQ",
    "ticker": "TSLA",
    "name": "Tesla Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Consumer Discretionary",
+   "security_type": "Common Stock",
    "current_close": 358.22,
    "min_close_10y": 11.9313,
    "max_close_10y": 489.88,
@@ -1444,15 +1450,15 @@
    "ytd_low": 297.38,
    "last_day_pct": 4.23,
    "volume": 36730427,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "MEDP.NASDAQ",
    "ticker": "MEDP",
    "name": "Medpace Holdings Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 653.11,
    "min_close_10y": 22.18,
    "max_close_10y": 692.68,
@@ -1463,7 +1469,7 @@
    "ytd_low": 373.0,
    "last_day_pct": 2.86,
    "volume": 231621,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "EP"
@@ -1473,9 +1479,9 @@
    "symbol": "BBW.NYSE",
    "ticker": "BBW",
    "name": "Build-A-Bear Workshop Inc.",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Consumer Discretionary",
+   "security_type": "Common Stock",
    "current_close": 29.7,
    "min_close_10y": 1.02,
    "max_close_10y": 75.85,
@@ -1486,7 +1492,7 @@
    "ytd_low": 23.19,
    "last_day_pct": 0.41,
    "volume": 348395,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -1494,9 +1500,9 @@
    "symbol": "SM.NYSE",
    "ticker": "SM",
    "name": "SM Energy Company",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Energy",
+   "security_type": "Common Stock",
    "current_close": 29.92,
    "min_close_10y": 1.03,
    "max_close_10y": 54.36,
@@ -1507,7 +1513,7 @@
    "ytd_low": 17.45,
    "last_day_pct": 0.98,
    "volume": 3951218,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -1515,9 +1521,9 @@
    "symbol": "VKTX.NASDAQ",
    "ticker": "VKTX",
    "name": "Viking Therapeutics Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 26.84,
    "min_close_10y": 0.93,
    "max_close_10y": 94.5,
@@ -1528,7 +1534,7 @@
    "ytd_low": 23.82,
    "last_day_pct": 4.07,
    "volume": 2668174,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -1536,9 +1542,9 @@
    "symbol": "CHEF.NASDAQ",
    "ticker": "CHEF",
    "name": "Chefs` Warehouse Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Consumer Staples",
+   "security_type": "Common Stock",
    "current_close": 103.77,
    "min_close_10y": 3.6,
    "max_close_10y": 116.42,
@@ -1549,7 +1555,7 @@
    "ytd_low": 56.56,
    "last_day_pct": 0.41,
    "volume": 315267,
-   "tags": [
+   "tags_live": [
     "coil",
     "EP"
    ]
@@ -1558,9 +1564,9 @@
    "symbol": "RCMT.NASDAQ",
    "ticker": "RCMT",
    "name": "RCM Technologies Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 32.05,
    "min_close_10y": 1.12,
    "max_close_10y": 42.02,
@@ -1571,7 +1577,7 @@
    "ytd_low": 17.26,
    "last_day_pct": 0.72,
    "volume": 49081,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP"
    ]
@@ -1580,9 +1586,9 @@
    "symbol": "KINS.NASDAQ",
    "ticker": "KINS",
    "name": "Kingstone Cos. Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Financials",
+   "security_type": "Common Stock",
    "current_close": 20.46,
    "min_close_10y": 0.72,
    "max_close_10y": 21.7,
@@ -1593,7 +1599,7 @@
    "ytd_low": 13.83,
    "last_day_pct": 7.91,
    "volume": 244338,
-   "tags": [
+   "tags_live": [
     "VCP",
     "breakout",
     "coil",
@@ -1604,9 +1610,9 @@
    "symbol": "ACMR.NASDAQ",
    "ticker": "ACMR",
    "name": "ACM Research Inc - Class A",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 44.61,
    "min_close_10y": 1.5833,
    "max_close_10y": 126.89,
@@ -1617,7 +1623,7 @@
    "ytd_low": 37.16,
    "last_day_pct": 13.48,
    "volume": 1426550,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -1626,9 +1632,9 @@
    "symbol": "PTGX.NASDAQ",
    "ticker": "PTGX",
    "name": "Protagonist Therapeutics Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 132.04,
    "min_close_10y": 4.69,
    "max_close_10y": 158.62,
@@ -1639,7 +1645,7 @@
    "ytd_low": 77.0,
    "last_day_pct": -2.38,
    "volume": 942032,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP"
    ]
@@ -1648,9 +1654,9 @@
    "symbol": "ETON.NASDAQ",
    "ticker": "ETON",
    "name": "Eton Pharmaceuticals Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 56.46,
    "min_close_10y": 2.02,
    "max_close_10y": 64.43,
@@ -1661,7 +1667,7 @@
    "ytd_low": 14.27,
    "last_day_pct": 19.75,
    "volume": 1270822,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "EP",
@@ -1672,9 +1678,9 @@
    "symbol": "OVV.NYSE",
    "ticker": "OVV",
    "name": "Ovintiv Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Energy",
+   "security_type": "Common Stock",
    "current_close": 60.52,
    "min_close_10y": 2.22,
    "max_close_10y": 72.62,
@@ -1685,7 +1691,7 @@
    "ytd_low": 36.805,
    "last_day_pct": -0.64,
    "volume": 3826189,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -1693,9 +1699,9 @@
    "symbol": "EAT.NYSE",
    "ticker": "EAT",
    "name": "Brinker International Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Consumer Discretionary",
+   "security_type": "Common Stock",
    "current_close": 206.57,
    "min_close_10y": 7.62,
    "max_close_10y": 253.94,
@@ -1706,7 +1712,7 @@
    "ytd_low": 124.96,
    "last_day_pct": -2.86,
    "volume": 1130141,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP"
    ]
@@ -1715,9 +1721,9 @@
    "symbol": "PLTR.NASDAQ",
    "ticker": "PLTR",
    "name": "Palantir Technologies Inc - Class A",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 160.38,
    "min_close_10y": 6.0,
    "max_close_10y": 209.05,
@@ -1728,7 +1734,7 @@
    "ytd_low": 106.37,
    "last_day_pct": 3.48,
    "volume": 23646205,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -1736,9 +1742,9 @@
    "symbol": "BELFA.NASDAQ",
    "ticker": "BELFA",
    "name": "Bel Fuse Inc - Class A",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 164.18,
    "min_close_10y": 6.15,
    "max_close_10y": 291.23,
@@ -1749,7 +1755,7 @@
    "ytd_low": 147.1238,
    "last_day_pct": 6.09,
    "volume": 62059,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -1758,9 +1764,9 @@
    "symbol": "VCEL.NASDAQ",
    "ticker": "VCEL",
    "name": "Vericel Corp",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 54.62,
    "min_close_10y": 2.05,
    "max_close_10y": 67.81,
@@ -1771,7 +1777,7 @@
    "ytd_low": 28.95,
    "last_day_pct": 5.48,
    "volume": 1616567,
-   "tags": [
+   "tags_live": [
     "breakout",
     "EP",
     "big_day"
@@ -1781,9 +1787,9 @@
    "symbol": "CRWD.NASDAQ",
    "ticker": "CRWD",
    "name": "Crowdstrike Holdings Inc - Class A",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 216.9,
    "min_close_10y": 8.2525,
    "max_close_10y": 278.86,
@@ -1794,7 +1800,7 @@
    "ytd_low": 85.68,
    "last_day_pct": -0.14,
    "volume": 10961731,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP"
    ]
@@ -1803,9 +1809,9 @@
    "symbol": "HUT.NASDAQ",
    "ticker": "HUT",
    "name": "Hut 8 Corp",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Financials",
+   "security_type": "Common Stock",
    "current_close": 52.65,
    "min_close_10y": 2.0275,
    "max_close_10y": 133.02,
@@ -1816,7 +1822,7 @@
    "ytd_low": 42.06,
    "last_day_pct": 14.58,
    "volume": 11553372,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -1825,9 +1831,9 @@
    "symbol": "NVMI.NASDAQ",
    "ticker": "NVMI",
    "name": "Nova Ltd",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 313.18,
    "min_close_10y": 12.11,
    "max_close_10y": 605.65,
@@ -1838,7 +1844,7 @@
    "ytd_low": 275.1,
    "last_day_pct": 11.73,
    "volume": 463559,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -1847,9 +1853,9 @@
    "symbol": "THC.NYSE",
    "ticker": "THC",
    "name": "Tenet Healthcare Corp",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 283.33,
    "min_close_10y": 11.01,
    "max_close_10y": 292.25,
@@ -1860,7 +1866,7 @@
    "ytd_low": 157.58,
    "last_day_pct": -1.09,
    "volume": 631594,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -1868,9 +1874,9 @@
    "symbol": "RIOT.NASDAQ",
    "ticker": "RIOT",
    "name": "Riot Platforms Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 16.71,
    "min_close_10y": 0.65,
    "max_close_10y": 77.9,
@@ -1881,7 +1887,7 @@
    "ytd_low": 11.5,
    "last_day_pct": 13.21,
    "volume": 45077267,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -1890,9 +1896,9 @@
    "symbol": "CROX.NASDAQ",
    "ticker": "CROX",
    "name": "Crocs Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Consumer Discretionary",
+   "security_type": "Common Stock",
    "current_close": 151.86,
    "min_close_10y": 5.94,
    "max_close_10y": 180.57,
@@ -1903,7 +1909,7 @@
    "ytd_low": 75.13,
    "last_day_pct": -0.7,
    "volume": 1096041,
-   "tags": [
+   "tags_live": [
     "coil",
     "EP"
    ]
@@ -1912,9 +1918,9 @@
    "symbol": "POWL.NASDAQ",
    "ticker": "POWL",
    "name": "Powell Industries Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 133.12,
    "min_close_10y": 5.21,
    "max_close_10y": 322.05,
@@ -1925,7 +1931,7 @@
    "ytd_low": 107.3333,
    "last_day_pct": 6.44,
    "volume": 863678,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -1934,9 +1940,9 @@
    "symbol": "HRTG.NYSE",
    "ticker": "HRTG",
    "name": "Heritage Insurance Holdings Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Financials",
+   "security_type": "Common Stock",
    "current_close": 33.22,
    "min_close_10y": 1.32,
    "max_close_10y": 37.7,
@@ -1947,7 +1953,7 @@
    "ytd_low": 20.48,
    "last_day_pct": -1.4,
    "volume": 199081,
-   "tags": [
+   "tags_live": [
     "coil",
     "EP"
    ]
@@ -1956,9 +1962,9 @@
    "symbol": "RRC.NYSE",
    "ticker": "RRC",
    "name": "Range Resources Corp",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Energy",
+   "security_type": "Common Stock",
    "current_close": 48.72,
    "min_close_10y": 1.94,
    "max_close_10y": 56.38,
@@ -1969,7 +1975,7 @@
    "ytd_low": 32.68,
    "last_day_pct": -2.93,
    "volume": 3287229,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil"
    ]
@@ -1978,9 +1984,9 @@
    "symbol": "COGT.NASDAQ",
    "ticker": "COGT",
    "name": "Cogent Biosciences Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 31.645,
    "min_close_10y": 1.28,
    "max_close_10y": 67.08,
@@ -1991,7 +1997,7 @@
    "ytd_low": 27.735,
    "last_day_pct": 6.98,
    "volume": 1481763,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -2000,9 +2006,9 @@
    "symbol": "SMCI.NASDAQ",
    "ticker": "SMCI",
    "name": "Super Micro Computer Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 28.76,
    "min_close_10y": 1.165,
    "max_close_10y": 118.807,
@@ -2013,7 +2019,7 @@
    "ytd_low": 19.48,
    "last_day_pct": 6.2,
    "volume": 37178562,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -2022,9 +2028,9 @@
    "symbol": "AAMI.NYSE",
    "ticker": "AAMI",
    "name": "Acadian Asset Management Inc.",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Financials",
+   "security_type": "Common Stock",
    "current_close": 90.96,
    "min_close_10y": 3.73,
    "max_close_10y": 97.31,
@@ -2035,7 +2041,7 @@
    "ytd_low": 45.85,
    "last_day_pct": -0.9,
    "volume": 757462,
-   "tags": [
+   "tags_live": [
     "coil",
     "EP"
    ]
@@ -2044,9 +2050,9 @@
    "symbol": "SMMT.NASDAQ",
    "ticker": "SMMT",
    "name": "Summit Therapeutics Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 16.33,
    "min_close_10y": 0.6801,
    "max_close_10y": 36.7,
@@ -2057,7 +2063,7 @@
    "ytd_low": 12.07,
    "last_day_pct": 15.08,
    "volume": 5795790,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "big_day"
@@ -2067,9 +2073,9 @@
    "symbol": "DRUG.NASDAQ",
    "ticker": "DRUG",
    "name": "Bright Minds Biosciences Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 23.0,
    "min_close_10y": 0.9601,
    "max_close_10y": 95.985,
@@ -2080,7 +2086,7 @@
    "ytd_low": 17.4,
    "last_day_pct": 11.11,
    "volume": 197379,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -2089,9 +2095,9 @@
    "symbol": "PRAX.NASDAQ",
    "ticker": "PRAX",
    "name": "Praxis Precision Medicines Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 277.62,
    "min_close_10y": 12.054,
    "max_close_10y": 903.0,
@@ -2102,7 +2108,7 @@
    "ytd_low": 236.795,
    "last_day_pct": 5.72,
    "volume": 320915,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -2111,9 +2117,9 @@
    "symbol": "ASTH.NASDAQ",
    "ticker": "ASTH",
    "name": "Astrana Health Inc.",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 34.5,
    "min_close_10y": 1.4981,
    "max_close_10y": 119.45,
@@ -2124,7 +2130,7 @@
    "ytd_low": 18.08,
    "last_day_pct": -11.56,
    "volume": 1063724,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -2132,9 +2138,9 @@
    "symbol": "PWR.NYSE",
    "ticker": "PWR",
    "name": "Quanta Services Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 540.9,
    "min_close_10y": 23.8,
    "max_close_10y": 785.24,
@@ -2145,7 +2151,7 @@
    "ytd_low": 408.36,
    "last_day_pct": 6.25,
    "volume": 2775570,
-   "tags": [
+   "tags_live": [
     "big_day"
    ]
   },
@@ -2153,9 +2159,9 @@
    "symbol": "IESC.NASDAQ",
    "ticker": "IESC",
    "name": "IES Holdings Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 158.45,
    "min_close_10y": 7.005,
    "max_close_10y": 396.98,
@@ -2166,7 +2172,7 @@
    "ytd_low": 142.66,
    "last_day_pct": 8.84,
    "volume": 693484,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -2175,9 +2181,9 @@
    "symbol": "DELL.NYSE",
    "ticker": "DELL",
    "name": "Dell Technologies Inc - Class C",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 328.53,
    "min_close_10y": 14.6325,
    "max_close_10y": 588.4,
@@ -2188,7 +2194,7 @@
    "ytd_low": 110.22,
    "last_day_pct": 3.67,
    "volume": 8601290,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -2196,9 +2202,9 @@
    "symbol": "MPC.NYSE",
    "ticker": "MPC",
    "name": "Marathon Petroleum Corp",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Energy",
+   "security_type": "Common Stock",
    "current_close": 372.74,
    "min_close_10y": 16.62,
    "max_close_10y": 484.92,
@@ -2209,7 +2215,7 @@
    "ytd_low": 162.33,
    "last_day_pct": -1.21,
    "volume": 2480226,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -2217,9 +2223,9 @@
    "symbol": "FNGO.NYSE",
    "ticker": "FNGO",
    "name": "MicroSectors FANG  Index 2X Leveraged ETNs due January 8, 2038",
-   "type": "ETF",
    "exchange": "NYSE",
    "gics_sector": null,
+   "security_type": "ETF",
    "current_close": 120.719,
    "min_close_10y": 5.3874,
    "max_close_10y": 166.6395,
@@ -2230,7 +2236,7 @@
    "ytd_low": 79.055,
    "last_day_pct": 1.05,
    "volume": 4259,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP"
    ]
@@ -2239,9 +2245,9 @@
    "symbol": "HWM.NYSE",
    "ticker": "HWM",
    "name": "Howmet Aerospace Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 205.81,
    "min_close_10y": 9.1948,
    "max_close_10y": 292.65,
@@ -2252,7 +2258,7 @@
    "ytd_low": 183.52,
    "last_day_pct": 2.44,
    "volume": 4033066,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -2260,9 +2266,9 @@
    "symbol": "TQQQ.NASDAQ",
    "ticker": "TQQQ",
    "name": "PROSHARES ULTRAPRO QQQ",
-   "type": "ETF",
    "exchange": "NASDAQ",
    "gics_sector": null,
+   "security_type": "ETF",
    "current_close": 52.25,
    "min_close_10y": 2.3846,
    "max_close_10y": 87.22,
@@ -2273,7 +2279,7 @@
    "ytd_low": 37.32,
    "last_day_pct": 3.54,
    "volume": 99925651,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -2281,9 +2287,9 @@
    "symbol": "BOOT.NYSE",
    "ticker": "BOOT",
    "name": "Boot Barn Holdings Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Consumer Discretionary",
+   "security_type": "Common Stock",
    "current_close": 130.96,
    "min_close_10y": 5.98,
    "max_close_10y": 207.98,
@@ -2294,7 +2300,7 @@
    "ytd_low": 110.53,
    "last_day_pct": -5.66,
    "volume": 1026101,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -2302,9 +2308,9 @@
    "symbol": "FET.NYSE",
    "ticker": "FET",
    "name": "Forum Energy Technologies Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Energy",
+   "security_type": "Common Stock",
    "current_close": 69.69,
    "min_close_10y": 3.2,
    "max_close_10y": 486.0,
@@ -2315,7 +2321,7 @@
    "ytd_low": 35.7,
    "last_day_pct": 3.09,
    "volume": 161478,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -2323,9 +2329,9 @@
    "symbol": "GSAT.NASDAQ",
    "ticker": "GSAT",
    "name": "Globalstar Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Communication Services",
+   "security_type": "Common Stock",
    "current_close": 84.32,
    "min_close_10y": 3.9,
    "max_close_10y": 84.58,
@@ -2336,7 +2342,7 @@
    "ytd_low": 53.67,
    "last_day_pct": 0.95,
    "volume": 939789,
-   "tags": [
+   "tags_live": [
     "breakout",
     "coil",
     "EP"
@@ -2346,9 +2352,9 @@
    "symbol": "CNR.NYSE",
    "ticker": "CNR",
    "name": "Core Natural Resources Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 79.31,
    "min_close_10y": 3.69,
    "max_close_10y": 133.33,
@@ -2359,7 +2365,7 @@
    "ytd_low": 73.31,
    "last_day_pct": 5.45,
    "volume": 878171,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -2368,9 +2374,9 @@
    "symbol": "LMB.NASDAQ",
    "ticker": "LMB",
    "name": "Limbach Holdings Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 53.45,
    "min_close_10y": 2.53,
    "max_close_10y": 149.53,
@@ -2381,7 +2387,7 @@
    "ytd_low": 40.74,
    "last_day_pct": -1.93,
    "volume": 181859,
-   "tags": [
+   "tags_live": [
     "coil"
    ]
   },
@@ -2389,9 +2395,9 @@
    "symbol": "WULF.NASDAQ",
    "ticker": "WULF",
    "name": "TeraWulf Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Financials",
+   "security_type": "Common Stock",
    "current_close": 11.37,
    "min_close_10y": 0.5406,
    "max_close_10y": 42.31,
@@ -2402,7 +2408,7 @@
    "ytd_low": 9.51,
    "last_day_pct": 12.8,
    "volume": 106078003,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -2411,9 +2417,9 @@
    "symbol": "LRCX.NASDAQ",
    "ticker": "LRCX",
    "name": "Lam Research Corp",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 200.44,
    "min_close_10y": 9.597,
    "max_close_10y": 433.33,
@@ -2424,7 +2430,7 @@
    "ytd_low": 177.5,
    "last_day_pct": 8.23,
    "volume": 17898031,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -2433,9 +2439,9 @@
    "symbol": "FTNT.NASDAQ",
    "ticker": "FTNT",
    "name": "Fortinet Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 118.84,
    "min_close_10y": 5.722,
    "max_close_10y": 194.75,
@@ -2446,7 +2452,7 @@
    "ytd_low": 73.55,
    "last_day_pct": -3.0,
    "volume": 8027481,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -2454,9 +2460,9 @@
    "symbol": "MRNA.NASDAQ",
    "ticker": "MRNA",
    "name": "Moderna Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 254.19,
    "min_close_10y": 12.26,
    "max_close_10y": 484.47,
@@ -2467,7 +2473,7 @@
    "ytd_low": 29.81,
    "last_day_pct": 5.27,
    "volume": 16329129,
-   "tags": [
+   "tags_live": [
     "VCP",
     "breakout",
     "coil",
@@ -2479,9 +2485,9 @@
    "symbol": "LSCC.NASDAQ",
    "ticker": "LSCC",
    "name": "Lattice Semiconductor Corp",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 105.02,
    "min_close_10y": 5.07,
    "max_close_10y": 155.27,
@@ -2492,7 +2498,7 @@
    "ytd_low": 75.52,
    "last_day_pct": 7.13,
    "volume": 2420918,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -2501,9 +2507,9 @@
    "symbol": "LLY.NYSE",
    "ticker": "LLY",
    "name": "Eli Lilly and Company",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 1354.0,
    "min_close_10y": 65.97,
    "max_close_10y": 1417.99,
@@ -2514,7 +2520,7 @@
    "ytd_low": 850.51,
    "last_day_pct": -0.79,
    "volume": 3806286,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "EP"
@@ -2524,9 +2530,9 @@
    "symbol": "NMM.NYSE",
    "ticker": "NMM",
    "name": "Navios Maritime Partners L.P.",
-   "type": "MLP",
    "exchange": "NYSE",
    "gics_sector": "Industrials",
+   "security_type": "MLP",
    "current_close": 85.33,
    "min_close_10y": 4.17,
    "max_close_10y": 96.6,
@@ -2537,7 +2543,7 @@
    "ytd_low": 50.93,
    "last_day_pct": 1.46,
    "volume": 253629,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "EP"
@@ -2547,9 +2553,9 @@
    "symbol": "CMT.NYSE",
    "ticker": "CMT",
    "name": "Core Molding Technologies",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Materials",
+   "security_type": "Common Stock",
    "current_close": 21.67,
    "min_close_10y": 1.07,
    "max_close_10y": 29.65,
@@ -2560,7 +2566,7 @@
    "ytd_low": 17.71,
    "last_day_pct": 2.95,
    "volume": 31669,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -2568,9 +2574,9 @@
    "symbol": "ENVA.NYSE",
    "ticker": "ENVA",
    "name": "Enova International Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Financials",
+   "security_type": "Common Stock",
    "current_close": 172.48,
    "min_close_10y": 8.59,
    "max_close_10y": 265.45,
@@ -2581,7 +2587,7 @@
    "ytd_low": 129.25,
    "last_day_pct": -1.03,
    "volume": 251903,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -2589,9 +2595,9 @@
    "symbol": "SIG.NYSE",
    "ticker": "SIG",
    "name": "Signet Jewelers Ltd",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Consumer Discretionary",
+   "security_type": "Common Stock",
    "current_close": 117.26,
    "min_close_10y": 5.84,
    "max_close_10y": 128.4,
@@ -2602,7 +2608,7 @@
    "ytd_low": 71.615,
    "last_day_pct": -3.82,
    "volume": 739201,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "EP"
@@ -2612,9 +2618,9 @@
    "symbol": "ROM.NYSE",
    "ticker": "ROM",
    "name": "PROSHARES ULTRA TECHNOLOGY",
-   "type": "ETF",
    "exchange": "NYSE",
    "gics_sector": null,
+   "security_type": "ETF",
    "current_close": 110.13,
    "min_close_10y": 5.5881,
    "max_close_10y": 170.98,
@@ -2625,7 +2631,7 @@
    "ytd_low": 71.3586,
    "last_day_pct": 2.71,
    "volume": 154596,
-   "tags": [
+   "tags_live": [
     "EP"
    ]
   },
@@ -2633,9 +2639,9 @@
    "symbol": "AVAH.NASDAQ",
    "ticker": "AVAH",
    "name": "Aveanna Healthcare Holdings Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 13.25,
    "min_close_10y": 0.6756,
    "max_close_10y": 14.38,
@@ -2646,7 +2652,7 @@
    "ytd_low": 5.93,
    "last_day_pct": -3.07,
    "volume": 1805099,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "EP"
@@ -2656,9 +2662,9 @@
    "symbol": "CANC.NASDAQ",
    "ticker": "CANC",
    "name": "TEMA ONCOLOGY ETF",
-   "type": "ETF",
    "exchange": "NASDAQ",
    "gics_sector": null,
+   "security_type": "ETF",
    "current_close": 41.85,
    "min_close_10y": 2.137,
    "max_close_10y": 86.64,
@@ -2669,7 +2675,7 @@
    "ytd_low": 33.491,
    "last_day_pct": 2.62,
    "volume": 56653,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil"
    ]
@@ -2678,9 +2684,9 @@
    "symbol": "TNGX.NASDAQ",
    "ticker": "TNGX",
    "name": "Tango Therapeutics Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 21.5,
    "min_close_10y": 1.1,
    "max_close_10y": 32.9,
@@ -2691,7 +2697,7 @@
    "ytd_low": 8.66,
    "last_day_pct": 3.02,
    "volume": 2129303,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP"
    ]
@@ -2700,9 +2706,9 @@
    "symbol": "LQDA.NASDAQ",
    "ticker": "LQDA",
    "name": "Liquidia Corp",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 44.4,
    "min_close_10y": 2.28,
    "max_close_10y": 91.03,
@@ -2713,7 +2719,7 @@
    "ytd_low": 22.31,
    "last_day_pct": -0.2,
    "volume": 1291252,
-   "tags": [
+   "tags_live": [
     "VCP",
     "EP"
    ]
@@ -2722,9 +2728,9 @@
    "symbol": "BTU.NYSE",
    "ticker": "BTU",
    "name": "Peabody Energy Corp New",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Energy",
+   "security_type": "Common Stock",
    "current_close": 16.03,
    "min_close_10y": 0.8311,
    "max_close_10y": 47.46,
@@ -2735,7 +2741,7 @@
    "ytd_low": 15.69,
    "last_day_pct": 0.06,
    "volume": 3874634,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -2743,9 +2749,9 @@
    "symbol": "CLDX.NASDAQ",
    "ticker": "CLDX",
    "name": "Celldex Therapeutics Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 29.87,
    "min_close_10y": 1.55,
    "max_close_10y": 73.8,
@@ -2756,7 +2762,7 @@
    "ytd_low": 22.33,
    "last_day_pct": 5.66,
    "volume": 924294,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -2765,9 +2771,9 @@
    "symbol": "IAG.NYSE",
    "ticker": "IAG",
    "name": "Iamgold Corp",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Materials",
+   "security_type": "Common Stock",
    "current_close": 18.76,
    "min_close_10y": 0.976,
    "max_close_10y": 24.57,
@@ -2778,7 +2784,7 @@
    "ytd_low": 13.615,
    "last_day_pct": 7.2,
    "volume": 9516345,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -2787,9 +2793,9 @@
    "symbol": "TGLS.NYSE",
    "ticker": "TGLS",
    "name": "Tecnoglass Holdings Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Materials",
+   "security_type": "Common Stock",
    "current_close": 43.94,
    "min_close_10y": 2.29,
    "max_close_10y": 88.42,
@@ -2800,7 +2806,7 @@
    "ytd_low": 34.05,
    "last_day_pct": -2.64,
    "volume": 491412,
-   "tags": [
+   "tags_live": [
     "breakout",
     "coil"
    ]
@@ -2809,9 +2815,9 @@
    "symbol": "HROW.NASDAQ",
    "ticker": "HROW",
    "name": "Harrow Inc",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Health Care",
+   "security_type": "Common Stock",
    "current_close": 26.89,
    "min_close_10y": 1.42,
    "max_close_10y": 57.48,
@@ -2822,7 +2828,7 @@
    "ytd_low": 25.76,
    "last_day_pct": 3.26,
    "volume": 650864,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -2830,9 +2836,9 @@
    "symbol": "ANF.NYSE",
    "ticker": "ANF",
    "name": "Abercrombie & Fitch Co. - Class A",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Consumer Discretionary",
+   "security_type": "Common Stock",
    "current_close": 149.54,
    "min_close_10y": 7.97,
    "max_close_10y": 192.34,
@@ -2843,7 +2849,7 @@
    "ytd_low": 69.68,
    "last_day_pct": -5.11,
    "volume": 1061370,
-   "tags": [
+   "tags_live": [
     "VCP",
     "coil",
     "EP"
@@ -2853,9 +2859,9 @@
    "symbol": "CRS.NYSE",
    "ticker": "CRS",
    "name": "Carpenter Technology Corp",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Materials",
+   "security_type": "Common Stock",
    "current_close": 278.31,
    "min_close_10y": 14.87,
    "max_close_10y": 619.25,
@@ -2866,7 +2872,7 @@
    "ytd_low": 270.4883,
    "last_day_pct": -0.2,
    "volume": 1119385,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -2874,9 +2880,9 @@
    "symbol": "HOV.NYSE",
    "ticker": "HOV",
    "name": "Hovnanian Enterprises Inc - Class A",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Consumer Discretionary",
+   "security_type": "Common Stock",
    "current_close": 101.46,
    "min_close_10y": 5.43,
    "max_close_10y": 238.3,
@@ -2887,7 +2893,7 @@
    "ytd_low": 90.17,
    "last_day_pct": -3.21,
    "volume": 67587,
-   "tags": [
+   "tags_live": [
     "VCP"
    ]
   },
@@ -2895,9 +2901,9 @@
    "symbol": "KLAC.NASDAQ",
    "ticker": "KLAC",
    "name": "KLA Corp",
-   "type": "Common Stock",
    "exchange": "NASDAQ",
    "gics_sector": "Information Technology",
+   "security_type": "Common Stock",
    "current_close": 138.49,
    "min_close_10y": 7.451,
    "max_close_10y": 301.71,
@@ -2908,7 +2914,7 @@
    "ytd_low": 125.055,
    "last_day_pct": 6.69,
    "volume": 15342516,
-   "tags": [
+   "tags_live": [
     "VCP",
     "big_day"
    ]
@@ -2917,9 +2923,9 @@
    "symbol": "WCC.NYSE",
    "ticker": "WCC",
    "name": "Wesco International Inc",
-   "type": "Common Stock",
    "exchange": "NYSE",
    "gics_sector": "Industrials",
+   "security_type": "Common Stock",
    "current_close": 292.68,
    "min_close_10y": 15.77,
    "max_close_10y": 384.09,
@@ -2930,15 +2936,15 @@
    "ytd_low": 244.08,
    "last_day_pct": 2.17,
    "volume": 761380,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "MGNI.NASDAQ",
    "ticker": "MGNI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 27.39,
    "min_close_10y": 1.49,
    "max_close_10y": 61.8,
@@ -2949,15 +2955,15 @@
    "ytd_low": 10.82,
    "last_day_pct": -0.47,
    "volume": 3661848,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "NET.NYSE",
    "ticker": "NET",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 268.75,
    "min_close_10y": 14.62,
    "max_close_10y": 360.93,
@@ -2968,15 +2974,15 @@
    "ytd_low": 158.83,
    "last_day_pct": 9.91,
    "volume": 9389057,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "UAN.NYSE",
    "ticker": "UAN",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 109.48,
    "min_close_10y": 6.0,
    "max_close_10y": 174.32,
@@ -2987,15 +2993,15 @@
    "ytd_low": 96.0,
    "last_day_pct": 0.82,
    "volume": 47365,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "UCO.NYSE",
    "ticker": "UCO",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 54.38,
    "min_close_10y": 3.01,
    "max_close_10y": 241.3125,
@@ -3006,15 +3012,15 @@
    "ytd_low": 18.485,
    "last_day_pct": 2.33,
    "volume": 2540581,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "AVGO.NASDAQ",
    "ticker": "AVGO",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 293.69,
    "min_close_10y": 16.279,
    "max_close_10y": 481.57,
@@ -3025,15 +3031,15 @@
    "ytd_low": 289.767,
    "last_day_pct": 0.74,
    "volume": 32442491,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "EMBJ.NYSE",
    "ticker": "EMBJ",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 74.08,
    "min_close_10y": 4.11,
    "max_close_10y": 79.89,
@@ -3044,15 +3050,15 @@
    "ytd_low": 53.56,
    "last_day_pct": -0.15,
    "volume": 1467629,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "KNSA.NASDAQ",
    "ticker": "KNSA",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 93.86,
    "min_close_10y": 5.24,
    "max_close_10y": 97.56,
@@ -3063,15 +3069,15 @@
    "ytd_low": 37.02,
    "last_day_pct": 6.25,
    "volume": 636346,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "XENE.NASDAQ",
    "ticker": "XENE",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 39.17,
    "min_close_10y": 2.2,
    "max_close_10y": 70.96,
@@ -3082,15 +3088,15 @@
    "ytd_low": 33.38,
    "last_day_pct": 3.95,
    "volume": 869683,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "APPS.NASDAQ",
    "ticker": "APPS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 10.38,
    "min_close_10y": 0.5906,
    "max_close_10y": 94.74,
@@ -3101,15 +3107,15 @@
    "ytd_low": 2.74,
    "last_day_pct": 7.34,
    "volume": 3338582,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "PANW.NASDAQ",
    "ticker": "PANW",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 313.84,
    "min_close_10y": 18.0017,
    "max_close_10y": 419.91,
@@ -3120,15 +3126,15 @@
    "ytd_low": 139.5706,
    "last_day_pct": -0.26,
    "volume": 6291666,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "TGTX.NASDAQ",
    "ticker": "TGTX",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 59.825,
    "min_close_10y": 3.44,
    "max_close_10y": 61.63,
@@ -3139,15 +3145,15 @@
    "ytd_low": 26.76,
    "last_day_pct": 3.18,
    "volume": 2302954,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "SKY.NYSE",
    "ticker": "SKY",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 91.4,
    "min_close_10y": 5.26,
    "max_close_10y": 108.92,
@@ -3158,15 +3164,15 @@
    "ytd_low": 63.865,
    "last_day_pct": -1.89,
    "volume": 556587,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "PHVS.NASDAQ",
    "ticker": "PHVS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 34.39,
    "min_close_10y": 1.98,
    "max_close_10y": 40.11,
@@ -3177,15 +3183,15 @@
    "ytd_low": 23.62,
    "last_day_pct": 5.72,
    "volume": 405107,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "CVE.NYSE",
    "ticker": "CVE",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 27.45,
    "min_close_10y": 1.6,
    "max_close_10y": 33.92,
@@ -3196,15 +3202,15 @@
    "ytd_low": 15.63,
    "last_day_pct": -0.58,
    "volume": 8530072,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "GFI.NYSE",
    "ticker": "GFI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 39.17,
    "min_close_10y": 2.29,
    "max_close_10y": 61.51,
@@ -3215,15 +3221,15 @@
    "ytd_low": 31.11,
    "last_day_pct": 3.54,
    "volume": 4965891,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ARIS.NYSE",
    "ticker": "ARIS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 15.65,
    "min_close_10y": 0.915,
    "max_close_10y": 21.65,
@@ -3234,15 +3240,15 @@
    "ytd_low": 13.21,
    "last_day_pct": 2.42,
    "volume": 1600115,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "FTI.NYSE",
    "ticker": "FTI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 63.52,
    "min_close_10y": 3.7277,
    "max_close_10y": 80.08,
@@ -3253,15 +3259,15 @@
    "ytd_low": 44.5,
    "last_day_pct": 3.13,
    "volume": 2950670,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "PSNL.NASDAQ",
    "ticker": "PSNL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 15.79,
    "min_close_10y": 0.9301,
    "max_close_10y": 51.02,
@@ -3272,15 +3278,15 @@
    "ytd_low": 4.955,
    "last_day_pct": 1.54,
    "volume": 3000168,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "TDW.NYSE",
    "ticker": "TDW",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 70.06,
    "min_close_10y": 4.13,
    "max_close_10y": 139.6774,
@@ -3291,15 +3297,15 @@
    "ytd_low": 49.92,
    "last_day_pct": 1.42,
    "volume": 917771,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "IDT.NYSE",
    "ticker": "IDT",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 82.17,
    "min_close_10y": 4.9,
    "max_close_10y": 84.46,
@@ -3310,15 +3316,15 @@
    "ytd_low": 46.48,
    "last_day_pct": 0.43,
    "volume": 128326,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "MTSI.NASDAQ",
    "ticker": "MTSI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 210.98,
    "min_close_10y": 12.6,
    "max_close_10y": 409.68,
@@ -3329,15 +3335,15 @@
    "ytd_low": 163.885,
    "last_day_pct": 10.84,
    "volume": 2854302,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "SLGL.NASDAQ",
    "ticker": "SLGL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 61.01,
    "min_close_10y": 3.66,
    "max_close_10y": 171.5,
@@ -3348,15 +3354,15 @@
    "ytd_low": 41.68,
    "last_day_pct": -3.17,
    "volume": 28778,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "SLS.NASDAQ",
    "ticker": "SLS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 8.42,
    "min_close_10y": 0.506,
    "max_close_10y": 448.5,
@@ -3367,15 +3373,15 @@
    "ytd_low": 3.23,
    "last_day_pct": 6.85,
    "volume": 7623254,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "WSM.NYSE",
    "ticker": "WSM",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 254.06,
    "min_close_10y": 15.33,
    "max_close_10y": 270.08,
@@ -3386,15 +3392,15 @@
    "ytd_low": 165.51,
    "last_day_pct": -1.76,
    "volume": 775643,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ERX.NYSE",
    "ticker": "ERX",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 99.21,
    "min_close_10y": 6.0,
    "max_close_10y": 436.9,
@@ -3405,15 +3411,15 @@
    "ytd_low": 55.325,
    "last_day_pct": -0.32,
    "volume": 353337,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "OII.NYSE",
    "ticker": "OII",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 34.24,
    "min_close_10y": 2.08,
    "max_close_10y": 54.11,
@@ -3424,15 +3430,15 @@
    "ytd_low": 23.73,
    "last_day_pct": 0.62,
    "volume": 1843937,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "COKE.NASDAQ",
    "ticker": "COKE",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 207.89,
    "min_close_10y": 12.648,
    "max_close_10y": 216.91,
@@ -3443,15 +3449,15 @@
    "ytd_low": 142.83,
    "last_day_pct": -2.17,
    "volume": 689802,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "HNRG.NASDAQ",
    "ticker": "HNRG",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 10.1,
    "min_close_10y": 0.615,
    "max_close_10y": 23.81,
@@ -3462,15 +3468,15 @@
    "ytd_low": 8.85,
    "last_day_pct": 7.91,
    "volume": 1105164,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "PDS.NYSE",
    "ticker": "PDS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 91.79,
    "min_close_10y": 5.6,
    "max_close_10y": 120.0,
@@ -3481,15 +3487,15 @@
    "ytd_low": 70.0,
    "last_day_pct": 1.68,
    "volume": 114232,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "KNSL.NYSE",
    "ticker": "KNSL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 383.73,
    "min_close_10y": 23.43,
    "max_close_10y": 547.98,
@@ -3500,15 +3506,15 @@
    "ytd_low": 287.2,
    "last_day_pct": -3.29,
    "volume": 413362,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "CLMB.NASDAQ",
    "ticker": "CLMB",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 39.7,
    "min_close_10y": 2.44,
    "max_close_10y": 43.05,
@@ -3519,15 +3525,15 @@
    "ytd_low": 15.245,
    "last_day_pct": -0.38,
    "volume": 211295,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "CRVS.NASDAQ",
    "ticker": "CRVS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 10.54,
    "min_close_10y": 0.6481,
    "max_close_10y": 25.52,
@@ -3538,15 +3544,15 @@
    "ytd_low": 6.39,
    "last_day_pct": 8.32,
    "volume": 1257327,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "DFIN.NYSE",
    "ticker": "DFIN",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 66.98,
    "min_close_10y": 4.12,
    "max_close_10y": 69.9,
@@ -3557,15 +3563,15 @@
    "ytd_low": 36.11,
    "last_day_pct": -0.36,
    "volume": 290378,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "BXC.NYSE",
    "ticker": "BXC",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 60.62,
    "min_close_10y": 3.74,
    "max_close_10y": 131.66,
@@ -3576,15 +3582,15 @@
    "ytd_low": 44.78,
    "last_day_pct": -8.76,
    "volume": 300969,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ASTS.NASDAQ",
    "ticker": "ASTS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 32.33,
    "min_close_10y": 2.01,
    "max_close_10y": 133.09,
@@ -3595,15 +3601,15 @@
    "ytd_low": 27.58,
    "last_day_pct": 7.05,
    "volume": 32371428,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "SOXL.NYSE",
    "ticker": "SOXL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 45.97,
    "min_close_10y": 2.8607,
    "max_close_10y": 300.77,
@@ -3614,15 +3620,15 @@
    "ytd_low": 39.52,
    "last_day_pct": 12.48,
    "volume": 297844730,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ESOA.NASDAQ",
    "ticker": "ESOA",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 8.62,
    "min_close_10y": 0.54,
    "max_close_10y": 19.34,
@@ -3633,15 +3639,15 @@
    "ytd_low": 8.0,
    "last_day_pct": 1.29,
    "volume": 46132,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "IMO.NYSE",
    "ticker": "IMO",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 124.83,
    "min_close_10y": 7.83,
    "max_close_10y": 138.33,
@@ -3652,15 +3658,15 @@
    "ytd_low": 83.31,
    "last_day_pct": -0.68,
    "volume": 469207,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ELF.NYSE",
    "ticker": "ELF",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 116.14,
    "min_close_10y": 7.3,
    "max_close_10y": 218.0,
@@ -3671,15 +3677,15 @@
    "ytd_low": 48.82,
    "last_day_pct": 5.73,
    "volume": 2278747,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "VCTR.NASDAQ",
    "ticker": "VCTR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 119.24,
    "min_close_10y": 7.5,
    "max_close_10y": 121.13,
@@ -3690,15 +3696,15 @@
    "ytd_low": 60.9,
    "last_day_pct": 6.08,
    "volume": 594089,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "AMRX.NASDAQ",
    "ticker": "AMRX",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 20.14,
    "min_close_10y": 1.27,
    "max_close_10y": 24.27,
@@ -3709,15 +3715,15 @@
    "ytd_low": 11.71,
    "last_day_pct": 3.55,
    "volume": 3751509,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "SD.NYSE",
    "ticker": "SD",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 12.49,
    "min_close_10y": 0.788,
    "max_close_10y": 28.36,
@@ -3728,15 +3734,15 @@
    "ytd_low": 12.46,
    "last_day_pct": -1.03,
    "volume": 359250,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "MYRG.NASDAQ",
    "ticker": "MYRG",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 262.91,
    "min_close_10y": 16.64,
    "max_close_10y": 501.13,
@@ -3747,15 +3753,15 @@
    "ytd_low": 215.4042,
    "last_day_pct": 6.62,
    "volume": 474162,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "SMTI.NASDAQ",
    "ticker": "SMTI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 31.55,
    "min_close_10y": 2.0,
    "max_close_10y": 52.75,
@@ -3766,15 +3772,15 @@
    "ytd_low": 16.0465,
    "last_day_pct": -0.19,
    "volume": 44246,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "PBF.NYSE",
    "ticker": "PBF",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 67.27,
    "min_close_10y": 4.27,
    "max_close_10y": 91.17,
@@ -3785,15 +3791,15 @@
    "ytd_low": 27.14,
    "last_day_pct": -1.61,
    "volume": 1841392,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "FLEX.NASDAQ",
    "ticker": "FLEX",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 69.775,
    "min_close_10y": 4.431,
    "max_close_10y": 162.07,
@@ -3804,15 +3810,15 @@
    "ytd_low": 55.1601,
    "last_day_pct": 4.56,
    "volume": 5734164,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "IDR.NYSE",
    "ticker": "IDR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 20.85,
    "min_close_10y": 1.33,
    "max_close_10y": 52.66,
@@ -3823,15 +3829,15 @@
    "ytd_low": 18.55,
    "last_day_pct": 6.54,
    "volume": 207334,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "OMER.NASDAQ",
    "ticker": "OMER",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 16.92,
    "min_close_10y": 1.08,
    "max_close_10y": 26.69,
@@ -3842,15 +3848,15 @@
    "ytd_low": 6.7023,
    "last_day_pct": -0.88,
    "volume": 1014113,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "LITE.NASDAQ",
    "ticker": "LITE",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 538.59,
    "min_close_10y": 34.4,
    "max_close_10y": 1133.4,
@@ -3861,15 +3867,15 @@
    "ytd_low": 317.44,
    "last_day_pct": 5.67,
    "volume": 5406033,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "MPWR.NASDAQ",
    "ticker": "MPWR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 1190.44,
    "min_close_10y": 76.5,
    "max_close_10y": 1689.89,
@@ -3880,15 +3886,15 @@
    "ytd_low": 926.18,
    "last_day_pct": 5.22,
    "volume": 1202130,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "NBTX.NASDAQ",
    "ticker": "NBTX",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 30.63,
    "min_close_10y": 1.98,
    "max_close_10y": 55.07,
@@ -3899,15 +3905,15 @@
    "ytd_low": 19.61,
    "last_day_pct": 2.03,
    "volume": 136240,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "PI.NASDAQ",
    "ticker": "PI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 171.03,
    "min_close_10y": 11.07,
    "max_close_10y": 241.91,
@@ -3918,15 +3924,15 @@
    "ytd_low": 87.36,
    "last_day_pct": 6.19,
    "volume": 299402,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "PDEX.NASDAQ",
    "ticker": "PDEX",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 63.155,
    "min_close_10y": 4.1,
    "max_close_10y": 73.41,
@@ -3937,15 +3943,15 @@
    "ytd_low": 36.57,
    "last_day_pct": 3.19,
    "volume": 21480,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "DY.NYSE",
    "ticker": "DY",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 207.52,
    "min_close_10y": 13.49,
    "max_close_10y": 535.2,
@@ -3956,15 +3962,15 @@
    "ytd_low": 186.25,
    "last_day_pct": 7.64,
    "volume": 715162,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "HBM.NYSE",
    "ticker": "HBM",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 20.91,
    "min_close_10y": 1.36,
    "max_close_10y": 31.87,
@@ -3975,15 +3981,15 @@
    "ytd_low": 17.503,
    "last_day_pct": 1.6,
    "volume": 3876968,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "RDVT.NASDAQ",
    "ticker": "RDVT",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 70.1,
    "min_close_10y": 4.56,
    "max_close_10y": 82.4,
@@ -3994,15 +4000,15 @@
    "ytd_low": 33.4,
    "last_day_pct": -2.8,
    "volume": 189397,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "BWAY.NASDAQ",
    "ticker": "BWAY",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 11.15,
    "min_close_10y": 0.73,
    "max_close_10y": 17.17,
@@ -4013,15 +4019,15 @@
    "ytd_low": 9.5,
    "last_day_pct": 5.09,
    "volume": 103039,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "CAR.NASDAQ",
    "ticker": "CAR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 118.83,
    "min_close_10y": 7.78,
    "max_close_10y": 713.97,
@@ -4032,15 +4038,15 @@
    "ytd_low": 85.96,
    "last_day_pct": -1.34,
    "volume": 937040,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "DRD.NYSE",
    "ticker": "DRD",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 25.48,
    "min_close_10y": 1.67,
    "max_close_10y": 39.18,
@@ -4051,15 +4057,15 @@
    "ytd_low": 19.47,
    "last_day_pct": 3.79,
    "volume": 279984,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "DIG.NYSE",
    "ticker": "DIG",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 64.03,
    "min_close_10y": 4.2,
    "max_close_10y": 82.82,
@@ -4070,15 +4076,15 @@
    "ytd_low": 36.09,
    "last_day_pct": 0.13,
    "volume": 84025,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "COSO.NYSE",
    "ticker": "COSO",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 28.15,
    "min_close_10y": 1.85,
    "max_close_10y": 28.75,
@@ -4089,15 +4095,15 @@
    "ytd_low": 22.75,
    "last_day_pct": -0.39,
    "volume": 52104,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ORKA.NASDAQ",
    "ticker": "ORKA",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 102.86,
    "min_close_10y": 6.78,
    "max_close_10y": 637.2,
@@ -4108,15 +4114,15 @@
    "ytd_low": 25.23,
    "last_day_pct": 7.12,
    "volume": 1070229,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "URI.NYSE",
    "ticker": "URI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 1055.57,
    "min_close_10y": 69.59,
    "max_close_10y": 1198.68,
@@ -4127,15 +4133,15 @@
    "ytd_low": 701.59,
    "last_day_pct": 1.13,
    "volume": 562499,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "NXE.NYSE",
    "ticker": "NXE",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 8.25,
    "min_close_10y": 0.545,
    "max_close_10y": 13.92,
@@ -4146,15 +4152,15 @@
    "ytd_low": 7.52,
    "last_day_pct": 4.04,
    "volume": 7598946,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "CELC.NASDAQ",
    "ticker": "CELC",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 66.79,
    "min_close_10y": 4.42,
    "max_close_10y": 144.98,
@@ -4165,15 +4171,15 @@
    "ytd_low": 53.54,
    "last_day_pct": 4.29,
    "volume": 1051704,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ONC.NASDAQ",
    "ticker": "ONC",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 406.96,
    "min_close_10y": 26.95,
    "max_close_10y": 406.96,
@@ -4184,15 +4190,15 @@
    "ytd_low": 253.9475,
    "last_day_pct": 5.09,
    "volume": 941742,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "YPF.NYSE",
    "ticker": "YPF",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 38.66,
    "min_close_10y": 2.57,
    "max_close_10y": 57.61,
@@ -4203,15 +4209,15 @@
    "ytd_low": 32.74,
    "last_day_pct": 0.0,
    "volume": 1573399,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "RKLB.NASDAQ",
    "ticker": "RKLB",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 53.07,
    "min_close_10y": 3.53,
    "max_close_10y": 150.23,
@@ -4222,15 +4228,15 @@
    "ytd_low": 43.89,
    "last_day_pct": 15.39,
    "volume": 20547639,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "GTX.NASDAQ",
    "ticker": "GTX",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 20.13,
    "min_close_10y": 1.34,
    "max_close_10y": 36.23,
@@ -4241,15 +4247,15 @@
    "ytd_low": 16.84,
    "last_day_pct": 3.98,
    "volume": 4259557,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "STX.NASDAQ",
    "ticker": "STX",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 460.99,
    "min_close_10y": 30.95,
    "max_close_10y": 1094.04,
@@ -4260,15 +4266,15 @@
    "ytd_low": 277.6927,
    "last_day_pct": -1.19,
    "volume": 8279243,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "AXON.NASDAQ",
    "ticker": "AXON",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 313.0,
    "min_close_10y": 21.12,
    "max_close_10y": 870.97,
@@ -4279,15 +4285,15 @@
    "ytd_low": 307.0,
    "last_day_pct": -18.18,
    "volume": 5152968,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "XERS.NASDAQ",
    "ticker": "XERS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 15.2,
    "min_close_10y": 1.03,
    "max_close_10y": 27.23,
@@ -4298,15 +4304,15 @@
    "ytd_low": 5.25,
    "last_day_pct": 16.21,
    "volume": 7897218,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "QLD.NYSE",
    "ticker": "QLD",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 74.11,
    "min_close_10y": 5.0287,
    "max_close_10y": 100.77,
@@ -4317,15 +4323,15 @@
    "ytd_low": 56.595,
    "last_day_pct": 2.55,
    "volume": 7904118,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "WFRD.NASDAQ",
    "ticker": "WFRD",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 84.43,
    "min_close_10y": 5.74,
    "max_close_10y": 134.26,
@@ -4336,15 +4342,15 @@
    "ytd_low": 72.4,
    "last_day_pct": 2.56,
    "volume": 947738,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "RCL.NYSE",
    "ticker": "RCL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 327.16,
    "min_close_10y": 22.33,
    "max_close_10y": 365.84,
@@ -4355,15 +4361,15 @@
    "ytd_low": 222.22,
    "last_day_pct": 1.37,
    "volume": 1534769,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "CAAP.NYSE",
    "ticker": "CAAP",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 24.54,
    "min_close_10y": 1.68,
    "max_close_10y": 30.35,
@@ -4374,15 +4380,15 @@
    "ytd_low": 22.02,
    "last_day_pct": -0.57,
    "volume": 225522,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "NBN.NASDAQ",
    "ticker": "NBN",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 126.29,
    "min_close_10y": 8.66,
    "max_close_10y": 137.51,
@@ -4393,15 +4399,15 @@
    "ytd_low": 102.41,
    "last_day_pct": 1.09,
    "volume": 94531,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "GSL.NYSE",
    "ticker": "GSL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 39.03,
    "min_close_10y": 2.7,
    "max_close_10y": 46.4,
@@ -4412,15 +4418,15 @@
    "ytd_low": 34.15,
    "last_day_pct": 0.93,
    "volume": 278771,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "JILL.NYSE",
    "ticker": "JILL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 22.39,
    "min_close_10y": 1.55,
    "max_close_10y": 59.6138,
@@ -4431,15 +4437,15 @@
    "ytd_low": 10.405,
    "last_day_pct": -2.82,
    "volume": 200760,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "LWAY.NASDAQ",
    "ticker": "LWAY",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 21.65,
    "min_close_10y": 1.4998,
    "max_close_10y": 33.82,
@@ -4450,15 +4456,15 @@
    "ytd_low": 17.31,
    "last_day_pct": -2.48,
    "volume": 90729,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "UGA.NYSE",
    "ticker": "UGA",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 128.26,
    "min_close_10y": 8.9,
    "max_close_10y": 152.88,
@@ -4469,15 +4475,15 @@
    "ytd_low": 60.7,
    "last_day_pct": 0.09,
    "volume": 15508,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "STLD.NASDAQ",
    "ticker": "STLD",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 222.9,
    "min_close_10y": 15.5,
    "max_close_10y": 282.76,
@@ -4488,15 +4494,15 @@
    "ytd_low": 162.16,
    "last_day_pct": 0.45,
    "volume": 970890,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "NGL.NYSE",
    "ticker": "NGL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 14.95,
    "min_close_10y": 1.04,
    "max_close_10y": 25.75,
@@ -4507,15 +4513,15 @@
    "ytd_low": 8.62,
    "last_day_pct": 1.36,
    "volume": 144041,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ASML.NASDAQ",
    "ticker": "ASML",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 1424.75,
    "min_close_10y": 99.2,
    "max_close_10y": 1989.44,
@@ -4526,15 +4532,15 @@
    "ytd_low": 1133.48,
    "last_day_pct": 5.02,
    "volume": 1900715,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "AGL.NYSE",
    "ticker": "AGL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 113.39,
    "min_close_10y": 7.91,
    "max_close_10y": 1081.25,
@@ -4545,15 +4551,15 @@
    "ytd_low": 7.48,
    "last_day_pct": -0.33,
    "volume": 289725,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "CHCI.NASDAQ",
    "ticker": "CHCI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 17.88,
    "min_close_10y": 1.2501,
    "max_close_10y": 21.15,
@@ -4564,15 +4570,15 @@
    "ytd_low": 10.56,
    "last_day_pct": -3.92,
    "volume": 14451,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "LQDT.NASDAQ",
    "ticker": "LQDT",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 43.64,
    "min_close_10y": 3.06,
    "max_close_10y": 46.76,
@@ -4583,15 +4589,15 @@
    "ytd_low": 27.89,
    "last_day_pct": -2.42,
    "volume": 506354,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "BBIO.NASDAQ",
    "ticker": "BBIO",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 74.29,
    "min_close_10y": 5.21,
    "max_close_10y": 90.17,
@@ -4602,15 +4608,15 @@
    "ytd_low": 62.5,
    "last_day_pct": 0.03,
    "volume": 3157601,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "OSCR.NYSE",
    "ticker": "OSCR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 30.65,
    "min_close_10y": 2.15,
    "max_close_10y": 36.77,
@@ -4621,15 +4627,15 @@
    "ytd_low": 10.69,
    "last_day_pct": -7.63,
    "volume": 8886831,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "RDNT.NASDAQ",
    "ticker": "RDNT",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 76.0,
    "min_close_10y": 5.35,
    "max_close_10y": 86.38,
@@ -4640,15 +4646,15 @@
    "ytd_low": 50.82,
    "last_day_pct": -2.58,
    "volume": 1664225,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "SPXL.NYSE",
    "ticker": "SPXL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 246.75,
    "min_close_10y": 17.55,
    "max_close_10y": 301.35,
@@ -4659,15 +4665,15 @@
    "ytd_low": 168.04,
    "last_day_pct": 0.72,
    "volume": 2338062,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "XPO.NYSE",
    "ticker": "XPO",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 176.95,
    "min_close_10y": 12.6513,
    "max_close_10y": 228.37,
@@ -4678,15 +4684,15 @@
    "ytd_low": 135.1414,
    "last_day_pct": 0.27,
    "volume": 1490832,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "MSTR.NASDAQ",
    "ticker": "MSTR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 128.93,
    "min_close_10y": 9.22,
    "max_close_10y": 473.83,
@@ -4697,15 +4703,15 @@
    "ytd_low": 81.81,
    "last_day_pct": -0.29,
    "volume": 13881298,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "GRVY.NASDAQ",
    "ticker": "GRVY",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 67.19,
    "min_close_10y": 4.825,
    "max_close_10y": 218.97,
@@ -4716,15 +4722,15 @@
    "ytd_low": 56.24,
    "last_day_pct": 1.07,
    "volume": 30006,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "OPXS.NASDAQ",
    "ticker": "OPXS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 8.2,
    "min_close_10y": 0.59,
    "max_close_10y": 17.32,
@@ -4735,15 +4741,15 @@
    "ytd_low": 7.505,
    "last_day_pct": 1.49,
    "volume": 16103,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ARQT.NASDAQ",
    "ticker": "ARQT",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 25.55,
    "min_close_10y": 1.84,
    "max_close_10y": 36.98,
@@ -4754,15 +4760,15 @@
    "ytd_low": 19.295,
    "last_day_pct": -5.37,
    "volume": 3262351,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "SMH.NASDAQ",
    "ticker": "SMH",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 463.96,
    "min_close_10y": 33.445,
    "max_close_10y": 668.91,
@@ -4773,15 +4779,15 @@
    "ytd_low": 359.862,
    "last_day_pct": 3.62,
    "volume": 16861362,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "AXGN.NASDAQ",
    "ticker": "AXGN",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 50.02,
    "min_close_10y": 3.61,
    "max_close_10y": 55.9,
@@ -4792,15 +4798,15 @@
    "ytd_low": 27.54,
    "last_day_pct": 2.61,
    "volume": 1576357,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "UPRO.NYSE",
    "ticker": "UPRO",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 128.94,
    "min_close_10y": 9.315,
    "max_close_10y": 157.68,
@@ -4811,15 +4817,15 @@
    "ytd_low": 88.145,
    "last_day_pct": 0.84,
    "volume": 3314904,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ROIV.NASDAQ",
    "ticker": "ROIV",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 38.88,
    "min_close_10y": 2.81,
    "max_close_10y": 41.81,
@@ -4830,15 +4836,15 @@
    "ytd_low": 20.7809,
    "last_day_pct": 6.17,
    "volume": 12265362,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "AGYS.NASDAQ",
    "ticker": "AGYS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 121.09,
    "min_close_10y": 8.78,
    "max_close_10y": 141.74,
@@ -4849,15 +4855,15 @@
    "ytd_low": 61.5,
    "last_day_pct": 1.11,
    "volume": 158896,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "TH.NASDAQ",
    "ticker": "TH",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 11.36,
    "min_close_10y": 0.829,
    "max_close_10y": 21.45,
@@ -4868,15 +4874,15 @@
    "ytd_low": 6.38,
    "last_day_pct": 9.02,
    "volume": 3444095,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "MIRM.NASDAQ",
    "ticker": "MIRM",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 93.72,
    "min_close_10y": 6.84,
    "max_close_10y": 128.57,
@@ -4887,15 +4893,15 @@
    "ytd_low": 73.82,
    "last_day_pct": 0.19,
    "volume": 722721,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "FLR.NYSE",
    "ticker": "FLR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 46.48,
    "min_close_10y": 3.4,
    "max_close_10y": 61.61,
@@ -4906,15 +4912,15 @@
    "ytd_low": 40.22,
    "last_day_pct": 3.33,
    "volume": 3387977,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "EMO.NYSE",
    "ticker": "EMO",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 48.0,
    "min_close_10y": 3.526,
    "max_close_10y": 69.5397,
@@ -4925,15 +4931,15 @@
    "ytd_low": 43.65,
    "last_day_pct": -0.23,
    "volume": 26623,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "FN.NYSE",
    "ticker": "FN",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 327.13,
    "min_close_10y": 24.05,
    "max_close_10y": 746.47,
@@ -4944,15 +4950,15 @@
    "ytd_low": 286.07,
    "last_day_pct": 11.66,
    "volume": 1997675,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ERAS.NASDAQ",
    "ticker": "ERAS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 14.41,
    "min_close_10y": 1.06,
    "max_close_10y": 24.34,
@@ -4963,15 +4969,15 @@
    "ytd_low": 3.36,
    "last_day_pct": 8.59,
    "volume": 4032171,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "MHO.NYSE",
    "ticker": "MHO",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 131.6,
    "min_close_10y": 9.7,
    "max_close_10y": 174.92,
@@ -4982,15 +4988,15 @@
    "ytd_low": 113.4,
    "last_day_pct": -2.03,
    "volume": 197118,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "TBBK.NASDAQ",
    "ticker": "TBBK",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 48.25,
    "min_close_10y": 3.58,
    "max_close_10y": 80.34,
@@ -5001,15 +5007,15 @@
    "ytd_low": 45.08,
    "last_day_pct": 1.07,
    "volume": 415058,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "EGO.NYSE",
    "ticker": "EGO",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 35.58,
    "min_close_10y": 2.64,
    "max_close_10y": 49.71,
@@ -5020,15 +5026,15 @@
    "ytd_low": 27.09,
    "last_day_pct": 2.65,
    "volume": 2425172,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ASND.NASDAQ",
    "ticker": "ASND",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 256.82,
    "min_close_10y": 19.34,
    "max_close_10y": 277.18,
@@ -5039,15 +5045,15 @@
    "ytd_low": 188.08,
    "last_day_pct": 1.33,
    "volume": 883846,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "OPRX.NASDAQ",
    "ticker": "OPRX",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 8.76,
    "min_close_10y": 0.66,
    "max_close_10y": 98.0,
@@ -5058,15 +5064,15 @@
    "ytd_low": 4.54,
    "last_day_pct": 1.04,
    "volume": 202064,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "LXU.NYSE",
    "ticker": "LXU",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 10.6,
    "min_close_10y": 0.8,
    "max_close_10y": 26.74,
@@ -5077,15 +5083,15 @@
    "ytd_low": 8.22,
    "last_day_pct": 2.42,
    "volume": 1007189,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "RVMD.NASDAQ",
    "ticker": "RVMD",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 192.28,
    "min_close_10y": 14.54,
    "max_close_10y": 221.15,
@@ -5096,15 +5102,15 @@
    "ytd_low": 76.28,
    "last_day_pct": 8.24,
    "volume": 4497777,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "PBT.NYSE",
    "ticker": "PBT",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 28.93,
    "min_close_10y": 2.19,
    "max_close_10y": 36.11,
@@ -5115,15 +5121,15 @@
    "ytd_low": 16.95,
    "last_day_pct": 1.54,
    "volume": 98003,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "TSM.NYSE",
    "ticker": "TSM",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 375.44,
    "min_close_10y": 28.55,
    "max_close_10y": 485.8,
@@ -5134,15 +5140,15 @@
    "ytd_low": 311.7,
    "last_day_pct": 6.33,
    "volume": 23841904,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "UFPT.NASDAQ",
    "ticker": "UFPT",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 303.47,
    "min_close_10y": 23.1,
    "max_close_10y": 358.42,
@@ -5153,15 +5159,15 @@
    "ytd_low": 173.86,
    "last_day_pct": 1.22,
    "volume": 103710,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "AROC.NYSE",
    "ticker": "AROC",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 27.54,
    "min_close_10y": 2.1,
    "max_close_10y": 41.95,
@@ -5172,15 +5178,15 @@
    "ytd_low": 25.165,
    "last_day_pct": 3.53,
    "volume": 2213669,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "NRP.NYSE",
    "ticker": "NRP",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 117.71,
    "min_close_10y": 8.98,
    "max_close_10y": 125.41,
@@ -5191,15 +5197,15 @@
    "ytd_low": 95.51,
    "last_day_pct": 0.16,
    "volume": 26111,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "AU.NYSE",
    "ticker": "AU",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 92.99,
    "min_close_10y": 7.16,
    "max_close_10y": 128.26,
@@ -5210,15 +5216,15 @@
    "ytd_low": 73.4,
    "last_day_pct": 5.0,
    "volume": 3495848,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "WES.NYSE",
    "ticker": "WES",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 39.85,
    "min_close_10y": 3.07,
    "max_close_10y": 49.8,
@@ -5229,15 +5235,15 @@
    "ytd_low": 39.12,
    "last_day_pct": 0.0,
    "volume": 1802528,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "CCJ.NYSE",
    "ticker": "CCJ",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 71.3,
    "min_close_10y": 5.5,
    "max_close_10y": 134.09,
@@ -5248,15 +5254,15 @@
    "ytd_low": 66.06,
    "last_day_pct": 4.35,
    "volume": 5341078,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "CADL.NASDAQ",
    "ticker": "CADL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 8.75,
    "min_close_10y": 0.6751,
    "max_close_10y": 14.0,
@@ -5267,15 +5273,15 @@
    "ytd_low": 4.44,
    "last_day_pct": 8.83,
    "volume": 955020,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "AAPL.NASDAQ",
    "ticker": "AAPL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 342.37,
    "min_close_10y": 26.4275,
    "max_close_10y": 349.51,
@@ -5286,15 +5292,15 @@
    "ytd_low": 243.42,
    "last_day_pct": -0.52,
    "volume": 42865012,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "JBL.NYSE",
    "ticker": "JBL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 239.09,
    "min_close_10y": 18.49,
    "max_close_10y": 385.63,
@@ -5305,15 +5311,15 @@
    "ytd_low": 215.0,
    "last_day_pct": 1.16,
    "volume": 1676441,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "NPKI.NYSE",
    "ticker": "NPKI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 8.64,
    "min_close_10y": 0.67,
    "max_close_10y": 16.35,
@@ -5324,15 +5330,15 @@
    "ytd_low": 8.24,
    "last_day_pct": 0.23,
    "volume": 1024782,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "CDNS.NASDAQ",
    "ticker": "CDNS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 319.92,
    "min_close_10y": 24.84,
    "max_close_10y": 416.39,
@@ -5343,15 +5349,15 @@
    "ytd_low": 262.749,
    "last_day_pct": 2.73,
    "volume": 2034760,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "LPTH.NASDAQ",
    "ticker": "LPTH",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 7.06,
    "min_close_10y": 0.55,
    "max_close_10y": 18.15,
@@ -5362,15 +5368,15 @@
    "ytd_low": 5.9413,
    "last_day_pct": 14.8,
    "volume": 2939712,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "RRR.NASDAQ",
    "ticker": "RRR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 48.22,
    "min_close_10y": 3.76,
    "max_close_10y": 67.26,
@@ -5381,15 +5387,15 @@
    "ytd_low": 46.29,
    "last_day_pct": 0.54,
    "volume": 957483,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "UI.NYSE",
    "ticker": "UI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 592.84,
    "min_close_10y": 46.38,
    "max_close_10y": 1084.5,
@@ -5400,15 +5406,15 @@
    "ytd_low": 500.23,
    "last_day_pct": 15.29,
    "volume": 170133,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "EXTR.NASDAQ",
    "ticker": "EXTR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 24.03,
    "min_close_10y": 1.88,
    "max_close_10y": 33.71,
@@ -5419,15 +5425,15 @@
    "ytd_low": 13.475,
    "last_day_pct": 14.16,
    "volume": 4888122,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "DXPE.NASDAQ",
    "ticker": "DXPE",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 140.68,
    "min_close_10y": 11.06,
    "max_close_10y": 200.84,
@@ -5438,15 +5444,15 @@
    "ytd_low": 100.01,
    "last_day_pct": 5.88,
    "volume": 312432,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "REPL.NASDAQ",
    "ticker": "REPL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 21.62,
    "min_close_10y": 1.7,
    "max_close_10y": 52.65,
@@ -5457,15 +5463,15 @@
    "ytd_low": 1.5,
    "last_day_pct": 7.99,
    "volume": 2975062,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "SEI.NYSE",
    "ticker": "SEI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 57.77,
    "min_close_10y": 4.55,
    "max_close_10y": 82.88,
@@ -5476,15 +5482,15 @@
    "ytd_low": 42.675,
    "last_day_pct": 14.28,
    "volume": 4079985,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "HL-P-B.NYSE",
    "ticker": "HL-P-B",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 63.42,
    "min_close_10y": 5.0,
    "max_close_10y": 103.5,
@@ -5495,15 +5501,15 @@
    "ytd_low": 58.71,
    "last_day_pct": 0.0,
    "volume": 100,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "EME.NYSE",
    "ticker": "EME",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 608.45,
    "min_close_10y": 48.34,
    "max_close_10y": 943.75,
@@ -5514,15 +5520,15 @@
    "ytd_low": 579.475,
    "last_day_pct": 2.21,
    "volume": 942766,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "TPR.NYSE",
    "ticker": "TPR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 132.8,
    "min_close_10y": 10.58,
    "max_close_10y": 164.78,
@@ -5533,15 +5539,15 @@
    "ytd_low": 109.125,
    "last_day_pct": -1.02,
    "volume": 3332808,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "CNQ.NYSE",
    "ticker": "CNQ",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 48.55,
    "min_close_10y": 3.87,
    "max_close_10y": 56.11,
@@ -5552,15 +5558,15 @@
    "ytd_low": 30.125,
    "last_day_pct": -0.76,
    "volume": 6082462,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ROOT.NASDAQ",
    "ticker": "ROOT",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 43.37,
    "min_close_10y": 3.46,
    "max_close_10y": 486.0,
@@ -5571,15 +5577,15 @@
    "ytd_low": 40.91,
    "last_day_pct": -6.29,
    "volume": 349820,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "PTCT.NASDAQ",
    "ticker": "PTCT",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 65.44,
    "min_close_10y": 5.23,
    "max_close_10y": 89.55,
@@ -5590,15 +5596,15 @@
    "ytd_low": 58.8,
    "last_day_pct": -0.35,
    "volume": 898968,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "VSEC.NASDAQ",
    "ticker": "VSEC",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 172.81,
    "min_close_10y": 13.83,
    "max_close_10y": 243.48,
@@ -5609,15 +5615,15 @@
    "ytd_low": 138.85,
    "last_day_pct": 4.92,
    "volume": 658216,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "REAL.NASDAQ",
    "ticker": "REAL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 12.87,
    "min_close_10y": 1.03,
    "max_close_10y": 28.9,
@@ -5628,15 +5634,15 @@
    "ytd_low": 8.05,
    "last_day_pct": -1.0,
    "volume": 3278814,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ELVN.NASDAQ",
    "ticker": "ELVN",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 49.43,
    "min_close_10y": 3.96,
    "max_close_10y": 219.48,
@@ -5647,15 +5653,15 @@
    "ytd_low": 14.785,
    "last_day_pct": 10.36,
    "volume": 969794,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "CIEN.NYSE",
    "ticker": "CIEN",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 243.39,
    "min_close_10y": 19.57,
    "max_close_10y": 627.0,
@@ -5666,15 +5672,15 @@
    "ytd_low": 216.07,
    "last_day_pct": 5.45,
    "volume": 4718514,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "TATT.NASDAQ",
    "ticker": "TATT",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 37.0,
    "min_close_10y": 3.0,
    "max_close_10y": 61.105,
@@ -5685,15 +5691,15 @@
    "ytd_low": 30.465,
    "last_day_pct": 3.04,
    "volume": 95467,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "OSW.NASDAQ",
    "ticker": "OSW",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 31.13,
    "min_close_10y": 2.54,
    "max_close_10y": 31.29,
@@ -5704,15 +5710,15 @@
    "ytd_low": 19.06,
    "last_day_pct": 1.33,
    "volume": 835174,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "LNTH.NASDAQ",
    "ticker": "LNTH",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 100.61,
    "min_close_10y": 8.25,
    "max_close_10y": 123.62,
@@ -5723,15 +5729,15 @@
    "ytd_low": 63.37,
    "last_day_pct": -0.09,
    "volume": 1575979,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "MDB.NASDAQ",
    "ticker": "MDB",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 312.83,
    "min_close_10y": 25.76,
    "max_close_10y": 585.03,
@@ -5742,15 +5748,15 @@
    "ytd_low": 215.68,
    "last_day_pct": 2.71,
    "volume": 1219302,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "FEIM.NASDAQ",
    "ticker": "FEIM",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 60.22,
    "min_close_10y": 4.97,
    "max_close_10y": 89.0,
@@ -5761,15 +5767,15 @@
    "ytd_low": 39.8003,
    "last_day_pct": 11.03,
    "volume": 184892,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "APPF.NASDAQ",
    "ticker": "APPF",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 230.74,
    "min_close_10y": 19.1,
    "max_close_10y": 321.25,
@@ -5780,15 +5786,15 @@
    "ytd_low": 142.56,
    "last_day_pct": -1.06,
    "volume": 332868,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ADUR.NASDAQ",
    "ticker": "ADUR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 10.58,
    "min_close_10y": 0.8804,
    "max_close_10y": 17.39,
@@ -5799,15 +5805,15 @@
    "ytd_low": 8.87,
    "last_day_pct": 16.26,
    "volume": 534321,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "KYMR.NASDAQ",
    "ticker": "KYMR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 131.73,
    "min_close_10y": 10.97,
    "max_close_10y": 136.25,
@@ -5818,15 +5824,15 @@
    "ytd_low": 66.205,
    "last_day_pct": 2.82,
    "volume": 784515,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "UTI.NYSE",
    "ticker": "UTI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 19.93,
    "min_close_10y": 1.66,
    "max_close_10y": 51.2,
@@ -5837,15 +5843,15 @@
    "ytd_low": 18.02,
    "last_day_pct": 1.22,
    "volume": 1534528,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ADPT.NASDAQ",
    "ticker": "ADPT",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 27.98,
    "min_close_10y": 2.335,
    "max_close_10y": 67.74,
@@ -5856,15 +5862,15 @@
    "ytd_low": 12.0,
    "last_day_pct": 4.29,
    "volume": 3333526,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "WDC.NASDAQ",
    "ticker": "WDC",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 263.78,
    "min_close_10y": 22.0635,
    "max_close_10y": 746.23,
@@ -5875,15 +5881,15 @@
    "ytd_low": 176.7001,
    "last_day_pct": -1.44,
    "volume": 12132020,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "HRI.NYSE",
    "ticker": "HRI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 151.94,
    "min_close_10y": 12.72,
    "max_close_10y": 239.28,
@@ -5894,15 +5900,15 @@
    "ytd_low": 88.45,
    "last_day_pct": 1.42,
    "volume": 446047,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "GVA.NYSE",
    "ticker": "GVA",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 120.52,
    "min_close_10y": 10.1,
    "max_close_10y": 160.39,
@@ -5913,15 +5919,15 @@
    "ytd_low": 104.3,
    "last_day_pct": -0.4,
    "volume": 490511,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "HMY.NYSE",
    "ticker": "HMY",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 17.17,
    "min_close_10y": 1.44,
    "max_close_10y": 26.04,
@@ -5932,15 +5938,15 @@
    "ytd_low": 13.03,
    "last_day_pct": 1.6,
    "volume": 2913559,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "GHM.NYSE",
    "ticker": "GHM",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 78.02,
    "min_close_10y": 6.6,
    "max_close_10y": 123.79,
@@ -5951,15 +5957,15 @@
    "ytd_low": 62.64,
    "last_day_pct": 8.21,
    "volume": 273660,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "GE.NYSE",
    "ticker": "GE",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 323.24,
    "min_close_10y": 27.3629,
    "max_close_10y": 381.22,
@@ -5970,15 +5976,15 @@
    "ytd_low": 268.91,
    "last_day_pct": 2.7,
    "volume": 5294426,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "AMAT.NASDAQ",
    "ticker": "AMAT",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 332.715,
    "min_close_10y": 28.18,
    "max_close_10y": 723.0,
@@ -5989,15 +5995,15 @@
    "ytd_low": 265.1,
    "last_day_pct": 4.22,
    "volume": 9472140,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "VEON.NASDAQ",
    "ticker": "VEON",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 77.57,
    "min_close_10y": 6.575,
    "max_close_10y": 110.0,
@@ -6008,15 +6014,15 @@
    "ytd_low": 44.0,
    "last_day_pct": 2.96,
    "volume": 213475,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "TNK.NYSE",
    "ticker": "TNK",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 85.71,
    "min_close_10y": 7.28,
    "max_close_10y": 108.43,
@@ -6027,15 +6033,15 @@
    "ytd_low": 50.94,
    "last_day_pct": 4.56,
    "volume": 732283,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "LINC.NASDAQ",
    "ticker": "LINC",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 17.66,
    "min_close_10y": 1.5,
    "max_close_10y": 55.68,
@@ -6046,15 +6052,15 @@
    "ytd_low": 17.11,
    "last_day_pct": 0.63,
    "volume": 839707,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "FUTU.NASDAQ",
    "ticker": "FUTU",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 98.06,
    "min_close_10y": 8.34,
    "max_close_10y": 199.04,
@@ -6065,15 +6071,15 @@
    "ytd_low": 80.5,
    "last_day_pct": 4.27,
    "volume": 1697046,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "HOOD.NASDAQ",
    "ticker": "HOOD",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 80.91,
    "min_close_10y": 6.89,
    "max_close_10y": 152.46,
@@ -6084,15 +6090,15 @@
    "ytd_low": 63.515,
    "last_day_pct": 3.21,
    "volume": 16372988,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "MLI.NYSE",
    "ticker": "MLI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 52.96,
    "min_close_10y": 4.51,
    "max_close_10y": 70.415,
@@ -6103,15 +6109,15 @@
    "ytd_low": 52.25,
    "last_day_pct": 0.99,
    "volume": 1968999,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "VNCE.NASDAQ",
    "ticker": "VNCE",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 12.68,
    "min_close_10y": 1.08,
    "max_close_10y": 50.5,
@@ -6122,15 +6128,15 @@
    "ytd_low": 1.95,
    "last_day_pct": 0.48,
    "volume": 280481,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "FRO.NYSE",
    "ticker": "FRO",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 45.42,
    "min_close_10y": 3.87,
    "max_close_10y": 59.19,
@@ -6141,15 +6147,15 @@
    "ytd_low": 20.47,
    "last_day_pct": 1.61,
    "volume": 5099848,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "HL.NYSE",
    "ticker": "HL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 14.74,
    "min_close_10y": 1.26,
    "max_close_10y": 31.81,
@@ -6160,15 +6166,15 @@
    "ytd_low": 13.16,
    "last_day_pct": 2.01,
    "volume": 27449030,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "HALO.NASDAQ",
    "ticker": "HALO",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 103.63,
    "min_close_10y": 8.87,
    "max_close_10y": 131.18,
@@ -6179,15 +6185,15 @@
    "ytd_low": 61.325,
    "last_day_pct": -15.72,
    "volume": 6163118,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ADMA.NASDAQ",
    "ticker": "ADMA",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 12.73,
    "min_close_10y": 1.09,
    "max_close_10y": 24.51,
@@ -6198,15 +6204,15 @@
    "ytd_low": 7.2101,
    "last_day_pct": -3.63,
    "volume": 4647813,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "R.NYSE",
    "ticker": "R",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 266.39,
    "min_close_10y": 22.93,
    "max_close_10y": 285.58,
@@ -6217,15 +6223,15 @@
    "ytd_low": 185.02,
    "last_day_pct": -1.4,
    "volume": 225368,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "AIR.NYSE",
    "ticker": "AIR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 109.21,
    "min_close_10y": 9.44,
    "max_close_10y": 153.71,
@@ -6236,15 +6242,15 @@
    "ytd_low": 82.445,
    "last_day_pct": 4.53,
    "volume": 315068,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "DECK.NYSE",
    "ticker": "DECK",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 86.71,
    "min_close_10y": 7.4983,
    "max_close_10y": 223.11,
@@ -6255,15 +6261,15 @@
    "ytd_low": 77.2,
    "last_day_pct": -1.17,
    "volume": 2210901,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "FANG.NASDAQ",
    "ticker": "FANG",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 178.96,
    "min_close_10y": 15.56,
    "max_close_10y": 213.69,
@@ -6274,15 +6280,15 @@
    "ytd_low": 139.41,
    "last_day_pct": -0.35,
    "volume": 1636458,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "PPTA.NASDAQ",
    "ticker": "PPTA",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 19.53,
    "min_close_10y": 1.7,
    "max_close_10y": 37.22,
@@ -6293,15 +6299,15 @@
    "ytd_low": 15.66,
    "last_day_pct": 16.6,
    "volume": 3117756,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "BVS.NASDAQ",
    "ticker": "BVS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 10.61,
    "min_close_10y": 0.9261,
    "max_close_10y": 19.21,
@@ -6312,15 +6318,15 @@
    "ytd_low": 7.14,
    "last_day_pct": -0.66,
    "volume": 642457,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "BKTI.NYSE",
    "ticker": "BKTI",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 66.94,
    "min_close_10y": 5.85,
    "max_close_10y": 96.95,
@@ -6331,15 +6337,15 @@
    "ytd_low": 63.61,
    "last_day_pct": 4.07,
    "volume": 33838,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "VICR.NASDAQ",
    "ticker": "VICR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 146.88,
    "min_close_10y": 12.85,
    "max_close_10y": 379.78,
@@ -6350,15 +6356,15 @@
    "ytd_low": 110.08,
    "last_day_pct": 8.72,
    "volume": 1317786,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "PARR.NYSE",
    "ticker": "PARR",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 68.06,
    "min_close_10y": 6.0,
    "max_close_10y": 89.88,
@@ -6369,15 +6375,15 @@
    "ytd_low": 34.37,
    "last_day_pct": -0.92,
    "volume": 987300,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "MRVL.NASDAQ",
    "ticker": "MRVL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 141.2,
    "min_close_10y": 12.49,
    "max_close_10y": 316.43,
@@ -6388,15 +6394,15 @@
    "ytd_low": 70.685,
    "last_day_pct": 5.73,
    "volume": 33562131,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "HIBL.NYSE",
    "ticker": "HIBL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 62.7,
    "min_close_10y": 5.5571,
    "max_close_10y": 137.06,
@@ -6407,15 +6413,15 @@
    "ytd_low": 51.92,
    "last_day_pct": 8.07,
    "volume": 85614,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "SOXX.NASDAQ",
    "ticker": "SOXX",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 136.53,
    "min_close_10y": 12.1233,
    "max_close_10y": 218.3367,
@@ -6426,15 +6432,15 @@
    "ytd_low": 102.4183,
    "last_day_pct": 3.51,
    "volume": 59291114,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "FAS.NYSE",
    "ticker": "FAS",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 168.67,
    "min_close_10y": 15.0,
    "max_close_10y": 187.4,
@@ -6445,15 +6451,15 @@
    "ytd_low": 106.905,
    "last_day_pct": -1.87,
    "volume": 390868,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "AER.NYSE",
    "ticker": "AER",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 169.64,
    "min_close_10y": 15.14,
    "max_close_10y": 169.64,
@@ -6464,15 +6470,15 @@
    "ytd_low": 130.38,
    "last_day_pct": 2.09,
    "volume": 1900261,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "FCX.NYSE",
    "ticker": "FCX",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 59.42,
    "min_close_10y": 5.31,
    "max_close_10y": 79.91,
@@ -6483,15 +6489,15 @@
    "ytd_low": 50.79,
    "last_day_pct": 2.63,
    "volume": 16248755,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "DHC.NASDAQ",
    "ticker": "DHC",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 7.02,
    "min_close_10y": 0.6283,
    "max_close_10y": 22.44,
@@ -6502,15 +6508,15 @@
    "ytd_low": 4.83,
    "last_day_pct": -0.14,
    "volume": 1885844,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ENSG.NASDAQ",
    "ticker": "ENSG",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 181.08,
    "min_close_10y": 16.2301,
    "max_close_10y": 215.83,
@@ -6521,15 +6527,15 @@
    "ytd_low": 141.58,
    "last_day_pct": -0.72,
    "volume": 292117,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "BULZ.NYSE",
    "ticker": "BULZ",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 21.43,
    "min_close_10y": 1.925,
    "max_close_10y": 55.09,
@@ -6540,15 +6546,15 @@
    "ytd_low": 14.96,
    "last_day_pct": 5.62,
    "volume": 1155116,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "APA.NASDAQ",
    "ticker": "APA",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 44.63,
    "min_close_10y": 4.02,
    "max_close_10y": 67.35,
@@ -6559,15 +6565,15 @@
    "ytd_low": 23.245,
    "last_day_pct": 2.64,
    "volume": 11092198,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "DAKT.NASDAQ",
    "ticker": "DAKT",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 19.41,
    "min_close_10y": 1.75,
    "max_close_10y": 27.73,
@@ -6578,15 +6584,15 @@
    "ytd_low": 16.77,
    "last_day_pct": 0.88,
    "volume": 220628,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "SSL.NYSE",
    "ticker": "SSL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 14.83,
    "min_close_10y": 1.34,
    "max_close_10y": 39.61,
@@ -6597,15 +6603,15 @@
    "ytd_low": 6.09,
    "last_day_pct": -2.37,
    "volume": 1458909,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "TOL.NYSE",
    "ticker": "TOL",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 152.56,
    "min_close_10y": 13.8,
    "max_close_10y": 167.8,
@@ -6616,15 +6622,15 @@
    "ytd_low": 123.145,
    "last_day_pct": -1.95,
    "volume": 936457,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "P.NYSE",
    "ticker": "P",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 96.75,
    "min_close_10y": 8.76,
    "max_close_10y": 156.97,
@@ -6635,15 +6641,15 @@
    "ytd_low": 56.78,
    "last_day_pct": 3.54,
    "volume": 3557474,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "ESQ.NASDAQ",
    "ticker": "ESQ",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 129.15,
    "min_close_10y": 11.7,
    "max_close_10y": 132.92,
@@ -6654,15 +6660,15 @@
    "ytd_low": 94.0,
    "last_day_pct": 1.77,
    "volume": 93597,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "GUSH.NYSE",
    "ticker": "GUSH",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 37.25,
    "min_close_10y": 3.38,
    "max_close_10y": 6019.5,
@@ -6673,15 +6679,15 @@
    "ytd_low": 20.805,
    "last_day_pct": -0.56,
    "volume": 402436,
-   "tags": []
+   "tags_live": []
   },
   {
    "symbol": "CENX.NASDAQ",
    "ticker": "CENX",
    "name": null,
-   "type": null,
    "exchange": null,
    "gics_sector": null,
+   "security_type": null,
    "current_close": 33.47,
    "min_close_10y": 3.04,
    "max_close_10y": 68.77,
@@ -6692,26 +6698,7 @@
    "ytd_low": 29.75,
    "last_day_pct": 11.31,
    "volume": 3257906,
-   "tags": []
-  }
- ],
- "source_health": [
-  {
-   "source": "shibui MCP (stock_data_query via mcp_bridge.py)",
-   "query": "10y scan over shibui.stock_quotes + shibui.general_info + shibui.valuation",
-   "status": "ok",
-   "result": "328 rows scanned, 100 shape-tagged, _source=mcp"
-  },
-  {
-   "source": "shibui MCP (date resolve)",
-   "query": "SELECT MAX(date) FROM shibui.stock_quotes",
-   "status": "ok",
-   "result": "2026-11-06"
-  },
-  {
-   "source": "Finviz fallback",
-   "status": "n/a",
-   "result": "not invoked \u2014 primary path succeeded"
+   "tags_live": []
   }
  ]
 }
