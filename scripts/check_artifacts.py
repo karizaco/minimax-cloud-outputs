@@ -47,6 +47,10 @@ EXTERNAL_NAMES = {
     "01-weekly-mcp-health-check.md", "02-asia-pre-market-reactions.md",
     "same_day_prints.py", "premarket_pull.py", "premarket_universe.py",
     "trending-symbols.json", "RUNTIME-CONTRACT.md",
+    # `cloud-prompts/_shared/PROMPT-BLOCKS.md` in the migration repo. The weekly
+    # and macro-calendar briefs cite it by bare name in their source-health
+    # tables; macro-calendar/2026-11-08-week-ahead.md gives the full path.
+    "PROMPT-BLOCKS.md", "window_check.sh",
 }
 
 # Real paths that live outside this repo. Each is listed because an artifact
