@@ -164,6 +164,14 @@ def _visible_source_lines(explanation: str) -> list[str]:
 def visible_excerpt(headline: str, explanation: str = "", limit: int = 120) -> str:
     """Return a meaningful sourced sentence or line suitable for display."""
     lines = _visible_source_lines(explanation)
+    sanitized_lines: list[str] = []
+    for line in lines:
+        cleaned = _clean_explanation(headline, line)
+        sanitized_lines.extend(
+            cleaned_line for cleaned_line in cleaned.splitlines()
+            if cleaned_line.strip()
+        )
+    lines = sanitized_lines
     if not lines:
         return ""
 

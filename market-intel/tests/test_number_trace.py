@@ -79,6 +79,22 @@ def test_explicit_fx_rate_is_accepted() -> None:
     assert check_chat(_run(), "匯率 32.780875", fx_rate=32.780875)["ok"] is True
 
 
+def test_explicit_fx_accepts_numeric_string_dollar_volumes() -> None:
+    for dollar_vol in (
+        "29374530000",
+        ["29374530000"],
+        {"value": "29374530000"},
+    ):
+        run = _run()
+        run["candidates"][0]["dollar_vol"] = dollar_vol
+        result = check_chat(
+            run,
+            "匯率 32.780875, US$896.1m",
+            fx_rate=32.780875,
+        )
+        assert result["ok"] is True
+
+
 def test_explicit_date_and_candidate_count_are_accepted() -> None:
     assert check_chat(_run(), "2026-11-10, 565 檔", date="2026-11-10",
                       candidate_count=565)["ok"] is True

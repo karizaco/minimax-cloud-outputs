@@ -204,3 +204,26 @@ def test_catalyst_min_score_from_cfg() -> None:
     result = run_pipeline([row], cfg, "open")
     assert all(r.tier != "Soft-A" for r in result)
     assert all(r.tier != "A" for r in result)
+
+def test_visible_excerpt_excludes_quoted_media_speculation_and_footer() -> None:
+    headline = "說明媒體報導"
+    explanation = """報導內容：「預期2027年營收可望達新台幣500億元，展望明年獲利成長」。
+本則重大訊息同時符合證券交易法施行細則第45條至第46條規定。"""
+
+    excerpt = visible_excerpt(headline, explanation)
+
+    assert "500億" not in excerpt
+    assert "本則重大訊息同時符合" not in excerpt
+
+
+def test_visible_excerpt_prefers_own_sales_over_quoted_media_speculation() -> None:
+    headline = "說明媒體報導"
+    explanation = """報導內容：「預期2027年營收可望達新台幣500億元，展望明年獲利成長」。
+本公司115年10月份合併營業額為新台幣746.66億元。
+本則重大訊息同時符合證券交易法施行細則第45條至第46條規定。"""
+
+    excerpt = visible_excerpt(headline, explanation)
+
+    assert "746.66億" in excerpt
+    assert "500億" not in excerpt
+    assert "本則重大訊息同時符合" not in excerpt

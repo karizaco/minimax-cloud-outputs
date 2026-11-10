@@ -427,7 +427,7 @@ def check_chat(run_json: dict | list, chat_md: str, *, fx_rate: float | None = N
         if fx is not None and fx > 0:
             allowed["number"].update({fx, round(fx, 1), round(fx, 2), round(fx)})
             dollar_volumes = {
-                value for field, value in _walk(run_json)
+                parsed for field, value in _walk(run_json)
                 if field == "dollar_vol"
                 for value in ([value] if not isinstance(value, (list, tuple, set, dict))
                               else (value.values() if isinstance(value, dict) else value))

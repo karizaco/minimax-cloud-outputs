@@ -117,9 +117,13 @@ def _normalize_rvol_draft(content: str, run_data: Any) -> str:
     if not rvol_values:
         return content
     pattern = re.compile(
-        r"(?i)(?P<label>\b(?:RelVol|rvol)\s*|\b相對成交量\s*(?:\*\*)?)(?P<number>\d+(?:\.\d+)?)"
+        r"(?i)(?P<label>\b(?:RelVol|rvol)\s*|\b相對成交量\s*)"
+        r"(?P<open>\*\*)?(?P<number>\d+(?:\.\d+)?)"
+        r"(?![.0-9x×X%$US億元mbnA-Za-z0-9])(?P<close>\*\*)?"
     )
     for match in pattern.finditer(content):
+        if bool(match.group("open")) != bool(match.group("close")):
+            continue
         try:
             token = float(match.group("number"))
         except ValueError:
@@ -127,8 +131,9 @@ def _normalize_rvol_draft(content: str, run_data: Any) -> str:
         for value in rvol_values:
             if token in {round(value, 1), round(value, 2), value}:
                 replacement = match.group("label") + f"{value:.1f}x"
-                if "**" in match.group("label"):
-                    replacement += "**"
+                if match.group("open"):
+                    replacement = (match.group("label") + match.group("open")
+                                   + f"{value:.1f}x" + match.group("close"))
                 return content[:match.start()] + replacement + content[match.end():]
     return content
 
