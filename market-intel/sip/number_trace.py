@@ -31,16 +31,9 @@ _NUMBER_RE = re.compile(
 )
 
 _ALLOWED_FIELDS = {
-    "last",
-    "chg_pct",
-    "rvol",
-    "dollar_vol",
-    "usd_turnover",
-    "turnover_usd",
+    "last", "chg_pct", "rvol", "dollar_vol", "usd_turnover", "turnover_usd",
 }
-
 _TICKER_FIELDS = {"ticker", "symbol", "display_ticker"}
-
 _MM_TO_USD = 1_000_000.0
 _BN_TO_USD = 1_000_000_000.0
 _YI = 100_000_000.0
@@ -57,15 +50,8 @@ def _as_float(value: Any) -> float | None:
 def _display_forms(value: float, kind: str) -> set[float]:
     forms = {value}
     if kind in {"percent", "number", "currency", "multiple"}:
-        forms.update(
-            {
-                round(value),
-                round(value, 1),
-                round(value, 2),
-                math.floor(value),
-                math.ceil(value),
-            }
-        )
+        forms.update({round(value), round(value, 1), round(value, 2),
+                      math.floor(value), math.ceil(value)})
     return {float(item) for item in forms if math.isfinite(float(item))}
 
 
@@ -100,14 +86,8 @@ def extract_numbers(text: str) -> list[dict[str, Any]]:
             normalized *= _BN_TO_USD
         elif yi:
             normalized *= _YI
-        found.append(
-            {
-                "raw": raw,
-                "value": normalized,
-                "kind": kind,
-                "span": [match.start(), match.end()],
-            }
-        )
+        found.append({"raw": raw, "value": normalized, "kind": kind,
+                      "span": [match.start(), match.end()]})
     return found
 
 
@@ -125,24 +105,12 @@ def _currency_candidates(value: float) -> set[float]:
     candidates = set(_display_forms(value, "currency"))
     millions = value / _MM_TO_USD
     billions = value / _BN_TO_USD
-    candidates.update(
-        {
-            millions,
-            billions,
-            round(millions, 1),
-            round(millions, 2),
-            round(millions),
-            round(billions, 1),
-            round(billions, 2),
-            round(billions),
-            round(millions, 1) * _MM_TO_USD,
-            round(millions, 2) * _MM_TO_USD,
-            round(millions) * _MM_TO_USD,
-            round(billions, 1) * _BN_TO_USD,
-            round(billions, 2) * _BN_TO_USD,
-            round(billions) * _BN_TO_USD,
-        }
-    )
+    candidates.update({millions, billions, round(millions, 1), round(millions, 2),
+                       round(millions), round(billions, 1), round(billions, 2),
+                       round(billions), round(millions, 1) * _MM_TO_USD,
+                       round(millions, 2) * _MM_TO_USD, round(millions) * _MM_TO_USD,
+                       round(billions, 1) * _BN_TO_USD, round(billions, 2) * _BN_TO_USD,
+                       round(billions) * _BN_TO_USD})
     return {float(item) for item in candidates if math.isfinite(float(item))}
 
 
@@ -168,12 +136,8 @@ def _metadata_mappings(run: dict | list) -> list[Mapping[str, Any]]:
 
 
 def _metadata_values(run: dict | list) -> dict[str, set[float]]:
-    metadata: dict[str, set[float]] = {
-        "date_parts": set(),
-        "candidate_count": set(),
-        "fx": set(),
-        "roc_years": set(),
-    }
+    metadata = {"date_parts": set(), "candidate_count": set(), "fx": set(),
+                "roc_years": set()}
     for mapping in _metadata_mappings(run):
         for field, value in mapping.items():
             key = str(field).lower()
@@ -184,8 +148,7 @@ def _metadata_values(run: dict | list) -> dict[str, set[float]]:
                     except ValueError:
                         continue
                     metadata["date_parts"].update(
-                        {float(parsed.year), float(parsed.month), float(parsed.day)}
-                    )
+                        {float(parsed.year), float(parsed.month), float(parsed.day)})
                     metadata["roc_years"].add(float(parsed.year - 1911))
             elif key == "candidate_count":
                 number = _as_float(value)
@@ -199,84 +162,132 @@ def _metadata_values(run: dict | list) -> dict[str, set[float]]:
 
 
 def _source_health_counts(run: dict | list) -> set[float]:
-    """Read only the documented source-health locations."""
     if not isinstance(run, dict):
         return set()
-
     lists: list[Any] = []
     if isinstance(run.get("source_health"), list):
         lists.append(run["source_health"])
     meta = run.get("meta")
     if isinstance(meta, Mapping) and isinstance(meta.get("source_health"), list):
         lists.append(meta["source_health"])
-
     counts: set[float] = set()
     for entries in lists:
+        if not isinstance(entries, list):
+            continue
         for entry in entries:
             if not isinstance(entry, Mapping):
                 continue
-            value = entry.get("count")
-            number = _as_float(value)
+            number = _as_float(entry.get("count"))
             if number is not None and number >= 0 and number.is_integer():
                 counts.add(number)
     return counts
 
 
-def _candidate_source_texts(run: dict | list) -> list[str]:
-    """Return only candidate catalyst and attached MOPS explanation text."""
+def _candidate_source_texts(run: dict | list) -> tuple[list[str], list[str]]:
+    """Return visible catalyst text and raw MOPS explanations separately.
+
+    Raw explanations commonly contain AP04 field numbers and dummy reporting
+    dates.  They must not become a general-purpose numeric allowlist.
+    """
     if not isinstance(run, dict):
-        return []
+        return [], []
     candidates = run.get("candidates")
     if not isinstance(candidates, list):
-        return []
-
-    texts: list[str] = []
+        return [], []
+    catalysts: list[str] = []
+    explanations: list[str] = []
     for candidate in candidates:
         if not isinstance(candidate, Mapping):
             continue
         catalyst = candidate.get("catalyst")
         if isinstance(catalyst, str) and catalyst:
-            texts.append(catalyst)
+            catalysts.append(catalyst)
         raw = candidate.get("raw")
         if isinstance(raw, Mapping):
             explanation = raw.get("mops_explanation")
             if isinstance(explanation, str) and explanation:
-                texts.append(explanation)
-    return texts
+                explanations.append(explanation)
+    return catalysts, explanations
 
 
 def _sourced_catalyst_values(run: dict | list) -> dict[str, set[float]]:
-    values: dict[str, set[float]] = {"number": set(), "twd_yi": set(), "usd_yi": set()}
+    values: dict[str, set[float]] = {
+        "number": set(), "percent": set(), "twd_yi": set(), "usd_yi": set(),
+    }
+    catalysts, explanations = _candidate_source_texts(run)
     roc_year_re = re.compile(r"(?<!\d)(1[01]\d)\s*(?:年|年度)")
     quarter_re = re.compile(r"第\s*(\d+)\s*季")
     yi_re = re.compile(
         r"(?<![A-Za-z0-9])(\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)\s*"
-        r"(億美元|億美金|億元|億台幣|億)(?![A-Za-z0-9])",
-        re.IGNORECASE,
-    )
+        r"(億美元|億美金|億元|億台幣|億)(?![A-Za-z0-9])", re.IGNORECASE)
+    percent_re = re.compile(
+        r"(?<![A-Za-z0-9])([+-]?\d+(?:\.\d+)?)\s*%(?![A-Za-z0-9])")
 
-    for text in _candidate_source_texts(run):
+    # A filing amount is valid only when its monetary unit is explicit.  This
+    # covers both "608,886,833 仟元" and forms such as
+    # "營業收入(仟元):608,886,833" / "每股盈餘(元):14.17".
+    filing_amount_re = re.compile(
+        r"(?<![A-Za-z0-9])"
+        r"(\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)\s*"
+        r"(仟元|元)(?![A-Za-z0-9])")
+    unit_before_amount_re = re.compile(
+        r"(?:[^\n:：]{0,40}[(（]\s*(仟元|元)\s*[)）]\s*[:：]?\s*"
+        r"|(?:仟元|元)\s*[:：]\s*)"
+        r"(?<![A-Za-z0-9])"
+        r"(\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)(?![A-Za-z0-9])")
+
+    def add_number(amount: float) -> None:
+        values["number"].update(_display_forms(amount, "number"))
+
+    def add_text(text: str, *, allow_plain_visible: bool) -> None:
         for match in roc_year_re.finditer(text):
-            values["number"].add(float(match.group(1)))
+            add_number(float(match.group(1)))
         for match in quarter_re.finditer(text):
-            values["number"].add(float(match.group(1)))
+            add_number(float(match.group(1)))
         for match in yi_re.finditer(text):
             amount = _as_float(match.group(1).replace(",", ""))
             if amount is None:
                 continue
             kind = "usd_yi" if match.group(2) in {"億美元", "億美金"} else "twd_yi"
             values[kind].update(_yi_candidates(amount * _YI))
+        for match in percent_re.finditer(text):
+            amount = _as_float(match.group(1))
+            if amount is not None:
+                values["percent"].update(_display_forms(amount, "percent"))
+        for match in filing_amount_re.finditer(text):
+            amount = _as_float(match.group(1).replace(",", ""))
+            if amount is not None:
+                add_number(amount)
+        for match in unit_before_amount_re.finditer(text):
+            amount = _as_float(match.group(2).replace(",", ""))
+            if amount is not None:
+                add_number(amount)
+
+        # Only numbers visible in the catalyst itself may be admitted as
+        # unrestricted bare values.  The same rule is deliberately not
+        # applied to the full raw explanation.
+        if allow_plain_visible:
+            for match in re.finditer(
+                    r"(?<![A-Za-z0-9])"
+                    r"(\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)"
+                    r"(?![A-Za-z0-9])", text):
+                amount = _as_float(match.group(1).replace(",", ""))
+                if amount is not None:
+                    add_number(amount)
+
+    for catalyst in catalysts:
+        add_text(catalyst, allow_plain_visible=True)
+    for explanation in explanations:
+        add_text(explanation, allow_plain_visible=False)
     return values
 
 
 def _candidate_aggregate(run: dict | list) -> float | None:
-    """Sum dollar_vol across only the top-level run candidates list."""
     if not isinstance(run, dict):
         return None
     candidates = run.get("candidates")
     if not isinstance(candidates, list):
         return None
-
     total = 0.0
     found = False
     for candidate in candidates:
@@ -291,17 +302,11 @@ def _candidate_aggregate(run: dict | list) -> float | None:
 
 def _collect_typed_values(run: dict | list) -> dict[str, set[float]]:
     values: dict[str, set[float]] = {
-        "number": set(),
-        "percent": set(),
-        "multiple": set(),
-        "usd_amount": set(),
-        "twd_amount": set(),
-        "twd_yi": set(),
-        "usd_yi": set(),
+        "number": set(), "percent": set(), "multiple": set(),
+        "usd_amount": set(), "twd_amount": set(), "twd_yi": set(), "usd_yi": set(),
     }
     metadata = _metadata_values(run)
     dollar_volumes: set[float] = set()
-
     for field, value in _walk(run):
         if field not in _ALLOWED_FIELDS:
             continue
@@ -311,7 +316,6 @@ def _collect_typed_values(run: dict | list) -> dict[str, set[float]]:
             nested_values = value
         else:
             nested_values = (value,)
-
         for nested in nested_values:
             number = _as_float(nested)
             if number is None:
@@ -329,22 +333,17 @@ def _collect_typed_values(run: dict | list) -> dict[str, set[float]]:
                 values["multiple"].update(_display_forms(number, "multiple"))
             else:
                 values["number"].update(_display_forms(number, "number"))
-
     for fx in metadata["fx"]:
         for dollar_volume in dollar_volumes:
             values["usd_amount"].update(_currency_candidates(dollar_volume / fx))
             values["usd_yi"].update(_yi_candidates(dollar_volume / fx))
-
     values["number"].update(metadata["date_parts"])
     values["number"].update(metadata["candidate_count"])
     values["number"].update(metadata["fx"])
     values["number"].update(metadata["roc_years"])
     values["number"].update(_source_health_counts(run))
-
-    sourced = _sourced_catalyst_values(run)
-    for kind, sourced_values in sourced.items():
+    for kind, sourced_values in _sourced_catalyst_values(run).items():
         values[kind].update(sourced_values)
-
     aggregate = _candidate_aggregate(run)
     if aggregate is not None:
         values["twd_amount"].update(_currency_candidates(aggregate))
@@ -352,32 +351,25 @@ def _collect_typed_values(run: dict | list) -> dict[str, set[float]]:
         for fx in metadata["fx"]:
             values["usd_amount"].update(_currency_candidates(aggregate / fx))
             values["usd_yi"].update(_yi_candidates(aggregate / fx))
-
     return values
 
 
 def collect_allowed_numbers(run: dict | list) -> set[float]:
-    """Return all numeric forms accepted for the supplied run."""
-    allowed = _collect_typed_values(run)
     result: set[float] = set()
-    for values in allowed.values():
+    for values in _collect_typed_values(run).values():
         result.update(values)
     return result
 
 
 def collect_ticker_codes(run: dict | list) -> set[float]:
-    """Collect numeric ticker codes from ticker/symbol/display_ticker fields."""
     codes: set[float] = set()
     for field, value in _walk(run):
         if field not in _TICKER_FIELDS:
             continue
-        if isinstance(value, dict):
-            values = value.values()
-        elif isinstance(value, (list, tuple, set)):
-            values = value
-        else:
-            values = (value,)
-        for ticker in values:
+        nested_values = value.values() if isinstance(value, dict) else value
+        if not isinstance(nested_values, (list, tuple, set)):
+            nested_values = (nested_values,)
+        for ticker in nested_values:
             if isinstance(ticker, str):
                 ticker = ticker.strip()
                 if re.fullmatch(r"\d+(?:\.\d+)?", ticker):
@@ -398,26 +390,16 @@ def _context_for(text: str, span: list[int], radius: int = 36) -> str:
     return " ".join(text[left:right].split())
 
 
-def _matches(
-    number: dict[str, Any],
-    allowed: dict[str, set[float]],
-    ticker_codes: set[float] | None = None,
-) -> bool:
+def _matches(number: dict[str, Any], allowed: dict[str, set[float]],
+             ticker_codes: set[float] | None = None) -> bool:
     value = float(number["value"])
     kind = str(number["kind"])
-    if (
-        kind == "number"
-        and ticker_codes
-        and any(
-            math.isclose(value, code, rel_tol=1e-9, abs_tol=1e-9)
-            for code in ticker_codes
-        )
+    if kind == "number" and ticker_codes and any(
+        math.isclose(value, code, rel_tol=1e-9, abs_tol=1e-9)
+        for code in ticker_codes
     ):
         return True
-
-    candidates = allowed.get(kind, set())
-    tolerance = max(1e-9, abs(value) * 1e-9)
-    for candidate in candidates:
+    for candidate in allowed.get(kind, set()):
         if kind == "percent":
             if value > 0 and candidate <= 0:
                 continue
@@ -430,63 +412,45 @@ def _matches(
         elif kind in {"usd_yi", "twd_yi"}:
             if not math.isclose(value, candidate, rel_tol=5e-4, abs_tol=100_000.0):
                 continue
-        elif not math.isclose(
-            value, candidate, rel_tol=1e-9, abs_tol=tolerance
-        ):
+        elif not math.isclose(value, candidate, rel_tol=1e-9,
+                              abs_tol=max(1e-9, abs(value) * 1e-9)):
             continue
         return True
     return False
 
 
-def check_chat(
-    run_json: dict | list,
-    chat_md: str,
-    *,
-    fx_rate: float | None = None,
-    date: str | None = None,
-    candidate_count: int | None = None,
-) -> dict[str, Any]:
+def check_chat(run_json: dict | list, chat_md: str, *, fx_rate: float | None = None,
+              date: str | None = None, candidate_count: int | None = None) -> dict[str, Any]:
     allowed = _collect_typed_values(run_json)
-
     if fx_rate is not None:
         fx = _as_float(fx_rate)
         if fx is not None and fx > 0:
             allowed["number"].update({fx, round(fx, 1), round(fx, 2), round(fx)})
-            for field, value in _walk(run_json):
-                if field != "dollar_vol":
-                    continue
-                values = value.values() if isinstance(value, dict) else value
-                if not isinstance(values, (list, tuple, set)):
-                    values = (values,)
-                for nested in values:
-                    dollar_volume = _as_float(nested)
-                    if dollar_volume is not None:
-                        allowed["usd_amount"].update(
-                            _currency_candidates(dollar_volume / fx)
-                        )
-                        allowed["usd_yi"].update(
-                            _yi_candidates(dollar_volume / fx)
-                        )
+            dollar_volumes = {
+                value for field, value in _walk(run_json)
+                if field == "dollar_vol"
+                for value in ([value] if not isinstance(value, (list, tuple, set, dict))
+                              else (value.values() if isinstance(value, dict) else value))
+                if (parsed := _as_float(value)) is not None
+            }
             aggregate = _candidate_aggregate(run_json)
             if aggregate is not None:
-                allowed["usd_amount"].update(_currency_candidates(aggregate / fx))
-                allowed["usd_yi"].update(_yi_candidates(aggregate / fx))
-
+                dollar_volumes.add(aggregate)
+            for dollar_volume in dollar_volumes:
+                allowed["usd_amount"].update(_currency_candidates(dollar_volume / fx))
+                allowed["usd_yi"].update(_yi_candidates(dollar_volume / fx))
     if date is not None:
         try:
             parsed = date_cls.fromisoformat(str(date)[:10])
         except ValueError:
             pass
         else:
-            allowed["number"].update(
-                {float(parsed.year), float(parsed.month), float(parsed.day),
-                 float(parsed.year - 1911)}
-            )
+            allowed["number"].update({float(parsed.year), float(parsed.month),
+                                      float(parsed.day), float(parsed.year - 1911)})
     if candidate_count is not None:
         count = _as_float(candidate_count)
         if count is not None and count >= 0 and count.is_integer():
             allowed["number"].add(count)
-
     ticker_codes = collect_ticker_codes(run_json)
     offenders: list[dict[str, Any]] = []
     for number in extract_numbers(chat_md):
@@ -501,13 +465,9 @@ def check_chat(
             "twd_yi": "TWD yi amount is not represented by the run",
             "usd_yi": "USD yi amount is not represented by the run",
         }.get(kind, "number is not represented by the run")
-        offenders.append(
-            {
-                "raw": number["raw"],
-                "context": _context_for(chat_md, number["span"]),
-                "reason": reason,
-            }
-        )
+        offenders.append({"raw": number["raw"],
+                          "context": _context_for(chat_md, number["span"]),
+                          "reason": reason})
     return {"ok": not offenders, "offenders": offenders}
 
 
@@ -525,13 +485,8 @@ def main(argv: list[str] | None = None) -> int:
     except (OSError, json.JSONDecodeError) as exc:
         print(f"number_trace: {exc}", file=sys.stderr)
         return 2
-    result = check_chat(
-        run,
-        chat,
-        fx_rate=args.fx,
-        date=args.date,
-        candidate_count=args.candidate_count,
-    )
+    result = check_chat(run, chat, fx_rate=args.fx, date=args.date,
+                        candidate_count=args.candidate_count)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0 if result["ok"] else 5
 
