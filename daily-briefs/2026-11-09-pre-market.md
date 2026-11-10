@@ -11,17 +11,21 @@ up_3pct: 392
 down_3pct: 206
 screen_complete: true
 degraded_sources: 0
+market_cap_reconciled: 106
+correction: 2026-11-10
 ---
 
 # Pre-market brief — Monday 2026-11-09
 
 *Read-only research. Nothing here is a trade instruction.*
 
+> **Corrected 2026-11-10.** The market-cap gate was re-verified against two independent sources after publication. 106 of the 1,085 screened names carried a stale market cap; the one that changed a published table is **NWGL**, which moved out of the headline gap table into the thin-tape block. All published prices and gaps are unchanged. See §10.
+
 ## Bottom line
 
 1. **The one setup** — **NVDA -5.45%** at 176.47 is the only large-cap event in the tape that carries a tradeable level: the trigger is a reclaim of the pre-market high 181.00, the key level is the prior close 186.64, and it is invalidated by any trade below PM low 174.45.
 2. **The one risk** — the board probe has no end date: the House Foreign Affairs and Intelligence Committees have already requested a closed-door briefing, the inquiry is run by independent directors with outside counsel, and it can still be open when Tuesday's 08:30 ET CPI lands with a December rate hike roughly 75% priced.
-3. **The one thing to watch** — the metals bid's breadth, not its leaders: every one of the 35 Non-Energy Minerals names on the screen is at or above +3.00%, so if spot gold gives back Friday's $4,073 close the whole critical-miner complex unwinds in a single session.
+3. **The one thing to watch** — the metals bid's breadth, not its leaders: all 35 Non-Energy Minerals names on the screen are up and not one is down, so if spot gold gives back Friday's $4,073 close the whole critical-miner complex unwinds in a single session.
 
 ## Yesterday's brief — what happened
 
@@ -77,7 +81,7 @@ Reviewed the **2026-11-06** pre-market brief — no daily brief on 2026-11-08, 2
 
 - **The day's shape is a relief rally with one hole in it.** Last week's post-midterm technology rout is being bought back — ES futures +0.76%, RTY +1.30%, VIX 23.40 (-8.74%) — and the AI complex is *up* almost everywhere except the name carrying a governance story. **NVDA -5.45%** is the only mega-cap of consequence down, and it is down for a reason no chart shows.
 - **The governance shock (leader NVDA -5.45%).** Nvidia's board opened an independent investigation on Sunday into whether CEO Jensen Huang was the target of a foreign intelligence effort; Huang told staff he was "unfaithful" to his wife. The board says it has no reason to believe secrets or national security were compromised and expresses confidence in him; the pre-market has taken roughly $250B of market value out anyway. Around it, the complex rotates: **AMD +3.40%**, **ASML +3.79%**, **UMC +5.88%**, ASE Technology **ASX +5.12%**, **AVGO +2.77%**, **AMZN +3.02%**, **GOOGL +2.90%**, **MSFT +2.08%**.
-- **Metals are the broadest bid on the board (35 names, every one ≥ +3.00%).** Spot gold is +1.25% near $4,122/oz, silver +1.6% past $53, copper +1.5% off a four-month low, and the soft dollar plus a falling oil are doing the work. The equity expression runs from **NWGL +50.99%** and **GFR +38.39%** down the liquidity ladder: TECK +4.63%, NAK +4.39%, AG +3.76%, FCX +3.98%, AU +3.24%, KGC +3.01%.
+- **Metals are the broadest bid on the board (35 names, every one ≥ +3.00%, none down).** Spot gold is +1.25% near $4,122/oz, silver +1.6% past $53, copper +1.5% off a four-month low, and the soft dollar plus a falling oil are doing the work. The liquid expression moves a uniform +3.0% to +4.7%: **GFR +38.39%**, TECK +4.63%, NAK +4.39%, FCX +3.98%, AG +3.76%, HL +3.46%, AU +3.24%, KGC +3.01%. The screen's #1 name, NWGL +50.99%, is **not** a metals bid — it is a corporate-action artefact (§3).
 - **Oil breaks lower and travel re-rates.** WTI is **-3.47%** at 87.68 after Trump said fresh strikes on Iran are "highly unlikely" if the talks progress; Brent fell ~16% last week, its steepest weekly drop since the pandemic. Fuel-sensitive names bid: **UAL +3.99%**, **AAL +3.79%**, **ALK +3.75%**, **DAL +3.67%**, **JBLU +3.28%**, CCL +3.31%.
 - **Biotech splits hard in both directions.** Trial and print winners: **DCTH +19.83%** (Q3 at 8:30 ET), **IMVT +11.37%** (IMVT-1402 Phase 2 primary endpoint met), **VIR +8.11%** (VRDN-008 Phase 1). Losers: **ZURA -68.71%** (Phase 2 TibuSHIELD missed its primary endpoint), **IONS -21.39%** (Q3 print), **IBRX -13.84%** (Q3 revenue $48.7M missed Q2's $50.7M even as the QUILT-2.005 trial won).
 - **European banks lead their index.** **SAN +4.22%**, **DB +3.65%**, **BBVA +3.63%**, **PUK +3.55%**, **BBD +3.54%**, **ING +3.17%**, with the Euro STOXX banks index +1.6% on the Credit Agricole/Banco BPM merger and UniCredit's 24% jump in third-quarter earnings.
@@ -117,7 +121,7 @@ What matters for the trade: this is a **governance discount on one name, not a s
 
 **Driver: the metal prices.** Spot gold is +1.25% near $4,122/oz (recovering Friday's 1% fall after a strong payrolls print lifted the dollar and revived December-hike expectations), silver is +1.6% around $52.75–53.07, and copper is +1.5% off a four-month low at $6.33/lb. Two mechanical supports: a softer dollar (DXY -0.43%) and falling oil easing the inflation impulse. On top of that, the World Gold Council has central banks buying at 321t in Q3, the fastest since 2024, and China's central bank has extended its buying streak to 24 straight months. Against it, positioning is washed out — hedge funds were net sellers of all 25 major commodity futures in the week to 3 November, cutting combined net long by 33%.
 
-This is the one theme where the **breadth** is the signal rather than the leaders: the two biggest movers (**NWGL +50.99%**, **GFR +38.39%**) are $143M and $1.35B shells with no sourced single-name catalyst, while the liquid expression — TECK, AG, FCX, AU, KGC, HL, BHP — moves a uniform +3% to +4.6%. That uniformity is what a sector bid looks like; the outliers are liquidity events, not discoveries.
+This is the one theme where the **breadth** is the signal rather than the leaders. All 35 Non-Energy Minerals names in the screen that cleared the liquidity gate are up and **not one is down**, and the liquid expression moves a uniform +3.0% to +4.7%: TECK +4.63%, NAK +4.39%, FCX +3.98%, AG +3.76%, HL +3.46%, AU +3.24%, KGC +3.01%, BHP +3.02%. That uniformity is what a sector bid looks like. The two biggest movers in the sector are **not** part of it: NWGL +50.99% is a corporate-action artefact (§3), and **GFR +38.39%** — the largest name left in the theme, at a $1.35B market cap — has no sourced single-name catalyst. Treat the cluster as beta to the metal prices, not as a set of discoveries.
 
 - SP Angel, "Today's Market View, Monday 9th November 2026" — https://www.share-talk.com/sp-angel-todays-market-view-monday-9th-november-2026/
 - Business Today, "Gold, silver prices rise after Diwali" — https://www.businetstoday.in/markets/stocks/story/gold-silver-prices-rise-after-diwali-whats-driving-the-surge-and-what-should-investors-do-566424-2026-11-09
@@ -125,7 +129,6 @@ This is the one theme where the **breadth** is the signal rather than the leader
 
 | Ticker | Company | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|---|
-| NWGL | CL Workshop Group Limited | 2.53 | 3.82 | +50.99% | 3.43–6.51 | prior close 2.53 | back to/below prior close 2.53 |
 | GFR | Greenfire Resources Ltd. | 5.60 | 7.75 | +38.39% | 6.72–7.86 | prior close 5.60 | back to/below prior close 5.60 |
 | NAK | Northern Dynasty Minerals, Ltd. | 0.62 | 0.65 | +4.39% | 0.63–0.68 | prior close 0.62 | back to/below prior close 0.62 |
 | TECK | Teck Resources Ltd | 60.46 | 63.26 | +4.63% | 62.00–63.60 | prior close 60.46 | back to/below prior close 60.46 |
@@ -231,7 +234,6 @@ Gate A (pre-market volume ≥ 100,000 shares, or ≥ 10,000 shares with a ≥ $2
 
 | Ticker | Company | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|---|
-| NWGL | CL Workshop Group Limited | 2.53 | 3.82 | +50.99% | 3.43–6.51 | prior close 2.53 | back to/below prior close 2.53 |
 | GFR | Greenfire Resources Ltd. | 5.60 | 7.75 | +38.39% | 6.72–7.86 | prior close 5.60 | back to/below prior close 5.60 |
 | CECO | CECO Environmental Corp. | 43.71 | 59.70 | +36.58% | 46.00–63.00 | prior close 43.71 | back to/below prior close 43.71 |
 | DCTH | Delcath Systems, Inc. | 14.93 | 17.89 | +19.83% | 15.95–18.14 | prior close 14.93 | back to/below prior close 14.93 |
@@ -256,6 +258,7 @@ Gate A (pre-market volume ≥ 100,000 shares, or ≥ 10,000 shares with a ≥ $2
 | URG | Ur Energy Inc | 0.74 | 0.78 | +4.97% | 0.74–0.78 | prior close 0.74 | back to/below prior close 0.74 |
 | NRG | NRG Energy, Inc. | 88.29 | 92.60 | +4.88% | 88.50–95.00 | prior close 88.29 | back to/below prior close 88.29 |
 | PLUG | Plug Power, Inc. | 1.45 | 1.52 | +4.83% | 1.45–1.55 | prior close 1.45 | back to/below prior close 1.45 |
+| WRN | Western Copper and Gold Corporation | 1.49 | 1.56 | +4.70% | 1.50–1.56 | prior close 1.49 | back to/below prior close 1.49 |
 
 ### Thin tape — real moves, under $100M cap
 
@@ -266,6 +269,7 @@ These passed liquidity but fail the quality floor, so they never top a headline 
 | OMH | Ohmyhome Limited | 7.36 | 19.01 | +158.29% | 13.60–19.89 | prior close 7.36 | back to/below prior close 7.36 |
 | JDZG | JIADE LIMITED | 0.21 | 0.36 | +73.26% | 0.31–0.55 | prior close 0.21 | back to/below prior close 0.21 |
 | CKX | CKX Lands, Inc. | 10.37 | 16.53 | +59.40% | 12.17–17.95 | prior close 10.37 | back to/below prior close 10.37 |
+| NWGL | CL Workshop Group Limited | 2.53 | 3.82 | +50.99% | 3.43–6.51 | prior close 2.53 | back to/below prior close 2.53 |
 | HRTX | Heron Therapeutics, Inc. | 0.29 | 0.42 | +43.24% | 0.29–0.46 | prior close 0.29 | back to/below prior close 0.29 |
 | NTCL | NETCLASS TECHNOLOGY INC | 0.23 | 0.31 | +34.37% | 0.26–0.66 | prior close 0.23 | back to/below prior close 0.23 |
 | INLF | INLIF LIMITED | 0.23 | 0.29 | +25.62% | 0.23–0.37 | prior close 0.23 | back to/below prior close 0.23 |
@@ -281,6 +285,8 @@ These passed liquidity but fail the quality floor, so they never top a headline 
 | SOAR | SOAR AI, Inc. | 0.20 | 0.20 | +3.76% | 0.20–0.21 | prior close 0.20 | back to/below prior close 0.20 |
 | LABT | Lakewood-Amedex Biotherapeutics Inc. | 0.39 | 0.40 | +3.52% | 0.39–0.51 | prior close 0.39 | back to/below prior close 0.39 |
 | BDMD | Baird Medical Investment Holdings Ltd | 0.09 | 0.09 | +3.41% | 0.09–0.12 | prior close 0.09 | back to/below prior close 0.09 |
+
+**The most important row in this block is NWGL +50.99%, and it is not a metals bid.** CL Workshop Group effected a **one-for-80 reverse split of its American Depositary Shares** and changed the ADS ratio from 1 ADS = 8 ordinary shares to 1 ADS = **640** ordinary shares, effective **Friday 2026-11-06** (Nasdaq Equity Corporate Actions Alert #2026-787, new CUSIP 63903R205). The screen kept the pre-split share count and paired it with the post-split price, reporting a $143M market cap for a company whose real cap is in the **$0.5M–$1.9M** range — so it fails Gate B on every source, and it sits here rather than at the top of §3. The company also runs a $200M at-the-market programme and has registered 98.4M Class A ordinary shares for resale, so its share count is genuinely in motion. **The +50.99% is a split-and-issuance artefact.**
 
 ### Yesterday's tape (settled 2026-11-06 session) — and where those names sit today
 
@@ -464,6 +470,8 @@ Roster from cron #19 (`earnings/2026-11-09-reminders.md`, 06:00 ET), cross-check
 | TradingView america scanner — prior-session screens | `sortBy=change`, cap > $1B, range [0,60] both directions | ok — 60 rows each |
 | TradingView america scanner — activity screen | `volume` > 50M | ok — 23 rows; **no halted names on the screen** |
 | TradingView america scanner — per-ticker fills | `name` equal AVGO, UEC, TGTX, CEG, HELP | ok — used only for names outside the ±3% band |
+| Nasdaq `/summary` MarketCap | 931 symbols, `api.nasdaq.com/api/quote/{SYM}/summary` | ok — 925/931 caps, unmetered; the independent market-cap source |
+| shibui `valuation.market_cap` | latest row ≤ 2026-11-06 for 93 flagged symbols | ok — the third market-cap source, already on the prior-close basis |
 | MCP bridge — `market-recap get_quotes` | ES=F, NQ=F, YM=F, RTY=F, ^VIX, CL=F, GC=F, BTC-USD, ^TNX, DX-Y.NYB | ok — 10/10, as_of 08:24–08:39 ET |
 | MCP bridge — `market-recap market_snapshot` | indices, FX, commodities | ok — as_of 13:34:27Z |
 | MCP bridge — `market-recap get_quotes` (cross-check) | 15 headline names | ok — **surfaced the VISN defect below** |
@@ -478,6 +486,10 @@ Roster from cron #19 (`earnings/2026-11-09-reminders.md`, 06:00 ET), cross-check
 | Yesterday-review helper | `tools/yesterday_review.py --date 2026-11-09` | ok — 43 setups reviewed, closes cross-checked against the 2026-11-06 post-market brief |
 
 **One data defect found and corrected.** The scanner's `close` field for **VISN** reads 3.995, which does not reconcile with the scanner's own pre-market print (4.14, range 4.11–4.43, all above 3.995) or with its own `premarket_change` of -24.66%. An identity sweep of all 598 screened rows flagged VISN as the **only** row where `premarket_change` ≠ (premarket_close − close) / close. An independent quote from the bridge put VISN's Friday close at **5.495** (up 1.67% on the day) — and with 5.495 as the prior close, the scanner's own pre-market print and gap reconcile exactly. The brief publishes the corrected prior close of 5.50 and the scanner's gap of -24.66%. The scan was repeated for the other 14 cross-checked names and the scanner agreed with the bridge on every one.
+
+**A second source defect: the scanner's `market_cap_basic` is stale for 106 of 1,085 names — and one of them was published in a headline table.** The scanner's market cap is `close × shares outstanding`, and it does not refresh the share count for corporate actions. The sweep compared every screened name's implied share count against two independent caps — Nasdaq's `/summary` MarketCap (re-based to the same prior close) and shibui's dated `valuation.market_cap` (latest row ≤ 2026-11-06). 106 names disagreed by more than 15%; those rows carry the **median** of the available sources and the `quality_screen` / `liquid_screen` flags are computed from the published figure. The two error directions are both real: too high after a reverse split (NWGL 87×, PBK 23×, BXBL 7×), too low for names that have issued since the count was taken (HELP, BTQ, WYHG).
+
+**Exactly one published name changed table membership: NWGL**, which moved out of the top of §3 and out of the C2 cluster into the thin-tape block. The other gate-relevant names (PBK, BXBL, MGN) sit outside the published top-25/top-10. Where all three sources exist they disagree on the exact cap for 78 of 93 names — on a micro-cap the figure is an estimate, not a fact — but they agree on the **Gate B verdict for every name in the published tables**, NWGL being the only one where the scanner's number was wrong and wrong in the direction that promoted it.
 
 **Lag.** The pre-market tape is live and moved during this run: the final band pull was at 08:44 ET and the per-ticker fills at 08:55 ET. Numbers below those timestamps are stale by construction.
 
