@@ -346,7 +346,7 @@ date,routine,fire_et,schedule,expected,state,artifact,bytes,names
 2026-11-09,20-eod-watchlist-csv-snapshot,16:00,Mon-Fri,True,published,us-eod/2026-11-09.csv,1069149,4895
 2026-11-09,23-agentic-post-market-brief,22:30,Mon-Fri,True,published,daily-briefs/2026-11-09-post-market.md,26215,
 2026-11-09,25-ntrt-gap-brief-daily,09:00,Mon-Fri,True,published,ntrt/2026-11-09.md,13412,
-2026-11-09,26-agentic-pre-market-brief,08:30,Mon-Fri,True,published,daily-briefs/2026-11-09-pre-market.md,57202,
+2026-11-09,26-agentic-pre-market-brief,08:30,Mon-Fri,True,published,daily-briefs/2026-11-09-pre-market.md,60599,
 2026-11-09,26b-agentic-pre-market-brief-refresh-0920,09:20,Mon-Fri,True,published,daily-briefs/2026-11-09-pre-market-refresh.md,24005,
 2026-W44,01-weekly-mcp-health-check,02:00,Sun,False,published_off_schedule,mcp-health/2026-W44.md,8494,
 2026-W45,01-weekly-mcp-health-check,02:00,Sun,False,published_off_schedule,mcp-health/2026-W45.md,11203,

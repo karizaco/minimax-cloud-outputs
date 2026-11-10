@@ -110,6 +110,16 @@
    "name": "setup-card.md",
    "bytes": 5430,
    "role": "brief - published Stalk and Tier-A, session-stamped, with unchecked gaps"
+  },
+  {
+   "name": "yesterday-short-list.csv",
+   "bytes": 249,
+   "role": "machine - the same rows"
+  },
+  {
+   "name": "yesterday-short-list.md",
+   "bytes": 1678,
+   "role": "brief - yesterday's Tier-A names against this morning's feed"
   }
  ],
  "notes": [

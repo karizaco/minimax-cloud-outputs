@@ -47,6 +47,16 @@
    "name": "ledger.md",
    "bytes": 6966,
    "role": "brief - coverage, and the names several routines saw"
+  },
+  {
+   "name": "yesterday-short-list.csv",
+   "bytes": 564,
+   "role": "machine - the same rows"
+  },
+  {
+   "name": "yesterday-short-list.md",
+   "bytes": 1700,
+   "role": "brief - yesterday's Tier-A names against this morning's feed"
   }
  ],
  "notes": [
