@@ -98,7 +98,7 @@ python3 scripts/install_hooks.py --check  # report what is installed
 
 | Hook | When | What it does |
 |---|---|---|
-| `pre-commit` | every commit | regenerates `daily-screens/<date>/{_manifest,_decisions}.json` from the artifacts the cron published, runs `check_artifacts.py`, and blocks the commit on a finding (`--no-verify` is the escape) |
+| `pre-commit` | every commit | runs the test suite, regenerates `daily-screens/<date>/{_manifest,_decisions}.json` from the artifacts the cron published, runs `check_artifacts.py`, and blocks the commit on a failure or a finding (`--no-verify` is the escape) |
 | `post-merge` | every merge and every `git pull` | regenerates `derived/` and commits it if the builders wrote anything. It does not push. |
 
 **`core.hooksPath` overrides `.git/hooks/` entirely.** A clone with that
@@ -111,3 +111,25 @@ and whether the tracked copy has drifted from it.
 The builders are idempotent and carry the build **date**, not a clock time, so
 the `post-merge` hook produces no diff when nothing changed and a same-day
 rebuild is silent.
+
+## Tests
+
+The tooling in `scripts/` has a test suite. It is **stdlib-only and offline** —
+the Cloud sandbox has no PyPI access, so there is no pytest.
+
+```bash
+python3 scripts/run_tests.py            # every suite, one verdict
+python3 scripts/run_tests.py joinlib    # only the suites matching a name
+```
+
+| Suite | What it pins |
+|---|---|
+| `scripts/test_joinlib.py` | the shared column-drift reader — the ticker column across its four spellings, the escaped-pipe row split, the number and sector parsers |
+| `scripts/test_builders.py` | each derived-view builder, against a synthetic mini-repo in a temp directory: streaks, the canonical stylist grouping, the gap-reconciliation session resolution, the thesis contracts, the ledger states |
+| `scripts/test_render.py` | the client-safe renderer — the three table shapes, and that **every data row produces a bullet** |
+| `scripts/test_hooks.py` | the hooks, against a real scratch repository: the post-merge commit exits 0, leaves no staged residue, and does not sweep unrelated staged content |
+
+**A test that cannot fail is a failure.** The house rule, from the migration
+repo's contract tests: a fixture or mutation that does not change anything is
+itself reported as a failure, not a silent pass. When you add a test, check
+that it fails when the behaviour it covers is broken.

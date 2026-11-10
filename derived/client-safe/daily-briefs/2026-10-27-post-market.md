@@ -124,6 +124,9 @@
 - **Measure**: Mean change · **Value**: +1.03%
 - **Measure**: p10 / p25 / p75 / p90 / p99 · **Value**: −2.39 / −0.68 / +2.46 / +5.79 / +14.75 %
 - **Measure**: Names ≥$1bn cap · **Value**: 2,621 (57.6% advancing, median +0.28%)
+- **Measure**: |move| ≥ 5% · **Value**: 933 (717 up / 216 down)
+- **Measure**: |move| ≥ 10% · **Value**: 244 (176 up / 68 down)
+- **Measure**: |move| ≥ 20% · **Value**: 50 (29 up / 21 down)
 
 - The distribution is the story: **mean (+1.03%) sits well above median (+0.32%)**, so the index gains were carried by a long right tail rather than by the average stock.
 - Breadth was better than the headline index suggested — small caps matched the Nasdaq —

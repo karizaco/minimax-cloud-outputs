@@ -85,7 +85,9 @@ def md_tickers(path):
         s = line.strip()
         if not s.startswith("|"):
             continue
-        for cell in s.strip("|").split("|"):
+        # Split on unescaped pipes only, so a cell carrying `\|corr\|` does
+        # not shift the columns after it.
+        for cell in J.split_row(s.strip("|")):
             c = cell.strip()
             if is_ticker(c):
                 out.add(c)

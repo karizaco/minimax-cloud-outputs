@@ -38,6 +38,19 @@ fi
 
 LOG="$(git rev-parse --git-dir)/pre-commit.log"
 
+# The tests run FIRST, before the generators, so a regression is reported
+# before a generator rewrites any file. A test failure blocks the commit
+# exactly as a checker finding does.
+echo "pre-commit: running the test suite"
+if ! "$PY" scripts/run_tests.py >"$LOG" 2>&1; then
+    echo "pre-commit: the test suite FAILED:"
+    grep -E '^(=== |--- |FAILED|all [0-9]+ suite|  FAIL|ERROR)' "$LOG" | head -40
+    echo ""
+    echo "Fix the failing test, or commit with --no-verify if you know why it fails."
+    exit 1
+fi
+grep -E '^(all [0-9]+ suite)' "$LOG" | head -1
+
 echo "pre-commit: regenerating the screen manifests and decision records"
 if ! "$PY" scripts/build_screen_manifest.py >"$LOG" 2>&1; then
     echo "pre-commit: build_screen_manifest.py FAILED:"

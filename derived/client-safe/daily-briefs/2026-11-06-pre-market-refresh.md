@@ -156,6 +156,8 @@ Morning's top 10 decliners, now:
 - **Measure**: Names whose gap rose >0.2pp · **08:36 ET**: — · **09:23 ET**: 168 (28.3%)
 - **Measure**: Names whose gap fell >0.2pp · **08:36 ET**: — · **09:23 ET**: 170 (28.6%)
 - **Measure**: Names flat (≤0.2pp) · **08:36 ET**: — · **09:23 ET**: 256 (43.1%)
+- **Measure**: Median |gap| · **08:36 ET**: 6.59% · **09:23 ET**: 6.81%
+- **Measure**: Median |change| · **08:36 ET**: — · **09:23 ET**: 0.42pp
 
 **Verdict**
 

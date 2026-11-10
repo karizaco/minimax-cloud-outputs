@@ -85,6 +85,15 @@ Breadth, full detail in `breadth.md`: 986-name universe (NYSE/NASDAQ/AMEX, type=
 
 **Tier-A — ≥ 3 distinct stylists (cap 8; pool was 12, list truncated)**
 
+- **Symbol**: RUN · **Stylists**: jeff_sun · **Close**: peoplewish · **Today**: qullamaggie (+4 more column(s) in the artifact table) (row has 8 cell(s) where the header has 8)
+- **Symbol**: SEZL · **Stylists**: jeff_sun · **Close**: peoplewish · **Today**: qullamaggie (+4 more column(s) in the artifact table) (row has 8 cell(s) where the header has 8)
+- **Symbol**: XERS · **Stylists**: hernandez · **Close**: jeff_sun · **Today**: qullamaggie (+4 more column(s) in the artifact table) (row has 8 cell(s) where the header has 8)
+- **Symbol**: ACHC · **Stylists**: hernandez · **Close**: peoplewish · **Today**: qullamaggie (+4 more column(s) in the artifact table) (row has 8 cell(s) where the header has 8)
+- **Symbol**: MRNA · **Stylists**: hernandez · **Close**: peoplewish · **Today**: qullamaggie (+4 more column(s) in the artifact table) (row has 8 cell(s) where the header has 8)
+- **Symbol**: APP · **Stylists**: jeff_sun · **Close**: qullamaggie · **Today**: stockbee (+4 more column(s) in the artifact table) (row has 8 cell(s) where the header has 8)
+- **Symbol**: U · **Stylists**: peoplewish · **Close**: qullamaggie · **Today**: stockbee (+4 more column(s) in the artifact table) (row has 8 cell(s) where the header has 8)
+- **Symbol**: FUN · **Stylists**: peoplewish · **Close**: qullamaggie · **Today**: stockbee (+4 more column(s) in the artifact table) (row has 8 cell(s) where the header has 8)
+
 - **The tier is a momentum list, and today it mostly worked.** 7 of the eight closed up —
 - RUN +1.11%, XERS +16.21%, ACHC +6.35%, MRNA +5.27%, APP +9.86%, U +5.51%, FUN +8.23% — and the laggards are SEZL -3.59%.
 - The screen's own metrics resolve to the **11-05** session, which is why APP (which rose 31.04% on 11-05) and XERS are already on the list:

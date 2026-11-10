@@ -339,6 +339,7 @@ Ranked by SPDR sector ETF regular-session change (official closes), cross-checke
 - **HTTP**: 200 · **Status**: ok (+1 more column(s) in the artifact table)
 - **Source**: Cboe delayed quotes — validation · **Endpoint / query**: `close - price_change` vs shibui's 10/27 closes for SPY, QQQ, IWM, DIA, RSP, GLD · **HTTP**: 200
 - **Status**: ok — 6/6 exact (+1 more column(s) in the artifact table)
+- **Source**: Nasdaq quote API · **Endpoint / query**: `api.nasdaq.com/api/quote/{SYM}/info?assetclass=stocks|etf|index` — 12 symbols + COMP · **HTTP**: 200 · **Status**: ok (+1 more column(s) in the artifact table)
 - **Source**: Nasdaq extended-trading · **Endpoint / query**: `api.nasdaq.com/api/quote/{SYM}/extended-trading?markettype=post` — 8 symbols · **HTTP**: 200 · **Status**: ok (+1 more column(s) in the artifact table)
 - **Source**: Nasdaq bulk screener · **Endpoint / query**: `api.nasdaq.com/api/screener/stocks?download=true` — 7,010 rows · **HTTP**: 200 · **Status**: ok for metadata, STALE for prices (+1 more column(s) in the artifact table)
 - **Source**: CNBC quote service · **Endpoint / query**: `quote.cnbc.com/quote-html-webservice/restQuote/...` — @SP.1, @ND.1, @DJ.1, @TY.1, .VXN · **HTTP**: 200 · **Status**: ok (+1 more column(s) in the artifact table)

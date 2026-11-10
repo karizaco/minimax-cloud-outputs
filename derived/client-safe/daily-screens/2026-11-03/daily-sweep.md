@@ -11,6 +11,14 @@
 - Semis were the engine - SMH 518.52 (+2.01%) - and tech (XLK +1.31%) and industrials (XLI +0.95%) led the sector tape, while the defensive-to-commodity complex lagged hardest:
 - staples (XLP -2.07%) and materials (XLB -2.01%) both fell about 2%.
 
+- **XLK**: 176.51 (row has 7 cell(s) where the header has 7)
+- **XLF**: 57.19 (row has 7 cell(s) where the header has 7)
+- **XLE**: 66.68 (row has 7 cell(s) where the header has 7)
+- **XLV**: 184.02 (row has 7 cell(s) where the header has 7)
+- **XLI**: 171.32 (row has 7 cell(s) where the header has 7)
+- **XLY**: 117.33 (row has 7 cell(s) where the header has 7)
+- **XLP**: 88.95 (row has 7 cell(s) where the header has 7)
+
 **Top movers (2026-11-03 session)**
 
 - STVN

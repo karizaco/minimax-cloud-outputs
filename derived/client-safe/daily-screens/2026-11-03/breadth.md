@@ -42,6 +42,11 @@ No index ETF is more than 6% above its 50-DMA, so `late_cycle` is false. The ATR
 
 **Session close for reference (2026-11-03, CBOE delayed-quote CDN)**
 
+- **QQQE 115.95 +0.05%** (row has 7 cell(s) where the header has 7)
+- **DIA 517.06 -0.44%** (row has 7 cell(s) where the header has 7)
+- **SMH 518.52 +2.01%** (row has 7 cell(s) where the header has 7)
+- **_SPX 7,568.92 +0.36%** (row has 7 cell(s) where the header has 7)
+
 VIX 20.83 (-1.51%) · VIX3M 21.27 (-1.53%) · ratio 0.9793 · quote time 2026-11-03T16:15:01 ET.
 
 **Sector rotation — top themes by equal-weight 1M+6M relative strength (shibui, 2026-11-02)**

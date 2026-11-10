@@ -28,6 +28,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import _joinlib as J  # noqa: E402
 from check_reply_format import (  # noqa: E402
     GLYPH_RE, GLYPH_WORDS, ANY_EMOJI_RE, HEADING_RE, BULLET_RE, ORDERED_RE,
     TABLE_RE, TABLE_SEP_RE, QUOTE_RE, check, tickers_in,
@@ -56,6 +57,10 @@ def glyph_to_words(text, paren=False):
         if word is None:
             return ""
         if paren and m.start() > 0:
+            # The glyph usually sits after a space ("+0.92 🟥"). Keep one space,
+            # not two: returning " (strong)" on top of that space reads "  (strong)".
+            if m.string[m.start() - 1].isspace():
+                return "(%s)" % word
             return " (%s)" % word
         return word
     text = GLYPH_RE.sub(sub, text)
@@ -93,7 +98,7 @@ def table_to_bullets(rows):
     """
     if len(rows) < 2:
         return []
-    header = [c.strip().replace("**", "").strip() for c in rows[0].strip().strip("|").split("|")]
+    header = [c.strip().replace("**", "").strip() for c in J.split_row(rows[0].strip().strip("|"))]
     data = rows[2:] if len(rows) > 2 else []
     if not data:
         return []
@@ -101,9 +106,20 @@ def table_to_bullets(rows):
     label_cols = [i for i, h in enumerate(header) if not h]
     out = []
     for row in data:
-        cells = [c.strip() for c in row.strip().strip("|").split("|")]
+        # Split on unescaped pipes only, so a cell carrying `\|corr\|` stays ONE
+        # cell. A naive split made the row longer than its header, and the
+        # length check below then DROPPED the row without a word.
+        cells = [c.strip() for c in J.split_row(row.strip().strip("|"))]
         if len(cells) != len(header):
-            continue
+            # A row that still does not line up is rendered as far as it goes,
+            # with the mismatch stated. Dropping it silently is how the
+            # corrupted rows shipped.
+            mismatch = len(cells) - len(header)
+            cells = cells[:len(header)] + [""] * max(0, -mismatch)
+            extra = "  (row has %d cell(s) where the header has %d)" % (
+                len(cells), len(header))
+        else:
+            extra = ""
 
         if len(label_cols) == 1 and label_cols[0] == 0:
             # A ROW-LABEL table - a correlation matrix. The first cell names
@@ -126,7 +142,7 @@ def table_to_bullets(rows):
             dropped = len(named) - keep
             if dropped > 0:
                 bullet += "  (+%d more column(s) in the artifact table)" % dropped
-            out.append(bullet)
+            out.append(bullet + extra)
             continue
 
         if label_cols:
@@ -148,7 +164,7 @@ def table_to_bullets(rows):
                     parts.append("**%s**: %s" % (lead, value))
             if not parts:
                 continue
-            out.append(" · ".join(parts))
+            out.append(" · ".join(parts) + extra)
             continue
 
         keep = min(4, len(header))
@@ -164,7 +180,7 @@ def table_to_bullets(rows):
         dropped = len(header) - keep
         if dropped > 0:
             bullet += "  (+%d more column(s) in the artifact table)" % dropped
-        out.append(bullet)
+        out.append(bullet + extra)
     return out
 
 

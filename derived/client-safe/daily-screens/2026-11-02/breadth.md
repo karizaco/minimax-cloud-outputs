@@ -41,6 +41,10 @@ No index ETF is more than 6% above its 50-DMA, so `late_cycle` is false. The ATR
 
 **Session close for reference (2026-11-02, CBOE delayed-quote CDN)**
 
+- **XLRE 43.64 +1.09%** (row has 7 cell(s) where the header has 7)
+- **XLB 53.67 +1.76%** (row has 7 cell(s) where the header has 7)
+- **XLC 100.26 +0.36%** (row has 7 cell(s) where the header has 7)
+
 VIX 21.15 (+8.91%) · VIX3M 21.6 (+3.95%) · ratio 0.9792 · quote time 2026-11-02T16:15:01 ET.
 
 **Source health**

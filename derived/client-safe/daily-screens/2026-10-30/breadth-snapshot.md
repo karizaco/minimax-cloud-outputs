@@ -173,6 +173,7 @@ Read it as: settled breadth says nothing is broken, the tape says something is, 
 - **Source**: Nasdaq quote API · **Query / URL**: `.../info?assetclass=etf` (SPY, QQQ, IWM, RSP) · **Status**: ok (HTTP 200) · **Result**: implied prior closes match shibui 10/29 to the cent
 - **Source**: Yahoo Finance · **Query / URL**: `finance.yahoo.com/quote/%5EVIX/` (HTML) · **Status**: ok (HTTP 200) · **Result**: 21.40 @ 13:48:01 ET — independent cross-check of the CBOE print
 - **Source**: Nasdaq · **Query / URL**: `api.nasdaq.com/api/market-info` · **Status**: ok (HTTP 200) · **Result**: session status only (open, closes 16:00 ET)
+- **Source**: Nasdaq · **Query / URL**: `api.nasdaq.com/api/marketmovers?market=stocks&movers=advancers · **Status**: decliners` · **Result**: ok but not usable (HTTP 200) (row has 4 cell(s) where the header has 4)
 - **Source**: web_search · **Query / URL**: press cross-check for the 10/29 settle and today's catalyst · **Status**: ok · **Result**: Zacks, Saxo, Investrade, memorandum all agree
 
 **Caveats**

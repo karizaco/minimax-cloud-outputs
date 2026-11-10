@@ -152,50 +152,50 @@ published_on,screen_session,entry_session,ticker,boards,stylists,stylists_raw,pr
 2026-10-28,,2026-10-29,TWLO,stalk,peoplewish,peoplewish,253.7,-4.18,-4.69,held
 2026-10-28,,2026-10-29,ULCC,stalk,jeff_sun|stockbee,jeff_sun|stockbee,6.17,2.27,5.02,held
 2026-10-28,,2026-10-29,WDC,stalk,jeff_sun|peoplewish,jeff_sun|peoplewish,396.4,-1.59,-0.25,faded
-2026-10-29,,2026-10-30,AAL,stalk,jeff_sun,EP9M volume,12.78,-1.1,-1.41,held
-2026-10-29,,2026-10-30,AAPL,stalk,jeff_sun,EP9M volume,348.9,-0.63,-1.23,held
+2026-10-29,,2026-10-30,AAL,stalk,jeff_sun|stockbee,EP9M volume,12.78,-1.1,-1.41,held
+2026-10-29,,2026-10-30,AAPL,stalk,jeff_sun|stockbee,EP9M volume,348.9,-0.63,-1.23,held
 2026-10-29,,2026-10-30,AI,stalk,peoplewish,ADR + velocity,12.14,-1.81,-2.39,held
 2026-10-29,,2026-10-30,ALM,stalk,peoplewish,ADR + velocity,,,,no_bar
 2026-10-29,,2026-10-30,AMBA,stalk,peoplewish,ADR + velocity,64.58,-4.99,-2.26,faded
 2026-10-29,,2026-10-30,AMN,stalk,qullamaggie,RS leader,46.86,0.17,0.58,up
-2026-10-29,,2026-10-30,AMZN,stalk,jeff_sun,EP9M volume,243.8,-4.63,-1.44,faded
+2026-10-29,,2026-10-30,AMZN,stalk,jeff_sun|stockbee,EP9M volume,243.8,-4.63,-1.44,faded
 2026-10-29,,2026-10-30,ATLC,stalk,jeff_sun,CANSLIM,98.15,-1.5,-4.78,held
 2026-10-29,,2026-10-30,AVGO,stalk,jeff_sun,CANSLIM,345.0,-4.14,-5.48,held
 2026-10-29,,2026-10-30,BP,stalk,jeff_sun,CANSLIM,,,,no_bar
-2026-10-29,,2026-10-30,BRAI,stalk,jeff_sun,EP9M volume,,,,no_bar
+2026-10-29,,2026-10-30,BRAI,stalk,jeff_sun|stockbee,EP9M volume,,,,no_bar
 2026-10-29,,2026-10-30,BROS,stalk,jeff_sun,CANSLIM,43.99,0.02,-2.59,reversed
 2026-10-29,,2026-10-30,BSP,stalk,peoplewish,ADR + velocity,,,,no_bar
-2026-10-29,,2026-10-30,CCC,stalk,jeff_sun,EP9M volume,7.68,0.0,-0.39,down
+2026-10-29,,2026-10-30,CCC,stalk,jeff_sun|stockbee,EP9M volume,7.68,0.0,-0.39,down
 2026-10-29,,2026-10-30,CORZ,stalk,peoplewish,ADR + velocity,14.43,-6.03,-8.18,held
 2026-10-29,,2026-10-30,CVE,stalk,jeff_sun,CANSLIM,,,,no_bar
 2026-10-29,,2026-10-30,ECVT,stalk,jeff_sun,CANSLIM,10.24,-0.39,-1.17,held
 2026-10-29,,2026-10-30,EE,stalk,jeff_sun,CANSLIM,35.09,,0.91,up
 2026-10-29,,2026-10-30,ELF,stalk,jeff_sun,CANSLIM,113.0,0.18,-1.15,reversed
-2026-10-29,,2026-10-30,F,stalk,jeff_sun,EP9M volume,12.33,-0.41,-0.89,held
-2026-10-29,,2026-10-30,FIGS,stalk|tier-a,qullamaggie,"RS leader, ADR + velocity, CANSLIM",21.55,-0.51,-1.11,held
+2026-10-29,,2026-10-30,F,stalk,jeff_sun|stockbee,EP9M volume,12.33,-0.41,-0.89,held
+2026-10-29,,2026-10-30,FIGS,stalk|tier-a,jeff_sun|peoplewish|qullamaggie,RS leader|ADR + velocity|CANSLIM,21.55,-0.51,-1.11,held
 2026-10-29,,2026-10-30,FIS,stalk,jeff_sun,CANSLIM,37.28,0.91,3.41,held
 2026-10-29,,2026-10-30,GLOB,stalk,qullamaggie,RS leader,,,,no_bar
 2026-10-29,,2026-10-30,GLXY,stalk,peoplewish,ADR + velocity,18.13,-6.62,-11.75,held
-2026-10-29,,2026-10-30,GMAB,tier-a,qullamaggie,"4% breakout, RS leader, 5d gainer, ADR + velocity, theme→group leader",,,,no_bar
-2026-10-29,,2026-10-30,GOOGL,stalk,jeff_sun,EP9M volume,283.8,-0.95,-1.41,held
+2026-10-29,,2026-10-30,GMAB,tier-a,peoplewish|qullamaggie,4% breakout|RS leader|5d gainer|ADR + velocity|theme→group leader,,,,no_bar
+2026-10-29,,2026-10-30,GOOGL,stalk,jeff_sun|stockbee,EP9M volume,283.8,-0.95,-1.41,held
 2026-10-29,,2026-10-30,HIMS,stalk,peoplewish,ADR + velocity,29.7,-4.01,-6.8,held
-2026-10-29,,2026-10-30,HPK,stalk,jeff_sun,"theme→group leader, CANSLIM",10.45,0.96,-2.49,reversed
+2026-10-29,,2026-10-30,HPK,stalk,jeff_sun,theme→group leader|CANSLIM,10.45,0.96,-2.49,reversed
 2026-10-29,,2026-10-30,KSS,stalk,qullamaggie,RS leader,24.51,-0.73,-0.86,held
-2026-10-29,,2026-10-30,KVYO,stalk,qullamaggie,"RS leader, ADR + velocity",20.43,0.29,-1.52,reversed
+2026-10-29,,2026-10-30,KVYO,stalk,peoplewish|qullamaggie,RS leader|ADR + velocity,20.43,0.29,-1.52,reversed
 2026-10-29,,2026-10-30,LIFE,stalk,peoplewish,ADR + velocity,43.62,-1.99,-0.53,faded
 2026-10-29,,2026-10-30,MAN,stalk,peoplewish,ADR + velocity,45.42,,1.92,up
 2026-10-29,,2026-10-30,MU,stalk,jeff_sun,CANSLIM,934.3,-5.38,-5.31,held
-2026-10-29,,2026-10-30,NESR,stalk,peoplewish,"ADR + velocity, CANSLIM",21.43,-3.41,-0.56,faded
+2026-10-29,,2026-10-30,NESR,stalk,jeff_sun|peoplewish,ADR + velocity|CANSLIM,21.43,-3.41,-0.56,faded
 2026-10-29,,2026-10-30,NKTR,stalk,peoplewish,ADR + velocity,39.18,-0.66,-0.79,held
-2026-10-29,,2026-10-30,NVDA,stalk,jeff_sun,EP9M volume,213.7,-2.25,-4.26,held
+2026-10-29,,2026-10-30,NVDA,stalk,jeff_sun|stockbee,EP9M volume,213.7,-2.25,-4.26,held
 2026-10-29,,2026-10-30,OBA,stalk,stockbee,anticipation (coil),,,,no_bar
 2026-10-29,,2026-10-30,OKLO,stalk,peoplewish,ADR + velocity,26.78,-6.09,-5.79,held
-2026-10-29,,2026-10-30,PCG,stalk,jeff_sun,EP9M volume,13.22,0.91,-0.3,reversed
-2026-10-29,,2026-10-30,PRME,tier-a,qullamaggie,"4% breakout, RS leader, theme→group leader",5.24,-4.01,-9.92,held
+2026-10-29,,2026-10-30,PCG,stalk,jeff_sun|stockbee,EP9M volume,13.22,0.91,-0.3,reversed
+2026-10-29,,2026-10-30,PRME,tier-a,qullamaggie,4% breakout|RS leader|theme→group leader,5.24,-4.01,-9.92,held
 2026-10-29,,2026-10-30,QBTS,stalk,peoplewish,ADR + velocity,11.56,-5.62,-7.87,held
 2026-10-29,,2026-10-30,RBLX,stalk,qullamaggie,RS leader,52.53,-12.94,-18.18,held
-2026-10-29,,2026-10-30,SDGR,tier-a,qullamaggie,"4% breakout, RS leader, 5d gainer, ADR + velocity",29.99,-3.47,-9.5,held
-2026-10-29,,2026-10-30,SEZL,stalk,peoplewish,"ADR + velocity, CANSLIM",133.9,-1.49,0.67,reversed
+2026-10-29,,2026-10-30,SDGR,tier-a,peoplewish|qullamaggie,4% breakout|RS leader|5d gainer|ADR + velocity,29.99,-3.47,-9.5,held
+2026-10-29,,2026-10-30,SEZL,stalk,jeff_sun|peoplewish,ADR + velocity|CANSLIM,133.9,-1.49,0.67,reversed
 2026-10-29,,2026-10-30,SPHR,stalk,peoplewish,ADR + velocity,113.1,-0.8,-3.71,held
 2026-10-29,,2026-10-30,TWLO,stalk,peoplewish,ADR + velocity,241.8,-22.83,-15.1,held
 2026-10-29,,2026-10-30,UEC,stalk,peoplewish,ADR + velocity,8.155,-5.58,-5.46,held

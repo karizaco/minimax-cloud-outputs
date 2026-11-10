@@ -27,7 +27,7 @@ SOURCE = os.path.join(REPO, "scripts", "hooks")
 TARGET = os.path.join(REPO, ".git", "hooks")
 
 # A hooksPath outside the repo is a scratch directory by another name.
-TEMP_MARKERS = ("/tmp/", "\\Temp\\", "AppData\\Local\\Temp", "AppData/Local/Temp")
+TEMP_MARKERS = ("\\tmp\\", "\\temp\\", "appdata\\local\\temp")
 
 
 def run(*args):
@@ -40,9 +40,15 @@ def current_hooks_path():
 
 
 def is_scratch(path):
+    """A hooksPath outside the repo, in temp space.
+
+    `C:/tmp/gitrun` is the path that actually disabled this clone's hooks.
+    Matching is case-insensitive and slash-insensitive, because Windows and
+    the Linux sandbox spell the same directory differently.
+    """
     if not path:
         return False
-    norm = path.replace("/", "\\")
+    norm = path.replace("/", "\\").lower()
     return any(m in norm for m in TEMP_MARKERS)
 
 
@@ -80,7 +86,10 @@ def do_install(keep_hooks_path):
 
     cleared = None
     hp = current_hooks_path()
-    if hp and not keep_hooks_path:
+    # Only a scratch path is cleared. A hooksPath inside the repo is a
+    # deliberate choice (a tracked `.githooks/` directory, for instance) and
+    # installing must not undo it.
+    if hp and not keep_hooks_path and is_scratch(hp):
         r = run("git", "config", "--local", "--unset", "core.hooksPath")
         cleared = hp if r.returncode == 0 else None
 

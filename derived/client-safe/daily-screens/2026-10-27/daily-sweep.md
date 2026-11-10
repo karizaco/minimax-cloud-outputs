@@ -53,6 +53,8 @@
 - **Check**: Scanner coverage
 - **Result**: 20,053 / 20,053 rows = 100.000% (`stock` 11,712 / `fund` 6,734 / `dr` 1,607), zero duplicate ticker ids. Sorted by `name` with a 1,500-row step over 2,000-row pages — sorting by `market_cap_basic` is unstable because that column is NULL for every ETF.
 - **Check**: Session-date proof · **Result**: Yahoo last daily bar dated 2026-10-27 on all 5 regime indices; `regularMarketTime` on SPY = the 16:00 ET settle.
+- **Check**: Independent price cross-check
+- **Result**: 128 sampled tickers, 128 agreed with Yahoo to the cent (100.0%); mean |gap| 0.0000 pp, median 0.0000 pp, max 0.0000 pp, 0 rows off by >0.1%. The scanner's ~900s delayed stream has fully settled by 18:40 ET — the 0.43% mean gap measured on this same feed at 16:0x ET is not present at this read time.
 - **Check**: Breadth cross-check · **Result**: 40 sampled S&P 500 members, TV-SMA20 vs Yahoo-computed SMA20 above/below verdict: 40/40 agreement.
 - **Check**: Yahoo bar coverage of the prefiltered universe
 - **Result**: 2,949 / 2,949 (100%) after alias-patching class shares and preferreds (`BRK.B`→`BRK-B`, `BAC/PB`→`BAC-PB`; two general rules cover the rest). 63 names failed on the first pass and all 63 were recovered on the alias retry.

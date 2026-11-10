@@ -14,6 +14,18 @@
 - Volatility confirmed the risk-off tilt in the index level: VIX settled at 21.15 (+8.91%) against VIX3M 21.6 (+3.95%), a ratio of 0.9792 —
 - front-end stress is elevated but still below the long end, so the uncertainty band is not formally triggered.
 
+- **XLK**: 174.22 (row has 7 cell(s) where the header has 7)
+- **XLF**: 57.56 (row has 7 cell(s) where the header has 7)
+- **XLE**: 67.25 (row has 7 cell(s) where the header has 7)
+- **XLV**: 184.60 (row has 7 cell(s) where the header has 7)
+- **XLI**: 169.71 (row has 7 cell(s) where the header has 7)
+- **XLY**: 118.16 (row has 7 cell(s) where the header has 7)
+- **XLP**: 90.83 (row has 7 cell(s) where the header has 7)
+- **XLU**: 43.67 (row has 7 cell(s) where the header has 7)
+- **XLRE**: 43.64 (row has 7 cell(s) where the header has 7)
+- **XLB**: 53.67 (row has 7 cell(s) where the header has 7)
+- **XLC**: 100.26 (row has 7 cell(s) where the header has 7)
+
 **Top movers (2026-11-02 session)**
 
 - TWST

@@ -117,6 +117,9 @@
 
 **Leader: LITE (the wider loser at -18.6% Monday).**
 
+- **Ticker**: MRVL · **Nov-2 close**: 171.41 · **Nov-2 %**: -12.7% · **Pre-market**: 176.88 (+2 more column(s) in the artifact table) (row has 6 cell(s) where the header has 6)
+- **Ticker**: LITE · **Nov-2 close**: 684.4 · **Nov-2 %**: -18.6% · **Pre-market**: 701.00 (+2 more column(s) in the artifact table) (row has 6 cell(s) where the header has 6)
+
 - **The deal (8-K, Nov 2):** Marvell acquires Lumentum in an all-stock transaction. Lumentum holders receive a **fixed 4.500** MRVL shares per LITE share.
 - Implied enterprise value **$115B**, implied value **~$1,132 per LITE share**, a **23.9% premium** to the Oct 28 unaffected close. Pro-forma ownership **67% MRVL / 33% LITE**. Unanimous board approval.
 - Expected to close **1H CY2028**, subject to both shareholder votes and regulatory approval. Combined EV **over ~$275B**;
@@ -253,6 +256,37 @@ Screen: pre-market volume ≥100,000 shares, **or** market cap ≥$200M with ≥
 **5. StockTwits lead read — trending (15)**
 
 Lead indicator, not a sidebar. Every row was price-checked against the pre-market tape.
+
+- **#**: PLTR · **Ticker**: 14.52 · **Score**: 178.34 (-3.1%)
+- **Nov-2 close (chg)**: 167.1 (-6.3%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: SHOP · **Ticker**: 12.21 · **Score**: 156.22 (-0.8%)
+- **Nov-2 close (chg)**: 132.12 (-15.4%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: CMPS · **Ticker**: 11.90 · **Score**: 8.41 (-27.3%)
+- **Nov-2 close (chg)**: 8.99 (+6.9%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: UPST · **Ticker**: 11.61 · **Score**: 21.31 (-7.4%)
+- **Nov-2 close (chg)**: 20.2012 (-5.2%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: ORCL · **Ticker**: 11.17 · **Score**: 119.22 (-8.8%)
+- **Nov-2 close (chg)**: 119.95 (+0.6%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: LKNCY · **Ticker**: 11.17 · **Score**: 31.2 (+0.9%)
+- **Nov-2 close (chg)**: 33.14 (+6.2%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: BLZE · **Ticker**: 10.04 · **Score**: 7.4 (-2.5%)
+- **Nov-2 close (chg)**: 9.9449 (+34.4%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: PFE · **Ticker**: 9.36 · **Score**: 30.67 (+0.5%)
+- **Nov-2 close (chg)**: 30.7 (+0.1%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: FISV · **Ticker**: 8.96 · **Score**: 51.93 (+3.8%)
+- **Nov-2 close (chg)**: 57.1 (+10.0%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: AMD · **Ticker**: 8.36 · **Score**: 466.84 (-7.5%)
+- **Nov-2 close (chg)**: 485.1 (+3.9%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: DOCN · **Ticker**: 7.01 · **Score**: 89.79 (+0.2%)
+- **Nov-2 close (chg)**: 87 (-3.1%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: ET · **Ticker**: 6.94 · **Score**: 20.34 (-2.7%)
+- **Nov-2 close (chg)**: 20.57 (+1.1%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: AEHR · **Ticker**: 6.86 · **Score**: 51.47 (-6.2%)
+- **Nov-2 close (chg)**: 61 (+18.5%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: IEP · **Ticker**: 6.64 · **Score**: 5.16 (-0.6%)
+- **Nov-2 close (chg)**: 5.6 (+8.5%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
+- **#**: OUST · **Ticker**: 6.55 · **Score**: 28.22 (-5.1%)
+- **Nov-2 close (chg)**: 29.1 (+3.1%) (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
 
 *Theses are StockTwits' own auto-summaries of retail discussion, carried verbatim and truncated; they are sentiment, not verified fact. Every number in the two middle columns is a fetched price.*
 

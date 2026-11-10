@@ -28,6 +28,7 @@
 - **Region**: `eu-fi` · **Venues in file**: OMXHEX · **Universe (country filter)**: 186 · **Unique instruments**: 186 (+3 more column(s) in the artifact table)
 - **Region**: `eu-dk` · **Venues in file**: OMXCOP · **Universe (country filter)**: 134 · **Unique instruments**: 134 (+3 more column(s) in the artifact table)
 - **Region**: `eu-gr` · **Venues in file**: ATHEX · **Universe (country filter)**: 127 · **Unique instruments**: 127 (+3 more column(s) in the artifact table)
+- **Region**: total (+3 more column(s) in the artifact table) (row has 7 cell(s) where the header has 7)
 
 - `Universe` is every instrument the source returns for that country's own listings; `Unique instruments` collapses instruments quoted on several venues of the same market down to one row;
 - `Written` applies the skill's per-region USD market-cap floor (`screener_filters.filters_for_region`).

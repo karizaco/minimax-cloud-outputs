@@ -57,7 +57,7 @@ def strip_md(cell):
 
 def to_float(cell):
     """A percentage or price cell as a float, or None."""
-    txt = strip_md(cell).replace("%", "").replace("+", "").replace(",", "")
+    txt = strip_md(cell).replace("%", "").replace("+", "").replace(",", "").replace("$", "")
     if not txt or txt.lower() in {"none", "null", "n/a", "-"}:
         return None
     try:
@@ -91,8 +91,14 @@ def ticker_column(rows):
 
     `symbol` and `ticker` are tickers by name. `name` is a ticker only on the
     dates where the routine put the symbol in that column (2026-10-26 and
-    2026-10-27); on 2026-10-23 the same column holds company names. The rule is
-    therefore: accept `name` only when every non-empty value looks like a ticker.
+    2026-10-27); on 2026-10-23 the same column holds company names.
+
+    Two rules, and both have to hold. A space is decisive: a ticker never
+    contains one, so a single spaced value means the column is company names
+    and the 90% majority must not override that. The majority rule exists for
+    the other case - 2026-10-26 has one preferred-share line (`HPE/PC`) that
+    is not ticker-shaped and has no space, and a strict all-or-nothing test
+    discarded a whole 200-row board over it.
     """
     if not rows:
         return None, None
@@ -104,11 +110,9 @@ def ticker_column(rows):
         values = [strip_md(r.get("name")) for r in rows]
         values = [v for v in values if v]
         if values:
+            if any(" " in v for v in values):
+                return None, None
             good = sum(1 for v in values if TICKER_RE.match(v))
-            # A majority rule, not all-or-nothing: on 2026-10-26 a single
-            # preferred-share line (`HPE/PC`) failed a strict test and discarded
-            # a whole 200-row board. The exception count is returned so a caller
-            # can report it rather than absorb it.
             if good >= 0.9 * len(values):
                 odd = len(values) - good
                 note = "name holds tickers on this date"
@@ -222,6 +226,44 @@ def sector_column(rows):
 
 # ------------------------------------------------------------------ markdown
 
+def split_row(row):
+    """Split a markdown table row into its cells, on UNESCAPED pipes only.
+
+    A cell may contain a literal pipe, written `\\|`. Markdown escapes it, and
+    a naive `.split("|")` turns `\\|corr\\|` into three cells instead of one.
+    That is not hypothetical in this repo: 22 published artifacts across 7
+    families carry an escaped pipe in a table cell - the correlation matrix's
+    `\\|corr\\|` header, the post-market brief's `\\|move\\| >= 5%` rows, the
+    weekly preview's sector table.
+
+    The effect of the naive split is worse than a mis-read cell. The header
+    grows, the data rows do not, so the two lengths disagree - and a renderer
+    that drops a row whose length does not match its header drops it SILENTLY.
+    The rows that vanished from `derived/client-safe/cross-asset/` were dropped
+    this way.
+
+    So: split on the pipes that are not escaped, then unescape the ones that
+    are. The result is the cell as the author wrote it.
+    """
+    cells, buf = [], []
+    i, n = 0, len(row)
+    while i < n:
+        ch = row[i]
+        if ch == "\\" and i + 1 < n and row[i + 1] == "|":
+            buf.append("|")
+            i += 2
+            continue
+        if ch == "|":
+            cells.append("".join(buf))
+            buf = []
+            i += 1
+            continue
+        buf.append(ch)
+        i += 1
+    cells.append("".join(buf))
+    return cells
+
+
 def md_tables(text):
     """Every markdown table in a document: (start_line, headers, rows).
 
@@ -236,7 +278,7 @@ def md_tables(text):
         if not line.startswith("|") or i + 1 >= len(lines):
             i += 1
             continue
-        header = [strip_md(c) for c in line.strip().strip("|").split("|")]
+        header = [strip_md(c) for c in split_row(line.strip().strip("|"))]
         sep = lines[i + 1]
         if not sep.startswith("|") or set(sep.replace("|", "").replace("-", "").replace(":", "").strip()):
             i += 1
@@ -244,7 +286,7 @@ def md_tables(text):
         rows = []
         j = i + 2
         while j < len(lines) and lines[j].startswith("|"):
-            cells = [c.strip() for c in lines[j].strip().strip("|").split("|")]
+            cells = [c.strip() for c in split_row(lines[j].strip().strip("|"))]
             if len(cells) < len(header):
                 cells = cells + [""] * (len(header) - len(cells))
             rows.append(dict(zip(header, cells[:len(header)])))

@@ -29,22 +29,22 @@
 
 | Stylists | Scored | Next close up | Next close down | Median next change |
 |---|---|---|---|---|
-| jeff_sun | 60 | 20 | 34 | -0.49 |
-| peoplewish | 60 | 16 | 36 | -1.03 |
+| peoplewish | 58 | 15 | 35 | -1.19 |
 | (no stylist column on that date) | 56 | 15 | 33 | -0.66 |
+| jeff_sun | 52 | 20 | 26 | -0.23 |
 | stockbee | 37 | 18 | 16 | +0.18 |
-| jeff_sun|stockbee | 26 | 11 | 11 | -0.08 |
-| qullamaggie | 22 | 10 | 11 | -0.49 |
-| peoplewish|qullamaggie | 21 | 11 | 10 | +0.66 |
+| jeff_sun|stockbee | 34 | 11 | 19 | -0.34 |
+| peoplewish|qullamaggie | 23 | 11 | 12 | -0.73 |
 | peoplewish|qullamaggie|stockbee | 19 | 12 | 5 | +2.17 |
+| qullamaggie | 19 | 10 | 8 | +0.50 |
 | hernandez|peoplewish|qullamaggie | 18 | 8 | 9 | -0.29 |
 | jeff_sun|peoplewish|stockbee | 10 | 8 | 2 | +1.02 |
+| jeff_sun|peoplewish | 9 | 4 | 4 | -0.25 |
+| jeff_sun|peoplewish|qullamaggie | 9 | 1 | 7 | -1.75 |
 | peoplewish|stockbee | 9 | 6 | 3 | +3.65 |
 | hernandez|jeff_sun | 8 | 4 | 4 | -0.10 |
 | hernandez|stockbee | 8 | 2 | 5 | -2.35 |
-| jeff_sun|peoplewish|qullamaggie | 8 | 1 | 6 | -2.16 |
 | hernandez|jeff_sun|stockbee | 7 | 4 | 2 | +1.11 |
-| jeff_sun|peoplewish | 7 | 3 | 3 | -0.25 |
 | jeff_sun|qullamaggie|stockbee | 6 | 5 | 1 | +2.83 |
 | hernandez|peoplewish|qullamaggie|stockbee | 4 | 3 | 0 | +4.67 |
 | jeff_sun|peoplewish|qullamaggie|stockbee | 3 | 1 | 2 | -2.40 |
@@ -211,50 +211,50 @@ neither.
 | 2026-10-28 | 2026-10-29 | TWLO | stalk | peoplewish | -4.18 | -4.69 | held |
 | 2026-10-28 | 2026-10-29 | ULCC | stalk | jeff_sun|stockbee | +2.27 | +5.02 | held |
 | 2026-10-28 | 2026-10-29 | WDC | stalk | jeff_sun|peoplewish | -1.59 | -0.25 | faded |
-| 2026-10-29 | 2026-10-30 | AAL | stalk | jeff_sun | -1.10 | -1.41 | held |
-| 2026-10-29 | 2026-10-30 | AAPL | stalk | jeff_sun | -0.63 | -1.23 | held |
+| 2026-10-29 | 2026-10-30 | AAL | stalk | jeff_sun|stockbee | -1.10 | -1.41 | held |
+| 2026-10-29 | 2026-10-30 | AAPL | stalk | jeff_sun|stockbee | -0.63 | -1.23 | held |
 | 2026-10-29 | 2026-10-30 | AI | stalk | peoplewish | -1.81 | -2.39 | held |
 | 2026-10-29 | 2026-10-30 | ALM | stalk | peoplewish | — | — | no_bar |
 | 2026-10-29 | 2026-10-30 | AMBA | stalk | peoplewish | -4.99 | -2.26 | faded |
 | 2026-10-29 | 2026-10-30 | AMN | stalk | qullamaggie | +0.17 | +0.58 | up |
-| 2026-10-29 | 2026-10-30 | AMZN | stalk | jeff_sun | -4.63 | -1.44 | faded |
+| 2026-10-29 | 2026-10-30 | AMZN | stalk | jeff_sun|stockbee | -4.63 | -1.44 | faded |
 | 2026-10-29 | 2026-10-30 | ATLC | stalk | jeff_sun | -1.50 | -4.78 | held |
 | 2026-10-29 | 2026-10-30 | AVGO | stalk | jeff_sun | -4.14 | -5.48 | held |
 | 2026-10-29 | 2026-10-30 | BP | stalk | jeff_sun | — | — | no_bar |
-| 2026-10-29 | 2026-10-30 | BRAI | stalk | jeff_sun | — | — | no_bar |
+| 2026-10-29 | 2026-10-30 | BRAI | stalk | jeff_sun|stockbee | — | — | no_bar |
 | 2026-10-29 | 2026-10-30 | BROS | stalk | jeff_sun | +0.02 | -2.59 | reversed |
 | 2026-10-29 | 2026-10-30 | BSP | stalk | peoplewish | — | — | no_bar |
-| 2026-10-29 | 2026-10-30 | CCC | stalk | jeff_sun | +0.00 | -0.39 | down |
+| 2026-10-29 | 2026-10-30 | CCC | stalk | jeff_sun|stockbee | +0.00 | -0.39 | down |
 | 2026-10-29 | 2026-10-30 | CORZ | stalk | peoplewish | -6.03 | -8.18 | held |
 | 2026-10-29 | 2026-10-30 | CVE | stalk | jeff_sun | — | — | no_bar |
 | 2026-10-29 | 2026-10-30 | ECVT | stalk | jeff_sun | -0.39 | -1.17 | held |
 | 2026-10-29 | 2026-10-30 | EE | stalk | jeff_sun | — | +0.91 | up |
 | 2026-10-29 | 2026-10-30 | ELF | stalk | jeff_sun | +0.18 | -1.15 | reversed |
-| 2026-10-29 | 2026-10-30 | F | stalk | jeff_sun | -0.41 | -0.89 | held |
-| 2026-10-29 | 2026-10-30 | FIGS | stalk, tier-a | qullamaggie | -0.51 | -1.11 | held |
+| 2026-10-29 | 2026-10-30 | F | stalk | jeff_sun|stockbee | -0.41 | -0.89 | held |
+| 2026-10-29 | 2026-10-30 | FIGS | stalk, tier-a | jeff_sun|peoplewish|qullamaggie | -0.51 | -1.11 | held |
 | 2026-10-29 | 2026-10-30 | FIS | stalk | jeff_sun | +0.91 | +3.41 | held |
 | 2026-10-29 | 2026-10-30 | GLOB | stalk | qullamaggie | — | — | no_bar |
 | 2026-10-29 | 2026-10-30 | GLXY | stalk | peoplewish | -6.62 | -11.75 | held |
-| 2026-10-29 | 2026-10-30 | GMAB | tier-a | qullamaggie | — | — | no_bar |
-| 2026-10-29 | 2026-10-30 | GOOGL | stalk | jeff_sun | -0.95 | -1.41 | held |
+| 2026-10-29 | 2026-10-30 | GMAB | tier-a | peoplewish|qullamaggie | — | — | no_bar |
+| 2026-10-29 | 2026-10-30 | GOOGL | stalk | jeff_sun|stockbee | -0.95 | -1.41 | held |
 | 2026-10-29 | 2026-10-30 | HIMS | stalk | peoplewish | -4.01 | -6.80 | held |
 | 2026-10-29 | 2026-10-30 | HPK | stalk | jeff_sun | +0.96 | -2.49 | reversed |
 | 2026-10-29 | 2026-10-30 | KSS | stalk | qullamaggie | -0.73 | -0.86 | held |
-| 2026-10-29 | 2026-10-30 | KVYO | stalk | qullamaggie | +0.29 | -1.52 | reversed |
+| 2026-10-29 | 2026-10-30 | KVYO | stalk | peoplewish|qullamaggie | +0.29 | -1.52 | reversed |
 | 2026-10-29 | 2026-10-30 | LIFE | stalk | peoplewish | -1.99 | -0.53 | faded |
 | 2026-10-29 | 2026-10-30 | MAN | stalk | peoplewish | — | +1.92 | up |
 | 2026-10-29 | 2026-10-30 | MU | stalk | jeff_sun | -5.38 | -5.31 | held |
-| 2026-10-29 | 2026-10-30 | NESR | stalk | peoplewish | -3.41 | -0.56 | faded |
+| 2026-10-29 | 2026-10-30 | NESR | stalk | jeff_sun|peoplewish | -3.41 | -0.56 | faded |
 | 2026-10-29 | 2026-10-30 | NKTR | stalk | peoplewish | -0.66 | -0.79 | held |
-| 2026-10-29 | 2026-10-30 | NVDA | stalk | jeff_sun | -2.25 | -4.26 | held |
+| 2026-10-29 | 2026-10-30 | NVDA | stalk | jeff_sun|stockbee | -2.25 | -4.26 | held |
 | 2026-10-29 | 2026-10-30 | OBA | stalk | stockbee | — | — | no_bar |
 | 2026-10-29 | 2026-10-30 | OKLO | stalk | peoplewish | -6.09 | -5.79 | held |
-| 2026-10-29 | 2026-10-30 | PCG | stalk | jeff_sun | +0.91 | -0.30 | reversed |
+| 2026-10-29 | 2026-10-30 | PCG | stalk | jeff_sun|stockbee | +0.91 | -0.30 | reversed |
 | 2026-10-29 | 2026-10-30 | PRME | tier-a | qullamaggie | -4.01 | -9.92 | held |
 | 2026-10-29 | 2026-10-30 | QBTS | stalk | peoplewish | -5.62 | -7.87 | held |
 | 2026-10-29 | 2026-10-30 | RBLX | stalk | qullamaggie | -12.94 | -18.18 | held |
-| 2026-10-29 | 2026-10-30 | SDGR | tier-a | qullamaggie | -3.47 | -9.50 | held |
-| 2026-10-29 | 2026-10-30 | SEZL | stalk | peoplewish | -1.49 | +0.67 | reversed |
+| 2026-10-29 | 2026-10-30 | SDGR | tier-a | peoplewish|qullamaggie | -3.47 | -9.50 | held |
+| 2026-10-29 | 2026-10-30 | SEZL | stalk | jeff_sun|peoplewish | -1.49 | +0.67 | reversed |
 | 2026-10-29 | 2026-10-30 | SPHR | stalk | peoplewish | -0.80 | -3.71 | held |
 | 2026-10-29 | 2026-10-30 | TWLO | stalk | peoplewish | -22.83 | -15.10 | held |
 | 2026-10-29 | 2026-10-30 | UEC | stalk | peoplewish | -5.58 | -5.46 | held |

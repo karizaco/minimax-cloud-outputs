@@ -393,6 +393,7 @@
 - **Source**: Nasdaq quote API · **Endpoint / query**: `api.nasdaq.com/api/quote/{SYM}/info?assetclass=index` — COMP, NDX · **HTTP**: 200 · **Status**: ok (+1 more column(s) in the artifact table)
 - **Source**: Nasdaq quote API · **Endpoint / query**: `/info` for INDU, SPX, RUT, VIX · **HTTP**: 400
 - **Status**: failed — "Symbol not exists" (+1 more column(s) in the artifact table)
+- **Source**: Nasdaq historical · **Endpoint / query**: `api.nasdaq.com/api/quote/COMP|NDX/historical` (2026-01-02 → 2026-10-29) · **HTTP**: 200 · **Status**: ok (+1 more column(s) in the artifact table)
 - **Source**: Nasdaq extended-trading · **Endpoint / query**: `api.nasdaq.com/api/quote/{SYM}/extended-trading?markettype=post` (+ `assetclass=stocks`) — 16 names · **HTTP**: 400/200
 - **Status**: failed — `tradesTable` empty and `previousInfo` serves the 10/28 close (+1 more column(s) in the artifact table)
 - **Source**: Nasdaq bulk screener · **Endpoint / query**: `api.nasdaq.com/api/screener/stocks?download=true` · **HTTP**: — · **Status**: not used (+1 more column(s) in the artifact table)

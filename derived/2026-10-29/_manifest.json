@@ -103,12 +103,12 @@
   },
   {
    "name": "setup-card.csv",
-   "bytes": 18604,
+   "bytes": 18756,
    "role": "machine - the same rows, including tags that could not be recomputed"
   },
   {
    "name": "setup-card.md",
-   "bytes": 8316,
+   "bytes": 8468,
    "role": "brief - published Stalk and Tier-A, session-stamped, with unchecked gaps"
   }
  ],

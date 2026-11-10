@@ -237,6 +237,7 @@ Verified ticker-by-ticker against Nasdaq's historical table — every close and 
 - **Source**: CBOE delayed-quote CDN · **Query / URL**: `cdn.cboe.com/api/global/delayed_quotes/quotes/_VIX.json`, `_VIX3M.json` · **Status**: ok — HTTP 200, quote time 2026-10-29 13:48:31 ET
 - **Source**: CBOE delayed-quote CDN (indices) · **Query / URL**: `_SPX.json`, `_NDX.json`, `_RUT.json` · **Status**: ok — HTTP 200, quote time 2026-10-29 13:50:35–37 ET
 - **Source**: CBOE delayed-quote CDN (ETFs) · **Query / URL**: `_SPY.json`, `_QQQ.json`, `_RSP.json`, `_IWM.json`, `_QQQE.json` · **Status**: failed: HTTP 403 — CDN covers indices only; ETF levels sourced from Nasdaq instead
+- **Source**: Nasdaq quote API · **Query / URL**: `api.nasdaq.com/api/quote/{SYM}/info?assetclass=etf · **Status**: stocks` (row has 3 cell(s) where the header has 3)
 - **Source**: Nasdaq historical API · **Query / URL**: `api.nasdaq.com/api/quote/{SYM}/historical?fromdate=2026-10-26&todate=2026-10-29` · **Status**: ok — 17/17 tickers matched shibui's Oct-28 close and volume to the cent
 - **Source**: stocktwits via MCP-over-HTTP bridge · **Query / URL**: `chart_data` {symbol: SPY/QQQ, period: 1D} · **Status**: ok — intraday 5-min bars corroborate the Nasdaq live levels within ~0.1%
 - **Source**: Yahoo Finance JSON (chart / spark / screener) · **Query / URL**: —

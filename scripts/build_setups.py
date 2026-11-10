@@ -310,15 +310,32 @@ def _flatten(token):
     return "".join(ch for ch in clean_token(token).lower() if ch.isalnum())
 
 
-def canonical_stylist(token):
-    """The bucket a token belongs to, or None if it belongs to none."""
+def canonical_stylists(token):
+    """Every bucket a token names.
+
+    A token can name more than one stylist - `"RS leader, ADR + velocity,
+    CANSLIM"` is one cell in the 2026-10-29 `origins` column and names three.
+    Returning only the first match loses the other two, and a name that hit
+    three stylists is then recorded as hitting one.
+
+    The markers are checked in order and each contributes at most one bucket,
+    so a token naming both a stylist and one of its sub-screens (say
+    `peoplewish_adr_velocity`) still resolves to one bucket.
+    """
     flat = _flatten(token)
     if not flat:
-        return None
+        return []
+    buckets = []
     for marker, bucket in STYLIST_MARKERS:
-        if marker in flat:
-            return bucket
-    return None
+        if marker in flat and bucket not in buckets:
+            buckets.append(bucket)
+    return buckets
+
+
+def canonical_stylist(token):
+    """The first bucket a token names, or None. Kept for single-stylist callers."""
+    found = canonical_stylists(token)
+    return found[0] if found else None
 
 
 def canonical_combination(tokens):
@@ -332,9 +349,9 @@ def canonical_combination(tokens):
     buckets = set()
     unknown = []
     for tok in tokens:
-        bucket = canonical_stylist(tok)
-        if bucket:
-            buckets.add(bucket)
+        found = canonical_stylists(tok)
+        if found:
+            buckets.update(found)
         elif clean_token(tok) and not clean_token(tok).isdigit():
             unknown.append(clean_token(tok))
     if not buckets:
@@ -343,7 +360,14 @@ def canonical_combination(tokens):
 
 
 def stylist_tokens(row):
-    """The stylist tokens on a row, whatever column or spelling carries them."""
+    """The stylist tokens on a row, whatever column or spelling carries them.
+
+    The separators differ by date: `peoplewish|qullamaggie` on one, `;` on
+    another, and a COMMA-SEPARATED PROSE LIST on 2026-10-29 - `"RS leader, ADR
+    + velocity, CANSLIM"` in the `origins` column. All three are split here,
+    because a single token carrying three stylists resolves to only the first
+    marker it matches and silently loses the other two.
+    """
     if not row:
         return []
     for col in ("stylists", "_stylists", "stylist_flags"):
@@ -357,7 +381,9 @@ def stylist_tokens(row):
     origins = text_field(row, "origins")
     if not origins:
         return []
-    return [clean_token(p) for p in origins.replace(";", "|").split("|") if clean_token(p)]
+    return [clean_token(p) for p in
+            origins.replace(";", "|").replace(",", "|").split("|")
+            if clean_token(p)]
 
 
 def stylist_label(row):
