@@ -91,8 +91,8 @@ def _row_from_yahoo(data: Mapping[str, Any]) -> dict[str, Any]:
         "limitUp": bool(_first(data, "limitUp", default=False)),
         "limitDown": bool(_first(data, "limitDown", default=False)),
         "previousClose": _number(_first(data, "previousClose", "pc")),
-        "dayHigh": _number(_first(data, "dayHigh", "high")),
-        "dayLow": _number(_first(data, "dayLow", "low")),
+        "dayHigh": _number(_first(data, "dayHigh", "regularMarketDayHigh", "high")),
+        "dayLow": _number(_first(data, "dayLow", "regularMarketDayLow", "low")),
     }
 
 
@@ -435,7 +435,7 @@ def parse_fx_json(obj: Any) -> float:
             raise ParseError(source, f"invalid JSON: {exc}") from exc
 
     if isinstance(obj, Mapping):
-        code = str(obj.get("base_code") or obj.get("baseCode") or "").upper()
+        base_code = str(obj.get("base_code") or obj.get("baseCode") or "").upper()
         for key in ("usd_twd", "usdTwd", "USD_TWD", "rate", "price", "value"):
             if key in obj:
                 value = _number(obj[key])
@@ -443,17 +443,23 @@ def parse_fx_json(obj: Any) -> float:
                     return value
         rates = _first(obj, "rates", "quotes", "data")
         if isinstance(rates, Mapping):
-            value = _number(rates.get("TWD"))
-            if value is not None:
-                return value
+            if base_code == "USD":
+                value = _number(rates.get("TWD"))
+                if value is not None:
+                    return value
+            for key in ("USDTWD", "USD/TWD", "TWD=X", "TWD"):
+                value = _number(rates.get(key))
+                if value is not None:
+                    return value
     elif isinstance(obj, list):
         for item in obj:
-            if isinstance(item, Mapping):
-                symbol = str(_first(item, "symbol", "currency", default="")).upper()
-                if symbol in {"USDTWD", "USD/TWD", "TWD=X", "TWD"}:
-                    value = _number(_first(item, "rate", "price", "value"))
-                    if value is not None:
-                        return value
+            if not isinstance(item, Mapping):
+                continue
+            symbol = str(_first(item, "symbol", "currency", default="")).upper()
+            if symbol in {"USDTWD", "USD/TWD", "TWD=X", "TWD"}:
+                value = _number(_first(item, "rate", "price", "value"))
+                if value is not None:
+                    return value
     raise ParseError(source, "USD/TWD rate not found")
 
 
@@ -491,7 +497,16 @@ def parse_tv_dump(obj: Any) -> list[dict[str, Any]]:
                 "code": _symbol_code(symbol),
                 "name": str(_first(item, "name", default="")).strip(),
                 "price": _number(_first(item, "price", "close")),
-                "changePercent": _number(_first(item, "changePercent", "change_pct")),
+                "changePercent": _number(
+                    _first(
+                        item,
+                        "changePercent",
+                        "change_percent",
+                        "chg",
+                        "pc",
+                        "change_pct",
+                    )
+                ),
                 "volume": _integer(_first(item, "volume", "vol")),
                 "turnover": _number(_first(item, "turnover", "turn")),
                 "raw": dict(item),

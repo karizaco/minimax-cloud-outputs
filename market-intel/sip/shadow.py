@@ -248,9 +248,10 @@ def _apply_open_carry(
     by_ticker = {row.ticker.upper(): row for row in rows}
     for item in carry:
         ticker = str(item.get("ticker", "")).upper()
-        if ticker in by_ticker:
-            by_ticker[ticker].flags.append("OVERNIGHT_CARRY")
-            by_ticker[ticker].why = item.get("why") or by_ticker[ticker].why
+        row = by_ticker.get(ticker)
+        if row is not None:
+            row.flags.append("OVERNIGHT_CARRY")
+            row.why = item.get("why") or row.why
     promoted = promote_if_clears(carry, rows, floors)
     seen = {r.ticker.upper() for r in rows}
     out = list(rows)

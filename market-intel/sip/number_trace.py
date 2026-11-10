@@ -13,7 +13,7 @@ import re
 import sys
 from datetime import date as date_cls
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any, Iterable, Mapping
 
 
 PERCENT_TOLERANCE = 0.05
@@ -88,9 +88,9 @@ def extract_numbers(text: str) -> list[dict[str, Any]]:
         elif suffix == "x":
             kind = "multiple"
         elif currency:
-            kind = "currency"
+            kind = "usd_amount"
         elif suffix in {"m", "bn"}:
-            kind = "currency"
+            kind = "twd_amount"
         else:
             kind = "number"
         normalized = number
@@ -156,42 +156,60 @@ def _yi_candidates(value: float, decimals: tuple[int, ...] = (1, 2, 4)) -> set[f
     return {float(item) for item in candidates if math.isfinite(float(item))}
 
 
-def _collect_typed_values(run: dict | list) -> dict[str, set[float]]:
-    values: dict[str, set[float]] = {
-        "number": set(),
-        "percent": set(),
-        "multiple": set(),
-        "currency": set(),
-        "twd_yi": set(),
-        "usd_yi": set(),
-    }
+def _metadata_mappings(run: dict | list) -> list[Mapping[str, Any]]:
+    if not isinstance(run, dict):
+        return []
+    mappings: list[Mapping[str, Any]] = [run]
+    for key in ("meta", "metadata"):
+        value = run.get(key)
+        if isinstance(value, Mapping):
+            mappings.append(value)
+    return mappings
+
+
+def _metadata_values(run: dict | list) -> dict[str, set[float]]:
     metadata: dict[str, set[float]] = {
         "date_parts": set(),
         "candidate_count": set(),
         "fx": set(),
     }
+    for mapping in _metadata_mappings(run):
+        for field, value in mapping.items():
+            key = str(field).lower()
+            if key in {"date", "run_date"}:
+                if isinstance(value, str):
+                    try:
+                        parsed = date_cls.fromisoformat(value[:10])
+                    except ValueError:
+                        continue
+                    metadata["date_parts"].update(
+                        {float(parsed.year), float(parsed.month), float(parsed.day)}
+                    )
+            elif key == "candidate_count":
+                number = _as_float(value)
+                if number is not None and number >= 0 and number.is_integer():
+                    metadata["candidate_count"].add(number)
+            elif key in {"fx", "fx_rate"}:
+                number = _as_float(value)
+                if number is not None and number > 0:
+                    metadata["fx"].add(number)
+    return metadata
+
+
+def _collect_typed_values(run: dict | list) -> dict[str, set[float]]:
+    values: dict[str, set[float]] = {
+        "number": set(),
+        "percent": set(),
+        "multiple": set(),
+        "usd_amount": set(),
+        "twd_amount": set(),
+        "twd_yi": set(),
+        "usd_yi": set(),
+    }
+    metadata = _metadata_values(run)
+    dollar_volumes: set[float] = set()
 
     for field, value in _walk(run):
-        if field == "date" or field == "run_date":
-            if isinstance(value, str):
-                try:
-                    parsed = date_cls.fromisoformat(value[:10])
-                except ValueError:
-                    continue
-                metadata["date_parts"].update(
-                    {float(parsed.year), float(parsed.month), float(parsed.day)}
-                )
-        elif field == "candidate_count":
-            number = _as_float(value)
-            if number is not None and number >= 0 and number.is_integer():
-                metadata["candidate_count"].add(number)
-        elif field in {"fx", "fx_rate"}:
-            number = _as_float(value)
-            if number is not None and number > 0:
-                metadata["fx"].update(
-                    {number, round(number, 1), round(number, 2), round(number)}
-                )
-
         if field not in _ALLOWED_FIELDS:
             continue
         if isinstance(value, dict):
@@ -205,8 +223,13 @@ def _collect_typed_values(run: dict | list) -> dict[str, set[float]]:
             number = _as_float(nested)
             if number is None:
                 continue
-            if field in {"dollar_vol", "usd_turnover", "turnover_usd"}:
-                values["currency"].update(_currency_candidates(number))
+            if field == "dollar_vol":
+                dollar_volumes.add(number)
+                values["twd_amount"].update(_currency_candidates(number))
+                values["twd_yi"].update(_yi_candidates(number))
+            elif field in {"usd_turnover", "turnover_usd"}:
+                values["usd_amount"].update(_currency_candidates(number))
+                values["usd_yi"].update(_yi_candidates(number))
             elif field == "chg_pct":
                 values["percent"].update(_display_forms(number, "percent"))
             elif field == "rvol":
@@ -214,10 +237,10 @@ def _collect_typed_values(run: dict | list) -> dict[str, set[float]]:
             else:
                 values["number"].update(_display_forms(number, "number"))
 
-            if field == "dollar_vol":
-                values["twd_yi"].update(_yi_candidates(number))
-            if field in {"usd_turnover", "turnover_usd"}:
-                values["usd_yi"].update(_yi_candidates(number))
+    for fx in metadata["fx"]:
+        for dollar_volume in dollar_volumes:
+            values["usd_amount"].update(_currency_candidates(dollar_volume / fx))
+            values["usd_yi"].update(_yi_candidates(dollar_volume / fx))
 
     values["number"].update(metadata["date_parts"])
     values["number"].update(metadata["candidate_count"])
@@ -323,6 +346,21 @@ def check_chat(
             allowed["number"].update(
                 {fx, round(fx, 1), round(fx, 2), round(fx)}
             )
+            for field, value in _walk(run_json):
+                if field != "dollar_vol":
+                    continue
+                values = value.values() if isinstance(value, dict) else value
+                if not isinstance(values, (list, tuple, set)):
+                    values = (values,)
+                for nested in values:
+                    dollar_volume = _as_float(nested)
+                    if dollar_volume is not None:
+                        allowed["usd_amount"].update(
+                            _currency_candidates(dollar_volume / fx)
+                        )
+                        allowed["usd_yi"].update(
+                            _yi_candidates(dollar_volume / fx)
+                        )
     if date is not None:
         try:
             parsed = date_cls.fromisoformat(str(date)[:10])
@@ -345,7 +383,8 @@ def check_chat(
         reason = {
             "percent": "percentage is not represented by the run",
             "multiple": "multiple is not represented by the run",
-            "currency": "currency amount is not represented by the run",
+            "usd_amount": "USD amount is not represented by the run",
+            "twd_amount": "TWD amount is not represented by the run",
             "twd_yi": "TWD yi amount is not represented by the run",
             "usd_yi": "USD yi amount is not represented by the run",
         }.get(kind := str(number["kind"]), "number is not represented by the run")

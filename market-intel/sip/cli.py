@@ -42,7 +42,7 @@ def main(argv: list[str] | None = None) -> int:
     check = sub.add_parser("check-numbers")
     check.add_argument("--run", required=True)
     check.add_argument("--chat", required=True)
-    check.add_argument("--fx", type=float, default=32.824)
+    check.add_argument("--fx", type=float, default=None)
     check.add_argument("--date")
     check.add_argument("--candidate-count", type=int)
 
