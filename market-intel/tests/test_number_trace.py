@@ -190,21 +190,74 @@ def test_correct_twd_yi_display_is_accepted() -> None:
     assert result["offenders"] == []
 
 
-def test_unlabelled_twd_compact_turnover_is_accepted() -> None:
-    result = check_chat(_turnover_run(), "TWD 29.4bn")
-    assert result["ok"] is True
-    assert result["offenders"] == []
-
-
-def test_unlabelled_compact_turnover_is_accepted() -> None:
-    result = check_chat(_turnover_run(), "29.4bn")
-    assert result["ok"] is True
-    assert result["offenders"] == []
-
-
-def test_plain_twd_price_is_accepted() -> None:
+def test_unlabelled_twd_price_is_accepted() -> None:
     run = _turnover_run()
     run["candidates"][0]["last"] = 1275.00
     result = check_chat(run, "TWD 1275.00")
     assert result["ok"] is True
     assert result["offenders"] == []
+
+
+def test_rvol_display_rounding_is_accepted() -> None:
+    run = _run()
+    run["candidates"][0]["rvol"] = 0.44321753753315096
+    result = check_chat(run, "RelVol 0.4x")
+    assert result["ok"] is True
+    assert result["offenders"] == []
+
+
+def test_sourced_catalyst_year_quarter_and_amount_are_accepted() -> None:
+    run = _run()
+    run["candidates"][0]["catalyst"] = (
+        "公司於115年第3季公告，資本支出2,701億元"
+    )
+    run["candidates"][0]["raw"] = {
+        "mops_explanation": "115年第3季財務報告說明"
+    }
+    result = check_chat(run, "115年 第3季 2,701億元")
+    assert result["ok"] is True
+    assert result["offenders"] == []
+
+
+def test_source_health_counts_are_accepted() -> None:
+    run = _run()
+    run["source_health"] = [
+        {"source": "mops", "count": 371},
+        {"source": "cmoney", "count": 565},
+        {"source": "yahoo", "count": 100},
+        {"source": "schema", "count": 0},
+    ]
+    result = check_chat(run, "mops 371, cmoney 565, yahoo 100, schema 0")
+    assert result["ok"] is True
+    assert result["offenders"] == []
+
+
+def test_nested_source_health_count_is_rejected() -> None:
+    run = _run()
+    run["raw"] = {"source_health": [{"source": "mops", "count": 371}]}
+    result = check_chat(run, "mops 371")
+    assert result["ok"] is False
+    assert result["offenders"]
+
+
+def _aggregate_run() -> dict:
+    run = _run()
+    run["date"] = "2026-11-09"
+    run["fx"] = 32.851408
+    run["candidates"] = [
+        {"ticker": "2330", "dollar_vol": 200_000_000_000.0},
+        {"ticker": "2454", "dollar_vol": 9_070_100_000.0},
+    ]
+    return run
+
+
+def test_proven_candidate_aggregate_is_accepted() -> None:
+    result = check_chat(_aggregate_run(), "TWD 2,090.7 億元, US$6.36bn")
+    assert result["ok"] is True
+    assert result["offenders"] == []
+
+
+def test_raw_twd_aggregate_is_rejected_as_usd() -> None:
+    result = check_chat(_aggregate_run(), "US$2090.7bn")
+    assert result["ok"] is False
+    assert result["offenders"]

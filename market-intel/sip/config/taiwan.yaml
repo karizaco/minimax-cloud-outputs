@@ -26,22 +26,26 @@ gap_soft: 3.0
 gap_hard: 4.0
 unusual_rvol: 3.0
 
+# Daily-limit C names must have at least this much USD turnover.
+# HALT, TOB_GAP, and OVERNIGHT_PROMOTED C watches are exempt.
+c_limit_usd_min: 50000000
+
 engine_top_n:
-  C: 5
+  C: null
 
 chat_top_n:
   A: 10
-  Soft-A: 10
+  Soft-A: 8
   TECH_WATCH: 10
   B: 10
-  C: 5
+  C: null
 
 digest_top_n:
   A: 10
   Soft-A: 8
-  TECH_WATCH: 12
+  TECH_WATCH: 10
   B: 10
-  C: 5
+  C: null
 
 display:
   currency: USD

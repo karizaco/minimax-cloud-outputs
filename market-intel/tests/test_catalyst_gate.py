@@ -29,6 +29,117 @@ def test_q3_financials_material() -> None:
     assert not is_boilerplate_mops("公告本公司董事會通過115年第3季合併財務報告")
 
 
+def test_monthly_performance_uses_explanation_sales_figures() -> None:
+    headline = "發布本公司115年10月份業績資料"
+    explanation = "本公司115年10月份合併營業額為新台幣1,000,000,000元"
+    assert materiality_score(headline, explanation) >= 1
+
+
+def test_attach_uses_explanation_and_preserves_source() -> None:
+    movers = {"2308": {"ticker": "2308", "catalyst": None, "raw": {}}}
+    rows = [
+        {
+            "ticker": "2308",
+            "catalyst": "發布本公司115年10月份業績資料",
+            "explanation": "115年10月份合併營業額為新台幣1,000,000,000元",
+            "time": "16:32",
+        }
+    ]
+
+    _attach_mops_catalysts(movers, rows)
+
+    assert movers["2308"]["catalyst"]
+    assert "合併營業額" in movers["2308"]["catalyst"]
+    assert movers["2308"]["raw"]["mops_explanation"] == (
+        "115年10月份合併營業額為新台幣1,000,000,000元"
+    )
+    assert movers["2308"]["raw"]["mops_materiality"] >= 1
+
+
+def test_acquisition_outranks_ordinary_consolidated_monthly_sales() -> None:
+    movers = {"6271": {"ticker": "6271", "catalyst": None, "raw": {}}}
+    rows = [
+        {
+            "ticker": "6271",
+            "catalyst": "公告本公司115年10月份合併營收淨額",
+            "explanation": "115年10月份合併營收淨額為新台幣500,000,000元",
+            "time": "09:00",
+        },
+        {
+            "ticker": "6271",
+            "catalyst": "公告本公司與Global Testing股份有限公司進行協議安排及收購案",
+            "explanation": "本公司擬以股份及現金進行收購",
+            "time": "10:00",
+        },
+    ]
+
+    _attach_mops_catalysts(movers, rows)
+
+    assert "收購" in movers["6271"]["catalyst"]
+    assert "Global Testing" in movers["6271"]["catalyst"]
+
+
+def test_media_clarification_with_quoted_revenue_is_not_attached() -> None:
+    movers = {"9999": {"ticker": "9999", "catalyst": None, "raw": {}}}
+    rows = [
+        {
+            "ticker": "9999",
+            "catalyst": "說明媒體報導",
+            "explanation": (
+                "報導內容：「預期2027年營收可望達新台幣500億元，展望明年獲利成長」。"
+                "本則重大訊息同時符合證券交易法施行細則第45條至第46條規定。"
+            ),
+        }
+    ]
+
+    _attach_mops_catalysts(movers, rows)
+
+    assert not movers["9999"].get("catalyst")
+    assert not movers["9999"]["raw"].get("mops_materiality")
+
+
+def test_own_monthly_revenue_earnings_is_attached() -> None:
+    movers = {"9998": {"ticker": "9998", "catalyst": None, "raw": {}}}
+    explanation = "本公司115年10月份合併營業額為新台幣1,250,000,000元"
+    rows = [
+        {
+            "ticker": "9998",
+            "catalyst": "發布本公司115年10月份業績資料",
+            "explanation": explanation,
+        }
+    ]
+
+    _attach_mops_catalysts(movers, rows)
+
+    assert movers["9998"]["catalyst"]
+    assert "合併營業額" in movers["9998"]["catalyst"]
+    assert movers["9998"]["raw"]["mops_explanation"] == explanation
+    assert len(movers["9998"]["catalyst"]) < len(explanation) + 100
+
+
+def test_legal_footer_template_material_message_is_not_enough() -> None:
+    explanation = (
+        "重大訊息\n"
+        "發佈重大訊息澄清\n"
+        "本則重大訊息同時符合證券交易法施行細則第45條至第46條規定。"
+    )
+    movers = {"9997": {"ticker": "9997", "catalyst": None, "raw": {}}}
+
+    _attach_mops_catalysts(
+        movers,
+        [
+            {
+                "ticker": "9997",
+                "catalyst": "澄清媒體報導",
+                "explanation": explanation,
+            }
+        ],
+    )
+
+    assert not movers["9997"].get("catalyst")
+    assert not movers["9997"]["raw"].get("mops_materiality")
+
+
 def test_attach_skips_boilerplate() -> None:
     movers = {
         "2330": {
@@ -74,6 +185,7 @@ def _cfg() -> dict:
         "tech_watch_rvol_max": 2.0,
         "tech_watch_liquid_turnover_min": 2_500_000_000,
         "tech_watch_move_min": 2.0,
+        "c_limit_usd_min": 50_000_000,
     }
 
 
@@ -85,6 +197,7 @@ def _row(**kwargs) -> CandidateRow:
         last=100.0,
         chg_pct=-6.0,
         dollar_vol=80_000_000.0,
+        usd_turnover=50_000_000.0,
         rvol=0.5,
         catalyst=None,
         catalyst_time=None,

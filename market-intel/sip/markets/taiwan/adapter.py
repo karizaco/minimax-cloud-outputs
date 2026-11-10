@@ -7,7 +7,12 @@ import re
 from pathlib import Path
 from typing import Any, Mapping
 
-from sip.catalyst_gate import is_boilerplate_mops, materiality_score
+from sip.catalyst_gate import (
+    is_boilerplate_mops,
+    materiality_class,
+    materiality_score,
+    visible_excerpt,
+)
 
 from .fetch import SourceHealth, fetch_yahoo_ranks
 from .names import display_ticker, english_name
@@ -211,12 +216,31 @@ def _add_mover(
         movers.setdefault(ticker, item)
 
 
-def _materiality_score(headline: str) -> int:
-    return materiality_score(headline)
+def _materiality_score(headline: str, explanation: str = "") -> int:
+    return materiality_score(headline, explanation)
 
 
-def _is_boilerplate_mops(headline: str) -> bool:
-    return is_boilerplate_mops(headline)
+def _materiality_class(headline: str, explanation: str = "") -> int:
+    return materiality_class(headline, explanation)
+
+
+def _is_boilerplate_mops(headline: str, explanation: str = "") -> bool:
+    return is_boilerplate_mops(headline, explanation)
+
+
+def _explanation(row: Mapping[str, Any]) -> str:
+    sources: list[Mapping[str, Any]] = [row]
+    raw = row.get("raw")
+    if isinstance(raw, Mapping):
+        sources.append(raw)
+
+    for source in sources:
+        for key, value in source.items():
+            normalized = re.sub(r"\s+", "", str(key)).casefold()
+            if normalized in {"explanation", "說明", "description"}:
+                if value is not None:
+                    return str(value).strip()
+    return ""
 
 
 def _attach_mops_catalysts(
@@ -241,6 +265,7 @@ def _attach_mops_catalysts(
             or row.get("subj")
             or ""
         ).strip()
+        explanation = _explanation(row)
         catalyst_time = row.get("catalyst_time") or row.get("time")
         raw = row.get("raw")
         if not ticker or not headline:
@@ -249,6 +274,7 @@ def _attach_mops_catalysts(
             {
                 "ticker": ticker,
                 "catalyst": headline,
+                "explanation": explanation,
                 "catalyst_time": catalyst_time,
                 "raw": dict(raw) if isinstance(raw, Mapping) else dict(row),
             }
@@ -262,8 +288,14 @@ def _attach_mops_catalysts(
         eligible = [
             item
             for item in items
-            if _materiality_score(str(item.get("catalyst") or "")) >= min_score
-            and not _is_boilerplate_mops(str(item.get("catalyst") or ""))
+            if _materiality_score(
+                str(item.get("catalyst") or ""),
+                str(item.get("explanation") or ""),
+            ) >= min_score
+            and not _is_boilerplate_mops(
+                str(item.get("catalyst") or ""),
+                str(item.get("explanation") or ""),
+            )
         ]
         if not eligible:
             continue
@@ -271,16 +303,30 @@ def _attach_mops_catalysts(
         selected = max(
             eligible,
             key=lambda item: (
-                _materiality_score(str(item.get("catalyst") or "")),
+                _materiality_class(
+                    str(item.get("catalyst") or ""),
+                    str(item.get("explanation") or ""),
+                ),
+                _materiality_score(
+                    str(item.get("catalyst") or ""),
+                    str(item.get("explanation") or ""),
+                ),
                 str(item.get("catalyst_time") or ""),
             ),
         )
         catalyst = str(selected.get("catalyst") or "").strip()
-        score = _materiality_score(catalyst)
-        target["catalyst"] = catalyst
+        explanation = str(selected.get("explanation") or "").strip()
+        excerpt = visible_excerpt(catalyst, explanation)
+        score = _materiality_score(catalyst, explanation)
+        catalyst_class = _materiality_class(catalyst, explanation)
+        target["catalyst"] = (
+            f"{catalyst} — {excerpt}" if excerpt else catalyst
+        )
         target["catalyst_time"] = selected.get("catalyst_time")
         target.setdefault("raw", {})["mops"] = dict(selected.get("raw") or {})
+        target["raw"]["mops_explanation"] = explanation
         target["raw"]["mops_materiality"] = score
+        target["raw"]["mops_materiality_class"] = catalyst_class
 
 
 def _load_mops_rows(path: Path) -> list[dict[str, Any]]:

@@ -5,6 +5,23 @@ from collections import defaultdict
 from pathlib import Path
 
 
+_TICKER_RE = re.compile(
+    r"^\d{4}(?:\.(?:TPEX|TW|TWO))?$",
+    re.IGNORECASE,
+)
+
+_PROSE_TICKER_RE = re.compile(
+    r"^(?P<ticker>\d{4}(?:\.(?:TPEX|TW|TWO))?)\s+"
+    r"[^\n|]*\([^\n|]*\)",
+    re.IGNORECASE,
+)
+
+_NOTE_PREFIX_RE = re.compile(
+    r"^\s*(?:also\b|negative\s+note\s*:|note\s*:|notes\s*:)",
+    re.IGNORECASE,
+)
+
+
 def _read_markdown(value: str | Path) -> str:
     if isinstance(value, Path):
         return value.read_text(encoding="utf-8")
@@ -43,6 +60,23 @@ def _normalize_tier(title: str) -> str | None:
     return None
 
 
+def _valid_ticker(value: str) -> bool:
+    return bool(_TICKER_RE.fullmatch(_normalize_ticker(value)))
+
+
+def _prose_tickers(line: str) -> list[str]:
+    """Parse CODE Name (…) entries at the start of pipe-separated segments."""
+    tickers: list[str] = []
+    for segment in line.split("|"):
+        match = _PROSE_TICKER_RE.match(segment.strip())
+        if not match:
+            continue
+        ticker = _normalize_ticker(match.group("ticker"))
+        if _valid_ticker(ticker):
+            tickers.append(ticker)
+    return tickers
+
+
 def parse_tier_tables(md: str | Path) -> dict[str, list[str]]:
     text = _read_markdown(md)
     tiers: dict[str, list[str]] = defaultdict(list)
@@ -50,6 +84,7 @@ def parse_tier_tables(md: str | Path) -> dict[str, list[str]]:
     in_table = False
     ticker_column = 0
     catalyst_column: int | None = None
+    prose_active = False
 
     for line in text.splitlines():
         heading = re.match(r"^#{1,6}\s+(.+?)\s*$", line)
@@ -58,10 +93,25 @@ def parse_tier_tables(md: str | Path) -> dict[str, list[str]]:
             in_table = False
             ticker_column = 0
             catalyst_column = None
+            prose_active = current is not None
+            continue
+
+        if current is None:
+            continue
+
+        if _NOTE_PREFIX_RE.match(line):
+            prose_active = False
+            in_table = False
             continue
 
         if "|" not in line:
+            if in_table:
+                continue
             in_table = False
+            if prose_active and line.strip():
+                for ticker in _prose_tickers(line):
+                    tiers[current].append(ticker)
+                prose_active = False
             continue
 
         cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
@@ -70,33 +120,38 @@ def parse_tier_tables(md: str | Path) -> dict[str, list[str]]:
         if all(re.fullmatch(r":?-{3,}:?", cell) for cell in cells):
             in_table = True
             continue
-        if not in_table or current is None:
+
+        if in_table:
+            header = [
+                re.sub(r"[`*\[\]]", "", cell).strip().lower()
+                for cell in cells
+            ]
+            if "ticker" in header or "symbol" in header:
+                ticker_column = (
+                    header.index("ticker")
+                    if "ticker" in header
+                    else header.index("symbol")
+                )
+                catalyst_column = (
+                    header.index("catalyst")
+                    if "catalyst" in header
+                    else None
+                )
+                continue
+
+            if ticker_column >= len(cells):
+                ticker_column = 0
+
+            ticker = _normalize_ticker(cells[ticker_column])
+            if not _valid_ticker(ticker):
+                continue
+            tiers[current].append(ticker)
             continue
 
-        header = [
-            re.sub(r"[`*\[\]]", "", cell).strip().lower()
-            for cell in cells
-        ]
-        if "ticker" in header or "symbol" in header:
-            ticker_column = (
-                header.index("ticker")
-                if "ticker" in header
-                else header.index("symbol")
-            )
-            catalyst_column = (
-                header.index("catalyst")
-                if "catalyst" in header
-                else None
-            )
-            continue
-
-        if ticker_column >= len(cells):
-            ticker_column = 0
-
-        ticker = _normalize_ticker(cells[ticker_column])
-        if not ticker or ticker in {"TICKER", "SYMBOL"}:
-            continue
-        tiers[current].append(ticker)
+        if prose_active:
+            for ticker in _prose_tickers(line):
+                tiers[current].append(ticker)
+            prose_active = False
 
     return dict(tiers)
 
@@ -144,7 +199,7 @@ def _presence(text: str, ticker: str) -> tuple[bool, bool]:
             continue
 
         cell_ticker = _normalize_ticker(cells[ticker_column])
-        if cell_ticker != wanted:
+        if cell_ticker != wanted or not _valid_ticker(cell_ticker):
             continue
 
         if catalyst_column is not None and catalyst_column < len(cells):

@@ -1,141 +1,132 @@
 from sip.tier import run_pipeline
 
 
-def test_large_c_residual_pool_is_trimmed():
-    rows = []
-    for i in range(288):
-        rows.append(
-            {
-                "ticker": str(i),
-                "venue": "TWSE",
-                "instrument_type": "common",
-                "last": 100,
-                "chg_pct": 1.0,
-                "dollar_vol": 50_000_000,
-                "rvol": 0.5,
-                "catalyst": None,
-                "catalyst_time": None,
-                "flags": [],
-                "source": "test",
-                "asof": "2026-11-09",
-                "tier": None,
-            }
-        )
+def _row(ticker: str, **kwargs):
+    row = {
+        "ticker": ticker,
+        "venue": "TWSE",
+        "instrument_type": "common",
+        "last": 100,
+        "chg_pct": 1.0,
+        "dollar_vol": 50_000_000,
+        "rvol": 0.5,
+        "catalyst": None,
+        "catalyst_time": None,
+        "flags": [],
+        "source": "test",
+        "asof": "2026-11-09",
+        "tier": None,
+    }
+    row.update(kwargs)
+    return row
+
+
+def test_many_residual_unflagged_c_rows_are_dropped():
+    rows = [_row(str(i)) for i in range(288)]
     rows[0]["flags"] = ["LIMIT_UP"]
-    result = run_pipeline(
-        rows,
-        {"digest_top_n": {"C": 5}, "engine_top_n": {"C": 5}},
-        "open",
-    )
+    rows[0]["usd_turnover"] = 50_000_000
+
+    result = run_pipeline(rows, {"c_limit_usd_min": 50_000_000}, "open")
+
     c_rows = [row for row in result if row.tier == "C"]
-    assert len(c_rows) <= 5
-    assert {row.ticker for row in c_rows} == {"0"}
-    assert any(row.ticker == "0" for row in result)
+    assert [row.ticker for row in c_rows] == ["0"]
 
 
-def test_limit_up_c_is_kept_and_residual_c_is_dropped():
-    rows = [
-        {
-            "ticker": "6538",
-            "venue": "TWSE",
-            "instrument_type": "common",
-            "last": 100,
-            "chg_pct": 1.0,
-            "dollar_vol": 50_000_000,
-            "rvol": 0.5,
-            "catalyst": None,
-            "catalyst_time": None,
-            "flags": ["LIMIT_UP"],
-            "source": "test",
-            "asof": "2026-11-09",
-            "tier": None,
-        },
-        {
-            "ticker": "9999",
-            "venue": "TWSE",
-            "instrument_type": "common",
-            "last": 100,
-            "chg_pct": 1.0,
-            "dollar_vol": 40_000_000,
-            "rvol": 0.5,
-            "catalyst": None,
-            "catalyst_time": None,
-            "flags": [],
-            "source": "test",
-            "asof": "2026-11-09",
-            "tier": None,
-        },
-    ]
-    result = run_pipeline(
-        rows,
-        {"digest_top_n": {"C": 5}, "engine_top_n": {"C": 5}},
-        "open",
-    )
-    assert [row.ticker for row in result if row.tier == "C"] == ["6538"]
-
-
-def test_material_c_cap_is_applied_by_dollar_volume():
+def test_all_daily_limits_above_usd_floor_are_kept_without_count_cap():
     rows = []
     for i in range(8):
         rows.append(
-            {
-                "ticker": str(i),
-                "venue": "TWSE",
-                "instrument_type": "common",
-                "last": 100,
-                "chg_pct": 1.0,
-                "dollar_vol": 10_000_000 + i,
-                "rvol": 0.5,
-                "catalyst": None,
-                "catalyst_time": None,
-                "flags": ["LIMIT_UP"],
-                "source": "test",
-                "asof": "2026-11-09",
-                "tier": None,
-            }
+            _row(
+                str(i),
+                dollar_vol=50_000_000 + i,
+                flags=["LIMIT_UP"],
+                usd_turnover=50_000_000 + i,
+            )
         )
+
     result = run_pipeline(
         rows,
-        {"digest_top_n": {"C": 8}, "engine_top_n": {"C": 3}},
+        {
+            "c_limit_usd_min": 50_000_000,
+            "engine_top_n": {"C": 3},
+            "digest_top_n": {"C": 3},
+        },
         "open",
     )
+
     c_rows = [row for row in result if row.tier == "C"]
-    assert len(c_rows) == 3
-    assert {row.ticker for row in c_rows} == {"5", "6", "7"}
+    assert len(c_rows) == 8
+    assert [row.ticker for row in c_rows] == [str(i) for i in range(7, -1, -1)]
+
+
+def test_daily_limit_below_usd_floor_is_dropped():
+    rows = [
+        _row(
+            "LARGE",
+            dollar_vol=60_000_000,
+            flags=["LIMIT_UP"],
+            usd_turnover=50_000_000,
+        ),
+        _row(
+            "SMALL",
+            dollar_vol=49_999_999,
+            flags=["LIMIT_UP"],
+            usd_turnover=49_999_999,
+        ),
+    ]
+
+    result = run_pipeline(
+        rows,
+        {"c_limit_usd_min": 50_000_000},
+        "open",
+    )
+
+    assert [row.ticker for row in result if row.tier == "C"] == ["LARGE"]
+
+
+def test_daily_limit_uses_recorded_usd_turnover():
+    result = run_pipeline(
+        [_row("FX", dollar_vol=1_600_000_000, usd_turnover=50_000_000, flags=["LIMIT_UP"])],
+        {"c_limit_usd_min": 50_000_000},
+        "open",
+    )
+    assert [row.ticker for row in result if row.tier == "C"] == ["FX"]
+
+
+def test_daily_limit_falls_back_to_positive_session_fx():
+    result = run_pipeline(
+        [_row("FX", dollar_vol=1_600_000_000, flags=["LIMIT_UP"])],
+        {"c_limit_usd_min": 50_000_000, "fx": 32.0},
+        "open",
+    )
+    assert [row.ticker for row in result if row.tier == "C"] == ["FX"]
+
+
+def test_daily_limit_without_fx_or_usd_turnover_fails_closed():
+    result = run_pipeline(
+        [_row("NOFX", dollar_vol=10_000_000_000, flags=["LIMIT_UP"])],
+        {"c_limit_usd_min": 50_000_000},
+        "open",
+    )
+    assert not [row for row in result if row.tier == "C"]
 
 
 def test_limit_up_without_catalyst_stays_c_in_tech_watch_rvol_band():
     rows = [
-        {
-            "ticker": "LIMITUP",
-            "venue": "TWSE",
-            "instrument_type": "common",
-            "last": 100,
-            "chg_pct": 10.0,
-            "dollar_vol": 3_000_000_000,
-            "rvol": 0.5,
-            "catalyst": None,
-            "catalyst_time": None,
-            "flags": ["LIMIT_UP"],
-            "source": "test",
-            "asof": "2026-11-09",
-            "tier": None,
-        },
-        {
-            "ticker": "LIQUID",
-            "venue": "TWSE",
-            "instrument_type": "common",
-            "last": 100,
-            "chg_pct": 3.5,
-            "dollar_vol": 3_000_000_000,
-            "rvol": 0.3,
-            "catalyst": None,
-            "catalyst_time": None,
-            "flags": [],
-            "source": "test",
-            "asof": "2026-11-09",
-            "tier": None,
-        },
+        _row(
+            "LIMITUP",
+            chg_pct=10.0,
+            dollar_vol=3_000_000_000,
+            rvol=0.5,
+            flags=["LIMIT_UP"],
+            usd_turnover=3_000_000_000,
+        ),
+        _row(
+            "LIQUID",
+            chg_pct=3.5,
+            dollar_vol=3_000_000_000,
+            rvol=0.3,
+        ),
     ]
 
     result = run_pipeline(
@@ -145,8 +136,7 @@ def test_limit_up_without_catalyst_stays_c_in_tech_watch_rvol_band():
             "tech_watch_rvol_max": 2.0,
             "tech_watch_liquid_turnover_min": 2_500_000_000,
             "tech_watch_move_min": 2.0,
-            "digest_top_n": {"C": 8},
-            "engine_top_n": {"C": 8},
+            "c_limit_usd_min": 50_000_000,
         },
         "open",
     )

@@ -56,7 +56,7 @@ def _as_float(value: Any) -> float | None:
 
 def _display_forms(value: float, kind: str) -> set[float]:
     forms = {value}
-    if kind in {"percent", "number", "currency"}:
+    if kind in {"percent", "number", "currency", "multiple"}:
         forms.update(
             {
                 round(value),
@@ -149,8 +149,8 @@ def _currency_candidates(value: float) -> set[float]:
 def _yi_candidates(value: float, decimals: tuple[int, ...] = (1, 2, 4)) -> set[float]:
     yi_value = value / _YI
     candidates: set[float] = {yi_value, yi_value * _YI}
-    for decimals_places in decimals:
-        rounded = round(yi_value, decimals_places)
+    for decimal_places in decimals:
+        rounded = round(yi_value, decimal_places)
         candidates.add(rounded)
         candidates.add(rounded * _YI)
     return {float(item) for item in candidates if math.isfinite(float(item))}
@@ -172,6 +172,7 @@ def _metadata_values(run: dict | list) -> dict[str, set[float]]:
         "date_parts": set(),
         "candidate_count": set(),
         "fx": set(),
+        "roc_years": set(),
     }
     for mapping in _metadata_mappings(run):
         for field, value in mapping.items():
@@ -185,6 +186,7 @@ def _metadata_values(run: dict | list) -> dict[str, set[float]]:
                     metadata["date_parts"].update(
                         {float(parsed.year), float(parsed.month), float(parsed.day)}
                     )
+                    metadata["roc_years"].add(float(parsed.year - 1911))
             elif key == "candidate_count":
                 number = _as_float(value)
                 if number is not None and number >= 0 and number.is_integer():
@@ -194,6 +196,97 @@ def _metadata_values(run: dict | list) -> dict[str, set[float]]:
                 if number is not None and number > 0:
                     metadata["fx"].add(number)
     return metadata
+
+
+def _source_health_counts(run: dict | list) -> set[float]:
+    """Read only the documented source-health locations."""
+    if not isinstance(run, dict):
+        return set()
+
+    lists: list[Any] = []
+    if isinstance(run.get("source_health"), list):
+        lists.append(run["source_health"])
+    meta = run.get("meta")
+    if isinstance(meta, Mapping) and isinstance(meta.get("source_health"), list):
+        lists.append(meta["source_health"])
+
+    counts: set[float] = set()
+    for entries in lists:
+        for entry in entries:
+            if not isinstance(entry, Mapping):
+                continue
+            value = entry.get("count")
+            number = _as_float(value)
+            if number is not None and number >= 0 and number.is_integer():
+                counts.add(number)
+    return counts
+
+
+def _candidate_source_texts(run: dict | list) -> list[str]:
+    """Return only candidate catalyst and attached MOPS explanation text."""
+    if not isinstance(run, dict):
+        return []
+    candidates = run.get("candidates")
+    if not isinstance(candidates, list):
+        return []
+
+    texts: list[str] = []
+    for candidate in candidates:
+        if not isinstance(candidate, Mapping):
+            continue
+        catalyst = candidate.get("catalyst")
+        if isinstance(catalyst, str) and catalyst:
+            texts.append(catalyst)
+        raw = candidate.get("raw")
+        if isinstance(raw, Mapping):
+            explanation = raw.get("mops_explanation")
+            if isinstance(explanation, str) and explanation:
+                texts.append(explanation)
+    return texts
+
+
+def _sourced_catalyst_values(run: dict | list) -> dict[str, set[float]]:
+    values: dict[str, set[float]] = {"number": set(), "twd_yi": set(), "usd_yi": set()}
+    roc_year_re = re.compile(r"(?<!\d)(1[01]\d)\s*(?:年|年度)")
+    quarter_re = re.compile(r"第\s*(\d+)\s*季")
+    yi_re = re.compile(
+        r"(?<![A-Za-z0-9])(\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)\s*"
+        r"(億美元|億美金|億元|億台幣|億)(?![A-Za-z0-9])",
+        re.IGNORECASE,
+    )
+
+    for text in _candidate_source_texts(run):
+        for match in roc_year_re.finditer(text):
+            values["number"].add(float(match.group(1)))
+        for match in quarter_re.finditer(text):
+            values["number"].add(float(match.group(1)))
+        for match in yi_re.finditer(text):
+            amount = _as_float(match.group(1).replace(",", ""))
+            if amount is None:
+                continue
+            kind = "usd_yi" if match.group(2) in {"億美元", "億美金"} else "twd_yi"
+            values[kind].update(_yi_candidates(amount * _YI))
+    return values
+
+
+def _candidate_aggregate(run: dict | list) -> float | None:
+    """Sum dollar_vol across only the top-level run candidates list."""
+    if not isinstance(run, dict):
+        return None
+    candidates = run.get("candidates")
+    if not isinstance(candidates, list):
+        return None
+
+    total = 0.0
+    found = False
+    for candidate in candidates:
+        if not isinstance(candidate, Mapping):
+            continue
+        value = _as_float(candidate.get("dollar_vol"))
+        if value is not None:
+            total += value
+            found = True
+    return total if found else None
 
 
 def _collect_typed_values(run: dict | list) -> dict[str, set[float]]:
@@ -245,6 +338,21 @@ def _collect_typed_values(run: dict | list) -> dict[str, set[float]]:
     values["number"].update(metadata["date_parts"])
     values["number"].update(metadata["candidate_count"])
     values["number"].update(metadata["fx"])
+    values["number"].update(metadata["roc_years"])
+    values["number"].update(_source_health_counts(run))
+
+    sourced = _sourced_catalyst_values(run)
+    for kind, sourced_values in sourced.items():
+        values[kind].update(sourced_values)
+
+    aggregate = _candidate_aggregate(run)
+    if aggregate is not None:
+        values["twd_amount"].update(_currency_candidates(aggregate))
+        values["twd_yi"].update(_yi_candidates(aggregate))
+        for fx in metadata["fx"]:
+            values["usd_amount"].update(_currency_candidates(aggregate / fx))
+            values["usd_yi"].update(_yi_candidates(aggregate / fx))
+
     return values
 
 
@@ -343,9 +451,7 @@ def check_chat(
     if fx_rate is not None:
         fx = _as_float(fx_rate)
         if fx is not None and fx > 0:
-            allowed["number"].update(
-                {fx, round(fx, 1), round(fx, 2), round(fx)}
-            )
+            allowed["number"].update({fx, round(fx, 1), round(fx, 2), round(fx)})
             for field, value in _walk(run_json):
                 if field != "dollar_vol":
                     continue
@@ -361,6 +467,11 @@ def check_chat(
                         allowed["usd_yi"].update(
                             _yi_candidates(dollar_volume / fx)
                         )
+            aggregate = _candidate_aggregate(run_json)
+            if aggregate is not None:
+                allowed["usd_amount"].update(_currency_candidates(aggregate / fx))
+                allowed["usd_yi"].update(_yi_candidates(aggregate / fx))
+
     if date is not None:
         try:
             parsed = date_cls.fromisoformat(str(date)[:10])
@@ -368,7 +479,8 @@ def check_chat(
             pass
         else:
             allowed["number"].update(
-                {float(parsed.year), float(parsed.month), float(parsed.day)}
+                {float(parsed.year), float(parsed.month), float(parsed.day),
+                 float(parsed.year - 1911)}
             )
     if candidate_count is not None:
         count = _as_float(candidate_count)
@@ -380,6 +492,7 @@ def check_chat(
     for number in extract_numbers(chat_md):
         if _matches(number, allowed, ticker_codes):
             continue
+        kind = str(number["kind"])
         reason = {
             "percent": "percentage is not represented by the run",
             "multiple": "multiple is not represented by the run",
@@ -387,7 +500,7 @@ def check_chat(
             "twd_amount": "TWD amount is not represented by the run",
             "twd_yi": "TWD yi amount is not represented by the run",
             "usd_yi": "USD yi amount is not represented by the run",
-        }.get(kind := str(number["kind"]), "number is not represented by the run")
+        }.get(kind, "number is not represented by the run")
         offenders.append(
             {
                 "raw": number["raw"],

@@ -198,21 +198,68 @@ def _has_material_c_flag(row: CandidateRow) -> bool:
     return False
 
 
+def _has_non_limit_material_c_flag(row: CandidateRow) -> bool:
+    for flag in row.flags:
+        normalized = str(flag).upper()
+        if normalized in {"TOB_GAP", "HALT"}:
+            return True
+        if normalized.startswith("OVERNIGHT_PROMOTED"):
+            return True
+        if normalized.startswith("TOB_GAP"):
+            return True
+        if normalized.startswith("HALT"):
+            return True
+    return False
+
+
+def _c_limit_usd_turnover(row: CandidateRow, cfg: dict[str, Any]) -> float | None:
+    value = getattr(row, "usd_turnover", None)
+    if value is not None:
+        try:
+            parsed = float(value)
+            return parsed if parsed >= 0 else None
+        except (TypeError, ValueError):
+            pass
+
+    fx = cfg.get("fx")
+    try:
+        rate = float(fx)
+    except (TypeError, ValueError):
+        return None
+    if rate <= 0:
+        return None
+    return float(row.dollar_vol or 0) / rate
+
+
 def trim_c_watch(
     rows: Iterable[CandidateRow],
     cfg: dict[str, Any],
 ) -> list[CandidateRow]:
-    """Keep material C watches and enforce the engine or digest C cap."""
+    """Keep material C watches; apply the USD floor only to daily limits."""
     result = list(rows)
-    material_c = [row for row in result if row.tier == "C" and _has_material_c_flag(row)]
-    engine_caps = cfg.get("engine_top_n") or {}
-    digest_caps = cfg.get("digest_top_n") or {}
-    cap_value = engine_caps.get("C", digest_caps.get("C", 8))
-    cap = max(0, int(cap_value))
+    threshold = float(cfg.get("c_limit_usd_min", 50_000_000))
+
+    selected_c: list[CandidateRow] = []
+    for row in result:
+        if row.tier != "C" or not _has_material_c_flag(row):
+            continue
+
+        flags = {str(flag).upper() for flag in row.flags}
+        daily_limit = "LIMIT_UP" in flags or "LIMIT_DOWN" in flags
+        if not daily_limit:
+            selected_c.append(row)
+            continue
+
+        usd_turnover = _c_limit_usd_turnover(row, cfg)
+        if usd_turnover is not None and usd_turnover >= threshold:
+            selected_c.append(row)
+        elif _has_non_limit_material_c_flag(row):
+            selected_c.append(row)
+
     selected_c = sorted(
-        material_c,
+        selected_c,
         key=lambda row: (-float(row.dollar_vol or 0), row.ticker),
-    )[:cap]
+    )
     selected_ids = {id(row) for row in selected_c}
     return [
         row
