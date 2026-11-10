@@ -1,6 +1,6 @@
 # Run ledger — which routine published what, and when
 
-**Source:** derived read of the published artifacts, against the schedule in the migration repo's ROSTER.md (read 2026-11-09); no source file is modified · **Built:** 2026-11-10 · **Covers:** 345 artifact-date rows across 23 routines and 15 trading sessions · read-only
+**Source:** derived read of the published artifacts, against the schedule in the migration repo's ROSTER.md (read 2026-11-09); no source file is modified · **Built:** 2026-11-10 · **Covers:** 347 artifact-date rows across 23 routines and 15 trading sessions · read-only
 
 > **Read this before the table.**
 >
@@ -24,10 +24,10 @@
 | published, on schedule | 223 |
 | published, off schedule | 14 |
 | published, before the calendar this repo records | 57 |
-| published, after the calendar this repo records | 0 |
+| published, after the calendar this repo records | 2 |
 | expected but not present in this repo | 24 |
 | expected, before the routine had started publishing here | 27 |
-| **total** | **345** |
+| **total** | **347** |
 
 ## By routine
 
@@ -438,6 +438,8 @@ counted apart from the scheduled runs so the two are not confused.
 | 2026-11-09 | 25-ntrt-gap-brief-daily | published | `ntrt/2026-11-09.md` | — |
 | 2026-11-09 | 26-agentic-pre-market-brief | published | `daily-briefs/2026-11-09-pre-market.md` | — |
 | 2026-11-09 | 26b-agentic-pre-market-brief-refresh-0920 | published | `daily-briefs/2026-11-09-pre-market-refresh.md` | — |
+| 2026-11-10 | 02-asia-pre-market-reactions | published_after_calendar | `asia-pre-market/2026-11-10.md` | — |
+| 2026-11-10 | 19-earnings-reminder-daily | published_after_calendar | `earnings/2026-11-10-reminders.md` | — |
 | 2026-W44 | 01-weekly-mcp-health-check | published_off_schedule | `mcp-health/2026-W44.md` | — |
 | 2026-W45 | 01-weekly-mcp-health-check | published_off_schedule | `mcp-health/2026-W45.md` | — |
 

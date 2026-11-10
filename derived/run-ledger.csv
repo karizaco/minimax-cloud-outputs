@@ -342,5 +342,7 @@ date,routine,fire_et,schedule,expected,state,artifact,bytes,names
 2026-11-09,25-ntrt-gap-brief-daily,09:00,Mon-Fri,True,published,ntrt/2026-11-09.md,13412,
 2026-11-09,26-agentic-pre-market-brief,08:30,Mon-Fri,True,published,daily-briefs/2026-11-09-pre-market.md,61039,
 2026-11-09,26b-agentic-pre-market-brief-refresh-0920,09:20,Mon-Fri,True,published,daily-briefs/2026-11-09-pre-market-refresh.md,24005,
+2026-11-10,02-asia-pre-market-reactions,06:30,Mon-Fri,False,published_after_calendar,asia-pre-market/2026-11-10.md,35191,
+2026-11-10,19-earnings-reminder-daily,06:00,Mon-Fri,False,published_after_calendar,earnings/2026-11-10-reminders.md,9648,
 2026-W44,01-weekly-mcp-health-check,02:00,Sun,False,published_off_schedule,mcp-health/2026-W44.md,8494,
 2026-W45,01-weekly-mcp-health-check,02:00,Sun,False,published_off_schedule,mcp-health/2026-W45.md,11203,
