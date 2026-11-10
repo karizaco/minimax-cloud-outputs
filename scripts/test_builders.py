@@ -444,6 +444,28 @@ class RunLedger(BuilderCase):
                 "unknown state %r" % r["state"])
 
 
+class YesterdayShortList(BuilderCase):
+    def test_each_name_is_gapping_under_the_line_or_absent(self):
+        """The follow-up the two lists were never asked to answer.
+
+        ACME is in yesterday's Tier-A and is gapping this morning. BETA is in
+        yesterday's Tier-A and is not in the feed. A name that is merely in the
+        feed under 3% is under the line, not a gap.
+        """
+        os.makedirs(os.path.join(self.root, "ntrt"), exist_ok=True)
+        with open(os.path.join(self.root, "ntrt", "2026-11-06.csv"), "w",
+                  encoding="utf-8", newline="") as fh:
+            fh.write("ticker,premarket_change_pct\nACME,8.00\nGAMMA,1.20\n")
+        run_builder("build_yesterday_short_list", self.root)
+        rows = list(csv.DictReader(open(os.path.join(
+            self.root, "derived", "2026-11-06", "yesterday-short-list.csv"),
+            encoding="utf-8")))
+        by = {r["ticker"]: r["status"] for r in rows}
+        self.assertEqual(by.get("ACME"), "gapping")
+        self.assertEqual(by.get("BETA"), "not in the feed")
+        self.assertNotIn("GAMMA", by, "a morning-only name was treated as yesterday's list")
+
+
 class Idempotence(BuilderCase):
     def test_running_twice_produces_no_diff(self):
         """The property the post-merge hook depends on.
@@ -453,12 +475,12 @@ class Idempotence(BuilderCase):
         """
         for module in ("build_persistence", "build_setups", "build_confirmation",
                        "build_thesis_score", "build_run_ledger",
-                       "build_gap_reconciliation"):
+                       "build_gap_reconciliation", "build_yesterday_short_list"):
             run_builder(module, self.root)
         first = snapshot(self.root)
         for module in ("build_persistence", "build_setups", "build_confirmation",
                        "build_thesis_score", "build_run_ledger",
-                       "build_gap_reconciliation"):
+                       "build_gap_reconciliation", "build_yesterday_short_list"):
             run_builder(module, self.root)
         second = snapshot(self.root)
         self.assertEqual(first, second, "a rebuild changed the output")

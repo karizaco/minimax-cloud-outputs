@@ -38,6 +38,7 @@ crons commit to. Keeping them here makes the provenance unambiguous: if it is in
 | **Charts** | `charts/*.html` | The correlation matrix and the regime series, drawn | `cross-asset/<date>.md`, `daily-screens/<date>/_regime.json` |
 | **Client-safe twins** | `client-safe/<same path as the original>` | The same artifacts, rendered for a client that shows bold, italics and lists only | every narrative artifact — see `refs/client-render-contract.md` |
 | **Confirmation** | `<date>/confirmation.{md,csv}` | How many of the five pre-market routines saw each name, and where they agree | the screen, the gap brief, the flow screen, the reminders and the reaction scanner |
+| **Yesterday's short list** | `<date>/yesterday-short-list.{md,csv}` | Did yesterday's Tier-A names show up in this morning's feed? | the previous `tier-a.csv` and that morning's `ntrt/<date>.csv` |
 | **Thesis score** | `thesis-score.{md,csv}` | Did yesterday's published thesis hold — and which briefs score at all? | the thesis-verdict tables in the published briefs |
 | **Run ledger** | `run-ledger.{md,csv}` | Which routine published what, on which day, and which are missing | every published artifact, against the roster's schedule |
 
