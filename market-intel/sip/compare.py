@@ -111,7 +111,6 @@ def parse_tier_tables(md: str | Path) -> dict[str, list[str]]:
             if prose_active and line.strip():
                 for ticker in _prose_tickers(line):
                     tiers[current].append(ticker)
-                prose_active = False
             continue
 
         cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
@@ -151,7 +150,6 @@ def parse_tier_tables(md: str | Path) -> dict[str, list[str]]:
         if prose_active:
             for ticker in _prose_tickers(line):
                 tiers[current].append(ticker)
-            prose_active = False
 
     return dict(tiers)
 

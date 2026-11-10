@@ -110,3 +110,13 @@ def test_multiline_catalyst_continuation_is_not_a_ticker() -> None:
 """
     parsed = parse_tier_tables(markdown)
     assert parsed["Soft-A"] == ["6669", "8039"]
+
+
+def test_multiline_prose_keeps_later_ticker_lines() -> None:
+    markdown = """
+## TECH_WATCH
+2330 TSMC (台積電) +3%
+2454 MediaTek (聯發科) +4%
+"""
+    parsed = parse_tier_tables(markdown)
+    assert parsed["TECH_WATCH"] == ["2330", "2454"]

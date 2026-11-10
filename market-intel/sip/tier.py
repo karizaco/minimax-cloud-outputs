@@ -235,10 +235,34 @@ def trim_c_watch(
     rows: Iterable[CandidateRow],
     cfg: dict[str, Any],
 ) -> list[CandidateRow]:
-    """Keep material C watches; apply the USD floor only to daily limits."""
-    result = list(rows)
-    threshold = float(cfg.get("c_limit_usd_min", 50_000_000))
+    """Keep material C watches.
 
+    The explicit ``c_limit_usd_min`` setting enables the Taiwan-style USD
+    floor. Without that setting, retain the prior count-capped behavior.
+    """
+    result = list(rows)
+
+    if "c_limit_usd_min" not in cfg:
+        cap_value = (cfg.get("engine_top_n") or {}).get(
+            "C", (cfg.get("digest_top_n") or {}).get("C", 8)
+        )
+        cap = max(0, int(cap_value))
+        selected_c = sorted(
+            [
+                row
+                for row in result
+                if row.tier == "C" and _has_material_c_flag(row)
+            ],
+            key=lambda row: (-float(row.dollar_vol or 0), row.ticker),
+        )[:cap]
+        selected_ids = {id(row) for row in selected_c}
+        return [
+            row
+            for row in result
+            if row.tier != "C" or id(row) in selected_ids
+        ]
+
+    threshold = float(cfg.get("c_limit_usd_min", 50_000_000))
     selected_c: list[CandidateRow] = []
     for row in result:
         if row.tier != "C" or not _has_material_c_flag(row):

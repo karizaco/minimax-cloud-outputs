@@ -144,3 +144,48 @@ def test_limit_up_without_catalyst_stays_c_in_tech_watch_rvol_band():
     tiers = {row.ticker: row.tier for row in result}
     assert tiers["LIMITUP"] == "C"
     assert tiers["LIQUID"] == "TECH_WATCH"
+
+
+def test_without_usd_limit_material_c_rows_use_count_cap():
+    rows = [
+        _row(
+            str(2000 + i),
+            dollar_vol=50_000_000 + i,
+            flags=["LIMIT_UP"],
+        )
+        for i in range(5)
+    ]
+
+    result = run_pipeline(
+        rows,
+        {"engine_top_n": {"C": 3}},
+        "open",
+    )
+
+    c_rows = [row for row in result if row.tier == "C"]
+    assert [row.ticker for row in c_rows] == ["2004", "2003", "2002"]
+
+
+def test_with_usd_limit_material_c_rows_ignore_count_cap():
+    rows = [
+        _row(
+            str(2000 + i),
+            dollar_vol=50_000_000 + i,
+            flags=["LIMIT_UP"],
+            usd_turnover=50_000_000 + i,
+        )
+        for i in range(5)
+    ]
+
+    result = run_pipeline(
+        rows,
+        {
+            "c_limit_usd_min": 50_000_000,
+            "engine_top_n": {"C": 3},
+            "digest_top_n": {"C": 3},
+        },
+        "open",
+    )
+
+    c_rows = [row for row in result if row.tier == "C"]
+    assert len(c_rows) == 5

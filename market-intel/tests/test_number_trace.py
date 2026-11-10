@@ -190,6 +190,18 @@ def test_correct_twd_yi_display_is_accepted() -> None:
     assert result["offenders"] == []
 
 
+def test_unlabelled_twd_compact_turnover_is_accepted() -> None:
+    result = check_chat(_turnover_run(), "TWD 29.4bn")
+    assert result["ok"] is True
+    assert result["offenders"] == []
+
+
+def test_unlabelled_compact_turnover_is_accepted() -> None:
+    result = check_chat(_turnover_run(), "29.4bn")
+    assert result["ok"] is True
+    assert result["offenders"] == []
+
+
 def test_unlabelled_twd_price_is_accepted() -> None:
     run = _turnover_run()
     run["candidates"][0]["last"] = 1275.00
