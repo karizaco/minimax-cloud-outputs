@@ -1,2 +1,2 @@
-pyyaml
-pytest
+pyyaml==6.0.2
+pytest==8.3.5

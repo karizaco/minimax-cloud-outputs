@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from sip.compare import compare
+from sip.compare import compare, parse_tier_tables
 
 
 def test_compare_shadow_and_live_markdown_digests(tmp_path: Path) -> None:
@@ -58,3 +58,65 @@ def test_compare_shadow_and_live_markdown_digests(tmp_path: Path) -> None:
     assert result["summary"]["both"] == 1
     assert result["summary"]["only_shadow"] == 2
     assert result["summary"]["only_live"] == 2
+
+
+def test_parse_real_live_excerpt_and_multiline_catalyst() -> None:
+    fixture = (
+        Path(__file__).resolve().parent / "fixtures" / "nov09_live_excerpt.md"
+    )
+    parsed = parse_tier_tables(fixture)
+
+    assert parsed["Soft-A"] == [
+        "6669",
+        "8039",
+        "6538.TPEX",
+        "7769",
+        "8069.TPEX",
+        "6919",
+    ]
+    assert parsed["TECH_WATCH"] == [
+        "2330",
+        "2454",
+        "2308",
+        "3037",
+        "2383",
+        "2303",
+        "2408",
+        "3443",
+        "2344",
+    ]
+    assert parsed["B"] == ["3363.TPEX", "3605", "6443"]
+    assert parsed["C"] == [
+        "1303",
+        "2327",
+        "3105.TPEX",
+        "1802",
+        "2492",
+        "6488.TPEX",
+        "6770",
+    ]
+    assert "6456" not in parsed["C"]
+    assert "故公布相關財務業務" not in parsed["Soft-A"]
+
+
+def test_multiline_catalyst_continuation_is_not_a_ticker() -> None:
+    markdown = """
+## Soft-A (SOFT_A)
+| Ticker | Company | Catalyst |
+|---|---|---|
+| 6669 | Wiwynn | MOPS 11/06 evening: Q3 results; board approved cash raise
+故公布相關財務業務與現金增資安排
+| 8039 | Taiflex | E Ink release |
+"""
+    parsed = parse_tier_tables(markdown)
+    assert parsed["Soft-A"] == ["6669", "8039"]
+
+
+def test_multiline_prose_keeps_later_ticker_lines() -> None:
+    markdown = """
+## TECH_WATCH
+2330 TSMC (台積電) +3%
+2454 MediaTek (聯發科) +4%
+"""
+    parsed = parse_tier_tables(markdown)
+    assert parsed["TECH_WATCH"] == ["2330", "2454"]

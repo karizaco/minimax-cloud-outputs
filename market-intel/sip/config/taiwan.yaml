@@ -12,27 +12,40 @@ midday:
 soft_a_requires_catalyst: true
 catalyst_min_score: 1
 elevated_rvol_min: 1.5
+
+# Nov 9 live TECH_WATCH actuals: 2330/2344/2408/3443/2454/2303/2383/2308/3037.
+# These names had rvol 0.300–0.581 and turnover NT$2.87B–29.3B.
+tech_watch_rvol_min: 0.3
 tech_watch_rvol_max: 2.0
-tech_watch_rvol_min: 1.0
-day_move_hard: 5.0
+tech_watch_liquid_turnover_min: 2500000000
+tech_watch_move_min: 2.0
+
+day_move_hard: 4.0
 day_move_soft: 4.0
 gap_soft: 3.0
 gap_hard: 4.0
 unusual_rvol: 3.0
 
+# Daily-limit C names must have at least this much USD turnover.
+# HALT, TOB_GAP, and OVERNIGHT_PROMOTED C watches are exempt.
+c_limit_usd_min: 50000000
+
+engine_top_n:
+  C: null
+
 chat_top_n:
   A: 10
-  Soft-A: 10
+  Soft-A: 8
   TECH_WATCH: 10
   B: 10
-  C: 5
+  C: null
 
 digest_top_n:
   A: 10
   Soft-A: 8
-  TECH_WATCH: 12
+  TECH_WATCH: 10
   B: 10
-  C: 5
+  C: null
 
 display:
   currency: USD

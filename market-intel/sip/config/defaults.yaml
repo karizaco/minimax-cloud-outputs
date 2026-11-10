@@ -4,12 +4,19 @@ buyout_near_chat_cap: 2
 
 gap_hard: 4.0
 gap_soft: 3.0
-day_move_hard: 5.0
+
+# Soft-A hard-move floor is 4%; material catalysts are still required.
+day_move_hard: 4.0
 day_move_soft: 4.0
 unusual_rvol: 3.0
 elevated_rvol_min: 1.5
-tech_watch_rvol_min: 1.0
+
+# Large liquid Taiwan names use a 0.3–2.0 rvol band and 2.0% move floor.
+tech_watch_rvol_min: 0.3
 tech_watch_rvol_max: 2.0
+tech_watch_liquid_turnover_min: 2500000000
+tech_watch_move_min: 2.0
+
 soft_a_requires_catalyst: true
 catalyst_min_score: 1
 stale_halt_sessions: 5

@@ -20,14 +20,19 @@ fi
 
 LIVE_DIGEST="${LIVE_DIGEST:-/home/box/taiwan-in-play/$DATE-$SLOT.md}"
 
-if [[ -x "/workspace/sip-rebuild/.venv/bin/python" ]]; then
-    PYTHON="/workspace/sip-rebuild/.venv/bin/python"
+if [[ -x "/home/box/venvs/sip/bin/python" ]]; then
+    PYTHON="/home/box/venvs/sip/bin/python"
 elif [[ -x "$ROOT/.venv/bin/python" ]]; then
     PYTHON="$ROOT/.venv/bin/python"
-elif [[ -x "$ROOT/venv/bin/python" ]]; then
-    PYTHON="$ROOT/venv/bin/python"
 else
-    PYTHON="python3"
+    printf 'SIP runtime missing: expected /home/box/venvs/sip/bin/python or %s/.venv/bin/python\n' \
+        "$ROOT" >&2
+    exit 2
+fi
+
+if ! "$PYTHON" -c 'import yaml' >/dev/null 2>&1; then
+    printf 'SIP runtime missing required yaml import: %s\n' "$PYTHON" >&2
+    exit 2
 fi
 
 mkdir -p "$OUT_ROOT"

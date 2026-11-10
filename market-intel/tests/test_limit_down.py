@@ -15,6 +15,7 @@ def _cfg():
         "tech_watch_rvol_max": 2.0,
         "soft_a_requires_catalyst": True,
         "catalyst_min_score": 1,
+        "c_limit_usd_min": 50_000_000,
     }
 
 
@@ -26,6 +27,7 @@ def _row(**kwargs) -> CandidateRow:
         last=100.0,
         chg_pct=-9.9,
         dollar_vol=80_000_000.0,
+        usd_turnover=50_000_000.0,
         rvol=0.8,
         catalyst=None,
         catalyst_time=None,

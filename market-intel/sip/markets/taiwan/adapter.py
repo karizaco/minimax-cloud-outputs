@@ -7,7 +7,12 @@ import re
 from pathlib import Path
 from typing import Any, Mapping
 
-from sip.catalyst_gate import is_boilerplate_mops, materiality_score
+from sip.catalyst_gate import (
+    is_boilerplate_mops,
+    materiality_class,
+    materiality_score,
+    visible_excerpt,
+)
 
 from .fetch import SourceHealth, fetch_yahoo_ranks
 from .names import display_ticker, english_name
@@ -15,9 +20,12 @@ from .parse import (
     ParseError,
     parse_cmoney_change_up_html,
     parse_fx_json,
+    parse_mops_browser_text,
+    parse_mops_html,
     parse_mops_items,
     parse_tpex_roster,
     parse_tv_dump,
+    parse_twse_ap04,
     parse_twse_roster,
     parse_yahoo_rank_html,
 )
@@ -208,12 +216,31 @@ def _add_mover(
         movers.setdefault(ticker, item)
 
 
-def _materiality_score(headline: str) -> int:
-    return materiality_score(headline)
+def _materiality_score(headline: str, explanation: str = "") -> int:
+    return materiality_score(headline, explanation)
 
 
-def _is_boilerplate_mops(headline: str) -> bool:
-    return is_boilerplate_mops(headline)
+def _materiality_class(headline: str, explanation: str = "") -> int:
+    return materiality_class(headline, explanation)
+
+
+def _is_boilerplate_mops(headline: str, explanation: str = "") -> bool:
+    return is_boilerplate_mops(headline, explanation)
+
+
+def _explanation(row: Mapping[str, Any]) -> str:
+    sources: list[Mapping[str, Any]] = [row]
+    raw = row.get("raw")
+    if isinstance(raw, Mapping):
+        sources.append(raw)
+
+    for source in sources:
+        for key, value in source.items():
+            normalized = re.sub(r"\s+", "", str(key)).casefold()
+            if normalized in {"explanation", "說明", "description"}:
+                if value is not None:
+                    return str(value).strip()
+    return ""
 
 
 def _attach_mops_catalysts(
@@ -238,6 +265,7 @@ def _attach_mops_catalysts(
             or row.get("subj")
             or ""
         ).strip()
+        explanation = _explanation(row)
         catalyst_time = row.get("catalyst_time") or row.get("time")
         raw = row.get("raw")
         if not ticker or not headline:
@@ -246,6 +274,7 @@ def _attach_mops_catalysts(
             {
                 "ticker": ticker,
                 "catalyst": headline,
+                "explanation": explanation,
                 "catalyst_time": catalyst_time,
                 "raw": dict(raw) if isinstance(raw, Mapping) else dict(row),
             }
@@ -259,8 +288,14 @@ def _attach_mops_catalysts(
         eligible = [
             item
             for item in items
-            if _materiality_score(str(item.get("catalyst") or "")) >= min_score
-            and not _is_boilerplate_mops(str(item.get("catalyst") or ""))
+            if _materiality_score(
+                str(item.get("catalyst") or ""),
+                str(item.get("explanation") or ""),
+            ) >= min_score
+            and not _is_boilerplate_mops(
+                str(item.get("catalyst") or ""),
+                str(item.get("explanation") or ""),
+            )
         ]
         if not eligible:
             continue
@@ -268,16 +303,47 @@ def _attach_mops_catalysts(
         selected = max(
             eligible,
             key=lambda item: (
-                _materiality_score(str(item.get("catalyst") or "")),
+                _materiality_class(
+                    str(item.get("catalyst") or ""),
+                    str(item.get("explanation") or ""),
+                ),
+                _materiality_score(
+                    str(item.get("catalyst") or ""),
+                    str(item.get("explanation") or ""),
+                ),
                 str(item.get("catalyst_time") or ""),
             ),
         )
         catalyst = str(selected.get("catalyst") or "").strip()
-        score = _materiality_score(catalyst)
-        target["catalyst"] = catalyst
+        explanation = str(selected.get("explanation") or "").strip()
+        excerpt = visible_excerpt(catalyst, explanation)
+        score = _materiality_score(catalyst, explanation)
+        catalyst_class = _materiality_class(catalyst, explanation)
+        target["catalyst"] = (
+            f"{catalyst} — {excerpt}" if excerpt else catalyst
+        )
         target["catalyst_time"] = selected.get("catalyst_time")
         target.setdefault("raw", {})["mops"] = dict(selected.get("raw") or {})
+        target["raw"]["mops_explanation"] = explanation
         target["raw"]["mops_materiality"] = score
+        target["raw"]["mops_materiality_class"] = catalyst_class
+
+
+def _load_mops_rows(path: Path) -> list[dict[str, Any]]:
+    if path.name == "mops1.html":
+        return parse_mops_html(path.read_text(encoding="utf-8"))
+    if path.name == "twse-ap04.json":
+        return parse_twse_ap04(_load_json_or_text(path))
+
+    payload = _load_json_or_text(path)
+    if isinstance(payload, str):
+        rows = parse_mops_browser_text(payload)
+        if rows:
+            return rows
+    parsed = parse_mops_items(payload)
+    if isinstance(parsed, list):
+        return [row for row in parsed if isinstance(row, Mapping)]
+    return [row for row in parsed.values() if isinstance(row, Mapping)]
 
 
 def build_candidates(
@@ -306,20 +372,69 @@ def build_candidates(
         else:
             health.append(SourceHealth("cmoney", "skipped", detail="fixture not found"))
 
-        mops_path = directory / "mops_items.json"
-        if mops_path.is_file():
-            try:
-                parsed = parse_mops_items(_load_json_or_text(mops_path))
-                mops_rows = parsed if isinstance(parsed, list) else list(parsed.values())
-                mops_rows = [row for row in mops_rows if isinstance(row, Mapping)]
-                health.append(SourceHealth("mops", "ok" if mops_rows else "empty", len(mops_rows)))
-            except (OSError, ParseError, ValueError) as exc:
-                health.append(SourceHealth("mops", "blocked", detail=str(exc)))
+        mops_names = (
+            "mops_items.json",
+            "mops-browser.txt",
+            "mops_browser.txt",
+            "mops-browser.md",
+            "mops1.html",
+            "twse-ap04.json",
+        )
+        mops_paths = [
+            directory / name for name in mops_names if (directory / name).is_file()
+        ]
+        if mops_paths:
+            errors: list[str] = []
+            for mops_path in mops_paths:
+                try:
+                    mops_rows.extend(_load_mops_rows(mops_path))
+                except (OSError, ParseError, ValueError) as exc:
+                    errors.append(f"{mops_path.name}: {exc}")
+            if mops_rows:
+                health.append(SourceHealth("mops", "ok", len(mops_rows)))
+            elif errors:
+                health.append(
+                    SourceHealth(
+                        "mops",
+                        "coverage_failed",
+                        detail="; ".join(errors),
+                    )
+                )
+            else:
+                health.append(
+                    SourceHealth(
+                        "mops",
+                        "coverage_failed",
+                        detail=(
+                            "MOPS fixture contained no filing rows; required one of: "
+                            + ", ".join(mops_names)
+                        ),
+                    )
+                )
         else:
-            health.append(SourceHealth("mops", "skipped", detail="fixture not found"))
+            health.append(
+                SourceHealth(
+                    "mops",
+                    "coverage_failed",
+                    detail=(
+                        "MOPS fixture missing; required one of: "
+                        + ", ".join(mops_names)
+                    ),
+                )
+            )
 
-        yahoo_path = directory / "yahoo_rank.html"
-        if yahoo_path.is_file():
+        yahoo_names = (
+            "yahoo_rank.html",
+            "yahoo-tai-turnover.html",
+            "yahoo-tai-change-up.html",
+            "yahoo-two-turnover.html",
+            "yahoo-two-change-up.html",
+        )
+        yahoo_path = next(
+            (directory / name for name in yahoo_names if (directory / name).is_file()),
+            None,
+        )
+        if yahoo_path is not None:
             try:
                 rows = parse_yahoo_rank_html(yahoo_path.read_text(encoding="utf-8"))
                 for row in rows:
@@ -354,7 +469,13 @@ def build_candidates(
                     fx = _number(rate)
                 else:
                     fx = _number(parsed)
-                health.append(SourceHealth("fx", "ok" if fx is not None else "empty", detail=str(fx) if fx is not None else None))
+                health.append(
+                    SourceHealth(
+                        "fx",
+                        "ok" if fx is not None else "empty",
+                        detail=str(fx) if fx is not None else None,
+                    )
+                )
             except (OSError, ParseError, ValueError, TypeError) as exc:
                 health.append(SourceHealth("fx", "blocked", detail=str(exc)))
         else:
@@ -374,7 +495,9 @@ def build_candidates(
             for row in rows:
                 _add_mover(movers, row, source="tradingview")
             primary_ok = primary_ok or bool(rows)
-            health.append(SourceHealth("tradingview", "ok" if rows else "empty", len(rows)))
+            health.append(
+                SourceHealth("tradingview", "ok" if rows else "empty", len(rows))
+            )
         except (OSError, ParseError, ValueError) as exc:
             health.append(SourceHealth("tradingview", "blocked", detail=str(exc)))
     else:
