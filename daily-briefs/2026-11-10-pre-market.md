@@ -349,17 +349,17 @@ None of the eight reports today, and none of the eight is inside a theme cluster
 | Nasdaq-100 Dec | 27918.75 | -0.34% | 08:24 |
 | Mini Dow Dec | 52705.0 | +0.39% | 08:24 |
 | E-mini Russell 2000 Dec | 2847.7 | -0.04% | 08:24 |
-| CBOE Volatility Index | 20.25 | +1.66% | 09:19 |
+| CBOE Volatility Index | 20.25 | +1.66% | 08:19 |
 | WTI crude | 84.92 | -2.22% | 08:32 |
 | Gold | 4081.7 | -0.80% | 08:32 |
-| Bitcoin | 73782.2 | -1.96% | 09:34 |
+| Bitcoin | 73782.2 | -1.96% | 08:34 |
 | US Dollar Index | 101.808 | +0.15% | 08:32 |
 | US 10-Year yield | 4.864 | +0.00% | 08:32 |
 | Nikkei 225 | 60459.58 | +2.87% | 08:32 |
 | Hang Seng | 24557.04 | +0.31% | 08:32 |
 | DAX | 26575.42 | +1.17% | 08:32 |
 
-The shape of the overnight: Monday's rebound was led by semiconductors (S&P 500 +2.35%, Nasdaq Composite +2.74%) on the easing of US-Iran tension (WTI -2.22%), but this morning the futures are flat to slightly lower (Nasdaq-100 futures -0.34%) with the VIX up 1.66% - the October CPI print at 08:30 ET landed hot and the bond market is repricing a December hike. Gold is down 0.80% and the GLD ETF -1.62% pre-market, which is the same trade seen in equities. US 10-year futures are not published by the bridge for this pull; the 10-year yield is quoted at 4.864% from the settled session.
+The shape of the overnight: Monday's rebound was led by semiconductors (S&P 500 +2.35%, Nasdaq Composite +2.74%) on the easing of US-Iran tension (WTI -2.22%), but this morning the futures are flat to slightly lower (Nasdaq-100 futures -0.34%) with the VIX up 1.66% - the October CPI print at 08:30 ET landed hot and the bond market is repricing a December hike. Gold is down 0.80% and the GLD ETF -1.62% pre-market, which is the same trade seen in equities. US 10-year futures are not published by the bridge for this pull; the 10-year yield is quoted at 4.864% from the settled session. The screen was pulled at 08:32 ET, two minutes after the 08:30 ET CPI release, so every gap and every pre-market print below already carries the hot-inflation reaction - there is no pre-CPI snapshot in this brief.
 
 ## 8. Macro calendar
 
