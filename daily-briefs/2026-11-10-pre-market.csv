@@ -1,0 +1,507 @@
+ticker,name,premarket_last,premarket_high,premarket_low,prior_close,gap_pct,prior_session_change_pct,premarket_volume,avg_volume_30d,pct_of_adv,market_cap,sector,exchange,liquid_screen,quality_screen,has_news,key_level,invalidation,setup_theme,setup_published
+PEPG,PepGen Inc.,5.29,5.73,3.73,2.39,+121.34,-3.24,17930393,1073117.0,1670.9,165530245,Health Technology,NASDAQ,yes,yes,yes,2.39,back to/below prior close 2.39,C1 - Biotech clinical readouts: PepGen's Phase 2 data,yes
+SMX,SMX (Security Matters) Public Limited Company,15.95,18.31,9.80,9.35,+70.59,+89.73,5463632,567150.0,963.3,3635173,Technology Services,NASDAQ,yes,no,no,9.35,back to/below prior close 9.35,,no
+MI,NFT Limited,0.37,0.69,0.26,0.25,+49.90,-19.64,171696629,9717201.0,1766.9,20842521,Technology Services,AMEX,yes,no,no,0.25,back to/below prior close 0.25,,no
+MNDO,MIND C.T.I. Ltd.,1.27,1.28,0.89,0.87,+45.98,+0.69,7289184,33581.0,21706.4,17724360,Technology Services,NASDAQ,yes,no,no,0.87,back to/below prior close 0.87,,no
+SECZ,Securitize Corp.,8.77,8.93,7.91,6.97,+25.82,+0.14,520306,3007969.0,17.3,1137961797,Technology Services,NYSE,yes,yes,yes,6.97,back to/below prior close 6.97,C2 - Earnings prints split the tape: beats with guidance vs misses,yes
+BNR,Burning Rock Biotech Limited,14.80,14.80,14.80,12.39,+19.45,-7.68,218,27468.0,0.8,130329459,Health Services,NASDAQ,no,yes,no,12.39,back to/below prior close 12.39,,no
+PDYN,Palladyne AI Corp.,4.22,4.38,3.54,3.54,+19.21,+17.22,666808,914253.0,72.9,174658332,Producer Manufacturing,NASDAQ,yes,yes,yes,3.54,back to/below prior close 3.54,C5 - Defense autonomy and aerospace,yes
+SKYE,"Skye Bioscience, Inc.",0.82,0.87,0.70,0.69,+18.84,-30.32,22367,29861.0,74.9,3043086,Health Technology,NASDAQ,no,no,no,0.69,back to/below prior close 0.69,,no
+HROW,"Harrow, Inc.",32.32,32.38,30.60,27.47,+17.66,+2.16,69137,620122.0,11.1,1029791219,Health Technology,NASDAQ,yes,yes,yes,27.47,back to/below prior close 27.47,C2 - Earnings prints split the tape: beats with guidance vs misses,yes
+ROC,Rank One Computing Corporation,4.00,4.00,4.00,3.40,+17.65,+0.29,114,26483.0,0.4,64872434,Technology Services,NASDAQ,no,no,no,3.40,back to/below prior close 3.40,,no
+KLTR,"Kaltura, Inc.",1.68,1.73,1.66,1.43,+17.48,-5.92,97732,212661.0,46.0,218148242,Technology Services,NASDAQ,yes,yes,yes,1.43,back to/below prior close 1.43,C2 - Earnings prints split the tape: beats with guidance vs misses,yes
+CISS,C3is Inc.,2.04,3.93,1.98,1.75,+16.57,-18.85,5988730,209890.0,2853.3,520789,Transportation,NASDAQ,yes,no,no,1.75,back to/below prior close 1.75,,no
+SENS,"Senseonics Holdings, Inc.",11.40,11.74,10.71,9.80,+16.32,+14.09,60017,656098.0,9.1,518165739,Electronic Technology,NASDAQ,yes,yes,no,9.80,back to/below prior close 9.80,C1 - Biotech clinical readouts: PepGen's Phase 2 data,yes
+UONEK,"Urban One, Inc.",4.13,4.13,4.09,3.58,+15.36,+0.56,200,13203.0,1.5,16930792,Consumer Services,NASDAQ,no,no,no,3.58,back to/below prior close 3.58,,no
+RLGT,"Radiant Logistics, Inc.",10.52,10.87,10.45,9.14,+15.10,+2.81,3647,158857.0,2.3,428717611,Transportation,AMEX,no,yes,no,9.14,back to/below prior close 9.14,,no
+QMCO,Quantum Corporation,19.50,21.43,19.40,16.99,+14.77,+17.42,78966,1722548.0,4.6,669575888,Electronic Technology,NASDAQ,yes,yes,yes,16.99,back to/below prior close 16.99,C2 - Earnings prints split the tape: beats with guidance vs misses,yes
+FCNCP,"First Citizens BancShares, Inc. - Depositary Shares Each Representing a 1/40th Interest in a Share of 5.375% Non-Cumulative Perpetual Preferred Stock, Series A",20.40,20.40,20.40,17.84,+14.35,+0.51,200,30847.0,0.6,25341939986,Finance,NASDAQ,no,yes,no,17.84,back to/below prior close 17.84,,no
+SANM,Sanmina Corporation,171.00,179.50,167.37,149.64,+14.27,+11.11,20011,817750.0,2.4,8020365065,Electronic Technology,NASDAQ,yes,yes,yes,149.64,back to/below prior close 149.64,C2 - Earnings prints split the tape: beats with guidance vs misses,yes
+DFLI,Dragonfly Energy Holdings Corp,2.21,2.21,2.03,1.94,+13.80,+6.01,560,68500.0,0.8,3370040,Producer Manufacturing,NASDAQ,no,no,no,1.94,back to/below prior close 1.94,,no
+EJH,E-Home Household Service Holdings Limited,1.32,1.32,1.22,1.16,+13.79,-7.20,1602,194291.0,0.8,3712179,Consumer Services,NASDAQ,no,no,no,1.16,back to/below prior close 1.16,,no
+AMPY,Amplify Energy Corp.,3.62,3.77,3.42,3.20,+13.27,-3.90,596,579037.0,0.1,132390216,Energy Minerals,NYSE,no,yes,no,3.20,back to/below prior close 3.20,,no
+AAON,"AAON, Inc.",71.05,76.70,71.05,62.87,+13.01,+9.93,30537,1187362.0,2.6,5183860498,Producer Manufacturing,NASDAQ,yes,yes,yes,62.87,back to/below prior close 62.87,C2 - Earnings prints split the tape: beats with guidance vs misses,yes
+UPLD,"Upland Software, Inc.",4.31,4.74,4.26,3.81,+12.98,-3.90,3937,85302.0,4.6,11055656,Technology Services,NASDAQ,no,no,no,3.81,back to/below prior close 3.81,,no
+CSQR,"Csquare, Inc.",17.25,17.35,16.35,15.27,+12.97,+6.49,6339,1938205.0,0.3,2065430625,Technology Services,NYSE,no,yes,no,15.27,back to/below prior close 15.27,,no
+PAYS,"Paysign, Inc.",14.10,14.10,13.35,12.51,+12.71,-14.84,6230,957418.0,0.7,702861392,Commercial Services,NASDAQ,no,yes,no,12.51,back to/below prior close 12.51,,no
+WFF,WF Holding Limited,1.21,1.46,1.20,1.08,+12.06,-7.69,5274965,3984431.0,132.4,3068052,Process Industries,NASDAQ,yes,no,no,1.08,back to/below prior close 1.08,,no
+PXLW,"Pixelworks, Inc.",5.84,7.24,5.51,5.21,+11.98,+3.06,788848,22610.0,3489.0,33184390,Electronic Technology,NASDAQ,yes,no,no,5.21,back to/below prior close 5.21,,no
+SNSC,SunScout Holding Limited,0.79,0.79,0.79,0.71,+11.91,-0.01,437,40856.0,1.1,20488965,Industrial Services,AMEX,no,no,no,0.71,back to/below prior close 0.71,,no
+TTEC,"TTEC Holdings, Inc.",1.56,1.70,1.50,1.40,+11.83,+1.09,25823,371233.0,7.0,68323139,Technology Services,NASDAQ,no,no,no,1.40,back to/below prior close 1.40,,no
+VMD,"Viemed Healthcare, Inc.",10.00,10.00,9.80,8.95,+11.73,-1.97,400,226846.0,0.2,340016408,Health Services,NASDAQ,no,yes,no,8.95,back to/below prior close 8.95,,no
+CCAP,"Crescent Capital BDC, Inc.",10.32,10.32,10.32,9.24,+11.67,-1.49,100,223573.0,0.0,340456606,Finance,NASDAQ,no,yes,no,9.24,back to/below prior close 9.24,,no
+IBG,Innovation Beverage Group Limited,0.82,0.82,0.82,0.74,+11.49,-3.90,300,38282.0,0.8,1724352,Consumer Non-Durables,NASDAQ,no,no,no,0.74,back to/below prior close 0.74,,no
+BRAG,Bragg Gaming Group Inc.,0.77,0.80,0.77,0.69,+11.38,-10.10,3802,19118.0,19.9,19548874,Technology Services,NASDAQ,no,no,no,0.69,back to/below prior close 0.69,,no
+XWEL,"XWELL, Inc.",0.62,0.62,0.62,0.56,+11.30,-4.79,325,52640.0,0.6,5341102,Consumer Services,NASDAQ,no,no,no,0.56,back to/below prior close 0.56,,no
+MWC,"Micware Co., Ltd.",1.30,1.38,1.20,1.17,+11.11,+4.46,13080,162908.0,8.0,67603376,Technology Services,NASDAQ,no,no,no,1.17,back to/below prior close 1.17,,no
+BIAF,"bioAffinity Technologies, Inc.",2.51,2.54,2.37,2.26,+11.06,-16.76,3297,1342738.0,0.2,2666937,Health Technology,NASDAQ,no,no,no,2.26,back to/below prior close 2.26,,no
+HAIN,"The Hain Celestial Group, Inc.",0.15,0.16,0.14,0.14,+11.03,-6.56,782730,1908032.0,41.0,12703916,Consumer Non-Durables,NASDAQ,yes,no,no,0.14,back to/below prior close 0.14,,no
+ZNTL,"Zentalis Pharmaceuticals, Inc.",1.92,1.94,1.72,1.74,+10.34,+1.16,77155,1447747,5.3,144296688,Health Technology,NASDAQ,no,yes,no,1.74,back to/below prior close 1.74,,no
+YXT,YXT.COM GROUP HOLDING LIMITED - American Depository Shares,1.40,1.40,1.31,1.27,+10.24,-6.62,2268,58124.0,3.9,7937085,Technology Services,NASDAQ,no,no,no,1.27,back to/below prior close 1.27,,no
+PWCM,"PowerCompute, Inc.",0.60,0.60,0.55,0.54,+10.16,+2.96,1850,375716.0,0.5,876876,Technology Services,NASDAQ,no,no,no,0.54,back to/below prior close 0.54,,no
+SLGB,Smart Logistics Global Limited,0.21,0.21,0.19,0.19,+10.09,-4.65,59762,13660240.0,0.4,7973700,Transportation,NASDAQ,no,no,no,0.19,back to/below prior close 0.19,,no
+QUCY,Quantum Cyber N.V.,0.75,0.75,0.69,0.68,+9.71,-4.27,13982,469411.0,3.0,34822721,Health Technology,NASDAQ,no,no,no,0.68,back to/below prior close 0.68,,no
+PIII,P3 Health Partners Inc.,4.66,5.52,3.96,4.25,+9.65,+6.25,306397,14292.0,2143.9,31299567,Commercial Services,NASDAQ,yes,no,no,4.25,back to/below prior close 4.25,,no
+AIBZ,Bitzero Holdings Inc.,2.73,2.91,2.57,2.49,+9.64,-5.32,65639,830619.0,7.9,73571168,Technology Services,NASDAQ,no,no,no,2.49,back to/below prior close 2.49,,no
+ATPC,Agape ATP Corporation,1.49,1.52,1.45,1.36,+9.55,+8.79,835,42725.0,2.0,1360851,Health Technology,NASDAQ,no,no,no,1.36,back to/below prior close 1.36,,no
+SFWL,Shengfeng Development Limited,3.80,3.80,3.80,3.48,+9.35,-2.11,100,4517.0,2.2,19111923,Transportation,NASDAQ,no,no,no,3.48,back to/below prior close 3.48,,no
+BW,"Babcock & Wilcox Enterprises, Inc.",4.14,4.39,3.93,3.79,+9.23,+16.62,374367,4833074.0,7.7,564577562,Electronic Technology,NYSE,yes,yes,no,3.79,back to/below prior close 3.79,,no
+SLNG,"Stabilis Solutions, Inc.",3.98,3.98,3.98,3.65,+9.04,+1.96,118,21444.0,0.6,67876498,Energy Minerals,NASDAQ,no,no,no,3.65,back to/below prior close 3.65,,no
+ONEN,ONE Nuclear Energy Inc.,1.58,1.62,1.50,1.45,+8.97,-7.05,1056,215021.0,0.5,97354679,Finance,NASDAQ,no,no,no,1.45,back to/below prior close 1.45,,no
+EGG,Enigmatig Limited,5.91,5.91,5.43,5.43,+8.84,+5.74,1750,262918.0,0.7,154090366,Commercial Services,AMEX,no,yes,no,5.43,back to/below prior close 5.43,,no
+CRMT,"America's Car-Mart, Inc.",1.24,1.24,0.97,1.14,+8.77,-20.83,4814,596208.0,0.8,9499510,Retail Trade,NASDAQ,no,no,no,1.14,back to/below prior close 1.14,,no
+AIMD,"Ainos, Inc.",0.65,0.65,0.62,0.60,+8.33,-14.04,1000,60692.0,1.6,4772585,Electronic Technology,NASDAQ,no,no,no,0.60,back to/below prior close 0.60,,no
+ADVB,Advanced Biomed Inc.,2.22,2.22,2.22,2.05,+8.29,+3.54,108,31948.0,0.3,3110123,Health Technology,NASDAQ,no,no,no,2.05,back to/below prior close 2.05,,no
+TNMG,TNL Mediagene,3.15,3.46,2.96,2.91,+8.25,-5.88,443,2576091.0,0.0,1344251,Technology Services,NASDAQ,no,no,no,2.91,back to/below prior close 2.91,,no
+XLAB,Exascale Labs Holdings Inc.,1.21,1.30,1.15,1.12,+8.04,-25.33,90531,11938575.0,0.8,58741947,Finance,NASDAQ,no,no,no,1.12,back to/below prior close 1.12,,no
+SCNI,Scinai Immunotherapeutics Ltd.,0.50,0.50,0.46,0.46,+7.96,+4.85,800,2314097.0,0.0,625732,Health Technology,NASDAQ,no,no,no,0.46,back to/below prior close 0.46,,no
+SXTP,"60 Degrees Pharmaceuticals, Inc.",0.59,0.60,0.57,0.55,+7.87,-8.19,702,797217.0,0.1,1686741,Health Technology,NASDAQ,no,no,no,0.55,back to/below prior close 0.55,,no
+XELB,"Xcel Brands, Inc",0.44,0.52,0.41,0.40,+7.78,-6.94,21755,1418494.0,1.5,2616111,Consumer Non-Durables,NASDAQ,no,no,no,0.40,back to/below prior close 0.40,,no
+AMIX,"Autonomix Medical, Inc.",1.83,2.37,1.69,1.70,+7.65,+11.84,4645338,166459.0,2790.7,3331895,Health Technology,NASDAQ,yes,no,no,1.70,back to/below prior close 1.70,,no
+IAM,"Iambic Therapeutics, Inc.",14.40,15.60,14.31,13.38,+7.62,+31.56,11065,,,634222642,Health Technology,NASDAQ,yes,yes,no,13.38,back to/below prior close 13.38,,no
+HCTI,"Healthcare Triangle, Inc.",4.54,4.54,4.50,4.22,+7.58,+14.05,491,109312.0,0.4,2084629,Technology Services,NASDAQ,no,no,no,4.22,back to/below prior close 4.22,,no
+CTRN,"Citi Trends, Inc.",50.00,50.00,50.00,46.50,+7.53,+3.31,300,196324.0,0.2,387561109,Retail Trade,NASDAQ,no,yes,no,46.50,back to/below prior close 46.50,,no
+DYAI,"Dyadic International, Inc.",0.41,0.41,0.39,0.38,+7.46,+12.01,3519,94095.0,3.7,14558408,Health Services,NASDAQ,no,no,no,0.38,back to/below prior close 0.38,,no
+LTRX,"Lantronix, Inc.",5.85,5.90,5.77,5.45,+7.34,+5.52,6253,643238.0,1.0,236247490,Electronic Technology,NASDAQ,no,yes,no,5.45,back to/below prior close 5.45,,no
+RMSG,Real Messenger Corporation,0.19,0.20,0.16,0.18,+7.29,+2.73,7771,1028111.0,0.8,2250020,Technology Services,NASDAQ,no,no,no,0.18,back to/below prior close 0.18,,no
+ARTL,"Artelo Biosciences, Inc.",2.22,2.22,2.18,2.07,+7.25,+8.38,450,44268.0,1.0,835303,Health Technology,NASDAQ,no,no,no,2.07,back to/below prior close 2.07,,no
+ZIP,"ZipRecruiter, Inc.",4.60,4.75,4.60,4.29,+7.23,+14.10,1765,636967.0,0.3,351242093,Technology Services,NYSE,no,yes,no,4.29,back to/below prior close 4.29,,no
+BIOX,Bioceres Crop Solutions Corp.,0.25,0.25,0.24,0.24,+7.08,+1.39,556,207417.0,0.3,15124266,Process Industries,NASDAQ,no,no,no,0.24,back to/below prior close 0.24,,no
+FAMI,"Farmmi, Inc. Ordinary Shares",0.10,0.10,0.09,0.09,+7.06,-3.21,2057,1125086.0,0.2,1944174,Process Industries,NASDAQ,no,no,no,0.09,back to/below prior close 0.09,,no
+NNOX,NANO-X IMAGING LTD,0.25,0.25,0.23,0.23,+7.02,-2.75,30891,923387.0,3.3,17327022,Health Technology,NASDAQ,no,no,no,0.23,back to/below prior close 0.23,,no
+CHSN,Chanson International Holding,2.90,3.38,2.66,2.71,+7.01,-10.86,527503,7642489.0,6.9,6293680,Consumer Non-Durables,NASDAQ,yes,no,no,2.71,back to/below prior close 2.71,,no
+MF,MindForge Inc.,15.33,17.97,15.32,14.33,+6.98,+34.68,2775,209958.0,1.3,54306624,Commercial Services,NASDAQ,no,no,no,14.33,back to/below prior close 14.33,,no
+ELMT,The Elmet Group Co.,23.52,24.28,22.94,21.99,+6.96,+12.08,21136,534836.0,4.0,669804342,Producer Manufacturing,NASDAQ,yes,yes,no,21.99,back to/below prior close 21.99,,no
+KIDZ,KIDZ AI Inc.,1.32,1.32,1.22,1.23,+6.93,-2.38,1479,193835.0,0.8,561886,Technology Services,NASDAQ,no,no,no,1.23,back to/below prior close 1.23,,no
+ABVC,"ABVC BioPharma, Inc.",1.09,1.09,1.09,1.02,+6.86,+5.28,100,55967.0,0.2,26874408,Health Technology,NASDAQ,no,no,no,1.02,back to/below prior close 1.02,,no
+MVIS,"MicroVision, Inc.",1.32,1.32,1.32,1.24,+6.77,+6.90,140,1313709.0,0.0,35858390,Electronic Technology,NASDAQ,no,no,no,1.24,back to/below prior close 1.24,,no
+KULR,"KULR Technology Group, Inc.",1.74,1.76,1.65,1.63,+6.75,+10.14,60670,709681.0,8.5,75418233,Producer Manufacturing,AMEX,no,no,no,1.63,back to/below prior close 1.63,,no
+CING,Cingulate Inc.,4.75,4.75,4.74,4.45,+6.74,+4.46,1400,110894.0,1.3,61894711,Health Technology,NASDAQ,no,no,no,4.45,back to/below prior close 4.45,,no
+PBK,PowerBank Corporation,0.14,0.14,0.13,0.13,+6.71,+0.46,13060,1442873.0,0.9,95543522,Utilities,NASDAQ,no,no,no,0.13,back to/below prior close 0.13,,no
+VHUB,"VenHub Global, Inc.",0.24,0.24,0.23,0.23,+6.67,+1.21,700,162995.0,0.4,20529642,Retail Trade,NASDAQ,no,no,no,0.23,back to/below prior close 0.23,,no
+PASW,"Ping An Biomedical Co., Ltd.",1.44,1.44,1.30,1.35,+6.67,+3.05,3890,69954.0,5.6,2250568,Distribution Services,NASDAQ,no,no,no,1.35,back to/below prior close 1.35,,no
+CTM,"Castellum, Inc.",0.40,0.44,0.39,0.38,+6.40,-1.13,197192,479583.0,41.1,35633926,Process Industries,AMEX,yes,no,no,0.38,back to/below prior close 0.38,,no
+EMBJ,Embraer S.A.,81.99,82.05,76.54,77.07,+6.39,+4.04,16307,1603742.0,1.0,14154537590,Electronic Technology,NYSE,yes,yes,no,77.07,back to/below prior close 77.07,C5 - Defense autonomy and aerospace,yes
+CEPU,Central Puerto S.A.,10.83,10.83,10.83,10.19,+6.32,+2.31,3000,289976.0,1.0,1578291078,Utilities,NYSE,no,yes,no,10.19,back to/below prior close 10.19,,no
+TNON,"Tenon Medical, Inc.",1.86,1.86,1.74,1.75,+6.29,+6.71,2781,2204495.0,0.1,2641978,Health Services,NASDAQ,no,no,no,1.75,back to/below prior close 1.75,,no
+FFR,FF EAI Robotics Ecosystem Inc.,0.96,0.96,0.94,0.91,+6.27,+1.91,649,1971109.0,0.0,19367273,Technology Services,NASDAQ,no,no,no,0.91,back to/below prior close 0.91,,no
+FLD,"Fold Holdings, Inc.",0.49,0.53,0.49,0.46,+6.25,+3.27,1555,87148.0,1.8,24331784,Technology Services,NASDAQ,no,no,no,0.46,back to/below prior close 0.46,,no
+CPHI,"China Pharma Holdings, Inc.",0.60,0.60,0.55,0.56,+6.19,-0.86,3913,3177699.0,0.1,23601182,Health Technology,AMEX,no,no,no,0.56,back to/below prior close 0.56,,no
+CVV,CVD Equipment Corporation,4.46,4.46,4.30,4.20,+6.19,+5.79,600,55955.0,1.1,29175220,Electronic Technology,NASDAQ,no,no,no,4.20,back to/below prior close 4.20,,no
+TRAW,"Traws Pharma, Inc.",0.25,0.26,0.23,0.24,+6.12,+8.16,3014,179947.0,1.7,3662274,Health Technology,NASDAQ,no,no,no,0.24,back to/below prior close 0.24,,no
+HYPR,"Hyperfine, Inc.",0.75,0.77,0.70,0.71,+6.10,-1.77,2798,1041183.0,0.3,72559737,Health Technology,NASDAQ,no,no,no,0.71,back to/below prior close 0.71,,no
+PROK,ProKidney Corp.,1.22,1.22,1.20,1.15,+6.09,+0.88,665,1368215.0,0.0,347547717,Health Technology,NASDAQ,no,yes,no,1.15,back to/below prior close 1.15,,no
+GOAI,Eva Live Inc.,0.54,0.55,0.49,0.51,+6.07,-16.20,1245,98023.0,1.3,19613287,Technology Services,NASDAQ,no,no,no,0.51,back to/below prior close 0.51,,no
+BIRD,"Smartbird, Inc.",1.43,1.50,1.37,1.35,+5.93,+3.05,8888,520119.0,1.7,13915290,Technology Services,NASDAQ,no,no,no,1.35,back to/below prior close 1.35,,no
+DWTX,"Dogwood Therapeutics, Inc.",1.27,1.27,1.23,1.20,+5.92,-6.25,352,93738.0,0.4,43332280,Health Technology,NASDAQ,no,no,no,1.20,back to/below prior close 1.20,,no
+SUNE,"SUNation Energy, Inc.",2.15,2.33,2.02,2.03,+5.91,-0.98,15271,81695.0,18.7,10795757,Industrial Services,NASDAQ,no,no,no,2.03,back to/below prior close 2.03,,no
+ABEO,Abeona Therapeutics Inc.,2.69,2.72,2.53,2.54,+5.91,-39.09,23101,1511740.0,1.5,145007533,Health Technology,NASDAQ,no,yes,no,2.54,back to/below prior close 2.54,,no
+ASTC,Astrotech Corporation,4.57,4.57,4.57,4.32,+5.79,+2.13,100,29386.0,0.3,8353860,Electronic Technology,NASDAQ,no,no,no,4.32,back to/below prior close 4.32,,no
+WYHG,Wing Yip Food Holdings Group Limited,4.03,4.03,3.83,3.81,+5.77,-0.78,1316,207678.0,0.6,37976570,Consumer Non-Durables,NASDAQ,no,no,no,3.81,back to/below prior close 3.81,,no
+SURG,"SurgePays, Inc.",0.16,0.16,0.15,0.15,+5.75,-7.89,300693,4751333.0,6.3,8094988,Technology Services,NASDAQ,yes,no,no,0.15,back to/below prior close 0.15,,no
+BVS,Bioventus Inc.,11.64,11.99,11.60,11.02,+5.66,+3.82,2300,551868.0,0.4,927203266,Health Technology,NASDAQ,no,yes,no,11.02,back to/below prior close 11.02,,no
+NPKI,NPK International Inc.,9.42,9.42,9.42,8.92,+5.61,+3.24,35000,1013128.0,3.5,757396254,Producer Manufacturing,NYSE,yes,yes,no,8.92,back to/below prior close 8.92,C5 - Defense autonomy and aerospace,yes
+NINE,"Nine Energy Service, Inc.",7.04,7.05,7.04,6.67,+5.55,-10.35,1150,30142.0,3.8,93046435,Industrial Services,AMEX,no,no,no,6.67,back to/below prior close 6.67,,no
+LDI,"loanDepot, Inc.",0.56,0.57,0.55,0.53,+5.54,-17.08,16931,3127097.0,0.5,179337276,Finance,NYSE,no,yes,no,0.53,back to/below prior close 0.53,,no
+OPTX,"Syntec Optics Holdings, Inc.",5.54,5.60,5.40,5.25,+5.52,+7.80,17466,515706.0,3.4,211469373,Electronic Technology,NASDAQ,yes,yes,no,5.25,back to/below prior close 5.25,C5 - Defense autonomy and aerospace,yes
+INVZ,Innoviz Technologies Ltd.,0.24,0.24,0.23,0.22,+5.50,+6.48,27571,2699591.0,1.0,57422514,Producer Manufacturing,NASDAQ,no,no,no,0.22,back to/below prior close 0.22,,no
+ASX,"ASE Technology Holding Co., Ltd.",36.25,37.00,36.02,34.36,+5.50,+8.63,115769,9453843.0,1.2,75555296577,Electronic Technology,NYSE,yes,yes,no,34.36,back to/below prior close 34.36,"C6 - Power, LNG and the AI-infrastructure chain",yes
+ICCM,IceCure Medical Ltd.,0.87,0.94,0.82,0.82,+5.42,+20.82,42596,174553.0,24.4,2521773,Health Technology,NASDAQ,no,no,no,0.82,back to/below prior close 0.82,,no
+CANG,Cango Inc.,1.17,1.27,1.14,1.11,+5.41,+11.64,16963,1974576.0,0.9,42670157,Technology Services,NYSE,no,no,no,1.11,back to/below prior close 1.11,,no
+CDXS,"Codexis, Inc.",1.17,1.17,1.16,1.11,+5.41,+2.78,1000,822989.0,0.1,111223297,Process Industries,NASDAQ,no,yes,no,1.11,back to/below prior close 1.11,,no
+BDTX,"Black Diamond Therapeutics, Inc.",1.96,2.08,1.91,1.86,+5.38,+7.20,65354,778804.0,8.4,106722635,Health Technology,NASDAQ,no,yes,no,1.86,back to/below prior close 1.86,,no
+ALVO,Alvotech,4.94,4.94,4.79,4.69,+5.33,-3.50,2925,968741.0,0.3,1647560949,Health Technology,NASDAQ,no,yes,no,4.69,back to/below prior close 4.69,,no
+SNT,Senstar Technologies Corporation,2.58,2.58,2.34,2.45,+5.31,+28.95,7272,245421.0,3.0,57162549,Electronic Technology,NASDAQ,no,no,no,2.45,back to/below prior close 2.45,,no
+LOT,Lotus Technology Inc.,0.28,0.28,0.26,0.27,+5.28,-18.41,7314,205333.0,3.6,169965988,Consumer Durables,NASDAQ,no,yes,no,0.27,back to/below prior close 0.27,,no
+KUST,"Kustom Entertainment, Inc.",3.60,3.60,3.30,3.42,+5.26,+8.23,8088,39901.0,20.3,1219866,Commercial Services,NASDAQ,no,no,no,3.42,back to/below prior close 3.42,,no
+SMTK,"SmartKem, Inc.",0.28,0.30,0.26,0.27,+5.26,-10.00,11161,767629.0,1.5,197738,Electronic Technology,NASDAQ,no,no,no,0.27,back to/below prior close 0.27,,no
+SKM,"SK Telecom Co., Ltd.",34.00,34.58,33.40,32.31,+5.23,+3.46,22967,1378658.0,1.7,12491759902,Communications,NYSE,yes,yes,no,32.31,back to/below prior close 32.31,,no
+GPUS,"Hyperscale Data, Inc.",0.20,0.22,0.19,0.19,+5.22,+32.61,10819512,43723694.0,24.7,50495634,Producer Manufacturing,AMEX,yes,no,no,0.19,back to/below prior close 0.19,,no
+MX,Magnachip Semiconductor Corporation,2.63,2.64,2.49,2.50,+5.21,+5.93,33818,1115419.0,3.0,93201611,Electronic Technology,NYSE,no,no,no,2.50,back to/below prior close 2.50,,no
+ABR/PF,"Arbor Realty Trust 6.25% Series F Fixed-to-Floating Rate Cumulative Redeemable Preferred Stock, Liquidation Preference $25.00 per share",10.00,10.00,10.00,9.52,+5.04,-3.94,900,59562.0,1.5,294682597,Finance,NYSE,no,yes,no,9.52,back to/below prior close 9.52,,no
+XMTR,"Xometry, Inc.",126.62,126.62,126.62,120.59,+5.00,+4.91,100,827825.0,0.0,6931602431,Technology Services,NASDAQ,no,yes,no,120.59,back to/below prior close 120.59,,no
+GRWG,GrowGeneration Corp.,1.65,1.68,1.53,1.57,+5.00,+4.67,1550,235330.0,0.7,93423914,Distribution Services,NASDAQ,no,no,no,1.57,back to/below prior close 1.57,,no
+EDRY,EuroDry Ltd.,40.35,41.00,40.35,38.45,+4.94,+11.10,261,107808.0,0.2,110680979,Transportation,NASDAQ,no,yes,no,38.45,back to/below prior close 38.45,,no
+EP,Empire Petroleum Corporation,2.56,2.56,2.51,2.44,+4.92,+0.00,500,57545.0,0.9,99301346,Energy Minerals,AMEX,no,no,no,2.44,back to/below prior close 2.44,,no
+JRSH,"Jerash Holdings (US), Inc.",6.89,6.89,6.89,6.57,+4.87,+7.70,1000,119093.0,0.8,83438609,Consumer Non-Durables,NASDAQ,no,no,no,6.57,back to/below prior close 6.57,,no
+HUMA,"Humacyte, Inc.",0.48,0.49,0.47,0.46,+4.86,+1.56,200616,5768833.0,3.5,126453689,Health Technology,NASDAQ,yes,yes,no,0.46,back to/below prior close 0.46,C1 - Biotech clinical readouts: PepGen's Phase 2 data,yes
+ALPS,ALPS Group Inc,1.73,1.73,1.71,1.65,+4.85,+0.09,255,11313.0,2.3,164736321,Miscellaneous,NASDAQ,no,yes,no,1.65,back to/below prior close 1.65,,no
+WMG,Warner Music Group Corp.,33.33,33.33,33.33,31.79,+4.84,+1.57,100,2251479.0,0.0,16605908683,Commercial Services,NASDAQ,no,yes,no,31.79,back to/below prior close 31.79,,no
+CETX,Cemtrex Inc.,0.65,0.67,0.62,0.62,+4.84,-1.99,32961,1429340.0,2.3,878330,Electronic Technology,NASDAQ,no,no,no,0.62,back to/below prior close 0.62,,no
+INTJ,Intelligent Group Limited,2.41,2.70,2.41,2.30,+4.78,-6.12,330,22021,1.5,3212810,Commercial Services,NASDAQ,no,no,no,2.30,back to/below prior close 2.30,,no
+ANIX,"Anixa Biosciences, Inc.",3.31,3.35,3.30,3.16,+4.75,-0.47,300,219759.0,0.1,108683248,Health Technology,NASDAQ,no,yes,no,3.16,back to/below prior close 3.16,,no
+VNTG,Vantage Corp,0.48,0.48,0.45,0.46,+4.72,+1.67,7039,176738.0,4.0,14344206,Transportation,AMEX,no,no,no,0.46,back to/below prior close 0.46,,no
+AMRC,"Ameresco, Inc.",23.51,25.42,23.50,22.45,+4.72,+3.89,9647,587398.0,1.6,1190047902,Industrial Services,NYSE,no,yes,no,22.45,back to/below prior close 22.45,,no
+ELOG,Eastern International Ltd.,0.65,0.66,0.64,0.62,+4.72,+0.27,19500,498876.0,3.9,7711887,Transportation,NASDAQ,no,no,no,0.62,back to/below prior close 0.62,,no
+ACXP,"Acurx Pharmaceuticals, Inc.",1.11,1.13,1.04,1.06,+4.72,+0.00,600,92532.0,0.6,5224286,Health Technology,NASDAQ,no,no,no,1.06,back to/below prior close 1.06,,no
+SPAI,Safe Pro Group Inc.,3.43,3.55,3.28,3.28,+4.69,+6.15,35950,323006.0,11.1,67209953,Electronic Technology,NASDAQ,no,no,no,3.28,back to/below prior close 3.28,,no
+INCR,Intercure Ltd.,3.80,3.80,3.80,3.63,+4.68,+4.61,2600,6576.0,39.5,40666032,Health Technology,NASDAQ,no,no,no,3.63,back to/below prior close 3.63,,no
+ADTN,"ADTRAN Holdings, Inc.",4.49,4.59,4.46,4.29,+4.66,+6.19,21344,1933277.0,1.1,349617094,Electronic Technology,NASDAQ,yes,yes,no,4.29,back to/below prior close 4.29,C5 - Defense autonomy and aerospace,yes
+GITS,"Global Interactive Technologies, Inc.",1.60,1.65,1.56,1.53,+4.58,-1.29,853,30489.0,2.8,6026144,Technology Services,NASDAQ,no,no,no,1.53,back to/below prior close 1.53,,no
+TTWO,"Take-Two Interactive Software, Inc.",216.84,218.74,213.69,207.40,+4.55,-3.48,45054,2694184.0,1.7,38779741748,Technology Services,NASDAQ,yes,yes,no,207.40,back to/below prior close 207.40,,no
+INHD,Inno Holdings Inc.,2.76,2.76,2.62,2.64,+4.55,-7.37,1124,508408.0,0.2,6654440,Producer Manufacturing,NASDAQ,no,no,no,2.64,back to/below prior close 2.64,,no
+ABR/PE,Arbor Realty Trust 6.25% Series E Cumulative Redeemable Preferred Stock,7.60,7.60,7.60,7.27,+4.54,-0.15,500,36905.0,1.4,294682597,Finance,NYSE,no,yes,no,7.27,back to/below prior close 7.27,,no
+BENF,Beneficient,0.71,0.77,0.66,0.68,+4.52,-4.20,42667,703910.0,6.1,11375313,Finance,NASDAQ,no,no,no,0.68,back to/below prior close 0.68,,no
+LGVN,Longeveron Inc.,2.10,2.10,2.01,2.01,+4.48,+11.05,227,68196.0,0.3,12725079,Health Technology,NASDAQ,no,no,no,2.01,back to/below prior close 2.01,,no
+MEDS,"DataMeds AI, Inc.",1.03,1.07,1.02,0.98,+4.47,-16.57,10305,2924008.0,0.4,3448529,Distribution Services,NASDAQ,no,no,no,0.98,back to/below prior close 0.98,,no
+BLDP,"Ballard Power Systems, Inc.",1.64,1.64,1.58,1.57,+4.46,+2.28,7354,2715119.0,0.3,512264768,Producer Manufacturing,NASDAQ,no,yes,no,1.57,back to/below prior close 1.57,,no
+HRTX,"Heron Therapeutics, Inc.",0.39,0.40,0.34,0.37,+4.43,+26.48,713584,6639043.0,10.7,70359263,Health Technology,NASDAQ,yes,no,no,0.37,back to/below prior close 0.37,,no
+IBIO,"iBio, Inc.",0.83,0.84,0.83,0.80,+4.40,+7.64,3680,713800.0,0.5,43936519,Health Technology,NASDAQ,no,no,no,0.80,back to/below prior close 0.80,,no
+KLRA,"Kailera Therapeutics, Inc.",14.30,14.76,14.20,13.70,+4.38,+5.63,1774,1179575.0,0.2,1777534950,Health Technology,NASDAQ,no,yes,no,13.70,back to/below prior close 13.70,,no
+GNPX,"Genprex, Inc.",2.15,2.17,2.15,2.06,+4.37,-0.48,557,182818.0,0.3,1339936,Health Technology,NASDAQ,no,no,no,2.06,back to/below prior close 2.06,,no
+BDRX,Biodexa Pharmaceuticals plc,2.57,2.57,2.57,2.46,+4.35,-0.79,560,358850.0,0.2,714253,Health Technology,NASDAQ,no,no,no,2.46,back to/below prior close 2.46,,no
+OSTX,OS Therapies Incorporated,0.96,0.96,0.96,0.92,+4.34,-7.99,222,752841.0,0.0,44560713,Health Technology,AMEX,no,no,no,0.92,back to/below prior close 0.92,,no
+UAVS,"AgEagle Aerial Systems, Inc.",0.39,0.42,0.38,0.37,+4.34,+16.00,26524,911603.0,2.9,22417272,Electronic Technology,AMEX,no,no,no,0.37,back to/below prior close 0.37,,no
+BTOC,Armlogi Holding Corp.,1.93,1.93,1.85,1.85,+4.32,+1.10,1024,43102.0,2.4,5254671,Transportation,NASDAQ,no,no,no,1.85,back to/below prior close 1.85,,no
+SB,"Safe Bulkers, Inc",7.53,7.59,7.48,7.22,+4.29,+1.55,2835,1042625.0,0.3,791032102,Transportation,NYSE,no,yes,no,7.22,back to/below prior close 7.22,,no
+KLC,"KinderCare Learning Companies, Inc.",2.43,2.43,2.40,2.33,+4.29,+10.95,1150,781648.0,0.1,276041302,Consumer Services,NYSE,no,yes,no,2.33,back to/below prior close 2.33,,no
+LAR,Lithium Argentina AG,4.63,4.63,4.52,4.44,+4.28,+4.47,4354,1553138.0,0.3,722019465,Non-Energy Minerals,NYSE,no,yes,no,4.44,back to/below prior close 4.44,,no
+YMT,Yimutian Inc.,0.27,0.27,0.26,0.26,+4.18,-2.03,2818,1841664.0,0.2,6616131,Technology Services,NASDAQ,no,no,no,0.26,back to/below prior close 0.26,,no
+XTIA,"XTI Aerospace, Inc.",0.98,1.00,0.94,0.94,+4.16,+5.31,1748,1030721.0,0.2,33423101,Technology Services,NASDAQ,no,no,no,0.94,back to/below prior close 0.94,,no
+BXBL,"BOXABL, Inc.",1.95,1.97,1.95,1.87,+4.09,-3.11,703,136698.0,0.5,235480717,Consumer Durables,NASDAQ,no,yes,no,1.87,back to/below prior close 1.87,,no
+FRNM,"Freenome, Inc.",11.00,11.00,11.00,10.57,+4.07,+3.83,3300,773073.0,0.4,626348141,Health Technology,NASDAQ,no,yes,no,10.57,back to/below prior close 10.57,,no
+GXAI,Gaxos.ai Inc.,0.43,0.43,0.41,0.42,+4.04,+6.09,54368,168382.0,32.3,4445895,Technology Services,NASDAQ,no,no,no,0.42,back to/below prior close 0.42,,no
+FRGT,"Freight Technologies, Inc.",1.04,1.07,0.99,1.00,+4.00,+1.99,3690,3314234.0,0.1,847814,Finance,NASDAQ,no,no,no,1.00,back to/below prior close 1.00,,no
+PLUG,"Plug Power, Inc.",1.56,1.59,1.52,1.50,+4.00,+3.45,2274759,54026370.0,4.2,2095792786,Electronic Technology,NASDAQ,yes,yes,no,1.50,back to/below prior close 1.50,"C6 - Power, LNG and the AI-infrastructure chain",yes
+AIB,AIB Data Centers Inc.,0.74,0.75,0.73,0.71,+3.97,-1.42,2691,2487647.0,0.1,46113633,Technology Services,AMEX,no,no,no,0.71,back to/below prior close 0.71,,no
+VVOS,"Vivos Therapeutics, Inc.",0.10,0.11,0.09,0.10,+3.97,+2.24,27444,8267659.0,0.3,2275441,Health Technology,NASDAQ,no,no,no,0.10,back to/below prior close 0.10,,no
+SLQT,"SelectQuote, Inc.",0.47,0.47,0.47,0.45,+3.96,-6.83,2000,1519625.0,0.1,79622834,Finance,NYSE,no,no,no,0.45,back to/below prior close 0.45,,no
+TDUP,ThredUp Inc.,1.42,1.42,1.36,1.36,+3.96,+6.23,1105,1791472.0,0.1,180481300,Retail Trade,NASDAQ,no,yes,no,1.36,back to/below prior close 1.36,,no
+DKI,DarkIris Inc.,1.60,1.64,1.47,1.54,+3.90,+4.76,24104,2604608.0,0.9,745652,Technology Services,NASDAQ,no,no,no,1.54,back to/below prior close 1.54,,no
+MXCT,"MaxCyte, Inc.",1.35,1.53,1.30,1.30,+3.87,+3.17,204996,1321466.0,15.5,139258174,Health Technology,NASDAQ,yes,yes,no,1.30,back to/below prior close 1.30,C1 - Biotech clinical readouts: PepGen's Phase 2 data,yes
+AEYE,"AudioEye, Inc.",13.46,13.49,12.96,12.96,+3.86,+4.77,2917,264793.0,1.1,163647547,Technology Services,NASDAQ,no,yes,no,12.96,back to/below prior close 12.96,,no
+QMLS,"QumulusAI, Inc.",3.25,3.33,3.19,3.13,+3.86,+0.00,4846,362124.0,1.3,114137089,Technology Services,NASDAQ,no,yes,no,3.13,back to/below prior close 3.13,,no
+LQDA,Liquidia Corporation,49.65,50.65,43.00,47.87,+3.72,+7.82,107650,5876499,1.8,4284790385,Health Technology,NASDAQ,yes,yes,no,47.87,back to/below prior close 47.87,C1 - Biotech clinical readouts: PepGen's Phase 2 data,yes
+VG,"Venture Global, Inc.",12.24,12.86,11.80,11.80,+3.71,+2.34,636936,15013302.0,4.2,29501096240,Industrial Services,NYSE,yes,yes,no,11.80,back to/below prior close 11.80,"C6 - Power, LNG and the AI-infrastructure chain",yes
+IQST,iQSTEL Inc.,0.83,0.83,0.80,0.80,+3.70,-1.16,8300,184602.0,4.5,7055427,Communications,NASDAQ,no,no,no,0.80,back to/below prior close 0.80,,no
+GRO,Brazil Potash Corp.,1.97,1.97,1.92,1.90,+3.68,+3.26,330,259125.0,0.1,117697809,Non-Energy Minerals,AMEX,no,yes,no,1.90,back to/below prior close 1.90,,no
+JMIA,Jumia Technologies AG,5.86,5.86,5.66,5.65,+3.66,+2.91,2300,1440540.0,0.2,701787884,Technology Services,NYSE,no,yes,no,5.65,back to/below prior close 5.65,,no
+LVWR,"LiveWire Group, Inc.",0.51,0.52,0.51,0.49,+3.64,-10.46,4141,301330,1.4,100878352,Consumer Durables,NYSE,no,yes,no,0.49,back to/below prior close 0.49,,no
+TWG,Top Wealth Group Holding Limited,3.42,3.89,3.25,3.30,+3.64,+7.14,32494,192484.0,16.9,1938880,Distribution Services,NASDAQ,no,no,no,3.30,back to/below prior close 3.30,,no
+BW/PA,"Babcock & Wilcox Enterprises, Inc. 7.75% Series A Cumulative Perpetual Preferred Stock",18.28,18.75,18.28,17.64,+3.63,+1.44,850,28661.0,3.0,564577562,Electronic Technology,NYSE,no,yes,no,17.64,back to/below prior close 17.64,,no
+NEON,Neonode Inc.,0.69,0.69,0.69,0.67,+3.61,+6.63,1100,52745.0,2.1,11209314,Electronic Technology,NASDAQ,no,no,no,0.67,back to/below prior close 0.67,,no
+LOBO,LOBO TECHNOLOGIES LTD.,0.40,0.40,0.39,0.38,+3.59,+0.13,2182,367730.0,0.6,5153594,Consumer Durables,NASDAQ,no,no,no,0.38,back to/below prior close 0.38,,no
+BRUN,Boost Run Inc.,6.94,7.05,6.65,6.70,+3.58,+10.02,27764,3699712.0,0.8,540514599,Technology Services,NASDAQ,yes,yes,no,6.70,back to/below prior close 6.70,,no
+LI,Li Auto Inc.,12.78,12.79,12.74,12.34,+3.57,-1.52,35512,2976590.0,1.2,12510470967,Consumer Durables,NASDAQ,yes,yes,no,12.34,back to/below prior close 12.34,"C6 - Power, LNG and the AI-infrastructure chain",yes
+OFRM,"Once Upon a Farm, PBC",10.48,10.48,10.48,10.12,+3.56,+9.29,239,792528,0.0,424496984,Consumer Non-Durables,NYSE,no,yes,no,10.12,back to/below prior close 10.12,,no
+TREO,Tactical Resources Corp.,2.04,2.04,1.99,1.97,+3.55,+20.12,200,49203.0,0.4,26815707,Non-Energy Minerals,NASDAQ,no,no,no,1.97,back to/below prior close 1.97,,no
+CATX,"Perspective Therapeutics, Inc.",0.89,0.89,0.82,0.86,+3.55,+1.86,2181,3038830.0,0.1,97623045,Health Technology,AMEX,no,no,no,0.86,back to/below prior close 0.86,,no
+CMRC,"Commerce.com, Inc. - Series 1",3.80,3.80,3.80,3.67,+3.54,+1.38,150,607416.0,0.0,304998399,Technology Services,NASDAQ,no,yes,no,3.67,back to/below prior close 3.67,,no
+CRWS,"Crown Crafts, Inc.",2.64,2.64,2.64,2.55,+3.53,+4.08,100,50381.0,0.2,27438732,Consumer Durables,NASDAQ,no,no,no,2.55,back to/below prior close 2.55,,no
+DUO,Fangdd Network Group Ltd.,0.57,0.60,0.55,0.55,+3.52,+2.69,6051,83392.0,7.3,21074418,Technology Services,NASDAQ,no,no,no,0.55,back to/below prior close 0.55,,no
+BAOS,Baosheng Media Group Holdings Limited,0.17,0.17,0.17,0.17,+3.49,+3.87,5273,288227.0,1.8,2900547,Commercial Services,NASDAQ,no,no,no,0.17,back to/below prior close 0.17,,no
+NBP,NovaBridge Biosciences,0.94,0.94,0.94,0.91,+3.43,-0.08,150,447495.0,0.0,105165701,Health Technology,NASDAQ,no,yes,no,0.91,back to/below prior close 0.91,,no
+STAK,STAK Inc.,4.23,4.33,3.98,4.09,+3.42,+25.46,115078,6104664.0,1.9,54030327,Industrial Services,NASDAQ,yes,no,no,4.09,back to/below prior close 4.09,,no
+WNW,Meiwu Technology Company Limited,2.12,2.12,2.05,2.05,+3.41,+1.99,2242,27816.0,8.1,27149077,Retail Trade,NASDAQ,no,no,no,2.05,back to/below prior close 2.05,,no
+REVB,"Revelation Biosciences, Inc.",4.25,4.25,4.25,4.11,+3.41,+5.66,419,20133.0,2.1,2573890,Health Technology,NASDAQ,no,no,no,4.11,back to/below prior close 4.11,,no
+PODC,"PodcastOne, Inc.",2.13,2.13,2.13,2.06,+3.40,+6.19,319,244761.0,0.1,62127754,Technology Services,NASDAQ,no,no,no,2.06,back to/below prior close 2.06,,no
+STEX,Streamex Corp.,0.38,0.38,0.37,0.37,+3.37,+8.44,2900,973841.0,0.3,40572054,Finance,NASDAQ,no,no,no,0.37,back to/below prior close 0.37,,no
+RPGL,Republic Power Group Limited,9.50,13.42,9.00,9.19,+3.37,-18.38,21706,142460.0,15.2,4812614,Technology Services,NASDAQ,no,no,no,9.19,back to/below prior close 9.19,,no
+AZTR,Azitra Inc,0.67,0.74,0.64,0.64,+3.37,-12.08,8441,5464887.0,0.2,2472837,Health Technology,AMEX,no,no,no,0.64,back to/below prior close 0.64,,no
+CFR/PB,"Cullen/Frost Bankers, Inc. Depositary Shares, each representing a 1/40th ownership interest in a share of 4.450% non-cumulative perpetual preferred stock, Serie",15.97,15.97,15.97,15.45,+3.37,+0.39,300,12477.0,2.4,9827631837,Finance,NYSE,no,yes,no,15.45,back to/below prior close 15.45,,no
+AVX,Avax One Technology Ltd.,4.30,4.30,4.30,4.16,+3.37,-3.03,492,236412.0,0.2,36796637,Finance,NASDAQ,no,no,no,4.16,back to/below prior close 4.16,,no
+OCS,Oculis Holding AG,8.02,8.02,8.02,7.76,+3.35,+3.60,156,352221.0,0.0,503112740,Commercial Services,NASDAQ,no,yes,no,7.76,back to/below prior close 7.76,,no
+YHGJ,Yunhong Green CTI Ltd.,3.73,3.78,3.73,3.61,+3.32,+6.18,1900,32697.0,5.8,9419370,Producer Manufacturing,NASDAQ,no,no,no,3.61,back to/below prior close 3.61,,no
+IMOS,ChipMOS TECHNOLOGIES INC.,49.53,49.53,48.10,47.95,+3.30,+9.52,310,91069.0,0.3,1700248408,Electronic Technology,NASDAQ,no,yes,no,47.95,back to/below prior close 47.95,,no
+CNTX,Context Therapeutics Inc.,0.21,0.21,0.20,0.20,+3.30,+3.51,9023,1319194.0,0.7,18403399,Health Technology,NASDAQ,no,no,no,0.20,back to/below prior close 0.20,,no
+TURB,"Turbo Energy, S.A.",0.88,0.89,0.85,0.85,+3.26,+4.89,68802,576105.0,11.9,10052790,Technology Services,NASDAQ,no,no,no,0.85,back to/below prior close 0.85,,no
+ZTG,Zenta Group Company Limited,0.47,0.47,0.46,0.46,+3.24,-4.27,1462,6457968.0,0.0,6741233,Technology Services,NASDAQ,no,no,no,0.46,back to/below prior close 0.46,,no
+SLG/PI,SL Green Realty Corporation Preferred Series I,22.05,22.05,22.05,21.36,+3.23,+0.23,2500,12663.0,19.7,3994701658,Finance,NYSE,no,yes,no,21.36,back to/below prior close 21.36,,no
+EPOW,E-Power Inc.,3.52,3.52,3.41,3.41,+3.23,-0.29,1985,27692.0,7.2,6198420,Technology Services,NASDAQ,no,no,no,3.41,back to/below prior close 3.41,,no
+GECC,Great Elm Capital Corp.,5.16,5.16,5.16,5.00,+3.20,+0.00,193,59049.0,0.3,68873002,Miscellaneous,NASDAQ,no,no,no,5.00,back to/below prior close 5.00,,no
+AGPU,Axe Compute Inc.,7.74,7.80,7.58,7.50,+3.20,+11.44,5333,279990.0,1.9,82484117,Health Technology,NASDAQ,no,no,no,7.50,back to/below prior close 7.50,,no
+TKC,Turkcell Iletisim Hizmetleri AS,4.91,4.95,4.84,4.76,+3.15,+4.16,43502,2350936.0,1.9,4188800000,Communications,NYSE,yes,yes,no,4.76,back to/below prior close 4.76,"C6 - Power, LNG and the AI-infrastructure chain",yes
+BSIN,Big Sky Industrial Inc.,1.37,1.37,1.37,1.33,+3.15,+0.00,973,395519.0,0.2,69701218,Energy Minerals,NASDAQ,no,no,no,1.33,back to/below prior close 1.33,,no
+FAC,Factorial Energy Inc.,4.61,4.61,4.61,4.47,+3.13,+5.18,218,279625.0,0.1,479542918,Finance,NASDAQ,no,yes,no,4.47,back to/below prior close 4.47,,no
+IVDA,"Iveda Solutions, Inc.",0.22,0.22,0.22,0.22,+3.12,+7.61,2163,177279.0,1.2,2625912,Electronic Technology,NASDAQ,no,no,no,0.22,back to/below prior close 0.22,,no
+PCOR,"Procore Technologies, Inc.",78.84,78.84,76.56,76.46,+3.11,+1.50,700,3552800.0,0.0,11528414069,Technology Services,NYSE,no,yes,no,76.46,back to/below prior close 76.46,,no
+GLE,Global Engine Group Holding Limited,2.33,2.33,2.26,2.26,+3.10,-14.07,1601,33816.0,4.7,4407000,Technology Services,NASDAQ,no,no,no,2.26,back to/below prior close 2.26,,no
+FATE,"Fate Therapeutics, Inc.",2.00,2.00,1.92,1.94,+3.09,+5.72,1085,1305798.0,0.1,234147596,Health Technology,NASDAQ,no,yes,no,1.94,back to/below prior close 1.94,,no
+FBDT,First Breach Inc.,1.00,1.00,1.00,0.97,+3.09,+12.66,100,326487.0,0.0,48634011,Electronic Technology,NASDAQ,no,no,no,0.97,back to/below prior close 0.97,,no
+GFUZ,General Fusion Group Ltd.,5.68,5.68,5.62,5.51,+3.09,+3.86,2242,176389.0,1.3,257090902,Producer Manufacturing,NASDAQ,no,yes,no,5.51,back to/below prior close 5.51,,no
+APG,APi Group Corporation,43.80,43.80,43.00,42.49,+3.08,+3.96,401,3343709.0,0.0,18300841063,Industrial Services,NYSE,no,yes,no,42.49,back to/below prior close 42.49,,no
+ANNX,"Annexon, Inc.",4.36,4.40,4.36,4.23,+3.07,+0.71,1800,3601606.0,0.0,747486866,Health Technology,NASDAQ,no,yes,no,4.23,back to/below prior close 4.23,,no
+XCUR,"Exicure, Inc.",0.92,0.92,0.92,0.89,+3.03,-6.26,1150,50321.0,2.3,5751308,Health Technology,NASDAQ,no,no,no,0.89,back to/below prior close 0.89,,no
+HMR,Heidmar Maritime Holdings Corp.,1.37,1.37,1.37,1.33,+3.01,+5.56,1865,133693.0,1.4,77217005,Industrial Services,NASDAQ,no,no,no,1.33,back to/below prior close 1.33,,no
+CNXU,Conexeu Sciences Inc.,2.40,2.40,2.30,2.33,+3.00,+3.10,200,335039,0.1,67090439,Health Technology,NASDAQ,no,no,no,2.33,back to/below prior close 2.33,,no
+STI,"Solidion Technology, Inc.",4.28,4.91,4.28,4.16,+3.00,-1.89,22476,121648.0,18.5,34793357,Finance,NASDAQ,no,no,no,4.16,back to/below prior close 4.16,,no
+ENRD,Einride AB,2.05,2.05,2.03,1.99,+3.00,+4.74,350,102455.0,0.3,289400508,Technology Services,NASDAQ,no,yes,no,1.99,back to/below prior close 1.99,,no
+TDG,Transdigm Group Inc.,1235.00,1237.00,1180.15,1218.85,+1.33,+1.82,16701,371644.0,4.5,68174647640,Electronic Technology,NYSE,yes,yes,no,1218.85,back to/below prior close 1218.85,,no
+TCOM,Trip.com Group Limited,44.62,44.80,44.45,44.04,+1.32,-0.74,3464,2941042.0,0.1,28600168296,Consumer Services,NASDAQ,no,yes,no,44.04,back to/below prior close 44.04,,no
+IMVT,"Immunovant, Inc.",35.34,35.34,35.34,35.15,+0.54,+15.13,100,1484245,0.0,7238467876,Health Technology,NASDAQ,no,yes,no,35.15,back to/below prior close 35.15,,no
+AAPL,Apple Inc.,352.32,352.86,349.06,350.69,+0.46,+2.43,205118,45098549.0,0.5,5115662304186,Electronic Technology,NASDAQ,yes,yes,no,350.69,back to/below prior close 350.69,,no
+GOOGL,Alphabet Inc.,289.17,291.60,289.05,288.15,+0.35,+1.18,226030,34562494.0,0.7,3524074500000,Technology Services,NASDAQ,yes,yes,no,288.15,back to/below prior close 288.15,,no
+AMZN,"Amazon.com, Inc.",267.31,268.90,266.23,266.93,+0.14,+2.94,186911,44841317.0,0.4,2879190681774,Retail Trade,NASDAQ,yes,yes,no,266.93,back to/below prior close 266.93,,no
+MSFT,Microsoft Corporation,545.38,546.59,540.50,545.18,+0.04,+2.75,92472,24226456.0,0.4,4048258890783,Technology Services,NASDAQ,yes,yes,no,545.18,back to/below prior close 545.18,,no
+IWM,iShares Russell 2000 Index Fund,282.15,283.59,282.10,282.51,-0.13,+3.23,238303,25580675.0,0.9,,Miscellaneous,AMEX,n/a,n/a,no,282.51,below PM low 282.10,,no
+TLT,iShares 20+ Year Treasury Bond ETF,81.85,82.06,81.81,81.96,-0.13,+0.05,182979,42878571.0,0.4,,Miscellaneous,NASDAQ,n/a,n/a,no,81.96,below PM low 81.81,,no
+HIMS,"Hims & Hers Health, Inc.",22.81,23.05,21.90,22.94,-0.57,-11.77,663814,11553313.0,5.7,5309639523,Health Services,NYSE,yes,yes,no,22.94,below PM low 21.90,,no
+PBR,Petroleo Brasileiro S.A. Petrobras,18.17,18.57,18.16,18.35,-0.98,-0.97,82098,27981234.0,0.3,116643031496,Energy Minerals,NYSE,yes,yes,no,18.35,below PM low 18.16,,no
+NVDA,NVIDIA Corporation,176.77,182.70,176.65,178.67,-1.06,-4.27,5931483,126255639.0,4.7,4305946955872,Electronic Technology,NASDAQ,yes,yes,no,178.67,below PM low 176.65,,no
+BTDR,Bitdeer Technologies Group,6.52,7.04,6.40,6.61,-1.30,+9.89,194605,10349807.0,1.9,1693203386,Technology Services,NASDAQ,yes,yes,no,6.61,below PM low 6.40,,no
+GLD,SPDR Gold Shares,373.40,376.63,372.90,379.53,-1.62,+1.88,244957,8391738.0,2.9,,Miscellaneous,AMEX,n/a,n/a,no,379.53,below PM low 372.90,,no
+SE,Sea Limited,76.62,80.84,69.75,77.96,-1.72,+2.94,1043007,7094460.0,14.7,47242552780,Retail Trade,NYSE,yes,yes,no,77.96,below PM low 69.75,,no
+LEGN,Legend Biotech Corporation,23.70,24.43,23.20,24.29,-2.43,+3.80,6721,2074221.0,0.3,4609139966,Health Technology,NASDAQ,no,yes,no,24.29,below PM low 23.20,,no
+BGMS,"Bio Green Med Solution, Inc.",0.80,0.80,0.77,0.83,-3.01,-3.86,311,27356.0,1.1,5019703,Health Technology,NASDAQ,no,no,no,0.83,below PM low 0.77,,no
+REFR,Research Frontiers Incorporated,0.39,0.39,0.39,0.40,-3.02,+9.70,320,111165,0.3,13992443,Consumer Durables,NASDAQ,no,no,no,0.40,below PM low 0.39,,no
+CRE,Cre8 Enterprise Limited,2.41,2.55,2.41,2.49,-3.02,-0.60,233,207791.0,0.1,4990165,Commercial Services,NASDAQ,no,no,no,2.49,below PM low 2.41,,no
+CGAU,Centerra Gold Inc.,22.34,22.92,22.34,23.04,-3.04,+5.79,1171,1252206.0,0.1,4488633612,Non-Energy Minerals,NYSE,no,yes,no,23.04,below PM low 22.34,,no
+AEHR,Aehr Test Systems,57.99,60.62,57.88,59.81,-3.04,+11.65,43485,2927130.0,1.5,1951029114,Electronic Technology,NASDAQ,yes,yes,no,59.81,below PM low 57.88,,no
+KEEL,Keel Infrastructure Corp.,1.90,1.98,1.90,1.96,-3.05,+4.81,167585,29187445.0,0.6,1210443496,Technology Services,NASDAQ,yes,yes,no,1.96,below PM low 1.90,,no
+FLUX,"Flux Power Holdings, Inc.",0.35,0.36,0.30,0.36,-3.05,+14.24,2015,6067770.0,0.0,7867154,Producer Manufacturing,NASDAQ,no,no,no,0.36,below PM low 0.30,,no
+JSPR,"Jasper Therapeutics, Inc.",15.87,15.87,15.87,16.37,-3.05,-2.91,153,17396.0,0.9,16716872,Health Technology,NASDAQ,no,no,no,16.37,below PM low 15.87,,no
+ASM,Avino Silver & Gold Mines Ltd.,4.76,4.90,4.75,4.91,-3.05,+5.59,24628,3060074.0,0.8,827685235,Non-Energy Minerals,AMEX,yes,yes,no,4.91,below PM low 4.75,,no
+MXL,"MaxLinear, Inc",54.20,56.02,54.06,55.91,-3.06,+13.68,31840,3572951.0,0.9,5070656309,Electronic Technology,NASDAQ,yes,yes,no,55.91,below PM low 54.06,,no
+PPTA,Perpetua Resources Corp.,20.51,20.79,20.49,21.16,-3.06,+8.35,11637,1415232.0,0.8,2646999683,Non-Energy Minerals,NASDAQ,yes,yes,no,21.16,below PM low 20.49,,no
+ASO,"Academy Sports and Outdoors, Inc.",69.00,71.05,67.20,71.18,-3.06,+5.82,4848,1476662.0,0.3,4398826591,Retail Trade,NASDAQ,no,yes,no,71.18,below PM low 67.20,,no
+DTIL,"Precision BioSciences, Inc.",9.38,9.66,9.38,9.68,-3.07,-8.68,5123,362546.0,1.4,268800403,Health Technology,NASDAQ,no,yes,no,9.68,below PM low 9.38,,no
+OPNW,"OpenWorld, Inc.",0.57,0.58,0.54,0.59,-3.07,-6.17,3190,161548.0,2.0,4955410,Technology Services,NASDAQ,no,no,no,0.59,below PM low 0.54,,no
+NUCL,Eagle Nuclear Energy Corp.,3.77,4.00,3.77,3.89,-3.08,-5.58,19941,199073.0,10.0,115268026,Utilities,NASDAQ,no,yes,no,3.89,below PM low 3.77,,no
+AG,First Majestic Silver Corp.,15.38,15.78,15.34,15.87,-3.09,+4.68,90583,10303366.0,0.9,7818463749,Non-Energy Minerals,NYSE,yes,yes,no,15.87,below PM low 15.34,,no
+DC,Dakota Gold Corp.,6.25,6.30,6.24,6.45,-3.10,+8.40,5334,1126380.0,0.5,864625989,Non-Energy Minerals,AMEX,no,yes,no,6.45,below PM low 6.24,,no
+HMY,Harmony Gold Mining Company Limited,17.05,17.56,16.99,17.60,-3.13,+2.50,75119,3390029.0,2.2,10885019346,Non-Energy Minerals,NYSE,yes,yes,no,17.60,below PM low 16.99,,no
+BJDX,"Bluejay Diagnostics, Inc.",2.41,2.41,2.26,2.49,-3.13,+5.96,1095,109960.0,1.0,1712736,Health Technology,NASDAQ,no,no,no,2.49,below PM low 2.26,,no
+GROY,Gold Royalty Corp.,3.09,3.25,3.09,3.19,-3.13,+2.24,6872,1469079.0,0.5,737713177,Non-Energy Minerals,AMEX,no,yes,no,3.19,below PM low 3.09,,no
+JEM,707 Cayman Holdings Limited,2.47,2.50,2.47,2.55,-3.14,+9.44,317,13022.0,2.4,955241,Distribution Services,NASDAQ,no,no,no,2.55,below PM low 2.47,,no
+BZFD,"BuzzFeed, Inc.",0.53,0.56,0.53,0.55,-3.18,+5.82,6240,434298.0,1.4,34752538,Technology Services,NASDAQ,no,no,no,0.55,below PM low 0.53,,no
+ONDS,Ondas Inc,5.78,6.03,5.77,5.97,-3.18,+11.90,923032,48236569.0,1.9,3324948411,Electronic Technology,NASDAQ,yes,yes,no,5.97,below PM low 5.77,,no
+VGZ,Vista Gold Corp,2.73,2.84,2.70,2.82,-3.19,+2.55,2577,2485622.0,0.1,411639188,Non-Energy Minerals,AMEX,no,yes,no,2.82,below PM low 2.70,,no
+CPSH,CPS Technologies Corp.,4.24,4.24,4.24,4.38,-3.20,+14.36,250,242889.0,0.1,81894841,Producer Manufacturing,NASDAQ,no,no,no,4.38,below PM low 4.24,,no
+GNSS,Genasys Inc.,1.36,1.36,1.36,1.41,-3.20,+0.72,168,125708.0,0.1,63986521,Electronic Technology,NASDAQ,no,no,no,1.41,below PM low 1.36,,no
+VLN,Valens Semiconductor Ltd.,1.51,1.55,1.51,1.56,-3.21,+9.86,1826,463404.0,0.4,166395392,Electronic Technology,NYSE,no,yes,no,1.56,below PM low 1.51,,no
+MTNB,"Matinas Biopharma Holdings, Inc.",1.20,1.24,1.20,1.24,-3.23,+4.20,500,114222.0,0.4,872091,Health Technology,AMEX,no,no,no,1.24,below PM low 1.20,,no
+VELO,"Velo3D, Inc.",6.03,6.48,6.03,6.23,-3.23,+11.65,8881,1683251.0,0.5,192974620,Producer Manufacturing,NASDAQ,no,yes,no,6.23,below PM low 6.03,,no
+HIHO,Highway Holdings Limited,0.83,0.83,0.83,0.86,-3.24,+3.34,178,29336.0,0.6,3958179,Producer Manufacturing,NASDAQ,no,no,no,0.86,below PM low 0.83,,no
+CJMB,Callan JMB Inc.,0.29,0.31,0.29,0.30,-3.26,+5.99,11736,7738185.0,0.2,2454420,Transportation,NASDAQ,no,no,no,0.30,below PM low 0.29,,no
+LEU,Centrus Energy Corp.,113.50,117.00,113.29,117.34,-3.27,+12.18,5995,907617.0,0.7,2370617970,Non-Energy Minerals,NYSE,no,yes,no,117.34,below PM low 113.29,,no
+GNRC,Generac Holdings Inc.,182.55,189.00,178.25,188.75,-3.28,+6.77,3129,1230105.0,0.3,11135810244,Producer Manufacturing,NYSE,no,yes,no,188.75,below PM low 178.25,,no
+MRVL,"Marvell Technology, Inc.",149.50,156.40,149.50,154.60,-3.30,+9.49,313029,26848826.0,1.2,135244080000,Electronic Technology,NASDAQ,yes,yes,no,154.60,below PM low 149.50,,no
+ALTG,Alta Equipment Group Inc.,5.84,5.84,5.55,6.04,-3.31,+1.85,20300,206025.0,9.9,196911278,Distribution Services,NYSE,no,yes,no,6.04,below PM low 5.55,,no
+HUIZ,Huize Holding Limited,2.18,2.18,2.18,2.25,-3.33,-1.10,1272,385451.0,0.3,22789202,Finance,NASDAQ,no,no,no,2.25,below PM low 2.18,,no
+ONON,On Holding AG,36.28,39.77,34.41,37.53,-3.33,+0.46,284017,10543491.0,2.7,12441654474,Consumer Non-Durables,NYSE,yes,yes,no,37.53,below PM low 34.41,,no
+AEHL,Antelope Enterprise Holdings Limited,11.60,11.97,11.06,12.00,-3.33,-4.00,5046,1736345.0,0.3,114148698,Producer Manufacturing,NASDAQ,no,yes,no,12.00,below PM low 11.06,,no
+USAS,Americas Gold and Silver Corporation,3.18,3.26,3.14,3.29,-3.34,+6.47,29419,3759472.0,0.8,1075593120,Non-Energy Minerals,AMEX,yes,yes,no,3.29,below PM low 3.14,,no
+OKLO,Oklo Inc.,25.94,27.20,25.94,26.84,-3.35,+13.97,157829,10617560.0,1.5,4992713726,Producer Manufacturing,NYSE,yes,yes,no,26.84,below PM low 25.94,,no
+ALEC,"Alector, Inc.",2.38,2.43,2.30,2.46,-3.35,+7.42,7628,5361102.0,0.1,320456816,Health Technology,NASDAQ,no,yes,no,2.46,below PM low 2.30,,no
+CEVA,"CEVA, Inc.",24.00,25.01,24.00,24.84,-3.38,-8.34,3597,551912.0,0.7,695686937,Electronic Technology,NASDAQ,no,yes,no,24.84,below PM low 24.00,,no
+AU,AngloGold Ashanti PLC,96.00,99.09,95.88,99.37,-3.39,+6.86,11487,2437230.0,0.5,50035483157,Non-Energy Minerals,NYSE,yes,yes,no,99.37,below PM low 95.88,,no
+CDE,"Coeur Mining, Inc.",15.89,16.37,15.89,16.45,-3.40,+6.33,94202,36086960.0,0.3,16810313411,Non-Energy Minerals,NYSE,yes,yes,no,16.45,below PM low 15.89,,no
+BTLN,"Brightline Interactive, Inc.",3.40,3.40,3.40,3.52,-3.41,+0.57,158,22232.0,0.7,9803561,Technology Services,NASDAQ,no,no,no,3.52,below PM low 3.40,,no
+CIFR,Cipher Digital Inc.,6.58,6.88,6.57,6.81,-3.41,+4.05,198478,52376874.0,0.4,2960896853,Technology Services,NASDAQ,yes,yes,no,6.81,below PM low 6.57,,no
+OUST,"Ouster, Inc.",37.25,38.52,37.03,38.57,-3.42,+10.85,39973,2862768.0,1.4,2781372684,Electronic Technology,NASDAQ,yes,yes,no,38.57,below PM low 37.03,,no
+RDW,Redwire Corporation,7.87,8.20,7.87,8.15,-3.44,+13.04,226618,13151674.0,1.7,2037439763,Electronic Technology,NYSE,yes,yes,no,8.15,below PM low 7.87,,no
+FWDI,"Forward Industries, Inc.",5.34,5.47,5.33,5.53,-3.44,-2.98,12761,1695058.0,0.8,412978735,Finance,NASDAQ,yes,yes,no,5.53,below PM low 5.33,,no
+MGN,Megan Holdings Limited,3.37,3.37,3.37,3.49,-3.44,-7.18,100,140394.0,0.1,57370430,Commercial Services,NASDAQ,no,no,no,3.49,below PM low 3.37,,no
+TRON,Tron Inc.,1.40,1.46,1.40,1.45,-3.45,+2.84,823,857812.0,0.1,687890257,Consumer Durables,NASDAQ,no,yes,no,1.45,below PM low 1.40,,no
+MGRX,"Mangoceuticals, Inc.",0.19,0.19,0.19,0.20,-3.45,+1.08,550,533333,0.1,3880097,Health Technology,NASDAQ,no,no,no,0.20,below PM low 0.19,,no
+LASR,"nLIGHT, Inc.",41.70,44.25,41.70,43.21,-3.49,+13.65,4136,1100981.0,0.4,2504544417,Electronic Technology,NASDAQ,no,yes,no,43.21,below PM low 41.70,,no
+ZVRA,"Zevra Therapeutics, Inc.",11.71,12.07,11.71,12.14,-3.54,+4.75,25182,972556.0,2.6,720919101,Health Technology,NASDAQ,yes,yes,no,12.14,below PM low 11.71,,no
+CIGL,Concorde International Group Ltd,0.21,0.24,0.18,0.22,-3.55,+20.02,425233,1491673.0,28.5,50229445,Commercial Services,NASDAQ,yes,no,no,0.22,below PM low 0.18,,no
+RHLD,Resolute Holdings Management,158.00,162.72,158.00,163.85,-3.57,+6.60,1216,128979.0,0.9,1281240692,Commercial Services,NYSE,no,yes,no,163.85,below PM low 158.00,,no
+SRRK,Scholar Rock Holding Corporation,49.70,49.70,46.06,51.55,-3.59,+9.82,30456,1703706.0,1.8,6225663616,Health Technology,NASDAQ,yes,yes,yes,51.55,below PM low 46.06,C1 - Biotech clinical readouts: PepGen's Phase 2 data,yes
+LCID,"Lucid Group, Inc.",3.47,3.56,3.43,3.60,-3.61,+9.42,160829,11409099,1.4,1404924509,Consumer Durables,NASDAQ,yes,yes,no,3.60,below PM low 3.43,,no
+NA,Nano Labs Ltd,1.33,1.33,1.33,1.38,-3.62,+0.73,100,27084.0,0.4,30369163,Electronic Technology,NASDAQ,no,no,no,1.38,below PM low 1.33,,no
+NUAI,"New Era Energy & Digital, Inc.",2.12,2.22,2.12,2.20,-3.64,+6.28,62718,10897591.0,0.6,258041398,Industrial Services,NASDAQ,yes,yes,no,2.20,below PM low 2.12,,no
+ALOY,REalloys Inc.,6.60,7.12,6.60,6.85,-3.65,+11.84,16404,2020720.0,0.8,461353595,Non-Energy Minerals,NASDAQ,yes,yes,no,6.85,below PM low 6.60,,no
+ITRG,Integra Resources Corp.,2.27,2.31,2.26,2.36,-3.68,+5.36,5053,1532546.0,0.3,478053467,Non-Energy Minerals,AMEX,no,yes,no,2.36,below PM low 2.26,,no
+PMI,"Picard Medical, Inc.",8.13,8.13,8.11,8.44,-3.69,-6.22,668,415260.0,0.2,18169509,Health Technology,AMEX,no,no,no,8.44,below PM low 8.11,,no
+RGTI,"Rigetti Computing, Inc.",12.50,12.90,12.45,12.98,-3.70,+10.47,231370,14924433.0,1.6,4314536515,Electronic Technology,NASDAQ,yes,yes,no,12.98,below PM low 12.45,,no
+HAFN,Hafnia Limited,8.85,9.11,8.85,9.19,-3.70,-1.92,43288,2835711.0,1.5,4732327401,Transportation,NYSE,yes,yes,no,9.19,below PM low 8.85,,no
+FLY,Firefly Aerospace Inc.,23.41,24.07,23.33,24.31,-3.70,+17.10,100353,3645788.0,2.8,3895318125,Electronic Technology,NASDAQ,yes,yes,no,24.31,below PM low 23.33,,no
+TONX,TON Strategy Company,2.84,3.09,2.84,2.95,-3.73,+7.66,7927,233574.0,3.4,164613843,Finance,NASDAQ,no,yes,no,2.95,below PM low 2.84,,no
+LITE,Lumentum Holdings Inc.,573.93,605.04,573.93,596.16,-3.73,+10.69,42460,6001895.0,0.7,53475552000,Producer Manufacturing,NASDAQ,yes,yes,no,596.16,below PM low 573.93,,no
+TPET,Trio Petroleum Corp.,1.54,1.55,1.52,1.60,-3.75,+5.26,5479,274398.0,2.0,8194030,Energy Minerals,AMEX,no,no,no,1.60,below PM low 1.52,,no
+DRMA,"Dermata Therapeutics, Inc.",0.74,0.75,0.74,0.77,-3.77,+0.79,727,5876015.0,0.0,3456280,Consumer Non-Durables,NASDAQ,no,no,no,0.77,below PM low 0.74,,no
+MTEK,Maris-Tech Ltd.,0.27,0.30,0.26,0.28,-3.81,+4.81,23233,368060.0,6.3,2616989,Consumer Durables,NASDAQ,no,no,no,0.28,below PM low 0.26,,no
+SEI,"Solaris Energy Infrastructure, Inc.",60.20,63.00,60.20,62.61,-3.85,+8.38,4233,3170670.0,0.1,4906499428,Industrial Services,NYSE,no,yes,no,62.61,below PM low 60.20,,no
+HYMC,Hycroft Mining Holding Corporation,20.45,21.28,20.45,21.27,-3.86,+13.32,7912,2088026.0,0.4,1981994312,Non-Energy Minerals,NASDAQ,no,yes,no,21.27,below PM low 20.45,,no
+VRT,"Vertiv Holdings, LLC",192.68,204.62,192.55,200.47,-3.89,+9.63,88989,7273050.0,1.2,77178579041,Electronic Technology,NYSE,yes,yes,no,200.47,below PM low 192.55,,no
+NRSN,NeuroSense Therapeutics Ltd.,1.79,1.79,1.72,1.86,-3.91,+10.71,295,39218.0,0.8,3278028,Health Technology,NASDAQ,no,no,no,1.86,below PM low 1.72,,no
+BATL,Battalion Oil Corporation,0.72,0.74,0.72,0.75,-3.94,-0.05,147379,3463172.0,4.3,41191598,Energy Minerals,AMEX,yes,no,no,0.75,below PM low 0.72,,no
+ASTS,"AST SpaceMobile, Inc.",35.44,37.50,35.36,36.89,-3.94,+14.10,427257,18292094.0,2.3,14317915461,Communications,NASDAQ,yes,yes,no,36.89,below PM low 35.36,,no
+COHR,Coherent Corp.,216.30,228.30,216.30,225.19,-3.95,+16.79,155944,8575950.0,1.8,44099463477,Electronic Technology,NYSE,yes,yes,no,225.19,below PM low 216.30,,no
+CABR,"Caring Brands, Inc.",0.97,1.03,0.90,1.01,-3.96,-0.98,569,87070.0,0.7,9877665,Commercial Services,NASDAQ,no,no,no,1.01,below PM low 0.90,,no
+OBE,Obsidian Energy Ltd.,8.85,9.21,8.85,9.22,-4.01,-4.65,21686,688058.0,3.2,615209749,Energy Minerals,AMEX,yes,yes,no,9.22,below PM low 8.85,,no
+HYFM,"Hydrofarm Holdings Group, Inc.",0.74,0.75,0.74,0.77,-4.03,-5.68,300,610480.0,0.0,3689815,Producer Manufacturing,NASDAQ,no,no,no,0.77,below PM low 0.74,,no
+CDLR,Cadeler plc,6.87,6.90,6.87,7.16,-4.05,+6.39,847,,,1586456327,Industrial Services,NYSE,no,yes,no,7.16,below PM low 6.87,,no
+BE,Bloom Energy Corporation,186.00,196.11,186.00,193.88,-4.06,+11.91,339875,16563755.0,2.1,57102961842,Electronic Technology,NYSE,yes,yes,no,193.88,below PM low 186.00,,no
+STFS,Star Fashion Culture Holdings Limited,4.93,4.93,4.93,5.14,-4.09,-9.03,100,831528.0,0.0,41229293,Commercial Services,NASDAQ,no,no,no,5.14,below PM low 4.93,,no
+IQMX,IQM Quantum Computers Oyj,7.97,8.17,7.96,8.31,-4.09,+5.86,1133,210011.0,0.5,1521007086,Electronic Technology,NASDAQ,no,yes,no,8.31,below PM low 7.96,,no
+DRK,DarkHorse Technologies Inc.,1.63,1.72,1.63,1.70,-4.12,+8.28,564,144553.0,0.4,16399198,Technology Services,NASDAQ,no,no,no,1.70,below PM low 1.63,,no
+IONQ,"IonQ, Inc.",33.88,35.26,33.88,35.34,-4.13,+8.34,418176,23241939.0,1.8,14359792588,Electronic Technology,NYSE,yes,yes,no,35.34,below PM low 33.88,,no
+CHOW,ChowChow Cloud International Holdings Limited,3.26,3.37,3.16,3.40,-4.13,+2.10,2333,3079607.0,0.1,12000300,Technology Services,AMEX,no,no,no,3.40,below PM low 3.16,,no
+ATEN,"A10 Networks, Inc.",25.94,27.20,25.94,27.06,-4.14,+9.29,865,1092933.0,0.1,1957257221,Technology Services,NYSE,no,yes,no,27.06,below PM low 25.94,,no
+AQB,"AquaBounty Technologies, Inc.",0.92,0.92,0.92,0.96,-4.17,-1.85,188,68733.0,0.3,8850795,Health Technology,NASDAQ,no,no,no,0.96,below PM low 0.92,,no
+DLXY,Delixy Holdings Limited,1.60,1.63,1.60,1.67,-4.19,+18.43,749,577641.0,0.1,5460900,Distribution Services,NASDAQ,no,no,no,1.67,below PM low 1.60,,no
+CIIT,"Tianci International, Inc.",2.24,3.13,2.15,2.34,-4.27,-2.50,2080130,1686326.0,123.4,2770651,Transportation,NASDAQ,yes,no,no,2.34,below PM low 2.15,,no
+CAPS,Capstone Holding Corp.,2.01,2.01,2.01,2.10,-4.29,+10.53,200,156479.0,0.1,1411791,Distribution Services,NASDAQ,no,no,no,2.10,below PM low 2.01,,no
+FMFC,Kandal M Venture Limited,2.66,3.45,2.50,2.78,-4.32,+4.91,90999,120059.0,75.8,1320324,Consumer Non-Durables,NASDAQ,no,no,no,2.78,below PM low 2.50,,no
+FRTT,Fort Technology Inc.,0.42,0.43,0.42,0.44,-4.34,-3.98,2252,7250883.0,0.0,4585444,Process Industries,NASDAQ,no,no,no,0.44,below PM low 0.42,,no
+HPAI,Helport AI Limited,0.35,0.36,0.34,0.37,-4.34,-1.36,51974,6352176.0,0.8,13840607,Technology Services,NASDAQ,no,no,no,0.37,below PM low 0.34,,no
+PRFX,PRF Technologies Ltd.,0.78,0.89,0.78,0.81,-4.35,-6.84,3350,175771.0,1.9,1570857,Health Technology,NASDAQ,no,no,no,0.81,below PM low 0.78,,no
+JBDI,JBDI Holdings Limited,2.41,2.62,2.35,2.52,-4.37,-3.08,2050,3946309.0,0.1,23976635,Distribution Services,NASDAQ,no,no,no,2.52,below PM low 2.35,,no
+LPG,Dorian LPG Ltd.,43.97,45.00,43.96,45.98,-4.37,-1.22,6178,562777.0,1.1,1971299540,Transportation,NYSE,no,yes,no,45.98,below PM low 43.96,,no
+BYSI,"BeyondSpring, Inc.",0.59,0.62,0.59,0.62,-4.38,-1.44,2528,203956.0,1.2,25370928,Health Technology,NASDAQ,no,no,no,0.62,below PM low 0.59,,no
+RDGT,"Ridgetech, Inc.",1.08,1.15,1.04,1.13,-4.42,+13.00,4477,117140.0,3.8,2072744,Distribution Services,NASDAQ,no,no,no,1.13,below PM low 1.04,,no
+NXAT,Nexus Advanced Technologies Inc.,0.45,0.46,0.43,0.47,-4.47,+3.00,840,1005073.0,0.1,1141494,Finance,NASDAQ,no,no,no,0.47,below PM low 0.43,,no
+AXTI,AXT Inc,40.99,43.20,40.94,42.91,-4.47,+10.37,241439,10457059.0,2.3,2807308825,Electronic Technology,NASDAQ,yes,yes,no,42.91,below PM low 40.94,,no
+PFAI,Pinnacle Food Group Limited,2.71,2.75,2.71,2.84,-4.58,+1.43,310,2426043.0,0.0,30764442,Producer Manufacturing,NASDAQ,no,no,no,2.84,below PM low 2.71,,no
+JZXN,"Jiuzi Holdings, Inc.",1.04,1.12,1.04,1.09,-4.59,+2.83,12771,338182.0,3.8,28758856,Retail Trade,NASDAQ,no,no,no,1.09,below PM low 1.04,,no
+ACH,"Accendra Health, Inc.",0.18,0.18,0.17,0.18,-4.62,-9.40,13014,3431637.0,0.4,14156042,Health Technology,NYSE,no,no,no,0.18,below PM low 0.17,,no
+CAT,"Caterpillar, Inc.",571.15,603.14,569.96,598.88,-4.63,+7.21,45681,3374612.0,1.4,274044003103,Producer Manufacturing,NYSE,yes,yes,no,598.88,below PM low 569.96,,no
+EXK,Endeavour Silver Corporation,7.95,8.28,7.95,8.34,-4.68,+6.38,31909,6257441.0,0.5,2468106240,Non-Energy Minerals,NYSE,yes,yes,no,8.34,below PM low 7.95,,no
+ACET,"Adicet Bio, Inc.",2.85,2.85,2.85,2.99,-4.68,-1.97,200,230485.0,0.1,27991014,Health Technology,NASDAQ,no,no,no,2.99,below PM low 2.85,,no
+LBGJ,Li Bang International Corporation Inc.,1.62,1.64,1.62,1.70,-4.71,-2.30,1358,177761.0,0.8,604658,Consumer Durables,NASDAQ,no,no,no,1.70,below PM low 1.62,,no
+AURE,Aurelion Inc.,1.01,1.01,1.01,1.06,-4.72,+15.14,208,231804.0,0.1,36835718,Technology Services,NASDAQ,no,no,no,1.06,below PM low 1.01,,no
+NEXR,Nexera Technologies Ltd,2.02,2.11,2.02,2.12,-4.72,+0.95,9193,1004943.0,0.9,562139,Consumer Durables,NASDAQ,no,no,no,2.12,below PM low 2.02,,no
+TOPS,"TOP Ships, Inc.",3.00,3.50,2.94,3.15,-4.76,+10.92,46721,98206.0,47.6,2831690,Transportation,AMEX,no,no,no,3.15,below PM low 2.94,,no
+GURE,"Gulf Resources, Inc.",3.00,3.00,3.00,3.15,-4.76,+3.28,172,84229.0,0.2,5033141,Process Industries,NASDAQ,no,no,no,3.15,below PM low 3.00,,no
+GDHG,Golden Heaven Group Holdings Ltd.,1.00,1.05,1.00,1.05,-4.77,+5.11,5414,83518.0,6.5,32562069,Industrial Services,NASDAQ,no,no,no,1.05,below PM low 1.00,,no
+IPX,IperionX Limited,15.75,16.55,14.39,16.54,-4.78,+17.30,4533,323096.0,1.4,547858989,Non-Energy Minerals,NASDAQ,no,yes,no,16.54,below PM low 14.39,,no
+WOK,WORK Medical Technology Group LTD,1.19,1.25,1.17,1.25,-4.80,+32.22,6759,89396.0,7.6,2792301,Health Technology,NASDAQ,no,no,no,1.25,below PM low 1.17,,no
+AUUD,Auddia Inc.,0.26,0.29,0.26,0.27,-4.80,-42.75,127378,256370.0,49.7,1518658,Technology Services,NASDAQ,yes,no,no,0.27,below PM low 0.26,,no
+TKLF,"Tokyo Lifestyle Co., Ltd.",1.46,1.53,1.46,1.53,-4.83,+5.80,4410,12366.0,35.7,6493640,Retail Trade,NASDAQ,no,no,no,1.53,below PM low 1.46,,no
+KTTA,Pasithea Therapeutics Corp.,0.52,0.58,0.52,0.54,-4.85,-6.31,2906,1080340.0,0.3,18120655,Health Technology,NASDAQ,no,no,no,0.54,below PM low 0.52,,no
+QLYS,"Qualys, Inc.",192.63,192.63,192.63,202.46,-4.86,+6.33,150,771730.0,0.0,7067069708,Technology Services,NASDAQ,no,yes,no,202.46,below PM low 192.63,,no
+RCON,"Recon Technology, Ltd.",0.83,0.83,0.83,0.88,-4.97,+5.66,622,126905.0,0.5,976786,Distribution Services,NASDAQ,no,no,no,0.88,below PM low 0.83,,no
+AUC,ATIF Holdings Limited,6.29,6.31,6.29,6.62,-4.98,+0.91,2200,20717.0,10.6,77592032,Finance,NASDAQ,no,no,no,6.62,below PM low 6.29,,no
+AAOI,"Applied Optoelectronics, Inc.",49.50,52.32,49.10,52.10,-4.99,+3.93,344060,13067990.0,2.6,4406057248,Electronic Technology,NASDAQ,yes,yes,no,52.10,below PM low 49.10,,no
+MRT,"Marti Technologies, Inc.",2.06,2.11,2.06,2.17,-5.07,+4.83,2559,49030.0,5.2,186749162,Finance,AMEX,no,yes,no,2.17,below PM low 2.06,,no
+FCHL,Fitness Champs Holdings Limited,0.66,0.66,0.66,0.70,-5.08,+8.02,600,2017732.0,0.0,471594,Commercial Services,NASDAQ,no,no,no,0.70,below PM low 0.66,,no
+ICG,Intchains Group Limited,1.40,1.40,1.40,1.48,-5.08,+3.87,100,358101.0,0.0,89550093,Technology Services,NASDAQ,no,no,no,1.48,below PM low 1.40,,no
+CVKD,"Cadrenal Therapeutics, Inc.",1.30,1.37,1.30,1.37,-5.11,+39.80,1882,174340.0,1.1,4408550,Health Technology,NASDAQ,no,no,no,1.37,below PM low 1.30,,no
+MREO,Mereo BioPharma Group plc,0.28,0.30,0.28,0.30,-5.12,+4.28,18561,942397,2.0,47103452,Health Technology,NASDAQ,no,no,no,0.30,below PM low 0.28,,no
+LINE,"Lineage, Inc.",37.61,37.61,37.61,39.66,-5.17,+1.35,100,1071165.0,0.0,9030272376,Finance,NASDAQ,no,yes,no,39.66,below PM low 37.61,,no
+ACHR,Archer Aviation Inc.,4.56,4.70,4.52,4.81,-5.20,+8.33,358931,23317807.0,1.5,3653666423,Electronic Technology,NYSE,yes,yes,no,4.81,below PM low 4.52,,no
+EDBL,Edible Garden AG Incorporated,0.66,0.66,0.66,0.70,-5.21,-1.02,637,150566.0,0.4,721939,Process Industries,NASDAQ,no,no,no,0.70,below PM low 0.66,,no
+SMA,"SmartStop Self Storage REIT, Inc.",37.62,39.05,37.39,39.69,-5.22,+1.98,37888,739263.0,5.1,2197591760,Finance,NYSE,yes,yes,no,39.69,below PM low 37.39,,no
+QUBT,Quantum Computing Inc.,6.50,6.86,6.50,6.86,-5.25,+8.37,94444,7089506.0,1.3,1547170011,Technology Services,NASDAQ,yes,yes,no,6.86,below PM low 6.50,,no
+FABC,"Fabric.AI, Inc.",1.61,2.07,1.61,1.70,-5.29,+6.92,1964,97690.0,2.0,10080738,Producer Manufacturing,NASDAQ,no,no,no,1.70,below PM low 1.61,,no
+FPS,"Forgent Power Solutions, Inc.",21.40,23.00,21.40,22.60,-5.31,+16.02,96137,10428633.0,0.9,6880092891,Producer Manufacturing,NYSE,yes,yes,no,22.60,below PM low 21.40,,no
+RIME,"Algorhythm Holdings, Inc.",0.08,0.09,0.07,0.09,-5.34,+0.23,164648,6253366.0,2.6,1757770,Consumer Services,NASDAQ,yes,no,no,0.09,below PM low 0.07,,no
+DFDV,DeFi Development Corp.,3.25,3.40,3.18,3.43,-5.34,+2.39,102103,1604607.0,6.4,105404297,Finance,NASDAQ,yes,yes,no,3.43,below PM low 3.18,,no
+CRIS,"Curis, Inc.",0.66,0.70,0.65,0.70,-5.38,-23.04,102474,8169168.0,1.3,4341499,Health Technology,NASDAQ,yes,no,no,0.70,below PM low 0.65,,no
+CWST,"Casella Waste Systems, Inc.",93.65,93.65,90.23,99.02,-5.42,+0.82,774,709221.0,0.1,6300136938,Industrial Services,NASDAQ,no,yes,no,99.02,below PM low 90.23,,no
+BAM,Brookfield Asset Management Inc,51.24,54.30,51.08,54.18,-5.43,+2.32,861,3288520,0.0,87636653937,Finance,NYSE,no,yes,no,54.18,below PM low 51.08,,no
+UAMY,United States Antimony Corporation,3.28,3.48,3.28,3.47,-5.48,+23.05,162256,5964757.0,2.7,514204108,Non-Energy Minerals,NYSE,yes,yes,no,3.47,below PM low 3.28,C4 - Critical minerals and rare-earths,yes
+BFRG,"Bullfrog AI Holdings, Inc.",0.52,0.57,0.52,0.55,-5.53,+6.39,1200,2371277.0,0.1,10220158,Technology Services,NASDAQ,no,no,no,0.55,below PM low 0.52,,no
+FURY,Fury Gold Mines Limited,0.49,0.52,0.49,0.52,-5.58,+1.56,17000,246816.0,6.9,98866574,Non-Energy Minerals,AMEX,no,no,no,0.52,below PM low 0.49,,no
+HLIT,Harmonic Inc.,9.66,9.66,9.66,10.23,-5.61,+7.57,2000,1620261.0,0.1,1107483059,Electronic Technology,NASDAQ,no,yes,no,10.23,below PM low 9.66,,no
+QBTS,D-Wave Quantum Inc.,10.82,12.55,10.56,11.47,-5.62,+7.40,2182588,15072489.0,14.5,4242910105,Electronic Technology,NASDAQ,yes,yes,no,11.47,below PM low 10.56,C2 - Earnings prints split the tape: beats with guidance vs misses,yes
+SND,"Smart Sand, Inc.",3.73,3.73,3.73,3.95,-5.63,+10.34,1610,237669.0,0.7,168634870,Non-Energy Minerals,NASDAQ,no,yes,no,3.95,below PM low 3.73,,no
+BGL,Blue Gold Limited,0.11,0.11,0.10,0.12,-5.66,-0.68,17558,1660879.0,1.1,4546188,Non-Energy Minerals,NASDAQ,no,no,no,0.12,below PM low 0.10,,no
+PZG,Paramount Gold Nevada Corp.,1.00,1.00,1.00,1.06,-5.71,+8.80,165,269690.0,0.1,91335466,Non-Energy Minerals,AMEX,no,no,no,1.06,below PM low 1.00,,no
+NIKI,"Niki BioSolutions, Inc.",1.65,1.86,1.65,1.75,-5.71,+10.76,13763,17541.0,78.5,3353607,Health Technology,NASDAQ,no,no,no,1.75,below PM low 1.65,,no
+USAR,"USA Rare Earth, Inc.",8.25,8.70,8.25,8.76,-5.78,+6.50,326462,14034092.0,2.3,3035532164,Producer Manufacturing,NASDAQ,yes,yes,no,8.76,below PM low 8.25,C4 - Critical minerals and rare-earths,yes
+RBNE,Robin Energy Ltd.,0.12,0.13,0.12,0.13,-5.82,-2.36,5515153,35782581.0,15.4,170667,Transportation,NASDAQ,yes,no,no,0.13,below PM low 0.12,,no
+TTD,"The Trade Desk, Inc.",14.05,15.48,13.98,14.93,-5.89,+15.47,3619268,18228474.0,19.9,7018717830,Technology Services,NASDAQ,yes,yes,no,14.93,below PM low 13.98,C2 - Earnings prints split the tape: beats with guidance vs misses,yes
+BDAI,"Biddance AI Systems, Inc.",1.75,1.85,1.75,1.86,-5.91,+6.29,616,740918.0,0.1,8369697,Technology Services,NASDAQ,no,no,no,1.86,below PM low 1.75,,no
+ELPW,Elong Power Holding Limited,1.11,1.19,1.07,1.18,-5.93,+13.46,93719,3759497.0,2.5,550445,Producer Manufacturing,NASDAQ,no,no,no,1.18,below PM low 1.07,,no
+MMA,Mixed Martial Arts Group Limited,0.33,0.33,0.32,0.35,-5.95,+14.89,3410,2060078.0,0.2,7013667,Consumer Services,AMEX,no,no,no,0.35,below PM low 0.32,,no
+IFBD,"Infobird Co., Ltd",1.58,1.58,1.58,1.68,-5.95,+7.01,113,115704.0,0.1,13756804,Technology Services,NASDAQ,no,no,no,1.68,below PM low 1.58,,no
+CDT,CDT Equity Inc.,0.79,0.89,0.79,0.84,-5.96,-35.87,85150,1767204.0,4.8,427962,Health Technology,NASDAQ,no,no,no,0.84,below PM low 0.79,,no
+FBLG,"FibroBiologics, Inc.",0.90,0.90,0.90,0.96,-6.02,-2.24,330,113816.0,0.3,5682564,Health Technology,NASDAQ,no,no,no,0.96,below PM low 0.90,,no
+PMA,PMA Graphene Technology Group Inc.,1.23,1.27,1.23,1.31,-6.11,+4.12,1747,12120.0,14.4,16997250,Industrial Services,NASDAQ,no,no,no,1.31,below PM low 1.23,,no
+PMAX,Powell Max Limited,0.75,0.83,0.69,0.80,-6.13,-7.36,15196,1498031.0,1.0,882232,Communications,NASDAQ,no,no,no,0.80,below PM low 0.69,,no
+CLMT,"Calumet, Inc",33.85,36.10,33.57,36.06,-6.13,-9.03,16703,1590161.0,1.1,3169610318,Energy Minerals,NASDAQ,yes,yes,no,36.06,below PM low 33.57,C3 - Deal break and balance-sheet stress,yes
+XXII,"22nd Century Group, Inc",1.53,1.65,1.52,1.63,-6.13,+5.16,29495,644812.0,4.6,452079,Health Technology,NASDAQ,no,no,no,1.63,below PM low 1.52,,no
+SPRC,SciSparc Ltd.,0.39,0.42,0.37,0.42,-6.14,-0.74,55594,2839341.0,2.0,503412,Health Technology,NASDAQ,no,no,no,0.42,below PM low 0.37,,no
+BDMD,Baird Medical Investment Holdings Ltd,0.11,0.12,0.10,0.11,-6.14,+27.73,3245043,23853956.0,13.6,3597066,Health Technology,NASDAQ,yes,no,no,0.11,below PM low 0.10,,no
+MWG,Multi Ways Holdings Limited,1.45,1.49,1.45,1.55,-6.20,+14.50,499,6747.0,7.4,6550346,Distribution Services,AMEX,no,no,no,1.55,below PM low 1.45,,no
+ABLV,Able View Global Inc.,2.23,2.28,2.22,2.38,-6.30,-12.82,1865,196861.0,0.9,124486792,Retail Trade,NASDAQ,no,yes,no,2.38,below PM low 2.22,,no
+MTRI,"Mentari Therapeutics, Inc.",14.98,15.67,14.98,16.00,-6.37,+2.83,200,4381.0,4.6,8789984,Commercial Services,NASDAQ,no,no,no,16.00,below PM low 14.98,,no
+GRAB,Grab Holdings Limited,3.22,3.44,3.17,3.44,-6.40,+0.88,1683776,71288454.0,2.4,13995699022,Transportation,NASDAQ,yes,yes,no,3.44,below PM low 3.17,,no
+MWYN,"Marwynn Holdings, Inc.",1.30,1.31,1.30,1.39,-6.47,-1.77,677,381229.0,0.2,28070778,Retail Trade,NASDAQ,no,no,no,1.39,below PM low 1.30,,no
+ZNB,Zeta Network Group,1.01,1.09,0.98,1.08,-6.48,-5.26,61407,5203911.0,1.2,2803231,Technology Services,NASDAQ,no,no,no,1.08,below PM low 0.98,,no
+GEV,GE Vernova Inc.,775.00,831.38,772.10,829.34,-6.55,+7.13,65432,3367853.0,1.9,219507282527,Producer Manufacturing,NYSE,yes,yes,no,829.34,below PM low 772.10,"C6 - Power, LNG and the AI-infrastructure chain",yes
+SOS,SOS Limited,0.19,0.19,0.19,0.20,-6.57,+2.26,709,448987.0,0.2,5586666,Technology Services,NYSE,no,no,no,0.20,below PM low 0.19,,no
+BWLP,BW LPG Limited,20.75,21.74,20.75,22.21,-6.57,+1.65,17972,464499.0,3.9,3354477167,Transportation,NYSE,yes,yes,no,22.21,below PM low 20.75,,no
+LPCN,Lipocine Inc.,1.61,1.73,1.60,1.72,-6.58,+9.55,3911,3852411.0,0.1,16613216,Health Technology,NASDAQ,no,no,no,1.72,below PM low 1.60,,no
+VANI,"Vivani Medical, Inc.",1.05,1.11,1.05,1.12,-6.67,+5.14,15289,176687.0,8.7,99246637,Health Technology,NASDAQ,no,no,no,1.12,below PM low 1.05,,no
+WXM,WF International Limited,2.10,2.10,2.10,2.25,-6.67,+7.14,422,49786.0,0.8,9908536,Distribution Services,NASDAQ,no,no,no,2.25,below PM low 2.10,,no
+LIF,"Life360, Inc.",42.01,43.05,40.21,45.02,-6.69,-4.96,20698,706266.0,2.9,3648046729,Technology Services,NASDAQ,yes,yes,no,45.02,below PM low 40.21,C2 - Earnings prints split the tape: beats with guidance vs misses,yes
+TLSI,"TriSalus Life Sciences, Inc.",3.00,3.00,3.00,3.22,-6.83,-0.92,1200,168355.0,0.7,198015728,Health Technology,NASDAQ,no,yes,no,3.22,below PM low 3.00,,no
+PHOE,Phoenix Asia Holdings Limited,16.77,16.77,16.77,18.00,-6.83,-1.59,236,3045.0,7.8,388800004,Industrial Services,NASDAQ,no,yes,no,18.00,below PM low 16.77,,no
+AIOK,AI OKTO CORP.,10.67,11.11,10.61,11.45,-6.83,+13.37,16433,,,49463038,Transportation,NASDAQ,no,no,no,11.45,below PM low 10.61,,no
+XHLD,"TEN Holdings, Inc.",0.81,0.88,0.66,0.87,-6.89,+49.48,259387,11793692.0,2.2,10420375,Commercial Services,NASDAQ,yes,no,no,0.87,below PM low 0.66,,no
+POAS,Phaos Technology Holdings (Cayman) Limited,0.70,0.88,0.70,0.75,-6.89,+3.00,724,75567.0,1.0,1503775,Electronic Technology,AMEX,no,no,no,0.75,below PM low 0.70,,no
+WCT,Wellchange Holdings Company Limited,4.16,4.95,3.29,4.47,-6.96,+92.18,843177,677285.0,124.5,11993678,Technology Services,NASDAQ,yes,no,no,4.47,below PM low 3.29,,no
+IZM,ICZOOM Group Inc.,0.66,0.66,0.66,0.71,-6.97,+4.04,108,774874.0,0.0,1680320,Retail Trade,NASDAQ,no,no,no,0.71,below PM low 0.66,,no
+SUPX,SuperX AI Technology Limited,5.30,5.46,5.30,5.70,-7.02,+16.33,1124,353684.0,0.3,254945450,Commercial Services,NASDAQ,no,yes,no,5.70,below PM low 5.30,,no
+ENSC,"Ensysce Biosciences, Inc.",0.34,0.34,0.34,0.36,-7.08,+9.98,401,494319.0,0.1,6172845,Health Technology,NASDAQ,no,no,no,0.36,below PM low 0.34,,no
+PLUT,Plutus Financial Group Limited,1.04,1.12,1.00,1.12,-7.09,+1.82,2284,106865.0,2.1,17192000,Finance,NASDAQ,no,no,no,1.12,below PM low 1.00,,no
+UK,Ucommune International Ltd,1.50,1.50,1.50,1.61,-7.12,+0.31,100,17852.0,0.6,724689,Finance,NASDAQ,no,no,no,1.61,below PM low 1.50,,no
+RMCF,"Rocky Mountain Chocolate Factory, Inc.",0.76,0.81,0.76,0.82,-7.12,-1.41,242,75567.0,0.3,7790553,Consumer Non-Durables,NASDAQ,no,no,no,0.82,below PM low 0.76,,no
+ETOR,eToro Group Ltd.,21.64,24.25,21.30,23.32,-7.20,+1.52,32629,1054815.0,3.1,1889156163,Technology Services,NASDAQ,yes,yes,no,23.32,below PM low 21.30,,no
+HAO,Haoxi Health Technology Limited,1.93,2.01,1.92,2.08,-7.21,+8.33,1794,75729.0,2.4,659721,Commercial Services,NASDAQ,no,no,no,2.08,below PM low 1.92,,no
+WIMI,WiMi Hologram Cloud Inc.,0.46,0.50,0.46,0.50,-7.24,+3.31,1574,140521.0,1.1,6837862,Technology Services,NASDAQ,no,no,no,0.50,below PM low 0.46,,no
+FBGL,FBS Global Limited,2.11,2.11,2.11,2.27,-7.25,+4.36,492,133876.0,0.4,3071250,Industrial Services,NASDAQ,no,no,no,2.27,below PM low 2.11,,no
+YDKG,Yueda Digital Holding,0.96,1.04,0.88,1.04,-7.26,+8.32,10748,84939.0,12.7,5757154,Technology Services,NASDAQ,no,no,no,1.04,below PM low 0.88,,no
+UCAR,U Power Limited,2.92,2.92,2.92,3.15,-7.30,+6.42,124,9036.0,1.4,2830332,Consumer Durables,NASDAQ,no,no,no,3.15,below PM low 2.92,,no
+SVRN,"SVRN, Inc.",14.50,14.50,14.50,15.65,-7.35,+9.75,100,140182,0.1,14797748,Finance,NASDAQ,no,no,no,15.65,below PM low 14.50,,no
+RLYB,Rallybio Corporation,14.50,14.50,14.50,15.66,-7.41,-0.57,268,24505.0,1.1,83737433,Health Technology,NASDAQ,no,no,no,15.66,below PM low 14.50,,no
+JBS,JBS N.V.,12.14,13.07,11.50,13.12,-7.47,+5.13,61655,6566968.0,0.9,14062794351,Consumer Non-Durables,NYSE,yes,yes,no,13.12,below PM low 11.50,,no
+MUX,McEwen Inc.,15.00,15.95,15.00,16.23,-7.58,+4.84,7773,1151001,0.7,982715558,Non-Energy Minerals,NYSE,no,yes,no,16.23,below PM low 15.00,,no
+RKLB,Rocket Lab Corporation,54.12,55.75,54.03,58.86,-8.05,+10.91,751374,20786523.0,3.6,34065283271,Electronic Technology,NASDAQ,yes,yes,yes,58.86,below PM low 54.03,C5 - Defense autonomy and aerospace,yes
+WYFI,"WhiteFiber, Inc.",8.79,10.00,7.99,9.57,-8.15,+7.77,247559,1874131.0,13.2,392137236,Technology Services,NASDAQ,yes,yes,no,9.57,below PM low 7.99,C2 - Earnings prints split the tape: beats with guidance vs misses,yes
+RAYA,Erayak Power Solution Group Inc.,0.54,0.58,0.52,0.59,-8.29,-30.37,64871,2512712.0,2.6,579041,Producer Manufacturing,NASDAQ,no,no,no,0.59,below PM low 0.52,,no
+GSHD,"Goosehead Insurance, Inc.",50.14,51.89,50.14,54.69,-8.31,-1.56,598,414066.0,0.1,1944649452,Finance,NASDAQ,no,yes,no,54.69,below PM low 50.14,,no
+EDSA,"Edesa Biotech, Inc.",2.28,2.41,2.24,2.49,-8.43,+16.36,227066,2862525.0,7.9,30553524,Health Technology,NASDAQ,yes,no,no,2.49,below PM low 2.24,,no
+FA,First Advantage Corporation,21.50,22.50,21.35,23.52,-8.59,-0.04,12982,1777916.0,0.7,4039646812,Technology Services,NASDAQ,yes,yes,no,23.52,below PM low 21.35,,no
+DETX,"Liberty Defense Holdings, Ltd.",1.13,1.15,1.13,1.24,-8.62,+1.36,500,26060.0,1.9,7144565,Electronic Technology,NASDAQ,no,no,no,1.24,below PM low 1.13,,no
+MODD,"Modular Medical, Inc.",1.69,1.85,1.69,1.85,-8.65,+39.10,2593,136453.0,1.9,13791010,Health Technology,NASDAQ,no,no,no,1.85,below PM low 1.69,,no
+BRLS,Borealis Foods Inc.,0.91,1.03,0.91,1.00,-8.75,+10.38,514,9658.0,5.3,21463306,Technology Services,NASDAQ,no,no,no,1.00,below PM low 0.91,,no
+LABT,Lakewood-Amedex Biotherapeutics Inc.,0.38,0.41,0.37,0.42,-8.85,+8.21,655731,29826526.0,2.2,906169,Health Technology,NASDAQ,yes,no,no,0.42,below PM low 0.37,,no
+ZJYL,JIN MEDICAL INTERNATIONAL LTD.,3.60,3.75,3.19,3.95,-8.86,+17.56,26845,150447.0,17.8,570718417,Health Technology,NASDAQ,yes,yes,no,3.95,below PM low 3.19,C1 - Biotech clinical readouts: PepGen's Phase 2 data,yes
+BDSX,"Biodesix, Inc.",9.42,9.90,9.27,10.34,-8.90,+21.22,371,173571.0,0.2,111876880,Health Services,NASDAQ,no,yes,no,10.34,below PM low 9.27,,no
+CAN,Canaan Inc.,0.18,0.23,0.17,0.20,-8.91,+8.71,2817624,6985718.0,40.3,140266931,Electronic Technology,NASDAQ,yes,yes,no,0.20,below PM low 0.17,,no
+XGN,Exagen Inc.,6.46,7.59,5.99,7.10,-9.01,+22.20,33295,379376.0,8.8,171767384,Health Services,NASDAQ,no,yes,no,7.10,below PM low 5.99,,no
+AVNW,"Aviat Networks, Inc.",17.39,19.53,17.00,19.13,-9.10,+8.32,3315,124532.0,2.7,246758765,Electronic Technology,NASDAQ,no,yes,no,19.13,below PM low 17.00,,no
+MNTK,"Montauk Renewables, Inc.",2.52,2.77,2.52,2.78,-9.35,+2.21,6699,619254.0,1.1,395708367,Process Industries,NASDAQ,no,yes,no,2.78,below PM low 2.52,,no
+COOT,Australian Oilseeds Holdings Limited,0.27,0.27,0.27,0.30,-9.40,+1.05,401,40078.0,1.0,14479404,Finance,NASDAQ,no,no,no,0.30,below PM low 0.27,,no
+GLXG,Galaxy Payroll Group Limited,0.62,0.65,0.62,0.69,-9.62,-3.38,8710,120396.0,7.2,2670093,Commercial Services,NASDAQ,no,no,no,0.69,below PM low 0.62,,no
+SHFS,"SHF Holdings, Inc.",0.02,0.03,0.02,0.02,-9.68,-5.70,29416841,132709056.0,22.2,536269,Finance,NASDAQ,yes,no,no,0.02,below PM low 0.02,,no
+MKDW,MKDWELL Tech Inc.,0.13,0.24,0.07,0.15,-9.71,-10.85,2022775,2928328.0,69.1,4408942,Producer Manufacturing,NASDAQ,yes,no,no,0.15,below PM low 0.07,,no
+RKDA,"Arcadia Biosciences, Inc.",0.15,0.16,0.14,0.17,-9.77,+2.98,72857,3041606.0,2.4,370239,Process Industries,NASDAQ,no,no,no,0.17,below PM low 0.14,,no
+AMCX,AMC Global Media Inc.,8.03,8.87,8.03,8.90,-9.78,+6.08,4151,679502.0,0.6,379040677,Consumer Services,NASDAQ,no,yes,no,8.90,below PM low 8.03,,no
+VIOT,"Viomi Technology Co., Ltd",1.38,1.49,1.38,1.53,-9.80,-1.29,604,298892.0,0.2,101900268,Consumer Durables,NASDAQ,no,yes,no,1.53,below PM low 1.38,,no
+NORD,Nordicus Partners Corporation,3.17,3.17,3.17,3.52,-9.94,+9.49,150,12899.0,1.2,68442518,Process Industries,NASDAQ,no,no,no,3.52,below PM low 3.17,,no
+YMAT,"J-Star Holding Co., Ltd.",1.06,1.21,1.04,1.18,-10.17,+12.38,175166,9532698.0,1.8,4751477,Producer Manufacturing,NASDAQ,yes,no,no,1.18,below PM low 1.04,,no
+POLA,"Polar Power, Inc.",0.32,0.35,0.32,0.36,-10.34,+12.37,1780,798566.0,0.2,1418584,Electronic Technology,NASDAQ,no,no,no,0.36,below PM low 0.32,,no
+YOUL,Youlife Group Inc.,0.12,0.13,0.12,0.13,-10.37,+3.88,7608,495913.0,1.5,11271116,Miscellaneous,NASDAQ,no,no,no,0.13,below PM low 0.12,,no
+ETD,Ethan Allen Interiors Inc.,17.96,18.56,17.96,20.34,-11.70,+1.35,17976,478939.0,3.8,512657831,Consumer Durables,NYSE,yes,yes,no,20.34,below PM low 17.96,,no
+OXBR,Oxbridge Re Holdings Limited,0.79,0.96,0.77,0.90,-11.74,+2.40,1418,20875.0,6.8,7268190,Finance,NASDAQ,no,no,no,0.90,below PM low 0.77,,no
+GFL,"GFL Environmental Inc. Subordinate voting shares, no par value",40.20,40.98,38.01,45.88,-12.38,-0.95,629778,4688430.0,13.4,17410144116,Industrial Services,NYSE,yes,yes,yes,$52.00 rejected take-private bid (Investing.com/Globe and Mail),below PM low 38.01,C3 - Deal break and balance-sheet stress,yes
+AMRO,Amaero Inc.,5.60,5.60,5.25,6.42,-12.77,+17.80,1045,,,168114899,Producer Manufacturing,NASDAQ,no,yes,no,6.42,below PM low 5.25,,no
+EMAT,Evolution Metals & Technologies Corp.,1.90,2.14,1.82,2.18,-12.99,+11.22,76909,1213668.0,6.3,1293502677,Non-Energy Minerals,NASDAQ,yes,yes,no,2.18,below PM low 1.82,C4 - Critical minerals and rare-earths,yes
+IMMP,Immutep Limited,3.30,3.70,3.30,3.80,-13.21,+13.77,612,21865.0,2.8,27271413,Health Technology,NASDAQ,no,no,no,3.80,below PM low 3.30,,no
+PAVS,Paranovus Entertainment Technology Ltd.,2.61,2.94,2.61,3.02,-13.58,+3.07,288,35685.0,0.8,1314001,Health Technology,NASDAQ,no,no,no,3.02,below PM low 2.61,,no
+NWGL,CL Workshop Group Limited,2.44,2.88,2.41,2.84,-14.08,+12.25,322725,2407486.0,13.4,1717043,Non-Energy Minerals,NASDAQ,yes,no,no,2.84,below PM low 2.41,,no
+FNUC,Frontier Nuclear and Minerals Inc.,0.66,0.66,0.66,0.77,-14.44,+9.89,2019,267371.0,0.8,17310157,Process Industries,NASDAQ,no,no,no,0.77,below PM low 0.66,,no
+WGS,GeneDx Holdings Corp.,56.00,58.75,56.00,65.72,-14.79,+5.37,15771,880017,1.8,1951097134,Health Services,NASDAQ,yes,yes,no,65.72,below PM low 56.00,C1 - Biotech clinical readouts: PepGen's Phase 2 data,yes
+ADGM,"Adagio Medical Holdings, Inc",1.63,1.89,1.48,1.92,-15.10,-1.39,15505,112691.0,13.8,22200099,Health Technology,NASDAQ,no,no,no,1.92,below PM low 1.48,,no
+BETR,Better Home & Finance Holding Company,17.09,18.06,17.00,20.15,-15.19,+4.73,1557,1051355.0,0.1,381646142,Finance,NASDAQ,no,yes,no,20.15,below PM low 17.00,,no
+PAAI,"Paradium.AI, Inc.",0.75,0.79,0.71,0.89,-15.22,-0.66,20586,267431.0,7.7,42260487,Technology Services,AMEX,no,no,no,0.89,below PM low 0.71,,no
+FGL,Founder Group Limited,1.16,1.32,1.10,1.39,-16.56,+20.87,255766,620882.0,41.2,971913,Industrial Services,NASDAQ,yes,no,no,1.39,below PM low 1.10,,no
+GRPN,"Groupon, Inc.",13.29,13.61,12.87,16.25,-18.22,+4.91,50020,919851.0,5.4,617239675,Retail Trade,NASDAQ,yes,yes,no,16.25,below PM low 12.87,C3 - Deal break and balance-sheet stress,yes
+GILT,Gilat Satellite Networks Ltd.,6.16,7.52,6.15,7.58,-18.73,+5.42,308426,993607.0,31.0,559641390,Electronic Technology,NASDAQ,yes,yes,yes,7.58,below PM low 6.15,C2 - Earnings prints split the tape: beats with guidance vs misses,yes
+HUHU,HUHUTECH International Group Inc.,0.28,0.71,0.24,0.35,-18.86,-25.26,18732501,1356648.0,1380.8,8395336,Technology Services,NASDAQ,yes,no,no,0.35,below PM low 0.24,,no
+JBI,"Janus International Group, Inc.",3.86,4.69,3.06,4.76,-18.91,+2.59,141724,2024308.0,7.0,649228105,Producer Manufacturing,NYSE,yes,yes,no,4.76,below PM low 3.06,C3 - Deal break and balance-sheet stress,yes
+DBGI,"Digital Brands Group, Inc.",0.16,0.21,0.15,0.19,-19.11,-31.87,1786428,4189114.0,42.6,141240,Consumer Non-Durables,NASDAQ,yes,no,no,0.19,below PM low 0.15,,no
+YFOR,YYForce Inc.,0.08,0.09,0.07,0.10,-19.64,-19.19,2329357,6712558.0,34.7,982010,Commercial Services,NASDAQ,yes,no,no,0.10,below PM low 0.07,,no
+VIVK,"Vivakor, Inc.",0.30,0.70,0.28,0.38,-20.25,-23.56,23428788,10799969.0,216.9,609532,Process Industries,NASDAQ,yes,no,no,0.38,below PM low 0.28,,no
+RUBI,Rubico Inc.,1.46,5.91,1.39,1.84,-20.65,+2.79,8683633,313519.0,2769.7,751565,Transportation,NASDAQ,yes,no,no,1.84,below PM low 1.39,,no
+THRY,"Thryv Holdings, Inc.",1.01,1.05,0.89,1.28,-21.09,+8.94,90855,509064.0,17.8,56824893,Technology Services,NASDAQ,no,no,no,1.28,below PM low 0.89,,no
+DXST,Decent Holding Inc.,0.74,0.94,0.74,0.95,-21.73,-5.35,3322,1575424,0.2,1166622,Industrial Services,NASDAQ,no,no,no,0.95,below PM low 0.74,,no
+APPS,"Digital Turbine, Inc.",8.83,8.98,8.34,11.30,-21.86,+8.86,346587,3006230.0,11.5,1363480363,Technology Services,NASDAQ,yes,yes,yes,11.30,below PM low 8.34,C2 - Earnings prints split the tape: beats with guidance vs misses,yes
+AACG,ATA Creativity Global,0.46,0.78,0.40,0.58,-21.88,-1.68,5239654,19546.0,26806.5,25172547,Commercial Services,NASDAQ,yes,no,no,0.58,below PM low 0.40,,no
+NTCL,NETCLASS TECHNOLOGY INC,0.22,0.27,0.22,0.28,-22.35,+25.27,868798,8537474.0,10.2,604204,Technology Services,NASDAQ,yes,no,no,0.28,below PM low 0.22,,no
+JDZG,JIADE LIMITED,0.19,0.25,0.19,0.25,-23.03,+18.79,2109916,12053340.0,17.5,1058053,Commercial Services,NASDAQ,yes,no,no,0.25,below PM low 0.19,,no
+SEV,Aptera Motors Corp.,1.74,2.30,1.70,2.28,-23.68,+8.06,47867,306086,15.6,88449250,Consumer Durables,NASDAQ,no,no,no,2.28,below PM low 1.70,,no
+PARA,"Parabolic Technologies, Inc.",0.06,0.09,0.06,0.09,-26.86,-23.58,10024699,10412387.0,96.3,57395,Technology Services,NASDAQ,yes,no,no,0.09,below PM low 0.06,,no
+TGE,The Generation Essentials Group,0.26,0.29,0.26,0.36,-27.28,-0.96,303193,8687775.0,3.5,17445986,Finance,NYSE,yes,no,no,0.36,below PM low 0.26,,no
+KPTI,Karyopharm Therapeutics Inc.,0.03,0.03,0.03,0.04,-28.47,-27.14,1832169,11888828.0,15.4,906518,Health Technology,NASDAQ,yes,no,no,0.04,below PM low 0.03,,no
+FF,FutureFuel Corp.,3.59,3.81,3.45,5.07,-29.19,-4.70,75681,420957,18.0,222387018,Process Industries,NYSE,yes,yes,no,5.07,below PM low 3.45,C3 - Deal break and balance-sheet stress,yes
+IHRT,"iHeartMedia, Inc.",1.20,1.28,1.20,1.77,-32.20,+0.00,82389,778207.0,10.6,267539743,Consumer Services,NASDAQ,yes,yes,no,1.77,below PM low 1.20,C3 - Deal break and balance-sheet stress,yes
+MVST,"Microvast Holdings, Inc.",0.27,0.35,0.26,0.62,-57.07,-1.78,2204399,3370345,65.4,205724685,Producer Manufacturing,NASDAQ,yes,yes,yes,0.62,below PM low 0.26,C3 - Deal break and balance-sheet stress,yes
+LICN,Lichen International Limited,0.09,0.32,0.08,0.30,-72.03,-40.24,2061568,54610.0,3775.1,4979682,Commercial Services,NASDAQ,yes,no,no,0.30,below PM low 0.08,,no
