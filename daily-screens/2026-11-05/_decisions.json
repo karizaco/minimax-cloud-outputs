@@ -93,6 +93,7 @@
  },
  "notes": [
   "session lag 1 day(s): the screen metrics describe the 2026-11-04 session, the 'today' columns are the 2026-11-05 settled close",
-  "source health for this run exists only in the prose table in daily-sweep.md; there is no _source-health.json"
+  "source health for this run exists only in the prose table in daily-sweep.md; there is no _source-health.json",
+  "the focus thresholds above are the stylist rule; the screen states the rule it ran in its own title - 'Focus \u2014 \u22652 distinct stylists (cap 12)' (focus.md)"
  ]
 }

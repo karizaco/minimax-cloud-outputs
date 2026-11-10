@@ -120,7 +120,7 @@
 
 **4. Critical minerals disperse downward — the Greenland complex unwinds**
 
-- **CRML −6.60% on 5.2M shares, MP −3.04% ,
+- **CRML −6.60% on 5.2M shares, MP −3.04%,
 - USAR lower.** Yesterday's brief flagged this cluster as sentiment on an *unsigned* Sept 22 US–Denmark–Greenland security pact that grants no permit, offtake or funding.
 - The dispersion continued: **US antimony +11% while rare earths and tungsten fell** — ALM −10.17% on 12.2M shares.
 

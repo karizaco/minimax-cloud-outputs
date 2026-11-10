@@ -113,12 +113,12 @@
   },
   {
    "name": "yesterday-short-list.csv",
-   "bytes": 634,
+   "bytes": 944,
    "role": "machine - the same rows"
   },
   {
    "name": "yesterday-short-list.md",
-   "bytes": 1696,
+   "bytes": 2314,
    "role": "brief - yesterday's Tier-A names against this morning's feed"
   }
  ],

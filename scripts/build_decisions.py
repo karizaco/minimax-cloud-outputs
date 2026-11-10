@@ -18,8 +18,10 @@ the two facts a consumer cannot derive from the brief alone:
   * the session lag - screen metrics describe the previous session while the
     "today" columns are this session's settled close
 
-Every value is copied from `_results.json` or from a file's presence on disk.
-Nothing is inferred about content, and no value is invented.
+Every value is copied from `_results.json`, from a file's presence on disk, or
+from a published screen's own title - the focus screen states its rule in its
+title, and the thresholds alone understate it. Nothing is inferred about
+content, and no value is invented.
 
   python3 scripts/build_decisions.py            # write the records
   python3 scripts/build_decisions.py --check    # report only, write nothing
@@ -83,6 +85,37 @@ def find_list(obj, key):
             if isinstance(inner, list):
                 return inner
     return []
+
+
+def screen_rule(date_dir, name):
+    """The rule a screen published in its own title.
+
+    The thresholds in `_results.json` are not the whole rule. The focus
+    screen is "≥2 stylists OR top-5 velocity" on some dates, and the
+    velocity branch is not a threshold, so a record built from the
+    thresholds alone understates the rule. The screen states its own rule
+    in its title, so the record quotes that and points at the file.
+
+    Returns None when the title carries no rule worth quoting.
+    """
+    path = os.path.join(date_dir, name + ".md")
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, encoding="utf-8") as fh:
+            for _ in range(3):
+                line = fh.readline().strip()
+                if not line:
+                    continue
+                if line.startswith("#"):
+                    title = line.lstrip("#").strip()
+                    low = title.lower()
+                    if "stylist" in low or "velocity" in low:
+                        return title
+                    return None
+    except OSError:
+        return None
+    return None
 
 
 def build(date_dir, date):
@@ -182,6 +215,12 @@ def build(date_dir, date):
         notes.append(
             "source health for this run exists only in the prose table in daily-sweep.md; "
             "there is no _source-health.json"
+        )
+    focus_title = screen_rule(date_dir, "focus")
+    if focus_title:
+        notes.append(
+            "the focus thresholds above are the stylist rule; the screen states the rule "
+            "it ran in its own title - '%s' (focus.md)" % focus_title
         )
 
     return {

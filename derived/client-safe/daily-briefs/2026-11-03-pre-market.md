@@ -127,7 +127,7 @@
 - Matt Murphy stays CEO/Chairman; three Lumentum directors, including CEO Michael Hurlston, join the board.
 - **The spread today:** at **MRVL $176.88**, the implied LITE value is **4.500 x $176.88 = $795.96**.
 - LITE prints **$701.00** — a **-11.9%** discount to deal value, or **$94.96 per share** of spread.
-- **Read:** both legs fell hard on the *day of* the announcement (MRVL -12.7% ,
+- **Read:** both legs fell hard on the *day of* the announcement (MRVL -12.7%,
 - LITE -18.6%), which is unusual for a fixed-ratio deal where one leg should rise and the other fall.
 - The market sold the acquirer for raising $115B of equity-linked consideration and sold the target because a fixed ratio hands LITE holders MRvell's price risk.
 - The spread that persists is **not** arbitrage — deal capital is locked until 1H CY28 —

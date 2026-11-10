@@ -88,7 +88,7 @@ _Data date 2026-10-28 · cron date 2026-10-29 · computed from shibui's daily cl
 - **Ticker**: QQQE · **Close 10-29**: $119.21 · **Chg 10-29**: -0.54%
 
 - The 2026-10-29 session was a rotation, not a sell-off: equal-weight RSP +1.19% and small-cap IWM +0.97% against cap-weight SPY -0.37% and QQQ -1.42%.
-- The S&P 500 closed -0.61% with Health Care +2.4% ,
+- The S&P 500 closed -0.61% with Health Care +2.4%,
 - Real Estate +2.2% and Consumer Staples +1.5% leading and Communication Services -1.9% and Technology -1.2% lagging, after Alphabet and Caterpillar missed on AI capex and with hot CPI keeping a December Fed hike live after the 10-2 hawkish hold on 10-28.
 
 **Source health**

@@ -18,8 +18,8 @@
 - **SpaceX broke the AI narrative open overnight. SPCX +10.1% pre-market at $162.65** (closed $147.79).
 - Q3: revenue **$14.58bn, +161% y/y**, beating $12.7bn consensus; net income **$4.4bn** vs a $1.05bn loss a year ago; adjusted EBITDA $8.8bn vs $6.6bn expected.
 - The detail that matters: **AI capex $16.44bn vs $16.9bn expected — spending came in *below* forecast.**
-- **That single print is lifting the whole AI complex.** SMCI **+13.6%** , SOXL +6.2% , NBIS +4.2% , IREN +4.2% , CIFR +4.0% , WULF +4.0% , APLD +3.7% ,
-- CRWV +3.3% , MXL +4.8% , WOLF +3.6% , INTC +3.0% , MU +2.9% , AMD +2.6% , NVDA +1.9% , TSLA +2.5%. NQ futures +0.70% vs ES +0.23%.
+- **That single print is lifting the whole AI complex.** SMCI **+13.6%**, SOXL +6.2%, NBIS +4.2%, IREN +4.2%, CIFR +4.0%, WULF +4.0%, APLD +3.7%, CRWV +3.3%, MXL +4.8%, WOLF +3.6%,
+- INTC +3.0%, MU +2.9%, AMD +2.6%, NVDA +1.9%, TSLA +2.5%. NQ futures +0.70% vs ES +0.23%.
 - **But the de-rating leaders are still broken, and that is the honest signal.** CRWV +3.3% is off a $61.12 base and remains ~57% below its $141.79 52-week high.
 - NFLX is the counter-example: **−6.0% pre-market at $64.59** after beating on EPS ($0.87 vs $0.82) but **cutting 2026 ad revenue to ~$2.7bn from ~$3.0bn**.
 - A beat-and-raise on the line item the market was watching still produced a 6% drop.

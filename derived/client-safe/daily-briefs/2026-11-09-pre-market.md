@@ -7,6 +7,10 @@
 
 - **Corrected 2026-11-10.** The market-cap gate was re-verified against two independent sources after publication. 106 of the 1,085 screened names carried a stale market cap;
 - the one that changed a published table is **NWGL**, which moved out of the headline gap table into the thin-tape block. All published prices and gaps are unchanged. See §10.
+- **Amended 2026-11-10.** Two claims in §1 and §2 did not survive a re-check against the companion CSV and are corrected here.
+- §1 still said every one of the 35 metals names was at or above +3.00% — **UEC printed +2.60%** —
+- and it listed **GFR +38.39%** inside the +3.0% to +4.7% band.
+- §2 called GFR "the largest name left in the theme"; at $1.35B it is one of the smallest, against BHP at $201B. No published price, gap or table row changed.
 
 **Bottom line**
 
@@ -98,15 +102,14 @@
 - Huang told staff he was "unfaithful" to his wife. The board says it has no reason to believe secrets or national security were compromised and expresses confidence in him;
 - the pre-market has taken roughly $250B of market value out anyway.
 - Around it, the complex rotates: **AMD +3.40%**, **ASML +3.79%**, **UMC +5.88%**, ASE Technology **ASX +5.12%**, **AVGO +2.77%**, **AMZN +3.02%**, **GOOGL +2.90%**, **MSFT +2.08%**.
-- **Metals are the broadest bid on the board (35 names, every one ≥ +3.00% ,
-- none down).** Spot gold is +1.25% near $4,122/oz, silver +1.6% past $53, copper +1.5% off a four-month low, and the soft dollar plus a falling oil are doing the work.
-- The liquid expression moves a uniform +3.0% to +4.7%: **GFR +38.39%**, TECK +4.63%, NAK +4.39%, FCX +3.98%, AG +3.76%, HL +3.46%, AU +3.24%, KGC +3.01%.
+- **Metals are the broadest bid on the board (35 names, all up and not one down).** Spot gold is +1.25% near $4,122/oz, silver +1.6% past $53, copper +1.5% off a four-month low, and the soft dollar plus a falling oil are doing the work.
+- The liquid expression moves a uniform +3.0% to +4.7%: TECK +4.63%, NAK +4.39%, FCX +3.98%, AG +3.76%, HL +3.46%, AU +3.24%, KGC +3.01%, BHP +3.02%.
 - The screen's #1 name, NWGL +50.99%, is **not** a metals bid — it is a corporate-action artefact (§3).
 - **Oil breaks lower and travel re-rates.** WTI is **-3.47%** at 87.68 after Trump said fresh strikes on Iran are "highly unlikely" if the talks progress;
 - Brent fell ~16% last week, its steepest weekly drop since the pandemic. Fuel-sensitive names bid: **UAL +3.99%**, **AAL +3.79%**, **ALK +3.75%**, **DAL +3.67%**, **JBLU +3.28%**, CCL +3.31%.
 - **Biotech splits hard in both directions.** Trial and print winners: **DCTH +19.83%** (Q3 at 8:30 ET), **IMVT +11.37%** (IMVT-1402 Phase 2 primary endpoint met), **VIR +8.11%** (VRDN-008 Phase 1).
 - Losers: **ZURA -68.71%** (Phase 2 TibuSHIELD missed its primary endpoint), **IONS -21.39%** (Q3 print), **IBRX -13.84%** (Q3 revenue $48.7M missed Q2's $50.7M even as the QUILT-2.005 trial won).
-- **European banks lead their index.** **SAN +4.22%** , **DB +3.65%** , **BBVA +3.63%** , **PUK +3.55%** , **BBD +3.54%** , **ING +3.17%** ,
+- **European banks lead their index.** **SAN +4.22%**, **DB +3.65%**, **BBVA +3.63%**, **PUK +3.55%**, **BBD +3.54%**, **ING +3.17%**,
 - with the Euro STOXX banks index +1.6% on the Credit Agricole/Banco BPM merger and UniCredit's 24% jump in third-quarter earnings.
 - *Watchlist:* of the eight published names, only **NVDA -5.45%** sits in a theme — the governance overhang. MSFT +2.08%, GOOGL +2.90%, AMZN +3.02% ride the AI complex;
 - IWM +1.30% and GLD +1.53% ride the relief rally and the metals bid; AAPL +0.38% and TLT +0.32% are flat with no theme today.
@@ -158,7 +161,7 @@
 - All 35 Non-Energy Minerals names in the screen that cleared the liquidity gate are up and **not one is down**, and the liquid expression moves a uniform +3.0% to +4.7%:
 - TECK +4.63%, NAK +4.39%, FCX +3.98%, AG +3.76%, HL +3.46%, AU +3.24%, KGC +3.01%, BHP +3.02%. That uniformity is what a sector bid looks like.
 - The two biggest movers in the sector are **not** part of it: NWGL +50.99% is a corporate-action artefact (§3), and **GFR +38.39%** —
-- the largest name left in the theme, at a $1.35B market cap — has no sourced single-name catalyst.
+- the largest mover left in the theme, and a $1.35B-cap name — has no sourced single-name catalyst.
 - Treat the cluster as beta to the metal prices, not as a set of discoveries.
 
 - SP Angel, "Today's Market View, Monday 9th November 2026" — https://www.share-talk.com/sp-angel-todays-market-view-monday-9th-november-2026/
@@ -257,7 +260,7 @@
 **C5 - European banks: a merger and a guidance raise**
 
 - **Leader: SAN +4.22%.** European banks led the session for two concrete reasons, not a mood.
-- Credit Agricole proposed merging its Italian subsidiary with Banco BPM to create the country's third-largest bank (Banco BPM +9.4–10% ,
+- Credit Agricole proposed merging its Italian subsidiary with Banco BPM to create the country's third-largest bank (Banco BPM +9.4–10%,
 - Credit Agricole -1%), and UniCredit reported a **24% year-on-year rise in third-quarter earnings** with a raised full-year profit target, taking it +5.2% as it shapes strategy at Commerzbank (+2.5–2.8%).
 - The Euro STOXX banking index gained 1.6%, and the STOXX 600 was up 0.5% at 0926 GMT. Money markets are now pricing a **February ECB hike** of at least 25bp.
 
@@ -328,7 +331,7 @@ These passed liquidity but fail the quality floor, so they never top a headline 
 - **Ticker**: LABT · **Company**: Lakewood-Amedex Biotherapeutics Inc. · **Prior close**: 0.39 · **Pre-market last**: 0.40 (+4 more column(s) in the artifact table)
 - **Ticker**: BDMD · **Company**: Baird Medical Investment Holdings Ltd · **Prior close**: 0.09 · **Pre-market last**: 0.09 (+4 more column(s) in the artifact table)
 
-- **The most important row in this block is NWGL +50.99% ,
+- **The most important row in this block is NWGL +50.99%,
 - and it is not a metals bid.** CL Workshop Group effected a **one-for-80 reverse split of its American Depositary Shares** and changed the ADS ratio from 1 ADS = 8 ordinary shares to 1 ADS = **640** ordinary shares, effective **Friday 2026-11-06** (Nasdaq Equity Corporate Actions Alert #2026-787, new CUSIP 63903R205).
 - The screen kept the pre-split share count and paired it with the post-split price, reporting a $143M market cap for a company whose real cap is in the **$0.5M–$1.9M** range —
 - so it fails Gate B on every source, and it sits here rather than at the top of §3.

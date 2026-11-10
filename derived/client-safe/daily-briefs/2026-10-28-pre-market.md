@@ -49,7 +49,7 @@
 - **Corroborator**: GEHC · **Pre-mkt**: +8.79% · **Role in the cluster**: see Cluster 4 — raised guidance
 - **Corroborator**: EAT · **Pre-mkt**: +5.66% · **Role in the cluster**: see Cluster 4 — restaurant earnings, not AI
 
-- *Why it leads:* XLI at +1.02% is the only sector up more than 0.5% , and the money is going to **whoever sells the power and the cooling** ,
+- *Why it leads:* XLI at +1.02% is the only sector up more than 0.5%, and the money is going to **whoever sells the power and the cooling**,
 - not to the chip layer. Vertiv's order book, not its EPS, is the story — orders more than doubling is a forward demand signal for the entire electrical supply chain.
 
 **Cluster 2 — AI hardware, semiconductors & networking**
@@ -69,7 +69,7 @@
 **Cluster 3 — Memory / HBM supercycle and the Korea complex**
 
 - **Leader: SKHY +7.37% ($156.07).** SK hynix Q3: revenue **104.61trn won, +327.9% YoY — the first quarter above 100trn won**; operating profit **83.3trn won, +632% YoY**, an 80% operating margin.
-- It announced **~100trn won of 2026 shareholder returns** (≥30trn dividends + 60trn buybacks), long-term agreements with **14 customers covering >50% of 2027–28 capacity** ,
+- It announced **~100trn won of 2026 shareholder returns** (≥30trn dividends + 60trn buybacks), long-term agreements with **14 customers covering >50% of 2027–28 capacity**,
 - and said DRAM/HBM supply is effectively **sold out through 2029** with shortages expected through 2030.
 - Net profit fell 58% QoQ on 11.6trn won of FX losses and 22.9trn of investment valuation losses — the won is the offset, not the thesis.
 
@@ -310,7 +310,7 @@ The genuine outsized activity. Note the shape: **a crypto/AI-datacenter-miner co
 - **Instrument**: 13-wk bill (^IRX) · **Last**: 4.043 · **Prior settle**: 4.040 · **%**: +0.3 bp
 
 - **WTI at $101.71, +1.81%, is the one overnight item that deserves attention** and it is not an AI story.
-- It is why XLE leads the non-tech sectors, why tankers are bid (ECO +4.86% ,
+- It is why XLE leads the non-tech sectors, why tankers are bid (ECO +4.86%,
 - FRO +4.29%) while the refiner fell (DINO -8.81% on 27 Oct, +3.45% pre-market), and it is an inflation input into a 2:00 PM FOMC.
 - Rates are not moving — the 10-year is flat at 4.997 — so the market has not yet priced a crude-driven inflation response.
 - That is a live risk to the Fed reaction function.

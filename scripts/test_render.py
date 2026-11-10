@@ -25,7 +25,8 @@ import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import _joinlib as J  # noqa: E402
-from render_client_safe import render, table_to_bullets, glyph_to_words  # noqa: E402
+from render_client_safe import (  # noqa: E402
+    render, table_to_bullets, glyph_to_words, split_clauses)
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -160,6 +161,67 @@ class Render(unittest.TestCase):
         out = render("---\ndate: 2026-11-06\ncron: x\nsession: 99\nstatus: ok\n---\n\nbody\n")
         self.assertIn("date: 2026-11-06", out)
         self.assertNotIn("session: 99", out)
+
+
+class ClauseSplit(unittest.TestCase):
+    """A long sentence is broken at its clause boundaries.
+
+    The delimiter stays with the clause it closes, but a comma and an em-dash
+    are different animals: the comma sits tight against the word it follows,
+    the em-dash stands alone and wants a space in front of it.
+    """
+
+    LONG = ("Metals are the broadest bid on the board (35 names, every one at "
+            "or above +3.00%, none down). Spot gold is +1.25% near 4,122/oz, "
+            "silver +1.6% past 53, copper +1.5% off a four-month low, and the "
+            "soft dollar plus a falling oil are doing the work.")
+
+    def test_a_comma_keeps_its_place_when_the_sentence_is_split(self):
+        """The published defect: "+3.00% ," with a space before the comma.
+
+        The splitter re-attached the delimiter it had consumed with a space in
+        front of it, which for a comma reads as a typo in 392 published
+        places across the client-safe twins.
+        """
+        out = split_clauses(self.LONG)
+        self.assertNotIn(" ,", " ".join(out),
+                         "a comma was pushed away from its word: %r" % (out,))
+        self.assertTrue(any(p.endswith(",") for p in out),
+                        "the comma was dropped with the split: %r" % (out,))
+
+    def test_an_em_dash_still_keeps_its_space(self):
+        """The other branch of the same rule, unchanged.
+
+        The dash closes the clause it follows, so it ends that clause with a
+        space in front of it.
+        """
+        out = split_clauses(
+            "The setup is a reclaim of 181.00 — a narrow tape on a name that "
+            "never had volume — and the invalidation sits below the low.")
+        self.assertTrue(any(p.endswith(" —") for p in out),
+                        "the em-dash lost its place: %r" % (out,))
+        self.assertFalse(any(p.startswith(" —") for p in out),
+                         "the em-dash was pushed onto the next clause: %r" % (out,))
+
+
+    def test_a_multi_paragraph_quote_does_not_swallow_its_marker(self):
+        """A `>` separator inside a quote must not leak into the text.
+
+        The prose branch joined the separator and the paragraph after it, so
+        the twin published "- > > **Amended 2026-11-10.**".
+        """
+        text = ("> **Corrected 2026-11-10.** The gate was re-verified against "
+                "two independent sources after publication.\n"
+                ">\n"
+                "> **Amended 2026-11-10.** Two claims did not survive the re-check.\n")
+        out = render(text)
+        self.assertNotIn("> >", out, "the quote separator leaked into the text")
+        self.assertIn("**Amended 2026-11-10.**", out)
+
+    def test_a_blockquote_still_becomes_a_bullet(self):
+        """The normal single-paragraph quote is unaffected."""
+        out = render("> **Corrected.** The gate was re-verified.\n")
+        self.assertIn("- **Corrected.**", out)
 
 
 class RealArtifact(unittest.TestCase):

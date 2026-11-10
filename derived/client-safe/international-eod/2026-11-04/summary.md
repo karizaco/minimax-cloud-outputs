@@ -210,7 +210,7 @@ Largest mover per region among liquid names:
 - The file keeps the official Xetra print, but for a handful of German names the off-exchange lines diverge by more than 0.3% and are not interchangeable with the file's price.
 - **The Tokyo session was violent and partially recovered.** The Nikkei opened at 62,973.16, fell almost 5% intraday to 60,835.36 by the 11:30 close and then rallied back to finish 62,188.63, a three-month low and its third consecutive decline.
 - Japan's own 14 movers list therefore mixes genuine repricing with a violent reversal, and the day's close understates the intraday stress.
-- **Taiwan's limit moves are genuine prints.** Syntec Technology closed at exactly −9.97% and Systex at −9.90% , both limit-down, in a session where most AI-hardware names rebounded (ASRock +9.91% ,
+- **Taiwan's limit moves are genuine prints.** Syntec Technology closed at exactly −9.97% and Systex at −9.90%, both limit-down, in a session where most AI-hardware names rebounded (ASRock +9.91%,
 - Horng Terng limit-up at NT$1,235). A move past −10% would have meant an adjusted limit reference price; these are inside the band.
 - **The Stoxx 600 level is quoted two ways.** The Stoxx administrator's 17:00 GMT final value is 657.40 (+1.82%) per the exchange-aggregated wrap and Yahoo; Anadolu Agency quotes 658.02 (+1.91%).
 - The file uses 657.40 and does not publish both.

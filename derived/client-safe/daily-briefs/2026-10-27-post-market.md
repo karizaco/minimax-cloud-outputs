@@ -11,7 +11,7 @@
 
 - **No watchlist exists in this sandbox.** `research/watchlist.yaml` (skill Step 1/Step 4) is absent — same condition as the sibling pre-market cron.
 - The skill's *Watchlist EOD review* section is therefore **omitted rather than fabricated**; no default watchlist was created. This is a missing-input condition, not a data failure.
-- **The MCP finance tier does not exist in this Cloud session.** The catalog holds 15 tools across two providers (`matrix` , `email_workbench_credentials`), `partial=false` ,
+- **The MCP finance tier does not exist in this Cloud session.** The catalog holds 15 tools across two providers (`matrix`, `email_workbench_credentials`), `partial=false`,
 - no provider failures, and a keyword search for yahoo/tradingview/stock/screener returned **0 hits**.
 - No MCP finance call was ever attempted, so there are **zero MCP call failures**; the run executed on the public-HTTP stack (one fallback, terminated there).
 - **Fire time is ~6 hours late relative to the intended slot.** The upside:
@@ -218,7 +218,7 @@ Also: **INTA −8.91%, DINO −8.81%, PBF −8.59%, AIT −8.35%, GWRE −8.05%,
 - **Ticker**: ICHR · **Name**: Ichor Holdings · **Close**: 40.75 · **AH print**: 43.31 (+5 more column(s) in the artifact table)
 - **Ticker**: KIDS · **Name**: OrthoPediatrics · **Close**: 23.82 · **AH print**: 25.50 (+5 more column(s) in the artifact table)
 
-- **Three AH prints where the two feeds disagree, flagged rather than averaged:** PRLD (TV +6.94% @16:22 vs CNBC +9.54% @16:22, 15.9k shares), WNEB (TV +9.54% vs CNBC +10.26% ,
+- **Three AH prints where the two feeds disagree, flagged rather than averaged:** PRLD (TV +6.94% @16:22 vs CNBC +9.54% @16:22, 15.9k shares), WNEB (TV +9.54% vs CNBC +10.26%,
 - **1,301 shares**), ICHR (TV +5.57% vs CNBC +6.29%). SUN (+5.57% @16:20) rests on **619 shares** and is not a real signal.
 - Where the two feeds differ, **CNBC's later timestamped print is published**.
 

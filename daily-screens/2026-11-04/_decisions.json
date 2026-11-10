@@ -43,6 +43,7 @@
   "Tier-A was truncated by its cap: 13 names met the tier rule, 8 were published, 0 were dropped. The dropped names are listed under dropped.tier_a.",
   "this run's _results.json does not carry the thresholds, so the rule that produced each tier is not recorded here",
   "this run's _results.json does not carry the per-branch coverage assertion",
-  "source health for this run exists only in the prose table in daily-sweep.md; there is no _source-health.json"
+  "source health for this run exists only in the prose table in daily-sweep.md; there is no _source-health.json",
+  "the focus thresholds above are the stylist rule; the screen states the rule it ran in its own title - 'Focus \u2014 \u22652 distinct stylists (cap 12)' (focus.md)"
  ]
 }

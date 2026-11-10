@@ -10,12 +10,13 @@
 > any that were there were past the 3% line the morning brief treats as a gap.
 >
 > `gapping` means the morning print was at least 3% either way. `under the line`
-> means the name was in the feed but the print was smaller than that.
-> `not in the feed` means neither the morning screen nor the pre-open tape
-> had the name. It does not mean the name was flat. It means nobody quoted it.
+> means the name was in a feed but the print was smaller than that.
+> `not in the feed` means none of the morning feeds quoted the name. It does
+> not mean the name was flat. It means nobody quoted it.
 
-Prior board: `2026-11-04`. Morning quote from the morning brief's own full screen (`ntrt/2026-11-05.csv`).
+Prior board: `2026-11-04`.
 Ticker column: symbol.
+Feeds consulted: the pre-open tape (`preopen-feed/2026-11-05-0950.jsonl` and 1 earlier checkpoint(s)); the gap brief's 3% band (`ntrt/2026-11-05.csv`); the brief's own screen (`daily-briefs/2026-11-05-pre-market.csv`).
 
 | Status | Names |
 |---|---|
@@ -23,17 +24,20 @@ Ticker column: symbol.
 | under the line | 0 |
 | not in the feed | 6 |
 
-| Ticker | Yesterday's move | This morning | Status |
-|---|---|---|---|
-| KVYO | +0.14% | -4.17% | gapping |
-| LSCC | +1.26% | -4.99% | gapping |
-| CDNA | -2.95% | — | not in the feed |
-| FISV | +6.25% | — | not in the feed |
-| FTAI | -10.54% | — | not in the feed |
-| GKOS | +5.86% | — | not in the feed |
-| GPK | +3.89% | — | not in the feed |
-| MRNA | +13.11% | — | not in the feed |
+| Ticker | Yesterday's move | This morning | Status | Feed |
+|---|---|---|---|---|
+| KVYO | +0.14% | -4.17% | gapping | the pre-open tape (`preopen-feed/2026-11-05-0950.jsonl` and 1 earlier checkpoint(s)) |
+| LSCC | +1.26% | -4.99% | gapping | the pre-open tape (`preopen-feed/2026-11-05-0950.jsonl` and 1 earlier checkpoint(s)) |
+| CDNA | -2.95% | — | not in the feed | no feed quoted it |
+| FISV | +6.25% | — | not in the feed | no feed quoted it |
+| FTAI | -10.54% | — | not in the feed | no feed quoted it |
+| GKOS | +5.86% | — | not in the feed | no feed quoted it |
+| GPK | +3.89% | — | not in the feed | no feed quoted it |
+| MRNA | +13.11% | — | not in the feed | no feed quoted it |
 
 A blank yesterday move means that board did not publish one. A blank morning
 print means the name was not in the feed, which is the status, not a zero.
+The feed column names where each print came from; a name quoted by more than
+one feed is shown from the LATEST feed that quoted it, because "was it
+gapping?" is answered by the most recent print.
 

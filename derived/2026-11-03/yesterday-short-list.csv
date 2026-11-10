@@ -1,12 +1,12 @@
-ticker,stylists,yesterday_change,morning_pct,status
-CDNA,3,,,not in the feed
-HTFL,3,,,not in the feed
-CAI,3,,,not in the feed
-QLYS,3,,,not in the feed
-PURR,3,,3.45,gapping
-MRNA,3,,,not in the feed
-NOW,3,,,not in the feed
-CVI,3,,-4.86,gapping
-KOD,3,,,not in the feed
-ABCL,3,,,not in the feed
-MTZ,3,,3.0,gapping
+ticker,stylists,yesterday_change,morning_pct,status,source
+CDNA,3,,,not in the feed,no feed quoted it
+HTFL,3,,0.39,under the line,the brief's own screen (`daily-briefs/2026-11-03-pre-market.csv`)
+CAI,3,,0.78,under the line,the brief's own screen (`daily-briefs/2026-11-03-pre-market.csv`)
+QLYS,3,,-0.65,under the line,the brief's own screen (`daily-briefs/2026-11-03-pre-market.csv`)
+PURR,3,,3.45,gapping,the gap brief's 3% band (`ntrt/2026-11-03.csv`)
+MRNA,3,,,not in the feed,no feed quoted it
+NOW,3,,,not in the feed,no feed quoted it
+CVI,3,,-4.86,gapping,the gap brief's 3% band (`ntrt/2026-11-03.csv`)
+KOD,3,,,not in the feed,no feed quoted it
+ABCL,3,,0.54,under the line,the brief's own screen (`daily-briefs/2026-11-03-pre-market.csv`)
+MTZ,3,,3.0,gapping,the gap brief's 3% band (`ntrt/2026-11-03.csv`)

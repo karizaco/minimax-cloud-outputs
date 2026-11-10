@@ -415,8 +415,8 @@
 - **Overnight prints (Wednesday PM) —
 - the cause of today's pre-market:** **LRCX −8.5%** (record revenue, in-line guide), **IBM −5.9%** (beat + raised FCF, reversed from +11%), **TSLA −4.9%** (beat, capex cut to ~$20bn, op profit −56% y/y), **META −0.7%** (beat, capex raised to $135–145bn, $25bn privacy fine, 2-for-1 split + Class C announced).
 - Also: Las Vegas Sands fell on disappointing Q3.
-- **Today is the week's heaviest slate (~130–145 companies).** **Before the open:** **PG** (~$1.89–1.93), **UNP** (~$3.47), **LMT** (~$7.52), **SPOT** (~$2.81), **CMCSA** (~$0.99–1.01), **HON** (~$2.16), **AAL** , **DOW** , **NDAQ** ,
-- **PCG** , **DGX** , **CBRE** , **ROP** , **NSC** (~$3.47), **VLO** (~$18.52–21.18), **BX** (~$1.26–1.40). Consensus also lists **MA** (~$5.30), **MCD** (~$3.42), **INTC** (~$0.39), **GILD** (~$2.18), **SHOP** (~$0.47).
+- **Today is the week's heaviest slate (~130–145 companies).** **Before the open:** **PG** (~$1.89–1.93), **UNP** (~$3.47), **LMT** (~$7.52), **SPOT** (~$2.81), **CMCSA** (~$0.99–1.01), **HON** (~$2.16), **AAL**, **DOW**, **NDAQ**, **PCG**, **DGX**, **CBRE**, **ROP**,
+- **NSC** (~$3.47), **VLO** (~$18.52–21.18), **BX** (~$1.26–1.40). Consensus also lists **MA** (~$5.30), **MCD** (~$3.42), **INTC** (~$0.39), **GILD** (~$2.18), **SHOP** (~$0.47).
 - **After the close:** **WDC** (~$4.09–4.10, HDD/SSD + AI storage), **NEM** (~$1.94–2.12), **BE** (~$0.67–0.69, fuel cells — already −6.5% pre-market), **FIX** (~$12.85–12.94), **DECK**, **VRSN**, **RNG**, **LHX**, **DLR**, **KDP**, **HSY**.
 - **What matters:** this is the third consecutive night where a beat failed to hold.
 - **WDC and BE are the highest-information prints tonight** — both are AI-hardware-adjacent and both are already gapping lower, so they are being marked *before* the print.

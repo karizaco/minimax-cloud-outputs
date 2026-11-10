@@ -250,8 +250,8 @@ Final postmarket prints (TradingView, re-confirmed at 00:20 ET; the 20:00 ET pos
 - **Ticker**: GLD · **After hours**: -0.15% (374.90)
 - **Ticker**: TLT · **After hours**: -0.11% (81.84)
 
-- **This is the most encouraging number in the brief.** After a -4.4% cash session, SPY closed the extended session **green** ,
-- and the semiconductor complex that fell 11–17% recovered 2–6% off the lows (LRCX +6.31% , MU +4.11% , MRVL +3.93% , AMD +3.37%).
+- **This is the most encouraging number in the brief.** After a -4.4% cash session, SPY closed the extended session **green**,
+- and the semiconductor complex that fell 11–17% recovered 2–6% off the lows (LRCX +6.31%, MU +4.11%, MRVL +3.93%, AMD +3.37%).
 - But note the small-cap and biotech laggards did not participate: IWM +0.08% and **XBI -0.75%**. The bounce is a mega-cap/semi bounce, not a breadth bounce.
 - StockTitan had SPY at -0.35% at 18:01 ET — the recovery happened in the last two hours of extended trading.
 

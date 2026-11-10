@@ -1,6 +1,6 @@
 # Run ledger — which routine published what, and when
 
-**Source:** derived read of the published artifacts, against the schedule in the migration repo's ROSTER.md (read 2026-11-09); no source file is modified · **Built:** 2026-11-10 · **Covers:** 351 artifact-date rows across 23 routines and 15 trading sessions · read-only
+**Source:** derived read of the published artifacts, against the schedule in the migration repo's ROSTER.md (read 2026-11-09); no source file is modified · **Built:** 2026-11-10 · **Covers:** 345 artifact-date rows across 23 routines and 15 trading sessions · read-only
 
 > **Read this before the table.**
 >
@@ -21,13 +21,13 @@
 
 | State | Rows |
 |---|---|
-| published, on schedule | 228 |
+| published, on schedule | 223 |
 | published, off schedule | 14 |
-| published, before the calendar this repo records | 58 |
+| published, before the calendar this repo records | 57 |
 | published, after the calendar this repo records | 0 |
 | expected but not present in this repo | 24 |
 | expected, before the routine had started publishing here | 27 |
-| **total** | **351** |
+| **total** | **345** |
 
 ## By routine
 
@@ -48,7 +48,7 @@
 | 13-macro-calendar-midweek | 14:00 | Wed | 3 | 0 | 0 | 2026-11-04 |
 | 06-stock-screener-pattern-study-backlog | 15:00 | Sat | 0 | 0 | 3 | — |
 | 14-macro-calendar-week-ahead | 15:00 | Sun | 0 | 0 | 2 | — |
-| 17-us-stocks-in-play | 15:50 | Mon-Fri | 20 | 0 | 0 | 2026-11-09 |
+| 17-us-stocks-in-play | 15:50 | Mon-Fri | 15 | 0 | 0 | 2026-11-09 |
 | 04-reversal-bullish-3:55 | 15:55 | Mon-Fri | 15 | 0 | 0 | 2026-11-09 |
 | 20-eod-watchlist-csv-snapshot | 16:00 | Mon-Fri | 15 | 0 | 0 | 2026-11-09 |
 | 05-eod-international-daily | 16:30 | Mon-Fri | 11 | 0 | 0 | 2026-11-09 |
@@ -155,7 +155,6 @@ counted apart from the scheduled runs so the two are not confused.
 | 2026-10-09 | 04-reversal-bullish-3:55 | published_before_calendar | `daily-screens/2026-10-09/reversal-bullish-3_55.md` | — |
 | 2026-10-12 | 04-reversal-bullish-3:55 | published_before_calendar | `daily-screens/2026-10-12/reversal-bullish-3_55.md` | — |
 | 2026-10-12 | 07-stock-screener-focus-rvol-09:45 | published_before_calendar | `daily-screens/2026-10-12/focus-rvol-snapshot.md` | — |
-| 2026-10-13 | 17-us-stocks-in-play | published_before_calendar | `us-stocks-in-play/2026-10-13-open.md` | — |
 | 2026-10-13 | 17-us-stocks-in-play-open | published_before_calendar | `us-stocks-in-play/2026-10-13-open.md` | — |
 | 2026-10-13 | 25-ntrt-gap-brief-daily | published_before_calendar | `ntrt/2026-10-13.md` | — |
 | 2026-10-14 | 17-us-stocks-in-play | published_before_calendar | `us-stocks-in-play/2026-10-14.md` | — |
@@ -305,7 +304,6 @@ counted apart from the scheduled runs so the two are not confused.
 | 2026-10-29 | 10-stock-screener-breadth-snapshot | published | `daily-screens/2026-10-29/breadth-snapshot.md` | — |
 | 2026-10-29 | 15-earnings-reaction-scanner | published | `earnings/2026-10-29-reactions.md` | — |
 | 2026-10-29 | 16-unusual-options-flow-daily | published | `options-flow/2026-10-29.md` | — |
-| 2026-10-29 | 17-us-stocks-in-play | published | `us-stocks-in-play/2026-10-29-pre-open.md` | — |
 | 2026-10-29 | 17-us-stocks-in-play | published | `us-stocks-in-play/2026-10-29.md` | — |
 | 2026-10-29 | 17-us-stocks-in-play-open | published | `us-stocks-in-play/2026-10-29-pre-open.md` | — |
 | 2026-10-29 | 19-earnings-reminder-daily | published | `earnings/2026-10-29-reminders.md` | — |
@@ -320,7 +318,6 @@ counted apart from the scheduled runs so the two are not confused.
 | 2026-10-30 | 09-stock-screener-daily-sweep-18:30 | published | `daily-screens/2026-10-30/daily-sweep.md` | — |
 | 2026-10-30 | 10-stock-screener-breadth-snapshot | published | `daily-screens/2026-10-30/breadth-snapshot.md` | — |
 | 2026-10-30 | 16-unusual-options-flow-daily | published | `options-flow/2026-10-30.md` | — |
-| 2026-10-30 | 17-us-stocks-in-play | published | `us-stocks-in-play/2026-10-30-midday.md` | — |
 | 2026-10-30 | 17-us-stocks-in-play | published | `us-stocks-in-play/2026-10-30.md` | — |
 | 2026-10-30 | 19-earnings-reminder-daily | published | `earnings/2026-10-30-reminders.md` | — |
 | 2026-10-30 | 20-eod-watchlist-csv-snapshot | published | `us-eod/2026-10-30.csv` | 4898 |
@@ -393,7 +390,6 @@ counted apart from the scheduled runs so the two are not confused.
 | 2026-11-05 | 12-cross-asset-correlation-snapshot | published | `cross-asset/2026-11-05.md` | — |
 | 2026-11-05 | 15-earnings-reaction-scanner | published | `earnings/2026-11-05-reactions.md` | — |
 | 2026-11-05 | 16-unusual-options-flow-daily | published | `options-flow/2026-11-05.md` | — |
-| 2026-11-05 | 17-us-stocks-in-play | published | `us-stocks-in-play/2026-11-05-open.md` | — |
 | 2026-11-05 | 17-us-stocks-in-play | published | `us-stocks-in-play/2026-11-05.md` | — |
 | 2026-11-05 | 17-us-stocks-in-play-open | published | `us-stocks-in-play/2026-11-05-open.md` | — |
 | 2026-11-05 | 19-earnings-reminder-daily | published | `earnings/2026-11-05-reminders.md` | — |
@@ -412,7 +408,6 @@ counted apart from the scheduled runs so the two are not confused.
 | 2026-11-06 | 12-cross-asset-correlation-snapshot | published | `cross-asset/2026-11-06.md` | — |
 | 2026-11-06 | 15-earnings-reaction-scanner | published | `earnings/2026-11-06-reactions.md` | — |
 | 2026-11-06 | 16-unusual-options-flow-daily | published | `options-flow/2026-11-06.md` | — |
-| 2026-11-06 | 17-us-stocks-in-play | published | `us-stocks-in-play/2026-11-06-open.md` | — |
 | 2026-11-06 | 17-us-stocks-in-play | published | `us-stocks-in-play/2026-11-06.md` | — |
 | 2026-11-06 | 17-us-stocks-in-play-open | published | `us-stocks-in-play/2026-11-06-open.md` | — |
 | 2026-11-06 | 19-earnings-reminder-daily | published | `earnings/2026-11-06-reminders.md` | — |
@@ -435,7 +430,6 @@ counted apart from the scheduled runs so the two are not confused.
 | 2026-11-09 | 12-cross-asset-correlation-snapshot | published | `cross-asset/2026-11-09.md` | — |
 | 2026-11-09 | 15-earnings-reaction-scanner | published | `earnings/2026-11-09-reactions.md` | — |
 | 2026-11-09 | 16-unusual-options-flow-daily | published | `options-flow/2026-11-09.md` | — |
-| 2026-11-09 | 17-us-stocks-in-play | published | `us-stocks-in-play/2026-11-09-open.md` | — |
 | 2026-11-09 | 17-us-stocks-in-play | published | `us-stocks-in-play/2026-11-09.md` | — |
 | 2026-11-09 | 17-us-stocks-in-play-open | published | `us-stocks-in-play/2026-11-09-open.md` | — |
 | 2026-11-09 | 19-earnings-reminder-daily | published | `earnings/2026-11-09-reminders.md` | — |

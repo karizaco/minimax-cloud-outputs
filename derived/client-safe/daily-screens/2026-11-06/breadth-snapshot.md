@@ -173,7 +173,7 @@ Percentiles are against the trailing 1-year distribution of the same series (262
 - **Percentile windows:** 262 sessions, 2025-10-22 → 2026-11-05, expanding (each row is ranked against every session from the start of the window to that row).
 - **Volatility pair:** pulled twice within the run, identical both times (`vix_stable: true`). `vix_stable` and the pair's quote time are carried in `breadth-snapshot.json`.
 - **Session context (sourced, not inferred):** the 11-05 session was an AI-trade rout on fears that the Democratic midterm sweep would slow AI data-centre build-out —
-- Nasdaq Composite -5.5%, S&P 500 -4.36%, semiconductors -12%. Today's driver is the October jobs report released 08:30 ET (payrolls **+165K** vs ~59–65K expected, unemployment **4.1%** from 4.2% ,
+- Nasdaq Composite -5.5%, S&P 500 -4.36%, semiconductors -12%. Today's driver is the October jobs report released 08:30 ET (payrolls **+165K** vs ~59–65K expected, unemployment **4.1%** from 4.2%,
 - prior two months revised +84K), which added to market pricing for a December rate hike.
 - **There is no FOMC meeting today** — the Fed's 2026 calendar has no November meeting and the next decision is 8-9 December.
 - **Delivery note:** this file is the first publication of the 11-05 session's breadth —

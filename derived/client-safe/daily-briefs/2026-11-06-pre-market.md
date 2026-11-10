@@ -164,8 +164,8 @@
 - Yesterday the Philadelphia Semiconductor Index lost 12.25%, its worst session since the pandemic;
 - the trigger was the Democratic midterm sweep and what it means for data-centre build-out, not an earnings miss. This is a short-covering relief bid into a hot jobs print.
 - **AI-datacenter and crypto beta lead** - **IREN +15.86%** (pm 20.89, prior close 18.03) on its own earnings (AI Cloud revenue nearly tripled to $200m), with **CRWV +9.95%** (pm 48.00, prior close 43.66), **NBIS +9.98%** (pm 132.38, prior close 120.37), **CIFR +10.81%** (pm 6.15, prior close 5.55), **WULF +9.52%** (pm 11.04, prior close 10.08), **APLD +9.48%** (pm 15.51, prior close 14.17) and **OKLO +7.81%** (pm 20.70, prior close 19.20) following.
-- **Cloud and software beat and rose** - **NET +18.60%** (pm 290.00, prior close 244.51) (Q3 revenue +39% ,
-- Q4 guided above consensus), **FROG +23.04%** (pm 91.81, prior close 74.62) (Q3 revenue $179.2m, +31% ,
+- **Cloud and software beat and rose** - **NET +18.60%** (pm 290.00, prior close 244.51) (Q3 revenue +39%,
+- Q4 guided above consensus), **FROG +23.04%** (pm 91.81, prior close 74.62) (Q3 revenue $179.2m, +31%,
 - FY26 guide raised) and **ABNB +13.81%** (pm 193.63, prior close 170.13) (Q3 EPS $3.16 vs $2.85 expected).
 - **Space launch:
 - the Firefly deal** - **FLY +11.04%** (pm 16.85, prior close 15.18) on a $1.3bn+ three-year engine agreement with AST SpaceMobile, while **ASTS -3.01%** (pm 29.29, prior close 30.20) is down because it is funding roughly $800m of it in newly issued stock.

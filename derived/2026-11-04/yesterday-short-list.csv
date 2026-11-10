@@ -1,9 +1,9 @@
-ticker,stylists,yesterday_change,morning_pct,status
-WING,3,,,not in the feed
-KVYO,3,,,not in the feed
-CVNA,3,,,not in the feed
-FTAI,3,,,not in the feed
-FIGS,3,,,not in the feed
-TEM,3,,,not in the feed
-CLF,3,,,not in the feed
-CAI,3,,,not in the feed
+ticker,stylists,yesterday_change,morning_pct,status,source
+WING,3,,3.8002,gapping,the pre-open tape (`preopen-feed/2026-11-04-0950.jsonl` and 1 earlier checkpoint(s))
+KVYO,3,,,not in the feed,no feed quoted it
+CVNA,3,,,not in the feed,no feed quoted it
+FTAI,3,,,not in the feed,no feed quoted it
+FIGS,3,,,not in the feed,no feed quoted it
+TEM,3,,,not in the feed,no feed quoted it
+CLF,3,,,not in the feed,no feed quoted it
+CAI,3,,3.1963,gapping,the pre-open tape (`preopen-feed/2026-11-04-0950.jsonl` and 1 earlier checkpoint(s))

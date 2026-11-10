@@ -157,8 +157,8 @@ The prefilter is the skill's step-1 shibui gate, reproduced exactly. It is a gen
 - **Ticker**: SDGR · **Close**: 24.50 · **Day**: +2.94% · **True ADR20**: 7.47% (+4 more column(s) in the artifact table)
 - **Ticker**: PENG · **Close**: 54.92 · **Day**: +2.83% · **True ADR20**: 8.58% (+4 more column(s) in the artifact table)
 
-- **What the list actually says.** Seven of the eight Tier-A names are technology or semiconductor names (P, NXPI, ADI, HEI, CSCO, OKTA, TENB), and four of them have a **negative** 14-day velocity while gapping up today (P −10.8% ,
-- ADI −3.0% , CSCO −6.5% , PENG −14.5%). That is the signature of a *reversal bounce off a downtrend within a pullback*, not of momentum continuation —
+- **What the list actually says.** Seven of the eight Tier-A names are technology or semiconductor names (P, NXPI, ADI, HEI, CSCO, OKTA, TENB), and four of them have a **negative** 14-day velocity while gapping up today (P −10.8%,
+- ADI −3.0%, CSCO −6.5%, PENG −14.5%). That is the signature of a *reversal bounce off a downtrend within a pullback*, not of momentum continuation —
 - the stocks that were already trending up are not the ones converging.
 - `RNG` carries `day2_no_follow` (day-2 close below day-1 midpoint) and is the one Tier-A name whose setup is already weakening.
 

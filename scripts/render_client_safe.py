@@ -223,7 +223,11 @@ def _split_keep(text, pattern):
     for m in pattern.finditer(text):
         chunk = text[last:m.start()]
         if m.lastindex and m.group(1):
-            chunk += " " + m.group(1)
+            # The delimiter stays with the clause it closes, but a comma
+            # already sits tight against the word it follows: "0.46%,", not
+            # "0.46% ,". The em-dash and the middot stand alone and want a
+            # space in front of them.
+            chunk += m.group(1) if m.group(1) == "," else " " + m.group(1)
         out.append(chunk)
         last = m.end()
     out.append(text[last:])
@@ -370,11 +374,14 @@ def render(text):
             i += 1
             continue
 
-        # Prose.
+        # Prose. A quote line is NOT prose: a bare `>` inside a blockquote
+        # separates two paragraphs of that quote, and joining it to the next
+        # line published "- > > **Amended...**".
         para = []
         while i < len(lines) and lines[i].strip() and not HEADING_RE.match(lines[i]) \
                 and not BULLET_RE.match(lines[i]) and not ORDERED_RE.match(lines[i]) \
-                and not TABLE_RE.match(lines[i]):
+                and not TABLE_RE.match(lines[i]) \
+                and not lines[i].lstrip().startswith(">"):
             para.append(lines[i].strip())
             i += 1
         if not para:

@@ -27,9 +27,8 @@
 - **So the money went somewhere, and the destinations are the story.** Six of11 sectors rose:
 - **Consumer Staples XLP +3.31%** (best), **homebuilders ITB +5.39%**, regional banks **KRE +2.54%**, **XLF +1.09%, XLV +1.32%, XLU up**. Rate-sensitive, defensive, cash-flow-near-term names bid.
 - Themis Trading's read: *"They are rotating out of techs, out of the AIs, and into the more safety trades, whether it's bonds or some of those big Dow Jones stocks."*
-- **The consumer/housing complex rallied on housing-linked earnings, not just rates.** **POOL +14.36%** (adj EPS $3.40 vs $3.36, sales +4% to $1.50bn, **FY guidance reaffirmed**), **KSS +11.82%** , **RH +9.48%** ,
-- **MHK +9.03%** , **RHI +8.78%** , **CNXC +13.77%** , **BMI +13.48%** , **ALLE +11.02%** , **R +10.49%** , **WCN +9.86%**.
-- POOL is the week's clearest counter-example to the "beat is not enough" thesis.
+- **The consumer/housing complex rallied on housing-linked earnings, not just rates.** **POOL +14.36%** (adj EPS $3.40 vs $3.36, sales +4% to $1.50bn, **FY guidance reaffirmed**), **KSS +11.82%**, **RH +9.48%**, **MHK +9.03%**,
+- **RHI +8.78%**, **CNXC +13.77%**, **BMI +13.48%**, **ALLE +11.02%**, **R +10.49%**, **WCN +9.86%**. POOL is the week's clearest counter-example to the "beat is not enough" thesis.
 - **But the semis did not capitulate — they're bouncing.** Pre-market:
 - **MXL +5.78%, AAOI +4.01%, LITE +3.78%, CRDO +3.51%, SMTC +3.42%, TTMI +3.40%** (after **−27.66%** Thursday), COHR +3.10%, MU +2.39%, CRWV +2.79%, TER +2.48%, AMD +1.88%, NVDA +0.94%.
 - **Watch whether this holds — Thursday's optical/PCB carnage (VICR −15.66%, SIMO −15.45%, FORM −15.29%, MTSI −15.87%) was leverage-driven, not fundamental.**

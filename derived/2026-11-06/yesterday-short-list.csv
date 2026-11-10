@@ -1,7 +1,7 @@
-ticker,stylists,yesterday_change,morning_pct,status
-DUOL,peoplewish|qullamaggie|stockbee,-2.6353,,not in the feed
-KD,peoplewish|qullamaggie|stockbee,-3.9192,,not in the feed
-LIVN,hernandez|qullamaggie|stockbee,-3.2381,,not in the feed
-OUST,peoplewish|qullamaggie|stockbee,-9.0042,3.74,gapping
-VRDN,hernandez|peoplewish|qullamaggie|stockbee,-1.7381,,not in the feed
-XNCR,hernandez|peoplewish|qullamaggie|stockbee,-2.7976,,not in the feed
+ticker,stylists,yesterday_change,morning_pct,status,source
+DUOL,peoplewish|qullamaggie|stockbee,-2.6353,,not in the feed,no feed quoted it
+KD,peoplewish|qullamaggie|stockbee,-3.9192,,not in the feed,no feed quoted it
+LIVN,hernandez|qullamaggie|stockbee,-3.2381,,not in the feed,no feed quoted it
+OUST,peoplewish|qullamaggie|stockbee,-9.0042,4.554390563564877,gapping,the pre-open tape (`preopen-feed/2026-11-06-0950.jsonl` and 1 earlier checkpoint(s))
+VRDN,hernandez|peoplewish|qullamaggie|stockbee,-1.7381,,not in the feed,no feed quoted it
+XNCR,hernandez|peoplewish|qullamaggie|stockbee,-2.7976,,not in the feed,no feed quoted it

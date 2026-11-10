@@ -64,7 +64,11 @@ SCHEDULE = (
     ("06-stock-screener-pattern-study-backlog", "15:00", "Sat",
      "daily-screens/*/weekly-ipo.md", "weekly"),
     ("14-macro-calendar-week-ahead", "15:00", "Sun", "macro-calendar/*-week-ahead.md", "weekly"),
-    ("17-us-stocks-in-play", "15:50", "Mon-Fri", "us-stocks-in-play/2026-*.md", "daily"),
+    # The 15:50 fire publishes the close digest, and only that. A wide
+    # `2026-*.md` also matched the open, pre-open and midday digests, so the
+    # ledger credited this routine with artifacts other slots published.
+    ("17-us-stocks-in-play", "15:50", "Mon-Fri",
+     "us-stocks-in-play/2026-[0-9][0-9]-[0-9][0-9].md", "daily"),
     ("04-reversal-bullish-3:55", "15:55", "Mon-Fri",
      "daily-screens/*/reversal-bullish-3_55.md", "daily"),
     ("20-eod-watchlist-csv-snapshot", "16:00", "Mon-Fri", "us-eod/2026-*.csv", "daily"),

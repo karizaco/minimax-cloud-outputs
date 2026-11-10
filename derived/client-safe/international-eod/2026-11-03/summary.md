@@ -69,7 +69,7 @@ Settled closes, verified against the close and not an intraday print:
 
 - **Taiwan had the day of its own**: the TAIEX fell 1,612.60 points (−3.59%) to 43,307.54 — the **seventh-largest closing point decline on record** —
 - as the Philadelphia Semiconductor Index's 3.37% overnight fall and continuing doubts over AI capital spending triggered panic selling.
-- PCB, memory, packaging and testing names were hit to their ±10% limits (Kinsus, Cosmo, MPI, Nanya, Nan Ya Plastics), the OTC index dropped 6.12% ,
+- PCB, memory, packaging and testing names were hit to their ±10% limits (Kinsus, Cosmo, MPI, Nanya, Nan Ya Plastics), the OTC index dropped 6.12%,
 - and foreign institutions sold a net NT$107.31bn. The snapshot agrees: 857 of 920 Taiwanese rows fell and the cap-weighted average is −3.79% against the index's −3.59%.
 
 - **Australia went the other way.** The RBA lifted the cash rate 25bp to 4.85% — the fifth hike of 2026 and an 18-year high —

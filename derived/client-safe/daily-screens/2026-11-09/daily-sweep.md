@@ -8,7 +8,7 @@
 
 **TL;DR**
 
-- **A violent breadth snap-back underneath a still-damaged index.** 68.01% of the 1113-name large-cap universe closed above its 20-DMA, A/D was **927 / 180 / 6** ,
+- **A violent breadth snap-back underneath a still-damaged index.** 68.01% of the 1113-name large-cap universe closed above its 20-DMA, A/D was **927 / 180 / 6**,
 - and the median name gained 1.67%.
 - But only 2 of 5 index ETFs are above their own 20-DMA — a **+28.0 pp BROAD divergence**: the average stock is healthier than the index.
 - **The book is 954 candidates, and the Tier-A list is six names** — FLY, FROG, KRMN, OKLO, RGTI, TMDX.

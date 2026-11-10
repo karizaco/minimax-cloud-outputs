@@ -1,9 +1,9 @@
-ticker,stylists,yesterday_change,morning_pct,status
-RUN,jeff_sun|peoplewish|qullamaggie|stockbee,1.11,,not in the feed
-SEZL,jeff_sun|peoplewish|qullamaggie|stockbee,-3.59,,not in the feed
-XERS,hernandez|jeff_sun|qullamaggie|stockbee,16.21,,not in the feed
-ACHC,hernandez|peoplewish|qullamaggie|stockbee,6.35,,not in the feed
-MRNA,hernandez|peoplewish|qullamaggie|stockbee,5.27,,not in the feed
-APP,jeff_sun|qullamaggie|stockbee,9.86,,not in the feed
-U,peoplewish|qullamaggie|stockbee,5.51,,not in the feed
-FUN,peoplewish|qullamaggie|stockbee,8.23,,not in the feed
+ticker,stylists,yesterday_change,morning_pct,status,source
+RUN,jeff_sun|peoplewish|qullamaggie|stockbee,1.11,,not in the feed,no feed quoted it
+SEZL,jeff_sun|peoplewish|qullamaggie|stockbee,-3.59,,not in the feed,no feed quoted it
+XERS,hernandez|jeff_sun|qullamaggie|stockbee,16.21,0.66,under the line,the brief's own screen (`daily-briefs/2026-11-09-pre-market.csv`)
+ACHC,hernandez|peoplewish|qullamaggie|stockbee,6.35,,not in the feed,no feed quoted it
+MRNA,hernandez|peoplewish|qullamaggie|stockbee,5.27,,not in the feed,no feed quoted it
+APP,jeff_sun|qullamaggie|stockbee,9.86,,not in the feed,no feed quoted it
+U,peoplewish|qullamaggie|stockbee,5.51,,not in the feed,no feed quoted it
+FUN,peoplewish|qullamaggie|stockbee,8.23,,not in the feed,no feed quoted it

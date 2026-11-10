@@ -10,6 +10,13 @@ This is that follow-up, reconstructed from the artifacts. The 09:00 routine is
 told to publish the same check itself; this builder is the historical copy, so
 a morning that fired before the instruction changed still has an answer.
 
+It reads EVERY morning feed, not one of them. Each feed quotes a different
+slice of the tape - the brief's own screen, the gap brief's 3% band, the
+pre-open tape - so a name can be in one and not another, and reading only the
+band made every quiet name look like nobody quoted it. The order is by clock,
+newest print first, because "was it gapping?" is answered by the most recent
+print, and every row names the feed its print came from.
+
   python3 scripts/build_yesterday_short_list.py
   python3 scripts/build_yesterday_short_list.py --check
 """
@@ -24,6 +31,7 @@ import _joinlib as J  # noqa: E402
 
 NTRT = "ntrt"
 SCREENS = "daily-screens"
+BRIEFS = "daily-briefs"
 PREOPEN = "preopen-feed"
 OUT_ROOT = "derived"
 
@@ -77,6 +85,35 @@ def prior_short_list(morning):
     return date, names, note
 
 
+def brief_quotes(date):
+    """The morning brief's own screen: every name it quoted, with its print.
+
+    This is the fullest morning feed the repo holds - the CSV behind every
+    table the brief publishes. Its percent column is spelled two ways across
+    the archive (`premarket_change_pct` and `gap_pct`), so both are tried.
+    The prior session's own change columns are NOT the pre-market print and
+    are deliberately not read.
+    """
+    path = os.path.join(J.REPO, BRIEFS, date + "-pre-market.csv")
+    if not os.path.exists(path):
+        return {}
+    rows = J.read_csv_rows(path)
+    col, _note = J.ticker_column(rows)
+    if not col:
+        return {}
+    out = {}
+    for row in rows:
+        t = J.strip_md(row.get(col)).upper()
+        if not t:
+            continue
+        pct = J.to_float(row.get("premarket_change_pct"))
+        if pct is None:
+            pct = J.to_float(row.get("gap_pct"))
+        if pct is not None:
+            out[t] = pct
+    return out
+
+
 def ntrt_quotes(date):
     path = os.path.join(J.REPO, NTRT, date + ".csv")
     out = {}
@@ -90,12 +127,17 @@ def ntrt_quotes(date):
 
 
 def preopen_quotes(date):
-    """The latest pre-open checkpoint that morning, one pct per ticker."""
+    """The pre-open tape for that morning, one pct per ticker.
+
+    Every checkpoint is read, and a later checkpoint wins over an earlier one
+    for the same ticker. The `pct` field is already a number, so it is not
+    run through the string parser.
+    """
     paths = sorted(glob.glob(os.path.join(J.REPO, PREOPEN, date + "-*.jsonl")))
     out = {}
-    used = None
+    used = []
     for path in paths:
-        used = os.path.basename(path)
+        used.append(os.path.basename(path))
         with open(path, encoding="utf-8") as fh:
             for line in fh:
                 if not line.strip():
@@ -105,9 +147,45 @@ def preopen_quotes(date):
                 except ValueError:
                     continue
                 t = (row.get("ticker") or "").upper()
-                if t:
-                    out[t] = row.get("pct")
+                pct = row.get("pct")
+                if t and isinstance(pct, (int, float)):
+                    out[t] = float(pct)
     return out, used
+
+
+def morning_feeds(date):
+    """Every morning feed that morning, newest print first.
+
+    Each feed quotes a different slice of the tape, so a name can be in one
+    and not another. A name that is in the gap brief's band but not in the
+    brief's own screen is a real answer, not an absence.
+
+    The order is by clock, newest first: the pre-open tape's last checkpoint
+    (09:50), the gap brief's band (the 09:00 routine), and the pre-market
+    brief's own screen (the 08:30 routine). "Was it gapping?" is answered by
+    the most recent print, not by the first feed that happens to quote it -
+    a name that was +1.96% at 08:30 and +3.45% at 09:00 was gapping.
+    """
+    feeds = []
+    tape, used = preopen_quotes(date)
+    if tape:
+        if len(used) > 1:
+            label = "the pre-open tape (`%s/%s` and %d earlier checkpoint(s))" % (
+                PREOPEN, used[-1], len(used) - 1)
+        else:
+            label = "the pre-open tape (`%s/%s`)" % (PREOPEN, used[0] if used else "")
+        feeds.append((label, tape))
+    gap = ntrt_quotes(date)
+    if gap:
+        feeds.append((
+            "the gap brief's 3%% band (`%s/%s.csv`)" % (NTRT, date),
+            gap))
+    brief = brief_quotes(date)
+    if brief:
+        feeds.append((
+            "the brief's own screen (`%s/%s-pre-market.csv`)" % (BRIEFS, date),
+            brief))
+    return feeds
 
 
 def status_of(pct):
@@ -120,20 +198,24 @@ def status_of(pct):
 
 def build(morning):
     prior_date, names, note = prior_short_list(morning)
-    quotes = ntrt_quotes(morning)
-    source = "the morning brief's own full screen (`ntrt/%s.csv`)" % morning
-    if not quotes:
-        quotes, used = preopen_quotes(morning)
-        source = ("the pre-open tape (`preopen-feed/%s`)" % used) if used else "no morning feed"
+    feeds = morning_feeds(morning)
     rows = []
     for name in names:
-        pct = quotes.get(name["ticker"])
+        ticker = name["ticker"]
+        pct = None
+        source = "no feed quoted it"
+        for label, quotes in feeds:
+            if ticker in quotes:
+                pct = quotes[ticker]
+                source = label
+                break
         rows.append({
-            "ticker": name["ticker"],
+            "ticker": ticker,
             "stylists": name["stylists"],
             "yesterday_change": name["yesterday_change"],
             "morning_pct": pct,
             "status": status_of(pct),
+            "source": source,
         })
     counts = {}
     for row in rows:
@@ -142,7 +224,7 @@ def build(morning):
         "morning": morning,
         "prior_date": prior_date,
         "ticker_note": note,
-        "source": source,
+        "feeds": [label for label, _quotes in feeds],
         "rows": rows,
         "counts": counts,
     }
@@ -174,40 +256,48 @@ def render(data):
     lines.append("> any that were there were past the 3% line the morning brief treats as a gap.")
     lines.append(">")
     lines.append("> `gapping` means the morning print was at least 3% either way. `under the line`")
-    lines.append("> means the name was in the feed but the print was smaller than that.")
-    lines.append("> `not in the feed` means neither the morning screen nor the pre-open tape")
-    lines.append("> had the name. It does not mean the name was flat. It means nobody quoted it.")
+    lines.append("> means the name was in a feed but the print was smaller than that.")
+    lines.append("> `not in the feed` means none of the morning feeds quoted the name. It does")
+    lines.append("> not mean the name was flat. It means nobody quoted it.")
     lines.append("")
     if not data["prior_date"]:
         lines.append("No Tier-A board was published before %s, so there is no short list to check."
                      % data["morning"])
         lines.append("")
         return "\n".join(lines) + "\n"
-    lines.append("Prior board: `%s`. Morning quote from %s." % (data["prior_date"], data["source"]))
+    lines.append("Prior board: `%s`." % data["prior_date"])
     if data["ticker_note"]:
         lines.append("Ticker column: %s." % data["ticker_note"])
+    if data["feeds"]:
+        lines.append("Feeds consulted: %s." % "; ".join(data["feeds"]))
+    else:
+        lines.append("No morning feed published for %s, so no name could be checked."
+                     % data["morning"])
     lines.append("")
     lines.append("| Status | Names |")
     lines.append("|---|---|")
     for key in ("gapping", "under the line", "not in the feed"):
         lines.append("| %s | %d |" % (key, data["counts"].get(key, 0)))
     lines.append("")
-    lines.append("| Ticker | Yesterday's move | This morning | Status |")
-    lines.append("|---|---|---|---|")
+    lines.append("| Ticker | Yesterday's move | This morning | Status | Feed |")
+    lines.append("|---|---|---|---|---|")
     order = {"gapping": 0, "under the line": 1, "not in the feed": 2}
     for row in sorted(data["rows"], key=lambda r: (order[r["status"]], r["ticker"])):
-        lines.append("| %s | %s | %s | %s |" % (
+        lines.append("| %s | %s | %s | %s | %s |" % (
             row["ticker"], _fmt(row["yesterday_change"]), _fmt(row["morning_pct"]),
-            row["status"]))
+            row["status"], row["source"]))
     lines.append("")
     lines.append("A blank yesterday move means that board did not publish one. A blank morning")
     lines.append("print means the name was not in the feed, which is the status, not a zero.")
+    lines.append("The feed column names where each print came from; a name quoted by more than")
+    lines.append("one feed is shown from the LATEST feed that quoted it, because \"was it")
+    lines.append("gapping?\" is answered by the most recent print.")
     lines.append("")
     return "\n".join(lines) + "\n"
 
 
 def render_csv(data):
-    cols = ["ticker", "stylists", "yesterday_change", "morning_pct", "status"]
+    cols = ["ticker", "stylists", "yesterday_change", "morning_pct", "status", "source"]
     out = [",".join(cols)]
     for row in data["rows"]:
         vals = []

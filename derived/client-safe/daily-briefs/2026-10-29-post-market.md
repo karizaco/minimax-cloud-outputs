@@ -8,7 +8,7 @@
 
 **TL;DR**
 
-- **Alphabet's report broke the index, not the market.** The S&P 500 closed **7,720.39 −0.31%** and the Nasdaq Composite **26,184.73 −1.38%** ,
+- **Alphabet's report broke the index, not the market.** The S&P 500 closed **7,720.39 −0.31%** and the Nasdaq Composite **26,184.73 −1.38%**,
 - but the Dow held **52,343.00 −0.25%** and the Russell 2000 actually **gained 1.00% to 2,859.22**. The damage was concentrated: **GOOGL −12.64% to $283.82** —
 - "steeper than any session since it went public in 2004" (Yahoo Finance) —
 - with **GOOG −12.29%** and the listed Alphabet classes **GOOGM −8.97% / GOOGN −8.77%**, erasing roughly **$500B of market value**.
@@ -369,8 +369,8 @@
 - Check each issuer's IR page and 8-K directly.
 - **Explain Alnylam.** ALNY fell 25.13% on a beat-and-raise-quarter ($1.46B revenue, $16.26 adj. EPS, product revenue +52%) with an accompanying nucresiran Phase 3 update.
 - Something in the release or the call is not being reported.
-- **Separate the software contagion from the AI-capex repricing.** NOW −26.95% , FTNT −20.09% , TEAM −7.28% , CRM −4.61% , PANW −3.53% , ZS −3.12% ,
-- CRWD −2.07% in the cash session, versus TWLO −16.91% , RBLX −16.60% , DXC −12.24% after the bell. The cash session narrowed, the after-hours session widened.
+- **Separate the software contagion from the AI-capex repricing.** NOW −26.95%, FTNT −20.09%, TEAM −7.28%, CRM −4.61%, PANW −3.53%, ZS −3.12%, CRWD −2.07% in the cash session, versus TWLO −16.91%,
+- RBLX −16.60%, DXC −12.24% after the bell. The cash session narrowed, the after-hours session widened.
 - Check the AH timestamps against each release to see which names moved on the Alphabet read-through and which on their own guidance.
 - **Map the December-hike pricing.** PCE at 3.6% headline and core at 3.1% with both FOMC dissents wanting a hike, but the 2-year rallied 6bp on a 0.1pt headline miss.
 - Put the SOFR and Fed-funds futures path against tomorrow's ECI and the Nov 6 jobs report.

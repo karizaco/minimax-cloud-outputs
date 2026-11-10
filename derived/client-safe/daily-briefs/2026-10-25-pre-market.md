@@ -67,7 +67,7 @@
 - **US markets ended lower on Friday, October 23, as rising oil prices, weakness in telecom stocks and concerns over artificial intelligence investments weighed on sentiment** — Economic Times —
 - Ahead of Market · [link](https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-monday/printarticle/135189090.cms)
 
-- **Thursday's brief called the bond market's refusal to price oil's inflation as "calling oil's inflation bluff." Friday that position broke.** The flash US composite PMI output-price gauge hit **59.8, the highest since August 2022** ,
+- **Thursday's brief called the bond market's refusal to price oil's inflation as "calling oil's inflation bluff." Friday that position broke.** The flash US composite PMI output-price gauge hit **59.8, the highest since August 2022**,
 - and the 10Y backed up to **4.988%** from Thursday's 4.953%. **That is a one-session reversal of the single biggest macro move of the week** —
 - and it means the sub-5% 10Y that drove Thursday's whole defensive rotation was not a regime. The tradeable levels for Monday are explicit in the weekend recap:
 - **oil bullish above Friday's $103.27 through the $103.92 high, bearish below $99.47.** The S&P 500 energy sector closed Friday at a record high, which is the tell —
@@ -131,9 +131,9 @@
 
 **4. Idiosyncratic earnings extremes: a labour-market turn, a guidance withdrawal, and a competitive data read**
 
-- **RHI (Robert Half) +21.74% to $45.87** — the best large-cap of the session. Q3 adj EPS **$0.49 vs $0.47 consensus** ,
-- revenue **$1.359bn** (roughly flat vs $1.354bn), **gross margin 37.2% → 39.1%** , operating income **$13.6m → $74.8m** ,
-- net income $42.9m → $49.9m, Talent Solutions back to +2% adjusted revenue growth. Baird raised its target $50 → $53; Goldman raised $29 → $33 but kept Sell.
+- **RHI (Robert Half) +21.74% to $45.87** — the best large-cap of the session. Q3 adj EPS **$0.49 vs $0.47 consensus**,
+- revenue **$1.359bn** (roughly flat vs $1.354bn), **gross margin 37.2% → 39.1%**, operating income **$13.6m → $74.8m**, net income $42.9m → $49.9m, Talent Solutions back to +2% adjusted revenue growth.
+- Baird raised its target $50 → $53; Goldman raised $29 → $33 but kept Sell.
 
 - **Ticker**: RHI · **Fri close (10/23)**: $45.87 · **Fri chg**: +21.74%
 - **Ticker**: LKQ · **Fri close (10/23)**: $17.42 · **Fri chg**: -22.47%
@@ -155,8 +155,8 @@
 - That connects to the week's soft-data run: two weak housing prints (NAHB 29, pending home sales −7.3%) plus a composite PMI of 57.6 still consistent with expansion.
 - **The tension to watch:
 - RHI's operational leverage says the labour market is re-firming, while Thursday's hot output-price PMI says inflation is re-accelerating.** Both cannot be comfortable for the Fed, which meets Wednesday.
-- **LKQ is the opposite case and the more consequential one:** preliminary Q3 adj EPS **$0.47–0.53 vs $0.69 consensus** ,
-- revenue ~$3.32bn vs $3.41bn, **Europe organic revenue ~−10%** on German ERP rollout issues and softer UK/Benelux volumes, impairments flipping continuing operations into a net loss, **FY26 guidance withdrawn** ,
+- **LKQ is the opposite case and the more consequential one:** preliminary Q3 adj EPS **$0.47–0.53 vs $0.69 consensus**,
+- revenue ~$3.32bn vs $3.41bn, **Europe organic revenue ~−10%** on German ERP rollout issues and softer UK/Benelux volumes, impairments flipping continuing operations into a net loss, **FY26 guidance withdrawn**,
 - a CEO change effective 15 Dec, Alvarez & Marsal engaged for Europe, and a **securities-litigation probe into potential misstatements on the European business**.
 - That is four adverse disclosures in one pre-announcement. **CORT −20.13% on Genmab's cancer data while GMAB +9.47%** is a clean competitive read-through in both directions.
 

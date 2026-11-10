@@ -262,7 +262,7 @@ Morning's top 10 decliners, now:
 - The CSV beside this file is the same merged table: 693 rows.
 - **Close reconciliation sweep.** The identity `premarket_change == (premarket_close − close) / close` was checked on every published row; 2 of the 693 rows failed it.
 - **VISN — corrected, and published.** The scanner's `close` field reads 3.995 and does not reconcile with its own pre-market print (4.10, range 4.10–4.4292) or its own gap (−25.39%).
-- An independent quote from the bridge (`market-recap get_quotes`) puts Friday's close at **5.495** ,
+- An independent quote from the bridge (`market-recap get_quotes`) puts Friday's close at **5.495**,
 - and with 5.495 the scanner's print and gap reconcile exactly (the derived reference from the scanner's own fields is 5.4949).
 - This file publishes the bridge-confirmed prior close **5.50**, the same figure the 08:30 brief published. The defect is in the scanner's `close`, not in the gap.
 - **ALPS — excluded, not published.** The scanner carries `close` 1.6485 against a `premarket_change` of +400.45%, which references 0.3297 —

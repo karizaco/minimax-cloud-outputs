@@ -5,11 +5,11 @@
 
 **Headline**
 
-- Friday was a **duration rally inside a rising-rate tape**, not a risk-on session. The October jobs report printed **+165,000 payrolls** against roughly 59,000–70,000 expected with unemployment down to **4.1%** ,
+- Friday was a **duration rally inside a rising-rate tape**, not a risk-on session. The October jobs report printed **+165,000 payrolls** against roughly 59,000–70,000 expected with unemployment down to **4.1%**,
 - which put a **December Fed hike back at ~75–85% odds** and pushed the 10-year back above 4.87%. The market bought the long-duration end of it:
 - **QQQ +1.40%**, **SMH +3.62%**, **SOXX +3.51%**, **NDX +1.35%**, **SPX +0.31%** — while the equal-weight **RSP fell -0.38%** and the Dow proxy **DIA -0.40%**.
 - Breadth says the same thing in one number: **57.26%** of the 986-name $10B+ universe closed above its 20-DMA, **425 advancers against 549 decliners**, median **-0.23%** —
-- and **0 of the 5** index ETFs are above their 20-DMA. The divergence is **+57.26 pp (BROAD)** ,
+- and **0 of the 5** index ETFs are above their 20-DMA. The divergence is **+57.26 pp (BROAD)**,
 - the widest of this series and the fourth straight session in which the cap-weighted index is below its 20-day mean while the broad universe is not.
 - The screen itself is one session behind:
 - shibui's newest settled session at fire time was **2026-11-05**, so every screen metric below describes the 2026-11-05 tape while every "today" figure is the 2026-11-06 settled close.

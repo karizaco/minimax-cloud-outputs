@@ -54,7 +54,7 @@
 - **VIX** — **10-15**: 16.46 · **10-16**: 19.99 · **10-19**: 18.44 · **10-20**: 17.31 (+4 more column(s) in the artifact table)
 - **10Y** — **10-15**: 5.09 · **10-16**: 5.10 · **10-19**: 5.14 · **10-20**: 5.12 (+4 more column(s) in the artifact table)
 
-- **The week in one line:** the Dow posted a third straight weekly gain (+0.41%) and the Russell gained 2.00% ,
+- **The week in one line:** the Dow posted a third straight weekly gain (+0.41%) and the Russell gained 2.00%,
 - while the Nasdaq is **-4.59% from its 10-13 level** (27,204.38 → 25,955.34) and the S&P is -2.33% from the same print (7,805.45 → 7,623.68).
 - This was a violent week-long rotation out of AI/growth that bottomed yesterday and did not really recover today.
 
@@ -262,13 +262,13 @@ Ranked by SPDR sector ETF regular-session change. `_source=yahoo_sector_etf` (Tr
 **The earnings blitz ahead (from the union's `earningsTimestamp`)**
 
 - **Tue 27th:** **SK hynix ($999B)**, KO ($399B), **STX/Seagate ($143B)**, **AMT ($88B)**, HOOD ($85B), BKR ($55B), TER ($48B), ACGL, SOFI, CSGP, NOV, LU, HRI, OI, JBLU
-- **Wed 28th:** **GOOGL ($3.9T)** , SAN ($186B), **APH ($183B)** , **TMUS ($157B)** ,
+- **Wed 28th:** **GOOGL ($3.9T)**, SAN ($186B), **APH ($183B)**, **TMUS ($157B)**,
 - FTNT ($132B), EQNR ($116B), PSX ($114B), AEM ($88B), UMC, F ($46B), ODFL, CMG, KGC, ARXS, JLL, ETSY, FORM, EAT, MGM, SIMO, SFM, TENB
-- **Thu 29th:** **AMZN ($2.68T)** , **INTC ($460B)** ,
+- **Thu 29th:** **AMZN ($2.68T)**, **INTC ($460B)**,
 - BMY, ASX, LYG, HWM, MSTR ($62B), LNG, VALE, ABEV, RKT, CTSH, TECK, RDDT, FTI, ENTG, FSLR, RIVN, OWL, PBF, NCLH, TAL, MBLY, LAUR, PTCT, CCC, LKQ, TGS, INDV, GTX
 - **Fri 30th:** NWL, OIS, JKS
 - **Mon 2 Nov:** **AAPL ($5.08T)**, PLTR ($473B), FANG, CHKP, CB, EQH, TEM, GRAB, FN, AXSM, RIG, VAL, AROC, PAY, CIFR, ADEA, KOS, VOYG, ICHR
-- **Wed 4 Nov:** **AMD ($844B)** , PFE, MPC, ITUB, KDP, ALAB, **SMCI ($22B)** ,
+- **Wed 4 Nov:** **AMD ($844B)**, PFE, MPC, ITUB, KDP, ALAB, **SMCI ($22B)**,
 - OVV, UNM, DOCN, MDGL, SM, MTDR, SSRM, MOS, SGHC, BETA, PARR, SDRL, TALO, DRH, FLYW, OUST, XPRO, RVLV, QDEL, KODK, ASC, INN, FWRG
 - **Thu 5 Nov:** NET, CNQ, TRGP, DVN, AU, GMAB, AFRM, BCE, SOLV, CART, IONQ, FROG, TXRH, ARW, MUR, BTG, GPGI, SPNT, SHAK, ZLAB, SMR, PLNT, OSCR, LNC, LOAR, VIRT, KRMN, CNR, CORZ, PLNT, BTE, SPY, GRAL, RELY, JOBY, ABCL, LIF, UNME, DAVE, SEZL, TRMD, ADPT
 - **Fri 6 Nov:** **MRNA ($80B)**, VEON, WULF

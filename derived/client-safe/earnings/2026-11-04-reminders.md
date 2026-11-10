@@ -70,8 +70,8 @@ Filter: S&P 500 constituents (live Wikipedia constituent list, 503 symbols) OR m
 
 **Notes**
 
-- **Ticker convention (primary listing first):** ADR and OTC lines are shown on the issuer's PRIMARY listing with its exchange suffix, with the US line in parentheses - `8001.T (ITOCY)` ,
-- `8031.T (MITSY)` , `NOVO-B.CO (NVO)`.
+- **Ticker convention (primary listing first):** ADR and OTC lines are shown on the issuer's PRIMARY listing with its exchange suffix, with the US line in parentheses - `8001.T (ITOCY)`,
+- `8031.T (MITSY)`, `NOVO-B.CO (NVO)`.
 - Dual-listed names keep the US ticker because that is their primary listing: CVE (NYSE, primary; TSX: CVE.TO), MFC (NYSE, primary; TSX: MFC), ARM (Nasdaq, primary; LSE: 0ADF.L).
 - **No watchlist section.** `research/watchlist.yaml` does not exist in this runtime, so the `## Your watchlist` section is omitted rather than shipped empty.
 - **Date-confirmed exclusion - SMMNY (Siemens Healthineers AG, ~$54.0B):** both aggregators listed it for Nov 4, but the issuer's own IR states Q4 FY2026 results are released **November 5, 2026, 7:00 am CET**.

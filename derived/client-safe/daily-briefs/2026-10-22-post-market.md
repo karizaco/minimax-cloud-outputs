@@ -62,7 +62,7 @@
 
 - *Schwab:* **"Oil spiked and stocks and yields sagged after a report that the U.S. and Israel might resume attacks on Iran next month.
 - Meta's heavy spending outlook and chip worries also hurt."**
-- *Reuters (via businessday.co.za):* **"US stocks tumbled on Thursday, with the Nasdaq posting its steepest daily drop since early June as a batch of high-profile earnings reports ignited fresh fears about the AI spending race."** The Philadelphia SE Semiconductor Index **-6.3%** ,
+- *Reuters (via businessday.co.za):* **"US stocks tumbled on Thursday, with the Nasdaq posting its steepest daily drop since early June as a batch of high-profile earnings reports ignited fresh fears about the AI spending race."** The Philadelphia SE Semiconductor Index **-6.3%**,
 - its biggest drop since 23 June.
 - *IBKR:* **"Tech stocks are plunging as lackluster earnings reports spark AI slowdown worries with investors increasingly unsure about the return prospects of the massive investments."** Six of eleven sectors advanced;
 - the curve bull-flattened aggressively, led by duration.

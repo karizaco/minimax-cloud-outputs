@@ -58,7 +58,7 @@
 - On the live tape RSP is +2.28% above its 50-DMA and every other index is below; nothing changes the flag.
 
 - **Caveat on this table.** The skill's `extension_pct` column is `(close − sma_50)/sma_50` — **distance from the 50-DMA, not an ATR extension**, despite the column name.
-- The `atr_252d_avg` that now sits beside it *is* a genuine trailing window in the current `emit_breadth_sql` (it no longer collapses to `atr_14` ,
+- The `atr_252d_avg` that now sits beside it *is* a genuine trailing window in the current `emit_breadth_sql` (it no longer collapses to `atr_14`,
 - as it did before the skill's SQL was repaired), so the ATR-multiple column above is computed here directly as `(close − sma_50) ÷ atr_252d_avg`.
 - It is used only for the `late_cycle` flag, which it answers identically.
 

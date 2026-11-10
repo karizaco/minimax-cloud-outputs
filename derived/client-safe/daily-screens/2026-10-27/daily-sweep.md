@@ -39,8 +39,8 @@
 - **447 of 2,936 live names closed up ≥4%** and 64 closed up ≥10% — the 4%-breakout screen went from 69 rows yesterday to **219** today.
 
 - **The caveat that most changes how to read this:** the Focus list is a **bounce off a drawdown, not momentum continuation**.
-- Nine of the twelve Focus names have a **negative 14-day velocity** while gapping up today (MXL −30.4% , ALAB −25.0% , OUST −21.3% , GLXY −19.7% , LUNR −19.8% ,
-- RKLB −18.9% , RDW −13.2% , ON −4.7% , SDGR −2.1%). Meanwhile the Stalk list — the names sitting *ready to go* at a 10/20-DMA —
+- Nine of the twelve Focus names have a **negative 14-day velocity** while gapping up today (MXL −30.4%, ALAB −25.0%, OUST −21.3%, GLXY −19.7%, LUNR −19.8%, RKLB −18.9%, RDW −13.2%,
+- ON −4.7%, SDGR −2.1%). Meanwhile the Stalk list — the names sitting *ready to go* at a 10/20-DMA —
 - is only **9** and is dominated by mega-caps that never sold off (AVGO, NVDA, AMZN, UI).
 - The two lists are disjoint: today's momentum is a V-shaped snapback, and the setups that are actually loaded are the ones that never dipped.
 
@@ -255,5 +255,5 @@ The prefilter is the skill's step-1 shibui gate, reproduced exactly. Every scree
 - Two general rules (preferred `X/PY`→`X-PY`, class share `X.Y`→`X-Y`) recovered all 63 names that failed on the first pass, taking universe bar coverage to 100%.
 - **Stale-row filter:** a row is dropped unless its last Yahoo daily bar is dated 2026-10-27. TV `change` alone is not sufficient (9 of the 13 shells carried 0.00–0.10% changes).
 - **ATR extension:** computed as a median of the **ATR% series** over 252 bars, not an average of rolling ATRs of differing window length.
-- **Tiering reads the enriched universe.** The derived fields (`adr20` , `atr_shrink` , `ma_shrink` ,
+- **Tiering reads the enriched universe.** The derived fields (`adr20`, `atr_shrink`, `ma_shrink`,
 - `contraction`) are computed onto the full prefiltered universe before the tier cut, so no skip-rule flag is silently blank in master/stalk/focus/tier-a.

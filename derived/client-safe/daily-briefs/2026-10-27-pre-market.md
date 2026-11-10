@@ -6,7 +6,7 @@
 - **Sources:** TradingView public screener (5,713 rows), CNBC quote API (143 pre-market names priced), Nasdaq earnings calendar (174 reporters for 10/27), Yahoo Finance, Coinbase/Kraken/CoinGecko, StockTwits, and `web_search` for catalyst anchoring.
 
 - **Read this first — four things materially change how the numbers below should be read.**
-- **1. The gap column is a pre-market gap, not a session move.** The skill's Step 2 screen filters on TradingView's `change` ,
+- **1. The gap column is a pre-market gap, not a session move.** The skill's Step 2 screen filters on TradingView's `change`,
 - but in a pre-open pull that field is the *prior regular session's* move. The gap tables therefore use the pre-market column, and Monday's session change is carried separately.
 - **2. The watchlist file does not exist.** `research/watchlist.yaml` is absent from this sandbox (the upstream URL returns 404). No default was invented, per the skill's hard rule.
 - Section 6 records the gap rather than filling it.
@@ -32,8 +32,8 @@
 - **CLS's gap is compressing and that is the most actionable number in the brief.** It printed $287.10 (+16.4%) at 04:02 ET and was $273.47 (+10.87%) at 08:38 ET —
 - **5.5 percentage points of the gap given back** before the open, on a 2027 revenue guide that is 12% above the Street.
 - A fade of that size on a beat-and-raise usually means the positioning, not the news, was the problem.
-- **The Brazil complex is bouncing mechanically off a historic break.** Lula's runoff win (51.8% vs 48.2% for Flávio Bolsonaro) on Monday took **XP −48.36%** on 133.1m shares (12.5x average) and dragged BBD −28.01% ,
-- STNE −27.44% , PAGS −25.17% , ITUB −20.37% , EWZ −19.82% , NU −16.95% , AFYA −29.49% , INTR −34.91%. The Ibovespa tripped circuit breakers and the real fell 10–12%.
+- **The Brazil complex is bouncing mechanically off a historic break.** Lula's runoff win (51.8% vs 48.2% for Flávio Bolsonaro) on Monday took **XP −48.36%** on 133.1m shares (12.5x average) and dragged BBD −28.01%,
+- STNE −27.44%, PAGS −25.17%, ITUB −20.37%, EWZ −19.82%, NU −16.95%, AFYA −29.49%, INTR −34.91%. The Ibovespa tripped circuit breakers and the real fell 10–12%.
 - Today's pre-market bid is **+0.20% (PBR) to +1.99% (PAGS)** —
 - a dead-cat bounce off an oversold tape, not a fundamental reversal, and the unresolved catalyst is Bolsonaro's annulment push plus Lula's finance-minister pick.
 - **It is a 174-company pre-market earnings day, and the dispersion inside it is enormous.** Sofi (**SOFI +11.62%**) beat and guided up; Commvault (**CVLT −10.24%**) and Watsco (**WSO −9.28%**) did not.
@@ -499,7 +499,7 @@ The violent part of this cluster has nothing to do with crypto.
 - a hard volume floor would have excluded legitimate names (MELI and AFYA were lost to one in a prior run).
 - **Stale prints are published and flagged, not hidden.** Prints older than 45 minutes carry (warning) and their age in minutes.
 - A stale print (GOOGN, 103 shares at 7:52 AM) was excluded outright because a live cross-check contradicted it.
-- **Pre-open print volatility was measured, not assumed.** A second full read ~11 minutes after the first moved the median name by **0.00pp** (mean 0.13pp, max **2.26pp on DOCS** ,
+- **Pre-open print volatility was measured, not assumed.** A second full read ~11 minutes after the first moved the median name by **0.00pp** (mean 0.13pp, max **2.26pp on DOCS**,
 - which was −1.00% at 08:24 and −3.26% at 08:35). Single pre-open prints are not stable numbers; the spread is disclosed.
 - **Crypto pricing was not taken from a single feed** after the CNBC index defect surfaced. Four venues were pulled and cross-checked.
 - **No audit log was written** (Cloud cron instruction; audit is not required here).

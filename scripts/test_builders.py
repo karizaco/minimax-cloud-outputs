@@ -445,25 +445,108 @@ class RunLedger(BuilderCase):
 
 
 class YesterdayShortList(BuilderCase):
-    def test_each_name_is_gapping_under_the_line_or_absent(self):
-        """The follow-up the two lists were never asked to answer.
+    def _write_brief(self, date, header, rows):
+        path = os.path.join(self.root, "daily-briefs", date + "-pre-market.csv")
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8", newline="") as fh:
+            fh.write(header)
+            for row in rows:
+                fh.write(row)
 
-        ACME is in yesterday's Tier-A and is gapping this morning. BETA is in
-        yesterday's Tier-A and is not in the feed. A name that is merely in the
-        feed under 3% is under the line, not a gap.
-        """
-        os.makedirs(os.path.join(self.root, "ntrt"), exist_ok=True)
-        with open(os.path.join(self.root, "ntrt", "2026-11-06.csv"), "w",
-                  encoding="utf-8", newline="") as fh:
-            fh.write("ticker,premarket_change_pct\nACME,8.00\nGAMMA,1.20\n")
-        run_builder("build_yesterday_short_list", self.root)
+    def _read(self):
         rows = list(csv.DictReader(open(os.path.join(
             self.root, "derived", "2026-11-06", "yesterday-short-list.csv"),
             encoding="utf-8")))
-        by = {r["ticker"]: r["status"] for r in rows}
-        self.assertEqual(by.get("ACME"), "gapping")
-        self.assertEqual(by.get("BETA"), "not in the feed")
-        self.assertNotIn("GAMMA", by, "a morning-only name was treated as yesterday's list")
+        return {r["ticker"]: r for r in rows}
+
+    def _write_ntrt(self, rows):
+        """The gap brief's morning screen. Its presence is what makes the
+        morning a morning the view covers."""
+        os.makedirs(os.path.join(self.root, "ntrt"), exist_ok=True)
+        with open(os.path.join(self.root, "ntrt", "2026-11-06.csv"), "w",
+                  encoding="utf-8", newline="") as fh:
+            fh.write("ticker,premarket_change_pct\n")
+            for row in rows:
+                fh.write(row)
+
+    def _board_with_delta(self):
+        """A third name on yesterday's board, so the sub-3% branch can run."""
+        with open(os.path.join(self.root, "daily-screens", "2026-11-05",
+                               "tier-a.csv"), "a", encoding="utf-8", newline="") as fh:
+            fh.write("DELTA,stockbee,1,E,50.00,2.0,50.10,0.33,3000,"
+                     "Health Technology,2026-11-04,mcp+tv\n")
+
+    def test_each_name_is_gapping_under_the_line_or_absent(self):
+        """The follow-up the two lists were never asked to answer.
+
+        ACME is in yesterday's Tier-A and is gapping this morning, from the
+        gap brief's band. DELTA is in yesterday's Tier-A and the morning brief
+        quoted it UNDER the 3% line, so it is under the line, not a gap. BETA
+        is in yesterday's Tier-A and no feed quoted it at all.
+        """
+        self._board_with_delta()
+        self._write_ntrt(["ACME,8.00\n", "GAMMA,1.20\n"])
+        self._write_brief("2026-11-06", "ticker,premarket_change_pct\n",
+                          ["DELTA,1.20\n"])
+
+        run_builder("build_yesterday_short_list", self.root)
+        by = self._read()
+        self.assertEqual(by.get("ACME", {}).get("status"), "gapping")
+        self.assertEqual(by.get("DELTA", {}).get("status"), "under the line",
+                         "a name the morning brief quoted under 3%% was not "
+                         "under the line")
+        self.assertEqual(by.get("BETA", {}).get("status"), "not in the feed")
+        self.assertNotIn("GAMMA", by,
+                         "a morning-only name was treated as yesterday's list")
+
+    def test_the_row_names_the_feed_the_print_came_from(self):
+        """A print without its feed is a number from nowhere.
+
+        The feeds quote different slices of the tape, so a reader has to be
+        able to see which one each row came from.
+        """
+        self._board_with_delta()
+        self._write_ntrt(["ACME,8.00\n"])
+        self._write_brief("2026-11-06", "ticker,premarket_change_pct\n",
+                          ["DELTA,1.20\n"])
+
+        run_builder("build_yesterday_short_list", self.root)
+        by = self._read()
+        self.assertIn("gap brief", by["ACME"]["source"])
+        self.assertIn("brief's own screen", by["DELTA"]["source"])
+
+    def test_the_brief_screen_is_read_under_either_percent_column(self):
+        """The percent column is spelled two ways across the archive.
+
+        `premarket_change_pct` on 2026-11-02 to 2026-11-04, `gap_pct` after.
+        A name the brief quoted has to be found under either spelling.
+        """
+        self._board_with_delta()
+        self._write_ntrt(["ACME,8.00\n"])
+        self._write_brief("2026-11-06", "ticker,gap_pct\n", ["DELTA,1.20\n"])
+
+        run_builder("build_yesterday_short_list", self.root)
+        by = self._read()
+        self.assertEqual(by.get("DELTA", {}).get("status"), "under the line",
+                         "the `gap_pct` spelling was not read")
+
+    def test_the_latest_feed_wins(self):
+        """One name, three feeds, one print - and the reader is told which.
+
+        The order is by clock, newest first: the pre-open tape's last
+        checkpoint, the gap brief's band, the brief's own screen. "Was it
+        gapping?" is answered by the most recent print, so a name that was
+        +1.96% at 08:30 and +3.45% at 09:00 is gapping.
+        """
+        self._write_ntrt(["ACME,8.00\n"])
+        self._write_brief("2026-11-06", "ticker,premarket_change_pct\n",
+                          ["ACME,1.96\n"])
+
+        run_builder("build_yesterday_short_list", self.root)
+        by = self._read()
+        self.assertEqual(float(by["ACME"]["morning_pct"]), 8.0,
+                         "the gap brief's later print did not win")
+        self.assertIn("gap brief", by["ACME"]["source"])
 
 
 class Idempotence(BuilderCase):

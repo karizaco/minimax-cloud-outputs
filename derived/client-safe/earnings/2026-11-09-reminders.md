@@ -77,7 +77,7 @@ Watchlist checked: AAPL, MSFT, NVDA, GOOGL, AMZN, IWM, GLD, TLT.
 - **Pass B coverage.** All 44 issuers in the standing non-US candidate universe were checked against their own IR calendar - every one of them had an issuer-confirmed date and every one of those dates falls on a different ET day, so **none of the 44 publishes today**.
 - Three more were added because a US earnings calendar flagged them for today (UniCredit, ANZ Group, SoftBank Corp).
 - Two rows are published - SoftBank Corp and UniCredit - and both had already published before this 06:00 ET fire.
-- **ANZ Group is deliberately NOT published.** Its FY2026 full-year results were released Monday 9 November at 10:00 AEDT = **23:00 ET on SUNDAY 8 November** ,
+- **ANZ Group is deliberately NOT published.** Its FY2026 full-year results were released Monday 9 November at 10:00 AEDT = **23:00 ET on SUNDAY 8 November**,
 - so by the fleet's ET-day rule (a print belongs to the ET day its timestamp falls on) it belongs to the 8 November brief, not today's.
 - **SoftBank Corp's US line is SOBKY (OTC ADR) - NOT SFTBY.** SFTBY / SFBQF are SoftBank **Group**, a different issuer, and SoftBank Corp (9434) is the telecom carrier.
 - Mixing the two would publish the wrong company.

@@ -24,7 +24,7 @@
 - a **29.8% spike off the open** that then faded 18.8% into the close. **VXN 28.50 +13.19%**, so the Nasdaq vol premium over VIX widened from **7.98 to 9.08 points**.
 - The VIX/VIX3M ratio was **0.9346** versus 0.8880 — still contango, but the cushion is nearly gone.
 - Total put/call **0.90** with equity put/call **0.66** shows no broad hedging rush; this was a concentrated repricing of the AI complex.
-- **Next week is the hard part.** **Apple reports after Monday's close** , the **US midterms are Tuesday 3 November** ,
+- **Next week is the hard part.** **Apple reports after Monday's close**, the **US midterms are Tuesday 3 November**,
 - ISM manufacturing lands Monday 10:00 ET, and the October jobs report is Friday 6 November.
 - The weekend has no cash session and the Globex futures market is closed until Sunday 18:00 ET —
 - so the first read on whether Monday gaps down will come from the crypto and Asia sessions, not from futures.
@@ -84,8 +84,8 @@
 
 - *AP (via Lancaster Online):* "The sell-off for tech stocks on Wall Street got even worse on worries that the frenzy around AI sent prices too high.
 - The S&P 500 dropped 1.8% Friday for its worst day since June."
-- *Investopedia:* "Stocks plunged Friday amid mounting concerns about the health of the AI trade… The Nasdaq fell 5.3% in October, its biggest one-month decline since March 2025." It also notes **SOXX fell more than 8%** ,
-- Nvidia **−4.2%** , and that gold futures were down 3.7% to **$3,883** an ounce at a one-year low.
+- *Investopedia:* "Stocks plunged Friday amid mounting concerns about the health of the AI trade… The Nasdaq fell 5.3% in October, its biggest one-month decline since March 2025." It also notes **SOXX fell more than 8%**,
+- Nvidia **−4.2%**, and that gold futures were down 3.7% to **$3,883** an ounce at a one-year low.
 - *Investrade:* "Ahead of Halloween, Wall Street was spooked by technology stocks, playing a 'trick' not a 'treat' for investors, and closing out a tumultuous month for the AI related trade." They note the semi space "took another leg lower midafternoon after reported Anthropic is expected to receive a 'high' junk rating, per a report in The Financial Times."
 - *STL News / AP:* "The U.S.
 - stock market closed sharply lower Friday as disappointing corporate forecasts, growing concerns about artificial intelligence spending, and heavy selling in semiconductor stocks sent Wall Street's major indexes into negative territory on the final trading day of October."
@@ -240,8 +240,8 @@
 - There is no INTC, AMZN or NVDA-style gap in either direction: **INTC −1.32%, RDDT +0.51%, TWLO +0.56%, RBLX +0.47%, NVDA +0.30%, AMD +0.68%**.
 - The market had already done its damage in the cash session.
 
-- **Index ETFs after the bell (20:00 ET extended close vs the cash close):** SPY **+0.19%** (757.12), QQQ **+0.33%** (692.74), SMH **+0.81%** (526.71), XLK **+0.36%** (180.15), XLC **+0.20%** (100.10), IWM **+0.18%** (279.82), DIA **+0.10%** (517.65), RSP **+0.06%** (218.45), XLF **+0.12%** ,
-- XLP **+0.05%** , XLV **+0.07%** , XLU **+0.02%** , XLE **0.00%** , XLY **+0.10%** , GLD **+0.10%** , USO **+0.15%** , TLT **−0.23%** , **XLRE −0.74%**.
+- **Index ETFs after the bell (20:00 ET extended close vs the cash close):** SPY **+0.19%** (757.12), QQQ **+0.33%** (692.74), SMH **+0.81%** (526.71), XLK **+0.36%** (180.15), XLC **+0.20%** (100.10), IWM **+0.18%** (279.82), DIA **+0.10%** (517.65), RSP **+0.06%** (218.45), XLF **+0.12%**,
+- XLP **+0.05%**, XLV **+0.07%**, XLU **+0.02%**, XLE **0.00%**, XLY **+0.10%**, GLD **+0.10%**, USO **+0.15%**, TLT **−0.23%**, **XLRE −0.74%**.
 - *The whole complex was marginally higher after the bell — the selloff did not extend. That is the single most useful fact for Monday's open.*
 
 ---
@@ -449,14 +449,14 @@
 **Degraded data paths — what this brief does *not* have:**
 
 - **No `type=index` rows in the TradingView scanner** (`totalCount: 0`), so all index levels come from Cboe, Nasdaq and the press.
-- **No consolidated US share volume for 10/30 from Cboe.** The Cboe market-share page exposes only 30-day and month-to-date aggregates, so the "19.87B shares vs a 17.26B 20-day average" figure in §1 is a **press number** ,
+- **No consolidated US share volume for 10/30 from Cboe.** The Cboe market-share page exposes only 30-day and month-to-date aggregates, so the "19.87B shares vs a 17.26B 20-day average" figure in §1 is a **press number**,
 - not a Cboe-verified one. The ETF relative-volume column is the substitute and it is directly measured.
 - **No cap-weighted sector aggregate** — the EOD file's market-cap column is company-level and stamped on every share class (the 10-30 run blanked 11 sibling class rows for exactly this reason).
 - §2 ranks sectors on official ETF closes and cross-checks with advance/decline breadth.
 - **No Russell 2000 future**, from CNBC or any other symbol variant.
 - **No consolidated after-hours tape** from Nasdaq (`/extended-trading` returned an empty table and a prior-session close in the 10-29 run).
 - The after-hours board here is the TradingView `postmarket_*` columns, cross-checked against Cboe's own `current_price` — an agreement that held to the cent on every name checked.
-- **No Nasdaq Composite or Nasdaq-100 row in the EOD file** ,
+- **No Nasdaq Composite or Nasdaq-100 row in the EOD file**,
 - and the Nasdaq historical endpoint had not ingested the 10/30 row at the time of the run, so the 10-session index tables use Cboe's history CSVs.
 - **No confirmed catalyst** for fourteen regular-session movers (MEOH, GDDY, OLN, INTA, HGV, RKT, MHK, CSGP, MIAX, SPOT, TMUS, ACN, CMCSA, PGEN) and for nine after-hours movers (ZJYL, BBNX, EVMN, AFYA, DCH, UNF, CLRO, PCLA, CDZI).
 - These are marked unconfirmed rather than explained.

@@ -240,7 +240,7 @@ The three-session sequence that ended on 6 November was violent in both directio
 - **What was BMO's -18.21% after-hours print?** One print, at the session low, on 282,578 shares, with no news item found and no earnings due until 2 December.
 - Either a news headline the scanner saw and the web search did not, or a bad tick in a thin tape.
 - What would resolve it: a second source for the 142.385 print, or a second print in the same neighbourhood before tomorrow's open.
-- **Does the semiconductor rally survive CoreWeave?** Today's SOX +6.85% , AVGO +8.78% ,
+- **Does the semiconductor rally survive CoreWeave?** Today's SOX +6.85%, AVGO +8.78%,
 - AMD +13.27% and AMAT +11.36% is a bet that AI-compute demand is intact against the post-midterm data-centre slowdown narrative that drove last week's selloff.
 - CoreWeave reports tomorrow after the close with revenue of about $3.54B expected and a consensus loss of $1.45.
 - What would resolve it: CoreWeave's revenue against that estimate and, more importantly, its capital-expenditure guide — that number is what the chip names are really trading.
@@ -279,7 +279,7 @@ The three-session sequence that ended on 6 November was violent in both directio
 - **ticker**: FF · **after-hours change**: -22.09% · **note**: micro-cap
 
 - One further row was discarded rather than published: CBMDF showed a -90.00% after-hours change from a close of $0.00001, which is a data artifact rather than a move.
-- Separately, StockTitan's unfiltered leaderboard shows the largest single regular-session mover of the night was OMH at roughly +499% ,
+- Separately, StockTitan's unfiltered leaderboard shows the largest single regular-session mover of the night was OMH at roughly +499%,
 - which the extended-hours screen does not surface because its after-hours change is negative (-12.34% from a 25.84 close).
 
 - **Materials is the one sector where the cap-weighted column and the ETF disagree materially.** Cap-weighted Materials prints +3.07% against XLB's +1.91%, a +1.16pp gap.

@@ -264,8 +264,8 @@ Equity put/call at 0.55 is call-heavy and *down* from 0.72 a year ago ([ycharts]
 - Sea will offer its cloud platform globally as **Sea Cloud** and is evaluating an **IPO of Monee** (fintech).
 - Market read it as capex and dilution risk against Shopee share loss to TikTok Shop/Lazada/Shein/Temu, on top of a **DBS downgrade to Hold (PT $105 from $148, Oct 2)** and continuing Rule 10b5-1 insider sales.
 - Q2 revenue +48.1% y/y to $7.8B, so this is a strategy repricing, not an earnings event. ([tickerspark](https://tickerspark.ai/market/sea-limited-se-drops-on-cloud-ipo-strategy-shift-1792512369112), [MarketBeat](https://www.marketbeat.com/stocks/NYSE/SE/news/), [TokenPost](https://www.tokenpost.com/news/investing/35772))
-- **Other large regular-session movers:** LION +14.41% , SLS +14.20% , TRAX +13.70% , KLRA +12.77% , KVYO +11.93% , EQPT +11.83% , TLK +11.39% , SPHR +9.67% ,
-- IMCR +9.25% , HTFL +8.96% | TSEM -8.25% , LGN -6.74% , MLI -6.59% , AERO -6.36% , GPC -5.12% , FIX -4.57% (full 15/15 tables in `raw/rs_movers.json`).
+- **Other large regular-session movers:** LION +14.41%, SLS +14.20%, TRAX +13.70%, KLRA +12.77%, KVYO +11.93%, EQPT +11.83%, TLK +11.39%, SPHR +9.67%, IMCR +9.25%, HTFL +8.96% | TSEM -8.25%, LGN -6.74%,
+- MLI -6.59%, AERO -6.36%, GPC -5.12%, FIX -4.57% (full 15/15 tables in `raw/rs_movers.json`).
 - **No confirmed catalyst found** for TSEM -8.25% (volume 2.3x) or LION +14.41% in indexed sources at writing time.
 
 ---

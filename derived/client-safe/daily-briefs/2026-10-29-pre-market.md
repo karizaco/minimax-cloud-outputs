@@ -48,7 +48,7 @@
 - BEA's 08:30 ET advance estimate put **Q3 real GDP at +3.4%** (consensus 3.2%, Atlanta Fed GDPNow 3.27%) but the **Q3 PCE price index at only 2.1%** (core 2.5%, Q2:
 - 5.0% / 3.3%). September PCE printed **+0.5% m/m, +3.6% y/y; core +0.3% m/m, +3.1% y/y** — in line with consensus.
 - Personal income +0.2% (below the +0.3% estimate); nominal spending +0.5%; **real PCE spending +0.0%**, a sharp slowdown from +0.5%.
-- The Fed held at 3.75–4.00% on Wednesday in a **10–2 vote, with Cook and Hammack dissenting for a 25bp hike** ,
+- The Fed held at 3.75–4.00% on Wednesday in a **10–2 vote, with Cook and Hammack dissenting for a 25bp hike**,
 - so this is a growth-beat / inflation-in-line mix that argues against a December hike.
 
 - **Watchlist:** the watchlist file (`research/watchlist.yaml`) does not exist in this Cloud runtime, so this brief is market-wide only —
@@ -402,9 +402,8 @@ weekly natural gas storage (prev. 77bcf); Atlanta Fed GDPNow for Q4 (14:50 ET).
 - **Ticker**: GILD · **Result**: Reported before open · **Pre-market**: $164.54 · **Reaction**: +3.4%
 - **Ticker**: SBUX · **Result**: Reported before open · **Pre-market**: $105.71 · **Reaction**: +2.4%
 
-- **Due after the close (per the TradingView earnings calendar and the weekly calendar):** **AMZN** (−1.8% pre-market, $250.05), **INTC** (−3.2% , $92.48), **MSTR** (−3.1% , $140.60), **COIN** (−2.8% ,
-- $157.67), **AXTI** (−7.4% pre-market, $59.62), **SNDK** (−3.0% , $1,362.32), **PINS** , **RIVN** , **RKT** , **MNST** , **DXCM** , **MDLZ** , **RBLX** , **RDDT** , **DHI** , **WY** ,
-- **EPD** , **SIRI** , **FMC** , **KPTI** , **ALLO** , **AKBA** , **MPN/medical REITs** and others.
+- **Due after the close (per the TradingView earnings calendar and the weekly calendar):** **AMZN** (−1.8% pre-market, $250.05), **INTC** (−3.2%, $92.48), **MSTR** (−3.1%, $140.60), **COIN** (−2.8%,
+- $157.67), **AXTI** (−7.4% pre-market, $59.62), **SNDK** (−3.0%, $1,362.32), **PINS**, **RIVN**, **RKT**, **MNST**, **DXCM**, **MDLZ**, **RBLX**, **RDDT**, **DHI**, **WY**, **EPD**, **SIRI**, **FMC**, **KPTI**, **ALLO**, **AKBA**, **MPN/medical REITs** and others.
 - Amazon and Intel are the two that matter for the AI-capex narrative the whole tape is trading around today.
 
 ---

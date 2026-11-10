@@ -135,7 +135,7 @@ US-listed common shares in the $40B-$50B band the $50B floor excluded, on the 20
 - The US roster keeps the plain US ticker for issuers whose US line is an ordinary share:
 - CNQ, TRP and WPM are NYSE-listed ordinary shares (TSX lines CNQ.TO, TRP.TO, WPM.TO are the secondary listings), so they are not ADRs and are published under their US ticker.
 - **Pass B:** 51 candidates were checked against their own IR calendars and announcements - the 41 standing issuers plus ten additions that became US-market-relevant (DHL Group, Deutsche Telekom, Rheinmetall, Swiss Re, Siemens Healthineers, ENGIE, National Grid, Bharti Airtel, Life Corp of India and Macquarie).
-- 14 are published. **DBS (D05.SI) is excluded on the ET-day rule** - its Q3 page was last updated 5 Nov 07:00 SGT = **4 Nov 18:00 ET** ,
+- 14 are published. **DBS (D05.SI) is excluded on the ET-day rule** - its Q3 page was last updated 5 Nov 07:00 SGT = **4 Nov 18:00 ET**,
 - so it landed on the previous ET day and belongs to the Nov 4 brief.
 - **Band:** 11 US-listed common shares sit in [$40B, $50B) on the Nov 4 close;
 - the 10 largest are published (the contract's guidance is 5-10 rows) and VIK (Viking Holdings Ltd, $40.72B) also sits in the band and reports on 17 Nov, not today.
@@ -154,8 +154,8 @@ US-listed common shares in the $40B-$50B band the $50B floor excluded, on the 20
 - **Market cap:** Yahoo is published, on the 2026-11-04 close. Every published cap was recomputed from scratch (Yahoo share count x the Nov 4 close) and all 43 matched.
 - TradingView's scanner returns 36 of the 43 names and agrees with Yahoo within 5% on 36 of them;
 - among the 7 it did not return are the two REITs where the providers count operating-partnership units differently - Camden Property (TradingView $14.03B against Yahoo's $12.00B) and Simon Property Group ($73.30B against $86.00B).
-- The **Nasdaq calendar's market-cap column is the outlier** - it differs from Yahoo by more than 5% on 24 of 43 names on the same close (Monster Beverage $138.64B against Yahoo's $93.70B, Microchip 16.8% ,
-- Simon 19.7% , Camden 18.6%) - so it is not published.
+- The **Nasdaq calendar's market-cap column is the outlier** - it differs from Yahoo by more than 5% on 24 of 43 names on the same close (Monster Beverage $138.64B against Yahoo's $93.70B, Microchip 16.8%,
+- Simon 19.7%, Camden 18.6%) - so it is not published.
 
 **Source health**
 
