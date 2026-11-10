@@ -1,0 +1,642 @@
+{
+  "marker": "EOD_DERIVE_V2",
+  "session": "2026-11-10",
+  "generated_by": "eod_derive.py",
+  "csv_columns": 30,
+  "columns": [
+    "date",
+    "ticker",
+    "name",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "change_pct",
+    "market_cap",
+    "pe_ratio",
+    "sector",
+    "currency",
+    "exchange",
+    "rel_volume",
+    "pct_from_52w_high",
+    "pct_from_52w_low",
+    "sma_20",
+    "sma_50",
+    "sma_200",
+    "pct_vs_sma_50",
+    "pct_vs_sma_200",
+    "atr_14",
+    "atr_pct",
+    "gap_pct",
+    "avg_daily_dollar_volume",
+    "float_shares",
+    "market_cap_usd",
+    "cap_source_symbol",
+    "data_quality"
+  ],
+  "base_columns": [
+    "date",
+    "ticker",
+    "name",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "change_pct",
+    "market_cap",
+    "pe_ratio",
+    "sector",
+    "currency",
+    "exchange"
+  ],
+  "derived_columns": [
+    "rel_volume",
+    "pct_from_52w_high",
+    "pct_from_52w_low",
+    "sma_20",
+    "sma_50",
+    "sma_200",
+    "pct_vs_sma_50",
+    "pct_vs_sma_200",
+    "atr_14",
+    "atr_pct",
+    "gap_pct",
+    "avg_daily_dollar_volume",
+    "float_shares",
+    "market_cap_usd",
+    "cap_source_symbol",
+    "data_quality"
+  ],
+  "rows": 4893,
+  "flag_vocabulary": [
+    "NO_CAP",
+    "CAP_CARRIED",
+    "HIGH_LOW_UNAVAILABLE",
+    "RANGE_ADJUSTED",
+    "NO_HISTORY",
+    "NO_PRIOR_CLOSE",
+    "EX_DISTRIBUTION",
+    "SPLIT_ADJUSTED",
+    "NO_PE",
+    "NO_SECTOR",
+    "OK"
+  ],
+  "flag_precedence": [
+    "NO_CAP",
+    "CAP_CARRIED",
+    "HIGH_LOW_UNAVAILABLE",
+    "RANGE_ADJUSTED",
+    "NO_HISTORY",
+    "NO_PRIOR_CLOSE",
+    "EX_DISTRIBUTION",
+    "SPLIT_ADJUSTED",
+    "NO_PE",
+    "NO_SECTOR",
+    "OK"
+  ],
+  "flag_counts": {
+    "NO_CAP": 241,
+    "CAP_CARRIED": 293,
+    "HIGH_LOW_UNAVAILABLE": 107,
+    "RANGE_ADJUSTED": 296,
+    "NO_HISTORY": 107,
+    "NO_PRIOR_CLOSE": 1,
+    "EX_DISTRIBUTION": 81,
+    "SPLIT_ADJUSTED": 5,
+    "NO_PE": 1973,
+    "NO_SECTOR": 369,
+    "OK": 2439
+  },
+  "populated_counts": {
+    "date": 4893,
+    "ticker": 4893,
+    "name": 4893,
+    "open": 4786,
+    "high": 4786,
+    "low": 4786,
+    "close": 4786,
+    "volume": 4786,
+    "change_pct": 4785,
+    "market_cap": 4652,
+    "pe_ratio": 2920,
+    "sector": 4524,
+    "currency": 4893,
+    "exchange": 4893,
+    "rel_volume": 4742,
+    "pct_from_52w_high": 4786,
+    "pct_from_52w_low": 4786,
+    "sma_20": 4749,
+    "sma_50": 4731,
+    "sma_200": 4513,
+    "pct_vs_sma_50": 4731,
+    "pct_vs_sma_200": 4513,
+    "atr_14": 4765,
+    "atr_pct": 4765,
+    "gap_pct": 4785,
+    "avg_daily_dollar_volume": 4742,
+    "float_shares": 4103,
+    "market_cap_usd": 4652,
+    "cap_source_symbol": 4736,
+    "data_quality": 4893
+  },
+  "populated_and_ok_counts": {
+    "date": 2439,
+    "ticker": 2439,
+    "name": 2439,
+    "open": 2439,
+    "high": 2439,
+    "low": 2439,
+    "close": 2439,
+    "volume": 2439,
+    "change_pct": 2439,
+    "market_cap": 2439,
+    "pe_ratio": 2439,
+    "sector": 2439,
+    "currency": 2439,
+    "exchange": 2439,
+    "rel_volume": 2437,
+    "pct_from_52w_high": 2439,
+    "pct_from_52w_low": 2439,
+    "sma_20": 2438,
+    "sma_50": 2435,
+    "sma_200": 2404,
+    "pct_vs_sma_50": 2435,
+    "pct_vs_sma_200": 2404,
+    "atr_14": 2439,
+    "atr_pct": 2439,
+    "gap_pct": 2439,
+    "avg_daily_dollar_volume": 2437,
+    "float_shares": 2196,
+    "market_cap_usd": 2439,
+    "cap_source_symbol": 2439,
+    "data_quality": 2439
+  },
+  "market_cap_currency": "USD",
+  "market_cap_conversion": "none - the US file is already USD; market_cap_usd == market_cap (FX identity, no conversion applied)",
+  "market_cap_carrier_rule": "the vendor's own carrier row (shibui valuation); every line of the issuer carries the issuer's cap and names the carrier in cap_source_symbol",
+  "carrier_rows": 4443,
+  "carried_rows": 293,
+  "issuer_groups": 4580,
+  "history_misses": 107,
+  "change_pct_rule": "the session's PRICE change against the prior session's SETTLED close (--prior-csv); a quote service's previous_close is dividend-adjusted and a bar whose date was not asserted is stale - neither is an anchor",
+  "change_pct_corrected": 4,
+  "change_pct_filled": 64,
+  "change_pct_unverified": 1,
+  "prior_session": "2026-11-09",
+  "ex_distribution_rows": 81,
+  "split_adjusted_rows": 6,
+  "split_adjusted_detail": [
+    {
+      "ticker": "CNTY",
+      "anchor_before": 0.598,
+      "split_adjusted_prior_close": 0.63
+    },
+    {
+      "ticker": "CWD",
+      "anchor_before": 0.3948,
+      "split_adjusted_prior_close": 0.4199
+    },
+    {
+      "ticker": "DVLT",
+      "anchor_before": 0.0566,
+      "split_adjusted_prior_close": 0.06
+    },
+    {
+      "ticker": "JOB",
+      "anchor_before": 0.1949,
+      "split_adjusted_prior_close": 5.847
+    },
+    {
+      "ticker": "JOB",
+      "anchor_before": 0.1949,
+      "split_adjusted_prior_close": 5.847
+    },
+    {
+      "ticker": "PSQH",
+      "anchor_before": 1.68,
+      "split_adjusted_prior_close": 1.95
+    }
+  ],
+  "ex_distribution_detail": [
+    {
+      "ticker": "ACHV",
+      "prior_published_close": 6.78,
+      "quote_adjusted_prior_close": 6.72
+    },
+    {
+      "ticker": "AEP",
+      "prior_published_close": 128.3,
+      "quote_adjusted_prior_close": 127.36
+    },
+    {
+      "ticker": "AIMD",
+      "prior_published_close": 0.6,
+      "quote_adjusted_prior_close": 0.59
+    },
+    {
+      "ticker": "AIRT",
+      "prior_published_close": 28.69,
+      "quote_adjusted_prior_close": 28.45
+    },
+    {
+      "ticker": "AROW",
+      "prior_published_close": 39.11,
+      "quote_adjusted_prior_close": 38.81
+    },
+    {
+      "ticker": "BDL",
+      "prior_published_close": 56.01,
+      "quote_adjusted_prior_close": 55.5
+    },
+    {
+      "ticker": "BPRN",
+      "prior_published_close": 44.51,
+      "quote_adjusted_prior_close": 44.11
+    },
+    {
+      "ticker": "BRW",
+      "prior_published_close": 6.0,
+      "quote_adjusted_prior_close": 5.915
+    },
+    {
+      "ticker": "BTBD",
+      "prior_published_close": 1.635,
+      "quote_adjusted_prior_close": 1.5933
+    },
+    {
+      "ticker": "BYFC",
+      "prior_published_close": 11.99,
+      "quote_adjusted_prior_close": 11.6
+    },
+    {
+      "ticker": "CBAN",
+      "prior_published_close": 20.57,
+      "quote_adjusted_prior_close": 20.45
+    },
+    {
+      "ticker": "CDR-P-B",
+      "prior_published_close": 17.5,
+      "quote_adjusted_prior_close": 17.106874
+    },
+    {
+      "ticker": "CDR-P-C",
+      "prior_published_close": 16.66,
+      "quote_adjusted_prior_close": 16.25375
+    },
+    {
+      "ticker": "CELU",
+      "prior_published_close": 0.7597,
+      "quote_adjusted_prior_close": 0.755
+    },
+    {
+      "ticker": "CEV",
+      "prior_published_close": 10.94,
+      "quote_adjusted_prior_close": 10.865
+    },
+    {
+      "ticker": "CHMI-P-B",
+      "prior_published_close": 21.5,
+      "quote_adjusted_prior_close": 21.03
+    },
+    {
+      "ticker": "DAIO",
+      "prior_published_close": 2.495,
+      "quote_adjusted_prior_close": 2.45
+    },
+    {
+      "ticker": "ECC-P-D",
+      "prior_published_close": 17.75,
+      "quote_adjusted_prior_close": 17.609375
+    },
+    {
+      "ticker": "ECC",
+      "prior_published_close": 2.3,
+      "quote_adjusted_prior_close": 2.24
+    },
+    {
+      "ticker": "EEIQ",
+      "prior_published_close": 3.9,
+      "quote_adjusted_prior_close": 3.85
+    },
+    {
+      "ticker": "EFOI",
+      "prior_published_close": 4.395,
+      "quote_adjusted_prior_close": 4.345
+    },
+    {
+      "ticker": "EIC",
+      "prior_published_close": 8.74,
+      "quote_adjusted_prior_close": 8.63
+    },
+    {
+      "ticker": "ENSC",
+      "prior_published_close": 0.3615,
+      "quote_adjusted_prior_close": 0.3549
+    },
+    {
+      "ticker": "EZRA",
+      "prior_published_close": 2.61,
+      "quote_adjusted_prior_close": 2.1
+    },
+    {
+      "ticker": "F",
+      "prior_published_close": 12.52,
+      "quote_adjusted_prior_close": 12.37
+    },
+    {
+      "ticker": "FKWL",
+      "prior_published_close": 2.14,
+      "quote_adjusted_prior_close": 2.12
+    },
+    {
+      "ticker": "FLG-P-U",
+      "prior_published_close": 36.45,
+      "quote_adjusted_prior_close": 36.225
+    },
+    {
+      "ticker": "FOF",
+      "prior_published_close": 12.44,
+      "quote_adjusted_prior_close": 12.353
+    },
+    {
+      "ticker": "GABC",
+      "prior_published_close": 50.44,
+      "quote_adjusted_prior_close": 50.13
+    },
+    {
+      "ticker": "GBX",
+      "prior_published_close": 41.81,
+      "quote_adjusted_prior_close": 41.47
+    },
+    {
+      "ticker": "GIFT",
+      "prior_published_close": 0.5434,
+      "quote_adjusted_prior_close": 0.5201
+    },
+    {
+      "ticker": "GTBP",
+      "prior_published_close": 4.32,
+      "quote_adjusted_prior_close": 4.25
+    },
+    {
+      "ticker": "HNNA",
+      "prior_published_close": 10.35,
+      "quote_adjusted_prior_close": 10.205
+    },
+    {
+      "ticker": "HOMB",
+      "prior_published_close": 30.4,
+      "quote_adjusted_prior_close": 30.17
+    },
+    {
+      "ticker": "HR",
+      "prior_published_close": 19.36,
+      "quote_adjusted_prior_close": 19.12
+    },
+    {
+      "ticker": "HTGC",
+      "prior_published_close": 16.37,
+      "quote_adjusted_prior_close": 15.9
+    },
+    {
+      "ticker": "HYFM",
+      "prior_published_close": 0.77,
+      "quote_adjusted_prior_close": 0.7552
+    },
+    {
+      "ticker": "IBM",
+      "prior_published_close": 246.1,
+      "quote_adjusted_prior_close": 244.42
+    },
+    {
+      "ticker": "IMA",
+      "prior_published_close": 3.97,
+      "quote_adjusted_prior_close": 3.89
+    },
+    {
+      "ticker": "INJC",
+      "prior_published_close": 26.01,
+      "quote_adjusted_prior_close": 25.8701
+    },
+    {
+      "ticker": "KITT",
+      "prior_published_close": 1.35,
+      "quote_adjusted_prior_close": 1.315
+    },
+    {
+      "ticker": "LDP",
+      "prior_published_close": 19.59,
+      "quote_adjusted_prior_close": 19.459
+    },
+    {
+      "ticker": "LGI",
+      "prior_published_close": 16.75,
+      "quote_adjusted_prior_close": 16.5966
+    },
+    {
+      "ticker": "LIMN",
+      "prior_published_close": 2.71,
+      "quote_adjusted_prior_close": 2.685
+    },
+    {
+      "ticker": "LSF",
+      "prior_published_close": 2.47,
+      "quote_adjusted_prior_close": 2.43
+    },
+    {
+      "ticker": "MAYS",
+      "prior_published_close": 43.5,
+      "quote_adjusted_prior_close": 42.15
+    },
+    {
+      "ticker": "MGX",
+      "prior_published_close": 0.7217,
+      "quote_adjusted_prior_close": 0.712
+    },
+    {
+      "ticker": "MGY",
+      "prior_published_close": 22.67,
+      "quote_adjusted_prior_close": 22.49
+    },
+    {
+      "ticker": "MGYR",
+      "prior_published_close": 21.87,
+      "quote_adjusted_prior_close": 21.75
+    },
+    {
+      "ticker": "MSGM",
+      "prior_published_close": 4.3,
+      "quote_adjusted_prior_close": 4.25
+    },
+    {
+      "ticker": "MSM",
+      "prior_published_close": 119.3,
+      "quote_adjusted_prior_close": 118.37
+    },
+    {
+      "ticker": "MTDR",
+      "prior_published_close": 49.97,
+      "quote_adjusted_prior_close": 49.5325
+    },
+    {
+      "ticker": "NEGG",
+      "prior_published_close": 8.91,
+      "quote_adjusted_prior_close": 8.82
+    },
+    {
+      "ticker": "NXGL",
+      "prior_published_close": 3.645,
+      "quote_adjusted_prior_close": 3.52
+    },
+    {
+      "ticker": "NXPL",
+      "prior_published_close": 8.79,
+      "quote_adjusted_prior_close": 8.71
+    },
+    {
+      "ticker": "OWL",
+      "prior_published_close": 10.37,
+      "quote_adjusted_prior_close": 10.14
+    },
+    {
+      "ticker": "PHUN",
+      "prior_published_close": 1.79,
+      "quote_adjusted_prior_close": 1.78
+    },
+    {
+      "ticker": "POOL",
+      "prior_published_close": 221.1,
+      "quote_adjusted_prior_close": 219.75
+    },
+    {
+      "ticker": "PPG",
+      "prior_published_close": 125.3,
+      "quote_adjusted_prior_close": 124.57
+    },
+    {
+      "ticker": "PSF",
+      "prior_published_close": 19.19,
+      "quote_adjusted_prior_close": 19.064
+    },
+    {
+      "ticker": "PTA",
+      "prior_published_close": 17.49,
+      "quote_adjusted_prior_close": 17.356
+    },
+    {
+      "ticker": "RES",
+      "prior_published_close": 5.26,
+      "quote_adjusted_prior_close": 5.22
+    },
+    {
+      "ticker": "RFI",
+      "prior_published_close": 10.92,
+      "quote_adjusted_prior_close": 10.84
+    },
+    {
+      "ticker": "RKTO",
+      "prior_published_close": 0.3953,
+      "quote_adjusted_prior_close": 0.3914
+    },
+    {
+      "ticker": "RLTY",
+      "prior_published_close": 14.91,
+      "quote_adjusted_prior_close": 14.8
+    },
+    {
+      "ticker": "RNP",
+      "prior_published_close": 19.41,
+      "quote_adjusted_prior_close": 19.274
+    },
+    {
+      "ticker": "ROL",
+      "prior_published_close": 38.74,
+      "quote_adjusted_prior_close": 38.54
+    },
+    {
+      "ticker": "RQI",
+      "prior_published_close": 11.96,
+      "quote_adjusted_prior_close": 11.87
+    },
+    {
+      "ticker": "SABA",
+      "prior_published_close": 7.73,
+      "quote_adjusted_prior_close": 7.672
+    },
+    {
+      "ticker": "SAGU",
+      "prior_published_close": 10.11,
+      "quote_adjusted_prior_close": 10.05
+    },
+    {
+      "ticker": "SCNX",
+      "prior_published_close": 3.2,
+      "quote_adjusted_prior_close": 3.15
+    },
+    {
+      "ticker": "SINT",
+      "prior_published_close": 1.54,
+      "quote_adjusted_prior_close": 1.49
+    },
+    {
+      "ticker": "SON",
+      "prior_published_close": 50.24,
+      "quote_adjusted_prior_close": 49.7
+    },
+    {
+      "ticker": "TGT",
+      "prior_published_close": 165.9,
+      "quote_adjusted_prior_close": 164.74
+    },
+    {
+      "ticker": "UTF",
+      "prior_published_close": 26.08,
+      "quote_adjusted_prior_close": 25.915
+    },
+    {
+      "ticker": "UVSP",
+      "prior_published_close": 41.09,
+      "quote_adjusted_prior_close": 40.86
+    },
+    {
+      "ticker": "VLOS",
+      "prior_published_close": 10.71,
+      "quote_adjusted_prior_close": 10.65
+    },
+    {
+      "ticker": "WINA",
+      "prior_published_close": 275.4,
+      "quote_adjusted_prior_close": 270.36
+    },
+    {
+      "ticker": "WNEB",
+      "prior_published_close": 13.8,
+      "quote_adjusted_prior_close": 13.73
+    },
+    {
+      "ticker": "WTBA",
+      "prior_published_close": 31.07,
+      "quote_adjusted_prior_close": 30.81
+    },
+    {
+      "ticker": "WTRG",
+      "prior_published_close": 45.1,
+      "quote_adjusted_prior_close": 44.7394
+    }
+  ],
+  "change_pct_basis": "the session's PRICE change against the prior session's published close (the archive's convention, verifiable from the two published closes); ex-distribution rows are flagged EX_DISTRIBUTION because the quote service's prior close is dividend-adjusted there",
+  "range_adjusted_rows": 0,
+  "implied_shares_implausible": 0,
+  "definitions": {
+    "rel_volume": "session volume / mean(volume of the 30 sessions BEFORE the session)",
+    "avg_daily_dollar_volume": "mean(close x volume) over the same 30 prior sessions",
+    "sma_20/50/200": "mean(close) over the last 20/50/200 bars ending AT the session bar",
+    "pct_vs_sma_50/200": "(close / sma - 1) * 100",
+    "atr_14": "mean(true range) over the last 14 bars ending at the session bar; true range = max(h-l, |h-prev_close|, |l-prev_close|)",
+    "atr_pct": "atr_14 / close * 100",
+    "pct_from_52w_high/low": "(close - max(high) / min(low) over the last 252 bars) / that extreme * 100",
+    "gap_pct": "(published open - prior close) / prior close * 100"
+  }
+}
