@@ -1,0 +1,59 @@
+{
+  "us": [
+    {
+      "name": "APPS",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-09"
+    },
+    {
+      "name": "AAON",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-09"
+    },
+    {
+      "name": "SANM",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-09"
+    },
+    {
+      "name": "RKLB",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-09"
+    },
+    {
+      "name": "SRRK",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-10"
+    }
+  ],
+  "eu": [
+    {
+      "name": "MMK",
+      "chg": 12.54
+    },
+    {
+      "name": "EG7",
+      "chg": 12.18
+    },
+    {
+      "name": "GENO",
+      "chg": 10.24
+    }
+  ],
+  "au": [
+    {
+      "name": "MND",
+      "chg": 15.3
+    },
+    {
+      "name": "NXL",
+      "chg": -10.29
+    }
+  ],
+  "budget": {
+    "US": 5,
+    "EU": 3,
+    "AU": 2
+  },
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-10.md"
+}
