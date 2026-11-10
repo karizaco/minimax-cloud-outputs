@@ -149,6 +149,19 @@ def _source_health(value: Any) -> list[dict[str, Any]]:
     return result
 
 
+def _candidate_count(source_health: list[dict[str, Any]]) -> int | None:
+    for item in source_health:
+        if str(item.get("source", "")).lower() != "cmoney":
+            continue
+        try:
+            count = int(item.get("count"))
+        except (TypeError, ValueError):
+            continue
+        if count > 0:
+            return count
+    return None
+
+
 def _parse_date(value: str) -> date_cls:
     return datetime.strptime(value, "%Y-%m-%d").date()
 
@@ -234,10 +247,10 @@ def _apply_open_carry(
     floors = cfg.get("open", {}).get("floors", {})
     by_ticker = {row.ticker.upper(): row for row in rows}
     for item in carry:
-        row = by_ticker.get(str(item.get("ticker", "")).upper())
-        if row is not None:
-            row.flags.append("OVERNIGHT_CARRY")
-            row.why = item.get("why") or row.why
+        ticker = str(item.get("ticker", "")).upper()
+        if ticker in by_ticker:
+            by_ticker[ticker].flags.append("OVERNIGHT_CARRY")
+            by_ticker[ticker].why = item.get("why") or by_ticker[ticker].why
     promoted = promote_if_clears(carry, rows, floors)
     seen = {r.ticker.upper() for r in rows}
     out = list(rows)
@@ -322,13 +335,17 @@ def run_shadow(
         "detail": f"{invalid_count} invalid rows dropped",
         "count": invalid_count,
     })
+    candidate_count = _candidate_count(source_health)
     meta = dict(built.get("meta") or {})
     meta.update({"date": date, "slot": slot, "market": market_name, "fx": fx})
+    if candidate_count is not None:
+        meta["candidate_count"] = candidate_count
     payload: dict[str, Any] = {
         "date": date,
         "slot": slot,
         "market": market_name,
         "fx": fx,
+        "candidate_count": candidate_count,
         "source_health": source_health,
         "candidates": candidate_dicts,
         "meta": meta,
@@ -341,6 +358,8 @@ def run_shadow(
         "slot": slot,
         "metadata": meta,
     }
+    if candidate_count is not None:
+        run_dict["candidate_count"] = candidate_count
 
     json_path = root / f"{date}-{slot}.json"
     md_path = root / f"{date}-{slot}.md"

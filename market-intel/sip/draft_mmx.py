@@ -15,6 +15,10 @@ from .paths import assert_safe_out_path
 DEFAULT_CHAT_SYSTEM = """You are the SIP Taiwan-market chat writer.
 Summarize the supplied run JSON accurately. Use only facts present in RUN_JSON.
 Do not invent prices, catalysts, tickers, or numbers. Preserve exact ticker names.
+Session turnover in RUN_JSON is TWD. Never label a TWD 億 figure as 億美元.
+For chat turnover, divide TWD by the session FX and show US$ (for example,
+US$896.1m). Use 億美元 only for that FX-converted USD-yi amount. If a TWD yi
+amount is shown, label it 億元, 億台幣, or TWD; Taiwan chat policy prefers US$.
 Return a concise Markdown chat digest. Every numeric claim must be supported by RUN_JSON.
 """
 
@@ -53,6 +57,34 @@ def _executable_for(mmx_bin: str | Path) -> list[str]:
     if binary.endswith(".py"):
         return [sys.executable, binary]
     return [binary]
+
+
+def _run_fx(run_data: Any) -> float | None:
+    if not isinstance(run_data, dict):
+        return None
+    for key in ("fx", "fx_rate"):
+        value = run_data.get(key)
+        if value is not None:
+            try:
+                fx = float(value)
+            except (TypeError, ValueError):
+                continue
+            if fx > 0:
+                return fx
+    for container_name in ("meta", "metadata"):
+        container = run_data.get(container_name)
+        if not isinstance(container, dict):
+            continue
+        for key in ("fx", "fx_rate"):
+            value = container.get(key)
+            if value is not None:
+                try:
+                    fx = float(value)
+                except (TypeError, ValueError):
+                    continue
+                if fx > 0:
+                    return fx
+    return None
 
 
 def draft_chat(
@@ -140,7 +172,7 @@ def draft_chat(
 
         temp_path.write_text(content, encoding="utf-8")
 
-        result = check_chat(run_data, content)
+        result = check_chat(run_data, content, fx_rate=_run_fx(run_data))
         if not result.get("ok", False):
             temp_path.unlink(missing_ok=True)
             failed_path.write_text(

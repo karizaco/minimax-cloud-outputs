@@ -43,6 +43,8 @@ def main(argv: list[str] | None = None) -> int:
     check.add_argument("--run", required=True)
     check.add_argument("--chat", required=True)
     check.add_argument("--fx", type=float, default=32.824)
+    check.add_argument("--date")
+    check.add_argument("--candidate-count", type=int)
 
     args = parser.parse_args(argv)
 
@@ -85,7 +87,13 @@ def main(argv: list[str] | None = None) -> int:
 
         run_data = _load_json(args.run)
         chat_text = Path(args.chat).read_text(encoding="utf-8")
-        check_result = check_chat(run_data, chat_text)
+        check_result = check_chat(
+            run_data,
+            chat_text,
+            fx_rate=args.fx,
+            date=args.date,
+            candidate_count=args.candidate_count,
+        )
         if isinstance(check_result, tuple):
             ok, report = check_result
         elif isinstance(check_result, dict):

@@ -11,6 +11,7 @@ import json
 import math
 import re
 import sys
+from datetime import date as date_cls
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -23,6 +24,8 @@ _NUMBER_RE = re.compile(
     r"(?P<currency>US\$|\$)?"
     r"(?P<number>\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)"
     r"(?P<suffix>%|x|m|bn)?"
+    r"\s*"
+    r"(?P<yi>億美元|億美金|億元|億台幣|億)?"
     r"(?![A-Za-z0-9])",
     re.IGNORECASE,
 )
@@ -40,6 +43,7 @@ _TICKER_FIELDS = {"ticker", "symbol", "display_ticker"}
 
 _MM_TO_USD = 1_000_000.0
 _BN_TO_USD = 1_000_000_000.0
+_YI = 100_000_000.0
 
 
 def _as_float(value: Any) -> float | None:
@@ -76,7 +80,10 @@ def extract_numbers(text: str) -> list[dict[str, Any]]:
             number = -number
         suffix = (match.group("suffix") or "").lower()
         currency = match.group("currency")
-        if suffix == "%":
+        yi = match.group("yi") or ""
+        if yi:
+            kind = "usd_yi" if yi in {"億美元", "億美金"} else "twd_yi"
+        elif suffix == "%":
             kind = "percent"
         elif suffix == "x":
             kind = "multiple"
@@ -91,6 +98,8 @@ def extract_numbers(text: str) -> list[dict[str, Any]]:
             normalized *= _MM_TO_USD
         elif suffix == "bn":
             normalized *= _BN_TO_USD
+        elif yi:
+            normalized *= _YI
         found.append(
             {
                 "raw": raw,
@@ -114,48 +123,115 @@ def _walk(run: dict | list) -> Iterable[tuple[str | None, Any]]:
 
 def _currency_candidates(value: float) -> set[float]:
     candidates = set(_display_forms(value, "currency"))
+    millions = value / _MM_TO_USD
+    billions = value / _BN_TO_USD
     candidates.update(
         {
-            value / _MM_TO_USD,
-            value / _BN_TO_USD,
-            round(value / _MM_TO_USD, 1),
-            round(value / _BN_TO_USD, 1),
-            round(value / _MM_TO_USD),
-            round(value / _BN_TO_USD),
+            millions,
+            billions,
+            round(millions, 1),
+            round(millions, 2),
+            round(millions),
+            round(billions, 1),
+            round(billions, 2),
+            round(billions),
+            round(millions, 1) * _MM_TO_USD,
+            round(millions, 2) * _MM_TO_USD,
+            round(millions) * _MM_TO_USD,
+            round(billions, 1) * _BN_TO_USD,
+            round(billions, 2) * _BN_TO_USD,
+            round(billions) * _BN_TO_USD,
         }
     )
     return {float(item) for item in candidates if math.isfinite(float(item))}
 
 
-def collect_allowed_numbers(run: dict | list) -> set[float]:
-    allowed: set[float] = set()
+def _yi_candidates(value: float, decimals: tuple[int, ...] = (1, 2, 4)) -> set[float]:
+    yi_value = value / _YI
+    candidates: set[float] = {yi_value, yi_value * _YI}
+    for decimals_places in decimals:
+        rounded = round(yi_value, decimals_places)
+        candidates.add(rounded)
+        candidates.add(rounded * _YI)
+    return {float(item) for item in candidates if math.isfinite(float(item))}
+
+
+def _collect_typed_values(run: dict | list) -> dict[str, set[float]]:
+    values: dict[str, set[float]] = {
+        "number": set(),
+        "percent": set(),
+        "multiple": set(),
+        "currency": set(),
+        "twd_yi": set(),
+        "usd_yi": set(),
+    }
+    metadata: dict[str, set[float]] = {
+        "date_parts": set(),
+        "candidate_count": set(),
+        "fx": set(),
+    }
+
     for field, value in _walk(run):
+        if field == "date" or field == "run_date":
+            if isinstance(value, str):
+                try:
+                    parsed = date_cls.fromisoformat(value[:10])
+                except ValueError:
+                    continue
+                metadata["date_parts"].update(
+                    {float(parsed.year), float(parsed.month), float(parsed.day)}
+                )
+        elif field == "candidate_count":
+            number = _as_float(value)
+            if number is not None and number >= 0 and number.is_integer():
+                metadata["candidate_count"].add(number)
+        elif field in {"fx", "fx_rate"}:
+            number = _as_float(value)
+            if number is not None and number > 0:
+                metadata["fx"].update(
+                    {number, round(number, 1), round(number, 2), round(number)}
+                )
+
         if field not in _ALLOWED_FIELDS:
             continue
         if isinstance(value, dict):
-            for nested in value.values():
-                number = _as_float(nested)
-                if number is not None:
-                    allowed.update(_display_forms(number, "number"))
-            continue
-        if isinstance(value, (list, tuple, set)):
-            for nested in value:
-                number = _as_float(nested)
-                if number is not None:
-                    allowed.update(_display_forms(number, "number"))
-            continue
-        number = _as_float(value)
-        if number is None:
-            continue
-        if field in {"dollar_vol", "usd_turnover", "turnover_usd"}:
-            allowed.update(_currency_candidates(number))
-        elif field == "chg_pct":
-            allowed.update(_display_forms(number, "percent"))
-        elif field == "rvol":
-            allowed.update(_display_forms(number, "multiple"))
+            nested_values = value.values()
+        elif isinstance(value, (list, tuple, set)):
+            nested_values = value
         else:
-            allowed.update(_display_forms(number, "number"))
-    return allowed
+            nested_values = (value,)
+
+        for nested in nested_values:
+            number = _as_float(nested)
+            if number is None:
+                continue
+            if field in {"dollar_vol", "usd_turnover", "turnover_usd"}:
+                values["currency"].update(_currency_candidates(number))
+            elif field == "chg_pct":
+                values["percent"].update(_display_forms(number, "percent"))
+            elif field == "rvol":
+                values["multiple"].update(_display_forms(number, "multiple"))
+            else:
+                values["number"].update(_display_forms(number, "number"))
+
+            if field == "dollar_vol":
+                values["twd_yi"].update(_yi_candidates(number))
+            if field in {"usd_turnover", "turnover_usd"}:
+                values["usd_yi"].update(_yi_candidates(number))
+
+    values["number"].update(metadata["date_parts"])
+    values["number"].update(metadata["candidate_count"])
+    values["number"].update(metadata["fx"])
+    return values
+
+
+def collect_allowed_numbers(run: dict | list) -> set[float]:
+    """Return all numeric forms accepted for the supplied run."""
+    allowed = _collect_typed_values(run)
+    result: set[float] = set()
+    for values in allowed.values():
+        result.update(values)
+    return result
 
 
 def collect_ticker_codes(run: dict | list) -> set[float]:
@@ -193,12 +269,13 @@ def _context_for(text: str, span: list[int], radius: int = 36) -> str:
 
 def _matches(
     number: dict[str, Any],
-    allowed: set[float],
+    allowed: dict[str, set[float]],
     ticker_codes: set[float] | None = None,
 ) -> bool:
     value = float(number["value"])
+    kind = str(number["kind"])
     if (
-        number["kind"] == "number"
+        kind == "number"
         and ticker_codes
         and any(
             math.isclose(value, code, rel_tol=1e-9, abs_tol=1e-9)
@@ -207,9 +284,10 @@ def _matches(
     ):
         return True
 
+    candidates = allowed.get(kind, set())
     tolerance = max(1e-9, abs(value) * 1e-9)
-    for candidate in allowed:
-        if number["kind"] == "percent":
+    for candidate in candidates:
+        if kind == "percent":
             if value > 0 and candidate <= 0:
                 continue
             if value < 0 and candidate >= 0:
@@ -217,6 +295,9 @@ def _matches(
             if value == 0 and candidate != 0:
                 continue
             if abs(value - candidate) > PERCENT_TOLERANCE:
+                continue
+        elif kind in {"usd_yi", "twd_yi"}:
+            if not math.isclose(value, candidate, rel_tol=5e-4, abs_tol=100_000.0):
                 continue
         elif not math.isclose(
             value, candidate, rel_tol=1e-9, abs_tol=tolerance
@@ -231,14 +312,32 @@ def check_chat(
     chat_md: str,
     *,
     fx_rate: float | None = None,
+    date: str | None = None,
+    candidate_count: int | None = None,
 ) -> dict[str, Any]:
-    allowed = collect_allowed_numbers(run_json)
-    ticker_codes = collect_ticker_codes(run_json)
+    allowed = _collect_typed_values(run_json)
+
     if fx_rate is not None:
         fx = _as_float(fx_rate)
         if fx is not None and fx > 0:
-            allowed.update({fx, round(fx, 1), round(fx, 2), round(fx)})
+            allowed["number"].update(
+                {fx, round(fx, 1), round(fx, 2), round(fx)}
+            )
+    if date is not None:
+        try:
+            parsed = date_cls.fromisoformat(str(date)[:10])
+        except ValueError:
+            pass
+        else:
+            allowed["number"].update(
+                {float(parsed.year), float(parsed.month), float(parsed.day)}
+            )
+    if candidate_count is not None:
+        count = _as_float(candidate_count)
+        if count is not None and count >= 0 and count.is_integer():
+            allowed["number"].add(count)
 
+    ticker_codes = collect_ticker_codes(run_json)
     offenders: list[dict[str, Any]] = []
     for number in extract_numbers(chat_md):
         if _matches(number, allowed, ticker_codes):
@@ -247,7 +346,9 @@ def check_chat(
             "percent": "percentage is not represented by the run",
             "multiple": "multiple is not represented by the run",
             "currency": "currency amount is not represented by the run",
-        }.get(number["kind"], "number is not represented by the run")
+            "twd_yi": "TWD yi amount is not represented by the run",
+            "usd_yi": "USD yi amount is not represented by the run",
+        }.get(kind := str(number["kind"]), "number is not represented by the run")
         offenders.append(
             {
                 "raw": number["raw"],
@@ -263,6 +364,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--run", required=True)
     parser.add_argument("--chat", required=True)
     parser.add_argument("--fx", type=float, default=None)
+    parser.add_argument("--date")
+    parser.add_argument("--candidate-count", type=int)
     args = parser.parse_args(argv)
     try:
         run = json.loads(Path(args.run).read_text(encoding="utf-8"))
@@ -270,7 +373,13 @@ def main(argv: list[str] | None = None) -> int:
     except (OSError, json.JSONDecodeError) as exc:
         print(f"number_trace: {exc}", file=sys.stderr)
         return 2
-    result = check_chat(run, chat, fx_rate=args.fx)
+    result = check_chat(
+        run,
+        chat,
+        fx_rate=args.fx,
+        date=args.date,
+        candidate_count=args.candidate_count,
+    )
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0 if result["ok"] else 5
 

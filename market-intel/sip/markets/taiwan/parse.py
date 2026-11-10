@@ -5,6 +5,7 @@ from __future__ import annotations
 import html as html_module
 import json
 import re
+from html.parser import HTMLParser
 from typing import Any, Iterable, Mapping
 
 
@@ -37,10 +38,20 @@ def _integer(value: Any, default: int | None = None) -> int | None:
     return int(number) if number is not None else default
 
 
+def _normalized_key(value: Any) -> str:
+    return re.sub(r"\s+", "", str(value))
+
+
 def _first(data: Mapping[str, Any], *keys: str, default: Any = None) -> Any:
+    """Return the first present value, tolerating whitespace around JSON keys."""
     for key in keys:
         if key in data and data[key] is not None:
             return data[key]
+    normalized = {_normalized_key(key): value for key, value in data.items()}
+    for key in keys:
+        value = normalized.get(_normalized_key(key))
+        if value is not None:
+            return value
     return default
 
 
@@ -79,9 +90,9 @@ def _row_from_yahoo(data: Mapping[str, Any]) -> dict[str, Any]:
         "volume": _integer(_first(data, "volume", "volK", "regularMarketVolume")),
         "limitUp": bool(_first(data, "limitUp", default=False)),
         "limitDown": bool(_first(data, "limitDown", default=False)),
-        "previousClose": _number(_first(data, "previousClose")),
-        "dayHigh": _number(_first(data, "dayHigh", "regularMarketDayHigh")),
-        "dayLow": _number(_first(data, "dayLow", "regularMarketDayLow")),
+        "previousClose": _number(_first(data, "previousClose", "pc")),
+        "dayHigh": _number(_first(data, "dayHigh", "high")),
+        "dayLow": _number(_first(data, "dayLow", "low")),
     }
 
 
@@ -189,6 +200,18 @@ def parse_mops_browser_text(text: str) -> list[dict[str, Any]]:
     return rows
 
 
+def _readable_twse_time(item: Mapping[str, Any]) -> str:
+    date = str(_first(item, "發言日期", default="")).strip()
+    clock = str(_first(item, "發言時間", default="")).strip()
+    if re.fullmatch(r"\d{7}", date) and re.fullmatch(r"\d{4,6}", clock):
+        month = date[3:5]
+        day = date[5:7]
+        hour = clock[0:2]
+        minute = clock[2:4]
+        return f"{month}/{day} {hour}:{minute}"
+    return ""
+
+
 def parse_mops_items(
     json_obj_or_list: Any,
 ) -> list[dict[str, Any]]:
@@ -246,38 +269,119 @@ def parse_mops_items(
                 default="",
             )
         ).strip()
+        if not headline:
+            explanation = str(_first(item, "說明", default="")).strip()
+            headline = explanation.splitlines()[0].strip() if explanation else ""
         if not ticker and not headline:
             continue
+        readable_time = _readable_twse_time(item)
+        fallback_time = str(
+            _first(
+                item,
+                "catalyst_time",
+                "time",
+                "發言時間",
+                "datetime",
+                default="",
+            )
+        ).strip()
+        catalyst_time = readable_time or fallback_time
         result.append(
             {
                 "ticker": _symbol_code(ticker),
                 "code": _symbol_code(ticker),
                 "headline": headline,
                 "catalyst": headline,
-                "time": str(
-                    _first(
-                        item,
-                        "catalyst_time",
-                        "time",
-                        "發言時間",
-                        "datetime",
-                        default="",
-                    )
-                ).strip(),
-                "catalyst_time": str(
-                    _first(
-                        item,
-                        "catalyst_time",
-                        "time",
-                        "發言時間",
-                        "datetime",
-                        default="",
-                    )
-                ).strip(),
+                "time": catalyst_time,
+                "catalyst_time": catalyst_time,
                 "raw": dict(item),
             }
         )
     return result
+
+
+def parse_twse_ap04(json_obj_or_list: Any) -> list[dict[str, Any]]:
+    """Parse TWSE OpenAPI AP04 material-information filings."""
+    return parse_mops_items(json_obj_or_list)
+
+
+class _MopsTableParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.rows: list[list[str]] = []
+        self._row: list[str] | None = None
+        self._cell: list[str] | None = None
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "tr":
+            self._row = []
+        elif tag in {"td", "th"} and self._row is not None:
+            self._cell = []
+
+    def handle_data(self, data: str) -> None:
+        if self._cell is not None:
+            self._cell.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag in {"td", "th"} and self._row is not None and self._cell is not None:
+            value = re.sub(r"\s+", " ", "".join(self._cell)).strip()
+            self._row.append(value)
+            self._cell = None
+        elif tag == "tr" and self._row is not None:
+            if any(self._row):
+                self.rows.append(self._row)
+            self._row = None
+
+
+def parse_mops_html(html: str) -> list[dict[str, Any]]:
+    """Parse only MOPS HTML table rows that contain both a code and a subject."""
+    parser = _MopsTableParser()
+    try:
+        parser.feed(str(html or ""))
+        parser.close()
+    except Exception as exc:
+        raise ParseError("mops_html", f"invalid HTML: {exc}") from exc
+
+    rows: list[dict[str, Any]] = []
+    seen: set[tuple[str, str]] = set()
+    for cells in parser.rows:
+        code_index = next(
+            (
+                index
+                for index, cell in enumerate(cells)
+                if re.fullmatch(r"\d{4}", cell.strip())
+            ),
+            None,
+        )
+        if code_index is None:
+            continue
+        ticker = cells[code_index].strip()
+        subject_candidates = [
+            cell.strip()
+            for index, cell in enumerate(cells)
+            if index != code_index
+            and cell.strip()
+            and not re.fullmatch(r"\d{4}", cell.strip())
+        ]
+        if not subject_candidates:
+            continue
+        headline = subject_candidates[-1]
+        identity = (ticker, headline)
+        if identity in seen:
+            continue
+        seen.add(identity)
+        rows.append(
+            {
+                "ticker": ticker,
+                "code": ticker,
+                "headline": headline,
+                "catalyst": headline,
+                "time": "",
+                "catalyst_time": "",
+                "raw": {"cells": cells},
+            }
+        )
+    return rows
 
 
 def _parse_roster(payload: Any, source: str) -> dict[str, dict[str, Any]]:
@@ -331,36 +435,25 @@ def parse_fx_json(obj: Any) -> float:
             raise ParseError(source, f"invalid JSON: {exc}") from exc
 
     if isinstance(obj, Mapping):
-        base_code = str(obj.get("base_code") or obj.get("baseCode") or "").upper()
-
+        code = str(obj.get("base_code") or obj.get("baseCode") or "").upper()
         for key in ("usd_twd", "usdTwd", "USD_TWD", "rate", "price", "value"):
             if key in obj:
                 value = _number(obj[key])
                 if value is not None:
                     return value
-
         rates = _first(obj, "rates", "quotes", "data")
         if isinstance(rates, Mapping):
-            if base_code == "USD":
-                value = _number(rates.get("TWD"))
-                if value is not None:
-                    return value
-
-            for key in ("USDTWD", "USD/TWD", "TWD=X", "TWD"):
-                value = _number(rates.get(key))
-                if value is not None:
-                    return value
-
+            value = _number(rates.get("TWD"))
+            if value is not None:
+                return value
     elif isinstance(obj, list):
         for item in obj:
-            if not isinstance(item, Mapping):
-                continue
-            symbol = str(_first(item, "symbol", "currency", default="")).upper()
-            if symbol in {"USDTWD", "USD/TWD", "TWD=X"}:
-                value = _number(_first(item, "rate", "price", "value"))
-                if value is not None:
-                    return value
-
+            if isinstance(item, Mapping):
+                symbol = str(_first(item, "symbol", "currency", default="")).upper()
+                if symbol in {"USDTWD", "USD/TWD", "TWD=X", "TWD"}:
+                    value = _number(_first(item, "rate", "price", "value"))
+                    if value is not None:
+                        return value
     raise ParseError(source, "USD/TWD rate not found")
 
 
@@ -374,12 +467,7 @@ def parse_tv_dump(obj: Any) -> list[dict[str, Any]]:
 
     if isinstance(obj, Mapping):
         candidates = _first(
-            obj,
-            "candidates",
-            "rows",
-            "items",
-            "data",
-            default=[],
+            obj, "candidates", "rows", "items", "data", default=[]
         )
     else:
         candidates = obj
@@ -403,9 +491,7 @@ def parse_tv_dump(obj: Any) -> list[dict[str, Any]]:
                 "code": _symbol_code(symbol),
                 "name": str(_first(item, "name", default="")).strip(),
                 "price": _number(_first(item, "price", "close")),
-                "changePercent": _number(
-                    _first(item, "changePercent", "change_percent", "chg", "pc")
-                ),
+                "changePercent": _number(_first(item, "changePercent", "change_pct")),
                 "volume": _integer(_first(item, "volume", "vol")),
                 "turnover": _number(_first(item, "turnover", "turn")),
                 "raw": dict(item),

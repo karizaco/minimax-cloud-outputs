@@ -16,9 +16,11 @@ from .parse import (
     parse_cmoney_change_up_html,
     parse_fx_json,
     parse_mops_browser_text,
+    parse_mops_html,
     parse_mops_items,
     parse_tpex_roster,
     parse_tv_dump,
+    parse_twse_ap04,
     parse_twse_roster,
     parse_yahoo_rank_html,
 )
@@ -282,6 +284,11 @@ def _attach_mops_catalysts(
 
 
 def _load_mops_rows(path: Path) -> list[dict[str, Any]]:
+    if path.name == "mops1.html":
+        return parse_mops_html(path.read_text(encoding="utf-8"))
+    if path.name == "twse-ap04.json":
+        return parse_twse_ap04(_load_json_or_text(path))
+
     payload = _load_json_or_text(path)
     if isinstance(payload, str):
         rows = parse_mops_browser_text(payload)
@@ -324,19 +331,40 @@ def build_candidates(
             "mops-browser.txt",
             "mops_browser.txt",
             "mops-browser.md",
+            "mops1.html",
+            "twse-ap04.json",
         )
-        mops_path = next(
-            (directory / name for name in mops_names if (directory / name).is_file()),
-            None,
-        )
-        if mops_path is not None:
-            try:
-                mops_rows = _load_mops_rows(mops_path)
+        mops_paths = [
+            directory / name for name in mops_names if (directory / name).is_file()
+        ]
+        if mops_paths:
+            errors: list[str] = []
+            for mops_path in mops_paths:
+                try:
+                    mops_rows.extend(_load_mops_rows(mops_path))
+                except (OSError, ParseError, ValueError) as exc:
+                    errors.append(f"{mops_path.name}: {exc}")
+            if mops_rows:
+                health.append(SourceHealth("mops", "ok", len(mops_rows)))
+            elif errors:
                 health.append(
-                    SourceHealth("mops", "ok" if mops_rows else "empty", len(mops_rows))
+                    SourceHealth(
+                        "mops",
+                        "coverage_failed",
+                        detail="; ".join(errors),
+                    )
                 )
-            except (OSError, ParseError, ValueError) as exc:
-                health.append(SourceHealth("mops", "blocked", detail=str(exc)))
+            else:
+                health.append(
+                    SourceHealth(
+                        "mops",
+                        "coverage_failed",
+                        detail=(
+                            "MOPS fixture contained no filing rows; required one of: "
+                            + ", ".join(mops_names)
+                        ),
+                    )
+                )
         else:
             health.append(
                 SourceHealth(
