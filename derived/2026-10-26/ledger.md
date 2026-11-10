@@ -1,6 +1,6 @@
 # Ledger — what every routine saw on 2026-10-26
 
-**Source:** derived join over 5 artifact(s): `daily-screens/2026-10-26/{master,focus,tier-a}.csv`, `earnings/2026-10-26-reactions.md`, `us-eod/2026-10-26.csv`, `us-stocks-in-play/2026-10-26-candidates.csv`, `options-flow/2026-10-26.md` · **Built:** 2026-11-09 · **Covers:** 428 name(s) any routine mentioned; 387 seen by two or more · read-only
+**Source:** derived join over 5 artifact(s): `daily-screens/2026-10-26/{master,focus,tier-a}.csv`, `earnings/2026-10-26-reactions.md`, `us-eod/2026-10-26.csv`, `us-stocks-in-play/2026-10-26-candidates.csv`, `options-flow/2026-10-26.md` · **Built:** 2026-11-10 · **Covers:** 428 name(s) any routine mentioned; 387 seen by two or more · read-only
 
 > **Read this before the table.**
 > 

@@ -1,6 +1,6 @@
 # Setup card — published 2026-10-26
 
-**Source:** derived join over `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md` and `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-09 · **Covers:** 13 stalk name(s), 8 Tier-A name(s); entry session 2026-10-27 · read-only
+**Source:** derived join over `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md` and `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-10 · **Covers:** 13 stalk name(s), 8 Tier-A name(s); entry session 2026-10-27 · read-only
 
 > **Read this before the table.**
 >
@@ -44,25 +44,25 @@ were not also on Stalk. On this date Stalk has 13 name(s) and Tier-A has 8.
 
 | Ticker | Boards | Stylists | Screen close | Observation close | Observation chg | Morning gap | Gap path | Catalyst | Tags published | Tags recomputed |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AAPL | stalk | Ariel Hernandez|Stockbee | 343.91 | 343.91 | -1.10 | — | — | no morning row | — | none |
-| ADI | stalk, tier-a | Ariel Hernandez|Jeff Sun|Stockbee | 407.93 | 407.93 | +4.31 | — | — | no morning row | — | none |
-| CSCO | stalk, tier-a | Ariel Hernandez|Jeff Sun|Stockbee | 110.24 | 110.24 | +3.51 | — | — | no morning row | — | none |
-| HEI.A | stalk | Ariel Hernandez|Jeff Sun | 234.12 | 234.12 | +3.25 | — | — | no morning row | — | none |
-| HII | stalk | Ariel Hernandez|Jeff Sun | 281.05 | 281.05 | +2.54 | — | — | no morning row | — | none |
-| IHS | stalk | Ariel Hernandez|Jeff Sun | 8.45 | 8.45 | +0.12 | — | — | no morning row | — | none |
-| KEY | stalk | Jeff Sun|Stockbee | 21.21 | 21.21 | +0.62 | — | — | no morning row | — | none |
-| KRT | stalk | Jeff Sun|Stockbee | 54.35 | 54.35 | +2.55 | — | — | no morning row | — | none |
-| MSFT | stalk | Jeff Sun|Stockbee | 532.60 | 532.60 | +1.54 | — | — | no morning row | — | none |
-| NEOG | stalk | Jeff Sun|Peoplewish | 12.21 | 12.21 | +0.16 | — | — | no morning row | — | none |
-| PLTR | stalk | Jeff Sun|Stockbee | 198.84 | 198.84 | +1.06 | — | — | no morning row | — | none |
-| PRTH | stalk | Ariel Hernandez|Stockbee | 7.82 | 7.82 | +0.00 | — | — | no morning row | — | none |
-| RTX | stalk | Ariel Hernandez|Jeff Sun | 197.48 | 197.48 | +3.39 | — | — | no morning row | — | none |
-| HEI | tier-a | Ariel Hernandez|Jeff Sun|Stockbee | 309.71 | 309.71 | +4.15 | — | — | no morning row | — | none |
-| NXPI | tier-a | Ariel Hernandez|Jeff Sun|Stockbee | 245.83 | 245.83 | +4.64 | — | — | no morning row | — | none |
-| ORKA | tier-a | Jeff Sun|Peoplewish|Stockbee | 90.33 | 90.33 | +12.70 | — | — | no morning row | — | none |
-| P | tier-a | Ariel Hernandez|Jeff Sun|Qullamaggie|Stockbee | 131.33 | 131.33 | +6.49 | — | — | no morning row | — | none |
-| RNG | tier-a | Jeff Sun|Peoplewish|Qullamaggie | 86.31 | 86.31 | +3.50 | — | — | no morning row | — | none |
-| TENB | tier-a | Peoplewish|Qullamaggie|Stockbee | 48.21 | 48.21 | +8.12 | — | — | no morning row | — | none |
+| AAPL | stalk | hernandez|stockbee | 343.91 | 343.91 | -1.10 | — | — | no morning row | — | none |
+| ADI | stalk, tier-a | hernandez|jeff_sun|stockbee | 407.93 | 407.93 | +4.31 | — | — | no morning row | — | none |
+| CSCO | stalk, tier-a | hernandez|jeff_sun|stockbee | 110.24 | 110.24 | +3.51 | — | — | no morning row | — | none |
+| HEI.A | stalk | hernandez|jeff_sun | 234.12 | 234.12 | +3.25 | — | — | no morning row | — | none |
+| HII | stalk | hernandez|jeff_sun | 281.05 | 281.05 | +2.54 | — | — | no morning row | — | none |
+| IHS | stalk | hernandez|jeff_sun | 8.45 | 8.45 | +0.12 | — | — | no morning row | — | none |
+| KEY | stalk | jeff_sun|stockbee | 21.21 | 21.21 | +0.62 | — | — | no morning row | — | none |
+| KRT | stalk | jeff_sun|stockbee | 54.35 | 54.35 | +2.55 | — | — | no morning row | — | none |
+| MSFT | stalk | jeff_sun|stockbee | 532.60 | 532.60 | +1.54 | — | — | no morning row | — | none |
+| NEOG | stalk | jeff_sun|peoplewish | 12.21 | 12.21 | +0.16 | — | — | no morning row | — | none |
+| PLTR | stalk | jeff_sun|stockbee | 198.84 | 198.84 | +1.06 | — | — | no morning row | — | none |
+| PRTH | stalk | hernandez|stockbee | 7.82 | 7.82 | +0.00 | — | — | no morning row | — | none |
+| RTX | stalk | hernandez|jeff_sun | 197.48 | 197.48 | +3.39 | — | — | no morning row | — | none |
+| HEI | tier-a | hernandez|jeff_sun|stockbee | 309.71 | 309.71 | +4.15 | — | — | no morning row | — | none |
+| NXPI | tier-a | hernandez|jeff_sun|stockbee | 245.83 | 245.83 | +4.64 | — | — | no morning row | — | none |
+| ORKA | tier-a | jeff_sun|peoplewish|stockbee | 90.33 | 90.33 | +12.70 | — | — | no morning row | — | none |
+| P | tier-a | hernandez|jeff_sun|qullamaggie|stockbee | 131.33 | 131.33 | +6.49 | — | — | no morning row | — | none |
+| RNG | tier-a | jeff_sun|peoplewish|qullamaggie | 86.31 | 86.31 | +3.50 | — | — | no morning row | — | none |
+| TENB | tier-a | peoplewish|qullamaggie|stockbee | 48.21 | 48.21 | +8.12 | — | — | no morning row | — | none |
 
 **What the tag columns mean.** `Tags published` is copied from the screen CSV
 when that file has a `setup_tags` column — only some dates do. `Tags recomputed`

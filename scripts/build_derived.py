@@ -30,6 +30,9 @@ BUILDERS = (
     ("build_ledger", "one row per name per session"),
     ("build_setups", "the setup card and the next-session journal"),
     ("build_client_safe", "the client-safe twin of every narrative artifact"),
+    ("build_confirmation", "how many routines saw each name"),
+    ("build_thesis_score", "did yesterday's published thesis hold?"),
+    ("build_run_ledger", "which routine published what, and when"),
     ("build_charts", "the renders of what is already computed"),
 )
 
@@ -42,6 +45,12 @@ ROLES = {
     "ledger.jsonl": "machine - one record per name, `_meta` on the first line",
     "setup-card.md": "brief - published Stalk and Tier-A, session-stamped, with unchecked gaps",
     "setup-card.csv": "machine - the same rows, including tags that could not be recomputed",
+    "confirmation.md": "brief - how many routines saw each name, and where they agree",
+    "confirmation.csv": "machine - the same rows",
+    "thesis-score.md": "brief - the published thesis verdicts, by contract, with coverage",
+    "thesis-score.csv": "machine - the same verdicts",
+    "run-ledger.md": "brief - which routine published what, and which are missing",
+    "run-ledger.csv": "machine - the same rows",
     "client-safe/": "the same artifacts rendered for a client that shows bold, italics and lists only",
     "_manifest.json": "this file",
 }
@@ -58,6 +67,10 @@ SOURCES = {
                     "us-stocks-in-play/<date>.md", "ntrt/<date>.md",
                     "earnings/<date>.md", "weekly/<date>.md", "cross-asset/<date>.md",
                     "options-flow/<date>.md", "international-eod/<date>/summary.md"],
+    "confirmation": ["daily-screens/<date>/{tier-a,focus}.csv", "ntrt/<date>.md",
+                     "options-flow/<date>.md", "earnings/<date>-{reminders,reactions}.md"],
+    "thesis-score": ["daily-briefs/<date>-pre-market.md", "us-stocks-in-play/<date>.md"],
+    "run-ledger": ["every published artifact, against the roster's schedule"],
 }
 
 

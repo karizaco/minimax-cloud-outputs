@@ -3,6 +3,8 @@
  "date": "2026-10-19",
  "data_as_of": null,
  "session_lag_days": null,
+ "session_lag_sessions": null,
+ "session_lag_source": null,
  "canonical": {
   "brief": "daily-sweep.md",
   "summary": "_summary.md",
@@ -272,6 +274,7 @@
   }
  ],
  "notes": [
+  "the session these screen metrics describe is NOT derivable from this directory: no _results.json, no data_date column, no date-stamped column, and no us-eod/ session published before this date to infer it from. The 'today' columns are the 2026-10-19 settled close.",
   "ariel-hernandez has no matching .csv in this directory",
   "focus has no matching .csv in this directory",
   "focus-rvol-snapshot has no matching .csv in this directory",

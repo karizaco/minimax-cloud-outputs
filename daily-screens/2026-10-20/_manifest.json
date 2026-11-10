@@ -3,6 +3,8 @@
  "date": "2026-10-20",
  "data_as_of": null,
  "session_lag_days": null,
+ "session_lag_sessions": null,
+ "session_lag_source": null,
  "canonical": {
   "brief": null,
   "summary": null,
@@ -67,6 +69,7 @@
   }
  ],
  "notes": [
+  "the session these screen metrics describe is NOT derivable from this directory: no _results.json, no data_date column, no date-stamped column, and no us-eod/ session published before this date to infer it from. The 'today' columns are the 2026-10-20 settled close.",
   "focus-rvol-snapshot has no matching .csv in this directory",
   "pre-market-gapper has no matching .csv in this directory",
   "no _source-health.json - source health for this run exists only in the prose table in daily-sweep.md"

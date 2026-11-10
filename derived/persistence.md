@@ -1,6 +1,6 @@
 # Persistence — how long a name stays on the board
 
-**Source:** derived join over daily-screens/<date>/{tier-a,focus}.csv (no source file is modified) · **Built:** 2026-11-09 · **Covers:** boards dated 2026-10-22 → 2026-11-06 (12 dates) · read-only
+**Source:** derived join over daily-screens/<date>/{tier-a,focus}.csv (no source file is modified) · **Built:** 2026-11-10 · **Covers:** boards dated 2026-10-22 → 2026-11-06 (12 dates) · read-only
 
 > **Deviations, stated up front.**
 > 

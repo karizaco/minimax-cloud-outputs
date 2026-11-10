@@ -1,6 +1,6 @@
 # Setup card — published 2026-11-03
 
-**Source:** derived join over `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md` and `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-09 · **Covers:** 48 stalk name(s), 8 Tier-A name(s); entry session 2026-11-04 · read-only
+**Source:** derived join over `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md` and `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-10 · **Covers:** 48 stalk name(s), 8 Tier-A name(s); entry session 2026-11-04 · read-only
 
 > **Read this before the table.**
 >
@@ -42,61 +42,61 @@ were not also on Stalk. On this date Stalk has 48 name(s) and Tier-A has 8.
 
 | Ticker | Boards | Stylists | Screen close | Observation close | Observation chg | Morning gap | Gap path | Catalyst | Tags published | Tags recomputed |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ACHR | stalk | stockbee|peoplewish | — | — | -0.96 | — | — | no morning row | — | none |
+| ACHR | stalk | peoplewish|stockbee | — | — | -0.96 | — | — | no morning row | — | none |
 | AGNC | stalk | stockbee | — | — | -1.84 | — | — | no morning row | — | none |
-| ALGM | stalk | peoplewish|jeff_sun | — | — | +4.70 | — | — | no morning row | — | none |
-| APH | stalk | stockbee|jeff_sun | — | — | +5.45 | — | — | no morning row | — | none |
+| ALGM | stalk | jeff_sun|peoplewish | — | — | +4.70 | — | — | no morning row | — | none |
+| APH | stalk | jeff_sun|stockbee | — | — | +5.45 | — | — | no morning row | — | none |
 | BMY | stalk | stockbee | — | — | -2.08 | — | — | no morning row | — | higher-low base |
 | BSX | stalk | stockbee | — | — | -1.85 | — | — | no morning row | — | none |
-| COKE | stalk | stockbee|hernandez | — | — | -1.54 | — | — | no morning row | — | higher-low base |
-| COMP | stalk | stockbee|jeff_sun | — | — | -1.06 | — | — | no morning row | — | none |
-| COP | stalk | stockbee|hernandez | — | — | -1.66 | — | — | no morning row | — | none |
-| CPNG | stalk | stockbee|jeff_sun | — | — | +3.61 | — | — | no morning row | — | none |
-| CVX | stalk | stockbee|hernandez | — | — | -1.10 | — | — | no morning row | — | none |
-| ECG | stalk | peoplewish|jeff_sun | — | — | +9.46 | — | — | no morning row | — | none |
-| ENPH | stalk | stockbee|peoplewish | — | — | +8.92 | — | — | no morning row | — | none |
-| EQX | stalk | stockbee|jeff_sun | — | — | -0.79 | — | — | no morning row | — | none |
-| FICO | stalk | peoplewish|jeff_sun | — | — | +0.03 | — | — | no morning row | — | higher-low base |
-| FIG | stalk | stockbee|peoplewish | — | — | -5.27 | — | — | no morning row | — | none |
-| FIGS | stalk, tier-a | qullamaggie|peoplewish|hernandez | — | — | -2.21 | — | — | no morning row | — | none |
-| FMC | stalk | stockbee|qullamaggie|peoplewish | — | — | -6.31 | — | — | no morning row | — | none |
-| FUTU | stalk | stockbee|jeff_sun | — | — | -0.52 | — | — | no morning row | — | none |
-| HTFL | stalk | qullamaggie|peoplewish|hernandez | — | — | -0.17 | — | — | no morning row | — | none |
-| HWM | stalk | stockbee|jeff_sun | — | — | +4.76 | — | — | no morning row | — | none |
-| INIO | stalk | peoplewish|jeff_sun | — | — | +11.58 | — | — | no morning row | — | none |
+| COKE | stalk | hernandez|stockbee | — | — | -1.54 | — | — | no morning row | — | higher-low base |
+| COMP | stalk | jeff_sun|stockbee | — | — | -1.06 | — | — | no morning row | — | none |
+| COP | stalk | hernandez|stockbee | — | — | -1.66 | — | — | no morning row | — | none |
+| CPNG | stalk | jeff_sun|stockbee | — | — | +3.61 | — | — | no morning row | — | none |
+| CVX | stalk | hernandez|stockbee | — | — | -1.10 | — | — | no morning row | — | none |
+| ECG | stalk | jeff_sun|peoplewish | — | — | +9.46 | — | — | no morning row | — | none |
+| ENPH | stalk | peoplewish|stockbee | — | — | +8.92 | — | — | no morning row | — | none |
+| EQX | stalk | jeff_sun|stockbee | — | — | -0.79 | — | — | no morning row | — | none |
+| FICO | stalk | jeff_sun|peoplewish | — | — | +0.03 | — | — | no morning row | — | higher-low base |
+| FIG | stalk | peoplewish|stockbee | — | — | -5.27 | — | — | no morning row | — | none |
+| FIGS | stalk, tier-a | hernandez|peoplewish|qullamaggie | — | — | -2.21 | — | — | no morning row | — | none |
+| FMC | stalk | peoplewish|qullamaggie|stockbee | — | — | -6.31 | — | — | no morning row | — | none |
+| FUTU | stalk | jeff_sun|stockbee | — | — | -0.52 | — | — | no morning row | — | none |
+| HTFL | stalk | hernandez|peoplewish|qullamaggie | — | — | -0.17 | — | — | no morning row | — | none |
+| HWM | stalk | jeff_sun|stockbee | — | — | +4.76 | — | — | no morning row | — | none |
+| INIO | stalk | jeff_sun|peoplewish | — | — | +11.58 | — | — | no morning row | — | none |
 | IRON | stalk | peoplewish | — | — | +3.23 | — | — | no morning row | — | none |
-| JBLU | stalk | stockbee|qullamaggie|peoplewish | — | — | +0.32 | — | — | no morning row | — | none |
-| JOBY | stalk | stockbee|peoplewish | — | — | +0.83 | — | — | no morning row | — | none |
+| JBLU | stalk | peoplewish|qullamaggie|stockbee | — | — | +0.32 | — | — | no morning row | — | none |
+| JOBY | stalk | peoplewish|stockbee | — | — | +0.83 | — | — | no morning row | — | none |
 | KMI | stalk | stockbee | — | — | +0.49 | — | — | no morning row | — | none |
-| KMT | stalk | stockbee|jeff_sun | — | — | -0.62 | — | — | no morning row | — | none |
-| LADR | stalk | stockbee|jeff_sun | — | — | -1.83 | — | — | no morning row | — | none |
-| LBTYA | stalk | stockbee|jeff_sun | — | — | +4.93 | — | — | no morning row | — | none |
-| LUMN | stalk | stockbee|peoplewish | — | — | -1.66 | — | — | no morning row | — | none |
-| NBBK | stalk | stockbee|jeff_sun | — | — | -1.02 | — | — | no morning row | — | none |
+| KMT | stalk | jeff_sun|stockbee | — | — | -0.62 | — | — | no morning row | — | none |
+| LADR | stalk | jeff_sun|stockbee | — | — | -1.83 | — | — | no morning row | — | none |
+| LBTYA | stalk | jeff_sun|stockbee | — | — | +4.93 | — | — | no morning row | — | none |
+| LUMN | stalk | peoplewish|stockbee | — | — | -1.66 | — | — | no morning row | — | none |
+| NBBK | stalk | jeff_sun|stockbee | — | — | -1.02 | — | — | no morning row | — | none |
 | NLY | stalk | stockbee | — | — | -1.41 | — | — | no morning row | — | none |
-| NTSK | stalk | qullamaggie|peoplewish | — | — | -0.73 | — | — | no morning row | — | none |
+| NTSK | stalk | peoplewish|qullamaggie | — | — | -0.73 | — | — | no morning row | — | none |
 | PG | stalk | stockbee | — | — | -0.92 | — | — | no morning row | — | higher-low base |
-| PR | stalk | stockbee|hernandez | — | — | -2.28 | — | — | no morning row | — | none |
+| PR | stalk | hernandez|stockbee | — | — | -2.28 | — | — | no morning row | — | none |
 | PRME | stalk | qullamaggie | — | — | +2.48 | — | — | no morning row | — | none |
-| QS | stalk | stockbee|peoplewish | — | — | +2.49 | — | — | no morning row | — | none |
-| SDGR | stalk | qullamaggie|peoplewish | — | — | +3.78 | — | — | no morning row | — | none |
-| SHLS | stalk | stockbee|jeff_sun | — | — | +11.45 | — | — | no morning row | — | gap-up ready |
-| SKYD | stalk | stockbee|peoplewish | — | — | +0.12 | — | — | no morning row | — | none |
-| TENB | stalk | qullamaggie|peoplewish | — | — | -0.89 | — | — | no morning row | — | none |
-| TEVA | stalk | stockbee|jeff_sun | — | — | +2.97 | — | — | no morning row | — | none |
-| TXN | stalk | stockbee|jeff_sun | — | — | +3.47 | — | — | no morning row | — | higher-low base |
-| VSEC | stalk | stockbee|peoplewish|jeff_sun | — | — | +1.72 | — | — | no morning row | — | none |
+| QS | stalk | peoplewish|stockbee | — | — | +2.49 | — | — | no morning row | — | none |
+| SDGR | stalk | peoplewish|qullamaggie | — | — | +3.78 | — | — | no morning row | — | none |
+| SHLS | stalk | jeff_sun|stockbee | — | — | +11.45 | — | — | no morning row | — | gap-up ready |
+| SKYD | stalk | peoplewish|stockbee | — | — | +0.12 | — | — | no morning row | — | none |
+| TENB | stalk | peoplewish|qullamaggie | — | — | -0.89 | — | — | no morning row | — | none |
+| TEVA | stalk | jeff_sun|stockbee | — | — | +2.97 | — | — | no morning row | — | none |
+| TXN | stalk | jeff_sun|stockbee | — | — | +3.47 | — | — | no morning row | — | higher-low base |
+| VSEC | stalk | jeff_sun|peoplewish|stockbee | — | — | +1.72 | — | — | no morning row | — | none |
 | VZ | stalk | stockbee | — | — | +0.42 | — | — | no morning row | — | higher-low base |
-| XMTR | stalk | peoplewish|jeff_sun | — | — | +16.55 | — | — | no morning row | — | none |
+| XMTR | stalk | jeff_sun|peoplewish | — | — | +16.55 | — | — | no morning row | — | none |
 | XOM | stalk | stockbee | — | — | -1.23 | — | — | no morning row | — | none |
 | XPEV | stalk | stockbee | — | — | +1.04 | — | — | no morning row | — | none |
-| CAI | tier-a | qullamaggie|peoplewish|hernandez | — | — | +2.34 | — | — | no morning row | — | none |
-| CLF | tier-a | stockbee|qullamaggie|peoplewish | — | — | -0.91 | — | — | no morning row | — | none |
-| CVNA | tier-a | stockbee|qullamaggie|jeff_sun | — | — | -1.00 | — | — | no morning row | — | none |
-| FTAI | tier-a | stockbee|qullamaggie|peoplewish | — | — | +1.51 | — | — | no morning row | — | none |
-| KVYO | tier-a | stockbee|qullamaggie|peoplewish | — | — | -2.16 | — | — | no morning row | — | none |
-| TEM | tier-a | stockbee|qullamaggie|peoplewish | — | — | -0.87 | — | — | no morning row | — | none |
-| WING | tier-a | stockbee|qullamaggie|peoplewish | — | — | -0.90 | — | — | no morning row | — | none |
+| CAI | tier-a | hernandez|peoplewish|qullamaggie | — | — | +2.34 | — | — | no morning row | — | none |
+| CLF | tier-a | peoplewish|qullamaggie|stockbee | — | — | -0.91 | — | — | no morning row | — | none |
+| CVNA | tier-a | jeff_sun|qullamaggie|stockbee | — | — | -1.00 | — | — | no morning row | — | none |
+| FTAI | tier-a | peoplewish|qullamaggie|stockbee | — | — | +1.51 | — | — | no morning row | — | none |
+| KVYO | tier-a | peoplewish|qullamaggie|stockbee | — | — | -2.16 | — | — | no morning row | — | none |
+| TEM | tier-a | peoplewish|qullamaggie|stockbee | — | — | -0.87 | — | — | no morning row | — | none |
+| WING | tier-a | peoplewish|qullamaggie|stockbee | — | — | -0.90 | — | — | no morning row | — | none |
 
 **What the tag columns mean.** `Tags published` is copied from the screen CSV
 when that file has a `setup_tags` column — only some dates do. `Tags recomputed`

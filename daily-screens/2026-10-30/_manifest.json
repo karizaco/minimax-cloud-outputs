@@ -1,8 +1,10 @@
 {
  "_schema": "daily-screens-manifest-v1",
  "date": "2026-10-30",
- "data_as_of": null,
- "session_lag_days": null,
+ "data_as_of": "2026-10-29",
+ "session_lag_days": 1,
+ "session_lag_sessions": 1,
+ "session_lag_source": "the oldest date-stamped column in the board CSVs",
  "canonical": {
   "brief": "daily-sweep.md",
   "summary": "_summary.md",
@@ -299,6 +301,7 @@
   }
  ],
  "notes": [
+  "screen metrics describe the 2026-10-29 session (1 day(s) before this directory's date); the 'today' columns are the 2026-10-30 settled close",
   "breadth has no matching .csv in this directory",
   "long-reversal-candidates has no matching .csv in this directory",
   "short-candidates has no matching .csv in this directory",

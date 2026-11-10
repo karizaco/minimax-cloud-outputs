@@ -1,6 +1,6 @@
 # Gap reconciliation — 2026-10-24 pre-market vs the settled close
 
-**Source:** derived join over `earnings/2026-10-24-reactions.md` and `no settled file` (neither source is modified) · **Built:** 2026-11-09 · **Covers:** 52 PRE_GAP name(s) tagged at the 2026-10-24 pre-market fire · read-only
+**Source:** derived join over `earnings/2026-10-24-reactions.md` and `no settled file` (neither source is modified) · **Built:** 2026-11-10 · **Covers:** 52 PRE_GAP name(s) tagged at the 2026-10-24 pre-market fire · read-only
 
 > **Read this before the table.**
 > 

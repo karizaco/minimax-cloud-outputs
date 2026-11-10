@@ -3,6 +3,18 @@
  "date": "2026-10-28",
  "generated_by": "scripts/build_derived.py",
  "views": {
+  "confirmation": {
+   "files": [
+    "confirmation.csv",
+    "confirmation.md"
+   ],
+   "joined_from": [
+    "daily-screens/<date>/{tier-a,focus}.csv",
+    "ntrt/<date>.md",
+    "options-flow/<date>.md",
+    "earnings/<date>-{reminders,reactions}.md"
+   ]
+  },
   "ledger": {
    "files": [
     "ledger.jsonl",
@@ -40,6 +52,16 @@
  },
  "files": [
   {
+   "name": "confirmation.csv",
+   "bytes": 2304,
+   "role": "machine - the same rows"
+  },
+  {
+   "name": "confirmation.md",
+   "bytes": 6223,
+   "role": "brief - how many routines saw each name, and where they agree"
+  },
+  {
    "name": "ledger.jsonl",
    "bytes": 343365,
    "role": "machine - one record per name, `_meta` on the first line"
@@ -73,6 +95,6 @@
  "notes": [
   "Every file here is DERIVED. No cron writes into this directory, and nothing in it is a new measurement - each value is copied from the artifacts named in `joined_from`.",
   "A view absent from this manifest was not built for this date, which means a source it needs does not exist. The view's own brief states which one.",
-  "Not built for this date: client-safe, gap-reconciliation."
+  "Not built for this date: client-safe, gap-reconciliation, run-ledger, thesis-score."
  ]
 }

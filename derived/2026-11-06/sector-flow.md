@@ -1,6 +1,6 @@
 # Sector flow — the 2026-11-06 board by sector
 
-**Source:** derived aggregation over `daily-screens/2026-11-06/master.csv` and `us-stocks-in-play/2026-11-06.md` (neither source is modified) · **Built:** 2026-11-09 · **Covers:** 200 board rows across 18 sector(s), factset-like vocabulary · read-only
+**Source:** derived aggregation over `daily-screens/2026-11-06/master.csv` and `us-stocks-in-play/2026-11-06.md` (neither source is modified) · **Built:** 2026-11-10 · **Covers:** 200 board rows across 18 sector(s), factset-like vocabulary · read-only
 
 > **Read this before the table.**
 > 

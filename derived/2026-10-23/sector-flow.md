@@ -1,6 +1,6 @@
 # Sector flow — the 2026-10-23 board by sector
 
-**Source:** derived aggregation over `daily-screens/2026-10-23/master.csv` (neither source is modified) · **Built:** 2026-11-09 · **Covers:** 200 board rows across 19 sector(s), factset-like vocabulary · read-only
+**Source:** derived aggregation over `daily-screens/2026-10-23/master.csv` (neither source is modified) · **Built:** 2026-11-10 · **Covers:** 200 board rows across 19 sector(s), factset-like vocabulary · read-only
 
 > **Read this before the table.**
 > 

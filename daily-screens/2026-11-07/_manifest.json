@@ -1,8 +1,10 @@
 {
  "_schema": "daily-screens-manifest-v1",
  "date": "2026-11-07",
- "data_as_of": null,
- "session_lag_days": null,
+ "data_as_of": "2026-11-06",
+ "session_lag_days": 1,
+ "session_lag_sessions": null,
+ "session_lag_source": "the last settled session in us-eod/ before this date (inferred, not read)",
  "canonical": {
   "brief": null,
   "summary": null,
@@ -48,6 +50,7 @@
   }
  ],
  "notes": [
+  "screen metrics describe the 2026-11-06 session (1 day(s) before this directory's date); the 'today' columns are the 2026-11-07 settled close",
   "weekly-ipo has no matching .csv in this directory",
   "no _source-health.json - source health for this run exists only in the prose table in daily-sweep.md"
  ]

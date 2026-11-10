@@ -151,6 +151,9 @@ and safe to run on any checkout; none of them invents a value.
 | `scripts/check_reply_format.py` | Measures any reply or artifact against what the Minimax Code desktop client can render: glyphs, headings, tables, bullet and sentence length | Nothing — it reports; it never fails a build on its own |
 | `scripts/render_client_safe.py` | Renders an artifact into the client's subset: headings become bold labels, tables become lists, glyphs become words | Nothing — it writes a new file and leaves the original alone |
 | `scripts/install_hooks.py` | Installs the tracked git hooks into `.git/hooks/` and clears a `core.hooksPath` that points outside the repo | Never — it reports; it never removes a hook it did not write |
+| `scripts/build_confirmation.py` | Counts how many of the five pre-market routines saw each name, and which of them agreed | Never |
+| `scripts/build_thesis_score.py` | Extracts the published thesis verdicts from the briefs, by contract, and reports which briefs score | Never |
+| `scripts/build_run_ledger.py` | Joins every published artifact to the roster's schedule: published, missing, off-schedule, before onset | Never |
 
 ```bash
 python3 scripts/check_artifacts.py                    # all three checks
@@ -173,6 +176,9 @@ They are described in `derived/README.md`; the short version:
 | `derived/<date>/sector-flow.md` | Which sectors gained the board, and does the board agree with the ETF tape? | The sweep describes the rotation in prose and never tabulates it |
 | `derived/<date>/ledger.md` | What do we know about one name today, across every routine? | Each routine is a column; nothing is a row |
 | `derived/<date>/setup-card.md` | Which published names are a setup, and which morning gaps were never looked up? | The sweep leads with Tier-A. The skill's setup tier is Stalk, and the catalyst budget is invisible in the brief |
+| `derived/<date>/confirmation.md` | How many of the five pre-market routines saw each name? | Every routine is a column; nothing aggregates agreement |
+| `derived/thesis-score.md` | Did yesterday's published thesis hold, and which briefs score at all? | Only 2 of 59 briefs carry a verdict table |
+| `derived/run-ledger.md` | Which routine published what, on which day, and which are missing? | The roster in the migration repo is a snapshot and nothing refreshes it |
 | `derived/setup-journal.md` | What did the next session do to each published setup? | The skill names a setup-journal. No routine writes one |
 | `derived/charts/*.html` | What does the correlation matrix actually look like? | `cross-asset/` computes it and renders it as a table of 28 numbers |
 | `derived/client-safe/**` | How does this artifact read in a chat client that shows bold, italics and lists only? | The artifacts are written for a file viewer. The reply is not |

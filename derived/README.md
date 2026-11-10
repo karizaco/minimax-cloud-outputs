@@ -37,6 +37,9 @@ crons commit to. Keeping them here makes the provenance unambiguous: if it is in
 | **Setup journal** | `setup-journal.{md,csv}` | What did the next session do to each published setup? | the same boards, joined to the next `us-eod/<date>.csv` |
 | **Charts** | `charts/*.html` | The correlation matrix and the regime series, drawn | `cross-asset/<date>.md`, `daily-screens/<date>/_regime.json` |
 | **Client-safe twins** | `client-safe/<same path as the original>` | The same artifacts, rendered for a client that shows bold, italics and lists only | every narrative artifact — see `refs/client-render-contract.md` |
+| **Confirmation** | `<date>/confirmation.{md,csv}` | How many of the five pre-market routines saw each name, and where they agree | the screen, the gap brief, the flow screen, the reminders and the reaction scanner |
+| **Thesis score** | `thesis-score.{md,csv}` | Did yesterday's published thesis hold — and which briefs score at all? | the thesis-verdict tables in the published briefs |
+| **Run ledger** | `run-ledger.{md,csv}` | Which routine published what, on which day, and which are missing | every published artifact, against the roster's schedule |
 
 Each dated directory carries a `_manifest.json` naming its files and what each
 view was joined from, per `refs/artifact-contract.md` Rule 3.

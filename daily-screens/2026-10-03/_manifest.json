@@ -3,6 +3,8 @@
  "date": "2026-10-03",
  "data_as_of": null,
  "session_lag_days": null,
+ "session_lag_sessions": null,
+ "session_lag_source": null,
  "canonical": {
   "brief": null,
   "summary": null,

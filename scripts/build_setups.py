@@ -263,20 +263,41 @@ def text_field(row, *names):
     return None
 
 
-ORIGIN_TO_STYLIST = (
+# The five stylist buckets, named as the skill's own tiering.md names them. A
+# date's screen CSV spells these five in whatever way that run happened to
+# write them - `jeff_sun`, `jeff_sun_canslim`, `sun_canslim`, `Jeff Sun` - and
+# lists them in whatever order the row was built. Two rows with the same
+# combination therefore produce two different strings, which is why the first
+# version of the journal published `peoplewish|qullamaggie` and
+# `qullamaggie|peoplewish` as separate groups with opposite medians.
+#
+# The canonical form is the sorted set of buckets, so the group IS the
+# combination and not the spelling.
+CANONICAL_STYLISTS = ("hernandez", "jeff_sun", "peoplewish", "qullamaggie", "stockbee")
+
+# Marker -> bucket. Matched as a SUBSTRING of the token with its punctuation
+# and spaces removed, so `jeff_sun_canslim` and `Jeff Sun` both land on
+# jeff_sun. Order does not matter here: no marker is a substring of another.
+STYLIST_MARKERS = (
     ("stockbee", "stockbee"),
     ("bonde", "stockbee"),
     ("qullamaggie", "qullamaggie"),
     ("qull", "qullamaggie"),
+    ("rsleader", "qullamaggie"),
     ("peoplewish", "peoplewish"),
+    ("adr", "peoplewish"),
     ("hernandez", "hernandez"),
     ("ariel", "hernandez"),
-    ("jeff_sun", "jeff_sun"),
-    ("jeff sun", "jeff_sun"),
+    ("jeffsun", "jeff_sun"),
     ("canslim", "jeff_sun"),
-    ("rs leader", "qullamaggie"),
-    ("adr", "peoplewish"),
-    ("volume_breakout", "jeff_sun"),
+    ("volumebreakout", "jeff_sun"),
+    ("volume", "jeff_sun"),
+    ("suncvp", "jeff_sun"),
+    ("vcp", "jeff_sun"),
+    ("coil", "stockbee"),
+    ("anticipation", "stockbee"),
+    ("ep9m", "stockbee"),
+    ("4pct", "stockbee"),
 )
 
 
@@ -284,15 +305,47 @@ def clean_token(value):
     return value.strip().strip("[]").strip().strip("'").strip('"').strip()
 
 
-def stylist_label(row):
-    """The combination, never the count.
+def _flatten(token):
+    """A token with its punctuation and spaces removed, for marker matching."""
+    return "".join(ch for ch in clean_token(token).lower() if ch.isalnum())
 
-    On 2026-11-02 and 2026-11-03 the column named `stylists` holds the count
-    (`3`) and the names are in `origins`. Treating the count as a combination
-    would make the journal group every name that hit three stylists together.
-    """
-    if not row:
+
+def canonical_stylist(token):
+    """The bucket a token belongs to, or None if it belongs to none."""
+    flat = _flatten(token)
+    if not flat:
         return None
+    for marker, bucket in STYLIST_MARKERS:
+        if marker in flat:
+            return bucket
+    return None
+
+
+def canonical_combination(tokens):
+    """The sorted tuple of buckets a set of tokens resolves to.
+
+    Order-independent by construction: the same stylists in any spelling and
+    any order produce the same tuple. Sub-screen labels (`bonde_4pct`,
+    `qull_rs`, `peoplewish_adr_velocity`, `sun_canslim`) fold into their parent
+    bucket, which is what the skill counts.
+    """
+    buckets = set()
+    unknown = []
+    for tok in tokens:
+        bucket = canonical_stylist(tok)
+        if bucket:
+            buckets.add(bucket)
+        elif clean_token(tok) and not clean_token(tok).isdigit():
+            unknown.append(clean_token(tok))
+    if not buckets:
+        return None, unknown
+    return tuple(sorted(buckets)), unknown
+
+
+def stylist_tokens(row):
+    """The stylist tokens on a row, whatever column or spelling carries them."""
+    if not row:
+        return []
     for col in ("stylists", "_stylists", "stylist_flags"):
         raw = text_field(row, col)
         if not raw or raw.isdigit():
@@ -300,18 +353,28 @@ def stylist_label(row):
         parts = [clean_token(p) for p in raw.replace(";", "|").replace(",", "|").split("|")]
         parts = [p for p in parts if p and not p.isdigit()]
         if parts:
-            return "|".join(parts)
+            return parts
     origins = text_field(row, "origins")
     if not origins:
-        return None
-    found = []
-    for part in origins.replace(";", "|").split("|"):
-        low = part.lower()
-        for needle, name in ORIGIN_TO_STYLIST:
-            if needle in low and name not in found:
-                found.append(name)
-                break
-    return "|".join(found) if found else None
+        return []
+    return [clean_token(p) for p in origins.replace(";", "|").split("|") if clean_token(p)]
+
+
+def stylist_label(row):
+    """The canonical combination, or None. Never the count.
+
+    On 2026-11-02 and 2026-11-03 the column named `stylists` holds the count
+    (`3`) and the names are in `origins`. Treating the count as a combination
+    would make the journal group every name that hit three stylists together.
+    """
+    combo, _unknown = canonical_combination(stylist_tokens(row))
+    return "|".join(combo) if combo else None
+
+
+def stylist_raw(row):
+    """The label as the screen published it, for audit."""
+    tokens = stylist_tokens(row)
+    return "|".join(tokens) if tokens else None
 
 
 def published_tags(row):
@@ -369,6 +432,7 @@ def build_cards(bars):
             tags = recompute_tags(bars.get(t, []), date)
             published = published_tags(row)
             label = stylist_label(row)
+            raw_label = stylist_raw(row)
             obs_change = field(row, "today_change")
             if obs_change is None and row:
                 ccol, _rule = J.change_column([row], date)
@@ -378,6 +442,7 @@ def build_cards(bars):
                 "ticker": t,
                 "boards": boards,
                 "stylists": label,
+                "stylists_raw": raw_label,
                 "n_stylists": text_field(row, "n_stylists", "_n_stylists"),
                 "screen_close": field(row, "screen_close_resolved", "close"),
                 "screen_change": field(row, "chg_pct_resolved", "change_pct", "change"),
@@ -409,6 +474,7 @@ def build_cards(bars):
                     "ticker": t,
                     "boards": boards,
                     "stylists": label,
+                    "stylists_raw": raw_label,
                     "prior_close": prior_close,
                     "entry_open_gap_pct": open_gap,
                     "entry_close_change_pct": close_change,
@@ -422,6 +488,7 @@ def build_cards(bars):
                     "ticker": t,
                     "boards": boards,
                     "stylists": label,
+                    "stylists_raw": raw_label,
                     "prior_close": None,
                     "entry_open_gap_pct": None,
                     "entry_close_change_pct": None,
@@ -620,7 +687,7 @@ def stylist_summary(rows):
     scored = [r for r in rows if r["path"] not in ("unscored", "no_bar", "no_close")]
     groups = {}
     for r in scored:
-        key = r["stylists"] or "(stylists not in the CSV)"
+        key = r["stylists"] or "(no stylist column on that date)"
         g = groups.setdefault(key, [])
         g.append(r)
     out = []
@@ -674,6 +741,16 @@ def render_journal(rows):
     lines.append("> 3. **A stylist count is not a sample.** Most combinations appear once.")
     lines.append(">    The summary below does not rank them. A median over two names is a")
     lines.append(">    description, not evidence that the combination works.")
+    lines.append("> 4. **The combinations are canonical.** A row's stylist list is resolved to the")
+    lines.append(">    five buckets the skill names — `hernandez`, `jeff_sun`, `peoplewish`,")
+    lines.append(">    `qullamaggie`, `stockbee` — and sorted, so the group IS the combination")
+    lines.append(">    rather than the spelling the screen happened to use. The screen publishes")
+    lines.append(">    these in at least 30 different spellings across the archive (`sun_canslim`,")
+    lines.append(">    `jeff_sun_canslim`, `Jeff Sun`, `bonde_4pct`, `ADR + velocity`, and the")
+    lines.append(">    pipe order varies too). Grouped on the raw string, the same combination")
+    lines.append(">    appears as several rows with medians that contradict each other. The raw")
+    lines.append(">    label is kept in `setup-journal.csv` as `stylists_raw`, so the mapping can")
+    lines.append(">    be audited row by row.")
     lines.append("")
     lines.append("## By stylist combination")
     lines.append("")
@@ -723,7 +800,8 @@ def render_journal(rows):
 
 def render_journal_csv(rows):
     cols = ["published_on", "screen_session", "entry_session", "ticker", "boards",
-            "stylists", "prior_close", "entry_open_gap_pct", "entry_close_change_pct", "path"]
+            "stylists", "stylists_raw", "prior_close", "entry_open_gap_pct",
+            "entry_close_change_pct", "path"]
     out = [",".join(cols)]
     for r in rows:
         vals = []

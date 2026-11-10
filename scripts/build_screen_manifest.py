@@ -16,11 +16,15 @@ Everything here is read from files that exist. Nothing is inferred about content
   python3 scripts/build_screen_manifest.py            # write the manifests
   python3 scripts/build_screen_manifest.py --check    # report drift, write nothing
 """
+import csv
 import datetime
 import json
 import os
 import re
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import _joinlib as J  # noqa: E402
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCREENS_ROOT = os.path.join(REPO, "daily-screens")
@@ -131,19 +135,130 @@ def describe_screens(screens):
     return out
 
 
+ISO_DATE_RE = re.compile(r"(20\d{2})-(\d{2})-(\d{2})")
+SHORT_DATE_RE = re.compile(r"_(\d{2})_?(\d{2})(?![0-9])")
+
+
+def dated_columns(path):
+    """The dates named in a CSV's column headers, oldest first.
+
+    The board schemas carry the session in the column name, in three spellings
+    across the archive: `close_2026-10-30`, `close_1027` and `close_10_28`.
+    All three name the SCREEN session FIRST and the observation session second,
+    so the earliest is the screen session.
+    """
+    rows = []
+    try:
+        with open(path, encoding="utf-8-sig", newline="") as fh:
+            header = next(csv.reader(fh))
+    except (OSError, StopIteration, csv.Error):
+        return rows
+    for col in header:
+        m = ISO_DATE_RE.search(col)
+        if m:
+            rows.append(m.group(0))
+            continue
+        m = SHORT_DATE_RE.search(col)
+        if m:
+            rows.append("%s-%s" % (m.group(1), m.group(2)))
+    return rows
+
+
+def last_settled_session(date):
+    """The most recent session `us-eod/` published before `date`.
+
+    The repo's own record of which days the US market was open. A screen run on
+    session S describes S's settled tape, so the screen session for a directory
+    dated D is the last session before D.
+
+    This is the weakest of the four sources - it infers the session rather than
+    reading it - so it is recorded as such and the manifest names it.
+    """
+    sessions = []
+    for name in os.listdir(os.path.join(REPO, "us-eod")):
+        if not name.endswith(".csv"):
+            continue
+        stem = name[:-4]
+        if re.match(r"^\d{4}-\d{2}-\d{2}$", stem) and stem < date:
+            sessions.append(stem)
+    return max(sessions) if sessions else None
+
+
+def derive_screen_session(date_dir, date, screens):
+    """Which session this directory's screen metrics describe, and how we know.
+
+    Three sources, in order of authority:
+      1. `_results.json` / `_decisions.json` - the routine states it outright.
+      2. a `data_date` column in the board CSVs - the current schema's own
+         record of the session the metrics resolve to.
+      3. the oldest date-stamped column in the board CSVs - the screen session
+         is named before the observation session, so the earliest is the one.
+
+    Returns (session_date, source). A session of None means this directory's
+    own files do not say, and the manifest says so rather than guessing.
+    """
+    for name in ("_results.json", "_decisions.json"):
+        path = os.path.join(date_dir, name)
+        if not os.path.exists(path):
+            continue
+        try:
+            with open(path, encoding="utf-8") as fh:
+                value = json.load(fh).get("data_as_of")
+        except (OSError, ValueError):
+            value = None
+        if value:
+            return value, "%s.data_as_of" % name
+
+    board_paths = []
+    for stem, entry in sorted(screens.items()):
+        for fname in entry.get("files", []):
+            if fname.endswith(".csv"):
+                board_paths.append(os.path.join(date_dir, fname))
+    for path in board_paths:
+        rows = J.read_csv_rows(path)
+        if not rows:
+            continue
+        for col in rows[0].keys():
+            if col.strip().lower() in ("data_date", "screen_date", "session_date"):
+                value = J.strip_md(rows[0].get(col))
+                if re.match(r"^\d{4}-\d{2}-\d{2}$", value):
+                    return value, "%s.%s" % (os.path.basename(path), col)
+
+    dates_seen = []
+    for path in board_paths:
+        dates_seen.extend(dated_columns(path))
+    if dates_seen:
+        resolved = []
+        for value in dates_seen:
+            if re.match(r"^20\d{2}-\d{2}-\d{2}$", value):
+                resolved.append(value)
+            else:
+                mm, dd = value.split("-")
+                for year in (date[:4], str(int(date[:4]) - 1)):
+                    cand = "%s-%s-%s" % (year, mm, dd)
+                    try:
+                        datetime.date.fromisoformat(cand)
+                    except ValueError:
+                        continue
+                    resolved.append(cand)
+                    break
+        if resolved:
+            return min(resolved), "the oldest date-stamped column in the board CSVs"
+
+    fallback = last_settled_session(date)
+    if fallback:
+        return fallback, ("the last settled session in us-eod/ before this date "
+                          "(inferred, not read)")
+
+    return None, None
+
+
 def build(date_dir, date):
     names = [n for n in os.listdir(date_dir) if os.path.isfile(os.path.join(date_dir, n))]
     screens, components, artifacts = classify(names)
     described = describe_screens(screens)
 
-    data_as_of = None
-    results_path = os.path.join(date_dir, "_results.json")
-    if os.path.exists(results_path):
-        try:
-            with open(results_path, encoding="utf-8") as fh:
-                data_as_of = json.load(fh).get("data_as_of")
-        except (OSError, ValueError):
-            data_as_of = None
+    data_as_of, lag_source = derive_screen_session(date_dir, date, described)
 
     lag = None
     if data_as_of:
@@ -152,6 +267,19 @@ def build(date_dir, date):
                    - datetime.date.fromisoformat(data_as_of)).days
         except ValueError:
             lag = None
+
+    # The same lag counted in SESSIONS rather than calendar days. A Monday's
+    # screen is three calendar days behind but ONE session behind, and reading
+    # "3" as three sessions would be wrong by a factor of three.
+    sessions = None
+    if data_as_of:
+        published = sorted(
+            n[:-4] for n in os.listdir(os.path.join(REPO, "us-eod"))
+            if n.endswith(".csv") and re.match(r"^\d{4}-\d{2}-\d{2}$", n[:-4])
+        )
+        between = [s for s in published if data_as_of < s <= date]
+        if between:
+            sessions = len(between)
 
     files = []
     for n in sorted(names):
@@ -175,9 +303,21 @@ def build(date_dir, date):
 
     notes = []
     if lag is not None and lag != 0:
+        extra = ""
+        if sessions is not None and sessions != lag:
+            extra = (" (%d trading session(s) - the calendar gap includes a weekend)"
+                     % sessions)
         notes.append(
-            "screen metrics describe the %s session (%d day(s) before this directory's date); "
-            "the 'today' columns are the %s settled close" % (data_as_of, lag, date)
+            "screen metrics describe the %s session (%d day(s)%s before this directory's "
+            "date); the 'today' columns are the %s settled close"
+            % (data_as_of, lag, extra, date)
+        )
+    elif data_as_of is None and any(n.endswith(".csv") for n in names):
+        notes.append(
+            "the session these screen metrics describe is NOT derivable from this "
+            "directory: no _results.json, no data_date column, no date-stamped "
+            "column, and no us-eod/ session published before this date to infer it "
+            "from. The 'today' columns are the %s settled close." % date
         )
     for stem, entry in described.items():
         if entry["components"]:
@@ -198,6 +338,8 @@ def build(date_dir, date):
         "date": date,
         "data_as_of": data_as_of,
         "session_lag_days": lag,
+        "session_lag_sessions": sessions,
+        "session_lag_source": lag_source,
         "canonical": {
             "brief": "daily-sweep.md" if "daily-sweep.md" in names else None,
             "summary": "_summary.md" if "_summary.md" in names else None,

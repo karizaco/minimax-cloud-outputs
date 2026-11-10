@@ -1,6 +1,6 @@
 # Setup card — published 2026-10-29
 
-**Source:** derived join over `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md` and `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-09 · **Covers:** 50 stalk name(s), 4 Tier-A name(s); entry session 2026-10-30 · read-only
+**Source:** derived join over `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md` and `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-10 · **Covers:** 50 stalk name(s), 4 Tier-A name(s); entry session 2026-10-30 · read-only
 
 > **Read this before the table.**
 >
@@ -42,31 +42,31 @@ were not also on Stalk. On this date Stalk has 50 name(s) and Tier-A has 4.
 
 | Ticker | Boards | Stylists | Screen close | Observation close | Observation chg | Morning gap | Gap path | Catalyst | Tags published | Tags recomputed |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AAL | stalk | — | — | — | — | — | — | no morning row | compression, higher-low base | none |
-| AAPL | stalk | — | — | — | — | — | — | no morning row | compression, higher-low base | higher-low base |
+| AAL | stalk | jeff_sun | — | — | — | — | — | no morning row | compression, higher-low base | none |
+| AAPL | stalk | jeff_sun | — | — | — | — | — | no morning row | compression, higher-low base | higher-low base |
 | AI | stalk | peoplewish | — | — | — | — | — | no morning row | compression | none |
 | ALM | stalk | peoplewish | — | — | — | — | — | no morning row | MACD cross-up | none |
 | AMBA | stalk | peoplewish | — | — | — | — | — | no morning row | compression | none |
 | AMN | stalk | qullamaggie | — | — | — | — | — | no morning row | compression | none |
-| AMZN | stalk | — | — | — | — | — | — | no morning row | higher-low base | none |
+| AMZN | stalk | jeff_sun | — | — | — | — | — | no morning row | higher-low base | none |
 | ATLC | stalk | jeff_sun | — | — | — | — | — | no morning row | higher-low base | none |
 | AVGO | stalk | jeff_sun | — | — | — | -2.49 | held | absent | compression, MACD cross-up | none |
 | BP | stalk | jeff_sun | — | — | — | — | — | no morning row | compression, higher-low base | none |
-| BRAI | stalk | — | — | — | — | — | — | no morning row | gap-up ready | none |
+| BRAI | stalk | jeff_sun | — | — | — | — | — | no morning row | gap-up ready | none |
 | BROS | stalk | jeff_sun | — | — | — | — | — | no morning row | compression | none |
 | BSP | stalk | peoplewish | — | — | — | — | — | no morning row | compression | none |
-| CCC | stalk | — | — | — | — | — | — | no morning row | compression, higher-low base | higher-low base |
+| CCC | stalk | jeff_sun | — | — | — | — | — | no morning row | compression, higher-low base | higher-low base |
 | CORZ | stalk | peoplewish | — | — | — | -3.67 | held | absent | compression | none |
 | CVE | stalk | jeff_sun | — | — | — | — | — | no morning row | higher-low base | none |
 | ECVT | stalk | jeff_sun | — | — | — | — | — | no morning row | compression, MACD cross-up, higher-low base | higher-low base |
 | EE | stalk | jeff_sun | — | — | — | — | — | no morning row | higher-low base | none |
 | ELF | stalk | jeff_sun | — | — | — | — | — | no morning row | compression, higher-low base | higher-low base |
-| F | stalk | — | — | — | — | — | — | no morning row | higher-low base | none |
-| FIGS | stalk, tier-a | jeff_sun | — | — | — | — | — | no morning row | compression, higher-low base | none |
+| F | stalk | jeff_sun | — | — | — | — | — | no morning row | higher-low base | none |
+| FIGS | stalk, tier-a | qullamaggie | — | — | — | — | — | no morning row | compression, higher-low base | none |
 | FIS | stalk | jeff_sun | — | — | — | — | — | no morning row | compression | none |
 | GLOB | stalk | qullamaggie | — | — | — | — | — | no morning row | compression | none |
 | GLXY | stalk | peoplewish | — | — | — | -4.61 | extended | absent | compression, MACD cross-up | none |
-| GOOGL | stalk | — | — | — | — | -11.30 | extended | absent | higher-low base | none |
+| GOOGL | stalk | jeff_sun | — | — | — | -11.30 | extended | absent | higher-low base | none |
 | HIMS | stalk | peoplewish | — | — | — | — | — | no morning row | compression | none |
 | HPK | stalk | jeff_sun | — | — | — | — | — | no morning row | compression | none |
 | KSS | stalk | qullamaggie | — | — | — | — | — | no morning row | compression | none |
@@ -74,15 +74,15 @@ were not also on Stalk. On this date Stalk has 50 name(s) and Tier-A has 4.
 | LIFE | stalk | peoplewish | — | — | — | — | — | no morning row | compression | none |
 | MAN | stalk | peoplewish | — | — | — | — | — | no morning row | MACD cross-up, higher-low base | none |
 | MU | stalk | jeff_sun | — | — | — | -2.58 | extended | absent | compression | none |
-| NESR | stalk | jeff_sun | — | — | — | — | — | no morning row | compression | none |
+| NESR | stalk | peoplewish | — | — | — | — | — | no morning row | compression | none |
 | NKTR | stalk | peoplewish | — | — | — | — | — | no morning row | higher-low base | higher-low base |
-| NVDA | stalk | — | — | — | — | — | — | no morning row | higher-low base | none |
-| OBA | stalk | — | — | — | — | — | — | no morning row | higher-low base | none |
+| NVDA | stalk | jeff_sun | — | — | — | — | — | no morning row | higher-low base | none |
+| OBA | stalk | stockbee | — | — | — | — | — | no morning row | higher-low base | none |
 | OKLO | stalk | peoplewish | — | — | — | — | — | no morning row | higher-low base | none |
-| PCG | stalk | — | — | — | — | — | — | no morning row | compression, higher-low base | higher-low base |
+| PCG | stalk | jeff_sun | — | — | — | — | — | no morning row | compression, higher-low base | higher-low base |
 | QBTS | stalk | peoplewish | — | — | — | — | — | no morning row | MACD cross-up | none |
 | RBLX | stalk | qullamaggie | — | — | — | — | — | no morning row | compression | none |
-| SEZL | stalk | jeff_sun | — | — | — | — | — | no morning row | compression | none |
+| SEZL | stalk | peoplewish | — | — | — | — | — | no morning row | compression | none |
 | SPHR | stalk | peoplewish | — | — | — | — | — | no morning row | compression, higher-low base | higher-low base |
 | TWLO | stalk | peoplewish | — | — | — | — | — | no morning row | higher-low base | none |
 | UEC | stalk | peoplewish | — | — | — | -2.03 | held | absent | MACD cross-up | none |

@@ -1,6 +1,6 @@
 # Setup card — published 2026-11-06
 
-**Source:** derived join over `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md` and `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-09 · **Covers:** 2 stalk name(s), 8 Tier-A name(s); entry session not yet settled · read-only
+**Source:** derived join over `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md` and `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-10 · **Covers:** 2 stalk name(s), 8 Tier-A name(s); entry session not yet settled · read-only
 
 > **Read this before the table.**
 >

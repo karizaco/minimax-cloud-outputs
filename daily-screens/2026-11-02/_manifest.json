@@ -1,8 +1,10 @@
 {
  "_schema": "daily-screens-manifest-v1",
  "date": "2026-11-02",
- "data_as_of": null,
- "session_lag_days": null,
+ "data_as_of": "2026-10-30",
+ "session_lag_days": 3,
+ "session_lag_sessions": 1,
+ "session_lag_source": "the oldest date-stamped column in the board CSVs",
  "canonical": {
   "brief": "daily-sweep.md",
   "summary": "_summary.md",
@@ -351,6 +353,7 @@
   }
  ],
  "notes": [
+  "screen metrics describe the 2026-10-30 session (3 day(s) (1 trading session(s) - the calendar gap includes a weekend) before this directory's date); the 'today' columns are the 2026-11-02 settled close",
   "breadth has no matching .csv in this directory",
   "focus-rvol-snapshot has no matching .csv in this directory",
   "no _source-health.json - source health for this run exists only in the prose table in daily-sweep.md"

@@ -3,6 +3,18 @@
  "date": "2026-10-26",
  "generated_by": "scripts/build_derived.py",
  "views": {
+  "confirmation": {
+   "files": [
+    "confirmation.csv",
+    "confirmation.md"
+   ],
+   "joined_from": [
+    "daily-screens/<date>/{tier-a,focus}.csv",
+    "ntrt/<date>.md",
+    "options-flow/<date>.md",
+    "earnings/<date>-{reminders,reactions}.md"
+   ]
+  },
   "gap-reconciliation": {
    "files": [
     "gap-reconciliation.csv",
@@ -50,6 +62,16 @@
  },
  "files": [
   {
+   "name": "confirmation.csv",
+   "bytes": 4464,
+   "role": "machine - the same rows"
+  },
+  {
+   "name": "confirmation.md",
+   "bytes": 9195,
+   "role": "brief - how many routines saw each name, and where they agree"
+  },
+  {
    "name": "gap-reconciliation.csv",
    "bytes": 2621,
    "role": "machine - the same rows with the full catalyst text"
@@ -81,18 +103,18 @@
   },
   {
    "name": "setup-card.csv",
-   "bytes": 11812,
+   "bytes": 11746,
    "role": "machine - the same rows, including tags that could not be recomputed"
   },
   {
    "name": "setup-card.md",
-   "bytes": 5103,
+   "bytes": 5037,
    "role": "brief - published Stalk and Tier-A, session-stamped, with unchecked gaps"
   }
  ],
  "notes": [
   "Every file here is DERIVED. No cron writes into this directory, and nothing in it is a new measurement - each value is copied from the artifacts named in `joined_from`.",
   "A view absent from this manifest was not built for this date, which means a source it needs does not exist. The view's own brief states which one.",
-  "Not built for this date: client-safe."
+  "Not built for this date: client-safe, run-ledger, thesis-score."
  ]
 }

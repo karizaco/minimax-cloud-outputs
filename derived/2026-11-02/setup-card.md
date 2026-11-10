@@ -1,6 +1,6 @@
 # Setup card — published 2026-11-02
 
-**Source:** derived join over `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md` and `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-09 · **Covers:** 59 stalk name(s), 11 Tier-A name(s); entry session 2026-11-03 · read-only
+**Source:** derived join over `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md` and `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-10 · **Covers:** 59 stalk name(s), 11 Tier-A name(s); entry session 2026-11-03 · read-only
 
 > **Read this before the table.**
 >
@@ -44,7 +44,7 @@ were not also on Stalk. On this date Stalk has 59 name(s) and Tier-A has 11.
 |---|---|---|---|---|---|---|---|---|---|---|
 | AAL | stalk | stockbee | — | — | +3.81 | — | — | no morning row | — | none |
 | AAPL | stalk | stockbee | — | — | -1.83 | — | — | no morning row | — | none |
-| ABCL | stalk, tier-a | qullamaggie|peoplewish|hernandez | — | — | -9.37 | — | — | no morning row | — | none |
+| ABCL | stalk, tier-a | hernandez|peoplewish|qullamaggie | — | — | -9.37 | — | — | no morning row | — | none |
 | ADPT | stalk | peoplewish | — | — | -5.93 | — | — | no morning row | — | none |
 | AI | stalk | peoplewish | — | — | -2.53 | — | — | no morning row | — | none |
 | AMN | stalk | qullamaggie | — | — | -2.84 | — | — | no morning row | — | none |
@@ -52,22 +52,22 @@ were not also on Stalk. On this date Stalk has 59 name(s) and Tier-A has 11.
 | BAC | stalk | stockbee | — | — | -0.88 | — | — | no morning row | — | none |
 | BLLN | stalk | peoplewish | — | — | -2.57 | — | — | no morning row | — | none |
 | BSP | stalk | peoplewish | — | — | -0.31 | — | — | no morning row | — | none |
-| CAI | stalk, tier-a | qullamaggie|peoplewish|hernandez | — | — | -6.50 | — | — | no morning row | — | none |
+| CAI | stalk, tier-a | hernandez|peoplewish|qullamaggie | — | — | -6.50 | — | — | no morning row | — | none |
 | CRL | stalk | qullamaggie | — | — | -5.81 | — | — | no morning row | — | none |
 | CSGP | stalk | stockbee | — | — | +5.47 | — | — | no morning row | — | none |
-| CVI | stalk, tier-a | qullamaggie|hernandez|jeff_sun | — | — | -4.20 | — | — | no morning row | — | none |
+| CVI | stalk, tier-a | hernandez|jeff_sun|qullamaggie | — | — | -4.20 | — | — | no morning row | — | none |
 | CVLG | stalk | stockbee | — | — | +8.25 | — | — | no morning row | — | none |
-| CZR | stalk | stockbee|jeff_sun | — | — | -0.34 | — | — | no morning row | — | higher-low base |
+| CZR | stalk | jeff_sun|stockbee | — | — | -0.34 | — | — | no morning row | — | higher-low base |
 | EQPT | stalk | peoplewish | — | — | -6.64 | — | — | no morning row | — | none |
-| F | stalk | stockbee|jeff_sun | — | — | +2.86 | — | — | no morning row | — | none |
+| F | stalk | jeff_sun|stockbee | — | — | +2.86 | — | — | no morning row | — | none |
 | FIVN | stalk | peoplewish | — | — | -1.57 | — | — | no morning row | — | none |
 | GH | stalk | peoplewish | — | — | -4.51 | — | — | no morning row | — | none |
-| GRAL | stalk | qullamaggie|peoplewish | — | — | -6.74 | +3.21 | reversed | absent | — | none |
+| GRAL | stalk | peoplewish|qullamaggie | — | — | -6.74 | +3.21 | reversed | absent | — | none |
 | GTLB | stalk | qullamaggie | — | — | -3.66 | — | — | no morning row | — | none |
-| HTFL | stalk, tier-a | qullamaggie|peoplewish|hernandez | — | — | -7.72 | — | — | no morning row | — | none |
-| IDT | stalk | stockbee|jeff_sun | — | — | +0.30 | — | — | no morning row | — | none |
-| IRON | stalk | qullamaggie|peoplewish | — | — | -2.75 | — | — | no morning row | — | none |
-| KSS | stalk | qullamaggie|peoplewish | — | — | -0.66 | — | — | no morning row | — | higher-low base |
+| HTFL | stalk, tier-a | hernandez|peoplewish|qullamaggie | — | — | -7.72 | — | — | no morning row | — | none |
+| IDT | stalk | jeff_sun|stockbee | — | — | +0.30 | — | — | no morning row | — | none |
+| IRON | stalk | peoplewish|qullamaggie | — | — | -2.75 | — | — | no morning row | — | none |
+| KSS | stalk | peoplewish|qullamaggie | — | — | -0.66 | — | — | no morning row | — | higher-low base |
 | KVUE | stalk | stockbee | — | — | — | — | — | no morning row | — | none |
 | KVYO | stalk | peoplewish | — | — | +8.24 | — | — | no morning row | — | none |
 | LIFE | stalk | peoplewish | — | — | -1.77 | — | — | no morning row | — | none |
@@ -78,35 +78,35 @@ were not also on Stalk. On this date Stalk has 59 name(s) and Tier-A has 11.
 | NESR | stalk | peoplewish | — | — | -1.60 | — | — | no morning row | — | none |
 | NRIX | stalk | peoplewish | — | — | -4.10 | — | — | no morning row | — | none |
 | NTRA | stalk | qullamaggie | — | — | -8.54 | — | — | no morning row | — | none |
-| NTSK | stalk | qullamaggie|peoplewish | — | — | -9.47 | +3.29 | reversed | absent | — | none |
+| NTSK | stalk | peoplewish|qullamaggie | — | — | -9.47 | +3.29 | reversed | absent | — | none |
 | PGEN | stalk | stockbee | — | — | -25.94 | -30.55 | held | absent | — | none |
 | PSX | stalk | hernandez|jeff_sun | — | — | -2.75 | — | — | no morning row | — | none |
-| QLYS | stalk, tier-a | qullamaggie|peoplewish|jeff_sun | — | — | -7.37 | — | — | no morning row | — | none |
+| QLYS | stalk, tier-a | jeff_sun|peoplewish|qullamaggie | — | — | -7.37 | — | — | no morning row | — | none |
 | QXO | stalk | peoplewish | — | — | +5.80 | — | — | no morning row | — | none |
-| RBRK | stalk | qullamaggie|peoplewish | — | — | -7.64 | — | — | no morning row | — | none |
+| RBRK | stalk | peoplewish|qullamaggie | — | — | -7.64 | — | — | no morning row | — | none |
 | RGEN | stalk | peoplewish | — | — | -2.26 | — | — | no morning row | — | none |
 | RNG | stalk | peoplewish | — | — | -4.52 | — | — | no morning row | — | none |
 | RPD | stalk | qullamaggie | — | — | -10.30 | — | — | no morning row | — | none |
 | RXRX | stalk | peoplewish | — | — | -4.96 | — | — | no morning row | — | none |
 | SAIL | stalk | peoplewish | — | — | -8.88 | — | — | no morning row | — | none |
-| SDGR | stalk | qullamaggie|peoplewish | — | — | -3.50 | — | — | no morning row | — | none |
+| SDGR | stalk | peoplewish|qullamaggie | — | — | -3.50 | — | — | no morning row | — | none |
 | SPHR | stalk | peoplewish | — | — | -3.80 | — | — | no morning row | — | none |
 | SYRE | stalk | peoplewish | — | — | -1.09 | — | — | no morning row | — | none |
-| TEM | stalk | qullamaggie|peoplewish | — | — | +8.67 | +3.85 | extended | absent | — | none |
+| TEM | stalk | peoplewish|qullamaggie | — | — | +8.67 | +3.85 | extended | absent | — | none |
 | THRM | stalk | peoplewish | — | — | +1.39 | — | — | no morning row | — | none |
 | TMUS | stalk | stockbee | — | — | +2.37 | -2.29 | reversed | absent | — | none |
-| TTAN | stalk | stockbee|qullamaggie | — | — | -1.60 | — | — | no morning row | — | none |
-| TWST | stalk | qullamaggie|peoplewish | — | — | -15.54 | — | — | no morning row | — | none |
+| TTAN | stalk | qullamaggie|stockbee | — | — | -1.60 | — | — | no morning row | — | none |
+| TWST | stalk | peoplewish|qullamaggie | — | — | -15.54 | — | — | no morning row | — | none |
 | VCYT | stalk | peoplewish | — | — | -2.02 | — | — | no morning row | — | none |
 | VSTM | stalk | qullamaggie | — | — | -1.64 | — | — | no morning row | — | none |
 | WIX | stalk | peoplewish | — | — | -2.75 | — | — | no morning row | — | none |
 | ZURA | stalk | stockbee | — | — | -2.48 | — | — | no morning row | — | none |
-| CDNA | tier-a | stockbee|qullamaggie|peoplewish | — | — | -1.75 | — | — | no morning row | — | none |
-| KOD | tier-a | qullamaggie|peoplewish|hernandez | — | — | -1.57 | — | — | no morning row | — | none |
-| MRNA | tier-a | qullamaggie|peoplewish|hernandez | — | — | -0.40 | — | — | no morning row | — | none |
-| MTZ | tier-a | stockbee|peoplewish|jeff_sun | — | — | +4.14 | — | — | no morning row | — | none |
-| NOW | tier-a | stockbee|qullamaggie|jeff_sun | — | — | +0.85 | — | — | no morning row | — | none |
-| PURR | tier-a | stockbee|qullamaggie|peoplewish | — | — | -11.81 | — | — | no morning row | — | none |
+| CDNA | tier-a | peoplewish|qullamaggie|stockbee | — | — | -1.75 | — | — | no morning row | — | none |
+| KOD | tier-a | hernandez|peoplewish|qullamaggie | — | — | -1.57 | — | — | no morning row | — | none |
+| MRNA | tier-a | hernandez|peoplewish|qullamaggie | — | — | -0.40 | — | — | no morning row | — | none |
+| MTZ | tier-a | jeff_sun|peoplewish|stockbee | — | — | +4.14 | — | — | no morning row | — | none |
+| NOW | tier-a | jeff_sun|qullamaggie|stockbee | — | — | +0.85 | — | — | no morning row | — | none |
+| PURR | tier-a | peoplewish|qullamaggie|stockbee | — | — | -11.81 | — | — | no morning row | — | none |
 
 **What the tag columns mean.** `Tags published` is copied from the screen CSV
 when that file has a `setup_tags` column — only some dates do. `Tags recomputed`

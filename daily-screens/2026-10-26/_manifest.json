@@ -1,8 +1,10 @@
 {
  "_schema": "daily-screens-manifest-v1",
  "date": "2026-10-26",
- "data_as_of": null,
- "session_lag_days": null,
+ "data_as_of": "2026-10-23",
+ "session_lag_days": 3,
+ "session_lag_sessions": 1,
+ "session_lag_source": "breadth-snapshot.csv.data_date",
  "canonical": {
   "brief": "daily-sweep.md",
   "summary": "_summary.md",
@@ -471,6 +473,7 @@
   }
  ],
  "notes": [
+  "screen metrics describe the 2026-10-23 session (3 day(s) (1 trading session(s) - the calendar gap includes a weekend) before this directory's date); the 'today' columns are the 2026-10-26 settled close",
   "breadth has no matching .csv in this directory",
   "focus-rvol-snapshot has no matching .csv in this directory",
   "long-reversal-candidates has no matching .csv in this directory",
