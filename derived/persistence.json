@@ -93,6 +93,10 @@
    {
     "date": "2026-11-07",
     "reason": "no tier-a.csv"
+   },
+   {
+    "date": "2026-11-09",
+    "reason": "no tier-a.csv (tier-a.md exists - the run published no rows)"
    }
   ],
   "latest": "2026-11-06",

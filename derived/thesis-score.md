@@ -1,6 +1,6 @@
 # Thesis scorecard — did yesterday's published thesis hold?
 
-**Source:** derived read of the thesis-verdict tables in the published briefs (no source file is modified) · **Built:** 2026-11-10 · **Covers:** 2 brief(s) scored, 217 name-verdict row(s); 57 brief(s) published no score · read-only
+**Source:** derived read of the thesis-verdict tables in the published briefs (no source file is modified) · **Built:** 2026-11-10 · **Covers:** 3 brief(s) scored, 260 name-verdict row(s); 61 brief(s) published no score · read-only
 
 > **Read this before the table.**
 >
@@ -20,8 +20,9 @@
 |---|---|---|---|
 | `daily-briefs/2026-11-05-pre-market.md` | 2026-11-05 | gap | 105 |
 | `daily-briefs/2026-11-06-pre-market.md` | 2026-11-06 | invalidation | 112 |
+| `daily-briefs/2026-11-09-pre-market.md` | 2026-11-09 | invalidation | 43 |
 
-57 brief(s) published no thesis score:
+61 brief(s) published no thesis score:
 
 | Brief | Date |
 |---|---|
@@ -55,6 +56,8 @@
 | `daily-briefs/2026-11-05-pre-market-refresh.md` | 2026-11-05 |
 | `daily-briefs/2026-11-06-post-market.md` | 2026-11-06 |
 | `daily-briefs/2026-11-06-pre-market-refresh.md` | 2026-11-06 |
+| `daily-briefs/2026-11-09-post-market.md` | 2026-11-09 |
+| `daily-briefs/2026-11-09-pre-market-refresh.md` | 2026-11-09 |
 | `us-stocks-in-play/2026-10-13-open.md` | 2026-10-13 |
 | `us-stocks-in-play/2026-10-14.md` | 2026-10-14 |
 | `us-stocks-in-play/2026-10-15.md` | 2026-10-15 |
@@ -78,6 +81,8 @@
 | `us-stocks-in-play/2026-11-05.md` | 2026-11-05 |
 | `us-stocks-in-play/2026-11-06-open.md` | 2026-11-06 |
 | `us-stocks-in-play/2026-11-06.md` | 2026-11-06 |
+| `us-stocks-in-play/2026-11-09-open.md` | 2026-11-09 |
+| `us-stocks-in-play/2026-11-09.md` | 2026-11-09 |
 | `weekly/2026-11-01-preview-tldr.md` | 2026-11-01 |
 | `weekly/2026-11-01-preview.md` | 2026-11-01 |
 | `weekly/2026-11-08-preview-tldr.md` | 2026-11-08 |
@@ -88,7 +93,7 @@
 | Contract | Briefs | Rows | HELD | BROKE | PARTIAL | UNJUDGED | HELD rate |
 |---|---|---|---|---|---|---|---|
 | gap | 1 | 105 | 58 | 10 | 0 | 37 | 85.3% |
-| invalidation | 1 | 112 | 67 | 41 | 2 | 2 | 60.9% |
+| invalidation | 2 | 155 | 98 | 52 | 3 | 2 | 64.1% |
 
 **What the HELD rate is.** The share of JUDGED names whose thesis held, where
 judged means HELD, BROKE or PARTIAL - an UNJUDGED row has no level and no
@@ -316,11 +321,55 @@ comparable across contracts and is not a measure of the routine's quality.
 | 2026-11-06 | invalidation | YFOR | **HELD** | -8.59% |
 | 2026-11-06 | invalidation | ZG | **BROKE** | -9.40% |
 | 2026-11-06 | invalidation | ZNB | **BROKE** | +72.58% |
+| 2026-11-09 | invalidation | ABNB | **HELD** | +11.67% |
+| 2026-11-09 | invalidation | AMAT | **HELD** | +4.22% |
+| 2026-11-09 | invalidation | AMD | **HELD** | +11.04% |
+| 2026-11-09 | invalidation | APLD | **HELD** | +9.74% |
+| 2026-11-09 | invalidation | ARM | **HELD** | +4.74% |
+| 2026-11-09 | invalidation | ASTS | **BROKE** | +7.05% |
+| 2026-11-09 | invalidation | ASX | **HELD** | +6.43% |
+| 2026-11-09 | invalidation | AXON | **BROKE** | -18.18% |
+| 2026-11-09 | invalidation | AXTI | **HELD** | +5.88% |
+| 2026-11-09 | invalidation | BE | **HELD** | +3.42% |
+| 2026-11-09 | invalidation | CAPR | **BROKE** | +4.65% |
+| 2026-11-09 | invalidation | CECO | **HELD** | +16.07% |
+| 2026-11-09 | invalidation | CIFR | **HELD** | +17.93% |
+| 2026-11-09 | invalidation | COHR | **HELD** | +13.58% |
+| 2026-11-09 | invalidation | CRDO | **HELD** | +7.28% |
+| 2026-11-09 | invalidation | CRWV | **BROKE** | +6.28% |
+| 2026-11-09 | invalidation | DKNG | **BROKE** | -21.30% |
+| 2026-11-09 | invalidation | FIVN | **BROKE** | -17.63% |
+| 2026-11-09 | invalidation | FLY | **HELD** | +36.80% |
+| 2026-11-09 | invalidation | FROG | **HELD** | +35.33% |
+| 2026-11-09 | invalidation | HIMS | **HELD** | +8.06% |
+| 2026-11-09 | invalidation | INOD | **BROKE** | -4.12% |
+| 2026-11-09 | invalidation | INTC | **HELD** | +7.71% |
+| 2026-11-09 | invalidation | IREN | **HELD** | +20.02% |
+| 2026-11-09 | invalidation | KLAC | **HELD** | +6.70% |
+| 2026-11-09 | invalidation | LITE | **HELD** | +5.67% |
+| 2026-11-09 | invalidation | LRCX | **HELD** | +8.23% |
+| 2026-11-09 | invalidation | MRNA | **HELD** | +5.27% |
+| 2026-11-09 | invalidation | MRVL | **HELD** | +5.73% |
+| 2026-11-09 | invalidation | MU | **HELD** | +5.12% |
+| 2026-11-09 | invalidation | MXL | **HELD** | +10.99% |
+| 2026-11-09 | invalidation | NBIS | **HELD** | +7.58% |
+| 2026-11-09 | invalidation | NET | **HELD** | +9.91% |
+| 2026-11-09 | invalidation | NTRA | **BROKE** | -14.60% |
+| 2026-11-09 | invalidation | NVDA | **HELD** | +2.77% |
+| 2026-11-09 | invalidation | OKLO | **HELD** | +22.66% |
+| 2026-11-09 | invalidation | SHAZ | **HELD** | +11.50% |
+| 2026-11-09 | invalidation | SIMO | **HELD** | +4.15% |
+| 2026-11-09 | invalidation | SNDK | **HELD** | +3.55% |
+| 2026-11-09 | invalidation | STX | **BROKE** | -1.19% |
+| 2026-11-09 | invalidation | TEAM | **PARTIAL** | -16.15% |
+| 2026-11-09 | invalidation | WDC | **BROKE** | -1.44% |
+| 2026-11-09 | invalidation | WULF | **BROKE** | +12.80% |
 
 ## Names by verdict
 
 | Ticker | HELD | BROKE | PARTIAL | UNJUDGED | Judged in |
 |---|---|---|---|---|---|
+| ABNB | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | ABOS | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | ADGM | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | ADMA | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
@@ -329,22 +378,29 @@ comparable across contracts and is not a measure of the routine's quality.
 | AKBA | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | ALIT | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | ALNT | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
-| AMD | 1 | 1 | 0 | 0 | 2026-11-05:gap, 2026-11-06:invalidation |
+| AMAT | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
+| AMD | 2 | 1 | 0 | 0 | 2026-11-05:gap, 2026-11-06:invalidation, 2026-11-09:invalidation |
 | AMTX | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | ANET | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | ANVS | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
-| APLD | 1 | 0 | 0 | 0 | 2026-11-05:gap |
+| APLD | 2 | 0 | 0 | 0 | 2026-11-05:gap, 2026-11-09:invalidation |
 | APP | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | ARAY | 2 | 0 | 0 | 0 | 2026-11-05:gap, 2026-11-06:invalidation |
 | ARDX | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | ARIS | 0 | 0 | 0 | 1 | 2026-11-05:gap |
+| ARM | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | ARQ | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | ARRY | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | ASM | 0 | 0 | 0 | 1 | 2026-11-05:gap |
+| ASTS | 0 | 1 | 0 | 0 | 2026-11-09:invalidation |
+| ASX | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | AVGO | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
+| AXON | 0 | 1 | 0 | 0 | 2026-11-09:invalidation |
+| AXTI | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | BATL | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | BCRX | 0 | 1 | 0 | 0 | 2026-11-05:gap |
 | BDMD | 0 | 1 | 0 | 1 | 2026-11-05:gap, 2026-11-06:invalidation |
+| BE | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | BIVI | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | BKSY | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | BLNK | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
@@ -353,17 +409,21 @@ comparable across contracts and is not a measure of the routine's quality.
 | BURU | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | BZFD | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | CAMT | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
+| CAPR | 0 | 1 | 0 | 0 | 2026-11-09:invalidation |
 | CAVA | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
 | CCLD | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | CDT | 0 | 0 | 0 | 1 | 2026-11-06:invalidation |
+| CECO | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | CENN | 2 | 0 | 0 | 0 | 2026-11-05:gap, 2026-11-06:invalidation |
 | CHSN | 0 | 0 | 0 | 1 | 2026-11-05:gap |
-| CIFR | 1 | 0 | 0 | 0 | 2026-11-05:gap |
+| CIFR | 2 | 0 | 0 | 0 | 2026-11-05:gap, 2026-11-09:invalidation |
 | CLSK | 1 | 0 | 0 | 0 | 2026-11-05:gap |
+| COHR | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | CORZ | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | CPSH | 1 | 0 | 0 | 0 | 2026-11-05:gap |
+| CRDO | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | CRIS | 2 | 0 | 0 | 0 | 2026-11-05:gap, 2026-11-06:invalidation |
-| CRWV | 1 | 0 | 0 | 0 | 2026-11-05:gap |
+| CRWV | 1 | 1 | 0 | 0 | 2026-11-05:gap, 2026-11-09:invalidation |
 | CYH | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | DAVE | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | DDC | 0 | 1 | 0 | 0 | 2026-11-05:gap |
@@ -371,6 +431,7 @@ comparable across contracts and is not a measure of the routine's quality.
 | DDOG | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | DJT | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | DKI | 1 | 0 | 0 | 1 | 2026-11-05:gap, 2026-11-06:invalidation |
+| DKNG | 0 | 1 | 0 | 0 | 2026-11-09:invalidation |
 | DOX | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | DUOL | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | EGO | 0 | 0 | 0 | 1 | 2026-11-05:gap |
@@ -383,9 +444,12 @@ comparable across contracts and is not a measure of the routine's quality.
 | EXPE | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | FICO | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
 | FIS | 1 | 0 | 0 | 0 | 2026-11-05:gap |
+| FIVN | 0 | 1 | 0 | 0 | 2026-11-09:invalidation |
+| FLY | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | FLYE | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | FLYW | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | FOUR | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
+| FROG | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | FSLR | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | FTCI | 0 | 2 | 0 | 0 | 2026-11-05:gap, 2026-11-06:invalidation |
 | FUN | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
@@ -397,6 +461,7 @@ comparable across contracts and is not a measure of the routine's quality.
 | GXAI | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | HELE | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | HIHO | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
+| HIMS | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | HIMX | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | HL | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | HPAI | 0 | 1 | 0 | 1 | 2026-11-05:gap, 2026-11-06:invalidation |
@@ -406,17 +471,20 @@ comparable across contracts and is not a measure of the routine's quality.
 | HXHX | 0 | 0 | 0 | 1 | 2026-11-05:gap |
 | HYMC | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | INLF | 1 | 0 | 0 | 1 | 2026-11-05:gap, 2026-11-06:invalidation |
-| INTC | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
-| IREN | 0 | 0 | 0 | 1 | 2026-11-05:gap |
+| INOD | 0 | 1 | 0 | 0 | 2026-11-09:invalidation |
+| INTC | 2 | 0 | 0 | 0 | 2026-11-06:invalidation, 2026-11-09:invalidation |
+| IREN | 1 | 0 | 0 | 1 | 2026-11-05:gap, 2026-11-09:invalidation |
 | IRWD | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
 | JAGX | 2 | 0 | 0 | 0 | 2026-11-05:gap, 2026-11-06:invalidation |
 | JDZG | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
 | KD | 1 | 0 | 0 | 0 | 2026-11-05:gap |
+| KLAC | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | KPTI | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | LABT | 2 | 0 | 0 | 0 | 2026-11-05:gap, 2026-11-06:invalidation |
 | LIME | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
-| LITE | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
+| LITE | 2 | 0 | 0 | 0 | 2026-11-06:invalidation, 2026-11-09:invalidation |
 | LMAT | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
+| LRCX | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | LYNX | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
 | LZ | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
 | MASK | 0 | 0 | 1 | 0 | 2026-11-06:invalidation |
@@ -428,23 +496,27 @@ comparable across contracts and is not a measure of the routine's quality.
 | MKDW | 0 | 0 | 0 | 1 | 2026-11-05:gap |
 | MNTN | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | MOBX | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
-| MRVL | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
+| MRNA | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
+| MRVL | 2 | 0 | 0 | 0 | 2026-11-06:invalidation, 2026-11-09:invalidation |
 | MTEK | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
-| MU | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
+| MU | 2 | 0 | 0 | 0 | 2026-11-06:invalidation, 2026-11-09:invalidation |
 | MUX | 0 | 0 | 0 | 1 | 2026-11-05:gap |
+| MXL | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | NAMM | 0 | 0 | 0 | 1 | 2026-11-05:gap |
-| NBIS | 0 | 0 | 0 | 1 | 2026-11-05:gap |
+| NBIS | 1 | 0 | 0 | 1 | 2026-11-05:gap, 2026-11-09:invalidation |
 | NCEL | 0 | 0 | 0 | 1 | 2026-11-05:gap |
-| NET | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
+| NET | 2 | 0 | 0 | 0 | 2026-11-06:invalidation, 2026-11-09:invalidation |
 | NICE | 0 | 0 | 0 | 1 | 2026-11-05:gap |
 | NRIX | 1 | 0 | 0 | 0 | 2026-11-05:gap |
+| NTRA | 0 | 1 | 0 | 0 | 2026-11-09:invalidation |
 | NUR | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
-| NVDA | 1 | 0 | 0 | 0 | 2026-11-05:gap |
+| NVDA | 2 | 0 | 0 | 0 | 2026-11-05:gap, 2026-11-09:invalidation |
 | NVO | 0 | 0 | 0 | 1 | 2026-11-05:gap |
 | NVTS | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | NWGL | 0 | 0 | 0 | 2 | 2026-11-05:gap, 2026-11-06:invalidation |
 | NXT | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | OCGN | 1 | 0 | 0 | 0 | 2026-11-05:gap |
+| OKLO | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | OMH | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
 | OSCR | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | OSTX | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
@@ -473,22 +545,25 @@ comparable across contracts and is not a measure of the routine's quality.
 | SEGG | 0 | 1 | 0 | 0 | 2026-11-05:gap |
 | SEZL | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
 | SGRX | 1 | 0 | 0 | 0 | 2026-11-05:gap |
+| SHAZ | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | SHFS | 2 | 0 | 0 | 0 | 2026-11-05:gap, 2026-11-06:invalidation |
+| SIMO | 1 | 0 | 0 | 0 | 2026-11-09:invalidation |
 | SLGB | 0 | 0 | 0 | 1 | 2026-11-05:gap |
 | SLQT | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
 | SMCI | 0 | 1 | 0 | 0 | 2026-11-05:gap |
 | SMX | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | SNAP | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
-| SNDK | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
+| SNDK | 2 | 0 | 0 | 0 | 2026-11-06:invalidation, 2026-11-09:invalidation |
 | SPCX | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | SPWR | 1 | 1 | 0 | 0 | 2026-11-05:gap, 2026-11-06:invalidation |
-| STX | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
+| STX | 1 | 1 | 0 | 0 | 2026-11-06:invalidation, 2026-11-09:invalidation |
 | SWKS | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | TBI | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
 | TBLA | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | TDUP | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
 | TE | 0 | 1 | 0 | 0 | 2026-11-05:gap |
 | TEAD | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
+| TEAM | 0 | 0 | 1 | 0 | 2026-11-09:invalidation |
 | TPL | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
 | TPR | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | TREX | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
@@ -504,11 +579,11 @@ comparable across contracts and is not a measure of the routine's quality.
 | VNET | 0 | 0 | 0 | 1 | 2026-11-05:gap |
 | VRAX | 0 | 1 | 0 | 0 | 2026-11-06:invalidation |
 | VST | 1 | 0 | 0 | 0 | 2026-11-05:gap |
-| WDC | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
+| WDC | 1 | 1 | 0 | 0 | 2026-11-06:invalidation, 2026-11-09:invalidation |
 | WFF | 1 | 0 | 0 | 1 | 2026-11-05:gap, 2026-11-06:invalidation |
 | WORX | 0 | 0 | 0 | 1 | 2026-11-05:gap |
 | WRBY | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
-| WULF | 1 | 0 | 0 | 0 | 2026-11-05:gap |
+| WULF | 1 | 1 | 0 | 0 | 2026-11-05:gap, 2026-11-09:invalidation |
 | XERS | 1 | 0 | 0 | 0 | 2026-11-06:invalidation |
 | XXII | 1 | 0 | 0 | 0 | 2026-11-05:gap |
 | XYZ | 1 | 0 | 0 | 0 | 2026-11-05:gap |

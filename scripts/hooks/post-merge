@@ -54,21 +54,38 @@ if [ -z "$(git status --porcelain -- derived/ 2>/dev/null)" ]; then
     exit 0
 fi
 
-git add -u -- derived/ 2>/dev/null
-# The pathspec keeps the commit to derived/: anything else already staged stays
-# staged and is not swept into this commit. --no-verify skips the pre-commit
-# hook, which would re-run the generators and the checker for no new reason.
-git commit -q --no-verify --only -m "chore(derived): regenerate views after merge
+# Stage derived/ INCLUDING new files. `git add -u` only stages modifications to
+# files git already tracks, so a merge that brings a NEW session's artifacts
+# would leave that session's derived views untracked and out of the commit.
+git add -- derived/ 2>/dev/null
+
+# Commit the index, with no pathspec.
+#
+# A pathspec commit (`git commit --only -- derived/`) is a PARTIAL commit, and
+# git refuses a partial commit while a merge is in progress - which is exactly
+# when this hook runs. MERGE_HEAD is still present at this point; that was
+# measured, not assumed. So the commit takes the index as it stands.
+#
+# To keep the commit to derived/, anything already staged from outside
+# derived/ is unstaged first and re-staged afterwards.
+OTHER=""
+if [ -n "$(git diff --cached --name-only | grep -v '^derived/')" ]; then
+    OTHER=$(git diff --cached --name-only | grep -v '^derived/' | tr '\n' ' ')
+    git reset -q -- $OTHER 2>/dev/null
+fi
+
+if git commit -q --no-verify -m "chore(derived): regenerate views after merge
 
 Auto-committed by .git/hooks/post-merge. The builders are idempotent;
 this commit exists only because a source artifact changed.
 
-Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>" -- derived/ 2>/dev/null \
-    || git commit -q --no-verify -m "chore(derived): regenerate views after merge
-
-Auto-committed by .git/hooks/post-merge. The builders are idempotent;
-this commit exists only because a source artifact changed.
-
-Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>" -- derived/
-
-echo "post-merge: derived/ updated and committed."
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"; then
+    # Put back whatever was staged before this hook ran.
+    if [ -n "$OTHER" ]; then
+        git add -- $OTHER 2>/dev/null
+    fi
+    echo "post-merge: derived/ updated and committed."
+else
+    echo "post-merge: the derived/ commit FAILED - the regenerated views are staged but uncommitted." >&2
+    exit 0
+fi

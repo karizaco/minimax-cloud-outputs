@@ -1,6 +1,6 @@
 # Setup journal — next session versus the published close
 
-**Source:** derived join of `daily-screens/<date>/{stalk,tier-a}.csv` to the next `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-10 · **Covers:** 432 published setup-row(s) across 2026-10-22 → 2026-11-06; 422 scored, 10 waiting on a session that has not settled · read-only
+**Source:** derived join of `daily-screens/<date>/{stalk,tier-a}.csv` to the next `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-10 · **Covers:** 432 published setup-row(s) across 2026-10-22 → 2026-11-06; 432 scored, 0 waiting on a session that has not settled · read-only
 
 > **Read this before the table.**
 >
@@ -35,9 +35,9 @@
 | stockbee | 37 | 18 | 16 | +0.18 |
 | jeff_sun|stockbee | 26 | 11 | 11 | -0.08 |
 | qullamaggie | 22 | 10 | 11 | -0.49 |
-| peoplewish|qullamaggie | 20 | 10 | 10 | -0.03 |
+| peoplewish|qullamaggie | 21 | 11 | 10 | +0.66 |
+| peoplewish|qullamaggie|stockbee | 19 | 12 | 5 | +2.17 |
 | hernandez|peoplewish|qullamaggie | 18 | 8 | 9 | -0.29 |
-| peoplewish|qullamaggie|stockbee | 17 | 11 | 5 | +2.17 |
 | jeff_sun|peoplewish|stockbee | 10 | 8 | 2 | +1.02 |
 | peoplewish|stockbee | 9 | 6 | 3 | +3.65 |
 | hernandez|jeff_sun | 8 | 4 | 4 | -0.10 |
@@ -45,8 +45,10 @@
 | jeff_sun|peoplewish|qullamaggie | 8 | 1 | 6 | -2.16 |
 | hernandez|jeff_sun|stockbee | 7 | 4 | 2 | +1.11 |
 | jeff_sun|peoplewish | 7 | 3 | 3 | -0.25 |
-| jeff_sun|qullamaggie|stockbee | 5 | 4 | 1 | +2.74 |
-| hernandez|peoplewish|qullamaggie|stockbee | 2 | 1 | 0 | +2.39 |
+| jeff_sun|qullamaggie|stockbee | 6 | 5 | 1 | +2.83 |
+| hernandez|peoplewish|qullamaggie|stockbee | 4 | 3 | 0 | +4.67 |
+| jeff_sun|peoplewish|qullamaggie|stockbee | 3 | 1 | 2 | -2.40 |
+| hernandez|jeff_sun|qullamaggie|stockbee | 2 | 2 | 0 | +4.63 |
 
 Combinations that appear once are omitted from this table and kept in the
 row file. Up and down use a 0.25 pp band around zero so a flat close is
@@ -478,11 +480,16 @@ neither.
 | 2026-11-05 | 2026-11-06 | TE | stalk | peoplewish|qullamaggie | +6.14 | +3.51 | held |
 | 2026-11-05 | 2026-11-06 | VRDN | tier-a | hernandez|peoplewish|qullamaggie|stockbee | +0.56 | -0.21 | faded |
 | 2026-11-05 | 2026-11-06 | XNCR | tier-a | hernandez|peoplewish|qullamaggie|stockbee | +0.47 | +4.99 | held |
-
-## Not yet scored
-
-10 name-row(s) were published on 2026-11-06 and have no later settled session
-in `us-eod/`. They are waiting, not failed.
+| 2026-11-06 | 2026-11-09 | ACHC | tier-a | hernandez|peoplewish|qullamaggie|stockbee | +2.70 | +4.35 | held |
+| 2026-11-06 | 2026-11-09 | APP | tier-a | jeff_sun|qullamaggie|stockbee | -0.89 | +4.81 | reversed |
+| 2026-11-06 | 2026-11-09 | EWTX | stalk | peoplewish|qullamaggie | +2.00 | +8.21 | held |
+| 2026-11-06 | 2026-11-09 | FUN | tier-a | peoplewish|qullamaggie|stockbee | -0.10 | +7.49 | reversed |
+| 2026-11-06 | 2026-11-09 | MRNA | tier-a | hernandez|peoplewish|qullamaggie|stockbee | +1.89 | +5.82 | held |
+| 2026-11-06 | 2026-11-09 | ROKU | stalk | jeff_sun|stockbee | — | — | no_close |
+| 2026-11-06 | 2026-11-09 | RUN | tier-a | jeff_sun|peoplewish|qullamaggie|stockbee | +0.10 | -2.40 | reversed |
+| 2026-11-06 | 2026-11-09 | SEZL | tier-a | jeff_sun|peoplewish|qullamaggie|stockbee | +2.14 | +0.94 | faded |
+| 2026-11-06 | 2026-11-09 | U | tier-a | peoplewish|qullamaggie|stockbee | +1.28 | -0.12 | faded |
+| 2026-11-06 | 2026-11-09 | XERS | tier-a | hernandez|jeff_sun|qullamaggie|stockbee | +0.00 | +4.34 | up |
 
 ## Rules
 

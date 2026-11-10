@@ -1,6 +1,6 @@
 # Setup card — published 2026-11-06
 
-**Source:** derived join over `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md` and `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-10 · **Covers:** 2 stalk name(s), 8 Tier-A name(s); entry session not yet settled · read-only
+**Source:** derived join over `daily-screens/<date>/{stalk,tier-a}.csv`, `earnings/<date>-reactions.md` and `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-10 · **Covers:** 2 stalk name(s), 8 Tier-A name(s); entry session 2026-11-09 · read-only
 
 > **Read this before the table.**
 >
@@ -17,7 +17,7 @@
 |---|---|---|
 | Screen | `2026-11-05` | the metrics the 18:30 sweep computed (`_results.json`) |
 | Observation | `2026-11-06` | the settled close on the day the card was published |
-| Entry | `not yet settled` | the next settled session. A setup cannot be entered on the observation close. |
+| Entry | `2026-11-09` | the next settled session. A setup cannot be entered on the observation close. |
 
 A figure in the table below is stamped with the clock it belongs to.
 Do not read an observation-session change as an entry.

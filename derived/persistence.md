@@ -11,7 +11,7 @@
 > 2. **It does not modify `daily-sweep.md`.** The streak column a reader wants in the
 >    sweep lives here instead, because that file is a cron product and this builder
 >    must not become a second writer on it.
-> 3. **19 date(s) published no readable Tier-A board** and are not counted
+> 3. **20 date(s) published no readable Tier-A board** and are not counted
 >    as boards — see *Coverage* below. A streak spanning one of them is not broken
 >    by a run that produced nothing.
 
@@ -102,8 +102,8 @@ Tier-A on 2026-11-06, with the persistence column a sweep table does not carry.
 
 | Board | Dated directories | Readable boards |
 |---|---|---|
-| tier-a | 31 | 12 |
-| focus | 31 | 12 |
+| tier-a | 32 | 12 |
+| focus | 32 | 12 |
 
 Dates that published no readable Tier-A board:
 
@@ -128,6 +128,7 @@ Dates that published no readable Tier-A board:
 | 2026-10-24 | no tier-a.csv |
 | 2026-10-31 | no tier-a.csv |
 | 2026-11-07 | no tier-a.csv |
+| 2026-11-09 | no tier-a.csv (tier-a.md exists - the run published no rows) |
 
 ## How to read it
 

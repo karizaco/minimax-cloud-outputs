@@ -1,6 +1,6 @@
 # Run ledger — which routine published what, and when
 
-**Source:** derived read of the published artifacts, against the schedule in the migration repo's ROSTER.md (read 2026-11-09); no source file is modified · **Built:** 2026-11-10 · **Covers:** 334 artifact-date rows across 23 routines and 14 trading sessions · read-only
+**Source:** derived read of the published artifacts, against the schedule in the migration repo's ROSTER.md (read 2026-11-09); no source file is modified · **Built:** 2026-11-10 · **Covers:** 351 artifact-date rows across 23 routines and 15 trading sessions · read-only
 
 > **Read this before the table.**
 >
@@ -21,41 +21,41 @@
 
 | State | Rows |
 |---|---|
-| published, on schedule | 209 |
-| published, off schedule | 10 |
+| published, on schedule | 228 |
+| published, off schedule | 14 |
 | published, before the calendar this repo records | 58 |
-| published, after the calendar this repo records | 6 |
+| published, after the calendar this repo records | 0 |
 | expected but not present in this repo | 24 |
 | expected, before the routine had started publishing here | 27 |
-| **total** | **334** |
+| **total** | **351** |
 
 ## By routine
 
 | Routine | Fire | Schedule | Published | Missing | Off schedule | Last published here |
 |---|---|---|---|---|---|---|
 | 01-weekly-mcp-health-check | 02:00 | Sun | 0 | 0 | 2 | — |
-| 19-earnings-reminder-daily | 06:00 | Mon-Fri | 14 | 0 | 0 | 2026-11-06 |
-| 02-asia-pre-market-reactions | 06:30 | Mon-Fri | 14 | 0 | 0 | 2026-11-06 |
-| 15-earnings-reaction-scanner | 08:00 | Mon-Fri | 7 | 3 | 1 | 2026-11-06 |
-| 08-stock-screener-pre-market-gapper | 08:30 | Mon-Fri | 12 | 2 | 0 | 2026-11-06 |
-| 26-agentic-pre-market-brief | 08:30 | Mon-Fri | 13 | 1 | 1 | 2026-11-06 |
-| 25-ntrt-gap-brief-daily | 09:00 | Mon-Fri | 14 | 1 | 0 | 2026-11-06 |
-| 26b-agentic-pre-market-brief-refresh-0920 | 09:20 | Mon-Fri | 3 | 0 | 0 | 2026-11-06 |
-| 07-stock-screener-focus-rvol-09:45 | 09:45 | Mon-Fri | 12 | 2 | 0 | 2026-11-06 |
-| 17-us-stocks-in-play-open | 09:50 | Mon-Fri | 3 | 11 | 0 | 2026-11-06 |
-| 12-cross-asset-correlation-snapshot | 10:00 | Mon-Fri | 8 | 2 | 1 | 2026-11-06 |
-| 10-stock-screener-breadth-snapshot | 14:00 | Mon-Fri | 10 | 0 | 0 | 2026-11-06 |
+| 19-earnings-reminder-daily | 06:00 | Mon-Fri | 15 | 0 | 0 | 2026-11-09 |
+| 02-asia-pre-market-reactions | 06:30 | Mon-Fri | 15 | 0 | 0 | 2026-11-09 |
+| 15-earnings-reaction-scanner | 08:00 | Mon-Fri | 8 | 3 | 1 | 2026-11-09 |
+| 08-stock-screener-pre-market-gapper | 08:30 | Mon-Fri | 13 | 2 | 0 | 2026-11-09 |
+| 26-agentic-pre-market-brief | 08:30 | Mon-Fri | 14 | 1 | 1 | 2026-11-09 |
+| 25-ntrt-gap-brief-daily | 09:00 | Mon-Fri | 15 | 1 | 0 | 2026-11-09 |
+| 26b-agentic-pre-market-brief-refresh-0920 | 09:20 | Mon-Fri | 4 | 0 | 0 | 2026-11-09 |
+| 07-stock-screener-focus-rvol-09:45 | 09:45 | Mon-Fri | 13 | 2 | 0 | 2026-11-09 |
+| 17-us-stocks-in-play-open | 09:50 | Mon-Fri | 4 | 11 | 0 | 2026-11-09 |
+| 12-cross-asset-correlation-snapshot | 10:00 | Mon-Fri | 9 | 2 | 1 | 2026-11-09 |
+| 10-stock-screener-breadth-snapshot | 14:00 | Mon-Fri | 11 | 0 | 0 | 2026-11-09 |
 | 13-macro-calendar-midweek | 14:00 | Wed | 3 | 0 | 0 | 2026-11-04 |
-| 06-stock-screener-pattern-study-backlog | 15:00 | Sat | 0 | 0 | 2 | — |
-| 14-macro-calendar-week-ahead | 15:00 | Sun | 0 | 0 | 1 | — |
-| 17-us-stocks-in-play | 15:50 | Mon-Fri | 18 | 0 | 0 | 2026-11-06 |
-| 04-reversal-bullish-3:55 | 15:55 | Mon-Fri | 14 | 0 | 0 | 2026-11-06 |
-| 20-eod-watchlist-csv-snapshot | 16:00 | Mon-Fri | 14 | 0 | 0 | 2026-11-06 |
-| 05-eod-international-daily | 16:30 | Mon-Fri | 10 | 0 | 0 | 2026-11-06 |
-| 16-unusual-options-flow-daily | 16:35 | Mon-Fri | 14 | 0 | 0 | 2026-11-06 |
-| 22-weekly-market-recap-preview | 17:47 | Sun | 0 | 0 | 2 | — |
-| 09-stock-screener-daily-sweep-18:30 | 18:30 | Mon-Fri | 12 | 2 | 0 | 2026-11-06 |
-| 23-agentic-post-market-brief | 22:30 | Mon-Fri | 14 | 0 | 0 | 2026-11-06 |
+| 06-stock-screener-pattern-study-backlog | 15:00 | Sat | 0 | 0 | 3 | — |
+| 14-macro-calendar-week-ahead | 15:00 | Sun | 0 | 0 | 2 | — |
+| 17-us-stocks-in-play | 15:50 | Mon-Fri | 20 | 0 | 0 | 2026-11-09 |
+| 04-reversal-bullish-3:55 | 15:55 | Mon-Fri | 15 | 0 | 0 | 2026-11-09 |
+| 20-eod-watchlist-csv-snapshot | 16:00 | Mon-Fri | 15 | 0 | 0 | 2026-11-09 |
+| 05-eod-international-daily | 16:30 | Mon-Fri | 11 | 0 | 0 | 2026-11-09 |
+| 16-unusual-options-flow-daily | 16:35 | Mon-Fri | 15 | 0 | 0 | 2026-11-09 |
+| 22-weekly-market-recap-preview | 17:47 | Sun | 0 | 0 | 4 | — |
+| 09-stock-screener-daily-sweep-18:30 | 18:30 | Mon-Fri | 13 | 2 | 0 | 2026-11-09 |
+| 23-agentic-post-market-brief | 22:30 | Mon-Fri | 15 | 0 | 0 | 2026-11-09 |
 
 **What this table means.** `Published` counts the artifact-date pairs this
 repo holds for that routine on a day its schedule covers. `Missing` counts the
@@ -75,6 +75,10 @@ this artifact exists to show.
 | 2026-11-01 | 14-macro-calendar-week-ahead | `macro-calendar/2026-11-01-week-ahead.md` |
 | 2026-11-01 | 22-weekly-market-recap-preview | `weekly/2026-11-01-preview-tldr.md` |
 | 2026-11-01 | 22-weekly-market-recap-preview | `weekly/2026-11-01-preview.md` |
+| 2026-11-07 | 06-stock-screener-pattern-study-backlog | `daily-screens/2026-11-07/weekly-ipo.md` |
+| 2026-11-08 | 14-macro-calendar-week-ahead | `macro-calendar/2026-11-08-week-ahead.md` |
+| 2026-11-08 | 22-weekly-market-recap-preview | `weekly/2026-11-08-preview-tldr.md` |
+| 2026-11-08 | 22-weekly-market-recap-preview | `weekly/2026-11-08-preview.md` |
 | 2026-W44 | 01-weekly-mcp-health-check | `mcp-health/2026-W44.md` |
 | 2026-W45 | 01-weekly-mcp-health-check | `mcp-health/2026-W45.md` |
 
@@ -417,12 +421,29 @@ counted apart from the scheduled runs so the two are not confused.
 | 2026-11-06 | 25-ntrt-gap-brief-daily | published | `ntrt/2026-11-06.md` | — |
 | 2026-11-06 | 26-agentic-pre-market-brief | published | `daily-briefs/2026-11-06-pre-market.md` | — |
 | 2026-11-06 | 26b-agentic-pre-market-brief-refresh-0920 | published | `daily-briefs/2026-11-06-pre-market-refresh.md` | — |
-| 2026-11-07 | 06-stock-screener-pattern-study-backlog | published_after_calendar | `daily-screens/2026-11-07/weekly-ipo.md` | — |
-| 2026-11-08 | 14-macro-calendar-week-ahead | published_after_calendar | `macro-calendar/2026-11-08-week-ahead.md` | — |
-| 2026-11-08 | 22-weekly-market-recap-preview | published_after_calendar | `weekly/2026-11-08-preview-tldr.md` | — |
-| 2026-11-08 | 22-weekly-market-recap-preview | published_after_calendar | `weekly/2026-11-08-preview.md` | — |
-| 2026-11-09 | 02-asia-pre-market-reactions | published_after_calendar | `asia-pre-market/2026-11-09.md` | — |
-| 2026-11-09 | 19-earnings-reminder-daily | published_after_calendar | `earnings/2026-11-09-reminders.md` | — |
+| 2026-11-07 | 06-stock-screener-pattern-study-backlog | published_off_schedule | `daily-screens/2026-11-07/weekly-ipo.md` | — |
+| 2026-11-08 | 14-macro-calendar-week-ahead | published_off_schedule | `macro-calendar/2026-11-08-week-ahead.md` | — |
+| 2026-11-08 | 22-weekly-market-recap-preview | published_off_schedule | `weekly/2026-11-08-preview-tldr.md` | — |
+| 2026-11-08 | 22-weekly-market-recap-preview | published_off_schedule | `weekly/2026-11-08-preview.md` | — |
+| 2026-11-09 | 02-asia-pre-market-reactions | published | `asia-pre-market/2026-11-09.md` | — |
+| 2026-11-09 | 04-reversal-bullish-3:55 | published | `daily-screens/2026-11-09/reversal-bullish-3_55.md` | — |
+| 2026-11-09 | 05-eod-international-daily | published | `international-eod/2026-11-09/summary.md` | — |
+| 2026-11-09 | 07-stock-screener-focus-rvol-09:45 | published | `daily-screens/2026-11-09/focus-rvol-snapshot.md` | — |
+| 2026-11-09 | 08-stock-screener-pre-market-gapper | published | `daily-screens/2026-11-09/pre-market-gapper.md` | — |
+| 2026-11-09 | 09-stock-screener-daily-sweep-18:30 | published | `daily-screens/2026-11-09/daily-sweep.md` | — |
+| 2026-11-09 | 10-stock-screener-breadth-snapshot | published | `daily-screens/2026-11-09/breadth-snapshot.md` | — |
+| 2026-11-09 | 12-cross-asset-correlation-snapshot | published | `cross-asset/2026-11-09.md` | — |
+| 2026-11-09 | 15-earnings-reaction-scanner | published | `earnings/2026-11-09-reactions.md` | — |
+| 2026-11-09 | 16-unusual-options-flow-daily | published | `options-flow/2026-11-09.md` | — |
+| 2026-11-09 | 17-us-stocks-in-play | published | `us-stocks-in-play/2026-11-09-open.md` | — |
+| 2026-11-09 | 17-us-stocks-in-play | published | `us-stocks-in-play/2026-11-09.md` | — |
+| 2026-11-09 | 17-us-stocks-in-play-open | published | `us-stocks-in-play/2026-11-09-open.md` | — |
+| 2026-11-09 | 19-earnings-reminder-daily | published | `earnings/2026-11-09-reminders.md` | — |
+| 2026-11-09 | 20-eod-watchlist-csv-snapshot | published | `us-eod/2026-11-09.csv` | 4895 |
+| 2026-11-09 | 23-agentic-post-market-brief | published | `daily-briefs/2026-11-09-post-market.md` | — |
+| 2026-11-09 | 25-ntrt-gap-brief-daily | published | `ntrt/2026-11-09.md` | — |
+| 2026-11-09 | 26-agentic-pre-market-brief | published | `daily-briefs/2026-11-09-pre-market.md` | — |
+| 2026-11-09 | 26b-agentic-pre-market-brief-refresh-0920 | published | `daily-briefs/2026-11-09-pre-market-refresh.md` | — |
 | 2026-W44 | 01-weekly-mcp-health-check | published_off_schedule | `mcp-health/2026-W44.md` | — |
 | 2026-W45 | 01-weekly-mcp-health-check | published_off_schedule | `mcp-health/2026-W45.md` | — |
 
