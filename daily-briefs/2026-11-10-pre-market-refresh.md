@@ -170,7 +170,7 @@ Biggest movers among the *published* names: **MNTK** -11.51pp, **PDYN** -8.19pp,
 | MCP-over-HTTP bridge — shibui | stock_data_query on `shibui.valuation` | ok | 689 of 704 screen names had a cap row dated 2026-11-09; 15 had none and fall back to the scanner |
 | Morning brief 08:30 ET | `daily-briefs/2026-11-10-pre-market.md` + `.csv` | ok | 506 rows, 227 gainers / 263 decliners — the band counts match its own front matter; read for the Driver column and for the 08:32 baseline |
 
-**`live_*` in the companion CSV.** The regular session had not opened at the 09:24 ET pull, so `live_close` / `live_change_pct` / `live_volume` carry the **last completed regular session** (the 2026-11-09 close), NOT pre-market numbers and NOT a live session that has not started. A downstream routine that needs how the gap behaved after the open must re-pull.
+**`live_*` in the companion CSV are deliberately BLANK, not zero.** The regular session had not opened at the 09:24 ET pull, so there is no live regular-session price, change or volume to publish — and a settled prior-session close wearing a `live_` label is a stale value presented as a live one. The last completed session's numbers are already carried under `prior_session_change_pct`, and `prior_close` is derived. A downstream routine that needs how the gap behaved after the open must re-pull once the session is live.
 
 **`prior_close` is derived, never the scanner's `close` column.** Every row's prior close is `premarket_close ÷ (1 + premarket_change ÷ 100)`, so it stays correct whether or not the session is open.
 
