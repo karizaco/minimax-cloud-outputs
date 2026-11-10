@@ -1,0 +1,93 @@
+{
+ "_schema": "daily-screens-decisions-v1",
+ "date": "2026-11-09",
+ "data_as_of": "2026-11-06",
+ "session_lag_days": 3,
+ "derived_from": "daily-screens/2026-11-09/_results.json",
+ "rules": {
+  "stylists": [
+   "stockbee",
+   "qullamaggie",
+   "jeff_sun",
+   "hernandez",
+   "peoplewish"
+  ],
+  "focus": {
+   "min_stylists": 2,
+   "max_names": 12
+  },
+  "tier_a": {
+   "min_stylists": 3,
+   "max_names": 8
+  }
+ },
+ "counts": {
+  "candidates": 954,
+  "focus": 12,
+  "tier_a": 6,
+  "short_candidates": 14,
+  "long_reversal_candidates": 29
+ },
+ "dropped": {
+  "tier_a_truncated": false,
+  "tier_a_pool_size": 6,
+  "tier_a_published": 6,
+  "tier_a": []
+ },
+ "screen_coverage": {
+  "A_stockbee_4pct": {
+   "rows_passing": 143,
+   "rows_kept": 143,
+   "complete": true
+  },
+  "B_stockbee_ep9m": {
+   "rows_passing": 251,
+   "rows_kept": 251,
+   "complete": true
+  },
+  "C_qullamaggie_rs": {
+   "rows_passing": 68,
+   "rows_kept": 68,
+   "complete": true
+  },
+  "D_qullamaggie_ep": {
+   "rows_passing": 29,
+   "rows_kept": 29,
+   "complete": true
+  },
+  "E_qullamaggie_5d_gainers": {
+   "rows_passing": 14,
+   "rows_kept": 14,
+   "complete": true
+  },
+  "F_qullamaggie_5d_losers": {
+   "rows_passing": 29,
+   "rows_kept": 29,
+   "complete": true
+  },
+  "G_peoplewish": {
+   "rows_passing": 338,
+   "rows_kept": 338,
+   "complete": true
+  },
+  "K_stockbee_anticipation": {
+   "rows_passing": 223,
+   "rows_kept": 223,
+   "complete": true
+  }
+ },
+ "regime": {
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "breadth_pct_spx": 68.01
+ },
+ "source_health": {
+  "machine_file": null,
+  "prose_only": true
+ },
+ "notes": [
+  "session lag 3 day(s): the screen metrics describe the 2026-11-06 session, the 'today' columns are the 2026-11-09 settled close",
+  "source health for this run exists only in the prose table in daily-sweep.md; there is no _source-health.json"
+ ]
+}
