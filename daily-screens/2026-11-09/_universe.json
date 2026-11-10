@@ -1,0 +1,307 @@
+{
+  "marker": "premarket-universe-v1",
+  "status": "OK_WITH_FLAGS",
+  "fire_date": "2026-11-09",
+  "expected_prior_session": "2026-11-06",
+  "sessions_source": "nasdaq:SPY/historical",
+  "sessions_considered": [
+    "2026-11-06",
+    "2026-11-05",
+    "2026-11-04",
+    "2026-11-03",
+    "2026-11-02",
+    "2026-10-30",
+    "2026-10-29",
+    "2026-10-28"
+  ],
+  "universe_date": "2026-11-06",
+  "universe_stale": false,
+  "universe_path": "daily-screens/2026-11-06/focus.csv",
+  "universe_schema": "current+today_close",
+  "universe_data_date": "2026-11-05",
+  "tv_cboe_session_valid": true,
+  "ref_close_column": "today_close",
+  "ref_close_session": "2026-11-06",
+  "screen_close_column_rejected": "screen_close_resolved",
+  "names": [
+    "RUN",
+    "SEZL",
+    "XERS",
+    "ACHC",
+    "MRNA",
+    "APP",
+    "U",
+    "FUN",
+    "JOBY",
+    "WRBY",
+    "VRDN",
+    "XNCR"
+  ],
+  "reference_closes": {
+    "RUN": {
+      "ref_close": 9.98,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview",
+        "cboe"
+      ],
+      "focus_csv_close": 9.98,
+      "tradingview_close": 9.98,
+      "cboe_close": 9.98,
+      "nasdaq_historical_close": 9.98,
+      "cboe_last_trade_time": "2026-11-06T15:59:59",
+      "stylists": "jeff_sun|peoplewish|qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|B_stockbee_ep9m|C_qullamaggie_rs|D_qullamaggie_ep|E_qullamaggie_5d_gainers|G_peoplewish|jeff_sun_canslim",
+      "flags": "",
+      "data_date": "2026-11-05"
+    },
+    "SEZL": {
+      "ref_close": 149.43,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview",
+        "cboe"
+      ],
+      "focus_csv_close": 149.43,
+      "tradingview_close": 149.43,
+      "cboe_close": 149.43,
+      "nasdaq_historical_close": 149.43,
+      "cboe_last_trade_time": "2026-11-06T15:59:58",
+      "stylists": "jeff_sun|peoplewish|qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|C_qullamaggie_rs|D_qullamaggie_ep|G_peoplewish|jeff_sun_canslim",
+      "flags": "",
+      "data_date": "2026-11-05"
+    },
+    "XERS": {
+      "ref_close": 15.2,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview",
+        "cboe"
+      ],
+      "focus_csv_close": 15.2,
+      "tradingview_close": 15.2,
+      "cboe_close": 15.2,
+      "nasdaq_historical_close": 15.2,
+      "cboe_last_trade_time": "2026-11-06T15:59:59",
+      "stylists": "hernandez|jeff_sun|qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|B_stockbee_ep9m|C_qullamaggie_rs|H_hernandez_theme|TV_volume_breakout",
+      "flags": "",
+      "data_date": "2026-11-05"
+    },
+    "ACHC": {
+      "ref_close": 37.0,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview",
+        "cboe"
+      ],
+      "focus_csv_close": 37.0,
+      "tradingview_close": 37.0,
+      "cboe_close": 37.0,
+      "nasdaq_historical_close": 37.0,
+      "cboe_last_trade_time": "2026-11-06T15:59:59",
+      "stylists": "hernandez|peoplewish|qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|D_qullamaggie_ep|G_peoplewish|H_hernandez_theme",
+      "flags": "",
+      "data_date": "2026-11-05"
+    },
+    "MRNA": {
+      "ref_close": 254.19,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview",
+        "cboe"
+      ],
+      "focus_csv_close": 254.19,
+      "tradingview_close": 254.19,
+      "cboe_close": 254.19,
+      "nasdaq_historical_close": 254.19,
+      "cboe_last_trade_time": "2026-11-06T15:59:59",
+      "stylists": "hernandez|peoplewish|qullamaggie|stockbee",
+      "origins": "B_stockbee_ep9m|C_qullamaggie_rs|G_peoplewish|H_hernandez_theme",
+      "flags": "",
+      "data_date": "2026-11-05"
+    },
+    "APP": {
+      "ref_close": 391.22,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview",
+        "cboe"
+      ],
+      "focus_csv_close": 391.22,
+      "tradingview_close": 391.22,
+      "cboe_close": 391.22,
+      "nasdaq_historical_close": 391.22,
+      "cboe_last_trade_time": "2026-11-06T15:59:59",
+      "stylists": "jeff_sun|qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|B_stockbee_ep9m|C_qullamaggie_rs|D_qullamaggie_ep|E_qullamaggie_5d_gainers|jeff_sun_canslim",
+      "flags": "",
+      "data_date": "2026-11-05"
+    },
+    "U": {
+      "ref_close": 51.49,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview",
+        "cboe"
+      ],
+      "focus_csv_close": 51.49,
+      "tradingview_close": 51.49,
+      "cboe_close": 51.49,
+      "nasdaq_historical_close": 51.49,
+      "cboe_last_trade_time": "2026-11-06T16:00:00",
+      "stylists": "peoplewish|qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|B_stockbee_ep9m|D_qullamaggie_ep|G_peoplewish",
+      "flags": "",
+      "data_date": "2026-11-05"
+    },
+    "FUN": {
+      "ref_close": 10.0,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview",
+        "cboe"
+      ],
+      "focus_csv_close": 10.0,
+      "tradingview_close": 10.0,
+      "cboe_close": 10.0,
+      "nasdaq_historical_close": 10.0,
+      "cboe_last_trade_time": "2026-11-06T15:59:59",
+      "stylists": "peoplewish|qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|B_stockbee_ep9m|D_qullamaggie_ep|G_peoplewish",
+      "flags": "",
+      "data_date": "2026-11-05"
+    },
+    "JOBY": {
+      "ref_close": 5.93,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview",
+        "cboe"
+      ],
+      "focus_csv_close": 5.93,
+      "tradingview_close": 5.93,
+      "cboe_close": 5.93,
+      "nasdaq_historical_close": 5.93,
+      "cboe_last_trade_time": "2026-11-06T15:59:59",
+      "stylists": "peoplewish|qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|B_stockbee_ep9m|D_qullamaggie_ep|G_peoplewish",
+      "flags": "",
+      "data_date": "2026-11-05"
+    },
+    "WRBY": {
+      "ref_close": 25.48,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview",
+        "cboe"
+      ],
+      "focus_csv_close": 25.48,
+      "tradingview_close": 25.48,
+      "cboe_close": 25.48,
+      "nasdaq_historical_close": 25.48,
+      "cboe_last_trade_time": "2026-11-06T15:59:59",
+      "stylists": "peoplewish|qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|B_stockbee_ep9m|D_qullamaggie_ep|G_peoplewish",
+      "flags": "",
+      "data_date": "2026-11-05"
+    },
+    "VRDN": {
+      "ref_close": 28.49,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview",
+        "cboe"
+      ],
+      "focus_csv_close": 28.49,
+      "tradingview_close": 28.49,
+      "cboe_close": 28.49,
+      "nasdaq_historical_close": 28.49,
+      "cboe_last_trade_time": "2026-11-06T15:59:59",
+      "stylists": "hernandez|peoplewish|qullamaggie",
+      "origins": "C_qullamaggie_rs|G_peoplewish|H_hernandez_theme",
+      "flags": "",
+      "data_date": "2026-11-05"
+    },
+    "XNCR": {
+      "ref_close": 35.75,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview",
+        "cboe"
+      ],
+      "focus_csv_close": 35.75,
+      "tradingview_close": 35.75,
+      "cboe_close": 35.75,
+      "nasdaq_historical_close": 35.75,
+      "cboe_last_trade_time": "2026-11-06T15:59:59",
+      "stylists": "hernandez|peoplewish|qullamaggie",
+      "origins": "C_qullamaggie_rs|G_peoplewish|H_hernandez_theme",
+      "flags": "",
+      "data_date": "2026-11-05"
+    }
+  },
+  "conflicts": [],
+  "flags": [
+    "the CSV's `screen_close_resolved` belongs to data_date 2026-11-05 and was NOT used as the denominator"
+  ],
+  "failures": [],
+  "assertions": [
+    {
+      "assertion": "H1_expected_prior_session_from_data",
+      "ok": true,
+      "detail": "sessions resolved from nasdaq:SPY/historical: ['2026-11-06', '2026-11-05', '2026-11-04', '2026-11-03', '2026-11-02', '2026-10-30']",
+      "hard": true
+    },
+    {
+      "assertion": "H2_published_focus_list_exists",
+      "ok": true,
+      "detail": "looked for a published sweep on ['2026-11-06']",
+      "hard": true
+    },
+    {
+      "assertion": "H2b_focus_csv_parses",
+      "ok": true,
+      "detail": "12 names, schema=current+today_close",
+      "hard": true
+    },
+    {
+      "assertion": "H3_universe_session_is_the_expected_prior_session",
+      "ok": true,
+      "detail": "universe session 2026-11-06 vs expected prior session 2026-11-06",
+      "hard": true
+    },
+    {
+      "assertion": "H4_reference_close_column_for_the_denominator_session",
+      "ok": true,
+      "detail": "denominator column `today_close` resolves to session 2026-11-06",
+      "hard": true
+    },
+    {
+      "assertion": "H4_reference_close_for_every_name",
+      "ok": true,
+      "detail": "12/12 names have a reference close",
+      "hard": true
+    },
+    {
+      "assertion": "H5_reference_close_confirmed_by_an_independent_source",
+      "ok": true,
+      "detail": "12/12 names confirmed by an independent source (session-exact Nasdaq history; TV/Cboe only when their session matches)",
+      "hard": true
+    }
+  ]
+}
