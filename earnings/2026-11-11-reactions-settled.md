@@ -1,7 +1,7 @@
 # Earnings reaction scanner — 2026-11-11 (EU settlement pass)
 
 - Cron: `15 12 * * 1-5` America/New_York (weekdays, 12:15 ET)
-- Fire time (ET): 2026-11-11 12:16:51 Wed
+- Fire time (ET): 2026-11-11 12:22:17 Wed
 - Run type: `settlement_pass` — the EU/UK session has closed, so the same rows as
   the 08:00 ET scan are republished with their SETTLED close and move.
 - Source: TradingView public screener; Yahoo chart API as the independent
@@ -20,7 +20,7 @@
 - 30 EU/UK rows republished with their SETTLED close and move.
 - 22 of them also appear in the 08:00 ET scan: the settled move
   differs from the scan move by a median of 0.71pp and a maximum of
-  6.86pp; 6 of 22 rows moved more than 1pp
+  6.86pp; 7 of 22 rows moved more than 1pp
   between the scan and the close.
 - Biggest settled EU/UK move: BICO (-32.15%, sweden).
 
@@ -40,7 +40,7 @@
 | ENR | germany | XETR | 132.76 | +10.78 | +9.01 | +1.77 | EUR | 2.6x | 119.84 | yahoo_chart_daily | 2026-11-10 | 2026-11-11 | settled | none | 2026-08-04 | Y | Siemens Energy record fiscal 2026 reported 11 Nov: comparable revenue EUR 44.2bn (+15.5%), orders EUR 68.1bn (+18.8%), record year-end backlog EUR 164bn with a 1.54 book-to-bill, profit before special items more than doubled to EUR 5.486bn, dividend more than tripled to EUR 2.30 a share, and FY27 guidance of 14-16% comparable revenue growth |
 | SIVE | sweden | OMXSTO | 17.4 | +10.76 | +11.27 | -0.51 | SEK | 2.1x | 15.71 | yahoo_chart_daily | 2026-11-10 | 2026-11-11 | settled | none | 2026-08-27 | — | no catalyst lookup (outside the per-run budget) |
 | DRW3 | germany | XETR | 109.6 | +9.93 | +8.32 | +1.61 | EUR | 5.0x | 99.70 | yahoo_chart_daily | 2026-11-10 | 2026-11-11 | settled | none | 2026-10-29 | — | no catalyst lookup (outside the per-run budget) |
-| AIXA | germany | SWB | 34.25 | +8.01 | +7.13 | +0.88 | EUR | 1.7x | 31.75 | yahoo_chart_daily | 2026-11-10 | 2026-11-11 | settled | none | 2026-10-29 | — | no catalyst lookup (outside the per-run budget) |
+| AIXA | germany | SWB | 34.35 | +8.33 | +7.13 | +1.20 | EUR | 1.8x | 31.75 | yahoo_chart_daily | 2026-11-10 | 2026-11-11 | settled | none | 2026-10-29 | — | no catalyst lookup (outside the per-run budget) |
 | TPRO | italy | MIL | 23.7 | +7.73 | +7.09 | +0.64 | EUR | 1.9x | 22.00 | yahoo_chart_daily | 2026-11-10 | 2026-11-11 | settled | none | 2026-08-05 | — | no catalyst lookup (outside the per-run budget) |
 | VOE | austria | VIE | 38.38 | -7.65 | — | — | EUR | 4.0x | 41.56 | yahoo_chart_daily | 2026-11-10 | 2026-11-11 | settled | none | 2026-11-11 | — | no catalyst lookup (outside the per-run budget) |
 | WAF | germany | XETR | 57.65 | +7.46 | — | — | EUR | 2.0x | 53.65 | yahoo_chart_daily | 2026-11-10 | 2026-11-11 | settled | none | 2026-11-04 | — | no catalyst lookup (outside the per-run budget) |
@@ -62,10 +62,12 @@
 ## Source health
 
 - scanner_calls: 36 | scanner_errors: 0
-- pipeline_version: 2026-11-11.1
+- pipeline_version: 2026-11-11.2
 - settlement: the EU/UK session is CLOSED at this fire, so every row's `Settle`
   cell reads `settled` and its move is the session's own move.
-- scan_to_settle: 22 rows compared with the 08:00 ET scan, median drift 0.71pp, max 6.86pp, 6 rows more than 1pp apart
+- morning_artifact: fetched from the outputs repo (api-token)
+- catalyst_catalog: rebuilt from the morning artifact (14 researched catalysts recovered)
+- scan_to_settle: 22 rows compared with the 08:00 ET scan, median drift 0.71pp, max 6.86pp, 7 rows more than 1pp apart
 - reference_close (screener vs Yahoo, resolved BEFORE the table was built): agree=30 mismatch=0 unverified=0 stale_reference=0
 - rows_dropped_stale_ref: 0 | rows_dropped_unresolved_ref: 0
 - degraded_sources: 0

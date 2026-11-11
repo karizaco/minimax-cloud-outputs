@@ -57,7 +57,7 @@ import json, subprocess, time, datetime, os, sys, re
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-11.1"
+SCRIPT_VERSION = "2026-11-11.2"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -1296,6 +1296,157 @@ def parse_catalyst_file(path):
 os.makedirs(OUT_DIR, exist_ok=True)
 os.makedirs(CAT_DIR, exist_ok=True)
 CAT_FILE = f"{CAT_DIR}/{RUN_DATE}.md"
+
+
+# ------------------------------------------- settlement: the morning run's inputs
+# WHY (2026-11-11). The 12:15 ET settlement pass reads TWO files the 08:00 ET
+# scan produced: the morning artifact (the `Move @08:00` and `Δ vs scan`
+# columns) and the catalyst catalog (the catalyst cell). Both live ONLY in the
+# 08:00 run's sandbox - `/workspace` is a per-session mount, so a fresh 12:15
+# sandbox starts with NEITHER file. Measured on the 2026-11-11 fire: with no
+# morning artifact the slot's headline measurement - the scan-to-close drift -
+# was uncomputable, and with no catalog every published row carried "no
+# catalyst lookup" even though the morning had researched 14 catalysts (BICO,
+# FNM and ENR among them).
+#
+# The fix RECOVERS them; it does not re-research. The morning artifact IS
+# published to the outputs repo, and the catalog's content IS the morning
+# artifact's own catalyst column, so the settlement pass fetches the artifact
+# and rebuilds the catalog from it - the morning run's research copied
+# VERBATIM, under a PROVENANCE note, with no fabricated cell. If the fetch
+# fails the run degrades exactly as it did before (empty `Move @08:00`, honest
+# placeholder catalyst), so the recovery can never make the artifact worse.
+NO_RESEARCH_CATALYST = ("no catalyst lookup", "pending catalyst lookup",
+                         "not performed", "outside the per-run budget",
+                         "lookup not performed", "no lookup performed")
+
+
+def _http_get(urls):
+    """GET the first URL whose body is usable. urls: [(label, curl_args)]."""
+    for label, args in urls:
+        try:
+            r = subprocess.run(["curl", "-sS", "-L", "--max-time", "30"] + args,
+                               capture_output=True, text=True, timeout=45)
+            body = r.stdout or ""
+            if body and '"message"' not in body[:200]:
+                return body, label
+        except Exception:
+            continue
+    return None, None
+
+
+def _atomic_write(path, text):
+    """Write via a temp file + os.replace - /workspace is a shared mount and a
+    half-written artifact is worse than no artifact."""
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
+        fh.write(text)
+    os.replace(tmp, path)
+
+
+def _fetch_morning_artifact():
+    """The 08:00 ET scan's PUBLISHED artifact. Returns (text, source)."""
+    token = os.environ.get("GITHUB_TOKEN", "")
+    path = f"earnings/{MORNING_ARTIFACT}"
+    urls = []
+    if token:
+        urls.append(("api-token", ["-H", "Accept: application/vnd.github.raw",
+                                   "-H", "Authorization: Bearer " + token,
+                                   f"https://api.github.com/repos/{API_OWNER}/{API_REPO}/contents/{path}?ref=main"]))
+    urls.append(("api", ["-H", "Accept: application/vnd.github.raw",
+                          f"https://api.github.com/repos/{API_OWNER}/{API_REPO}/contents/{path}?ref=main"]))
+    urls.append(("raw", [f"{RAW_REPO}/main/{path}"]))
+    body, src = _http_get(urls)
+    if not body:
+        return None, None
+    # The body must LOOK like the morning scan - a 404 page or an API error
+    # body is not a morning artifact, and parsing it would publish nonsense.
+    if "Earnings reaction scanner" not in body or "## EU/UK" not in body:
+        return None, None
+    return body, src
+
+
+def _rebuild_catalyst_catalog(morning_text):
+    """Rebuild the catalyst catalog from the morning artifact's catalyst column.
+
+    Returns the number of researched catalysts recovered, or -1 when there is
+    nothing to recover. NEVER overwrites an existing catalog file: that file is
+    the agent's research and must survive a re-run.
+    """
+    region_of = {"US — Headline table": "US", "US — QUIET one-liners": "US",
+                 "EU/UK — Headline table": "EU", "AU (ASX) — Headline table": "AU",
+                 "APAC/Gulf — Headline table": "APAC/Gulf"}
+    rows = []
+    for m in re.finditer(r"^## ([^\n]*)\n(.*?)(?=^## |\Z)", morning_text, re.M | re.S):
+        region = region_of.get(m.group(1))
+        if not region:
+            continue
+        lines = [l for l in m.group(2).splitlines() if l.strip().startswith("|")]
+        if not lines:
+            continue
+        head = [c.strip() for c in re.split(r"(?<!\\)\|", lines[0].strip())]
+        head = head[1:] if head and head[0] == "" else head
+        try:
+            ti, ei, ci = head.index("Ticker"), head.index("Earn"), head.index("Catalyst")
+        except ValueError:
+            continue
+        for line in lines[2:]:
+            cells = [c.strip() for c in re.split(r"(?<!\\)\|", line.strip())]
+            cells = cells[1:] if cells and cells[0] == "" else cells
+            if len(cells) <= max(ti, ei, ci):
+                continue
+            tick, cat, earn = cells[ti], cells[ci], cells[ei]
+            if not tick or not cat:
+                continue
+            if any(x in cat.lower() for x in NO_RESEARCH_CATALYST):
+                continue
+            rows.append((tick, region, cat, earn))
+    if not rows:
+        return -1
+    body = ["Catalyst lookups: the per-run budget of the 08:00 ET scan.",
+            "",
+            "PROVENANCE: this file was REBUILT by the 12:15 ET settlement pass from",
+            f"the 08:00 ET scan's published artifact (earnings/{MORNING_ARTIFACT}),",
+            "because the morning run's local catalog file is not carried into this",
+            "sandbox. Every cell below is the morning run's own researched catalyst,",
+            "copied VERBATIM - no new catalyst research was performed here.",
+            "",
+            "| Ticker | Region | Catalyst | Earnings-driven |",
+            "|---|---|---|---|"]
+    for tick, region, cat, earn in rows:
+        body.append(f"| {tick} | {region} | {cat} | {earn} |")
+    _atomic_write(CAT_FILE, "\n".join(body) + "\n")
+    return len(rows)
+
+
+# Provenance of the two inputs the settlement pass depends on. Published in the
+# artifact's source health so the reader knows where they came from.
+INPUT_PROV = {"morning": "", "catalog": ""}
+if SETTLE_MODE:
+    _mpath = os.path.join(OUT_DIR, MORNING_ARTIFACT)
+    if os.path.exists(_mpath):
+        INPUT_PROV["morning"] = "found locally"
+        with open(_mpath, encoding="utf-8") as fh:
+            _morning_text = fh.read()
+    else:
+        _morning_text, _msrc = _fetch_morning_artifact()
+        if _morning_text:
+            _atomic_write(_mpath, _morning_text)
+            INPUT_PROV["morning"] = f"fetched from the outputs repo ({_msrc})"
+        else:
+            _morning_text = ""
+            INPUT_PROV["morning"] = ("NOT FOUND - the scan-to-close comparison is "
+                                     "unavailable for this run")
+    if os.path.exists(CAT_FILE):
+        INPUT_PROV["catalog"] = "found locally"
+    elif _morning_text:
+        _n = _rebuild_catalyst_catalog(_morning_text)
+        INPUT_PROV["catalog"] = (f"rebuilt from the morning artifact ({_n} researched "
+                                  f"catalysts recovered)") if _n > 0 else (
+            "NOT FOUND - every row publishes the honest placeholder")
+    else:
+        INPUT_PROV["catalog"] = "NOT FOUND - every row publishes the honest placeholder"
+
 catalysts, catalyst_note = parse_catalyst_file(CAT_FILE)
 
 # The per-run catalyst budget: 5 US + 3 EU + 2 AU. These are the names the
@@ -1591,6 +1742,8 @@ if SETTLE_MODE:
     B(f"- pipeline_version: {SCRIPT_VERSION}")
     B(f"- settlement: the EU/UK session is CLOSED at this fire, so every row's `Settle`")
     B(f"  cell reads `settled` and its move is the session's own move.")
+    B(f"- morning_artifact: {INPUT_PROV['morning']}")
+    B(f"- catalyst_catalog: {INPUT_PROV['catalog']}")
     B(f"- scan_to_settle: {len(_drifts)} rows compared with the 08:00 ET scan"
       + (f", median drift {sorted(_drifts)[len(_drifts)//2]:.2f}pp, max {max(_drifts):.2f}pp, "
          f"{sum(1 for x in _drifts if x > 1.0)} rows more than 1pp apart"
