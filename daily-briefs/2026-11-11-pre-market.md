@@ -3,7 +3,7 @@ date: 2026-11-11
 cron: 26-agentic-pre-market-brief
 contract: premarket-brief-artifact-v2
 fire_time_et: 2026-11-11 08:30
-snapshot_et: 09:37:40
+snapshot_et: 08:37:40
 source: TradingView america scanner + MCP-bridge market-recap + Nasdaq /summary + shibui valuation
 status: ok
 themes: 5
@@ -189,7 +189,7 @@ Three more names clear both gates on the pre-market tape without a catalyst I co
 
 ## 3. Pre-market gaps - top 25 market-wide
 
-The ±3% pre-market band held 610 gainers and 165 decliners at 09:37:40 ET. Both screens were pulled with the row cap at 1000 and the scanner's own `totalCount` matched the rows returned on each, so these are exact counts and not floors. Gate A is pre-market volume of 100,000 shares, or a $200m cap with 10,000 pre-market shares; Gate B is a $100m market cap decided on the reconciled cap. 209 names clear both gates on the gainer side.
+The ±3% pre-market band held 610 gainers and 165 decliners at 08:37:40 ET. Both screens were pulled with the row cap at 1000 and the scanner's own `totalCount` matched the rows returned on each, so these are exact counts and not floors. Gate A is pre-market volume of 100,000 shares, or a $200m cap with 10,000 pre-market shares; Gate B is a $100m market cap decided on the reconciled cap. 209 names clear both gates on the gainer side.
 
 | Ticker | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|
@@ -381,7 +381,7 @@ The action before the US open was in Europe: E.ON, RWE, Siemens Energy and ABN A
 
 | Source | URL / query | Status | Notes |
 |---|---|---|---|
-| TradingView america scanner | `scanner.tradingview.com/america/scan` | ok | gainer and decliner bands pulled at 09:37:40 ET with `range:[0,1000]`; `totalCount` matched the rows returned on both (610 gainers, 165 decliners), so `screen_complete: true` and the counts are exact |
+| TradingView america scanner | `scanner.tradingview.com/america/scan` | ok | gainer and decliner bands pulled at 08:37:40 ET with `range:[0,1000]`; `totalCount` matched the rows returned on both (610 gainers, 165 decliners), so `screen_complete: true` and the counts are exact |
 | TradingView per-ticker scan | `scanner.tradingview.com/america/scan`, one request per symbol | ok | 19 of 19 requested symbols returned a row; used for the watchlist, the StockTwits list and the names outside the ±3% band |
 | Market-cap reconciliation - Nasdaq | `api.nasdaq.com/api/quote/<SYM>/summary?assetclass=stocks` | ok | 787 of 795 symbols resolved; `PreviousClose` matched the scanner's `close` on every resolved symbol, which independently confirms the prior close is the 2026-11-10 session close |
 | Market-cap reconciliation - shibui | `shibui.valuation` over the MCP bridge, latest row on or before 2026-11-10 | ok | 275 rows for the 280 published names; where the three sources disagreed by more than 15% the published cap is the median of the available sources |
