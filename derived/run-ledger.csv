@@ -356,7 +356,7 @@ date,routine,fire_et,schedule,expected,state,artifact,bytes,names
 2026-11-10,17-us-stocks-in-play-open,09:50,Mon-Fri,True,published,us-stocks-in-play/2026-11-10-open.md,62484,
 2026-11-10,19-earnings-reminder-daily,06:00,Mon-Fri,True,published,earnings/2026-11-10-reminders.md,9648,
 2026-11-10,20-eod-watchlist-csv-snapshot,16:00,Mon-Fri,True,published,us-eod/2026-11-10.csv,1078376,4893
-2026-11-10,23-agentic-post-market-brief,22:30,Mon-Fri,True,published,daily-briefs/2026-11-10-post-market.md,30493,
+2026-11-10,23-agentic-post-market-brief,22:30,Mon-Fri,True,published,daily-briefs/2026-11-10-post-market.md,32402,
 2026-11-10,25-ntrt-gap-brief-daily,09:00,Mon-Fri,True,published,ntrt/2026-11-10.md,16659,
 2026-11-10,26-agentic-pre-market-brief,08:30,Mon-Fri,True,published,daily-briefs/2026-11-10-pre-market.md,46737,
 2026-11-10,26b-agentic-pre-market-brief-refresh-0920,09:20,Mon-Fri,True,published,daily-briefs/2026-11-10-pre-market-refresh.md,18658,
