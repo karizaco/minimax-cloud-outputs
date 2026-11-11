@@ -7,10 +7,10 @@ snapshot_et: 22:30-22:52
 session: 462089783816555
 scheduled_at_ms: 1794367817882
 status: ok
-source: MCP-over-HTTP bridge (market-recap get_quotes + price_history); TradingView public scanner (america/scan); cron #20 us-eod/2026-11-10.csv; CBOE daily statistics; web (CNBC, Bloomberg, Investopedia, StockTitan, Reuters via Yahoo)
+source: MCP-over-HTTP bridge (market-recap get_quotes + price_history); TradingView public scanner (america/scan); cron #20 us-eod/2026-11-10.csv; CBOE daily statistics (page payload, session-stamped) and CBOE's dated index close file (VXN_History.csv); web (CNBC, Bloomberg, Investopedia, StockTitan, Reuters via Yahoo)
 primary_source: MCP-over-HTTP bridge market-recap (keyless Yahoo-sourced) for every regular-session close, the futures set and the SPY/RSP history
 universe: cron #20 us-eod/2026-11-10.csv — 4,893 rows; 4,521 names after dropping EX_DISTRIBUTION rows and de-duplicating share classes on cap_source_symbol; 4,432 of those carry a change_pct
-degraded_sources: 2
+degraded_sources: 0
 ---
 
 # Post-market brief — Tuesday, 10 November 2026
@@ -123,9 +123,11 @@ Today's -34bp is the second-most-negative reading of the five, behind only the 2
 | RSP | 220.88 | -0.03% | 221.15 | 218.90 | 16:00 |
 | SMH | 483.63 | -0.78% | 492.74 | 474.03 | 16:00 |
 | VIX | 19.46 | -2.31% | 21.61 | 19.29 | 16:15 |
-| VXN | 28.97 | -14.84% | 32.34 | 29.11 | **16:00 on 2026-11-09 (stale)** |
+| VXN | 28.57 | -1.38% | 30.22 | 28.03 | 16:00 |
 
-The volatility line is the surprise: **VIX closed at 19.46, down 2.31%, having traded as high as 21.61** — the index went up 11% intraday and then round-tripped to *lower* on the day while the market fell 0.38%. That is a positioning signature, not a fear signature: the sellers were not paying up for protection, and the day's largest single-name losses (HIMS -16.61%, HGTY, BV) were idiosyncratic, not macro-driven. **The VXN reading is from the 9 November session** (its `as_of` is 16:00 ET on 2026-11-09) and is published for completeness only; the 10 November VXN close was not available from the source. Do not read the -14.84% as today's Nasdaq-vol move.
+The volatility line is the surprise: **VIX closed at 19.46, down 2.31%, having traded as high as 21.61** — the index rose 8.5% from the prior close to its intraday high and then round-tripped to *lower* on the day while the market fell 0.38%. VXN did the same thing: **28.57, down 1.38%, after touching 30.22** (Cboe's own daily close file for 10 November, cross-checked against the bridge's price history — both give 28.57 against a 28.97 prior close). That is a positioning signature, not a fear signature: the sellers were not paying up for protection, and the day's largest single-name losses (HIMS -16.61%, HGTY, BV) were idiosyncratic, not macro-driven.
+
+> **Correction, published 2026-11-11.** The first version of this brief carried VXN 28.97 / -14.84% flagged as a stale 9 November row, and described the VIX intraday move as "up 11%". Both were wrong. The VXN row was the 9 November close, and the 10 November close was available after all: **28.57, -1.38%** (Cboe's dated daily file, and the bridge's `price_history` for 2026-11-10, which agree exactly). The VIX high of 21.61 is **+8.5%** against the 19.92 prior close — the 11% figure was the high-low *range* expressed against the prior close, not the move to the high. The reading itself is unchanged: volatility spiked intraday and faded, while the index fell. `degraded_sources:` is 0 on the corrected version, because both sources that were degraded are now dated and verified.
 
 ### Cross-asset
 
@@ -247,16 +249,16 @@ The 10 November after-close roster was large — 89 to 147 companies depending o
 
 | Source | Endpoint / query | Status |
 |---|---|---|
-| MCP bridge, market-recap `get_quotes` | `^GSPC,^IXIC,^DJI,^RUT,^VIX,^VXN,^NDX,^SOX,SPY,QQQ,IWM,DIA,RSP,SMH,GLD,TLT` plus a futures batch and single-name batches | ok — 16/16 and 5/5 found; **VXN is stale (2026-11-09)**, all other rows carry 2026-11-10 as_of |
+| MCP bridge, market-recap `get_quotes` | `^GSPC,^IXIC,^DJI,^RUT,^VIX,^VXN,^NDX,^SOX,SPY,QQQ,IWM,DIA,RSP,SMH,GLD,TLT` plus a futures batch and single-name batches | ok — 16/16 and 5/5 found; every row carries a 2026-11-10 as_of **except ^VXN, which returned the 2026-11-09 session**; VXN is re-read from `price_history` and CBOE's dated file |
 | MCP bridge, market-recap `price_history` | `SPY,RSP` 2026-10-29 to 2026-11-10 | ok — 9 sessions for both symbols |
 | MCP bridge, market-recap `get_quotes` (watchlist and movers) | 8 watchlist names + 16 single names | ok — 8/8 and 16/16 found |
 | TradingView public scanner | `POST https://scanner.tradingview.com/america/scan`, `postmarket_*` columns, cap floor $1bn and no floor | ok — 2,110 names matched the floored screen (250 gain + 250 loss pulled), 2,785 on the unfloored screen; 500/500 rows passed the change identity |
 | cron #20 EOD universe | `minimax-cloud-outputs` `us-eod/2026-11-10.csv` | ok — 4,893 rows; 4,521 after EX_DISTRIBUTION removal and share-class de-duplication; 241 rows carry no market cap, 105 carry no sector |
-| CBOE daily statistics | `https://www.cboe.com/us/options/market_statistics/daily/` | **degraded — the embedded data carries no session date stamp.** Total put/call 0.95 (put volume 6,319,117 vs call volume 6,632,948), equity 0.77, index 1.02, as read. The session it describes cannot be dated with certainty |
+| CBOE daily statistics | `https://www.cboe.com/us/options/market_statistics/daily/` | ok — the page's embedded payload carries the session stamp `selectedDate: 2026-11-10` and `prevTradingDay: 2026-11-10`, which matches the fire date. Total put/call 0.95 (put volume 6,319,117 vs call volume 6,632,948), equity 0.77, index 1.02, ETP 1.04, SPX+SPXW+SPXO 1.11, XSP 0.98 |
 | Web — macro and catalysts | CNBC, Bloomberg, Investopedia, StockTitan, Reuters/Yahoo, Hilltop Securities, StoneX, Schwab | ok — every catalyst in this brief is sourced; no catalyst was inferred |
 | MCP availability probe | `probe_mcp.py` | ok — `catalog_ok total=135 finance_tools=0`, bridge packs tradier/fmp/market-recap |
 
-**degraded_sources: 2** — the undated CBOE put/call session, and the stale VXN row.
+**degraded_sources: 0** — both sources that were degraded on the first version are now dated and cross-verified: the CBOE put/call session is stamped by the page's own `selectedDate`, and the VXN row is taken from `price_history` and CBOE's dated close file, which agree exactly.
 
 Concentration inherited by the cap-weighted column: consumer discretionary is 36.4% Amazon, information technology 16.4% Nvidia, financials 12.1% Berkshire, industrials 21.1% SpaceX. Every one of those is a single-name outcome, and the sector table publishes each sector both with and without its dominant constituent for that reason.
 
@@ -270,4 +272,5 @@ Concentration inherited by the cap-weighted column: consumer discretionary is 36
 - **The after-hours movers table was verified row by row** against the scanner's own identity before publication. No row was dropped; the 500 rows checked all passed.
 - **The $1bn market-cap floor is a screen, not the tape.** The unfloored leaders are published in `## After-hours movers` and in `## Source health` so the table is never mistaken for the whole session.
 - **A catalyst is only stated where it was sourced.** ESAB's +6.73%, EQPT's -16.50%, LEGN's -15.97% and STAK's -56.05% carry no asserted reason because none was found in the sources read.
-- The put/call ratio's equity and index components are published because the same page sourced both and they reconcile with the total; no split from a second, disagreeing source was invented.
+- The put/call ratio's equity and index components are published because the same page sourced both and they reconcile with the total; no split from a second, disagreeing source was invented. **The session is dated by the page's own payload** (`selectedDate`), asserted against the fire date — the earlier "no session date stamp" caveat was an artefact of the extraction step, not of the source.
+- **Correction, published 2026-11-11:** the VXN row and the VIX intraday figure were wrong in the first version of this brief and are corrected in place above, with the reason stated next to them. The numbers came from a source that returned a prior session's row (^VXN) and from a percentage computed against the wrong denominator (the VIX high-low range instead of the move to the high). Neither is a source failure: they are arithmetic and row-selection failures, which is why the contract checker did not catch them.
