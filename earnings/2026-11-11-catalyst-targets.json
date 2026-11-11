@@ -1,0 +1,77 @@
+{
+  "us": [
+    {
+      "name": "NBIS",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-08-12"
+    },
+    {
+      "name": "ATRO",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-10"
+    },
+    {
+      "name": "CIFR",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-02"
+    },
+    {
+      "name": "AXTI",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-29"
+    },
+    {
+      "name": "NN",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-10"
+    }
+  ],
+  "eu": [
+    {
+      "name": "BICO",
+      "chg": -30.2
+    },
+    {
+      "name": "FNM",
+      "chg": 10.7
+    },
+    {
+      "name": "ENR",
+      "chg": 8.8
+    }
+  ],
+  "au": [
+    {
+      "name": "MND",
+      "chg": 7.23
+    },
+    {
+      "name": "IEL",
+      "chg": 16.29
+    }
+  ],
+  "apac": [
+    {
+      "name": "THG",
+      "market": "thailand",
+      "chg": 13.97
+    },
+    {
+      "name": "558",
+      "market": "singapore",
+      "chg": 8.0
+    },
+    {
+      "name": "MEL",
+      "market": "newzealand",
+      "chg": 2.77
+    }
+  ],
+  "budget": {
+    "US": 5,
+    "EU": 3,
+    "AU": 2,
+    "APAC": 3
+  },
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-11.md"
+}
