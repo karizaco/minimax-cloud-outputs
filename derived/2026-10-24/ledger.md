@@ -1,6 +1,6 @@
 # Ledger — what every routine saw on 2026-10-24
 
-**Source:** derived join over 1 artifact(s): `earnings/2026-10-24-reactions.md` · **Built:** 2026-11-10 · **Covers:** 54 name(s) any routine mentioned; 0 seen by two or more · read-only
+**Source:** derived join over 1 artifact(s): `earnings/2026-10-24-reactions.md` · **Built:** 2026-11-11 · **Covers:** 54 name(s) any routine mentioned; 0 seen by two or more · read-only
 
 > **Read this before the table.**
 > 

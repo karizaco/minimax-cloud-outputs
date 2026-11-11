@@ -1,6 +1,6 @@
 # Persistence — how long a name stays on the board
 
-**Source:** derived join over daily-screens/<date>/{tier-a,focus}.csv (no source file is modified) · **Built:** 2026-11-10 · **Covers:** boards dated 2026-10-22 → 2026-11-06 (12 dates) · read-only
+**Source:** derived join over daily-screens/<date>/{tier-a,focus}.csv (no source file is modified) · **Built:** 2026-11-11 · **Covers:** boards dated 2026-10-22 → 2026-11-10 (13 dates) · read-only
 
 > **Deviations, stated up front.**
 > 
@@ -17,11 +17,11 @@
 
 ## What this says
 
-Across 12 Tier-A boards the names that recur are:
+Across 13 Tier-A boards the names that recur are:
 
 | Ticker | Days on Tier-A | First seen | Last seen | Current streak | Longest streak |
 |---|---|---|---|---|---|
-| MRNA | 4 | 2026-10-30 | 2026-11-06 | 1 | 2 |
+| MRNA | 4 | 2026-10-30 | 2026-11-06 | 0 | 2 |
 | CDNA | 3 | 2026-10-30 | 2026-11-04 | 0 | 2 |
 | FIGS | 3 | 2026-10-29 | 2026-11-03 | 0 | 2 |
 | FTAI | 3 | 2026-10-30 | 2026-11-04 | 0 | 2 |
@@ -37,73 +37,69 @@ A name on a long streak has been converging across several screens; a name with
 `days 1` appeared once and may not be back. The two are different signals and a
 single-day sweep cannot tell them apart.
 
-### New to the 2026-11-06 board
+### New to the 2026-11-10 board
 
 | Ticker | Board |
 |---|---|
-| ACHC | tier-a |
-| APP | tier-a |
-| FUN | tier-a |
-| MRNA | tier-a |
-| RUN | tier-a |
-| SEZL | tier-a |
-| U | tier-a |
-| XERS | tier-a |
-| ACHC | focus |
-| APP | focus |
-| FUN | focus |
-| JOBY | focus |
-| MRNA | focus |
-| RUN | focus |
-| SEZL | focus |
-| U | focus |
-| WRBY | focus |
-| XERS | focus |
+| FRVO | tier-a |
+| PRAX | tier-a |
+| QXO | tier-a |
+| WRBY | tier-a |
+| BW | focus |
+| FRVO | focus |
+| IAM | focus |
+| IMVT | focus |
+| LUNR | focus |
+| MPWR | focus |
+| PL | focus |
+| PRAX | focus |
+| QXO | focus |
+| TLS | focus |
+| TTD | focus |
 
-### Off the board as of 2026-11-06
+### Off the board as of 2026-11-10
 
 The mirror of the arrivals table: what left, and after how long.
 
 | Ticker | Board | Last seen | Streak at exit | Days on board |
 |---|---|---|---|---|
-| DUOL | tier-a | 2026-11-05 | 1 | 1 |
-| KD | tier-a | 2026-11-05 | 1 | 1 |
-| LIVN | tier-a | 2026-11-05 | 1 | 1 |
-| OUST | tier-a | 2026-11-05 | 1 | 1 |
-| VRDN | tier-a | 2026-11-05 | 1 | 1 |
-| XNCR | tier-a | 2026-11-05 | 1 | 1 |
-| ARRY | focus | 2026-11-05 | 1 | 1 |
-| CRCT | focus | 2026-11-05 | 1 | 1 |
-| DUOL | focus | 2026-11-05 | 1 | 1 |
-| ENOV | focus | 2026-11-05 | 1 | 1 |
-| HELE | focus | 2026-11-05 | 1 | 1 |
-| KD | focus | 2026-11-05 | 1 | 1 |
-| LIVN | focus | 2026-11-05 | 1 | 1 |
-| OUST | focus | 2026-11-05 | 1 | 2 |
-| XYZ | focus | 2026-11-05 | 1 | 1 |
-| YOU | focus | 2026-11-05 | 1 | 1 |
+| ACHC | tier-a | 2026-11-06 | 1 | 1 |
+| APP | tier-a | 2026-11-06 | 1 | 1 |
+| FUN | tier-a | 2026-11-06 | 1 | 1 |
+| MRNA | tier-a | 2026-11-06 | 1 | 4 |
+| RUN | tier-a | 2026-11-06 | 1 | 1 |
+| SEZL | tier-a | 2026-11-06 | 1 | 1 |
+| U | tier-a | 2026-11-06 | 1 | 1 |
+| XERS | tier-a | 2026-11-06 | 1 | 1 |
+| ACHC | focus | 2026-11-06 | 1 | 1 |
+| APP | focus | 2026-11-06 | 1 | 1 |
+| FUN | focus | 2026-11-06 | 1 | 1 |
+| JOBY | focus | 2026-11-06 | 1 | 1 |
+| MRNA | focus | 2026-11-06 | 1 | 5 |
+| RUN | focus | 2026-11-06 | 1 | 1 |
+| SEZL | focus | 2026-11-06 | 1 | 1 |
+| U | focus | 2026-11-06 | 1 | 1 |
+| VRDN | focus | 2026-11-06 | 2 | 2 |
+| XERS | focus | 2026-11-06 | 1 | 1 |
+| XNCR | focus | 2026-11-06 | 2 | 2 |
 
 ## The latest board, with streaks
 
-Tier-A on 2026-11-06, with the persistence column a sweep table does not carry.
+Tier-A on 2026-11-10, with the persistence column a sweep table does not carry.
 
 | Ticker | Days on Tier-A | Current streak | Longest streak | Focus days |
 |---|---|---|---|---|
-| RUN | 1 | 1 | 1 | 1 |
-| SEZL | 1 | 1 | 1 | 1 |
-| XERS | 1 | 1 | 1 | 1 |
-| ACHC | 1 | 1 | 1 | 1 |
-| MRNA | 4 | 1 | 2 | 5 |
-| APP | 1 | 1 | 1 | 1 |
-| U | 1 | 1 | 1 | 1 |
-| FUN | 1 | 1 | 1 | 1 |
+| FRVO | 1 | 1 | 1 | 2 |
+| PRAX | 1 | 1 | 1 | 1 |
+| QXO | 1 | 1 | 1 | 1 |
+| WRBY | 1 | 1 | 1 | 2 |
 
 ## Coverage
 
 | Board | Dated directories | Readable boards |
 |---|---|---|
-| tier-a | 32 | 12 |
-| focus | 32 | 12 |
+| tier-a | 33 | 13 |
+| focus | 33 | 13 |
 
 Dates that published no readable Tier-A board:
 

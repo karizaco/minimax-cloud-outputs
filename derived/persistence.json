@@ -15,7 +15,8 @@
    "2026-11-03",
    "2026-11-04",
    "2026-11-05",
-   "2026-11-06"
+   "2026-11-06",
+   "2026-11-10"
   ],
   "skipped": [
    {
@@ -99,11 +100,11 @@
     "reason": "no tier-a.csv (tier-a.md exists - the run published no rows)"
    }
   ],
-  "latest": "2026-11-06",
-  "previous": "2026-11-05",
+  "latest": "2026-11-10",
+  "previous": "2026-11-06",
   "per_board_file_count": {
-   "tier-a": 12,
-   "focus": 12
+   "tier-a": 13,
+   "focus": 13
   }
  },
  "names": {
@@ -141,7 +142,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    },
@@ -152,7 +153,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    }
@@ -261,7 +262,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    },
@@ -272,7 +273,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    }
@@ -371,6 +372,20 @@
      "2026-10-22"
     ],
     "streak_current": 0,
+    "streak_longest": 1,
+    "streak_at_exit": 1
+   }
+  },
+  "BW": {
+   "ticker": "BW",
+   "focus": {
+    "days": 1,
+    "first": "2026-11-10",
+    "last": "2026-11-10",
+    "dates": [
+     "2026-11-10"
+    ],
+    "streak_current": 1,
     "streak_longest": 1,
     "streak_at_exit": 1
    }
@@ -842,14 +857,26 @@
   },
   "FRVO": {
    "ticker": "FRVO",
-   "focus": {
+   "tier-a": {
     "days": 1,
-    "first": "2026-11-04",
-    "last": "2026-11-04",
+    "first": "2026-11-10",
+    "last": "2026-11-10",
     "dates": [
-     "2026-11-04"
+     "2026-11-10"
     ],
-    "streak_current": 0,
+    "streak_current": 1,
+    "streak_longest": 1,
+    "streak_at_exit": 1
+   },
+   "focus": {
+    "days": 2,
+    "first": "2026-11-04",
+    "last": "2026-11-10",
+    "dates": [
+     "2026-11-04",
+     "2026-11-10"
+    ],
+    "streak_current": 1,
     "streak_longest": 1,
     "streak_at_exit": 1
    }
@@ -891,7 +918,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    },
@@ -902,7 +929,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    }
@@ -1130,6 +1157,20 @@
     "streak_at_exit": 2
    }
   },
+  "IAM": {
+   "ticker": "IAM",
+   "focus": {
+    "days": 1,
+    "first": "2026-11-10",
+    "last": "2026-11-10",
+    "dates": [
+     "2026-11-10"
+    ],
+    "streak_current": 1,
+    "streak_longest": 1,
+    "streak_at_exit": 1
+   }
+  },
   "ICLR": {
    "ticker": "ICLR",
    "focus": {
@@ -1140,6 +1181,20 @@
      "2026-10-29"
     ],
     "streak_current": 0,
+    "streak_longest": 1,
+    "streak_at_exit": 1
+   }
+  },
+  "IMVT": {
+   "ticker": "IMVT",
+   "focus": {
+    "days": 1,
+    "first": "2026-11-10",
+    "last": "2026-11-10",
+    "dates": [
+     "2026-11-10"
+    ],
+    "streak_current": 1,
     "streak_longest": 1,
     "streak_at_exit": 1
    }
@@ -1194,7 +1249,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    }
@@ -1401,13 +1456,14 @@
   "LUNR": {
    "ticker": "LUNR",
    "focus": {
-    "days": 1,
+    "days": 2,
     "first": "2026-10-27",
-    "last": "2026-10-27",
+    "last": "2026-11-10",
     "dates": [
-     "2026-10-27"
+     "2026-10-27",
+     "2026-11-10"
     ],
-    "streak_current": 0,
+    "streak_current": 1,
     "streak_longest": 1,
     "streak_at_exit": 1
    }
@@ -1440,6 +1496,20 @@
     "streak_at_exit": 1
    }
   },
+  "MPWR": {
+   "ticker": "MPWR",
+   "focus": {
+    "days": 1,
+    "first": "2026-11-10",
+    "last": "2026-11-10",
+    "dates": [
+     "2026-11-10"
+    ],
+    "streak_current": 1,
+    "streak_longest": 1,
+    "streak_at_exit": 1
+   }
+  },
   "MRNA": {
    "ticker": "MRNA",
    "tier-a": {
@@ -1452,7 +1522,7 @@
      "2026-11-04",
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 2,
     "streak_at_exit": 1
    },
@@ -1467,7 +1537,7 @@
      "2026-11-03",
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 2,
     "streak_at_exit": 1
    }
@@ -1728,6 +1798,45 @@
     "streak_at_exit": 1
    }
   },
+  "PL": {
+   "ticker": "PL",
+   "focus": {
+    "days": 1,
+    "first": "2026-11-10",
+    "last": "2026-11-10",
+    "dates": [
+     "2026-11-10"
+    ],
+    "streak_current": 1,
+    "streak_longest": 1,
+    "streak_at_exit": 1
+   }
+  },
+  "PRAX": {
+   "ticker": "PRAX",
+   "tier-a": {
+    "days": 1,
+    "first": "2026-11-10",
+    "last": "2026-11-10",
+    "dates": [
+     "2026-11-10"
+    ],
+    "streak_current": 1,
+    "streak_longest": 1,
+    "streak_at_exit": 1
+   },
+   "focus": {
+    "days": 1,
+    "first": "2026-11-10",
+    "last": "2026-11-10",
+    "dates": [
+     "2026-11-10"
+    ],
+    "streak_current": 1,
+    "streak_longest": 1,
+    "streak_at_exit": 1
+   }
+  },
   "PRCH": {
    "ticker": "PRCH",
    "focus": {
@@ -1819,6 +1928,31 @@
      "2026-11-02"
     ],
     "streak_current": 0,
+    "streak_longest": 1,
+    "streak_at_exit": 1
+   }
+  },
+  "QXO": {
+   "ticker": "QXO",
+   "tier-a": {
+    "days": 1,
+    "first": "2026-11-10",
+    "last": "2026-11-10",
+    "dates": [
+     "2026-11-10"
+    ],
+    "streak_current": 1,
+    "streak_longest": 1,
+    "streak_at_exit": 1
+   },
+   "focus": {
+    "days": 1,
+    "first": "2026-11-10",
+    "last": "2026-11-10",
+    "dates": [
+     "2026-11-10"
+    ],
+    "streak_current": 1,
     "streak_longest": 1,
     "streak_at_exit": 1
    }
@@ -1946,7 +2080,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    },
@@ -1957,7 +2091,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    }
@@ -1999,7 +2133,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    },
@@ -2010,7 +2144,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    }
@@ -2149,6 +2283,34 @@
     "streak_at_exit": 2
    }
   },
+  "TLS": {
+   "ticker": "TLS",
+   "focus": {
+    "days": 1,
+    "first": "2026-11-10",
+    "last": "2026-11-10",
+    "dates": [
+     "2026-11-10"
+    ],
+    "streak_current": 1,
+    "streak_longest": 1,
+    "streak_at_exit": 1
+   }
+  },
+  "TTD": {
+   "ticker": "TTD",
+   "focus": {
+    "days": 1,
+    "first": "2026-11-10",
+    "last": "2026-11-10",
+    "dates": [
+     "2026-11-10"
+    ],
+    "streak_current": 1,
+    "streak_longest": 1,
+    "streak_at_exit": 1
+   }
+  },
   "U": {
    "ticker": "U",
    "tier-a": {
@@ -2158,7 +2320,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    },
@@ -2169,7 +2331,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    }
@@ -2195,7 +2357,7 @@
      "2026-11-05",
      "2026-11-06"
     ],
-    "streak_current": 2,
+    "streak_current": 0,
     "streak_longest": 2,
     "streak_at_exit": 2
    }
@@ -2241,16 +2403,28 @@
   },
   "WRBY": {
    "ticker": "WRBY",
-   "focus": {
+   "tier-a": {
     "days": 1,
-    "first": "2026-11-06",
-    "last": "2026-11-06",
+    "first": "2026-11-10",
+    "last": "2026-11-10",
     "dates": [
-     "2026-11-06"
+     "2026-11-10"
     ],
     "streak_current": 1,
     "streak_longest": 1,
     "streak_at_exit": 1
+   },
+   "focus": {
+    "days": 2,
+    "first": "2026-11-06",
+    "last": "2026-11-10",
+    "dates": [
+     "2026-11-06",
+     "2026-11-10"
+    ],
+    "streak_current": 2,
+    "streak_longest": 2,
+    "streak_at_exit": 2
    }
   },
   "XERS": {
@@ -2262,7 +2436,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    },
@@ -2273,7 +2447,7 @@
     "dates": [
      "2026-11-06"
     ],
-    "streak_current": 1,
+    "streak_current": 0,
     "streak_longest": 1,
     "streak_at_exit": 1
    }
@@ -2324,7 +2498,7 @@
      "2026-11-05",
      "2026-11-06"
     ],
-    "streak_current": 2,
+    "streak_current": 0,
     "streak_longest": 2,
     "streak_at_exit": 2
    }
@@ -2360,224 +2534,233 @@
  },
  "arrivals": [
   {
-   "ticker": "ACHC",
+   "ticker": "FRVO",
    "board": "tier-a",
-   "date": "2026-11-06"
+   "date": "2026-11-10"
   },
   {
-   "ticker": "APP",
+   "ticker": "PRAX",
    "board": "tier-a",
-   "date": "2026-11-06"
+   "date": "2026-11-10"
   },
   {
-   "ticker": "FUN",
+   "ticker": "QXO",
    "board": "tier-a",
-   "date": "2026-11-06"
-  },
-  {
-   "ticker": "MRNA",
-   "board": "tier-a",
-   "date": "2026-11-06"
-  },
-  {
-   "ticker": "RUN",
-   "board": "tier-a",
-   "date": "2026-11-06"
-  },
-  {
-   "ticker": "SEZL",
-   "board": "tier-a",
-   "date": "2026-11-06"
-  },
-  {
-   "ticker": "U",
-   "board": "tier-a",
-   "date": "2026-11-06"
-  },
-  {
-   "ticker": "XERS",
-   "board": "tier-a",
-   "date": "2026-11-06"
-  },
-  {
-   "ticker": "ACHC",
-   "board": "focus",
-   "date": "2026-11-06"
-  },
-  {
-   "ticker": "APP",
-   "board": "focus",
-   "date": "2026-11-06"
-  },
-  {
-   "ticker": "FUN",
-   "board": "focus",
-   "date": "2026-11-06"
-  },
-  {
-   "ticker": "JOBY",
-   "board": "focus",
-   "date": "2026-11-06"
-  },
-  {
-   "ticker": "MRNA",
-   "board": "focus",
-   "date": "2026-11-06"
-  },
-  {
-   "ticker": "RUN",
-   "board": "focus",
-   "date": "2026-11-06"
-  },
-  {
-   "ticker": "SEZL",
-   "board": "focus",
-   "date": "2026-11-06"
-  },
-  {
-   "ticker": "U",
-   "board": "focus",
-   "date": "2026-11-06"
+   "date": "2026-11-10"
   },
   {
    "ticker": "WRBY",
-   "board": "focus",
-   "date": "2026-11-06"
+   "board": "tier-a",
+   "date": "2026-11-10"
   },
   {
-   "ticker": "XERS",
+   "ticker": "BW",
    "board": "focus",
-   "date": "2026-11-06"
+   "date": "2026-11-10"
+  },
+  {
+   "ticker": "FRVO",
+   "board": "focus",
+   "date": "2026-11-10"
+  },
+  {
+   "ticker": "IAM",
+   "board": "focus",
+   "date": "2026-11-10"
+  },
+  {
+   "ticker": "IMVT",
+   "board": "focus",
+   "date": "2026-11-10"
+  },
+  {
+   "ticker": "LUNR",
+   "board": "focus",
+   "date": "2026-11-10"
+  },
+  {
+   "ticker": "MPWR",
+   "board": "focus",
+   "date": "2026-11-10"
+  },
+  {
+   "ticker": "PL",
+   "board": "focus",
+   "date": "2026-11-10"
+  },
+  {
+   "ticker": "PRAX",
+   "board": "focus",
+   "date": "2026-11-10"
+  },
+  {
+   "ticker": "QXO",
+   "board": "focus",
+   "date": "2026-11-10"
+  },
+  {
+   "ticker": "TLS",
+   "board": "focus",
+   "date": "2026-11-10"
+  },
+  {
+   "ticker": "TTD",
+   "board": "focus",
+   "date": "2026-11-10"
   }
  ],
  "departures": [
   {
-   "ticker": "DUOL",
+   "ticker": "ACHC",
    "board": "tier-a",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
    "streak_at_exit": 1,
    "days": 1
   },
   {
-   "ticker": "KD",
+   "ticker": "APP",
    "board": "tier-a",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
    "streak_at_exit": 1,
    "days": 1
   },
   {
-   "ticker": "LIVN",
+   "ticker": "FUN",
    "board": "tier-a",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
    "streak_at_exit": 1,
    "days": 1
   },
   {
-   "ticker": "OUST",
+   "ticker": "MRNA",
    "board": "tier-a",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 1,
+   "days": 4
+  },
+  {
+   "ticker": "RUN",
+   "board": "tier-a",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 1,
+   "days": 1
+  },
+  {
+   "ticker": "SEZL",
+   "board": "tier-a",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 1,
+   "days": 1
+  },
+  {
+   "ticker": "U",
+   "board": "tier-a",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 1,
+   "days": 1
+  },
+  {
+   "ticker": "XERS",
+   "board": "tier-a",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 1,
+   "days": 1
+  },
+  {
+   "ticker": "ACHC",
+   "board": "focus",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 1,
+   "days": 1
+  },
+  {
+   "ticker": "APP",
+   "board": "focus",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 1,
+   "days": 1
+  },
+  {
+   "ticker": "FUN",
+   "board": "focus",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 1,
+   "days": 1
+  },
+  {
+   "ticker": "JOBY",
+   "board": "focus",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 1,
+   "days": 1
+  },
+  {
+   "ticker": "MRNA",
+   "board": "focus",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 1,
+   "days": 5
+  },
+  {
+   "ticker": "RUN",
+   "board": "focus",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 1,
+   "days": 1
+  },
+  {
+   "ticker": "SEZL",
+   "board": "focus",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 1,
+   "days": 1
+  },
+  {
+   "ticker": "U",
+   "board": "focus",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
    "streak_at_exit": 1,
    "days": 1
   },
   {
    "ticker": "VRDN",
-   "board": "tier-a",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
+   "board": "focus",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 2,
+   "days": 2
+  },
+  {
+   "ticker": "XERS",
+   "board": "focus",
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
    "streak_at_exit": 1,
    "days": 1
   },
   {
    "ticker": "XNCR",
-   "board": "tier-a",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
-   "streak_at_exit": 1,
-   "days": 1
-  },
-  {
-   "ticker": "ARRY",
    "board": "focus",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
-   "streak_at_exit": 1,
-   "days": 1
-  },
-  {
-   "ticker": "CRCT",
-   "board": "focus",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
-   "streak_at_exit": 1,
-   "days": 1
-  },
-  {
-   "ticker": "DUOL",
-   "board": "focus",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
-   "streak_at_exit": 1,
-   "days": 1
-  },
-  {
-   "ticker": "ENOV",
-   "board": "focus",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
-   "streak_at_exit": 1,
-   "days": 1
-  },
-  {
-   "ticker": "HELE",
-   "board": "focus",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
-   "streak_at_exit": 1,
-   "days": 1
-  },
-  {
-   "ticker": "KD",
-   "board": "focus",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
-   "streak_at_exit": 1,
-   "days": 1
-  },
-  {
-   "ticker": "LIVN",
-   "board": "focus",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
-   "streak_at_exit": 1,
-   "days": 1
-  },
-  {
-   "ticker": "OUST",
-   "board": "focus",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
-   "streak_at_exit": 1,
+   "date": "2026-11-10",
+   "last_seen": "2026-11-06",
+   "streak_at_exit": 2,
    "days": 2
-  },
-  {
-   "ticker": "XYZ",
-   "board": "focus",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
-   "streak_at_exit": 1,
-   "days": 1
-  },
-  {
-   "ticker": "YOU",
-   "board": "focus",
-   "date": "2026-11-06",
-   "last_seen": "2026-11-05",
-   "streak_at_exit": 1,
-   "days": 1
   }
  ],
  "notes": [

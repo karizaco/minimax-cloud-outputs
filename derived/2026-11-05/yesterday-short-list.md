@@ -1,6 +1,6 @@
 # Yesterday's short list — did it show up this morning?
 
-**Source:** derived join of daily-screens/<prior>/tier-a.csv to the morning feed (no source file is modified) · **Built:** 2026-11-10 · **Covers:** 2026-11-05 morning, prior board 2026-11-04, 8 name(s) · read-only
+**Source:** derived join of daily-screens/<prior>/tier-a.csv to the morning feed (no source file is modified) · **Built:** 2026-11-11 · **Covers:** 2026-11-05 morning, prior board 2026-11-04, 8 name(s) · read-only
 
 > **Read this before the table.**
 >

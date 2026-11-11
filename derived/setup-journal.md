@@ -1,6 +1,6 @@
 # Setup journal — next session versus the published close
 
-**Source:** derived join of `daily-screens/<date>/{stalk,tier-a}.csv` to the next `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-10 · **Covers:** 432 published setup-row(s) across 2026-10-22 → 2026-11-06; 432 scored, 0 waiting on a session that has not settled · read-only
+**Source:** derived join of `daily-screens/<date>/{stalk,tier-a}.csv` to the next `us-eod/<date>.csv` (no routine artifact is modified) · **Built:** 2026-11-11 · **Covers:** 436 published setup-row(s) across 2026-10-22 → 2026-11-10; 432 scored, 4 waiting on a session that has not settled · read-only
 
 > **Read this before the table.**
 >
@@ -490,6 +490,11 @@ neither.
 | 2026-11-06 | 2026-11-09 | SEZL | tier-a | jeff_sun|peoplewish|qullamaggie|stockbee | +2.14 | +0.94 | faded |
 | 2026-11-06 | 2026-11-09 | U | tier-a | peoplewish|qullamaggie|stockbee | +1.28 | -0.12 | faded |
 | 2026-11-06 | 2026-11-09 | XERS | tier-a | hernandez|jeff_sun|qullamaggie|stockbee | +0.00 | +4.34 | up |
+
+## Not yet scored
+
+4 name-row(s) were published on 2026-11-10 and have no later settled session
+in `us-eod/`. They are waiting, not failed.
 
 ## Rules
 

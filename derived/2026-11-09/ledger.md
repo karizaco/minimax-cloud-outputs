@@ -1,6 +1,6 @@
 # Ledger — what every routine saw on 2026-11-09
 
-**Source:** derived join over 4 artifact(s): `earnings/2026-11-09-reactions.md`, `us-eod/2026-11-09.csv`, `us-stocks-in-play/2026-11-09-candidates.csv`, `options-flow/2026-11-09.md` · **Built:** 2026-11-10 · **Covers:** 1523 name(s) any routine mentioned; 1296 seen by two or more · read-only
+**Source:** derived join over 4 artifact(s): `earnings/2026-11-09-reactions.md`, `us-eod/2026-11-09.csv`, `us-stocks-in-play/2026-11-09-candidates.csv`, `options-flow/2026-11-09.md` · **Built:** 2026-11-11 · **Covers:** 1523 name(s) any routine mentioned; 1296 seen by two or more · read-only
 
 > **Read this before the table.**
 > 

@@ -1,0 +1,130 @@
+{
+ "_schema": "derived-manifest-v1",
+ "date": "2026-11-10",
+ "generated_by": "scripts/build_derived.py",
+ "views": {
+  "confirmation": {
+   "files": [
+    "confirmation.csv",
+    "confirmation.md"
+   ],
+   "joined_from": [
+    "daily-screens/<date>/{tier-a,focus}.csv",
+    "ntrt/<date>.md",
+    "options-flow/<date>.md",
+    "earnings/<date>-{reminders,reactions}.md"
+   ]
+  },
+  "gap-reconciliation": {
+   "files": [
+    "gap-reconciliation.csv",
+    "gap-reconciliation.md"
+   ],
+   "joined_from": [
+    "earnings/<date>-reactions.md",
+    "us-eod/<date>.csv"
+   ]
+  },
+  "ledger": {
+   "files": [
+    "ledger.jsonl",
+    "ledger.md"
+   ],
+   "joined_from": [
+    "daily-screens/<date>/{master,focus,tier-a}.csv",
+    "earnings/<date>-reactions.md",
+    "us-eod/<date>.csv",
+    "us-stocks-in-play/<date>-candidates.csv",
+    "options-flow/<date>.md"
+   ]
+  },
+  "sector-flow": {
+   "files": [
+    "sector-flow.csv",
+    "sector-flow.md"
+   ],
+   "joined_from": [
+    "daily-screens/<date>/master.csv",
+    "us-stocks-in-play/<date>.md"
+   ]
+  },
+  "setup-card": {
+   "files": [
+    "setup-card.csv",
+    "setup-card.md"
+   ],
+   "joined_from": [
+    "daily-screens/<date>/{stalk,tier-a}.csv",
+    "earnings/<date>-reactions.md",
+    "us-eod/<date>.csv"
+   ]
+  }
+ },
+ "files": [
+  {
+   "name": "confirmation.csv",
+   "bytes": 6691,
+   "role": "machine - the same rows"
+  },
+  {
+   "name": "confirmation.md",
+   "bytes": 12337,
+   "role": "brief - how many routines saw each name, and where they agree"
+  },
+  {
+   "name": "gap-reconciliation.csv",
+   "bytes": 10740,
+   "role": "machine - the same rows with the full catalyst text"
+  },
+  {
+   "name": "gap-reconciliation.md",
+   "bytes": 9847,
+   "role": "brief - every PRE_GAP name and the path its gap took"
+  },
+  {
+   "name": "ledger.jsonl",
+   "bytes": 1112702,
+   "role": "machine - one record per name, `_meta` on the first line"
+  },
+  {
+   "name": "ledger.md",
+   "bytes": 6760,
+   "role": "brief - coverage, and the names several routines saw"
+  },
+  {
+   "name": "sector-flow.csv",
+   "bytes": 1193,
+   "role": "machine - the same rows"
+  },
+  {
+   "name": "sector-flow.md",
+   "bytes": 6188,
+   "role": "brief - the board's sector mix against the ETF tape"
+  },
+  {
+   "name": "setup-card.csv",
+   "bytes": 1261,
+   "role": "machine - the same rows, including tags that could not be recomputed"
+  },
+  {
+   "name": "setup-card.md",
+   "bytes": 4397,
+   "role": "brief - published Stalk and Tier-A, session-stamped, with unchecked gaps"
+  },
+  {
+   "name": "yesterday-short-list.csv",
+   "bytes": 715,
+   "role": "machine - the same rows"
+  },
+  {
+   "name": "yesterday-short-list.md",
+   "bytes": 2184,
+   "role": "brief - yesterday's Tier-A names against this morning's feed"
+  }
+ ],
+ "notes": [
+  "Every file here is DERIVED. No cron writes into this directory, and nothing in it is a new measurement - each value is copied from the artifacts named in `joined_from`.",
+  "A view absent from this manifest was not built for this date, which means a source it needs does not exist. The view's own brief states which one.",
+  "Not built for this date: client-safe, run-ledger, thesis-score."
+ ]
+}

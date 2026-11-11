@@ -1,6 +1,6 @@
 # Gap reconciliation — 2026-10-29 pre-market vs the settled close
 
-**Source:** derived join over `earnings/2026-10-29-reactions.md` and `us-eod/2026-10-29.csv` (neither source is modified) · **Built:** 2026-11-10 · **Covers:** 124 PRE_GAP name(s) tagged at the 2026-10-29 pre-market fire · read-only
+**Source:** derived join over `earnings/2026-10-29-reactions.md` and `us-eod/2026-10-29.csv` (neither source is modified) · **Built:** 2026-11-11 · **Covers:** 124 PRE_GAP name(s) tagged at the 2026-10-29 pre-market fire · read-only
 
 > **Read this before the table.**
 > 
