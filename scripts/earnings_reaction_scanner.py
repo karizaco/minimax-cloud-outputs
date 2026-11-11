@@ -57,7 +57,7 @@ import json, subprocess, time, datetime, os, sys, re
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-06.2"
+SCRIPT_VERSION = "2026-11-11.1"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -104,9 +104,58 @@ EU_MARKETS = {
     "greece":      ("Greece",           ["ATHEX"],                            ".AT"),
 }
 ASX_SUFFIX = ".AX"
+
+# ---------------------------------------------------------------- run mode
+# "scan"   the 08:00 ET scan (default): US + EU/UK + AU + APAC/Gulf.
+# "settle" the 12:15 ET settlement pass: the EU/UK session has CLOSED, so the
+#          same rows are republished with their SETTLED close and move, and the
+#          08:00 ET scan move is carried alongside so the reader can see how
+#          much of the reaction actually survived. The US session is OPEN at
+#          12:15 ET, so the US passes are skipped entirely - publishing a live
+#          US intraday price as a "close" is worse than publishing nothing.
+RUN_MODE = "scan"
+if "--mode" in sys.argv:
+    _mi = sys.argv.index("--mode")
+    if _mi + 1 < len(sys.argv):
+        RUN_MODE = sys.argv[_mi + 1]
+SETTLE_MODE = (RUN_MODE == "settle")
+OUT_NAME = f"{RUN_DATE}-reactions-settled.md" if SETTLE_MODE else f"{RUN_DATE}-reactions.md"
+MORNING_ARTIFACT = f"{RUN_DATE}-reactions.md"
+
+# ------------------------------------------------------- APAC / Gulf markets
+# Added 2026-11-11. Every market here CLOSES BEFORE the 08:00 ET fire, so they
+# take the same SETTLED treatment as ASX and carry no live-session caveat:
+#   India 05:00 ET | Thailand 04:30 | Indonesia 04:00 | Singapore 04:00 |
+#   China 02:00 | New Zealand 22:45 the previous day | Saudi Arabia 07:00
+# (the EU/UK session, by contrast, is still OPEN at 08:00 ET - it closes
+# 11:30 ET in winter - which is why the EU rows carry a settlement state).
+#
+# Screener market slugs verified live on 2026-11-10/11: india, thailand,
+# indonesia, china, singapore, newzealand, ksa. Note `ksa`, NOT `saudiarabia`
+# (that slug 404s) and `uae` for the Gulf (its session closes 08:00-09:00 ET,
+# so it is NOT included - it would be a live row).
+APAC_MARKETS = {
+    "india":      ("India",       ["NSE", "BSE"],   ".NS"),
+    "thailand":   ("Thailand",    ["SET"],          ".BK"),
+    "indonesia":  ("Indonesia",   ["IDX"],          ".JK"),
+    "china":      ("China",       ["SSE", "SZSE"],  ".SS"),
+    "singapore":  ("Singapore",   ["SGX"],          ".SI"),
+    "newzealand": ("New Zealand", ["NZX"],          ".NZ"),
+    "ksa":        ("Saudi Arabia", ["TADAWUL"],     ".SR"),
+}
+# The Yahoo suffix follows the VENUE, not the market: a Shenzhen listing is
+# .SZ while a Shanghai one is .SS, and an Indian BSE line is .BO while an NSE
+# line is .NS. One suffix per market would silently resolve half the rows -
+# and a row whose reference close cannot be resolved is DROPPED.
+YAHOO_SUFFIX_BY_EXCHANGE = {
+    "NSE": ".NS", "BSE": ".BO", "SSE": ".SS", "SZSE": ".SZ",
+    "SET": ".BK", "IDX": ".JK", "SGX": ".SI", "NZX": ".NZ", "TADAWUL": ".SR",
+}
+
 # The countries a published foreign row can come from. Used to bound the US
 # line index (which US-listed line corresponds to a foreign issuer).
-FOREIGN_HOME_COUNTRIES = [v[0] for v in EU_MARKETS.values()] + ["Australia"]
+FOREIGN_HOME_COUNTRIES = ([v[0] for v in EU_MARKETS.values()] + ["Australia"]
+                          + [v[0] for v in APAC_MARKETS.values()])
 
 MIN_VOLUME = 10000          # removes stale-reference rows (validated) - DO NOT LOWER
 SCAN_RETRIES = 3
@@ -114,7 +163,16 @@ REF_CLOSE_TOLERANCE_PCT = 0.5   # |implied ref - Yahoo ref| above this = stale r
 PREMARKET_OPEN_ET = datetime.time(4, 0)
 PREMARKET_CLOSE_ET = datetime.time(9, 30)
 AVG_MOVE_WINDOW = 20             # sessions used for the mean absolute daily move
-CATALYST_BUDGET = {"US": 5, "EU": 3, "AU": 2}
+CATALYST_BUDGET = {"US": 5, "EU": 3, "AU": 2, "APAC": 3}
+# Rows per market. The EU/UK table was 28% Sweden over nine runs (73 of 264
+# rows) while Belgium and Greece never appeared once - the cap makes the table
+# a market census instead of a Nordic index. The overall cap still binds.
+EU_MARKET_CAP = 4
+APAC_MARKET_CAP = 3
+# A name is "due to report" when the screener's NEXT-report date falls inside
+# this window. The NEXT date is the reliable half of the field: the LAST-report
+# date lags (it read 2025-02-13 for a name that reported the previous day).
+EARNINGS_DUE_WINDOW_DAYS = 14
 
 SCANNER_COLS = ["name", "close", "change", "change_abs", "volume", "market_cap_basic",
                 "exchange", "country", "Perf.W", "currency",
@@ -491,6 +549,20 @@ def scan(market, filters, rng=(0, 200), sort=None, cols=None):
     return {"data": [], "totalCount": 0}
 
 
+def scan_or_empty(market, filters, rng=(0, 200), sort=None):
+    """scan(), except every pass but the EU/UK one is skipped in the settle pass.
+
+    At 12:15 ET the US cash session is OPEN, so the screener's `close` and
+    `change` for a US name are live intraday values. Publishing those as a
+    session close would be a fabricated settled price - the settlement pass
+    therefore runs the EU/UK passes only, and skips the US, ASX and APAC/Gulf
+    passes (their rows belong to the 08:00 ET artifact).
+    """
+    if SETTLE_MODE and market not in EU_MARKETS:
+        return {"data": [], "totalCount": 0}
+    return scan(market, filters, rng, sort)
+
+
 def yahoo_daily_bars(symbol):
     """Yahoo daily chart bars for a symbol: [(epoch, close)] oldest -> newest.
 
@@ -750,6 +822,29 @@ def epoch_date(e):
     return datetime.datetime.fromtimestamp(e, ET).strftime("%Y-%m-%d")
 
 
+def next_earn_rank(row):
+    """Rank a candidate for a catalyst lookup: DUE TO REPORT soonest first.
+
+    The screener's LAST-report date lags badly - on 2026-11-05 it read
+    2025-02-13 for a name that reported the previous day, and 2026-08-06 for
+    a name that reported that morning - so "last earnings within 7 days" is
+    not a usable earnings test on a foreign row. The NEXT-report date is the
+    reliable half of the field, so it drives the lookup order; the size of the
+    move breaks the tie.
+    """
+    d = row["d"]
+    nxt = g(d, "earnings_release_next_date")
+    days = None
+    if nxt:
+        try:
+            days = (datetime.datetime.fromtimestamp(float(nxt), ET).date()
+                    - NOW_ET.date()).days
+        except Exception:
+            days = None
+    due = 0 if (days is not None and -1 <= days <= EARNINGS_DUE_WINDOW_DAYS) else 1
+    return (due, days if days is not None else 9999, -abs(g(d, "change")))
+
+
 TYPE = {"left": "type", "operation": "equal", "right": "stock"}
 
 
@@ -760,8 +855,27 @@ def flist(*pairs):
     return out
 
 
+def cap_per_market(rows, cap):
+    """Keep at most `cap` rows per market, preserving the incoming order.
+
+    Returns (kept_rows, {market: rows_kept}). The per-market count is
+    published in source health so the reader can see how thin the coverage
+    really is - the EU/UK table was 28% Sweden over nine runs while Belgium
+    and Greece never appeared once.
+    """
+    seen = {}
+    out = []
+    for r in rows:
+        m = r.get("market", "?")
+        if seen.get(m, 0) >= cap:
+            continue
+        seen[m] = seen.get(m, 0) + 1
+        out.append(r)
+    return out, seen
+
+
 # ------------------------------------------------------------------ Pass A
-pa = scan("america",
+pa = scan_or_empty("america",
           flist(("exchange", "in_range", US_VENUES),
                 ("market_cap_basic", "egreater", 20000000000)),
           rng=(0, 250), sort={"sortBy": "market_cap_basic", "sortOrder": "desc"})
@@ -773,14 +887,14 @@ a_dropped_pref = len([r for r in pa["data"]
                        and "/" in g(r["d"], "name")])
 
 # ------------------------------------------------------------------ Pass B
-pb_up = scan("america",
+pb_up = scan_or_empty("america",
              flist(("exchange", "in_range", US_VENUES),
                    ("change", "egreater", 3),
                    ("market_cap_basic", "egreater", 1000000000),
                    ("close", "egreater", 5),
                    ("volume", "egreater", MIN_VOLUME)),
              rng=(0, 200), sort={"sortBy": "change", "sortOrder": "desc"})
-pb_dn = scan("america",
+pb_dn = scan_or_empty("america",
              flist(("exchange", "in_range", US_VENUES),
                    ("change", "less", -3),
                    ("market_cap_basic", "egreater", 1000000000),
@@ -800,7 +914,7 @@ for mkt, (home, venues, suffix) in EU_MARKETS.items():
     if venues:
         base.append({"left": "exchange", "operation": "in_range", "right": venues})
     for op, thr in (("egreater", 2.5), ("less", -2.5)):
-        d = scan(mkt, base + [{"left": "change", "operation": op, "right": thr}],
+        d = scan_or_empty(mkt, base + [{"left": "change", "operation": op, "right": thr}],
                  rng=(0, 150),
                  sort={"sortBy": "change", "sortOrder": "desc" if op == "egreater" else "asc"})
         if d.get("totalCount", 0) < 5:
@@ -817,10 +931,14 @@ for r in eu_rows:
     seen.add(n)
     eu_dedup.append(r)
 eu_dedup.sort(key=lambda r: -abs(g(r["d"], "change")))
-eu_final = eu_dedup[:30]
+# Per-market cap BEFORE the overall cap: the pool is diversified first, so the
+# top-30 then draws across markets instead of being monopolised by one.
+eu_capped, eu_rows_per_market = cap_per_market(eu_dedup, EU_MARKET_CAP)
+eu_final = eu_capped[:30]
+health["rows_per_market"] = eu_rows_per_market
 
 # ------------------------------------------------------------------ Pass D
-pd_up = scan("australia",
+pd_up = scan_or_empty("australia",
              flist(("country", "equal", "Australia"),
                    ("exchange", "in_range", ["ASX"]),
                    ("change", "egreater", 2.5),
@@ -828,7 +946,7 @@ pd_up = scan("australia",
                    ("close", "egreater", 1),
                    ("volume", "egreater", MIN_VOLUME)),
              rng=(0, 200), sort={"sortBy": "change", "sortOrder": "desc"})
-pd_dn = scan("australia",
+pd_dn = scan_or_empty("australia",
              flist(("country", "equal", "Australia"),
                    ("exchange", "in_range", ["ASX"]),
                    ("change", "less", -2.5),
@@ -839,7 +957,45 @@ pd_dn = scan("australia",
 au = [{"d": r["d"], "suffix": ASX_SUFFIX}
       for r in (pd_up["data"] + pd_dn["data"]) if g(r["d"], "exchange") == "ASX"]
 au.sort(key=lambda r: -abs(g(r["d"], "change")))
-au = au[:25]
+au_capped, au_rows_per_market = cap_per_market(au, EU_MARKET_CAP)
+au = au_capped[:25]
+
+# ------------------------------------------------------------------ Pass E
+# APAC / Gulf. Added 2026-11-11. Every one of these markets closes BEFORE the
+# 08:00 ET fire, so the rows are SETTLED - no live-session caveat, the same
+# treatment ASX gets. The market-cap floor is the ASX floor ($500M), not the
+# EU $1B one: most APAC earnings action sits below $1B.
+apac_rows = []
+for mkt, (home, venues, suffix) in APAC_MARKETS.items():
+    base = flist(("country", "equal", home),
+                 ("market_cap_basic", "egreater", 500000000),
+                 ("close", "egreater", 1),
+                 ("volume", "egreater", MIN_VOLUME))
+    if venues:
+        base.append({"left": "exchange", "operation": "in_range", "right": venues})
+    for op, thr in (("egreater", 2.5), ("less", -2.5)):
+        d = scan_or_empty(mkt, base + [{"left": "change", "operation": op, "right": thr}],
+                 rng=(0, 150),
+                 sort={"sortBy": "change", "sortOrder": "desc" if op == "egreater" else "asc"})
+        if d.get("totalCount", 0) < 5:
+            health["empty_markets"].append(f"{mkt}:{op}={d.get('totalCount')}")
+        for r in d["data"]:
+            ex = g(r["d"], "exchange")
+            apac_rows.append({"market": mkt, "suffix": suffix,
+                               "yahoo_suffix": YAHOO_SUFFIX_BY_EXCHANGE.get(ex, suffix),
+                               "d": r["d"]})
+apac_seen = set()
+apac_dedup = []
+for r in apac_rows:
+    n = g(r["d"], "name")
+    if n in apac_seen:
+        continue
+    apac_seen.add(n)
+    apac_dedup.append(r)
+apac_dedup.sort(key=lambda r: -abs(g(r["d"], "change")))
+apac_capped, apac_rows_per_market = cap_per_market(apac_dedup, APAC_MARKET_CAP)
+apac = apac_capped[:25]
+health["rows_per_market_apac"] = apac_rows_per_market
 
 # ------------------------------------------------------------------ US merge
 us = {}
@@ -938,7 +1094,7 @@ eu_res, eu_keep = {}, []
 for r0 in eu_final:
     d = r0["d"]
     r = cross_check(g(d, "name"), g(d, "change"), g(d, "close"), r0["suffix"],
-                    r0["market"], live_session=True, venue=r0["market"])
+                    r0["market"], live_session=not SETTLE_MODE, venue=r0["market"])
     if r:
         eu_res[g(d, "name")] = r
         r0["ref"] = r
@@ -958,6 +1114,19 @@ for r0 in au:
     time.sleep(0.35)
 au = au_keep
 
+apac_res, apac_keep = {}, []
+for r0 in apac:
+    d = r0["d"]
+    r = cross_check(g(d, "name"), g(d, "change"), g(d, "close"),
+                    r0.get("yahoo_suffix") or r0["suffix"],
+                    r0["market"], live_session=False, venue=r0["market"])
+    if r:
+        apac_res[g(d, "name")] = r
+        r0["ref"] = r
+        apac_keep.append(r0)
+    time.sleep(0.35)
+apac = apac_keep
+
 # ------------------------------------------------------- one-table rule: dedupe
 # Each name appears EXACTLY ONCE in the markdown. A symbol that is both a
 # US-venue line and a foreign-primary line keeps the US row: it carries the
@@ -975,6 +1144,16 @@ au_names = {g(r0["d"], "name") for r0 in au}
 cross_region_dropped += [f"{g(r0['d'],'name')}@AU" for r0 in au
                          if g(r0["d"], "name") in tagged_names]
 au = [r0 for r0 in au if g(r0["d"], "name") not in tagged_names]
+
+# The APAC/Gulf rows obey the one-table rule too: a name already published as
+# a US line (or as a European line) keeps that row and the APAC row is
+# dropped and counted, so nothing appears twice in the markdown.
+apac_names = {g(r0["d"], "name") for r0 in apac}
+foreign_names = {g(r0["d"], "name") for r0 in eu_final} | au_names
+cross_region_dropped += [f"{g(r0['d'],'name')}@{r0['market']}" for r0 in apac
+                         if g(r0["d"], "name") in tagged_names | foreign_names]
+apac = [r0 for r0 in apac
+        if g(r0["d"], "name") not in tagged_names | foreign_names]
 
 # ------------------------------------------------------------- pre-market check
 # Independent check of the US pre-market column - the headline number of the
@@ -1032,6 +1211,31 @@ def ref_cols(r):
         return "—", "—", "—", "—"
     return (f"{r['ref_close']:.2f}", r["ref_close_source"], r["ref_close_asof"],
             r.get("session_asof") or "—")
+
+
+def settle_state(r):
+    """`live` when the row's session bar is an in-progress bar, else `settled`.
+
+    Derived from the SAME Yahoo bar resolution that validates the reference
+    close, so it is a measurement and not an assumption. The EU/UK session is
+    still open at the 08:00 ET fire (it closes 11:30 ET in winter), so its
+    rows read `live` - the reader is told, ON THE ROW, that the move is a
+    mid-session snapshot rather than the session's result. Measured over the
+    2026-11-05/06/09 runs, about half the EU rows finished more than 1pp away
+    from the settled move (worst case 12.7pp).
+    """
+    if not r:
+        return "—"
+    return "live" if r.get("mode") == "live" else "settled"
+
+
+def _settle_summary():
+    """One line: how many published foreign rows are live vs settled."""
+    rows = ([("EU/UK", r) for r in eu_final] + [("ASX", r) for r in au]
+            + [("APAC/Gulf", r) for r in apac])
+    live = sum(1 for _, r in rows if settle_state((r or {}).get("ref")) == "live")
+    return (f"{len(rows) - live} settled, {live} live (a live row's move is a "
+            f"mid-session snapshot, not the session's result)")
 
 
 def headline_move(c):
@@ -1100,24 +1304,33 @@ amc_rows = [c for _, c in tagged if c["tag"] == "AMC_REACTION"]
 gap_rows = [c for _, c in tagged if c["tag"] == "PRE_GAP"]
 targets_us = amc_rows[:3] + [c for c in gap_rows if c not in amc_rows][:max(0, 5 - min(3, len(amc_rows)))]
 targets_us = targets_us[:CATALYST_BUDGET["US"]]
-targets_eu = [g(r0["d"], "name") for r0 in eu_final[:CATALYST_BUDGET["EU"]]]
-targets_au = [g(r0["d"], "name") for r0 in au[:CATALYST_BUDGET["AU"]]]
-TARGET_SET = set(c["name"] for c in targets_us) | set(targets_eu) | set(targets_au)
+targets_eu = [g(r0["d"], "name") for r0 in
+              sorted(eu_final, key=next_earn_rank)[:CATALYST_BUDGET["EU"]]]
+targets_au = [g(r0["d"], "name") for r0 in
+              sorted(au, key=next_earn_rank)[:CATALYST_BUDGET["AU"]]]
+targets_apac = [g(r0["d"], "name") for r0 in
+                sorted(apac, key=next_earn_rank)[:CATALYST_BUDGET["APAC"]]]
+TARGET_SET = (set(c["name"] for c in targets_us) | set(targets_eu)
+              | set(targets_au) | set(targets_apac))
 
 # The catalog file is the agent's input, so a starter skeleton is written when
 # it is missing. It is NEVER overwritten: a re-run must not wipe the agent's
 # catalyst research.
 if not os.path.exists(CAT_FILE):
+    _budget_total = sum(CATALYST_BUDGET.values())
     with open(CAT_FILE, "w") as fh:
         fh.write("Catalyst lookups: "
                  f"{CATALYST_BUDGET['US']} US + {CATALYST_BUDGET['EU']} EU + "
-                 f"{CATALYST_BUDGET['AU']} AU = "
-                 f"{CATALYST_BUDGET['US']+CATALYST_BUDGET['EU']+CATALYST_BUDGET['AU']}"
+                 f"{CATALYST_BUDGET['AU']} AU + {CATALYST_BUDGET['APAC']} APAC/Gulf = "
+                 f"{_budget_total}"
                  " per run, the skill's cap.\n")
         fh.write("Fill the Catalyst cell for every ticker below, then re-run the\n")
         fh.write("pipeline - the catalyst is merged into that ticker's row in the\n")
         fh.write("artifact, so a re-run never wipes this file. Never fabricate a\n")
-        fh.write('headline: "no fresh catalyst found" is a valid cell.\n\n')
+        fh.write('headline: "no fresh catalyst found" is a valid cell.\n')
+        fh.write("A ticker whose lookup you did NOT perform must leave the\n")
+        fh.write("Earnings-driven cell EMPTY - the pipeline publishes no verdict\n")
+        fh.write('for an unresearched row ("—" is the honest value).\n\n')
         fh.write("| Ticker | Region | Catalyst | Earnings-driven |\n")
         fh.write("|---|---|---|---|\n")
         for c in targets_us:
@@ -1126,11 +1339,21 @@ if not os.path.exists(CAT_FILE):
             fh.write(f"| {n} | EU | | |\n")
         for n in targets_au:
             fh.write(f"| {n} | AU | | |\n")
+        for n in targets_apac:
+            fh.write(f"| {n} | APAC/Gulf | | |\n")
     catalysts, catalyst_note = parse_catalyst_file(CAT_FILE)
 
 
 def catalyst_cell(name):
-    """The catalyst for a row: from the catalog file, or an honest placeholder."""
+    """The catalyst for a row: from the catalog file, or an honest placeholder.
+
+    The verdict follows the RESEARCH, never the other way round. A row whose
+    catalyst cell says the lookup was not performed carries NO verdict: the
+    2026-11-05 EU run published "N" (not earnings-driven) beside the note
+    "catalyst lookup not performed", which is a false verdict on 10% of that
+    run's researched EU rows. A researched row that found nothing ("no fresh
+    catalyst found") IS a verdict and keeps its N.
+    """
     c = catalysts.get(name)
     if c is None:
         for k, v in catalysts.items():
@@ -1138,10 +1361,25 @@ def catalyst_cell(name):
                 c = v
                 break
     if c:
-        return c["catalyst"], c["earn"]
+        return c["catalyst"], verdict_for(c["catalyst"], c["earn"])
     if name in TARGET_SET:
         return "pending catalyst lookup", "—"
     return "no catalyst lookup (outside the per-run budget)", "—"
+
+
+# Markers that mean the catalyst was NOT researched. A row carrying one of
+# these has no evidence, so it must not carry a verdict.
+NO_RESEARCH_MARKERS = ("no catalyst lookup", "pending catalyst lookup",
+                       "not performed", "outside the per-run budget",
+                       "lookup not performed", "no lookup performed")
+
+
+def verdict_for(catalyst_text, flag):
+    """Y / N / em-dash, decided by whether the catalyst was actually researched."""
+    low = (catalyst_text or "").lower()
+    if any(m in low for m in NO_RESEARCH_MARKERS):
+        return "—"
+    return flag if flag in ("Y", "N") else "—"
 
 
 # ----------------------------------------------------------------- Actionable
@@ -1235,6 +1473,164 @@ adr_n = sum(1 for k in ("EU", "AU") for r in region_rows[k] if str(r.get("tradea
 foreign_only_n = sum(1 for k in ("EU", "AU") for r in region_rows[k] if r.get("tradeable") == "none")
 us_published = len(tagged) + len(quiet)
 
+# ------------------------------------------------------- the settlement pass
+# WHY A SECOND SLOT. The 08:00 ET scan publishes the EU/UK session MID-FLIGHT
+# (it closes 11:30 ET in winter), so the EU move it prints is a snapshot taken
+# minutes after the reaction started. Measured over the 2026-11-05/06/09 runs
+# against each session's settled close: the median EU row finished 0.9-2.1pp
+# away, the worst 12.7pp, and roughly HALF the rows were more than 1pp off.
+# The 12:15 ET pass republishes the same rows with their SETTLED close and
+# move, and carries the morning's move beside it, so the reader can see how
+# much of the reaction survived - and so the routine MEASURES its own live
+# snapshot instead of asking the reader to trust it.
+def read_morning_eu():
+    """The 08:00 ET scan's EU/UK move per ticker, read from the morning artifact."""
+    path = os.path.join(OUT_DIR, MORNING_ARTIFACT)
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, encoding="utf-8") as fh:
+            text = fh.read()
+    except Exception:
+        return {}
+    m = re.search(r"^## EU/UK[^\n]*\n(.*?)(?=^## )", text, re.M | re.S)
+    if not m:
+        return {}
+    out = {}
+    for line in m.group(1).splitlines():
+        s = line.strip()
+        if not s.startswith("|"):
+            continue
+        cells = [c.strip() for c in re.split(r"(?<!\\)\|", s)]
+        if cells and cells[0] == "":
+            cells = cells[1:]
+        if len(cells) < 5 or cells[0] in ("Ticker", "—", "-"):
+            continue
+        if set(cells[0]) <= set("-: "):
+            continue
+        try:
+            out[cells[0]] = float(cells[4].replace("%", "").replace("+", ""))
+        except Exception:
+            continue
+    return out
+
+
+if SETTLE_MODE:
+    _now = datetime.datetime.now(ET)
+    L2 = []
+    B = L2.append
+    _morning = read_morning_eu()
+    _drifts = []
+    B(f"# Earnings reaction scanner — {RUN_DATE} (EU settlement pass)")
+    B("")
+    B(f"- Cron: `15 12 * * 1-5` America/New_York (weekdays, 12:15 ET)")
+    B(f"- Fire time (ET): {_now.strftime('%Y-%m-%d %H:%M:%S %a')}")
+    B(f"- Run type: `settlement_pass` — the EU/UK session has closed, so the same rows as")
+    B(f"  the 08:00 ET scan are republished with their SETTLED close and move.")
+    B(f"- Source: TradingView public screener; Yahoo chart API as the independent")
+    B(f"  reference-close source.")
+    B(f"- Method: the EU/UK cash session closed at 11:30 ET (16:30 CET in winter; 10:30")
+    B(f"  ET in summer). The 08:00 ET scan's move is carried alongside each settled move")
+    B(f"  so the reaction can be read as a measurement, not an impression. The US session")
+    B(f"  is OPEN at 12:15 ET, so no US rows are published here - a live intraday price")
+    B(f"  presented as a close would be a fabricated settle.")
+    B(f"- artifact_contract: {ARTIFACT_CONTRACT}")
+    B(f"- morning_artifact: earnings/{MORNING_ARTIFACT}"
+      + ("" if _morning else " (NOT FOUND - the morning scan move is unavailable)"))
+    B(f"- Status: `ok`")
+    B("")
+    B("## TL;DR")
+    B("")
+    B(f"- {len(eu_final)} EU/UK rows republished with their SETTLED close and move.")
+    if _morning:
+        _matched = [(g(r['d'], 'name'), _morning[g(r['d'], 'name')], g(r['d'], 'change'))
+                    for r in eu_final if g(r['d'], 'name') in _morning]
+        _drifts = [abs(s - c) for _, s, c in _matched]
+        _over1 = sum(1 for x in _drifts if x > 1.0)
+        if _drifts:
+            _med = sorted(_drifts)[len(_drifts) // 2]
+            B(f"- {len(_matched)} of them also appear in the 08:00 ET scan: the settled move")
+            B(f"  differs from the scan move by a median of {_med:.2f}pp and a maximum of")
+            B(f"  {max(_drifts):.2f}pp; {_over1} of {len(_matched)} rows moved more than 1pp")
+            B(f"  between the scan and the close.")
+    else:
+        B(f"- The 08:00 ET scan artifact was not found, so the scan-to-close comparison is")
+        B(f"  unavailable for this run.")
+    _big = max(eu_final, key=lambda r: abs(g(r['d'], 'change'))) if eu_final else None
+    if _big:
+        B(f"- Biggest settled EU/UK move: {g(_big['d'], 'name')} "
+          f"({g(_big['d'], 'change'):+.2f}%, {_big['market']}).")
+    B("")
+    B("## EU/UK — Settled table")
+    B("")
+    B("| Ticker | Market | Venue | Close | Chg % | Move @08:00 | Δ vs scan | Currency | Move vs avg daily | Ref close | Ref source | Ref asof | Session asof | Settle | US tradeable | Last earnings | Earn | Catalyst |")
+    B("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
+    for r0 in eu_final:
+        d = r0["d"]
+        r = r0["ref"]
+        rc, rs, ra, sa = ref_cols(r)
+        cat, earn = catalyst_cell(g(d, "name"))
+        nm = g(d, "name")
+        scan_move = _morning.get(nm)
+        settled = g(d, "change")
+        delta = None if scan_move is None else settled - scan_move
+        B(f"| {nm} | {r0['market']} | {g(d,'exchange')} | {g(d,'close')} | "
+          f"{settled:+.2f} | "
+          f"{'—' if scan_move is None else f'{scan_move:+.2f}'} | "
+          f"{'—' if delta is None else f'{delta:+.2f}'} | "
+          f"{g(d,'currency')} | {multiple(settled, (r or {}).get('avg_daily_move'))} | "
+          f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | "
+          f"{us_tradeable_foreign(nm, g(d,'country'))} | "
+          f"{epoch_date(g(d,'earnings_release_date')) or '—'} | {earn} | {cat} |")
+    if not eu_final:
+        B("| — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — |")
+    B("")
+    B("## Source health")
+    B("")
+    B(f"- scanner_calls: {health['scanner_calls']} | scanner_errors: {health['scanner_errors']}")
+    B(f"- pipeline_version: {SCRIPT_VERSION}")
+    B(f"- settlement: the EU/UK session is CLOSED at this fire, so every row's `Settle`")
+    B(f"  cell reads `settled` and its move is the session's own move.")
+    B(f"- scan_to_settle: {len(_drifts)} rows compared with the 08:00 ET scan"
+      + (f", median drift {sorted(_drifts)[len(_drifts)//2]:.2f}pp, max {max(_drifts):.2f}pp, "
+         f"{sum(1 for x in _drifts if x > 1.0)} rows more than 1pp apart"
+         if _drifts else ""))
+    cc = health["cross_check"]
+    B(f"- reference_close (screener vs Yahoo, resolved BEFORE the table was built): "
+      f"agree={cc['agree']} mismatch={cc['mismatch']} unverified={cc['unverified']} "
+      f"stale_reference={cc['stale']}")
+    B(f"- rows_dropped_stale_ref: {health['rows_dropped_stale_ref']} | "
+      f"rows_dropped_unresolved_ref: {health['rows_dropped_unresolved_ref']}")
+    B(f"- degraded_sources: {len(DEGRADED)}")
+    if DEGRADED:
+        B(f"  (the chat reply's `errors:` MUST equal this number - one entry per degraded")
+        B(f"  source, not one per run)")
+        for i, (s, d) in enumerate(DEGRADED, 1):
+            B(f"  {i}. {s} — {d}")
+    else:
+        B("  (none - every source answered for every published row)")
+    B("")
+    B("## Audit line")
+    B("")
+    B(f"`earnings-reaction mode=settle target=earnings-reactions:{RUN_DATE} "
+      f"eu_rows={len(eu_final)} scan_matched={len(_drifts)} "
+      f"scan_to_settle_median_pp={sorted(_drifts)[len(_drifts)//2] if _drifts else 'n/a'} "
+      f"catalyst_lookups={len(catalysts)} "
+      f"rows_dropped_stale_ref={health['rows_dropped_stale_ref']} "
+      f"degraded_sources={len(DEGRADED)}`")
+    B("")
+    _out = os.path.join(OUT_DIR, OUT_NAME)
+    with open(_out, "w") as fh:
+        fh.write("\n".join(L2))
+    print(f"WROTE {_out} ({os.path.getsize(_out)} bytes)")
+    print(f"REPLY_ERRORS: {len(DEGRADED)}")
+    print(json.dumps({"mode": "settle", "eu_rows": len(eu_final),
+                      "scan_matched": len(_drifts),
+                      "scan_to_settle_max_pp": round(max(_drifts), 3) if _drifts else None,
+                      "degraded_sources": len(DEGRADED)}))
+    sys.exit(0)
+
+
 L = []
 A = L.append
 A(f"# Earnings reaction scanner — {RUN_DATE}")
@@ -1260,10 +1656,14 @@ else:
     A(f"- Run type: `scheduled_scan`")
 A(f"- Source: TradingView public screener (`scanner.tradingview.com/<market>/scan`);")
 A(f"  Yahoo chart API as the independent reference-close source.")
-A(f"- Method: 4 passes (US top-200 mcap, US prior-session movers, EU/UK movers,")
-A(f"  ASX movers). Volume floor {MIN_VOLUME:,} on every pass; `country` filter for")
+A(f"- Method: 5 passes (US top-200 mcap, US prior-session movers, EU/UK movers,")
+A(f"  ASX movers, APAC/Gulf movers). Volume floor {MIN_VOLUME:,} on every pass; `country` filter for")
 A(f"  primary listings; exchange drop-list applied.")
 A(f"- artifact_contract: {ARTIFACT_CONTRACT}")
+A(f"- settlement_state: every foreign row carries a `Settle` cell - `live` when the row's")
+A(f"  session bar is an in-progress bar, `settled` when it is a completed session. The")
+A(f"  EU/UK session is still OPEN at the 08:00 ET fire (it closes 11:30 ET in winter), so")
+A(f"  its rows read `live`: the move is a mid-session snapshot, not the session's result.")
 A(f"- ref_close_source: yahoo_chart_daily (Yahoo Finance daily chart bars; the base")
 A(f"  every published row is measured against)")
 A(f"- Status: `ok`")
@@ -1276,8 +1676,10 @@ gaps = [c for _, c in tagged if c["tag"] == "PRE_GAP"]
 big_us = max(tagged, key=lambda t: t[1]["mx"]) if tagged else None
 big_eu = max(eu_final, key=lambda r: abs(g(r["d"], "change"))) if eu_final else None
 big_au = max(au, key=lambda r: abs(g(r["d"], "change"))) if au else None
+big_apac = max(apac, key=lambda r: abs(g(r["d"], "change"))) if apac else None
+_eu_live = sum(1 for r in eu_final if settle_state(r.get("ref")) == "live")
 A(f"- {len(amc)} AMC reactions, {len(gaps)} pre-market gaps, {len(bod)} without extended-hours data; "
-  f"{len(eu_final)} EU/UK and {len(au)} ASX movers.")
+  f"{len(eu_final)} EU/UK and {len(au)} ASX movers, {len(apac)} APAC/Gulf movers.")
 if big_us:
     A(f"- Biggest US extended-hours move: {big_us[1]['name']} "
       f"{big_us[1]['tag']} ({pct(big_us[1]['mx'])}%).")
@@ -1286,7 +1688,14 @@ if big_eu:
       f"{big_eu['market']}).")
 if big_au:
     A(f"- Biggest ASX move: {g(big_au['d'], 'name')} ({g(big_au['d'], 'change'):+.2f}%).")
-A(f"- EU/AU earnings-driven tagging is keyword-based on headlines (best-effort).")
+if big_apac:
+    A(f"- Biggest APAC/Gulf move: {g(big_apac['d'], 'name')} "
+      f"({g(big_apac['d'], 'change'):+.2f}%, {big_apac['market']}).")
+A(f"- {len(eu_final) - _eu_live} of the {len(eu_final)} EU/UK rows are SETTLED and "
+  f"{_eu_live} are LIVE (mid-session). The 12:15 ET settlement pass publishes where those")
+A(f"  live moves actually closed.")
+A(f"- EU/AU/APAC earnings-driven tagging is keyword-based on headlines (best-effort). A row")
+A(f"  whose lookup was not performed carries NO verdict — only a researched row does.")
 A("")
 A("## Actionable read")
 A("")
@@ -1339,8 +1748,8 @@ if not quiet:
 A("")
 A("## EU/UK — Headline table")
 A("")
-A("| Ticker | Market | Venue | Close | Chg % | Currency | Move vs avg daily | Ref close | Ref source | Ref asof | US tradeable | Last earnings | Earn | Catalyst |")
-A("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
+A("| Ticker | Market | Venue | Close | Chg % | Currency | Move vs avg daily | Ref close | Ref source | Ref asof | Session asof | Settle | US tradeable | Last earnings | Earn | Catalyst |")
+A("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
 for r0 in eu_final:
     d = r0["d"]
     r = r0["ref"]
@@ -1348,13 +1757,13 @@ for r0 in eu_final:
     cat, earn = catalyst_cell(g(d, "name"))
     A(f"| {g(d,'name')} | {r0['market']} | {g(d,'exchange')} | {g(d,'close')} | "
       f"{g(d,'change'):+.2f} | {g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
-      f"{rc} | {rs} | {ra} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
+      f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
       f"{epoch_date(g(d,'earnings_release_date')) or '—'} | {earn} | {cat} |")
 A("")
 A("## AU (ASX) — Headline table")
 A("")
-A("| Ticker | Venue | Close | Chg % | Currency | Move vs avg daily | Ref close | Ref source | Ref asof | US tradeable | Last earnings | Earn | Catalyst |")
-A("|---|---|---|---|---|---|---|---|---|---|---|---|---|")
+A("| Ticker | Venue | Close | Chg % | Currency | Move vs avg daily | Ref close | Ref source | Ref asof | Session asof | Settle | US tradeable | Last earnings | Earn | Catalyst |")
+A("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
 for r0 in au:
     d = r0["d"]
     r = r0["ref"]
@@ -1362,12 +1771,30 @@ for r0 in au:
     cat, earn = catalyst_cell(g(d, "name"))
     A(f"| {g(d,'name')} | {g(d,'exchange')} | {g(d,'close')} | {g(d,'change'):+.2f} | "
       f"{g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
-      f"{rc} | {rs} | {ra} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
+      f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
       f"{epoch_date(g(d,'earnings_release_date')) or '—'} | {earn} | {cat} |")
+A("")
+A("## APAC/Gulf — Headline table")
+A("")
+A("| Ticker | Market | Venue | Close | Chg % | Currency | Move vs avg daily | Ref close | Ref source | Ref asof | Session asof | Settle | US tradeable | Last earnings | Earn | Catalyst |")
+A("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
+for r0 in apac:
+    d = r0["d"]
+    r = r0["ref"]
+    rc, rs, ra, sa = ref_cols(r)
+    cat, earn = catalyst_cell(g(d, "name"))
+    A(f"| {g(d,'name')} | {r0['market']} | {g(d,'exchange')} | {g(d,'close')} | "
+      f"{g(d,'change'):+.2f} | {g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
+      f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
+      f"{epoch_date(g(d,'earnings_release_date')) or '—'} | {earn} | {cat} |")
+if not apac:
+    A("| — | — | — | — | — | — | — | — | — | — | — | — | — | — | — |")
 A("")
 A("## Source health")
 A("")
 A(f"- scanner_calls: {health['scanner_calls']} | scanner_errors: {health['scanner_errors']}")
+A(f"- markets_scanned: US + {len(EU_MARKETS)} EU/UK + ASX + {len(APAC_MARKETS)} APAC/Gulf "
+  f"({', '.join(APAC_MARKETS)})")
 A(f"- pipeline_version: {SCRIPT_VERSION}" +
   (f" | self-healed at start of run from {SELF_HEALED['from']} to {SELF_HEALED['to']} "
    f"via {SELF_HEALED['source']} (the cron's fetch served a stale copy)"
@@ -1447,6 +1874,13 @@ A(f"- one_table_rule: each name appears exactly once, in exactly one table, with
 A(f"  catalyst in that row's last column. There is no separate catalysts section.")
 A(f"- data_date: US regular session close of the prior trading day; extended-hours columns")
 A(f"  carry the prior session's prints")
+A(f"- settlement_state: {_settle_summary()}")
+A(f"- rows_per_market (EU/UK, cap {EU_MARKET_CAP}/market): "
+  f"{health.get('rows_per_market') or {}} — the cap stops one thin market taking the table; "
+  f"the EU/UK table was 28% Sweden over nine runs (73 of 264 rows) while Belgium and "
+  f"Greece never appeared once.")
+A(f"- rows_per_market (APAC/Gulf, cap {APAC_MARKET_CAP}/market): "
+  f"{health.get('rows_per_market_apac') or {}}")
 A(f"- deprecations: mcp__tradingview-advanced__*, mcp__tradingview__*, mcp__financekit__*,")
 A(f"  mcp__stocktwits__* are ABSENT in Cloud sessions (tool_search 0 hits; connector catalog")
 A(f"  holds only media + credential tools). The public screener replaces them.")
@@ -1465,13 +1899,14 @@ A("")
 A(f"`earnings-reaction target=earnings-reactions:{RUN_DATE} candidates={len(us)} "
   f"amc_reactions={len(amc)} pre_gaps={len(gaps)} eu_reactions={len([r for r in eu_final if abs(g(r['d'],'change'))>3])} "
   f"asx_reactions={len([r for r in au if abs(g(r['d'],'change'))>3])} "
+  f"apac_reactions={len([r for r in apac if abs(g(r['d'],'change'))>3])} "
   f"catalyst_lookups={len(catalysts)} bod={len(bod)} "
   f"rows_dropped_stale_ref={health['rows_dropped_stale_ref']} "
   f"rows_dropped_unresolved_ref={health['rows_dropped_unresolved_ref']} "
   f"degraded_sources={len(DEGRADED)}`")
 A("")
 
-out = os.path.join(OUT_DIR, f"{RUN_DATE}-reactions.md")
+out = os.path.join(OUT_DIR, OUT_NAME)
 with open(out, "w") as fh:
     fh.write("\n".join(L))
 
@@ -1483,6 +1918,11 @@ targets = {"us": [{"name": c["name"], "tag": c["tag"], "last_earnings": epoch_da
            "au": [{"name": n, "chg": next((round(g(r0['d'], 'change'), 2) for r0 in au
                                           if g(r0['d'], 'name') == n), None)}
                   for n in targets_au],
+           "apac": [{"name": n, "market": next((r0['market'] for r0 in apac
+                                                if g(r0['d'], 'name') == n), None),
+                     "chg": next((round(g(r0['d'], 'change'), 2) for r0 in apac
+                                  if g(r0['d'], 'name') == n), None)}
+                    for n in targets_apac],
            "budget": CATALYST_BUDGET,
            "catalyst_file": CAT_FILE}
 with open(os.path.join(OUT_DIR, f"{RUN_DATE}-catalyst-targets.json"), "w") as fh:
