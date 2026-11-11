@@ -1,0 +1,27 @@
+{
+  "_schema": 2,
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "breadth_pct_spx": 63.73,
+  "index_below_20sma": false,
+  "vix": 17.49,
+  "vix3m": 19.24,
+  "atr_extensions": {
+    "SPY": {
+      "extension_pct": -0.67
+    },
+    "RSP": {
+      "extension_pct": 3.6
+    },
+    "QQQ": {
+      "extension_pct": -3.99
+    },
+    "QQQE": {
+      "extension_pct": -0.94
+    },
+    "IWM": {
+      "extension_pct": 0.59
+    }
+  }
+}
