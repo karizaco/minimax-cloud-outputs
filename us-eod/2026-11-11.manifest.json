@@ -1,0 +1,327 @@
+{
+  "marker": "EOD_DERIVE_V2",
+  "session": "2026-11-11",
+  "generated_by": "eod_derive.py",
+  "csv_columns": 30,
+  "columns": [
+    "date",
+    "ticker",
+    "name",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "change_pct",
+    "market_cap",
+    "pe_ratio",
+    "sector",
+    "currency",
+    "exchange",
+    "rel_volume",
+    "pct_from_52w_high",
+    "pct_from_52w_low",
+    "sma_20",
+    "sma_50",
+    "sma_200",
+    "pct_vs_sma_50",
+    "pct_vs_sma_200",
+    "atr_14",
+    "atr_pct",
+    "gap_pct",
+    "avg_daily_dollar_volume",
+    "float_shares",
+    "market_cap_usd",
+    "cap_source_symbol",
+    "data_quality"
+  ],
+  "base_columns": [
+    "date",
+    "ticker",
+    "name",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "change_pct",
+    "market_cap",
+    "pe_ratio",
+    "sector",
+    "currency",
+    "exchange"
+  ],
+  "derived_columns": [
+    "rel_volume",
+    "pct_from_52w_high",
+    "pct_from_52w_low",
+    "sma_20",
+    "sma_50",
+    "sma_200",
+    "pct_vs_sma_50",
+    "pct_vs_sma_200",
+    "atr_14",
+    "atr_pct",
+    "gap_pct",
+    "avg_daily_dollar_volume",
+    "float_shares",
+    "market_cap_usd",
+    "cap_source_symbol",
+    "data_quality"
+  ],
+  "rows": 4891,
+  "flag_vocabulary": [
+    "NO_CAP",
+    "CAP_CARRIED",
+    "HIGH_LOW_UNAVAILABLE",
+    "RANGE_ADJUSTED",
+    "NO_HISTORY",
+    "NO_PRIOR_CLOSE",
+    "EX_DISTRIBUTION",
+    "SPLIT_ADJUSTED",
+    "NO_PE",
+    "NO_SECTOR",
+    "OK"
+  ],
+  "flag_precedence": [
+    "NO_CAP",
+    "CAP_CARRIED",
+    "HIGH_LOW_UNAVAILABLE",
+    "RANGE_ADJUSTED",
+    "NO_HISTORY",
+    "NO_PRIOR_CLOSE",
+    "EX_DISTRIBUTION",
+    "SPLIT_ADJUSTED",
+    "NO_PE",
+    "NO_SECTOR",
+    "OK"
+  ],
+  "flag_counts": {
+    "NO_CAP": 157,
+    "CAP_CARRIED": 294,
+    "HIGH_LOW_UNAVAILABLE": 63,
+    "RANGE_ADJUSTED": 410,
+    "NO_HISTORY": 117,
+    "NO_PRIOR_CLOSE": 32,
+    "EX_DISTRIBUTION": 18,
+    "SPLIT_ADJUSTED": 6,
+    "NO_PE": 1971,
+    "NO_SECTOR": 370,
+    "OK": 2432
+  },
+  "populated_counts": {
+    "date": 4891,
+    "ticker": 4891,
+    "name": 4891,
+    "open": 3782,
+    "high": 4828,
+    "low": 4828,
+    "close": 4846,
+    "volume": 4774,
+    "change_pct": 4814,
+    "market_cap": 4734,
+    "pe_ratio": 2920,
+    "sector": 4521,
+    "currency": 4891,
+    "exchange": 4891,
+    "rel_volume": 4731,
+    "pct_from_52w_high": 4774,
+    "pct_from_52w_low": 4774,
+    "sma_20": 4741,
+    "sma_50": 4721,
+    "sma_200": 4514,
+    "pct_vs_sma_50": 4721,
+    "pct_vs_sma_200": 4514,
+    "atr_14": 4753,
+    "atr_pct": 4753,
+    "gap_pct": 3782,
+    "avg_daily_dollar_volume": 4731,
+    "float_shares": 4100,
+    "market_cap_usd": 4734,
+    "cap_source_symbol": 4735,
+    "data_quality": 4891
+  },
+  "populated_and_ok_counts": {
+    "date": 2432,
+    "ticker": 2432,
+    "name": 2432,
+    "open": 2035,
+    "high": 2432,
+    "low": 2432,
+    "close": 2432,
+    "volume": 2432,
+    "change_pct": 2432,
+    "market_cap": 2432,
+    "pe_ratio": 2432,
+    "sector": 2432,
+    "currency": 2432,
+    "exchange": 2432,
+    "rel_volume": 2429,
+    "pct_from_52w_high": 2432,
+    "pct_from_52w_low": 2432,
+    "sma_20": 2431,
+    "sma_50": 2427,
+    "sma_200": 2398,
+    "pct_vs_sma_50": 2427,
+    "pct_vs_sma_200": 2398,
+    "atr_14": 2432,
+    "atr_pct": 2432,
+    "gap_pct": 2035,
+    "avg_daily_dollar_volume": 2429,
+    "float_shares": 2184,
+    "market_cap_usd": 2432,
+    "cap_source_symbol": 2432,
+    "data_quality": 2432
+  },
+  "market_cap_currency": "USD",
+  "market_cap_conversion": "none - the US file is already USD; market_cap_usd == market_cap (FX identity, no conversion applied)",
+  "market_cap_carrier_rule": "the vendor's own carrier row (shibui valuation); every line of the issuer carries the issuer's cap and names the carrier in cap_source_symbol",
+  "carrier_rows": 4441,
+  "carried_rows": 294,
+  "issuer_groups": 4577,
+  "history_misses": 117,
+  "change_pct_rule": "the session's PRICE change against the prior session's SETTLED close (--prior-csv); a quote service's previous_close is dividend-adjusted and a bar whose date was not asserted is stale - neither is an anchor",
+  "change_pct_corrected": 0,
+  "change_pct_filled": 4814,
+  "change_pct_unverified": 32,
+  "prior_session": "2026-11-10",
+  "ex_distribution_rows": 18,
+  "split_adjusted_rows": 6,
+  "split_adjusted_detail": [
+    {
+      "ticker": "ATCH",
+      "anchor_before": 0.083,
+      "split_adjusted_prior_close": 0.1321
+    },
+    {
+      "ticker": "FOXX",
+      "anchor_before": 1.5,
+      "split_adjusted_prior_close": 1.585
+    },
+    {
+      "ticker": "FUSE",
+      "anchor_before": 0.3323,
+      "split_adjusted_prior_close": 0.3498
+    },
+    {
+      "ticker": "GOVX",
+      "anchor_before": 0.1115,
+      "split_adjusted_prior_close": 2.676
+    },
+    {
+      "ticker": "HOUR",
+      "anchor_before": 1.482,
+      "split_adjusted_prior_close": 1.6015
+    },
+    {
+      "ticker": "NOMA",
+      "anchor_before": 1.01,
+      "split_adjusted_prior_close": 1.075
+    }
+  ],
+  "ex_distribution_detail": [
+    {
+      "ticker": "AWRE",
+      "prior_published_close": 0.8882,
+      "quote_adjusted_prior_close": 0.88
+    },
+    {
+      "ticker": "BC-P-C",
+      "prior_published_close": 21.75,
+      "quote_adjusted_prior_close": 21.6101
+    },
+    {
+      "ticker": "BUDA",
+      "prior_published_close": 7.31,
+      "quote_adjusted_prior_close": 7.075
+    },
+    {
+      "ticker": "CABR",
+      "prior_published_close": 0.9454,
+      "quote_adjusted_prior_close": 0.9301
+    },
+    {
+      "ticker": "CLPR",
+      "prior_published_close": 3.2,
+      "quote_adjusted_prior_close": 3.175
+    },
+    {
+      "ticker": "CVR",
+      "prior_published_close": 9.3,
+      "quote_adjusted_prior_close": 9.25
+    },
+    {
+      "ticker": "DTSQ",
+      "prior_published_close": 11.7,
+      "quote_adjusted_prior_close": 11.5999
+    },
+    {
+      "ticker": "FBDT",
+      "prior_published_close": 0.9156,
+      "quote_adjusted_prior_close": 0.9
+    },
+    {
+      "ticker": "FUND",
+      "prior_published_close": 9.92,
+      "quote_adjusted_prior_close": 9.845
+    },
+    {
+      "ticker": "GWAV",
+      "prior_published_close": 2.13,
+      "quote_adjusted_prior_close": 2.1
+    },
+    {
+      "ticker": "KIM-P-N",
+      "prior_published_close": 64.0,
+      "quote_adjusted_prior_close": 59.95
+    },
+    {
+      "ticker": "KITT",
+      "prior_published_close": 1.33,
+      "quote_adjusted_prior_close": 1.32
+    },
+    {
+      "ticker": "MAYS",
+      "prior_published_close": 43.6,
+      "quote_adjusted_prior_close": 42.15
+    },
+    {
+      "ticker": "MBRX",
+      "prior_published_close": 8.06,
+      "quote_adjusted_prior_close": 8.01
+    },
+    {
+      "ticker": "SHPH",
+      "prior_published_close": 5.34,
+      "quote_adjusted_prior_close": 5.26
+    },
+    {
+      "ticker": "SVIV",
+      "prior_published_close": 10.16,
+      "quote_adjusted_prior_close": 10.06
+    },
+    {
+      "ticker": "TRTX-P-C",
+      "prior_published_close": 16.7,
+      "quote_adjusted_prior_close": 16.4201
+    },
+    {
+      "ticker": "XWEL",
+      "prior_published_close": 0.5372,
+      "quote_adjusted_prior_close": 0.5331
+    }
+  ],
+  "change_pct_basis": "the session's PRICE change against the prior session's published close (the archive's convention, verifiable from the two published closes); ex-distribution rows are flagged EX_DISTRIBUTION because the quote service's prior close is dividend-adjusted there",
+  "range_adjusted_rows": 0,
+  "implied_shares_implausible": 0,
+  "definitions": {
+    "rel_volume": "session volume / mean(volume of the 30 sessions BEFORE the session)",
+    "avg_daily_dollar_volume": "mean(close x volume) over the same 30 prior sessions",
+    "sma_20/50/200": "mean(close) over the last 20/50/200 bars ending AT the session bar",
+    "pct_vs_sma_50/200": "(close / sma - 1) * 100",
+    "atr_14": "mean(true range) over the last 14 bars ending at the session bar; true range = max(h-l, |h-prev_close|, |l-prev_close|)",
+    "atr_pct": "atr_14 / close * 100",
+    "pct_from_52w_high/low": "(close - max(high) / min(low) over the last 252 bars) / that extreme * 100",
+    "gap_pct": "(published open - prior close) / prior close * 100"
+  }
+}

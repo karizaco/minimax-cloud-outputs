@@ -1,0 +1,31 @@
+ok   csv header carries all 30 required columns
+ok   the first 14 columns are unchanged in name and order
+ok   data_quality has no empty value (0 empty)
+ok   every data_quality token is in the closed vocabulary (0 unknown)
+ok   every CAP_CARRIED row names a row of the same issuer (294 carried rows, 0 bad)
+ok   no HIGH_LOW_UNAVAILABLE row has a populated high/low (0)
+ok   no row publishes a close outside its own range (0)
+ok   no missing value is written as zero (0)
+ok   market_cap_usd == market_cap on every row (0)
+ok   every numeric cell is in the archive's numeric format (99869 cells)
+ok   the implied share count is plausible on every capped row (0)
+ok   every change_pct is the price change against the prior session's close
+ok   rel_volume: 4731 populated, 0 non-numeric
+ok   sma_20: 4741 populated, 0 non-numeric
+ok   sma_50: 4721 populated, 0 non-numeric
+ok   sma_200: 4514 populated, 0 non-numeric
+ok   atr_14: 4753 populated, 0 non-numeric
+ok   atr_pct: 4753 populated, 0 non-numeric
+ok   gap_pct: 3782 populated, 0 non-numeric
+ok   pct_from_52w_high: 4774 populated, 0 non-numeric
+ok   pct_from_52w_low: 4774 populated, 0 non-numeric
+ok   avg_daily_dollar_volume: 4731 populated, 0 non-numeric
+ok   float_shares: 4100 populated, 0 non-numeric
+ok   the markdown opens with a title
+ok   the TL;DR has exactly three bullets
+ok   the Market read is a table with 15 numeric rows (>= 6)
+ok   the Coverage section reports populated counts and per-flag counts
+ok   the Method section states the market-cap currency
+ok   the Method section states the conversion direction
+
+29 checks passed, 0 failed
