@@ -1,202 +1,192 @@
 {
-  "audit_date_et": "2026-11-10",
-  "audit_run_et": "2026-11-11T07:10:35-0500",
-  "audit_status": "gaps_found",
-  "delivered": 20,
-  "due": 20,
-  "gaps": [
-    {
-      "cause": "slow_run",
-      "gap_age_hours": 21.3,
-      "label": "stalled",
-      "path": "us-stocks-in-play/2026-11-10-open.md",
-      "routine": "17-us-stocks-in-play-open",
-      "streak": 0
-    },
-    {
-      "cause": "slow_run",
-      "gap_age_hours": 15.2,
-      "label": "stalled",
-      "path": "us-eod/2026-11-10.csv",
-      "routine": "20-eod-watchlist-csv",
-      "streak": 0
-    },
-    {
-      "cause": "slow_run",
-      "gap_age_hours": 15.3,
-      "label": "stalled",
-      "path": "us-stocks-in-play/2026-11-10.md",
-      "routine": "17-us-stocks-in-play",
-      "streak": 0
-    }
-  ],
-  "missing": 0,
-  "never_delivered": [],
-  "not_yet_fired": [
-    "15b-earnings-reaction-settlement"
-  ],
-  "origin_main_sha": "7287da8",
-  "roster_gap": [],
-  "routines": {
-    "01-weekly-mcp-health-check": {
-      "delivery_latency_min": null,
-      "routine": "01-weekly-mcp-health-check",
-      "state": "not_due",
-      "streak": 0
-    },
-    "02-asia-pre-market-reactions": {
-      "delivery_latency_min": 6.6,
-      "routine": "02-asia-pre-market-reactions",
-      "state": "delivered",
-      "streak": 0
-    },
-    "04-reversal-bullish-3:55": {
-      "delivery_latency_min": 8.8,
-      "routine": "04-reversal-bullish-3:55",
-      "state": "delivered",
-      "streak": 0
-    },
-    "05-eod-international-daily": {
-      "delivery_latency_min": 21.6,
-      "routine": "05-eod-international-daily",
-      "state": "delivered",
-      "streak": 0
-    },
-    "06-pattern-study-backlog": {
-      "delivery_latency_min": null,
-      "routine": "06-pattern-study-backlog",
-      "state": "not_due",
-      "streak": 0
-    },
-    "07-focus-rvol-09:45": {
-      "delivery_latency_min": 9.9,
-      "routine": "07-focus-rvol-09:45",
-      "state": "delivered",
-      "streak": 0
-    },
-    "08-pre-market-gapper": {
-      "delivery_latency_min": 10.1,
-      "routine": "08-pre-market-gapper",
-      "state": "delivered",
-      "streak": 0
-    },
-    "09-daily-sweep-18:30": {
-      "delivery_latency_min": 44.0,
-      "routine": "09-daily-sweep-18:30",
-      "state": "delivered",
-      "streak": 0
-    },
-    "10-breadth-snapshot": {
-      "delivery_latency_min": 7.0,
-      "routine": "10-breadth-snapshot",
-      "state": "delivered",
-      "streak": 0
-    },
-    "12-cross-asset-correlation": {
-      "delivery_latency_min": 3.2,
-      "routine": "12-cross-asset-correlation",
-      "state": "delivered",
-      "streak": 0
-    },
-    "13-macro-calendar-midweek": {
-      "delivery_latency_min": null,
-      "routine": "13-macro-calendar-midweek",
-      "state": "not_due",
-      "streak": 0
-    },
-    "14-macro-calendar-week-ahead": {
-      "delivery_latency_min": null,
-      "routine": "14-macro-calendar-week-ahead",
-      "state": "not_due",
-      "streak": 0
-    },
-    "15-earnings-reaction-scanner": {
-      "delivery_latency_min": 12.1,
-      "routine": "15-earnings-reaction-scanner",
-      "state": "delivered",
-      "streak": 0
-    },
-    "15b-earnings-reaction-settlement": {
-      "delivery_latency_min": null,
-      "routine": "15b-earnings-reaction-settlement",
-      "state": "not_yet_fired",
-      "streak": 0
-    },
-    "16-unusual-options-flow": {
-      "delivery_latency_min": 1.8,
-      "routine": "16-unusual-options-flow",
-      "state": "delivered",
-      "streak": 0
-    },
-    "17-us-stocks-in-play": {
-      "delivery_latency_min": 45.5,
-      "routine": "17-us-stocks-in-play",
-      "state": "delivered_late",
-      "streak": 0
-    },
-    "17-us-stocks-in-play-open": {
-      "delivery_latency_min": 47.5,
-      "routine": "17-us-stocks-in-play-open",
-      "state": "delivered_late",
-      "streak": 0
-    },
-    "19-earnings-reminder-daily": {
-      "delivery_latency_min": 8.3,
-      "routine": "19-earnings-reminder-daily",
-      "state": "delivered",
-      "streak": 0
-    },
-    "20-eod-watchlist-csv": {
-      "delivery_latency_min": 50.5,
-      "routine": "20-eod-watchlist-csv",
-      "state": "delivered_late",
-      "streak": 0
-    },
-    "22-weekly-market-recap-preview": {
-      "delivery_latency_min": null,
-      "routine": "22-weekly-market-recap-preview",
-      "state": "not_due",
-      "streak": 0
-    },
-    "23-agentic-post-market-brief": {
-      "delivery_latency_min": 15.0,
-      "routine": "23-agentic-post-market-brief",
-      "state": "delivered",
-      "streak": 0
-    },
-    "25-ntrt-gap-brief-daily": {
-      "delivery_latency_min": 33.5,
-      "routine": "25-ntrt-gap-brief-daily",
-      "state": "delivered",
-      "streak": 0
-    },
-    "26-agentic-pre-market-brief": {
-      "delivery_latency_min": 9.6,
-      "routine": "26-agentic-pre-market-brief",
-      "state": "delivered",
-      "streak": 0
-    },
-    "26b-agentic-pre-market-brief-refresh": {
-      "delivery_latency_min": 12.2,
-      "routine": "26b-agentic-pre-market-brief-refresh",
-      "state": "delivered",
-      "streak": 0
-    },
-    "92a-preopen-catalyst-capture": {
-      "delivery_latency_min": 11.5,
-      "routine": "92a-preopen-catalyst-capture",
-      "state": "delivered",
-      "streak": 0
-    },
-    "92b-preopen-catalyst-capture": {
-      "delivery_latency_min": 15.0,
-      "routine": "92b-preopen-catalyst-capture",
-      "state": "delivered",
-      "streak": 0
-    }
+ "audit_date_et": "2026-11-11",
+ "audit_run_et": "2026-11-12T07:04:05-0500",
+ "origin_main_sha": "74ebea6",
+ "due": 22,
+ "delivered": 21,
+ "missing": 1,
+ "skipped_by_design_count": 0,
+ "stale_routines": 0,
+ "never_delivered": [],
+ "not_yet_fired": [],
+ "written_off": [],
+ "skipped_by_design": [],
+ "roster_gap": [],
+ "gaps": [
+  {
+   "routine": "13-macro-calendar-midweek",
+   "path": "macro-calendar/2026-11-11-midweek.md",
+   "label": "MISSING",
+   "cause": "platform_500",
+   "gap_age_hours": 17.1,
+   "streak": 1
   },
-  "skipped_by_design": [],
-  "skipped_by_design_count": 0,
-  "stale_routines": 0,
-  "written_off": []
+  {
+   "routine": "20-eod-watchlist-csv",
+   "path": "us-eod/2026-11-11.csv",
+   "label": "stalled",
+   "cause": "slow_run",
+   "gap_age_hours": 15.1,
+   "streak": 0
+  }
+ ],
+ "routines": {
+  "01-weekly-mcp-health-check": {
+   "routine": "01-weekly-mcp-health-check",
+   "state": "not_due",
+   "streak": 0,
+   "delivery_latency_min": null
+  },
+  "02-asia-pre-market-reactions": {
+   "routine": "02-asia-pre-market-reactions",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 14.4
+  },
+  "04-reversal-bullish-3:55": {
+   "routine": "04-reversal-bullish-3:55",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 37.5
+  },
+  "05-eod-international-daily": {
+   "routine": "05-eod-international-daily",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 14.8
+  },
+  "06-pattern-study-backlog": {
+   "routine": "06-pattern-study-backlog",
+   "state": "not_due",
+   "streak": 0,
+   "delivery_latency_min": null
+  },
+  "07-focus-rvol-09:45": {
+   "routine": "07-focus-rvol-09:45",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 9.9
+  },
+  "08-pre-market-gapper": {
+   "routine": "08-pre-market-gapper",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 5.6
+  },
+  "09-daily-sweep-18:30": {
+   "routine": "09-daily-sweep-18:30",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 11.4
+  },
+  "10-breadth-snapshot": {
+   "routine": "10-breadth-snapshot",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 5.7
+  },
+  "12-cross-asset-correlation": {
+   "routine": "12-cross-asset-correlation",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 3.9
+  },
+  "13-macro-calendar-midweek": {
+   "routine": "13-macro-calendar-midweek",
+   "state": "missing",
+   "streak": 1,
+   "delivery_latency_min": null
+  },
+  "14-macro-calendar-week-ahead": {
+   "routine": "14-macro-calendar-week-ahead",
+   "state": "not_due",
+   "streak": 0,
+   "delivery_latency_min": null
+  },
+  "15-earnings-reaction-scanner": {
+   "routine": "15-earnings-reaction-scanner",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 26.4
+  },
+  "15b-earnings-reaction-settlement": {
+   "routine": "15b-earnings-reaction-settlement",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 3.3
+  },
+  "16-unusual-options-flow": {
+   "routine": "16-unusual-options-flow",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 1.4
+  },
+  "17-us-stocks-in-play": {
+   "routine": "17-us-stocks-in-play",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 33.3
+  },
+  "17-us-stocks-in-play-open": {
+   "routine": "17-us-stocks-in-play-open",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 18.0
+  },
+  "19-earnings-reminder-daily": {
+   "routine": "19-earnings-reminder-daily",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 14.8
+  },
+  "20-eod-watchlist-csv": {
+   "routine": "20-eod-watchlist-csv",
+   "state": "delivered_late",
+   "streak": 0,
+   "delivery_latency_min": 46.1
+  },
+  "22-weekly-market-recap-preview": {
+   "routine": "22-weekly-market-recap-preview",
+   "state": "not_due",
+   "streak": 0,
+   "delivery_latency_min": null
+  },
+  "23-agentic-post-market-brief": {
+   "routine": "23-agentic-post-market-brief",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 10.7
+  },
+  "25-ntrt-gap-brief-daily": {
+   "routine": "25-ntrt-gap-brief-daily",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 26.6
+  },
+  "26-agentic-pre-market-brief": {
+   "routine": "26-agentic-pre-market-brief",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 15.2
+  },
+  "26b-agentic-pre-market-brief-refresh": {
+   "routine": "26b-agentic-pre-market-brief-refresh",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 13.0
+  },
+  "92a-preopen-catalyst-capture": {
+   "routine": "92a-preopen-catalyst-capture",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 27.2
+  },
+  "92b-preopen-catalyst-capture": {
+   "routine": "92b-preopen-catalyst-capture",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 7.2
+  }
+ },
+ "audit_status": "gaps_found"
 }
