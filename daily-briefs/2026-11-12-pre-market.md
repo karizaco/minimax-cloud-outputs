@@ -17,7 +17,7 @@ degraded_sources: 1
 
 ## Bottom line
 
-1. **The one setup** - KYTX (Kyverna Therapeutics) is the day's one sourced long: it completed its rolling BLA for miv-cel in stiff person syndrome with a priority-review request, and at **+21.09%** it is a long on a break of its pre-market high **6.20**; invalidated by a trade back to/below prior close **5.12**.
+1. **The one setup** - KYTX (Kyverna Therapeutics), the best of a weak set: its rolling BLA for miv-cel in stiff person syndrome is complete with a priority-review request, and at **+21.09%** it holds its pre-market high **6.20** - a long on a break of 6.20, invalidated by a trade back to/below prior close **5.12**. Nothing cleared the full filter today (a sourced catalyst, the gap holding at the high, and at least 5% of ADV): KYTX prints on 3.98% of ADV, so size it down and do not add to it.
 2. **The one risk** - NVDA's board met late Wednesday to decide Jensen Huang's future and announced **no decision**, so the AI complex is de-rating into an unresolved binary: NVDA is **-8.42%** at **159.10** against a prior close of **173.73**, and NQ futures are **-1.35%** against **ES -0.72%**.
 3. **The one thing to watch** - NBIS at **133.77**, **-13.52%** pre-market with its 08:00 ET earnings call still running: FY2027 capex of **$40-45bn** against a market that expected $28.8bn is the number that reprices the whole neocloud leg, and a break of the pre-market low **130.50** says it is still being repriced.
 
@@ -100,14 +100,14 @@ Leader and corroborators, with the levels that decide each setup:
 
 | Ticker | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|
-| NVDA | 173.73 | 159.10 | -8.42% | 158.54–164.85 | prior close 173.73 | below PM low 158.54 |
-| NVDL | 20.40 | 16.96 | -16.86% | 16.81–18.27 | prior close 20.40 | below PM low 16.81 |
-| AAOI | 55.86 | 51.63 | -7.57% | 51.30–54.41 | prior close 55.86 | below PM low 51.30 |
-| ALLT | 8.97 | 8.17 | -8.92% | 8.17–8.96 | prior close 8.97 | below PM low 8.17 |
-| AXTI | 46.97 | 43.70 | -6.96% | 43.08–46.00 | prior close 46.97 | below PM low 43.08 |
-| LITE | 648.06 | 614.80 | -5.13% | 610.11–635.20 | prior close 648.06 | below PM low 610.11 |
-| COHR | 234.51 | 220.50 | -5.97% | 219.75–228.99 | prior close 234.51 | below PM low 219.75 |
-| CIEN | 296.04 | 280.01 | -5.41% | 280.01–289.80 | prior close 296.04 | below PM low 280.01 |
+| NVDA | 173.73 | 159.10 | -8.42% | 158.54–164.85 | prior close 173.73 | below PM low 158.54 | yes |
+| NVDL | 20.40 | 16.96 | -16.86% | 16.81–18.27 | prior close 20.40 | below PM low 16.81 | no |
+| AAOI | 55.86 | 51.63 | -7.57% | 51.30–54.41 | prior close 55.86 | below PM low 51.30 | no |
+| ALLT | 8.97 | 8.17 | -8.92% | 8.17–8.96 | prior close 8.97 | below PM low 8.17 | no |
+| AXTI | 46.97 | 43.70 | -6.96% | 43.08–46.00 | prior close 46.97 | below PM low 43.08 | no |
+| LITE | 648.06 | 614.80 | -5.13% | 610.11–635.20 | prior close 648.06 | below PM low 610.11 | no |
+| COHR | 234.51 | 220.50 | -5.97% | 219.75–228.99 | prior close 234.51 | below PM low 219.75 | no |
+| CIEN | 296.04 | 280.01 | -5.41% | 280.01–289.80 | prior close 296.04 | below PM low 280.01 | no |
 
 Sources: https://www.heraldsun.com/news/nation-world/world/article318038158.html · https://amp.dw.com/en/nvidia-board-reportedly-weighs-ousting-huang-amid-alleged-affairs-with-exec-and-suspected-chinese-spy/a-79925002 · https://thenextweb.com/news/nvidia-board-meeting-jensen-huang-ouster-no-decision
 
@@ -121,12 +121,12 @@ Leader and corroborators, with the levels that decide each setup:
 
 | Ticker | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|
-| NBIS | 154.69 | 133.77 | -13.52% | 130.50–164.73 | prior close 154.69 | below PM low 130.50 |
-| CRWV | 60.77 | 54.60 | -10.15% | 54.05–58.46 | prior close 60.77 | below PM low 54.05 |
-| BRUN | 7.38 | 6.22 | -15.72% | 6.02–7.75 | prior close 7.38 | below PM low 6.02 |
-| EROC | 8.83 | 7.86 | -10.99% | 7.80–9.20 | prior close 8.83 | below PM low 7.80 |
-| SHAZ | 26.42 | 23.50 | -11.05% | 22.44–26.69 | prior close 26.42 | below PM low 22.44 |
-| NUAI | 2.33 | 2.08 | -10.91% | 2.03–2.28 | prior close 2.33 | below PM low 2.03 |
+| NBIS | 154.69 | 133.77 | -13.52% | 130.50–164.73 | prior close 154.69 | below PM low 130.50 | yes |
+| CRWV | 60.77 | 54.60 | -10.15% | 54.05–58.46 | prior close 60.77 | below PM low 54.05 | yes |
+| BRUN | 7.38 | 6.22 | -15.72% | 6.02–7.75 | prior close 7.38 | below PM low 6.02 | yes |
+| EROC | 8.83 | 7.86 | -10.99% | 7.80–9.20 | prior close 8.83 | below PM low 7.80 | yes |
+| SHAZ | 26.42 | 23.50 | -11.05% | 22.44–26.69 | prior close 26.42 | below PM low 22.44 | no |
+| NUAI | 2.33 | 2.08 | -10.91% | 2.03–2.28 | prior close 2.33 | below PM low 2.03 | no |
 
 Sources: https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html · https://www.moomoo.com/news/post/1004440849/stock-price-plunges-nebius-nbisus-full-year-revenue-guidance-misses · https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html · https://investors.coreweave.com/financials/quarterly-results/default.aspx
 
@@ -140,15 +140,15 @@ Leader and corroborators, with the levels that decide each setup:
 
 | Ticker | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|
-| CDNL | 14.99 | 8.86 | -40.89% | 8.65–15.00 | prior close 14.99 | below PM low 8.65 |
-| PSFE | 6.82 | 5.00 | -26.69% | 4.65–6.65 | prior close 6.82 | below PM low 4.65 |
-| NIQ | 21.06 | 17.06 | -19.02% | 17.06–21.06 | prior close 21.06 | below PM low 17.06 |
-| BZ | 16.72 | 13.90 | -16.87% | 13.44–16.65 | prior close 16.72 | below PM low 13.44 |
-| EYE | 18.09 | 15.70 | -13.21% | 14.99–17.90 | prior close 18.09 | below PM low 14.99 |
-| TE | 2.13 | 1.89 | -11.27% | 1.81–2.17 | prior close 2.13 | below PM low 1.81 |
-| ENVX | 2.53 | 2.25 | -10.90% | 2.23–2.63 | prior close 2.53 | below PM low 2.23 |
-| CTVA | 12.14 | 10.92 | -10.01% | 10.87–11.34 | prior close 12.14 | below PM low 10.87 |
-| YETI | 42.79 | 39.20 | -8.39% | 37.98–42.00 | prior close 42.79 | below PM low 37.98 |
+| CDNL | 14.99 | 8.86 | -40.89% | 8.65–15.00 | prior close 14.99 | below PM low 8.65 | yes |
+| PSFE | 6.82 | 5.00 | -26.69% | 4.65–6.65 | prior close 6.82 | below PM low 4.65 | yes |
+| NIQ | 21.06 | 17.06 | -19.02% | 17.06–21.06 | prior close 21.06 | below PM low 17.06 | no |
+| BZ | 16.72 | 13.90 | -16.87% | 13.44–16.65 | prior close 16.72 | below PM low 13.44 | no |
+| EYE | 18.09 | 15.70 | -13.21% | 14.99–17.90 | prior close 18.09 | below PM low 14.99 | yes |
+| TE | 2.13 | 1.89 | -11.27% | 1.81–2.17 | prior close 2.13 | below PM low 1.81 | no |
+| ENVX | 2.53 | 2.25 | -10.90% | 2.23–2.63 | prior close 2.53 | below PM low 2.23 | no |
+| CTVA | 12.14 | 10.92 | -10.01% | 10.87–11.34 | prior close 12.14 | below PM low 10.87 | yes |
+| YETI | 42.79 | 39.20 | -8.39% | 37.98–42.00 | prior close 42.79 | below PM low 37.98 | no |
 
 Sources: https://finance.yahoo.com/markets/stocks/articles/cardinal-infrastructure-group-inc-reports-113500730.html · https://sg.finance.yahoo.com/news/cardinal-infrastructure-stock-tumbles-33-123453265.html · https://ph.investing.com/news/earnings/paysafe-tumbles-30-on-earnings-miss-and-weak-guidance-2694755 · https://www.earningswhispers.com/epsdetails/CTVA/202609 · https://247wallst.com/cards/corteva-q3-2026-earnings-ctva-01m768gvd40h10ktf6jcwt4q4c
 
@@ -160,17 +160,17 @@ Leader and corroborators, with the levels that decide each setup:
 
 | Ticker | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|
-| MSTR | 122.35 | 114.43 | -6.47% | 113.98–117.90 | prior close 122.35 | below PM low 113.98 |
-| CIFR | 7.11 | 6.62 | -6.92% | 6.60–7.00 | prior close 7.11 | below PM low 6.60 |
-| IREN | 20.84 | 19.43 | -6.77% | 19.17–20.45 | prior close 20.84 | below PM low 19.17 |
-| MARA | 7.66 | 7.23 | -5.61% | 7.21–7.52 | prior close 7.66 | below PM low 7.21 |
-| CORZ | 14.57 | 13.75 | -5.63% | 13.70–14.42 | prior close 14.57 | below PM low 13.70 |
-| HUT | 61.06 | 57.90 | -5.18% | 57.50–60.33 | prior close 61.06 | below PM low 57.50 |
-| WULF | 13.36 | 12.68 | -5.09% | 12.60–13.23 | prior close 13.36 | below PM low 12.60 |
-| CLSK | 6.91 | 6.57 | -4.88% | 6.52–6.79 | prior close 6.91 | below PM low 6.52 |
-| RIOT | 18.28 | 17.40 | -4.81% | 17.25–17.99 | prior close 18.28 | below PM low 17.25 |
-| COIN | 136.27 | 130.47 | -4.26% | 129.73–133.22 | prior close 136.27 | below PM low 129.73 |
-| BTBT | 0.79 | 0.77 | -3.38% | 0.72–0.80 | prior close 0.79 | below PM low 0.72 |
+| MSTR | 122.35 | 114.43 | -6.47% | 113.98–117.90 | prior close 122.35 | below PM low 113.98 | yes |
+| CIFR | 7.11 | 6.62 | -6.92% | 6.60–7.00 | prior close 7.11 | below PM low 6.60 | no |
+| IREN | 20.84 | 19.43 | -6.77% | 19.17–20.45 | prior close 20.84 | below PM low 19.17 | no |
+| MARA | 7.66 | 7.23 | -5.61% | 7.21–7.52 | prior close 7.66 | below PM low 7.21 | no |
+| CORZ | 14.57 | 13.75 | -5.63% | 13.70–14.42 | prior close 14.57 | below PM low 13.70 | no |
+| HUT | 61.06 | 57.90 | -5.18% | 57.50–60.33 | prior close 61.06 | below PM low 57.50 | no |
+| WULF | 13.36 | 12.68 | -5.09% | 12.60–13.23 | prior close 13.36 | below PM low 12.60 | no |
+| CLSK | 6.91 | 6.57 | -4.88% | 6.52–6.79 | prior close 6.91 | below PM low 6.52 | no |
+| RIOT | 18.28 | 17.40 | -4.81% | 17.25–17.99 | prior close 18.28 | below PM low 17.25 | no |
+| COIN | 136.27 | 130.47 | -4.26% | 129.73–133.22 | prior close 136.27 | below PM low 129.73 | no |
+| BTBT | 0.79 | 0.77 | -3.38% | 0.72–0.80 | prior close 0.79 | below PM low 0.72 | no |
 
 Sources: https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html
 
@@ -184,12 +184,12 @@ Leader and corroborators, with the levels that decide each setup:
 
 | Ticker | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|
-| KYTX | 5.12 | 6.20 | +21.09% | 4.84–6.20 | prior close 5.12 | back to/below prior close 5.12 |
-| ENGN | 1.80 | 1.93 | +7.22% | 1.76–2.04 | prior close 1.80 | back to/below prior close 1.80 |
-| NGEN | 1.35 | 1.40 | +3.70% | 1.35–1.66 | prior close 1.35 | back to/below prior close 1.35 |
-| CAPR | 11.22 | 10.92 | -2.71% | 10.90–11.21 | prior close 11.22 | below PM low 10.90 |
-| CRMD | 5.30 | 5.15 | -2.83% | 5.14–5.92 | prior close 5.30 | below PM low 5.14 |
-| ABSI | 10.12 | 9.36 | -7.51% | 9.20–9.99 | prior close 10.12 | below PM low 9.20 |
+| KYTX | 5.12 | 6.20 | +21.09% | 4.84–6.20 | prior close 5.12 | back to/below prior close 5.12 | yes |
+| ENGN | 1.80 | 1.93 | +7.22% | 1.76–2.04 | prior close 1.80 | back to/below prior close 1.80 | no |
+| NGEN | 1.35 | 1.40 | +3.70% | 1.35–1.66 | prior close 1.35 | back to/below prior close 1.35 | no |
+| CAPR | 11.22 | 10.92 | -2.71% | 10.90–11.21 | prior close 11.22 | below PM low 10.90 | yes |
+| CRMD | 5.30 | 5.15 | -2.83% | 5.14–5.92 | prior close 5.30 | below PM low 5.14 | yes |
+| ABSI | 10.12 | 9.36 | -7.51% | 9.20–9.99 | prior close 10.12 | below PM low 9.20 | no |
 
 Sources: https://www.globenewswire.com/news-release/2026/11/12/3401507/0/en/kyverna-therapeutics-announces-completion-of-bla-submission-for-miv-cel-in-stiff-person-syndrome-and-reports-third-quarter-2026-financial-results.html · https://ir.kyvernatx.com/news-releases
 
@@ -203,14 +203,14 @@ Leader and corroborators, with the levels that decide each setup:
 
 | Ticker | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|
-| LUNR | 12.18 | 13.57 | +11.42% | 11.91–14.08 | prior close 12.18 | back to/below prior close 12.18 |
-| TTEK | 37.61 | 41.80 | +11.14% | 40.35–41.95 | prior close 37.61 | back to/below prior close 37.61 |
-| CURI | 2.37 | 2.74 | +15.61% | 2.68–2.81 | prior close 2.37 | back to/below prior close 2.37 |
-| HUBS | 202.88 | 220.00 | +8.44% | 190.00–223.00 | prior close 202.88 | back to/below prior close 202.88 |
-| FIGR | 24.19 | 26.15 | +8.10% | 23.91–27.32 | prior close 24.19 | back to/below prior close 24.19 |
-| FRMI | 1.81 | 1.94 | +7.18% | 1.68–2.22 | prior close 1.81 | back to/below prior close 1.81 |
-| CLBT | 12.70 | 13.63 | +7.30% | 12.80–13.73 | prior close 12.70 | back to/below prior close 12.70 |
-| CHA | 12.33 | 13.24 | +7.38% | 12.30–13.25 | prior close 12.33 | back to/below prior close 12.33 |
+| LUNR | 12.18 | 13.57 | +11.42% | 11.91–14.08 | prior close 12.18 | back to/below prior close 12.18 | yes |
+| TTEK | 37.61 | 41.80 | +11.14% | 40.35–41.95 | prior close 37.61 | back to/below prior close 37.61 | yes |
+| CURI | 2.37 | 2.74 | +15.61% | 2.68–2.81 | prior close 2.37 | back to/below prior close 2.37 | no |
+| HUBS | 202.88 | 220.00 | +8.44% | 190.00–223.00 | prior close 202.88 | back to/below prior close 202.88 | no |
+| FIGR | 24.19 | 26.15 | +8.10% | 23.91–27.32 | prior close 24.19 | back to/below prior close 24.19 | no |
+| FRMI | 1.81 | 1.94 | +7.18% | 1.68–2.22 | prior close 1.81 | back to/below prior close 1.81 | yes |
+| CLBT | 12.70 | 13.63 | +7.30% | 12.80–13.73 | prior close 12.70 | back to/below prior close 12.70 | no |
+| CHA | 12.33 | 13.24 | +7.38% | 12.30–13.25 | prior close 12.33 | back to/below prior close 12.33 | no |
 
 Sources: https://www.rttnews.com/3713766/nebius-group-n-v-q3-26-earnings-conference-call-at-8-00-am-et.aspx?type=wse
 
@@ -220,26 +220,26 @@ The ±3% pre-market band held **199 gainers and 512 decliners** at 08:35:54 ET. 
 
 | Ticker | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|
-| KYTX | 5.12 | 6.20 | +21.09% | 4.84–6.20 | prior close 5.12 | back to/below prior close 5.12 |
-| CURI | 2.37 | 2.74 | +15.61% | 2.68–2.81 | prior close 2.37 | back to/below prior close 2.37 |
-| LUNR | 12.18 | 13.57 | +11.42% | 11.91–14.08 | prior close 12.18 | back to/below prior close 12.18 |
-| TTEK | 37.61 | 41.80 | +11.14% | 40.35–41.95 | prior close 37.61 | back to/below prior close 37.61 |
-| HUBS | 202.88 | 220.00 | +8.44% | 190.00–223.00 | prior close 202.88 | back to/below prior close 202.88 |
-| FIGR | 24.19 | 26.15 | +8.10% | 23.91–27.32 | prior close 24.19 | back to/below prior close 24.19 |
-| CHA | 12.33 | 13.24 | +7.38% | 12.30–13.25 | prior close 12.33 | back to/below prior close 12.33 |
-| CLBT | 12.70 | 13.63 | +7.30% | 12.80–13.73 | prior close 12.70 | back to/below prior close 12.70 |
-| ENGN | 1.80 | 1.93 | +7.22% | 1.76–2.04 | prior close 1.80 | back to/below prior close 1.80 |
-| FRMI | 1.81 | 1.94 | +7.18% | 1.68–2.22 | prior close 1.81 | back to/below prior close 1.81 |
-| AVEX | 12.13 | 12.96 | +6.84% | 12.90–13.95 | prior close 12.13 | back to/below prior close 12.13 |
-| LFTO | 18.55 | 19.75 | +6.47% | 18.91–19.75 | prior close 18.55 | back to/below prior close 18.55 |
-| LGN | 37.09 | 39.00 | +5.15% | 37.90–39.99 | prior close 37.09 | back to/below prior close 37.09 |
-| HOS | 5.57 | 5.84 | +4.85% | 5.61–5.84 | prior close 5.57 | back to/below prior close 5.57 |
-| MBGL | 19.92 | 20.85 | +4.69% | 19.73–21.13 | prior close 19.92 | back to/below prior close 19.92 |
-| BSBR | 4.90 | 5.12 | +4.49% | 4.97–5.16 | prior close 4.90 | back to/below prior close 4.90 |
-| GSM | 2.87 | 2.99 | +4.18% | 2.90–2.99 | prior close 2.87 | back to/below prior close 2.87 |
-| FIP | 4.38 | 4.55 | +3.88% | 4.42–4.55 | prior close 4.38 | back to/below prior close 4.38 |
-| SSYS | 6.54 | 6.79 | +3.82% | 6.65–7.11 | prior close 6.54 | back to/below prior close 6.54 |
-| NGEN | 1.35 | 1.40 | +3.70% | 1.35–1.66 | prior close 1.35 | back to/below prior close 1.35 |
+| KYTX | 5.12 | 6.20 | +21.09% | 4.84–6.20 | prior close 5.12 | back to/below prior close 5.12 | yes |
+| CURI | 2.37 | 2.74 | +15.61% | 2.68–2.81 | prior close 2.37 | back to/below prior close 2.37 | no |
+| LUNR | 12.18 | 13.57 | +11.42% | 11.91–14.08 | prior close 12.18 | back to/below prior close 12.18 | yes |
+| TTEK | 37.61 | 41.80 | +11.14% | 40.35–41.95 | prior close 37.61 | back to/below prior close 37.61 | yes |
+| HUBS | 202.88 | 220.00 | +8.44% | 190.00–223.00 | prior close 202.88 | back to/below prior close 202.88 | no |
+| FIGR | 24.19 | 26.15 | +8.10% | 23.91–27.32 | prior close 24.19 | back to/below prior close 24.19 | no |
+| CHA | 12.33 | 13.24 | +7.38% | 12.30–13.25 | prior close 12.33 | back to/below prior close 12.33 | no |
+| CLBT | 12.70 | 13.63 | +7.30% | 12.80–13.73 | prior close 12.70 | back to/below prior close 12.70 | no |
+| ENGN | 1.80 | 1.93 | +7.22% | 1.76–2.04 | prior close 1.80 | back to/below prior close 1.80 | no |
+| FRMI | 1.81 | 1.94 | +7.18% | 1.68–2.22 | prior close 1.81 | back to/below prior close 1.81 | yes |
+| AVEX | 12.13 | 12.96 | +6.84% | 12.90–13.95 | prior close 12.13 | back to/below prior close 12.13 | yes |
+| LFTO | 18.55 | 19.75 | +6.47% | 18.91–19.75 | prior close 18.55 | back to/below prior close 18.55 | no |
+| LGN | 37.09 | 39.00 | +5.15% | 37.90–39.99 | prior close 37.09 | back to/below prior close 37.09 | no |
+| HOS | 5.57 | 5.84 | +4.85% | 5.61–5.84 | prior close 5.57 | back to/below prior close 5.57 | no |
+| MBGL | 19.92 | 20.85 | +4.69% | 19.73–21.13 | prior close 19.92 | back to/below prior close 19.92 | no |
+| BSBR | 4.90 | 5.12 | +4.49% | 4.97–5.16 | prior close 4.90 | back to/below prior close 4.90 | no |
+| GSM | 2.87 | 2.99 | +4.18% | 2.90–2.99 | prior close 2.87 | back to/below prior close 2.87 | no |
+| FIP | 4.38 | 4.55 | +3.88% | 4.42–4.55 | prior close 4.38 | back to/below prior close 4.38 | no |
+| SSYS | 6.54 | 6.79 | +3.82% | 6.65–7.11 | prior close 6.54 | back to/below prior close 6.54 | no |
+| NGEN | 1.35 | 1.40 | +3.70% | 1.35–1.66 | prior close 1.35 | back to/below prior close 1.35 | no |
 
 ### Thin tape - passes Gate A, fails the $100m quality floor
 
@@ -247,18 +247,18 @@ Real prints on thin books. These never top a headline table; they are published 
 
 | Ticker | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|
-| PLCE | 0.20 | 1.14 | +474.31% | 0.56–1.37 | prior close 0.20 | back to/below prior close 0.20 |
-| POAS | 0.90 | 1.78 | +97.62% | 1.66–3.19 | prior close 0.90 | back to/below prior close 0.90 |
-| ADXN | 2.89 | 4.75 | +64.36% | 4.45–7.05 | prior close 2.89 | back to/below prior close 2.89 |
-| PARA | 0.07 | 0.11 | +58.64% | 0.07–0.15 | prior close 0.07 | back to/below prior close 0.07 |
-| ICMB | 0.62 | 0.95 | +54.51% | 0.71–1.16 | prior close 0.62 | back to/below prior close 0.62 |
-| CENN | 0.15 | 0.20 | +38.35% | 0.19–0.34 | prior close 0.15 | back to/below prior close 0.15 |
-| BDMD | 0.10 | 0.14 | +34.62% | 0.10–0.15 | prior close 0.10 | back to/below prior close 0.10 |
-| DBGI | 0.15 | 0.19 | +31.01% | 0.15–0.41 | prior close 0.15 | back to/below prior close 0.15 |
-| HAIN | 0.13 | 0.14 | +8.72% | 0.13–0.15 | prior close 0.13 | back to/below prior close 0.13 |
-| DPU | 1.59 | 1.68 | +5.66% | 1.56–4.00 | prior close 1.59 | back to/below prior close 1.59 |
-| MERC | 0.23 | 0.25 | +5.43% | 0.22–0.29 | prior close 0.23 | back to/below prior close 0.23 |
-| CRE | 2.60 | 2.69 | +3.46% | 2.35–3.59 | prior close 2.60 | back to/below prior close 2.60 |
+| PLCE | 0.20 | 1.14 | +474.31% | 0.56–1.37 | prior close 0.20 | back to/below prior close 0.20 | no |
+| POAS | 0.90 | 1.78 | +97.62% | 1.66–3.19 | prior close 0.90 | back to/below prior close 0.90 | no |
+| ADXN | 2.89 | 4.75 | +64.36% | 4.45–7.05 | prior close 2.89 | back to/below prior close 2.89 | no |
+| PARA | 0.07 | 0.11 | +58.64% | 0.07–0.15 | prior close 0.07 | back to/below prior close 0.07 | no |
+| ICMB | 0.62 | 0.95 | +54.51% | 0.71–1.16 | prior close 0.62 | back to/below prior close 0.62 | no |
+| CENN | 0.15 | 0.20 | +38.35% | 0.19–0.34 | prior close 0.15 | back to/below prior close 0.15 | no |
+| BDMD | 0.10 | 0.14 | +34.62% | 0.10–0.15 | prior close 0.10 | back to/below prior close 0.10 | no |
+| DBGI | 0.15 | 0.19 | +31.01% | 0.15–0.41 | prior close 0.15 | back to/below prior close 0.15 | no |
+| HAIN | 0.13 | 0.14 | +8.72% | 0.13–0.15 | prior close 0.13 | back to/below prior close 0.13 | no |
+| DPU | 1.59 | 1.68 | +5.66% | 1.56–4.00 | prior close 1.59 | back to/below prior close 1.59 | no |
+| MERC | 0.23 | 0.25 | +5.43% | 0.22–0.29 | prior close 0.23 | back to/below prior close 0.23 | no |
+| CRE | 2.60 | 2.69 | +3.46% | 2.35–3.59 | prior close 2.60 | back to/below prior close 2.60 | no |
 
 **The largest prints in this block are not market moves.** PLCE (The Children's Place) is **+474.31%** on 116,513,435 pre-market shares against a $4.4m market cap, and PARA carries a **$47,097** market cap on 346,978,620 shares - a market cap of that size is a shell by arithmetic, not a market. ADXN, POAS, ICMB, CENN and DBGI sit in the same band. These are recap, reverse-split, shell and micro-float events, **not themes**, and no catalyst is claimed for any of them here.
 
@@ -270,16 +270,16 @@ Context, not pre-market. The move column is the prior session's own change again
 
 | Ticker | Yesterday's % | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|---||
-| FRMI | +17.53 | 1.81 | 1.94 | +7.18% | 1.68–2.22 | prior close 1.81 | back to/below prior close 1.81 |
-| BRUN | +15.49 | 7.38 | 6.22 | -15.72% | 6.02–7.75 | prior close 7.38 | below PM low 6.02 |
-| NBIS | +15.44 | 154.69 | 133.77 | -13.52% | 130.50–164.73 | prior close 154.69 | below PM low 130.50 |
-| SHAZ | +13.29 | 26.42 | 23.50 | -11.05% | 22.44–26.69 | prior close 26.42 | below PM low 22.44 |
-| EROC | +12.20 | 8.83 | 7.86 | -10.99% | 7.80–9.20 | prior close 8.83 | below PM low 7.80 |
-| ENGN | +7.78 | 1.80 | 1.93 | +7.22% | 1.76–2.04 | prior close 1.80 | back to/below prior close 1.80 |
-| TTEK | -7.48 | 37.61 | 41.80 | +11.14% | 40.35–41.95 | prior close 37.61 | back to/below prior close 37.61 |
-| EYE | -4.84 | 18.09 | 15.70 | -13.21% | 14.99–17.90 | prior close 18.09 | below PM low 14.99 |
-| PSFE | -4.21 | 6.82 | 5.00 | -26.69% | 4.65–6.65 | prior close 6.82 | below PM low 4.65 |
-| FIGR | +3.64 | 24.19 | 26.15 | +8.10% | 23.91–27.32 | prior close 24.19 | back to/below prior close 24.19 |
+| FRMI | +17.53 | 1.81 | 1.94 | +7.18% | 1.68–2.22 | prior close 1.81 | back to/below prior close 1.81 | yes |
+| BRUN | +15.49 | 7.38 | 6.22 | -15.72% | 6.02–7.75 | prior close 7.38 | below PM low 6.02 | yes |
+| NBIS | +15.44 | 154.69 | 133.77 | -13.52% | 130.50–164.73 | prior close 154.69 | below PM low 130.50 | yes |
+| SHAZ | +13.29 | 26.42 | 23.50 | -11.05% | 22.44–26.69 | prior close 26.42 | below PM low 22.44 | no |
+| EROC | +12.20 | 8.83 | 7.86 | -10.99% | 7.80–9.20 | prior close 8.83 | below PM low 7.80 | yes |
+| ENGN | +7.78 | 1.80 | 1.93 | +7.22% | 1.76–2.04 | prior close 1.80 | back to/below prior close 1.80 | no |
+| TTEK | -7.48 | 37.61 | 41.80 | +11.14% | 40.35–41.95 | prior close 37.61 | back to/below prior close 37.61 | yes |
+| EYE | -4.84 | 18.09 | 15.70 | -13.21% | 14.99–17.90 | prior close 18.09 | below PM low 14.99 | yes |
+| PSFE | -4.21 | 6.82 | 5.00 | -26.69% | 4.65–6.65 | prior close 6.82 | below PM low 4.65 | yes |
+| FIGR | +3.64 | 24.19 | 26.15 | +8.10% | 23.91–27.32 | prior close 24.19 | back to/below prior close 24.19 | no |
 
 ## 4. Top losers - top 10 market-wide
 
@@ -287,16 +287,16 @@ Context, not pre-market. The move column is the prior session's own change again
 
 | Ticker | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|
-| CDNL | 14.99 | 8.86 | -40.89% | 8.65–15.00 | prior close 14.99 | below PM low 8.65 |
-| PSFE | 6.82 | 5.00 | -26.69% | 4.65–6.65 | prior close 6.82 | below PM low 4.65 |
-| NIQ | 21.06 | 17.06 | -19.02% | 17.06–21.06 | prior close 21.06 | below PM low 17.06 |
-| BZ | 16.72 | 13.90 | -16.87% | 13.44–16.65 | prior close 16.72 | below PM low 13.44 |
-| BRUN | 7.38 | 6.22 | -15.72% | 6.02–7.75 | prior close 7.38 | below PM low 6.02 |
-| NBIS | 154.69 | 133.77 | -13.52% | 130.50–164.73 | prior close 154.69 | below PM low 130.50 |
-| EYE | 18.09 | 15.70 | -13.21% | 14.99–17.90 | prior close 18.09 | below PM low 14.99 |
-| TE | 2.13 | 1.89 | -11.27% | 1.81–2.17 | prior close 2.13 | below PM low 1.81 |
-| SHAZ | 26.42 | 23.50 | -11.05% | 22.44–26.69 | prior close 26.42 | below PM low 22.44 |
-| EROC | 8.83 | 7.86 | -10.99% | 7.80–9.20 | prior close 8.83 | below PM low 7.80 |
+| CDNL | 14.99 | 8.86 | -40.89% | 8.65–15.00 | prior close 14.99 | below PM low 8.65 | yes |
+| PSFE | 6.82 | 5.00 | -26.69% | 4.65–6.65 | prior close 6.82 | below PM low 4.65 | yes |
+| NIQ | 21.06 | 17.06 | -19.02% | 17.06–21.06 | prior close 21.06 | below PM low 17.06 | no |
+| BZ | 16.72 | 13.90 | -16.87% | 13.44–16.65 | prior close 16.72 | below PM low 13.44 | no |
+| BRUN | 7.38 | 6.22 | -15.72% | 6.02–7.75 | prior close 7.38 | below PM low 6.02 | yes |
+| NBIS | 154.69 | 133.77 | -13.52% | 130.50–164.73 | prior close 154.69 | below PM low 130.50 | yes |
+| EYE | 18.09 | 15.70 | -13.21% | 14.99–17.90 | prior close 18.09 | below PM low 14.99 | yes |
+| TE | 2.13 | 1.89 | -11.27% | 1.81–2.17 | prior close 2.13 | below PM low 1.81 | no |
+| SHAZ | 26.42 | 23.50 | -11.05% | 22.44–26.69 | prior close 26.42 | below PM low 22.44 | no |
+| EROC | 8.83 | 7.86 | -10.99% | 7.80–9.20 | prior close 8.83 | below PM low 7.80 | yes |
 
 **CDNL** printed -40.89% at 8.86 against a 14.99 prior close on 229,140 pre-market shares, and it is the day's largest loser on a sourced catalyst: Cardinal withdrew FY2026 guidance after adjusted EBITDA margin fell to 4.2% from 17.5%, postponed the Hughes Brothers acquisition to no earlier than June 30 2027, and said its CFO resigned on Nov 9. **PSFE** fell -26.69% on an adjusted EPS miss ($0.44 against $0.55) and FY2026 guidance of $1.45-1.54 against a $2.00 consensus. **NIQ** fell -19.02% and **BZ** -16.87% with no catalyst sourced in this run. **CTVA** fell -10.01% after cutting FY2026 adjusted operating EPS guidance to $0.76-0.80 from $3.60-3.80 on Brazil weakness. **DPC** printed +11.11% at 35.20 but is excluded from the tables: the move printed on 5,141 pre-market shares, below the 10,000-share floor Gate A sets for a $4.73bn cap, so it is an unverifiable print rather than a market.
 
@@ -330,14 +330,14 @@ The published watchlist at `refs/watchlist.yaml` on the outputs repo, carried at
 
 | Ticker | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
 |---|---|---|---|---|---|---|
-| NVDA | 173.73 | 159.10 | -8.42% | 158.54–164.85 | prior close 173.73 | below PM low 158.54 |
-| GLD | 365.17 | 359.38 | -1.59% | 359.09–362.35 | prior close 365.17 | below PM low 359.09 |
-| GOOGL | 293.45 | 291.30 | -0.73% | 290.07–295.29 | prior close 293.45 | below PM low 290.07 |
-| IWM | 283.09 | 281.17 | -0.68% | 280.55–283.28 | prior close 283.09 | below PM low 280.55 |
-| AMZN | 266.17 | 264.47 | -0.64% | 263.16–268.00 | prior close 266.17 | below PM low 263.16 |
-| TLT | 80.92 | 80.40 | -0.64% | 80.34–81.12 | prior close 80.92 | below PM low 80.34 |
-| MSFT | 521.12 | 518.89 | -0.43% | 517.12–522.00 | prior close 521.12 | below PM low 517.12 |
-| AAPL | 355.36 | 356.88 | +0.35% | 355.12–357.46 | prior close 355.36 | back to/below prior close 355.36 |
+| NVDA | 173.73 | 159.10 | -8.42% | 158.54–164.85 | prior close 173.73 | below PM low 158.54 | yes |
+| GLD | 365.17 | 359.38 | -1.59% | 359.09–362.35 | prior close 365.17 | below PM low 359.09 | no |
+| GOOGL | 293.45 | 291.30 | -0.73% | 290.07–295.29 | prior close 293.45 | below PM low 290.07 | no |
+| IWM | 283.09 | 281.17 | -0.68% | 280.55–283.28 | prior close 283.09 | below PM low 280.55 | no |
+| AMZN | 266.17 | 264.47 | -0.64% | 263.16–268.00 | prior close 266.17 | below PM low 263.16 | no |
+| TLT | 80.92 | 80.40 | -0.64% | 80.34–81.12 | prior close 80.92 | below PM low 80.34 | no |
+| MSFT | 521.12 | 518.89 | -0.43% | 517.12–522.00 | prior close 521.12 | below PM low 517.12 | no |
+| AAPL | 355.36 | 356.88 | +0.35% | 355.12–357.46 | prior close 355.36 | back to/below prior close 355.36 | no |
 
 ## 7. Overnight / futures / index / crypto
 
