@@ -364,14 +364,14 @@ Front-month futures and the overnight tape, each with the `as_of` stamp the brid
 | FTSE 100 | 10832.65 | -0.03% | 08:35:29 ET |
 | DAX | 26721.97 | +0.22% | 08:35:29 ET |
 
-The shape of the overnight is the shape of the day: **Nasdaq futures -1.35% against S&P futures -0.72%**, so the damage is concentrated in tech, and the S&P 500's own cash close of 7619.38 (+1.31% on Nov 11) is now below the futures print. Asia is soft at the margin (Hang Seng -2.23%), gold is -2.05% and bitcoin -1.81%, and the 10-year yield is up 5.8bp to 5.056%.
+The shape of the overnight is the shape of the day: **Nasdaq futures -1.35% against S&P futures -0.72%**, so the damage is concentrated in tech. The S&P 500's own Nov 11 cash close was 7619.38 (+1.31%); the futures print of 7585.75 sits 33.63 points below it, so the overnight is giving back about a third of yesterday's rally, and the Nasdaq's futures are giving back more. Asia is soft at the margin (Hang Seng -2.23%), gold is -2.05% and bitcoin -1.81%. The 10-year yield is at 5.056%, up 0.058 on the source's previous close of 4.998.
 
 ## 8. Macro calendar
 
 - **Today, Thursday Nov 12.** Initial jobless claims at 08:30 ET for the Nov 7 week (consensus 195,000, prior 189,000); NAR existing home sales at 10:00 ET for October; the Treasury statement at 14:00 ET for October; the Weekly Economic Index at 11:30 ET.
-- **The macro that is actually moving is not on the release calendar.** The Nvidia board meeting is the event, and the yield is the amplifier: the 10-year at 5.056% is up 5.8bp, which is why a governance headline lands hardest on the highest-duration, highest-multiple part of the market.
+- **The macro that is actually moving is not on the release calendar.** The Nvidia board meeting is the event, and the yield is the amplifier: the 10-year at 5.056% is 5.8bp above its prior close, which is why a governance headline lands hardest on the highest-duration, highest-multiple part of the market.
 - **Friday Nov 13 at 08:30 ET is the next real data point** - the October PPI, with consensus at +0.4% month over month against a +1.3% prior print. Tuesday's October CPI (+0.4% headline, +0.3% core) already pushed traders back to pricing a Federal Reserve hike, so Friday is the confirmation.
-- The BLS calendar carries no US release today, and the US bond market's close is a SIFMA recommendation rather than an exchange rule.
+- The BLS calendar carries no US release today - its November schedule runs CPI on the 10th, nothing on the 12th, PPI on the 13th - and November 12 is an ordinary trading session with no exchange or SIFMA closure.
 - Sources: Scotiabank's Calendar of Economic Release Dates (November 2026), the New York Fed's Economic Indicators Calendar, MarketWatch's US Economic Calendar, and the BLS November 2026 schedule.
 
 ## 9. Earnings today
