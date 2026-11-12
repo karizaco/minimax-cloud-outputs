@@ -1,7 +1,7 @@
 # Earnings reaction scanner — 2026-11-12 (EU settlement pass)
 
 - Cron: `15 12 * * 1-5` America/New_York (weekdays, 12:15 ET)
-- Fire time (ET): 2026-11-12 12:16:05 Thu
+- Fire time (ET): 2026-11-12 12:21:59 Thu
 - Run type: `settlement_pass` — the EU/UK session has closed, so the same rows as
   the 08:00 ET scan are republished with their SETTLED close and move.
 - Source: TradingView public screener; Yahoo chart API as the independent
@@ -41,7 +41,7 @@
 | MTHH | denmark | OMXCOP | 333 | +10.45 | +12.11 | -1.66 | DKK | 4.6x | 301.50 | yahoo_chart_daily | 2026-11-11 | 2026-11-12 | settled | none | 2026-08-27 | — | no catalyst lookup (outside the per-run budget) |
 | WAC | germany | XETR | 20.6 | -10.04 | -9.61 | -0.43 | EUR | 6.4x | 22.90 | yahoo_chart_daily | 2026-11-11 | 2026-11-12 | settled | none | 2026-08-13 | — | no catalyst lookup (outside the per-run budget) |
 | MTRO | uk | LSE | 196 | +9.74 | — | — | GBX | 3.4x | 178.60 | yahoo_chart_daily | 2026-11-11 | 2026-11-12 | settled | none | 2026-08-03 | — | no catalyst lookup (outside the per-run budget) |
-| DMP | germany | XETR | 34.95 | -9.46 | — | — | EUR | 7.1x | 38.60 | yahoo_chart_daily | 2026-11-11 | 2026-11-12 | settled | none | 2026-08-25 | Y | 2026 AGM address and presentation (Nov 11): FY26 underlying EBIT $200.1M, record free cash flow $164.1M, and a trading update showing group same-store sales improving to -4.6% FYTD from -5.8% at the August result |
+| DMP | germany | XETR | 34.95 | -9.46 | — | — | EUR | 7.1x | 38.60 | yahoo_chart_daily | 2026-11-11 | 2026-11-12 | settled | none | 2026-08-25 | — | no catalyst lookup (outside the per-run budget) |
 | XPLRA | norway | OSL | 26.25 | +9.15 | — | — | NOK | 3.0x | 24.05 | yahoo_chart_daily | 2026-11-11 | 2026-11-12 | settled | none | 2026-08-19 | — | no catalyst lookup (outside the per-run budget) |
 | EDV | uk | LSE | 3778 | -8.46 | -6.93 | -1.53 | GBX | 2.9x | 4127.00 | yahoo_chart_daily | 2026-11-11 | 2026-11-12 | settled | none | 2026-11-12 | — | no catalyst lookup (outside the per-run budget) |
 | SIVE | sweden | OMXSTO | 15.94 | -8.39 | -8.33 | -0.06 | SEK | 1.5x | 17.40 | yahoo_chart_daily | 2026-11-11 | 2026-11-12 | settled | none | 2026-08-27 | — | no catalyst lookup (outside the per-run budget) |
@@ -62,11 +62,13 @@
 ## Source health
 
 - scanner_calls: 36 | scanner_errors: 0
-- pipeline_version: 2026-11-11.2
+- pipeline_version: 2026-11-12.2
 - settlement: the EU/UK session is CLOSED at this fire, so every row's `Settle`
   cell reads `settled` and its move is the session's own move.
-- morning_artifact: fetched from the outputs repo (api-token)
-- catalyst_catalog: rebuilt from the morning artifact (13 researched catalysts recovered)
+- morning_artifact: found locally
+- catalyst_catalog: found locally
+- catalyst_merge: region-matched - a row may only use a catalog entry from its OWN
+  region; the same ticker on another venue is a different company and is not used.
 - scan_to_settle: 19 rows compared with the 08:00 ET scan, median drift 1.26pp, max 6.81pp, 12 rows more than 1pp apart
 - reference_close (screener vs Yahoo, resolved BEFORE the table was built): agree=30 mismatch=0 unverified=0 stale_reference=0
 - rows_dropped_stale_ref: 0 | rows_dropped_unresolved_ref: 0
