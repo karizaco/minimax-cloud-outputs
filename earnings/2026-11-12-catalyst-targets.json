@@ -1,0 +1,77 @@
+{
+  "us": [
+    {
+      "name": "EYE",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-12"
+    },
+    {
+      "name": "DPC",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-12"
+    },
+    {
+      "name": "AVEX",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-11"
+    },
+    {
+      "name": "TTEK",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-11"
+    },
+    {
+      "name": "EROC",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-12"
+    }
+  ],
+  "eu": [
+    {
+      "name": "MEKO",
+      "chg": -16.38
+    },
+    {
+      "name": "FG",
+      "chg": 13.42
+    },
+    {
+      "name": "NORBT",
+      "chg": 12.95
+    }
+  ],
+  "au": [
+    {
+      "name": "DMP",
+      "chg": 12.93
+    },
+    {
+      "name": "BOE",
+      "chg": -9.39
+    }
+  ],
+  "apac": [
+    {
+      "name": "UNIX",
+      "market": "thailand",
+      "chg": -7.21
+    },
+    {
+      "name": "TRA",
+      "market": "newzealand",
+      "chg": 5.45
+    },
+    {
+      "name": "C09",
+      "market": "singapore",
+      "chg": -6.74
+    }
+  ],
+  "budget": {
+    "US": 5,
+    "EU": 3,
+    "AU": 2,
+    "APAC": 3
+  },
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-12.md"
+}
