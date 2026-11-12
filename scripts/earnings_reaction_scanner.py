@@ -57,7 +57,7 @@ import json, subprocess, time, datetime, os, sys, re
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-11.2"
+SCRIPT_VERSION = "2026-11-12.2"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -1286,8 +1286,17 @@ def parse_catalyst_file(path):
                 # placeholder instead of publishing an empty cell.
                 if not cells[2]:
                     continue
-                mapping[cells[0]] = {"catalyst": cells[2],
-                                     "earn": cells[3] if cells[3] else "—"}
+                # A TICKER IS NOT A COMPANY. The same three letters can be two
+                # different companies on two venues (DMP on XETR is a German
+                # mortgage bank in EUR; DMP on ASX is an AU consumer name in
+                # AUD). The catalog carries a `Region` column, so the mapping
+                # holds a LIST of entries per ticker and the region decides
+                # which entry a given row may use. Keying on the ticker alone
+                # published one company's catalyst on another's row.
+                mapping.setdefault(cells[0], []).append(
+                    {"catalyst": cells[2],
+                     "earn": cells[3] if cells[3] else "—",
+                     "region": (cells[1] if len(cells) > 1 else "") or ""})
             elif s and not note and not s.startswith("#"):
                 note = s
     return mapping, note
@@ -1495,7 +1504,44 @@ if not os.path.exists(CAT_FILE):
     catalysts, catalyst_note = parse_catalyst_file(CAT_FILE)
 
 
-def catalyst_cell(name):
+# Region labels the catalog may carry, and the row-regions they stand for.
+# The morning run writes its own Region cells, so an alias must still match:
+# a strict string compare would silently drop a researched catalyst whose
+# region was labelled "Europe" instead of "EU". The aliases are deliberately
+# REGION-scoped - they never make one region's ticker usable in another.
+_REGION_ALIASES = {
+    "US": {"US", "USA", "UNITED STATES", "AMERICA"},
+    "EU": {"EU", "EUROPE", "EU/UK", "EUROPEAN", "EU & UK"},
+    "AU": {"AU", "ASX", "AUSTRALIA", "AUSTRALIAN"},
+    "APAC/GULF": {"APAC", "APAC/GULF", "APAC & GULF", "APAC/GULF/MEA", "GULF",
+                  "ASIA-PACIFIC", "ASIA PACIFIC"},
+}
+
+
+def _same_region(catalog_region, row_region):
+    """True when a catalog Region cell denotes the row's own region.
+
+    Both sides are normalised (case, spaces, punctuation) and then compared
+    through the alias table, so "Europe" matches the EU rows and "ASX"
+    matches the AU rows - but an AU row never matches an EU label.
+    """
+    def _norm(s):
+        s = (s or "").strip().upper().replace("-", " ").replace("_", " ")
+        s = " ".join(s.replace("/", " ").split())
+        return s
+    cr, rr = _norm(catalog_region), _norm(row_region)
+    if not cr:
+        return False
+    if cr == rr:
+        return True
+    rr_aliases = _REGION_ALIASES.get(rr, {rr})
+    for canon, aliases in _REGION_ALIASES.items():
+        if cr in aliases and rr in aliases:
+            return True
+    return False
+
+
+def catalyst_cell(name, region=None):
     """The catalyst for a row: from the catalog file, or an honest placeholder.
 
     The verdict follows the RESEARCH, never the other way round. A row whose
@@ -1504,15 +1550,36 @@ def catalyst_cell(name):
     "catalyst lookup not performed", which is a false verdict on 10% of that
     run's researched EU rows. A researched row that found nothing ("no fresh
     catalyst found") IS a verdict and keeps its N.
+
+    WHY THE REGION (2026-11-12). The merge used to key on the TICKER ALONE, so
+    a ticker that exists on two venues inherited whichever entry the catalog
+    held - measured on the 2026-11-12 settlement run: the XETR row for DMP
+    (a German mortgage bank) published the ASX DMP's AGM catalyst verbatim
+    (an AU consumer name, USD, FY26, same-store sales), 1 row of 30. A row may
+    now only use a catalog entry from its OWN region; a ticker that is only in
+    the catalog under another region is a DIFFERENT company and gets the
+    honest placeholder instead of the wrong catalyst.
     """
-    c = catalysts.get(name)
-    if c is None:
+    entries = catalysts.get(name)
+    if entries is None:
         for k, v in catalysts.items():
             if k.upper() == name.upper():
-                c = v
+                entries = v
                 break
-    if c:
-        return c["catalyst"], verdict_for(c["catalyst"], c["earn"])
+    if entries:
+        if region:
+            for e in entries:
+                if _same_region(e["region"], region):
+                    return e["catalyst"], verdict_for(e["catalyst"], e["earn"])
+            # The ticker is in the catalog, but in ANOTHER region: a different
+            # company. Publishing its catalyst here would be a fabricated
+            # attribution, so publish the honest placeholder instead.
+            if not any(e["region"].strip() for e in entries):
+                e = entries[0]
+                return e["catalyst"], verdict_for(e["catalyst"], e["earn"])
+            return "no catalyst lookup (outside the per-run budget)", "—"
+        e = entries[0]
+        return e["catalyst"], verdict_for(e["catalyst"], e["earn"])
     if name in TARGET_SET:
         return "pending catalyst lookup", "—"
     return "no catalyst lookup (outside the per-run budget)", "—"
@@ -1720,7 +1787,7 @@ if SETTLE_MODE:
         d = r0["d"]
         r = r0["ref"]
         rc, rs, ra, sa = ref_cols(r)
-        cat, earn = catalyst_cell(g(d, "name"))
+        cat, earn = catalyst_cell(g(d, "name"), "EU")
         nm = g(d, "name")
         scan_move = _morning.get(nm)
         settled = g(d, "change")
@@ -1744,6 +1811,8 @@ if SETTLE_MODE:
     B(f"  cell reads `settled` and its move is the session's own move.")
     B(f"- morning_artifact: {INPUT_PROV['morning']}")
     B(f"- catalyst_catalog: {INPUT_PROV['catalog']}")
+    B(f"- catalyst_merge: region-matched - a row may only use a catalog entry from its OWN")
+    B(f"  region; the same ticker on another venue is a different company and is not used.")
     B(f"- scan_to_settle: {len(_drifts)} rows compared with the 08:00 ET scan"
       + (f", median drift {sorted(_drifts)[len(_drifts)//2]:.2f}pp, max {max(_drifts):.2f}pp, "
          f"{sum(1 for x in _drifts if x > 1.0)} rows more than 1pp apart"
@@ -1768,7 +1837,7 @@ if SETTLE_MODE:
     B(f"`earnings-reaction mode=settle target=earnings-reactions:{RUN_DATE} "
       f"eu_rows={len(eu_final)} scan_matched={len(_drifts)} "
       f"scan_to_settle_median_pp={sorted(_drifts)[len(_drifts)//2] if _drifts else 'n/a'} "
-      f"catalyst_lookups={len(catalysts)} "
+      f"catalyst_lookups={sum(len(v) for v in catalysts.values())} "
       f"rows_dropped_stale_ref={health['rows_dropped_stale_ref']} "
       f"degraded_sources={len(DEGRADED)}`")
     B("")
@@ -1880,7 +1949,7 @@ A("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
 for sym, c in tagged:
     r = us_ref.get(sym)
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(c["name"])
+    cat, earn = catalyst_cell(c["name"], "US")
     A(f"| {c['name']} | {c['ex']} | {c['close']} | {c['change']:.2f} | "
       f"{pct(c['pm'])} | {pct(c['po'])} | {multiple(headline_move(c), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {c.get('us_tradeable','—')} | {er_cell(c)} | {c['tag']} | {earn} | {cat} |")
@@ -1892,7 +1961,7 @@ A("|---|---|---|---|---|---|---|---|---|---|---|---|")
 for sym, c in quiet[:15]:
     r = us_ref.get(sym)
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(c["name"])
+    cat, earn = catalyst_cell(c["name"], "US")
     A(f"| {c['name']} | {c['ex']} | {c['change']:.2f} | {pct(c['pm'])} | {pct(c['po'])} | "
       f"{multiple(headline_move(c), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {c.get('us_tradeable','—')} | {earn} | {cat} |")
@@ -1907,7 +1976,7 @@ for r0 in eu_final:
     d = r0["d"]
     r = r0["ref"]
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(g(d, "name"))
+    cat, earn = catalyst_cell(g(d, "name"), "EU")
     A(f"| {g(d,'name')} | {r0['market']} | {g(d,'exchange')} | {g(d,'close')} | "
       f"{g(d,'change'):+.2f} | {g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
@@ -1921,7 +1990,7 @@ for r0 in au:
     d = r0["d"]
     r = r0["ref"]
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(g(d, "name"))
+    cat, earn = catalyst_cell(g(d, "name"), "AU")
     A(f"| {g(d,'name')} | {g(d,'exchange')} | {g(d,'close')} | {g(d,'change'):+.2f} | "
       f"{g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
@@ -1935,7 +2004,7 @@ for r0 in apac:
     d = r0["d"]
     r = r0["ref"]
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(g(d, "name"))
+    cat, earn = catalyst_cell(g(d, "name"), "APAC/Gulf")
     A(f"| {g(d,'name')} | {r0['market']} | {g(d,'exchange')} | {g(d,'close')} | "
       f"{g(d,'change'):+.2f} | {g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
@@ -2020,6 +2089,8 @@ A(f"- us_line_index: {'ok' if health['us_line_index_ok'] else 'EMPTY'} "
   f"(US-listed lines for the {len(FOREIGN_HOME_COUNTRIES)} foreign home countries, both "
   f"scanner types; the `US tradeable` column is ADR / US-listed / none)")
 A(f"- catalyst_note: {catalyst_note if catalyst_note else 'none'}")
+A(f"- catalyst_merge: region-matched - a row may only use a catalog entry from its OWN region;")
+A(f"  the same ticker on another venue is a different company and is not used.")
 A(f"- catalyst_budget: {CATALYST_BUDGET['US']} US + {CATALYST_BUDGET['EU']} EU + "
   f"{CATALYST_BUDGET['AU']} AU = "
   f"{CATALYST_BUDGET['US']+CATALYST_BUDGET['EU']+CATALYST_BUDGET['AU']} lookups per run")
@@ -2053,7 +2124,7 @@ A(f"`earnings-reaction target=earnings-reactions:{RUN_DATE} candidates={len(us)}
   f"amc_reactions={len(amc)} pre_gaps={len(gaps)} eu_reactions={len([r for r in eu_final if abs(g(r['d'],'change'))>3])} "
   f"asx_reactions={len([r for r in au if abs(g(r['d'],'change'))>3])} "
   f"apac_reactions={len([r for r in apac if abs(g(r['d'],'change'))>3])} "
-  f"catalyst_lookups={len(catalysts)} bod={len(bod)} "
+  f"catalyst_lookups={sum(len(v) for v in catalysts.values())} bod={len(bod)} "
   f"rows_dropped_stale_ref={health['rows_dropped_stale_ref']} "
   f"rows_dropped_unresolved_ref={health['rows_dropped_unresolved_ref']} "
   f"degraded_sources={len(DEGRADED)}`")
