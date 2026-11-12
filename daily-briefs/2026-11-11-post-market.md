@@ -222,7 +222,7 @@ Tetra Tech is the clean reaction of the night: it fell 7.48% in the regular sess
 
 | Source | Endpoint / query | Status |
 |---|---|---|
-| MCP bridge, market-recap | `get_quotes` (indices, ETFs, futures, movers), `price_history` (SPY, RSP, ^VIX, ^VXN) | ok — 8 calls, no rate limit; all index rows carried `as_of` 2026-11-11 |
+| MCP bridge, market-recap | `get_quotes` (indices, ETFs, futures, movers), `price_history` (SPY, RSP, ^VIX, ^VXN) | ok — 7 calls, no rate limit; all index rows carried `as_of` 2026-11-11 |
 | TradingView scanner | `POST scanner.tradingview.com/america/scan`, `postmarket_*` columns | ok — 400 rows per direction; 0 rows failed the change identity |
 | Cron #20 EOD universe | `minimax-cloud-outputs` `us-eod/2026-11-11.csv` | ok — 4,891 names |
 | CBOE daily statistics | `cboe.com/us/options/market_statistics/daily/` | ok — payload `selectedDate` 2026-11-11; total put/call 0.92 |
@@ -243,4 +243,5 @@ Every index, ETF and volatility row in this brief carries `as_of` 2026-11-11, so
 - **After-hours identity**: every published row satisfies `postmarket_change == (postmarket_close − close) / close × 100` within 0.06pp. `gap_fill_level` is the prior close when the after-hours range straddles it, otherwise the after-hours midpoint. No row was published with an unread field — missing values would read `n/a`.
 - **After-hours prints are moving.** They are as of roughly 22:35 ET and vendors disagree materially on thin names (CRWV: -2.37% at 17:30 ET, -7.12% at 18:10 ET, -6.37% on the scanner). The scanner is the published source of record.
 - **Put/call**: the CBOE payload for `selectedDate` 2026-11-11 carries total **0.92**, index 1.05, equity 0.59, exchange-traded products 1.13, SPX+SPXW+SPXO 1.08 and XSP 1.29 — all from the same object and reconciling with the total, so the split is published as sourced.
+- **Two sources, two previous-close conventions.** Cron #20's CSV computes the day change from the official venue close while the bridge carries Yahoo's own reference previous close, so the same name can differ by up to ~0.1pp (NVDA: CSV +2.84% against the bridge's +2.92%; the gap is the previous close, 168.89 against 168.796). Every price and change published above is the bridge's; the CSV is used only for participation counts, the median name move and the sector weights, and the two are never mixed in one cell.
 - **Read-only**: no trades placed, no positions sized.
