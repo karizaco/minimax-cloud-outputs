@@ -1,0 +1,17 @@
+{
+  "_schema": "stocktwits-sentiment-index-v1",
+  "runs": [
+    {
+      "counts": {
+        "material": 15,
+        "notable": 36,
+        "rows": 49
+      },
+      "date": "2026-11-09",
+      "path": "2026-11-09/",
+      "run_id": "2026-11-09Tdaily",
+      "status": "ok"
+    }
+  ],
+  "updated": "2026-11-09"
+}

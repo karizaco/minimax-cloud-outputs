@@ -66,6 +66,7 @@ All 21 top-level directories. "Live" means the routine is still producing into i
 | `earnings/` | cron #15 reaction scanner, #19 reminder | `<date>-reactions.md`, `<date>-reminders.md`, `<date>-catalyst-targets.json` | **Yes** |
 | `preopen-feed/` | cron 92a / 92b checkpoints (08:30, 09:50 ET) | `<date>-<HHMM>.jsonl` tape + `<date>-<HHMM>.md` digest | **Yes** |
 | `options-flow/` | cron #16 unusual options flow | `<date>.md` | **Yes** |
+| `stocktwits-sentiment/` | Grok Bot (Portfolio analyst) daily StockTwits core + general lists | Dated dir with `brief.md`, `sentiment.json`, `sentiment.csv`, `_manifest.json`; account identity stripped; contract `refs/stocktwits-sentiment-contract.md`; consumers should read `stocktwits-sentiment/latest.json` | **Yes** — weekdays |
 | `asia-pre-market/` | cron #02 Asia pre-market reactions | `<date>.md` (+ one `.csv`) | **Yes** |
 | `cross-asset/` | cross-asset routine | `<date>.md` | **Yes** |
 | `macro-calendar/` | macro calendar routine | `week-ahead` / `midweek` `.md` (6 files) | **Yes**, low cadence |

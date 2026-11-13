@@ -1,0 +1,55 @@
+{
+  "_schema": "stocktwits-sentiment-manifest-v1",
+  "canonical": {
+    "brief": "brief.md",
+    "machine": [
+      "sentiment.json",
+      "sentiment.csv"
+    ]
+  },
+  "counts": {
+    "by_label": {
+      "BEARISH": 11,
+      "BULLISH": 14,
+      "EXTREMELY_BEARISH": 0,
+      "EXTREMELY_BULLISH": 13,
+      "NEUTRAL": 11
+    },
+    "by_list": {
+      "core": 19,
+      "general": 30
+    },
+    "general_deep_set": 24,
+    "material": 15,
+    "notable": 36,
+    "on_watchlist": 46,
+    "rows": 49
+  },
+  "date": "2026-11-09",
+  "files": [
+    {
+      "name": "brief.md",
+      "role": "brief"
+    },
+    {
+      "name": "sentiment.json",
+      "role": "machine"
+    },
+    {
+      "name": "sentiment.csv",
+      "role": "table"
+    },
+    {
+      "name": "_manifest.json",
+      "role": "provenance"
+    }
+  ],
+  "generated_at": "2026-11-09T20:00:00+07:00",
+  "notes": [
+    "StockTwits account identity and MCP notes were removed.",
+    "Removed 1 account identity segment(s) from supplied summaries."
+  ],
+  "producer": "grok-bot/stocktwits-sentiment-scan",
+  "provenance": "Provenance:** StockTwits MCP via Grok Bot (core run 2026-11-09T08:37:38+07:00, general run 2026-11-09T08:48:08+07:00) · built 2026-11-09T20:00:00+07:00 by scripts/emit_stocktwits_sentiment.py · covers 2026-11-09 (Asia/Bangkok)",
+  "run_id": "2026-11-09Tdaily"
+}
