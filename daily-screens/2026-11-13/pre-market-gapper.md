@@ -1,4 +1,4 @@
-_contract: premarket-artifact-v6 · flagged: 0 · scanned: 12 · gate: |gap|>=4.0% and pm_volume>=50,000 and exec_shares>=25 · reference close: prior sweep focus.csv · pull: premarket-pull-v2 · renderer: premarket-render-v1_
+_contract: premarket-artifact-v6 · flagged: 0 · scanned: 12 · gate: |gap|>=4.0% and pm_volume>=50,000 and exec_shares>=25 · reference close: tradingview+cboe+nasdaq-secondaryData+nasdaq_historical · pull: premarket-pull-v2 · renderer: premarket-render-v1_
 
 # Pre-Market Gapper — Friday, 13 November 2026
 
