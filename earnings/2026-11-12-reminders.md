@@ -4,7 +4,7 @@ cron: 19-earnings-reminder-daily
 fire_time_et: 06:00
 snapshot_et: 09:10
 source: EarningsWhispers earnings calendar + Nasdaq earnings API + Yahoo Finance + TradingView scanner + issuer IR pages + SEC EDGAR / DART / CNMV regulatory filings
-primary_source: Yahoo Finance (market cap) | EarningsWhispers (EPS est, revenue est, release time) | MarketBeat (BN revenue est) | issuer IR pages (non-US report dates)
+primary_source: Yahoo Finance (roster market cap) | TradingView (band market caps, issuer-level) | EarningsWhispers (EPS est, revenue est, release time) | MarketBeat (BN revenue est) | issuer IR pages (non-US report dates)
 status: ok
 pending_count: 8
 already_reported_count: 18
@@ -12,6 +12,8 @@ non_us_count: 22
 reaction_ranked: true
 reaction_degraded: 0
 band_low_usd: 40000000000
+contract: EARNINGS_REMINDER_V3
+coverage_receipt: calendar_rows=377 s_and_p_500_hits=2 bigcap_hits=8 us_roster_rows=4 band_rows=10
 ---
 
 # Earnings - Thu 2026-11-12
@@ -43,34 +45,34 @@ band_low_usd: 40000000000
 | TRI | Thomson Reuters Corporation | $47.2B | no |
 | AU | AngloGold Ashanti PLC | $46.5B | no |
 | NTRA | Natera, Inc. | $46.4B | no |
-| RKLB | Rocket Lab Corporation | $44.5B | no |
-| FER | Ferrovial N.V. | $44.0B | no |
+| FER | Ferrovial N.V. | $43.8B | no |
 | NBIS | Nebius Group N.V. Class A | $42.1B | yes - BMO |
+| RKLB | Rocket Lab Corporation | $41.8B | no |
+| HEI | HEICO Corporation | $41.3B | no |
 | UI | Ubiquiti Inc. | $41.1B | no |
-| RKT | Rocket Companies, Inc. Class A | $41.0B | no |
 
 ## Already reported (before 06:00 ET)
 
-| Ticker | Company | Released | Actual | vs consensus |
+| Ticker | Company | Released | Actual | vs consensus | us_tradeable |
 |---|---|---|---|---|
-| ZURN.SW (ZURVY) | Zurich Insurance Group AG | Nov 12, ~00:45 ET | 9M trading update (no EPS print): P&C GWP USD 42.1B +7% (record; 42,138 vs 38,916), P&C insurance revenue USD 38.6B +6%, Life GWP USD 28.6B +3%, Farmers Exchanges GWP USD 23.5B +4% (policy count +342,000); nat-cat loss ratio 3.2% for 9M vs 1.4% - storms across Switzerland, Germany and Italy plus the Colombia earthquake; Beazley acquisition completed Oct 1 | n/a - no EPS consensus for a 9M premium update |
-| MRK.DE (MKKGY) | Merck KGaA | Nov 12, ~01:00 ET | Q3 net sales EUR 5,627M +5.8% (+5.1% organic), EBITDA pre EUR 1,682M +0.8% (+0.4% organic), EPS pre EUR 2.32 flat, EPS EUR 1.04 -49.8% (net income EUR 450M -50% on one-offs); FY26 guidance RAISED to net sales EUR 21.5-21.9B, EBITDA pre EUR 6.2-6.4B, EPS pre EUR 8.30-8.70 | beat - Vara consensus net sales EUR 5,460M (+3.1%), EBITDA pre EUR 1,610M (+4.5%) |
-| SOON.SW (SONVY) | Sonova Holding AG | Nov 12, 01:00 ET | H1 FY26/27 sales CHF 1,834.1M +7.5% LC (+6.7% CHF), core EBIT CHF 384.0M +22.9% LC (+21.4% CHF), reported EBIT CHF 372.0M +32.9% CHF, core EBIT margin 20.9% vs 18.4%; FY26/27 guidance RAISED to sales +6-8% LC (from +5-8%) and core EBIT +10-13% (from +7-10%) | beat - core EBIT CHF 384.0M vs Vara consensus CHF 348.3M (+10.3%), core EBIT margin 20.9% vs 19.2% consensus |
-| SIE.DE (SIEGY) | Siemens AG | Nov 12, 01:00 ET | Q4 FY26: orders EUR 34.8B +58% (record), revenue EUR 23.7B +11%, EPS EUR 2.80 (pre-PPA EUR 3.01), dividend EUR 5.50, FY27 pre-PPA EPS guided EUR 10.20-10.80 | n/a - not measured |
-| ALV.DE (ALIZY) | Allianz SE | Nov 12, 01:00 ET | 3Q26 operating profit EUR 4.7B +6.2%; 9M operating profit a record EUR 14.1B; FY26 target upper end raised to ~EUR 18.6B | n/a - not measured |
-| KBC.BR (KBCSY) | KBC Group NV | Nov 12, 01:00 ET | Q3 net profit EUR 1,142M; 9M net profit EUR 2,851M +11% | n/a - not measured |
-| 4543.T (TRUMY) | Terumo Corporation | Nov 12, 01:00 ET | H1 FY27 revenue JPY 624.5B +16.7%, adjusted operating profit JPY 147.3B +28.8% (statutory operating profit JPY 70.8B -29.9%), EPS JPY 37.02 | n/a - not measured |
-| 2317.TW (HNHPF) | Hon Hai Precision Industry (Foxconn) | Nov 12, ~01:25 ET | Q3 net profit NT$77.52B +34% on revenue NT$3,015.6B +46%; EPS NT$5.51; cloud and networking 54% of revenue | beat - vs NT$69.35B consensus (FactSet; LSEG NT$69.6B) |
-| HLAG.DE (HLAGF) | Hapag-Lloyd AG | Nov 12, 01:29 ET | Q3 Group EBITDA USD 1,726M (Q3-25: USD 866M); EBIT USD 1.1B; Group profit USD 1.0B; liner freight rate USD 1,808/TEU; FY26 outlook raised | n/a - not measured |
-| TEF.MC (TELFY) | Telefonica SA | Nov 12, ~01:30 ET | Q3 revenue EUR 8,433M +4.8% real (+2.2% const), adj EBITDA EUR 3,078M +6.2% real (+2.8% const), adj OpCFaL EUR 1,364M +10.6% real, FCF from continuing ops EUR 1,018M +220.1%, net profit EUR 802M +191.1% (continuing EUR 860M +151.3%); 9M revenue EUR 24,825M +2.8% real, 9M continuing net profit EUR 1,333M +21.6%; FY26 adj EBITDA / OpCFaL / FCF targets RAISED but the revenue growth target CUT to +1.0-1.5% (from +1.5-2.5%) | beat - company-compiled consensus net profit EUR 538M, revenue EUR 8,330M est, adj EBITDA EUR 3,030M est |
-| MUV2.DE (MURGY) | Munich Re | Nov 12, 01:30 ET | Q3 net result EUR 1,742M (Q3-25: EUR 1,997M); 9M EUR 5,667M; FY26 profit target raised EUR 6.3B to EUR 6.6B | beat - Oct-23 preliminary EUR 1.7B vs EUR 1,479M consensus; no consensus measured for the full statement |
-| TLX.DE (TNXXF) | Talanx AG | Nov 12, 01:30 ET | Q3 net income EUR 696M +18%; 9M net income a record EUR 2,195M +12%; FY26 forecast lifted to above EUR 2.8B | n/a - not measured |
-| 1605.T (IPXHF) | Inpex Corporation | Nov 12, 01:30 ET | 9M revenue JPY 1,429.2B -6.0% (crude oil -17.3%), operating profit JPY 922.9B +5.7%, profit JPY 407.6B +38.9%, EPS JPY 351.2; FY26 profit plan raised JPY 510B to JPY 550B | n/a - not measured |
-| III.L (TGOPY) | 3i Group plc | Nov 12, 02:00 ET | H1 FY27 total return GBP 1,618M (5% on opening funds vs 13% a year earlier, after a GBP 474M FX translation loss); NAV 3,154p; new GBP 750M buyback | n/a - not measured |
-| RR.L (RYCEY) | Rolls-Royce Holdings plc | Nov 12, 02:00 ET | Q3 trading update (not full results): large-engine flying hours +4% to 114% of 2019; FY26 guidance held at GBP 4.7-4.9B operating profit and GBP 3.8-4.0B FCF; GBP 1.5B interim buyback | n/a - not measured |
-| 8309.T (CMTDF) | Sumitomo Mitsui Trust Group | Nov 12, 02:00 ET | H1 revenue JPY 1,602.6B, ordinary profit JPY 364.3B, net income JPY 250.1B +46%, adjusted EPS JPY 90.5 | n/a - not measured |
-| UU.L (UUGRY) | United Utilities Group PLC | Nov 12, 02:00 ET | H1 FY27 reported revenue GBP 1,462.0M +11.7% (underlying GBP 1,406.9M +9.1%), EBITDA GBP 904.3M +12.5% (underlying GBP 849.2M +8.3%), operating profit GBP 633.8M +12.9% (underlying GBP 578.7M +6.9%), PBT GBP 539.2M +65.8%, EPS 54.7p (underlying 56.3p -1.6% on the April equity raise), capex GBP 993M, interim DPS 18.51p +3.5%; FY27 revenue guidance GBP 2.7-2.8B | n/a - not measured |
-| 015760.KS (KEP) | Korea Electric Power Corp | Nov 12, 03:00 ET | Q3 revenue KRW 26.85T -2.6%, operating profit KRW 1.64T -70.9% (fuel costs: the US-Iran war lifted LNG and coal), net income KRW 835.9B -77.9%; 9M revenue KRW 73.17T -0.8%, 9M operating profit KRW 6.56T -43.2%, 9M net income KRW 3.63T -50.4%; standalone Q3 operating loss KRW 99B, the first in eight quarters | miss - net income KRW 835.9B vs Yonhap Infomax consensus KRW 1.57T (-47%) |
+| ZURN.SW (ZURVY) | Zurich Insurance Group AG | Nov 12, ~00:45 ET | 9M trading update (no EPS print): P&C GWP USD 42.1B +7% (record; 42,138 vs 38,916), P&C insurance revenue USD 38.6B +6%, Life GWP USD 28.6B +3%, Farmers Exchanges GWP USD 23.5B +4% (policy count +342,000); nat-cat loss ratio 3.2% for 9M vs 1.4% - storms across Switzerland, Germany and Italy plus the Colombia earthquake; Beazley acquisition completed Oct 1 | n/a - no EPS consensus for a 9M premium update | ADR (OTC) |
+| MRK.DE (MKKGY) | Merck KGaA | Nov 12, ~01:00 ET | Q3 net sales EUR 5,627M +5.8% (+5.1% organic), EBITDA pre EUR 1,682M +0.8% (+0.4% organic), EPS pre EUR 2.32 flat, EPS EUR 1.04 -49.8% (net income EUR 450M -50% on one-offs); FY26 guidance RAISED to net sales EUR 21.5-21.9B, EBITDA pre EUR 6.2-6.4B, EPS pre EUR 8.30-8.70 | beat - Vara consensus net sales EUR 5,460M (+3.1%), EBITDA pre EUR 1,610M (+4.5%) | ADR (OTC) |
+| SOON.SW (SONVY) | Sonova Holding AG | Nov 12, 01:00 ET | H1 FY26/27 sales CHF 1,834.1M +7.5% LC (+6.7% CHF), core EBIT CHF 384.0M +22.9% LC (+21.4% CHF), reported EBIT CHF 372.0M +32.9% CHF, core EBIT margin 20.9% vs 18.4%; FY26/27 guidance RAISED to sales +6-8% LC (from +5-8%) and core EBIT +10-13% (from +7-10%) | beat - core EBIT CHF 384.0M vs Vara consensus CHF 348.3M (+10.3%), core EBIT margin 20.9% vs 19.2% consensus | ADR (OTC) |
+| SIE.DE (SIEGY) | Siemens AG | Nov 12, 01:00 ET | Q4 FY26: orders EUR 34.8B +58% (record), revenue EUR 23.7B +11%, EPS EUR 2.80 (pre-PPA EUR 3.01), dividend EUR 5.50, FY27 pre-PPA EPS guided EUR 10.20-10.80 | n/a - not measured | ADR (OTC) |
+| ALV.DE (ALIZY) | Allianz SE | Nov 12, 01:00 ET | 3Q26 operating profit EUR 4.7B +6.2%; 9M operating profit a record EUR 14.1B; FY26 target upper end raised to ~EUR 18.6B | n/a - not measured | ADR (OTC) |
+| KBC.BR (KBCSY) | KBC Group NV | Nov 12, 01:00 ET | Q3 net profit EUR 1,142M; 9M net profit EUR 2,851M +11% | n/a - not measured | ADR (OTC) |
+| 4543.T (TRUMY) | Terumo Corporation | Nov 12, 01:00 ET | H1 FY27 revenue JPY 624.5B +16.7%, adjusted operating profit JPY 147.3B +28.8% (statutory operating profit JPY 70.8B -29.9%), EPS JPY 37.02 | n/a - not measured | ADR (OTC) |
+| 2317.TW (HNHPF) | Hon Hai Precision Industry (Foxconn) | Nov 12, ~01:25 ET | Q3 net profit NT$77.52B +34% on revenue NT$3,015.6B +46%; EPS NT$5.51; cloud and networking 54% of revenue | beat - vs NT$69.35B consensus (FactSet; LSEG NT$69.6B) | ADR (OTC) |
+| HLAG.DE (HLAGF) | Hapag-Lloyd AG | Nov 12, 01:29 ET | Q3 Group EBITDA USD 1,726M (Q3-25: USD 866M); EBIT USD 1.1B; Group profit USD 1.0B; liner freight rate USD 1,808/TEU; FY26 outlook raised | n/a - not measured | ADR (OTC) |
+| TEF.MC (TELFY) | Telefonica SA | Nov 12, ~01:30 ET | Q3 revenue EUR 8,433M +4.8% real (+2.2% const), adj EBITDA EUR 3,078M +6.2% real (+2.8% const), adj OpCFaL EUR 1,364M +10.6% real, FCF from continuing ops EUR 1,018M +220.1%, net profit EUR 802M +191.1% (continuing EUR 860M +151.3%); 9M revenue EUR 24,825M +2.8% real, 9M continuing net profit EUR 1,333M +21.6%; FY26 adj EBITDA / OpCFaL / FCF targets RAISED but the revenue growth target CUT to +1.0-1.5% (from +1.5-2.5%) | beat - company-compiled consensus net profit EUR 538M, revenue EUR 8,330M est, adj EBITDA EUR 3,030M est | ADR (OTC) |
+| MUV2.DE (MURGY) | Munich Re | Nov 12, 01:30 ET | Q3 net result EUR 1,742M (Q3-25: EUR 1,997M); 9M EUR 5,667M; FY26 profit target raised EUR 6.3B to EUR 6.6B | beat - Oct-23 preliminary EUR 1.7B vs EUR 1,479M consensus; no consensus measured for the full statement | ADR (OTC) |
+| TLX.DE (TNXXF) | Talanx AG | Nov 12, 01:30 ET | Q3 net income EUR 696M +18%; 9M net income a record EUR 2,195M +12%; FY26 forecast lifted to above EUR 2.8B | n/a - not measured | ADR (OTC) |
+| 1605.T (IPXHF) | Inpex Corporation | Nov 12, 01:30 ET | 9M revenue JPY 1,429.2B -6.0% (crude oil -17.3%), operating profit JPY 922.9B +5.7%, profit JPY 407.6B +38.9%, EPS JPY 351.2; FY26 profit plan raised JPY 510B to JPY 550B | n/a - not measured | ADR (OTC) |
+| III.L (TGOPY) | 3i Group plc | Nov 12, 02:00 ET | H1 FY27 total return GBP 1,618M (5% on opening funds vs 13% a year earlier, after a GBP 474M FX translation loss); NAV 3,154p; new GBP 750M buyback | n/a - not measured | ADR (OTC) |
+| RR.L (RYCEY) | Rolls-Royce Holdings plc | Nov 12, 02:00 ET | Q3 trading update (not full results): large-engine flying hours +4% to 114% of 2019; FY26 guidance held at GBP 4.7-4.9B operating profit and GBP 3.8-4.0B FCF; GBP 1.5B interim buyback | n/a - not measured | ADR (OTC) |
+| 8309.T (CMTDF) | Sumitomo Mitsui Trust Group | Nov 12, 02:00 ET | H1 revenue JPY 1,602.6B, ordinary profit JPY 364.3B, net income JPY 250.1B +46%, adjusted EPS JPY 90.5 | n/a - not measured | ADR (OTC) |
+| UU.L (UUGRY) | United Utilities Group PLC | Nov 12, 02:00 ET | H1 FY27 reported revenue GBP 1,462.0M +11.7% (underlying GBP 1,406.9M +9.1%), EBITDA GBP 904.3M +12.5% (underlying GBP 849.2M +8.3%), operating profit GBP 633.8M +12.9% (underlying GBP 578.7M +6.9%), PBT GBP 539.2M +65.8%, EPS 54.7p (underlying 56.3p -1.6% on the April equity raise), capex GBP 993M, interim DPS 18.51p +3.5%; FY27 revenue guidance GBP 2.7-2.8B | n/a - not measured | ADR (OTC) |
+| 015760.KS (KEP) | Korea Electric Power Corp | Nov 12, 03:00 ET | Q3 revenue KRW 26.85T -2.6%, operating profit KRW 1.64T -70.9% (fuel costs: the US-Iran war lifted LNG and coal), net income KRW 835.9B -77.9%; 9M revenue KRW 73.17T -0.8%, 9M operating profit KRW 6.56T -43.2%, 9M net income KRW 3.63T -50.4%; standalone Q3 operating loss KRW 99B, the first in eight quarters | miss - net income KRW 835.9B vs Yonhap Infomax consensus KRW 1.57T (-47%) | ADR (US-listed) |
 
 ## Notes
 
@@ -90,11 +92,14 @@ band_low_usd: 40000000000
 - **Market-cap spread:** BN is $93.9B on Yahoo but $103.2B (TradingView) and $103.9B (Nasdaq); NBIS is $42.1B on Yahoo and $36.4B on Nasdaq. Yahoo is the declared source here; both spreads are flagged.
 - **Brookfield's prior result came from the Nasdaq earnings-surprise table** (Yahoo's earningsHistory is empty for BN): Jun-2026 quarter reported Aug 13, EPS $0.66 vs $0.64 forecast, a 3.13% beat.
 - **Reaction window and expiries:** CSCO/AMAT/NU are AMC, so the implied move uses the first expiry after the event (2026-11-13); BN is BMO and its Cboe chain carries no 2026-11-12 expiry, so the first expiry straddling the event (2026-11-20) governs. Average absolute moves are four-report means - Nasdaq carries at most four quarters.
-- **Heico (HEI / HEI.A) is left out of the band table on purpose.** Its two NYSE classes each show a Yahoo per-symbol market cap computed as total shares times that line's price (HEI $48.8B, HEI-A $36.5B), so neither figure is the company cap (~$41.3B, issuer level on TradingView). Publishing one of them would publish a wrong number.
+- **Heico (HEI) is IN the band table, at the issuer-level cap.** Yahoo computes each class's cap as total shares times THAT class's price (HEI $48.8B, HEI-A $36.5B), so neither Yahoo figure is the company cap; the issuer-level cap is $41.3B on TradingView, and that is the number published. One row per issuer - HEICO's other class is HEI-A (Class B, Yahoo symbol `HEI-A`, $254.19). HEICO is not in the 503-symbol S&P 500 list, so it is a band candidate and not a roster name.
+- **The band is ONE source for the whole table: TradingView's issuer-level market cap**, with Yahoo as the cross-check. A TradingView candidate set ordered by Yahoo caps is how Rocket Lab ended up three places out (published $44.5B, actually $41.81B) and how a $41.3B row went missing. Spreads beyond 5%: Rocket Lab $44.5B on Yahoo vs $41.81B on TradingView (6.4%); every other band row is within 0.5%. The band is US-listed common shares only - the literal rule would have put ten foreign ordinary OTC lines on top of it (PICC P&C $49.9B, DSV, Holcim, Swiss Re, Commerzbank, Danone, ArcelorMittal, Reckitt, Nokia, Jiangsu Hengrui). The non-common lines were filtered mechanically on the description; the earlier rule (Preferred|Notes|Subordinated|Depositary|Warrant|Right|Unit) let through Fifth Third's FITB/PI and FITB/PM ($49.16B), State Street's STT/PG ($47.39B) and Prudential's PRS ($42.20B). Rocket Companies ($41.0B) falls outside the ten-row cap.
 - **The band is a lower bound on the excluded set** - names below $40B are cut by the band, not by the $50B floor. No US name sits within $0.5B of the floor today, so no row carries `boundary_case`.
 - **Watchlist:** `refs/watchlist.yaml` fetched cleanly (8 names: AAPL, MSFT, NVDA, GOOGL, AMZN, IWM, GLD, TLT) but none of them reports on Nov 12 - the nearest is NVDA on Nov 17 - so no watchlist section is published rather than an empty table.
+- **Completeness receipt (front matter):** the EarningsWhispers calendar carried 377 rows on Nov 12 (168 before the open, 209 after the close); 2 of them were S&P 500 members (AMAT, CSCO) and 8 cleared the $50B floor (AMAT, CSCO, NU, BN plus the OTC ADR lines ENLAY, KBCSY, MKKGY, SIEGY). All four non-US hits are published in this brief - ENLAY as Enel's pending row, KBCSY/MKKGY/SIEGY in the Already-reported section - and no name is missing. TradingView's next-release stamps were NOT the completeness source: BN's reads 2027-02-11 (stale) and the US names carry generic 16:00/16:05 ET after-close stamps.
+- **Tradeability of the overnight prints:** 17 of the 18 already-reported names have an OTC-only US line; only KEPCO has a NYSE ADR (KEP). TradingView types four of the OTC lines (HLAGF, TNXXF, IPXHF, CMTDF) as ordinary shares rather than depositary receipts; the house label for a non-US issuer's OTC line is `ADR (OTC)` - the same label the 2026-11-11 brief used for Power Corporation's PWCDF, which TradingView also types as an ordinary share.
 - **What the front-matter counts mean:** `pending_count` 8 = every issuer in this brief that has not printed yet (4 US roster rows + 4 non-US rows); `already_reported_count` 18 = the rows in the Already-reported section; `non_us_count` 22 = every non-US issuer published here, pending or already reported (4 + 18).
-- **Ticker convention:** headline tickers are primary listings with the US line in parentheses; OTC depositary receipts are never the headline.
+- **Ticker convention:** headline tickers are primary listings with the US line in parentheses; OTC depositary receipts are never the headline. The Already-reported section carries the US line's tradeability in its own column, so the reader can see that most of the overnight wave is OTC-only information rather than a tradeable US session.
 
 ## Source health
 
@@ -107,7 +112,7 @@ band_low_usd: 40000000000
 | Yahoo v7 quote | `.../v7/finance/quote?symbols=...` | ok | Market caps; needs the cookie + crumb handshake (seed `fc.yahoo.com` first) - first attempt returned Unauthorized, retried with the handshake |
 | Nasdaq earnings calendar | `api.nasdaq.com/api/calendar/earnings?date=2026-11-12` | ok | 395 rows; independent confirmation of CSCO/AMAT/BN/NU and their EPS consensus |
 | Nasdaq earnings-surprise | `api.nasdaq.com/api/company/BN/earnings-surprise` | ok | BN's prior result and past report dates (M/D/YYYY format) |
-| TradingView scanner | `scanner.tradingview.com/america/scan` + per-market scans (japan, korea, hongkong, uk, germany, spain, australia, canada) | ok | America pull: 20,186 of 20,345 rows returned (159 missing, all in the cap-0 tail of the market-cap-sorted response, so below every threshold tested); 3 names ≥$50B and 22 names ≥$20B carry a next-release stamp of Nov 12-13 ET; per-market scans cover the standing list's non-US lines |
+| TradingView scanner | `scanner.tradingview.com/america/scan` + per-market scans (japan, korea, hongkong, uk, germany, spain, australia, canada) | ok | America pull: 20,186 of 20,345 rows returned (159 missing, all in the cap-0 tail of the market-cap-sorted response, so below every threshold tested); 3 names ≥$50B and 22 names ≥$20B carry a next-release stamp of Nov 12-13 ET; per-market scans cover the standing list's non-US lines; the band table's caps and order come from this scanner's issuer-level market cap |
 | Wikipedia constituent list | `en.wikipedia.org/w/api.php?action=parse&page=List_of_S%26P_500_companies&prop=wikitext` | ok | 503 symbols (503 unique); controls BRK.B, GOOGL, GOOG, FOX, CBOE all present |
 | Cboe delayed quotes | `cdn.cboe.com/api/global/delayed_quotes/options/<SYM>.json` | ok | Implied moves from the ATM straddle; OCC symbols parsed for expiry |
 | Issuer IR pages and issuer press releases | siemens press site, allianz.com, munichre.com event calendar, kbc.com, talanx.com, hapag-lloyd.com + EQS issuer release, 3i.com RNS, rolls-royce.com financial calendar, inpex.com TSE notice, terumo.co.jp JPX filing, smtg.jp IR calendar + results PDF, honhai.com press centre + foxconn.com event calendar, enel.com investors, SGX announcement, Ecopetrol SEC 6-K + company IR, merckgroup.com Q3 event page + emdgroup.com Q3 release, telefonica.com press release + CNMV, sonova.com results release + results invitation, unitedutilities.com RNS + results presentation, zurich.com media release + IR events, B3 IR events calendar (api.mziq.com), KEPCO press release | ok | Report dates and local announcement times for every non-US row |
@@ -127,3 +132,5 @@ band_low_usd: 40000000000
 - One source per field, with the source named above; spreads beyond 5% on market cap and 2% on EPS are flagged in the notes.
 - The roster is sorted by reaction score descending, and the score equals 0.6 x average absolute move + 0.4 x implied move, with a missing implied move substituted by the average absolute move.
 - The three content tables do not overlap: the US roster, the non-US table and the band each carry their own names, and a name already in the US roster is never repeated in the non-US table.
+- The band is US-listed common shares only, one row per issuer at the issuer-level market cap, one source for the whole table, and the non-common filter is mechanical on the description.
+- Every already-reported row carries the tradeability of its US line, and the front-matter coverage receipt states the completeness basis the checker verifies against the published tables.
