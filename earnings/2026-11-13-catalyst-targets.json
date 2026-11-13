@@ -1,0 +1,77 @@
+{
+  "us": [
+    {
+      "name": "VIR",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-04"
+    },
+    {
+      "name": "SLS",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-12"
+    },
+    {
+      "name": "HOS",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-04"
+    },
+    {
+      "name": "GENB",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-12"
+    },
+    {
+      "name": "TRV",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-10-16"
+    }
+  ],
+  "eu": [
+    {
+      "name": "EOLU_B",
+      "chg": -5.46
+    },
+    {
+      "name": "CMB",
+      "chg": 9.3
+    },
+    {
+      "name": "PAX",
+      "chg": 7.52
+    }
+  ],
+  "au": [
+    {
+      "name": "PDN",
+      "chg": -17.59
+    },
+    {
+      "name": "RPL",
+      "chg": -10.41
+    }
+  ],
+  "apac": [
+    {
+      "name": "HTECH",
+      "market": "thailand",
+      "chg": 17.86
+    },
+    {
+      "name": "ANUP",
+      "market": "india",
+      "chg": 20
+    },
+    {
+      "name": "AWX",
+      "market": "singapore",
+      "chg": 4.41
+    }
+  ],
+  "budget": {
+    "US": 5,
+    "EU": 3,
+    "AU": 2,
+    "APAC": 3
+  },
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-13.md"
+}
