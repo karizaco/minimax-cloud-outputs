@@ -1,0 +1,693 @@
+{
+ "au": [],
+ "jp": [],
+ "tw": [
+  {
+   "ticker": "TPEX:4174",
+   "name": "OBI Pharma, Inc.",
+   "exchange": "TPEX",
+   "close": "64.9",
+   "volume": "5218605",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TWSE:01002T",
+   "name": "Cathay No. 1 Real Estate Investment Trust",
+   "exchange": "TWSE",
+   "close": "12.45",
+   "volume": "173000",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TWSE:1808",
+   "name": "Run Long Construction Co., Ltd.",
+   "exchange": "TWSE",
+   "close": "31",
+   "volume": "761119",
+   "last_trade_date": "2026-11-10",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TWSE:3714",
+   "name": "Ennostar Inc.",
+   "exchange": "TWSE",
+   "close": "56.7",
+   "volume": "8311084",
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged with a stale change field"
+  }
+ ],
+ "ca": [
+  {
+   "ticker": "TSX:BBD.PR.B",
+   "name": "Bombardier Inc Cum Red Pfd Shs Series 2 Fltg Rt",
+   "exchange": "TSX",
+   "close": "20.1",
+   "volume": "0",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:BCE.PR.F",
+   "name": "BCE Inc. Pfd Registered Series AF",
+   "exchange": "TSX",
+   "close": "22.67",
+   "volume": "0",
+   "last_trade_date": "2026-11-10",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:BCE.PR.L",
+   "name": "BCE Inc. Cum Red Pfd Shs Series -AL- Fltg Rt",
+   "exchange": "TSX",
+   "close": "21.92",
+   "volume": "0",
+   "last_trade_date": "2026-10-29",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:CU.PR.D",
+   "name": "Canadian Utilities Ltd Cum Red Second Pfd Shs Series -AA-",
+   "exchange": "TSX",
+   "close": "22.91",
+   "volume": "0",
+   "last_trade_date": "2026-11-09",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:CU.PR.F",
+   "name": "Canadian Utilities Ltd Cum Red Second Pfd Shs Series -CC-",
+   "exchange": "TSX",
+   "close": "20.99",
+   "volume": "0",
+   "last_trade_date": "2026-11-10",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:ELF.PR.F",
+   "name": "E-L Financial Corp Ltd 5.3 % First Pfd Shs Series 1",
+   "exchange": "TSX",
+   "close": "23.2",
+   "volume": "0",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:ENB.PR.G",
+   "name": "Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series G",
+   "exchange": "TSX",
+   "close": "23.6",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:ENB.PR.I",
+   "name": "Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series I",
+   "exchange": "TSX",
+   "close": "22.73",
+   "volume": "0",
+   "last_trade_date": "2026-10-27",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:ENB.PR.Z",
+   "name": "Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series 4",
+   "exchange": "TSX",
+   "close": "23.05",
+   "volume": "0",
+   "last_trade_date": "2026-11-04",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:FFH.U",
+   "name": "Fairfax Financial Holdings Limited",
+   "exchange": "TSX",
+   "close": "1930",
+   "volume": "0",
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:FTS.PR.I",
+   "name": "Fortis Inc. Cum Red 1st Pfd Shs Series I Fltg Rt",
+   "exchange": "TSX",
+   "close": "19.75",
+   "volume": "400",
+   "last_trade_date": "2026-11-09",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:GBT",
+   "name": "BMTC Group Inc. Class A",
+   "exchange": "TSX",
+   "close": "12.45",
+   "volume": "0",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:GWO.PR.L",
+   "name": "Great-West Lifeco Inc. 5.65 % Non Cum First Pfd Shs Series L",
+   "exchange": "TSX",
+   "close": "24.67",
+   "volume": "1000",
+   "last_trade_date": "2026-11-10",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:IFC.PR.I",
+   "name": "Intact Financial Corporation 5.4 % Non-Cum Red Pfd Registered Shs A Series 9 Reg S",
+   "exchange": "TSX",
+   "close": "24.5",
+   "volume": "0",
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:MFC.PR.F",
+   "name": "Manulife Financial Corporation Non Cum Pfd Registered Shs 1 Series 3",
+   "exchange": "TSX",
+   "close": "21.28",
+   "volume": "0",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:NA.PR.G",
+   "name": "National Bank of Canada Non-Cum Conv Red Perp Pfd Registered Shs Series -42- Reg S",
+   "exchange": "TSX",
+   "close": "26.08",
+   "volume": "3400",
+   "last_trade_date": "2026-11-10",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:NPI.PR.B",
+   "name": "Northland Power Inc. Floating Rate Cum Red Pfd Registered Shs Series 2",
+   "exchange": "TSX",
+   "close": "23.25",
+   "volume": "0",
+   "last_trade_date": "2026-11-09",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:POW.PR.E",
+   "name": "Power Corporation of Canada Part.Pfd Shs",
+   "exchange": "TSX",
+   "close": "87",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:RFA.PR.E",
+   "name": "RFA Financial Inc. Pfd Shares Series E",
+   "exchange": "TSX",
+   "close": "23.25",
+   "volume": "0",
+   "last_trade_date": "2026-11-10",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:SEC",
+   "name": "Senvest Capital Inc.",
+   "exchange": "TSX",
+   "close": "442.99",
+   "volume": "1001",
+   "last_trade_date": "2026-11-10",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:SLF.PR.J",
+   "name": "Sun Life Financial Inc Non Cum Pfd Shs A Series -9QR- Fltg Rt",
+   "exchange": "TSX",
+   "close": "20.3",
+   "volume": "0",
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:TA.PR.E",
+   "name": "TransAlta Corporation Cum First Pfd Shs Series B",
+   "exchange": "TSX",
+   "close": "21.39",
+   "volume": "0",
+   "last_trade_date": "2026-11-09",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:TA.PR.H",
+   "name": "TransAlta Corporation Cum Red First Pfd Shs Series E",
+   "exchange": "TSX",
+   "close": "25.71",
+   "volume": "0",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:TPX.B",
+   "name": "Molson Coors Canada Inc. Class B",
+   "exchange": "TSX",
+   "close": "55.98",
+   "volume": "26",
+   "last_trade_date": "2026-11-09",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:TRP.PR.F",
+   "name": "TC Energy Corporation Cum Red 1st Pfd Registered Shs Series 2",
+   "exchange": "TSX",
+   "close": "21.6",
+   "volume": "0",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:TRP.PR.L",
+   "name": "TC Energy Corporation Cum Red 1st Pfd Registered Shs Series -10-",
+   "exchange": "TSX",
+   "close": "23.29",
+   "volume": "0",
+   "last_trade_date": "2026-11-12",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:WFC",
+   "name": "Wall Financial Corporation",
+   "exchange": "TSX",
+   "close": "21",
+   "volume": "0",
+   "last_trade_date": "2026-11-02",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "TSX:WN.PR.E",
+   "name": "George Weston Ltd 4.75 % Cum Conv Red Pfd Registered Shs Series V",
+   "exchange": "TSX",
+   "close": "21.09",
+   "volume": "0",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  }
+ ],
+ "eu-de": [],
+ "eu-fr": [
+  {
+   "ticker": "EURONEXT:ACMC",
+   "name": "Accor SA",
+   "exchange": "EURONEXT",
+   "close": "52.72",
+   "volume": "100",
+   "last_trade_date": "2026-11-12",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "EURONEXT:ALEXA",
+   "name": "Exacompta Clairefontaine SA",
+   "exchange": "EURONEXT",
+   "close": "149",
+   "volume": "10",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "EURONEXT:ALGEV",
+   "name": "Gevelot SA",
+   "exchange": "EURONEXT",
+   "close": "190",
+   "volume": "3",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "EURONEXT:ALLHB",
+   "name": "Les Hotels Baverez SA",
+   "exchange": "EURONEXT",
+   "close": "71.5",
+   "volume": "21",
+   "last_trade_date": "2026-11-06",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "EURONEXT:CROS",
+   "name": "Crosswood SA",
+   "exchange": "EURONEXT",
+   "close": "9.7",
+   "volume": "2",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "EURONEXT:MLCHE",
+   "name": "Cheops Technology SA",
+   "exchange": "EURONEXT",
+   "close": "53.5",
+   "volume": "300",
+   "last_trade_date": "2026-11-10",
+   "reason": "close unchanged with a stale change field"
+  }
+ ],
+ "eu-it": [
+  {
+   "ticker": "MIL:NOVA",
+   "name": "Novamarine S.P.A.",
+   "exchange": "MIL",
+   "close": "8.35",
+   "volume": "0",
+   "last_trade_date": "2026-11-09",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "MIL:VARV",
+   "name": "SBE-Varvit S.p.A. Class A",
+   "exchange": "MIL",
+   "close": "6.9",
+   "volume": "0",
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged with a stale change field"
+  }
+ ],
+ "eu-es": [
+  {
+   "ticker": "BME:ALC",
+   "name": "Altia Consultores S.A.",
+   "exchange": "BME",
+   "close": "5.7",
+   "volume": "0",
+   "last_trade_date": "2026-11-06",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:GGC",
+   "name": "General de Galerias Comerciales SA",
+   "exchange": "BME",
+   "close": "161",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:INDXA",
+   "name": "Indexa Capital Group, S.A.",
+   "exchange": "BME",
+   "close": "17",
+   "volume": "0",
+   "last_trade_date": "2026-11-06",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:NAT",
+   "name": "Natac Natural Ingredients SA",
+   "exchange": "BME",
+   "close": "0.565",
+   "volume": "11",
+   "last_trade_date": "2026-11-10",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:SCAFS",
+   "name": "Ahorro Familiar S.A.",
+   "exchange": "BME",
+   "close": "27",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:SCTEM",
+   "name": "Tempore Properties SOCIMI SA",
+   "exchange": "BME",
+   "close": "2.58",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:SEC",
+   "name": "Secuoya Grupo de Comunicacion SA",
+   "exchange": "BME",
+   "close": "30.4",
+   "volume": "75",
+   "last_trade_date": "2026-10-27",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:STNA",
+   "name": "Santa Ana Global Enterprises SA",
+   "exchange": "BME",
+   "close": "15.4",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YCPS",
+   "name": "Castellana Properties Socimi SA",
+   "exchange": "BME",
+   "close": "9.5",
+   "volume": "0",
+   "last_trade_date": "2026-11-05",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YDOA",
+   "name": "Inversiones Doalca SOCIMI SA",
+   "exchange": "BME",
+   "close": "26.8",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YENT",
+   "name": "Entrecampos Cuatro SOCIMI SA",
+   "exchange": "BME",
+   "close": "1.78",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YEPSA",
+   "name": "Emperador Properties SOCIMI SA",
+   "exchange": "BME",
+   "close": "10.6",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YEUR",
+   "name": "Euro Cervantes SOCIMI SAU",
+   "exchange": "BME",
+   "close": "31.6",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YFID",
+   "name": "Fidere Patrimonio Socimi SAU",
+   "exchange": "BME",
+   "close": "37.4",
+   "volume": "0",
+   "last_trade_date": "2026-11-09",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YGMP",
+   "name": "Gmp Property SOCIMI SA",
+   "exchange": "BME",
+   "close": "62",
+   "volume": "0",
+   "last_trade_date": "2026-11-05",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YGOP",
+   "name": "GOP Properties SOCIMI SA",
+   "exchange": "BME",
+   "close": "18.3",
+   "volume": "0",
+   "last_trade_date": "2026-11-09",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YHSP",
+   "name": "Hispanotels Inversiones SOCIMI SA",
+   "exchange": "BME",
+   "close": "8.6",
+   "volume": "0",
+   "last_trade_date": "2026-11-09",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YHTI",
+   "name": "Hotei Properties Group SOCIMI SA",
+   "exchange": "BME",
+   "close": "1.8",
+   "volume": "0",
+   "last_trade_date": "2026-11-09",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YIBI",
+   "name": "IBI LION Socimi S.A.",
+   "exchange": "BME",
+   "close": "1.33",
+   "volume": "0",
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YLFG",
+   "name": "LAFINCA GLOBAL ASSETS SOCIMI, S.A.",
+   "exchange": "BME",
+   "close": "4.2",
+   "volume": "0",
+   "last_trade_date": "2026-11-04",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YORE",
+   "name": "Olimpo Real Estate SOCIMI, S.A.",
+   "exchange": "BME",
+   "close": "0.95",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YTRI",
+   "name": "Trivium Real Estate Socimi SA",
+   "exchange": "BME",
+   "close": "38.4",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YTRM",
+   "name": "Torimbia SOCIMI SA",
+   "exchange": "BME",
+   "close": "26.6",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YTST",
+   "name": "Testa Residencial Socimi SA",
+   "exchange": "BME",
+   "close": "3.26",
+   "volume": "0",
+   "last_trade_date": "2026-11-03",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YVCP",
+   "name": "Veracruz Properties Socimi SA",
+   "exchange": "BME",
+   "close": "30.8",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YVIT",
+   "name": "Vitruvio Real Estate SOCIMI S.A.",
+   "exchange": "BME",
+   "close": "18.1",
+   "volume": "1000",
+   "last_trade_date": "2026-11-04",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "BME:YZBL",
+   "name": "Zambal Spain SOCIMI SA",
+   "exchange": "BME",
+   "close": "0.915",
+   "volume": "0",
+   "last_trade_date": "2026-10-26",
+   "reason": "close unchanged with a stale change field"
+  }
+ ],
+ "eu-nl": [],
+ "eu-be": [
+  {
+   "ticker": "EURONEXT:COBH",
+   "name": "Societe commerciale de brasserie",
+   "exchange": "EURONEXT",
+   "close": "2200",
+   "volume": "4",
+   "last_trade_date": "2026-11-05",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "EURONEXT:ROCK",
+   "name": "WHITESTONE GROUP",
+   "exchange": "EURONEXT",
+   "close": "17.1",
+   "volume": "143",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  }
+ ],
+ "eu-at": [
+  {
+   "ticker": "VIE:FKA",
+   "name": "Frauenthal Holding AG",
+   "exchange": "VIE",
+   "close": "21.6",
+   "volume": "75",
+   "last_trade_date": "2026-11-06",
+   "reason": "close unchanged with a stale change field"
+  }
+ ],
+ "eu-pt": [
+  {
+   "ticker": "EURONEXT:MLFMV",
+   "name": "Farminveste - SGPS SA Class B",
+   "exchange": "EURONEXT",
+   "close": "5",
+   "volume": "100",
+   "last_trade_date": "2026-11-10",
+   "reason": "close unchanged with a stale change field"
+  }
+ ],
+ "eu-ie": [],
+ "eu-fi": [],
+ "eu-dk": [],
+ "eu-gr": [
+  {
+   "ticker": "ATHEX:DAIOS",
+   "name": "Daios Plastics S.A.",
+   "exchange": "ATHEX",
+   "close": "7.25",
+   "volume": "500",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "ATHEX:KARE",
+   "name": "Karelia Tobacco Company Inc.",
+   "exchange": "ATHEX",
+   "close": "434",
+   "volume": "35",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  },
+  {
+   "ticker": "ATHEX:TREK",
+   "name": "Trek Development of Infrastructures & Services S.A.",
+   "exchange": "ATHEX",
+   "close": "3.79",
+   "volume": "559",
+   "last_trade_date": "2026-11-11",
+   "reason": "close unchanged with a stale change field"
+  }
+ ]
+}
