@@ -20,35 +20,2616 @@
 #   - never publish a file with no real tickers: that turns an honest "no watchlist today"
 #     into an empty section that reads as a bug.
 #
-# SEED (2026-11-06) — WHY THIS LIST IS WHAT IT IS
-#   The original watchlist lived only on the local Mavis host
-#   (research/watchlist.yaml, a 12-name list) and was never reachable from the Cloud runtime,
-#   which is why cron #16's Pass A leg had never run there and #19/#23/#26 shipped no
-#   watchlist section at all. This file restores that leg with the names the fleet already
-#   tracks for the options series (the routine's 8), so the published numbers do not move.
-#   REPLACE IT with the real list: these tickers are a seed, not a substitute.
-version: 1
-updated: 2026-11-06
+# SEED (2026-11-09) — REPLACED BY THE STANDING LIST
+#   The original eight-name seed was replaced on 2026-11-09 by scripts/emit_watchlist.py.
+#   Source: TradingView watchlist 'Positions' (id 62439757) fetched 2026-11-09T19:40:00+07:00 + core list + earnings next-dates cache merged_listings
 
+version: 2
+updated: "2026-11-09"
+source: "TradingView watchlist 'Positions' (id 62439757) fetched 2026-11-09T19:40:00+07:00 + core list + earnings next-dates cache merged_listings"
+generated_by: "scripts/emit_watchlist.py"
+counts:
+  watchlist: 21
+  watchlist_intl: 1
+  extended: 304
+  positions_raw: 308
+  collapsed_secondaries: 11
 watchlist:
-  - ticker: AAPL
-    note: "mega-cap core; earnings flag"
+  - ticker: "ABVX"
+    note: "core; primary listing NASDAQ:ABVX"
     earnings_flag: true
-  - ticker: MSFT
-    note: "mega-cap core; earnings flag"
+    tv_symbol: "NASDAQ:ABVX"
+    us_symbol: "NASDAQ:ABVX"
+    region: "us"
+    tags: ["core"]
+  - ticker: "ALM"
+    note: "core; primary listing NASDAQ:ALM"
     earnings_flag: true
-  - ticker: NVDA
-    note: "mega-cap core; earnings flag"
+    tv_symbol: "NASDAQ:ALM"
+    us_symbol: "NASDAQ:ALM"
+    region: "us"
+    tags: ["core"]
+  - ticker: "BTG"
+    note: "core; primary listing AMEX:BTG"
     earnings_flag: true
-  - ticker: GOOGL
-    note: "mega-cap core; earnings flag"
+    tv_symbol: "AMEX:BTG"
+    us_symbol: "AMEX:BTG"
+    region: "us"
+    tags: ["core"]
+  - ticker: "CCCC"
+    note: "core; primary listing NASDAQ:CCCC"
     earnings_flag: true
-  - ticker: AMZN
-    note: "mega-cap core; earnings flag"
+    tv_symbol: "NASDAQ:CCCC"
+    us_symbol: "NASDAQ:CCCC"
+    region: "us"
+    tags: ["core"]
+  - ticker: "CCJ"
+    note: "core; primary listing NYSE:CCJ"
     earnings_flag: true
-  - ticker: IWM
-    note: "small-cap beta leg"
-  - ticker: GLD
-    note: "gold leg"
-  - ticker: TLT
-    note: "duration leg"
+    tv_symbol: "NYSE:CCJ"
+    us_symbol: "NYSE:CCJ"
+    region: "us"
+    tags: ["core"]
+  - ticker: "CHRS"
+    note: "core; primary listing NASDAQ:CHRS"
+    earnings_flag: true
+    tv_symbol: "NASDAQ:CHRS"
+    us_symbol: "NASDAQ:CHRS"
+    region: "us"
+    tags: ["core"]
+  - ticker: "COST"
+    note: "core; primary listing NASDAQ:COST"
+    earnings_flag: true
+    tv_symbol: "NASDAQ:COST"
+    us_symbol: "NASDAQ:COST"
+    region: "us"
+    tags: ["core"]
+  - ticker: "COUR"
+    note: "core; primary listing NYSE:COUR"
+    earnings_flag: true
+    tv_symbol: "NYSE:COUR"
+    us_symbol: "NYSE:COUR"
+    region: "us"
+    tags: ["core"]
+  - ticker: "CRML"
+    note: "core; primary listing NASDAQ:CRML"
+    earnings_flag: true
+    tv_symbol: "NASDAQ:CRML"
+    us_symbol: "NASDAQ:CRML"
+    region: "us"
+    tags: ["core"]
+  - ticker: "CRSP"
+    note: "core; primary listing NASDAQ:CRSP"
+    earnings_flag: true
+    tv_symbol: "NASDAQ:CRSP"
+    us_symbol: "NASDAQ:CRSP"
+    region: "us"
+    tags: ["core"]
+  - ticker: "IBRX"
+    note: "core; primary listing NASDAQ:IBRX"
+    earnings_flag: true
+    tv_symbol: "NASDAQ:IBRX"
+    us_symbol: "NASDAQ:IBRX"
+    region: "us"
+    tags: ["core"]
+  - ticker: "INBX"
+    note: "core; primary listing NASDAQ:INBX"
+    earnings_flag: true
+    tv_symbol: "NASDAQ:INBX"
+    us_symbol: "NASDAQ:INBX"
+    region: "us"
+    tags: ["core"]
+  - ticker: "NB"
+    note: "core; primary listing NASDAQ:NB"
+    earnings_flag: true
+    tv_symbol: "NASDAQ:NB"
+    us_symbol: "NASDAQ:NB"
+    region: "us"
+    tags: ["core"]
+  - ticker: "NOK"
+    note: "core; primary listing OMXHEX:NOKIA (US line NYSE:NOK)"
+    earnings_flag: true
+    tv_symbol: "OMXHEX:NOKIA"
+    us_symbol: "NYSE:NOK"
+    region: "eu"
+    tags: ["core"]
+  - ticker: "QUBT"
+    note: "core; primary listing NASDAQ:QUBT"
+    earnings_flag: true
+    tv_symbol: "NASDAQ:QUBT"
+    us_symbol: "NASDAQ:QUBT"
+    region: "us"
+    tags: ["core"]
+  - ticker: "QURE"
+    note: "core; primary listing NASDAQ:QURE"
+    earnings_flag: true
+    tv_symbol: "NASDAQ:QURE"
+    us_symbol: "NASDAQ:QURE"
+    region: "us"
+    tags: ["core"]
+  - ticker: "SLS"
+    note: "core; primary listing NASDAQ:SLS"
+    earnings_flag: true
+    tv_symbol: "NASDAQ:SLS"
+    us_symbol: "NASDAQ:SLS"
+    region: "us"
+    tags: ["core"]
+  - ticker: "SPRB"
+    note: "core; primary listing NASDAQ:SPRB"
+    earnings_flag: true
+    tv_symbol: "NASDAQ:SPRB"
+    us_symbol: "NASDAQ:SPRB"
+    region: "us"
+    tags: ["core"]
+  - ticker: "SRPT"
+    note: "core; primary listing NASDAQ:SRPT"
+    earnings_flag: true
+    tv_symbol: "NASDAQ:SRPT"
+    us_symbol: "NASDAQ:SRPT"
+    region: "us"
+    tags: ["core"]
+  - ticker: "UUUU"
+    note: "core; primary listing AMEX:UUUU"
+    earnings_flag: true
+    tv_symbol: "AMEX:UUUU"
+    us_symbol: "AMEX:UUUU"
+    region: "us"
+    tags: ["core"]
+  - ticker: "ZIM"
+    note: "core; primary listing NYSE:ZIM"
+    earnings_flag: true
+    tv_symbol: "NYSE:ZIM"
+    us_symbol: "NYSE:ZIM"
+    region: "us"
+    tags: ["core"]
+watchlist_intl:
+  - ticker: "EMH"
+    note: "core; primary listing ASX:EMH"
+    tv_symbol: "ASX:EMH"
+    region: "au"
+    tags: ["core"]
+    also_listed: ["LSE:EMH", "OTC:EMHLF"]
+extended:
+  - tv_symbol: "AMEX:BTG"
+    ticker: "BTG"
+    exchange: "AMEX"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "AMEX:CTM"
+    ticker: "CTM"
+    exchange: "AMEX"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "AMEX:KWEB"
+    ticker: "KWEB"
+    exchange: "AMEX"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "AMEX:MSOS"
+    ticker: "MSOS"
+    exchange: "AMEX"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "AMEX:NLR"
+    ticker: "NLR"
+    exchange: "AMEX"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "AMEX:URA"
+    ticker: "URA"
+    exchange: "AMEX"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "AMEX:UUUU"
+    ticker: "UUUU"
+    exchange: "AMEX"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "ASX:EMH"
+    ticker: "EMH"
+    exchange: "ASX"
+    region: "au"
+    core: true
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: ["LSE:EMH", "OTC:EMHLF"]
+    note: "AIM line of European Metals Holdings"
+  - tv_symbol: "ASX:EOS"
+    ticker: "EOS"
+    exchange: "ASX"
+    region: "au"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "ASX:EQR"
+    ticker: "EQR"
+    exchange: "ASX"
+    region: "au"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "ASX:GRX"
+    ticker: "GRX"
+    exchange: "ASX"
+    region: "au"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: ["GPW:GRX", "LSE:GRX"]
+    note: "GreenX Metals, Warsaw line"
+  - tv_symbol: "ASX:PLS"
+    ticker: "PLS"
+    exchange: "ASX"
+    region: "au"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "ASX:PMT"
+    ticker: "PMT"
+    exchange: "ASX"
+    region: "au"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "dr"
+    also_listed: []
+  - tv_symbol: "ASX:VMM"
+    ticker: "VMM"
+    exchange: "ASX"
+    region: "au"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "CBOE:ARKK"
+    ticker: "ARKK"
+    exchange: "CBOE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "CBOE:IGV"
+    ticker: "IGV"
+    exchange: "CBOE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "CSE:GTII"
+    ticker: "GTII"
+    exchange: "CSE"
+    region: "ca"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "EURONEXT:AF"
+    ticker: "AF"
+    exchange: "EURONEXT"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "EURONEXT:AM"
+    ticker: "AM"
+    exchange: "EURONEXT"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "EURONEXT:CAMB"
+    ticker: "CAMB"
+    exchange: "EURONEXT"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "EURONEXT:CMBT"
+    ticker: "CMBT"
+    exchange: "EURONEXT"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "EURONEXT:EDEN"
+    ticker: "EDEN"
+    exchange: "EURONEXT"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "EURONEXT:LBIRD"
+    ticker: "LBIRD"
+    exchange: "EURONEXT"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "EURONEXT:OCI"
+    ticker: "OCI"
+    exchange: "EURONEXT"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "EURONEXT:PARRO"
+    ticker: "PARRO"
+    exchange: "EURONEXT"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "EURONEXT:UMI"
+    ticker: "UMI"
+    exchange: "EURONEXT"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "EURONEXT:VIRI"
+    ticker: "VIRI"
+    exchange: "EURONEXT"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:ALE"
+    ticker: "ALE"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:ARH"
+    ticker: "ARH"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:ASB"
+    ticker: "ASB"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:AST"
+    ticker: "AST"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:BDX"
+    ticker: "BDX"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:CLE"
+    ticker: "CLE"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:CPR"
+    ticker: "CPR"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:CPS"
+    ticker: "CPS"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:DIA"
+    ticker: "DIA"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:DOM"
+    ticker: "DOM"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:DVL"
+    ticker: "DVL"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:ECH"
+    ticker: "ECH"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:GRN"
+    ticker: "GRN"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:HRS"
+    ticker: "HRS"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:KER"
+    ticker: "KER"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:KGH"
+    ticker: "KGH"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:KSG"
+    ticker: "KSG"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:MLK"
+    ticker: "MLK"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:MSZ"
+    ticker: "MSZ"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:MVP"
+    ticker: "MVP"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:PKO"
+    ticker: "PKO"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:PXM"
+    ticker: "PXM"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:SNT"
+    ticker: "SNT"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:VOX"
+    ticker: "VOX"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "GPW:WLT"
+    ticker: "WLT"
+    exchange: "GPW"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "JSE:IMP"
+    ticker: "IMP"
+    exchange: "JSE"
+    region: "za"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "JSE:SSW"
+    ticker: "SSW"
+    exchange: "JSE"
+    region: "za"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "LSE:ALTN"
+    ticker: "ALTN"
+    exchange: "LSE"
+    region: "uk"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "LSE:BTEC"
+    ticker: "BTEC"
+    exchange: "LSE"
+    region: "uk"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: ["TRADEGATE:OM3E"]
+    note: "German secondary (fund)"
+  - tv_symbol: "LSE:CSKR"
+    ticker: "CSKR"
+    exchange: "LSE"
+    region: "uk"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: ["SWB:CEBJ"]
+    note: "German secondary (fund)"
+  - tv_symbol: "LSE:IQE"
+    ticker: "IQE"
+    exchange: "LSE"
+    region: "uk"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "LSE:VALT"
+    ticker: "VALT"
+    exchange: "LSE"
+    region: "uk"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "MIL:AVIO"
+    ticker: "AVIO"
+    exchange: "MIL"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:ABVX"
+    ticker: "ABVX"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:ADBE"
+    ticker: "ADBE"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:ADEA"
+    ticker: "ADEA"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:AEHR"
+    ticker: "AEHR"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:AGEN"
+    ticker: "AGEN"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:AKAM"
+    ticker: "AKAM"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:ALAB"
+    ticker: "ALAB"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:ALLO"
+    ticker: "ALLO"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:ALM"
+    ticker: "ALM"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:APLD"
+    ticker: "APLD"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:APP"
+    ticker: "APP"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:AQST"
+    ticker: "AQST"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:ARWR"
+    ticker: "ARWR"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:ASTS"
+    ticker: "ASTS"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:AXTI"
+    ticker: "AXTI"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:BIDU"
+    ticker: "BIDU"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:BTDR"
+    ticker: "BTDR"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:CALM"
+    ticker: "CALM"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:CAPR"
+    ticker: "CAPR"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:CCCC"
+    ticker: "CCCC"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: "stock"
+    also_listed: []
+    note: "core list only (not in Positions)"
+  - tv_symbol: "NASDAQ:CELH"
+    ticker: "CELH"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:CHRS"
+    ticker: "CHRS"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:CHYM"
+    ticker: "CHYM"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:CIBR"
+    ticker: "CIBR"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "NASDAQ:CLSK"
+    ticker: "CLSK"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:CORZ"
+    ticker: "CORZ"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:COST"
+    ticker: "COST"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:CRML"
+    ticker: "CRML"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:CRSP"
+    ticker: "CRSP"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:CYTK"
+    ticker: "CYTK"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:DOCU"
+    ticker: "DOCU"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:DPRO"
+    ticker: "DPRO"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:DRS"
+    ticker: "DRS"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:DUOL"
+    ticker: "DUOL"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:ENPH"
+    ticker: "ENPH"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:EQPT"
+    ticker: "EQPT"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:ERAS"
+    ticker: "ERAS"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:FCEL"
+    ticker: "FCEL"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:FLNC"
+    ticker: "FLNC"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:FRMI"
+    ticker: "FRMI"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:FSLY"
+    ticker: "FSLY"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:FTAI"
+    ticker: "FTAI"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:FUTU"
+    ticker: "FUTU"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:GDS"
+    ticker: "GDS"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:GGAL"
+    ticker: "GGAL"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "dr"
+    also_listed: []
+  - tv_symbol: "NASDAQ:GLNG"
+    ticker: "GLNG"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:GRAB"
+    ticker: "GRAB"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:GRPN"
+    ticker: "GRPN"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:GRWG"
+    ticker: "GRWG"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:GTLB"
+    ticker: "GTLB"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:HIMX"
+    ticker: "HIMX"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "dr"
+    also_listed: []
+  - tv_symbol: "NASDAQ:HIVE"
+    ticker: "HIVE"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:HON"
+    ticker: "HON"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:HOOD"
+    ticker: "HOOD"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:HROW"
+    ticker: "HROW"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:HUCK"
+    ticker: "HUCK"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: ["NASDAQ:DOMO"]
+    note: "Ticker change: Domo, Inc. renamed Huckleberry.ai, Inc. after selling its operating business to Progress Software (closed 2026-09-22); DOMO -> HUCK on Nasdaq Global Market effective 2026-09-24, CUSIP 257554105 unchanged. Source: SEC 8-K 2026-09-22, Nasdaq ECA2026-672."
+  - tv_symbol: "NASDAQ:IBRX"
+    ticker: "IBRX"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:INBX"
+    ticker: "INBX"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:INSM"
+    ticker: "INSM"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:INTC"
+    ticker: "INTC"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:IRON"
+    ticker: "IRON"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:IRWD"
+    ticker: "IRWD"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:KEEL"
+    ticker: "KEEL"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:KOD"
+    ticker: "KOD"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:LITE"
+    ticker: "LITE"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:LMNR"
+    ticker: "LMNR"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:LPTH"
+    ticker: "LPTH"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:LSCC"
+    ticker: "LSCC"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:LUNR"
+    ticker: "LUNR"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:MARA"
+    ticker: "MARA"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:MDLN"
+    ticker: "MDLN"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:MELI"
+    ticker: "MELI"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:MOB"
+    ticker: "MOB"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:MSTR"
+    ticker: "MSTR"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:MTCH"
+    ticker: "MTCH"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:NB"
+    ticker: "NB"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:NBIS"
+    ticker: "NBIS"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:NKTR"
+    ticker: "NKTR"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:NN"
+    ticker: "NN"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:NVTS"
+    ticker: "NVTS"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:OABI"
+    ticker: "OABI"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:OCUL"
+    ticker: "OCUL"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:ONDS"
+    ticker: "ONDS"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:OPEN"
+    ticker: "OPEN"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:PDD"
+    ticker: "PDD"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:PDYN"
+    ticker: "PDYN"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:PENG"
+    ticker: "PENG"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:PGEN"
+    ticker: "PGEN"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:PLTR"
+    ticker: "PLTR"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:PYPL"
+    ticker: "PYPL"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:QBTS"
+    ticker: "QBTS"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:QUBT"
+    ticker: "QUBT"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:QURE"
+    ticker: "QURE"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:RCAT"
+    ticker: "RCAT"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:RCKT"
+    ticker: "RCKT"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:RELY"
+    ticker: "RELY"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:REPL"
+    ticker: "REPL"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:RGTI"
+    ticker: "RGTI"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:RIVN"
+    ticker: "RIVN"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:RKLB"
+    ticker: "RKLB"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:ROIV"
+    ticker: "ROIV"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:RR"
+    ticker: "RR"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:RZLV"
+    ticker: "RZLV"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:SBLK"
+    ticker: "SBLK"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:SEDG"
+    ticker: "SEDG"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:SERV"
+    ticker: "SERV"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:SGML"
+    ticker: "SGML"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:SHAZ"
+    ticker: "SHAZ"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:SLS"
+    ticker: "SLS"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: null
+    also_listed: []
+    note: "core list only (not in Positions)"
+  - tv_symbol: "NASDAQ:SMCI"
+    ticker: "SMCI"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:SOLS"
+    ticker: "SOLS"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:SPRB"
+    ticker: "SPRB"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:SRPT"
+    ticker: "SRPT"
+    exchange: "NASDAQ"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:SSYS"
+    ticker: "SSYS"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:TEM"
+    ticker: "TEM"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:TLN"
+    ticker: "TLN"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:TMDX"
+    ticker: "TMDX"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:TRI"
+    ticker: "TRI"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:TTD"
+    ticker: "TTD"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:USAR"
+    ticker: "USAR"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:VELO"
+    ticker: "VELO"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NASDAQ:VEON"
+    ticker: "VEON"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "dr"
+    also_listed: []
+  - tv_symbol: "NASDAQ:VERA"
+    ticker: "VERA"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:VIAV"
+    ticker: "VIAV"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:WULF"
+    ticker: "WULF"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NASDAQ:WYFI"
+    ticker: "WYFI"
+    exchange: "NASDAQ"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:ACN"
+    ticker: "ACN"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:AGCO"
+    ticker: "AGCO"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:ALB"
+    ticker: "ALB"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:ASPN"
+    ticker: "ASPN"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:ATEN"
+    ticker: "ATEN"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:B"
+    ticker: "B"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:BABA"
+    ticker: "BABA"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:BMNR"
+    ticker: "BMNR"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:BW"
+    ticker: "BW"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:CCJ"
+    ticker: "CCJ"
+    exchange: "NYSE"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:CF"
+    ticker: "CF"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:CHGG"
+    ticker: "CHGG"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:CLF"
+    ticker: "CLF"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:CNR"
+    ticker: "CNR"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:COHR"
+    ticker: "COHR"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:COUR"
+    ticker: "COUR"
+    exchange: "NYSE"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:CPAC"
+    ticker: "CPAC"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "dr"
+    also_listed: []
+  - tv_symbol: "NYSE:CPS"
+    ticker: "CPS"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:CURB"
+    ticker: "CURB"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:CVNA"
+    ticker: "CVNA"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:CXW"
+    ticker: "CXW"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:DAL"
+    ticker: "DAL"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:DB"
+    ticker: "DB"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:DECK"
+    ticker: "DECK"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:DOCN"
+    ticker: "DOCN"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:DXYZ"
+    ticker: "DXYZ"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "NYSE:ESI"
+    ticker: "ESI"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:FHN"
+    ticker: "FHN"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:FRO"
+    ticker: "FRO"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:FVRR"
+    ticker: "FVRR"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:GEV"
+    ticker: "GEV"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:GLW"
+    ticker: "GLW"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:GME"
+    ticker: "GME"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:GS"
+    ticker: "GS"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:HIMS"
+    ticker: "HIMS"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:HNGE"
+    ticker: "HNGE"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:INSW"
+    ticker: "INSW"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:IONQ"
+    ticker: "IONQ"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:IT"
+    ticker: "IT"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:JMIA"
+    ticker: "JMIA"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:JOBY"
+    ticker: "JOBY"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:KGC"
+    ticker: "KGC"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:KKR"
+    ticker: "KKR"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:KMX"
+    ticker: "KMX"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:LAC"
+    ticker: "LAC"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:LAR"
+    ticker: "LAR"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:LEU"
+    ticker: "LEU"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:MP"
+    ticker: "MP"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:MTH"
+    ticker: "MTH"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:NEE"
+    ticker: "NEE"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:NOW"
+    ticker: "NOW"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:NU"
+    ticker: "NU"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:NVT"
+    ticker: "NVT"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:NXE"
+    ticker: "NXE"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:ORCL"
+    ticker: "ORCL"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:OWL"
+    ticker: "OWL"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:PAAS"
+    ticker: "PAAS"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:PD"
+    ticker: "PD"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:PL"
+    ticker: "PL"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:PWR"
+    ticker: "PWR"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:Q"
+    ticker: "Q"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:RBRK"
+    ticker: "RBRK"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:RDDT"
+    ticker: "RDDT"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:RDW"
+    ticker: "RDW"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:SBSW"
+    ticker: "SBSW"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:SCCO"
+    ticker: "SCCO"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:SIG"
+    ticker: "SIG"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:SII"
+    ticker: "SII"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:SNAP"
+    ticker: "SNAP"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:SPOT"
+    ticker: "SPOT"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:SQM"
+    ticker: "SQM"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:STNG"
+    ticker: "STNG"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:TK"
+    ticker: "TK"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: ["TRADEGATE:EI5"]
+    note: "German secondary (Teekay Corp)"
+  - tv_symbol: "NYSE:TNK"
+    ticker: "TNK"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:VLO"
+    ticker: "VLO"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:WMB"
+    ticker: "WMB"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:WPM"
+    ticker: "WPM"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:XPEV"
+    ticker: "XPEV"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:YELP"
+    ticker: "YELP"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "NYSE:YPF"
+    ticker: "YPF"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "dr"
+    also_listed: []
+  - tv_symbol: "NYSE:ZETA"
+    ticker: "ZETA"
+    exchange: "NYSE"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "NYSE:ZIM"
+    ticker: "ZIM"
+    exchange: "NYSE"
+    region: "us"
+    core: true
+    in_watchlist_key: true
+    instrument_type: null
+    also_listed: ["GETTEX:ZIM"]
+    note: "German secondary"
+  - tv_symbol: "OMXHEX:NOKIA"
+    ticker: "NOKIA"
+    exchange: "OMXHEX"
+    region: "eu"
+    core: true
+    in_watchlist_key: true
+    instrument_type: "stock"
+    also_listed: ["NYSE:NOK"]
+    note: "ADR; core flag carried to Helsinki home listing"
+  - tv_symbol: "OMXSTO:IMMU"
+    ticker: "IMMU"
+    exchange: "OMXSTO"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "OMXSTO:KINV_B"
+    ticker: "KINV_B"
+    exchange: "OMXSTO"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: ["OMXSTO:KINV_A"]
+    note: "A share of Kinnevik; collapsed to B share used in earlier runs"
+  - tv_symbol: "OSL:CRNA"
+    ticker: "CRNA"
+    exchange: "OSL"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "OSL:KOG"
+    ticker: "KOG"
+    exchange: "OSL"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "OSL:NORBT"
+    ticker: "NORBT"
+    exchange: "OSL"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "OSL:STRO"
+    ticker: "STRO"
+    exchange: "OSL"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "OTC:BYDDY"
+    ticker: "BYDDY"
+    exchange: "OTC"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "dr"
+    also_listed: []
+  - tv_symbol: "OTC:IMPUY"
+    ticker: "IMPUY"
+    exchange: "OTC"
+    region: "us"
+    core: false
+    in_watchlist_key: false
+    instrument_type: null
+    also_listed: []
+  - tv_symbol: "PSECZ:CEZ"
+    ticker: "CEZ"
+    exchange: "PSECZ"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "SGX:A31"
+    ticker: "A31"
+    exchange: "SGX"
+    region: "sg"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "SGX:OAJ"
+    ticker: "OAJ"
+    exchange: "SGX"
+    region: "sg"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "TSE:9023"
+    ticker: "9023"
+    exchange: "TSE"
+    region: "jp"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "TSX:CURA"
+    ticker: "CURA"
+    exchange: "TSX"
+    region: "ca"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "TSX:HIVE"
+    ticker: "HIVE"
+    exchange: "TSX"
+    region: "ca"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "TSX:VNP"
+    ticker: "VNP"
+    exchange: "TSX"
+    region: "ca"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "TSXV:GGO"
+    ticker: "GGO"
+    exchange: "TSXV"
+    region: "ca"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "TSXV:PNG"
+    ticker: "PNG"
+    exchange: "TSXV"
+    region: "ca"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "TSXV:SGML"
+    ticker: "SGML"
+    exchange: "TSXV"
+    region: "ca"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "XETR:CEMG"
+    ticker: "CEMG"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "XETR:IS0E"
+    ticker: "IS0E"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "XETR:IUS4"
+    ticker: "IUS4"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "XETR:JEDI"
+    ticker: "JEDI"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "XETR:LHA"
+    ticker: "LHA"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "XETR:LI7U"
+    ticker: "LI7U"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "XETR:LYM9"
+    ticker: "LYM9"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "XETR:NRGT"
+    ticker: "NRGT"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "XETR:P4O"
+    ticker: "P4O"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "XETR:RARE"
+    ticker: "RARE"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "XETR:TNIE"
+    ticker: "TNIE"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "XETR:U3O8"
+    ticker: "U3O8"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "XETR:URNU"
+    ticker: "URNU"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "XETR:VOW3"
+    ticker: "VOW3"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "stock"
+    also_listed: []
+  - tv_symbol: "XETR:XB0T"
+    ticker: "XB0T"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "XETR:XGEN"
+    ticker: "XGEN"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
+  - tv_symbol: "XETR:XTMT"
+    ticker: "XTMT"
+    exchange: "XETR"
+    region: "eu"
+    core: false
+    in_watchlist_key: false
+    instrument_type: "fund"
+    also_listed: []
