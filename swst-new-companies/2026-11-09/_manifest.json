@@ -1,0 +1,41 @@
+{
+  "_schema": "swst-new-companies-manifest-v1",
+  "date": "2026-11-09",
+  "producer": "grok-bot/simply-wall-st-new-companies",
+  "run_id": "2026-11-09Tweekly",
+  "canonical": {
+    "brief": "brief.md",
+    "machine": [
+      "companies.json",
+      "fundamentals.csv"
+    ]
+  },
+  "files": [
+    {
+      "name": "brief.md",
+      "role": "narrative brief"
+    },
+    {
+      "name": "companies.json",
+      "role": "machine snapshot swst-new-companies-v1"
+    },
+    {
+      "name": "fundamentals.csv",
+      "role": "fundamentals table"
+    },
+    {
+      "name": "_manifest.json",
+      "role": "provenance"
+    }
+  ],
+  "counts": {
+    "found": 121,
+    "new": 111,
+    "repeats_skipped": 10,
+    "on_watchlist": 2
+  },
+  "notes": [
+    "SWS badge counts 123 (US64/EU16/JP·TW43) vs 121 distinct rows collected",
+    "SWS card-expiry popup appeared; billing not touched"
+  ]
+}

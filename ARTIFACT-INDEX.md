@@ -53,7 +53,7 @@ were produced by, and they are the closest thing this repo has to a record of ho
 
 ## Directory map
 
-All 21 top-level directories. "Live" means the routine is still producing into it.
+All 22 top-level directories. "Live" means the routine is still producing into it.
 
 | Directory | Written by | Contents | Live? |
 |---|---|---|---|
@@ -80,6 +80,7 @@ All 21 top-level directories. "Live" means the routine is still producing into i
 | `refs/` | standing documentation | Contracts, pointers, `watchlist.yaml`, `artifact-contract.md`, `decisions-contract.md`, and `archive/skipped-markers/` | **Yes** (mixed) |
 | `cron-prompts/` | prompt engineering | 3 `.HARDENED.md` prompt files | **Yes** |
 | `scripts/` | routine engineering | 5 pipeline scripts plus 3 repo-consistency tools | **Yes** |
+| `swst-new-companies/` | Grok Bot | Weekly Simply Wall St new-company publish: `latest.{json,md,csv}`, `history.jsonl`, `_index.json`, dated `YYYY-MM-DD/` with `_manifest.json`/`brief.md`/`companies.json`/`fundamentals.csv` | **Yes** — weekly |
 | `archive/` | retired artifact families | `README.md` (the convention) and `daily-screens-breadth/` | **No** — by design |
 
 Read the "Live?" column as a statement about the **routine**, not about the files. A directory can be
@@ -136,6 +137,8 @@ Two more are worth knowing about even though they are single files:
 `refs/preopen-feed-contract.md` (the tape's schema and tolerances, including a named regression
 signature) and `research/047040-jan-2026-catalyst.md` (the best-written research note here — a catalyst
 chain, a day-by-day tape, and an explicit resolution of a source conflict).
+
+**Also:** `swst-new-companies/` is the weekly Simply Wall St new-companies artifact family; start with `refs/swst-new-companies-contract.md` and consume `swst-new-companies/latest.json`.
 
 ## Tooling
 
