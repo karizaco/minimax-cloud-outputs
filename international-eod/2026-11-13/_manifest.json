@@ -6,6 +6,7 @@
  "price_currency": "listing (the `currency` column)",
  "change_pct_unit": "percent",
  "csv_columns": 18,
+ "degraded_sources": 2,
  "fx_source": {
   "provider": "Frankfurter (ECB) + open.er-api",
   "updated_utc": "Frankfurter (ECB): 2026-11-13; open.er-api: Fri, 13 Nov 2026 00:02:31 +0000",
