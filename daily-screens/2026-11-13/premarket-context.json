@@ -1,0 +1,71 @@
+{
+  "catalysts": {
+    "NPCE": {
+      "confirmed": true,
+      "source": "NeuroPace Q3 2026 press release (Business Wire, 11/12 16:05 ET) and 8-K filed 11/12",
+      "note": "Q3 revenue $23.1M vs $27.05M consensus; adj EPS -$0.10 vs -$0.06 est; FY26 revenue guidance CUT to $91-92M from $99.5-101.5M, adj EBITDA to -$8.5M/-9.5M from -$7.5M/-8.5M; shortfall concentrated in large accounts, sales-leadership changes and the SEEG distribution exit"
+    },
+    "MOD": {
+      "confirmed": true,
+      "source": "Bloomberg report carried by MT Newswires (11/13 03:39 ET) and Yahoo Finance (11/13 07:41 ET)",
+      "note": "Samsung Electronics in talks to acquire Modine, reported deal value about $5.6B; no terms disclosed, no final decision, talks could collapse; data-center cooling is the growth engine (Q2 FY27 data-center revenue +95% to $439.7M, record orders above $1B)"
+    },
+    "CADL": {
+      "confirmed": true,
+      "source": "Candel Therapeutics Q3 2026 results / BLA update (Dow Jones Newswires, 11/12 17:14 ET) and press release",
+      "note": "BLA filing for aglatimagene in localized prostate cancer pushed to mid-2027 from Q4 2026 pending FDA dialogue and assay refinements; Q3 operating loss widened to $23.0M ($0.28/share) from $13.2M ($0.21)"
+    },
+    "LFTO": {
+      "confirmed": true,
+      "source": "Liftoff Mobile Q3 2026 press release and 8-K (11/12 16:03 ET); earnings call 17:00 ET",
+      "note": "Q3 revenue $238M, +32% YoY and ~$16M above the high end of guidance; adj EBITDA $145M, 61% margin; EPS $0.47 vs $0.17 consensus; Q4 guided to $244-249M, FY26 revenue raised to $907-912M"
+    },
+    "NMAX": {
+      "confirmed": true,
+      "source": "Newsmax Q3 2026 results and call (11/12 after close); Freedom Broker upgrade 11/13",
+      "note": "Q3 revenue $69M (+52.5%), record underlying revenue $55M (+21.6%) ex a $14M non-recurring advertising payment; net income $15.2M / $0.12 vs a $0.02 loss expected; adj EBITDA positive; Freedom Broker upgraded to Buy, $10 target"
+    },
+    "CBRS": {
+      "confirmed": true,
+      "source": "Cerebras Systems Q3 2026 results and earnings call (11/12 after close); CNBC interview",
+      "note": "Q3 revenue beat plus a new Microsoft cloud agreement signed in October (third hyperscaler after AWS and Oracle), revenue expected from Q1 2027; 2026 outlook raised, revenue expected to triple in 2027"
+    },
+    "DGXX": {
+      "confirmed": true,
+      "source": "Digi Power X Q3 2026 results press release (ACCESS Newswire, 11/13 pre-open)",
+      "note": "Q3 revenue $12.25M, +85% QoQ and +50% YoY; AI revenue $5.66M, up more than 400% QoQ and 46% of revenue; $119.6M cash and no borrowings; $200M Goldman Sachs credit facility expected to close in Q4 2026"
+    },
+    "YSS": {
+      "confirmed": true,
+      "source": "York Space Systems Q3 FY26 results 8-K (SEC, 11/12) and Q3 press release",
+      "note": "Q3 FY26 results released after the 11/12 close, against a backdrop of reduced 2026 sales guidance, delayed contract conversion and street-wide price-target cuts to the low-to-mid teens"
+    },
+    "HAWK": {
+      "confirmed": true,
+      "source": "HawkEye 360 Q3 2026 results press release (PR Newswire, 11/12 18:01 ET) and earnings call",
+      "note": "Q3 revenue $59.3M, +84% YoY and above the $56.4M consensus; adj EBITDA $13.3M; FY26 guidance raised to $225-227M revenue and $38-40M adj EBITDA; $135M of post-quarter-end contract awards"
+    }
+  },
+  "notes": [
+    "The Focus universe is the 2026-11-11 sweep (12 names) because cron #09's 2026-11-12 sweep never published; every reference close is the 2026-11-12 settled close taken from the independent sources only (TradingView + Cboe + session-exact Nasdaq history all agreeing).",
+    "All pre-market gaps come from the consolidated tape's last EXECUTED print; the live quote is published separately as quote_price / quote_gap_pct.",
+    "Catalysts were confirmed on the wire or in an issuer release; a TradingView earnings_release_date was treated as a candidate only."
+  ],
+  "source_health": [
+    {
+      "source": "web_search",
+      "status": "ok",
+      "role": "the catalysts for the market ladder"
+    },
+    {
+      "source": "issuer press releases / SEC 8-K",
+      "status": "ok",
+      "role": "NPCE, LFTO, DGXX, YSS, CADL"
+    },
+    {
+      "source": "MarketBeat / Yahoo Finance / MT Newswires / CNBC",
+      "status": "ok",
+      "role": "MOD, CBRS, NMAX, HAWK"
+    }
+  ]
+}
