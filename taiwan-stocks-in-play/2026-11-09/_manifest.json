@@ -1,0 +1,50 @@
+{
+  "_schema": "intl-stocks-in-play-manifest-v1",
+  "canonical": {
+    "brief": [
+      "open.md"
+    ],
+    "machine": [
+      "open-candidates.csv",
+      "open-candidates.json"
+    ]
+  },
+  "counts": {
+    "open": {
+      "by_tier": {
+        "A": 0,
+        "B": 3,
+        "C": 7,
+        "SOFT_A": 6,
+        "TECH_WATCH": 9
+      },
+      "candidates": 25,
+      "on_watchlist": 0,
+      "unparsed_items": 0
+    }
+  },
+  "date": "2026-11-09",
+  "files": [
+    {
+      "name": "open-candidates.csv",
+      "role": "machine"
+    },
+    {
+      "name": "open-candidates.json",
+      "role": "machine"
+    },
+    {
+      "name": "open.md",
+      "role": "brief"
+    },
+    {
+      "name": "_manifest.json",
+      "role": "provenance"
+    }
+  ],
+  "generated_at": "2026-11-09T20:00:00+07:00",
+  "notes": [],
+  "producer": "grok-bot/taiwan-stocks-in-play",
+  "provenance": "Fundamental taiwan box digest built at 2026-11-09T20:00:00+07:00 covering the open session.",
+  "run_id": "2026-11-09Topen"
+}
