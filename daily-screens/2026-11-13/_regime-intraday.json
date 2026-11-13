@@ -1,0 +1,32 @@
+{
+  "_schema": 2,
+  "_note": "cron #10 intraday breadth snapshot \u2014 flat regime schema, see SKILL.md \u00a73.5",
+  "size_cut_pct": 0,
+  "uncertainty": false,
+  "late_cycle": false,
+  "breadth_pct_spx": 62.26,
+  "index_below_20sma": true,
+  "vix": 19.29,
+  "vix3m": 20.57,
+  "atr_extensions": {
+    "IWM": {
+      "extension_pct": -0.95
+    },
+    "QQQ": {
+      "extension_pct": -4.24
+    },
+    "QQQE": {
+      "extension_pct": -1.83
+    },
+    "RSP": {
+      "extension_pct": 2.68
+    },
+    "SPY": {
+      "extension_pct": -1.0
+    }
+  },
+  "_vix_source": "Cboe delayed-quote CDN (_VIX.json / _VIX3M.json)",
+  "_vix_quote_time_et": "2026-11-13T13:50:31",
+  "_vix_session_mode": "regular hours \u2014 live print",
+  "_data_date": "2026-11-12"
+}
