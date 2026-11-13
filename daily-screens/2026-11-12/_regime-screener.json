@@ -3,25 +3,25 @@
   "size_cut_pct": 0,
   "uncertainty": false,
   "late_cycle": false,
-  "breadth_pct_spx": 53.03,
+  "breadth_pct_spx": 53.0741410488246,
   "index_below_20sma": true,
   "vix": 18.7,
   "vix3m": 20.06,
   "atr_extensions": {
-    "IWM": {
-      "extension_pct": -0.95
+    "QQQE": {
+      "extension_pct": -1.8316671606801282
     },
     "QQQ": {
-      "extension_pct": -4.24
-    },
-    "QQQE": {
-      "extension_pct": -1.83
+      "extension_pct": -4.23766125984314
     },
     "RSP": {
-      "extension_pct": 2.68
+      "extension_pct": 2.6792816916216378
     },
     "SPY": {
-      "extension_pct": -1.0
+      "extension_pct": -1.0046759704907315
+    },
+    "IWM": {
+      "extension_pct": -0.9519202037592933
     }
   }
 }

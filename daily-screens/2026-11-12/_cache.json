@@ -7,9 +7,9 @@
     "late_cycle": false
   },
   "counts": {
-    "candidates": 1134,
+    "candidates": 1173,
     "focus": 12,
-    "tier_a": 6,
+    "tier_a": 4,
     "short_candidates": 13,
     "long_reversal_candidates": 6
   }
