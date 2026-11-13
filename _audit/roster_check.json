@@ -1,0 +1,11 @@
+{
+  "ground_truth_only": [],
+  "ground_truth_routines": 27,
+  "live_routines": 27,
+  "roster_copy_drift": [],
+  "roster_copy_drift_count": 0,
+  "roster_copy_not_checked": [],
+  "roster_copy_not_checked_count": 0,
+  "roster_gap": [],
+  "roster_gap_count": 0
+}
