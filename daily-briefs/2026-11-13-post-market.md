@@ -156,6 +156,8 @@ From cron #20's universe file, names above a $2B market cap. Two names larger th
 | HUT | -7.12 | 57.57 | 4,369,787 | 0.63 | Financials |
 | RGTI | -6.87 | 9.62 | 15,431,027 | 0.97 | Information Technology |
 
+Closes in this table are cron #20's settled close column, and two of them differ marginally from the bridge's print for the same session: Modine (135.80 here, 135.66 on the bridge) and Dell (344.30 here, 344.53 on the bridge). The bridge is the quote source of record everywhere else in this brief, and the after-hours table's prior closes come from it.
+
 The losers are overwhelmingly the AI-hardware complex, and the reasons are specific: AMD published no news of its own and simply gave back 37% of a five-session run; Cisco beat and raised (Q1 revenue $18.5bn, up 24%, EPS $1.40) but fell 6.24% as order growth excluding hyperscalers decelerated to 14% and gross margin came under pressure; Applied Materials fell after a downgrade; Heartflow dropped 19.13% on a Q3 revenue beat of $72.9m that still raised questions about fourth-quarter growth.
 
 ### Watchlist EOD review
