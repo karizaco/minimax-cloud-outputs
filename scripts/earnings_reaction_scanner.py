@@ -24,6 +24,14 @@ This file is the executable form of that contract:
   * `degraded_sources` counts each degraded source separately, and the chat
     reply's `errors:` must equal that count.
 
+The US universe is scanned in SIX passes, not five: Pass B2 is the US
+PRE-MARKET gap scan ("gapped today, flat yesterday"), added after the measured
+2026-11-13 failure in which a name that was flat in the prior session and is
+not a $20bn mega-cap (LFTO, SBC) fell through Pass A and Pass B and was
+missed by the routine that exists to catch same-session earnings reactions.
+The ARTIFACT FORMAT is unchanged - only the coverage grew, so the capability
+marker REACTION_ARTIFACT_V2 does NOT change.
+
 Verified behaviours this script encodes (see memory topic
 `earnings-calendar-data-path`):
   * `change` on ILLIQUID rows is computed against a STALE reference close.
@@ -57,7 +65,7 @@ import json, subprocess, time, datetime, os, sys, re
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-15.1"
+SCRIPT_VERSION = "2026-11-15.2"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -163,6 +171,30 @@ FOREIGN_HOME_COUNTRIES = ([v[0] for v in EU_MARKETS.values()] + ["Australia"]
                           + [v[0] for v in APAC_MARKETS.values()])
 
 MIN_VOLUME = 10000          # removes stale-reference rows (validated) - DO NOT LOWER
+# ---- Pass B2: the US PRE-MARKET gap scan ("gapped today, flat yesterday")
+#
+# WHY THIS PASS EXISTS - the measured 2026-11-13 failure. The US universe was
+# Pass A (the top-250 US names above $20bn) plus Pass B (the PRIOR session's
+# movers: |change| >= 3%, market cap > $1bn, close > $5). A name that was FLAT
+# in the prior session and is not a $20bn mega-cap falls through BOTH: on
+# Friday 2026-11-13 that dropped LFTO (Liftoff Mobile, ~$3.9bn, +25% pre-market
+# on a Q3 beat, closed +30.63%) and SBC (SBC Medical Group, ~$549m, +9.6%
+# pre-market, closed +37.64%) - two of the day's biggest same-session earnings
+# movers - from the routine that exists to catch same-session earnings
+# reactions. Pass B2 scans the PRE-MARKET tape of the FULL US universe instead
+# of the prior session's regular-hours tape, so "gapped today, flat yesterday"
+# is a HIT instead of a hole.
+#
+# The floors are the ones cron #08's pre-market gapper already measured on this
+# SAME scanner and the same market (market cap > $200M, pre-market volume
+# >= 20,000 there; 10,000 here, so a mid-cap with a thinner book still
+# qualifies). NO session-volume floor is applied: at the 08:00 ET fire the
+# regular session has not opened, so `volume` is 0 for every candidate and a
+# session-volume filter would empty the pass.
+PREMARKET_GAP_MIN_PCT = 5.0          # |pre-market move| that makes a name a candidate
+PREMARKET_GAP_MIN_VOLUME = 10000     # pre-market SHARES (NOT session shares)
+PREMARKET_GAP_MIN_MCAP = 200000000   # $200M - the mid-cap floor
+PREMARKET_GAP_MIN_CLOSE = 2          # $2
 SCAN_RETRIES = 3
 REF_CLOSE_TOLERANCE_PCT = 0.5   # |implied ref - Yahoo ref| above this = stale reference
 PREMARKET_OPEN_ET = datetime.time(4, 0)
@@ -199,6 +231,7 @@ health = {"scanner_calls": 0, "scanner_errors": 0, "yahoo_calls": 0, "yahoo_erro
           "rows_dropped_stale_ref": 0, "rows_dropped_unresolved_ref": 0,
           "calendar_calls": 0, "calendar_errors": 0, "calendar_symbols": 0,
           "earnings_field_stale_rows": 0,
+          "pass_b2": {"candidates": 0, "up": 0, "down": 0, "deduped": 0, "published": 0},
           "us_line_index_ok": True}
 DEGRADED = []          # list of (source, detail) - each degraded source counted once
 
@@ -999,6 +1032,40 @@ pb_dn = scan_or_empty("america",
 b_up = [r["d"] for r in pb_up["data"] if g(r["d"], "exchange") not in US_DROP]
 b_dn = [r["d"] for r in pb_dn["data"] if g(r["d"], "exchange") not in US_DROP]
 
+# ------------------------------------------------------------------ Pass B2
+# The US PRE-MARKET gap scan: "gapped today, flat yesterday". Two calls,
+# because a scanner filter is AND-ed and one call cannot express
+# "|pre-market move| >= 5%".
+#
+# COLUMN MEASUREMENT (2026-11-15, market `america`, US stocks). Both fields
+# exist as a COLUMN and as a FILTER on this scanner, so the filter is real and
+# not silently ignored (an unknown field returns 200 with ZERO rows, so the
+# count is the proof): `premarket_change >= 5` returns 136 US names and
+# `premarket_volume >= 10000` returns 601. The `gap` column exists too, but it
+# is the REGULAR SESSION OPEN gap, not the pre-market move - measured on the
+# same snapshot: LFTO's `gap` is +27.098% and equals (open 23.78 - prior close
+# 18.71) / 18.71, while its `premarket_change` is +26.510% = (pre-market 23.67
+# - 18.71) / 18.71. At the 08:00 ET fire the session has not opened, so `gap`
+# is not knowable yet and `premarket_change` is the only correct column.
+# (Cron #08's pre-market gapper filters the same two fields on the same
+# scanner: `cloud-prompts/skills/stock-screener-suite/scripts/premarket_pull.py`.)
+pb2_up = scan_or_empty("america",
+             flist(("exchange", "in_range", US_VENUES),
+                   ("market_cap_basic", "egreater", PREMARKET_GAP_MIN_MCAP),
+                   ("close", "egreater", PREMARKET_GAP_MIN_CLOSE),
+                   ("premarket_change", "egreater", PREMARKET_GAP_MIN_PCT),
+                   ("premarket_volume", "egreater", PREMARKET_GAP_MIN_VOLUME)),
+             rng=(0, 200), sort={"sortBy": "premarket_change", "sortOrder": "desc"})
+pb2_dn = scan_or_empty("america",
+             flist(("exchange", "in_range", US_VENUES),
+                   ("market_cap_basic", "egreater", PREMARKET_GAP_MIN_MCAP),
+                   ("close", "egreater", PREMARKET_GAP_MIN_CLOSE),
+                   ("premarket_change", "less", -PREMARKET_GAP_MIN_PCT),
+                   ("premarket_volume", "egreater", PREMARKET_GAP_MIN_VOLUME)),
+             rng=(0, 200), sort={"sortBy": "premarket_change", "sortOrder": "asc"})
+b2_up = [r["d"] for r in pb2_up["data"] if g(r["d"], "exchange") not in US_DROP]
+b2_dn = [r["d"] for r in pb2_dn["data"] if g(r["d"], "exchange") not in US_DROP]
+
 # ------------------------------------------------------------------ Pass C
 eu_rows = []
 for mkt, (home, venues, suffix) in EU_MARKETS.items():
@@ -1093,21 +1160,26 @@ apac = apac_capped[:25]
 health["rows_per_market_apac"] = apac_rows_per_market
 
 # ------------------------------------------------------------------ US merge
+def _us_candidate(d):
+    """The per-symbol record one US pass row contributes to the merge."""
+    return {"name": g(d, "name"), "ex": g(d, "exchange"),
+            "country": g(d, "country"),
+            "kind": (g(d, "type") or "").strip().lower(),
+            "desc": (g(d, "description") or "").strip(),
+            "close": g(d, "close"), "change": g(d, "change"),
+            "vol": g(d, "volume"), "mcap": g(d, "market_cap_basic"),
+            "pm": g(d, "premarket_change"), "po": g(d, "postmarket_change"),
+            "pmc": g(d, "premarket_close"),
+            "er": g(d, "earnings_release_date"),
+            "ern": g(d, "earnings_release_next_date"), "pass": set()}
+
+
 us = {}
 for d in a_rows + b_up + b_dn:
     sym = d[IDX["name"]]
     if "/" in sym:
         continue
-    c = us.setdefault(sym, {"name": g(d, "name"), "ex": g(d, "exchange"),
-                             "country": g(d, "country"),
-                             "kind": (g(d, "type") or "").strip().lower(),
-                             "desc": (g(d, "description") or "").strip(),
-                             "close": g(d, "close"), "change": g(d, "change"),
-                             "vol": g(d, "volume"), "mcap": g(d, "market_cap_basic"),
-                             "pm": g(d, "premarket_change"), "po": g(d, "postmarket_change"),
-                             "pmc": g(d, "premarket_close"),
-                             "er": g(d, "earnings_release_date"),
-                             "ern": g(d, "earnings_release_next_date"), "pass": set()})
+    c = us.setdefault(sym, _us_candidate(d))
     if d in a_rows:
         c["pass"].add("A")
     if d in b_up:
@@ -1118,6 +1190,30 @@ for d in a_rows + b_up + b_dn:
                    ("pmc", "premarket_close")):
         if c[k] is None and g(d, key) is not None:
             c[k] = g(d, key)
+
+# Pass B2 is merged LAST, so a name that is already a Pass A or Pass B row KEEPS
+# that row - the one-table rule: exactly one row, in exactly one table - and the
+# B2 hit is recorded as a DEDUPE rather than as a second row. `b2_only` is the
+# set of names the B2 pass contributed on its own; `b2_dedup` is the set it
+# found already covered.
+b2_dedup = set()
+b2_only = set()
+for d in b2_up + b2_dn:
+    sym = d[IDX["name"]]
+    if "/" in sym:
+        continue
+    label = "B2_up" if d in b2_up else "B2_dn"
+    if sym in us:
+        us[sym]["pass"].add(label)
+        b2_dedup.add(sym)
+    else:
+        us[sym] = _us_candidate(d)
+        us[sym]["pass"].add(label)
+        b2_only.add(sym)
+    for k, key in (("pm", "premarket_change"), ("po", "postmarket_change"),
+                   ("pmc", "premarket_close")):
+        if us[sym][k] is None and g(d, key) is not None:
+            us[sym][k] = g(d, key)
 
 tagged, quiet, bod = [], [], []
 for sym, c in us.items():
@@ -1213,6 +1309,18 @@ for sym, c in quiet[:15]:
         quiet_keep.append((sym, c))
     time.sleep(0.35)
 quiet = quiet_keep
+
+# The Pass B2 coverage counters. `published` is counted AFTER the reference-close
+# hard gate, because a B2 row can still be dropped there - a candidate that
+# never reaches a table is not coverage, and publishing the scan-side count
+# would overstate it.
+B2_STATS = {"candidates": len(b2_dedup) + len(b2_only),
+            "up": len({g(d, "name") for d in b2_up}),
+            "down": len({g(d, "name") for d in b2_dn}),
+            "deduped": len(b2_dedup),
+            "published": sum(1 for sym, _ in tagged if sym in b2_only)
+                        + sum(1 for sym, _ in quiet if sym in b2_only)}
+health["pass_b2"] = B2_STATS
 
 eu_res, eu_keep = {}, []
 for r0 in eu_final:
@@ -2060,8 +2168,9 @@ else:
     A(f"- Run type: `scheduled_scan`")
 A(f"- Source: TradingView public screener (`scanner.tradingview.com/<market>/scan`);")
 A(f"  Yahoo chart API as the independent reference-close source.")
-A(f"- Method: 5 passes (US top-200 mcap, US prior-session movers, EU/UK movers,")
-A(f"  ASX movers, APAC/Gulf movers). Volume floor {MIN_VOLUME:,} on every pass; `country` filter for")
+A(f"- Method: 6 passes (US top-200 mcap, US prior-session movers, US pre-market gaps,")
+A(f"  EU/UK movers, ASX movers, APAC/Gulf movers). Volume floor {MIN_VOLUME:,} on every session-volume")
+A(f"  pass; Pass B2 floors PRE-market volume at {PREMARKET_GAP_MIN_VOLUME:,} shares; `country` filter for")
 A(f"  primary listings; exchange drop-list applied.")
 A(f"- artifact_contract: {ARTIFACT_CONTRACT}")
 A(f"- settlement_state: every foreign row carries a `Settle` cell - `live` when the row's")
@@ -2084,6 +2193,9 @@ big_apac = max(apac, key=lambda r: abs(g(r["d"], "change"))) if apac else None
 _eu_live = sum(1 for r in eu_final if settle_state(r.get("ref")) == "live")
 A(f"- {len(amc)} AMC reactions, {len(gaps)} pre-market gaps, {len(bod)} without extended-hours data; "
   f"{len(eu_final)} EU/UK and {len(au)} ASX movers, {len(apac)} APAC/Gulf movers.")
+A(f"- Pass B2 (the US pre-market gap scan) met the filter on {B2_STATS['candidates']} names "
+  f"({B2_STATS['up']} up, {B2_STATS['down']} down); {B2_STATS['deduped']} were already a Pass A/B "
+  f"row and are recorded as dedupes, and {B2_STATS['published']} reached a table.")
 if big_us:
     A(f"- Biggest US extended-hours move: {big_us[1]['name']} "
       f"{big_us[1]['tag']} ({pct(big_us[1]['mx'])}%).")
@@ -2254,6 +2366,22 @@ A(f"  (a broad up-day); a small 'egreater' count usually means a small market wi
 A(f"  names above the $1B market-cap floor. Check the median change before calling it a gap.")
 A(f"- filters: volume>{MIN_VOLUME} (removes stale-reference rows), country=home for EU/UK/AU,")
 A(f"  exchange drop-list for US, US venue allow-list, US preferred (slash ticker) excluded")
+A(f"- pass_b2 (US pre-market gap scan - \"gapped today, flat yesterday\"): "
+  f"candidates={B2_STATS['candidates']} deduped_against_pass_a_b={B2_STATS['deduped']} "
+  f"published={B2_STATS['published']} (up={B2_STATS['up']} down={B2_STATS['down']})")
+A(f"  filter: US venues, market_cap_basic > ${PREMARKET_GAP_MIN_MCAP:,}, close > ${PREMARKET_GAP_MIN_CLOSE}, "
+  f"|premarket_change| >= {PREMARKET_GAP_MIN_PCT}%, premarket_volume >= {PREMARKET_GAP_MIN_VOLUME:,} shares; "
+  f"two scans (up and down) because a scanner filter is AND-ed")
+A(f"  why it exists: on 2026-11-13 a name that was FLAT in the prior session and is not a $20bn "
+  f"mega-cap fell through Pass A and Pass B, so LFTO (+30.63% on the day) and SBC (+37.64%) were "
+  f"both missed by the routine that exists to catch same-session earnings reactions")
+A(f"  column measurement (2026-11-15, market `america`, US stocks): `premarket_change` and "
+  f"`premarket_volume` are available as BOTH a column and a FILTER (an unknown field returns 200 "
+  f"with zero rows, so the counts are the proof); `gap` also exists but it is the REGULAR SESSION "
+  f"OPEN gap, which is not knowable at the 08:00 ET fire, so `premarket_change` is the column used")
+A(f"  the pre-market volume floor is a DIFFERENT measure from the session-volume floor: at the "
+  f"08:00 ET fire the regular session has not opened, so `volume` is 0 for every candidate and no "
+  f"session-volume filter is applied to this pass")
 A(f"- volume_floor_note: volume>{MIN_VOLUME} removes MOST stale-reference rows, but a row can")
 A(f"  still sit on a stale reference when its only volume came from one thin day (verified")
 A(f"  2026-10-26: LSE 50GP cleared the floor on 12,000 shares dated 2026-10-15 while Yahoo")
@@ -2320,6 +2448,8 @@ A(f"`earnings-reaction target=earnings-reactions:{RUN_DATE} candidates={len(us)}
   f"asx_reactions={len([r for r in au if abs(g(r['d'],'change'))>3])} "
   f"apac_reactions={len([r for r in apac if abs(g(r['d'],'change'))>3])} "
   f"catalyst_lookups={len(catalysts)} bod={len(bod)} "
+  f"pass_b2_candidates={B2_STATS['candidates']} pass_b2_dedup={B2_STATS['deduped']} "
+  f"pass_b2_published={B2_STATS['published']} "
   f"earnings_calendar_rows={health['calendar_symbols']} "
   f"earnings_tiers_fresh={len(FRESH_US)} earnings_tiers_near={len(NEAR_US)} "
   f"earnings_field_stale_rows={health['earnings_field_stale_rows']} "
