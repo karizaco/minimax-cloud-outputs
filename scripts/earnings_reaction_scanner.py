@@ -58,14 +58,33 @@ import json, subprocess, time, datetime, os, sys, re
 # ==== PURE-HELPERS-BEGIN ============================================================
 # Everything between these two markers is side-effect free: no network call is
 # made, no file is written and no process is re-executed (the self-heal CALL
-# sits below the END marker). The regression test imports THIS EXACT BLOCK, so
-# it tests the shipped code rather than a copy of it - and it can never trigger
-# the self-heal, which would otherwise overwrite the file under test. The block
-# is SELF-CONTAINED: every name it uses is defined inside it.
+# sits below the END marker). The regression tests import THIS EXACT BLOCK, so
+# they test the shipped code rather than a copy of it - and they can never
+# trigger the self-heal, which would otherwise overwrite the file under test.
+#
+# Two suites load it: `tools/test_reaction_contract.py` in the migration repo
+# and `scripts/test_earnings_scanner.py` in this one (run by the pre-commit
+# hook). Both exec it with TRIPWIRES on subprocess/os, so a statement here that
+# touches the network, the filesystem or the process table fails them loudly.
+#
+# What "side-effect free" means here: functions that WOULD fetch something
+# (the Yahoo layer, the screener call, the self-heal) are DEFINED in this
+# block, never CALLED at load time. The block is SELF-CONTAINED at load time:
+# every name it needs to execute is defined inside it. A few functions read
+# RUN STATE at call time (NOW_ET, catalysts, TARGET_SET, CAL, PREV_SESSION);
+# those names get
+# harmless defaults here, the run below assigns the real values, and a test
+# sets them directly.
+#
+# 2026-11-15: the block was widened from "the session/date helpers" to every
+# definition above the first screener pass, plus the catalyst merge, so the
+# Yahoo breaker and the region-matched catalyst merge are testable. Moving a
+# `def` earlier changes nothing at run time - only the self-heal CALL had to
+# move down with the END marker, and it still runs before the first pass.
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-15.2"
+SCRIPT_VERSION = "2026-11-15.3"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -636,23 +655,28 @@ def _self_heal():
         return
 
 
-# ==== PURE-HELPERS-END ============================================================
-_self_heal()
-
-_h = os.environ.get("_EARNINGS_SELF_HEALED", "")
-if _h:
-    _parts = _h.split("|")
-    _v = _parts[0].split("->")
-    SELF_HEALED["done"] = True
-    SELF_HEALED["from"] = _v[0] if len(_v) > 0 else "?"
-    SELF_HEALED["to"] = _v[1] if len(_v) > 1 else "?"
-    SELF_HEALED["source"] = _parts[1] if len(_parts) > 1 else "?"
-
-
 # ----------------------------------------------------------------- HTTP helpers
 def _curl(args, timeout=45):
     return subprocess.run(["curl", "-sS", "-m", str(timeout)] + args,
                           capture_output=True, text=True)
+
+
+def _curl_status(args, timeout=45):
+    """curl, returning (http_status, body).
+
+    `-w` appends the status code on its own last line, so the caller can
+    classify a response by what the server SAID rather than by guessing from
+    the body. curl prints `000` when no HTTP response arrived at all (a DNS
+    failure, a timeout), which reads as status 0 here.
+    """
+    r = _curl(args + ["-w", "\n%{http_code}"], timeout=timeout)
+    out = r.stdout or ""
+    body, _, code = out.rpartition("\n")
+    try:
+        return int(code.strip()), body
+    except ValueError:
+        # No status line at all (curl did not run): an unclassifiable answer.
+        return 0, out
 
 
 def scan(market, filters, rng=(0, 200), sort=None, cols=None):
@@ -691,21 +715,216 @@ def scan_or_empty(market, filters, rng=(0, 200), sort=None):
     return scan(market, filters, rng, sort)
 
 
+# ------------------------------------------------------------------ Yahoo layer
+# Yahoo is the ONLY reference-close source, and the reference close is a hard
+# gate: a row whose base cannot be resolved is dropped. So a Yahoo outage does
+# not degrade the artifact, it EMPTIES it - and the weekly health check of
+# 2026-11-15 (mcp-health/2026-W46.md) found both Yahoo surfaces answering 429
+# to every request shape from one egress. Two defences follow.
+#
+# 1. CLASSIFY BY STATUS, NOT BY BODY. The old test looked for the text "429"
+#    in the body. Yahoo's measured 429 bodies are `Too Many Requests` (18-19
+#    bytes) and a 23-byte non-JSON body - neither contains "429" - so a real
+#    rate limit was counted as `yahoo_errors` and `yahoo_429` could never fire.
+#    Same lesson as the Nasdaq movers endpoint, which answers 200 with an error
+#    body: never let one signal stand in for the other.
+#
+# 2. A CIRCUIT BREAKER. Without one, an egress-wide block costs 100-200 failing
+#    calls (one per candidate row; the 2026-11-11..13 runs made 104-198) and
+#    each of them keeps the rate limiter hot. After YAHOO_BREAKER_THRESHOLD
+#    rate-limited answers IN A ROW, the scanner pauses once and retries; if
+#    Yahoo is still refusing, the breaker LATCHES and no further Yahoo call is
+#    made this run. "In a row" matters: any non-429 answer (a 200, or a 404 for
+#    an unknown symbol) proves the egress still reaches Yahoo, so it resets the
+#    count - a scattering of 429s on a healthy egress never trips it.
+#
+# The hard gate itself is NOT relaxed. A row that could not be verified is
+# still dropped and counted, never published unverified; the breaker only
+# makes the outage cheap, and the banner (reference_close_banner) makes it
+# visible at the top of the artifact instead of as a thin table.
+YAHOO_BREAKER_THRESHOLD = 5      # consecutive 429s before the one pause-and-retry
+YAHOO_BREAKER_PAUSE_S = 30       # the pause; long enough to outlast a burst limit
+yahoo_breaker = {
+    "state": "closed",           # "closed" (calling Yahoo) | "latched" (stopped)
+    "consecutive_429": 0,
+    "retried": False,            # the single pause-and-retry has been spent
+    "recovered": False,          # the retry got through and the breaker re-closed
+    "latched_at_call": None,     # yahoo_calls when the breaker latched
+    "skipped": 0,                # Yahoo calls NOT made because the breaker latched
+}
+
+
+def classify_yahoo_response(status, body):
+    """'ok' | 'rate_limited' | 'error' for one Yahoo answer.
+
+    The status code decides. The body is consulted only as a fallback for a
+    throttle page relayed under another status (a proxy or CDN in front of
+    Yahoo can do that), and only for the phrase Yahoo actually sends. The old
+    "429 in the body" test is gone on purpose: it never matched Yahoo's real
+    throttle body, and it could match a JSON body carrying 429 as a price.
+    """
+    if status == 429:
+        return "rate_limited"
+    if "too many requests" in (body or "")[:200].lower():
+        return "rate_limited"
+    if status != 200 or not (body or "").strip():
+        return "error"
+    return "ok"
+
+
+def _yahoo_latch():
+    yahoo_breaker["state"] = "latched"
+    yahoo_breaker["latched_at_call"] = health["yahoo_calls"]
+
+
+def _yahoo_get(url, timeout):
+    """GET one Yahoo URL through the circuit breaker. Returns the body or None.
+
+    Every Yahoo call in this file goes through here, so the counts in source
+    health (`yahoo_calls`, `yahoo_429`, `yahoo_errors`, the breaker line) are
+    complete. A latched breaker returns None WITHOUT a network call; the caller
+    treats that exactly like a failed fetch, so the row-level gate still drops
+    and counts the row.
+    """
+    br = yahoo_breaker
+    if br["state"] == "latched":
+        br["skipped"] += 1
+        return None
+    args = ["-A", "Mozilla/5.0", url]
+    status, body = _curl_status(args, timeout)
+    health["yahoo_calls"] += 1
+    kind = classify_yahoo_response(status, body)
+    if kind == "rate_limited":
+        health["yahoo_429"] += 1
+        br["consecutive_429"] += 1
+        if br["consecutive_429"] < YAHOO_BREAKER_THRESHOLD:
+            return None
+        if br["retried"]:
+            # The one pause-and-retry was already spent earlier in this run,
+            # so a second run of 429s latches straight away rather than adding
+            # another pause to every fire.
+            _yahoo_latch()
+            return None
+        # The single pause-and-retry: a burst limit clears in seconds, an
+        # egress block does not, and this tells them apart for one pause.
+        br["retried"] = True
+        time.sleep(YAHOO_BREAKER_PAUSE_S)
+        status, body = _curl_status(args, timeout)
+        health["yahoo_calls"] += 1
+        kind = classify_yahoo_response(status, body)
+        if kind == "rate_limited":
+            health["yahoo_429"] += 1
+            _yahoo_latch()
+            return None
+        br["recovered"] = True
+        # fall through: the retry's answer is handled like any other answer
+    br["consecutive_429"] = 0         # Yahoo answered: the egress reaches it
+    if kind == "error":
+        health["yahoo_errors"] += 1
+        return None
+    return body
+
+
+def yahoo_breaker_line():
+    """The source-health line for the Yahoo layer, breaker state included."""
+    br = yahoo_breaker
+    if br["state"] == "latched":
+        state = (f"LATCHED at call {br['latched_at_call']} after "
+                 f"{YAHOO_BREAKER_THRESHOLD} consecutive HTTP 429 answers"
+                 f"{' and one retry after a ' + str(YAHOO_BREAKER_PAUSE_S) + 's pause' if br['retried'] else ''}"
+                 f"; {br['skipped']} further Yahoo call(s) were not made")
+    elif br["recovered"]:
+        state = (f"closed (it tripped once, and the retry after a "
+                 f"{YAHOO_BREAKER_PAUSE_S}s pause got through)")
+    else:
+        state = "closed"
+    return (f"- yahoo_calls: {health['yahoo_calls']} | yahoo_429: {health['yahoo_429']} | "
+            f"yahoo_errors: {health['yahoo_errors']} | yahoo_breaker: {state}")
+
+
+def reference_close_unverifiable():
+    """True when Yahoo's rate limit, not the tape, decided what was published.
+
+    Two ways to get there:
+      * the breaker LATCHED - every row after that point was dropped; or
+      * EVERY Yahoo answer was a 429 without reaching the threshold. A small
+        run (the 12:15 ET settle pass can have only a handful of rows) never
+        makes YAHOO_BREAKER_THRESHOLD calls, so it never latches - yet not one
+        reference close was verified. Found by the end-to-end harness on
+        2026-11-15: a 3-row settle pass dropped all 3 rows and still said `ok`.
+    """
+    if yahoo_breaker["state"] == "latched":
+        return True
+    return health["yahoo_calls"] > 0 and health["yahoo_429"] == health["yahoo_calls"]
+
+
+def reference_close_banner():
+    """The lines that go at the TOP of the artifact when Yahoo blocked the run.
+
+    Empty when Yahoo answered. When reference_close_unverifiable() is true,
+    rows were dropped because their reference close could not be resolved, so
+    a thin or empty table is a blocked source, not a quiet tape - and
+    AGENTS.md puts a degraded data path near the top, not in source health at
+    the bottom. It is a blockquote, not a `##` heading, so it cannot disturb
+    the section order the artifact checker (tools/check_reaction_artifact.py)
+    enforces.
+    """
+    if not reference_close_unverifiable():
+        return []
+    br = yahoo_breaker
+    if br["state"] == "latched":
+        retry = (f", and one retry after a {YAHOO_BREAKER_PAUSE_S}s pause,"
+                 if br["retried"] else "")
+        how = [f"> After {YAHOO_BREAKER_THRESHOLD} consecutive HTTP 429 answers{retry} the scanner",
+               f"> stopped calling Yahoo at call {br['latched_at_call']} "
+               f"({br['skipped']} call(s) not made)."]
+    else:
+        how = [f"> Every one of the {health['yahoo_calls']} Yahoo call(s) this run answered "
+               f"HTTP 429 (too few",
+               f"> calls to reach the breaker threshold of {YAHOO_BREAKER_THRESHOLD})."]
+    return [
+        "> **Reference close unverifiable for part of this run - Yahoo rate-limited the scanner.**",
+        *how,
+        f"> {health['rows_dropped_unresolved_ref']} row(s) were dropped because their reference",
+        "> close could not be resolved; none was published unverified. The tables below",
+        "> are therefore INCOMPLETE - read a thin or empty table as a blocked source, not",
+        "> as a quiet tape.",
+        "",
+    ]
+
+
+def record_yahoo_rate_limit():
+    """Add the rate limit to the degraded sources, once, with the final counts.
+
+    Called just before `degraded_sources` is rendered, so the detail carries
+    the run's totals rather than the state at the first 429. The checker and
+    the chat reply both count this entry (errors: == degraded_sources).
+    """
+    if health["yahoo_429"] <= 0:
+        return
+    br = yahoo_breaker
+    tail = ("the breaker LATCHED and the remaining rows were dropped"
+            if br["state"] == "latched" else
+            "the breaker re-closed after one pause" if br["recovered"] else
+            "below the breaker threshold")
+    degrade("yahoo_chart_api.rate_limited",
+            f"{health['yahoo_429']} of {health['yahoo_calls']} Yahoo calls answered "
+            f"HTTP 429; {tail}")
+
+
 def yahoo_daily_bars(symbol):
     """Yahoo daily chart bars for a symbol: [(epoch, close)] oldest -> newest.
 
     3 months of daily bars, which also gives the 20-session window the mean
-    absolute daily move is computed over.
+    absolute daily move is computed over. None on any failure - a 429, an
+    error status, a latched breaker or an unparseable body.
     """
-    r = _curl(["-A", "Mozilla/5.0",
-               f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
-               "?interval=1d&range=3mo"], timeout=25)
-    health["yahoo_calls"] += 1
-    if "429" in r.stdout[:200] or not r.stdout.strip():
-        health["yahoo_429"] += 1
+    body = _yahoo_get(f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
+                      "?interval=1d&range=3mo", timeout=25)
+    if body is None:
         return None
     try:
-        res = json.loads(r.stdout)["chart"]["result"][0]
+        res = json.loads(body)["chart"]["result"][0]
         q = res["indicators"]["quote"][0]
         return [(t, c) for t, c in zip(res["timestamp"], q["close"]) if c is not None]
     except Exception:
@@ -768,12 +987,15 @@ def yahoo_premarket(symbol, prior_close, now_et=None):
     if not prior_close:
         return None
     now_et = now_et or datetime.datetime.now(ET)
-    r = _curl(["-A", "Mozilla/5.0",
-               f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
-               "?interval=1m&range=1d&includePrePost=true"], timeout=30)
-    health["yahoo_calls"] += 1
+    # Through the breaker like every other Yahoo call: this check is advisory,
+    # so a latched breaker simply leaves it `unavailable` - it is never a
+    # reason to spend more calls against a rate limiter.
+    body = _yahoo_get(f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
+                      "?interval=1m&range=1d&includePrePost=true", timeout=30)
+    if body is None:
+        return None
     try:
-        res = json.loads(r.stdout)["chart"]["result"][0]
+        res = json.loads(body)["chart"]["result"][0]
         if "timestamp" not in res:
             return None
         q = res["indicators"]["quote"][0]
@@ -1000,6 +1222,279 @@ def cap_per_market(rows, cap):
         seen[m] = seen.get(m, 0) + 1
         out.append(r)
     return out, seen
+
+
+# --------------------------------------------------------------- catalyst merge
+# The catalyst rides in the row's last column. The catalog file is READ and
+# MERGED by ticker AND region; there is no separate `## Catalysts` section, so
+# a name can never appear twice in the markdown.
+def parse_catalyst_file(path):
+    """Parse /workspace/catalog/catalysts/<date>.md -> (mapping, note)."""
+    mapping, note = {}, ""
+    if not os.path.exists(path):
+        return mapping, note
+    with open(path) as fh:
+        for line in fh.read().splitlines():
+            s = line.strip()
+            if s.startswith("|"):
+                cells = [c.strip() for c in re.split(r"(?<!\\)\|", s)]
+                # A markdown row starts with a pipe, so the FIRST split cell is
+                # always empty ("", "SEZL", "US", "...", "Y", ""). The old
+                # guard dropped every such row on its empty first cell, so the
+                # catalyst merge NEVER ran and every published row carried
+                # "pending catalyst lookup" - the agent's researched catalysts
+                # were silently discarded on every fire. Strip the leading
+                # empty cell before reading the ticker.
+                if cells and cells[0] == "":
+                    cells = cells[1:]
+                if len(cells) < 4:
+                    continue
+                if cells[0].lower() in ("ticker", "") or set(cells[0]) <= set("-: "):
+                    continue
+                # An UNFILLED skeleton row (the pipeline writes one when the
+                # file is missing) has an empty catalyst cell: it is not a
+                # research result, so it must fall through to the honest
+                # placeholder instead of publishing an empty cell.
+                if not cells[2]:
+                    continue
+                # A TICKER IS NOT A COMPANY. The same three letters can be two
+                # different companies on two venues (DMP on XETR is a German
+                # mortgage bank in EUR; DMP on ASX is an AU consumer name in
+                # AUD). The catalog carries a `Region` column, so the mapping
+                # holds a LIST of entries per ticker and the region decides
+                # which entry a given row may use. Keying on the ticker alone
+                # published one company's catalyst on another's row.
+                mapping.setdefault(cells[0], []).append(
+                    {"catalyst": cells[2],
+                     "earn": cells[3] if cells[3] else "—",
+                     "region": (cells[1] if len(cells) > 1 else "") or ""})
+            elif s and not note and not s.startswith("#"):
+                note = s
+    return mapping, note
+
+
+# Region labels the catalog may carry, and the row-regions they stand for.
+# The morning run writes its own Region cells, so an alias must still match:
+# a strict string compare would silently drop a researched catalyst whose
+# region was labelled "Europe" instead of "EU". The aliases are deliberately
+# REGION-scoped - they never make one region's ticker usable in another.
+# "UK" belongs to the EU group because the EU/UK table publishes the UK rows.
+_REGION_ALIASES = {
+    "US": {"US", "USA", "UNITED STATES", "AMERICA"},
+    "EU": {"EU", "EUROPE", "EU/UK", "EUROPEAN", "EU & UK", "UK"},
+    "AU": {"AU", "ASX", "AUSTRALIA", "AUSTRALIAN"},
+    "APAC/GULF": {"APAC", "APAC/GULF", "APAC & GULF", "APAC/GULF/MEA", "GULF",
+                  "ASIA-PACIFIC", "ASIA PACIFIC"},
+}
+
+
+def _region_norm(label):
+    """Case, `-`, `_` and `/` folded to one spelling: "EU/UK" -> "EU UK"."""
+    s = (label or "").strip().upper()
+    for ch in "-_/":
+        s = s.replace(ch, " ")
+    return " ".join(s.split())
+
+
+# The alias table, NORMALISED THE SAME WAY as the labels it is matched against.
+# THE 2026-11-15 FIX: _same_region normalised both labels ("/" -> " ") but then
+# looked them up in the RAW alias sets, which still held the slashed spellings.
+# So "EU/UK" became "EU UK" and matched nothing, and every APAC row - whose own
+# label "APAC/Gulf" normalises to "APAC GULF" - matched only an identical cell:
+# a catalog row labelled "APAC", "Gulf" or "Asia-Pacific" was silently replaced
+# by the "no catalyst lookup" placeholder. Normalising the table once, here,
+# makes the two sides comparable by construction.
+_REGION_GROUP_OF = {_region_norm(a): canon
+                    for canon, aliases in _REGION_ALIASES.items()
+                    for a in aliases | {canon}}
+
+
+def _same_region(catalog_region, row_region):
+    """True when a catalog Region cell denotes the row's own region.
+
+    Both labels are normalised (case, spaces, punctuation) and mapped to their
+    alias GROUP, so "Europe" and "EU/UK" match the EU rows and "ASX" matches
+    the AU rows - but an AU row never matches an EU label. A label outside the
+    alias table matches only an identical label, never by guesswork. An empty
+    catalog cell matches nothing (catalyst_cell handles the region-less
+    catalog separately).
+    """
+    cr, rr = _region_norm(catalog_region), _region_norm(row_region)
+    if not cr:
+        return False
+    if cr == rr:
+        return True
+    cg, rg = _REGION_GROUP_OF.get(cr), _REGION_GROUP_OF.get(rr)
+    return cg is not None and cg == rg
+
+
+# Markers that mean the catalyst was NOT researched. A row carrying one of
+# these has no evidence, so it must not carry a verdict.
+NO_RESEARCH_MARKERS = ("no catalyst lookup", "pending catalyst lookup",
+                       "not performed", "outside the per-run budget",
+                       "lookup not performed", "no lookup performed",
+                       "no headline lookup")   # the calendar event cell (2026-11-15)
+
+
+def verdict_for(catalyst_text, flag):
+    """Y / N / em-dash, decided by whether the catalyst was actually researched."""
+    low = (catalyst_text or "").lower()
+    if any(m in low for m in NO_RESEARCH_MARKERS):
+        return "—"
+    return flag if flag in ("Y", "N") else "—"
+
+
+def catalyst_cell(name, region=None):
+    """The catalyst for a row: from the catalog file, the bulk calendar, or an
+    honest placeholder.
+
+    The verdict follows the RESEARCH, never the other way round. A row whose
+    catalyst cell says the lookup was not performed carries NO verdict: the
+    2026-11-05 EU run published "N" (not earnings-driven) beside the note
+    "catalyst lookup not performed", which is a false verdict on 10% of that
+    run's researched EU rows. A researched row that found nothing ("no fresh
+    catalyst found") IS a verdict and keeps its N.
+
+    WHY THE REGION (2026-11-12). The merge used to key on the TICKER ALONE, so
+    a ticker that exists on two venues inherited whichever entry the catalog
+    held - measured on the 2026-11-12 settlement run: the XETR row for DMP
+    (a German mortgage bank) published the ASX DMP's AGM catalyst verbatim
+    (an AU consumer name, AUD, FY26, same-store sales), 1 row of 30. A row may
+    now only use a catalog entry from its OWN region; a ticker that is only in
+    the catalog under another region is a DIFFERENT company, so its entry is
+    skipped and the row falls through to the calendar cell or the placeholder.
+
+    (2026-11-15: the pipeline-2026-11-15.1/.2 commits were built on a copy of
+    this file from BEFORE that fix and reverted it - ticker-only keys again -
+    while adding the calendar cell. Both are kept here: the region decides
+    which catalog entry a row may use, and the calendar cell is the US
+    fallback.)
+
+    THE CALENDAR CELL (US rows only - the Nasdaq calendar reaches no other
+    market): a US row nobody searched gets the bulk earnings calendar's EVENT
+    line, which states a fact (a report is dated on this day) and says plainly
+    that no headline was looked up, so it carries no verdict either.
+
+    Reads the run state `catalysts` (the parsed catalog), `TARGET_SET` (the
+    names inside this run's lookup budget) and, through cal_event_cell, `CAL`.
+    """
+    entries = catalysts.get(name)
+    if entries is None:
+        for k, v in catalysts.items():
+            if k.upper() == name.upper():
+                entries = v
+                break
+    if entries:
+        if region:
+            for e in entries:
+                if _same_region(e["region"], region):
+                    return e["catalyst"], verdict_for(e["catalyst"], e["earn"])
+            # A catalog with NO Region cells at all predates the region
+            # column, so its entry is still the only research there is.
+            if not any(e["region"].strip() for e in entries):
+                e = entries[0]
+                return e["catalyst"], verdict_for(e["catalyst"], e["earn"])
+            # Otherwise the ticker is in the catalog only under ANOTHER region:
+            # a different company. Its catalyst must not be published here, so
+            # fall through to what this row's own company has (if anything).
+        else:
+            e = entries[0]
+            return e["catalyst"], verdict_for(e["catalyst"], e["earn"])
+    cell = cal_event_cell(name) if region == "US" else None
+    if cell:
+        return cell, "—"
+    if name in TARGET_SET:
+        return "pending catalyst lookup", "—"
+    return "no catalyst lookup (outside the per-run budget)", "—"
+
+
+# ------------------------------------------------- bulk calendar lookups (US)
+# Upstream's 2026-11-15 bulk-calendar helpers (pipeline 2026-11-15.1/.2),
+# moved here unchanged so catalyst_cell's US calendar cell is testable.
+def cal_rec(name):
+    return CAL.get((name or "").strip().upper())
+
+
+def cal_last_date(name):
+    """The name's LAST report date per the calendar, or None."""
+    rec = cal_rec(name)
+    return rec["date"] if rec else None
+
+
+def event_freshness(c):
+    """How fresh this row's earnings event is.
+
+    0  the report is dated on the SCAN DATE - it is hours old, and it is the
+       only thing that can explain today's pre-market gap;
+    1  the report is dated on the PREVIOUS session - the reaction may already
+       be in yesterday's close;
+    2  no report inside the window.
+
+    FRESHNESS RANKS THE SEARCH BUDGET, not the move size alone. On 2026-11-12
+    the biggest movers were ALL earnings names, so ranking by |gap| could not
+    tell them apart - and it left NBIS, which had reported THAT MORNING,
+    outside the 5 slots while a name whose report was a day old took one. A
+    report that is hours old has had minutes to be priced; a report from
+    yesterday has had a whole session.
+    """
+    rec = cal_rec(c["name"])
+    if not rec:
+        return 2
+    if rec["date"] == RUN_DATE:
+        return 0
+    if PREV_SESSION and rec["date"] == PREV_SESSION:
+        return 1
+    return 2
+
+
+def cal_event_cell(name):
+    """The calendar-sourced EVENT line for a row nobody searched.
+
+    It states the FACT - a report is dated on this day, per the Nasdaq
+    earnings calendar - and says plainly that no headline was looked up, so
+    the row carries NO earnings-driven verdict. The verdict follows the
+    research, never the other way round.
+    """
+    rec = cal_rec(name)
+    if not rec:
+        return None
+    when = "today" if rec["date"] == RUN_DATE else rec["date"]
+    cell = (f"{cal_quarter_label(rec)} results, report date {when} "
+            f"(Nasdaq earnings calendar; no headline lookup)")
+    if rec.get("eps"):
+        cell += f", consensus EPS {rec['eps']}"
+    return cell
+
+
+# ------------------------------------------------------------------ run state
+# Assigned for real by the run below (NOW_ET at the reference-close step, the
+# catalog and the lookup budget at the catalyst step). Declared here only so
+# the functions above that read them can be called on their own - by a test,
+# or by any code path that runs before the run assigns them.
+NOW_ET = None          # yahoo_pct falls back to "now" when this is None
+catalysts = {}         # ticker -> [{"catalyst", "earn", "region"}]
+TARGET_SET = set()     # names inside this run's catalyst-lookup budget
+CAL = {}               # the bulk earnings calendar: SYMBOL -> last report
+PREV_SESSION = None    # the US session before RUN_DATE
+
+
+# ==== PURE-HELPERS-END ============================================================
+# The self-heal runs HERE - after every definition, before the first network
+# pass. It must stay below the END marker: inside the block, the test loader
+# would execute it, and a real self-heal re-execs and overwrites the file
+# under test. (It moved down from the end of the session helpers on
+# 2026-11-15 together with the marker; defining more functions before it
+# changes nothing, because nothing above this line performs a side effect.)
+_self_heal()
+
+_h = os.environ.get("_EARNINGS_SELF_HEALED", "")
+if _h:
+    _parts = _h.split("|")
+    _v = _parts[0].split("->")
+    SELF_HEALED["done"] = True
+    SELF_HEALED["from"] = _v[0] if len(_v) > 0 else "?"
+    SELF_HEALED["to"] = _v[1] if len(_v) > 1 else "?"
+    SELF_HEALED["source"] = _parts[1] if len(_parts) > 1 else "?"
 
 
 # ------------------------------------------------------------------ Pass A
@@ -1501,44 +1996,9 @@ def us_tradeable_foreign(name, country):
 
 # --------------------------------------------------------------- catalyst merge
 # The catalyst rides in the row's last column. The catalog file is READ and
-# MERGED by ticker; there is no separate `## Catalysts` section, so a name can
-# never appear twice in the markdown.
-def parse_catalyst_file(path):
-    """Parse /workspace/catalog/catalysts/<date>.md -> (mapping, note)."""
-    mapping, note = {}, ""
-    if not os.path.exists(path):
-        return mapping, note
-    with open(path) as fh:
-        for line in fh.read().splitlines():
-            s = line.strip()
-            if s.startswith("|"):
-                cells = [c.strip() for c in re.split(r"(?<!\\)\|", s)]
-                # A markdown row starts with a pipe, so the FIRST split cell is
-                # always empty ("", "SEZL", "US", "...", "Y", ""). The old
-                # guard dropped every such row on its empty first cell, so the
-                # catalyst merge NEVER ran and every published row carried
-                # "pending catalyst lookup" - the agent's researched catalysts
-                # were silently discarded on every fire. Strip the leading
-                # empty cell before reading the ticker.
-                if cells and cells[0] == "":
-                    cells = cells[1:]
-                if len(cells) < 4:
-                    continue
-                if cells[0].lower() in ("ticker", "") or set(cells[0]) <= set("-: "):
-                    continue
-                # An UNFILLED skeleton row (the pipeline writes one when the
-                # file is missing) has an empty catalyst cell: it is not a
-                # research result, so it must fall through to the honest
-                # placeholder instead of publishing an empty cell.
-                if not cells[2]:
-                    continue
-                mapping[cells[0]] = {"catalyst": cells[2],
-                                     "earn": cells[3] if cells[3] else "—"}
-            elif s and not note and not s.startswith("#"):
-                note = s
-    return mapping, note
-
-
+# MERGED by ticker AND region (parse_catalyst_file / catalyst_cell, defined in
+# the PURE-HELPERS block above so they can be tested); there is no separate
+# `## Catalysts` section, so a name can never appear twice in the markdown.
 os.makedirs(OUT_DIR, exist_ok=True)
 os.makedirs(CAT_DIR, exist_ok=True)
 CAT_FILE = f"{CAT_DIR}/{RUN_DATE}.md"
@@ -1704,59 +2164,8 @@ CAL = fetch_earnings_calendar(CAL_DATES)
 PREV_SESSION = prior_session_date(RUN_DATE, "US")
 
 
-def cal_rec(name):
-    return CAL.get((name or "").strip().upper())
-
-
-def cal_last_date(name):
-    """The name's LAST report date per the calendar, or None."""
-    rec = cal_rec(name)
-    return rec["date"] if rec else None
-
-
-def event_freshness(c):
-    """How fresh this row's earnings event is.
-
-    0  the report is dated on the SCAN DATE - it is hours old, and it is the
-       only thing that can explain today's pre-market gap;
-    1  the report is dated on the PREVIOUS session - the reaction may already
-       be in yesterday's close;
-    2  no report inside the window.
-
-    FRESHNESS RANKS THE SEARCH BUDGET, not the move size alone. On 2026-11-12
-    the biggest movers were ALL earnings names, so ranking by |gap| could not
-    tell them apart - and it left NBIS, which had reported THAT MORNING,
-    outside the 5 slots while a name whose report was a day old took one. A
-    report that is hours old has had minutes to be priced; a report from
-    yesterday has had a whole session.
-    """
-    rec = cal_rec(c["name"])
-    if not rec:
-        return 2
-    if rec["date"] == RUN_DATE:
-        return 0
-    if PREV_SESSION and rec["date"] == PREV_SESSION:
-        return 1
-    return 2
-
-
-def cal_event_cell(name):
-    """The calendar-sourced EVENT line for a row nobody searched.
-
-    It states the FACT - a report is dated on this day, per the Nasdaq
-    earnings calendar - and says plainly that no headline was looked up, so
-    the row carries NO earnings-driven verdict. The verdict follows the
-    research, never the other way round.
-    """
-    rec = cal_rec(name)
-    if not rec:
-        return None
-    when = "today" if rec["date"] == RUN_DATE else rec["date"]
-    cell = (f"{cal_quarter_label(rec)} results, report date {when} "
-            f"(Nasdaq earnings calendar; no headline lookup)")
-    if rec.get("eps"):
-        cell += f", consensus EPS {rec['eps']}"
-    return cell
+# cal_rec / cal_last_date / event_freshness / cal_event_cell live in the
+# PURE-HELPERS block above (they read CAL and PREV_SESSION at call time).
 
 
 # The rows whose published earnings date the screener got wrong. Published, not
@@ -1846,50 +2255,8 @@ if not os.path.exists(CAT_FILE):
     catalysts, catalyst_note = parse_catalyst_file(CAT_FILE)
 
 
-def catalyst_cell(name, us=False):
-    """The catalyst for a row: from the catalog file, the bulk calendar, or an
-    honest placeholder.
-
-    The verdict follows the RESEARCH, never the other way round. A row whose
-    catalyst cell says the lookup was not performed carries NO verdict: the
-    2026-11-05 EU run published "N" (not earnings-driven) beside the note
-    "catalyst lookup not performed", which is a false verdict on 10% of that
-    run's researched EU rows. A researched row that found nothing ("no fresh
-    catalyst found") IS a verdict and keeps its N.
-
-    The CALENDAR cell states a fact - a report is dated on this day - and says
-    plainly that no headline was looked up, so it carries no verdict either.
-    """
-    c = catalysts.get(name)
-    if c is None:
-        for k, v in catalysts.items():
-            if k.upper() == name.upper():
-                c = v
-                break
-    if c:
-        return c["catalyst"], verdict_for(c["catalyst"], c["earn"])
-    cell = cal_event_cell(name) if us else None
-    if cell:
-        return cell, "—"
-    if name in TARGET_SET:
-        return "pending catalyst lookup", "—"
-    return "no catalyst lookup (outside the per-run budget)", "—"
-
-
-# Markers that mean the catalyst was NOT researched. A row carrying one of
-# these has no evidence, so it must not carry a verdict.
-NO_RESEARCH_MARKERS = ("no catalyst lookup", "pending catalyst lookup",
-                       "not performed", "outside the per-run budget",
-                       "lookup not performed", "no lookup performed",
-                       "no headline lookup")
-
-
-def verdict_for(catalyst_text, flag):
-    """Y / N / em-dash, decided by whether the catalyst was actually researched."""
-    low = (catalyst_text or "").lower()
-    if any(m in low for m in NO_RESEARCH_MARKERS):
-        return "—"
-    return flag if flag in ("Y", "N") else "—"
+# The region-matched catalyst merge (_REGION_ALIASES, _same_region, catalyst_cell,
+# verdict_for) lives in the PURE-HELPERS block above, so it is tested.
 
 
 # ----------------------------------------------------------------- Actionable
@@ -2047,8 +2414,10 @@ if SETTLE_MODE:
     B(f"- artifact_contract: {ARTIFACT_CONTRACT}")
     B(f"- morning_artifact: earnings/{MORNING_ARTIFACT}"
       + ("" if _morning else " (NOT FOUND - the morning scan move is unavailable)"))
-    B(f"- Status: `ok`")
+    B(f"- Status: `{'reference_close_unverifiable' if reference_close_unverifiable() else 'ok'}`")
     B("")
+    for _line in reference_close_banner():  # empty unless Yahoo blocked the run
+        B(_line)
     B("## TL;DR")
     B("")
     B(f"- {len(eu_final)} EU/UK rows republished with their SETTLED close and move.")
@@ -2079,7 +2448,7 @@ if SETTLE_MODE:
         d = r0["d"]
         r = r0["ref"]
         rc, rs, ra, sa = ref_cols(r)
-        cat, earn = catalyst_cell(g(d, "name"))
+        cat, earn = catalyst_cell(g(d, "name"), "EU")
         nm = g(d, "name")
         scan_move = _morning.get(nm)
         settled = g(d, "change")
@@ -2103,6 +2472,8 @@ if SETTLE_MODE:
     B(f"  cell reads `settled` and its move is the session's own move.")
     B(f"- morning_artifact: {INPUT_PROV['morning']}")
     B(f"- catalyst_catalog: {INPUT_PROV['catalog']}")
+    B(f"- catalyst_merge: region-matched - a row may only use a catalog entry from its OWN")
+    B(f"  region; the same ticker on another venue is a different company and is not used.")
     B(f"- scan_to_settle: {len(_drifts)} rows compared with the 08:00 ET scan"
       + (f", median drift {sorted(_drifts)[len(_drifts)//2]:.2f}pp, max {max(_drifts):.2f}pp, "
          f"{sum(1 for x in _drifts if x > 1.0)} rows more than 1pp apart"
@@ -2113,6 +2484,11 @@ if SETTLE_MODE:
       f"stale_reference={cc['stale']}")
     B(f"- rows_dropped_stale_ref: {health['rows_dropped_stale_ref']} | "
       f"rows_dropped_unresolved_ref: {health['rows_dropped_unresolved_ref']}")
+    # The settle pass had no Yahoo line at all, so a rate limit here was
+    # invisible except as a short table. It now carries the same line as the
+    # 08:00 scan, breaker state included.
+    B(yahoo_breaker_line())
+    record_yahoo_rate_limit()   # before the count, so the count includes it
     B(f"- degraded_sources: {len(DEGRADED)}")
     if DEGRADED:
         B(f"  (the chat reply's `errors:` MUST equal this number - one entry per degraded")
@@ -2127,7 +2503,7 @@ if SETTLE_MODE:
     B(f"`earnings-reaction mode=settle target=earnings-reactions:{RUN_DATE} "
       f"eu_rows={len(eu_final)} scan_matched={len(_drifts)} "
       f"scan_to_settle_median_pp={sorted(_drifts)[len(_drifts)//2] if _drifts else 'n/a'} "
-      f"catalyst_lookups={len(catalysts)} "
+      f"catalyst_lookups={sum(len(v) for v in catalysts.values())} "
       f"rows_dropped_stale_ref={health['rows_dropped_stale_ref']} "
       f"degraded_sources={len(DEGRADED)}`")
     B("")
@@ -2179,8 +2555,12 @@ A(f"  EU/UK session is still OPEN at the 08:00 ET fire (it closes 11:30 ET in wi
 A(f"  its rows read `live`: the move is a mid-session snapshot, not the session's result.")
 A(f"- ref_close_source: yahoo_chart_daily (Yahoo Finance daily chart bars; the base")
 A(f"  every published row is measured against)")
-A(f"- Status: `ok`")
+# `ok` unless Yahoo's rate limit decided what was published (the breaker
+# latched, or every Yahoo answer was a 429) - then the status says so.
+A(f"- Status: `{'reference_close_unverifiable' if reference_close_unverifiable() else 'ok'}`")
 A("")
+for _line in reference_close_banner():      # empty unless Yahoo blocked the run
+    A(_line)
 A("## TL;DR")
 A("")
 amc = [c for _, c in tagged if c["tag"] == "AMC_REACTION"]
@@ -2243,7 +2623,7 @@ A("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
 for sym, c in tagged:
     r = us_ref.get(sym)
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(c["name"], us=True)
+    cat, earn = catalyst_cell(c["name"], "US")
     A(f"| {c['name']} | {c['ex']} | {c['close']} | {c['change']:.2f} | "
       f"{pct(c['pm'])} | {pct(c['po'])} | {multiple(headline_move(c), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {c.get('us_tradeable','—')} | {er_cell(c)} | {c['tag']} | {earn} | {cat} |")
@@ -2255,7 +2635,7 @@ A("|---|---|---|---|---|---|---|---|---|---|---|---|")
 for sym, c in quiet[:15]:
     r = us_ref.get(sym)
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(c["name"], us=True)
+    cat, earn = catalyst_cell(c["name"], "US")
     A(f"| {c['name']} | {c['ex']} | {c['change']:.2f} | {pct(c['pm'])} | {pct(c['po'])} | "
       f"{multiple(headline_move(c), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {c.get('us_tradeable','—')} | {earn} | {cat} |")
@@ -2270,7 +2650,7 @@ for r0 in eu_final:
     d = r0["d"]
     r = r0["ref"]
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(g(d, "name"))
+    cat, earn = catalyst_cell(g(d, "name"), "EU")
     A(f"| {g(d,'name')} | {r0['market']} | {g(d,'exchange')} | {g(d,'close')} | "
       f"{g(d,'change'):+.2f} | {g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
@@ -2284,7 +2664,7 @@ for r0 in au:
     d = r0["d"]
     r = r0["ref"]
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(g(d, "name"))
+    cat, earn = catalyst_cell(g(d, "name"), "AU")
     A(f"| {g(d,'name')} | {g(d,'exchange')} | {g(d,'close')} | {g(d,'change'):+.2f} | "
       f"{g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
@@ -2298,7 +2678,7 @@ for r0 in apac:
     d = r0["d"]
     r = r0["ref"]
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(g(d, "name"))
+    cat, earn = catalyst_cell(g(d, "name"), "APAC/Gulf")
     A(f"| {g(d,'name')} | {r0['market']} | {g(d,'exchange')} | {g(d,'close')} | "
       f"{g(d,'change'):+.2f} | {g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
@@ -2324,8 +2704,7 @@ A("- session_selection: by DATE and order, never by a modal time-of-day. Yahoo s
   "hour across a DST boundary; a modal filter kept the OLDER bars and discarded the "
   "NEWEST ones, which rolled the base back to the prior-prior session (66 US + 21 ASX "
   "rows lost on 2026-11-03, 24 of 25 ASX rows lost on 2026-11-04).")
-A(f"- yahoo_calls: {health['yahoo_calls']} | yahoo_429: {health['yahoo_429']} | "
-  f"yahoo_errors: {health['yahoo_errors']}")
+A(yahoo_breaker_line())
 cc = health["cross_check"]
 A(f"- reference_close (screener vs Yahoo, resolved BEFORE the tables were built): "
   f"agree={cc['agree']} mismatch={cc['mismatch']} unverified={cc['unverified']} "
@@ -2399,6 +2778,8 @@ A(f"- us_line_index: {'ok' if health['us_line_index_ok'] else 'EMPTY'} "
   f"(US-listed lines for the {len(FOREIGN_HOME_COUNTRIES)} foreign home countries, both "
   f"scanner types; the `US tradeable` column is ADR / US-listed / none)")
 A(f"- catalyst_note: {catalyst_note if catalyst_note else 'none'}")
+A(f"- catalyst_merge: region-matched - a row may only use a catalog entry from its OWN region;")
+A(f"  the same ticker on another venue is a different company and is not used.")
 A(f"- catalyst_budget: {CAT_ALLOC['US']} US + {CAT_ALLOC['EU']} EU + "
   f"{CAT_ALLOC['AU']} AU + {CAT_ALLOC['APAC']} APAC/Gulf = "
   f"{sum(CAT_ALLOC.values())} lookups per run (cap {CATALYST_TOTAL_CAP}), "
@@ -2432,6 +2813,7 @@ A(f"- deprecations: mcp__tradingview-advanced__*, mcp__tradingview__*, mcp__fina
 A(f"  mcp__stocktwits__* are ABSENT in Cloud sessions (tool_search 0 hits; connector catalog")
 A(f"  holds only media + credential tools). The public screener replaces them.")
 A("")
+record_yahoo_rate_limit()     # before the count, so the count includes it
 A(f"- degraded_sources: {len(DEGRADED)}")
 if DEGRADED:
     A(f"  (the chat reply's `errors:` MUST equal this number - one entry per degraded")
@@ -2447,7 +2829,7 @@ A(f"`earnings-reaction target=earnings-reactions:{RUN_DATE} candidates={len(us)}
   f"amc_reactions={len(amc)} pre_gaps={len(gaps)} eu_reactions={len([r for r in eu_final if abs(g(r['d'],'change'))>3])} "
   f"asx_reactions={len([r for r in au if abs(g(r['d'],'change'))>3])} "
   f"apac_reactions={len([r for r in apac if abs(g(r['d'],'change'))>3])} "
-  f"catalyst_lookups={len(catalysts)} bod={len(bod)} "
+  f"catalyst_lookups={sum(len(v) for v in catalysts.values())} bod={len(bod)} "
   f"pass_b2_candidates={B2_STATS['candidates']} pass_b2_dedup={B2_STATS['deduped']} "
   f"pass_b2_published={B2_STATS['published']} "
   f"earnings_calendar_rows={health['calendar_symbols']} "

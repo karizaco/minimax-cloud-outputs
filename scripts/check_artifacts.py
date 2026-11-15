@@ -26,8 +26,11 @@ import sys
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDEX = os.path.join(REPO, "ARTIFACT-INDEX.md")
 
-# Directories that are not artifact families.
-SKIP_DIRS = {".git", ".vscode", "__pycache__", ".idea"}
+# Directories that are not artifact families. `.claude` is Claude Code's local
+# settings directory - git-ignored and machine-local like `.vscode` and `.idea`.
+# Unskipped, it became an "unindexed family" finding, and the pre-commit hook
+# (which blocks on any finding) refused every commit from a clone that had one.
+SKIP_DIRS = {".git", ".vscode", "__pycache__", ".idea", ".claude"}
 
 # Top-level directories that are deliberately not listed in the index.
 INDEX_EXEMPT = set()
