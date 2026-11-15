@@ -24,6 +24,14 @@ This file is the executable form of that contract:
   * `degraded_sources` counts each degraded source separately, and the chat
     reply's `errors:` must equal that count.
 
+The US universe is scanned in SIX passes, not five: Pass B2 is the US
+PRE-MARKET gap scan ("gapped today, flat yesterday"), added after the measured
+2026-11-13 failure in which a name that was flat in the prior session and is
+not a $20bn mega-cap (LFTO, SBC) fell through Pass A and Pass B and was
+missed by the routine that exists to catch same-session earnings reactions.
+The ARTIFACT FORMAT is unchanged - only the coverage grew, so the capability
+marker REACTION_ARTIFACT_V2 does NOT change.
+
 Verified behaviours this script encodes (see memory topic
 `earnings-calendar-data-path`):
   * `change` on ILLIQUID rows is computed against a STALE reference close.
@@ -57,7 +65,7 @@ import json, subprocess, time, datetime, os, sys, re
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-12.2"
+SCRIPT_VERSION = "2026-11-15.2"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -76,9 +84,14 @@ try:  # ET is UTC-5 in winter and UTC-4 in summer. A fixed offset mislabeled
 except Exception:
     ET = datetime.timezone(datetime.timedelta(hours=-4))
 UTC = datetime.timezone.utc
-RUN_DATE = datetime.datetime.now(ET).strftime("%Y-%m-%d")
-OUT_DIR = "/workspace/earnings"
-CAT_DIR = "/workspace/catalog/catalysts"
+# REPLAY HOOK (test only). `SCAN_DATE_ET=YYYY-MM-DD` re-runs the pipeline as if
+# it had fired at 08:03 ET on that date, and `REACTION_OUT_ROOT` redirects the
+# output tree, so a REPLAY CAN NEVER overwrite a published artifact.
+REPLAY_DATE = os.environ.get("SCAN_DATE_ET") or ""
+_OUT_ROOT = os.environ.get("REACTION_OUT_ROOT", "/workspace")
+RUN_DATE = REPLAY_DATE or datetime.datetime.now(ET).strftime("%Y-%m-%d")
+OUT_DIR = f"{_OUT_ROOT}/earnings"
+CAT_DIR = f"{_OUT_ROOT}/catalog/catalysts"
 
 US_VENUES = ["NASDAQ", "NYSE", "AMEX", "NYSEArca", "ARCA", "PCX", "BATS", "IEX"]
 US_DROP = {"OTC", "PINK", "OTCBB", "GREY", "OTC MKTS", "OTCM", "CBOE"}
@@ -158,6 +171,30 @@ FOREIGN_HOME_COUNTRIES = ([v[0] for v in EU_MARKETS.values()] + ["Australia"]
                           + [v[0] for v in APAC_MARKETS.values()])
 
 MIN_VOLUME = 10000          # removes stale-reference rows (validated) - DO NOT LOWER
+# ---- Pass B2: the US PRE-MARKET gap scan ("gapped today, flat yesterday")
+#
+# WHY THIS PASS EXISTS - the measured 2026-11-13 failure. The US universe was
+# Pass A (the top-250 US names above $20bn) plus Pass B (the PRIOR session's
+# movers: |change| >= 3%, market cap > $1bn, close > $5). A name that was FLAT
+# in the prior session and is not a $20bn mega-cap falls through BOTH: on
+# Friday 2026-11-13 that dropped LFTO (Liftoff Mobile, ~$3.9bn, +25% pre-market
+# on a Q3 beat, closed +30.63%) and SBC (SBC Medical Group, ~$549m, +9.6%
+# pre-market, closed +37.64%) - two of the day's biggest same-session earnings
+# movers - from the routine that exists to catch same-session earnings
+# reactions. Pass B2 scans the PRE-MARKET tape of the FULL US universe instead
+# of the prior session's regular-hours tape, so "gapped today, flat yesterday"
+# is a HIT instead of a hole.
+#
+# The floors are the ones cron #08's pre-market gapper already measured on this
+# SAME scanner and the same market (market cap > $200M, pre-market volume
+# >= 20,000 there; 10,000 here, so a mid-cap with a thinner book still
+# qualifies). NO session-volume floor is applied: at the 08:00 ET fire the
+# regular session has not opened, so `volume` is 0 for every candidate and a
+# session-volume filter would empty the pass.
+PREMARKET_GAP_MIN_PCT = 5.0          # |pre-market move| that makes a name a candidate
+PREMARKET_GAP_MIN_VOLUME = 10000     # pre-market SHARES (NOT session shares)
+PREMARKET_GAP_MIN_MCAP = 200000000   # $200M - the mid-cap floor
+PREMARKET_GAP_MIN_CLOSE = 2          # $2
 SCAN_RETRIES = 3
 REF_CLOSE_TOLERANCE_PCT = 0.5   # |implied ref - Yahoo ref| above this = stale reference
 PREMARKET_OPEN_ET = datetime.time(4, 0)
@@ -174,8 +211,14 @@ APAC_MARKET_CAP = 3
 # date lags (it read 2025-02-13 for a name that reported the previous day).
 EARNINGS_DUE_WINDOW_DAYS = 14
 
+# `type` is the instrument-form signal: TradingView files ADRs as "dr" and
+# ordinary shares as "stock" (verified 2026-11-15: BABA and PDD are "dr",
+# while NBIS - Nebius Group N.V., whose Class A ORDINARY shares are listed
+# directly on Nasdaq - is "stock", as are AEM, TSEM, NVMI, FN, IREN and DPC).
+# The old rule ("country != United States => ADR") called all of those ADRs.
+# `description` is the second signal.
 SCANNER_COLS = ["name", "close", "change", "change_abs", "volume", "market_cap_basic",
-                "exchange", "country", "Perf.W", "currency",
+                "exchange", "country", "Perf.W", "currency", "type", "description",
                 "premarket_change", "postmarket_change", "premarket_close", "premarket_volume",
                 "earnings_release_date", "earnings_release_next_date"]
 IDX = {c: i for i, c in enumerate(SCANNER_COLS)}
@@ -186,6 +229,9 @@ health = {"scanner_calls": 0, "scanner_errors": 0, "yahoo_calls": 0, "yahoo_erro
           "premarket_check": {"checked": 0, "within_1pp": 0, "within_3pp": 0,
                               "outliers": [], "unavailable": 0},
           "rows_dropped_stale_ref": 0, "rows_dropped_unresolved_ref": 0,
+          "calendar_calls": 0, "calendar_errors": 0, "calendar_symbols": 0,
+          "earnings_field_stale_rows": 0,
+          "pass_b2": {"candidates": 0, "up": 0, "down": 0, "deduped": 0, "published": 0},
           "us_line_index_ok": True}
 DEGRADED = []          # list of (source, detail) - each degraded source counted once
 
@@ -196,6 +242,88 @@ def degrade(source, detail):
         if s == source:
             return
     DEGRADED.append((source, detail))
+
+
+# ------------------------------------------------------- the bulk earnings calendar
+#
+# THE BULK PRIMITIVE, AND THE SOURCE OF RECORD for the US earnings date.
+#
+# One call to Nasdaq's public earnings calendar answers "did this name report,
+# and when" for the WHOLE US market. A per-name search budget can never cover
+# that: on the 2026-11-12 fire 10 of the 115 published US rows had reported
+# that morning, and the 5-name search budget - which ranked by |gap| and
+# ignored the earnings event - covered 5 rows of which 2 had reported the
+# PREVIOUS day, while 4 of the 10 same-day reporters (NBIS, YETI, TWST, FPS)
+# were never looked up at all.
+#
+# It is ALSO the source of record, because TradingView's
+# `earnings_release_date` is refreshed per company and ASYNCHRONOUSLY: at the
+# 08:03 ET scan on 2026-11-12, NBIS - which had reported PRE-OPEN that
+# morning - still carried 2026-08-12, the previous quarter. A verdict built on
+# that field is not a missing verdict but a FALSE one.
+#
+# The calendar's `time` field is NOT usable for the pre-open / after-close
+# split (measured 2026-11-12: 444 of 448 rows read "time-not-supplied"), so
+# freshness is taken from the REPORT DATE, and the artifact's own AMC/PRE_GAP
+# tag carries the rest.
+EARNINGS_CALENDAR_URL = "https://api.nasdaq.com/api/calendar/earnings?date={d}"
+CALENDAR_LOOKBACK_DAYS = 7       # the scan date plus the 7 prior calendar days
+CATALYST_TOTAL_CAP = 16          # hard ceiling on the agent's search targets per run
+FOREIGN_FLOORS = 8               # EU 3 + AU 2 + APAC 3 - never squeezed
+
+
+def fetch_earnings_calendar(dates):
+    """{SYMBOL: {date, time, eps, fiscal, name}} - the most recent report per symbol.
+
+    Only the most recent report at or before the scan date is kept, so the map
+    answers "when did this name LAST report", which is what the artifact's
+    `Last earnings` column publishes.
+    """
+    out = {}
+    for d in dates:
+        r = _curl(["-A", "Mozilla/5.0", EARNINGS_CALENDAR_URL.format(d=d)], timeout=25)
+        health["calendar_calls"] += 1
+        body = (r.stdout or "").strip()
+        if not body or body[0] not in "[{":
+            health["calendar_errors"] += 1
+            degrade("nasdaq_earnings_calendar",
+                    f"{d}: the earnings calendar did not answer")
+            continue
+        try:
+            rows = ((json.loads(body).get("data") or {}).get("rows")) or []
+        except Exception:
+            health["calendar_errors"] += 1
+            degrade("nasdaq_earnings_calendar", f"{d}: unparsable calendar body")
+            continue
+        for row in rows:
+            sym = str(row.get("symbol") or "").strip().upper()
+            if not sym:
+                continue
+            rec = {"date": d, "time": str(row.get("time") or ""),
+                   "eps": str(row.get("epsForecast") or ""),
+                   "fiscal": str(row.get("fiscalQuarterEnding") or ""),
+                   "name": str(row.get("name") or "")}
+            prev = out.get(sym)
+            if prev is None or d > prev["date"]:
+                out[sym] = rec
+    health["calendar_symbols"] = len(out)
+    return out
+
+
+def cal_quarter_label(rec):
+    """'Q3 2026' from the calendar's fiscalQuarterEnding ('Sep/2026')."""
+    fq = rec.get("fiscal") or ""
+    m = re.search(r"([A-Za-z]{3})[/\s-](\d{4})", fq)
+    if not m:
+        return "results"
+    mon = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+           "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12}.get(
+        m.group(1).lower()[:3])
+    if not mon:
+        return "results"
+    q = {1: "Q1", 2: "Q1", 3: "Q1", 4: "Q2", 5: "Q2", 6: "Q2",
+         7: "Q3", 8: "Q3", 9: "Q3", 10: "Q4", 11: "Q4", 12: "Q4"}[mon]
+    return f"{q} {m.group(2)}"
 
 
 # --------------------------------------------------------------------- ET window
@@ -780,7 +908,7 @@ def build_us_line_index():
             nm, desc, ex, country = row["d"][0], row["d"][1], row["d"][2], row["d"][3]
             toks = name_tokens(desc or nm)
             if toks:
-                idx.append((nm, ex, country, toks))
+                idx.append((nm, ex, country, toks, t))
     health["us_line_index_ok"] = bool(idx)
     if not idx:
         degrade("tradingview_scanner.us_line_index",
@@ -799,7 +927,7 @@ def match_us_line(name, country, index):
     if not t or not index:
         return None
     best = None
-    for nm, ex, ct, kt in index:
+    for nm, ex, ct, kt, kind in index:
         if not (t <= kt or kt <= t):
             continue
         score = len(t & kt)
@@ -807,8 +935,8 @@ def match_us_line(name, country, index):
         listed = 1 if ex not in ("OTC", "PINK", "OTCBB", "GREY") else 0
         rank = (same_country, listed, score)
         if best is None or rank > best[0]:
-            best = (rank, nm, ex)
-    return (best[1], best[2]) if best else None
+            best = (rank, nm, ex, kind)
+    return (best[1], best[2], best[3]) if best else None
 
 
 
@@ -904,6 +1032,40 @@ pb_dn = scan_or_empty("america",
 b_up = [r["d"] for r in pb_up["data"] if g(r["d"], "exchange") not in US_DROP]
 b_dn = [r["d"] for r in pb_dn["data"] if g(r["d"], "exchange") not in US_DROP]
 
+# ------------------------------------------------------------------ Pass B2
+# The US PRE-MARKET gap scan: "gapped today, flat yesterday". Two calls,
+# because a scanner filter is AND-ed and one call cannot express
+# "|pre-market move| >= 5%".
+#
+# COLUMN MEASUREMENT (2026-11-15, market `america`, US stocks). Both fields
+# exist as a COLUMN and as a FILTER on this scanner, so the filter is real and
+# not silently ignored (an unknown field returns 200 with ZERO rows, so the
+# count is the proof): `premarket_change >= 5` returns 136 US names and
+# `premarket_volume >= 10000` returns 601. The `gap` column exists too, but it
+# is the REGULAR SESSION OPEN gap, not the pre-market move - measured on the
+# same snapshot: LFTO's `gap` is +27.098% and equals (open 23.78 - prior close
+# 18.71) / 18.71, while its `premarket_change` is +26.510% = (pre-market 23.67
+# - 18.71) / 18.71. At the 08:00 ET fire the session has not opened, so `gap`
+# is not knowable yet and `premarket_change` is the only correct column.
+# (Cron #08's pre-market gapper filters the same two fields on the same
+# scanner: `cloud-prompts/skills/stock-screener-suite/scripts/premarket_pull.py`.)
+pb2_up = scan_or_empty("america",
+             flist(("exchange", "in_range", US_VENUES),
+                   ("market_cap_basic", "egreater", PREMARKET_GAP_MIN_MCAP),
+                   ("close", "egreater", PREMARKET_GAP_MIN_CLOSE),
+                   ("premarket_change", "egreater", PREMARKET_GAP_MIN_PCT),
+                   ("premarket_volume", "egreater", PREMARKET_GAP_MIN_VOLUME)),
+             rng=(0, 200), sort={"sortBy": "premarket_change", "sortOrder": "desc"})
+pb2_dn = scan_or_empty("america",
+             flist(("exchange", "in_range", US_VENUES),
+                   ("market_cap_basic", "egreater", PREMARKET_GAP_MIN_MCAP),
+                   ("close", "egreater", PREMARKET_GAP_MIN_CLOSE),
+                   ("premarket_change", "less", -PREMARKET_GAP_MIN_PCT),
+                   ("premarket_volume", "egreater", PREMARKET_GAP_MIN_VOLUME)),
+             rng=(0, 200), sort={"sortBy": "premarket_change", "sortOrder": "asc"})
+b2_up = [r["d"] for r in pb2_up["data"] if g(r["d"], "exchange") not in US_DROP]
+b2_dn = [r["d"] for r in pb2_dn["data"] if g(r["d"], "exchange") not in US_DROP]
+
 # ------------------------------------------------------------------ Pass C
 eu_rows = []
 for mkt, (home, venues, suffix) in EU_MARKETS.items():
@@ -998,19 +1160,26 @@ apac = apac_capped[:25]
 health["rows_per_market_apac"] = apac_rows_per_market
 
 # ------------------------------------------------------------------ US merge
+def _us_candidate(d):
+    """The per-symbol record one US pass row contributes to the merge."""
+    return {"name": g(d, "name"), "ex": g(d, "exchange"),
+            "country": g(d, "country"),
+            "kind": (g(d, "type") or "").strip().lower(),
+            "desc": (g(d, "description") or "").strip(),
+            "close": g(d, "close"), "change": g(d, "change"),
+            "vol": g(d, "volume"), "mcap": g(d, "market_cap_basic"),
+            "pm": g(d, "premarket_change"), "po": g(d, "postmarket_change"),
+            "pmc": g(d, "premarket_close"),
+            "er": g(d, "earnings_release_date"),
+            "ern": g(d, "earnings_release_next_date"), "pass": set()}
+
+
 us = {}
 for d in a_rows + b_up + b_dn:
     sym = d[IDX["name"]]
     if "/" in sym:
         continue
-    c = us.setdefault(sym, {"name": g(d, "name"), "ex": g(d, "exchange"),
-                             "country": g(d, "country"),
-                             "close": g(d, "close"), "change": g(d, "change"),
-                             "vol": g(d, "volume"), "mcap": g(d, "market_cap_basic"),
-                             "pm": g(d, "premarket_change"), "po": g(d, "postmarket_change"),
-                             "pmc": g(d, "premarket_close"),
-                             "er": g(d, "earnings_release_date"),
-                             "ern": g(d, "earnings_release_next_date"), "pass": set()})
+    c = us.setdefault(sym, _us_candidate(d))
     if d in a_rows:
         c["pass"].add("A")
     if d in b_up:
@@ -1021,6 +1190,30 @@ for d in a_rows + b_up + b_dn:
                    ("pmc", "premarket_close")):
         if c[k] is None and g(d, key) is not None:
             c[k] = g(d, key)
+
+# Pass B2 is merged LAST, so a name that is already a Pass A or Pass B row KEEPS
+# that row - the one-table rule: exactly one row, in exactly one table - and the
+# B2 hit is recorded as a DEDUPE rather than as a second row. `b2_only` is the
+# set of names the B2 pass contributed on its own; `b2_dedup` is the set it
+# found already covered.
+b2_dedup = set()
+b2_only = set()
+for d in b2_up + b2_dn:
+    sym = d[IDX["name"]]
+    if "/" in sym:
+        continue
+    label = "B2_up" if d in b2_up else "B2_dn"
+    if sym in us:
+        us[sym]["pass"].add(label)
+        b2_dedup.add(sym)
+    else:
+        us[sym] = _us_candidate(d)
+        us[sym]["pass"].add(label)
+        b2_only.add(sym)
+    for k, key in (("pm", "premarket_change"), ("po", "postmarket_change"),
+                   ("pmc", "premarket_close")):
+        if us[sym][k] is None and g(d, key) is not None:
+            us[sym][k] = g(d, key)
 
 tagged, quiet, bod = [], [], []
 for sym, c in us.items():
@@ -1051,15 +1244,42 @@ bod.sort(key=lambda t: -t[1]["mx"])
 # disagrees with the authoritative one is measured against a STALE close - a
 # phantom move - and is dropped, with the drop counted and published rather
 # than silently filtered.
-NOW_ET = datetime.datetime.now(ET)
+NOW_ET = (datetime.datetime.strptime(REPLAY_DATE + " 08:03:52", "%Y-%m-%d %H:%M:%S").replace(tzinfo=ET)
+          if REPLAY_DATE else datetime.datetime.now(ET))
 us_line_index = build_us_line_index()
+
+
+ADR_TEXT_MARKERS = ("depositary", "american depositary", "new york registry shares",
+                    "sponsored adr")
+
+
+def is_adr_security(kind, desc):
+    """Is this US-venue security a DEPOSITARY form?
+
+    The instrument form comes from the security itself - the scanner's `type`
+    column ("dr" for a depositary form) and its description - NEVER from the
+    issuer's country. The old rule ("country != United States => ADR") was
+    wrong for every foreign-incorporated company whose US line is the PRIMARY
+    listing in ordinary shares: 16 of the 115 US rows on 2026-11-12 carried
+    the label, and most of them (NBIS = Nebius Group N.V. Class A ordinary
+    shares on Nasdaq, AEM, TSEM, NVMI, FN, IREN, DPC) are NOT depositary
+    forms. A security with no evidence either way is NOT called an ADR.
+    """
+    if (kind or "").strip().lower() == "dr":
+        return True
+    s = (desc or "").lower()
+    return any(m in s for m in ADR_TEXT_MARKERS)
 
 
 def attach_us(row, c):
     """Attach the resolved reference close and the US-tradeability to a US row."""
     c["ref"] = row
-    c["us_tradeable"] = "US-listed" if c.get("country") in (None, "United States") \
-        else "US-listed (ADR)"
+    if c.get("country") in (None, "United States"):
+        c["us_tradeable"] = "US-listed"
+    elif is_adr_security(c.get("kind"), c.get("desc")):
+        c["us_tradeable"] = "US-listed (ADR)"
+    else:
+        c["us_tradeable"] = "US-listed"
     return row
 
 
@@ -1089,6 +1309,18 @@ for sym, c in quiet[:15]:
         quiet_keep.append((sym, c))
     time.sleep(0.35)
 quiet = quiet_keep
+
+# The Pass B2 coverage counters. `published` is counted AFTER the reference-close
+# hard gate, because a B2 row can still be dropped there - a candidate that
+# never reaches a table is not coverage, and publishing the scan-side count
+# would overstate it.
+B2_STATS = {"candidates": len(b2_dedup) + len(b2_only),
+            "up": len({g(d, "name") for d in b2_up}),
+            "down": len({g(d, "name") for d in b2_dn}),
+            "deduped": len(b2_dedup),
+            "published": sum(1 for sym, _ in tagged if sym in b2_only)
+                        + sum(1 for sym, _ in quiet if sym in b2_only)}
+health["pass_b2"] = B2_STATS
 
 eu_res, eu_keep = {}, []
 for r0 in eu_final:
@@ -1189,11 +1421,21 @@ def pct(v):
 
 
 def er_cell(c):
-    last = epoch_date(c.get("er"))
-    nxt = epoch_date(c.get("ern"))
+    """The row's LAST earnings date.
+
+    The BULK CALENDAR is the source of record. TradingView's
+    `earnings_release_date` is refreshed per company and asynchronously, so
+    at the 08:00 ET scan a name that had reported that morning could still
+    carry the previous quarter's date - NBIS published "2026-08-12 (92d ago)"
+    on 2026-11-12 although it had reported pre-open that day. A verdict built
+    on that field is not a missing verdict but a FALSE one. The screener's
+    value is the fallback, and every disagreement is published as
+    `earnings_field_stale_rows`.
+    """
+    last = cal_last_date(c.get("name")) or epoch_date(c.get("er"))
     if not last:
         return "—"
-    age = (datetime.datetime.now(ET).date() -
+    age = (NOW_ET.date() -
            datetime.datetime.strptime(last, "%Y-%m-%d").date()).days
     return f"{last} ({age}d ago)" if age >= 0 else f"{last}"
 
@@ -1250,7 +1492,11 @@ def us_tradeable_foreign(name, country):
     m = match_us_line(name, country, us_line_index)
     if not m:
         return "none"
-    return f"ADR ({m[1]}:{m[0]})"
+    # The US line's FORM comes from the index (stock vs dr), so a foreign
+    # issuer whose US line is its primary ordinary share is not called an ADR.
+    if m[2] == "dr":
+        return f"ADR ({m[1]}:{m[0]})"
+    return f"US line ({m[1]}:{m[0]})"
 
 
 # --------------------------------------------------------------- catalyst merge
@@ -1286,17 +1532,8 @@ def parse_catalyst_file(path):
                 # placeholder instead of publishing an empty cell.
                 if not cells[2]:
                     continue
-                # A TICKER IS NOT A COMPANY. The same three letters can be two
-                # different companies on two venues (DMP on XETR is a German
-                # mortgage bank in EUR; DMP on ASX is an AU consumer name in
-                # AUD). The catalog carries a `Region` column, so the mapping
-                # holds a LIST of entries per ticker and the region decides
-                # which entry a given row may use. Keying on the ticker alone
-                # published one company's catalyst on another's row.
-                mapping.setdefault(cells[0], []).append(
-                    {"catalyst": cells[2],
-                     "earn": cells[3] if cells[3] else "—",
-                     "region": (cells[1] if len(cells) > 1 else "") or ""})
+                mapping[cells[0]] = {"catalyst": cells[2],
+                                     "earn": cells[3] if cells[3] else "—"}
             elif s and not note and not s.startswith("#"):
                 note = s
     return mapping, note
@@ -1458,18 +1695,117 @@ if SETTLE_MODE:
 
 catalysts, catalyst_note = parse_catalyst_file(CAT_FILE)
 
-# The per-run catalyst budget: 5 US + 3 EU + 2 AU. These are the names the
-# agent is asked to look up; every other row says so honestly.
-amc_rows = [c for _, c in tagged if c["tag"] == "AMC_REACTION"]
-gap_rows = [c for _, c in tagged if c["tag"] == "PRE_GAP"]
-targets_us = amc_rows[:3] + [c for c in gap_rows if c not in amc_rows][:max(0, 5 - min(3, len(amc_rows)))]
-targets_us = targets_us[:CATALYST_BUDGET["US"]]
+# ---------------------------------------------------- the bulk calendar, fetched once
+CAL_DATES = []
+for _off in range(CALENDAR_LOOKBACK_DAYS + 1):
+    CAL_DATES.append((datetime.datetime.strptime(RUN_DATE, "%Y-%m-%d").date()
+                      - datetime.timedelta(days=_off)).isoformat())
+CAL = fetch_earnings_calendar(CAL_DATES)
+PREV_SESSION = prior_session_date(RUN_DATE, "US")
+
+
+def cal_rec(name):
+    return CAL.get((name or "").strip().upper())
+
+
+def cal_last_date(name):
+    """The name's LAST report date per the calendar, or None."""
+    rec = cal_rec(name)
+    return rec["date"] if rec else None
+
+
+def event_freshness(c):
+    """How fresh this row's earnings event is.
+
+    0  the report is dated on the SCAN DATE - it is hours old, and it is the
+       only thing that can explain today's pre-market gap;
+    1  the report is dated on the PREVIOUS session - the reaction may already
+       be in yesterday's close;
+    2  no report inside the window.
+
+    FRESHNESS RANKS THE SEARCH BUDGET, not the move size alone. On 2026-11-12
+    the biggest movers were ALL earnings names, so ranking by |gap| could not
+    tell them apart - and it left NBIS, which had reported THAT MORNING,
+    outside the 5 slots while a name whose report was a day old took one. A
+    report that is hours old has had minutes to be priced; a report from
+    yesterday has had a whole session.
+    """
+    rec = cal_rec(c["name"])
+    if not rec:
+        return 2
+    if rec["date"] == RUN_DATE:
+        return 0
+    if PREV_SESSION and rec["date"] == PREV_SESSION:
+        return 1
+    return 2
+
+
+def cal_event_cell(name):
+    """The calendar-sourced EVENT line for a row nobody searched.
+
+    It states the FACT - a report is dated on this day, per the Nasdaq
+    earnings calendar - and says plainly that no headline was looked up, so
+    the row carries NO earnings-driven verdict. The verdict follows the
+    research, never the other way round.
+    """
+    rec = cal_rec(name)
+    if not rec:
+        return None
+    when = "today" if rec["date"] == RUN_DATE else rec["date"]
+    cell = (f"{cal_quarter_label(rec)} results, report date {when} "
+            f"(Nasdaq earnings calendar; no headline lookup)")
+    if rec.get("eps"):
+        cell += f", consensus EPS {rec['eps']}"
+    return cell
+
+
+# The rows whose published earnings date the screener got wrong. Published, not
+# silently corrected: a row that carried the previous quarter's date while it
+# had reported that morning is a defect in a PUBLISHED FIELD.
+STALE_FIELD_ROWS = []
+for _sym, _c in tagged + quiet:
+    _cd = cal_last_date(_c["name"])
+    _sd = epoch_date(_c.get("er"))
+    if _cd and _sd and _cd != _sd:
+        STALE_FIELD_ROWS.append({"ticker": _c["name"], "screener": _sd,
+                                 "calendar": _cd})
+health["earnings_field_stale_rows"] = len(STALE_FIELD_ROWS)
+
+# The per-run catalyst budget, allocated BY THE EVIDENCE GAP.
+#
+# The US slice covers the rows whose earnings event can still explain TODAY's
+# move (freshness 0) plus the next freshest ones, bounded by the ceiling. The
+# FLOORS (EU 3, AU 2, APAC 3) are never squeezed, because no bulk calendar
+# reaches those markets - they are the regions where a search is the only way
+# to know. Whatever the US slice does not need goes to the region with the
+# most unexplained rows.
+FRESH_US = [c for _, c in tagged if event_freshness(c) == 0]
+NEAR_US = [c for _, c in tagged if event_freshness(c) == 1]
+US_CEIL = max(0, CATALYST_TOTAL_CAP - FOREIGN_FLOORS)
+CAT_ALLOC = {"US": min(US_CEIL, len(FRESH_US) + len(NEAR_US)),
+             "EU": CATALYST_BUDGET["EU"], "AU": CATALYST_BUDGET["AU"],
+             "APAC": CATALYST_BUDGET["APAC"]}
+_leftover = max(0, CATALYST_TOTAL_CAP - sum(CAT_ALLOC.values()))
+_pools = {"EU": len(eu_final), "AU": len(au), "APAC": len(apac)}
+for _reg in sorted(_pools, key=lambda k: (-_pools[k], k)):
+    if _leftover <= 0:
+        break
+    _add = min(_leftover, max(0, _pools[_reg] - CAT_ALLOC[_reg]))
+    CAT_ALLOC[_reg] += _add
+    _leftover -= _add
+
+# The US targets: AMC reactions first (the artifact's strongest), then by
+# event freshness, then by the size of the move.
+targets_us = [c for _, c in
+              sorted(tagged, key=lambda t: (0 if t[1]["tag"] == "AMC_REACTION" else 1,
+                                           event_freshness(t[1]), -t[1]["mx"]))
+              [:CAT_ALLOC["US"]]]
 targets_eu = [g(r0["d"], "name") for r0 in
-              sorted(eu_final, key=next_earn_rank)[:CATALYST_BUDGET["EU"]]]
+              sorted(eu_final, key=next_earn_rank)[:CAT_ALLOC["EU"]]]
 targets_au = [g(r0["d"], "name") for r0 in
-              sorted(au, key=next_earn_rank)[:CATALYST_BUDGET["AU"]]]
+              sorted(au, key=next_earn_rank)[:CAT_ALLOC["AU"]]]
 targets_apac = [g(r0["d"], "name") for r0 in
-                sorted(apac, key=next_earn_rank)[:CATALYST_BUDGET["APAC"]]]
+                sorted(apac, key=next_earn_rank)[:CAT_ALLOC["APAC"]]]
 TARGET_SET = (set(c["name"] for c in targets_us) | set(targets_eu)
               | set(targets_au) | set(targets_apac))
 
@@ -1477,13 +1813,19 @@ TARGET_SET = (set(c["name"] for c in targets_us) | set(targets_eu)
 # it is missing. It is NEVER overwritten: a re-run must not wipe the agent's
 # catalyst research.
 if not os.path.exists(CAT_FILE):
-    _budget_total = sum(CATALYST_BUDGET.values())
+    _budget_total = sum(CAT_ALLOC.values())
     with open(CAT_FILE, "w") as fh:
         fh.write("Catalyst lookups: "
-                 f"{CATALYST_BUDGET['US']} US + {CATALYST_BUDGET['EU']} EU + "
-                 f"{CATALYST_BUDGET['AU']} AU + {CATALYST_BUDGET['APAC']} APAC/Gulf = "
+                 f"{CAT_ALLOC['US']} US + {CAT_ALLOC['EU']} EU + "
+                 f"{CAT_ALLOC['AU']} AU + {CAT_ALLOC['APAC']} APAC/Gulf = "
                  f"{_budget_total}"
-                 " per run, the skill's cap.\n")
+                 " per run - the skill's cap, allocated by the evidence gap.\n")
+        fh.write("The US slice is the rows whose earnings event can still explain\n")
+        fh.write("TODAY's move - the bulk earnings calendar dates them - so the\n")
+        fh.write("freshest events are researched first, and a name whose report\n")
+        fh.write("was a session old does not outrank one that reported this\n")
+        fh.write("morning. A row the calendar covers but that is NOT listed here\n")
+        fh.write("keeps its calendar event line and carries NO verdict.\n")
         fh.write("Fill the Catalyst cell for every ticker below, then re-run the\n")
         fh.write("pipeline - the catalyst is merged into that ticker's row in the\n")
         fh.write("artifact, so a re-run never wipes this file. Never fabricate a\n")
@@ -1504,45 +1846,9 @@ if not os.path.exists(CAT_FILE):
     catalysts, catalyst_note = parse_catalyst_file(CAT_FILE)
 
 
-# Region labels the catalog may carry, and the row-regions they stand for.
-# The morning run writes its own Region cells, so an alias must still match:
-# a strict string compare would silently drop a researched catalyst whose
-# region was labelled "Europe" instead of "EU". The aliases are deliberately
-# REGION-scoped - they never make one region's ticker usable in another.
-_REGION_ALIASES = {
-    "US": {"US", "USA", "UNITED STATES", "AMERICA"},
-    "EU": {"EU", "EUROPE", "EU/UK", "EUROPEAN", "EU & UK"},
-    "AU": {"AU", "ASX", "AUSTRALIA", "AUSTRALIAN"},
-    "APAC/GULF": {"APAC", "APAC/GULF", "APAC & GULF", "APAC/GULF/MEA", "GULF",
-                  "ASIA-PACIFIC", "ASIA PACIFIC"},
-}
-
-
-def _same_region(catalog_region, row_region):
-    """True when a catalog Region cell denotes the row's own region.
-
-    Both sides are normalised (case, spaces, punctuation) and then compared
-    through the alias table, so "Europe" matches the EU rows and "ASX"
-    matches the AU rows - but an AU row never matches an EU label.
-    """
-    def _norm(s):
-        s = (s or "").strip().upper().replace("-", " ").replace("_", " ")
-        s = " ".join(s.replace("/", " ").split())
-        return s
-    cr, rr = _norm(catalog_region), _norm(row_region)
-    if not cr:
-        return False
-    if cr == rr:
-        return True
-    rr_aliases = _REGION_ALIASES.get(rr, {rr})
-    for canon, aliases in _REGION_ALIASES.items():
-        if cr in aliases and rr in aliases:
-            return True
-    return False
-
-
-def catalyst_cell(name, region=None):
-    """The catalyst for a row: from the catalog file, or an honest placeholder.
+def catalyst_cell(name, us=False):
+    """The catalyst for a row: from the catalog file, the bulk calendar, or an
+    honest placeholder.
 
     The verdict follows the RESEARCH, never the other way round. A row whose
     catalyst cell says the lookup was not performed carries NO verdict: the
@@ -1551,35 +1857,20 @@ def catalyst_cell(name, region=None):
     run's researched EU rows. A researched row that found nothing ("no fresh
     catalyst found") IS a verdict and keeps its N.
 
-    WHY THE REGION (2026-11-12). The merge used to key on the TICKER ALONE, so
-    a ticker that exists on two venues inherited whichever entry the catalog
-    held - measured on the 2026-11-12 settlement run: the XETR row for DMP
-    (a German mortgage bank) published the ASX DMP's AGM catalyst verbatim
-    (an AU consumer name, USD, FY26, same-store sales), 1 row of 30. A row may
-    now only use a catalog entry from its OWN region; a ticker that is only in
-    the catalog under another region is a DIFFERENT company and gets the
-    honest placeholder instead of the wrong catalyst.
+    The CALENDAR cell states a fact - a report is dated on this day - and says
+    plainly that no headline was looked up, so it carries no verdict either.
     """
-    entries = catalysts.get(name)
-    if entries is None:
+    c = catalysts.get(name)
+    if c is None:
         for k, v in catalysts.items():
             if k.upper() == name.upper():
-                entries = v
+                c = v
                 break
-    if entries:
-        if region:
-            for e in entries:
-                if _same_region(e["region"], region):
-                    return e["catalyst"], verdict_for(e["catalyst"], e["earn"])
-            # The ticker is in the catalog, but in ANOTHER region: a different
-            # company. Publishing its catalyst here would be a fabricated
-            # attribution, so publish the honest placeholder instead.
-            if not any(e["region"].strip() for e in entries):
-                e = entries[0]
-                return e["catalyst"], verdict_for(e["catalyst"], e["earn"])
-            return "no catalyst lookup (outside the per-run budget)", "—"
-        e = entries[0]
-        return e["catalyst"], verdict_for(e["catalyst"], e["earn"])
+    if c:
+        return c["catalyst"], verdict_for(c["catalyst"], c["earn"])
+    cell = cal_event_cell(name) if us else None
+    if cell:
+        return cell, "—"
     if name in TARGET_SET:
         return "pending catalyst lookup", "—"
     return "no catalyst lookup (outside the per-run budget)", "—"
@@ -1589,7 +1880,8 @@ def catalyst_cell(name, region=None):
 # these has no evidence, so it must not carry a verdict.
 NO_RESEARCH_MARKERS = ("no catalyst lookup", "pending catalyst lookup",
                        "not performed", "outside the per-run budget",
-                       "lookup not performed", "no lookup performed")
+                       "lookup not performed", "no lookup performed",
+                       "no headline lookup")
 
 
 def verdict_for(catalyst_text, flag):
@@ -1787,7 +2079,7 @@ if SETTLE_MODE:
         d = r0["d"]
         r = r0["ref"]
         rc, rs, ra, sa = ref_cols(r)
-        cat, earn = catalyst_cell(g(d, "name"), "EU")
+        cat, earn = catalyst_cell(g(d, "name"))
         nm = g(d, "name")
         scan_move = _morning.get(nm)
         settled = g(d, "change")
@@ -1811,8 +2103,6 @@ if SETTLE_MODE:
     B(f"  cell reads `settled` and its move is the session's own move.")
     B(f"- morning_artifact: {INPUT_PROV['morning']}")
     B(f"- catalyst_catalog: {INPUT_PROV['catalog']}")
-    B(f"- catalyst_merge: region-matched - a row may only use a catalog entry from its OWN")
-    B(f"  region; the same ticker on another venue is a different company and is not used.")
     B(f"- scan_to_settle: {len(_drifts)} rows compared with the 08:00 ET scan"
       + (f", median drift {sorted(_drifts)[len(_drifts)//2]:.2f}pp, max {max(_drifts):.2f}pp, "
          f"{sum(1 for x in _drifts if x > 1.0)} rows more than 1pp apart"
@@ -1837,7 +2127,7 @@ if SETTLE_MODE:
     B(f"`earnings-reaction mode=settle target=earnings-reactions:{RUN_DATE} "
       f"eu_rows={len(eu_final)} scan_matched={len(_drifts)} "
       f"scan_to_settle_median_pp={sorted(_drifts)[len(_drifts)//2] if _drifts else 'n/a'} "
-      f"catalyst_lookups={sum(len(v) for v in catalysts.values())} "
+      f"catalyst_lookups={len(catalysts)} "
       f"rows_dropped_stale_ref={health['rows_dropped_stale_ref']} "
       f"degraded_sources={len(DEGRADED)}`")
     B("")
@@ -1878,8 +2168,9 @@ else:
     A(f"- Run type: `scheduled_scan`")
 A(f"- Source: TradingView public screener (`scanner.tradingview.com/<market>/scan`);")
 A(f"  Yahoo chart API as the independent reference-close source.")
-A(f"- Method: 5 passes (US top-200 mcap, US prior-session movers, EU/UK movers,")
-A(f"  ASX movers, APAC/Gulf movers). Volume floor {MIN_VOLUME:,} on every pass; `country` filter for")
+A(f"- Method: 6 passes (US top-200 mcap, US prior-session movers, US pre-market gaps,")
+A(f"  EU/UK movers, ASX movers, APAC/Gulf movers). Volume floor {MIN_VOLUME:,} on every session-volume")
+A(f"  pass; Pass B2 floors PRE-market volume at {PREMARKET_GAP_MIN_VOLUME:,} shares; `country` filter for")
 A(f"  primary listings; exchange drop-list applied.")
 A(f"- artifact_contract: {ARTIFACT_CONTRACT}")
 A(f"- settlement_state: every foreign row carries a `Settle` cell - `live` when the row's")
@@ -1902,6 +2193,9 @@ big_apac = max(apac, key=lambda r: abs(g(r["d"], "change"))) if apac else None
 _eu_live = sum(1 for r in eu_final if settle_state(r.get("ref")) == "live")
 A(f"- {len(amc)} AMC reactions, {len(gaps)} pre-market gaps, {len(bod)} without extended-hours data; "
   f"{len(eu_final)} EU/UK and {len(au)} ASX movers, {len(apac)} APAC/Gulf movers.")
+A(f"- Pass B2 (the US pre-market gap scan) met the filter on {B2_STATS['candidates']} names "
+  f"({B2_STATS['up']} up, {B2_STATS['down']} down); {B2_STATS['deduped']} were already a Pass A/B "
+  f"row and are recorded as dedupes, and {B2_STATS['published']} reached a table.")
 if big_us:
     A(f"- Biggest US extended-hours move: {big_us[1]['name']} "
       f"{big_us[1]['tag']} ({pct(big_us[1]['mx'])}%).")
@@ -1949,7 +2243,7 @@ A("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
 for sym, c in tagged:
     r = us_ref.get(sym)
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(c["name"], "US")
+    cat, earn = catalyst_cell(c["name"], us=True)
     A(f"| {c['name']} | {c['ex']} | {c['close']} | {c['change']:.2f} | "
       f"{pct(c['pm'])} | {pct(c['po'])} | {multiple(headline_move(c), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {c.get('us_tradeable','—')} | {er_cell(c)} | {c['tag']} | {earn} | {cat} |")
@@ -1961,7 +2255,7 @@ A("|---|---|---|---|---|---|---|---|---|---|---|---|")
 for sym, c in quiet[:15]:
     r = us_ref.get(sym)
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(c["name"], "US")
+    cat, earn = catalyst_cell(c["name"], us=True)
     A(f"| {c['name']} | {c['ex']} | {c['change']:.2f} | {pct(c['pm'])} | {pct(c['po'])} | "
       f"{multiple(headline_move(c), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {c.get('us_tradeable','—')} | {earn} | {cat} |")
@@ -1976,7 +2270,7 @@ for r0 in eu_final:
     d = r0["d"]
     r = r0["ref"]
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(g(d, "name"), "EU")
+    cat, earn = catalyst_cell(g(d, "name"))
     A(f"| {g(d,'name')} | {r0['market']} | {g(d,'exchange')} | {g(d,'close')} | "
       f"{g(d,'change'):+.2f} | {g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
@@ -1990,7 +2284,7 @@ for r0 in au:
     d = r0["d"]
     r = r0["ref"]
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(g(d, "name"), "AU")
+    cat, earn = catalyst_cell(g(d, "name"))
     A(f"| {g(d,'name')} | {g(d,'exchange')} | {g(d,'close')} | {g(d,'change'):+.2f} | "
       f"{g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
@@ -2004,7 +2298,7 @@ for r0 in apac:
     d = r0["d"]
     r = r0["ref"]
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(g(d, "name"), "APAC/Gulf")
+    cat, earn = catalyst_cell(g(d, "name"))
     A(f"| {g(d,'name')} | {r0['market']} | {g(d,'exchange')} | {g(d,'close')} | "
       f"{g(d,'change'):+.2f} | {g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
@@ -2072,6 +2366,22 @@ A(f"  (a broad up-day); a small 'egreater' count usually means a small market wi
 A(f"  names above the $1B market-cap floor. Check the median change before calling it a gap.")
 A(f"- filters: volume>{MIN_VOLUME} (removes stale-reference rows), country=home for EU/UK/AU,")
 A(f"  exchange drop-list for US, US venue allow-list, US preferred (slash ticker) excluded")
+A(f"- pass_b2 (US pre-market gap scan - \"gapped today, flat yesterday\"): "
+  f"candidates={B2_STATS['candidates']} deduped_against_pass_a_b={B2_STATS['deduped']} "
+  f"published={B2_STATS['published']} (up={B2_STATS['up']} down={B2_STATS['down']})")
+A(f"  filter: US venues, market_cap_basic > ${PREMARKET_GAP_MIN_MCAP:,}, close > ${PREMARKET_GAP_MIN_CLOSE}, "
+  f"|premarket_change| >= {PREMARKET_GAP_MIN_PCT}%, premarket_volume >= {PREMARKET_GAP_MIN_VOLUME:,} shares; "
+  f"two scans (up and down) because a scanner filter is AND-ed")
+A(f"  why it exists: on 2026-11-13 a name that was FLAT in the prior session and is not a $20bn "
+  f"mega-cap fell through Pass A and Pass B, so LFTO (+30.63% on the day) and SBC (+37.64%) were "
+  f"both missed by the routine that exists to catch same-session earnings reactions")
+A(f"  column measurement (2026-11-15, market `america`, US stocks): `premarket_change` and "
+  f"`premarket_volume` are available as BOTH a column and a FILTER (an unknown field returns 200 "
+  f"with zero rows, so the counts are the proof); `gap` also exists but it is the REGULAR SESSION "
+  f"OPEN gap, which is not knowable at the 08:00 ET fire, so `premarket_change` is the column used")
+A(f"  the pre-market volume floor is a DIFFERENT measure from the session-volume floor: at the "
+  f"08:00 ET fire the regular session has not opened, so `volume` is 0 for every candidate and no "
+  f"session-volume filter is applied to this pass")
 A(f"- volume_floor_note: volume>{MIN_VOLUME} removes MOST stale-reference rows, but a row can")
 A(f"  still sit on a stale reference when its only volume came from one thin day (verified")
 A(f"  2026-10-26: LSE 50GP cleared the floor on 12,000 shares dated 2026-10-15 while Yahoo")
@@ -2089,11 +2399,24 @@ A(f"- us_line_index: {'ok' if health['us_line_index_ok'] else 'EMPTY'} "
   f"(US-listed lines for the {len(FOREIGN_HOME_COUNTRIES)} foreign home countries, both "
   f"scanner types; the `US tradeable` column is ADR / US-listed / none)")
 A(f"- catalyst_note: {catalyst_note if catalyst_note else 'none'}")
-A(f"- catalyst_merge: region-matched - a row may only use a catalog entry from its OWN region;")
-A(f"  the same ticker on another venue is a different company and is not used.")
-A(f"- catalyst_budget: {CATALYST_BUDGET['US']} US + {CATALYST_BUDGET['EU']} EU + "
-  f"{CATALYST_BUDGET['AU']} AU = "
-  f"{CATALYST_BUDGET['US']+CATALYST_BUDGET['EU']+CATALYST_BUDGET['AU']} lookups per run")
+A(f"- catalyst_budget: {CAT_ALLOC['US']} US + {CAT_ALLOC['EU']} EU + "
+  f"{CAT_ALLOC['AU']} AU + {CAT_ALLOC['APAC']} APAC/Gulf = "
+  f"{sum(CAT_ALLOC.values())} lookups per run (cap {CATALYST_TOTAL_CAP}), "
+  f"allocated by the evidence gap: the US slice covers the rows whose earnings "
+  f"event can still explain today's move, the EU/AU/APAC floors are never "
+  f"squeezed because no bulk calendar reaches those markets, and whatever the "
+  f"US slice does not need goes to the region with the most unexplained rows")
+A(f"- earnings_calendar: Nasdaq public earnings calendar "
+  f"(calls={health['calendar_calls']} errors={health['calendar_errors']} "
+  f"symbols={health['calendar_symbols']}) - the source of record for the US "
+  f"earnings date, and the ranking key for the search budget")
+A(f"- earnings_field_stale_rows: {health['earnings_field_stale_rows']} "
+  f"(the screener's earnings_release_date disagreed with the calendar; the "
+  f"calendar's date is published)")
+if STALE_FIELD_ROWS:
+    A(f"- earnings_field_stale_detail: {json.dumps(STALE_FIELD_ROWS[:20])}")
+A(f"- earnings_tiers: fresh={len(FRESH_US)} near={len(NEAR_US)} "
+  f"(fresh = the report is dated on the scan date, near = the previous session)")
 A(f"- one_table_rule: each name appears exactly once, in exactly one table, with its")
 A(f"  catalyst in that row's last column. There is no separate catalysts section.")
 A(f"- data_date: US regular session close of the prior trading day; extended-hours columns")
@@ -2124,7 +2447,12 @@ A(f"`earnings-reaction target=earnings-reactions:{RUN_DATE} candidates={len(us)}
   f"amc_reactions={len(amc)} pre_gaps={len(gaps)} eu_reactions={len([r for r in eu_final if abs(g(r['d'],'change'))>3])} "
   f"asx_reactions={len([r for r in au if abs(g(r['d'],'change'))>3])} "
   f"apac_reactions={len([r for r in apac if abs(g(r['d'],'change'))>3])} "
-  f"catalyst_lookups={sum(len(v) for v in catalysts.values())} bod={len(bod)} "
+  f"catalyst_lookups={len(catalysts)} bod={len(bod)} "
+  f"pass_b2_candidates={B2_STATS['candidates']} pass_b2_dedup={B2_STATS['deduped']} "
+  f"pass_b2_published={B2_STATS['published']} "
+  f"earnings_calendar_rows={health['calendar_symbols']} "
+  f"earnings_tiers_fresh={len(FRESH_US)} earnings_tiers_near={len(NEAR_US)} "
+  f"earnings_field_stale_rows={health['earnings_field_stale_rows']} "
   f"rows_dropped_stale_ref={health['rows_dropped_stale_ref']} "
   f"rows_dropped_unresolved_ref={health['rows_dropped_unresolved_ref']} "
   f"degraded_sources={len(DEGRADED)}`")
@@ -2134,8 +2462,11 @@ out = os.path.join(OUT_DIR, OUT_NAME)
 with open(out, "w") as fh:
     fh.write("\n".join(L))
 
-targets = {"us": [{"name": c["name"], "tag": c["tag"], "last_earnings": epoch_date(c.get("er"))}
-                  for c in targets_us],
+targets = {"us": [{"name": c["name"], "tag": c["tag"],
+                    "last_earnings": cal_last_date(c["name"]) or epoch_date(c.get("er")),
+                    "event_freshness": event_freshness(c),
+                    "premarket_pct": c.get("pm")}
+                   for c in targets_us],
            "eu": [{"name": n, "chg": next((round(g(r0['d'], 'change'), 2) for r0 in eu_final
                                           if g(r0['d'], 'name') == n), None)}
                   for n in targets_eu],
@@ -2147,7 +2478,16 @@ targets = {"us": [{"name": c["name"], "tag": c["tag"], "last_earnings": epoch_da
                      "chg": next((round(g(r0['d'], 'change'), 2) for r0 in apac
                                   if g(r0['d'], 'name') == n), None)}
                     for n in targets_apac],
-           "budget": CATALYST_BUDGET,
+           "budget": CAT_ALLOC,
+           "budget_total": sum(CAT_ALLOC.values()),
+           "budget_cap": CATALYST_TOTAL_CAP,
+           "budget_rule": ("the US slice covers the rows whose earnings event can "
+                           "still explain today's move (fresh = the report is dated "
+                           "on the scan date), the EU/AU/APAC floors are never "
+                           "squeezed, and the leftover goes to the region with the "
+                           "most unexplained rows"),
+           "earnings_calendar_rows": health["calendar_symbols"],
+           "earnings_field_stale_rows": health["earnings_field_stale_rows"],
            "catalyst_file": CAT_FILE}
 with open(os.path.join(OUT_DIR, f"{RUN_DATE}-catalyst-targets.json"), "w") as fh:
     json.dump(targets, fh, indent=2)
