@@ -1,0 +1,26 @@
+rank,tier,ticker,tv_symbol,company,venue,segment,price_raw,chg_pct,gap_pct,rvol,turnover_raw,mcap_raw,catalyst,flags,on_watchlist,parse,section
+1,SOFT_A,6669,TWSE:6669,Wiwynn (緯穎),,,,6.1,,0.3,22.9億 / US$70m,,"MOPS 11/06 evening: Q3 results; board approved cash raise via overseas GDR plus cash injections into Malaysia, Wiwynn Technology subsidiaries",,false,table,Soft-A (SOFT_A)
+2,SOFT_A,8039,TWSE:8039,Taiflex (台虹),,,,9.8,,0.4,14.8億 / US$45m,,MOPS 11/06 (E Ink 8069 release): material cooperation letter of intent signed with Taiflex,LIMIT_UP,false,table,Soft-A (SOFT_A)
+3,SOFT_A,6538.TPEX,TPEX:6538,Brave Screen (倉和),,,,8.4,,1.2,13.4億 / US$41m,,MOPS 11/06: Q3 results; subsidiary in Suzhou signed cooperation contract and investment with 安吉光翼創新能源科技,,false,table,Soft-A (SOFT_A)
+4,SOFT_A,7769,TWSE:7769,Hon Precision (鴻勁),,,,5.7,,0.3,11.5億 / US$35m,,MOPS 11/06 20:36: board approved share buyback,,false,table,Soft-A (SOFT_A)
+5,SOFT_A,8069.TPEX,TPEX:8069,E Ink (元太),,,,4.2,,0.3,3.2億 / US$10m,,MOPS 11/06: LOI with Taiflex; board OK to join SinoPac Holdings cash raise; property purchase from related party China Pulp,,false,table,Soft-A (SOFT_A)
+6,SOFT_A,6919,TWSE:6919,Caliway (康霈*),,,,10.0,,0.4,2.1億 / US$6m,,MOPS 11/06 17:49: board approved share buyback (multi-day LU follow-through),LIMIT_UP,false,table,Soft-A (SOFT_A)
+7,TECH_WATCH,2330,TWSE:2330,,,,,3.5,,0.3,,,,,false,list,"TECH_WATCH (liquid, no same-session catalyst; turnover well above floor)"
+8,TECH_WATCH,2454,TWSE:2454,,,,,5.2,,0.4,,,,,false,list,"TECH_WATCH (liquid, no same-session catalyst; turnover well above floor)"
+9,TECH_WATCH,2308,TWSE:2308,,,,,9.0,,0.6,,,,,false,list,"TECH_WATCH (liquid, no same-session catalyst; turnover well above floor)"
+10,TECH_WATCH,3037,TWSE:3037,,,,,2.5,,0.6,,,,,false,list,"TECH_WATCH (liquid, no same-session catalyst; turnover well above floor)"
+11,TECH_WATCH,2383,TWSE:2383,,,,,2.4,,0.4,,,,,false,list,"TECH_WATCH (liquid, no same-session catalyst; turnover well above floor)"
+12,TECH_WATCH,2303,TWSE:2303,,,,,4.6,,0.4,,,,,false,list,"TECH_WATCH (liquid, no same-session catalyst; turnover well above floor)"
+13,TECH_WATCH,2408,TWSE:2408,,,,,6.7,,0.3,,,,,false,list,"TECH_WATCH (liquid, no same-session catalyst; turnover well above floor)"
+14,TECH_WATCH,3443,TWSE:3443,,,,,3.1,,0.3,,,,,false,list,"TECH_WATCH (liquid, no same-session catalyst; turnover well above floor)"
+15,TECH_WATCH,2344,TWSE:2344,,,,,8.3,,0.3,,,,,false,list,"TECH_WATCH (liquid, no same-session catalyst; turnover well above floor)"
+16,B,3363.TPEX,TPEX:3363,,,,,4.7,,1.3,,,,,false,list,Tier B
+17,B,3605,TWSE:3605,,,,,-5.4,,1.3,,,,,false,list,Tier B
+18,B,6443,TWSE:6443,,,,,5.4,,1.9,,,,,false,list,Tier B
+19,C,1303,TWSE:1303,,,,,9.8,,,,,,,false,list,Tier C — LIMIT_UP with size (no catalyst)
+20,C,2327,TWSE:2327,,,,,9.9,,,,,,,false,list,Tier C — LIMIT_UP with size (no catalyst)
+21,C,3105.TPEX,TPEX:3105,,,,,10.0,,,,,,,false,list,Tier C — LIMIT_UP with size (no catalyst)
+22,C,1802,TWSE:1802,,,,,9.9,,,,,,,false,list,Tier C — LIMIT_UP with size (no catalyst)
+23,C,2492,TWSE:2492,,,,,9.9,,,,,,,false,list,Tier C — LIMIT_UP with size (no catalyst)
+24,C,6488.TPEX,TPEX:6488,,,,,10.0,,,,,,,false,list,Tier C — LIMIT_UP with size (no catalyst)
+25,C,6770,TWSE:6770,,,,,9.8,,,,,,,false,list,Tier C — LIMIT_UP with size (no catalyst)

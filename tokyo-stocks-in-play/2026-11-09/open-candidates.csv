@@ -1,0 +1,27 @@
+rank,tier,ticker,tv_symbol,company,venue,segment,price_raw,chg_pct,gap_pct,rvol,turnover_raw,mcap_raw,catalyst,flags,on_watchlist,parse,section
+1,SOFT_A,6315,TSE:6315,TOWA,,PRM,"2,089",17.0,,,"¥1,647m (pace ~0.2× avg)",,"FY ordinary +25% upgrade, 5-yr high, dividend +6円; mcap ¥158bn (TV)",,false,table,"Soft-A (SOFT_A) — fresh results/guidance catalysts (published 11-06 after close, first session reaction)"
+2,SOFT_A,8425,TSE:8425,Mizuho Leasing,,PRM,"1,367",10.6,,,¥560m,,"FY ordinary +7% upgrade, record, dividend +6円; mcap ¥392bn",,false,table,"Soft-A (SOFT_A) — fresh results/guidance catalysts (published 11-06 after close, first session reaction)"
+3,SOFT_A,2681,TSE:2681,Second Retailing (セカリテ),,PRM,"2,214",19.7,,,¥349m,,FY ordinary flipped to +8% on upgrade,,false,table,"Soft-A (SOFT_A) — fresh results/guidance catalysts (published 11-06 after close, first session reaction)"
+4,SOFT_A,6245,TSE:6245,Hirano Tecseed,,STD,"1,729",13.9,,,¥260m,,FY ordinary guided up to 2.2×,,false,table,"Soft-A (SOFT_A) — fresh results/guidance catalysts (published 11-06 after close, first session reaction)"
+5,SOFT_A,7760,TSE:7760,IMV,,STD,"1,871",18.2,,,¥272m,,"FY9 results, ordinary +7% guide, 5th straight record",,false,table,"Soft-A (SOFT_A) — fresh results/guidance catalysts (published 11-06 after close, first session reaction)"
+6,SOFT_A,6777,TSE:6777,santec,,STD?,"15,290 (Kabutan)",15.9,,,turnover unverified,,"FY ordinary +48% upgrade, record, dividend +100円; special bid quote 09:11",,false,table,"Soft-A (SOFT_A) — fresh results/guidance catalysts (published 11-06 after close, first session reaction)"
+7,SOFT_A,7826,TSE:7826,Furuya Metal,,PRM,"8,940 (Kabutan)",13.3,,,turnover unverified,,Q1 ordinary 3.9×,,false,table,"Soft-A (SOFT_A) — fresh results/guidance catalysts (published 11-06 after close, first session reaction)"
+8,SOFT_A,3289,TSE:3289,Tokyu Fudosan HD (short side),,PRM,"1,177",-5.6,,,"¥1,926m",,"H1 ordinary −21%, Q2 −55%",,false,table,"Soft-A (SOFT_A) — fresh results/guidance catalysts (published 11-06 after close, first session reaction)"
+9,TECH_WATCH,4475,TSE:4475,HENNGE,,PRM,"2,487",12.5,,,"¥2,524m",,carry follow-through,,false,table,TECH_WATCH
+10,TECH_WATCH,6590,TSE:6590,Shibaura Mechatronics,,PRM,"2,560",8.5,,,"¥1,953m",,no catalyst found,,false,table,TECH_WATCH
+11,TECH_WATCH,4912,TSE:4912,Lion,,PRM,"2,065.5",11.6,,,"¥1,041m",,catalyst not verified; pace ~0.4×,,false,table,TECH_WATCH
+12,TECH_WATCH,6779,TSE:6779,NDK,,PRM,"2,067",11.5,,,¥814m,,catalyst not verified,,false,table,TECH_WATCH
+13,TECH_WATCH,8136,TSE:8136,Sanrio,,PRM,"1,162.5",-4.4,,,"¥7,586m",,catalyst not verified,,false,table,TECH_WATCH
+14,TECH_WATCH,8801,TSE:8801,Mitsui Fudosan,,PRM,"1,531.5",-5.0,,,"¥4,762m",,catalyst not verified,,false,table,TECH_WATCH
+15,TECH_WATCH,4613,TSE:4613,Kansai Paint,,PRM,"2,872.5",-4.9,,,"¥2,125m",,upgrade (extraordinary gain) sold — sell-the-news,,false,table,TECH_WATCH
+16,TECH_WATCH,3288,TSE:3288,Open House,,PRM,"7,332",-6.4,,,"¥1,320m",,catalyst not verified,,false,table,TECH_WATCH
+17,B,6721,TSE:6721,,,,,14.4,,,,,,,false,list,Tier B / C
+18,B,656A,TSE:656A,,,,,15.3,,,,,,,false,list,Tier B / C
+19,B,6072,TSE:6072,,,,,10.7,,,,,,,false,list,Tier B / C
+20,B,4635,TSE:4635,,,,,9.7,,,,,,,false,list,Tier B / C
+21,B,6327,TSE:6327,,,,,8.4,,,,,,,false,list,Tier B / C
+22,B,3046,TSE:3046,,,,,7.5,,,,,,,false,list,Tier B / C
+23,C,3909,TSE:3909,,,,,,,,,,,LIMIT_UP,false,list,Tier B / C
+24,C,658A,TSE:658A,,,,,12.5,,,,,,LIMIT_UP,false,list,Tier B / C
+25,C,7600,TSE:7600,,,,,-12.9,,,,,,,false,list,Tier B / C
+26,C,8789,TSE:8789,,,,,-16.0,,,,,,,false,list,Tier B / C

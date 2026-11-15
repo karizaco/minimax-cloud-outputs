@@ -1,0 +1,27 @@
+rank,tier,ticker,tv_symbol,company,venue,segment,price_raw,chg_pct,gap_pct,rvol,turnover_raw,mcap_raw,catalyst,flags,on_watchlist,parse,section
+1,A,BAMI,MIL:BAMI,,Borsa Italiana,,€14.94,11.12,9.97,1.03,€69.9M,,"Crédit Agricole proposes to Banco BPM to ""create together a new leading Italian bank"" (Crédit Agricole release, Euronext 07:00 CET; DJ/Reuters/WSJ). RVol 1.03 unadjusted at ~9% of session = full-day average volume already traded. mcap €21.0B",,false,table,Tier A
+2,SOFT_A,UCG,MIL:UCG,,Borsa Italiana,,€80.94,5.39,3.65,0.44,€157.2M,,"3Q26/9M26 results (ESPI 78/2026 07:56 Warsaw, dual-listed) + interim dividend approval; TV key facts: profit **+23.9%**, **€4.5B** dividend, Commerzbank merger push. DJ market talk: forecasts set for upgrades",,false,table,Soft-A
+3,SOFT_A,HOT,XETR:HOT,,Xetra,,€348.2,-4.76,-6.4,0.25,€6.0M,,**ACS denies Hochtief bid report** (onvista/dpa-AFX headline) — unwinds last week's takeover-report jump (TV weekly recap). Gap meets trigger,,false,table,Soft-A
+4,SOFT_A,KNOS,LSE:KNOS,,LSE,,1119p,-9.0,-2.44,0.6,€1.8M,,"COMPANY_RNS Interim results: revenue **£268.8m (+37%)**, adj PBT **£41.7m (+30%)**, adj margin flat 16%, bookings £402.3m (+27%, methodology changed), cash £86.5m (−18% YoY). Sold on margin/cash",,false,table,Soft-A
+5,SOFT_A,VLA,EURONEXT:VLA,,Euronext Paris,,€2.648,5.84,5.92,0.84,€790k,,Positive **Phase 2** results for tetravalent Shigella vaccine candidate **S4V2** (Euronext 07:00 CET),,false,table,Soft-A
+6,SOFT_A,CICN,SIX:CICN,,SIX,,CHF143.0,8.01,3.32,0.37,€617k,,"Cicor wins awards for **two major defence programmes**, expects close to **CHF 20M** revenue from them in 2027 (EQS / TV 06:00 London)",,false,table,Soft-A
+7,SOFT_A,SRT,LSE:SRT,,LSE (AIM),,72p,5.11,1.87,1.96,€321k,,COMPANY_RNS Final Results: five active sovereign customers + sixth contracted; pipeline grown to **£2.4bn** (12% of prior £1.8bn converted). RVol <2 → Soft-A,,false,table,Soft-A
+8,TECH_WATCH,PHARM,EURONEXT:PHARM,,Euronext Amsterdam,,€1.171,6.31,3.09,0.45,€8.1M,,Day-2 after Fri MHRA approval of Joenja for children (Fri 06:00 London) — no same-session catalyst. `TECH_WATCH`,,false,table,TECH_WATCH
+9,TECH_WATCH,AUTO,OSL:AUTO,,Oslo,,NOK14.98,5.87,5.94,0.35,€2.5M,,"Gap-up; last catalyst Thu Q3 (record orders, FY26 guide ~$750M). No same-session news. `TECH_WATCH`",,false,table,TECH_WATCH
+10,TECH_WATCH,COTN,SIX:COTN,,SIX,,CHF283.0,-5.03,-3.15,0.12,€1.5M,,Swiss semi-cap weakness; no fresh news (last: Oct Q3). `TECH_WATCH`,,false,table,TECH_WATCH
+11,TECH_WATCH,IFCN,SIX:IFCN,,SIX,,CHF143.6,-4.65,-0.13,0.16,€1.4M,,Same semi-cap tape as COTN; no fresh news. `TECH_WATCH`,,false,table,TECH_WATCH
+12,TECH_WATCH,FIA1S,OMXHEX:FIA1S,,Helsinki,,€5.265,5.85,0.0,0.83,€1.2M,,Follow-through after Fri October traffic (pax up YoY); no same-session catalyst. `TECH_WATCH`,,false,table,TECH_WATCH
+13,TECH_WATCH,MEGP,LSE:MEGP,,LSE,,107.2p,-4.96,0.18,0.48,€909k,,No RNS today; LSE ticker news (browser) newest company item 21 Oct (CFO leave) — none today. `TECH_WATCH`,,false,table,TECH_WATCH
+14,TECH_WATCH,ALCPB,EURONEXT:ALCPB,,Euronext Paris,,€5.439,-6.3,-3.53,0.37,€588k,,Capital B (bitcoin treasury); no same-session filing. `TECH_WATCH`,,false,table,TECH_WATCH
+15,TECH_WATCH,KOO,LSE:KOO,,LSE,,181.6p,-5.91,0.78,0.79,€296k,,No RNS; sub-midday-scale turnover → file only. `TECH_WATCH`,,false,table,TECH_WATCH
+16,B,NXR,LSE:NXR,,LSE,,294p,-4.85,,,€609k,,RVol 5.47; no same-session RNS and LSE ticker news newest 15 Oct — RVol ≥2 no catalyst → B,,false,table,Tier B
+17,B,CBK,XETR:CBK,,Xetra,,€39.46,3.27,,,€9.2M,,Bank sympathy with UCG (Commerzbank merger push in UCG key facts); under day-move bar,,false,table,Tier B
+18,B,NWL,MIL:NWL,,Borsa Italiana,,€25.20,4.3,,,€1.2M,,NewPrinces; no catalyst found; under 5% bar,,false,table,Tier B
+19,B,CHEMM,OMXCOP:CHEMM,,Copenhagen,,DKK735.5,4.18,,,€2.1M,,No catalyst; under 5% bar,,false,table,Tier B
+20,B,GMAB,OMXCOP:GMAB,,Copenhagen,,DKK3646,3.37,,,€5.5M,,No catalyst; under bar,,false,table,Tier B
+21,C,QLIRO,OMXSTO:QLIRO,,Nasdaq Stockholm,,,79.53,,,,,,,false,list,Tier C / halt watch
+22,C,MTG,SIX:MTG,,SIX,,,,,,,,,,false,list,Tier C / halt watch
+23,C,CNE,LSE:CNE,,LSE,,,0.2,,,,,,,false,list,Tier C / halt watch
+24,C,AKVA,OSL:AKVA,,Oslo,,,0.6,,,,,,,false,list,Tier C / halt watch
+25,C,BMPS,,,"file note, not quoted",,,,,,,,,,false,list,Tier C / halt watch
+26,C,TRAF,,,"sub-floor, file only",,,,,,,,,,false,list,Tier C / halt watch

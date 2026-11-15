@@ -1,0 +1,84 @@
+{
+  "_schema": "intl-stocks-in-play-manifest-v1",
+  "canonical": {
+    "brief": [
+      "midday.md",
+      "open.md"
+    ],
+    "machine": [
+      "midday-candidates.csv",
+      "midday-candidates.json",
+      "open-candidates.csv",
+      "open-candidates.json"
+    ]
+  },
+  "counts": {
+    "midday": {
+      "by_tier": {
+        "A": 3,
+        "B": 3,
+        "C": 3,
+        "SOFT_A": 5,
+        "TECH_WATCH": 13
+      },
+      "candidates": 27,
+      "on_watchlist": 0,
+      "unparsed_items": 0
+    },
+    "open": {
+      "by_tier": {
+        "A": 1,
+        "B": 5,
+        "C": 6,
+        "SOFT_A": 6,
+        "TECH_WATCH": 8
+      },
+      "candidates": 26,
+      "on_watchlist": 0,
+      "unparsed_items": 0
+    }
+  },
+  "date": "2026-11-09",
+  "files": [
+    {
+      "name": "midday-candidates.csv",
+      "role": "machine"
+    },
+    {
+      "name": "midday-candidates.json",
+      "role": "machine"
+    },
+    {
+      "name": "midday.md",
+      "role": "brief"
+    },
+    {
+      "name": "open-candidates.csv",
+      "role": "machine"
+    },
+    {
+      "name": "open-candidates.json",
+      "role": "machine"
+    },
+    {
+      "name": "open.md",
+      "role": "brief"
+    },
+    {
+      "name": "_manifest.json",
+      "role": "provenance"
+    }
+  ],
+  "generated_at": "2026-11-09T20:00:00+07:00",
+  "notes": [
+    "open: digest reports a skipped section",
+    "open: 2 box-local path references un-backticked",
+    "open: ⚠️ Skipped: finanzen.net ad-hoc — Akamai \"Access Denied\" (edgesuite.net reference) on load and after one reload; consent wall never shown. German ad-hoc covered by EQS AD-HOC (browser) + onvista feed.",
+    "midday: digest reports a skipped section",
+    "midday: 2 box-local path references un-backticked",
+    "midday: ⚠️ Skipped: finanzen.net ad-hoc — headed browser Akamai \"Access Denied\" (Reference #18.5a22717.1794223028.a8a7e771); German ad-hoc covered by EQS AD-HOC (browser) + onvista (browser)."
+  ],
+  "producer": "grok-bot/europe-stocks-in-play",
+  "provenance": "Fundamental europe box digest built at 2026-11-09T20:00:00+07:00 covering the midday session.",
+  "run_id": "2026-11-09Tmidday"
+}

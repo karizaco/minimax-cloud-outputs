@@ -1,0 +1,29 @@
+{
+  "_schema": "intl-stocks-in-play-index-v1",
+  "runs": [
+    {
+      "date": "2026-11-09",
+      "path": "2026-11-09/",
+      "run_id": "2026-11-09Topen",
+      "slots": [
+        {
+          "counts": {
+            "by_tier": {
+              "A": 0,
+              "B": 3,
+              "C": 7,
+              "SOFT_A": 6,
+              "TECH_WATCH": 9
+            },
+            "candidates": 25,
+            "on_watchlist": 0,
+            "unparsed_items": 0
+          },
+          "slot": "open",
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "updated": "2026-11-09"
+}

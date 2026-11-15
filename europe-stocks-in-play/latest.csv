@@ -1,0 +1,28 @@
+rank,tier,ticker,tv_symbol,company,venue,segment,price_raw,chg_pct,gap_pct,rvol,turnover_raw,mcap_raw,catalyst,flags,on_watchlist,parse,section
+1,A,BAMI,MIL:BAMI,,Borsa Italiana,,€14.89,10.75,9.97,1.72,€116.8M,,Holding open A — Crédit Agricole proposes merge Italian business with Banco BPM (onvista 09:50 confirms). RVol up from 1.03,,false,table,New / upgraded — Tier A
+2,A,KNOS,LSE:KNOS,,LSE,,1085p,-11.79,-2.44,2.51,€7.36M,,"**Upgrade Soft-A→A** — same COMPANY_RNS interims (rev £268.8m +37%, adj PBT £41.7m +30%); RVol now ≥2; LSE fallers 949 trades",,false,table,New / upgraded — Tier A
+3,A,ABT,MIL:ABT,,Borsa Italiana,,€2.97,9.19,8.46,26.0,€879k,,**NEW** — voluntary partial tender for own shares up to **€8M** (Reuters Fri AH; Mon first cash session). 1Info page 1 (09/11) did **not** list ABT (only VALSOIA 11:09 / BASIC NET 10:37 buybacks),,false,table,New / upgraded — Tier A
+4,SOFT_A,UCG,MIL:UCG,,Borsa Italiana,,€81.20,5.73,3.65,1.13,€405.9M,,Holding — 3Q26/9M26 + €4.5B interim dividend; onvista: UniCredit wants Commerzbank command early 2027. RVol still <1.5,,false,table,Soft-A (open holds + new)
+5,SOFT_A,HOT,XETR:HOT,,Xetra,,€349.8,-4.32,-6.4,0.55,€13.1M,,Holding — ACS denies Hochtief takeover interest (onvista 11:13 confirms open),,false,table,Soft-A (open holds + new)
+6,SOFT_A,CICN,SIX:CICN,,SIX,,CHF143.8,8.61,3.32,1.57,€2.66M,,Holding — two major defence awards ~CHF 20M 2027 (see open),,false,table,Soft-A (open holds + new)
+7,SOFT_A,VLA,EURONEXT:VLA,,Euronext Paris,,€2.611,4.36,5.92,1.25,€1.15M,,Holding — Ph2 tetravalent Shigella S4V2 (see open),,false,table,Soft-A (open holds + new)
+8,SOFT_A,PHO,OSL:PHO,,Oslo,,NOK42.45,-4.82,0.0,1.28,€566k,,**NEW** — AssureMDx update + anticipated Medicare coverage timeline (NewsWeb 07:00). Clears midday floor barely,,false,table,Soft-A (open holds + new)
+9,TECH_WATCH,PHARM,EURONEXT:PHARM,,Euronext Amsterdam,,€1.1785,6.99,,0.94,€17.0M,,Day-2 after Fri MHRA Joenja kids — no same-session catalyst,,false,table,TECH_WATCH (material midday; chat = one ticker per line)
+10,TECH_WATCH,AUTO,OSL:AUTO,,Oslo,,NOK15.73,11.17,,1.18,€8.92M,,Extending Thu Q3 / Logiqs follow-through — no new NewsWeb today,,false,table,TECH_WATCH (material midday; chat = one ticker per line)
+11,TECH_WATCH,NWL,MIL:NWL,,Borsa Italiana,,€25.82,6.87,,1.08,€2.87M,,NewPrinces; Tosano lease was Thu — tape follow-through,,false,table,TECH_WATCH (material midday; chat = one ticker per line)
+12,TECH_WATCH,DOCM,SIX:DOCM,,SIX,,CHF17.23,4.42,,0.3,€2.51M,,No same-session filing found,,false,table,TECH_WATCH (material midday; chat = one ticker per line)
+13,TECH_WATCH,FIA1S,OMXHEX:FIA1S,,Helsinki,,€5.44,9.37,,1.67,€2.44M,,Fri Oct traffic follow-through; no new same-session catalyst,,false,table,TECH_WATCH (material midday; chat = one ticker per line)
+14,TECH_WATCH,OHB,XETR:OHB,,Xetra,,€203.0,6.17,,0.26,€1.90M,,Fri Hera/Didymos + prior €554M Sentinel colour — no fresh Mon EQS ad-hoc on OHB,,false,table,TECH_WATCH (material midday; chat = one ticker per line)
+15,TECH_WATCH,IOT,MIL:IOT,,Borsa Italiana,,€4.61,8.47,,1.15,€1.87M,,SECO; no same-session catalyst found,,false,table,TECH_WATCH (material midday; chat = one ticker per line)
+16,TECH_WATCH,HNSA,OMXSTO:HNSA,,Stockholm,,SEK41.68,5.63,,0.82,€1.80M,,No same-session filing (Idefirix PAES was Oct),,false,table,TECH_WATCH (material midday; chat = one ticker per line)
+17,TECH_WATCH,ALCPB,EURONEXT:ALCPB,,Euronext Paris,,€5.565,-4.13,,0.72,€1.18M,,Capital B; no same-session filing,,false,table,TECH_WATCH (material midday; chat = one ticker per line)
+18,TECH_WATCH,MVIR,OMXSTO:MVIR,,Stockholm,,SEK1.434,19.5,,3.7,€1.14M,,Wed Q3 / funded-to-2030 follow-through — not same-session,,false,table,TECH_WATCH (material midday; chat = one ticker per line)
+19,TECH_WATCH,DAT,GPW:DAT,,GPW,,zł90.70,7.98,,0.99,€695k,,Fri/6 Nov US patent ESPI follow-through (Biznesradar ticker news browser: newest 6 Nov patent),,false,table,TECH_WATCH (material midday; chat = one ticker per line)
+20,TECH_WATCH,WAS,GPW:WAS,,GPW,,zł8.06,11.94,,1.27,€602k,,No ESPI today; Biznesradar ticker news browser: newest 2 Nov EGM/board — tape only,,false,table,TECH_WATCH (material midday; chat = one ticker per line)
+21,TECH_WATCH,SRT,LSE:SRT,,LSE (AIM),,68.9p,0.61,,3.89,€610k,,Open Soft-A faded — Final Results still on file; move gone,,false,table,TECH_WATCH (material midday; chat = one ticker per line)
+22,B,SIFG,EURONEXT:SIFG,,Euronext Amsterdam,,,-22.52,,4.58,€890k,,No same-session Euronext filing found — RVol ≥2 no catalyst → B,,false,table,Tier B (new / notable)
+23,B,NOM,OSL:NOM,,Oslo,,,14.0,,2.12,€1.05M,,Thu bondholder emergency-financing follow-through — no new Mon catalyst → B,,false,table,Tier B (new / notable)
+24,B,CBK,XETR:CBK,,Xetra,,,3.61,,0.27,€27.3M,,Bank sympathy with UCG / Commerzbank talk; under day-move bar,,false,table,Tier B (new / notable)
+25,C,QLIRO,OMXSTO:QLIRO,,Nasdaq 08:05,,,82.68,,,,,,,false,list,Tier C / halt watch
+26,C,MTG,SIX:MTG,,,,,,,,,,,,false,list,Tier C / halt watch
+27,C,AKVA,OSL:AKVA,,see open,,,,,,,,,,false,list,Tier C / halt watch
