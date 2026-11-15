@@ -41,6 +41,7 @@ crons commit to. Keeping them here makes the provenance unambiguous: if it is in
 | **Yesterday's short list** | `<date>/yesterday-short-list.{md,csv}` | Did yesterday's Tier-A names show up in this morning's feed? | the previous `tier-a.csv` and that morning's `ntrt/<date>.csv` |
 | **Thesis score** | `thesis-score.{md,csv}` | Did yesterday's published thesis hold — and which briefs score at all? | the thesis-verdict tables in the published briefs |
 | **Run ledger** | `run-ledger.{md,csv}` | Which routine published what, on which day, and which are missing | every published artifact, against the roster's schedule |
+| **Settle drift** | `settle-drift.{md,csv}` | How far did the 08:00 ET EU/UK move travel by the close — and how many morning rows could not be compared? | `earnings/<date>-reactions-settled.md`, `earnings/<date>-reactions.md` |
 
 Each dated directory carries a `_manifest.json` naming its files and what each
 view was joined from, per `refs/artifact-contract.md` Rule 3.
@@ -73,6 +74,7 @@ python3 scripts/build_gap_reconciliation.py --check
 python3 scripts/build_sector_flow.py --check
 python3 scripts/build_ledger.py --check
 python3 scripts/build_charts.py --check
+python3 scripts/build_settle_drift.py --check
 ```
 
 A rebuild that changes nothing writes nothing: the provenance line carries the

@@ -549,21 +549,155 @@ class YesterdayShortList(BuilderCase):
         self.assertIn("gap brief", by["ACME"]["source"])
 
 
+SETTLED_HEADER = ("| Ticker | Market | Venue | Close | Chg % | Move @08:00 | Δ vs scan | "
+                  "Currency | Move vs avg daily | Ref close | Ref source | Ref asof | "
+                  "Session asof | Settle | US tradeable | Last earnings | Earn | Catalyst |\n"
+                  "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n")
+
+
+def settled_row(ticker, market, settled, scan, delta=None):
+    """One settled-table row. `scan=None` is a name with no 08:00 move."""
+    if delta is None and scan is not None:
+        delta = settled - scan
+    return ("| %s | %s | XETR | 10 | %+.2f | %s | %s | EUR | 1.0x | 9.00 | "
+            "yahoo_chart_daily | 2026-11-06 | 2026-11-09 | settled | none | — | — | "
+            "no catalyst lookup (outside the per-run budget) |\n"
+            % (ticker, market, settled,
+               "—" if scan is None else "%+.2f" % scan,
+               "—" if delta is None else "%+.2f" % delta))
+
+
+class SettleDrift(BuilderCase):
+    """The 08:00 ET EU/UK move against the 12:15 ET settled move.
+
+    Fixture (session 2026-11-09), one row per path:
+      AAA  -10.00 -> -12.50   extended  (|Δ| 2.50)
+      BBB   +5.00 ->  +2.00   faded     (|Δ| 3.00)
+      CCC   +3.00 ->  -1.50   reversed  (|Δ| 4.50)
+      DDD   -4.00 ->  -4.40   held      (|Δ| 0.40)
+      FFF      —  ->  -7.00   new at settle - no morning move, not compared
+      EEE  +2.60 in the morning table, absent from the settled table
+    """
+
+    def _write(self, settled_rows, morning=True):
+        path = os.path.join(self.root, "earnings", "2026-11-09-reactions-settled.md")
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8") as fh:
+            fh.write("# Earnings reaction scanner — 2026-11-09 (EU settlement pass)\n\n"
+                     "- Status: `ok`\n\n## EU/UK — Settled table\n\n" + SETTLED_HEADER
+                     + "".join(settled_rows) + "\n## Source health\n\n"
+                     "- pipeline_version: 2026-11-09.1\n"
+                     "- scan_to_settle: 4 rows compared with the 08:00 ET scan, median drift "
+                     "3.00pp, max 4.50pp, 3 rows more than 1pp apart\n")
+        if morning:
+            with open(os.path.join(self.root, "earnings", "2026-11-09-reactions.md"), "w",
+                      encoding="utf-8") as fh:
+                fh.write("# Earnings reaction scanner — 2026-11-09\n\n"
+                         "## EU/UK — Headline table\n\n"
+                         "| Ticker | Market | Venue | Close | Chg % |\n|---|---|---|---|---|\n"
+                         "| AAA | germany | XETR | 9 | -10.00 |\n"
+                         "| BBB | germany | XETR | 9 | +5.00 |\n"
+                         "| CCC | sweden | OMXSTO | 9 | +3.00 |\n"
+                         "| DDD | sweden | OMXSTO | 9 | -4.00 |\n"
+                         "| EEE | france | EURONEXT | 9 | +2.60 |\n\n"
+                         "## AU (ASX) — Headline table\n\n")
+
+    def _rows(self):
+        return [settled_row("AAA", "germany", -12.50, -10.00),
+                settled_row("BBB", "germany", 2.00, 5.00),
+                settled_row("CCC", "sweden", -1.50, 3.00),
+                settled_row("DDD", "sweden", -4.40, -4.00),
+                settled_row("FFF", "germany", -7.00, None)]
+
+    def _csv(self):
+        return {r["ticker"]: r for r in csv.DictReader(open(os.path.join(
+            self.root, "derived", "settle-drift.csv"), encoding="utf-8"))}
+
+    def test_each_row_gets_its_path(self):
+        self._write(self._rows())
+        run_builder("build_settle_drift", self.root)
+        rows = self._csv()
+        self.assertEqual({t: r["path"] for t, r in rows.items()},
+                         {"AAA": "extended", "BBB": "faded", "CCC": "reversed",
+                          "DDD": "held"})
+        self.assertEqual(rows["CCC"]["delta_pp"], "-4.5")
+
+    def test_a_row_with_no_morning_move_is_not_compared(self):
+        """FFF grew into the settled table; it has nothing to drift from."""
+        self._write(self._rows())
+        run_builder("build_settle_drift", self.root)
+        self.assertNotIn("FFF", self._csv())
+
+    def test_the_selection_gap_is_counted_not_hidden(self):
+        """THE trap: a morning row that faded out of the settle table is never
+        measured. The brief must count it (EEE) before the first table."""
+        self._write(self._rows())
+        run_builder("build_settle_drift", self.root)
+        md = open(os.path.join(self.root, "derived", "settle-drift.md"),
+                  encoding="utf-8").read()
+        first_table = md.index("\n|")
+        self.assertIn("1 of 5 morning EU/UK row(s) (20%) were not in the settled table",
+                      md[:first_table], "the selection gap is not stated above the tables")
+        self.assertIn("1 (EEE)", md, "the absent morning row is not named")
+
+    def test_pooled_median_is_the_true_median(self):
+        """|Δ| = 2.5, 3.0, 4.5, 0.4 -> the true median is 2.75. The artifact's
+        own summary takes the upper-middle value (3.00); both are printed."""
+        self._write(self._rows())
+        run_builder("build_settle_drift", self.root)
+        md = open(os.path.join(self.root, "derived", "settle-drift.md"),
+                  encoding="utf-8").read()
+        self.assertIn("| 1 | 4 | 2.75 | 4.50 | 3 (75.0%) | 1 / 1 / 1 / 1 |", md)
+        self.assertIn("| 2026-11-09 | 4 | 2.75 | 3.00 |", md)
+
+    def test_a_thin_market_is_marked_too_few_to_read(self):
+        self._write(self._rows())
+        run_builder("build_settle_drift", self.root)
+        md = open(os.path.join(self.root, "derived", "settle-drift.md"),
+                  encoding="utf-8").read()
+        germany = next(l for l in md.splitlines() if l.startswith("| germany |"))
+        self.assertIn("too few to read", germany)
+
+    def test_a_missing_morning_file_is_said_so(self):
+        """The compared rows come from the settled table's own `Move @08:00`
+        column, so they survive - but the coverage count is unknown."""
+        self._write(self._rows(), morning=False)
+        run_builder("build_settle_drift", self.root)
+        self.assertEqual(len(self._csv()), 4)
+        md = open(os.path.join(self.root, "derived", "settle-drift.md"),
+                  encoding="utf-8").read()
+        self.assertIn("Morning artifact missing for 2026-11-09", md)
+        self.assertIn("— (no morning file)", md)
+
+    def test_a_published_delta_that_disagrees_is_flagged(self):
+        rows = self._rows()
+        rows[0] = settled_row("AAA", "germany", -12.50, -10.00, delta=-9.99)
+        self._write(rows)
+        run_builder("build_settle_drift", self.root)
+        md = open(os.path.join(self.root, "derived", "settle-drift.md"),
+                  encoding="utf-8").read()
+        self.assertIn("1 row(s) whose published `Δ vs scan` disagrees", md)
+        self.assertEqual(self._csv()["AAA"]["delta_pp"], "-2.5",
+                         "the view must recompute Δ, not copy the published cell")
+
+
 class Idempotence(BuilderCase):
+    BUILDERS = ("build_persistence", "build_setups", "build_confirmation",
+                "build_thesis_score", "build_run_ledger",
+                "build_gap_reconciliation", "build_yesterday_short_list",
+                "build_settle_drift")
+
     def test_running_twice_produces_no_diff(self):
         """The property the post-merge hook depends on.
 
         A rebuild that changed nothing must write nothing, or the hook
         produces a diff on every merge.
         """
-        for module in ("build_persistence", "build_setups", "build_confirmation",
-                       "build_thesis_score", "build_run_ledger",
-                       "build_gap_reconciliation", "build_yesterday_short_list"):
+        SettleDrift._write(self, SettleDrift._rows(self))   # give it input
+        for module in self.BUILDERS:
             run_builder(module, self.root)
         first = snapshot(self.root)
-        for module in ("build_persistence", "build_setups", "build_confirmation",
-                       "build_thesis_score", "build_run_ledger",
-                       "build_gap_reconciliation", "build_yesterday_short_list"):
+        for module in self.BUILDERS:
             run_builder(module, self.root)
         second = snapshot(self.root)
         self.assertEqual(first, second, "a rebuild changed the output")

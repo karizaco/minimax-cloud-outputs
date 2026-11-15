@@ -125,7 +125,8 @@ python3 scripts/run_tests.py joinlib    # only the suites matching a name
 | Suite | What it pins |
 |---|---|
 | `scripts/test_joinlib.py` | the shared column-drift reader — the ticker column across its four spellings, the escaped-pipe row split, the number and sector parsers |
-| `scripts/test_builders.py` | each derived-view builder, against a synthetic mini-repo in a temp directory: streaks, the canonical stylist grouping, the gap-reconciliation session resolution, the thesis contracts, the ledger states |
+| `scripts/test_builders.py` | each derived-view builder, against a synthetic mini-repo in a temp directory: streaks, the canonical stylist grouping, the gap-reconciliation session resolution, the thesis contracts, the ledger states, the settle-drift paths and its selection-gap count |
+| `scripts/test_earnings_scanner.py` | cron #15's pipeline code (`scripts/earnings_reaction_scanner.py`, which the fleet self-heals from `main` — a push here is a deploy): Yahoo 429s classified by status, the circuit breaker and its banner, the region-matched catalyst merge, the verdict-follows-research rule. Loads only the side-effect-free region between the scanner's `PURE-HELPERS` markers, with tripwires |
 | `scripts/test_render.py` | the client-safe renderer — the three table shapes, and that **every data row produces a bullet** |
 | `scripts/test_hooks.py` | the hooks, against a real scratch repository: the post-merge commit exits 0, leaves no staged residue, and does not sweep unrelated staged content |
 

@@ -34,6 +34,7 @@ BUILDERS = (
     ("build_yesterday_short_list", "yesterday's Tier-A list against this morning's feed"),
     ("build_thesis_score", "did yesterday's published thesis hold?"),
     ("build_run_ledger", "which routine published what, and when"),
+    ("build_settle_drift", "the 08:00 ET EU/UK move against the 12:15 ET settled move"),
     ("build_charts", "the renders of what is already computed"),
 )
 
@@ -54,6 +55,8 @@ ROLES = {
     "thesis-score.csv": "machine - the same verdicts",
     "run-ledger.md": "brief - which routine published what, and which are missing",
     "run-ledger.csv": "machine - the same rows",
+    "settle-drift.md": "brief - how far the 08:00 ET EU/UK move travelled by the close, with the selection gap",
+    "settle-drift.csv": "machine - one row per compared name per session",
     "client-safe/": "the same artifacts rendered for a client that shows bold, italics and lists only",
     "_manifest.json": "this file",
 }
