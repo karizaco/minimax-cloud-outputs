@@ -1,0 +1,21 @@
+{
+  "_schema": "earnings-calendar-index-v1",
+  "runs": [
+    {
+      "counts": {
+        "core_rows": 7,
+        "rows": 89,
+        "sa_confirmed": 76
+      },
+      "date": "2026-11-01",
+      "path": "2026-11-01/",
+      "run_id": "2026-11-01Tweekly",
+      "status": "ok",
+      "window": {
+        "from": "2026-11-02",
+        "to": "2026-11-06"
+      }
+    }
+  ],
+  "updated": "2026-11-01"
+}

@@ -1,0 +1,56 @@
+{
+  "_schema": "earnings-calendar-manifest-v1",
+  "canonical": {
+    "brief": "brief.md",
+    "machine": [
+      "calendar.json",
+      "calendar.csv"
+    ]
+  },
+  "counts": {
+    "by_date": {
+      "2026-11-02": 10,
+      "2026-11-03": 14,
+      "2026-11-04": 30,
+      "2026-11-05": 33,
+      "2026-11-06": 2
+    },
+    "by_timing": {
+      "AMC": 47,
+      "BMO": 23,
+      "unknown": 19
+    },
+    "core_rows": 7,
+    "rows": 89,
+    "sa_confirmed": 76,
+    "soft_filtered": 13
+  },
+  "date": "2026-11-01",
+  "files": [
+    {
+      "name": "_manifest.json",
+      "role": "provenance"
+    },
+    {
+      "name": "brief.md",
+      "role": "brief"
+    },
+    {
+      "name": "calendar.json",
+      "role": "machine-json"
+    },
+    {
+      "name": "calendar.csv",
+      "role": "machine-csv"
+    }
+  ],
+  "generated_at": "2026-11-09T20:00:00+07:00",
+  "notes": [
+    "line endings normalised to LF",
+    "window 2026-11-02 through 2026-11-06",
+    "cache published at refs/earnings-next-dates.json (cache run 2026-11-01)"
+  ],
+  "producer": "grok-bot/weekly-earnings-calendar",
+  "provenance": "Grok Bot box run 2026-11-01, covering the 2026-11-02 through 2026-11-06 session window; built 2026-11-09T20:00:00+07:00 by scripts/emit_earnings_calendar.py.",
+  "run_id": "2026-11-01Tweekly"
+}

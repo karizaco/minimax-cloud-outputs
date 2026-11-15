@@ -1,0 +1,90 @@
+date,ticker,exchange,symbol,timing,eps_est,eps_growth_est_pct,rev_est,rev_growth_est_pct,source,core,notes,sa_confirmed,tv_date,confirmed,eps_forecast_raw,eps_last_raw,rev_forecast_raw,rev_last_raw,currency
+2026-11-02,ADEA,NASDAQ,NASDAQ:ADEA,unknown,0.30,-13.1,99M,2.9,TradingView calendar,N,StockAnalysis confirms Nov 2.,2026-11-02,2026-11-02,True,0.2955,0.34,98874750,96117000,USD
+2026-11-02,CCCC,NASDAQ,NASDAQ:CCCC,unknown,-0.19,-8.1,8.5M,28.3,TradingView calendar,Y,"Soft filter: SA shows only an estimate, 2026-11-13.",,2026-11-02,False,-0.194498,-0.18,8517143,6641000,USD
+2026-11-02,LSCC,NASDAQ,NASDAQ:LSCC,AMC,0.55,4.4,256M,27.3,TradingView calendar,N,StockAnalysis confirms Nov 2.,2026-11-02,2026-11-02,True,0.553571,0.53,255900023,201079000,USD
+2026-11-02,MTCH,NASDAQ,NASDAQ:MTCH,AMC,0.71,2.0,892M,4.6,TradingView calendar,N,StockAnalysis confirms Nov 2.,2026-11-02,2026-11-02,True,0.713747,0.7,892445553,853105000,USD
+2026-11-02,PLTR,NASDAQ,NASDAQ:PLTR,AMC,0.41,-0.7,2.18B,12.5,TradingView calendar,N,StockAnalysis confirms Nov 2.,2026-11-02,2026-11-02,True,0.407241,0.41,2177300127,1935464000,USD
+2026-11-02,TEM,NASDAQ,NASDAQ:TEM,BMO,-0.09,n/m (tiny base),409M,7.0,TradingView calendar,N,StockAnalysis confirms Nov 2.,2026-11-02,2026-11-02,True,-0.087561,-0.04,409390000,382486000,USD
+2026-11-02,HNGE,NYSE,NYSE:HNGE,AMC,0.58,-2.4,225M,5.6,TradingView calendar,N,StockAnalysis confirms Nov 2.,2026-11-02,2026-11-02,True,0.575692,0.59,224779857,212817000,USD
+2026-11-02,TNK,NYSE,NYSE:TNK,unknown,4.59,-17.4,269M,-29.2,TradingView calendar,N,Soft filter: SA earnings date 2026-11-11 (confirmed there; TV says 2026-11-02).,,2026-11-02,False,4.592101,5.56,268636164,379508000,USD
+2026-11-02,WMB,NYSE,NYSE:WMB,AMC,0.54,7.8,2.99B,1.2,TradingView calendar,N,StockAnalysis confirms Nov 2.,2026-11-02,2026-11-02,True,0.538838,0.5,2994122606,2959000000,USD
+2026-11-02,VNP,TSX,TSX:VNP,AMC,0.22,-28.9,175M CAD,3.2,TradingView symbol data,N,StockAnalysis confirms Nov 2.,2026-11-02,2026-11-02,True,0.22221557738858036,0.31250000000000006,174809589.9188381,169390468.59656698,CAD
+2026-11-03,VIRI,EURONEXT,EURONEXT:VIRI,AMC,0.96,130.2,222M EUR,-23.2,TradingView symbol data,N,StockAnalysis confirms Nov 3.,2026-11-03,2026-11-03,True,0.9621835387168532,-3.187223088103952,221567035.06232122,288464100.677047,EUR
+2026-11-03,ALAB,NASDAQ,NASDAQ:ALAB,AMC,1.19,49.0,551M,40.4,TradingView calendar,N,"StockAnalysis confirms Nov 3. Rev est differs from last quarter by more than 40%; not like-for-like, check before using.",2026-11-03,2026-11-03,True,1.19218,0.8,550784346,392400000,USD
+2026-11-03,AQST,NASDAQ,NASDAQ:AQST,AMC,-0.12,33.3,11M,-20.3,TradingView calendar,N,StockAnalysis confirms Nov 3.,2026-11-03,2026-11-03,True,-0.12,-0.18,11017000,13819000,USD
+2026-11-03,DUOL,NASDAQ,NASDAQ:DUOL,AMC,0.57,-13.8,303M,1.6,TradingView calendar,N,StockAnalysis confirms Nov 3.,2026-11-03,2026-11-03,True,0.569147,0.66,303198668,298454000,USD
+2026-11-03,GGAL,NASDAQ,NASDAQ:GGAL,unknown,1.46,34.3,1.76B,-30.6,TradingView calendar,N,Soft filter: SA shows stale/missing earnings date (2023-03-07); not treated as confirmed.,,2026-11-03,False,1.460006,1.087165,1764044741,2543300403.77781,USD
+2026-11-03,NVTS,NASDAQ,NASDAQ:NVTS,AMC,-0.04,n/m (tiny base),14M,28.2,TradingView calendar,N,StockAnalysis confirms Nov 3.,2026-11-03,2026-11-03,True,-0.037286,-0.04,13500000,10529000,USD
+2026-11-03,SMCI,NASDAQ,NASDAQ:SMCI,AMC,1.23,-27.4,17.53B,57.7,TradingView calendar,N,"StockAnalysis confirms Nov 3. Rev est differs from last quarter by more than 40%; not like-for-like, check before using.",2026-11-03,2026-11-03,True,1.23425,1.7,17533708694,11119777000,USD
+2026-11-03,TLN,NASDAQ,NASDAQ:TLN,BMO,8.33,n/m (tiny base),1.30B,46.0,TradingView calendar,N,"StockAnalysis confirms Nov 3. Rev est differs from last quarter by more than 40%; not like-for-like, check before using.",2026-11-03,2026-11-03,True,8.332759,-2,1304928584,894000000,USD
+2026-11-03,TRI,NASDAQ,NASDAQ:TRI,BMO,0.82,-16.5,1.80B,-5.5,TradingView calendar,N,StockAnalysis confirms Nov 3.,2026-11-03,2026-11-03,True,0.8156849304000001,0.9771034239999999,1800122813.4105,1904380905.6125004,USD
+2026-11-03,CHGG,NYSE,NYSE:CHGG,BMO,-0.09,n/m (tiny base),44M,-16.1,TradingView calendar,N,StockAnalysis confirms Nov 3.,2026-11-03,2026-11-03,True,-0.09,-0.02,43515000,51849000,USD
+2026-11-03,DOCN,NYSE,NYSE:DOCN,BMO,0.32,-29.6,307M,9.1,TradingView calendar,N,StockAnalysis confirms Nov 3.,2026-11-03,2026-11-03,True,0.316951,0.45,306736698,281184000,USD
+2026-11-03,IT,NYSE,NYSE:IT,BMO,2.84,-35.0,1.49B,-11.3,TradingView calendar,N,StockAnalysis confirms Nov 3.,2026-11-03,2026-11-03,True,2.842674,4.37,1486854582,1675943000,USD
+2026-11-03,CURA,TSX,TSX:CURA,AMC,-0.21,n/m (tiny base),494M CAD,4.9,TradingView symbol data,N,StockAnalysis confirms Nov 3.,2026-11-03,2026-11-03,True,-0.20504058094831265,0.07102272727272728,493845081.8738431,470827644.937182,CAD
+2026-11-03,LHA,XETR,XETR:LHA,BMO,0.78,n/m (tiny base),12.19B EUR,9.4,TradingView symbol data,N,StockAnalysis confirms Nov 3.,2026-11-03,2026-11-03,True,0.778371,0.101405,12186549281,11141000000,EUR
+2026-11-04,BTG,AMEX,AMEX:BTG,AMC,0.12,n/m (tiny base),823M,6.9,TradingView calendar,Y,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,0.11753,0.03,822755741,769309460.2706515,USD
+2026-11-04,UUUU,AMEX,AMEX:UUUU,unknown,-0.03,78.4,33M,30.5,TradingView calendar,Y,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,-0.0281,-0.13,32755875.000000004,25108000.0001649,USD
+2026-11-04,GTII,CSE,CSE:GTII,AMC,0.04,n/m (tiny base),438M CAD,3.2,TradingView symbol data,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,0.04283497081019507,0.02840909090909091,438338103.3746262,424567066.15506,CAD
+2026-11-04,APP,NASDAQ,NASDAQ:APP,AMC,4.04,7.5,2.08B,8.0,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,4.040292,3.76,2077339025.0000002,1923686000,USD
+2026-11-04,CHYM,NASDAQ,NASDAQ:CHYM,AMC,0.10,38.3,703M,21.8,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,0.09679,0.07,702867336,576974000,USD
+2026-11-04,CRSP,NASDAQ,NASDAQ:CRSP,unknown,-1.04,-10.3,15M,44.9,TradingView calendar,Y,"Soft filter: SA shows only an estimate, 2026-11-13. Rev est differs from last quarter by more than 40%; not like-for-like, check before using.",,2026-11-04,False,-1.036752,-0.94,14751889,10181000,USD
+2026-11-04,CYTK,NASDAQ,NASDAQ:CYTK,AMC,-1.44,4.0,42M,46.3,TradingView calendar,N,"StockAnalysis confirms Nov 4. Rev est differs from last quarter by more than 40%; not like-for-like, check before using.",2026-11-04,2026-11-04,True,-1.439935,-1.5,41881695,28624000,USD
+2026-11-04,FSLY,NASDAQ,NASDAQ:FSLY,AMC,0.12,-20.9,188M,2.5,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,0.118619,0.15,187819993,183317000,USD
+2026-11-04,MDLN,NASDAQ,NASDAQ:MDLN,BMO,0.34,-31.4,7.72B,0.5,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,0.342997,0.5,7721974771,7685000000,USD
+2026-11-04,MELI,NASDAQ,NASDAQ:MELI,AMC,9.27,0.9,10.69B,5.1,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,9.270462,9.19,10692637814,10169000000,USD
+2026-11-04,PGEN,NASDAQ,NASDAQ:PGEN,AMC,0.06,17.9,72M,30.2,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,0.058933,0.05,71557625,54978000,USD
+2026-11-04,QURE,NASDAQ,NASDAQ:QURE,BMO,-0.92,25.0,6.2M,5.7,TradingView calendar,Y,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,-0.915209,-1.22,6174818,5841000.0000416795,USD
+2026-11-04,RELY,NASDAQ,NASDAQ:RELY,AMC,0.15,-84.2,507M,2.5,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,0.146672,0.93,507314382,495156000,USD
+2026-11-04,SEDG,NASDAQ,NASDAQ:SEDG,BMO,0.04,-38.4,327M,-5.6,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,0.036948,0.06,326778107,346245000,USD
+2026-11-04,SHAZ,NASDAQ,NASDAQ:SHAZ,unknown,-1.47,94.4,23M,n/m (tiny base),TradingView calendar,N,"Soft filter: SA shows only an estimate, 2026-11-15. Rev est differs from last quarter by more than 40%; not like-for-like, check before using.",,2026-11-04,False,-1.466667,-26.16,22797167,1931381,USD
+2026-11-04,SOLS,NASDAQ,NASDAQ:SOLS,BMO,0.70,-20.8,1.02B,-11.3,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,0.69695,0.88,1017847059,1148000000,USD
+2026-11-04,VIAV,NASDAQ,NASDAQ:VIAV,AMC,0.41,19.7,455M,2.7,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,0.406926,0.34,455064929,443100000,USD
+2026-11-04,ALB,NYSE,NYSE:ALB,AMC,2.53,-32.5,1.52B,-12.9,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,2.530003,3.75,1518508173,1743313000,USD
+2026-11-04,CF,NYSE,NYSE:CF,AMC,3.03,-36.3,1.77B,-20.2,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,3.025301,4.749493,1774156370,2222000000,USD
+2026-11-04,COHR,NYSE,NYSE:COHR,AMC,1.98,13.8,2.30B,12.6,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,1.980527,1.74,2304251711,2045500000,USD
+2026-11-04,CPS,NYSE,NYSE:CPS,AMC,0.74,n/m (tiny base),704M,-2.4,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,0.745,-0.13,704133333,721349000,USD
+2026-11-04,CXW,NYSE,NYSE:CXW,AMC,15.14,n/m (tiny base),698M,1.8,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,15.14,0.37,697549000,684917000,USD
+2026-11-04,JOBY,NYSE,NYSE:JOBY,AMC,-0.25,0.6,39M,0.8,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,-0.248516,-0.25,38952473,38639000,USD
+2026-11-04,LEU,NYSE,NYSE:LEU,AMC,-0.44,-156.6,55M,-68.6,TradingView calendar,N,"StockAnalysis confirms Nov 4. Rev est differs from last quarter by more than 40%; not like-for-like, check before using.",2026-11-04,2026-11-04,True,-0.435649,0.77,55300073,176100000,USD
+2026-11-04,NXE,NYSE,NYSE:NXE,unknown,-0.02,-130.2,0,,TradingView calendar,N,"Soft filter: SA shows only an estimate, 2026-11-13.",,2026-11-04,False,-0.023387292299999998,0.07744,0,0,USD
+2026-11-04,PAAS,NYSE,NYSE:PAAS,AMC,0.65,-8.8,1.07B,-2.2,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,0.6537528102,0.7165586559999999,1071250685.4210001,1095457593.607189,USD
+2026-11-04,Q,NYSE,NYSE:Q,BMO,1.20,1.0,1.49B,4.0,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,1.202222,1.19,1485741250,1429000000,USD
+2026-11-04,RDW,NYSE,NYSE:RDW,AMC,-0.12,39.2,127M,8.1,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,-0.115455,-0.19,126518876,117074000,USD
+2026-11-04,SII,NYSE,NYSE:SII,unknown,1.03,-22.2,73M,-7.0,TradingView calendar,N,"TradingView says 2026-11-02; StockAnalysis confirms 2026-11-04, used here.",2026-11-04,2026-11-02,True,1.034349,1.33,72666667,78174153.95091315,USD
+2026-11-04,SNAP,NYSE,NYSE:SNAP,AMC,0.00,104.8,1.73B,8.2,TradingView calendar,N,StockAnalysis confirms Nov 4.,2026-11-04,2026-11-04,True,0.004771,-0.1,1730664705,1598993000,USD
+2026-11-05,CTM,AMEX,AMEX:CTM,AMC,0.00,n/m (tiny base),15M,7.5,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,0,-0.01,14900000,13864676,USD
+2026-11-05,AF,EURONEXT,EURONEXT:AF,unknown,1.94,223.2,9.97B EUR,7.5,TradingView symbol data,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,1.943817,0.601366,9969476763,9277000000,EUR
+2026-11-05,ASB,GPW,GPW:ASB,unknown,2.00,-33.5,7.35B PLN,18.4,TradingView symbol data,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,2.0045487837785747,3.013523185294007,7345257827.377511,6202643685.620009,PLN
+2026-11-05,MSZ,GPW,GPW:MSZ,unknown,,,360M PLN,13.3,TradingView symbol data,N,Soft filter: SA earnings date 2026-11-19 (confirmed there; TV says 2026-11-05). No EPS forecast.,,2026-11-05,False,,,360300000,317999000,PLN
+2026-11-05,PKO,GPW,GPW:PKO,unknown,2.29,-10.7,7.93B PLN,-22.5,TradingView symbol data,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,2.285,2.56,7925790000,10230000000,PLN
+2026-11-05,AGEN,NASDAQ,NASDAQ:AGEN,BMO,-0.28,n/m (tiny base),28M,-18.3,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,-0.2825,-0.01,28200000,34518000,USD
+2026-11-05,AKAM,NASDAQ,NASDAQ:AKAM,AMC,1.67,5.1,1.12B,1.7,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,1.67147,1.59,1117957493,1099682000,USD
+2026-11-05,ALLO,NASDAQ,NASDAQ:ALLO,AMC,-0.15,-12.8,2K,-99.9,TradingView calendar,N,"StockAnalysis confirms Nov 5. Rev est differs from last quarter by more than 40%; not like-for-like, check before using.",2026-11-05,2026-11-05,True,-0.146618,-0.13,2500,4640000,USD
+2026-11-05,CELH,NASDAQ,NASDAQ:CELH,BMO,0.34,-5.6,801M,-2.1,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,0.33966,0.36,800630909,817925000,USD
+2026-11-05,CORZ,NASDAQ,NASDAQ:CORZ,BMO,-0.05,98.6,197M,19.9,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,-0.045612,-3.32,196850336,164201000,USD
+2026-11-05,GRPN,NASDAQ,NASDAQ:GRPN,unknown,0.00,n/m (tiny base),129M,3.8,TradingView calendar,N,"Soft filter: SA shows only an estimate, 2026-11-13.",,2026-11-05,False,0.003333,-0.04,129393333.00000001,124675000,USD
+2026-11-05,HIMX,NASDAQ,NASDAQ:HIMX,BMO,0.09,-21.1,248M,9.0,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,0.09,0.114,247757000,227286104.23264802,USD
+2026-11-05,IBRX,NASDAQ,NASDAQ:IBRX,unknown,-0.07,68.2,59M,15.6,TradingView calendar,Y,"Soft filter: SA shows only an estimate, 2026-11-13.",,2026-11-05,False,-0.07,-0.22,59225000,51240000,USD
+2026-11-05,IRON,NASDAQ,NASDAQ:IRON,unknown,-1.63,-6.1,0,,TradingView calendar,N,"Soft filter: SA shows only an estimate, 2026-11-13.",,2026-11-05,False,-1.633333,-1.54,0,0,USD
+2026-11-05,IRWD,NASDAQ,NASDAQ:IRWD,BMO,0.32,4.3,120M,6.1,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,0.323333,0.31,119988278,113041000,USD
+2026-11-05,KEEL,NASDAQ,NASDAQ:KEEL,BMO,-0.09,19.7,18M,-41.8,TradingView calendar,N,"StockAnalysis confirms Nov 5. Rev est differs from last quarter by more than 40%; not like-for-like, check before using.",2026-11-05,2026-11-05,True,-0.088333,-0.11,17699025,30430000.000199802,USD
+2026-11-05,LITE,NASDAQ,NASDAQ:LITE,AMC,4.22,30.7,1.25B,24.6,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,4.222545,3.23,1254202946,1006300000,USD
+2026-11-05,LPTH,NASDAQ,NASDAQ:LPTH,unknown,-0.03,45.8,22M,3.6,TradingView calendar,N,"Soft filter: SA shows only an estimate, 2026-11-13.",,2026-11-05,False,-0.0325,-0.06,21933000,21162352,USD
+2026-11-05,OPEN,NASDAQ,NASDAQ:OPEN,AMC,-0.16,5.9,1.07B,20.9,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,-0.16,-0.17,1067262420.9999999,883000000,USD
+2026-11-05,RCKT,NASDAQ,NASDAQ:RCKT,unknown,-0.40,-136.6,200K,,TradingView calendar,N,"Soft filter: SA shows only an estimate, 2026-11-13.",,2026-11-05,False,-0.395054,1.08,200000,0,USD
+2026-11-05,SERV,NASDAQ,NASDAQ:SERV,AMC,-0.69,13.4,1.6M,-49.7,TradingView calendar,N,"StockAnalysis confirms Nov 5. Rev est differs from last quarter by more than 40%; not like-for-like, check before using.",2026-11-05,2026-11-05,True,-0.692857,-0.8,1628125,3238000,USD
+2026-11-05,SRPT,NASDAQ,NASDAQ:SRPT,AMC,0.07,248.1,352M,-12.2,TradingView calendar,Y,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,0.074027,-0.05,352203231,401251000,USD
+2026-11-05,TMDX,NASDAQ,NASDAQ:TMDX,AMC,0.30,-32.4,178M,-6.3,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,0.297644,0.44,178048222,189948000,USD
+2026-11-05,USAR,NASDAQ,NASDAQ:USAR,unknown,-0.10,34.4,13M,121.0,TradingView calendar,N,"Soft filter: SA shows only an estimate, 2026-11-13. Rev est differs from last quarter by more than 40%; not like-for-like, check before using.",,2026-11-05,False,-0.098333,-0.15,12864286,5821000,USD
+2026-11-05,VERA,NASDAQ,NASDAQ:VERA,AMC,-1.62,-6.4,3.4M,,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,-1.618022,-1.52,3421400,0,USD
+2026-11-05,ASPN,NYSE,NYSE:ASPN,BMO,-0.09,67.9,72M,44.6,TradingView calendar,N,"StockAnalysis confirms Nov 5. Rev est differs from last quarter by more than 40%; not like-for-like, check before using.",2026-11-05,2026-11-05,True,-0.09,-0.28,72066200,49849000,USD
+2026-11-05,ATEN,NYSE,NYSE:ATEN,AMC,0.27,8.0,84M,4.7,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,0.27,0.25,83882240,80137000,USD
+2026-11-05,CNR,NYSE,NYSE:CNR,BMO,0.72,-71.2,1.13B,-0.7,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,0.724127,2.51,1133238482,1141014000,USD
+2026-11-05,INSW,NYSE,NYSE:INSW,BMO,3.57,-39.6,362M,-22.8,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,3.572243,5.91,362487814,469730000,USD
+2026-11-05,IONQ,NYSE,NYSE:IONQ,AMC,-0.34,93.3,141M,76.4,TradingView calendar,N,"StockAnalysis confirms Nov 5. Rev est differs from last quarter by more than 40%; not like-for-like, check before using.",2026-11-05,2026-11-05,True,-0.338175,-5.08,141202778,80050000,USD
+2026-11-05,MP,NYSE,NYSE:MP,AMC,-0.02,n/m (tiny base),117M,-6.9,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,-0.021505,-0.01,117370133,126070000,USD
+2026-11-05,WPM,NYSE,NYSE:WPM,AMC,0.90,-24.9,800M,-11.6,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,0.897441,1.195,800208892,905605241.4923428,USD
+2026-11-05,YELP,NYSE,NYSE:YELP,AMC,0.45,-20.5,369M,-1.8,TradingView calendar,N,StockAnalysis confirms Nov 5.,2026-11-05,2026-11-05,True,0.453076,0.57,368917620,375519000,USD
+2026-11-06,VEON,NASDAQ,NASDAQ:VEON,BMO,1.72,1.8,1.31B,2.9,TradingView calendar,N,StockAnalysis confirms Nov 6.,2026-11-06,2026-11-06,True,1.72,1.69,1306000000,1268968190.95454,USD
+2026-11-06,WULF,NASDAQ,NASDAQ:WULF,BMO,-0.18,90.6,63M,39.6,TradingView calendar,N,StockAnalysis confirms Nov 6.,2026-11-06,2026-11-06,True,-0.182356,-1.94,62504855,44767000,USD
