@@ -53,7 +53,7 @@ Verified behaviours this script encodes (see memory topic
     purely because of that filter, and 2026-11-04 lost 24 of 25 ASX rows on a
     healthy tape. Session selection is by DATE here, never by stamp.
 """
-import json, subprocess, time, datetime, os, sys, re
+import json, subprocess, time, datetime, os, sys, re, html
 
 # ==== PURE-HELPERS-BEGIN ============================================================
 # Everything between these two markers is side-effect free: no network call is
@@ -84,7 +84,7 @@ import json, subprocess, time, datetime, os, sys, re
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-15.3"
+SCRIPT_VERSION = "2026-11-15.4"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -249,6 +249,9 @@ health = {"scanner_calls": 0, "scanner_errors": 0, "yahoo_calls": 0, "yahoo_erro
                               "outliers": [], "unavailable": 0},
           "rows_dropped_stale_ref": 0, "rows_dropped_unresolved_ref": 0,
           "calendar_calls": 0, "calendar_errors": 0, "calendar_symbols": 0,
+          "asx_ann_calls": 0, "asx_ann_errors": 0, "asx_ann_rows": 0,
+          "earnings_date_sources": {"catalog": 0, "calendar": 0, "asx": 0,
+                                    "screener": 0},
           "earnings_field_stale_rows": 0,
           "pass_b2": {"candidates": 0, "up": 0, "down": 0, "deduped": 0, "published": 0},
           "us_line_index_ok": True}
@@ -327,6 +330,81 @@ def fetch_earnings_calendar(dates):
                 out[sym] = rec
     health["calendar_symbols"] = len(out)
     return out
+
+
+# ------------------------------------------------------ the ASX announcements feed
+#
+# THE ASX VERSION OF THE BULK CALENDAR. ONE call returns every announcement the
+# exchange published for its last completed session, each with its date, and
+# the announcement date IS the report date. Measured 2026-11-15: one day's feed
+# is 432 rows - 37 headlines with "results", 51 of them meeting/AGM results.
+# The screener's field had a 78-day median age on the ASX rows of the
+# 2026-11-12 artifact; this feed closes that gap for AU at one HTTP call.
+ASX_ANN_URL = "https://www.asx.com.au/asx/v2/statistics/prevBusDayAnns.do"
+# The classifier is POSITIVE: it matches the FORMS of an earnings-report
+# announcement and then EXCLUDES the noise that carries the word "results"
+# too. One ASX day carried 37 headlines with "results" in them: 51 rows were
+# meeting/AGM results ("Results of Meeting", "2026 AGM Results"), plus an
+# assay result and an entitlement-offer result. Matching "results" loosely
+# dates every AGM as a report; the positive form below found exactly the 3
+# real reports (DPM "Reports Q3 2026 Financial Results", IMR "Q3 Result
+# Presentation", TBN "First Quarter Results Presentation") and excluded all
+# 51 meeting rows.
+ASX_REPORT_INCLUDE = (
+    r"appendix 4[def]",
+    r"\bq[1-4]\b[^|]{0,30}(results?|report)",
+    r"(first|second|third|fourth)[ -]quarter[^|]{0,30}(results?|report)",
+    r"(half year|full year|half-year|full-year|fy\d{2}|1h|2h)[^|]{0,30}(results?|report)",
+    r"financial results",
+    r"\bresults?\b[^|]{0,25}(presentation|announcement)",
+)
+ASX_REPORT_EXCLUDE = (
+    r"results? of (a |the )?(annual general )?meeting",
+    r"\bagm\b", r"general meeting", r"\bmeeting\b",
+    r"offer results", r"entitlement", r"assay", r"drilling",
+    r"exploration results", r"remuneration report", r"voting result",
+    r"poll result",
+)
+ASX_REPORT_RE = tuple(re.compile(p, re.I) for p in ASX_REPORT_INCLUDE)
+ASX_NOISE_RE = tuple(re.compile(p, re.I) for p in ASX_REPORT_EXCLUDE)
+
+
+def is_asx_earnings_headline(headline):
+    """True when an ASX announcement headline is an EARNINGS REPORT."""
+    h = headline or ""
+    if any(e.search(h) for e in ASX_NOISE_RE):
+        return False
+    return any(i.search(h) for i in ASX_REPORT_RE)
+
+
+def fetch_asx_announcements():
+    """{ASX_CODE: [iso announcement dates]} for results-classified announcements."""
+    r = _curl(["-A", "Mozilla/5.0", ASX_ANN_URL], timeout=30)
+    body = r.stdout or ""
+    if "<tr" not in body:
+        health["asx_ann_errors"] += 1
+        degrade("asx_announcements", "the ASX announcements feed did not answer")
+        return {}
+    hits = {}
+    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", body, re.S):
+        cells = [re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", c))).strip()
+                 for c in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", row, re.S)]
+        if len(cells) < 4:
+            continue
+        code, date_s, headline = cells[0], cells[1], cells[3]
+        if not code or not headline:
+            continue
+        if not is_asx_earnings_headline(headline):
+            continue
+        m = re.search(r"(\d{1,2})/(\d{1,2})/(\d{4})", date_s)
+        if not m:
+            continue
+        iso = "%s-%02d-%02d" % (m.group(3), int(m.group(2)), int(m.group(1)))
+        hits.setdefault(code.upper(), [])
+        if iso not in hits[code.upper()]:
+            hits[code.upper()].append(iso)
+    health["asx_ann_rows"] = sum(len(v) for v in hits.values())
+    return hits
 
 
 def cal_quarter_label(rec):
@@ -1264,9 +1342,20 @@ def parse_catalyst_file(path):
                 # holds a LIST of entries per ticker and the region decides
                 # which entry a given row may use. Keying on the ticker alone
                 # published one company's catalyst on another's row.
+                # The FIFTH column is the REPORT DATE the research read off
+                # the issuer's own release - the SAME page the headline came
+                # from, so it costs no extra lookup - and it is the only source
+                # that is right for a same-morning reporter. The screener's
+                # field lags (2026-11-12: NBIS carried the previous quarter).
+                rdate = ""
+                if len(cells) > 4:
+                    _cand = cells[4].strip()
+                    if re.match(r"^\d{4}-\d{2}-\d{2}$", _cand) and _cand <= RUN_DATE:
+                        rdate = _cand
                 mapping.setdefault(cells[0], []).append(
                     {"catalyst": cells[2],
                      "earn": cells[3] if cells[3] else "—",
+                     "rdate": rdate,
                      "region": (cells[1] if len(cells) > 1 else "") or ""})
             elif s and not note and not s.startswith("#"):
                 note = s
@@ -1344,6 +1433,74 @@ def verdict_for(catalyst_text, flag):
     return flag if flag in ("Y", "N") else "—"
 
 
+def catalog_entry(name, region=None):
+    """The catalog entry a row may use, or None.
+
+    ONE selection rule, shared by the catalyst cell and the published
+    earnings date, so the two can never disagree about which company a
+    catalog row is about. A ticker is not a company: DMP on XETR is a German
+    mortgage bank and DMP on ASX is an AU consumer name, so a row may only
+    use an entry from its OWN region.
+    """
+    entries = catalysts.get(name)
+    if entries is None:
+        for k, v in catalysts.items():
+            if k.upper() == (name or "").upper():
+                entries = v
+                break
+    if not entries:
+        return None
+    if region:
+        for e in entries:
+            if _same_region(e["region"], region):
+                return e
+        # A catalog with NO Region cells at all predates the region column,
+        # so its entry is still the only research there is.
+        if not any(e["region"].strip() for e in entries):
+            return entries[0]
+        # Otherwise the ticker is in the catalog only under ANOTHER region: a
+        # different company. Its catalyst must not be published here.
+        return None
+    return entries[0]
+
+
+_ED_SEEN = {}
+
+
+def earnings_date_for(name, region=None, er_epoch=None):
+    """The date of the name's LAST report, best source first.
+
+    1. the RESEARCHED date from the catalyst catalog - the agent read it off
+       the issuer's own release while fetching the headline, so it costs no
+       extra lookup, and it is the only source that is right for a
+       same-morning reporter;
+    2. the bulk earnings calendar (US);
+    3. the ASX announcements feed (AU);
+    4. the screener's `earnings_release_date` - the fallback, and the one
+       that lags (2026-11-12: NBIS published "2026-08-12 (92d ago)" although
+       it had reported pre-open that day; MEKO, NORBT and FG carried July and
+       August dates on the morning they all reported).
+    """
+    e = catalog_entry(name, region)
+    if e is not None and e.get("rdate"):
+        src, last = "catalog", e["rdate"]
+    else:
+        rec = CAL.get((name or "").strip().upper())
+        if rec and rec["date"] <= RUN_DATE:
+            src, last = "calendar", rec["date"]
+        else:
+            au = ASX_ANN.get((name or "").strip().upper())
+            if au:
+                src, last = "asx", sorted(au)[-1]
+            else:
+                src, last = "screener", epoch_date(er_epoch)
+    key = ((name or "").strip().upper(), region or "")
+    if key not in _ED_SEEN:
+        _ED_SEEN[key] = src
+        health["earnings_date_sources"][src] += 1
+    return last, src
+
+
 def catalyst_cell(name, region=None):
     """The catalyst for a row: from the catalog file, the bulk calendar, or an
     honest placeholder.
@@ -1378,28 +1535,9 @@ def catalyst_cell(name, region=None):
     Reads the run state `catalysts` (the parsed catalog), `TARGET_SET` (the
     names inside this run's lookup budget) and, through cal_event_cell, `CAL`.
     """
-    entries = catalysts.get(name)
-    if entries is None:
-        for k, v in catalysts.items():
-            if k.upper() == name.upper():
-                entries = v
-                break
-    if entries:
-        if region:
-            for e in entries:
-                if _same_region(e["region"], region):
-                    return e["catalyst"], verdict_for(e["catalyst"], e["earn"])
-            # A catalog with NO Region cells at all predates the region
-            # column, so its entry is still the only research there is.
-            if not any(e["region"].strip() for e in entries):
-                e = entries[0]
-                return e["catalyst"], verdict_for(e["catalyst"], e["earn"])
-            # Otherwise the ticker is in the catalog only under ANOTHER region:
-            # a different company. Its catalyst must not be published here, so
-            # fall through to what this row's own company has (if anything).
-        else:
-            e = entries[0]
-            return e["catalyst"], verdict_for(e["catalyst"], e["earn"])
+    e = catalog_entry(name, region)
+    if e is not None:
+        return e["catalyst"], verdict_for(e["catalyst"], e["earn"])
     cell = cal_event_cell(name) if region == "US" else None
     if cell:
         return cell, "—"
@@ -1915,19 +2053,15 @@ def pct(v):
     return "—" if v is None else f"{v:.2f}"
 
 
-def er_cell(c):
-    """The row's LAST earnings date.
+def er_cell(name, region=None, er_epoch=None):
+    """The row's LAST earnings date, with its age.
 
-    The BULK CALENDAR is the source of record. TradingView's
-    `earnings_release_date` is refreshed per company and asynchronously, so
-    at the 08:00 ET scan a name that had reported that morning could still
-    carry the previous quarter's date - NBIS published "2026-08-12 (92d ago)"
-    on 2026-11-12 although it had reported pre-open that day. A verdict built
-    on that field is not a missing verdict but a FALSE one. The screener's
-    value is the fallback, and every disagreement is published as
-    `earnings_field_stale_rows`.
+    The source chain is `earnings_date_for`: the RESEARCHED date first (the
+    agent read it off the issuer's release while fetching the headline), then
+    the bulk calendar (US), then the ASX announcements feed (AU), and only
+    then the screener's field - which lags.
     """
-    last = cal_last_date(c.get("name")) or epoch_date(c.get("er"))
+    last, _src = earnings_date_for(name, region, er_epoch)
     if not last:
         return "—"
     age = (NOW_ET.date() -
@@ -2106,7 +2240,11 @@ def _rebuild_catalyst_catalog(morning_text):
                 continue
             if any(x in cat.lower() for x in NO_RESEARCH_CATALYST):
                 continue
-            rows.append((tick, region, cat, earn))
+            rd = ""
+            _m = re.search(r"reported\s+(\d{4}-\d{2}-\d{2})", cat or "", re.I)
+            if _m:
+                rd = _m.group(1)
+            rows.append((tick, region, cat, earn, rd))
     if not rows:
         return -1
     body = ["Catalyst lookups: the per-run budget of the 08:00 ET scan.",
@@ -2117,10 +2255,10 @@ def _rebuild_catalyst_catalog(morning_text):
             "sandbox. Every cell below is the morning run's own researched catalyst,",
             "copied VERBATIM - no new catalyst research was performed here.",
             "",
-            "| Ticker | Region | Catalyst | Earnings-driven |",
-            "|---|---|---|---|"]
-    for tick, region, cat, earn in rows:
-        body.append(f"| {tick} | {region} | {cat} | {earn} |")
+            "| Ticker | Region | Catalyst | Earnings-driven | Report date |",
+            "|---|---|---|---|---|"]
+    for tick, region, cat, earn, rdate in rows:
+        body.append(f"| {tick} | {region} | {cat} | {earn} | {rdate} |")
     _atomic_write(CAT_FILE, "\n".join(body) + "\n")
     return len(rows)
 
@@ -2161,6 +2299,8 @@ for _off in range(CALENDAR_LOOKBACK_DAYS + 1):
     CAL_DATES.append((datetime.datetime.strptime(RUN_DATE, "%Y-%m-%d").date()
                       - datetime.timedelta(days=_off)).isoformat())
 CAL = fetch_earnings_calendar(CAL_DATES)
+health["asx_ann_calls"] = 1
+ASX_ANN = fetch_asx_announcements()
 PREV_SESSION = prior_session_date(RUN_DATE, "US")
 
 
@@ -2211,8 +2351,19 @@ targets_us = [c for _, c in
               [:CAT_ALLOC["US"]]]
 targets_eu = [g(r0["d"], "name") for r0 in
               sorted(eu_final, key=next_earn_rank)[:CAT_ALLOC["EU"]]]
+def au_freshness(r0):
+    """0 when the ASX feed says this name REPORTED in the last ASX session.
+
+    The ASX announcements feed is the AU answer to the stale earnings date:
+    it names the companies whose results landed in the last session, and
+    that is the freshest event on the market - the same rule the US follows
+    with the bulk calendar.
+    """
+    return 0 if (g(r0["d"], "name") or "").upper() in ASX_ANN else 1
+
+
 targets_au = [g(r0["d"], "name") for r0 in
-              sorted(au, key=next_earn_rank)[:CAT_ALLOC["AU"]]]
+              sorted(au, key=lambda r0: (au_freshness(r0), next_earn_rank(r0)))[:CAT_ALLOC["AU"]]]
 targets_apac = [g(r0["d"], "name") for r0 in
                 sorted(apac, key=next_earn_rank)[:CAT_ALLOC["APAC"]]]
 TARGET_SET = (set(c["name"] for c in targets_us) | set(targets_eu)
@@ -2239,19 +2390,23 @@ if not os.path.exists(CAT_FILE):
         fh.write("pipeline - the catalyst is merged into that ticker's row in the\n")
         fh.write("artifact, so a re-run never wipes this file. Never fabricate a\n")
         fh.write('headline: "no fresh catalyst found" is a valid cell.\n')
+        fh.write("The REPORT DATE column takes the date the research read off the\n")
+        fh.write("issuer's own release - the same page the headline came from - and\n")
+        fh.write("it is the best source for the published 'Last earnings' date. Put\n")
+        fh.write("the same date in the headline as '(reported YYYY-MM-DD)'.\n")
         fh.write("A ticker whose lookup you did NOT perform must leave the\n")
         fh.write("Earnings-driven cell EMPTY - the pipeline publishes no verdict\n")
         fh.write('for an unresearched row ("—" is the honest value).\n\n')
-        fh.write("| Ticker | Region | Catalyst | Earnings-driven |\n")
-        fh.write("|---|---|---|---|\n")
+        fh.write("| Ticker | Region | Catalyst | Earnings-driven | Report date |\n")
+        fh.write("|---|---|---|---|---|\n")
         for c in targets_us:
-            fh.write(f"| {c['name']} | US | | |\n")
+            fh.write(f"| {c['name']} | US | | | |\n")
         for n in targets_eu:
-            fh.write(f"| {n} | EU | | |\n")
+            fh.write(f"| {n} | EU | | | |\n")
         for n in targets_au:
-            fh.write(f"| {n} | AU | | |\n")
+            fh.write(f"| {n} | AU | | | |\n")
         for n in targets_apac:
-            fh.write(f"| {n} | APAC/Gulf | | |\n")
+            fh.write(f"| {n} | APAC/Gulf | | | |\n")
     catalysts, catalyst_note = parse_catalyst_file(CAT_FILE)
 
 
@@ -2460,7 +2615,7 @@ if SETTLE_MODE:
           f"{g(d,'currency')} | {multiple(settled, (r or {}).get('avg_daily_move'))} | "
           f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | "
           f"{us_tradeable_foreign(nm, g(d,'country'))} | "
-          f"{epoch_date(g(d,'earnings_release_date')) or '—'} | {earn} | {cat} |")
+          f"{er_cell(g(d,'name'), 'EU', g(d,'earnings_release_date'))} | {earn} | {cat} |")
     if not eu_final:
         B("| — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — |")
     B("")
@@ -2626,7 +2781,7 @@ for sym, c in tagged:
     cat, earn = catalyst_cell(c["name"], "US")
     A(f"| {c['name']} | {c['ex']} | {c['close']} | {c['change']:.2f} | "
       f"{pct(c['pm'])} | {pct(c['po'])} | {multiple(headline_move(c), (r or {}).get('avg_daily_move'))} | "
-      f"{rc} | {rs} | {ra} | {c.get('us_tradeable','—')} | {er_cell(c)} | {c['tag']} | {earn} | {cat} |")
+      f"{rc} | {rs} | {ra} | {c.get('us_tradeable','—')} | {er_cell(c['name'], 'US', c.get('er'))} | {c['tag']} | {earn} | {cat} |")
 A("")
 A("## US — QUIET one-liners")
 A("")
@@ -2654,7 +2809,7 @@ for r0 in eu_final:
     A(f"| {g(d,'name')} | {r0['market']} | {g(d,'exchange')} | {g(d,'close')} | "
       f"{g(d,'change'):+.2f} | {g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
-      f"{epoch_date(g(d,'earnings_release_date')) or '—'} | {earn} | {cat} |")
+      f"{er_cell(g(d,'name'), 'EU', g(d,'earnings_release_date'))} | {earn} | {cat} |")
 A("")
 A("## AU (ASX) — Headline table")
 A("")
@@ -2668,7 +2823,7 @@ for r0 in au:
     A(f"| {g(d,'name')} | {g(d,'exchange')} | {g(d,'close')} | {g(d,'change'):+.2f} | "
       f"{g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
-      f"{epoch_date(g(d,'earnings_release_date')) or '—'} | {earn} | {cat} |")
+      f"{er_cell(g(d,'name'), 'AU', g(d,'earnings_release_date'))} | {earn} | {cat} |")
 A("")
 A("## APAC/Gulf — Headline table")
 A("")
@@ -2682,7 +2837,7 @@ for r0 in apac:
     A(f"| {g(d,'name')} | {r0['market']} | {g(d,'exchange')} | {g(d,'close')} | "
       f"{g(d,'change'):+.2f} | {g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
-      f"{epoch_date(g(d,'earnings_release_date')) or '—'} | {earn} | {cat} |")
+      f"{er_cell(g(d,'name'), 'APAC/Gulf', g(d,'earnings_release_date'))} | {earn} | {cat} |")
 if not apac:
     A("| — | — | — | — | — | — | — | — | — | — | — | — | — | — | — |")
 A("")
@@ -2796,6 +2951,20 @@ A(f"- earnings_field_stale_rows: {health['earnings_field_stale_rows']} "
   f"calendar's date is published)")
 if STALE_FIELD_ROWS:
     A(f"- earnings_field_stale_detail: {json.dumps(STALE_FIELD_ROWS[:20])}")
+A(f"- earnings_dates: the published `Last earnings` date by source - "
+  f"catalog (researched) {health['earnings_date_sources']['catalog']}, "
+  f"calendar {health['earnings_date_sources']['calendar']}, "
+  f"asx {health['earnings_date_sources']['asx']}, "
+  f"screener {health['earnings_date_sources']['screener']}. The chain is "
+  f"researched -> calendar (US) -> ASX feed (AU) -> the screener's field, "
+  f"which is the FALLBACK and the one that lags (2026-11-12: NBIS carried the "
+  f"previous quarter's date on the morning it reported, and MEKO, NORBT and FG "
+  f"carried July and August dates on the morning they all reported).")
+A(f"- asx_announcements: {health['asx_ann_rows']} results-classified "
+  f"announcement(s) for the last ASX session (calls={health['asx_ann_calls']} "
+  f"errors={health['asx_ann_errors']}); the announcement date IS the report date, "
+  f"and the meeting/AGM/offer/assay headlines are excluded because they are not "
+  f"reports")
 A(f"- earnings_tiers: fresh={len(FRESH_US)} near={len(NEAR_US)} "
   f"(fresh = the report is dated on the scan date, near = the previous session)")
 A(f"- one_table_rule: each name appears exactly once, in exactly one table, with its")
@@ -2835,6 +3004,9 @@ A(f"`earnings-reaction target=earnings-reactions:{RUN_DATE} candidates={len(us)}
   f"earnings_calendar_rows={health['calendar_symbols']} "
   f"earnings_tiers_fresh={len(FRESH_US)} earnings_tiers_near={len(NEAR_US)} "
   f"earnings_field_stale_rows={health['earnings_field_stale_rows']} "
+  f"earnings_dates_catalog={health['earnings_date_sources']['catalog']} "
+  f"earnings_dates_asx={health['earnings_date_sources']['asx']} "
+  f"asx_ann_rows={health['asx_ann_rows']} "
   f"rows_dropped_stale_ref={health['rows_dropped_stale_ref']} "
   f"rows_dropped_unresolved_ref={health['rows_dropped_unresolved_ref']} "
   f"degraded_sources={len(DEGRADED)}`")
@@ -2869,6 +3041,8 @@ targets = {"us": [{"name": c["name"], "tag": c["tag"],
                            "squeezed, and the leftover goes to the region with the "
                            "most unexplained rows"),
            "earnings_calendar_rows": health["calendar_symbols"],
+           "asx_announcement_rows": health["asx_ann_rows"],
+           "asx_fresh": sorted(c.upper() for c in ASX_ANN),
            "earnings_field_stale_rows": health["earnings_field_stale_rows"],
            "catalyst_file": CAT_FILE}
 with open(os.path.join(OUT_DIR, f"{RUN_DATE}-catalyst-targets.json"), "w") as fh:
