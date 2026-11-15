@@ -73,6 +73,7 @@ All 21 top-level directories. "Live" means the routine is still producing into i
 | `data_cross/` | cross-asset compute pipeline | Per-ticker JSON (`SPY`, `QQQ`, `IWM`, `TLT`, `GLD`, `UUP`, `EEM`, `VIX`) + `compute.py`, `mats.json`, `meta.json` at the root; `2026-10-27/` subdir holds the dated CSVs plus `compute.py` and `compute_qc.py` | **Partly** — root copy is stale |
 | `catalog/` | cron #15 catalyst table (spliced into reactions) | `catalysts/<date>.md` — **2 files only** | Partly — see *Fossils* |
 | `pattern-study/` | cron #06 Saturday pattern-study backlog | `peoplewish-1000pct-backlog.md` — one cumulative ledger | **Yes** (1 file by design) |
+| `finviz-screener-merge/` | Grok Bot (Fundamental) weekly Finviz multi-screener merge, sibling of the SWS family | Dated dir with `brief.md`, `merge.json`, `tickers.csv`, `_manifest.json`; history seeded from earlier box runs; contract `refs/finviz-screener-merge-contract.md`; consumers should read `finviz-screener-merge/latest.json` | **Yes** — weekly |
 | `research/` | ad-hoc research | `047040-jan-2026-catalyst.md` — one note | **No** — one-off |
 | `weekly/` | weekly recap routine | Two editions: `2026-11-01-preview.{md,csv}` and `2026-11-08-preview.md`; the second lacks the movers CSV that the first carries | **Active** — weekly cadence established |
 | `data2/` | earlier data work | `_stale_bars.json`, `_assemble_stats.json`, `yahoo_prices_2026-10-21.json` | **No** — superseded |

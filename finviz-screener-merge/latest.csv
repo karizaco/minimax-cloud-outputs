@@ -1,0 +1,99 @@
+ticker,hits,screeners,first_seen,new_this_week,on_watchlist
+AMC,2,Julian Komar breakout; TA midunder,2026-10-04,false,false
+ARDT,2,Kullamaggi Breakout; Jeff Sun 3M 50%,2026-11-08,true,false
+BRZE,2,Julian Komar breakout; Kullamaggi Breakout,2026-10-25,false,false
+DTIL,2,Kullamaggi Breakout; Qullamaggie smallcap,2026-11-08,true,false
+ETON,2,Qullamaggie smallcap; Shashank growth,2026-11-08,true,false
+FIGS,2,Julian Komar breakout; TA midunder,2026-10-18,false,false
+GDYN,2,Kullamaggi Breakout; Qullamaggie smallcap,2026-10-25,false,false
+IAG,2,Jeff Sun 1W 20%; Shashank growth,2026-11-08,true,false
+LFST,2,TA midunder; Shashank growth,2026-09-19,false,false
+ONT,2,Kullamaggi Breakout; Qullamaggie smallcap,2026-11-08,true,false
+PACB,2,TA midunder; Qullamaggie smallcap,2026-10-04,false,false
+QSI,2,TA midunder; Qullamaggie smallcap,2026-10-04,false,false
+SG,2,Julian Komar breakout; Qullamaggie smallcap,2026-10-25,true,false
+SHLS,2,Julian Komar breakout; Shashank growth,2026-11-08,true,false
+TOST,2,Shashank; Shashank growth,2026-10-25,true,false
+VSTM,2,TA midunder; Qullamaggie smallcap,2026-09-19,true,false
+XERS,2,Julian Komar breakout; Jeff Sun 3M 50%,2026-10-11,true,false
+YOU,2,Shashank; Shashank growth,2026-11-08,true,false
+ABSI,1,O'Neill cup&handle,2026-09-19,false,false
+ACB,1,Qullamaggie smallcap,2026-11-08,true,false
+AKBA,1,hammer candle / strong close,2026-10-04,true,false
+APP,1,Jeff Sun 1W 20%,2026-11-08,true,true
+ARHS,1,O'Neill cup&handle,2026-10-04,false,false
+ASST,1,Jeff Sun 3M 50%,2026-09-19,true,false
+ATAT,1,Shashank,2026-11-08,true,false
+BILL,1,O'Neill cup&handle,2026-11-08,true,false
+BTSG,1,Shashank growth,2026-10-18,false,false
+CCC,1,Julian Komar breakout,2026-09-27,false,false
+CDNA,1,Jeff Sun 3M 50%,2026-10-18,true,false
+CGC,1,hammer candle / strong close,2026-11-08,true,false
+CHYM,1,Shashank growth,2026-11-08,true,true
+CLAR,1,Qullamaggie smallcap,2026-11-08,true,false
+CLOV,1,Julian Komar breakout,2026-10-11,true,false
+COTY,1,Julian Komar breakout,2026-11-08,true,false
+CRCT,1,Qullamaggie smallcap,2026-11-08,true,false
+CRWD,1,O'Neill cup&handle,2026-09-19,false,false
+CTKB,1,Qullamaggie smallcap,2026-09-27,false,false
+CYPH,1,TA midunder,2026-09-19,false,false
+DBX,1,O'Neill cup&handle,2026-11-08,true,false
+DNA,1,Qullamaggie smallcap,2026-09-27,false,false
+ELF,1,Shashank growth,2026-11-08,true,false
+EMBJ,1,Shashank growth,2026-11-08,true,false
+ENGS,1,O'Neill cup&handle,2026-09-27,false,false
+FISV,1,Jeff Sun 1W 20%,2026-11-08,true,false
+FLEX,1,hammer candle / strong close,2026-09-19,true,false
+FLYW,1,Shashank growth,2026-10-18,false,false
+FOSL,1,Qullamaggie smallcap,2026-10-18,true,false
+GMAB,1,Jeff Sun 3M 50%,2026-11-01,false,false
+GRAB,1,Jeff Sun 1W 20%,2026-11-08,true,true
+GRAL,1,Jeff Sun 3M 50%,2026-09-27,true,false
+HTFL,1,Jeff Sun 3M 50%,2026-10-18,true,false
+IDXX,1,Jeff Sun 1W 20%,2026-11-08,true,false
+KOD,1,Jeff Sun 3M 50%,2026-10-04,true,true
+KPLT,1,Kullamaggi Breakout,2026-11-01,false,false
+KVYO,1,Shashank growth,2026-10-25,false,false
+LION,1,Julian Komar breakout,2026-11-08,true,false
+LTH,1,O'Neill cup&handle,2026-11-08,true,false
+LUV,1,Shashank growth,2026-10-04,true,false
+M,1,TA midunder,2026-11-08,true,false
+MDLN,1,Jeff Sun 1W 20%,2026-11-08,true,true
+MRNA,1,Jeff Sun 3M 50%,2026-09-19,false,false
+NTSK,1,TA midunder,2026-10-18,false,false
+NVAX,1,TA midunder,2026-10-11,true,false
+NXT,1,Jeff Sun 1W 20%,2026-11-08,true,false
+OABI,1,Qullamaggie smallcap,2026-10-04,false,true
+OMH,1,Kullamaggi Breakout,2026-11-08,true,false
+OPK,1,Qullamaggie smallcap,2026-10-18,true,false
+ORCL,1,hammer candle / strong close,2026-11-08,true,true
+PCOR,1,Jeff Sun 1W 20%,2026-11-08,true,false
+PFE,1,hammer candle / strong close,2026-09-19,true,false
+PGEN,1,hammer candle / strong close,2026-11-08,true,true
+PTLO,1,Kullamaggi Breakout,2026-11-08,true,false
+PTRN,1,Shashank growth,2026-11-08,true,false
+QNST,1,Shashank growth,2026-11-08,true,false
+RCEL,1,Qullamaggie smallcap,2026-10-25,true,false
+REPL,1,Kullamaggi Breakout,2026-11-01,false,true
+RKT,1,Shashank growth,2026-11-08,true,false
+ROKU,1,Shashank growth,2026-10-25,true,false
+RXO,1,O'Neill cup&handle,2026-11-08,true,false
+RYTM,1,Jeff Sun 1W 20%,2026-11-08,true,false
+SABR,1,hammer candle / strong close,2026-09-19,true,false
+SARO,1,hammer candle / strong close,2026-11-08,true,false
+SEZL,1,Shashank,2026-10-11,false,false
+SLS,1,hammer candle / strong close,2026-09-19,true,true
+SMR,1,hammer candle / strong close,2026-11-08,true,false
+SN,1,Shashank growth,2026-11-08,true,false
+STAK,1,Kullamaggi Breakout,2026-11-08,true,false
+STGW,1,O'Neill cup&handle,2026-11-01,false,false
+TDOC,1,Qullamaggie smallcap,2026-11-01,false,false
+TIC,1,O'Neill cup&handle,2026-11-08,true,false
+TPC,1,Shashank growth,2026-11-08,true,false
+TSM,1,hammer candle / strong close,2026-09-19,true,false
+U,1,Jeff Sun 1W 20%,2026-10-18,true,false
+UPBD,1,Qullamaggie smallcap,2026-11-08,true,false
+VCEL,1,Shashank growth,2026-11-08,true,false
+VYX,1,Qullamaggie smallcap,2026-11-08,true,false
+WULF,1,hammer candle / strong close,2026-11-08,true,true
+XNCR,1,Jeff Sun 3M 50%,2026-11-08,true,false

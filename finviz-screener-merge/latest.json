@@ -1,0 +1,1281 @@
+{
+  "_schema": "finviz-screener-merge-v1",
+  "found_at": "2026-11-08",
+  "timezone": "Asia/Bangkok",
+  "producer": "grok-bot/finviz-screener-merge",
+  "run_id": "2026-11-08Tweekly",
+  "status": "ok",
+  "data_as_of": "Fri Nov 6, 2026 close",
+  "screeners": [
+    {
+      "name": "Julian Komar breakout",
+      "url": "https://finviz.com/screener.ashx?v=351&f=cap_midunder,sh_avgvol_o100,sh_price_o3,ta_highlow52w_a70h,ta_perf_13wup,ta_perf2_26wup,ta_sma20_sa50,ta_sma50_pa&ft=4&o=-volume",
+      "unique": true,
+      "duplicate_of": null,
+      "tickers_page1": 10,
+      "finviz_total": 237,
+      "notes": "HTTP OK",
+      "tickers": [
+        "AMC",
+        "SG",
+        "LION",
+        "SHLS",
+        "BRZE",
+        "COTY",
+        "XERS",
+        "CLOV",
+        "CCC",
+        "FIGS"
+      ]
+    },
+    {
+      "name": "Kullamaggi Breakout",
+      "url": "https://finviz.com/screener.ashx?v=351&f=sh_relvol_o1,ta_averagetruerange_o0.25,ta_perf_13w30o,ta_perf2_4w10o&ft=4&o=-perf4w",
+      "unique": true,
+      "duplicate_of": null,
+      "tickers_page1": 10,
+      "finviz_total": 48,
+      "notes": "HTTP OK",
+      "tickers": [
+        "OMH",
+        "STAK",
+        "KPLT",
+        "PTLO",
+        "REPL",
+        "DTIL",
+        "GDYN",
+        "BRZE",
+        "ONT",
+        "ARDT"
+      ]
+    },
+    {
+      "name": "Jeff Sun 1W 20%",
+      "url": "https://finviz.com/screener.ashx?v=351&f=cap_smallover,sh_avgvol_o300,sh_curvol_o100,ta_perf_1w20o,ta_volatility_wo4&ft=4&o=-marketcap",
+      "unique": true,
+      "duplicate_of": null,
+      "tickers_page1": 10,
+      "finviz_total": 75,
+      "notes": "HTTP OK",
+      "tickers": [
+        "APP",
+        "IDXX",
+        "MDLN",
+        "FISV",
+        "U",
+        "NXT",
+        "GRAB",
+        "PCOR",
+        "IAG",
+        "RYTM"
+      ]
+    },
+    {
+      "name": "Shashank",
+      "url": "https://finviz.com/screener.ashx?v=351&f=cap_midover,fa_epsqoq_o20,fa_epsyoy_o20,fa_epsyoy1_o20,fa_grossmargin_o20,fa_roe_o20,fa_salesqoq_o20,ind_stocksonly,sh_avgvol_o200,sh_price_o10,ta_sma20_pa,ta_sma200_pa,ta_sma50_pa&ft=4&o=-relativevolume&ar=180",
+      "unique": true,
+      "duplicate_of": null,
+      "tickers_page1": 4,
+      "finviz_total": 4,
+      "notes": "HTTP OK",
+      "tickers": [
+        "SEZL",
+        "TOST",
+        "ATAT",
+        "YOU"
+      ]
+    },
+    {
+      "name": "Jeff Sun 3M 50%",
+      "url": "https://finviz.com/screener.ashx?v=351&f=cap_smallover,sh_avgvol_o300,sh_curvol_o100,ta_perf_13w50o,ta_volatility_mo5&ft=4&o=-marketcap",
+      "unique": true,
+      "duplicate_of": null,
+      "tickers_page1": 10,
+      "finviz_total": 29,
+      "notes": "HTTP OK",
+      "tickers": [
+        "MRNA",
+        "GMAB",
+        "KOD",
+        "GRAL",
+        "HTFL",
+        "CDNA",
+        "XERS",
+        "ASST",
+        "XNCR",
+        "ARDT"
+      ]
+    },
+    {
+      "name": "O'Neill cup&handle",
+      "url": "https://finviz.com/screener.ashx?v=351&f=ind_stocksonly,sh_avgvol_o50,sh_price_o1,ta_highlow52w_a50h,ta_pattern_wedgeresistance,ta_sma200_pa&ft=4&o=-volume&ar=180",
+      "unique": true,
+      "duplicate_of": null,
+      "tickers_page1": 10,
+      "finviz_total": 58,
+      "notes": "HTTP OK",
+      "tickers": [
+        "CRWD",
+        "DBX",
+        "ARHS",
+        "ABSI",
+        "ENGS",
+        "STGW",
+        "RXO",
+        "LTH",
+        "TIC",
+        "BILL"
+      ]
+    },
+    {
+      "name": "Shashank MAs & fundamental",
+      "url": "https://finviz.com/screener.ashx?v=351&f=cap_midover,fa_epsqoq_o20,fa_epsyoy_o20,fa_epsyoy1_o20,fa_grossmargin_o20,fa_roe_o20,fa_salesqoq_o20,ind_stocksonly,sh_avgvol_o200,sh_price_o10,ta_sma20_pa,ta_sma200_pa,ta_sma50_pa&ft=4&o=-relativevolume&ar=180",
+      "unique": false,
+      "duplicate_of": "Shashank",
+      "tickers_page1": 4,
+      "finviz_total": 4,
+      "notes": "duplicate of Shashank — not double-counted in intersection",
+      "tickers": [
+        "SEZL",
+        "TOST",
+        "ATAT",
+        "YOU"
+      ]
+    },
+    {
+      "name": "hammer candle / strong close",
+      "url": "https://finviz.com/screener.ashx?v=211&f=sh_avgvol_o50,sh_curvol_o50,sh_relvol_o1,ta_candlestick_h&ft=4&o=-volume",
+      "unique": true,
+      "duplicate_of": null,
+      "tickers_page1": 12,
+      "finviz_total": 59,
+      "notes": "HTTP OK",
+      "tickers": [
+        "WULF",
+        "PFE",
+        "ORCL",
+        "SMR",
+        "TSM",
+        "AKBA",
+        "PGEN",
+        "SLS",
+        "SARO",
+        "CGC",
+        "SABR",
+        "FLEX"
+      ]
+    },
+    {
+      "name": "TA midunder",
+      "url": "https://finviz.com/screener.ashx?v=351&f=cap_midunder,sh_avgvol_o50,ta_highlow20d_b10h,ta_sma200_sb50,ta_sma50_pa,ta_volatility_mo4&ft=4&o=-volume",
+      "unique": true,
+      "duplicate_of": null,
+      "tickers_page1": 10,
+      "finviz_total": 95,
+      "notes": "HTTP OK",
+      "tickers": [
+        "CYPH",
+        "AMC",
+        "PACB",
+        "QSI",
+        "FIGS",
+        "VSTM",
+        "NVAX",
+        "M",
+        "NTSK",
+        "LFST"
+      ]
+    },
+    {
+      "name": "Qullamaggie smallcap",
+      "url": "https://finviz.com/screener.ashx?v=111&f=cap_smallunder,fa_epsyoy_pos,sh_relvol_o0.75,ta_highlow52w_a50h,ta_perf_13w20o,ta_perf2_26w10o,ta_sma200_pa,ta_sma50_pa,ta_volatility_mo4&ft=4&o=-volume",
+      "unique": true,
+      "duplicate_of": null,
+      "tickers_page1": 20,
+      "finviz_total": 40,
+      "notes": "HTTP OK",
+      "tickers": [
+        "SG",
+        "PACB",
+        "QSI",
+        "VSTM",
+        "OPK",
+        "TDOC",
+        "VYX",
+        "DNA",
+        "CRCT",
+        "ACB",
+        "FOSL",
+        "GDYN",
+        "UPBD",
+        "OABI",
+        "ETON",
+        "DTIL",
+        "CLAR",
+        "RCEL",
+        "CTKB",
+        "ONT"
+      ]
+    },
+    {
+      "name": "Shashank growth",
+      "url": "https://finviz.com/screener.ashx?v=161&f=cap_smallover,fa_epsqoq_o20,fa_epsyoy_o20,fa_epsyoy1_pos,fa_grossmargin_pos,fa_roe_pos,fa_salesqoq_o20,sh_avgvol_o200,sh_price_o10,ta_sma20_pa,ta_sma200_pa,ta_sma50_pa&ft=4&o=-volume&ar=180",
+      "unique": true,
+      "duplicate_of": null,
+      "tickers_page1": 20,
+      "finviz_total": 36,
+      "notes": "HTTP OK",
+      "tickers": [
+        "RKT",
+        "ROKU",
+        "SHLS",
+        "IAG",
+        "TOST",
+        "CHYM",
+        "LUV",
+        "LFST",
+        "KVYO",
+        "FLYW",
+        "BTSG",
+        "ELF",
+        "VCEL",
+        "SN",
+        "PTRN",
+        "EMBJ",
+        "QNST",
+        "YOU",
+        "TPC",
+        "ETON"
+      ]
+    },
+    {
+      "name": "Shashank CANSLIM",
+      "url": "https://finviz.com/screener.ashx?v=151&f=fa_eps5years_o20,fa_epsqoq_o20,fa_grossmargin_pos,fa_roe_pos,fa_salesqoq_o20,ind_stocksonly,sh_avgvol_o200,sh_float_u50,sh_instown_o20,ta_highlow52w_b0to10h,ta_sma20_pa,ta_sma200_pa,ta_sma50_pa&ft=4&o=-high52w&ar=180",
+      "unique": true,
+      "duplicate_of": null,
+      "tickers_page1": 0,
+      "finviz_total": 0,
+      "notes": "HTTP OK — empty result (Finviz 0 Total)",
+      "tickers": []
+    }
+  ],
+  "counts": {
+    "screeners": 12,
+    "unique_screeners": 11,
+    "union": 98,
+    "full_overlap": 0,
+    "multi_hit_3plus": 0,
+    "multi_hit_2plus": 18,
+    "new_this_week": 71,
+    "on_watchlist": 11
+  },
+  "full_overlap": [],
+  "tickers": [
+    {
+      "ticker": "AMC",
+      "hits": 2,
+      "screeners": [
+        "Julian Komar breakout",
+        "TA midunder"
+      ],
+      "first_seen": "2026-10-04",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "ARDT",
+      "hits": 2,
+      "screeners": [
+        "Kullamaggi Breakout",
+        "Jeff Sun 3M 50%"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "BRZE",
+      "hits": 2,
+      "screeners": [
+        "Julian Komar breakout",
+        "Kullamaggi Breakout"
+      ],
+      "first_seen": "2026-10-25",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "DTIL",
+      "hits": 2,
+      "screeners": [
+        "Kullamaggi Breakout",
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "ETON",
+      "hits": 2,
+      "screeners": [
+        "Qullamaggie smallcap",
+        "Shashank growth"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "FIGS",
+      "hits": 2,
+      "screeners": [
+        "Julian Komar breakout",
+        "TA midunder"
+      ],
+      "first_seen": "2026-10-18",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "GDYN",
+      "hits": 2,
+      "screeners": [
+        "Kullamaggi Breakout",
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-10-25",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "IAG",
+      "hits": 2,
+      "screeners": [
+        "Jeff Sun 1W 20%",
+        "Shashank growth"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "LFST",
+      "hits": 2,
+      "screeners": [
+        "TA midunder",
+        "Shashank growth"
+      ],
+      "first_seen": "2026-09-19",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "ONT",
+      "hits": 2,
+      "screeners": [
+        "Kullamaggi Breakout",
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "PACB",
+      "hits": 2,
+      "screeners": [
+        "TA midunder",
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-10-04",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "QSI",
+      "hits": 2,
+      "screeners": [
+        "TA midunder",
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-10-04",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "SG",
+      "hits": 2,
+      "screeners": [
+        "Julian Komar breakout",
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-10-25",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "SHLS",
+      "hits": 2,
+      "screeners": [
+        "Julian Komar breakout",
+        "Shashank growth"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "TOST",
+      "hits": 2,
+      "screeners": [
+        "Shashank",
+        "Shashank growth"
+      ],
+      "first_seen": "2026-10-25",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "VSTM",
+      "hits": 2,
+      "screeners": [
+        "TA midunder",
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-09-19",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "XERS",
+      "hits": 2,
+      "screeners": [
+        "Julian Komar breakout",
+        "Jeff Sun 3M 50%"
+      ],
+      "first_seen": "2026-10-11",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "YOU",
+      "hits": 2,
+      "screeners": [
+        "Shashank",
+        "Shashank growth"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "ABSI",
+      "hits": 1,
+      "screeners": [
+        "O'Neill cup&handle"
+      ],
+      "first_seen": "2026-09-19",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "ACB",
+      "hits": 1,
+      "screeners": [
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "AKBA",
+      "hits": 1,
+      "screeners": [
+        "hammer candle / strong close"
+      ],
+      "first_seen": "2026-10-04",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "APP",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 1W 20%"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": true
+    },
+    {
+      "ticker": "ARHS",
+      "hits": 1,
+      "screeners": [
+        "O'Neill cup&handle"
+      ],
+      "first_seen": "2026-10-04",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "ASST",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 3M 50%"
+      ],
+      "first_seen": "2026-09-19",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "ATAT",
+      "hits": 1,
+      "screeners": [
+        "Shashank"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "BILL",
+      "hits": 1,
+      "screeners": [
+        "O'Neill cup&handle"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "BTSG",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-10-18",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "CCC",
+      "hits": 1,
+      "screeners": [
+        "Julian Komar breakout"
+      ],
+      "first_seen": "2026-09-27",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "CDNA",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 3M 50%"
+      ],
+      "first_seen": "2026-10-18",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "CGC",
+      "hits": 1,
+      "screeners": [
+        "hammer candle / strong close"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "CHYM",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": true
+    },
+    {
+      "ticker": "CLAR",
+      "hits": 1,
+      "screeners": [
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "CLOV",
+      "hits": 1,
+      "screeners": [
+        "Julian Komar breakout"
+      ],
+      "first_seen": "2026-10-11",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "COTY",
+      "hits": 1,
+      "screeners": [
+        "Julian Komar breakout"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "CRCT",
+      "hits": 1,
+      "screeners": [
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "CRWD",
+      "hits": 1,
+      "screeners": [
+        "O'Neill cup&handle"
+      ],
+      "first_seen": "2026-09-19",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "CTKB",
+      "hits": 1,
+      "screeners": [
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-09-27",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "CYPH",
+      "hits": 1,
+      "screeners": [
+        "TA midunder"
+      ],
+      "first_seen": "2026-09-19",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "DBX",
+      "hits": 1,
+      "screeners": [
+        "O'Neill cup&handle"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "DNA",
+      "hits": 1,
+      "screeners": [
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-09-27",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "ELF",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "EMBJ",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "ENGS",
+      "hits": 1,
+      "screeners": [
+        "O'Neill cup&handle"
+      ],
+      "first_seen": "2026-09-27",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "FISV",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 1W 20%"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "FLEX",
+      "hits": 1,
+      "screeners": [
+        "hammer candle / strong close"
+      ],
+      "first_seen": "2026-09-19",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "FLYW",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-10-18",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "FOSL",
+      "hits": 1,
+      "screeners": [
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-10-18",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "GMAB",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 3M 50%"
+      ],
+      "first_seen": "2026-11-01",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "GRAB",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 1W 20%"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": true
+    },
+    {
+      "ticker": "GRAL",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 3M 50%"
+      ],
+      "first_seen": "2026-09-27",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "HTFL",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 3M 50%"
+      ],
+      "first_seen": "2026-10-18",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "IDXX",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 1W 20%"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "KOD",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 3M 50%"
+      ],
+      "first_seen": "2026-10-04",
+      "new_this_week": true,
+      "on_watchlist": true
+    },
+    {
+      "ticker": "KPLT",
+      "hits": 1,
+      "screeners": [
+        "Kullamaggi Breakout"
+      ],
+      "first_seen": "2026-11-01",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "KVYO",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-10-25",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "LION",
+      "hits": 1,
+      "screeners": [
+        "Julian Komar breakout"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "LTH",
+      "hits": 1,
+      "screeners": [
+        "O'Neill cup&handle"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "LUV",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-10-04",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "M",
+      "hits": 1,
+      "screeners": [
+        "TA midunder"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "MDLN",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 1W 20%"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": true
+    },
+    {
+      "ticker": "MRNA",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 3M 50%"
+      ],
+      "first_seen": "2026-09-19",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "NTSK",
+      "hits": 1,
+      "screeners": [
+        "TA midunder"
+      ],
+      "first_seen": "2026-10-18",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "NVAX",
+      "hits": 1,
+      "screeners": [
+        "TA midunder"
+      ],
+      "first_seen": "2026-10-11",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "NXT",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 1W 20%"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "OABI",
+      "hits": 1,
+      "screeners": [
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-10-04",
+      "new_this_week": false,
+      "on_watchlist": true
+    },
+    {
+      "ticker": "OMH",
+      "hits": 1,
+      "screeners": [
+        "Kullamaggi Breakout"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "OPK",
+      "hits": 1,
+      "screeners": [
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-10-18",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "ORCL",
+      "hits": 1,
+      "screeners": [
+        "hammer candle / strong close"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": true
+    },
+    {
+      "ticker": "PCOR",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 1W 20%"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "PFE",
+      "hits": 1,
+      "screeners": [
+        "hammer candle / strong close"
+      ],
+      "first_seen": "2026-09-19",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "PGEN",
+      "hits": 1,
+      "screeners": [
+        "hammer candle / strong close"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": true
+    },
+    {
+      "ticker": "PTLO",
+      "hits": 1,
+      "screeners": [
+        "Kullamaggi Breakout"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "PTRN",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "QNST",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "RCEL",
+      "hits": 1,
+      "screeners": [
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-10-25",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "REPL",
+      "hits": 1,
+      "screeners": [
+        "Kullamaggi Breakout"
+      ],
+      "first_seen": "2026-11-01",
+      "new_this_week": false,
+      "on_watchlist": true
+    },
+    {
+      "ticker": "RKT",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "ROKU",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-10-25",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "RXO",
+      "hits": 1,
+      "screeners": [
+        "O'Neill cup&handle"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "RYTM",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 1W 20%"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "SABR",
+      "hits": 1,
+      "screeners": [
+        "hammer candle / strong close"
+      ],
+      "first_seen": "2026-09-19",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "SARO",
+      "hits": 1,
+      "screeners": [
+        "hammer candle / strong close"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "SEZL",
+      "hits": 1,
+      "screeners": [
+        "Shashank"
+      ],
+      "first_seen": "2026-10-11",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "SLS",
+      "hits": 1,
+      "screeners": [
+        "hammer candle / strong close"
+      ],
+      "first_seen": "2026-09-19",
+      "new_this_week": true,
+      "on_watchlist": true
+    },
+    {
+      "ticker": "SMR",
+      "hits": 1,
+      "screeners": [
+        "hammer candle / strong close"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "SN",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "STAK",
+      "hits": 1,
+      "screeners": [
+        "Kullamaggi Breakout"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "STGW",
+      "hits": 1,
+      "screeners": [
+        "O'Neill cup&handle"
+      ],
+      "first_seen": "2026-11-01",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "TDOC",
+      "hits": 1,
+      "screeners": [
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-11-01",
+      "new_this_week": false,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "TIC",
+      "hits": 1,
+      "screeners": [
+        "O'Neill cup&handle"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "TPC",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "TSM",
+      "hits": 1,
+      "screeners": [
+        "hammer candle / strong close"
+      ],
+      "first_seen": "2026-09-19",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "U",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 1W 20%"
+      ],
+      "first_seen": "2026-10-18",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "UPBD",
+      "hits": 1,
+      "screeners": [
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "VCEL",
+      "hits": 1,
+      "screeners": [
+        "Shashank growth"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "VYX",
+      "hits": 1,
+      "screeners": [
+        "Qullamaggie smallcap"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    },
+    {
+      "ticker": "WULF",
+      "hits": 1,
+      "screeners": [
+        "hammer candle / strong close"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": true
+    },
+    {
+      "ticker": "XNCR",
+      "hits": 1,
+      "screeners": [
+        "Jeff Sun 3M 50%"
+      ],
+      "first_seen": "2026-11-08",
+      "new_this_week": true,
+      "on_watchlist": false
+    }
+  ],
+  "stocktwits_note": "No pulses this week — no full N-way overlap and no ≥3 multi-hits. Doubles (≥2 only) were skipped per rule. MCP not called.",
+  "coverage_notes": [
+    "12 named bookmarks in screeners.md.",
+    "11 unique URL sets for intersection math (Shashank ≡ Shashank MAs & fundamental — identical URL).",
+    "11/11 unique screeners OK via HTTP (browser UA; tickers from embedded JSON \"ticker\" fields — Finviz no longer uses quote.ashx links on page 1). No headed browser needed.",
+    "First page only; ~1.3s between requests. Data reflects Fri Nov 6, 2026 close.",
+    "Shashank CANSLIM returned a live empty table (0 Total) — not a JS shell. No tickers invented."
+  ]
+}

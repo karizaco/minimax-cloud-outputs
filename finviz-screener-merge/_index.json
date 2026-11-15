@@ -1,0 +1,17 @@
+{
+  "_schema": "finviz-screener-merge-index-v1",
+  "updated": "2026-11-08",
+  "runs": [
+    {
+      "date": "2026-11-08",
+      "run_id": "2026-11-08Tweekly",
+      "status": "ok",
+      "counts": {
+        "union": 98,
+        "multi_hit_2plus": 18,
+        "new_this_week": 71
+      },
+      "path": "2026-11-08/"
+    }
+  ]
+}

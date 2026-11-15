@@ -1,0 +1,44 @@
+{
+  "_schema": "finviz-screener-merge-manifest-v1",
+  "date": "2026-11-08",
+  "producer": "grok-bot/finviz-screener-merge/finviz-screener-merge",
+  "run_id": "2026-11-08Tweekly",
+  "generated_at": "2026-11-08T20:00:00+07:00",
+  "provenance": "Grok Bot box merge Markdown and standing screener bookmarks; built 2026-11-08T20:00:00+07:00; covered the weekly session dated 2026-11-08.",
+  "canonical": {
+    "brief": "brief.md",
+    "machine": [
+      "merge.json",
+      "tickers.csv"
+    ]
+  },
+  "files": [
+    {
+      "name": "_manifest.json",
+      "role": "provenance"
+    },
+    {
+      "name": "brief.md",
+      "role": "brief"
+    },
+    {
+      "name": "merge.json",
+      "role": "machine"
+    },
+    {
+      "name": "tickers.csv",
+      "role": "tickers"
+    }
+  ],
+  "counts": {
+    "screeners": 12,
+    "unique_screeners": 11,
+    "union": 98,
+    "full_overlap": 0,
+    "multi_hit_3plus": 0,
+    "multi_hit_2plus": 18,
+    "new_this_week": 71,
+    "on_watchlist": 11
+  },
+  "notes": []
+}
