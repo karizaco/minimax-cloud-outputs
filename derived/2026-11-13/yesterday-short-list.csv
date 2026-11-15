@@ -1,0 +1,5 @@
+ticker,stylists,yesterday_change,morning_pct,status,source
+AXGN,hernandez|peoplewish|qullamaggie|stockbee,-5.51,,not in the feed,no feed quoted it
+CRWV,peoplewish|qullamaggie|stockbee,-6.86,-0.9540636042402812,under the line,the pre-open tape (`preopen-feed/2026-11-13-0950.jsonl` and 1 earlier checkpoint(s))
+NBIS,peoplewish|qullamaggie|stockbee,-16.84,-3.910136815920388,gapping,the pre-open tape (`preopen-feed/2026-11-13-0950.jsonl` and 1 earlier checkpoint(s))
+SHAZ,peoplewish|qullamaggie|stockbee,-8.06,,not in the feed,no feed quoted it

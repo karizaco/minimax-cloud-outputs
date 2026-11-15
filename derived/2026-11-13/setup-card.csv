@@ -1,0 +1,6 @@
+ticker,boards,stylists,n_stylists,screen_close,screen_change,observation_close,observation_change,pre_mkt_pct,gap_outcome,catalyst_status,tags_published,tags_fired,tags_blocked
+AMD,tier-a,peoplewish|qullamaggie|stockbee,3,585.3,5.86,534.06,-8.75,-2.78,extended,not_looked_up,,,compression: the skill's formula needs 50 sessions of (high-low)/close; us-eod/ holds 19 session(s) for this name. Not recomputed. | MACD cross-up: us-eod/ has no MACD series. Not recomputed.
+CHA,tier-a,hernandez|jeff_sun|stockbee,3,13.51,9.57,14.37,6.37,,,,,,no settled bar for the observation session
+DPC,tier-a,peoplewish|qullamaggie|stockbee,3,34.33,8.36,34.26,-0.2,,,,,,no settled bar for the observation session
+IRTC,tier-a,peoplewish|qullamaggie|stockbee,3,93.56,5.5,91.91,-1.76,,,,,,compression: the skill's formula needs 50 sessions of (high-low)/close; us-eod/ holds 19 session(s) for this name. Not recomputed. | MACD cross-up: us-eod/ has no MACD series. Not recomputed.
+LUNR,tier-a,peoplewish|qullamaggie|stockbee,3,13.03,6.98,13.0,-0.23,,,,,,compression: the skill's formula needs 50 sessions of (high-low)/close; us-eod/ holds 19 session(s) for this name. Not recomputed. | MACD cross-up: us-eod/ has no MACD series. Not recomputed.

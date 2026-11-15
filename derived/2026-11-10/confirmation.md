@@ -1,6 +1,6 @@
 # Confirmation — how many routines saw each name
 
-**Source:** derived join over daily-screens/<date>/{tier-a,focus}.csv, ntrt/<date>.md, options-flow/<date>.md, earnings/<date>-{reminders,reactions}.md (no source file is modified) · **Built:** 2026-11-11 · **Covers:** 244 distinct name(s) across 5 routines; 1356 on the 200-name master board · read-only
+**Source:** derived join over daily-screens/<date>/{tier-a,focus}.csv, ntrt/<date>.md, options-flow/<date>.md, earnings/<date>-{reminders,reactions}.md (no source file is modified) · **Built:** 2026-11-15 · **Covers:** 244 distinct name(s) across 5 routines; 1356 on the 200-name master board · read-only
 
 > **Read this before the table.**
 >
