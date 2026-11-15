@@ -57,7 +57,7 @@ import json, subprocess, time, datetime, os, sys, re
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-11.2"
+SCRIPT_VERSION = "2026-11-15.1"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -76,9 +76,14 @@ try:  # ET is UTC-5 in winter and UTC-4 in summer. A fixed offset mislabeled
 except Exception:
     ET = datetime.timezone(datetime.timedelta(hours=-4))
 UTC = datetime.timezone.utc
-RUN_DATE = datetime.datetime.now(ET).strftime("%Y-%m-%d")
-OUT_DIR = "/workspace/earnings"
-CAT_DIR = "/workspace/catalog/catalysts"
+# REPLAY HOOK (test only). `SCAN_DATE_ET=YYYY-MM-DD` re-runs the pipeline as if
+# it had fired at 08:03 ET on that date, and `REACTION_OUT_ROOT` redirects the
+# output tree, so a REPLAY CAN NEVER overwrite a published artifact.
+REPLAY_DATE = os.environ.get("SCAN_DATE_ET") or ""
+_OUT_ROOT = os.environ.get("REACTION_OUT_ROOT", "/workspace")
+RUN_DATE = REPLAY_DATE or datetime.datetime.now(ET).strftime("%Y-%m-%d")
+OUT_DIR = f"{_OUT_ROOT}/earnings"
+CAT_DIR = f"{_OUT_ROOT}/catalog/catalysts"
 
 US_VENUES = ["NASDAQ", "NYSE", "AMEX", "NYSEArca", "ARCA", "PCX", "BATS", "IEX"]
 US_DROP = {"OTC", "PINK", "OTCBB", "GREY", "OTC MKTS", "OTCM", "CBOE"}
@@ -174,8 +179,14 @@ APAC_MARKET_CAP = 3
 # date lags (it read 2025-02-13 for a name that reported the previous day).
 EARNINGS_DUE_WINDOW_DAYS = 14
 
+# `type` is the instrument-form signal: TradingView files ADRs as "dr" and
+# ordinary shares as "stock" (verified 2026-11-15: BABA and PDD are "dr",
+# while NBIS - Nebius Group N.V., whose Class A ORDINARY shares are listed
+# directly on Nasdaq - is "stock", as are AEM, TSEM, NVMI, FN, IREN and DPC).
+# The old rule ("country != United States => ADR") called all of those ADRs.
+# `description` is the second signal.
 SCANNER_COLS = ["name", "close", "change", "change_abs", "volume", "market_cap_basic",
-                "exchange", "country", "Perf.W", "currency",
+                "exchange", "country", "Perf.W", "currency", "type", "description",
                 "premarket_change", "postmarket_change", "premarket_close", "premarket_volume",
                 "earnings_release_date", "earnings_release_next_date"]
 IDX = {c: i for i, c in enumerate(SCANNER_COLS)}
@@ -186,6 +197,8 @@ health = {"scanner_calls": 0, "scanner_errors": 0, "yahoo_calls": 0, "yahoo_erro
           "premarket_check": {"checked": 0, "within_1pp": 0, "within_3pp": 0,
                               "outliers": [], "unavailable": 0},
           "rows_dropped_stale_ref": 0, "rows_dropped_unresolved_ref": 0,
+          "calendar_calls": 0, "calendar_errors": 0, "calendar_symbols": 0,
+          "earnings_field_stale_rows": 0,
           "us_line_index_ok": True}
 DEGRADED = []          # list of (source, detail) - each degraded source counted once
 
@@ -196,6 +209,88 @@ def degrade(source, detail):
         if s == source:
             return
     DEGRADED.append((source, detail))
+
+
+# ------------------------------------------------------- the bulk earnings calendar
+#
+# THE BULK PRIMITIVE, AND THE SOURCE OF RECORD for the US earnings date.
+#
+# One call to Nasdaq's public earnings calendar answers "did this name report,
+# and when" for the WHOLE US market. A per-name search budget can never cover
+# that: on the 2026-11-12 fire 10 of the 115 published US rows had reported
+# that morning, and the 5-name search budget - which ranked by |gap| and
+# ignored the earnings event - covered 5 rows of which 2 had reported the
+# PREVIOUS day, while 4 of the 10 same-day reporters (NBIS, YETI, TWST, FPS)
+# were never looked up at all.
+#
+# It is ALSO the source of record, because TradingView's
+# `earnings_release_date` is refreshed per company and ASYNCHRONOUSLY: at the
+# 08:03 ET scan on 2026-11-12, NBIS - which had reported PRE-OPEN that
+# morning - still carried 2026-08-12, the previous quarter. A verdict built on
+# that field is not a missing verdict but a FALSE one.
+#
+# The calendar's `time` field is NOT usable for the pre-open / after-close
+# split (measured 2026-11-12: 444 of 448 rows read "time-not-supplied"), so
+# freshness is taken from the REPORT DATE, and the artifact's own AMC/PRE_GAP
+# tag carries the rest.
+EARNINGS_CALENDAR_URL = "https://api.nasdaq.com/api/calendar/earnings?date={d}"
+CALENDAR_LOOKBACK_DAYS = 7       # the scan date plus the 7 prior calendar days
+CATALYST_TOTAL_CAP = 16          # hard ceiling on the agent's search targets per run
+FOREIGN_FLOORS = 8               # EU 3 + AU 2 + APAC 3 - never squeezed
+
+
+def fetch_earnings_calendar(dates):
+    """{SYMBOL: {date, time, eps, fiscal, name}} - the most recent report per symbol.
+
+    Only the most recent report at or before the scan date is kept, so the map
+    answers "when did this name LAST report", which is what the artifact's
+    `Last earnings` column publishes.
+    """
+    out = {}
+    for d in dates:
+        r = _curl(["-A", "Mozilla/5.0", EARNINGS_CALENDAR_URL.format(d=d)], timeout=25)
+        health["calendar_calls"] += 1
+        body = (r.stdout or "").strip()
+        if not body or body[0] not in "[{":
+            health["calendar_errors"] += 1
+            degrade("nasdaq_earnings_calendar",
+                    f"{d}: the earnings calendar did not answer")
+            continue
+        try:
+            rows = ((json.loads(body).get("data") or {}).get("rows")) or []
+        except Exception:
+            health["calendar_errors"] += 1
+            degrade("nasdaq_earnings_calendar", f"{d}: unparsable calendar body")
+            continue
+        for row in rows:
+            sym = str(row.get("symbol") or "").strip().upper()
+            if not sym:
+                continue
+            rec = {"date": d, "time": str(row.get("time") or ""),
+                   "eps": str(row.get("epsForecast") or ""),
+                   "fiscal": str(row.get("fiscalQuarterEnding") or ""),
+                   "name": str(row.get("name") or "")}
+            prev = out.get(sym)
+            if prev is None or d > prev["date"]:
+                out[sym] = rec
+    health["calendar_symbols"] = len(out)
+    return out
+
+
+def cal_quarter_label(rec):
+    """'Q3 2026' from the calendar's fiscalQuarterEnding ('Sep/2026')."""
+    fq = rec.get("fiscal") or ""
+    m = re.search(r"([A-Za-z]{3})[/\s-](\d{4})", fq)
+    if not m:
+        return "results"
+    mon = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+           "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12}.get(
+        m.group(1).lower()[:3])
+    if not mon:
+        return "results"
+    q = {1: "Q1", 2: "Q1", 3: "Q1", 4: "Q2", 5: "Q2", 6: "Q2",
+         7: "Q3", 8: "Q3", 9: "Q3", 10: "Q4", 11: "Q4", 12: "Q4"}[mon]
+    return f"{q} {m.group(2)}"
 
 
 # --------------------------------------------------------------------- ET window
@@ -780,7 +875,7 @@ def build_us_line_index():
             nm, desc, ex, country = row["d"][0], row["d"][1], row["d"][2], row["d"][3]
             toks = name_tokens(desc or nm)
             if toks:
-                idx.append((nm, ex, country, toks))
+                idx.append((nm, ex, country, toks, t))
     health["us_line_index_ok"] = bool(idx)
     if not idx:
         degrade("tradingview_scanner.us_line_index",
@@ -799,7 +894,7 @@ def match_us_line(name, country, index):
     if not t or not index:
         return None
     best = None
-    for nm, ex, ct, kt in index:
+    for nm, ex, ct, kt, kind in index:
         if not (t <= kt or kt <= t):
             continue
         score = len(t & kt)
@@ -807,8 +902,8 @@ def match_us_line(name, country, index):
         listed = 1 if ex not in ("OTC", "PINK", "OTCBB", "GREY") else 0
         rank = (same_country, listed, score)
         if best is None or rank > best[0]:
-            best = (rank, nm, ex)
-    return (best[1], best[2]) if best else None
+            best = (rank, nm, ex, kind)
+    return (best[1], best[2], best[3]) if best else None
 
 
 
@@ -1005,6 +1100,8 @@ for d in a_rows + b_up + b_dn:
         continue
     c = us.setdefault(sym, {"name": g(d, "name"), "ex": g(d, "exchange"),
                              "country": g(d, "country"),
+                             "kind": (g(d, "type") or "").strip().lower(),
+                             "desc": (g(d, "description") or "").strip(),
                              "close": g(d, "close"), "change": g(d, "change"),
                              "vol": g(d, "volume"), "mcap": g(d, "market_cap_basic"),
                              "pm": g(d, "premarket_change"), "po": g(d, "postmarket_change"),
@@ -1051,15 +1148,42 @@ bod.sort(key=lambda t: -t[1]["mx"])
 # disagrees with the authoritative one is measured against a STALE close - a
 # phantom move - and is dropped, with the drop counted and published rather
 # than silently filtered.
-NOW_ET = datetime.datetime.now(ET)
+NOW_ET = (datetime.datetime.strptime(REPLAY_DATE + " 08:03:52", "%Y-%m-%d %H:%M:%S").replace(tzinfo=ET)
+          if REPLAY_DATE else datetime.datetime.now(ET))
 us_line_index = build_us_line_index()
+
+
+ADR_TEXT_MARKERS = ("depositary", "american depositary", "new york registry shares",
+                    "sponsored adr")
+
+
+def is_adr_security(kind, desc):
+    """Is this US-venue security a DEPOSITARY form?
+
+    The instrument form comes from the security itself - the scanner's `type`
+    column ("dr" for a depositary form) and its description - NEVER from the
+    issuer's country. The old rule ("country != United States => ADR") was
+    wrong for every foreign-incorporated company whose US line is the PRIMARY
+    listing in ordinary shares: 16 of the 115 US rows on 2026-11-12 carried
+    the label, and most of them (NBIS = Nebius Group N.V. Class A ordinary
+    shares on Nasdaq, AEM, TSEM, NVMI, FN, IREN, DPC) are NOT depositary
+    forms. A security with no evidence either way is NOT called an ADR.
+    """
+    if (kind or "").strip().lower() == "dr":
+        return True
+    s = (desc or "").lower()
+    return any(m in s for m in ADR_TEXT_MARKERS)
 
 
 def attach_us(row, c):
     """Attach the resolved reference close and the US-tradeability to a US row."""
     c["ref"] = row
-    c["us_tradeable"] = "US-listed" if c.get("country") in (None, "United States") \
-        else "US-listed (ADR)"
+    if c.get("country") in (None, "United States"):
+        c["us_tradeable"] = "US-listed"
+    elif is_adr_security(c.get("kind"), c.get("desc")):
+        c["us_tradeable"] = "US-listed (ADR)"
+    else:
+        c["us_tradeable"] = "US-listed"
     return row
 
 
@@ -1189,11 +1313,21 @@ def pct(v):
 
 
 def er_cell(c):
-    last = epoch_date(c.get("er"))
-    nxt = epoch_date(c.get("ern"))
+    """The row's LAST earnings date.
+
+    The BULK CALENDAR is the source of record. TradingView's
+    `earnings_release_date` is refreshed per company and asynchronously, so
+    at the 08:00 ET scan a name that had reported that morning could still
+    carry the previous quarter's date - NBIS published "2026-08-12 (92d ago)"
+    on 2026-11-12 although it had reported pre-open that day. A verdict built
+    on that field is not a missing verdict but a FALSE one. The screener's
+    value is the fallback, and every disagreement is published as
+    `earnings_field_stale_rows`.
+    """
+    last = cal_last_date(c.get("name")) or epoch_date(c.get("er"))
     if not last:
         return "—"
-    age = (datetime.datetime.now(ET).date() -
+    age = (NOW_ET.date() -
            datetime.datetime.strptime(last, "%Y-%m-%d").date()).days
     return f"{last} ({age}d ago)" if age >= 0 else f"{last}"
 
@@ -1250,7 +1384,11 @@ def us_tradeable_foreign(name, country):
     m = match_us_line(name, country, us_line_index)
     if not m:
         return "none"
-    return f"ADR ({m[1]}:{m[0]})"
+    # The US line's FORM comes from the index (stock vs dr), so a foreign
+    # issuer whose US line is its primary ordinary share is not called an ADR.
+    if m[2] == "dr":
+        return f"ADR ({m[1]}:{m[0]})"
+    return f"US line ({m[1]}:{m[0]})"
 
 
 # --------------------------------------------------------------- catalyst merge
@@ -1449,18 +1587,117 @@ if SETTLE_MODE:
 
 catalysts, catalyst_note = parse_catalyst_file(CAT_FILE)
 
-# The per-run catalyst budget: 5 US + 3 EU + 2 AU. These are the names the
-# agent is asked to look up; every other row says so honestly.
-amc_rows = [c for _, c in tagged if c["tag"] == "AMC_REACTION"]
-gap_rows = [c for _, c in tagged if c["tag"] == "PRE_GAP"]
-targets_us = amc_rows[:3] + [c for c in gap_rows if c not in amc_rows][:max(0, 5 - min(3, len(amc_rows)))]
-targets_us = targets_us[:CATALYST_BUDGET["US"]]
+# ---------------------------------------------------- the bulk calendar, fetched once
+CAL_DATES = []
+for _off in range(CALENDAR_LOOKBACK_DAYS + 1):
+    CAL_DATES.append((datetime.datetime.strptime(RUN_DATE, "%Y-%m-%d").date()
+                      - datetime.timedelta(days=_off)).isoformat())
+CAL = fetch_earnings_calendar(CAL_DATES)
+PREV_SESSION = prior_session_date(RUN_DATE, "US")
+
+
+def cal_rec(name):
+    return CAL.get((name or "").strip().upper())
+
+
+def cal_last_date(name):
+    """The name's LAST report date per the calendar, or None."""
+    rec = cal_rec(name)
+    return rec["date"] if rec else None
+
+
+def event_freshness(c):
+    """How fresh this row's earnings event is.
+
+    0  the report is dated on the SCAN DATE - it is hours old, and it is the
+       only thing that can explain today's pre-market gap;
+    1  the report is dated on the PREVIOUS session - the reaction may already
+       be in yesterday's close;
+    2  no report inside the window.
+
+    FRESHNESS RANKS THE SEARCH BUDGET, not the move size alone. On 2026-11-12
+    the biggest movers were ALL earnings names, so ranking by |gap| could not
+    tell them apart - and it left NBIS, which had reported THAT MORNING,
+    outside the 5 slots while a name whose report was a day old took one. A
+    report that is hours old has had minutes to be priced; a report from
+    yesterday has had a whole session.
+    """
+    rec = cal_rec(c["name"])
+    if not rec:
+        return 2
+    if rec["date"] == RUN_DATE:
+        return 0
+    if PREV_SESSION and rec["date"] == PREV_SESSION:
+        return 1
+    return 2
+
+
+def cal_event_cell(name):
+    """The calendar-sourced EVENT line for a row nobody searched.
+
+    It states the FACT - a report is dated on this day, per the Nasdaq
+    earnings calendar - and says plainly that no headline was looked up, so
+    the row carries NO earnings-driven verdict. The verdict follows the
+    research, never the other way round.
+    """
+    rec = cal_rec(name)
+    if not rec:
+        return None
+    when = "today" if rec["date"] == RUN_DATE else rec["date"]
+    cell = (f"{cal_quarter_label(rec)} results, report date {when} "
+            f"(Nasdaq earnings calendar; no headline lookup)")
+    if rec.get("eps"):
+        cell += f", consensus EPS {rec['eps']}"
+    return cell
+
+
+# The rows whose published earnings date the screener got wrong. Published, not
+# silently corrected: a row that carried the previous quarter's date while it
+# had reported that morning is a defect in a PUBLISHED FIELD.
+STALE_FIELD_ROWS = []
+for _sym, _c in tagged + quiet:
+    _cd = cal_last_date(_c["name"])
+    _sd = epoch_date(_c.get("er"))
+    if _cd and _sd and _cd != _sd:
+        STALE_FIELD_ROWS.append({"ticker": _c["name"], "screener": _sd,
+                                 "calendar": _cd})
+health["earnings_field_stale_rows"] = len(STALE_FIELD_ROWS)
+
+# The per-run catalyst budget, allocated BY THE EVIDENCE GAP.
+#
+# The US slice covers the rows whose earnings event can still explain TODAY's
+# move (freshness 0) plus the next freshest ones, bounded by the ceiling. The
+# FLOORS (EU 3, AU 2, APAC 3) are never squeezed, because no bulk calendar
+# reaches those markets - they are the regions where a search is the only way
+# to know. Whatever the US slice does not need goes to the region with the
+# most unexplained rows.
+FRESH_US = [c for _, c in tagged if event_freshness(c) == 0]
+NEAR_US = [c for _, c in tagged if event_freshness(c) == 1]
+US_CEIL = max(0, CATALYST_TOTAL_CAP - FOREIGN_FLOORS)
+CAT_ALLOC = {"US": min(US_CEIL, len(FRESH_US) + len(NEAR_US)),
+             "EU": CATALYST_BUDGET["EU"], "AU": CATALYST_BUDGET["AU"],
+             "APAC": CATALYST_BUDGET["APAC"]}
+_leftover = max(0, CATALYST_TOTAL_CAP - sum(CAT_ALLOC.values()))
+_pools = {"EU": len(eu_final), "AU": len(au), "APAC": len(apac)}
+for _reg in sorted(_pools, key=lambda k: (-_pools[k], k)):
+    if _leftover <= 0:
+        break
+    _add = min(_leftover, max(0, _pools[_reg] - CAT_ALLOC[_reg]))
+    CAT_ALLOC[_reg] += _add
+    _leftover -= _add
+
+# The US targets: AMC reactions first (the artifact's strongest), then by
+# event freshness, then by the size of the move.
+targets_us = [c for _, c in
+              sorted(tagged, key=lambda t: (0 if t[1]["tag"] == "AMC_REACTION" else 1,
+                                           event_freshness(t[1]), -t[1]["mx"]))
+              [:CAT_ALLOC["US"]]]
 targets_eu = [g(r0["d"], "name") for r0 in
-              sorted(eu_final, key=next_earn_rank)[:CATALYST_BUDGET["EU"]]]
+              sorted(eu_final, key=next_earn_rank)[:CAT_ALLOC["EU"]]]
 targets_au = [g(r0["d"], "name") for r0 in
-              sorted(au, key=next_earn_rank)[:CATALYST_BUDGET["AU"]]]
+              sorted(au, key=next_earn_rank)[:CAT_ALLOC["AU"]]]
 targets_apac = [g(r0["d"], "name") for r0 in
-                sorted(apac, key=next_earn_rank)[:CATALYST_BUDGET["APAC"]]]
+                sorted(apac, key=next_earn_rank)[:CAT_ALLOC["APAC"]]]
 TARGET_SET = (set(c["name"] for c in targets_us) | set(targets_eu)
               | set(targets_au) | set(targets_apac))
 
@@ -1468,13 +1705,19 @@ TARGET_SET = (set(c["name"] for c in targets_us) | set(targets_eu)
 # it is missing. It is NEVER overwritten: a re-run must not wipe the agent's
 # catalyst research.
 if not os.path.exists(CAT_FILE):
-    _budget_total = sum(CATALYST_BUDGET.values())
+    _budget_total = sum(CAT_ALLOC.values())
     with open(CAT_FILE, "w") as fh:
         fh.write("Catalyst lookups: "
-                 f"{CATALYST_BUDGET['US']} US + {CATALYST_BUDGET['EU']} EU + "
-                 f"{CATALYST_BUDGET['AU']} AU + {CATALYST_BUDGET['APAC']} APAC/Gulf = "
+                 f"{CAT_ALLOC['US']} US + {CAT_ALLOC['EU']} EU + "
+                 f"{CAT_ALLOC['AU']} AU + {CAT_ALLOC['APAC']} APAC/Gulf = "
                  f"{_budget_total}"
-                 " per run, the skill's cap.\n")
+                 " per run - the skill's cap, allocated by the evidence gap.\n")
+        fh.write("The US slice is the rows whose earnings event can still explain\n")
+        fh.write("TODAY's move - the bulk earnings calendar dates them - so the\n")
+        fh.write("freshest events are researched first, and a name whose report\n")
+        fh.write("was a session old does not outrank one that reported this\n")
+        fh.write("morning. A row the calendar covers but that is NOT listed here\n")
+        fh.write("keeps its calendar event line and carries NO verdict.\n")
         fh.write("Fill the Catalyst cell for every ticker below, then re-run the\n")
         fh.write("pipeline - the catalyst is merged into that ticker's row in the\n")
         fh.write("artifact, so a re-run never wipes this file. Never fabricate a\n")
@@ -1495,8 +1738,9 @@ if not os.path.exists(CAT_FILE):
     catalysts, catalyst_note = parse_catalyst_file(CAT_FILE)
 
 
-def catalyst_cell(name):
-    """The catalyst for a row: from the catalog file, or an honest placeholder.
+def catalyst_cell(name, us=False):
+    """The catalyst for a row: from the catalog file, the bulk calendar, or an
+    honest placeholder.
 
     The verdict follows the RESEARCH, never the other way round. A row whose
     catalyst cell says the lookup was not performed carries NO verdict: the
@@ -1504,6 +1748,9 @@ def catalyst_cell(name):
     "catalyst lookup not performed", which is a false verdict on 10% of that
     run's researched EU rows. A researched row that found nothing ("no fresh
     catalyst found") IS a verdict and keeps its N.
+
+    The CALENDAR cell states a fact - a report is dated on this day - and says
+    plainly that no headline was looked up, so it carries no verdict either.
     """
     c = catalysts.get(name)
     if c is None:
@@ -1513,6 +1760,9 @@ def catalyst_cell(name):
                 break
     if c:
         return c["catalyst"], verdict_for(c["catalyst"], c["earn"])
+    cell = cal_event_cell(name) if us else None
+    if cell:
+        return cell, "—"
     if name in TARGET_SET:
         return "pending catalyst lookup", "—"
     return "no catalyst lookup (outside the per-run budget)", "—"
@@ -1522,7 +1772,8 @@ def catalyst_cell(name):
 # these has no evidence, so it must not carry a verdict.
 NO_RESEARCH_MARKERS = ("no catalyst lookup", "pending catalyst lookup",
                        "not performed", "outside the per-run budget",
-                       "lookup not performed", "no lookup performed")
+                       "lookup not performed", "no lookup performed",
+                       "no headline lookup")
 
 
 def verdict_for(catalyst_text, flag):
@@ -1880,7 +2131,7 @@ A("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
 for sym, c in tagged:
     r = us_ref.get(sym)
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(c["name"])
+    cat, earn = catalyst_cell(c["name"], us=True)
     A(f"| {c['name']} | {c['ex']} | {c['close']} | {c['change']:.2f} | "
       f"{pct(c['pm'])} | {pct(c['po'])} | {multiple(headline_move(c), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {c.get('us_tradeable','—')} | {er_cell(c)} | {c['tag']} | {earn} | {cat} |")
@@ -1892,7 +2143,7 @@ A("|---|---|---|---|---|---|---|---|---|---|---|---|")
 for sym, c in quiet[:15]:
     r = us_ref.get(sym)
     rc, rs, ra, sa = ref_cols(r)
-    cat, earn = catalyst_cell(c["name"])
+    cat, earn = catalyst_cell(c["name"], us=True)
     A(f"| {c['name']} | {c['ex']} | {c['change']:.2f} | {pct(c['pm'])} | {pct(c['po'])} | "
       f"{multiple(headline_move(c), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {c.get('us_tradeable','—')} | {earn} | {cat} |")
@@ -2020,9 +2271,24 @@ A(f"- us_line_index: {'ok' if health['us_line_index_ok'] else 'EMPTY'} "
   f"(US-listed lines for the {len(FOREIGN_HOME_COUNTRIES)} foreign home countries, both "
   f"scanner types; the `US tradeable` column is ADR / US-listed / none)")
 A(f"- catalyst_note: {catalyst_note if catalyst_note else 'none'}")
-A(f"- catalyst_budget: {CATALYST_BUDGET['US']} US + {CATALYST_BUDGET['EU']} EU + "
-  f"{CATALYST_BUDGET['AU']} AU = "
-  f"{CATALYST_BUDGET['US']+CATALYST_BUDGET['EU']+CATALYST_BUDGET['AU']} lookups per run")
+A(f"- catalyst_budget: {CAT_ALLOC['US']} US + {CAT_ALLOC['EU']} EU + "
+  f"{CAT_ALLOC['AU']} AU + {CAT_ALLOC['APAC']} APAC/Gulf = "
+  f"{sum(CAT_ALLOC.values())} lookups per run (cap {CATALYST_TOTAL_CAP}), "
+  f"allocated by the evidence gap: the US slice covers the rows whose earnings "
+  f"event can still explain today's move, the EU/AU/APAC floors are never "
+  f"squeezed because no bulk calendar reaches those markets, and whatever the "
+  f"US slice does not need goes to the region with the most unexplained rows")
+A(f"- earnings_calendar: Nasdaq public earnings calendar "
+  f"(calls={health['calendar_calls']} errors={health['calendar_errors']} "
+  f"symbols={health['calendar_symbols']}) - the source of record for the US "
+  f"earnings date, and the ranking key for the search budget")
+A(f"- earnings_field_stale_rows: {health['earnings_field_stale_rows']} "
+  f"(the screener's earnings_release_date disagreed with the calendar; the "
+  f"calendar's date is published)")
+if STALE_FIELD_ROWS:
+    A(f"- earnings_field_stale_detail: {json.dumps(STALE_FIELD_ROWS[:20])}")
+A(f"- earnings_tiers: fresh={len(FRESH_US)} near={len(NEAR_US)} "
+  f"(fresh = the report is dated on the scan date, near = the previous session)")
 A(f"- one_table_rule: each name appears exactly once, in exactly one table, with its")
 A(f"  catalyst in that row's last column. There is no separate catalysts section.")
 A(f"- data_date: US regular session close of the prior trading day; extended-hours columns")
@@ -2054,6 +2320,9 @@ A(f"`earnings-reaction target=earnings-reactions:{RUN_DATE} candidates={len(us)}
   f"asx_reactions={len([r for r in au if abs(g(r['d'],'change'))>3])} "
   f"apac_reactions={len([r for r in apac if abs(g(r['d'],'change'))>3])} "
   f"catalyst_lookups={len(catalysts)} bod={len(bod)} "
+  f"earnings_calendar_rows={health['calendar_symbols']} "
+  f"earnings_tiers_fresh={len(FRESH_US)} earnings_tiers_near={len(NEAR_US)} "
+  f"earnings_field_stale_rows={health['earnings_field_stale_rows']} "
   f"rows_dropped_stale_ref={health['rows_dropped_stale_ref']} "
   f"rows_dropped_unresolved_ref={health['rows_dropped_unresolved_ref']} "
   f"degraded_sources={len(DEGRADED)}`")
@@ -2063,8 +2332,11 @@ out = os.path.join(OUT_DIR, OUT_NAME)
 with open(out, "w") as fh:
     fh.write("\n".join(L))
 
-targets = {"us": [{"name": c["name"], "tag": c["tag"], "last_earnings": epoch_date(c.get("er"))}
-                  for c in targets_us],
+targets = {"us": [{"name": c["name"], "tag": c["tag"],
+                    "last_earnings": cal_last_date(c["name"]) or epoch_date(c.get("er")),
+                    "event_freshness": event_freshness(c),
+                    "premarket_pct": c.get("pm")}
+                   for c in targets_us],
            "eu": [{"name": n, "chg": next((round(g(r0['d'], 'change'), 2) for r0 in eu_final
                                           if g(r0['d'], 'name') == n), None)}
                   for n in targets_eu],
@@ -2076,7 +2348,16 @@ targets = {"us": [{"name": c["name"], "tag": c["tag"], "last_earnings": epoch_da
                      "chg": next((round(g(r0['d'], 'change'), 2) for r0 in apac
                                   if g(r0['d'], 'name') == n), None)}
                     for n in targets_apac],
-           "budget": CATALYST_BUDGET,
+           "budget": CAT_ALLOC,
+           "budget_total": sum(CAT_ALLOC.values()),
+           "budget_cap": CATALYST_TOTAL_CAP,
+           "budget_rule": ("the US slice covers the rows whose earnings event can "
+                           "still explain today's move (fresh = the report is dated "
+                           "on the scan date), the EU/AU/APAC floors are never "
+                           "squeezed, and the leftover goes to the region with the "
+                           "most unexplained rows"),
+           "earnings_calendar_rows": health["calendar_symbols"],
+           "earnings_field_stale_rows": health["earnings_field_stale_rows"],
            "catalyst_file": CAT_FILE}
 with open(os.path.join(OUT_DIR, f"{RUN_DATE}-catalyst-targets.json"), "w") as fh:
     json.dump(targets, fh, indent=2)
