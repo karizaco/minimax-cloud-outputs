@@ -84,7 +84,7 @@ import json, subprocess, time, datetime, os, sys, re, html
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-15.5"
+SCRIPT_VERSION = "2026-11-16.1"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -2678,6 +2678,77 @@ if SETTLE_MODE:
       f"stale_reference={cc['stale']}")
     B(f"- rows_dropped_stale_ref: {health['rows_dropped_stale_ref']} | "
       f"rows_dropped_unresolved_ref: {health['rows_dropped_unresolved_ref']}")
+    # ---- the date-provenance disclosures the contract requires ----------
+    #
+    # WHY THIS BLOCK EXISTS (2026-11-16). The checker gates the earnings-date
+    # quality table, the `earnings_dates:` census, `earnings_field_stale_rows`,
+    # the catalyst budget split and `earnings_tiers` on the PIPELINE VERSION,
+    # not on the artifact kind. The 08:00 ET scan branch has rendered all five
+    # since pipeline 2026-11-15.5; the 12:15 ET settlement branch rendered
+    # NONE of them, so every settlement artifact produced by that pipeline
+    # failed five contract gates (measured on the 2026-11-16 fire). The fix
+    # belongs HERE, rendering the lines from THIS pass's own data - relaxing
+    # the checker would have left the reader with an unprovable date and a
+    # gate that no longer says anything.
+    _eu_prev = prior_session_date(RUN_DATE, "EU")
+    _fresh_n = _near_n = 0
+    for _r0 in eu_final:
+        _d0 = _r0["d"]
+        _ed, _esrc = earnings_date_for(g(_d0, "name"), "EU",
+                                        g(_d0, "earnings_release_date"),
+                                        _r0.get("market"))
+        if not _ed:
+            continue
+        if _ed == RUN_DATE:
+            _fresh_n += 1
+        elif _ed == _eu_prev:
+            _near_n += 1
+    B(f"- earnings_field_stale_rows: {health['earnings_field_stale_rows']} "
+      f"(the bulk earnings calendar reaches the US only, and this artifact "
+      f"publishes no US row, so the screener's own field is the only source "
+      f"for its dates - a stale date here is POSSIBLE and is not detected)")
+    B(f"- earnings_dates: the published `Last earnings` date by source - "
+      f"catalog (researched) {health['earnings_date_sources']['catalog']}, "
+      f"calendar {health['earnings_date_sources']['calendar']}, "
+      f"asx {health['earnings_date_sources']['asx']}, "
+      f"screener {health['earnings_date_sources']['screener']}. The chain is "
+      f"researched -> calendar (US) -> ASX feed (AU) -> the screener's field, "
+      f"which is the FALLBACK and the one that lags. This pass publishes the "
+      f"EU/UK rows only, so its dates come from the researched catalog and the "
+      f"screener's field; no bulk calendar reaches a European venue.")
+    B(f"- catalyst_budget: 0 US + 0 EU + 0 AU + 0 APAC/Gulf = 0 lookups - the "
+      f"settlement pass performs NO new catalyst lookups (no research happens "
+      f"in this slot); every catalyst cell is merged from the 08:00 ET run's "
+      f"catalog, and a row may only use a catalog entry from its OWN region.")
+    B(f"- earnings_tiers: fresh={_fresh_n} near={_near_n} (fresh = the row's "
+      f"earnings event is dated on the session that just settled, near = the "
+      f"previous session; measured over THIS table's rows - the 08:00 scan "
+      f"ranks the US rows by the same key)")
+    _q = earnings_date_quality()
+    _qseen = {_m for _m, *_ in _q}
+    for _m in ("us", "au"):
+        # The two tables the 08:00 scan publishes and THIS pass does not: the
+        # US session is open at 12:15 ET, and the AU rows belong to the scan.
+        # A zero row is the truth here - 0 rows published, not a failed scan.
+        if _m not in _qseen:
+            _q.append((_m, 0, 0, None, 0, 0))
+    _q.sort()
+    _q_with_rows = [x for x in _q if x[1]]
+    _fresh_mkts = sum(1 for _m, _r, _n, _med, _l7, _l30 in _q_with_rows
+                      if _med is not None and _med <= 14)
+    B(f"- earnings_date_quality: {_fresh_mkts} of {len(_q_with_rows)} markets "
+      f"that publish rows here publish a FRESH earnings date (median age "
+      f"<= 14d); `us` and `au` publish 0 rows BY DESIGN (the US session is "
+      f"open at 12:15 ET and the AU rows belong to the 08:00 scan), not by a "
+      f"failed scan. The table below gives each market's rows, the rows with "
+      f"NO date at all, the median age of the published date and the rows "
+      f"within 7 and 30 days - the reader sees the input quality instead of "
+      f"trusting it")
+    B("| market | rows | no date | median age | <=7d | <=30d |")
+    B("|---|---|---|---|---|---|")
+    for _m, _r, _n, _med, _l7, _l30 in _q:
+        B(f"| {_m} | {_r} | {_n} | {str(_med) + 'd' if _med is not None else 'n/a'} | "
+          f"{_l7} | {_l30} |")
     # The settle pass had no Yahoo line at all, so a rate limit here was
     # invisible except as a short table. It now carries the same line as the
     # 08:00 scan, breaker state included.
