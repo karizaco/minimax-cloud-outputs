@@ -1,9 +1,9 @@
 {
- "audit_date_et": "2026-11-14",
- "audit_run_et": "2026-11-15T07:07:06-0500",
- "origin_main_sha": "a398bd3",
- "due": 2,
- "delivered": 1,
+ "audit_date_et": "2026-11-15",
+ "audit_run_et": "2026-11-16T07:09:12-0500",
+ "origin_main_sha": "7ee7636",
+ "due": 4,
+ "delivered": 3,
  "missing": 1,
  "skipped_by_design_count": 0,
  "stale_routines": 1,
@@ -18,7 +18,7 @@
    "path": "macro-calendar/2026-11-11-midweek.md",
    "label": "MISSING",
    "cause": "connection_error",
-   "gap_age_hours": 89.1,
+   "gap_age_hours": 113.2,
    "streak": 1
   },
   {
@@ -31,6 +31,12 @@
   }
  ],
  "routines": {
+  "01-weekly-mcp-health-check": {
+   "routine": "01-weekly-mcp-health-check",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 8.6
+  },
   "19-earnings-reminder-daily": {
    "routine": "19-earnings-reminder-daily",
    "state": "not_due",
@@ -63,6 +69,12 @@
   },
   "92a-preopen-catalyst-capture": {
    "routine": "92a-preopen-catalyst-capture",
+   "state": "not_due",
+   "streak": 0,
+   "delivery_latency_min": null
+  },
+  "25-ntrt-gap-brief-daily": {
+   "routine": "25-ntrt-gap-brief-daily",
    "state": "not_due",
    "streak": 0,
    "delivery_latency_min": null
@@ -109,6 +121,24 @@
    "streak": 0,
    "delivery_latency_min": null
   },
+  "13-macro-calendar-midweek": {
+   "routine": "13-macro-calendar-midweek",
+   "state": "missing",
+   "streak": 1,
+   "delivery_latency_min": null
+  },
+  "14-macro-calendar-week-ahead": {
+   "routine": "14-macro-calendar-week-ahead",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 6.6
+  },
+  "06-pattern-study-backlog": {
+   "routine": "06-pattern-study-backlog",
+   "state": "not_due",
+   "streak": 0,
+   "delivery_latency_min": null
+  },
   "17-us-stocks-in-play": {
    "routine": "17-us-stocks-in-play",
    "state": "not_due",
@@ -139,6 +169,12 @@
    "streak": 0,
    "delivery_latency_min": null
   },
+  "22-weekly-market-recap-preview": {
+   "routine": "22-weekly-market-recap-preview",
+   "state": "delivered",
+   "streak": 0,
+   "delivery_latency_min": 5.8
+  },
   "09-daily-sweep-18:30": {
    "routine": "09-daily-sweep-18:30",
    "state": "not_due",
@@ -149,42 +185,6 @@
    "routine": "23-agentic-post-market-brief",
    "state": "not_due",
    "streak": 0,
-   "delivery_latency_min": null
-  },
-  "25-ntrt-gap-brief-daily": {
-   "routine": "25-ntrt-gap-brief-daily",
-   "state": "not_due",
-   "streak": 0,
-   "delivery_latency_min": null
-  },
-  "01-weekly-mcp-health-check": {
-   "routine": "01-weekly-mcp-health-check",
-   "state": "not_due",
-   "streak": 0,
-   "delivery_latency_min": null
-  },
-  "14-macro-calendar-week-ahead": {
-   "routine": "14-macro-calendar-week-ahead",
-   "state": "not_due",
-   "streak": 0,
-   "delivery_latency_min": null
-  },
-  "22-weekly-market-recap-preview": {
-   "routine": "22-weekly-market-recap-preview",
-   "state": "not_due",
-   "streak": 0,
-   "delivery_latency_min": null
-  },
-  "06-pattern-study-backlog": {
-   "routine": "06-pattern-study-backlog",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 8.6
-  },
-  "13-macro-calendar-midweek": {
-   "routine": "13-macro-calendar-midweek",
-   "state": "missing",
-   "streak": 1,
    "delivery_latency_min": null
   }
  },
