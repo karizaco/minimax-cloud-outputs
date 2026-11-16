@@ -84,7 +84,7 @@ import json, subprocess, time, datetime, os, sys, re, html
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-16.1"
+SCRIPT_VERSION = "2026-11-16.2"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -1483,17 +1483,30 @@ def earnings_date_for(name, region=None, er_epoch=None, market=None):
        that lags (2026-11-12: NBIS published "2026-08-12 (92d ago)" although
        it had reported pre-open that day; MEKO, NORBT and FG carried July and
        August dates on the morning they all reported).
+
+    THE BULK FEEDS ARE GATED BY REGION (2026-11-16). They used to be consulted
+    for EVERY row, so a European row could inherit an Australian company's
+    report date, and an EU row could inherit a US one. Measured on the
+    2026-11-16 settlement pass: PLT (Oslo, the #2 mover at +12.16%) published
+    "Last earnings 2026-11-16 (0d ago)" because an ASX-listed company that
+    happens to share the ticker PLT reported that morning - its own screener
+    field said 2026-08-06. A TICKER IS NOT A COMPANY. The calendar is the US
+    feed and the ASX feed is the AU feed, so each is now consulted only for a
+    row in its own market; every other region falls through to the screener's
+    own field (or the researched catalog entry, which is already
+    region-matched).
     """
     e = catalog_entry(name, region)
     if e is not None and e.get("rdate"):
         src, last = "catalog", e["rdate"]
     else:
+        _reg = (region or "").strip().upper()
         rec = CAL.get((name or "").strip().upper())
-        if rec and rec["date"] <= RUN_DATE:
+        if _reg == "US" and rec and rec["date"] <= RUN_DATE:
             src, last = "calendar", rec["date"]
         else:
             au = ASX_ANN.get((name or "").strip().upper())
-            if au:
+            if _reg == "AU" and au:
                 src, last = "asx", sorted(au)[-1]
             else:
                 src, last = "screener", epoch_date(er_epoch)
@@ -2715,7 +2728,8 @@ if SETTLE_MODE:
       f"researched -> calendar (US) -> ASX feed (AU) -> the screener's field, "
       f"which is the FALLBACK and the one that lags. This pass publishes the "
       f"EU/UK rows only, so its dates come from the researched catalog and the "
-      f"screener's field; no bulk calendar reaches a European venue.")
+      f"screener's field; no bulk calendar or ASX feed reaches a European "
+      f"venue - each bulk feed is consulted only for its own market.")
     B(f"- catalyst_budget: 0 US + 0 EU + 0 AU + 0 APAC/Gulf = 0 lookups - the "
       f"settlement pass performs NO new catalyst lookups (no research happens "
       f"in this slot); every catalyst cell is merged from the 08:00 ET run's "
