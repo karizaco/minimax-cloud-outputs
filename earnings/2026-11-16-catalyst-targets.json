@@ -1,0 +1,113 @@
+{
+  "us": [
+    {
+      "name": "POET",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-16",
+      "event_freshness": 0,
+      "premarket_pct": -9.754385964912279
+    },
+    {
+      "name": "BXDC",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-16",
+      "event_freshness": 0,
+      "premarket_pct": 5.692031156381062
+    },
+    {
+      "name": "OPTX",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-13",
+      "event_freshness": 1,
+      "premarket_pct": -6.7796610169491585
+    },
+    {
+      "name": "XXI",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-13",
+      "event_freshness": 1,
+      "premarket_pct": -6.262626262626273
+    },
+    {
+      "name": "SGML",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-13",
+      "event_freshness": 1,
+      "premarket_pct": -5.631067961165049
+    }
+  ],
+  "eu": [
+    {
+      "name": "SLR",
+      "chg": -4.83
+    },
+    {
+      "name": "GPW",
+      "chg": 4.75
+    },
+    {
+      "name": "CBF",
+      "chg": 3.17
+    },
+    {
+      "name": "ATT",
+      "chg": -4.18
+    },
+    {
+      "name": "GRE",
+      "chg": -3.83
+    },
+    {
+      "name": "ATS",
+      "chg": -3.4
+    }
+  ],
+  "au": [
+    {
+      "name": "ELD",
+      "chg": 7.49
+    },
+    {
+      "name": "CNI",
+      "chg": 6.47
+    }
+  ],
+  "apac": [
+    {
+      "name": "NAT",
+      "market": "thailand",
+      "chg": -25.33
+    },
+    {
+      "name": "SPK",
+      "market": "newzealand",
+      "chg": 2.8
+    },
+    {
+      "name": "NOBLE",
+      "market": "thailand",
+      "chg": -18.52
+    }
+  ],
+  "budget": {
+    "US": 5,
+    "EU": 6,
+    "AU": 2,
+    "APAC": 3
+  },
+  "budget_total": 16,
+  "budget_cap": 16,
+  "budget_rule": "the US slice covers the rows whose earnings event can still explain today's move (fresh = the report is dated on the scan date), the EU/AU/APAC floors are never squeezed, and the leftover goes to the region with the most unexplained rows",
+  "earnings_calendar_rows": 1292,
+  "asx_announcement_rows": 6,
+  "asx_fresh": [
+    "ELD",
+    "FPR",
+    "PLT",
+    "SKO",
+    "TRA",
+    "WJL"
+  ],
+  "earnings_field_stale_rows": 1,
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-16.md"
+}
