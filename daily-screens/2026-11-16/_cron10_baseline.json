@@ -1,0 +1,26 @@
+{
+  "captured_at": 1794872107.2945497,
+  "cron_date": "2026-11-16",
+  "files": {
+    "breadth-snapshot.md": {
+      "exists": true,
+      "sha256": "0e678c31edc7563a0d02def63b971d3615e43b7b37563c55ae6c988b09a95cdc",
+      "mtime": 1794855831.7673752
+    },
+    "breadth-snapshot.csv": {
+      "exists": true,
+      "sha256": "75c83886d15123637f019d86f5ac0c32a5aa27b793f6c551dd768b5db28dc75f",
+      "mtime": 1794855831.7495556
+    },
+    "breadth-snapshot.json": {
+      "exists": true,
+      "sha256": "152ef67946d740893ea260ce1fb432da2658f13604c95e3fc4e6148566f32721",
+      "mtime": 1794855831.754813
+    },
+    "_regime-intraday.json": {
+      "exists": true,
+      "sha256": "fa28e202bea80d6f886414926468516140f0b81e6368b585185fe54b25935bca",
+      "mtime": 1794855831.7598214
+    }
+  }
+}
