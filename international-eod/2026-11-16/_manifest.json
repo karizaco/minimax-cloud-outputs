@@ -1,12 +1,12 @@
 {
  "date": "2026-11-16",
- "generated_at": "2026-11-16T22:05:00Z",
+ "generated_at": "2026-11-16T21:43:07Z",
  "provenance": "TradingView per-country scanner (16 regions, issuer-country filtered, one set-verified pull each) with the America scanner for us_listing and the cross-venue cap reading; FX from Frankfurter (ECB) with open.er-api for TWD; index levels from the TradingView venue index symbols cross-checked against Yahoo",
  "market_cap_unit": "USD",
  "price_currency": "listing (the `currency` column)",
  "change_pct_unit": "percent",
  "csv_columns": 18,
- "degraded_sources": 0,
+ "degraded_sources": 1,
  "fx_source": {
   "provider": "Frankfurter (ECB) + open.er-api",
   "updated_utc": "Frankfurter (ECB): 2026-11-16; open.er-api: Mon, 16 Nov 2026 00:02:31 +0000",
