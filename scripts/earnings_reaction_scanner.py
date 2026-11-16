@@ -84,7 +84,7 @@ import json, subprocess, time, datetime, os, sys, re, html
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-15.4"
+SCRIPT_VERSION = "2026-11-15.5"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -588,6 +588,7 @@ def stale_reference_date(row_ref, venue):
         prev = prior_session_date(sess, venue)
         if prev and base < prev:
             return True, f"base {base} is older than the previous US session {prev}"
+
     try:
         gap = (_d(sess) - _d(base)).days
     except Exception:
@@ -1129,6 +1130,7 @@ def cross_check(name, tv_pct, tv_close, suffix, region, live_session=False, venu
         ref_delta = (implied - y["ref_close"]) / y["ref_close"] * 100
     meta = {"ref_close": y["ref_close"], "ref_close_source": "yahoo_chart_daily",
             "ref_close_asof": y["ref_date"], "session_asof": y["date"],
+            "market": (region or "").strip().lower(),
             "prior_close": y["prior_close"], "prior_close_asof": y["prior_close_date"],
             "avg_daily_move": y["avg_daily_move"], "prev_move": y.get("prev_move"),
             "mode": y["mode"], "yahoo_pct": y["pct"], "drift": round(drift, 3)}
@@ -1465,9 +1467,10 @@ def catalog_entry(name, region=None):
 
 
 _ED_SEEN = {}
+ED_ROWS = {}          # market -> [(date_or_None, source)] for the quality table
 
 
-def earnings_date_for(name, region=None, er_epoch=None):
+def earnings_date_for(name, region=None, er_epoch=None, market=None):
     """The date of the name's LAST report, best source first.
 
     1. the RESEARCHED date from the catalyst catalog - the agent read it off
@@ -1498,7 +1501,43 @@ def earnings_date_for(name, region=None, er_epoch=None):
     if key not in _ED_SEEN:
         _ED_SEEN[key] = src
         health["earnings_date_sources"][src] += 1
+        ED_ROWS.setdefault((market or region or "US").strip().lower(),
+                           []).append((last, src))
     return last, src
+
+
+def earnings_date_quality():
+    """Per-market earnings-date quality: rows, rows with NO date, the median age
+    of the published date, and the rows within 7 and 30 days.
+
+    THE POINT: a reader must be able to see how good the input is per market
+    instead of trusting it. Measured on the 2026-11-12 artifact: india,
+    indonesia and ksa published NO date at all, while uk, switzerland,
+    denmark and thailand were fresh - so the defect is per-market, not
+    "foreign = bad", and only the table says so.
+    """
+    scan = NOW_ET.date()
+    out = []
+    for mkt in sorted(ED_ROWS):
+        rows = ED_ROWS[mkt]
+        ages = []
+        nodate = 0
+        for d, _src in rows:
+            if not d:
+                nodate += 1
+                continue
+            try:
+                dd = datetime.datetime.strptime(d, "%Y-%m-%d").date()
+            except Exception:
+                nodate += 1
+                continue
+            ages.append(max(0, (scan - dd).days))
+        ages.sort()
+        med = ages[len(ages) // 2] if ages else None
+        out.append((mkt, len(rows), nodate, med,
+                    sum(1 for a in ages if a <= 7),
+                    sum(1 for a in ages if a <= 30)))
+    return out
 
 
 def catalyst_cell(name, region=None):
@@ -2053,7 +2092,7 @@ def pct(v):
     return "—" if v is None else f"{v:.2f}"
 
 
-def er_cell(name, region=None, er_epoch=None):
+def er_cell(name, region=None, er_epoch=None, market=None):
     """The row's LAST earnings date, with its age.
 
     The source chain is `earnings_date_for`: the RESEARCHED date first (the
@@ -2061,7 +2100,7 @@ def er_cell(name, region=None, er_epoch=None):
     the bulk calendar (US), then the ASX announcements feed (AU), and only
     then the screener's field - which lags.
     """
-    last, _src = earnings_date_for(name, region, er_epoch)
+    last, _src = earnings_date_for(name, region, er_epoch, market)
     if not last:
         return "—"
     age = (NOW_ET.date() -
@@ -2615,7 +2654,7 @@ if SETTLE_MODE:
           f"{g(d,'currency')} | {multiple(settled, (r or {}).get('avg_daily_move'))} | "
           f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | "
           f"{us_tradeable_foreign(nm, g(d,'country'))} | "
-          f"{er_cell(g(d,'name'), 'EU', g(d,'earnings_release_date'))} | {earn} | {cat} |")
+          f"{er_cell(g(d,'name'), 'EU', g(d,'earnings_release_date'), r0.get('market'))} | {earn} | {cat} |")
     if not eu_final:
         B("| — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — |")
     B("")
@@ -2781,7 +2820,7 @@ for sym, c in tagged:
     cat, earn = catalyst_cell(c["name"], "US")
     A(f"| {c['name']} | {c['ex']} | {c['close']} | {c['change']:.2f} | "
       f"{pct(c['pm'])} | {pct(c['po'])} | {multiple(headline_move(c), (r or {}).get('avg_daily_move'))} | "
-      f"{rc} | {rs} | {ra} | {c.get('us_tradeable','—')} | {er_cell(c['name'], 'US', c.get('er'))} | {c['tag']} | {earn} | {cat} |")
+      f"{rc} | {rs} | {ra} | {c.get('us_tradeable','—')} | {er_cell(c['name'], 'US', c.get('er'), 'US')} | {c['tag']} | {earn} | {cat} |")
 A("")
 A("## US — QUIET one-liners")
 A("")
@@ -2809,7 +2848,7 @@ for r0 in eu_final:
     A(f"| {g(d,'name')} | {r0['market']} | {g(d,'exchange')} | {g(d,'close')} | "
       f"{g(d,'change'):+.2f} | {g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
-      f"{er_cell(g(d,'name'), 'EU', g(d,'earnings_release_date'))} | {earn} | {cat} |")
+      f"{er_cell(g(d,'name'), 'EU', g(d,'earnings_release_date'), r0.get('market'))} | {earn} | {cat} |")
 A("")
 A("## AU (ASX) — Headline table")
 A("")
@@ -2823,7 +2862,7 @@ for r0 in au:
     A(f"| {g(d,'name')} | {g(d,'exchange')} | {g(d,'close')} | {g(d,'change'):+.2f} | "
       f"{g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
-      f"{er_cell(g(d,'name'), 'AU', g(d,'earnings_release_date'))} | {earn} | {cat} |")
+      f"{er_cell(g(d,'name'), 'AU', g(d,'earnings_release_date'), 'AU')} | {earn} | {cat} |")
 A("")
 A("## APAC/Gulf — Headline table")
 A("")
@@ -2837,7 +2876,7 @@ for r0 in apac:
     A(f"| {g(d,'name')} | {r0['market']} | {g(d,'exchange')} | {g(d,'close')} | "
       f"{g(d,'change'):+.2f} | {g(d,'currency')} | {multiple(g(d,'change'), (r or {}).get('avg_daily_move'))} | "
       f"{rc} | {rs} | {ra} | {sa} | {settle_state(r)} | {us_tradeable_foreign(g(d,'name'), g(d,'country'))} | "
-      f"{er_cell(g(d,'name'), 'APAC/Gulf', g(d,'earnings_release_date'))} | {earn} | {cat} |")
+      f"{er_cell(g(d,'name'), 'APAC/Gulf', g(d,'earnings_release_date'), r0.get('market'))} | {earn} | {cat} |")
 if not apac:
     A("| — | — | — | — | — | — | — | — | — | — | — | — | — | — | — |")
 A("")
@@ -2965,6 +3004,17 @@ A(f"- asx_announcements: {health['asx_ann_rows']} results-classified "
   f"errors={health['asx_ann_errors']}); the announcement date IS the report date, "
   f"and the meeting/AGM/offer/assay headlines are excluded because they are not "
   f"reports")
+_q = earnings_date_quality()
+_fresh_mkts = sum(1 for _m, _r, _n, _med, _l7, _l30 in _q if _med is not None and _med <= 14)
+A(f"- earnings_date_quality: {_fresh_mkts} of {len(_q)} markets publish a FRESH earnings "
+  f"date (median age <= 14d); the table below gives each market's rows, the rows "
+  f"with NO date at all, the median age of the published date and the rows within "
+  f"7 and 30 days - the reader sees the input quality instead of trusting it")
+A("| market | rows | no date | median age | <=7d | <=30d |")
+A("|---|---|---|---|---|---|")
+for _m, _r, _n, _med, _l7, _l30 in _q:
+    A(f"| {_m} | {_r} | {_n} | {str(_med) + 'd' if _med is not None else 'n/a'} | "
+      f"{_l7} | {_l30} |")
 A(f"- earnings_tiers: fresh={len(FRESH_US)} near={len(NEAR_US)} "
   f"(fresh = the report is dated on the scan date, near = the previous session)")
 A(f"- one_table_rule: each name appears exactly once, in exactly one table, with its")
