@@ -1,0 +1,789 @@
+{
+ "date": "2026-11-16",
+ "generated_at": "2026-11-16T22:05:00Z",
+ "provenance": "TradingView per-country scanner (16 regions, issuer-country filtered, one set-verified pull each) with the America scanner for us_listing and the cross-venue cap reading; FX from Frankfurter (ECB) with open.er-api for TWD; index levels from the TradingView venue index symbols cross-checked against Yahoo",
+ "market_cap_unit": "USD",
+ "price_currency": "listing (the `currency` column)",
+ "change_pct_unit": "percent",
+ "csv_columns": 18,
+ "degraded_sources": 0,
+ "fx_source": {
+  "provider": "Frankfurter (ECB) + open.er-api",
+  "updated_utc": "Frankfurter (ECB): 2026-11-16; open.er-api: Mon, 16 Nov 2026 00:02:31 +0000",
+  "per_usd": {
+   "EUR": 0.90794,
+   "JPY": 159.6,
+   "AUD": 1.48,
+   "CAD": 1.4285,
+   "DKK": 6.787,
+   "TWD": 32.919339
+  }
+ },
+ "floors_usd": {
+  "au": {
+   "floor_usd": 300000000,
+   "min_volume": 100000
+  },
+  "jp": {
+   "floor_usd": 300000000,
+   "min_volume": null
+  },
+  "tw": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "ca": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "eu-de": {
+   "floor_usd": 300000000,
+   "min_volume": 50000
+  },
+  "eu-fr": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-it": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-es": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-nl": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-be": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-at": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-pt": {
+   "floor_usd": 50000000,
+   "min_volume": null
+  },
+  "eu-ie": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "eu-fi": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-dk": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-gr": {
+   "floor_usd": 50000000,
+   "min_volume": null
+  }
+ },
+ "regions": {
+  "au": {
+   "universe_rows": 1548,
+   "unique_instruments": 1548,
+   "written": 299,
+   "excluded": {
+    "no_market_cap": 4,
+    "below_cap_floor": 1224,
+    "below_volume": 19,
+    "issuer_unresolved": 2,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 0,
+   "floor_usd": 300000000,
+   "min_volume": 100000,
+   "file": "au.csv",
+   "venues": [
+    "ASX"
+   ],
+   "movers": [
+    {
+     "ticker": "ASX:NHC",
+     "name": "New Hope Corporation Limited",
+     "change": "-5.927342256214159",
+     "close": "4.92",
+     "volume": "6026677",
+     "cap": "2983169207",
+     "currency": "AUD",
+     "us": "OTC",
+     "catalyst": "Fell 5.93% to A$4.92 on its October-quarter activity report and trading update (lodged 8:18am): run-of-mine coal production fell 9.8% q/q to 4.3Mt and coal sales 3.2% to 2.93Mt on planned waste removal at Bengalla, the average realised price rose 6% to A$165.20/t and underlying EBITDA was A$168.1m against A$169.3m, with FY27 saleable production guided to 11.5-13.0Mt; it also launched an inaugural ~A$250m hybrid-securities offer at 9:47am (ASX announcements, 16 Nov; Investing.com, 16 Nov; Samso Market Update, 16 Nov)"
+    }
+   ]
+  },
+  "jp": {
+   "universe_rows": 3895,
+   "unique_instruments": 3867,
+   "written": 1383,
+   "excluded": {
+    "no_market_cap": 3,
+    "below_cap_floor": 2478,
+    "below_volume": 0,
+    "issuer_unresolved": 3,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "mover_rows": 4,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 2,
+   "floor_usd": 300000000,
+   "min_volume": null,
+   "file": "jp.csv",
+   "venues": [
+    "NAG",
+    "SAPSE",
+    "TSE"
+   ],
+   "movers": [
+    {
+     "ticker": "TSE:8253",
+     "name": "Credit Saison Co., Ltd.",
+     "change": "16.839066634592253",
+     "close": "4857",
+     "volume": "1729100",
+     "cap": "3776522750",
+     "currency": "JPY",
+     "us": "none",
+     "catalyst": "Rose 16.84% to Y4,857, the Nikkei's biggest gainer and a limit-up, after raising its full-year net profit forecast by 19% to a record level and lifting the planned dividend by Y15 (Reuters, 16 Nov; Kabutan, 16 Nov; Fisco, 16 Nov)"
+    },
+    {
+     "ticker": "TSE:6481",
+     "name": "THK Co., Ltd.",
+     "change": "-14.400584795321638",
+     "close": "4684",
+     "volume": "3565500",
+     "cap": "3840723005",
+     "currency": "JPY",
+     "us": "none",
+     "catalyst": "Fell 14.40% to Y4,684 even after raising its FY2026 guidance on 13 November - revenue to Y320bn from Y310bn, operating profit to Y52bn from Y48bn and net profit to Y58.8bn on AI-driven semiconductor orders and a weaker yen, with nine-month revenue up 34.5% - as investors judged the positive catalysts already priced in after the semiconductor-boom run (moomoo, 16 Nov; THK's own forecast-revision notice, 13 Nov; Kabutan, 16 Nov)"
+    },
+    {
+     "ticker": "TSE:6268",
+     "name": "Nabtesco Corporation",
+     "change": "-13.858761147264401",
+     "close": "3574",
+     "volume": "3412100",
+     "cap": "3046604617",
+     "currency": "JPY",
+     "us": "none",
+     "catalyst": "Fell 13.86% to Y3,574 as the market worked through its third-quarter result released over the weekend: July-September operating profit rose 23% y/y to Y7.59bn but came in slightly below expectations (Fisco, 16 Nov)"
+    },
+    {
+     "ticker": "TSE:6920",
+     "name": "Lasertec Corp.",
+     "change": "-12.842513146969278",
+     "close": "31490",
+     "volume": "4527200",
+     "cap": "20290449764",
+     "currency": "JPY",
+     "us": "OTC",
+     "catalyst": "Fell 12.84% to Y31,490, the Nikkei's largest decliner, as the AI-hardware complex was sold: Advantest slid 11.1% and Tokyo Electron 7.1%, together contributing 1,072 of the index's 1,480-point fall, with Lasertec a semiconductor inspection-equipment maker (Reuters, 16 Nov; Morningstar/Dow Jones, 16 Nov; Kabutan, 16 Nov)"
+    }
+   ]
+  },
+  "tw": {
+   "universe_rows": 2341,
+   "unique_instruments": 2341,
+   "written": 879,
+   "excluded": {
+    "no_market_cap": 56,
+    "below_cap_floor": 1404,
+    "below_volume": 0,
+    "issuer_unresolved": 2,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 1,
+   "off_official_rows": 0,
+   "mover_rows": 4,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 1,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "tw.csv",
+   "venues": [
+    "TPEX",
+    "TWSE"
+   ],
+   "movers": [
+    {
+     "ticker": "TWSE:2360",
+     "name": "Chroma Ate Inc.",
+     "change": "-10",
+     "close": "1260",
+     "volume": "3472720",
+     "cap": "18008127734",
+     "currency": "TWD",
+     "us": "none",
+     "catalyst": "Fell 10.00% to NT$1,260, locked at its lower price limit, as the technology selloff swept the electronics complex - the TAIEX lost 6.03% and every one of the 37 Taiwan-listed shares priced above NT$1,000 ended lower, 17 of them at their lower limits (Investing.com close report, 16 Nov; AsiaDaily, 16 Nov)"
+    },
+    {
+     "ticker": "TWSE:2486",
+     "name": "I-Chiun Precision Industry Co., Ltd.",
+     "change": "-10",
+     "close": "153",
+     "volume": "2663677",
+     "cap": "1243361185",
+     "currency": "TWD",
+     "us": "none",
+     "catalyst": "Fell 10.00% to NT$153, the worst performer on the Taiwan Weighted, locked at its lower price limit in the AI-led semiconductor selloff (Investing.com close report, 16 Nov)"
+    },
+    {
+     "ticker": "TWSE:2368",
+     "name": "Gold Circuit Electronics Ltd",
+     "change": "-10",
+     "close": "927",
+     "volume": "6592163",
+     "cap": "16422477402",
+     "currency": "TWD",
+     "us": "none",
+     "catalyst": "Fell 10.00% to NT$927 as the electronics complex was sold and the stock dropped out of the Taiwan-listed NT$1,000+ group (AsiaDaily, 16 Nov)"
+    },
+    {
+     "ticker": "TWSE:3450",
+     "name": "Elite Advanced Laser Corporation",
+     "change": "-10",
+     "close": "328.5",
+     "volume": "4008293",
+     "cap": "1615272535",
+     "currency": "TWD",
+     "us": "none",
+     "catalyst": "Fell 10.00% to NT$328.5, locked at its lower price limit, with no company release found for 16 November - sold with the rest of the electronics complex as the TAIEX closed 6.03% lower at its session low (AsiaDaily, 16 Nov; Investing.com, 16 Nov)"
+    }
+   ]
+  },
+  "ca": {
+   "universe_rows": 4295,
+   "unique_instruments": 2693,
+   "written": 648,
+   "excluded": {
+    "no_market_cap": 73,
+    "below_cap_floor": 1893,
+    "below_volume": 0,
+    "issuer_unresolved": 79,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 32,
+   "off_official_rows": 0,
+   "mover_rows": 6,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 0,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "ca.csv",
+   "venues": [
+    "CSE",
+    "TSX",
+    "TSXV"
+   ],
+   "movers": [
+    {
+     "ticker": "TSX:AAV",
+     "name": "Advantage Energy Ltd",
+     "change": "23.735050597976084",
+     "close": "13.45",
+     "volume": "17562384",
+     "cap": "1231197770",
+     "currency": "CAD",
+     "us": "OTC",
+     "catalyst": "Rose 23.74% to C$13.45 after Canadian Natural Resources agreed to acquire it for C$13.55 in cash, valuing the gas producer at about C$2.53bn including debt - a 25% premium to its 13 November close and its 30-day VWAP; the shares hit a 52-week high (Reuters, 16 Nov; Baystreet, 16 Nov; Canadian Natural Resources announcement, 16 Nov)"
+    },
+    {
+     "ticker": "TSX:T",
+     "name": "TELUS Corporation",
+     "change": "12.850082372322888",
+     "close": "13.7",
+     "volume": "35872896",
+     "cap": "13529492858",
+     "currency": "CAD",
+     "us": "NYSE",
+     "catalyst": "Rose 12.85% to C$13.70 after its board confirmed it had received an unsolicited, non-binding and conditional proposal from Quebecor to acquire TELUS, and formed a Special Committee of independent directors to evaluate it with financial and legal advisers (Reuters, 16 Nov; Baystreet, 16 Nov; TELUS statement, 16 Nov)"
+    },
+    {
+     "ticker": "TSX:QBR.B",
+     "name": "Quebecor Inc. Class B",
+     "change": "-15.32572021801194",
+     "close": "65.25",
+     "volume": "4636463",
+     "cap": "12200225782",
+     "currency": "CAD",
+     "us": "OTC",
+     "catalyst": "Fell 15.33% to C$65.25 - the acquirer paid for its own bid: Quebecor's shares shed C$9.90 on the proposal for TELUS, ending the day at C$67.16 (Reuters, 16 Nov; Baystreet, 16 Nov)"
+    },
+    {
+     "ticker": "TSX:KEL",
+     "name": "Kelt Exploration Ltd.",
+     "change": "10.704960835509143",
+     "close": "12.72",
+     "volume": "3108646",
+     "cap": "1634599435",
+     "currency": "CAD",
+     "us": "OTC",
+     "catalyst": "Rose 10.70% to C$12.72 and hit a 52-week high on its Friday third-quarter report: petroleum and natural gas sales of C$193.3m and adjusted funds from operations of C$106.3m (C$0.51 a share) against C$44.6m (C$0.22) a year earlier (Baystreet, 16 Nov)"
+    },
+    {
+     "ticker": "TSX:ORE",
+     "name": "Orezone Gold Corporation",
+     "change": "-10.266159695817493",
+     "close": "2.36",
+     "volume": "2027385",
+     "cap": "1323963807",
+     "currency": "CAD",
+     "us": "OTC",
+     "catalyst": "Fell 10.27% to C$2.36 with no company release found for 16 November - the gold complex was sold as spot gold slid to more than a one-year low, spot silver fell 4.3% and the TSX materials subgroup lost 2% (Reuters, 16 Nov)"
+    },
+    {
+     "ticker": "TSX:LUNR",
+     "name": "LunR Royalties Corp",
+     "change": "-9.259259259259254",
+     "close": "14.21",
+     "volume": "201334",
+     "cap": "1325263093",
+     "currency": "CAD",
+     "us": "OTC",
+     "catalyst": "Fell 9.26% to C$14.21 with no company release found for 16 November - sold with the precious-metals royalty names as spot gold fell to a one-year low and silver dropped 4.3% (Reuters, 16 Nov)"
+    }
+   ]
+  },
+  "eu-de": {
+   "universe_rows": 4300,
+   "unique_instruments": 923,
+   "written": 115,
+   "excluded": {
+    "no_market_cap": 4,
+    "below_cap_floor": 468,
+    "below_volume": 310,
+    "issuer_unresolved": 26,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 0,
+   "floor_usd": 300000000,
+   "min_volume": 50000,
+   "file": "eu-de.csv",
+   "venues": [
+    "LSX",
+    "XETR"
+   ],
+   "movers": [
+    {
+     "ticker": "XETR:S92",
+     "name": "SMA Solar Technology AG",
+     "change": "5.30269553689792",
+     "close": "47.66",
+     "volume": "180037",
+     "cap": "1729764055",
+     "currency": "EUR",
+     "us": "OTC",
+     "catalyst": "Rose 5.30% to EUR47.66 after narrowing its 2026 guidance to the upper half of its ranges - sales now EUR1.675-1.725bn and EBITDA EUR205-230m - on nine-month sales of EUR1.1607bn, EBITDA of EUR146.3m against a EUR16.9m loss, an EUR1.9bn order backlog and battery storage now 56% of Large Scale sales; it also announced low-single-digit price increases from January 2027 (Mercom India, 16 Nov; finanzen.ch, 16 Nov; SMA corporate release, 12 Nov)"
+    }
+   ]
+  },
+  "eu-fr": {
+   "universe_rows": 538,
+   "unique_instruments": 538,
+   "written": 257,
+   "excluded": {
+    "no_market_cap": 3,
+    "below_cap_floor": 278,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 2,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-fr.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "movers": [
+    {
+     "ticker": "EURONEXT:VU",
+     "name": "VusionGroup S.A.",
+     "change": "5.399999999999997",
+     "close": "158.1",
+     "volume": "108455",
+     "cap": "2781598162",
+     "currency": "EUR",
+     "us": "OTC",
+     "catalyst": "Rose 5.40% to EUR158.10 after Oddo BHF raised its price target to EUR215 from EUR190 and reiterated its outperform rating; the electronic-shelf-label maker topped the SBF 120 and its 150-session high of EUR150 on the way (ideal-investisseur, 16 Nov)"
+    }
+   ]
+  },
+  "eu-it": {
+   "universe_rows": 378,
+   "unique_instruments": 378,
+   "written": 178,
+   "excluded": {
+    "no_market_cap": 2,
+    "below_cap_floor": 198,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 4,
+   "off_official_rows": 0,
+   "mover_rows": 0,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 1,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-it.csv",
+   "venues": [
+    "MIL"
+   ],
+   "movers": []
+  },
+  "eu-es": {
+   "universe_rows": 232,
+   "unique_instruments": 232,
+   "written": 136,
+   "excluded": {
+    "no_market_cap": 24,
+    "below_cap_floor": 72,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 20,
+   "off_official_rows": 0,
+   "mover_rows": 0,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 1,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-es.csv",
+   "venues": [
+    "BME"
+   ],
+   "movers": []
+  },
+  "eu-nl": {
+   "universe_rows": 78,
+   "unique_instruments": 78,
+   "written": 56,
+   "excluded": {
+    "no_market_cap": 0,
+    "below_cap_floor": 22,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-nl.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "movers": [
+    {
+     "ticker": "EURONEXT:ASM",
+     "name": "ASM International N.V.",
+     "change": "-3.5704002303484117",
+     "close": "669.8",
+     "volume": "218982",
+     "cap": "37226703979",
+     "currency": "EUR",
+     "us": "OTC",
+     "catalyst": "Fell 3.57% to EUR88.0 (fallback: no Amsterdam name cleared the +/-5% threshold) - no company release was found for 16 November, and it was sold with the semiconductor-equipment complex as ASML fell 2.4%, Aixtron 2.8% and Technoprobe 4.2% on the AI-trade caution (Reuters, 16 Nov)"
+    }
+   ]
+  },
+  "eu-be": {
+   "universe_rows": 100,
+   "unique_instruments": 100,
+   "written": 76,
+   "excluded": {
+    "no_market_cap": 1,
+    "below_cap_floor": 23,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 1,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 1,
+   "no_catalyst_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-be.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "movers": [
+    {
+     "ticker": "EURONEXT:UMI",
+     "name": "Umicore SA",
+     "change": "-2.326901248581158",
+     "close": "17.21",
+     "volume": "382390",
+     "cap": "4668759418",
+     "currency": "EUR",
+     "us": "OTC",
+     "catalyst": "Fell 2.33% to EUR11.14 (fallback: no Brussels name cleared the +/-5% threshold) - no company release was found for 16 November and basic-resources stocks traded lower across Europe (TradingEconomics, 16 Nov)"
+    }
+   ]
+  },
+  "eu-at": {
+   "universe_rows": 65,
+   "unique_instruments": 65,
+   "written": 51,
+   "excluded": {
+    "no_market_cap": 3,
+    "below_cap_floor": 11,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 2,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-at.csv",
+   "venues": [
+    "VIE"
+   ],
+   "movers": [
+    {
+     "ticker": "VIE:ATS",
+     "name": "AT & S Austria Technologie & Systemtechnik Aktiengesellschaft",
+     "change": "-5.024311183144248",
+     "close": "117.2",
+     "volume": "117042",
+     "cap": "5280183571",
+     "currency": "EUR",
+     "us": "OTC",
+     "catalyst": "Fell 5.02% to EUR117.2 - no company release was found for 16 November, and it was sold with the European AI-hardware complex (Siemens Energy -1.8%, Legrand -0.8%, Aixtron -2.8%, Technoprobe -4.2%) as caution over the AI trade weighed on European technology shares (Reuters, 16 Nov)"
+    }
+   ]
+  },
+  "eu-pt": {
+   "universe_rows": 30,
+   "unique_instruments": 30,
+   "written": 27,
+   "excluded": {
+    "no_market_cap": 0,
+    "below_cap_floor": 3,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 1,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 0,
+   "floor_usd": 50000000,
+   "min_volume": null,
+   "file": "eu-pt.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "movers": [
+    {
+     "ticker": "EURONEXT:EGL",
+     "name": "Mota-Engil SGPS SA",
+     "change": "6.457167455876019",
+     "close": "4.946",
+     "volume": "3602971",
+     "cap": "1538625498",
+     "currency": "EUR",
+     "us": "none",
+     "catalyst": "Rose 6.46% to EUR4.946 after JB Capital Markets raised its 12-month price target to EUR7.80 and kept its buy recommendation; Mota-Engil led the Lisbon session, which took the PSI 20 back above 9,700 for the first time since late September (jornaldenegocios.pt, 16 Nov)"
+    }
+   ]
+  },
+  "eu-ie": {
+   "universe_rows": 20,
+   "unique_instruments": 20,
+   "written": 17,
+   "excluded": {
+    "no_market_cap": 0,
+    "below_cap_floor": 3,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 0,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "eu-ie.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "movers": [
+    {
+     "ticker": "EURONEXT:UPR",
+     "name": "Uniphar PLC",
+     "change": "1.9836639439906643",
+     "close": "4.37",
+     "volume": "273190",
+     "cap": "1225054387",
+     "currency": "EUR",
+     "us": "none",
+     "catalyst": "Rose 1.98% to EUR9.55 (fallback: no Dublin name cleared the +/-5% threshold) - no company release was found for 16 November, and healthcare stocks provided the support in a European session where EssilorLuxottica gained 0.7% and Sanofi 0.8% (TradingEconomics, 16 Nov)"
+    }
+   ]
+  },
+  "eu-fi": {
+   "universe_rows": 189,
+   "unique_instruments": 189,
+   "written": 101,
+   "excluded": {
+    "no_market_cap": 4,
+    "below_cap_floor": 84,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 2,
+   "no_catalyst_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-fi.csv",
+   "venues": [
+    "OMXHEX"
+   ],
+   "movers": [
+    {
+     "ticker": "OMXHEX:METSO",
+     "name": "Metso Corporation",
+     "change": "-2.9789719626168316",
+     "close": "16.61",
+     "volume": "1022224",
+     "cap": "15613556622",
+     "currency": "EUR",
+     "us": "none",
+     "catalyst": "Fell 2.98% to EUR31.1 (fallback: no Helsinki name cleared the +/-5% threshold) - no company release was found for 16 November and the metals and mining complex was sold as commodity prices fell on weak Chinese economic data (Reuters, 16 Nov; MarketIndex, 16 Nov)"
+    }
+   ]
+  },
+  "eu-dk": {
+   "universe_rows": 134,
+   "unique_instruments": 134,
+   "written": 75,
+   "excluded": {
+    "no_market_cap": 1,
+    "below_cap_floor": 58,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 2,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-dk.csv",
+   "venues": [
+    "OMXCOP"
+   ],
+   "movers": [
+    {
+     "ticker": "OMXCOP:FLS",
+     "name": "FLSmidth & Co. A/S",
+     "change": "-8.890845070422536",
+     "close": "517.5",
+     "volume": "576001",
+     "cap": "4756636415",
+     "currency": "DKK",
+     "us": "NYSE",
+     "catalyst": "Fell 8.89% to DKK517.5, the largest drop of any STOXX 600 constituent, after announcing the exit of CFO Roland M. Andersen with immediate effect; the company also disclosed buy-back transactions for 9-13 November, taking its treasury holding to 8.62% of the share capital (Reuters, 16 Nov; MarketWatch, 16 Nov; FLSmidth company announcement 56-2026, 16 Nov)"
+    }
+   ]
+  },
+  "eu-gr": {
+   "universe_rows": 129,
+   "unique_instruments": 129,
+   "written": 83,
+   "excluded": {
+    "no_market_cap": 0,
+    "below_cap_floor": 44,
+    "below_volume": 0,
+    "issuer_unresolved": 2,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 3,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 1,
+   "no_catalyst_rows": 0,
+   "floor_usd": 50000000,
+   "min_volume": null,
+   "file": "eu-gr.csv",
+   "venues": [
+    "ATHEX"
+   ],
+   "movers": [
+    {
+     "ticker": "ATHEX:TPEIR",
+     "name": "Piraeus Bank S.A.",
+     "change": "2.5615369221532944",
+     "close": "10.25",
+     "volume": "4693653",
+     "cap": "13600017498",
+     "currency": "EUR",
+     "us": "none",
+     "catalyst": "Rose 2.56% to EUR10.25 (fallback: no Athens name cleared the +/-5% threshold) - Piraeus and Alpha Bank were the session's winners as the closing auctions pushed the ATHEX General to its session high, with banking, construction and travel leading the market (Investing.com close report, 16 Nov; euro2day, 16 Nov)"
+    }
+   ]
+  }
+ },
+ "totals": {
+  "written": 4381,
+  "excluded": 8884
+ }
+}
