@@ -1,0 +1,93 @@
+{
+  "catalysts": {
+    "LXEO": {
+      "confirmed": true,
+      "source": "issuer press release via GlobeNewswire, Nov 15 2026 07:00 ET",
+      "note": "Lexeo Therapeutics confirmed for TODAY (Mon Nov 16) its Q3 2026 results and an LX2020 business update on the HEROIC-PKP2 Phase I/II trial, with an 8:00 AM ET webcast. The pre-market bid (multi-million shares) is into that print; the figures themselves were not confirmed on the wire in this run."
+    },
+    "AMD": {
+      "confirmed": true,
+      "source": "market reports Nov 16 2026 (PSG/Reuters/UOB Kay Hian); Oct PPI release",
+      "note": "SECTOR, not company: NVIDIA's leadership crisis after Jensen Huang's Nov 12 resignation plus the Oct PPI print (+6.5% y/y, steepest since Nov 2022) hit the chip complex on Fri (AMD -8.75% to $534.06, SOX -3.43%). NVDA reports Nov 17 after the close, so the sector is de-risking into the print; SMH is -3.85% pre-market today."
+    },
+    "ANET": {
+      "confirmed": true,
+      "source": "market reports Nov 16 2026 (PSG/Reuters/UOB Kay Hian); Oct PPI release",
+      "note": "SECTOR, not company: the same semis/Nvidia-leadership selloff that took AMD -8.75% on Friday; SMH is -3.85% pre-market today."
+    },
+    "LUNR": {
+      "confirmed": true,
+      "source": "market reports Nov 16 2026 (PSG/Reuters/UOB Kay Hian); Oct PPI release",
+      "note": "SECTOR, not company: the same semis/Nvidia-leadership selloff that took AMD -8.75% on Friday; SMH is -3.85% pre-market today."
+    },
+    "FIGR": {
+      "confirmed": true,
+      "source": "issuer Q3 2026 release via GlobeNewswire, Nov 12 2026 (pre-open); Zacks/MarketBeat coverage",
+      "note": "Figure Technology Solutions reported Q3 on Nov 12 before the open: EPS $0.36 vs $0.31 consensus, revenue $283.35M (+84% y/y) and a new $465M JPMorgan senior secured revolver. The stock has been DRIFTING DOWN since the beat - $25.67 (Nov 12) to $25.22 (Nov 13, -1.75%) and -4.88% pre-market today - with Zacks cutting to hold and KBW cutting its target to $37. No new dated news for today was found; this is post-earnings fade, rate-sensitive and thinly traded."
+    },
+    "CGON": {
+      "confirmed": false,
+      "source": "issuer Q3 2026 8-K, Nov 6 2026 (SEC EX-99.1)",
+      "note": "NO SAME-DAY CATALYST CONFIRMED IN THIS RUN. CG Oncology's Nov 6 8-K flags PIVOT-006 Phase 3 topline data as anticipated in November 2026 ('we look forward to sharing PIVOT-006 topline data this month'), which is consistent with a gap of that size, but no issuer release or wire item dated Nov 15-16 was confirmed here. Treat the gap as an unconfirmed event move."
+    },
+    "DRTS": {
+      "confirmed": true,
+      "source": "issuer release (via StockTitan news wire), Nov 16 2026",
+      "note": "Alpha Tau Medical announced new positive interim results from its US Alpha DaFT recurrent glioblastoma trial - all patients treated alive, median survival not reached, 100% ORR in the first six evaluable patients - with a conference call at 8:30 AM ET today."
+    },
+    "MRCIF": {
+      "confirmed": true,
+      "source": "Morningstar company report, Nov 13 2026",
+      "note": "Mercari reported its September quarter on Nov 13: revenue +28%, operating profit +61%, GMV +23%, credit balance +45% - but it will raise marketing spend from next quarter. The ADR fell 19.10% Friday to $24.73 and is -14.41% pre-market today. OTC ADR, thin."
+    },
+    "FREKF": {
+      "confirmed": true,
+      "source": "freee K.K. Q1 FY27 report, Nov 11 2026 (TSE:4478)",
+      "note": "freee published its Q1 FY27 report on Nov 11 (revenue JPY 12.03bn, +23.9% y/y). The -23.66% gap is on the OTC ADR (OTCPK), not the Tokyo line, and the ADR's own prints have spanned $22.35-$30.25 on tiny volume - read it as a thin OTC quote, not a tradable Nasdaq market."
+    },
+    "TU": {
+      "confirmed": false,
+      "source": "issuer Q3 2026 release, Nov 6 2026 (PRNewswire)",
+      "note": "NO SAME-DAY CATALYST CONFIRMED IN THIS RUN. TELUS reported Q3 on Nov 6 (C$660M net loss including a C$800M non-cash TELUS Health goodwill impairment, C$900M efficiency programme) and closed $8.53 on Friday. The ADR move this morning was not matched to any release found in this run."
+    }
+  },
+  "notes": [
+    "Market context for 2026-11-16: Friday's sell-off was semiconductor-led (S&P 500 -0.40%, Nasdaq -1.20%, SOX -3.43%) on the NVIDIA leadership vacuum after Jensen Huang stepped down on Nov 12, the hot October PPI (+6.5% y/y, the steepest since November 2022) and caution ahead of NVIDIA's Nov 17 after-close print. Asian chips gapped down overnight (Taiex -6.0%, Nikkei -2.4%, Advantest -11%, Lasertec -12%), and SMH is -3.85% pre-market here - so every Electronic Technology name in the Focus book is a BETA gap, not a setup.",
+    "Reference close discipline: the denominator is the settled 2026-11-13 close carried by the prior sweep's own focus.csv (`today_close`), cross-checked session-exactly against Nasdaq's per-symbol history for all 12/12 names. The sweep's `screen_close_resolved` column belongs to the PREVIOUS session (2026-11-12) and was rejected.",
+    "Tape freshness: the newest executed print on the tape is 15-26 minutes behind the wall clock for 11 of the 12 Focus names; DPC, PLBL and TOP are 93-185 minutes stale, and all three are BELOW the bar on tiny prints.",
+    "The Focus book is a momentum screen built on Friday's data, so it structurally cannot contain the day's real movers: the market-wide ladder holds 102 names at or beyond the 4% bar and NONE of them is in the Focus list. The ladder is the primary table in this artifact; the Focus scan is the second book.",
+    "Catalyst sourcing note: catalysts were confirmed from issuer releases and the news wire only. The TradingView `earnings_release_date` field was treated as a candidate, never as a catalyst - no Focus-list name carried a confirmed earnings date for today, so the forward calendar is empty."
+  ],
+  "source_health": [
+    {
+      "source": "web_search (issuer releases, GlobeNewswire/PRNewswire, SEC EDGAR, market reports)",
+      "status": "ok",
+      "role": "the catalysts"
+    },
+    {
+      "source": "TradingView america scanner (market ladder, index/sector proxies)",
+      "status": "ok",
+      "role": "the market-wide gap book and the beta proxies"
+    },
+    {
+      "source": "Nasdaq extended-trading tape (pre-market prints, volume, bid/ask)",
+      "status": "ok",
+      "role": "the executed prints that carry every published gap"
+    },
+    {
+      "source": "Cboe delayed-quote CDN (independent price cross-check)",
+      "status": "ok",
+      "role": "cross-check on reference closes and live quotes"
+    },
+    {
+      "source": "Nasdaq /historical (session-exact close confirmation)",
+      "status": "ok",
+      "role": "the denominator session's close for all 12 Focus names"
+    },
+    {
+      "source": "MCP bridge (catalog probe)",
+      "status": "ok",
+      "role": "availability probe only - catalog_ok total=135 finance_tools=0, bridge_ok packs=tradier,fmp,market-recap"
+    }
+  ]
+}
