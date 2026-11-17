@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "generated_at": "2026-11-17T21:55:00Z",
+ "generated_at": "2026-11-17T21:43:59Z",
  "provenance": "TradingView per-country scanner (16 regions, issuer-country filtered, one set-verified pull each) with the America scanner for us_listing and the cross-venue cap reading; FX from open.er-api; index levels from the TradingView venue index symbols, with the ATHEX official close from euro2day",
  "market_cap_unit": "USD",
  "price_currency": "listing (the `currency` column)",
