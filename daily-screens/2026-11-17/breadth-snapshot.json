@@ -1,0 +1,205 @@
+{
+  "_contract": "breadth-artifact-v1",
+  "_schema": 1,
+  "generated_at_et": "2026-11-17T19:04:12+00:00",
+  "data_date": "2026-11-16",
+  "history": {
+    "sessions": 261,
+    "start": "2025-11-03",
+    "end": "2026-11-16",
+    "lookback_days": 380
+  },
+  "universe": {
+    "filter": "NYSE/NASDAQ/AMEX, market cap > $10B",
+    "n": 890,
+    "market_cap_floor": 10000000000
+  },
+  "breadth": {
+    "pct_above_sma_20": 51.01,
+    "pctile_1y": 34.9,
+    "band": "NORMAL",
+    "pct_above_sma_50": 59.21,
+    "pctile_1y_50dma": 58.2,
+    "band_50dma": "NORMAL"
+  },
+  "index_etfs": {
+    "symbols": [
+      "SPY",
+      "RSP",
+      "QQQ",
+      "QQQE",
+      "IWM"
+    ],
+    "n_etf": 5,
+    "n_above_sma_20": 0,
+    "n_above_sma_50": 1,
+    "pct_above_sma_20": 0.0,
+    "pctile_1y": 15.3
+  },
+  "divergence": {
+    "pp": 51.01,
+    "band": "BROAD",
+    "pctile_1y": 99.2,
+    "history_5d": [
+      {
+        "date": "2026-11-10",
+        "pp": 27.19
+      },
+      {
+        "date": "2026-11-11",
+        "pp": 9.44
+      },
+      {
+        "date": "2026-11-12",
+        "pp": 22.47
+      },
+      {
+        "date": "2026-11-13",
+        "pp": 42.25
+      },
+      {
+        "date": "2026-11-16",
+        "pp": 51.01
+      }
+    ]
+  },
+  "advance_decline": {
+    "advancing": 232,
+    "declining": 653,
+    "unchanged": 5,
+    "ad_ratio": 0.355,
+    "ad_net": -421,
+    "ad_net_10d": -405,
+    "ad_ratio_10d": 0.913,
+    "adl_slope_10d": 0.12,
+    "adl_since_start": -1293.0,
+    "adl_base_date": "2026-08-21",
+    "adl_window_start": "2026-11-03",
+    "adl_window_end": "2026-11-16"
+  },
+  "vix": {
+    "vix": 25.96,
+    "vix3m": 25.05,
+    "quote_time_et": "2026-11-17T13:48:31",
+    "source": "Cboe delayed-quote CDN (_VIX.json / _VIX3M.json)",
+    "prev_close": {
+      "vix": 22.91,
+      "vix3m": 23.02
+    },
+    "price_change_pct": {
+      "vix": 13.313,
+      "vix3m": 8.8184
+    },
+    "session_mode": "regular hours \u2014 live print",
+    "quote_date": "2026-11-17",
+    "timestamp_utc": null,
+    "vix_fetches": [
+      {
+        "vix": 25.96,
+        "vix3m": 25.05,
+        "quote_time_et": "2026-11-17T13:48:31"
+      },
+      {
+        "vix": 25.96,
+        "vix3m": 25.05,
+        "quote_time_et": "2026-11-17T13:48:31"
+      }
+    ],
+    "vix_stable": true
+  },
+  "regime": {
+    "_schema": 2,
+    "_note": "cron #10 intraday breadth snapshot \u2014 flat regime schema, see SKILL.md \u00a73.5",
+    "size_cut_pct": 0,
+    "uncertainty": true,
+    "late_cycle": false,
+    "breadth_pct_spx": 51.01,
+    "index_below_20sma": true,
+    "vix": 25.96,
+    "vix3m": 25.05,
+    "atr_extensions": {
+      "IWM": {
+        "extension_pct": -2.63
+      },
+      "QQQ": {
+        "extension_pct": -7.67
+      },
+      "QQQE": {
+        "extension_pct": -4.29
+      },
+      "RSP": {
+        "extension_pct": 1.84
+      },
+      "SPY": {
+        "extension_pct": -3.13
+      }
+    },
+    "_vix_source": "Cboe delayed-quote CDN (_VIX.json / _VIX3M.json)",
+    "_vix_quote_time_et": "2026-11-17T13:48:31",
+    "_vix_session_mode": "regular hours \u2014 live print",
+    "_data_date": "2026-11-16"
+  },
+  "etf_positioning": [
+    {
+      "ticker": "IWM",
+      "close": 272.94,
+      "sma_20": 278.45900000000063,
+      "sma_50": 280.3016000000001,
+      "atr_14": 4.924597444485551,
+      "atr_252d_avg": 4.547996068902649,
+      "extension_pct": -2.63,
+      "atr_extension_multiple": -1.62,
+      "above_sma_20": false,
+      "above_sma_50": false
+    },
+    {
+      "ticker": "QQQ",
+      "close": 661.75,
+      "sma_20": 692.6179999999997,
+      "sma_50": 716.7229999999993,
+      "atr_14": 16.557732646647374,
+      "atr_252d_avg": 11.242863033927701,
+      "extension_pct": -7.67,
+      "atr_extension_multiple": -4.89,
+      "above_sma_20": false,
+      "above_sma_50": false
+    },
+    {
+      "ticker": "QQQE",
+      "close": 113.42,
+      "sma_20": 116.6215,
+      "sma_50": 118.5068000000001,
+      "atr_14": 2.0777333026860467,
+      "atr_252d_avg": 1.5178050392504796,
+      "extension_pct": -4.29,
+      "atr_extension_multiple": -3.35,
+      "above_sma_20": false,
+      "above_sma_50": false
+    },
+    {
+      "ticker": "RSP",
+      "close": 218.93,
+      "sma_20": 218.93149999999983,
+      "sma_50": 214.9814000000001,
+      "atr_14": 2.7115571974313784,
+      "atr_252d_avg": 2.191631464326227,
+      "extension_pct": 1.84,
+      "atr_extension_multiple": 1.8,
+      "above_sma_20": false,
+      "above_sma_50": true
+    },
+    {
+      "ticker": "SPY",
+      "close": 739.95,
+      "sma_20": 757.6949999999986,
+      "sma_50": 763.8229999999993,
+      "atr_14": 11.411752795791042,
+      "atr_252d_avg": 8.005590640081474,
+      "extension_pct": -3.13,
+      "atr_extension_multiple": -2.98,
+      "above_sma_20": false,
+      "above_sma_50": false
+    }
+  ],
+  "series_csv": "breadth-snapshot.csv"
+}
