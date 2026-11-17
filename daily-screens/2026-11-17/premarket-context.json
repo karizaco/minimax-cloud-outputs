@@ -1,0 +1,226 @@
+{
+  "catalysts": {
+    "RCAT": {
+      "confirmed": true,
+      "source": "issuer 8-K / GlobeNewswire EX-99.1, Nov 16 2026 16:05 ET; Reuters same day",
+      "note": "COMPANY-SPECIFIC, NEGATIVE: Red Cat reported Q3 2026 after Monday's close - revenue $11.8M (+22% y/y), EPS -$0.26, gross profit of $65K, and it WITHDREW its full-year 2026 revenue target, blaming slower defence funding, procurement and delivery schedules plus the Drone Dominance Gauntlet II outcome. It also announced a proposed purchase offer for Steyr Motors AG. The withdrawal of the revenue target is the driver of the gap."
+    },
+    "COHR": {
+      "confirmed": true,
+      "source": "Reuters via Investing.com, Nov 17 2026 07:32 ET; MarketWatch live coverage 07:47 ET",
+      "note": "SECTOR/POLICY, not company: Reuters reported the US administration is moving ahead with restrictions on imports of new Chinese data-centre optical transceivers (FCC national-security concerns), despite Amazon/Google/Meta/CoreWeave/Cisco/Microsoft lobbying. China is ~2/3 of global optical transceiver supply; US makers Coherent and Lumentum gain. The complex is also positioning into NVIDIA's after-close print. Rebound from Monday's sector rout, not new company news."
+    },
+    "AAOI": {
+      "confirmed": true,
+      "source": "Reuters via Investing.com, Nov 17 2026 07:32 ET; MarketWatch 07:47 ET",
+      "note": "SECTOR/POLICY: same US move to restrict Chinese data-centre optical transceiver imports; Applied Optoelectronics rallied with the group. No AAOI-specific news found in this run."
+    },
+    "LITE": {
+      "confirmed": true,
+      "source": "Reuters via Investing.com, Nov 17 2026 07:32 ET; Marvell/Lumentum 8-K EX-99.1, Nov 2 2026",
+      "note": "SECTOR/POLICY plus deal mechanics: the Chinese-transceiver restriction story, and Lumentum is the target of Marvell's $115B all-stock merger (4.500 MRVL shares per LITE share, ~$1,132/share, announced Nov 2), so LITE now trades largely as MRVL equity. No new same-day company release found."
+    },
+    "MRVL": {
+      "confirmed": true,
+      "source": "Reuters via Investing.com, Nov 17 2026 07:32 ET; Marvell 8-K EX-99.1, Nov 2 2026; Reuters Nov 2",
+      "note": "SECTOR/POLICY plus deal mechanics: Marvell is the acquirer of Lumentum in the $115B all-stock deal (announced Nov 2), and the US move to restrict Chinese optical-transceiver imports lifts the whole AI-connectivity complex it now owns. Also positioning into NVIDIA's after-close print."
+    },
+    "CRDO": {
+      "confirmed": true,
+      "source": "Reuters via Investing.com, Nov 17 2026 07:32 ET; MarketWatch 07:47 ET",
+      "note": "SECTOR/POLICY: Credo moved with the AI-optical group on the US Chinese-transceiver restriction story. No Credo-specific news found in this run."
+    },
+    "ALAB": {
+      "confirmed": true,
+      "source": "Reuters via Investing.com, Nov 17 2026 07:32 ET",
+      "note": "SECTOR/POLICY: Astera Labs moved with the AI-connectivity group on the US move to restrict Chinese data-centre optical equipment. No company-specific news found in this run."
+    },
+    "PCT": {
+      "confirmed": true,
+      "source": "SEC Form 4 filed Nov 17 2026 07:59 ET (reported by Screw Street 08:00 ET)",
+      "note": "INSIDER BUY: CEO Dustin Olson bought 220,000 PureCycle shares at $1.69 in open-market trades on Nov 17, taking his holding to ~1.53M shares (1.5% of the company). The stock closed at $1.68 on Monday after a 1-month slide of -45%; the move is a micro-cap squeeze on a $1.69 print, not a fundamental catalyst."
+    },
+    "SLS": {
+      "confirmed": true,
+      "source": "issuer press release via GlobeNewswire, Nov 17 2026; webcast 07:45 ET",
+      "note": "CLINICAL: SELLAS announced positive topline Phase 3 REGAL data - the trial MET its primary endpoint of overall survival, with a 41% reduction in risk of death (HR 0.59, p=0.035) and median OS of 24.0 months vs 14.7 months for best available treatment, in AML maintenance after second-line salvage. The tape records a trading halt around the release."
+    },
+    "KURA": {
+      "confirmed": true,
+      "source": "SEC Form 4 filed Nov 16 2026 (CEO Troy Wilson, txn Nov 13); issuer release, Nov 13 2026 (UBS Global Biopharma London Conference, today 08:20 ET)",
+      "note": "INSIDER BUY plus a conference slot: CEO Troy Wilson bought 200,000 KURA shares at $7.52 ($1.5M) on Nov 13. Kura closed -8.75% at $7.09 Monday (after-hours +3.67%) after five weak sessions, and management presents at the UBS Global Biopharma London Conference today at 08:20 ET. No new data was released - this is a bounce off a beaten-down small cap."
+    },
+    "AS": {
+      "confirmed": true,
+      "source": "issuer press release, Nov 17 2026 06:08 ET (StockTitan listing)",
+      "note": "EARNINGS: Amer Sports reported Q3 2026 before the open - revenue $2,169M, net income attributable to shareholders $240M ($0.41 per diluted share) - and RAISED full-year revenue, margin and EPS guidance. The gap is a company beat-and-raise, not a beta."
+    },
+    "URG": {
+      "confirmed": true,
+      "source": "issuer press release, Nov 17 2026 06:10 ET",
+      "note": "PROJECT UPDATE: Ur-Energy commenced baseline study field work at its Lost Soldier uranium project in Wyoming and says it is nearing completion of the technical report. Penny stock (closed $0.5591 Monday, -8.81%, ~$244M cap) - read as a thin speculative print, not a tradable gap."
+    },
+    "CYPH": {
+      "confirmed": true,
+      "source": "issuer Q3 2026 results and call, Nov 16 2026 after the close",
+      "note": "CRYPTO BETA + earnings: Cypherpunk reported its first operating profit ($2.6M operating income, $9.9M Zcash mining revenue over 44 days at 95% uptime) and $306M net income, mostly a non-cash $330.8M mark on its ZEC treasury. The gap is a Zcash/BTC beta move (ZEC +0.32%, BTC +0.32% at capture) on a name that has already run ~369% in November."
+    },
+    "LCTX": {
+      "confirmed": true,
+      "source": "issuer Q3 2026 results Nov 12 and corporate presentation Nov 16; CFO Form 4 Nov 16",
+      "note": "PIPELINE ADDITION: Lineage acquired privately held NeuroAirmid Therapeutics and its HUNT1 Huntington's cell therapy for ~$4.7M upfront plus up to ~$53M in milestones; Q3 showed $4.2M net income on warrant remeasurement and revenue fell to $1.5M from $3.7M. CFO bought $17,100 of stock Nov 16. No new same-day clinical news found."
+    },
+    "LUCK": {
+      "confirmed": false,
+      "source": "Form SC 13D/A reported by Investing.com, Nov 17 2026 08:16 ET",
+      "note": "NO CATALYST CONFIRMED IN THIS RUN. The only same-morning filing found is a Form SC 13D/A beneficial-ownership amendment (reported 08:16 ET, after the pre-market print was already +15%), and its content was not verified in this run. Lucky Strike closed $3.32 on Monday near a 52-week low of $2.93 on ~135K shares a day - this is a thin $450M-cap name, and the +15% gap is not a market with size behind it."
+    },
+    "TEM": {
+      "confirmed": false,
+      "source": "Trefis, Nov 17 2026 (5-session streak analysis)",
+      "note": "NO CATALYST CONFIRMED IN THIS RUN. Tempus AI closed its fifth straight lower session on Monday, -23.3% cumulatively to $64.76 (-9.6% on the day, 23.9% below its 52-week high). The pre-market move is a bounce off a 5-day slide, with no dated news found."
+    },
+    "FWDI": {
+      "confirmed": false,
+      "source": "Trefis market movers, Nov 17 2026",
+      "note": "NO CATALYST CONFIRMED IN THIS RUN. Forward Industries fell -13.7% on Monday (-35.5% over a month); the +5% pre-market is a bounce off Monday's drop with no dated news found."
+    },
+    "RZLV": {
+      "confirmed": false,
+      "source": "StockTitan company overview, refreshed Nov 16 2026",
+      "note": "NO CATALYST CONFIRMED IN THIS RUN. Rezolve AI's last dated item is the Oct 20 Revolut agreement; the stock closed $1.08 Monday (-63% over a year) and the pre-market gap has no confirmed driver in this run."
+    },
+    "ACRS": {
+      "confirmed": false,
+      "source": "no issuer release found in this run",
+      "note": "NO CATALYST CONFIRMED IN this run. Aclaris Therapeutics' -4.4% gap has no dated news found."
+    },
+    "DRTS": {
+      "confirmed": true,
+      "source": "issuer release via StockTitan news wire, Nov 16 2026",
+      "note": "CONTINUATION of yesterday's catalyst: Alpha Tau Medical announced new positive interim results from its US Alpha DaFT recurrent glioblastoma trial - all patients treated alive, median survival not reached, 100% ORR in the first six evaluable patients - with a conference call at 8:30 AM ET on Nov 16. Today's gap is the second day of that reaction, not a new event."
+    },
+    "PICS": {
+      "confirmed": false,
+      "source": "no issuer release found in this run",
+      "note": "NO CATALYST CONFIRMED IN this run. PicS N.V.'s -4.1% gap has no dated news found."
+    },
+    "OXBDF": {
+      "confirmed": false,
+      "source": "no issuer release found in this run",
+      "note": "NO CATALYST CONFIRMED IN this run. Oxbow Digital's -6.4% gap has no dated news found; it is a sub-$1B micro-cap where the pre-market print is thin."
+    },
+    "FUBO": {
+      "confirmed": false,
+      "source": "no issuer release found in this run",
+      "note": "NO CATALYST CONFIRMED IN this run. fuboTV's +4.1% gap has no dated news found, and it sits just above the 4% bar on 23,899 shares."
+    },
+    "CGON": {
+      "confirmed": true,
+      "source": "issuer 8-K / GlobeNewswire EX-99.1, Nov 16 2026; clinicaltrialsarena",
+      "note": "CONFIRMED, BUT ALREADY PRICED: CG Oncology's PIVOT-006 Phase 3 topline (68% reduction in recurrence risk, HR 0.32, p<0.0001, in intermediate-risk/high-grade Ta NMIBC) broke on Nov 16 and the stock opened +23.7% Monday at $92. There is no NEW event today - the -0.1% pre-market print is the day after the pop."
+    },
+    "CPRI": {
+      "confirmed": false,
+      "source": "issuer Q2 FY2027 release, Oct 30 2026 (SEC 8-K EX-99.1); no Nov 17 release found",
+      "note": "NO SAME-DAY CATALYST CONFIRMED IN THIS RUN. Capri reported on Oct 30 (Q2 FY27 revenue $809M, -5.5%, adjusted EPS $0.42 vs $0.21, FY guidance raised to ~$3.42B) and has been in a buyout-speculation trade since Nov 4. It closed $20.64 Monday (-3.80%) and is -3.9% pre-market on 12,685 shares - a thin drift, not an event."
+    },
+    "FOUR": {
+      "confirmed": false,
+      "source": "no issuer release on Nov 17 2026; Shift4 Q3 reported Nov 5 2026",
+      "note": "NO SAME-DAY CATALYST CONFIRMED IN THIS RUN - and the +5.93% is NOT a market. The Nasdaq /info quote prints $45.00 against a $36.50 bid and a $46.78 ask (a ~28% band) while the consolidated tape's last executed print was $42.35 on 100 shares. Read the quote/tape divergence as a wide-spread quote, not a gap."
+    },
+    "FENC": {
+      "confirmed": false,
+      "source": "no issuer release found in this run",
+      "note": "NO CATALYST CONFIRMED IN this run. Fencor Therapeutics' pre-market high (+4.78%) was on a 377-share tape and its newest print is 63 minutes old - a stale-vintage artifact, not a market."
+    },
+    "SENS": {
+      "confirmed": false,
+      "source": "no issuer release found in this run",
+      "note": "NO CATALYST CONFIRMED IN this run. Sensyne Therapeutics' +2.84% gap carries no dated news found."
+    },
+    "TNDM": {
+      "confirmed": false,
+      "source": "no issuer release found in this run",
+      "note": "NO CATALYST CONFIRMED IN this run. Tandem Diabetes' pre-market high (+10.93%) is a single thin print with a 26-minute-old tape, and it closed Monday -7.92% - so treat the intraday excursion as noise."
+    },
+    "MOD": {
+      "confirmed": false,
+      "source": "no issuer release found in this run",
+      "note": "NO CATALYST CONFIRMED IN this run. Modine's +2.0% gap sits on a 1-share print and 7,135 shares; no dated news found."
+    },
+    "ALM": {
+      "confirmed": false,
+      "source": "no issuer release found in this run",
+      "note": "NO CATALYST CONFIRMED IN this run. Almonty's pre-market low (-5.03%) and high (+2.94%) both traded early (04:22-07:53 ET) on 35,505 shares; the last print at 08:19 was +0.86%. No dated news found."
+    },
+    "CBRS": {
+      "confirmed": false,
+      "source": "no issuer release found in this run",
+      "note": "NO CATALYST CONFIRMED IN this run. Cerecor's +0.58% gap carries no dated news found."
+    },
+    "ALNY": {
+      "confirmed": false,
+      "source": "no issuer release found in this run",
+      "note": "NO CATALYST CONFIRMED IN this run. Alnylam's +1.45% gap is on 1,155 shares with a 25-share print - no dated news found."
+    },
+    "U": {
+      "confirmed": false,
+      "source": "no issuer release found in this run",
+      "note": "NO CATALYST CONFIRMED IN this run. Unity Software's -0.08% gap is flat on 61,428 shares and a 2-share print; no dated news found."
+    },
+    "VKTX": {
+      "confirmed": false,
+      "source": "no issuer release found in this run",
+      "note": "NO CATALYST CONFIRMED IN this run. Viking Therapeutics' +0.08% gap carries no dated news found."
+    }
+  },
+  "notes": [
+    "Market context for 2026-11-17: Monday's tape was a semiconductor-led sell-off (S&P 500 -1.90%, Nasdaq-100 -2.70%, SOX -3.43%) on NVIDIA's leadership vacuum after Jensen Huang's Nov 12 departure plus caution ahead of NVIDIA's fiscal Q3 print AFTER today's close. Today pre-market is a partial reversal: SMH +1.21%, XLK +0.81%, SPY -0.03%, XLV -0.97%. The market's gap book is therefore a policy-driven AI-optical rebound (COHR, AAOI, LITE, MRVL, CRDO, ALAB) plus two clean single-name events (SLS, AS), one earnings withdrawal (RCAT) and two insider/micro-cap bids (PCT, KURA).",
+    "The single biggest driver of the ladder is POLICY, not company news: Reuters reported on Nov 17 at 07:32 ET that the US administration is moving ahead with restrictions on imports of new Chinese data-centre optical transceivers, despite lobbying from Amazon, Google, Meta, CoreWeave, Cisco and Microsoft. Coherent, Applied Optoelectronics, Lumentum, Credo and Astera Labs in the ladder are ONE trade expressed several ways, not several setups - and they are the only names in the book with that driver. (Marvell, the acquirer of Lumentum, sits just outside the ladder's own filter on pre-market volume.)",
+    "NVIDIA reports after today's close, so the whole AI-connectivity complex is holding a catalyst event overnight. The optical group is levered to that print on top of the export-restriction story.",
+    "The Focus book did not fire: 0 of 12 Focus names cleared the 4% / 50,000-share / 25-share gate, and none of them is in the market's ladder. This is structural - the Focus list is the prior session's momentum screen and cannot contain a name whose move has not happened yet. The worst Focus setup was CGON (5 stylists, 7 origins), whose PIVOT-006 win broke on Nov 16 and is already in the price after Monday's +23.7% open.",
+    "Reference close discipline: the denominator is the settled 2026-11-16 close carried by the prior sweep's own focus.csv (`today_close`, resolving to the 2026-11-16 session), cross-checked session-exactly against Nasdaq's per-symbol history for 12/12 names with zero conflicts. The sweep's `screen_close_resolved` column belongs to data_date 2026-11-13 and was rejected as a denominator.",
+    "Tape freshness: the newest executed print on the Focus tape is 15-27 minutes behind the wall clock for 11 of 12 names; FENC and CPRI are the two stalest (see the Lag column in the Focus scan). Every one of them is BELOW the bar on a thin print, so the staleness does not change a flag - but it is why the Focus scan is a snapshot, not a market.",
+    "Two Focus rows are quote artifacts and are named as such in Flags: FOUR (Shift4 Payments) prints +5.93% on the /info quote against a $36.50 x $46.78 band while the executed tape was -0.31% on 100 shares - a quote, not a market; and TNDM's executed tape carried a +10.93% print intraday that is absent from the published PM high/low columns, on a 26-minute-old tape, so treat that excursion as noise.",
+    "Catalyst sourcing note: catalysts were confirmed from issuer releases, SEC filings and the wire only. The TradingView `earnings_release_date` field was treated as a candidate, never as a catalyst. Names with no confirmed same-day catalyst are published as 'no catalyst confirmed in this run' - LUCK, TEM, FWDI, RZLV, ACRS, PICS, OXBDF, FUBO and every non-qualifying Focus name."
+  ],
+  "source_health": [
+    {
+      "source": "TradingView america scanner (market ladder, index/sector proxies, pre-market %)",
+      "status": "ok",
+      "role": "the market-wide gap book (22 names met the filter) and the beta proxies"
+    },
+    {
+      "source": "Nasdaq extended-trading tape (pre-market prints, size, volume, bid/ask)",
+      "status": "ok",
+      "role": "the executed prints that carry every published Focus gap"
+    },
+    {
+      "source": "Cboe delayed-quote CDN (independent price cross-check)",
+      "status": "ok",
+      "role": "cross-check on reference closes and live quotes"
+    },
+    {
+      "source": "Nasdaq /historical (session-exact close confirmation)",
+      "status": "ok",
+      "role": "the denominator session's close for all 12 Focus names"
+    },
+    {
+      "source": "cron #92a pre-open tape (preopen-feed/2026-11-17-0830.jsonl)",
+      "status": "ok",
+      "role": "the pre-open catalyst digest - 159 records, 9 grounded catalysts, RCAT and SLS confirmed here"
+    },
+    {
+      "source": "web_search (issuer releases, SEC EDGAR, Reuters/Investing.com, MarketWatch)",
+      "status": "ok",
+      "role": "the catalysts for the ladder and the Focus names"
+    },
+    {
+      "source": "prior sweep focus.csv (karizaco/minimax-cloud-outputs, 2026-11-16)",
+      "status": "ok",
+      "role": "the Focus universe, the reference close and the screen provenance"
+    }
+  ]
+}
