@@ -1,0 +1,733 @@
+ticker,name,market,sector,industry,isin,source,fetched_at
+06N,MAGNA POLONIA,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+08N,OCTAVA,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+11B,11 BIT STUDIOS,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+1AT,ATAL,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+3RG,3R GAMES,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+4MS,4MASS,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+AAT,ALTA,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+ABE,AB,GPW,Handel i usługi,Handel hurtowy,,biznesradar,2026-11-17T19:35:14+07:00
+ABS,ASSECO BUSINESS,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+ACG,AC SA,GPW,Przemysł,Motoryzacja,,biznesradar,2026-11-17T19:35:14+07:00
+ACP,ASSECO POLAND,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+ACT,ACTION,GPW,Handel i usługi,Handel hurtowy,,biznesradar,2026-11-17T19:35:14+07:00
+ADV,ADIUVO INVESTMENTS,GPW,Ochrona zdrowia,Sprzęt i materiały medyczne,,biznesradar,2026-11-17T19:35:14+07:00
+ADX,ADATEX,GPW,Handel i usługi,Sieci handlowe,,biznesradar,2026-11-17T19:35:14+07:00
+AGO,AGORA,GPW,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+AGT,AGROTON PUBLIC LIMITED,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+ALE,ALLEGRO.EU,GPW,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+ALG,ALL IN! GAMES,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+ALI,ALTUS,GPW,Finanse,Rynek kapitałowy,,biznesradar,2026-11-17T19:35:14+07:00
+ALL,AILLERON,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+ALR,ALIOR BANK,GPW,Finanse,Banki,,biznesradar,2026-11-17T19:35:14+07:00
+AMB,AMBRA,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+AMC,AMICA,GPW,Dobra konsumpcyjne,Wyposażenie domu,,biznesradar,2026-11-17T19:35:14+07:00
+ANR,ANSWEAR.COM,GPW,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+APE,APS ENERGIA,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+APL,LC SPOLKA AKCYJNA,GPW,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+APN,APLISENS,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+APR,AUTO PARTNER,GPW,Przemysł,Motoryzacja,,biznesradar,2026-11-17T19:35:14+07:00
+APT,APATOR,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+ARH,ARCHICOM,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+ARL,ARLEN,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+ART,ARTIFEX MUNDI,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+ASB,ASBISC,GPW,Handel i usługi,Handel hurtowy,,biznesradar,2026-11-17T19:35:14+07:00
+ASE,ASSECO SOUTH,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+ASM,ASM GROUP,GPW,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+AST,ASTARTA HOLDING,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+ATC,ARCTIC PAPER,GPW,Przemysł,Drewno i papier,,biznesradar,2026-11-17T19:35:14+07:00
+ATD,ATENDE,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+ATG,ATM GRUPA SA,GPW,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+ATP,ATLANTA POLAND,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+ATR,ATREM,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+ATS,ATLANTIS,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+ATT,GRUPA AZOTY,GPW,Przemysł,Chemia,,biznesradar,2026-11-17T19:35:14+07:00
+AWM,AIRWAY MEDIX,GPW,Ochrona zdrowia,Sprzęt i materiały medyczne,,biznesradar,2026-11-17T19:35:14+07:00
+BBD,BBI DEVELOPMENT,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+BBT,BOOMBIT,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+BCM,BETACOM,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+BCS,BIG CHEESE STUDIO,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+BCX,BIOCELTIX,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+BDF,BUMECH DEFENSE,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+BDX,BUDIMEX,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+BFT,BENEFIT SYSTEMS,GPW,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+BHW,HANDLOWY,GPW,Finanse,Banki,,biznesradar,2026-11-17T19:35:14+07:00
+BIO,BIOTON SA,GPW,Ochrona zdrowia,Produkcja leków,,biznesradar,2026-11-17T19:35:14+07:00
+BIP,BIO PLANET,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+BLO,BLOOBER TEAM SPOLKA AKCYJNA,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+BMC,BUMECH,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+BMX,BIOMAXIMA,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+BNP,BNP PARIBAS BANK POLSKA,GPW,Finanse,Banki,,biznesradar,2026-11-17T19:35:14+07:00
+BOS,BOS SA,GPW,Finanse,Banki,,biznesradar,2026-11-17T19:35:14+07:00
+BOW,BOWIM,GPW,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+BRS,BORYSZEW,GPW,Surowce,Hutnictwo,,biznesradar,2026-11-17T19:35:14+07:00
+BST,BEST,GPW,Finanse,Wierzytelności,,biznesradar,2026-11-17T19:35:14+07:00
+CAP,CAPITEA,GPW,Finanse,Wierzytelności,,biznesradar,2026-11-17T19:35:14+07:00
+CAR,INTER CARS,GPW,Przemysł,Motoryzacja,,biznesradar,2026-11-17T19:35:14+07:00
+CAV,CAVATINA HOLDING,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+CBF,CYBER_FOLKS,GPW,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+CCE,CLEAN&CARBON ENERGY,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+CDL,CDRL,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+CDR,CD PROJEKT RED,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+CEZ,CEZ A.S.,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+CFI,CFI HOLDING,GPW,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+CIG,CI GAMES SE,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+CLC,COLUMBUS ENERGY,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+CLD,CLOUD TECHNOLOGIES,GPW,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+CLE,COAL ENERGY,GPW,Surowce,Górnictwo,,biznesradar,2026-11-17T19:35:14+07:00
+CLN,CELON PHARMA,GPW,Ochrona zdrowia,Produkcja leków,,biznesradar,2026-11-17T19:35:14+07:00
+CMP,COMP,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+COG,COGNOR HOLDING,GPW,Surowce,Hutnictwo,,biznesradar,2026-11-17T19:35:14+07:00
+CPD,CPD,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+CPI,CPI EUROPE,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+CPL,COMPERIA.PL SPOLKA AKCYJNA,GPW,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+CPR,COMPREMUM,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+CPS,CYFROWY POLSAT,GPW,Media i telekomunikacja,Telekomunikacja,,biznesradar,2026-11-17T19:35:14+07:00
+CRI,CREOTECH INSTRUMENTS,GPW,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+CRJ,CREEPY JAR,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+CRM,PZ CORMAY,GPW,Ochrona zdrowia,Produkcja leków,,biznesradar,2026-11-17T19:35:14+07:00
+CRQ,CREOTECH QUANTUM,GPW,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+CSR,CASPAR ASSET MANAGEMENT,GPW,Finanse,Rynek kapitałowy,,biznesradar,2026-11-17T19:35:14+07:00
+CTS,CITY SERVICE SE,GPW,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+CTX,CAPTOR THERAPEUTICS,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+CZT,CZERWONA TOREBKA,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+DAD,DADELO,GPW,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+DAT,DATAWALK,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+DBC,DEBICA,GPW,Przemysł,Motoryzacja,,biznesradar,2026-11-17T19:35:14+07:00
+DBE,DB ENERGY,GPW,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+DCR,DECORA,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+DEK,DEKPOL,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+DEL,DELKO,GPW,Handel i usługi,Handel hurtowy,,biznesradar,2026-11-17T19:35:14+07:00
+DGA,DGA,GPW,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+DGE,DRAGO ENTERTAINMENT,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+DIA,DIAGNOSTYKA,GPW,Pozostałe,Pozostałe,,biznesradar,2026-11-17T19:35:14+07:00
+DIG,DIGITAL NETWORK,GPW,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+DMG,DR. MIELE COSMED,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+DNP,DINO POLSKA,GPW,Handel i usługi,Sieci handlowe,,biznesradar,2026-11-17T19:35:14+07:00
+DOM,DOM DEVELOPMENT,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+DTR,DIGITREE GROUP,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+DVL,DEVELIA,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+EAH,ESOTIQ & HENDERSON,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+EAT,AMREST HOLDINGS,GPW,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+EBP,ERSTE BANK POLSKA,GPW,Finanse,Banki,,biznesradar,2026-11-17T19:35:14+07:00
+ECB,ECB,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+ECH,ECHO INVESTMENT,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+EDI,ED INVEST,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+EEX,EKO EXPORT,GPW,Przemysł,Recykling,,biznesradar,2026-11-17T19:35:14+07:00
+EFK,EFEKT,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+EGO,EUROPEAN DEFENCE GROUP,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+EHG,EUROHOLD BULGARIA AD,GPW,Finanse,Ubezpieczenia,,biznesradar,2026-11-17T19:35:14+07:00
+EKP,ELKOP ESTONIA,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+ELT,ELEKTROTIM,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+ENA,ENEA,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+ENE,ENEL-MED SA,GPW,Ochrona zdrowia,Szpitale i przychodnie,,biznesradar,2026-11-17T19:35:14+07:00
+ENG,ENERGA,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+ENI,ENERGOINSTAL,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+ENP,ENERGOAPARATURA,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+ENT,ENTER AIR,GPW,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+EQU,EQUNICO,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+ERB,ERBUD,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+ERG,ERG,GPW,Przemysł,Guma i tworzywa sztuczne,,biznesradar,2026-11-17T19:35:14+07:00
+EST,ENEFI VAGYONKEZELO NYRT.,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+ETL,EUROTEL,GPW,Handel i usługi,Sieci handlowe,,biznesradar,2026-11-17T19:35:14+07:00
+EUC,EUROPEJSKIE CENTRUM ODSZKODOWAN,GPW,Finanse,Ubezpieczenia,,biznesradar,2026-11-17T19:35:14+07:00
+EUR,EUROCASH,GPW,Handel i usługi,Sieci handlowe,,biznesradar,2026-11-17T19:35:14+07:00
+FAB,FABRITY,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+FEE,FEERUM,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+FFI,FAST FINANCE,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+FHB,FOODHUB,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+FON,FON SE,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+FRO,FERRO,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+FSG,FASING,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+FTE,FORTE,GPW,Dobra konsumpcyjne,Wyposażenie domu,,biznesradar,2026-11-17T19:35:14+07:00
+GIF,GAMING FACTORY S.A.,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+GKI,GK IMMOBILE,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+GMT,GENOMTEC,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+GNS,NIEWIADOW PGM,GPW,Pozostałe,Pozostałe,,biznesradar,2026-11-17T19:35:14+07:00
+GOB,GOBARTO,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+GOP,GAMES OPERATORS,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+GPP,GRUPA PRACUJ,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+GPW,GPW,GPW,Finanse,Rynek kapitałowy,,biznesradar,2026-11-17T19:35:14+07:00
+GRN,GRODNO,GPW,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+GRX,GREENX METALS,GPW,Surowce,Górnictwo,,biznesradar,2026-11-17T19:35:14+07:00
+GTC,GTC,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+GTN,GETIN HOLDING,GPW,Finanse,Banki,,biznesradar,2026-11-17T19:35:14+07:00
+GVT,GRUPA VIRTUS,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+HDR,HYDROTOR,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+HEL,HELIO,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+HRP,HARPER HYGIENICS,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+HRS,HERKULES,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+HUG,"HUUUGE, INC.",GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+ICE,MEDINICE,GPW,Pozostałe,Pozostałe,,biznesradar,2026-11-17T19:35:14+07:00
+IDG,INDYGOTECH MINERALS,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+IDM,IDM,GPW,Finanse,Rynek kapitałowy,,biznesradar,2026-11-17T19:35:14+07:00
+IFC,INVESTMENT FRIENDS CAPITAL SE,GPW,Finanse,Pośrednictwo finansowe,,biznesradar,2026-11-17T19:35:14+07:00
+IFI,IFIRMA SA,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+IFR,INVESTMENT FRIENDS,GPW,Finanse,Pośrednictwo finansowe,,biznesradar,2026-11-17T19:35:14+07:00
+IMC,IMC,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+IMP,IMPERIO ASI S.A.,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+IMS,IMS,GPW,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+INC,INC S.A.,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+ING,ING BANK SLASKI,GPW,Finanse,Banki,,biznesradar,2026-11-17T19:35:14+07:00
+INK,INSTAL KRAKOW,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+INL,INTROL,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+INP,INPRO SA,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+IPE,IPOPEMA,GPW,Finanse,Rynek kapitałowy,,biznesradar,2026-11-17T19:35:14+07:00
+IPO,INTERSPORT,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+IRL,AB INTER RAO LIETUVA,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+ITB,INTERBUD LUBLIN,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+IZB,IZOBLOK SPOLKA AKCYJNA,GPW,Przemysł,Guma i tworzywa sztuczne,,biznesradar,2026-11-17T19:35:14+07:00
+IZO,IZOLACJA JAROCIN,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+IZS,IZOSTAL SA,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+JRH,JRH ASI,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+JSW,JASTRZEBSKA SPOLKA WEGLOWA,GPW,Surowce,Górnictwo,,biznesradar,2026-11-17T19:35:14+07:00
+JWW,JWW INVEST,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+KCH,KRAKCHEMIA,GPW,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+KCI,KCI,GPW,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+KDM,KDM SHIPPING PUBLIC LIMITED,GPW,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+KER,KERNEL HOLDING,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+KGH,KGHM POLSKA MIEDZ SA,GPW,Surowce,Górnictwo,,biznesradar,2026-11-17T19:35:14+07:00
+KGL,KGL S.A.,GPW,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+KGN,KOGENERACJA,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+KMP,KOMPAP,GPW,Przemysł,Drewno i papier,,biznesradar,2026-11-17T19:35:14+07:00
+KOM,KOMPUTRONIK,GPW,Handel i usługi,Sieci handlowe,,biznesradar,2026-11-17T19:35:14+07:00
+KPD,KPPD,GPW,Przemysł,Drewno i papier,,biznesradar,2026-11-17T19:35:14+07:00
+KPL,KINO POLSKA TV,GPW,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+KRK,KRKA,GPW,Ochrona zdrowia,Produkcja leków,,biznesradar,2026-11-17T19:35:14+07:00
+KRU,KRUK,GPW,Finanse,Wierzytelności,,biznesradar,2026-11-17T19:35:14+07:00
+KSG,KSG AGRO,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+KTY,KETY,GPW,Surowce,Hutnictwo,,biznesradar,2026-11-17T19:35:14+07:00
+KVT,KRYNICA VITAMIN,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+LBT,LIBET,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+LBW,LUBAWA,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+LEN,LENA LIGHTING SA,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+LGL,LUNA GLOBAL,GPW,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+LKD,LOKUM DEWELOPER,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+LMU,LUMINA METALS CORP.,GPW,Surowce,Górnictwo,,biznesradar,2026-11-17T19:35:14+07:00
+LPP,LPP,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+LRQ,LARQ,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+LSI,LSI,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+LTX,LENTEX,GPW,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+LWB,BOGDANKA,GPW,Surowce,Górnictwo,,biznesradar,2026-11-17T19:35:14+07:00
+MAB,MABION,GPW,Ochrona zdrowia,Produkcja leków,,biznesradar,2026-11-17T19:35:14+07:00
+MAK,MAKARONY,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+MAN,MANYDEV STUDIO,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+MBK,MBANK,GPW,Finanse,Banki,,biznesradar,2026-11-17T19:35:14+07:00
+MBR,MO-BRUK SA,GPW,Przemysł,Recykling,,biznesradar,2026-11-17T19:35:14+07:00
+MBW,MARIE BRIZARD WINE & SPIRITS,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+MCI,MCI CAPITAL ASI,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+MCR,MCR,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+MDG,MEDICALGORITHMICS,GPW,Ochrona zdrowia,Sprzęt i materiały medyczne,,biznesradar,2026-11-17T19:35:14+07:00
+MDI,MDI ENERGIA,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+MDV,MODIVO,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+MEG,MEGARON,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+MEX,MEX POLSKA,GPW,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+MFO,MFO,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+MGT,MANGATA HOLDING SA,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+MIL,BANK MILLENNIUM,GPW,Finanse,Banki,,biznesradar,2026-11-17T19:35:14+07:00
+MIR,MIRACULUM,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+MLG,MLP GROUP,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+MLK,MLK FOODS,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+MLS,ML SYSTEM,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+MNC,MENNICA,GPW,Surowce,Hutnictwo,,biznesradar,2026-11-17T19:35:14+07:00
+MOC,MOLECURE,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+MOL,MOL NYRT.,GPW,Energia i utility,Paliwa i gaz,,biznesradar,2026-11-17T19:35:14+07:00
+MON,MONNARI,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+MOV,MOVIE GAMES,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+MQR,MULTIQURE,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+MRB,MIRBUD,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+MRC,MERCATOR MEDICAL,GPW,Ochrona zdrowia,Sprzęt i materiały medyczne,,biznesradar,2026-11-17T19:35:14+07:00
+MSP,MOSTOSTAL PLOCK,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+MSW,MOSTOSTAL WARSZAWA,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+MSZ,MOSTOSTAL ZABRZE,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+MUR,MURAPOL,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+MVP,MARVIPOL DEVELOPMENT,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+MWT,MW TRADE,GPW,Finanse,Leasing i faktoring,,biznesradar,2026-11-17T19:35:14+07:00
+MXC,MAXCOM,GPW,Dobra konsumpcyjne,Wyposażenie domu,,biznesradar,2026-11-17T19:35:14+07:00
+MZA,MUZA,GPW,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+NCL,NOCTILUCA,GPW,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+NEU,NEUCA,GPW,Ochrona zdrowia,Dystrybucja leków,,biznesradar,2026-11-17T19:35:14+07:00
+NNG,NANOGROUP,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+NTC,NEW TECH CAPITAL,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+NTT,NTT SYSTEM,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+NTU,AB NOVATURAS,GPW,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+NVA,PA NOVA,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+NVG,NOVAVIS GROUP,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+NVT,NOVITA,GPW,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+NWA,NWAIDM,GPW,Finanse,Rynek kapitałowy,,biznesradar,2026-11-17T19:35:14+07:00
+NWG,NEWAG,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+NXG,NEXITY GLOBAL,GPW,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+OBL,ORZEL BIALY,GPW,Przemysł,Recykling,,biznesradar,2026-11-17T19:35:14+07:00
+ODL,ODLEWNIE,GPW,Surowce,Hutnictwo,,biznesradar,2026-11-17T19:35:14+07:00
+OML,ONE MORE LEVEL S.A.,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+OND,ONDE,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+ONO,ONESANO,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+OPG,CPI FIM,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+OPL,ORANGE POLSKA,GPW,Media i telekomunikacja,Telekomunikacja,,biznesradar,2026-11-17T19:35:14+07:00
+OPM,OPTEAM SA,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+OPN,OPONEO.PL,GPW,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+OTM,OTMUCHOW,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+OTS,OT LOGISTICS,GPW,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+PAS,PASSUS SPOLKA AKCYJNA,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+PAT,PATENTUS,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+PBF,PBS FINANSE,GPW,Finanse,Pośrednictwo finansowe,,biznesradar,2026-11-17T19:35:14+07:00
+PBG,PBG,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+PBX,PEKABEX,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+PCE,GRUPA AZOTY POLICE,GPW,Przemysł,Chemia,,biznesradar,2026-11-17T19:35:14+07:00
+PCF,PCF GROUP,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+PCO,PEPCO GROUP N.V.,GPW,Handel i usługi,Sieci handlowe,,biznesradar,2026-11-17T19:35:14+07:00
+PCR,PCC ROKITA,GPW,Przemysł,Chemia,,biznesradar,2026-11-17T19:35:14+07:00
+PCX,PCC EXOL,GPW,Przemysł,Chemia,,biznesradar,2026-11-17T19:35:14+07:00
+PEN,PHOTON ENERGY N.V.,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+PEO,PEKAO,GPW,Finanse,Banki,,biznesradar,2026-11-17T19:35:14+07:00
+PEP,POLENERGIA,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+PGE,PGE,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+PGM,PMPG POLSKIE MEDIA,GPW,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+PHN,POLSKI HOLDING NIERUCHOMOSCI,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+PHR,PHARMENA,GPW,Ochrona zdrowia,Produkcja leków,,biznesradar,2026-11-17T19:35:14+07:00
+PJP,PJP MAKRUM,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+PKN,ORLEN,GPW,Energia i utility,Paliwa i gaz,,biznesradar,2026-11-17T19:35:14+07:00
+PKO,PKO BP,GPW,Finanse,Banki,,biznesradar,2026-11-17T19:35:14+07:00
+PKP,PKP CARGO,GPW,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+PLW,PLAYWAY,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+PLZ,PLAZA CENTERS,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+PMA,PRIMA MODA,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+PPS,PEPEES,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+PRI,NPL NOVA,GPW,Finanse,Wierzytelności,,biznesradar,2026-11-17T19:35:14+07:00
+PRM,PROCHEM,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+PRT,PROTEKTOR,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+PTG,POLTREG,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+PTW,POLSKIE TOWARZYSTWO WSPIERANIA PRZEDSIEBIORCZOSCI,GPW,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+PWX,POLWAX,GPW,Przemysł,Chemia,,biznesradar,2026-11-17T19:35:14+07:00
+PXM,POLIMEX MOSTOSTAL,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+PZU,PZU,GPW,Finanse,Ubezpieczenia,,biznesradar,2026-11-17T19:35:14+07:00
+QNA,QNA TECHNOLOGY,GPW,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+QNT,QUANTUM,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+QRS,QUERCUS TFI,GPW,Finanse,Rynek kapitałowy,,biznesradar,2026-11-17T19:35:14+07:00
+RAF,RAFAMET,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+RBW,RAINBOW TOURS,GPW,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+RDN,REDAN,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+REG,REGNON,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+REX,REX CONCEPTS,GPW,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+RHD,REINHOLD,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+RLP,RELPOL,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+RMK,REMAK-ENERGOMONTAZ,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+RNC,REINO CAPITAL,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+RND,RENDER CUBE,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+RNK,RANK PROGRESS SA,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+ROB,ROBYG,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+RPC,ROPCZYCE,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+RVU,RYVU THERAPEUTICS,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+RWL,RAWLPLUG,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+S2B,SYN2BIO,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+SAN,BANCO SANTANDER,GPW,Finanse,Banki,,biznesradar,2026-11-17T19:35:14+07:00
+SCP,SCOPE FLUIDICS,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+SCW,SCANWAY,GPW,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+SEK,SEKO,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+SEL,SELENA FM SA,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+SFG,AS SILVANO FASHION GROUP,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+SFS,SFINKS POLSKA,GPW,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+SGN,SYGNITY,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+SHD,SOHO DEVELOPMENT,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+SHG,STARHEDGE,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+SIM,SIMFABRIC,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+SKA,SNIEZKA,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+SKH,SKARBIEC HOLDING,GPW,Finanse,Rynek kapitałowy,,biznesradar,2026-11-17T19:35:14+07:00
+SKL,SKYLINE INVESTMENT,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+SLV,SELVITA,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+SNK,SANOK RUBBER COMPANY,GPW,Przemysł,Motoryzacja,,biznesradar,2026-11-17T19:35:14+07:00
+SNT,SYNEKTIK SPOLKA AKCYJNA,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+SNW,SANWIL,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+SNX,SUNEX,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+SON,SONEL,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+SPH,SOPHARMA AD,GPW,Ochrona zdrowia,Produkcja leków,,biznesradar,2026-11-17T19:35:14+07:00
+SPR,SPYROSOFT,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+STF,STALPROFIL,GPW,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+STP,STALPRODUKT,GPW,Surowce,Hutnictwo,,biznesradar,2026-11-17T19:35:14+07:00
+STS,SATIS GROUP,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+STX,STALEXPORT,GPW,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+SVE,SYNTHAVERSE,GPW,Ochrona zdrowia,Produkcja leków,,biznesradar,2026-11-17T19:35:14+07:00
+SVRS,"SILVAIR, INC.",GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+SWG,SECO WARWICK,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+TAR,TARCZYNSKI,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+TBL,T-BULL,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+TEN,TEN SQUARE GAMES,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+THG,TENDERHUT,GPW,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+TLX,TALEX,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+TMR,TATRY MOUNTAIN RESORTS,GPW,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+TOA,TOYA SPOLKA AKCYJNA,GPW,Handel i usługi,Handel hurtowy,,biznesradar,2026-11-17T19:35:14+07:00
+TOR,TORPOL,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+TOW,TOWER INVESTMENTS,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+TPE,TAURON POLSKA ENERGIA,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+TRI,TRITON DEVELOPMENT,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+TRK,TRAKCJA,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+TRN,TRANS POLONIA,GPW,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+TRR,TERMO-REX,GPW,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+TSG,TESGAS,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+TXT,TEXT,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+UCG,UNICREDIT,GPW,Finanse,Banki,,biznesradar,2026-11-17T19:35:14+07:00
+ULG,ULTIMATE GAMES,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+ULM,ULMA SA,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+UNF,UNFOLD.VC ASI,GPW,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+UNI,UNIBEP SA,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+UNT,UNIMOT,GPW,Energia i utility,Paliwa i gaz,,biznesradar,2026-11-17T19:35:14+07:00
+URT,URTESTE,GPW,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+VGO,VIGO PHOTONICS,GPW,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+VIN,VINDEXUS,GPW,Finanse,Wierzytelności,,biznesradar,2026-11-17T19:35:14+07:00
+VOT,VOTUM,GPW,Finanse,Ubezpieczenia,,biznesradar,2026-11-17T19:35:14+07:00
+VOX,VOXEL,GPW,Ochrona zdrowia,Sprzęt i materiały medyczne,,biznesradar,2026-11-17T19:35:14+07:00
+VRC,VERCOM,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+VRG,VRG,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+VVD,VIVID GAMES,GPW,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+WAS,WASKO,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+WEN,WISE ENERGY,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+WFI,WISE FINANCE,GPW,Finanse,Leasing i faktoring,,biznesradar,2026-11-17T19:35:14+07:00
+WIK,WIKANA,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+WLT,WIELTON,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+WPL,WIRTUALNA POLSKA HOLDING,GPW,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+WPR,WOODPECKER,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+WTN,WITTCHEN,GPW,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+WWL,WAWEL,GPW,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+WXF,WARIMPEX,GPW,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+XPL,XPLUS,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+XTB,XTB,GPW,Finanse,Rynek kapitałowy,,biznesradar,2026-11-17T19:35:14+07:00
+XTP,XTPL,GPW,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+YAN,YANOSIK,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+YRL,YARRL,GPW,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+ZAB,ZABKA GROUP,GPW,Handel i usługi,Sieci handlowe,,biznesradar,2026-11-17T19:35:14+07:00
+ZAP,PULAWY,GPW,Przemysł,Chemia,,biznesradar,2026-11-17T19:35:14+07:00
+ZEP,PAK,GPW,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+ZMT,ZAMET,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+ZRE,ZREMB-CHOJNICE,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+ZUE,ZUE SA,GPW,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+ZUK,STAPORKOW,GPW,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+4MB,4MOBILITY,NC,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+7FT,7FIT,NC,Handel i usługi,Sieci handlowe,,biznesradar,2026-11-17T19:35:14+07:00
+7LV,7LEVELS,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+ABK,ABAK,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+AER,VENDA SE,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+AFC,AKCEPT FINANCE,NC,Finanse,Leasing i faktoring,,biznesradar,2026-11-17T19:35:14+07:00
+AGL,AGROLIGA GROUP PLC,NC,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+AGP,AGROMEP,NC,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+AIN,ABS INVESTMENT ASI,NC,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+AIT,AITON CALDWELL,NC,Media i telekomunikacja,Telekomunikacja,,biznesradar,2026-11-17T19:35:14+07:00
+AME,ADVANCED MEDICAL EQUIPMENT,NC,Ochrona zdrowia,Sprzęt i materiały medyczne,,biznesradar,2026-11-17T19:35:14+07:00
+AOL,ANALIZY ONLINE SA,NC,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+APA,APANET,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+APS,AUTOMATYKA POMIARY STEROWANIE,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+AQA,AQUA POZNAN,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+AQU,AQUA BIELSKO-BIALA,NC,Energia i utility,Dystrybucja ciepła i wody,,biznesradar,2026-11-17T19:35:14+07:00
+ARG,ART GAMES STUDIO,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+ARI,AGENCJA ROZWOJU INNOWACJI,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+ASA,APIS,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+ASR,ASTRO,NC,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+ATA,ATC CARGO,NC,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+ATJ,ATOMIC JELLY,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+AUX,AUXILIA,NC,Finanse,Ubezpieczenia,,biznesradar,2026-11-17T19:35:14+07:00
+AVE,ADVERTIGO,NC,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+AXN,AXIA,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+AZC,AZTEC,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+BAC,B-ACT,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+BEE,BEEIN,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+BEP,BIOMASS ENERGY,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+BFM,BEST FASHION MEDIA,NC,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+BGD,BIOGENED SPOLKA AKCYJNA,NC,Ochrona zdrowia,Produkcja leków,,biznesradar,2026-11-17T19:35:14+07:00
+BHX,BINARY HELIX,NC,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+BIG,BASEIG,NC,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+BKD,BAKED GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+BLF,BELEAF,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+BLT,BALTICON,NC,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+BPC,BLACK PEARL S.A.,NC,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+BPN,BLACK POINT,NC,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+BRO,BROWAR CZARNKOW,NC,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+BRP,BLACK ROSE PROJECTS,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+BSA,BRAS,NC,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+BSH,BRIDGE SOLUTIONS HUB,NC,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+BSN,BRAINSCAN,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+BTC,BTC STUDIOS,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+BTF,BTCS,NC,Handel i usługi,Handel hurtowy,,biznesradar,2026-11-17T19:35:14+07:00
+BTK,BIZTECH KONSULTING S.A.,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+CAI,CARLSON INVESTMENTS,NC,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+CBD,CANNABIS POLAND,NC,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+CCR,CONSTANCE CARE,NC,Ochrona zdrowia,Szpitale i przychodnie,,biznesradar,2026-11-17T19:35:14+07:00
+CCS,CYFROWE CENTRUM,NC,Handel i usługi,Handel hurtowy,,biznesradar,2026-11-17T19:35:14+07:00
+CEN,CENTORO,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+CFG,CREATIVEFORGE GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+CFS,CENTRUM FINANSOWE,NC,Finanse,Wierzytelności,,biznesradar,2026-11-17T19:35:14+07:00
+CHP,CHERRYPICK GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+CLA,CONSOLE LABS,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+CMC,COMECO,NC,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+CMI,CM INTERNATIONAL,NC,Ochrona zdrowia,Sprzęt i materiały medyczne,,biznesradar,2026-11-17T19:35:14+07:00
+COS,COSMA,NC,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+CRB,CARBON STUDIO,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+CRC,CARPATHIA CAPITAL ASI,NC,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+CTE,CTE GROUP,NC,Pozostałe,Pozostałe,,biznesradar,2026-11-17T19:35:14+07:00
+CTF,CENTURION FINANCE ASI,NC,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+CWA,CONSOLEWAY,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+DDI,DRAW DISTANCE,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+DFH,DEFENCE.HUB,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+DIV,DI VOLIO,NC,Dobra konsumpcyjne,Wyposażenie domu,,biznesradar,2026-11-17T19:35:14+07:00
+DKR,DEKTRA,NC,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+DNS,DANKS,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+DPG,DARK POINT GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+DRF,DR.FINANCE,NC,Finanse,Pośrednictwo finansowe,,biznesradar,2026-11-17T19:35:14+07:00
+DRG,DRAGEUS GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+DRZ,DO RZECZY,NC,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+DTX,DITIX,NC,Finanse,Wierzytelności,,biznesradar,2026-11-17T19:35:14+07:00
+DUA,DUALITY,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+EBX,EKOBOX,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+ECC,ECC GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+ECK,EUROSNACK S.A.,NC,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+ECL,ECL S.A.,NC,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+ECN,ECNOLOGY GROUP,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+ECT,ECO5TECH,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+EDL,EDITEL,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+EEE,EKIPA HOLDING,NC,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+EGH,EKOPOL GORNOSLASKI HOLDING,NC,Energia i utility,Paliwa i gaz,,biznesradar,2026-11-17T19:35:14+07:00
+EGY,ENERGY,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+EKE,EKO-OZE,NC,Ochrona zdrowia,Szpitale i przychodnie,,biznesradar,2026-11-17T19:35:14+07:00
+EKS,E-KIOSK,NC,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+ELQ,ELQ,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+EMP,EMPLOCITY,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+EMS,ENIMSO EUROPE,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+END,ENEIDA GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+EPR,EKOPARK,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+ETX,EURO-TAX.PL,NC,Finanse,Pośrednictwo finansowe,,biznesradar,2026-11-17T19:35:14+07:00
+EUV,EUVIC,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+EXA,EXAMOBILE,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+EXC,EXCELLENCE,NC,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+EXM,E-XIM IT,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+F51,THE FARM 51 GROUP,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+FAR,FARM INNOVATIONS,NC,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+FEM,FEMION TECHNOLOGY S.A.,NC,Pozostałe,Pozostałe,,biznesradar,2026-11-17T19:35:14+07:00
+FFP,FARMY FOTOWOLTAIKI POLSKA,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+FHD,FUNDUSZ HIPOTECZNY DOM,NC,Finanse,Pośrednictwo finansowe,,biznesradar,2026-11-17T19:35:14+07:00
+FIB,FIBO,NC,Media i telekomunikacja,Telekomunikacja,,biznesradar,2026-11-17T19:35:14+07:00
+FIG,FIGENE CAPITAL,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+FLG,FALCON 1 GREEN WORLD,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+FOR,FOREVER ENTERTAINMENT,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+FOX,SPACE FOX GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+FPO,FORPOSTA,NC,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+FRB,FORBUILD,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+FRM,FREEMIND,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+FRW,FROZEN WAY,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+FTH,FINTECH,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+FVE,FOTO VOLT EKO ENERGIA,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+GAL,GALVO,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+GAR,GARIN AI,NC,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+GDC,GAMEDUST,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+GDS,G-DEVS,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+GEN,GENOMED,NC,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+GHT,GAMEHUNTERS,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+GHY,GLOBAL HYDROGEN,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+GKS,GKS GIEKSA KATOWICE,NC,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+GME,GREMI MEDIA S.A.,NC,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+GMV,GAMIVO,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+GMZ,GRUPA MODNE ZAKUPY,NC,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+GOL,GOLAB SA,NC,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+GRC,GRUPA RECYKL,NC,Przemysł,Recykling,,biznesradar,2026-11-17T19:35:14+07:00
+GRL,GREEN LANES,NC,Przemysł,Drewno i papier,,biznesradar,2026-11-17T19:35:14+07:00
+GRM,GREMPCO SPOLKA AKCYJNA,NC,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+GRZ,GREEN ZEBRAS,NC,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+GTF,GO24.PL,NC,Finanse,Rynek kapitałowy,,biznesradar,2026-11-17T19:35:14+07:00
+GTS,GEOTRANS,NC,Przemysł,Recykling,,biznesradar,2026-11-17T19:35:14+07:00
+GX1,GENXONE,NC,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+HEN,HYENERGY,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+HER,HIGHLANDER ENTERPRISE,NC,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+HOR,HORTICO,NC,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+HPE,HIPOWER ENERGY,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+HPG,HONEY PAYMENT GROUP,NC,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+HPM,HIPROMINE,NC,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+HPS,HYDRAPRES,NC,Przemysł,Przemysł elektromaszynowy,,biznesradar,2026-11-17T19:35:14+07:00
+HRC,GRUPA HRC SPOLKA AKCYJNA,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+HRT,HURTIMEX SA,NC,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+HUB,HUB.TECH S.A.,NC,Przemysł,Chemia,,biznesradar,2026-11-17T19:35:14+07:00
+HYP,HYPE,NC,Przemysł,Motoryzacja,,biznesradar,2026-11-17T19:35:14+07:00
+IBC,IBC POLSKA,NC,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+ICD,INTERCAPITAL PROPERTY,NC,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+ICG,ICE CODE GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+IDH,IDH DEVELOPMENT,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+IFA,GENERATIONIS.AI,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+IFL,INTERNETOWY FUNDUSZ LEASINGOWY,NC,Finanse,Leasing i faktoring,,biznesradar,2026-11-17T19:35:14+07:00
+IGT,IGORIA TRADE,NC,Finanse,Pośrednictwo finansowe,,biznesradar,2026-11-17T19:35:14+07:00
+IMG,TRUSTBTC,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+IMR,INTERMARUM,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+INM,INVENTIONMED,NC,Pozostałe,Pozostałe,,biznesradar,2026-11-17T19:35:14+07:00
+INS,INDOS,NC,Finanse,Leasing i faktoring,,biznesradar,2026-11-17T19:35:14+07:00
+INT,INTERNITY,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+IPW,IMAGE POWER,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+ISD,INSIDE PARK,NC,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+IVE,INVESTEKO,NC,Przemysł,Recykling,,biznesradar,2026-11-17T19:35:14+07:00
+IVO,INCUVO,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+IWS,IRON WOLF STUDIO,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+JJB,JUJUBEE,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+JRC,JRC GROUP,NC,Dobra konsumpcyjne,Wyposażenie domu,,biznesradar,2026-11-17T19:35:14+07:00
+K2P,KOOL2PLAY,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+KBJ,KBJ SPOLKA AKCYJNA,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+KLE,GRUPA KLEPSYDRA,NC,Pozostałe,Pozostałe,,biznesradar,2026-11-17T19:35:14+07:00
+KLK,KOLEJKOWO,NC,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+KLN,KLON S.A.,NC,Przemysł,Drewno i papier,,biznesradar,2026-11-17T19:35:14+07:00
+KMB,KOMBINAT KONOPNY,NC,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+KME,KANCELARIA MEDIUS,NC,Finanse,Wierzytelności,,biznesradar,2026-11-17T19:35:14+07:00
+KOR,KORBANK,NC,Media i telekomunikacja,Telekomunikacja,,biznesradar,2026-11-17T19:35:14+07:00
+KPC,KUPIEC,NC,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+KPI,KANCELARIA PRAWNA-INKASO WEC,NC,Finanse,Wierzytelności,,biznesradar,2026-11-17T19:35:14+07:00
+KUB,KUBOTA,NC,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+LBD,LOKATY BUDOWLANE,NC,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+LCN,LABOCANNA,NC,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+LEG,LEGIMI,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+LET,LETUS CAPITAL,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+LFR,LIFTERO,NC,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+LGT,LOGINTRADE,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+LHD,LICHTHUND,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+LMG,LIVE MOTION GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+LTM,LONGTERM GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+LUD,LUDUS,NC,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+LUG,LUG,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+LUK,LUKARDI,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+LXB,LEXBONO,NC,Finanse,Wierzytelności,,biznesradar,2026-11-17T19:35:14+07:00
+M4B,M4B SA,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+MAD,MADKOM,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+MAZ,MAZOP GROUP,NC,Przemysł,Drewno i papier,,biznesradar,2026-11-17T19:35:14+07:00
+MBF,MBF GROUP,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+MCD,MYCODERN,NC,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+MDA,MEDAPP SA,NC,Ochrona zdrowia,Sprzęt i materiały medyczne,,biznesradar,2026-11-17T19:35:14+07:00
+MDB,MEDICOFARMA BIOTECH,NC,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+MDP,MEDCAMP,NC,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+MDT,MEDTECH SOLUTIONS,NC,Pozostałe,Pozostałe,,biznesradar,2026-11-17T19:35:14+07:00
+MER,MERA,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+MFD,M FOOD S.A,NC,Handel i usługi,Handel hurtowy,,biznesradar,2026-11-17T19:35:14+07:00
+MGS,MADNETIC GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+MID,MIDVEN,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+MIG,MILITARY GROUP,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+MLB,MAKOLAB,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+MLM,MILISYSTEM,NC,Pozostałe,Pozostałe,,biznesradar,2026-11-17T19:35:14+07:00
+MLP,MILKPOL,NC,Dobra konsumpcyjne,Artykuły spożywcze,,biznesradar,2026-11-17T19:35:14+07:00
+MLT,MOONLIT,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+MMC,MM CONFERENCES,NC,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+MMS,MADMIND STUDIO,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+MND,MINERAL MIDRANGE,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+MNS,MENNICA SKARBOWA,NC,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+MO2,MOLIERA2,NC,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+MPY,MPAY,NC,Finanse,Pośrednictwo finansowe,,biznesradar,2026-11-17T19:35:14+07:00
+MRD,MEDARD,NC,Pozostałe,Pozostałe,,biznesradar,2026-11-17T19:35:14+07:00
+MRG,MERLIN GROUP,NC,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+MRH,MR HAMBURGER,NC,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+MRK,MARKA,NC,Finanse,Pośrednictwo finansowe,,biznesradar,2026-11-17T19:35:14+07:00
+MSM,MASSMEDICA,NC,Ochrona zdrowia,Sprzęt i materiały medyczne,,biznesradar,2026-11-17T19:35:14+07:00
+MTN,MILTON ESSEX,NC,Ochrona zdrowia,Sprzęt i materiały medyczne,,biznesradar,2026-11-17T19:35:14+07:00
+MUN,MUNAR PHARMA,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+MXP,MAXIPIZZA,NC,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+NOB,NOOBZ FROM POLAND,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+NOV,NOVINA,NC,Finanse,Pośrednictwo finansowe,,biznesradar,2026-11-17T19:35:14+07:00
+NRS,NEURONE STUDIO,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+NST,NESTMEDIC,NC,Ochrona zdrowia,Sprzęt i materiały medyczne,,biznesradar,2026-11-17T19:35:14+07:00
+NTS,NOTORIA,NC,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+NTV,NEW TECH VENTURE,NC,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+O2T,ONE2TRIBE,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+OLY,OLYMP,NC,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+ONC,ONICO,NC,Energia i utility,Paliwa i gaz,,biznesradar,2026-11-17T19:35:14+07:00
+ONE,ONE SOLUTION,NC,Finanse,Wierzytelności,,biznesradar,2026-11-17T19:35:14+07:00
+OPI,OPTIGIS,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+ORG,ORGANIC,NC,Handel i usługi,Sieci handlowe,,biznesradar,2026-11-17T19:35:14+07:00
+ORL,ORZEL,NC,Przemysł,Recykling,,biznesradar,2026-11-17T19:35:14+07:00
+ORO,ORBITEO ASI,NC,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+OUT,OUTDOORZY,NC,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+OVI,OVID WORKS,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+P24,PRESENT24,NC,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+P2B,PLANET B2B,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+P2C,PLAY2CHILL,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+PAC,PROACTA,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+PBT,PRIME BIT GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+PDG,PYRAMID GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+PFG,PREFA GROUP,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+PGG,PROGUNS GROUP,NC,Handel i usługi,Sieci handlowe,,biznesradar,2026-11-17T19:35:14+07:00
+PGH,POLSKA GRUPA HUTNICZA,NC,Surowce,Hutnictwo,,biznesradar,2026-11-17T19:35:14+07:00
+PIT,POLARIS IT GROUP,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+PLG,PL GROUP S.A.,NC,Przemysł,Motoryzacja,,biznesradar,2026-11-17T19:35:14+07:00
+PLI,PLATIGE IMAGE SPOLKA AKCYJNA,NC,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+PLM,POLMAN,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+PLT,PLOT TWIST,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+PNT,POINTPACK S.A.,NC,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+PRA,PRIME ASI,NC,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+PRE,PRESIDENT STUDIO,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+PRH,POLSKI HOLDING ROZWOJU,NC,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+PRN,PARTNER AEROSPACE DEFENSE,NC,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+PRO,APN PROMISE,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+PRS,PRYMUS,NC,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+PTN,POLTRONIC,NC,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+QCR,QUEST CRAFT,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+QUB,QUBICGAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+RAY,PURPLE RAY STUDIO,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+RBS,ROBINSON EUROPE,NC,Pozostałe,Pozostałe,,biznesradar,2026-11-17T19:35:14+07:00
+RCA,ROCCA,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+RCW,RUCH CHORZOW,NC,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+RDG,READ-GENE,NC,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+RGL,ROBS GROUP LOGISTIC,NC,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+RKG,ROCKGAME,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+RNT,PRIVATE RENTED SECTOR,NC,Budownictwo i nieruchomości,Nieruchomości,,biznesradar,2026-11-17T19:35:14+07:00
+RRH,RRH GROUP,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+RSG,RED SQUARE GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+RSP,REMOR SOLAR POLSKA,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+RST,ROAD STUDIO,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+S4E,S4E,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+SBE,SOFTBLUE,NC,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+SCS,STEM CELLS SPIN,NC,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+SDS,SDS OPTIC,NC,Ochrona zdrowia,Sprzęt i materiały medyczne,,biznesradar,2026-11-17T19:35:14+07:00
+SED,SEDIVIO,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+SEV,SEVENET,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+SFD,SFD SPOLKA AKCYJNA,NC,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+SFK,POLKAP,NC,Dobra konsumpcyjne,Odzież i kosmetyki,,biznesradar,2026-11-17T19:35:14+07:00
+SGD,SIGMA DEFENCE,NC,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+SIN,SOLAR INNOVATION,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+SKN,SAKANA,NC,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+SKY,STOHID TECHNOLOGY,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+SMT,SIMTERACT,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+SNG,SYNERGA.FUND S.A.,NC,Ochrona zdrowia,Biotechnologia,,biznesradar,2026-11-17T19:35:14+07:00
+SNN,SUNWAY NETWORK,NC,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+SOK,SONKA,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+STA,STARWARD INDUSTRIES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+STD,STANDREW,NC,Przemysł,Drewno i papier,,biznesradar,2026-11-17T19:35:14+07:00
+SUN,SUNTECH,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+SWM,SOFTWARE MANSION,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+SYG,SYGNIS,NC,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+SZR,SZAR,NC,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+TCR,TECH ROBOTICS,NC,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+TEC,TECNOVATICA,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+TGG,TRIGGO,NC,Przemysł,Motoryzacja,,biznesradar,2026-11-17T19:35:14+07:00
+TGS,TRUE GAMES SYNDICATE,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+THD,THE DUST,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+THS,THORIUM SPACE,NC,Technologie,Nowe technologie,,biznesradar,2026-11-17T19:35:14+07:00
+TLG,TELGAM,NC,Media i telekomunikacja,Telekomunikacja,,biznesradar,2026-11-17T19:35:14+07:00
+TLO,TELESTO S.A.,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+TLS,TELESTRADA,NC,Media i telekomunikacja,Telekomunikacja,,biznesradar,2026-11-17T19:35:14+07:00
+TME,TERMOEXPERT,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+TMP,TELEMEDYCYNA,NC,Ochrona zdrowia,Szpitale i przychodnie,,biznesradar,2026-11-17T19:35:14+07:00
+TNT,T&T PROENERGY,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+TOS,TAMEX OBIEKTY SPORTOWE,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+TRX,TREX,NC,Handel i usługi,Handel internetowy,,biznesradar,2026-11-17T19:35:14+07:00
+TXN,TAX-NET SPOLKA AKCYJNA,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+UFC,UNIFIED FACTORY,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+UFG,UF GAMES,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+UNV,UNIVERSE,NC,Dobra konsumpcyjne,Wyposażenie domu,,biznesradar,2026-11-17T19:35:14+07:00
+VAI,VOLARIA AI,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+VAR,THE OVERBOUNDS,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+VDS,VIDIS,NC,Handel i usługi,Zaopatrzenie przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+VEE,VEE,NC,Media i telekomunikacja,Telekomunikacja,,biznesradar,2026-11-17T19:35:14+07:00
+VER,MPL VERBUM,NC,Handel i usługi,Rekreacja i wypoczynek,,biznesradar,2026-11-17T19:35:14+07:00
+VFA,VRFABRIC,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+VIV,EUROINVESTMENT,NC,Media i telekomunikacja,Media,,biznesradar,2026-11-17T19:35:14+07:00
+VLT,VOOLT,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+VMX,V-MAX,NC,Przemysł,Guma i tworzywa sztuczne,,biznesradar,2026-11-17T19:35:14+07:00
+VRB,VERBICOM,NC,Technologie,Informatyka,,biznesradar,2026-11-17T19:35:14+07:00
+WGP,W.G PARTNERS,NC,Budownictwo i nieruchomości,Budownictwo,,biznesradar,2026-11-17T19:35:14+07:00
+WHH,WERTH-HOLZ,NC,Dobra konsumpcyjne,Wyposażenie domu,,biznesradar,2026-11-17T19:35:14+07:00
+WLI,WILDLANDS INTERACTIVE,NC,Technologie,Gry,,biznesradar,2026-11-17T19:35:14+07:00
+WOD,WODKAN,NC,Energia i utility,Dystrybucja ciepła i wody,,biznesradar,2026-11-17T19:35:14+07:00
+WRL,WIERZYCIEL,NC,Finanse,Wierzytelności,,biznesradar,2026-11-17T19:35:14+07:00
+XBS,XBS PRO-LOG,NC,Handel i usługi,Transport i logistyka,,biznesradar,2026-11-17T19:35:14+07:00
+XDD,MENTZEN,NC,Handel i usługi,Usługi dla przedsiębiorstw,,biznesradar,2026-11-17T19:35:14+07:00
+YBS,YBS,NC,Przemysł,Chemia,,biznesradar,2026-11-17T19:35:14+07:00
+YOS,YOSHI INNOVATION,NC,Finanse,Działalność inwestycyjna,,biznesradar,2026-11-17T19:35:14+07:00
+ZEN,ZENERIS PROJEKTY,NC,Energia i utility,Energia,,biznesradar,2026-11-17T19:35:14+07:00
+ZRX,ZORTRAX,NC,Ochrona zdrowia,Sprzęt i materiały medyczne,,biznesradar,2026-11-17T19:35:14+07:00
