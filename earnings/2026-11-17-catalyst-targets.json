@@ -1,0 +1,104 @@
+{
+  "us": [
+    {
+      "name": "DIS",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-17",
+      "event_freshness": 0,
+      "premarket_pct": -2.127211457455776
+    },
+    {
+      "name": "RCAT",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-16",
+      "event_freshness": 1,
+      "premarket_pct": -33.42209631728045
+    }
+  ],
+  "eu": [
+    {
+      "name": "ZZ_B",
+      "chg": 6.42
+    },
+    {
+      "name": "SEYE",
+      "chg": 6.05
+    },
+    {
+      "name": "FGP",
+      "chg": -3.69
+    },
+    {
+      "name": "CDR",
+      "chg": -5.27
+    },
+    {
+      "name": "DBK",
+      "chg": -4.06
+    },
+    {
+      "name": "MORROW",
+      "chg": -4.87
+    },
+    {
+      "name": "NORBT",
+      "chg": -4.36
+    },
+    {
+      "name": "RMS",
+      "chg": -4.33
+    },
+    {
+      "name": "WWI",
+      "chg": 5.46
+    }
+  ],
+  "au": [
+    {
+      "name": "IPH",
+      "chg": -13.42
+    },
+    {
+      "name": "SRL",
+      "chg": -11.0
+    }
+  ],
+  "apac": [
+    {
+      "name": "SPG",
+      "market": "newzealand",
+      "chg": -3.1
+    },
+    {
+      "name": "VSL",
+      "market": "newzealand",
+      "chg": -3.52
+    },
+    {
+      "name": "BEC",
+      "market": "thailand",
+      "chg": 13.17
+    }
+  ],
+  "budget": {
+    "US": 2,
+    "EU": 9,
+    "AU": 2,
+    "APAC": 3
+  },
+  "budget_total": 16,
+  "budget_cap": 16,
+  "budget_rule": "the US slice covers the rows whose earnings event can still explain today's move (fresh = the report is dated on the scan date), the EU/AU/APAC floors are never squeezed, and the leftover goes to the region with the most unexplained rows",
+  "earnings_calendar_rows": 1073,
+  "asx_announcement_rows": 6,
+  "asx_fresh": [
+    "ELD",
+    "FPR",
+    "PLT",
+    "SKO",
+    "TRA",
+    "WJL"
+  ],
+  "earnings_field_stale_rows": 0,
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-17.md"
+}
