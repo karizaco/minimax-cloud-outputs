@@ -1,0 +1,27 @@
+{
+  "_schema": 2,
+  "size_cut_pct": 50,
+  "uncertainty": true,
+  "late_cycle": false,
+  "breadth_pct_spx": 34.16206261510129,
+  "index_below_20sma": true,
+  "vix": 25.46,
+  "vix3m": 24.98,
+  "atr_extensions": {
+    "QQQE": {
+      "extension_pct": -5.38298008969943
+    },
+    "QQQ": {
+      "extension_pct": -8.182421451560495
+    },
+    "RSP": {
+      "extension_pct": 0.371228403159618
+    },
+    "SPY": {
+      "extension_pct": -4.024437576442752
+    },
+    "IWM": {
+      "extension_pct": -3.838318276759778
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "cron_date": "2026-11-17",
+  "data_as_of": "2026-11-16",
+  "regime": {
+    "size_cut_pct": 50,
+    "uncertainty": true,
+    "late_cycle": false
+  },
+  "counts": {
+    "candidates": 1150,
+    "focus": 12,
+    "tier_a": 2,
+    "short_candidates": 1,
+    "long_reversal_candidates": 10
+  }
+}
