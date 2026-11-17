@@ -1,0 +1,545 @@
+{
+ "date": "2026-11-17",
+ "generated_at": "2026-11-17T21:55:00Z",
+ "provenance": "TradingView per-country scanner (16 regions, issuer-country filtered, one set-verified pull each) with the America scanner for us_listing and the cross-venue cap reading; FX from open.er-api; index levels from the TradingView venue index symbols, with the ATHEX official close from euro2day",
+ "market_cap_unit": "USD",
+ "price_currency": "listing (the `currency` column)",
+ "change_pct_unit": "percent",
+ "csv_columns": 18,
+ "fx_source": {
+  "provider": "open.er-api",
+  "updated_utc": "Tue, 17 Nov 2026 00:02:31 +0000",
+  "per_usd": {
+   "EUR": 0.908584,
+   "JPY": 159.580113,
+   "AUD": 1.483068,
+   "CAD": 1.42937,
+   "DKK": 6.789305,
+   "TWD": 32.977405
+  }
+ },
+ "floors_usd": {
+  "au": {
+   "floor_usd": 300000000,
+   "min_volume": 100000
+  },
+  "jp": {
+   "floor_usd": 300000000,
+   "min_volume": null
+  },
+  "tw": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "ca": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "eu-de": {
+   "floor_usd": 300000000,
+   "min_volume": 50000
+  },
+  "eu-fr": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-it": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-es": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-nl": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-be": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-at": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-pt": {
+   "floor_usd": 50000000,
+   "min_volume": null
+  },
+  "eu-ie": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "eu-fi": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-dk": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-gr": {
+   "floor_usd": 50000000,
+   "min_volume": null
+  }
+ },
+ "regions": {
+  "au": {
+   "universe_rows": 1547,
+   "unique_instruments": 1547,
+   "written": 295,
+   "excluded": {
+    "no_market_cap": 4,
+    "below_cap_floor": 1222,
+    "below_volume": 25,
+    "issuer_unresolved": 1,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 300000000,
+   "min_volume": 100000,
+   "file": "au.csv",
+   "venues": [
+    "ASX"
+   ],
+   "movers": [
+    "ASX:CAT",
+    "ASX:IPH",
+    "ASX:SRL",
+    "ASX:TNE"
+   ],
+   "mover_rows": 4,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 0
+  },
+  "jp": {
+   "universe_rows": 3898,
+   "unique_instruments": 3867,
+   "written": 1384,
+   "excluded": {
+    "no_market_cap": 3,
+    "below_cap_floor": 2479,
+    "below_volume": 0,
+    "issuer_unresolved": 1,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 2,
+   "off_official_rows": 0,
+   "floor_usd": 300000000,
+   "min_volume": null,
+   "file": "jp.csv",
+   "venues": [
+    "NAG",
+    "SAPSE",
+    "TSE"
+   ],
+   "movers": [
+    "TSE:446A",
+    "TSE:4180"
+   ],
+   "mover_rows": 2,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 3
+  },
+  "tw": {
+   "universe_rows": 2342,
+   "unique_instruments": 2342,
+   "written": 863,
+   "excluded": {
+    "no_market_cap": 57,
+    "below_cap_floor": 1422,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 3,
+   "off_official_rows": 0,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "tw.csv",
+   "venues": [
+    "TPEX",
+    "TWSE"
+   ],
+   "movers": [
+    "TWSE:3443",
+    "TWSE:8046",
+    "TWSE:6213",
+    "TWSE:3605",
+    "TPEX:3081"
+   ],
+   "mover_rows": 5,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 1
+  },
+  "ca": {
+   "universe_rows": 4297,
+   "unique_instruments": 2703,
+   "written": 618,
+   "excluded": {
+    "no_market_cap": 60,
+    "below_cap_floor": 1900,
+    "below_volume": 0,
+    "issuer_unresolved": 125,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 46,
+   "off_official_rows": 0,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "ca.csv",
+   "venues": [
+    "CSE",
+    "TSX",
+    "TSXV"
+   ],
+   "movers": [
+    "TSX:SCZ",
+    "TSX:QBR.B",
+    "TSX:GRGD",
+    "TSX:WCN",
+    "TSX:BB"
+   ],
+   "mover_rows": 5,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 1
+  },
+  "eu-de": {
+   "universe_rows": 4305,
+   "unique_instruments": 709,
+   "written": 123,
+   "excluded": {
+    "no_market_cap": 4,
+    "below_cap_floor": 396,
+    "below_volume": 186,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 300000000,
+   "min_volume": 50000,
+   "file": "eu-de.csv",
+   "venues": [
+    "XETR"
+   ],
+   "movers": [
+    "XETR:DBK",
+    "XETR:IOS",
+    "XETR:SAP"
+   ],
+   "mover_rows": 3,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 1
+  },
+  "eu-fr": {
+   "universe_rows": 538,
+   "unique_instruments": 538,
+   "written": 262,
+   "excluded": {
+    "no_market_cap": 1,
+    "below_cap_floor": 275,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 3,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-fr.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "movers": [
+    "EURONEXT:OVH",
+    "EURONEXT:RMS"
+   ],
+   "mover_rows": 2,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 3
+  },
+  "eu-it": {
+   "universe_rows": 378,
+   "unique_instruments": 378,
+   "written": 179,
+   "excluded": {
+    "no_market_cap": 2,
+    "below_cap_floor": 197,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 5,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-it.csv",
+   "venues": [
+    "MIL"
+   ],
+   "movers": [
+    "MIL:AVIO"
+   ],
+   "mover_rows": 1,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 3
+  },
+  "eu-es": {
+   "universe_rows": 231,
+   "unique_instruments": 231,
+   "written": 136,
+   "excluded": {
+    "no_market_cap": 23,
+    "below_cap_floor": 72,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 28,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-es.csv",
+   "venues": [
+    "BME"
+   ],
+   "movers": [
+    "BME:IDR",
+    "BME:EDR"
+   ],
+   "mover_rows": 2,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 0
+  },
+  "eu-nl": {
+   "universe_rows": 78,
+   "unique_instruments": 78,
+   "written": 56,
+   "excluded": {
+    "no_market_cap": 0,
+    "below_cap_floor": 22,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-nl.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "movers": [
+    "EURONEXT:ASML"
+   ],
+   "mover_rows": 1,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 0
+  },
+  "eu-be": {
+   "universe_rows": 99,
+   "unique_instruments": 99,
+   "written": 76,
+   "excluded": {
+    "no_market_cap": 1,
+    "below_cap_floor": 22,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-be.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "movers": [],
+   "mover_rows": 0,
+   "below_gate_rows": 1,
+   "no_catalyst_rows": 1
+  },
+  "eu-at": {
+   "universe_rows": 65,
+   "unique_instruments": 65,
+   "written": 51,
+   "excluded": {
+    "no_market_cap": 3,
+    "below_cap_floor": 11,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 4,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-at.csv",
+   "venues": [
+    "VIE"
+   ],
+   "movers": [
+    "VIE:ATS"
+   ],
+   "mover_rows": 1,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 0
+  },
+  "eu-pt": {
+   "universe_rows": 31,
+   "unique_instruments": 31,
+   "written": 27,
+   "excluded": {
+    "no_market_cap": 0,
+    "below_cap_floor": 4,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 50000000,
+   "min_volume": null,
+   "file": "eu-pt.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "movers": [
+    "EURONEXT:JMT"
+   ],
+   "mover_rows": 1,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 0
+  },
+  "eu-ie": {
+   "universe_rows": 21,
+   "unique_instruments": 21,
+   "written": 16,
+   "excluded": {
+    "no_market_cap": 0,
+    "below_cap_floor": 5,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "eu-ie.csv",
+   "venues": [
+    "EURONEXT"
+   ],
+   "movers": [
+    "EURONEXT:C5H"
+   ],
+   "mover_rows": 1,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 0
+  },
+  "eu-fi": {
+   "universe_rows": 189,
+   "unique_instruments": 189,
+   "written": 101,
+   "excluded": {
+    "no_market_cap": 4,
+    "below_cap_floor": 84,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-fi.csv",
+   "venues": [
+    "OMXHEX"
+   ],
+   "movers": [
+    "OMXHEX:NOKIA"
+   ],
+   "mover_rows": 1,
+   "below_gate_rows": 2,
+   "no_catalyst_rows": 0
+  },
+  "eu-dk": {
+   "universe_rows": 133,
+   "unique_instruments": 133,
+   "written": 75,
+   "excluded": {
+    "no_market_cap": 1,
+    "below_cap_floor": 57,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-dk.csv",
+   "venues": [
+    "OMXCOP"
+   ],
+   "movers": [
+    "OMXCOP:ZEAL"
+   ],
+   "mover_rows": 1,
+   "below_gate_rows": 1,
+   "no_catalyst_rows": 0
+  },
+  "eu-gr": {
+   "universe_rows": 129,
+   "unique_instruments": 129,
+   "written": 83,
+   "excluded": {
+    "no_market_cap": 0,
+    "below_cap_floor": 46,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 2,
+   "off_official_rows": 0,
+   "floor_usd": 50000000,
+   "min_volume": null,
+   "file": "eu-gr.csv",
+   "venues": [
+    "ATHEX"
+   ],
+   "movers": [
+    "ATHEX:GEKTERNA",
+    "ATHEX:ALPHA"
+   ],
+   "mover_rows": 2,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 0
+  }
+ },
+ "totals": {
+  "written": 4345,
+  "excluded": 8715
+ }
+}
