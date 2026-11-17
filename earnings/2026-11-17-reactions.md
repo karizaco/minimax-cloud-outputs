@@ -1,7 +1,7 @@
 # Earnings reaction scanner — 2026-11-17
 
 - Cron: `0 8 * * 1-5` America/New_York (weekdays, 08:00 ET)
-- Fire time (ET): 2026-11-17 08:13:52 Tue
+- Fire time (ET): 2026-11-17 08:24:07 Tue
 - Run type: `scheduled_scan`
 - Source: TradingView public screener (`scanner.tradingview.com/<market>/scan`);
   Yahoo chart API as the independent reference-close source.
@@ -20,10 +20,10 @@
 
 ## TL;DR
 
-- 0 AMC reactions, 70 pre-market gaps, 87 without extended-hours data; 30 EU/UK and 4 ASX movers, 21 APAC/Gulf movers.
-- Pass B2 (the US pre-market gap scan) met the filter on 10 names (9 up, 1 down); 6 were already a Pass A/B row and are recorded as dedupes, and 4 reached a table.
-- Biggest US extended-hours move: RCAT PRE_GAP (33.42%).
-- Biggest EU/UK move: XTB (-16.36%, poland).
+- 0 AMC reactions, 77 pre-market gaps, 80 without extended-hours data; 30 EU/UK and 4 ASX movers, 21 APAC/Gulf movers.
+- Pass B2 (the US pre-market gap scan) met the filter on 11 names (10 up, 1 down); 6 were already a Pass A/B row and are recorded as dedupes, and 5 reached a table.
+- Biggest US extended-hours move: RCAT PRE_GAP (36.26%).
+- Biggest EU/UK move: XTB (-16.30%, poland).
 - Biggest ASX move: CAT (-16.57%).
 - Biggest APAC/Gulf move: AREA (+34.67%, indonesia).
 - 0 of the 30 EU/UK rows are SETTLED and 30 are LIVE (mid-session). The 12:15 ET settlement pass publishes where those
@@ -37,15 +37,15 @@
   reaction by the name's own mean absolute daily move over its last
   20 completed sessions. A -27% move in a name that averages +-3% is a
   different event from a -8% move in a name that averages +-7%.
-- **US-listed and tradeable vs foreign-only.** 85 published US rows are on a
+- **US-listed and tradeable vs foreign-only.** 92 published US rows are on a
   US venue; 0 more foreign reactions have a US ADR line
   (the `US tradeable` column carries the ticker); 30 are foreign-only and
   cannot be bought directly by a US reader.
 - **Not yet fully priced — US (hypothesis, not a recommendation).**
-  RCAT — -33.42%, 6.17% mean absolute daily move over the last 20 completed sessions, 5.4x that average, reference close 3.80 dated 2026-11-13, US access: US-listed, the move now (-33.42%) is larger than the move it follows (-7.11%); the reaction is still being repriced. Hypothesis only: this artifact states no
+  SMWB — +17.65%, 1.54% mean absolute daily move over the last 20 completed sessions, 11.5x that average, reference close 7.97 dated 2026-11-13, US access: US-listed, the move now (+17.65%) is larger than the move it follows (-1.88%); the reaction is still being repriced. Hypothesis only: this artifact states no
   direction and no trade.
 - **Not yet fully priced — EU/UK (hypothesis, not a recommendation).**
-  XTB — -16.36%, 2.03% mean absolute daily move over the last 20 completed sessions, 8.1x that average, reference close 139.72 dated 2026-11-16, US access: none, the move now (-16.36%) is larger than the move it follows (+0.45%); the reaction is still being repriced. Hypothesis only: this artifact states no
+  XTB — -16.30%, 2.03% mean absolute daily move over the last 20 completed sessions, 8.0x that average, reference close 139.72 dated 2026-11-16, US access: none, the move now (-16.30%) is larger than the move it follows (+0.45%); the reaction is still being repriced. Hypothesis only: this artifact states no
   direction and no trade.
 - **Not yet fully priced — AU (ASX) (hypothesis, not a recommendation).**
   IPH — -13.42%, 2.06% mean absolute daily move over the last 20 completed sessions, 6.5x that average, reference close 3.95 dated 2026-11-15, US access: none, the move now (-13.42%) is larger than the move it follows (-1.25%); the reaction is still being repriced. Hypothesis only: this artifact states no
@@ -55,137 +55,144 @@
 
 | Ticker | Venue | Close | Chg % | Pre-mkt % | Post-mkt % | Move vs avg daily | Ref close | Ref source | Ref asof | US tradeable | Last earnings | Tag | Earn | Catalyst |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCAT | NASDAQ | 3.53 | -7.11 | -33.42 | — | 5.4x | 3.80 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-16 (1d ago) | PRE_GAP | Y | Q3 2026 results (reported 2026-11-16, after the close): revenue $11.8m vs ~$40.7m consensus, net loss $0.26/sh vs -$0.20 expected, gross margin 0.6% on scrap and warranty costs; the FY2026 revenue target is WITHDRAWN after contract awards slipped and the FANG drone missed the Drone Dominance II final |
-| LUCK | NYSE | 3.32 | -3.77 | 14.29 | — | 2.9x | 3.45 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| COHR | NYSE | 203.43 | -6.75 | 9.28 | — | 1.4x | 218.15 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| AAOI | NASDAQ | 45.16 | -9.48 | 8.53 | — | 1.1x | 49.89 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| CAI | NASDAQ | 21 | -8.85 | 7.14 | — | 1.7x | 23.04 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| RCAT | NASDAQ | 3.53 | -7.11 | -36.26 | — | 5.9x | 3.80 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-16 (1d ago) | PRE_GAP | Y | Q3 2026 results (reported 2026-11-16, after the close): revenue $11.8m vs ~$40.7m consensus, net loss $0.26/sh vs -$0.20 expected, gross margin 0.6% on scrap and warranty costs; the FY2026 revenue target is WITHDRAWN after contract awards slipped and the FANG drone missed the Drone Dominance II final |
+| SMWB | NYSE | 7.82 | -1.88 | 17.65 | — | 11.5x | 7.97 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-17 (0d ago) | PRE_GAP | — | Q3 2026 results, report date today (Nasdaq earnings calendar; no headline lookup), consensus EPS $0.03 |
+| LUCK | NYSE | 3.32 | -3.77 | 14.16 | — | 2.8x | 3.45 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| COHR | NYSE | 203.43 | -6.75 | 9.50 | — | 1.4x | 218.15 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| AAOI | NASDAQ | 45.16 | -9.48 | 8.41 | — | 1.1x | 49.89 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | SLS | NASDAQ | 7.47 | -4.96 | 7.10 | — | 1.4x | 7.86 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-12 (5d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-12 (Nasdaq earnings calendar; no headline lookup) |
-| KURA | NASDAQ | 7.09 | -8.75 | 6.56 | — | 1.4x | 7.77 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-10 (7d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-10 (Nasdaq earnings calendar; no headline lookup), consensus EPS ($0.83) |
-| LITE | NASDAQ | 546 | -8.48 | 5.57 | — | 0.8x | 596.62 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-02 (15d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| MRVL | NASDAQ | 145.36 | -7.27 | 5.10 | — | 0.8x | 156.76 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-08-27 (82d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| TEM | NASDAQ | 64.76 | -9.55 | 5.00 | — | 0.9x | 71.60 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-02 (15d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| NTRA | NASDAQ | 288.48 | -9.59 | 4.71 | — | 1.3x | 319.09 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| ALAB | NASDAQ | 202.34 | -8.79 | 4.69 | — | 0.8x | 221.83 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-03 (14d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| CRDO | NASDAQ | 120.71 | -8.21 | 4.48 | — | 0.6x | 131.51 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-09-01 (77d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| CIEN | NYSE | 257.56 | -8.19 | 4.05 | — | 0.6x | 280.54 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-09-03 (75d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| KURA | NASDAQ | 7.09 | -8.75 | 6.93 | — | 1.5x | 7.77 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-10 (7d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-10 (Nasdaq earnings calendar; no headline lookup), consensus EPS ($0.83) |
+| CAI | NASDAQ | 21 | -8.85 | 6.62 | — | 1.6x | 23.04 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| STDN | NYSE | 9.33 | -11.56 | 6.00 | — | 1.5x | 10.55 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-12 (5d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-12 (Nasdaq earnings calendar; no headline lookup), consensus EPS ($0.13) |
+| LITE | NASDAQ | 546 | -8.48 | 5.66 | — | 0.8x | 596.62 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-02 (15d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| MRVL | NASDAQ | 145.36 | -7.27 | 5.20 | — | 0.8x | 156.76 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-08-27 (82d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| TEM | NASDAQ | 64.76 | -9.55 | 5.09 | — | 1.0x | 71.60 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-02 (15d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| ALAB | NASDAQ | 202.34 | -8.79 | 4.99 | — | 0.8x | 221.83 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-03 (14d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| CRDO | NASDAQ | 120.71 | -8.21 | 4.90 | — | 0.6x | 131.51 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-09-01 (77d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| CIEN | NYSE | 257.56 | -8.19 | 4.83 | — | 0.7x | 280.54 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-09-03 (75d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| NTRA | NASDAQ | 288.48 | -9.59 | 4.36 | — | 1.2x | 319.09 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| TSEM | NASDAQ | 133.42 | -9.17 | 4.20 | — | 0.7x | 146.89 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-02 (15d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | MBGL | NYSE | 24.04 | 3.26 | -4.03 | — | 1.7x | 23.28 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-12 (5d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-12 (Nasdaq earnings calendar; no headline lookup), consensus EPS $0.38 |
-| TTMI | NASDAQ | 68.25 | -7.87 | 4.03 | — | 0.5x | 74.08 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-22 (26d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | BUUU | NASDAQ | 5.5 | 3.38 | -4.00 | — | 0.4x | 5.32 | yahoo_chart_daily | 2026-11-13 | US-listed | — | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| STDN | NYSE | 9.33 | -11.56 | 3.97 | — | 1.0x | 10.55 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-12 (5d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-12 (Nasdaq earnings calendar; no headline lookup), consensus EPS ($0.13) |
 | PRG | NYSE | 39.61 | 3.20 | -3.94 | — | 1.1x | 38.38 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-28 (20d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| TSEM | NASDAQ | 133.42 | -9.17 | 3.92 | — | 0.6x | 146.89 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-02 (15d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| SMTC | NASDAQ | 105.3 | -8.11 | 3.88 | — | 0.5x | 114.59 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-08-25 (84d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | ACMR | NASDAQ | 44 | -8.24 | 3.39 | — | 0.6x | 47.95 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| NBIS | NASDAQ | 107.13 | -7.55 | 3.38 | — | 0.4x | 115.88 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-12 (5d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-12 (Nasdaq earnings calendar; no headline lookup), consensus EPS ($0.61) |
 | FORM | NASDAQ | 81.14 | -7.30 | 3.36 | — | 0.4x | 87.53 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-28 (20d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| FPS | NYSE | 20.57 | -7.01 | 3.31 | — | 0.4x | 22.12 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-12 (5d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-12 (Nasdaq earnings calendar; no headline lookup), consensus EPS $0.18 |
-| SECZ | NYSE | 7.33 | -9.28 | 3.27 | — | 0.5x | 8.08 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-09 (8d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| VICR | NASDAQ | 146.52 | -7.88 | 3.26 | — | 0.5x | 159.05 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-20 (28d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| BE | NYSE | 177.28 | -7.66 | 3.34 | — | 0.5x | 191.99 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-22 (26d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| MP | NYSE | 36.09 | -6.89 | 3.33 | — | 1.0x | 38.76 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| TTMI | NASDAQ | 68.25 | -7.87 | 3.27 | — | 0.4x | 74.08 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-22 (26d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | RYTM | NASDAQ | 107.48 | -6.56 | -3.24 | — | 0.8x | 115.02 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-03 (14d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| PENG | NASDAQ | 44.22 | -6.63 | 3.23 | — | 0.4x | 47.36 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-06 (42d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| AEHR | NASDAQ | 50.98 | -10.53 | 3.18 | — | 0.4x | 56.98 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-02 (15d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | ALGM | NASDAQ | 28.11 | -6.70 | 3.17 | — | 0.6x | 30.13 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-29 (19d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| NBIS | NASDAQ | 107.13 | -7.55 | 3.09 | — | 0.4x | 115.88 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-12 (5d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-12 (Nasdaq earnings calendar; no headline lookup), consensus EPS ($0.61) |
+| FPS | NYSE | 20.57 | -7.01 | 3.16 | — | 0.3x | 22.12 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-12 (5d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-12 (Nasdaq earnings calendar; no headline lookup), consensus EPS $0.18 |
+| SECZ | NYSE | 7.33 | -9.28 | 3.14 | — | 0.5x | 8.08 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-09 (8d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| GLW | NYSE | 106.17 | -6.93 | 3.12 | — | 0.7x | 114.08 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-27 (21d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | MXL | NASDAQ | 51.97 | -6.83 | 2.94 | — | 0.4x | 55.78 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-22 (26d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| GLW | NYSE | 106.17 | -6.93 | 2.93 | — | 0.7x | 114.08 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-27 (21d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| CVS | NYSE | 88.59 | -0.85 | -2.89 | — | 1.4x | 89.35 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| STRL | NASDAQ | 275.13 | -5.90 | 2.86 | — | 0.5x | 292.39 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-28 (20d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| PENG | NASDAQ | 44.22 | -6.63 | 2.87 | — | 0.4x | 47.36 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-06 (42d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | UCTT | NASDAQ | 42.87 | -7.51 | 2.85 | — | 0.4x | 46.35 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-27 (21d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| SMTC | NASDAQ | 105.3 | -8.11 | 2.84 | — | 0.4x | 114.59 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-08-25 (84d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| QURE | NASDAQ | 21.88 | -8.11 | 2.83 | — | 0.7x | 23.81 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| VICR | NASDAQ | 146.52 | -7.88 | 2.83 | — | 0.4x | 159.05 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-20 (28d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | EROC | NYSE | 7.49 | -10.94 | 2.80 | — | 0.3x | 8.41 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-12 (5d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-12 (Nasdaq earnings calendar; no headline lookup), consensus EPS ($0.01) |
-| AMKR | NASDAQ | 34.05 | -5.70 | 2.79 | — | 0.5x | 36.11 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-26 (22d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| OUST | NASDAQ | 31.23 | -6.72 | 2.79 | — | 0.4x | 33.48 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-03 (14d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | BLLN | NASDAQ | 96.31 | -8.41 | 2.74 | — | 1.3x | 105.15 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| CAMT | NASDAQ | 93.25 | -8.34 | 2.73 | — | 0.5x | 101.73 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| ALB | NYSE | 88.16 | -5.74 | 2.73 | — | 1.2x | 93.53 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| AMD | NASDAQ | 504.28 | -5.58 | 2.70 | — | 0.4x | 534.06 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-03 (14d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | VIAV | NASDAQ | 28.73 | -6.48 | 2.68 | — | 0.4x | 30.72 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| BE | NYSE | 177.28 | -7.66 | 2.66 | — | 0.4x | 191.99 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-22 (26d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | PRAX | NASDAQ | 310.27 | -5.44 | 2.65 | — | 0.6x | 328.13 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-09 (8d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | TER | NASDAQ | 231.9 | -7.07 | 2.64 | — | 0.5x | 249.55 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-27 (21d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| UNH | NYSE | 412.02 | 1.12 | -2.61 | — | 2.3x | 407.46 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-13 (35d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| ICHR | NASDAQ | 33.65 | -5.80 | 2.53 | — | 0.4x | 35.72 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-02 (15d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| MP | NYSE | 36.09 | -6.89 | 2.52 | — | 0.7x | 38.76 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| IREN | NASDAQ | 16.39 | -9.80 | 2.62 | — | 0.3x | 18.17 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| UNH | NYSE | 412.02 | 1.12 | -2.60 | — | 2.3x | 407.46 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-13 (35d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| AEHR | NASDAQ | 50.98 | -10.53 | 2.59 | — | 0.3x | 56.98 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-02 (15d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| CAMT | NASDAQ | 93.25 | -8.34 | 2.55 | — | 0.5x | 101.73 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| MPWR | NASDAQ | 1314 | -5.50 | 2.50 | — | 0.5x | 1390.54 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-29 (19d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| CVS | NYSE | 88.59 | -0.85 | -2.46 | — | 1.2x | 89.35 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | NXT | NASDAQ | 89.31 | -6.02 | 2.45 | — | 0.5x | 95.03 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-28 (20d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| HUBS | NYSE | 231.98 | 6.78 | -2.43 | — | 0.7x | 217.25 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| ANET | NYSE | 187.02 | -5.21 | 2.40 | — | 0.5x | 197.29 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-03 (14d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | GRAL | NASDAQ | 105.6 | -8.88 | 2.38 | — | 0.4x | 115.89 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| BELFB | NASDAQ | 208.24 | -7.65 | 2.31 | — | 0.5x | 225.49 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-28 (20d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| QNT | NASDAQ | 31.75 | -10.31 | 2.36 | — | 0.3x | 35.40 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| WOLF | NYSE | 22.65 | -8.78 | 2.33 | — | 0.4x | 24.83 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| OUST | NASDAQ | 31.23 | -6.72 | 2.31 | — | 0.4x | 33.48 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-03 (14d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| SMCI | NASDAQ | 25.025 | -6.85 | 2.30 | — | 0.4x | 26.87 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-03 (14d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| TTWO | NASDAQ | 213.47 | -6.30 | 2.30 | — | 1.0x | 227.82 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-09 (8d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| BELFB | NASDAQ | 208.24 | -7.65 | 2.29 | — | 0.5x | 225.49 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-28 (20d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | RCI | NYSE | 34.65 | 4.24 | -2.28 | — | 1.2x | 33.24 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-23 (25d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| IREN | NASDAQ | 16.39 | -9.80 | 2.23 | — | 0.3x | 18.17 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| NVTS | NASDAQ | 7.88 | -11.96 | 2.25 | — | 0.3x | 8.95 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-03 (14d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| AMPX | NYSE | 7.12 | -10.21 | 2.25 | — | 0.4x | 7.93 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-10 (7d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-10 (Nasdaq earnings calendar; no headline lookup), consensus EPS ($0.01) |
+| ICHR | NASDAQ | 33.65 | -5.80 | 2.23 | — | 0.4x | 35.72 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-02 (15d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| STX | NASDAQ | 499 | -5.54 | 2.20 | — | 0.4x | 528.29 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-27 (21d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | URGN | NASDAQ | 28.1 | 7.33 | 2.17 | — | 0.6x | 26.18 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-04 (13d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| MPWR | NASDAQ | 1314 | -5.50 | 2.14 | — | 0.4x | 1390.54 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-29 (19d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| SMCI | NASDAQ | 25.025 | -6.85 | 2.14 | — | 0.4x | 26.87 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-03 (14d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| CRM | NYSE | 214.83 | -1.38 | -2.14 | — | 1.4x | 217.84 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-08-26 (83d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| CORZ | NASDAQ | 13.58 | -6.47 | 2.14 | — | 0.4x | 14.52 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | SKYD | NYSE | 7.04 | -6.38 | 2.13 | — | 0.7x | 7.52 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-09 (8d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| DIS | NYSE | 118.7 | -0.23 | -2.13 | — | 2.0x | 118.97 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-17 (0d ago) | PRE_GAP | Y | FY26 Q4 and full-year results (reported 2026-11-17, 06:30 ET): adjusted EPS $1.77 vs $1.67 consensus, revenue $25.9bn vs $25.2bn est (16% y/y), FY26 adjusted EPS $7.02, +18%; FY27 guidance targets double-digit adjusted-EPS growth, $11bn free cash flow and $9bn of buybacks, plus $3bn of cost savings by FY2029 |
-| APLD | NASDAQ | 14.58 | -8.70 | 2.13 | — | 0.3x | 15.97 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-07 (41d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| STX | NASDAQ | 499 | -5.54 | 2.10 | — | 0.4x | 528.29 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-27 (21d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| ABSI | NASDAQ | 7.475 | -11.54 | 2.07 | — | 0.3x | 8.45 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-12 (5d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-12 (Nasdaq earnings calendar; no headline lookup), consensus EPS ($0.14) |
+| AMAT | NASDAQ | 350.25 | -5.47 | 2.12 | — | 0.5x | 370.50 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-12 (5d ago) | PRE_GAP | — | Q4 2026 results, report date 2026-11-12 (Nasdaq earnings calendar; no headline lookup), consensus EPS $4.06 |
+| DELL | NYSE | 320.55 | -6.96 | 2.12 | — | 0.4x | 344.53 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-09-01 (77d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| LRCX | NASDAQ | 210.83 | -6.68 | 2.11 | — | 0.4x | 225.92 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-21 (27d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| VRT | NYSE | 188.67 | -6.63 | 2.08 | — | 0.4x | 202.07 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-28 (20d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| MRNA | NASDAQ | 215.27 | -3.63 | 2.08 | — | 0.4x | 223.37 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-06 (11d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 | LASR | NASDAQ | 37.82 | -8.32 | 2.06 | — | 0.4x | 41.25 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| AMD | NASDAQ | 504.28 | -5.58 | 2.05 | — | 0.3x | 534.06 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-03 (14d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| QNT | NASDAQ | 31.75 | -10.31 | 2.05 | — | 0.3x | 35.40 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| INOD | NASDAQ | 32.59 | -8.09 | 2.03 | — | 0.4x | 35.46 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-05 (12d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
-| DFTX | NASDAQ | 30.16 | -5.99 | 2.00 | — | 0.5x | 32.08 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-09 (8d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| APLD | NASDAQ | 14.58 | -8.70 | 2.06 | — | 0.3x | 15.97 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-07 (41d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| WDC | NASDAQ | 280.93 | -4.98 | 2.06 | — | 0.4x | 295.65 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-22 (26d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| AADX | NYSE | 6.81 | -18.74 | 2.06 | — | 0.3x | 8.38 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-11 (6d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-11 (Nasdaq earnings calendar; no headline lookup), consensus EPS $0.09 |
+| SNDK | NASDAQ | 809.11 | -8.58 | 2.04 | — | 0.3x | 885.01 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-10-29 (19d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
+| CRWV | NASDAQ | 49.88 | -6.12 | 2.00 | — | 0.3x | 53.13 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-11-10 (7d ago) | PRE_GAP | — | Q3 2026 results, report date 2026-11-10 (Nasdaq earnings calendar; no headline lookup), consensus EPS ($1.45) |
+| MU | NASDAQ | 719.02 | -7.62 | 2.00 | — | 0.4x | 778.31 | yahoo_chart_daily | 2026-11-13 | US-listed | 2026-09-30 (48d ago) | PRE_GAP | — | no catalyst lookup (outside the per-run budget) |
 
 ## US — QUIET one-liners
 
 | Ticker | Venue | Chg % | Pre-mkt % | Post-mkt % | Move vs avg daily | Ref close | Ref source | Ref asof | US tradeable | Earn | Catalyst |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| PEP | NASDAQ | 0.68 | -1.99 | — | 0.5x | 145.44 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
-| GLXY | NASDAQ | -8.62 | 1.98 | — | 1.0x | 14.38 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
-| KLAC | NASDAQ | -5.49 | 1.91 | — | 1.2x | 152.32 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
-| NVTS | NASDAQ | -11.96 | 1.90 | — | 1.8x | 8.95 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
-| ALB | NYSE | -5.74 | 1.89 | — | 2.5x | 93.53 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
-| LRCX | NASDAQ | -6.68 | 1.86 | — | 1.4x | 225.92 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
-| WOLF | NYSE | -8.78 | 1.85 | — | 1.3x | 24.83 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
+| CRM | NYSE | -1.38 | -1.98 | — | 0.9x | 217.84 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
+| PEP | NASDAQ | 0.68 | -1.97 | — | 0.5x | 145.44 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
+| IONQ | NYSE | -8.41 | 1.97 | — | 1.5x | 28.88 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
+| HUBS | NYSE | 6.78 | -1.93 | — | 2.1x | 217.25 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
+| HD | NYSE | -0.34 | -1.92 | — | 0.2x | 348.69 | yahoo_chart_daily | 2026-11-13 | US-listed | — | Q4 2026 results, report date today (Nasdaq earnings calendar; no headline lookup), consensus EPS $3.86 |
+| KLAC | NASDAQ | -5.49 | 1.90 | — | 1.2x | 152.32 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
+| QBTS | NASDAQ | -9.31 | 1.89 | — | 1.7x | 9.56 | yahoo_chart_daily | 2026-11-13 | US-listed | — | Q3 2026 results, report date 2026-11-10 (Nasdaq earnings calendar; no headline lookup), consensus EPS ($0.14) |
+| AMKR | NASDAQ | -5.70 | 1.88 | — | 1.0x | 36.11 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
+| AMBA | NASDAQ | -8.47 | 1.87 | — | 2.5x | 60.12 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
+| DIS | NYSE | -0.23 | -1.84 | — | 0.2x | 118.97 | yahoo_chart_daily | 2026-11-13 | US-listed | Y | FY26 Q4 and full-year results (reported 2026-11-17, 06:30 ET): adjusted EPS $1.77 vs $1.67 consensus, revenue $25.9bn vs $25.2bn est (16% y/y), FY26 adjusted EPS $7.02, +18%; FY27 guidance targets double-digit adjusted-EPS growth, $11bn free cash flow and $9bn of buybacks, plus $3bn of cost savings by FY2029 |
+| ANET | NYSE | -5.21 | 1.84 | — | 1.1x | 197.29 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
 | APH | NYSE | -3.58 | 1.84 | — | 1.1x | 78.23 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
-| WDC | NASDAQ | -4.98 | 1.83 | — | 0.9x | 295.65 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
-| MRNA | NASDAQ | -3.63 | 1.82 | — | 0.8x | 223.37 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
-| ADI | NASDAQ | -3.72 | 1.78 | — | 1.2x | 397.97 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
-| HD | NYSE | -0.34 | -1.78 | — | 0.2x | 348.69 | yahoo_chart_daily | 2026-11-13 | US-listed | — | Q4 2026 results, report date today (Nasdaq earnings calendar; no headline lookup), consensus EPS $3.86 |
-| TTWO | NASDAQ | -6.30 | 1.78 | — | 2.6x | 227.82 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
-| CSCO | NASDAQ | -1.17 | 1.78 | — | 0.5x | 95.64 | yahoo_chart_daily | 2026-11-13 | US-listed | — | Q4 2026 results, report date 2026-11-12 (Nasdaq earnings calendar; no headline lookup), consensus EPS $1.15 |
+| EXK | NYSE | -6.66 | 1.82 | — | 1.8x | 7.66 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
 | CNC | NYSE | 4.91 | -1.78 | — | 1.9x | 71.27 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
+| STRL | NASDAQ | -5.90 | 1.77 | — | 1.0x | 292.39 | yahoo_chart_daily | 2026-11-13 | US-listed | — | no catalyst lookup (outside the per-run budget) |
 
 ## EU/UK — Headline table
 
 | Ticker | Market | Venue | Close | Chg % | Currency | Move vs avg daily | Ref close | Ref source | Ref asof | Session asof | Settle | US tradeable | Last earnings | Earn | Catalyst |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| XTB | poland | GPW | 116.86 | -16.36 | PLN | 8.1x | 139.72 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-10-28 (20d ago) | — | no catalyst lookup (outside the per-run budget) |
-| AVIO | italy | MIL | 39.38 | +15.48 | EUR | 6.0x | 34.10 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | US line (OTC:AVVOF) | 2026-03-12 (250d ago) | — | no catalyst lookup (outside the per-run budget) |
-| TECN | switzerland | SIX | 230.6 | -7.32 | CHF | 4.5x | 248.80 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-08-11 (98d ago) | — | no catalyst lookup (outside the per-run budget) |
-| CBF | poland | GPW | 213 | +7.04 | PLN | 7.7x | 199.00 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-16 (1d ago) | — | no catalyst lookup (outside the per-run budget) |
-| GOMX | sweden | OMXSTO | 13.77 | -6.96 | SEK | 1.7x | 14.80 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-08-26 (83d ago) | — | no catalyst lookup (outside the per-run budget) |
-| ZZ_B | sweden | OMXSTO | 119.4 | +6.42 | SEK | 3.2x | 112.20 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-17 (0d ago) | Y | Q3 2026 interim report (reported 2026-11-17, 08:00 CET): revenue SEK 940.5m, +20% (+23% in local currency), EBITDA SEK 168.5m, +54% at a 17.9% margin, net income SEK 122.0m, EPS SEK 3.10; management calls the FY 20% growth target challenging; acquires Uzesta |
-| ROB | poland | GPW | 26.55 | -6.18 | PLN | 6.4x | 28.30 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | — | — | no catalyst lookup (outside the per-run budget) |
-| SEYE | sweden | OMXSTO | 48 | +6.05 | SEK | 2.3x | 45.26 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-17 (0d ago) | Y | Q3 2026 interim report (reported 2026-11-17, 07:00 CET): first positive EBIT at SEK 5m, organic growth 33%, net sales +36%, EBITDA +SEK 22.6m, EPS -0.24; SEK 40m/yr of OPEX to be cut and a SEK 100m mirror-integrated Interior Sensing order signed; first quarter reported on IFRS |
-| WWI | norway | OSL | 946 | +5.46 | NOK | 3.6x | 897.00 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-04 (13d ago) | — | pending catalyst lookup |
-| OVH | france | EURONEXT | 14.05 | -5.39 | EUR | 1.3x | 14.85 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | US line (OTC:OVHFF) | 2026-10-20 (28d ago) | — | no catalyst lookup (outside the per-run budget) |
-| CDR | poland | GPW | 266 | -5.27 | PLN | 4.0x | 280.80 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-09-02 (76d ago) | N | no fresh catalyst found - Q3 2026 results are due on 24 Nov 2026; the shares fell with a -1.04% WIG20 session in which CD Projekt RED, KGHM, Orlen and the energy names led the decline |
-| VU | france | EURONEXT | 149.8 | -5.25 | EUR | 2.1x | 158.10 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-09-21 (57d ago) | — | no catalyst lookup (outside the per-run budget) |
-| WWIB | norway | OSL | 899 | +5.02 | NOK | 3.1x | 856.00 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-04 (13d ago) | — | no catalyst lookup (outside the per-run budget) |
-| MORROW | sweden | OMXSTO | 17.18 | -4.87 | SEK | 2.9x | 18.06 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-12 (5d ago) | — | pending catalyst lookup |
+| XTB | poland | GPW | 116.94 | -16.30 | PLN | 8.0x | 139.72 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-10-28 (20d ago) | — | no catalyst lookup (outside the per-run budget) |
+| AVIO | italy | MIL | 39.325 | +15.32 | EUR | 6.0x | 34.10 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | US line (OTC:AVVOF) | 2026-03-12 (250d ago) | — | no catalyst lookup (outside the per-run budget) |
+| ZZ_B | sweden | OMXSTO | 119.6 | +6.60 | SEK | 3.3x | 112.20 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-17 (0d ago) | Y | Q3 2026 interim report (reported 2026-11-17, 08:00 CET): revenue SEK 940.5m, +20% (+23% in local currency), EBITDA SEK 168.5m, +54% at a 17.9% margin, net income SEK 122.0m, EPS SEK 3.10; management calls the FY 20% growth target challenging; acquires Uzesta |
+| TECN | switzerland | SIX | 232.8 | -6.43 | CHF | 4.0x | 248.80 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-08-11 (98d ago) | — | no catalyst lookup (outside the per-run budget) |
+| CBF | poland | GPW | 211.6 | +6.33 | PLN | 6.9x | 199.00 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-16 (1d ago) | — | no catalyst lookup (outside the per-run budget) |
+| SEYE | sweden | OMXSTO | 48.06 | +6.19 | SEK | 2.4x | 45.26 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-17 (0d ago) | Y | Q3 2026 interim report (reported 2026-11-17, 07:00 CET): first positive EBIT at SEK 5m, organic growth 33%, net sales +36%, EBITDA +SEK 22.6m, EPS -0.24; SEK 40m/yr of OPEX to be cut and a SEK 100m mirror-integrated Interior Sensing order signed; first quarter reported on IFRS |
+| WWI | norway | OSL | 947 | +5.57 | NOK | 3.7x | 897.00 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-04 (13d ago) | N | no fresh catalyst found - no company release today; the Q3 2026 report (4 Nov) showed EPS US$3.70 and revenue US$327m, +5.1%, and the shares trade ex a NOK 8.50 dividend (ex 11 Nov, paid 19 Nov) after the buyback tender priced the A-shares at NOK 885 |
+| OVH | france | EURONEXT | 14.03 | -5.52 | EUR | 1.3x | 14.85 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | US line (OTC:OVHFF) | 2026-10-20 (28d ago) | — | no catalyst lookup (outside the per-run budget) |
+| GOMX | sweden | OMXSTO | 13.99 | -5.47 | SEK | 1.3x | 14.80 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-08-26 (83d ago) | — | no catalyst lookup (outside the per-run budget) |
+| VU | france | EURONEXT | 149.6 | -5.38 | EUR | 2.1x | 158.10 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-09-21 (57d ago) | — | no catalyst lookup (outside the per-run budget) |
+| CDR | poland | GPW | 266.3 | -5.16 | PLN | 3.9x | 280.80 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-09-02 (76d ago) | N | no fresh catalyst found - Q3 2026 results are due on 24 Nov 2026; the shares fell with a -1.04% WIG20 session in which CD Projekt RED, KGHM, Orlen and the energy names led the decline |
+| WWIB | norway | OSL | 899 | +5.02 | NOK | 3.1x | 856.00 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-04 (13d ago) | N | no fresh catalyst found - no company release today; the Q3 2026 report (4 Nov) showed EPS US$3.70 and revenue US$327m, +5.1%, and the shares trade ex a NOK 8.50 dividend (ex 11 Nov, paid 19 Nov) after the buyback tender priced the A-shares at NOK 885 |
+| HEM | sweden | OMXSTO | 55.1 | -5.00 | SEK | 1.3x | 58.00 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-10-22 (26d ago) | N | no fresh catalyst found - no company news on 17 Nov; the last disclosures are the 13 Nov preliminary October net sales and listing volumes and the CEO transition announced on 4 Nov (Michael Hansen interim CEO), after the Q3 2026 interim report (reported 2026-10-22) in which net sales fell 17.8% to SEK 301.5m, EBITDA fell 26.3% to SEK 144.1m and the margin dropped 5.5pp to 47.8%; the second dividend instalment is scheduled for distribution on 18 Nov |
+| ROB | poland | GPW | 26.95 | -4.77 | PLN | 4.9x | 28.30 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | — | — | no catalyst lookup (outside the per-run budget) |
+| ENAV | italy | MIL | 5.48 | -4.70 | EUR | 4.2x | 5.75 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-08-03 (106d ago) | — | no catalyst lookup (outside the per-run budget) |
 | NANO | france | EURONEXT | 25.1 | -4.64 | EUR | 1.1x | 26.32 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | US line (NASDAQ:NA) | 2026-09-24 (54d ago) | — | no catalyst lookup (outside the per-run budget) |
-| ENAV | italy | MIL | 5.49 | -4.52 | EUR | 4.1x | 5.75 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-08-03 (106d ago) | — | no catalyst lookup (outside the per-run budget) |
-| PLT | norway | OSL | 11.82 | -4.37 | NOK | 1.2x | 12.36 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-08-06 (103d ago) | — | no catalyst lookup (outside the per-run budget) |
+| RMS | france | EURONEXT | 1287.5 | -4.59 | EUR | 2.8x | 1349.50 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-07-29 (111d ago) | N | no fresh catalyst found - no company news on 17 Nov; the luxury de-rating continues after the 22 Oct Q3 revenue slowdown (+4.3% in Q3 against +6.1% in H1, the shares hitting a 4-year low then), with the stock down about 38% YTD and roughly -4.5% today in a barely positive CAC 40 |
 | NORBT | norway | OSL | 168.8 | -4.36 | NOK | 1.8x | 176.50 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-12 (5d ago) | Y | Q3 2026 results (reported 2026-11-12): revenue NOK 676.7m beat the NOK 638m consensus, statutory EPS NOK 1.12 missed by 14%, extra dividend of NOK 2.00 declared - the shares traded ex-dividend today, which accounts for part of the 4.25% fall |
-| RMS | france | EURONEXT | 1291 | -4.33 | EUR | 2.7x | 1349.50 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-07-29 (111d ago) | — | pending catalyst lookup |
-| DBK | germany | XETR | 31.58 | -4.06 | EUR | 1.9x | 32.91 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-10-28 (20d ago) | N | 'Inside Deutsche Bank' leaked-document investigation (Der Spiegel/FT/NYT/Le Monde consortium, 15m records on Russian oligarch, Trump and Epstein dealings) - shares fell 5-6% in Frankfurt, the biggest drop since April 2025; the bank says the matters date back decades with no meaningful financial impact; an MEP has called for CEO Christian Sewing to testify |
-| MONC | italy | MIL | 41.8 | -3.93 | EUR | 2.3x | 43.51 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-07-22 (118d ago) | — | no catalyst lookup (outside the per-run budget) |
-| ACE | italy | MIL | 19.53 | -3.89 | EUR | 4.0x | 20.32 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-13 (4d ago) | — | no catalyst lookup (outside the per-run budget) |
-| GUBRA | denmark | OMXCOP | 290 | -3.85 | DKK | 1.6x | 301.60 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-08-20 (89d ago) | — | no catalyst lookup (outside the per-run budget) |
-| FGP | uk | LSE | 224.4096 | -3.69 | GBX | 3.2x | 233.00 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-17 (0d ago) | Y | H1 FY2027 results (reported 2026-11-17): adjusted EPS 8.4p vs 9.9p (-15%), Open Access adjusted operating profit collapsed to GBP 0.8m from GBP 16.3m on ~GBP 8m of Stirling launch costs, group adjusted revenue +21% to GBP 1.01bn; interim DPS raised to 2.3p, a further GBP 50m buyback announced, FY27 flat adjusted-EPS guidance maintained; Panmure cut its target to 265p |
-| IDR | spain | BME | 55.6 | -3.64 | EUR | 1.6x | 57.70 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-10-29 (19d ago) | — | no catalyst lookup (outside the per-run budget) |
-| ACT0 | germany | XETR | 155.4 | +3.60 | EUR | 1.1x | 150.00 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-10-28 (20d ago) | — | no catalyst lookup (outside the per-run budget) |
-| EYDAP | greece | ATHEX | 14.18 | +3.50 | EUR | 3.5x | 13.70 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-09-24 (54d ago) | — | no catalyst lookup (outside the per-run budget) |
-| ZEAL | denmark | OMXCOP | 231.5 | -3.46 | DKK | 2.5x | 239.80 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-12 (5d ago) | — | no catalyst lookup (outside the per-run budget) |
-| LXS | germany | XETR | 12.67 | -3.43 | EUR | 2.3x | 13.12 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-05 (12d ago) | — | no catalyst lookup (outside the per-run budget) |
-| ZEG | uk | LSE | 1792 | +3.34 | GBX | 1.8x | 1734.00 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-17 (0d ago) | — | no catalyst lookup (outside the per-run budget) |
+| PLT | norway | OSL | 11.84 | -4.21 | NOK | 1.1x | 12.36 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-08-06 (103d ago) | — | no catalyst lookup (outside the per-run budget) |
+| ALK_B | denmark | OMXCOP | 242.8 | -4.11 | DKK | 4.5x | 253.20 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-17 (0d ago) | Y | Q3 2026 interim report (reported 2026-11-17, 07:30 CET): Q3 revenue +15% led by +35% tablet growth, EBIT +9% at a 27% margin, and FY26 guidance held at 16-17% revenue growth and ~27% EBIT margin - the shares fell 3.7% on the day, giving back the ~6% jump of 12 Nov when the outlook was raised |
+| MONC | italy | MIL | 41.76 | -4.02 | EUR | 2.4x | 43.51 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-07-22 (118d ago) | — | no catalyst lookup (outside the per-run budget) |
+| SFER | italy | MIL | 6.14 | -3.99 | EUR | 2.4x | 6.39 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-08-03 (106d ago) | — | no catalyst lookup (outside the per-run budget) |
+| DBK | germany | XETR | 31.615 | -3.95 | EUR | 1.9x | 32.91 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-10-28 (20d ago) | N | 'Inside Deutsche Bank' leaked-document investigation (Der Spiegel/FT/NYT/Le Monde consortium, 15m records on Russian oligarch, Trump and Epstein dealings) - shares fell 5-6% in Frankfurt, the biggest drop since April 2025; the bank says the matters date back decades with no meaningful financial impact; an MEP has called for CEO Christian Sewing to testify |
+| FGP | uk | LSE | 223.8 | -3.95 | GBX | 3.4x | 233.00 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-17 (0d ago) | Y | H1 FY2027 results (reported 2026-11-17): adjusted EPS 8.4p vs 9.9p (-15%), Open Access adjusted operating profit collapsed to GBP 0.8m from GBP 16.3m on ~GBP 8m of Stirling launch costs, group adjusted revenue +21% to GBP 1.01bn; interim DPS raised to 2.3p, a further GBP 50m buyback announced, FY27 flat adjusted-EPS guidance maintained; Panmure cut its target to 265p |
+| GUBRA | denmark | OMXCOP | 290.2 | -3.78 | DKK | 1.5x | 301.60 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-08-20 (89d ago) | — | no catalyst lookup (outside the per-run budget) |
+| IDR | spain | BME | 55.58 | -3.67 | EUR | 1.6x | 57.70 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-10-29 (19d ago) | — | no catalyst lookup (outside the per-run budget) |
+| ZEAL | denmark | OMXCOP | 231.3 | -3.54 | DKK | 2.6x | 239.80 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-12 (5d ago) | — | no catalyst lookup (outside the per-run budget) |
+| LXS | germany | XETR | 12.66 | -3.51 | EUR | 2.3x | 13.12 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-05 (12d ago) | — | no catalyst lookup (outside the per-run budget) |
+| OCDO | uk | LSE | 328.4 | -3.47 | GBX | 1.6x | 340.20 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-07-16 (124d ago) | — | no catalyst lookup (outside the per-run budget) |
+| IOS | germany | XETR | 35.93 | -3.26 | EUR | 2.2x | 37.14 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | live | none | 2026-11-12 (5d ago) | — | no catalyst lookup (outside the per-run budget) |
 
 ## AU (ASX) — Headline table
 
 | Ticker | Venue | Close | Chg % | Currency | Move vs avg daily | Ref close | Ref source | Ref asof | Session asof | Settle | US tradeable | Last earnings | Earn | Catalyst |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| CAT | ASX | 3.02 | -16.57 | AUD | 5.4x | 3.62 | yahoo_chart_daily | 2026-11-15 | 2026-11-17 | settled | US line (OTC:BLCAF) | 2026-11-15 (2d ago) | — | no catalyst lookup (outside the per-run budget) |
+| CAT | ASX | 3.02 | -16.57 | AUD | 5.4x | 3.62 | yahoo_chart_daily | 2026-11-15 | 2026-11-17 | settled | US line (OTC:BLCAF) | 2026-11-17 (0d ago) | Y | H1 FY27 results (reported 2026-11-17, 08:38 AEDT): revenue US$81.7m, +20.8%, ACV US$145.2m, +25.4%, management EBITDA US$16.1m, +65.6% at a 20% margin and free cash flow US$9.3m - but the statutory net loss widened to US$19.1m from US$8.6m on share-based payment, amortisation and acquisition costs; no dividend |
 | IPH | ASX | 3.42 | -13.42 | AUD | 6.5x | 3.95 | yahoo_chart_daily | 2026-11-15 | 2026-11-17 | settled | none | 2026-08-19 (90d ago) | N | FY27 trading update at today's AGM (announced 09:42 AEDT, 17 Nov): four-month revenue A$221.5m, -8.4%, underlying EBITDA A$62.6m, -13.4% (like-for-like revenue -1.2%, EBITDA -4.2%; ANZ like-for-like EBITDA -7.2%); FY26 statutory NPAT A$80.4m and dividends +5.5% to 38.5cps |
 | SRL | ASX | 10.76 | -11.00 | AUD | 1.9x | 12.09 | yahoo_chart_daily | 2026-11-15 | 2026-11-17 | settled | none | 2026-09-07 (71d ago) | N | no fresh catalyst found - no ASX announcement since the 16 Nov afternoon; the shares fell 11.0% to A$10.76 in an ASX-wide selloff; the live drivers remain the conditional US$400m US defence-linked loan and the Mount Ridley scandium project |
 | MAF | ASX | 4.22 | -9.44 | AUD | 3.5x | 4.66 | yahoo_chart_daily | 2026-11-15 | 2026-11-17 | settled | none | 2026-08-19 (90d ago) | — | no catalyst lookup (outside the per-run budget) |
@@ -213,7 +220,7 @@
 | 4082 | ksa | TADAWUL | 8.12 | +6.56 | SAR | 2.6x | 7.62 | yahoo_chart_daily | 2026-11-16 | 2026-11-17 | settled | none | — | — | no catalyst lookup (outside the per-run budget) |
 | EB5 | singapore | SGX | 3.03 | +6.32 | SGD | 1.8x | 2.85 | yahoo_chart_daily | 2026-11-15 | 2026-11-16 | settled | none | 2026-08-13 (96d ago) | — | no catalyst lookup (outside the per-run budget) |
 | VSL | newzealand | NZX | 6.85 | -3.52 | NZD | 2.0x | 7.10 | yahoo_chart_daily | 2026-11-15 | 2026-11-16 | settled | none | 2026-08-24 (85d ago) | N | no fresh catalyst found - no company announcement (FY26 results in August, AGM 21 Oct); the shares fell 3.5% to NZ$6.85 with the NZX distribution-services sector while the NZX 50 closed flat |
-| SPG | newzealand | NZX | 1.095 | -3.10 | NZD | 1.9x | 1.13 | yahoo_chart_daily | 2026-11-15 | 2026-11-16 | settled | none | 2025-11-25 (357d ago) | — | pending catalyst lookup |
+| SPG | newzealand | NZX | 1.095 | -3.10 | NZD | 1.9x | 1.13 | yahoo_chart_daily | 2026-11-15 | 2026-11-16 | settled | none | 2025-11-25 (357d ago) | N | no fresh catalyst found - no NZX announcement since the 31 Aug FY27 Q1 dividend notice; the stapled group (market cap NZ$633m) fell 3.1% with no news |
 | SAN | newzealand | NZX | 7.07 | +2.91 | NZD | 1.5x | 6.87 | yahoo_chart_daily | 2026-11-15 | 2026-11-16 | settled | none | 2026-11-16 (1d ago) | — | no catalyst lookup (outside the per-run budget) |
 
 ## Source health
@@ -224,26 +231,26 @@
 - et_clock: zoneinfo America/New_York (DST-aware; a fixed UTC-4 mislabels every winter fire)
 - premarket_window: 04:00-09:30 ET, resolved with zoneinfo (09:00-14:30 UTC in winter, 08:00-13:30 UTC in summer)
 - session_selection: by DATE and order, never by a modal time-of-day. Yahoo stamps a daily bar at the session open, so the ET stamp of the SAME session shifts by one hour across a DST boundary; a modal filter kept the OLDER bars and discarded the NEWEST ones, which rolled the base back to the prior-prior session (66 US + 21 ASX rows lost on 2026-11-03, 24 of 25 ASX rows lost on 2026-11-04).
-- yahoo_calls: 150 | yahoo_429: 0 | yahoo_errors: 0 | yahoo_breaker: closed
-- reference_close (screener vs Yahoo, resolved BEFORE the tables were built): agree=140 mismatch=0 unverified=0 stale_reference=0
+- yahoo_calls: 157 | yahoo_429: 0 | yahoo_errors: 0 | yahoo_breaker: closed
+- reference_close (screener vs Yahoo, resolved BEFORE the tables were built): agree=147 mismatch=0 unverified=0 stale_reference=0
   method: the screener's implied reference close (close / (1 + change/100)) is compared
   with Yahoo's own reference close. A match proves the move was measured against the
   TRUE prior close; a mismatch means the row sits on a STALE reference (phantom move).
   Coverage: every row of the US headline, US QUIET, EU/UK and ASX tables is checked.
-  Yahoo bar mode: {"closed": 110, "live": 30} (closed = last completed session bar;
+  Yahoo bar mode: {"closed": 117, "live": 30} (closed = last completed session bar;
   live = in-progress EU/UK session bar, which is what a weekday 08:00 ET EU move needs)
-  live drift between the screener snapshot and the later Yahoo print: median=0.00pp max=1.28pp (expected on a live market)
+  live drift between the screener snapshot and the later Yahoo print: median=0.00pp max=1.46pp (expected on a live market)
 - rows_dropped_stale_ref: 0 (rows whose screener-implied reference close disagreed with Yahoo's by more than 0.5%; they are dropped, not published)
 - rows_dropped_unresolved_ref: 0 (rows whose reference close could not be resolved from Yahoo at all - the base of the move is unverifiable, so the row is dropped rather than published with a '—' base)
-- us_premarket_check (Yahoo 1-min pre/post feed vs the screener pre-market column, base = the IMMEDIATELY prior session's close): checked=10 within_1pp=8 within_3pp=10 unavailable=0
-- markets_with_lt5_rows: ['uk:egreater=1', 'germany:egreater=1', 'france:egreater=2', 'netherlands:egreater=0', 'netherlands:less=0', 'belgium:egreater=0', 'belgium:less=2', 'portugal:egreater=0', 'portugal:less=0', 'ireland:egreater=0', 'ireland:less=0', 'italy:egreater=2', 'switzerland:egreater=0', 'switzerland:less=2', 'spain:egreater=0', 'spain:less=1', 'denmark:egreater=0', 'finland:egreater=0', 'finland:less=2', 'poland:egreater=2', 'austria:egreater=0', 'austria:less=1', 'greece:egreater=1', 'greece:less=0', 'singapore:egreater=2', 'newzealand:egreater=1', 'newzealand:less=4']
+- us_premarket_check (Yahoo 1-min pre/post feed vs the screener pre-market column, base = the IMMEDIATELY prior session's close): checked=10 within_1pp=7 within_3pp=10 unavailable=0
+- markets_with_lt5_rows: ['uk:egreater=1', 'germany:egreater=1', 'france:egreater=2', 'netherlands:egreater=0', 'netherlands:less=0', 'belgium:egreater=0', 'belgium:less=1', 'portugal:egreater=0', 'portugal:less=0', 'ireland:egreater=0', 'ireland:less=0', 'italy:egreater=2', 'switzerland:egreater=0', 'switzerland:less=2', 'spain:egreater=0', 'spain:less=1', 'denmark:egreater=0', 'finland:egreater=0', 'finland:less=2', 'poland:egreater=2', 'austria:egreater=0', 'austria:less=1', 'greece:egreater=1', 'greece:less=0', 'singapore:egreater=2', 'newzealand:egreater=1', 'newzealand:less=4']
   NOTE: this fires per market AND direction, so it is NOT a coverage-failure signal on
   its own. A 'less' count of 0-3 means almost nothing fell more than 2.5% that session
   (a broad up-day); a small 'egreater' count usually means a small market with few
   names above the $1B market-cap floor. Check the median change before calling it a gap.
 - filters: volume>10000 (removes stale-reference rows), country=home for EU/UK/AU,
   exchange drop-list for US, US venue allow-list, US preferred (slash ticker) excluded
-- pass_b2 (US pre-market gap scan - "gapped today, flat yesterday"): candidates=10 deduped_against_pass_a_b=6 published=4 (up=9 down=1)
+- pass_b2 (US pre-market gap scan - "gapped today, flat yesterday"): candidates=11 deduped_against_pass_a_b=6 published=5 (up=10 down=1)
   filter: US venues, market_cap_basic > $200,000,000, close > $2, |premarket_change| >= 5.0%, premarket_volume >= 10,000 shares; two scans (up and down) because a scanner filter is AND-ed
   why it exists: on 2026-11-13 a name that was FLAT in the prior session and is not a $20bn mega-cap fell through Pass A and Pass B, so LFTO (+30.63% on the day) and SBC (+37.64%) were both missed by the routine that exists to catch same-session earnings reactions
   column measurement (2026-11-15, market `america`, US stocks): `premarket_change` and `premarket_volume` are available as BOTH a column and a FILTER (an unknown field returns 200 with zero rows, so the counts are the proof); `gap` also exists but it is the REGULAR SESSION OPEN gap, which is not knowable at the 08:00 ET fire, so `premarket_change` is the column used
@@ -254,7 +261,7 @@
   showed no bar for the scan date). The reference-close cross-check is what catches
   those; rows that fail it are dropped from the tables, not published.
 - us_preferred_dropped: 59
-- bod_no_extended_hours: 87 (deferred to the next scan; not in the headline table)
+- bod_no_extended_hours: 80 (deferred to the next scan; not in the headline table)
 - earnings_source: screener `earnings_release_date` (last FULL report) + `earnings_release_next_date` (next scheduled)
 - earnings_caveat: `earnings_release_date` does NOT capture preliminary, guidance or
   restructuring releases. On 2026-10-23 LKQ fell 22.47% on a preliminary Q3 miss while
@@ -267,38 +274,37 @@
 - catalyst_budget: 2 US + 9 EU + 2 AU + 3 APAC/Gulf = 16 lookups per run (cap 16), allocated by the evidence gap: the US slice covers the rows whose earnings event can still explain today's move, the EU/AU/APAC floors are never squeezed because no bulk calendar reaches those markets, and whatever the US slice does not need goes to the region with the most unexplained rows
 - earnings_calendar: Nasdaq public earnings calendar (calls=8 errors=0 symbols=1073) - the source of record for the US earnings date, and the ranking key for the search budget
 - earnings_field_stale_rows: 0 (the screener's earnings_release_date disagreed with the calendar; the calendar's date is published)
-- earnings_dates: the published `Last earnings` date by source - catalog (researched) 7, calendar 8, asx 0, screener 110. The chain is researched -> calendar (US) -> ASX feed (AU) -> the screener's field, which is the FALLBACK and the one that lags (2026-11-12: NBIS carried the previous quarter's date on the morning it reported, and MEKO, NORBT and FG carried July and August dates on the morning they all reported).
-- asx_announcements: 6 results-classified announcement(s) for the last ASX session (calls=1 errors=0); the announcement date IS the report date, and the meeting/AGM/offer/assay headlines are excluded because they are not reports
-- earnings_date_quality: 5 of 20 markets publish a FRESH earnings date (median age <= 14d); the table below gives each market's rows, the rows with NO date at all, the median age of the published date and the rows within 7 and 30 days - the reader sees the input quality instead of trusting it
+- earnings_dates: the published `Last earnings` date by source - catalog (researched) 8, calendar 12, asx 0, screener 112. The chain is researched -> calendar (US) -> ASX feed (AU) -> the screener's field, which is the FALLBACK and the one that lags (2026-11-12: NBIS carried the previous quarter's date on the morning it reported, and MEKO, NORBT and FG carried July and August dates on the morning they all reported).
+- asx_announcements: 4 results-classified announcement(s) for the last ASX session (calls=1 errors=0); the announcement date IS the report date, and the meeting/AGM/offer/assay headlines are excluded because they are not reports
+- earnings_date_quality: 5 of 19 markets publish a FRESH earnings date (median age <= 14d); the table below gives each market's rows, the rows with NO date at all, the median age of the published date and the rows within 7 and 30 days - the reader sees the input quality instead of trusting it
 | market | rows | no date | median age | <=7d | <=30d |
 |---|---|---|---|---|---|
 | au | 4 | 0 | 90d | 1 | 1 |
 | china | 3 | 2 | 202d | 0 | 0 |
-| denmark | 2 | 0 | 89d | 1 | 1 |
+| denmark | 3 | 0 | 5d | 2 | 2 |
 | france | 4 | 0 | 57d | 0 | 1 |
-| germany | 3 | 0 | 20d | 0 | 3 |
-| greece | 1 | 0 | 54d | 0 | 0 |
+| germany | 3 | 0 | 12d | 1 | 3 |
 | india | 3 | 3 | n/a | 0 | 0 |
 | indonesia | 3 | 3 | n/a | 0 | 0 |
-| italy | 4 | 0 | 118d | 1 | 1 |
+| italy | 4 | 0 | 118d | 0 | 0 |
 | ksa | 3 | 2 | 16d | 0 | 1 |
 | newzealand | 3 | 0 | 85d | 1 | 1 |
 | norway | 4 | 0 | 13d | 1 | 3 |
 | poland | 4 | 1 | 20d | 1 | 2 |
 | singapore | 3 | 1 | 96d | 1 | 1 |
 | spain | 1 | 0 | 19d | 0 | 1 |
-| sweden | 4 | 0 | 5d | 3 | 3 |
+| sweden | 4 | 0 | 26d | 2 | 3 |
 | switzerland | 1 | 0 | 98d | 0 | 0 |
 | thailand | 3 | 1 | 6d | 2 | 2 |
-| uk | 2 | 0 | 0d | 2 | 2 |
-| us | 70 | 1 | 14d | 10 | 61 |
+| uk | 2 | 0 | 124d | 1 | 1 |
+| us | 77 | 1 | 14d | 13 | 67 |
 - earnings_tiers: fresh=1 near=1 (fresh = the report is dated on the scan date, near = the previous session)
 - one_table_rule: each name appears exactly once, in exactly one table, with its
   catalyst in that row's last column. There is no separate catalysts section.
 - data_date: US regular session close of the prior trading day; extended-hours columns
   carry the prior session's prints
 - settlement_state: 25 settled, 30 live (a live row's move is a mid-session snapshot, not the session's result)
-- rows_per_market (EU/UK, cap 4/market): {'poland': 4, 'italy': 4, 'switzerland': 2, 'sweden': 4, 'norway': 4, 'france': 4, 'germany': 4, 'denmark': 4, 'uk': 4, 'spain': 1, 'greece': 1, 'austria': 1, 'finland': 2, 'belgium': 2} — the cap stops one thin market taking the table; the EU/UK table was 28% Sweden over nine runs (73 of 264 rows) while Belgium and Greece never appeared once.
+- rows_per_market (EU/UK, cap 4/market): {'poland': 4, 'italy': 4, 'sweden': 4, 'switzerland': 2, 'norway': 4, 'france': 4, 'denmark': 4, 'germany': 4, 'uk': 4, 'spain': 1, 'greece': 1, 'finland': 2, 'belgium': 1, 'austria': 1} — the cap stops one thin market taking the table; the EU/UK table was 28% Sweden over nine runs (73 of 264 rows) while Belgium and Greece never appeared once.
 - rows_per_market (APAC/Gulf, cap 3/market): {'indonesia': 3, 'china': 3, 'india': 3, 'thailand': 3, 'singapore': 3, 'ksa': 3, 'newzealand': 3}
 - deprecations: mcp__tradingview-advanced__*, mcp__tradingview__*, mcp__financekit__*,
   mcp__stocktwits__* are ABSENT in Cloud sessions (tool_search 0 hits; connector catalog
@@ -309,4 +315,4 @@
 
 ## Audit line
 
-`earnings-reaction target=earnings-reactions:2026-11-17 candidates=436 amc_reactions=0 pre_gaps=70 eu_reactions=30 asx_reactions=4 apac_reactions=20 catalyst_lookups=16 bod=87 pass_b2_candidates=10 pass_b2_dedup=6 pass_b2_published=4 earnings_calendar_rows=1073 earnings_tiers_fresh=1 earnings_tiers_near=1 earnings_field_stale_rows=0 earnings_dates_catalog=7 earnings_dates_asx=0 asx_ann_rows=6 rows_dropped_stale_ref=0 rows_dropped_unresolved_ref=0 degraded_sources=0`
+`earnings-reaction target=earnings-reactions:2026-11-17 candidates=437 amc_reactions=0 pre_gaps=77 eu_reactions=30 asx_reactions=4 apac_reactions=20 catalyst_lookups=23 bod=80 pass_b2_candidates=11 pass_b2_dedup=6 pass_b2_published=5 earnings_calendar_rows=1073 earnings_tiers_fresh=1 earnings_tiers_near=1 earnings_field_stale_rows=0 earnings_dates_catalog=8 earnings_dates_asx=0 asx_ann_rows=4 rows_dropped_stale_ref=0 rows_dropped_unresolved_ref=0 degraded_sources=0`
