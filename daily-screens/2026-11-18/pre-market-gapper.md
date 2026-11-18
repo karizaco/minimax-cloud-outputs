@@ -109,12 +109,12 @@ Ordered by setup quality (stylists desc, then origins desc, then size of the mis
 - **the CSV's `screen_close_resolved` belongs to data_date 2026-11-16 and was NOT used as the denominator**
 - **CGON** — **stale tape** — the newest print is 39 min behind the wall clock, so the gap is a snapshot, not a live market.
 - **TSN** — reference close conflict (nasdaq-secondaryData 64.0200 vs 63.6500) — the three-source consensus was used.
-- **ULCC** — crossed the bar intraday and gave it back (pre-market high +0.26% / low +0.26% → +0.52% at the snapshot).
-- **FENC** — crossed the bar intraday and gave it back (pre-market high +0.52% / low +0.52% → +0.52% at the snapshot); **stale tape** — the newest print is 39 min behind the wall clock, so the gap is a snapshot, not a live market.
+- **ULCC** — crossed the bar intraday and gave it back (the pre-market tape reached +6.08% → +0.52% at the snapshot).
+- **FENC** — crossed the bar intraday and gave it back (the pre-market tape reached +6.55% → +0.52% at the snapshot); **stale tape** — the newest print is 39 min behind the wall clock, so the gap is a snapshot, not a live market.
 - **POWL** — reference close conflict (tradingview 150.7700 vs 150.8600) — the three-source consensus was used.
-- **URGN** — crossed the bar intraday and gave it back (pre-market high -0.03% / low -0.03% → -0.40% at the snapshot).
+- **URGN** — crossed the bar intraday and gave it back (the pre-market tape reached -6.26% → -0.40% at the snapshot).
 - **BILL** — reference close conflict (nasdaq-secondaryData 64.9500 vs 64.8800) — the three-source consensus was used.
-- **MOH** — crossed the bar intraday and gave it back (pre-market high n/a / low n/a → -0.10% at the snapshot).
+- **MOH** — crossed the bar intraday and gave it back (the pre-market tape reached -6.98% → -0.10% at the snapshot).
 - **TU** — **stale tape** — the newest print is 31 min behind the wall clock, so the gap is a snapshot, not a live market; reference close conflict (nasdaq-secondaryData 9.2800 vs 9.2600) — the three-source consensus was used.
 
 ## Method, source health & caveats
