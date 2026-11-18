@@ -1,7 +1,7 @@
 {
- "audit_date_et": "2026-11-16",
- "audit_run_et": "2026-11-17T07:04:24-0500",
- "origin_main_sha": "47c0a0e",
+ "audit_date_et": "2026-11-17",
+ "audit_run_et": "2026-11-18T07:06:39-0500",
+ "origin_main_sha": "8490fd2",
  "due": 21,
  "delivered": 21,
  "missing": 0,
@@ -15,43 +15,57 @@
  "gaps": [
   {
    "routine": "25-ntrt-gap-brief-daily",
-   "path": "ntrt/2026-11-16.md",
+   "path": "ntrt/2026-11-17.md",
    "label": "stalled",
-   "cause": "slow_run",
-   "gap_age_hours": 22.3,
-   "streak": 0
+   "cause": "quota_2056",
+   "gap_age_hours": 22.4,
+   "streak": 0,
+   "detail": "fire dispatched 08:45:12 ET (run 464364768121220, status 1) but its first model call came only at ~21:26 ET \u2014 766.5 min late; the session resumed in place and published the 17 Nov pre-market tape as a late reconstruction at 21:31 ET. dispatched on time and held by the platform before its first model call \u2014 the 08:45\u201309:50 ET block on 2026-11-17 was the 5-hour Token Plan window (#17's own session recorded the platform's 42212/2056 rejection); the fire resumed in place in the evening and published a correct late reconstruction, so the artifact is present and byte-verified on origin/main \u2014 NOT a MISSING"
+  },
+  {
+   "routine": "26b-agentic-pre-market-brief-refresh",
+   "path": "daily-briefs/2026-11-17-pre-market-refresh.md",
+   "label": "stalled",
+   "cause": "quota_2056",
+   "gap_age_hours": 21.8,
+   "streak": 0,
+   "detail": "fire dispatched 09:20:05 ET (run 464372136349850, status 1); the first model call came ~21:31 ET and the refresh published 21:36 ET (736.5 min late), carrying the session's final pre-market prints. dispatched on time and held by the platform before its first model call \u2014 the 08:45\u201309:50 ET block on 2026-11-17 was the 5-hour Token Plan window (#17's own session recorded the platform's 42212/2056 rejection); the fire resumed in place in the evening and published a correct late reconstruction, so the artifact is present and byte-verified on origin/main \u2014 NOT a MISSING"
   },
   {
    "routine": "07-focus-rvol-09:45",
-   "path": "daily-screens/2026-11-16/focus-rvol-snapshot.md",
+   "path": "daily-screens/2026-11-17/focus-rvol-snapshot.md",
    "label": "stalled",
-   "cause": "slow_run",
+   "cause": "quota_2056",
+   "gap_age_hours": 21.4,
+   "streak": 0,
+   "detail": "fire dispatched 09:45 ET; the first model call came ~21:52 ET and the snapshot published 21:57 ET (732.4 min late). Its own two prior due days were 13.9 and 50.4 min, so the routine is not slow \u2014 the platform held the fire. dispatched on time and held by the platform before its first model call \u2014 the 08:45\u201309:50 ET block on 2026-11-17 was the 5-hour Token Plan window (#17's own session recorded the platform's 42212/2056 rejection); the fire resumed in place in the evening and published a correct late reconstruction, so the artifact is present and byte-verified on origin/main \u2014 NOT a MISSING"
+  },
+  {
+   "routine": "92b-preopen-catalyst-capture",
+   "path": "preopen-feed/2026-11-17-0950.jsonl",
+   "label": "stalled",
+   "cause": "quota_2056",
    "gap_age_hours": 21.3,
-   "streak": 0
+   "streak": 0,
+   "detail": "fire dispatched 09:50:03 ET; window_check.sh measured stall_min 696 (no error recorded in the session) and the checkpoint published 21:28 ET \u2014 699 min late. The board reports the stall itself. dispatched on time and held by the platform before its first model call \u2014 the 08:45\u201309:50 ET block on 2026-11-17 was the 5-hour Token Plan window (#17's own session recorded the platform's 42212/2056 rejection); the fire resumed in place in the evening and published a correct late reconstruction, so the artifact is present and byte-verified on origin/main \u2014 NOT a MISSING"
   },
   {
    "routine": "17-us-stocks-in-play-open",
-   "path": "us-stocks-in-play/2026-11-16-open.md",
+   "path": "us-stocks-in-play/2026-11-17-open.md",
    "label": "stalled",
-   "cause": "slow_run",
-   "gap_age_hours": 21.2,
-   "streak": 0
+   "cause": "quota_2056",
+   "gap_age_hours": 21.3,
+   "streak": 0,
+   "detail": "fire dispatched 09:50:31 ET, held ~722 min before its first tool call, published 22:13 ET (743.2 min late, commit 8c3a0d71); the board declares itself a RECONSTRUCTION of the 09:50 screen rebuilt from the archived 5-minute series, and its own session recorded the platform's 42212/2056 quota rejection. The 09:50 board therefore landed 12h 23 min after its window closed \u2014 unusable as a live pre-open screen, but the artifact is present and byte-verified. dispatched on time and held by the platform before its first model call \u2014 the 08:45\u201309:50 ET block on 2026-11-17 was the 5-hour Token Plan window (#17's own session recorded the platform's 42212/2056 rejection); the fire resumed in place in the evening and published a correct late reconstruction, so the artifact is present and byte-verified on origin/main \u2014 NOT a MISSING"
   },
   {
    "routine": "20-eod-watchlist-csv",
-   "path": "us-eod/2026-11-16.csv",
+   "path": "us-eod/2026-11-17.csv",
    "label": "stalled",
    "cause": "slow_run",
    "gap_age_hours": 15.1,
-   "streak": 0
-  },
-  {
-   "routine": "13-macro-calendar-midweek",
-   "path": "macro-calendar/2026-11-11-midweek.md",
-   "label": "reconstructed",
-   "cause": "connection_error",
-   "gap_age_hours": 137.1,
-   "streak": 1
+   "streak": 0,
+   "detail": "healthy session, no platform error: the routine is simply slow. 3rd late day in 3 \u2014 104.6 / 92.8 / 77.7 min over 11-13 / 11-16 / 11-17 against the 45-min allowance, i.e. chronically late. Recommended allowance 110 min for 20-eod-watchlist-csv in latency.per_routine_allowed_minutes (or optimise the routine \u2014 the operator has an open investigation into its 1h42m runtime)."
   }
  ],
  "routines": {
@@ -65,13 +79,13 @@
    "routine": "19-earnings-reminder-daily",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 8.0
+   "delivery_latency_min": 10.3
   },
   "02-asia-pre-market-reactions": {
    "routine": "02-asia-pre-market-reactions",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 5.5
+   "delivery_latency_min": 7.9
   },
   "91-schedule-drift-guard": {
    "routine": "91-schedule-drift-guard",
@@ -89,73 +103,73 @@
    "routine": "15-earnings-reaction-scanner",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 15.2
+   "delivery_latency_min": 14.8
   },
   "26-agentic-pre-market-brief": {
    "routine": "26-agentic-pre-market-brief",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 21.1
+   "delivery_latency_min": 14.0
   },
   "08-pre-market-gapper": {
    "routine": "08-pre-market-gapper",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 8.1
+   "delivery_latency_min": 9.4
   },
   "92a-preopen-catalyst-capture": {
    "routine": "92a-preopen-catalyst-capture",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 4.6
+   "delivery_latency_min": 7.6
   },
   "25-ntrt-gap-brief-daily": {
    "routine": "25-ntrt-gap-brief-daily",
    "state": "delivered_late",
    "streak": 0,
-   "delivery_latency_min": 47.7
+   "delivery_latency_min": 766.5
   },
   "26b-agentic-pre-market-brief-refresh": {
    "routine": "26b-agentic-pre-market-brief-refresh",
-   "state": "delivered",
+   "state": "delivered_late",
    "streak": 0,
-   "delivery_latency_min": 11.8
+   "delivery_latency_min": 736.5
   },
   "07-focus-rvol-09:45": {
    "routine": "07-focus-rvol-09:45",
    "state": "delivered_late",
    "streak": 0,
-   "delivery_latency_min": 50.4
+   "delivery_latency_min": 732.4
   },
   "92b-preopen-catalyst-capture": {
    "routine": "92b-preopen-catalyst-capture",
-   "state": "delivered",
+   "state": "delivered_late",
    "streak": 0,
-   "delivery_latency_min": 43.8
+   "delivery_latency_min": 698.7
   },
   "17-us-stocks-in-play-open": {
    "routine": "17-us-stocks-in-play-open",
    "state": "delivered_late",
    "streak": 0,
-   "delivery_latency_min": 62.1
+   "delivery_latency_min": 743.2
   },
   "12-cross-asset-correlation": {
    "routine": "12-cross-asset-correlation",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 5.9
+   "delivery_latency_min": 4.5
   },
   "15b-earnings-reaction-settlement": {
    "routine": "15b-earnings-reaction-settlement",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 15.6
+   "delivery_latency_min": 3.0
   },
   "10-breadth-snapshot": {
    "routine": "10-breadth-snapshot",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 4.8
+   "delivery_latency_min": 8.7
   },
   "13-macro-calendar-midweek": {
    "routine": "13-macro-calendar-midweek",
@@ -179,31 +193,31 @@
    "routine": "17-us-stocks-in-play",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 23.0
+   "delivery_latency_min": 18.1
   },
   "04-reversal-bullish-3:55": {
    "routine": "04-reversal-bullish-3:55",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 4.5
+   "delivery_latency_min": 35.3
   },
   "20-eod-watchlist-csv": {
    "routine": "20-eod-watchlist-csv",
    "state": "delivered_late",
    "streak": 0,
-   "delivery_latency_min": 92.8
+   "delivery_latency_min": 77.7
   },
   "05-eod-international-daily": {
    "routine": "05-eod-international-daily",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 11.7
+   "delivery_latency_min": 10.9
   },
   "16-unusual-options-flow": {
    "routine": "16-unusual-options-flow",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 2.5
+   "delivery_latency_min": 3.2
   },
   "22-weekly-market-recap-preview": {
    "routine": "22-weekly-market-recap-preview",
@@ -215,13 +229,13 @@
    "routine": "09-daily-sweep-18:30",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 6.1
+   "delivery_latency_min": 7.4
   },
   "23-agentic-post-market-brief": {
    "routine": "23-agentic-post-market-brief",
    "state": "delivered",
    "streak": 0,
-   "delivery_latency_min": 17.8
+   "delivery_latency_min": 10.4
   }
  },
  "audit_status": "gaps_found"

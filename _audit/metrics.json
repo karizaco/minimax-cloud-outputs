@@ -1,74 +1,110 @@
 {
- "audit_date_et": "2026-11-16",
- "audit_date_dow": "Mon",
+ "audit_date_et": "2026-11-17",
+ "audit_date_dow": "Tue",
  "market_closed": false,
- "origin_main_sha": "47c0a0e",
+ "origin_main_sha": "8490fd2",
  "prior_gaps": [
+  {
+   "routine": "25-ntrt-gap-brief-daily",
+   "path": "ntrt/2026-11-16.md",
+   "label": "stalled",
+   "cause": "slow_run",
+   "gap_age_hours": 22.3,
+   "streak": 0,
+   "path_present": true,
+   "reconstruction": false
+  },
+  {
+   "routine": "07-focus-rvol-09:45",
+   "path": "daily-screens/2026-11-16/focus-rvol-snapshot.md",
+   "label": "stalled",
+   "cause": "slow_run",
+   "gap_age_hours": 21.3,
+   "streak": 0,
+   "path_present": true,
+   "reconstruction": false
+  },
+  {
+   "routine": "17-us-stocks-in-play-open",
+   "path": "us-stocks-in-play/2026-11-16-open.md",
+   "label": "stalled",
+   "cause": "slow_run",
+   "gap_age_hours": 21.2,
+   "streak": 0,
+   "path_present": true,
+   "reconstruction": false
+  },
+  {
+   "routine": "20-eod-watchlist-csv",
+   "path": "us-eod/2026-11-16.csv",
+   "label": "stalled",
+   "cause": "slow_run",
+   "gap_age_hours": 15.1,
+   "streak": 0,
+   "path_present": true,
+   "reconstruction": false
+  },
   {
    "routine": "13-macro-calendar-midweek",
    "path": "macro-calendar/2026-11-11-midweek.md",
-   "label": "MISSING",
+   "label": "reconstructed",
    "cause": "connection_error",
-   "gap_age_hours": 113.2,
+   "gap_age_hours": 137.1,
    "streak": 1,
    "path_present": true,
    "reconstruction": true
-  },
-  {
-   "routine": "25-ntrt-gap-brief-daily",
-   "path": "cloud-prompts/_shared/auditor-procedure.md",
-   "label": "roster_desync",
-   "cause": "cron_update_failed",
-   "gap_age_hours": 0,
-   "streak": 0
   }
  ],
  "path_presence": {
   "mcp-health/2026-W47.md": false,
-  "asia-pre-market/2026-11-16.md": true,
-  "catalog/catalysts/2026-11-16.md": true,
-  "cross-asset/2026-11-16.md": true,
-  "daily-briefs/2026-11-16-post-market.md": true,
-  "daily-briefs/2026-11-16-pre-market-refresh.md": true,
-  "daily-briefs/2026-11-16-pre-market.md": true,
-  "daily-screens/2026-11-16/_summary.md": true,
-  "daily-screens/2026-11-16/ariel-hernandez.md": true,
-  "daily-screens/2026-11-16/breadth-snapshot.md": true,
-  "daily-screens/2026-11-16/breadth.md": true,
-  "daily-screens/2026-11-16/daily-sweep.md": true,
-  "daily-screens/2026-11-16/focus-rvol-snapshot.md": true,
-  "earnings/2026-11-16-reminders.md": true,
+  "asia-pre-market/2026-11-17.md": true,
+  "catalog/catalysts/2026-11-17.md": true,
+  "cross-asset/2026-11-17.md": true,
+  "daily-briefs/2026-11-17-post-market.md": true,
+  "daily-briefs/2026-11-17-pre-market-refresh.md": true,
+  "daily-briefs/2026-11-17-pre-market.md": true,
+  "daily-screens/2026-11-17/_summary.md": true,
+  "daily-screens/2026-11-17/ariel-hernandez.md": true,
+  "daily-screens/2026-11-17/breadth-snapshot.md": true,
+  "daily-screens/2026-11-17/breadth.md": true,
+  "daily-screens/2026-11-17/daily-sweep.md": true,
+  "daily-screens/2026-11-17/focus-rvol-snapshot.md": true,
+  "earnings/2026-11-17-reminders.md": true,
   "_audit/status.json (audit/status branch)": false,
-  "earnings/2026-11-16-reactions.md": true,
-  "daily-screens/2026-11-16/pre-market-gapper.md": true,
-  "preopen-feed/2026-11-16-0830.md": true,
-  "preopen-feed/2026-11-16-0830.jsonl": true,
+  "earnings/2026-11-17-reactions.md": true,
+  "daily-screens/2026-11-17/pre-market-gapper.md": true,
+  "preopen-feed/2026-11-17-0830.md": true,
+  "preopen-feed/2026-11-17-0830.jsonl": true,
+  "ntrt/2026-11-17.md": true,
+  "preopen-feed/2026-11-17-0950.md": true,
+  "preopen-feed/2026-11-17-0950.jsonl": true,
+  "us-stocks-in-play/2026-11-17-open.md": true,
+  "earnings/2026-11-17-reactions-settled.md": true,
+  "macro-calendar/2026-11-17-midweek.md": false,
+  "macro-calendar/2026-11-17-week-ahead.md": false,
+  "daily-screens/2026-11-17/weekly-ipo.md": false,
+  "us-stocks-in-play/2026-11-17.md": true,
+  "daily-screens/2026-11-17/reversal-bullish-3_55.md": true,
+  "us-eod/2026-11-17.csv": true,
+  "daily-briefs/2026-11-17-pre-market-refresh.csv": true,
+  "daily-briefs/2026-11-17-pre-market.csv": true,
+  "daily-screens/2026-11-17/breadth-snapshot.csv": true,
+  "daily-screens/2026-11-17/focus-rvol-snapshot.csv": true,
+  "daily-screens/2026-11-17/focus.csv": true,
+  "daily-screens/2026-11-17/long-reversal-candidates.csv": true,
+  "daily-screens/2026-11-17/master.csv": true,
+  "daily-screens/2026-11-17/pre-market-gapper.csv": true,
+  "daily-screens/2026-11-17/reversal-bullish-3_55.csv": true,
+  "daily-screens/2026-11-17/short-candidates.csv": true,
+  "daily-screens/2026-11-17/tier-a.csv": true,
+  "international-eod/2026-11-17/au.csv": true,
+  "international-eod/2026-11-17": false,
+  "options-flow/2026-11-17.md": true,
+  "weekly/2026-11-17-preview.md": false,
   "ntrt/2026-11-16.md": true,
-  "preopen-feed/2026-11-16-0950.md": true,
-  "preopen-feed/2026-11-16-0950.jsonl": true,
+  "daily-screens/2026-11-16/focus-rvol-snapshot.md": true,
   "us-stocks-in-play/2026-11-16-open.md": true,
-  "earnings/2026-11-16-reactions-settled.md": true,
-  "macro-calendar/2026-11-16-midweek.md": false,
-  "macro-calendar/2026-11-16-week-ahead.md": false,
-  "daily-screens/2026-11-16/weekly-ipo.md": false,
-  "us-stocks-in-play/2026-11-16.md": true,
-  "daily-screens/2026-11-16/reversal-bullish-3_55.md": true,
   "us-eod/2026-11-16.csv": true,
-  "daily-briefs/2026-11-16-pre-market-refresh.csv": true,
-  "daily-briefs/2026-11-16-pre-market.csv": true,
-  "daily-screens/2026-11-16/breadth-snapshot.csv": true,
-  "daily-screens/2026-11-16/focus-rvol-snapshot.csv": true,
-  "daily-screens/2026-11-16/focus.csv": true,
-  "daily-screens/2026-11-16/long-reversal-candidates.csv": true,
-  "daily-screens/2026-11-16/master.csv": true,
-  "daily-screens/2026-11-16/pre-market-gapper.csv": true,
-  "daily-screens/2026-11-16/reversal-bullish-3_55.csv": true,
-  "daily-screens/2026-11-16/short-candidates.csv": true,
-  "daily-screens/2026-11-16/tier-a.csv": true,
-  "international-eod/2026-11-16/au.csv": true,
-  "international-eod/2026-11-16": false,
-  "options-flow/2026-11-16.md": true,
-  "weekly/2026-11-16-preview.md": false,
   "macro-calendar/2026-11-11-midweek.md": true
  },
  "rows": [
@@ -83,18 +119,18 @@
    "roster_schedule_agreement": true,
    "expected_path": "mcp-health/2026-W47.md",
    "alternates": [
-    "asia-pre-market/2026-11-16.md",
-    "catalog/catalysts/2026-11-16.md",
-    "cross-asset/2026-11-16.md",
-    "daily-briefs/2026-11-16-post-market.md",
-    "daily-briefs/2026-11-16-pre-market-refresh.md",
-    "daily-briefs/2026-11-16-pre-market.md",
-    "daily-screens/2026-11-16/_summary.md",
-    "daily-screens/2026-11-16/ariel-hernandez.md",
-    "daily-screens/2026-11-16/breadth-snapshot.md",
-    "daily-screens/2026-11-16/breadth.md",
-    "daily-screens/2026-11-16/daily-sweep.md",
-    "daily-screens/2026-11-16/focus-rvol-snapshot.md"
+    "asia-pre-market/2026-11-17.md",
+    "catalog/catalysts/2026-11-17.md",
+    "cross-asset/2026-11-17.md",
+    "daily-briefs/2026-11-17-post-market.md",
+    "daily-briefs/2026-11-17-pre-market-refresh.md",
+    "daily-briefs/2026-11-17-pre-market.md",
+    "daily-screens/2026-11-17/_summary.md",
+    "daily-screens/2026-11-17/ariel-hernandez.md",
+    "daily-screens/2026-11-17/breadth-snapshot.md",
+    "daily-screens/2026-11-17/breadth.md",
+    "daily-screens/2026-11-17/daily-sweep.md",
+    "daily-screens/2026-11-17/focus-rvol-snapshot.md"
    ],
    "scheduled_times": [
     "02:00"
@@ -106,12 +142,12 @@
    "is_directory": false,
    "size_bytes": null,
    "near_miss": [],
-   "last_delivered": "2026-11-17",
+   "last_delivered": "2026-11-18",
    "age_days": -1,
    "tolerance_days": 7,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 8.6
+   "prior_latency_min": null
   },
   {
    "routine": "19-earnings-reminder-daily",
@@ -122,9 +158,9 @@
    "notes": [],
    "ground_truth_schedule": "0 6 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "earnings/2026-11-16-reminders.md",
+   "expected_path": "earnings/2026-11-17-reminders.md",
    "alternates": [
-    "earnings/2026-11-16-reminders.md"
+    "earnings/2026-11-17-reminders.md"
    ],
    "scheduled_times": [
     "06:00"
@@ -134,18 +170,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 15642,
-   "delivery_latency_min": 8.0,
-   "added_epoch": 1794827277,
-   "added_et": "06:07:57",
-   "last_delivered": "2026-11-17",
+   "size_bytes": 14255,
+   "delivery_latency_min": 10.3,
+   "added_epoch": 1794913817,
+   "added_et": "06:10:17",
+   "last_delivered": "2026-11-18",
    "age_days": -1,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 177,
-   "prior_state": "not_due",
+   "lines": 183,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 8.0
   },
   {
    "routine": "02-asia-pre-market-reactions",
@@ -156,20 +192,20 @@
    "notes": [],
    "ground_truth_schedule": "30 6 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "asia-pre-market/2026-11-16.md",
+   "expected_path": "asia-pre-market/2026-11-17.md",
    "alternates": [
-    "asia-pre-market/2026-11-16.md",
-    "catalog/catalysts/2026-11-16.md",
-    "cross-asset/2026-11-16.md",
-    "daily-briefs/2026-11-16-post-market.md",
-    "daily-briefs/2026-11-16-pre-market-refresh.md",
-    "daily-briefs/2026-11-16-pre-market.md",
-    "daily-screens/2026-11-16/_summary.md",
-    "daily-screens/2026-11-16/ariel-hernandez.md",
-    "daily-screens/2026-11-16/breadth-snapshot.md",
-    "daily-screens/2026-11-16/breadth.md",
-    "daily-screens/2026-11-16/daily-sweep.md",
-    "daily-screens/2026-11-16/focus-rvol-snapshot.md"
+    "asia-pre-market/2026-11-17.md",
+    "catalog/catalysts/2026-11-17.md",
+    "cross-asset/2026-11-17.md",
+    "daily-briefs/2026-11-17-post-market.md",
+    "daily-briefs/2026-11-17-pre-market-refresh.md",
+    "daily-briefs/2026-11-17-pre-market.md",
+    "daily-screens/2026-11-17/_summary.md",
+    "daily-screens/2026-11-17/ariel-hernandez.md",
+    "daily-screens/2026-11-17/breadth-snapshot.md",
+    "daily-screens/2026-11-17/breadth.md",
+    "daily-screens/2026-11-17/daily-sweep.md",
+    "daily-screens/2026-11-17/focus-rvol-snapshot.md"
    ],
    "scheduled_times": [
     "06:30"
@@ -179,18 +215,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 31601,
-   "delivery_latency_min": 5.5,
-   "added_epoch": 1794828930,
-   "added_et": "06:35:30",
-   "last_delivered": "2026-11-17",
+   "size_bytes": 28439,
+   "delivery_latency_min": 7.9,
+   "added_epoch": 1794915474,
+   "added_et": "06:37:54",
+   "last_delivered": "2026-11-18",
    "age_days": -1,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 233,
-   "prior_state": "not_due",
+   "lines": 230,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 5.5
   },
   {
    "routine": "91-schedule-drift-guard",
@@ -214,7 +250,7 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": null,
-   "prior_state": null,
+   "prior_state": "not_due",
    "prior_streak": 0,
    "prior_latency_min": null
   },
@@ -240,7 +276,7 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": null,
-   "prior_state": null,
+   "prior_state": "not_due",
    "prior_streak": 0,
    "prior_latency_min": null
   },
@@ -253,9 +289,9 @@
    "notes": [],
    "ground_truth_schedule": "0 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "earnings/2026-11-16-reactions.md",
+   "expected_path": "earnings/2026-11-17-reactions.md",
    "alternates": [
-    "earnings/2026-11-16-reactions.md"
+    "earnings/2026-11-17-reactions.md"
    ],
    "scheduled_times": [
     "08:00"
@@ -265,18 +301,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 65087,
-   "delivery_latency_min": 15.2,
-   "added_epoch": 1794834911,
-   "added_et": "08:15:11",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 48702,
+   "delivery_latency_min": 14.8,
+   "added_epoch": 1794921289,
+   "added_et": "08:14:49",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 382,
-   "prior_state": "not_due",
+   "lines": 319,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 15.2
   },
   {
    "routine": "26-agentic-pre-market-brief",
@@ -287,9 +323,9 @@
    "notes": [],
    "ground_truth_schedule": "30 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-briefs/2026-11-16-pre-market.md",
+   "expected_path": "daily-briefs/2026-11-17-pre-market.md",
    "alternates": [
-    "daily-briefs/2026-11-16-pre-market.md"
+    "daily-briefs/2026-11-17-pre-market.md"
    ],
    "scheduled_times": [
     "08:30"
@@ -299,18 +335,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 36978,
-   "delivery_latency_min": 21.1,
-   "added_epoch": 1794837069,
-   "added_et": "08:51:09",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 50527,
+   "delivery_latency_min": 14.0,
+   "added_epoch": 1794923039,
+   "added_et": "08:43:59",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 374,
-   "prior_state": "not_due",
+   "lines": 425,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 21.1
   },
   {
    "routine": "08-pre-market-gapper",
@@ -321,9 +357,9 @@
    "notes": [],
    "ground_truth_schedule": "34 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-16/pre-market-gapper.md",
+   "expected_path": "daily-screens/2026-11-17/pre-market-gapper.md",
    "alternates": [
-    "daily-screens/2026-11-16/pre-market-gapper.md"
+    "daily-screens/2026-11-17/pre-market-gapper.md"
    ],
    "scheduled_times": [
     "08:34"
@@ -333,18 +369,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 19568,
-   "delivery_latency_min": 8.1,
-   "added_epoch": 1794836523,
-   "added_et": "08:42:03",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 24423,
+   "delivery_latency_min": 9.4,
+   "added_epoch": 1794923006,
+   "added_et": "08:43:26",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 154,
-   "prior_state": "not_due",
+   "lines": 147,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 8.1
   },
   {
    "routine": "92a-preopen-catalyst-capture",
@@ -355,10 +391,10 @@
    "notes": [],
    "ground_truth_schedule": "30 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "preopen-feed/2026-11-16-0830.md",
+   "expected_path": "preopen-feed/2026-11-17-0830.md",
    "alternates": [
-    "preopen-feed/2026-11-16-0830.jsonl",
-    "preopen-feed/2026-11-16-0830.md"
+    "preopen-feed/2026-11-17-0830.jsonl",
+    "preopen-feed/2026-11-17-0830.md"
    ],
    "scheduled_times": [
     "08:30"
@@ -368,18 +404,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 3683,
-   "delivery_latency_min": 4.6,
-   "added_epoch": 1794836074,
-   "added_et": "08:34:34",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 4196,
+   "delivery_latency_min": 7.6,
+   "added_epoch": 1794922656,
+   "added_et": "08:37:36",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 38,
-   "prior_state": "not_due",
+   "lines": 37,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 4.6
   },
   {
    "routine": "25-ntrt-gap-brief-daily",
@@ -390,20 +426,20 @@
    "notes": [],
    "ground_truth_schedule": "45 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "ntrt/2026-11-16.md",
+   "expected_path": "ntrt/2026-11-17.md",
    "alternates": [
-    "asia-pre-market/2026-11-16.md",
-    "catalog/catalysts/2026-11-16.md",
-    "cross-asset/2026-11-16.md",
-    "daily-briefs/2026-11-16-post-market.md",
-    "daily-briefs/2026-11-16-pre-market-refresh.md",
-    "daily-briefs/2026-11-16-pre-market.md",
-    "daily-screens/2026-11-16/_summary.md",
-    "daily-screens/2026-11-16/ariel-hernandez.md",
-    "daily-screens/2026-11-16/breadth-snapshot.md",
-    "daily-screens/2026-11-16/breadth.md",
-    "daily-screens/2026-11-16/daily-sweep.md",
-    "daily-screens/2026-11-16/focus-rvol-snapshot.md"
+    "asia-pre-market/2026-11-17.md",
+    "catalog/catalysts/2026-11-17.md",
+    "cross-asset/2026-11-17.md",
+    "daily-briefs/2026-11-17-post-market.md",
+    "daily-briefs/2026-11-17-pre-market-refresh.md",
+    "daily-briefs/2026-11-17-pre-market.md",
+    "daily-screens/2026-11-17/_summary.md",
+    "daily-screens/2026-11-17/ariel-hernandez.md",
+    "daily-screens/2026-11-17/breadth-snapshot.md",
+    "daily-screens/2026-11-17/breadth.md",
+    "daily-screens/2026-11-17/daily-sweep.md",
+    "daily-screens/2026-11-17/focus-rvol-snapshot.md"
    ],
    "scheduled_times": [
     "08:45"
@@ -413,18 +449,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 11921,
-   "delivery_latency_min": 47.7,
-   "added_epoch": 1794839564,
-   "added_et": "09:32:44",
-   "last_delivered": "2026-11-17",
+   "size_bytes": 13750,
+   "delivery_latency_min": 766.5,
+   "added_epoch": 1794969093,
+   "added_et": "21:31:33",
+   "last_delivered": "2026-11-18",
    "age_days": -1,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 158,
-   "prior_state": "not_due",
+   "lines": 152,
+   "prior_state": "delivered_late",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 47.7
   },
   {
    "routine": "26b-agentic-pre-market-brief-refresh",
@@ -435,9 +471,9 @@
    "notes": [],
    "ground_truth_schedule": "20 9 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-briefs/2026-11-16-pre-market-refresh.md",
+   "expected_path": "daily-briefs/2026-11-17-pre-market-refresh.md",
    "alternates": [
-    "daily-briefs/2026-11-16-pre-market-refresh.md"
+    "daily-briefs/2026-11-17-pre-market-refresh.md"
    ],
    "scheduled_times": [
     "09:20"
@@ -447,18 +483,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 31041,
-   "delivery_latency_min": 11.8,
-   "added_epoch": 1794839508,
-   "added_et": "09:31:48",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 27804,
+   "delivery_latency_min": 736.5,
+   "added_epoch": 1794969387,
+   "added_et": "21:36:27",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 290,
-   "prior_state": "not_due",
+   "lines": 289,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 11.8
   },
   {
    "routine": "07-focus-rvol-09:45",
@@ -469,9 +505,9 @@
    "notes": [],
    "ground_truth_schedule": "45 9 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-16/focus-rvol-snapshot.md",
+   "expected_path": "daily-screens/2026-11-17/focus-rvol-snapshot.md",
    "alternates": [
-    "daily-screens/2026-11-16/focus-rvol-snapshot.md"
+    "daily-screens/2026-11-17/focus-rvol-snapshot.md"
    ],
    "scheduled_times": [
     "09:45"
@@ -481,18 +517,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 29573,
-   "delivery_latency_min": 50.4,
-   "added_epoch": 1794843324,
-   "added_et": "10:35:24",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 30269,
+   "delivery_latency_min": 732.4,
+   "added_epoch": 1794970642,
+   "added_et": "21:57:22",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 241,
-   "prior_state": "not_due",
+   "lines": 246,
+   "prior_state": "delivered_late",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 50.4
   },
   {
    "routine": "92b-preopen-catalyst-capture",
@@ -503,10 +539,10 @@
    "notes": [],
    "ground_truth_schedule": "50 9 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "preopen-feed/2026-11-16-0950.md",
+   "expected_path": "preopen-feed/2026-11-17-0950.md",
    "alternates": [
-    "preopen-feed/2026-11-16-0950.jsonl",
-    "preopen-feed/2026-11-16-0950.md"
+    "preopen-feed/2026-11-17-0950.jsonl",
+    "preopen-feed/2026-11-17-0950.md"
    ],
    "scheduled_times": [
     "09:50"
@@ -516,18 +552,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 3706,
-   "delivery_latency_min": 43.8,
-   "added_epoch": 1794843225,
-   "added_et": "10:33:45",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 4194,
+   "delivery_latency_min": 698.7,
+   "added_epoch": 1794968922,
+   "added_et": "21:28:42",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 38,
-   "prior_state": "not_due",
+   "lines": 36,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 43.8
   },
   {
    "routine": "17-us-stocks-in-play-open",
@@ -539,20 +575,20 @@
    "ground_truth_schedule": "50 9,15 * * 1-5",
    "roster_schedule_agreement": true,
    "slot_regex": "^\\d{4}-\\d{2}-\\d{2}-open\\.md$",
-   "expected_path": "us-stocks-in-play/2026-11-16-open.md",
+   "expected_path": "us-stocks-in-play/2026-11-17-open.md",
    "alternates": [
-    "asia-pre-market/2026-11-16.md",
-    "catalog/catalysts/2026-11-16.md",
-    "cross-asset/2026-11-16.md",
-    "daily-briefs/2026-11-16-post-market.md",
-    "daily-briefs/2026-11-16-pre-market-refresh.md",
-    "daily-briefs/2026-11-16-pre-market.md",
-    "daily-screens/2026-11-16/_summary.md",
-    "daily-screens/2026-11-16/ariel-hernandez.md",
-    "daily-screens/2026-11-16/breadth-snapshot.md",
-    "daily-screens/2026-11-16/breadth.md",
-    "daily-screens/2026-11-16/daily-sweep.md",
-    "daily-screens/2026-11-16/focus-rvol-snapshot.md"
+    "asia-pre-market/2026-11-17.md",
+    "catalog/catalysts/2026-11-17.md",
+    "cross-asset/2026-11-17.md",
+    "daily-briefs/2026-11-17-post-market.md",
+    "daily-briefs/2026-11-17-pre-market-refresh.md",
+    "daily-briefs/2026-11-17-pre-market.md",
+    "daily-screens/2026-11-17/_summary.md",
+    "daily-screens/2026-11-17/ariel-hernandez.md",
+    "daily-screens/2026-11-17/breadth-snapshot.md",
+    "daily-screens/2026-11-17/breadth.md",
+    "daily-screens/2026-11-17/daily-sweep.md",
+    "daily-screens/2026-11-17/focus-rvol-snapshot.md"
    ],
    "scheduled_times": [
     "09:50",
@@ -563,18 +599,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 57044,
-   "delivery_latency_min": 62.1,
-   "added_epoch": 1794844328,
-   "added_et": "10:52:08",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 73156,
+   "delivery_latency_min": 743.2,
+   "added_epoch": 1794971595,
+   "added_et": "22:13:15",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 361,
-   "prior_state": "not_due",
+   "lines": 377,
+   "prior_state": "delivered_late",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 62.1
   },
   {
    "routine": "12-cross-asset-correlation",
@@ -585,20 +621,20 @@
    "notes": [],
    "ground_truth_schedule": "0 10 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "cross-asset/2026-11-16.md",
+   "expected_path": "cross-asset/2026-11-17.md",
    "alternates": [
-    "asia-pre-market/2026-11-16.md",
-    "catalog/catalysts/2026-11-16.md",
-    "cross-asset/2026-11-16.md",
-    "daily-briefs/2026-11-16-post-market.md",
-    "daily-briefs/2026-11-16-pre-market-refresh.md",
-    "daily-briefs/2026-11-16-pre-market.md",
-    "daily-screens/2026-11-16/_summary.md",
-    "daily-screens/2026-11-16/ariel-hernandez.md",
-    "daily-screens/2026-11-16/breadth-snapshot.md",
-    "daily-screens/2026-11-16/breadth.md",
-    "daily-screens/2026-11-16/daily-sweep.md",
-    "daily-screens/2026-11-16/focus-rvol-snapshot.md"
+    "asia-pre-market/2026-11-17.md",
+    "catalog/catalysts/2026-11-17.md",
+    "cross-asset/2026-11-17.md",
+    "daily-briefs/2026-11-17-post-market.md",
+    "daily-briefs/2026-11-17-pre-market-refresh.md",
+    "daily-briefs/2026-11-17-pre-market.md",
+    "daily-screens/2026-11-17/_summary.md",
+    "daily-screens/2026-11-17/ariel-hernandez.md",
+    "daily-screens/2026-11-17/breadth-snapshot.md",
+    "daily-screens/2026-11-17/breadth.md",
+    "daily-screens/2026-11-17/daily-sweep.md",
+    "daily-screens/2026-11-17/focus-rvol-snapshot.md"
    ],
    "scheduled_times": [
     "10:00"
@@ -608,18 +644,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 14166,
-   "delivery_latency_min": 5.9,
-   "added_epoch": 1794841555,
-   "added_et": "10:05:55",
-   "last_delivered": "2026-11-17",
+   "size_bytes": 12418,
+   "delivery_latency_min": 4.5,
+   "added_epoch": 1794927871,
+   "added_et": "10:04:31",
+   "last_delivered": "2026-11-18",
    "age_days": -1,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 221,
-   "prior_state": "not_due",
+   "lines": 214,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 5.9
   },
   {
    "routine": "15b-earnings-reaction-settlement",
@@ -630,9 +666,9 @@
    "notes": [],
    "ground_truth_schedule": "15 12 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "earnings/2026-11-16-reactions-settled.md",
+   "expected_path": "earnings/2026-11-17-reactions-settled.md",
    "alternates": [
-    "earnings/2026-11-16-reactions-settled.md"
+    "earnings/2026-11-17-reactions-settled.md"
    ],
    "scheduled_times": [
     "12:15"
@@ -642,18 +678,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 11510,
-   "delivery_latency_min": 15.6,
-   "added_epoch": 1794850235,
-   "added_et": "12:30:35",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 12238,
+   "delivery_latency_min": 3.0,
+   "added_epoch": 1794935882,
+   "added_et": "12:18:02",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 102,
-   "prior_state": "not_due",
+   "lines": 101,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 15.6
   },
   {
    "routine": "10-breadth-snapshot",
@@ -664,9 +700,9 @@
    "notes": [],
    "ground_truth_schedule": "0 14 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-16/breadth-snapshot.md",
+   "expected_path": "daily-screens/2026-11-17/breadth-snapshot.md",
    "alternates": [
-    "daily-screens/2026-11-16/breadth-snapshot.md"
+    "daily-screens/2026-11-17/breadth-snapshot.md"
    ],
    "scheduled_times": [
     "14:00"
@@ -676,18 +712,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 14402,
-   "delivery_latency_min": 4.8,
-   "added_epoch": 1794855891,
-   "added_et": "14:04:51",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 12848,
+   "delivery_latency_min": 8.7,
+   "added_epoch": 1794942521,
+   "added_et": "14:08:41",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 170,
-   "prior_state": "not_due",
+   "lines": 180,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 4.8
   },
   {
    "routine": "13-macro-calendar-midweek",
@@ -698,7 +734,7 @@
    "notes": [],
    "ground_truth_schedule": "0 14 * * 3",
    "roster_schedule_agreement": true,
-   "expected_path": "macro-calendar/2026-11-16-midweek.md",
+   "expected_path": "macro-calendar/2026-11-17-midweek.md",
    "alternates": [],
    "scheduled_times": [
     "14:00"
@@ -711,9 +747,9 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-11",
-   "age_days": 5,
+   "age_days": 6,
    "tolerance_days": 7,
-   "prior_state": "missing",
+   "prior_state": "not_due",
    "prior_streak": 1,
    "prior_latency_min": null
   },
@@ -726,7 +762,7 @@
    "notes": [],
    "ground_truth_schedule": "0 15 * * 0",
    "roster_schedule_agreement": true,
-   "expected_path": "macro-calendar/2026-11-16-week-ahead.md",
+   "expected_path": "macro-calendar/2026-11-17-week-ahead.md",
    "alternates": [],
    "scheduled_times": [
     "15:00"
@@ -739,11 +775,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-15",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": 7,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 6.6
+   "prior_latency_min": null
   },
   {
    "routine": "06-pattern-study-backlog",
@@ -754,7 +790,7 @@
    "notes": [],
    "ground_truth_schedule": "0 15 * * 6",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-16/weekly-ipo.md",
+   "expected_path": "daily-screens/2026-11-17/weekly-ipo.md",
    "alternates": [],
    "scheduled_times": [
     "15:00"
@@ -767,7 +803,7 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-14",
-   "age_days": 2,
+   "age_days": 3,
    "tolerance_days": 7,
    "prior_state": "not_due",
    "prior_streak": 0,
@@ -783,20 +819,20 @@
    "ground_truth_schedule": "50 9,15 * * 1-5",
    "roster_schedule_agreement": true,
    "slot_regex": "^\\d{4}-\\d{2}-\\d{2}\\.md$",
-   "expected_path": "us-stocks-in-play/2026-11-16.md",
+   "expected_path": "us-stocks-in-play/2026-11-17.md",
    "alternates": [
-    "asia-pre-market/2026-11-16.md",
-    "catalog/catalysts/2026-11-16.md",
-    "cross-asset/2026-11-16.md",
-    "daily-briefs/2026-11-16-post-market.md",
-    "daily-briefs/2026-11-16-pre-market-refresh.md",
-    "daily-briefs/2026-11-16-pre-market.md",
-    "daily-screens/2026-11-16/_summary.md",
-    "daily-screens/2026-11-16/ariel-hernandez.md",
-    "daily-screens/2026-11-16/breadth-snapshot.md",
-    "daily-screens/2026-11-16/breadth.md",
-    "daily-screens/2026-11-16/daily-sweep.md",
-    "daily-screens/2026-11-16/focus-rvol-snapshot.md"
+    "asia-pre-market/2026-11-17.md",
+    "catalog/catalysts/2026-11-17.md",
+    "cross-asset/2026-11-17.md",
+    "daily-briefs/2026-11-17-post-market.md",
+    "daily-briefs/2026-11-17-pre-market-refresh.md",
+    "daily-briefs/2026-11-17-pre-market.md",
+    "daily-screens/2026-11-17/_summary.md",
+    "daily-screens/2026-11-17/ariel-hernandez.md",
+    "daily-screens/2026-11-17/breadth-snapshot.md",
+    "daily-screens/2026-11-17/breadth.md",
+    "daily-screens/2026-11-17/daily-sweep.md",
+    "daily-screens/2026-11-17/focus-rvol-snapshot.md"
    ],
    "scheduled_times": [
     "09:50",
@@ -807,18 +843,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 60170,
-   "delivery_latency_min": 23.0,
-   "added_epoch": 1794863581,
-   "added_et": "16:13:01",
-   "last_delivered": "2026-11-17",
+   "size_bytes": 55957,
+   "delivery_latency_min": 18.1,
+   "added_epoch": 1794949689,
+   "added_et": "16:08:09",
+   "last_delivered": "2026-11-18",
    "age_days": -1,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 430,
-   "prior_state": "not_due",
+   "lines": 370,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 23.0
   },
   {
    "routine": "04-reversal-bullish-3:55",
@@ -829,9 +865,9 @@
    "notes": [],
    "ground_truth_schedule": "55 15 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-16/reversal-bullish-3_55.md",
+   "expected_path": "daily-screens/2026-11-17/reversal-bullish-3_55.md",
    "alternates": [
-    "daily-screens/2026-11-16/reversal-bullish-3_55.md"
+    "daily-screens/2026-11-17/reversal-bullish-3_55.md"
    ],
    "scheduled_times": [
     "15:55"
@@ -841,18 +877,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 11828,
-   "delivery_latency_min": 4.5,
-   "added_epoch": 1794862768,
-   "added_et": "15:59:28",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 12893,
+   "delivery_latency_min": 35.3,
+   "added_epoch": 1794951017,
+   "added_et": "16:30:17",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 80,
-   "prior_state": "not_due",
+   "lines": 87,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 4.5
   },
   {
    "routine": "20-eod-watchlist-csv",
@@ -863,20 +899,20 @@
    "notes": [],
    "ground_truth_schedule": "0 16 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "us-eod/2026-11-16.csv",
+   "expected_path": "us-eod/2026-11-17.csv",
    "alternates": [
-    "daily-briefs/2026-11-16-pre-market-refresh.csv",
-    "daily-briefs/2026-11-16-pre-market.csv",
-    "daily-screens/2026-11-16/breadth-snapshot.csv",
-    "daily-screens/2026-11-16/focus-rvol-snapshot.csv",
-    "daily-screens/2026-11-16/focus.csv",
-    "daily-screens/2026-11-16/long-reversal-candidates.csv",
-    "daily-screens/2026-11-16/master.csv",
-    "daily-screens/2026-11-16/pre-market-gapper.csv",
-    "daily-screens/2026-11-16/reversal-bullish-3_55.csv",
-    "daily-screens/2026-11-16/short-candidates.csv",
-    "daily-screens/2026-11-16/tier-a.csv",
-    "international-eod/2026-11-16/au.csv"
+    "daily-briefs/2026-11-17-pre-market-refresh.csv",
+    "daily-briefs/2026-11-17-pre-market.csv",
+    "daily-screens/2026-11-17/breadth-snapshot.csv",
+    "daily-screens/2026-11-17/focus-rvol-snapshot.csv",
+    "daily-screens/2026-11-17/focus.csv",
+    "daily-screens/2026-11-17/long-reversal-candidates.csv",
+    "daily-screens/2026-11-17/master.csv",
+    "daily-screens/2026-11-17/pre-market-gapper.csv",
+    "daily-screens/2026-11-17/reversal-bullish-3_55.csv",
+    "daily-screens/2026-11-17/short-candidates.csv",
+    "daily-screens/2026-11-17/tier-a.csv",
+    "international-eod/2026-11-17/au.csv"
    ],
    "scheduled_times": [
     "16:00"
@@ -886,18 +922,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 1129784,
-   "delivery_latency_min": 92.8,
-   "added_epoch": 1794868366,
-   "added_et": "17:32:46",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 1129806,
+   "delivery_latency_min": 77.7,
+   "added_epoch": 1794953861,
+   "added_et": "17:17:41",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 868,
-   "prior_state": "not_due",
+   "lines": 867,
+   "prior_state": "delivered_late",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 92.8
   },
   {
    "routine": "05-eod-international-daily",
@@ -908,20 +944,20 @@
    "notes": [],
    "ground_truth_schedule": "30 16 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "international-eod/2026-11-16",
+   "expected_path": "international-eod/2026-11-17",
    "alternates": [
-    "daily-briefs/2026-11-16-pre-market-refresh.csv",
-    "daily-briefs/2026-11-16-pre-market.csv",
-    "daily-screens/2026-11-16/breadth-snapshot.csv",
-    "daily-screens/2026-11-16/focus-rvol-snapshot.csv",
-    "daily-screens/2026-11-16/focus.csv",
-    "daily-screens/2026-11-16/long-reversal-candidates.csv",
-    "daily-screens/2026-11-16/master.csv",
-    "daily-screens/2026-11-16/pre-market-gapper.csv",
-    "daily-screens/2026-11-16/reversal-bullish-3_55.csv",
-    "daily-screens/2026-11-16/short-candidates.csv",
-    "daily-screens/2026-11-16/tier-a.csv",
-    "international-eod/2026-11-16/au.csv"
+    "daily-briefs/2026-11-17-pre-market-refresh.csv",
+    "daily-briefs/2026-11-17-pre-market.csv",
+    "daily-screens/2026-11-17/breadth-snapshot.csv",
+    "daily-screens/2026-11-17/focus-rvol-snapshot.csv",
+    "daily-screens/2026-11-17/focus.csv",
+    "daily-screens/2026-11-17/long-reversal-candidates.csv",
+    "daily-screens/2026-11-17/master.csv",
+    "daily-screens/2026-11-17/pre-market-gapper.csv",
+    "daily-screens/2026-11-17/reversal-bullish-3_55.csv",
+    "daily-screens/2026-11-17/short-candidates.csv",
+    "daily-screens/2026-11-17/tier-a.csv",
+    "international-eod/2026-11-17/au.csv"
    ],
    "scheduled_times": [
     "16:30"
@@ -932,30 +968,30 @@
    "present": true,
    "is_directory": true,
    "files_under": [
-    "international-eod/2026-11-16/_carryover.json",
-    "international-eod/2026-11-16/_excluded.json",
-    "international-eod/2026-11-16/_manifest.json",
-    "international-eod/2026-11-16/au.csv",
-    "international-eod/2026-11-16/ca.csv",
-    "international-eod/2026-11-16/eu-at.csv",
-    "international-eod/2026-11-16/eu-be.csv",
-    "international-eod/2026-11-16/eu-de.csv",
-    "international-eod/2026-11-16/eu-dk.csv",
-    "international-eod/2026-11-16/eu-es.csv",
-    "international-eod/2026-11-16/eu-fi.csv",
-    "international-eod/2026-11-16/eu-fr.csv"
+    "international-eod/2026-11-17/_carryover.json",
+    "international-eod/2026-11-17/_excluded.json",
+    "international-eod/2026-11-17/_manifest.json",
+    "international-eod/2026-11-17/au.csv",
+    "international-eod/2026-11-17/ca.csv",
+    "international-eod/2026-11-17/eu-at.csv",
+    "international-eod/2026-11-17/eu-be.csv",
+    "international-eod/2026-11-17/eu-de.csv",
+    "international-eod/2026-11-17/eu-dk.csv",
+    "international-eod/2026-11-17/eu-es.csv",
+    "international-eod/2026-11-17/eu-fi.csv",
+    "international-eod/2026-11-17/eu-fr.csv"
    ],
-   "size_bytes": 2835458,
-   "delivery_latency_min": 11.7,
-   "added_epoch": 1794865304,
-   "added_et": "16:41:44",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 2851795,
+   "delivery_latency_min": 10.9,
+   "added_epoch": 1794951656,
+   "added_et": "16:40:56",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "prior_state": "not_due",
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 11.7
   },
   {
    "routine": "16-unusual-options-flow",
@@ -966,20 +1002,20 @@
    "notes": [],
    "ground_truth_schedule": "35 16 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "options-flow/2026-11-16.md",
+   "expected_path": "options-flow/2026-11-17.md",
    "alternates": [
-    "asia-pre-market/2026-11-16.md",
-    "catalog/catalysts/2026-11-16.md",
-    "cross-asset/2026-11-16.md",
-    "daily-briefs/2026-11-16-post-market.md",
-    "daily-briefs/2026-11-16-pre-market-refresh.md",
-    "daily-briefs/2026-11-16-pre-market.md",
-    "daily-screens/2026-11-16/_summary.md",
-    "daily-screens/2026-11-16/ariel-hernandez.md",
-    "daily-screens/2026-11-16/breadth-snapshot.md",
-    "daily-screens/2026-11-16/breadth.md",
-    "daily-screens/2026-11-16/daily-sweep.md",
-    "daily-screens/2026-11-16/focus-rvol-snapshot.md"
+    "asia-pre-market/2026-11-17.md",
+    "catalog/catalysts/2026-11-17.md",
+    "cross-asset/2026-11-17.md",
+    "daily-briefs/2026-11-17-post-market.md",
+    "daily-briefs/2026-11-17-pre-market-refresh.md",
+    "daily-briefs/2026-11-17-pre-market.md",
+    "daily-screens/2026-11-17/_summary.md",
+    "daily-screens/2026-11-17/ariel-hernandez.md",
+    "daily-screens/2026-11-17/breadth-snapshot.md",
+    "daily-screens/2026-11-17/breadth.md",
+    "daily-screens/2026-11-17/daily-sweep.md",
+    "daily-screens/2026-11-17/focus-rvol-snapshot.md"
    ],
    "scheduled_times": [
     "16:35"
@@ -989,18 +1025,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 24532,
-   "delivery_latency_min": 2.5,
-   "added_epoch": 1794865053,
-   "added_et": "16:37:33",
-   "last_delivered": "2026-11-17",
+   "size_bytes": 24423,
+   "delivery_latency_min": 3.2,
+   "added_epoch": 1794951492,
+   "added_et": "16:38:12",
+   "last_delivered": "2026-11-18",
    "age_days": -1,
    "tolerance_days": null,
    "health": "ok",
    "lines": 247,
-   "prior_state": "not_due",
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 2.5
   },
   {
    "routine": "22-weekly-market-recap-preview",
@@ -1011,7 +1047,7 @@
    "notes": [],
    "ground_truth_schedule": "47 17 * * 0",
    "roster_schedule_agreement": true,
-   "expected_path": "weekly/2026-11-16-preview.md",
+   "expected_path": "weekly/2026-11-17-preview.md",
    "alternates": [],
    "scheduled_times": [
     "17:47"
@@ -1024,11 +1060,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-15",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": 7,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 5.8
+   "prior_latency_min": null
   },
   {
    "routine": "09-daily-sweep-18:30",
@@ -1039,9 +1075,9 @@
    "notes": [],
    "ground_truth_schedule": "30 18 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-16/daily-sweep.md",
+   "expected_path": "daily-screens/2026-11-17/daily-sweep.md",
    "alternates": [
-    "daily-screens/2026-11-16/daily-sweep.md"
+    "daily-screens/2026-11-17/daily-sweep.md"
    ],
    "scheduled_times": [
     "18:30"
@@ -1051,18 +1087,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 17557,
-   "delivery_latency_min": 6.1,
-   "added_epoch": 1794872165,
-   "added_et": "18:36:05",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 18884,
+   "delivery_latency_min": 7.4,
+   "added_epoch": 1794958644,
+   "added_et": "18:37:24",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
    "lines": 238,
-   "prior_state": "not_due",
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 6.1
   },
   {
    "routine": "23-agentic-post-market-brief",
@@ -1073,9 +1109,9 @@
    "notes": [],
    "ground_truth_schedule": "30 22 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-briefs/2026-11-16-post-market.md",
+   "expected_path": "daily-briefs/2026-11-17-post-market.md",
    "alternates": [
-    "daily-briefs/2026-11-16-post-market.md"
+    "daily-briefs/2026-11-17-post-market.md"
    ],
    "scheduled_times": [
     "22:30"
@@ -1085,18 +1121,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 26691,
-   "delivery_latency_min": 17.8,
-   "added_epoch": 1794887268,
-   "added_et": "22:47:48",
-   "last_delivered": "2026-11-16",
+   "size_bytes": 26203,
+   "delivery_latency_min": 10.4,
+   "added_epoch": 1794973227,
+   "added_et": "22:40:27",
+   "last_delivered": "2026-11-17",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 416,
-   "prior_state": "not_due",
+   "lines": 284,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 17.8
   }
  ]
 }
