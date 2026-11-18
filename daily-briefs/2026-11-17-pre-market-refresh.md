@@ -148,6 +148,43 @@ Real prints on thin books: the Gate-A-passing, Gate-B-failing names, published i
 
 **414 band names excluded from every table for liquidity are named here so nothing is hidden.** LOCL printed **+33.86%** at **0.85** on **3,236** pre-market shares - below the 10,000-share floor Gate A sets - so it is an unverifiable print, not a market.
 
+### Tail - refreshed
+
+The names the gates and the table cap left out, on this pull's print (**21:24:08**) instead of the 08:30 one, ranked by `|gap|` and direction-agnostic. `gate-fail` failed the liquidity or the quality gate, `unranked` cleared both gates but did not make the headline tables. This is a watchlist, not a second set of setups - no name here is promoted into the top-of-book. The `flat-print` cohort (a gap inside 3%) is absent by construction: those names are outside the band and therefore not in this file's CSV. **30 of 532** candidates are shown, and the cohorts are mixed on purpose - the gate-failing cohort alone is 478 names deep and would read as noise.
+
+| Ticker | Cohort | Prior close | Pre-market last | Gap % | PM range | Key level | Invalidation |
+|---|---|---|---|---|---|---|---|
+| GP | gate-fail | 1.41 | 2.7 | +91.49% | 1.56-3.56 | prior close 1.41 | back to/below prior close 1.41 |
+| PAVS | gate-fail | 2.26 | 3.78 | +67.26% | 1.91-4.11 | prior close 2.26 | back to/below prior close 2.26 |
+| FRTT | gate-fail | 0.38 | 0.572 | +50.53% | 0.3686-0.7459 | prior close 0.38 | back to/below prior close 0.38 |
+| GDHG | gate-fail | 1.58 | 0.8168 | -48.30% | 0.81-1.84 | prior close 1.58 | below PM low 0.81 |
+| AYTU | gate-fail | 1.82 | 2.6697 | +46.69% | 2.5201-2.67 | prior close 1.82 | back to/below prior close 1.82 |
+| YFOR | gate-fail | 0.04 | 0.0246 | -35.97% | 0.0246-0.054 | prior close 0.04 | below PM low 0.0246 |
+| BAER | gate-fail | 0.24 | 0.159 | -33.86% | 0.1502-0.18 | prior close 0.24 | below PM low 0.1502 |
+| LOCL | gate-fail | 0.64 | 0.85 | +33.86% | 0.6501-0.85 | prior close 0.64 | back to/below prior close 0.64 |
+| GMM | gate-fail | 2.01 | 1.39 | -30.85% | 1.37-1.77 | prior close 2.01 | below PM low 1.37 |
+| CYAB | gate-fail | 0.14 | 0.0993 | -27.41% | 0.0955-0.14 | prior close 0.14 | below PM low 0.0955 |
+| VIVK | gate-fail | 0.38 | 0.275 | -27.33% | 0.2555-0.3199 | prior close 0.38 | below PM low 0.2555 |
+| STEM | gate-fail | 1.97 | 1.4801 | -24.87% | 1.31-1.63 | prior close 1.97 | below PM low 1.31 |
+| BMGL | gate-fail | 0.30 | 0.3704 | +22.53% | 0.3052-0.615 | prior close 0.30 | back to/below prior close 0.30 |
+| MFP | gate-fail | 43.43 | 53 | +22.04% | 53-53 | prior close 43.43 | back to/below prior close 43.43 |
+| SPAI | gate-fail | 2.47 | 2.99 | +21.05% | 2.7805-3.5893 | prior close 2.47 | back to/below prior close 2.47 |
+| KYNB | gate-fail | 3.20 | 2.53 | -20.94% | 2.53-3.0079 | prior close 3.20 | below PM low 2.53 |
+| FN | unranked | 311.01 | 330.89 | +6.39% | 311.51-340 | prior close 311.01 | back to/below prior close 311.01 |
+| AAOI | unranked | 45.16 | 48.0103 | +6.31% | 43.77-49.99 | prior close 45.16 | back to/below prior close 45.16 |
+| ADIG | unranked | 9.30 | 9.84 | +5.81% | 9.51-9.95 | prior close 9.30 | back to/below prior close 9.30 |
+| COHR | unranked | 203.43 | 215.01 | +5.69% | 198.02-228.5 | prior close 203.43 | back to/below prior close 203.43 |
+| RZLV | unranked | 1.08 | 1.14 | +5.56% | 1.07-1.1488 | prior close 1.08 | back to/below prior close 1.08 |
+| RCT | unranked | 2.95 | 3.11 | +5.42% | 2.9693-3.47 | prior close 2.95 | back to/below prior close 2.95 |
+| CAPR | unranked | 8.30 | 8.75 | +5.42% | 7.8553-8.9528 | prior close 8.30 | back to/below prior close 8.30 |
+| NKE | unranked | 38.26 | 40.28 | +5.28% | 37.76-41.1 | prior close 38.26 | back to/below prior close 38.26 |
+| EMAT | unranked | 0.69 | 0.73 | +5.28% | 0.71-0.7355 | prior close 0.69 | back to/below prior close 0.69 |
+| URG | unranked | 0.56 | 0.5879 | +5.15% | 0.56-0.631 | prior close 0.56 | back to/below prior close 0.56 |
+| BRSP | unranked | 3.27 | 3.43 | +4.89% | 3.3-3.473 | prior close 3.27 | back to/below prior close 3.27 |
+| AS | unranked | 29.10 | 30.5 | +4.81% | 28.5-31.11 | prior close 29.10 | back to/below prior close 29.10 |
+| NIO | unranked | 2.72 | 2.85 | +4.78% | 2.8-2.87 | prior close 2.72 | back to/below prior close 2.72 |
+| CADL | unranked | 5.81 | 6.085 | +4.73% | 5.75-6.11 | prior close 5.81 | back to/below prior close 5.81 |
+
 ## 2. Gap quality - can this gap hold?
 
 One row per headline name, all from the SAME single pull. **Print** is a descriptor of how the gap was made and whether it is still holding, not a filter - the **Driver** column is what ranks.
