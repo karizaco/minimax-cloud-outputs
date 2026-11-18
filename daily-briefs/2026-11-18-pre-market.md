@@ -124,7 +124,7 @@ Tuesday's bell — its fourth ATM of the year.
 | CORZ | 13.51 | 14.18 | +4.95% | 13.95–14.40 | prior close 13.51 | back to/below prior close 13.51 | 0.6% | $4.4B | -0.52% |
 | WULF | 11.67 | 12.22 | +4.71% | 12.11–12.41 | prior close 11.67 | back to/below prior close 11.67 | 1.2% | $5.9B | -1.77% |
 | APLD | 14.22 | 14.80 | +4.08% | 14.68–15.23 | prior close 14.22 | back to/below prior close 14.22 | 0.8% | $4.3B | -2.47% |
-| CIFR | 6.42 | 6.69 | +4.26% | 6.65–6.89 | prior close 6.42 | back to/below prior close 6.42 | 0.9% | $2.9B | -1.83% |
+| CIFR | 6.420 | 6.694 | +4.26% | 6.650–6.890 | prior close 6.420 | back to/below prior close 6.420 | 0.9% | $2.9B | -1.83% |
 | NBIS | 106.03 | 110.00 | +3.74% | 109.73–115.50 | prior close 106.03 | back to/below prior close 106.03 | 3.1% | $28.8B | -1.02% |
 | FRMI | 2.41 | 2.50 | +3.73% | 2.47–2.55 | prior close 2.41 | back to/below prior close 2.41 | 0.2% | $1.6B | -2.82% |
 | AEHR | 49.74 | 52.15 | +4.85% | 51.40–53.52 | prior close 49.74 | back to/below prior close 49.74 | 1.9% | $1.6B | -2.43% |
@@ -253,7 +253,7 @@ From the gainer screen (`premarket_*` columns only), Gate A (liquidity) and Gate
 | PEPG | 3.88 | 4.18 | +7.77% | 4.10–4.21 | prior close 3.88 | back to/below prior close 3.88 | 0.7% | $269M | -7.40% |
 | ANGX | 4.14 | 4.41 | +6.52% | 4.30–4.41 | prior close 4.14 | back to/below prior close 4.14 | 1.3% | $814M | -7.80% |
 | ZKH | 1.45 | 1.53 | +5.52% | 1.37–1.71 | prior close 1.45 | back to/below prior close 1.45 | 6.0% | $229M | -1.36% |
-| SVRA | 4.48 | 4.73 | +5.47% | 4.61–4.91 | prior close 4.48 | back to/below prior close 4.48 | 5.6% | $988M | +0.34% |
+| SVRA | 4.480 | 4.725 | +5.47% | 4.614–4.910 | prior close 4.480 | back to/below prior close 4.480 | 5.6% | $988M | +0.34% |
 | CAPR | 8.41 | 8.84 | +5.11% | 8.78–9.15 | prior close 8.41 | back to/below prior close 8.41 | 3.8% | $489M | +1.33% |
 | TTWO | 203.93 | 214.11 | +4.99% | 208.00–219.90 | prior close 203.93 | back to/below prior close 203.93 | 6.1% | $38.2B | -4.47% |
 | CORZ | 13.51 | 14.18 | +4.95% | 13.95–14.40 | prior close 13.51 | back to/below prior close 13.51 | 0.6% | $4.4B | -0.52% |
@@ -262,14 +262,14 @@ From the gainer screen (`premarket_*` columns only), Gate A (liquidity) and Gate
 | AEHR | 49.74 | 52.15 | +4.85% | 51.40–53.52 | prior close 49.74 | back to/below prior close 49.74 | 1.9% | $1.6B | -2.43% |
 | TJX | 129.85 | 136.00 | +4.74% | 129.86–141.00 | prior close 129.85 | back to/below prior close 129.85 | 4.6% | $142.8B | -0.95% |
 | WULF | 11.67 | 12.22 | +4.71% | 12.11–12.41 | prior close 11.67 | back to/below prior close 11.67 | 1.2% | $5.9B | -1.77% |
-| URG | 0.54 | 0.57 | +4.66% | 0.55–0.58 | prior close 0.54 | back to/below prior close 0.54 | 0.5% | $216M | -3.26% |
+| URG | 0.541 | 0.566 | +4.66% | 0.554–0.580 | prior close 0.541 | back to/below prior close 0.541 | 0.5% | $216M | -3.26% |
 | EOSE | 1.49 | 1.56 | +4.65% | 1.54–1.59 | prior close 1.49 | back to/below prior close 1.49 | 1.3% | $546M | -12.87% |
 | KC | 6.32 | 6.61 | +4.59% | 6.60–6.71 | prior close 6.32 | back to/below prior close 6.32 | 0.8% | $2.0B | -8.01% |
-| CIFR | 6.42 | 6.69 | +4.26% | 6.65–6.89 | prior close 6.42 | back to/below prior close 6.42 | 0.9% | $2.9B | -1.83% |
+| CIFR | 6.420 | 6.694 | +4.26% | 6.650–6.890 | prior close 6.420 | back to/below prior close 6.420 | 0.9% | $2.9B | -1.83% |
 | INFQ | 7.54 | 7.85 | +4.11% | 7.71–7.92 | prior close 7.54 | back to/below prior close 7.54 | 0.6% | $1.7B | -4.56% |
 | APLD | 14.22 | 14.80 | +4.08% | 14.68–15.23 | prior close 14.22 | back to/below prior close 14.22 | 0.8% | $4.3B | -2.47% |
 | NUAI | 3.20 | 3.33 | +4.06% | 3.25–3.40 | prior close 3.20 | back to/below prior close 3.20 | 0.7% | $450M | +2.89% |
-| BLDP | 1.15 | 1.19 | +3.93% | 1.17–1.27 | prior close 1.15 | back to/below prior close 1.15 | 3.1% | $402M | -8.40% |
+| BLDP | 1.145 | 1.190 | +3.93% | 1.170–1.270 | prior close 1.145 | back to/below prior close 1.145 | 3.1% | $402M | -8.40% |
 
 ### Thin tape — Gate A pass, Gate B fail (cap under $100m)
 
@@ -277,30 +277,30 @@ Real moves, not liquid ones: these names print, but the book and the cap do not 
 
 | Ticker | Prior close ($) | Pre-market last ($) | Gap % | PM range ($) | Key level | Invalidation | %ADV | Mkt cap | Prior session chg % |
 |---|---|---|---|---|---|---|---|---|---||
-| SVRE | 0.41 | 0.89 | +116.69% | 0.43–3.10 | prior close 0.41 | back to/below prior close 0.41 | 49867.8% | $2M | -5.03% |
-| INLF | 0.36 | 0.51 | +41.78% | 0.33–0.54 | prior close 0.36 | back to/below prior close 0.36 | 55.8% | $548,650 | -7.77% |
-| GMM | 1.39 | 1.71 | +22.94% | 1.42–2.11 | prior close 1.39 | back to/below prior close 1.39 | 325.8% | $11M | -30.85% |
-| HIHO | 1.23 | 1.43 | +16.17% | 1.19–1.65 | prior close 1.23 | back to/below prior close 1.23 | 249.4% | $6M | +2.50% |
+| SVRE | 0.4098 | 0.8880 | +116.69% | 0.4320–3.1000 | prior close 0.4098 | back to/below prior close 0.4098 | 49867.8% | $2M | -5.03% |
+| INLF | 0.3597 | 0.5100 | +41.78% | 0.3266–0.5350 | prior close 0.3597 | back to/below prior close 0.3597 | 55.8% | $548,650 | -7.77% |
+| GMM | 1.390 | 1.709 | +22.94% | 1.420–2.110 | prior close 1.390 | back to/below prior close 1.390 | 325.8% | $11M | -30.85% |
+| HIHO | 1.230 | 1.429 | +16.17% | 1.190–1.650 | prior close 1.230 | back to/below prior close 1.230 | 249.4% | $6M | +2.50% |
 | GP | 2.62 | 3.03 | +15.65% | 2.59–3.44 | prior close 2.62 | back to/below prior close 2.62 | 61.6% | $6M | +85.82% |
 | AKAN | 2.05 | 2.37 | +15.61% | 1.91–2.86 | prior close 2.05 | back to/below prior close 2.05 | 33.2% | $5M | -7.24% |
 | CUE | 2.83 | 3.24 | +14.50% | 3.06–3.44 | prior close 2.83 | back to/below prior close 2.83 | 141.9% | $24M | -79.93% |
-| BRFH | 0.65 | 0.73 | +12.12% | 0.62–0.85 | prior close 0.65 | back to/below prior close 0.65 | 589.7% | $11M | +29.53% |
-| BRNX | 0.41 | 0.46 | +11.51% | 0.39–1.13 | prior close 0.41 | back to/below prior close 0.41 | 41983.8% | $798,259 | -1.44% |
+| BRFH | 0.6496 | 0.7283 | +12.12% | 0.6200–0.8460 | prior close 0.6496 | back to/below prior close 0.6496 | 589.7% | $11M | +29.53% |
+| BRNX | 0.410 | 0.457 | +11.51% | 0.390–1.130 | prior close 0.410 | back to/below prior close 0.410 | 41983.8% | $798,259 | -1.44% |
 | NCPL | 2.37 | 2.63 | +10.97% | 2.33–2.95 | prior close 2.37 | back to/below prior close 2.37 | 12.4% | $19M | +19.10% |
 | WYHG | 2.71 | 2.98 | +9.96% | 2.73–3.35 | prior close 2.71 | back to/below prior close 2.71 | 78.2% | $34M | -12.86% |
-| AEON | 0.11 | 0.12 | +5.56% | 0.11–0.13 | prior close 0.11 | back to/below prior close 0.11 | 30.0% | $10M | -19.40% |
-| ZNB | 0.61 | 0.40 | -35.05% | 0.38–1.48 | prior close 0.61 | below PM low 0.38 | 458.3% | $3M | -0.96% |
-| GDHG | 0.29 | 0.23 | -19.64% | 0.23–0.32 | prior close 0.29 | below PM low 0.23 | 103.2% | $17M | -81.57% |
-| LICN | 0.02 | 0.02 | -19.55% | 0.02–0.04 | prior close 0.02 | below PM low 0.02 | 1220.2% | $359,190 | -18.52% |
-| ZBAO | 0.18 | 0.15 | -19.53% | 0.14–0.27 | prior close 0.18 | below PM low 0.14 | 161.8% | $2M | -9.73% |
-| CYAB | 0.10 | 0.08 | -16.43% | 0.08–0.10 | prior close 0.10 | below PM low 0.08 | 2.5% | $4M | -27.05% |
-| YFOR | 0.03 | 0.02 | -16.36% | 0.02–0.03 | prior close 0.03 | below PM low 0.02 | 67.5% | $210,826 | -30.13% |
-| PARA | 0.07 | 0.06 | -15.13% | 0.06–0.09 | prior close 0.07 | below PM low 0.06 | 15.3% | $32,780 | -26.79% |
-| SMTK | 0.27 | 0.23 | -15.03% | 0.23–0.27 | prior close 0.27 | below PM low 0.23 | 10.8% | $153,811 | +66.02% |
-| SDEV | 0.70 | 0.59 | -14.97% | 0.57–0.70 | prior close 0.70 | below PM low 0.57 | 6.7% | $51M | -1.26% |
-| CSAI | 0.97 | 0.84 | -13.83% | 0.81–0.90 | prior close 0.97 | below PM low 0.81 | 18.3% | $849,575 | -25.15% |
-| CRIS | 0.54 | 0.47 | -12.50% | 0.46–0.70 | prior close 0.54 | below PM low 0.46 | 72.3% | $5M | +24.32% |
-| ABTS | 0.32 | 0.28 | -10.95% | 0.28–0.46 | prior close 0.32 | below PM low 0.28 | 2081.7% | $1M | -2.36% |
+| AEON | 0.1134 | 0.1197 | +5.56% | 0.1098–0.1289 | prior close 0.1134 | back to/below prior close 0.1134 | 30.0% | $10M | -19.40% |
+| ZNB | 0.611 | 0.397 | -35.05% | 0.380–1.480 | prior close 0.611 | below PM low 0.380 | 458.3% | $3M | -0.96% |
+| GDHG | 0.2912 | 0.2340 | -19.64% | 0.2265–0.3203 | prior close 0.2912 | below PM low 0.2265 | 103.2% | $17M | -81.57% |
+| LICN | 0.0220 | 0.0177 | -19.55% | 0.0170–0.0350 | prior close 0.0220 | below PM low 0.0170 | 1220.2% | $359,190 | -18.52% |
+| ZBAO | 0.1828 | 0.1471 | -19.53% | 0.1450–0.2663 | prior close 0.1828 | below PM low 0.1450 | 161.8% | $2M | -9.73% |
+| CYAB | 0.0998 | 0.0834 | -16.43% | 0.0800–0.1000 | prior close 0.0998 | below PM low 0.0800 | 2.5% | $4M | -27.05% |
+| YFOR | 0.0269 | 0.0225 | -16.36% | 0.0216–0.0290 | prior close 0.0269 | below PM low 0.0216 | 67.5% | $210,826 | -30.13% |
+| PARA | 0.0727 | 0.0617 | -15.13% | 0.0584–0.0850 | prior close 0.0727 | below PM low 0.0584 | 15.3% | $32,780 | -26.79% |
+| SMTK | 0.272 | 0.231 | -15.03% | 0.225–0.275 | prior close 0.272 | below PM low 0.225 | 10.8% | $153,811 | +66.02% |
+| SDEV | 0.6966 | 0.5923 | -14.97% | 0.5750–0.7048 | prior close 0.6966 | below PM low 0.5750 | 6.7% | $51M | -1.26% |
+| CSAI | 0.9731 | 0.8385 | -13.83% | 0.8101–0.9000 | prior close 0.9731 | below PM low 0.8101 | 18.3% | $849,575 | -25.15% |
+| CRIS | 0.5418 | 0.4741 | -12.50% | 0.4646–0.6999 | prior close 0.5418 | below PM low 0.4646 | 72.3% | $5M | +24.32% |
+| ABTS | 0.319 | 0.284 | -10.95% | 0.276–0.465 | prior close 0.319 | below PM low 0.276 | 2081.7% | $1M | -2.36% |
 
 ### Yesterday's tape — the prior session (2026-11-17, settled)
 
@@ -310,16 +310,16 @@ The prior session's own biggest movers in the whole screen, with where they sit 
 |---|---|---|---|---|---|---|---|---|---||
 | SLS | 19.15 | 18.32 | -4.34% | 16.90–19.43 | prior close 19.15 | below PM low 16.90 | 5.0% | $3.9B | +156.36% |
 | GP | 2.62 | 3.03 | +15.65% | 2.59–3.44 | prior close 2.62 | back to/below prior close 2.62 | 61.6% | $6M | +85.82% |
-| GDHG | 0.29 | 0.23 | -19.64% | 0.23–0.32 | prior close 0.29 | below PM low 0.23 | 103.2% | $17M | -81.57% |
+| GDHG | 0.2912 | 0.2340 | -19.64% | 0.2265–0.3203 | prior close 0.2912 | below PM low 0.2265 | 103.2% | $17M | -81.57% |
 | CUE | 2.83 | 3.24 | +14.50% | 3.06–3.44 | prior close 2.83 | back to/below prior close 2.83 | 141.9% | $24M | -79.93% |
-| FRTT | 0.68 | 0.67 | -0.07% | 0.61–0.71 | prior close 0.68 | below PM low 0.61 | 8.1% | $10M | +77.74% |
-| SMTK | 0.27 | 0.23 | -15.03% | 0.23–0.27 | prior close 0.27 | below PM low 0.23 | 10.8% | $153,811 | +66.02% |
+| FRTT | 0.6754 | 0.6749 | -0.07% | 0.6130–0.7077 | prior close 0.6754 | below PM low 0.6130 | 8.1% | $10M | +77.74% |
+| SMTK | 0.272 | 0.231 | -15.03% | 0.225–0.275 | prior close 0.272 | below PM low 0.225 | 10.8% | $153,811 | +66.02% |
 | MPU | 2.12 | 2.22 | +4.72% | 2.09–2.35 | prior close 2.12 | back to/below prior close 2.12 | 38.2% | $7M | +65.62% |
 | MDRN | 1.93 | 1.82 | -5.70% | 1.66–1.82 | prior close 1.93 | below PM low 1.66 | n/a | $29M | -49.54% |
-| SAFX | 0.05 | 0.04 | -2.00% | 0.04–0.05 | prior close 0.05 | below PM low 0.04 | 5.5% | $27M | -41.96% |
+| SAFX | 0.0451 | 0.0442 | -2.00% | 0.0439–0.0460 | prior close 0.0451 | below PM low 0.0439 | 5.5% | $27M | -41.96% |
 | VAI | 3.09 | 2.94 | -4.85% | 2.77–2.96 | prior close 3.09 | below PM low 2.77 | 2.5% | $62M | +40.45% |
-| AZI | 0.73 | 0.76 | +4.67% | 0.76–1.37 | prior close 0.73 | back to/below prior close 0.73 | 733.2% | $48M | +39.55% |
-| ONEN | 0.74 | 0.77 | +3.38% | 0.77–0.77 | prior close 0.74 | back to/below prior close 0.74 | 0.1% | $80M | -38.84% |
+| AZI | 0.730 | 0.764 | +4.67% | 0.760–1.370 | prior close 0.730 | back to/below prior close 0.730 | 733.2% | $48M | +39.55% |
+| ONEN | 0.740 | 0.765 | +3.38% | 0.765–0.765 | prior close 0.740 | back to/below prior close 0.740 | 0.1% | $80M | -38.84% |
 
 ### Tail — the names the gates and the table cap left out
 
@@ -327,25 +327,25 @@ Ranked by absolute gap, not by gap. Cohorts: `gate-fail` = failed Gate A or Gate
 
 | Ticker | Prior close ($) | Pre-market last ($) | Gap % | PM range ($) | Key level | Invalidation | %ADV | Mkt cap | Cohort |
 |---|---|---|---|---|---|---|---|---|---|
-| SVRE | 0.41 | 0.89 | +116.69% | 0.43–3.10 | prior close 0.41 | back to/below prior close 0.41 | 49867.8% | $2M | gate-fail |
-| INLF | 0.36 | 0.51 | +41.78% | 0.33–0.54 | prior close 0.36 | back to/below prior close 0.36 | 55.8% | $548,650 | gate-fail |
-| ZNB | 0.61 | 0.40 | -35.05% | 0.38–1.48 | prior close 0.61 | below PM low 0.38 | 458.3% | $3M | gate-fail |
-| RFL | 0.91 | 0.69 | -24.81% | 0.69–0.69 | prior close 0.91 | below PM low 0.69 | 0.1% | $48M | gate-fail |
-| FGL | 0.72 | 0.55 | -23.07% | 0.52–0.64 | prior close 0.72 | below PM low 0.52 | 4.7% | $8,233 | gate-fail |
-| GMM | 1.39 | 1.71 | +22.94% | 1.42–2.11 | prior close 1.39 | back to/below prior close 1.39 | 325.8% | $11M | gate-fail |
+| SVRE | 0.4098 | 0.8880 | +116.69% | 0.4320–3.1000 | prior close 0.4098 | back to/below prior close 0.4098 | 49867.8% | $2M | gate-fail |
+| INLF | 0.3597 | 0.5100 | +41.78% | 0.3266–0.5350 | prior close 0.3597 | back to/below prior close 0.3597 | 55.8% | $548,650 | gate-fail |
+| ZNB | 0.611 | 0.397 | -35.05% | 0.380–1.480 | prior close 0.611 | below PM low 0.380 | 458.3% | $3M | gate-fail |
+| RFL | 0.9134 | 0.6868 | -24.81% | 0.6868–0.6868 | prior close 0.9134 | below PM low 0.6868 | 0.1% | $48M | gate-fail |
+| FGL | 0.719 | 0.553 | -23.07% | 0.523–0.640 | prior close 0.719 | below PM low 0.523 | 4.7% | $8,233 | gate-fail |
+| GMM | 1.390 | 1.709 | +22.94% | 1.420–2.110 | prior close 1.390 | back to/below prior close 1.390 | 325.8% | $11M | gate-fail |
 | IRIX | 0.70 | 0.55 | -21.38% | 0.54–0.59 | prior close 0.70 | below PM low 0.54 | 1.7% | $12M | gate-fail |
-| GDHG | 0.29 | 0.23 | -19.64% | 0.23–0.32 | prior close 0.29 | below PM low 0.23 | 103.2% | $17M | gate-fail |
-| LICN | 0.02 | 0.02 | -19.55% | 0.02–0.04 | prior close 0.02 | below PM low 0.02 | 1220.2% | $359,190 | gate-fail |
-| ZBAO | 0.18 | 0.15 | -19.53% | 0.14–0.27 | prior close 0.18 | below PM low 0.14 | 161.8% | $2M | gate-fail |
-| CYAB | 0.10 | 0.08 | -16.43% | 0.08–0.10 | prior close 0.10 | below PM low 0.08 | 2.5% | $4M | gate-fail |
-| YFOR | 0.03 | 0.02 | -16.36% | 0.02–0.03 | prior close 0.03 | below PM low 0.02 | 67.5% | $210,826 | gate-fail |
-| HIHO | 1.23 | 1.43 | +16.17% | 1.19–1.65 | prior close 1.23 | back to/below prior close 1.23 | 249.4% | $6M | gate-fail |
+| GDHG | 0.2912 | 0.2340 | -19.64% | 0.2265–0.3203 | prior close 0.2912 | below PM low 0.2265 | 103.2% | $17M | gate-fail |
+| LICN | 0.0220 | 0.0177 | -19.55% | 0.0170–0.0350 | prior close 0.0220 | below PM low 0.0170 | 1220.2% | $359,190 | gate-fail |
+| ZBAO | 0.1828 | 0.1471 | -19.53% | 0.1450–0.2663 | prior close 0.1828 | below PM low 0.1450 | 161.8% | $2M | gate-fail |
+| CYAB | 0.0998 | 0.0834 | -16.43% | 0.0800–0.1000 | prior close 0.0998 | below PM low 0.0800 | 2.5% | $4M | gate-fail |
+| YFOR | 0.0269 | 0.0225 | -16.36% | 0.0216–0.0290 | prior close 0.0269 | below PM low 0.0216 | 67.5% | $210,826 | gate-fail |
+| HIHO | 1.230 | 1.429 | +16.17% | 1.190–1.650 | prior close 1.230 | back to/below prior close 1.230 | 249.4% | $6M | gate-fail |
 | LSF | 2.08 | 1.75 | -15.85% | 1.75–2.00 | prior close 2.08 | below PM low 1.75 | 1.1% | $23M | gate-fail |
 | GP | 2.62 | 3.03 | +15.65% | 2.59–3.44 | prior close 2.62 | back to/below prior close 2.62 | 61.6% | $6M | gate-fail |
 | AKAN | 2.05 | 2.37 | +15.61% | 1.91–2.86 | prior close 2.05 | back to/below prior close 2.05 | 33.2% | $5M | gate-fail |
-| PARA | 0.07 | 0.06 | -15.13% | 0.06–0.09 | prior close 0.07 | below PM low 0.06 | 15.3% | $32,780 | gate-fail |
-| SMTK | 0.27 | 0.23 | -15.03% | 0.23–0.27 | prior close 0.27 | below PM low 0.23 | 10.8% | $153,811 | gate-fail |
-| SDEV | 0.70 | 0.59 | -14.97% | 0.57–0.70 | prior close 0.70 | below PM low 0.57 | 6.7% | $51M | gate-fail |
+| PARA | 0.0727 | 0.0617 | -15.13% | 0.0584–0.0850 | prior close 0.0727 | below PM low 0.0584 | 15.3% | $32,780 | gate-fail |
+| SMTK | 0.272 | 0.231 | -15.03% | 0.225–0.275 | prior close 0.272 | below PM low 0.225 | 10.8% | $153,811 | gate-fail |
+| SDEV | 0.6966 | 0.5923 | -14.97% | 0.5750–0.7048 | prior close 0.6966 | below PM low 0.5750 | 6.7% | $51M | gate-fail |
 | CUE | 2.83 | 3.24 | +14.50% | 3.06–3.44 | prior close 2.83 | back to/below prior close 2.83 | 141.9% | $24M | gate-fail |
 | IIIV | 18.71 | 21.35 | +14.11% | 20.60–21.40 | prior close 18.71 | back to/below prior close 18.71 | 0.5% | $492M | gate-fail |
 | PAVS | 2.66 | 2.29 | -13.91% | 2.13–2.46 | prior close 2.66 | below PM low 2.13 | 9.1% | $1M | gate-fail |
@@ -379,7 +379,7 @@ The trending list is a lead indicator, not a sidebar: every name below was price
 | TGT | 8.18 | 157.50 (-1.27%) — Target is drawing attention after a strong quarterly sales and earnings report and raised full-year guidance, but shares fell despite the beat. Traders are debating whether the turnaround reflects durable traffic growth or is overstated by one-time tariff refunds, with some viewing the decline as a … |
 | ZIM | 7.70 | 30.70 (+3.40%) — ZIMs Q3 results and higher full-year outlook, amid strong container freight rates, have traders focused on earnings strength and potential dividends. Optimism is tempered by uncertainty over the Hapag-Lloyd takeover and Israeli approval, with some investors favoring a standalone company while others… |
 | SLV | 7.58 | 41.29 (-3.17%) — SLV is drawing attention amid a sharp silver selloff, which traders commonly attribute to hawkish Federal Reserve rate expectations and a stronger U.S. dollar. Bearish calls for further losses compete with oversold-bounce and buy-the-dip views, alongside unverified claims of paper-market manipulatio… |
-| CSIQ | 7.18 | 8.05 (+3.14%) — CSIQs sharp drop is being discussed alongside a broader solar-sector selloff, which traders attribute to market and AI-trade jitters rather than a company-specific trigger. Some point to Canadian Solars battery-storage contract as positive, while dip buyers call the decline an overreaction and other… |
+| CSIQ | 7.18 | 8.050 (+3.14%) — CSIQs sharp drop is being discussed alongside a broader solar-sector selloff, which traders attribute to market and AI-trade jitters rather than a company-specific trigger. Some point to Canadian Solars battery-storage contract as positive, while dip buyers call the decline an overreaction and other… |
 | AAOI | 7.09 | 40.48 (-10.48%) — A newly filed at-the-market share offering has put dilution and the potential share overhang at the center of AAOI discussion, with traders criticizing the repeated raises and their timing. Others argue the capital could fund manufacturing expansion to meet AI data-center demand, though the offering… |
 | CAPR | 6.88 | 8.84 (+5.11%) — Attention centers on the FDAs pending decision on Capricors deramiocel for Duchenne muscular dystrophy, with the application narrowed to upper-limb function. Bulls point to HOPE-3 results and longer-term data, while skeptics cite statistical-analysis concerns and the earlier advisory-panel vote, lea… |
 | LOW | 6.81 | 211.11 (-4.24%) — Lowes Q3 earnings beat expectations and the company raised its sales and comparable-sales outlook, but shares fell as traders focused on lower margin guidance and questioned the quality of the beat amid tariff benefits. Some also cited high rates and broader retail weakness as reasons the positive r… |
@@ -463,6 +463,7 @@ Three of the five are already in the tape: LOW and TGT were sold despite beating
 - **The cap that was rebuilt — SVRE.** The sweep published SaverOne 2014 at a $166.9m cap. That figure is not corroborated by any source and it was **rejected**: the scanner's implied 808,944,678 shares is stale after SaverOne's 1-for-15,000 ADS ratio change, while Nasdaq's `/summary` implies 5,401,669 ADS ($2.21m) and stockanalysis's ordinary count of 101,814,335,346 divided by 15,000 gives 6,787,622 ADS ($2.78m) — and Benzinga independently reports a market cap of about $1.0m. The published cap is **$2,213,604 on the Nasdaq-implied ADS count**, which puts SVRE below the $100m Gate B and moves it out of the headline table into the tail tier. The other six names flagged for a basis mismatch (STKH, BLRX, FRSX, NVX, PPBT, XTLB) all publish caps that stay under Gate B either way, so the reconciliation changed no other placement.
 - **The cap that was corrected — AUGO.** The scanner served a prior close of 66.26 for Aura Minerals against a pre-market print of 63.68 and a gap of -4.93%, which cannot both be true. The bridge's settled close is 66.98, and only with 66.98 does the print and the gap reconcile. The published prior close is **66.98** (bridge), the gap is the scanner's -4.93%.
 - **Catalyst sourcing.** Six cluster searches plus per-name lookups on the movers desks. Names whose catalyst could not be sourced in this run (RYDE, HSAI, MOD, ENRD, CSIQ, ZIM) carry a move and no story, and `has_news` is `no` for them in the CSV.
+- **The published price precision, and why it is not uniformly 2 dp.** The contract asks for prices rounded to 2 dp; on this tape that rule had to give way on the sub-$1 names, because 2 dp makes a row contradict itself. YYForce's prior close of $0.0269 prints as $0.03 at 2 dp, and a reader computing (0.0225 - 0.03) / 0.03 gets -25% against the -16.36% gap printed beside it — a wrong number, not a rounding artefact. Each row therefore carries the fewest decimals that leave the published (prior close, pre-market last, gap %) trio reconciling within 0.05pp; 2 dp is still used wherever it satisfies that. All 100 published rows now reconcile to the reader's own arithmetic within 0.05pp.
 - **Not degraded, but worth naming:** Yahoo JSON was not needed for any published price — the scanner served the pre-market tape and the bridge served the prior close — so no Yahoo rate-limit fallback was used.
 
 ## 11. Open research queue
