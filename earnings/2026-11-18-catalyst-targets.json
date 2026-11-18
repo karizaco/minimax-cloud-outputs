@@ -1,0 +1,116 @@
+{
+  "us": [
+    {
+      "name": "GLBE",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-18",
+      "event_freshness": 0,
+      "premarket_pct": -12.584777694046734
+    },
+    {
+      "name": "BRBR",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-18",
+      "event_freshness": 0,
+      "premarket_pct": 8.99182561307902
+    },
+    {
+      "name": "BLSH",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-18",
+      "event_freshness": 0,
+      "premarket_pct": 8.718214841722883
+    },
+    {
+      "name": "BORR",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-18",
+      "event_freshness": 0,
+      "premarket_pct": 8.169811320754711
+    },
+    {
+      "name": "TJX",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-18",
+      "event_freshness": 0,
+      "premarket_pct": 6.276472853292265
+    },
+    {
+      "name": "LOW",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-18",
+      "event_freshness": 0,
+      "premarket_pct": -4.7400889050167905
+    },
+    {
+      "name": "NVDA",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-17",
+      "event_freshness": 1,
+      "premarket_pct": 2.8496076161070234
+    }
+  ],
+  "eu": [
+    {
+      "name": "KGH",
+      "chg": -4.88
+    },
+    {
+      "name": "SOI",
+      "chg": 4.86
+    },
+    {
+      "name": "PEN",
+      "chg": -4.79
+    },
+    {
+      "name": "KEOC",
+      "chg": 5.45
+    }
+  ],
+  "au": [
+    {
+      "name": "LLC",
+      "chg": -16.91
+    },
+    {
+      "name": "NXL",
+      "chg": 45.28
+    }
+  ],
+  "apac": [
+    {
+      "name": "4292",
+      "market": "ksa",
+      "chg": -6.17
+    },
+    {
+      "name": "ME8U",
+      "market": "singapore",
+      "chg": -4.05
+    },
+    {
+      "name": "M44U",
+      "market": "singapore",
+      "chg": -3.6
+    }
+  ],
+  "budget": {
+    "US": 7,
+    "EU": 4,
+    "AU": 2,
+    "APAC": 3
+  },
+  "budget_total": 16,
+  "budget_cap": 16,
+  "budget_rule": "the US slice covers the rows whose earnings event can still explain today's move (fresh = the report is dated on the scan date), the EU/AU/APAC floors are never squeezed, and the leftover goes to the region with the most unexplained rows",
+  "earnings_calendar_rows": 984,
+  "asx_announcement_rows": 3,
+  "asx_fresh": [
+    "CKF",
+    "TWL",
+    "WJL"
+  ],
+  "earnings_field_stale_rows": 3,
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-18.md"
+}
