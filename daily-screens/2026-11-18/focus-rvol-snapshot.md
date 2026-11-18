@@ -21,7 +21,7 @@ rvol_required_bucket: 1.5
 rvol_alert_threshold: 1.5
 near_miss_floor: 1.275
 alert_rule: An alert fires for a name whose rvol_now is at or above RVOL_ALERT_THRESHOLD (1.5) AND whose prev_session_rvol is below RVOL_ALERT_THRESHOLD (1.5) - that is, the name crossed UP through the alert bar since the previous session's reading of the same metric.
-pm_source_status: measured_from_series
+pm_source_status: partial
 cross_check_source: same_series_truncated
 status: ok
 upstream: /workspace/daily-screens/2026-11-17/focus.md
@@ -230,6 +230,8 @@ This turnover is why the prior reading is recomputed rather than read from the p
 - TradingView scanner (the denominator): one pull, no truncation and no coverage problem reported - one denominator set used for BOTH sides of every crossing
 - Yahoo chart API (session volume, close, baselines): healthy; the engine scored 1387 of 1734 candidates
 - unpriced names: 347 of 1734 candidates had no usable session window (`no_session_bars`); they are reported as unpriced, never as a zero
+- pre-market share: 101 published rows - measured_from_nasdaq 93, not_subtracted 8; 8 row(s) carried NO measurable pre-market volume (Yahoo's pre-open bars carry volume 0 and Nasdaq's pre-session counter had no row for them), so their `pm_vol_source` reads `not_subtracted` and their `pm_share_pct` is `n/a` rather than a wrong number
+- REPAIR (this fire): the CSV's `tier` column said `WATCH` on two names that this artifact's own near-miss table publishes — **GL (1.4644x)** and **ADUR (1.3251x)** — because both have an unavailable prior reading (`prev_session_rvol_source: unavailable`). The near-miss band is a LEVEL rule and does not depend on the prior reading; the prior reading only decides a CROSSING. Both rows are tiered `NEAR MISS`, which makes the CSV (65 NEAR MISS rows) agree with the `### Counts` block and the near-miss table. **No number changed** — the tier label and the front-matter `pm_source_status` (was hardcoded `measured_from_series`, which named a source that produced ZERO rows here) are the only edits. The engine fix is in `karizaco/maxhermes-migration` (`tools/focus_rvol_score.py`, commit `73ebb24`) so the next fire derives both values instead of asserting them.
 
 ## Degradation / caveats
 - **347 candidates could not be priced** - no regular-session bars in the fetched window. They are excluded from every count rather than published as a zero or a daily proxy.
