@@ -1,0 +1,26 @@
+{
+  "captured_at": 1795131521.8048677,
+  "cron_date": "2026-11-19",
+  "files": {
+    "breadth-snapshot.md": {
+      "exists": false,
+      "sha256": null,
+      "mtime": null
+    },
+    "breadth-snapshot.csv": {
+      "exists": false,
+      "sha256": null,
+      "mtime": null
+    },
+    "breadth-snapshot.json": {
+      "exists": false,
+      "sha256": null,
+      "mtime": null
+    },
+    "_regime-intraday.json": {
+      "exists": false,
+      "sha256": null,
+      "mtime": null
+    }
+  }
+}
