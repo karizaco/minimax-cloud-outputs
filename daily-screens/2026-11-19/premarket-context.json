@@ -1,0 +1,104 @@
+{
+  "catalysts": {
+    "SLS": {
+      "confirmed": true,
+      "source": "issuer pricing release, reported by RTTNews 11/19 01:08 ET and MT Newswires 07:45 ET",
+      "note": "priced an underwritten public offering of 11,538,462 common shares at $13.00 (a 28% discount to the $17.95 close), ~$150M gross proceeds before the underwriters' option; the offering is expected to close on 11/20"
+    },
+    "PANW": {
+      "confirmed": true,
+      "source": "issuer press release, Palo Alto Networks FQ1 FY2027 results, 11/18 after the close",
+      "note": "FQ1 FY27 revenue $3.44B (+39% y/y) vs $3.31B consensus and non-GAAP EPS $1.05 vs $0.97; NGS ARR +66% to $9.73B; full-year guidance raised to $14.52-14.57B and $4.26-4.30; also announced the $4.5B all-stock acquisition of Applied Compute"
+    },
+    "SA": {
+      "confirmed": true,
+      "source": "B.C. Supreme Court clarification reported 11/19 (Cantech Letter / CNW); gold at 52-week lows per the 11/19 pre-market note",
+      "note": "Justice Burke confirmed the Province must carry out deep consultation with the Tsetsaut Skii km Lax Ha Nation on the quashed KSM Substantial Start Determination; the ruling does not close the reasonableness challenge. Gold and silver at 52-week lows are the sector backdrop"
+    },
+    "UMAC": {
+      "confirmed": true,
+      "source": "wire, Investing.com 11/19 07:22 ET; Quantisnow 07:39 ET",
+      "note": "Oppenheimer initiated coverage at Outperform with a $30 price target, calling the drone-component supplier a beneficiary of the US Army's one-million-drone procurement target"
+    },
+    "ASTS": {
+      "confirmed": true,
+      "source": "wire, Investing.com 11/19 07:20 ET; Stocktwits/Asianet 11/19",
+      "note": "B.Riley upgraded the shares from Neutral to Buy with a $48 target; separately, early ULA findings on the Vulcan failure pointed to fuel supply rather than Blue Origin's BE-4 engines, removing a cloud over the New Glenn launch vehicle. The Firefly engine-licence share issuance and the Rakuten AST Japan JV are live on the story but are not new today"
+    },
+    "SHAZ": {
+      "confirmed": true,
+      "source": "analyst action on the wire, Investing.com 11/19 07:50 ET",
+      "note": "B.Riley reiterated Buy with a $78 target, saying the key step is closing the AICP financing that unlocks the $4.88B Nvidia program, and that the company already meets the site test; B.Riley expects the financing before year-end 2026"
+    },
+    "COHR": {
+      "confirmed": false,
+      "source": "no same-session company catalyst confirmed — the pre-market move is group beta",
+      "note": "no catalyst confirmed in this run; the optical-networking complex (COHR, LITE, AAOI, CIEN, FN) moved as one group on the Anthropic listing catalyst, so treat the gap as sector beta rather than a company event"
+    },
+    "ALAB": {
+      "confirmed": false,
+      "source": "no same-session issuer release found; last print was Q3 on 11/3",
+      "note": "no catalyst confirmed in this run; the gap tracks the AI-infrastructure rally rather than a company event"
+    },
+    "ARM": {
+      "confirmed": false,
+      "source": "no same-session issuer release found; last print was Q3 on 11/4",
+      "note": "no catalyst confirmed in this run; the gap is semiconductor beta (the sector ETF is the nearest proxy)"
+    },
+    "RYTM": {
+      "confirmed": false,
+      "source": "no same-session issuer release or wire item found",
+      "note": "no catalyst confirmed in this run; the pre-market tape crossed the bar intraday and faded back below it by the snapshot"
+    },
+    "LUMN": {
+      "confirmed": false,
+      "source": "no same-session issuer release found; last print was 11/4",
+      "note": "no catalyst confirmed in this run; the move tracks the communications sector"
+    },
+    "SNAP": {
+      "confirmed": false,
+      "source": "no same-session issuer release found; last print was 11/4",
+      "note": "no catalyst confirmed in this run; the move tracks the broad market"
+    },
+    "BRBR": {
+      "confirmed": false,
+      "source": "no same-session issuer release found",
+      "note": "no catalyst confirmed in this run; the name is giving back the prior session's move"
+    },
+    "ENR": {
+      "confirmed": false,
+      "source": "no same-session issuer release found",
+      "note": "no catalyst confirmed in this run; no pre-market activity to attribute"
+    },
+    "RARE": {
+      "confirmed": false,
+      "source": "no same-session issuer release found",
+      "note": "no catalyst confirmed in this run; no pre-market activity to attribute"
+    },
+    "VIK": {
+      "confirmed": false,
+      "source": "no same-session issuer release found",
+      "note": "no catalyst confirmed in this run; no pre-market activity to attribute"
+    },
+    "YALA": {
+      "confirmed": false,
+      "source": "no same-session issuer release found",
+      "note": "no catalyst confirmed in this run; the only print on the tape is hours old"
+    }
+  },
+  "notes": [
+    "Market backdrop: Anthropic priced its IPO at $83 a share (about $81.3B in the offering and about $107.3B with the concurrent private placement) above its preliminary range and begins Nasdaq trading today under ANT. The print reignited the AI trade and the whole AI-infrastructure complex moved as ONE group pre-market — optical, storage/memory and neocloud names alike — so a cluster of names on the ladder share a single driver and none of them is an independent setup.",
+    "The Focus book and the market's book barely overlap: of the ten largest pre-market gaps, only SHAZ and SLS are also on the prior session's Focus list. That is the structural point of this routine — the Focus list is a momentum screen built on the previous session, so it cannot contain a name whose move has not happened yet.",
+    "Gold and silver hit 52-week lows overnight, so the metals complex is the one part of the tape moving DOWN for a macro reason rather than a company reason; Seabridge (SA) carries a company-specific overlay on top of it.",
+    "Driver-class caveat: the crypto proxy is only pulled when a crypto name sits on the Focus list, and no Focus name is a crypto name this morning. The neocloud and crypto-linked names on the ladder therefore carry IDIOSYNCRATIC driver classes even though they visibly moved with the AI trade — read those classes as 'no index proxy within 1.5pp', not as 'no shared story'.",
+    "No Focus-list name has an earnings date today, so the forward calendar is empty for this book; the market-wide ladder carries no same-day print either, so the day's gap leaders are event-driven (offerings, court rulings, analyst actions) rather than earnings-driven."
+  ],
+  "source_health": [
+    {"source": "Nasdaq extended-trading tape (api.nasdaq.com /extended-trading)", "status": "ok", "role": "the executed pre-market prints, the reference-close cross-check and the gap"},
+    {"source": "Cboe delayed-quote CDN (cdn.cboe.com/api/global/delayed_quotes)", "status": "ok", "role": "the independent close cross-check with its own timestamp"},
+    {"source": "TradingView america scanner", "status": "ok", "role": "the market-wide gap ladder, the sector/index proxies and the 30-day volume denominators"},
+    {"source": "nasdaq /api/quote/\\{SYM\\}/historical", "status": "ok", "role": "session-exact reference closes used by the universe resolver"},
+    {"source": "web_search (wire + issuer releases)", "status": "ok", "role": "the confirmed catalysts"},
+    {"source": "crypto overnight proxy", "status": "not applicable", "role": "not pulled — no crypto name sits on the Focus list, so the ladder's crypto-linked names carry an IDIOSYNCRATIC class"}
+  ]
+}
