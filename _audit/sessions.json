@@ -1,0 +1,1486 @@
+{
+  "ok": true,
+  "command": "session list",
+  "response": {
+    "sessions": [
+      {
+        "session_id": "465046852297032",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[19-11] 90-delivery-auditor",
+        "status": 1,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"team_policy\":{\"version\":1,\"disabled\":true},\"model\":{\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"}},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1795089634423,
+        "updated_at": 1795089875269,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "14002"
+      },
+      {
+        "session_id": "464468731576497",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[unarchiving?? wtf]",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\"},\"model_resolution\":{\"context_default\":true},\"query\":\"can you see whether this conversation was archived earlier and then unarchived for some reason?\",\"team_policy\":{\"disabled\":true,\"version\":1},\"device_platform\":\"web\"}",
+        "created_at": 1794948639213,
+        "updated_at": 1795089761733,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "13832"
+      },
+      {
+        "session_id": "465039556141196",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[19-11] 02-asia-pre-market-reactions",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\"},\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"disabled\":true,\"version\":1}}",
+        "created_at": 1795087860327,
+        "updated_at": 1795088542261,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10645"
+      },
+      {
+        "session_id": "465032113893510",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[19-11] 19-earnings-reminder-daily",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"version\":1,\"disabled\":true},\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\"}}",
+        "created_at": 1795086037983,
+        "updated_at": 1795088041209,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "13835"
+      },
+      {
+        "session_id": "463395405033557",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[short float wrong]",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"thinking_effort\":\"high\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"high\"},\"context_limit\":1000000},\"model_resolution\":{},\"query\":\"1) \\\"Two defects in the routine's own engine surfaced during the run and are fixed in the repo\\\" - please tell me when (time and date) were they fixed, in what commit and whether the comit was pushed.\\n2) what is your source for the float short data?\\n3) how often does this routine run? if weekly, perhaps there could be cross-check of the float short data as some of these numbers seem a bit off\",\"device_platform\":\"web\"}",
+        "created_at": 1794686468816,
+        "updated_at": 1795080426938,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "high"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "high"
+        },
+        "project_id": "10635"
+      },
+      {
+        "session_id": "465003242893410",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[19-11] 91-schedule-drift-guard",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\"},\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"version\":1,\"disabled\":true}}",
+        "created_at": 1795079108901,
+        "updated_at": 1795079327592,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "14002"
+      },
+      {
+        "session_id": "464920675135849",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 23-agentic-post-market-brief",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000},\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"disabled\":true,\"version\":1}}",
+        "created_at": 1795059017211,
+        "updated_at": 1795060444622,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10638"
+      },
+      {
+        "session_id": "464795596079480",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 13-macro-calendar-midweek",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"}},\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"version\":1,\"disabled\":true}}",
+        "created_at": 1795028448963,
+        "updated_at": 1795029089638,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "464796204212309",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 10-stock-screener-breadth-snapshot",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"team_policy\":{\"disabled\":true,\"version\":1},\"model\":{\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1795028461264,
+        "updated_at": 1795028776296,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10635"
+      },
+      {
+        "session_id": "464769214845164",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 15b-earnings-reaction-settlement",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"variant\":\"thinking\",\"context_limit\":1000000,\"thinking_effort\":\"max\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\"},\"model_resolution\":{\"context_default\":true,\"effort_default\":true},\"team_policy\":{\"version\":1,\"disabled\":true}}",
+        "created_at": 1795022105606,
+        "updated_at": 1795022588137,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "context_limit": 1000000,
+          "thinking_effort": "max"
+        },
+        "project_id": "13835"
+      },
+      {
+        "session_id": "464733902024827",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 17-us-stocks-in-play-open",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"}},\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"version\":1,\"disabled\":true}}",
+        "created_at": 1795013439910,
+        "updated_at": 1795016186826,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "13832"
+      },
+      {
+        "session_id": "464736987799676",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 12-cross-asset-correlation-snapshot",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"disabled\":true,\"version\":1},\"model\":{\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\"}}",
+        "created_at": 1795014071239,
+        "updated_at": 1795014416566,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "464734707827009",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 92b-preopen-catalyst-capture-0950",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"team_policy\":{\"version\":1,\"disabled\":true},\"model\":{\"thinking_effort\":\"max\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"context_limit\":1000000},\"model_resolution\":{\"context_default\":true,\"effort_default\":true}}",
+        "created_at": 1795013423552,
+        "updated_at": 1795014146539,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "context_limit": 1000000,
+          "thinking_effort": "max"
+        },
+        "project_id": "10645"
+      },
+      {
+        "session_id": "464732866527462",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 07-stock-screener-focus-rvol-09:45",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\"},\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"disabled\":true,\"version\":1}}",
+        "created_at": 1795013115519,
+        "updated_at": 1795013918204,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10635"
+      },
+      {
+        "session_id": "464726682742945",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 26b-agentic-pre-market-brief-refresh",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"variant\":\"thinking\",\"context_limit\":1000000,\"thinking_effort\":\"max\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\"},\"model_resolution\":{\"effort_default\":true,\"context_default\":true},\"team_policy\":{\"disabled\":true,\"version\":1}}",
+        "created_at": 1795011614786,
+        "updated_at": 1795012573859,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "context_limit": 1000000,
+          "thinking_effort": "max"
+        },
+        "project_id": "10645"
+      },
+      {
+        "session_id": "464718720553035",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 25-ntrt-gap-brief-daily",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"team_policy\":{\"version\":1,\"disabled\":true},\"model\":{\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\"},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1795009531023,
+        "updated_at": 1795012334410,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10645"
+      },
+      {
+        "session_id": "464715211014266",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 08-stock-screener-pre-market-gapper",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"version\":1,\"disabled\":true},\"model\":{\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"}}}",
+        "created_at": 1795008849758,
+        "updated_at": 1795009374445,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10645"
+      },
+      {
+        "session_id": "464707661787380",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 15-earnings-reaction-scanner",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"version\":1,\"disabled\":true},\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\"}}",
+        "created_at": 1795006879141,
+        "updated_at": 1795007471478,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "13835"
+      },
+      {
+        "session_id": "464692604289136",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 90-delivery-auditor",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"team_policy\":{\"version\":1,\"disabled\":true},\"model\":{\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\"},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1795003232592,
+        "updated_at": 1795003648057,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "14002"
+      },
+      {
+        "session_id": "464685560885344",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 02-asia-pre-market-reactions",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"team_policy\":{\"disabled\":true,\"version\":1},\"model\":{\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\"},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1795001452394,
+        "updated_at": 1795002022584,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10645"
+      },
+      {
+        "session_id": "464678279852354",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[18-11] 19-earnings-reminder-daily",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\"},\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"disabled\":true,\"version\":1}}",
+        "created_at": 1794999646997,
+        "updated_at": 1795000366961,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "13835"
+      },
+      {
+        "session_id": "463056171274426",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[20 EOD wl] ran 2 hours wtf",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model_resolution\":{},\"query\":\"1) check the git repo for recent changes of this routine definition. Are there any changes to it from the last 1-2 weeks that were supposed to speed up the duration of the routine? if yes, which ones?\\n2) the routine ran for 1 hour 42 minutes this time, analyze what exactly took the longest time\\n3) compare how long the routine ran historically (you can access archived conversations) during the last 1-2 weeks and provide a summary of how the time evolved and why\\n4) anything else you'd want to highlight about how the process of this routine works and what may be problematic?\",\"device_platform\":\"web\",\"model\":{\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"max\"},\"context_limit\":1000000,\"thinking_effort\":\"max\",\"provider_id\":\"minimax\"}}",
+        "created_at": 1794603670034,
+        "updated_at": 1794994427211,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "max"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "max"
+        },
+        "project_id": "10638"
+      },
+      {
+        "session_id": "464508600373413",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[17-11] 09-stock-screener-daily-sweep-18:30",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"version\":1,\"disabled\":true},\"model\":{\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\"}}",
+        "created_at": 1794958245529,
+        "updated_at": 1794958724876,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10635"
+      },
+      {
+        "session_id": "464469948153952",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[17-11] 04-reversal-bullish-3:55",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"team_policy\":{\"version\":1,\"disabled\":true},\"model\":{\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"}},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1794948916457,
+        "updated_at": 1794951074380,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10635"
+      },
+      {
+        "session_id": "464442378637383",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[17-11] 10-stock-screener-breadth-snapshot",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\"},\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"disabled\":true,\"version\":1}}",
+        "created_at": 1794942061348,
+        "updated_at": 1794942608331,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10635"
+      },
+      {
+        "session_id": "464383345164370",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[17-11] 12-cross-asset-correlation-snapshot",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000},\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"version\":1,\"disabled\":true}}",
+        "created_at": 1794927661512,
+        "updated_at": 1794927917443,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "464007205363864",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[degraded source]",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"high\"},\"context_limit\":1000000,\"thinking_effort\":\"high\"},\"model_resolution\":{\"context_default\":true},\"query\":\"Can you analyze the details of \\\"Two degraded sources, both published\\\" - which ones were degraded, why and whether it can be fixed?\",\"team_policy\":{\"version\":1,\"disabled\":true},\"device_platform\":\"web\"}",
+        "created_at": 1794835827752,
+        "updated_at": 1794911242623,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "high"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "high"
+        },
+        "project_id": "10645"
+      },
+      {
+        "session_id": "464010649759958",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[ntrt duration]",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"query\":\"1) I think the TU gapup is caused by unsolicited buyout offer. Was this information available somewhere in your sources? What prevented you from finding that?\\n2) the routine ran for 48 minutes. Were some time/duration optimizations made to this routine recently?\\n3) what took the longest time out of these 48 minutes?\",\"team_policy\":{\"version\":1,\"disabled\":true},\"device_platform\":\"web\",\"model\":{\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"xhigh\"},\"context_limit\":1000000,\"thinking_effort\":\"xhigh\",\"provider_id\":\"minimax\"},\"model_resolution\":{}}",
+        "created_at": 1794836726613,
+        "updated_at": 1794893587066,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "xhigh"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "xhigh"
+        },
+        "project_id": "10645"
+      },
+      {
+        "session_id": "464029484109983",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[16-11] 12-cross-asset-correlation-snapshot",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\"},\"model_resolution\":{\"context_default\":true},\"team_policy\":{\"disabled\":true,\"version\":1}}",
+        "created_at": 1794841275204,
+        "updated_at": 1794841584872,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "463789452898484",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[15-11] 22-weekly-market-recap-preview",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\"},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1794782825122,
+        "updated_at": 1794783200574,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "463749386612864",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[15-11] 14-macro-calendar-week-ahead",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1794772865099,
+        "updated_at": 1794773285767,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "463053757730884",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[us SIPs] no popup",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"query\":\"i noticed that this routine appeared in the sidebar (of the desktop minimax code app) just now (on sunday)... do you have any way of finding out when the routine loaded in the GUI? Seems like it triggered 14th Nov 03:50, then ran for 57 minutes, produced something but was never shown/pushed to the user?\",\"device_platform\":\"web\",\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\"},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1794603038832,
+        "updated_at": 1794753456643,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "13832"
+      },
+      {
+        "session_id": "462967725707368",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[13-11] 12-cross-asset-correlation-snapshot",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model_resolution\":{\"context_default\":true},\"model\":{\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"}}}",
+        "created_at": 1794582064184,
+        "updated_at": 1794582340650,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "462613924966563",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[12-11] 12-cross-asset-correlation-snapshot",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\"},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1794495677793,
+        "updated_at": 1794496004555,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "462318835753387",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[cron] 13-macro-calendar-midweek.md",
+        "status": 2,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\"},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1794423646769,
+        "updated_at": 1794423858627,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "Connection error.",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "462260030706014",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[11-11] 12-cross-asset-correlation-snapshot",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\"},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1794409268147,
+        "updated_at": 1794409467916,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "461906097467682",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[10-11] 12-cross-asset-correlation-snapshot",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\"},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1794322872278,
+        "updated_at": 1794323016072,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "461552272547931",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[09-11] 12-cross-asset-correlation-snapshot",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\"},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1794236479710,
+        "updated_at": 1794236721305,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "461312473866474",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[08-11] 22-weekly-market-recap-preview",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\"},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1794178026387,
+        "updated_at": 1794178282654,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "461272065454317",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[08-11] 14-macro-calendar-week-ahead",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1794168079445,
+        "updated_at": 1794168777337,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "460490576564498",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[06-11] 12-cross-asset-correlation-snapshot",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\"},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1793977276160,
+        "updated_at": 1793977496763,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "460146401050880",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[cron] verify-cron12-window-roll-2026-11-05",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"thinking_effort\":\"max\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"context_limit\":1000000},\"model_resolution\":{\"effort_default\":true,\"context_default\":true}}",
+        "created_at": 1793893229953,
+        "updated_at": 1793893389961,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "context_limit": 1000000,
+          "thinking_effort": "max"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "460136719757379",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[05-11] 12-cross-asset-correlation-snapshot",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model_resolution\":{\"context_default\":true},\"model\":{\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"},\"context_limit\":1000000}}",
+        "created_at": 1793890868385,
+        "updated_at": 1793891149955,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "459841662726415",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[04-11] 13-macro-calendar-midweek",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"}},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1793818840970,
+        "updated_at": 1793819196354,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "459782773420170",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "[04-11] 12-cross-asset-correlation-snapshot",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"context_limit\":1000000,\"thinking_effort\":\"medium\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"medium\"}},\"model_resolution\":{\"context_default\":true}}",
+        "created_at": 1793804465771,
+        "updated_at": 1793804748282,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3.1-Flash",
+          "variant": "thinking",
+          "thinking": {
+            "effort": "medium"
+          },
+          "context_limit": 1000000,
+          "thinking_effort": "medium"
+        },
+        "project_id": "10636"
+      },
+      {
+        "session_id": "8dc4fb3a-7c68-4eef-9740-9fe02d6ed024",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "452278212415784",
+        "agent_name": "Mavis",
+        "title": "Extract Ep 12 brief",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash-Preview\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"max\"},\"context_window\":1000000,\"max_output_tokens\":128000,\"thinking_effort\":\"max\"}}",
+        "created_at": 1791972552946,
+        "updated_at": 1791972985697,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "project_id": "0"
+      },
+      {
+        "session_id": "0294018a-d00b-489f-aa45-e61daed3e03b",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "452278212415784",
+        "agent_name": "Mavis",
+        "title": "Extract Ep 9 brief",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash-Preview\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"max\"},\"context_window\":1000000,\"max_output_tokens\":128000,\"thinking_effort\":\"max\"}}",
+        "created_at": 1791972552747,
+        "updated_at": 1791972873824,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "project_id": "0"
+      },
+      {
+        "session_id": "0d39aefa-7fa3-4636-8b5a-f3c318be6d1a",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "452278212415784",
+        "agent_name": "Mavis",
+        "title": "Extract Ep 17 brief",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"thinking_effort\":\"max\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash-Preview\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"max\"},\"context_window\":1000000,\"max_output_tokens\":128000}}",
+        "created_at": 1791972553044,
+        "updated_at": 1791972849371,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "project_id": "0"
+      },
+      {
+        "session_id": "bbd31687-ccf8-478b-ac51-a4b99b12bd08",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "452278212415784",
+        "agent_name": "Mavis",
+        "title": "Extract Ep 5 brief",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"model_id\":\"MiniMax-M3.1-Flash-Preview\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"max\"},\"context_window\":1000000,\"max_output_tokens\":128000,\"thinking_effort\":\"max\",\"provider_id\":\"minimax\"}}",
+        "created_at": 1791972552449,
+        "updated_at": 1791972804099,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "project_id": "0"
+      },
+      {
+        "session_id": "cf42b003-8443-4d49-bf2c-961602632b3a",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "452278212415784",
+        "agent_name": "Mavis",
+        "title": "Extract Ep 11 brief",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"context_window\":1000000,\"max_output_tokens\":128000,\"thinking_effort\":\"max\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash-Preview\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"max\"}}}",
+        "created_at": 1791972552850,
+        "updated_at": 1791972765594,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "project_id": "0"
+      },
+      {
+        "session_id": "7028a3c2-cc65-4723-9f08-36836d325778",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "452278212415784",
+        "agent_name": "Mavis",
+        "title": "Extract Ep 6 brief",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"context_window\":1000000,\"max_output_tokens\":128000,\"thinking_effort\":\"max\",\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3.1-Flash-Preview\",\"variant\":\"thinking\",\"thinking\":{\"effort\":\"max\"}}}",
+        "created_at": 1791972552560,
+        "updated_at": 1791972691178,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "project_id": "0"
+      },
+      {
+        "session_id": "443321804144716",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "Configure Project Instructions",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model_resolution\":{\"context_default\":true},\"query\":\"how to configure instructions for this specific project\",\"device_platform\":\"web\",\"model\":{\"variant\":\"thinking\",\"context_limit\":450000,\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3\"}}",
+        "created_at": 1789785702335,
+        "updated_at": 1790511539210,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3",
+          "variant": "thinking",
+          "context_limit": 450000
+        },
+        "project_id": "0"
+      },
+      {
+        "session_id": "446294099054683",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "04-reversal-bullish-3:55.md",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3\",\"variant\":\"thinking\",\"context_limit\":450000},\"model_resolution\":{\"context_default\":true},\"team_mode_off\":true}",
+        "created_at": 1790511411299,
+        "updated_at": 1790511411312,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3",
+          "variant": "thinking",
+          "context_limit": 450000
+        },
+        "project_id": "0"
+      },
+      {
+        "session_id": "445582092283972",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "smoke-test",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"model_id\":\"MiniMax-M3\",\"variant\":\"thinking\",\"context_limit\":450000,\"provider_id\":\"minimax\"},\"model_resolution\":{\"context_default\":true},\"team_mode_off\":true}",
+        "created_at": 1790337513428,
+        "updated_at": 1790339001375,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3",
+          "variant": "thinking",
+          "context_limit": 450000
+        },
+        "project_id": "0"
+      },
+      {
+        "session_id": "442704213147723",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 1,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "Mavis",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"context_limit\":450000,\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3\",\"variant\":\"thinking\"},\"model_resolution\":{\"context_default\":true},\"query\":\"I can see two \\\"Mavis\\\" items in \\\"Recents\\\" of this sidebar inside of \\\"Minimax Code\\\" desktop (switching to the \\\"cloud\\\" tab). What are they and how to use them?\",\"device_platform\":\"web\"}",
+        "created_at": 1789634893380,
+        "updated_at": 1789899278834,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3",
+          "variant": "thinking",
+          "context_limit": 450000
+        },
+        "project_id": "0"
+      },
+      {
+        "session_id": "443726088429903",
+        "user_id": "533658622128336904",
+        "biz_line": 1,
+        "session_type": 0,
+        "parent_session_id": "",
+        "agent_name": "Mavis",
+        "title": "Get YouTube transcript",
+        "status": 0,
+        "related_env_session_id": "",
+        "extra_data_json": "{\"model\":{\"provider_id\":\"minimax\",\"model_id\":\"MiniMax-M3\",\"variant\":\"thinking\",\"context_limit\":450000},\"model_resolution\":{\"context_default\":true},\"query\":\"can you get the transcript: https://www.youtube.com/watch?v=sURIn_1_w2E\",\"device_platform\":\"web\"}",
+        "created_at": 1789884389382,
+        "updated_at": 1789898395143,
+        "archived": false,
+        "regenerate_count": 0,
+        "status_message": "",
+        "model": {
+          "provider_id": "minimax",
+          "model_id": "MiniMax-M3",
+          "variant": "thinking",
+          "context_limit": 450000
+        },
+        "project_id": "0"
+      }
+    ],
+    "has_more": false,
+    "next_cursor": ""
+  }
+}
