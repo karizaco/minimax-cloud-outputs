@@ -475,7 +475,7 @@ No moved name without a sourced driver in this region.
 | TradingView global scanner | scanner.tradingview.com/global/scan, 17 index tickers | ok | 17 index closes (16 regions + the STOXX 600) |
 | FX | open.er-api.com/v6/latest/USD | ok | rate date Thu, 19 Nov 2026 00:02:31 +0000 |
 | ATHEX official close | capital.gr / insider.gr / euro2day, 19 Nov 2026 17:19 | ok | the General Index closed at 2,601.23, up 16.72 points or 0.65% - no vendor index covers it |
-| Yahoo news endpoint | query2.finance.yahoo.com/v1/finance/search | degraded | the endpoint returned a quotes-only payload with no `news` array for the international tickers, so the per-ticker catalysts were sourced from the exchange/press instead |
+| Yahoo news endpoint | query2.finance.yahoo.com/v1/finance/search | no data | HTTP 200 with a quotes-only payload and **no `news` array** for the international tickers - a no-data answer, not a source failure; every catalyst was sourced from the exchange, the company IR release or the press instead, so no artifact column depends on it |
 
 ### Caveats
 
