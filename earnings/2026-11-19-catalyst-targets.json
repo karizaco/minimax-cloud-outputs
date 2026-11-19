@@ -1,0 +1,116 @@
+{
+  "us": [
+    {
+      "name": "MANU",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-19",
+      "event_freshness": 0,
+      "premarket_pct": -7.5342465753424595
+    },
+    {
+      "name": "WSM",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-19",
+      "event_freshness": 0,
+      "premarket_pct": 5.790303356530433
+    },
+    {
+      "name": "PANW",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-18",
+      "event_freshness": 1,
+      "premarket_pct": 9.64344551659213
+    },
+    {
+      "name": "P",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-18",
+      "event_freshness": 1,
+      "premarket_pct": 6.4878896168354165
+    },
+    {
+      "name": "BLSH",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-18",
+      "event_freshness": 1,
+      "premarket_pct": 2.996070726915518
+    },
+    {
+      "name": "HAFN",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-18",
+      "event_freshness": 1,
+      "premarket_pct": 2.0179372197309386
+    }
+  ],
+  "eu": [
+    {
+      "name": "SLR",
+      "chg": -5.04
+    },
+    {
+      "name": "KEOC",
+      "chg": 9.24
+    },
+    {
+      "name": "GRE",
+      "chg": -4.12
+    },
+    {
+      "name": "SSPG",
+      "chg": -5.07
+    },
+    {
+      "name": "ASML",
+      "chg": 4.11
+    }
+  ],
+  "au": [
+    {
+      "name": "C79",
+      "chg": 9.3
+    },
+    {
+      "name": "RIC",
+      "chg": -8.24
+    }
+  ],
+  "apac": [
+    {
+      "name": "ATM",
+      "market": "newzealand",
+      "chg": -9.7
+    },
+    {
+      "name": "FRW",
+      "market": "newzealand",
+      "chg": 4.06
+    },
+    {
+      "name": "NOBLE",
+      "market": "thailand",
+      "chg": 7.96
+    }
+  ],
+  "budget": {
+    "US": 6,
+    "EU": 5,
+    "AU": 2,
+    "APAC": 3
+  },
+  "budget_total": 16,
+  "budget_cap": 16,
+  "budget_rule": "the US slice covers the rows whose earnings event can still explain today's move (fresh = the report is dated on the scan date), the EU/AU/APAC floors are never squeezed, and the leftover goes to the region with the most unexplained rows",
+  "earnings_calendar_rows": 976,
+  "asx_announcement_rows": 6,
+  "asx_fresh": [
+    "AAC",
+    "AFP",
+    "MA2",
+    "NFN",
+    "NUF",
+    "OCA"
+  ],
+  "earnings_field_stale_rows": 2,
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-19.md"
+}
