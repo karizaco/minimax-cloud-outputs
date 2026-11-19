@@ -15,7 +15,7 @@ pull_late: true
 
 # Pre-market refresh - Thursday 2026-11-19
 
-One pull of the TradingView `america` scanner at **10:06:17**, and the regular session is **already open** — so the `premarket_*` columns below are the completed pre-market session and the live regular-session values are published in their own block. The front matter carries `pull_late: true` and `market_open_at_pull: true`.
+One pull of the TradingView `america` scanner at **10:06:17**, and the regular session is **already open** (the 09:30 ET open has happened) — so the `premarket_*` columns below are the completed pre-market session and the live regular-session values are published in their own block. The front matter carries `pull_late: true` and `market_open_at_pull: true`. **The platform held this fire for 44 minutes before its first tool call**, so the pull landed late — after the 09:30 ET open.
 
 ## Bottom line
 
