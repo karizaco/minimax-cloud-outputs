@@ -1,0 +1,60 @@
+{
+  "catalysts": {
+    "NUAI": {
+      "confirmed": true,
+      "source": "issuer business update + Q3 release, 11/12 (GlobeNewswire); reported Form S-3 filed 11/16 registering 23.3M resale shares and warrants (StockTitan/EDGAR); no same-session issuer release on 11/20",
+      "note": "reversal of the +71% one-week run on the 207MW Vistra/Luminant Texas PPA and the $64M PIPE; the 11/16 Form S-3 resale registration is the overhang, and management commentary (11/18) says the Phase 1 lease and construction financing are still unsigned — no new issuer release this morning"
+    },
+    "ANT": {
+      "confirmed": true,
+      "source": "Reuters, 11/20 01:46 UTC ('Anthropic's IPO failed to restore investors' faith in the AI sector'); MT Newswires 04:59 ET; Yahoo Finance 07:43 ET; TradingView/Moneycontrol",
+      "note": "profit-taking after the record debut — priced $83, opened $111.50, closed $97.17 (+17%) on 11/19, and gave back the gain pre-market; the AI trade itself is the driver (Nasdaq fell 2.25% on 11/19, a sixth straight down session), with reports of Apple developing its own autonomous AI agent adding competitive pressure"
+    },
+    "INTU": {
+      "confirmed": true,
+      "source": "issuer 8-K + press release, 11/19 after the close (investors.intuit.com, SEC EX-99.01)",
+      "note": "Q1 FY27 beat ($2.91 adj EPS vs ~$2.46-2.70 est, revenue $4.35B) but the guide is the problem: Q2 adj EPS $3.17-3.22 vs ~$3.94-3.98 consensus, revenue $4.93-4.95B vs $5.11B; FY27 revenue cut to $23.08-23.37B (Credit Karma growth cut to 3-7%); Mailchimp sold to Bending Spoons for ~$3.68B, roughly a third of what Intuit paid"
+    },
+    "BJ": {
+      "confirmed": true,
+      "source": "issuer press release, 11/20 pre-open (investors.bjs.com); RTTNews 08:08 ET; Investing.com 08:29 ET",
+      "note": "Q3 FY26 beat and raised — EPS $1.73 vs $1.26 est, revenue $6.28B vs $5.94B, FY26 adj EPS guidance lifted to $5.10-5.30 from $4.60-4.80 — but merchandise gross margin fell ~170bp on birthday-event promotion, and the stock is being sold anyway"
+    },
+    "ERAS": {
+      "confirmed": true,
+      "source": "issuer press release / SEC filing, 11/20 pre-open (ENA symposium, Barcelona); Investing.com 07:14 and 07:48 ET",
+      "note": "updated Phase 1 data for ERAS-0015 (44% confirmed ORR in G12X PDAC, 69% in G12D/G12V) and first ERAS-4001 data — small patient groups and no duration-of-response or survival data, and the market read it as not enough"
+    },
+    "CAPR": {
+      "confirmed": true,
+      "source": "issuer 8-K (PDUFA extension to 11/22/2026, major amendment); StockTitan; longbridge 11/19",
+      "note": "no company news this morning — the driver is the scheduled FDA PDUFA decision on deramiocel for Duchenne muscular dystrophy on 11/22, two sessions away; the stock fell 8% on 11/19 and is bouncing pre-market into the decision"
+    },
+    "AAOI": {
+      "confirmed": true,
+      "source": "issuer disclosure, 11/17 — new at-the-market equity program of up to $550M (Yahoo Finance, 11/19)",
+      "note": "the fourth equity program this year (a prior $600M program raised ~$588M net) into record Q3 revenue (+128%) and a $1.0-1.5B hyperscale transceiver deal; the dilution is the overhang and the name is the worst optical de-rating of the week"
+    },
+    "SNDK": {
+      "confirmed": true,
+      "source": "no issuer release confirmed this morning; group move per semiboard weekly screen, 11/20",
+      "note": "memory leg of the AI-infrastructure de-rating (with AMD, DELL, MRVL, NBIS) — the driver is the group, not a company event"
+    }
+  },
+  "notes": [
+    "The board is one story: a global risk-off session, not a stock-picking day. Reuters (11/20 01:46 UTC) has the S&P 500 down 2.02%, the Dow down 2.19% and the Nasdaq down 2.25% on 11/19 — a sixth straight down session for the index — with a global equity gauge on its seventh straight decline and Asian shares heading for their worst week since 2020. The macro overlay is rates: the Philly Fed prices index at its highest since April, the 10-year near 5.05%, and traders pricing roughly a 95% chance of a December rate HIKE. Gold fell about 2.7%.",
+    "The dominant structural driver is the AI-infrastructure unwind, which travelled down the supply chain — optical -> foundry -> memory -> accelerator -> AI cloud — and it is one story across many tickers, not a series of company events: AAOI, COHR, LITE, CRDO, MXL, BE, SNDK, AXTI, AMD, MRVL, DELL, NBIS, ONDS and ASTS all moved on the same hyperscaler-capex-and-returns repricing. The engine classifies most of them IDIOSYNCRATIC because the sector ETFs were down less than 1.5pp; that is a mechanical artefact of the proxy rule, and the context is a single sector-wide de-rating.",
+    "The Anthropic IPO is the day's headline and the market's test case: it priced at $83, opened at $111.50 and closed at $97.17 (+17%) on 11/19, then gave the gain back pre-market on 11/20. Reuters frames it as the debut failing to restore faith in the AI sector. ANT is a one-day-old IPO with no earnings anchor, so its gap is a sentiment print, not a valuation print.",
+    "Two session-specific catalysts sit on top of that backdrop: Intuit reported after the close on 11/19 and guided Q2 below consensus while selling Mailchimp, and BJ's reported before the open on 11/20, beat, raised guidance and was still sold. BJ is the cleanest read that this tape is being sold on any good news at all.",
+    "Crypto is a beta leg, not an independent driver: bitcoin was around $61,300-61,800 in the early hours, its lowest since early July, with crypto market capitalisation back near mid-summer lows. PURR, WULF and CYPH in the ladder are tracking that, and the engine's crypto proxy was unavailable this run, so those names carry a proxy-free driver class.",
+    "Focus-book context: the 2026-11-19 sweep's Focus list is a momentum book built on 11/19, so it structurally cannot hold the day's real gappers. Every Focus name this morning is gapping DOWN with the market — the screen's setups are being sold with the tape, not against it. NUAI is the only Focus name that touched the 4% bar, and it is a reversal of its own PPA-driven run rather than a fresh setup.",
+    "The one decision that moved during this run is NUAI's, and the reason is size, not direction. Wave 1 (08:35:55 ET) carried a 90-share print behind the gap and it cleared the flag gate; waves 2 and 3 found newer prints at the same price level but on 23 shares and then 1 share, so the final tape lands the name on BORDERLINE_THIN. The gap itself never moved off the bar and the pre-market volume is real, so this is a thin-print verdict on a wide gap, not a name that stopped moving. A reader should treat NUAI as a genuine wide mover whose SNAPSHOT print is not tradeable, and re-check the tape after the open.",
+    "The pre-market tape is drying out as the session ages: the newest prints on the decision-relevant names are getting smaller across the three waves, and the names are drifting further below their pre-market highs. The 4% bar therefore looks staler with every wave, not fresher."
+  ],
+  "source_health": [
+    {"source": "web_search (issuer press releases, SEC 8-K/EX-99.01, Reuters, MT Newswires, Yahoo Finance, Investing.com, StockTitan)", "status": "ok", "role": "the catalysts on the ladder's top names and on the flagged Focus name"},
+    {"source": "premarket_pull.py (Nasdaq extended-trading tape, TradingView america scanner)", "status": "ok", "role": "the gaps, volumes, executed prints and the market ladder"},
+    {"source": "premarket_universe.py (Nasdaq SPY session history + the 2026-11-19 sweep's focus.csv)", "status": "ok", "role": "the universe and the reference close"},
+    {"source": "crypto proxy", "status": "degraded", "role": "the crypto-beta driver class for PURR/WULF/CYPH - no proxy value was returned this run"}
+  ]
+}
