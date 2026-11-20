@@ -1,0 +1,112 @@
+{
+  "us": [
+    {
+      "name": "BJ",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-20",
+      "event_freshness": 0,
+      "premarket_pct": -6.997742663656885
+    },
+    {
+      "name": "INTU",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-19",
+      "event_freshness": 1,
+      "premarket_pct": -8.070447067931095
+    },
+    {
+      "name": "ROST",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-19",
+      "event_freshness": 1,
+      "premarket_pct": -5.402947062033834
+    },
+    {
+      "name": "ESTC",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-19",
+      "event_freshness": 1,
+      "premarket_pct": -4.375736931743749
+    },
+    {
+      "name": "GAP",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-19",
+      "event_freshness": 1,
+      "premarket_pct": 3.946248004257595
+    },
+    {
+      "name": "VVV",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-19",
+      "event_freshness": 1,
+      "premarket_pct": -2.2529858849077233
+    }
+  ],
+  "eu": [
+    {
+      "name": "JACK",
+      "chg": 7.67
+    },
+    {
+      "name": "SEL",
+      "chg": -5.9
+    },
+    {
+      "name": "SIVE",
+      "chg": -11.03
+    },
+    {
+      "name": "HUNT",
+      "chg": -10.33
+    },
+    {
+      "name": "DIG",
+      "chg": -5.42
+    }
+  ],
+  "au": [
+    {
+      "name": "MP1",
+      "chg": -12.89
+    },
+    {
+      "name": "PRN",
+      "chg": -11.23
+    }
+  ],
+  "apac": [
+    {
+      "name": "KCE",
+      "market": "thailand",
+      "chg": -10.62
+    },
+    {
+      "name": "SPK",
+      "market": "newzealand",
+      "chg": -3.6
+    },
+    {
+      "name": "ALT",
+      "market": "thailand",
+      "chg": -9.4
+    }
+  ],
+  "budget": {
+    "US": 6,
+    "EU": 5,
+    "AU": 2,
+    "APAC": 3
+  },
+  "budget_total": 16,
+  "budget_cap": 16,
+  "budget_rule": "the US slice covers the rows whose earnings event can still explain today's move (fresh = the report is dated on the scan date), the EU/AU/APAC floors are never squeezed, and the leftover goes to the region with the most unexplained rows",
+  "earnings_calendar_rows": 613,
+  "asx_announcement_rows": 2,
+  "asx_fresh": [
+    "TRA",
+    "WEB"
+  ],
+  "earnings_field_stale_rows": 0,
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-20.md"
+}
