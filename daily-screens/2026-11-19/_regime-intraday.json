@@ -1,0 +1,32 @@
+{
+  "_schema": 2,
+  "_note": "cron #10 intraday breadth snapshot \u2014 flat regime schema, see SKILL.md \u00a73.5",
+  "size_cut_pct": 50,
+  "uncertainty": true,
+  "late_cycle": false,
+  "breadth_pct_spx": 37.24,
+  "index_below_20sma": true,
+  "vix": 27.56,
+  "vix3m": 26.37,
+  "atr_extensions": {
+    "IWM": {
+      "extension_pct": -3.31
+    },
+    "QQQ": {
+      "extension_pct": -7.68
+    },
+    "QQQE": {
+      "extension_pct": -5.25
+    },
+    "RSP": {
+      "extension_pct": 0.21
+    },
+    "SPY": {
+      "extension_pct": -4.24
+    }
+  },
+  "_vix_source": "Yahoo chart API (^VIX / ^VIX3M), 5-minute bars pinned to the fire day and clock \u2014 both symbols read from the same bar",
+  "_vix_quote_time_et": "2026-11-19 14:00:00 ET",
+  "_vix_session_mode": "replay \u2014 reconstructed from the pinned 5-minute bar at the fire clock (the live print is no longer available)",
+  "_data_date": "2026-11-18"
+}
