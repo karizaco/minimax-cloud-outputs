@@ -499,6 +499,127 @@ class Verdicts(ScannerCase):
         self.assertEqual(self.ns["verdict_for"]("Q3 beat", "maybe"), "—")
 
 
+
+class FireTimeLine(ScannerCase):
+    """The artifact's fire-time line must not date a replayed session wrongly."""
+
+    def test_a_normal_fire_prints_the_wall_clock(self):
+        ftl = self.ns["fire_time_line"]
+        now = datetime.datetime(2026, 11, 19, 12, 15, 5, tzinfo=self.ns["ET"])
+        self.assertEqual(ftl(now, "", "12:15:00"),
+                         "- Fire time (ET): 2026-11-19 12:15:05 Thu")
+
+    def test_a_replay_names_the_fire_it_owes_and_the_delay(self):
+        ftl = self.ns["fire_time_line"]
+        now = datetime.datetime(2026, 11, 20, 1, 13, 31, tzinfo=self.ns["ET"])
+        line = ftl(now, "2026-11-19", "12:15:00")
+        self.assertIn("2026-11-19 12:15:00 Thu", line)
+        self.assertIn("REPLAY", line)
+        self.assertIn("2026-11-20 01:13:31 Fri", line)
+        self.assertIn("778 min after the fire", line)
+
+    def test_a_replay_of_the_scan_slot_names_its_own_hour(self):
+        ftl = self.ns["fire_time_line"]
+        now = datetime.datetime(2026, 11, 20, 1, 13, 31, tzinfo=self.ns["ET"])
+        line = ftl(now, "2026-11-19", "08:03:00")
+        self.assertIn("2026-11-19 08:03:00 Thu", line)
+
+
+def null_close_body(n=25, price=109.25, rmt=None, base=1761000000, meta=True):
+    """A Yahoo daily body whose LAST bar carries a null close."""
+    stamps = [base + i * 86400 for i in range(n)]
+    closes = [100.0 + i for i in range(n)]
+    closes[-1] = None
+    result = {"timestamp": stamps, "indicators": {"quote": [{"close": closes}]}}
+    if meta:
+        result["meta"] = {"regularMarketPrice": price,
+                          "regularMarketTime": rmt if rmt is not None else stamps[-1]}
+    return json.dumps({"chart": {"result": [result]}})
+
+
+class NullCloseRepair(ScannerCase):
+    def _bars(self, body):
+        fake = FakeCurl([(200, body)])
+        self.ns["_curl"] = fake
+        return self.ns["yahoo_daily_bars"]("TEST.PA")
+
+    def test_a_null_last_close_is_repaired_from_yahoos_own_metadata(self):
+        """The session that just ended is still the last bar."""
+        body = null_close_body()
+        bars = self._bars(body)
+        self.assertEqual(len(bars), 25,
+                         "the null last bar was dropped instead of repaired")
+        self.assertEqual(bars[-1][1], 109.25,
+                         "the settled close was not restored from the metadata")
+        self.assertEqual(bars[-2][1], 123.0, "the reference bar moved")
+
+    def test_the_repair_never_touches_a_populated_last_bar(self):
+        """The normal path must be byte-identical to before."""
+        body = null_close_body()
+        body = body.replace('"close": [100.0, 101.0', '"close": [100.0, 101.0')
+        d = json.loads(body)
+        d["chart"]["result"][0]["indicators"]["quote"][0]["close"][-1] = 125.0
+        bars = self._bars(json.dumps(d))
+        self.assertEqual(len(bars), 25)
+        self.assertEqual(bars[-1][1], 125.0)
+
+    def test_a_metadata_price_from_another_session_is_refused(self):
+        """A price stamped on a DIFFERENT day must not be grafted on."""
+        other = 1761000000 + 25 * 86400 + 3600   # a day later
+        body = null_close_body(rmt=other)
+        bars = self._bars(body)
+        self.assertEqual(len(bars), 24,
+                         "a price from another session was grafted onto the bar")
+        self.assertNotEqual(bars[-1][1], 109.25)
+
+    def test_a_null_close_with_no_metadata_is_refused(self):
+        body = null_close_body(meta=False)
+        bars = self._bars(body)
+        self.assertEqual(len(bars), 24, "a bar was invented without any metadata")
+        self.assertNotEqual(bars[-1][1], 109.25)
+
+
+
+class BlockedFire(ScannerCase):
+    """A fire the platform blocked must be PUBLISHED, not just narrated."""
+
+    def test_a_blocked_fire_is_published_as_a_degraded_source(self):
+        fn = self.ns["degrade_blocked_fire"]
+        now = datetime.datetime(2026, 11, 20, 1, 20, 24, tzinfo=self.ns["ET"])
+        self.assertEqual(fn(now, "2026-11-19", "12:15:00", "12:15 ET settlement"), 785)
+        deg = self.ns["DEGRADED"]
+        self.assertEqual(len(deg), 1, "the blocked fire was not published")
+        self.assertEqual(deg[0][0], "platform.fire_blocked")
+        self.assertIn("785 min", deg[0][1])
+
+    def test_a_normal_fire_degrades_nothing(self):
+        fn = self.ns["degrade_blocked_fire"]
+        now = datetime.datetime(2026, 11, 19, 12, 16, 4, tzinfo=self.ns["ET"])
+        self.assertIsNone(fn(now, "", "12:15:00", "12:15 ET settlement"))
+        self.assertEqual(self.ns["DEGRADED"], [])
+
+    def test_a_fire_a_few_minutes_late_degrades_nothing(self):
+        fn = self.ns["degrade_blocked_fire"]
+        now = datetime.datetime(2026, 11, 19, 12, 18, 4, tzinfo=self.ns["ET"])
+        self.assertIsNone(fn(now, "2026-11-19", "12:15:00", "12:15 ET settlement"))
+        self.assertEqual(self.ns["DEGRADED"], [])
+
+
+
+    def test_a_nominal_that_is_not_a_clock_time_degrades_nothing(self):
+        """The call sites pass 'HH:MM:SS'. A '12:15 ET' label must not silently
+        swallow the stall - it publishes NOTHING, which is the failure mode the
+        2026-11-20 run hit (the artifact said degraded_sources: 1 when the
+        house rule needs the stall counted too)."""
+        fn = self.ns["degrade_blocked_fire"]
+        now = datetime.datetime(2026, 11, 20, 1, 20, 24, tzinfo=self.ns["ET"])
+        self.assertIsNone(fn(now, "2026-11-19", "12:15 ET", "12:15 ET settlement"))
+        self.assertEqual(self.ns["DEGRADED"], [])
+        # ... and the REAL call-site argument does publish it.
+        self.assertEqual(fn(now, "2026-11-19", "12:15:00", "12:15 ET settlement"), 785)
+        self.assertEqual(len(self.ns["DEGRADED"]), 1)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2 if "-v" in sys.argv else 1,
                   argv=[a for a in sys.argv if a != "-v"])
