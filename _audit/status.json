@@ -1,9 +1,9 @@
 {
-  "audit_date_et": "2026-11-18",
-  "audit_run_et": "2026-11-19T07:08:41-0500",
-  "origin_main_sha": "5497f0c",
-  "due": 22,
-  "delivered": 22,
+  "audit_date_et": "2026-11-19",
+  "audit_run_et": "2026-11-20T07:05:26-0500",
+  "origin_main_sha": "920a3d2",
+  "due": 21,
+  "delivered": 21,
   "missing": 0,
   "skipped_by_design_count": 0,
   "stale_routines": 0,
@@ -15,21 +15,57 @@
   "gaps": [
     {
       "routine": "25-ntrt-gap-brief-daily",
-      "path": "ntrt/2026-11-18.md",
+      "path": "ntrt/2026-11-19.md",
+      "label": "stalled",
+      "cause": "delayed_replay",
+      "gap_age_hours": 22.3,
+      "streak": 0,
+      "detail": "fire 08:45 ET; the platform held the fire 79 min before its first tool call (the artifact's own line: 'the platform held this fire 79 min before its first tool call', published pull 10:05 ET, 35 min after the open) and the brief was published on the morning of 20 Nov - commit 1b9c012 at 01:06 ET on 11-20, 981.2 min (16.4 h) after its fire, with the session resumed in place (created 08:45 ET 11-19, last updated 01:06 ET 11-20). The .md and its .csv companion landed in that same commit, so the delivery is whole, and the artifact is present on origin/main - this is NOT a MISSING. Over the 45-min allowance on 2 of its last 3 due days (766.5 / 46.4 / 981.2 min on 11-17 / 11-18 / 11-19) - chronically late; recommended allowance ~60 min for 25-ntrt-gap-brief-daily in latency.per_routine_allowed_minutes, or optimise the routine."
+    },
+    {
+      "routine": "26b-agentic-pre-market-brief-refresh",
+      "path": "daily-briefs/2026-11-19-pre-market-refresh.md",
       "label": "stalled",
       "cause": "slow_run",
-      "gap_age_hours": 22.4,
+      "gap_age_hours": 21.8,
       "streak": 0,
-      "detail": "fire 08:45 ET; the session ran 08:45->09:31 ET with an empty status_message and a complete artifact, and the push landed 09:31:21 ET (46.4 min, commit c49275b). The turn completed normally with no platform error, so the routine is slow, not blocked. Over the allowance on 3 of its last 3 due days (47 / 766 / 46.4 min on 11-16 / 11-17 / 11-18, the 11-17 day being a platform stall) - chronically late. Recommended allowance 55 min for 25-ntrt-gap-brief-daily in latency.per_routine_allowed_minutes, or optimise the routine."
+      "detail": "fire 09:20 ET; the session ran 09:20 -> 10:40 ET with an empty status_message and a complete artifact (front matter fire_time_et 09:20, snapshot_et 10:06, status ok), and the push landed 10:36 ET (71.0 min, commit 0a1e294) - 26 min over the 45-min allowance. The turn completed normally (no platform error, no quota message), so the routine is slow, not blocked. Over the allowance on 2 of its last 3 due days (736.5 / 10.7 / 71.0 min on 11-17 / 11-18 / 11-19) - chronically late; recommended allowance ~80 min for 26b-agentic-pre-market-brief-refresh in latency.per_routine_allowed_minutes, or optimise the routine."
+    },
+    {
+      "routine": "15b-earnings-reaction-settlement",
+      "path": "earnings/2026-11-19-reactions-settled.md",
+      "label": "stalled",
+      "cause": "quota_2056",
+      "gap_age_hours": 18.8,
+      "streak": 0,
+      "detail": "fire 12:15 ET; the scheduled fire was blocked by the platform's Token Plan window - the artifact's own fire-time line reads '2026-11-19 12:15:00 Thu (REPLAY - the scheduled fire was blocked by the platform's Token Plan window; this run executed 2026-11-20 01:29:14 Fri, 794 min after the fire)'. The session was resumed in place (query 'resume the work') and published commit 3a03be9 at 01:33 ET on 11-20, 798.4 min after its fire. A BILLING wall, not a code bug: the Token Plan 5-hour window rolled, and it took three more fires the same morning (10-breadth-snapshot, 25-ntrt-gap-brief-daily, and the 12:15 fire itself). The artifact is present on origin/main, so this is NOT a MISSING."
+    },
+    {
+      "routine": "10-breadth-snapshot",
+      "path": "daily-screens/2026-11-19/breadth-snapshot.md",
+      "label": "stalled",
+      "cause": "quota_2056",
+      "gap_age_hours": 17.1,
+      "streak": 0,
+      "detail": "fire 14:00 ET; the artifact's own line reads 'This artifact is a delayed replay: the scheduled run was blocked by a platform token-plan limit for 664 minutes and resumed in place, so the live layer is reconstructed from 5-minute bars pinned to the fire clock'. The session was resumed in place (query 'resume the work') and published commit ea30510 at 01:10 ET on 11-20, 671.0 min after its fire. The platform's Token Plan 5-hour window - a BILLING wall, not a code bug. First late day in 4 (4.8 / 8.7 / 4.8 / 671.0 min on 11-16 / 11-17 / 11-18 / 11-19); the artifact is present on origin/main, so this is NOT a MISSING."
+    },
+    {
+      "routine": "04-reversal-bullish-3:55",
+      "path": "daily-screens/2026-11-19/reversal-bullish-3_55.md",
+      "label": "stalled",
+      "cause": "slow_run",
+      "gap_age_hours": 15.2,
+      "streak": 0,
+      "detail": "fire 15:55 ET; the turn completed normally - its own final reply reads 'push: ok (verified) - delivered 16:52 ET, 57 min after the 15:55 fire' with errors: 0 - and the commit that ADDED the artifact landed 16:51:46 ET (56.8 min, commit 8242f6e), 12 min over the 45-min allowance. No platform error is evidenced, so the routine is slow, not blocked. Trending up (4.5 / 35.3 / 38.4 / 56.8 min on 11-16 / 11-17 / 11-18 / 11-19) - first day over the allowance in 4; worth watching rather than an allowance change yet."
     },
     {
       "routine": "20-eod-watchlist-csv",
-      "path": "us-eod/2026-11-18.csv",
+      "path": "us-eod/2026-11-19.csv",
       "label": "stalled",
-      "cause": "delayed_replay",
+      "cause": "slow_run",
       "gap_age_hours": 15.1,
       "streak": 0,
-      "detail": "fire 16:00 ET; the session worked normally to ~17:14 ET (settle probe 12 rounds, venue stage 4,829 settled prints, 34/34 artifact assertions passed), then the platform's transport failed mid-turn - '[Error] 502 Bad Gateway', finish_reason error, usage.total_tokens 0 at 17:19:35 ET. The session was then resumed in place ~8h later (API 'resume the work', 01:19 ET on 11-19) and published the correct 2026-11-18 artifact at 01:21:08 ET (commit 7d07f65), 561.1 min after its fire - a delayed replay, not a slow routine. The artifact is present and byte-verified on origin/main, so this is NOT a MISSING. The routine is also chronically late (92 / 77.7 / 561.1 min on 11-16 / 11-17 / 11-18) - recommended allowance ~110 min for 20-eod-watchlist-csv in latency.per_routine_allowed_minutes, or optimise the routine."
+      "detail": "fire 16:00 ET; the session ran 16:01 -> 17:24 ET with an empty status_message and a complete artifact, and the push landed 17:21:50 ET (81.8 min, commit 0e2cd80) - 37 min over the 45-min allowance. The turn completed normally, so the routine is slow, not blocked. Over the allowance on 3 of its last 3 due days (92.8 / 77.7 / 561.1 / 81.8 min on 11-16 / 11-17 / 11-18 / 11-19) - chronically late; recommended allowance ~110 min for 20-eod-watchlist-csv in latency.per_routine_allowed_minutes, or optimise the routine."
     }
   ],
   "routines": {
@@ -43,13 +79,13 @@
       "routine": "19-earnings-reminder-daily",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 10.1
+      "delivery_latency_min": 28.4
     },
     "02-asia-pre-market-reactions": {
       "routine": "02-asia-pre-market-reactions",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 8.3
+      "delivery_latency_min": 8.0
     },
     "91-schedule-drift-guard": {
       "routine": "91-schedule-drift-guard",
@@ -67,79 +103,79 @@
       "routine": "15-earnings-reaction-scanner",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 10.4
+      "delivery_latency_min": 17.1
     },
     "26-agentic-pre-market-brief": {
       "routine": "26-agentic-pre-market-brief",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 13.6
+      "delivery_latency_min": 12.8
     },
     "08-pre-market-gapper": {
       "routine": "08-pre-market-gapper",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 5.0
+      "delivery_latency_min": 5.5
     },
     "92a-preopen-catalyst-capture": {
       "routine": "92a-preopen-catalyst-capture",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 6.5
+      "delivery_latency_min": 6.8
     },
     "25-ntrt-gap-brief-daily": {
       "routine": "25-ntrt-gap-brief-daily",
       "state": "delivered_late",
       "streak": 0,
-      "delivery_latency_min": 46.4
+      "delivery_latency_min": 981.2
     },
     "26b-agentic-pre-market-brief-refresh": {
       "routine": "26b-agentic-pre-market-brief-refresh",
-      "state": "delivered",
+      "state": "delivered_late",
       "streak": 0,
-      "delivery_latency_min": 10.7
+      "delivery_latency_min": 71.0
     },
     "07-focus-rvol-09:45": {
       "routine": "07-focus-rvol-09:45",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 9.6
+      "delivery_latency_min": 25.9
     },
     "92b-preopen-catalyst-capture": {
       "routine": "92b-preopen-catalyst-capture",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 10.8
+      "delivery_latency_min": 18.5
     },
     "17-us-stocks-in-play-open": {
       "routine": "17-us-stocks-in-play-open",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 31.6
+      "delivery_latency_min": 40.3
     },
     "12-cross-asset-correlation": {
       "routine": "12-cross-asset-correlation",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 5.8
+      "delivery_latency_min": 5.3
     },
     "15b-earnings-reaction-settlement": {
       "routine": "15b-earnings-reaction-settlement",
-      "state": "delivered",
+      "state": "delivered_late",
       "streak": 0,
-      "delivery_latency_min": 7.3
+      "delivery_latency_min": 798.4
     },
     "10-breadth-snapshot": {
       "routine": "10-breadth-snapshot",
-      "state": "delivered",
+      "state": "delivered_late",
       "streak": 0,
-      "delivery_latency_min": 4.8
+      "delivery_latency_min": 671.0
     },
     "13-macro-calendar-midweek": {
       "routine": "13-macro-calendar-midweek",
-      "state": "delivered",
+      "state": "not_due",
       "streak": 0,
-      "delivery_latency_min": 11.0
+      "delivery_latency_min": null
     },
     "14-macro-calendar-week-ahead": {
       "routine": "14-macro-calendar-week-ahead",
@@ -157,31 +193,31 @@
       "routine": "17-us-stocks-in-play",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 38.5
+      "delivery_latency_min": 37.9
     },
     "04-reversal-bullish-3:55": {
       "routine": "04-reversal-bullish-3:55",
-      "state": "delivered",
+      "state": "delivered_late",
       "streak": 0,
-      "delivery_latency_min": 38.4
+      "delivery_latency_min": 56.8
     },
     "20-eod-watchlist-csv": {
       "routine": "20-eod-watchlist-csv",
       "state": "delivered_late",
       "streak": 0,
-      "delivery_latency_min": 561.1
+      "delivery_latency_min": 81.8
     },
     "05-eod-international-daily": {
       "routine": "05-eod-international-daily",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 8.1
+      "delivery_latency_min": 10.7
     },
     "16-unusual-options-flow": {
       "routine": "16-unusual-options-flow",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 2.4
+      "delivery_latency_min": 1.5
     },
     "22-weekly-market-recap-preview": {
       "routine": "22-weekly-market-recap-preview",
@@ -193,13 +229,13 @@
       "routine": "09-daily-sweep-18:30",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 6.0
+      "delivery_latency_min": 11.9
     },
     "23-agentic-post-market-brief": {
       "routine": "23-agentic-post-market-brief",
       "state": "delivered",
       "streak": 0,
-      "delivery_latency_min": 19.3
+      "delivery_latency_min": 15.4
     }
   },
   "audit_status": "gaps_found"
