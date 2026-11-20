@@ -388,7 +388,7 @@ A further 26 names on the calendar carry no release time from Nasdaq; they are l
 |---|---|---|
 | TradingView america scanner | ok | 142 gainers and 544 decliners at range [0,1000]; `len(rows) == totalCount` asserted on both, so `up_3pct` and `down_3pct` are exact counts, not floors |
 | TradingView tail screen | truncated | 400 rows returned against totalCount 3,020 - the tail tier is a floor by design and does not set `screen_complete` |
-| MCP bridge market-recap get_quotes | ok | 17 instruments then 25 for the cross-check; every prior close cross-checked agreed with the scanner |
+| MCP bridge market-recap get_quotes | ok | 17 instruments, then 23 more for the cross-check; every prior close the bridge returned agreed with the scanner (MOG.A and MOG.B are not in the bridge's symbol set) |
 | MCP bridge market-recap market_snapshot | ok | indices, futures, FX and yields at 2026-11-20 08:34 ET |
 | MCP bridge stocktwits trending_symbols | ok | 15 names with thesis text |
 | MCP bridge shibui stock_data_query | ok | SNDK's dated daily close series, used to settle the split basis |
@@ -401,7 +401,7 @@ A further 26 names on the calendar carry no release time from Nasdaq; they are l
 | refs/watchlist.yaml | ok | 8 watchlist names |
 | yesterday_review.py | ok | the 2026-11-19 brief's 41 setup rows, reviewed |
 | News (web_search) | ok | 6 cluster anchors, 10 URLs; every cluster leader has a sourced URL |
-| Scanner prior-session change | partial | 8 screened names carry no comparable prior close (CALC, GEOS, QSI, QTOX, SMJF, STLA, TOUR, XOS); their session cell is empty |
+| Scanner prior-session change | partial | 8 screened names carry no comparable prior close (CALC, GEOS, QSI, QTEX, SMJF, STLA, TOUR, XOS); their session cell is empty |
 
 **Rebuilt market caps.** Two names had their published cap rebuilt rather than taken from the scanner, and both are flagged in `cap_meta["basis_mismatch"]`:
 
