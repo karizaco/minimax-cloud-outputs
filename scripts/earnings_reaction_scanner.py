@@ -84,7 +84,7 @@ import json, subprocess, time, datetime, os, sys, re, html
 
 # Bump this on every behavioural change. The self-heal guard below compares it
 # against the copy in the shared repo.
-SCRIPT_VERSION = "2026-11-16.2"
+SCRIPT_VERSION = "2026-11-20.1"
 # CAPABILITY MARKER. The fetch ladder must demand it: a stale CDN blob can
 # carry an older SCRIPT_VERSION and still parse, so SCRIPT_VERSION alone is
 # not a sufficient test for "this copy has the v2 contract".
@@ -464,6 +464,66 @@ def select_premarket_bars(bars, now_et):
 # --------------------------------------------------------------- session bars
 def et_date(epoch):
     return datetime.datetime.fromtimestamp(epoch, ET).strftime("%Y-%m-%d")
+
+
+def fire_delay_minutes(now_et, replay_date, nominal_hhmm):
+    """How late this run is relative to its own scheduled fire, in minutes.
+
+    None when the run is not a replay. The delay is measured against the
+    session's OWN fire, not the wall clock, so a fire the platform blocked
+    (the Token Plan window) is visible as a number the artifact can publish.
+    """
+    if not replay_date:
+        return None
+    try:
+        fire = datetime.datetime.strptime(f"{replay_date} {nominal_hhmm}",
+                                          "%Y-%m-%d %H:%M:%S").replace(tzinfo=ET)
+    except Exception:
+        return None
+    return int((now_et - fire).total_seconds() // 60)
+
+
+def fire_time_line(now_et, replay_date, nominal_hhmm):
+    """The artifact's `- Fire time (ET):` line.
+
+    A NORMAL fire prints the wall clock. A REPLAY - the scheduled fire was
+    blocked (the platform's Token Plan window) and the routine ran hours later
+    for the SAME session - prints the session's own scheduled fire AND the
+    moment the replay actually ran, so the artifact can never be read as if it
+    had been produced in the ordinary window. Measured 2026-11-20: the
+    2026-11-19 settlement ran 785 minutes after its 12:15 ET fire, and a bare
+    wall-clock stamp would have dated the artifact 2026-11-20 inside a
+    2026-11-19 session.
+    """
+    stamp = now_et.strftime("%Y-%m-%d %H:%M:%S %a")
+    mins = fire_delay_minutes(now_et, replay_date, nominal_hhmm)
+    if mins is None:
+        return f"- Fire time (ET): {stamp}"
+    try:
+        fire = datetime.datetime.strptime(f"{replay_date} {nominal_hhmm}",
+                                          "%Y-%m-%d %H:%M:%S").replace(tzinfo=ET)
+    except Exception:
+        return f"- Fire time (ET): {stamp}"
+    return (f"- Fire time (ET): {fire.strftime('%Y-%m-%d %H:%M:%S %a')} "
+            f"(REPLAY - the scheduled fire was blocked by the platform's Token Plan "
+            f"window; this run executed {stamp}, {mins} min after the fire)")
+
+
+def degrade_blocked_fire(now_et, replay_date, nominal_hhmm, label):
+    """Publish a BLOCKED fire as a degraded source.
+
+    The house rule is that a platform stall counts in the reply's `errors:`
+    even when the artifact is perfect, and that the artifact's
+    `degraded_sources:` count INCLUDES the stall so the two stay equal. The
+    pipeline is the only place that knows the delay, so it publishes it.
+    """
+    mins = fire_delay_minutes(now_et, replay_date, nominal_hhmm)
+    if mins is None or mins <= 5:
+        return None
+    degrade("platform.fire_blocked",
+            f"the scheduled {label} fire was blocked by the platform and this run "
+            f"executed {mins} min after it")
+    return mins
 
 
 def resolve_session_bars(bars, live_session, now_et):
@@ -997,6 +1057,24 @@ def yahoo_daily_bars(symbol):
     3 months of daily bars, which also gives the 20-session window the mean
     absolute daily move is computed over. None on any failure - a 429, an
     error status, a latched breaker or an unparseable body.
+
+    THE NULL-CLOSE REPAIR (2026-11-20). Yahoo nulls the LAST daily bar's close
+    once the venue's session has ENDED and before the next session opens.
+    Measured 2026-11-20 at 01:08 ET: SOI.PA, CTEC.L, KEOC.ST and ATS.VI all
+    carried a null Nov 19 close, while meta.regularMarketPrice held the settled
+    close (109.25 / 268.20 / 5.86) and meta.regularMarketTime held that
+    session's last tick. Dropping that bar left the series ONE SESSION SHORT:
+    every reference close was one session stale, so the cross-check rejected 27
+    of 29 EU rows as stale references - and the two survivors published a
+    2026-11-18 `Session asof` inside a 2026-11-19 artifact, which is a
+    fabricated session date. The repair grafts the settled price back onto the
+    bar it belongs to, from the SAME response.
+
+    The repair is deliberately narrow. It fires ONLY when the LAST bar's close
+    is null AND meta.regularMarketTime falls on the SAME ET date as that bar
+    (so a live or stale price can never be grafted onto a different session).
+    Every normal path - a session in progress, a session closed and finalized,
+    a halted name with no prints - is byte-identical to before.
     """
     body = _yahoo_get(f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
                       "?interval=1d&range=3mo", timeout=25)
@@ -1005,7 +1083,20 @@ def yahoo_daily_bars(symbol):
     try:
         res = json.loads(body)["chart"]["result"][0]
         q = res["indicators"]["quote"][0]
-        return [(t, c) for t, c in zip(res["timestamp"], q["close"]) if c is not None]
+        stamps = res.get("timestamp") or []
+        closes = q.get("close") or []
+        bars = [(t, c) for t, c in zip(stamps, closes) if c is not None]
+        if stamps and closes and len(bars) < len(stamps) and closes[-1] is None:
+            # A null close exists and it is the LAST bar. Repair it only when
+            # Yahoo's own metadata says the session it belongs to just ended.
+            last_t = stamps[-1]
+            meta = res.get("meta") or {}
+            price = meta.get("regularMarketPrice")
+            rmt = meta.get("regularMarketTime")
+            if price is not None and rmt is not None \
+                    and et_date(rmt) == et_date(last_t):
+                bars.append((rmt, float(price)))
+        return bars
     except Exception:
         health["yahoo_errors"] += 1
         return None
@@ -2608,7 +2699,8 @@ if SETTLE_MODE:
     B(f"# Earnings reaction scanner — {RUN_DATE} (EU settlement pass)")
     B("")
     B(f"- Cron: `15 12 * * 1-5` America/New_York (weekdays, 12:15 ET)")
-    B(f"- Fire time (ET): {_now.strftime('%Y-%m-%d %H:%M:%S %a')}")
+    B(fire_time_line(_now, REPLAY_DATE, "12:15:00"))
+    degrade_blocked_fire(_now, REPLAY_DATE, "12:15:00", "12:15 ET settlement")
     B(f"- Run type: `settlement_pass` — the EU/UK session has closed, so the same rows as")
     B(f"  the 08:00 ET scan are republished with their SETTLED close and move.")
     B(f"- Source: TradingView public screener; Yahoo chart API as the independent")
@@ -2806,7 +2898,8 @@ _now = datetime.datetime.now(ET)
 _weekend = _now.isoweekday() > 5
 _offcycle = (_now.hour != 8) or _weekend
 A(f"- Cron: `0 8 * * 1-5` America/New_York (weekdays, 08:00 ET)")
-A(f"- Fire time (ET): {_now.strftime('%Y-%m-%d %H:%M:%S %a')}")
+A(fire_time_line(_now, REPLAY_DATE, "08:03:00"))
+degrade_blocked_fire(_now, REPLAY_DATE, "08:00:00", "08:00 ET scan")
 if _offcycle:
     A(f"- Run type: `validation_run_offcycle` — the fire was NOT at the canonical 08:00 ET")
     A(f"  weekday slot.")
