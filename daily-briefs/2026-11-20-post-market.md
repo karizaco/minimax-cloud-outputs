@@ -3,7 +3,7 @@ date: 2026-11-20
 cron: 23-agentic-post-market-brief
 contract: postmkt-artifact-v2
 fire_time_et: 22:30
-snapshot_et: 22:30-23:10
+snapshot_et: 22:30-22:38
 session: 465625634095262
 scheduled_at_ms: 1795231804548
 status: ok
