@@ -1,0 +1,201 @@
+{
+  "_contract": "breadth-artifact-v1",
+  "_schema": 1,
+  "generated_at_et": "2026-11-22T14:09:03+00:00",
+  "data_date": "2026-11-19",
+  "history": {
+    "sessions": 263,
+    "start": "2025-11-04",
+    "end": "2026-11-19",
+    "lookback_days": 380
+  },
+  "universe": {
+    "filter": "NYSE/NASDAQ/AMEX, market cap > $10B",
+    "n": 866,
+    "market_cap_floor": 10000000000
+  },
+  "breadth": {
+    "pct_above_sma_20": 23.67,
+    "pctile_1y": 5.7,
+    "band": "BELOW_NORMAL",
+    "pct_above_sma_50": 44.8,
+    "pctile_1y_50dma": 23.2,
+    "band_50dma": "NORMAL"
+  },
+  "index_etfs": {
+    "symbols": [
+      "SPY",
+      "RSP",
+      "QQQ",
+      "QQQE",
+      "IWM"
+    ],
+    "n_etf": 5,
+    "n_above_sma_20": 0,
+    "n_above_sma_50": 0,
+    "pct_above_sma_20": 0.0,
+    "pctile_1y": 16.3
+  },
+  "divergence": {
+    "pp": 23.67,
+    "band": "BROAD",
+    "pctile_1y": 73.0,
+    "history_5d": [
+      {
+        "date": "2026-11-13",
+        "pp": 43.01
+      },
+      {
+        "date": "2026-11-16",
+        "pp": 51.56
+      },
+      {
+        "date": "2026-11-17",
+        "pp": 39.42
+      },
+      {
+        "date": "2026-11-18",
+        "pp": 37.23
+      },
+      {
+        "date": "2026-11-19",
+        "pp": 23.67
+      }
+    ]
+  },
+  "advance_decline": {
+    "advancing": 73,
+    "declining": 789,
+    "unchanged": 3,
+    "ad_ratio": 0.093,
+    "ad_net": -716,
+    "ad_net_10d": -1377,
+    "ad_ratio_10d": 0.724,
+    "adl_slope_10d": -153.87,
+    "adl_since_start": -2655.0,
+    "adl_base_date": "2026-08-26",
+    "adl_window_start": "2026-11-06",
+    "adl_window_end": "2026-11-19"
+  },
+  "vix": {
+    "vix": 31.69,
+    "vix3m": 28.7,
+    "quote_time_et": "2026-11-20 14:00:00 ET",
+    "source": "Yahoo chart API (^VIX / ^VIX3M) \u2014 FALLBACK: the Cboe delayed-quote CDN answered HTTP 403 (Cloudflare) from this egress; both symbols read from the SAME 5m bar, pinned to the fire day and clock",
+    "session_mode": "replay \u2014 reconstructed from the pinned 5m bar at the fire clock (the live print is no longer available)",
+    "prev_close": {
+      "vix": 28.47,
+      "vix3m": 27.07
+    },
+    "price_change_pct": {
+      "vix": 11.31,
+      "vix3m": 6.02
+    },
+    "vix_stable": true,
+    "session_bar_date": "2026-11-20",
+    "session_bar_stamp_et": "2026-11-20 14:00:00 ET",
+    "vix_fetches": [
+      {
+        "vix": null,
+        "vix3m": null,
+        "quote_time_et": null
+      }
+    ],
+    "cboe_blocked": true
+  },
+  "regime": {
+    "_schema": 2,
+    "_note": "cron #10 intraday breadth snapshot \u2014 flat regime schema, see SKILL.md \u00a73.5",
+    "size_cut_pct": 50,
+    "uncertainty": true,
+    "late_cycle": false,
+    "breadth_pct_spx": 23.67,
+    "index_below_20sma": true,
+    "vix": 31.69,
+    "vix3m": 28.7,
+    "atr_extensions": {
+      "IWM": {
+        "extension_pct": -5.27
+      },
+      "QQQ": {
+        "extension_pct": -9.54
+      },
+      "QQQE": {
+        "extension_pct": -6.92
+      },
+      "RSP": {
+        "extension_pct": -1.54
+      },
+      "SPY": {
+        "extension_pct": -6.01
+      }
+    },
+    "_vix_source": "Yahoo chart API (^VIX / ^VIX3M) \u2014 FALLBACK: the Cboe delayed-quote CDN answered HTTP 403 (Cloudflare) from this egress; both symbols read from the SAME 5m bar, pinned to the fire day and clock",
+    "_vix_quote_time_et": "2026-11-20 14:00:00 ET",
+    "_vix_session_mode": "replay \u2014 reconstructed from the pinned 5m bar at the fire clock (the live print is no longer available)",
+    "_data_date": "2026-11-19"
+  },
+  "etf_positioning": [
+    {
+      "ticker": "IWM",
+      "close": 264.22,
+      "sma_20": 277.1820000000007,
+      "sma_50": 278.9092000000001,
+      "atr_14": 5.134440811054943,
+      "atr_252d_avg": 4.55360185971635,
+      "extension_pct": -5.27,
+      "atr_extension_multiple": -3.23,
+      "above_sma_20": false,
+      "above_sma_50": false
+    },
+    {
+      "ticker": "QQQ",
+      "close": 645.04,
+      "sma_20": 683.3279999999997,
+      "sma_50": 713.0857999999993,
+      "atr_14": 17.22984038800448,
+      "atr_252d_avg": 11.318604416354107,
+      "extension_pct": -9.54,
+      "atr_extension_multiple": -6.01,
+      "above_sma_20": false,
+      "above_sma_50": false
+    },
+    {
+      "ticker": "QQQE",
+      "close": 109.89,
+      "sma_20": 115.5365,
+      "sma_50": 118.0614000000001,
+      "atr_14": 2.1753264088925817,
+      "atr_252d_avg": 1.5271156214580623,
+      "extension_pct": -6.92,
+      "atr_extension_multiple": -5.35,
+      "above_sma_20": false,
+      "above_sma_50": false
+    },
+    {
+      "ticker": "RSP",
+      "close": 211.63,
+      "sma_20": 218.53649999999985,
+      "sma_50": 214.94700000000012,
+      "atr_14": 2.901768936864699,
+      "atr_252d_avg": 2.200779244665749,
+      "extension_pct": -1.54,
+      "atr_extension_multiple": -1.51,
+      "above_sma_20": false,
+      "above_sma_50": false
+    },
+    {
+      "ticker": "SPY",
+      "close": 715.87,
+      "sma_20": 751.3154999999987,
+      "sma_50": 761.6693999999993,
+      "atr_14": 12.21478910071171,
+      "atr_252d_avg": 8.048097409698023,
+      "extension_pct": -6.01,
+      "atr_extension_multiple": -5.69,
+      "above_sma_20": false,
+      "above_sma_50": false
+    }
+  ],
+  "series_csv": "breadth-snapshot.csv"
+}
