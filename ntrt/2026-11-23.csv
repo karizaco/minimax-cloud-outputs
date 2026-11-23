@@ -1,0 +1,1272 @@
+ticker,premarket_change_pct,premarket_close,prev_close,premarket_volume,avg_volume_30d,pct_of_adv,mkt_cap_usd,sector,exchange,catalyst,noise
+WETO,389.27,0.78,0.16,115925060,7406687,1565.141,835297.35,Transportation,NASDAQ,Filed a 6-K with the SEC on 2026-11-19,false
+CAPR,-73.67,2.00,7.59,4088757,4550692,89.849,116197014.76,Health Technology,NASDAQ,FDA Complete Response Letter rejecting the Deramiocel BLA resubmission — a regulatory setback for its lead product,false
+GMEX,69.84,0.33,0.19,84534993,2765018,3057.304,245398.74,Retail Trade,NASDAQ,watchlist (not checked),false
+RBNE,-67.54,0.04,0.12,248115189,50638859,489.970,1920089.32,Transportation,NASDAQ,"Reverse stock split effective November 24, 2026",false
+RSSS,47.91,3.18,2.15,2701168,59706,4524.115,108581117.75,Commercial Services,NASDAQ,watchlist (not checked),false
+MEDS,37.39,1.84,1.34,29075329,5412612,537.177,10526620.93,Distribution Services,NASDAQ,"Filed an 8-K with the SEC on 2026-11-20 (Item 8.01, other events)",false
+FFR,28.68,0.46,0.36,251384,400073,62.835,12713295.26,Technology Services,NASDAQ,watchlist (not checked),false
+GNLN,-27.99,0.37,0.51,152779,1371546,11.139,312683.78,Finance,NASDAQ,watchlist (not checked),false
+VWAV,-26.18,0.13,0.18,4631078,8197271,56.495,436541.08,Technology Services,NASDAQ,watchlist (not checked),false
+NXAT,-24.25,0.42,0.55,1342055,12184531,11.014,1125026.29,Finance,NASDAQ,watchlist (not checked),false
+ABTS,-24.02,0.13,0.17,11984496,2468073,485.581,468830.80,Technology Services,NASDAQ,"Letter of intent to acquire Boston Solar, advancing a vertical-integration strategy",false
+TELO,23.24,0.45,0.36,2646,146138,1.811,33050920.50,Health Technology,NASDAQ,not checked (not published),false
+KNOP,23.09,9.01,7.32,48705,118807,40.995,311322772.48,Transportation,NYSE,"Sponsor Knutsen NYK paid $12.50/unit for activist Astaris' stake (Form 4, Nov 20) and buyout-proposal speculation resumed — no new company release today",false
+DWTX,21.74,1.26,1.03,2629019,124333,2114.498,48167169.22,Health Technology,NASDAQ,not checked (not published),false
+GOVX,-21.55,1.42,1.81,79267,432643,18.322,773123.31,Health Technology,NASDAQ,not checked (not published),false
+BGDE,21.43,2.55,2.10,1021,91209,1.119,16369066.86,Technology Services,NASDAQ,not checked (not published),false
+SINT,20.46,1.33,1.10,378,32057,1.179,10015426.23,Health Technology,NASDAQ,not checked (not published),false
+SOAR,20.42,0.20,0.17,88000877,3065656,2870.540,11247963.84,Technology Services,AMEX,not checked (not published),false
+IVVD,20.26,0.50,0.41,31715590,4039245,785.186,146722230.87,Health Technology,NASDAQ,not checked (not published),false
+ZS,19.08,232.00,194.82,568496,2480270,22.921,37828692462.54,Technology Services,NASDAQ,"Same deal: CRWD to acquire ZS for ~$43.9B all-stock, 1.135 CRWD per ZS share, ~$260.41 implied — a ~34% premium to Friday's close",false
+FNUC,-18.90,0.30,0.37,69047,234556,29.437,10731108.78,Process Industries,NASDAQ,not checked (not published),false
+BRAI,18.82,1.76,1.48,1018169,4877650,20.874,362406176.93,Technology Services,NASDAQ,"Non-binding term sheet for a ~$40M phased majority acquisition of Marut Drones (India's agri-drone maker) — a term sheet, not a deal",false
+RAYA,-18.66,0.55,0.68,414197,6013423,6.888,591355.74,Producer Manufacturing,NASDAQ,not checked (not published),false
+FCHL,-18.24,0.01,0.02,138495414,10430078,1327.846,18330.83,Commercial Services,NASDAQ,not checked (not published),false
+MSGM,-18.21,2.92,3.57,499,64839,0.770,13399300.91,Technology Services,NASDAQ,not checked (not published),true
+TOVX,-18.17,0.10,0.12,232898,3744175,6.220,4506659.87,Health Technology,AMEX,not checked (not published),false
+ELPW,-17.97,0.62,0.76,73471,3804992,1.931,577988.33,Producer Manufacturing,NASDAQ,not checked (not published),false
+FRMI,17.95,2.30,1.95,948122,30716859,3.087,1487992926.15,Finance,NASDAQ,8-K: fulfilled all obligations under the customer prepay agreement — the $200M hyperscaler prepayment for 600MW at Project Matador,false
+SNOA,17.74,0.85,0.72,5888,73354,8.027,4302860.04,Health Technology,NASDAQ,not checked (not published),false
+DXST,17.28,0.66,0.56,1062,32758,3.242,1193809.94,Industrial Services,NASDAQ,not checked (not published),false
+QXL,16.74,2.72,2.33,14134,29449,47.995,60182504.03,Electronic Technology,NASDAQ,not checked (not published),false
+NIVF,-16.73,0.02,0.03,21432796,12516447,171.237,27703.55,Health Services,NASDAQ,not checked (not published),false
+EPSM,16.05,0.65,0.56,651,35774,1.820,1721872.17,Distribution Services,NASDAQ,not checked (not published),false
+OPRT,16.02,11.95,10.30,100,708554,0.014,550653844.36,Finance,NASDAQ,,true
+ZVIA,15.82,0.99,0.85,1000,425112,0.235,76305748.93,Consumer Non-Durables,NYSE,not checked (not published),true
+KIDZ,-15.77,0.83,0.99,2172,62808,3.458,851992.31,Technology Services,NASDAQ,not checked (not published),false
+SLMT,15.60,2.59,2.24,1047,47765,2.192,28508566.17,Consumer Services,NASDAQ,not checked (not published),false
+ILAG,15.58,1.77,1.53,448,168573,0.266,3672920.57,Consumer Durables,NASDAQ,not checked (not published),true
+POAS,-15.57,2.06,2.44,13505,4843459,0.279,4335888.00,Electronic Technology,AMEX,not checked (not published),true
+PAAI,15.56,0.42,0.36,34221,214238,15.973,19972668.89,Technology Services,AMEX,not checked (not published),false
+MSS,15.45,1.27,1.10,4617998,2809616,164.364,3041957.11,Retail Trade,NASDAQ,not checked (not published),false
+CNEY,15.34,0.42,0.36,5380,154142,3.490,3453592.18,Producer Manufacturing,NASDAQ,not checked (not published),false
+KYMR,15.34,133.00,115.31,547331,931107,58.783,11354395817.07,Health Technology,NASDAQ,BROADEN2 Ph2b of KT-621 hit its primary endpoint: mid-dose 72% mean EASI reduction vs 27% placebo (45% placebo-adjusted); Phase 3 planned by mid-2027,false
+STAK,15.26,2.19,1.90,221190,7515896,2.943,21922663.04,Industrial Services,NASDAQ,not checked (not published),false
+FSP,15.25,0.42,0.37,409,828239,0.049,44028157.90,Finance,AMEX,not checked (not published),true
+TROX,15.17,1.67,1.45,20594,4337413,0.475,266706775.29,Process Industries,NYSE,No release today: a bounce off the two-day -45% collapse after the WSJ creditor-restructuring report (Nov 17) and the company's Nov 18 rebuttal,true
+TGHL,-14.94,0.25,0.29,16868,511301,3.299,6324952.36,Technology Services,NASDAQ,not checked (not published),false
+GLOO,14.88,2.47,2.15,150,320468,0.047,226081676.84,Technology Services,NASDAQ,,true
+PROP,14.54,0.33,0.29,200,1337560,0.015,39232089.52,Energy Minerals,NASDAQ,not checked (not published),true
+BGL,14.46,0.08,0.07,5794,2096227,0.276,3667656.51,Non-Energy Minerals,NASDAQ,not checked (not published),true
+DCGO,14.40,0.20,0.17,26125434,766210,3409.696,19818265.90,Health Services,NASDAQ,not checked (not published),false
+CYPH,14.35,1.61,1.41,391289,13729664,2.850,240299759.10,Finance,NASDAQ,"No company news: crypto-beta — ZEC rebounded ~5% in 24h to ~$790 after a -19% Saturday low, and the ZEC treasury marks drive the move",false
+LBGJ,14.00,1.54,1.35,1500,83308,1.801,1093345.50,Consumer Durables,NASDAQ,not checked (not published),false
+APLD,13.58,13.05,11.49,1872191,27528447,6.801,3946151778.80,Technology Services,NASDAQ,New 18-year lease with a tier-one investment-grade hyperscaler for 150 MW (~$5.4B base-term; contracted base-term revenue now >$41B) plus a closed $300M bridge facility,false
+GPUS,13.48,0.15,0.13,3531383,41312092,8.548,38171362.54,Producer Manufacturing,AMEX,not checked (not published),false
+NAK,13.20,0.47,0.42,109721,5258347,2.087,264348481.64,Non-Energy Minerals,AMEX,Kopernik's amended 13D lifts its stake to 15.3% (91.6M shares incl. 36.2M note-conversion shares); ~9.6M shares bought Oct 15-Nov 19,false
+SNES,13.04,0.78,0.69,200,2191952,0.009,5322627.30,Process Industries,NASDAQ,not checked (not published),true
+FAMI,13.03,0.09,0.08,35362,1620342,2.182,3507741.45,Process Industries,NASDAQ,not checked (not published),false
+SLE,13.01,3.67,3.25,400,81480,0.491,14008776.22,Technology Services,NASDAQ,not checked (not published),true
+DEFT,12.97,0.30,0.27,7336,1878812,0.390,118114640.00,Finance,NASDAQ,not checked (not published),true
+EJH,12.91,1.25,1.11,105,13760,0.763,93750267.59,Consumer Services,NASDAQ,not checked (not published),true
+USDE,12.82,3.96,3.51,57634,1076077,5.356,107661824.21,Technology Services,NASDAQ,not checked (not published),false
+HURA,12.80,1.41,1.25,3700,472237,0.784,92719365.43,Health Technology,NASDAQ,not checked (not published),true
+DCX,12.78,0.61,0.54,881,526012,0.167,1429632.01,Consumer Durables,NASDAQ,not checked (not published),true
+PLBL,-12.73,8.50,9.74,5101,192306,2.653,3114293377.36,Retail Trade,NASDAQ,,false
+MIRA,12.71,0.33,0.29,11815,167775,7.042,13783245.31,Health Technology,NASDAQ,not checked (not published),false
+EROK,12.69,22.20,19.70,6129,304370,2.014,2919734565.56,Finance,NYSE,"Texas Pacific Land to acquire EagleRock in all-stock, announced 06:00 ET: ~$3.0B implied equity value, 0.0831 ratio (~$23.56/sh vs $19.56 close), close H1 2027",false
+ANVS,12.47,0.80,0.71,9132,2643160,0.345,49618015.46,Health Technology,NYSE,not checked (not published),true
+PMAX,12.46,0.63,0.56,9125,932722,0.978,1236038.18,Communications,NASDAQ,not checked (not published),true
+AEON,12.44,0.14,0.12,438170,1131899,38.711,11634024.25,Health Technology,AMEX,not checked (not published),false
+FMFC,-12.17,1.01,1.15,789,127492,0.619,497297.65,Consumer Non-Durables,NASDAQ,not checked (not published),true
+HOS,12.17,5.53,4.93,6759,3431482,0.197,1227499801.62,Industrial Services,NYSE,"Insider buying disclosed today (Form 4): CEO Todd Hornbeck bought 202,300 shares at $5.02 avg (~$1.02M) on Nov 20; director Fink 47,000 at $4.90",true
+NAKA,11.92,3.85,3.44,4552,183433,2.482,70633917.56,Technology Services,NASDAQ,not checked (not published),false
+CDXS,11.88,1.13,1.01,4819,1014183,0.475,123845211.92,Process Industries,NASDAQ,not checked (not published),true
+BSEM,11.79,0.71,0.64,17265,240814,7.169,13616828.52,Health Technology,NASDAQ,not checked (not published),false
+NMAD,11.79,2.86,2.56,2699,263188,1.026,52715143.79,Health Technology,NASDAQ,not checked (not published),false
+BDSX,11.77,8.45,7.56,990,228643,0.433,93697913.30,Health Services,NASDAQ,not checked (not published),true
+YFOR,-11.68,1.00,1.13,52129,782431,6.662,6495862.77,Commercial Services,NASDAQ,not checked (not published),false
+MOBX,11.68,1.91,1.71,1261,153279,0.823,6451122.95,Electronic Technology,NASDAQ,not checked (not published),true
+EMAT,11.62,0.67,0.60,2100,936068,0.224,423314562.71,Non-Energy Minerals,NASDAQ,"Capybara Research short report (Nov 16) refuted the next day, with $2.2M Q3 revenue and a shareholder fraud investigation announced Nov 19",true
+GEMI,11.61,1.73,1.55,9292,2000719,0.464,226684349.90,Finance,NASDAQ,"Crypto-beta, no company news: BTC rebounded ~12% off the Saturday low and GEMI tracks it after an eighth straight losing week (-34.7%)",true
+GTM,11.59,3.08,2.76,3362,4856961,0.069,903801784.06,Technology Services,NASDAQ,not checked (not published),true
+FOXX,11.54,1.45,1.30,378,31632,1.195,10294931.96,Distribution Services,NASDAQ,not checked (not published),false
+BFRI,11.51,0.59,0.53,2195,199142,1.102,10607857.88,Health Technology,NASDAQ,not checked (not published),false
+BLNE,11.49,0.32,0.29,1700,475096,0.358,11469878.29,Commercial Services,NASDAQ,not checked (not published),true
+SKYE,11.43,0.78,0.70,905,103770,0.872,3450305.49,Health Technology,NASDAQ,not checked (not published),true
+ABTC,11.43,3.90,3.50,22879,1017835,2.248,284006992.29,Technology Services,NASDAQ,"Closed a $150M committed revolving credit facility from FalconX secured by Bitcoin holdings (announced 06:57 ET); reserves now above 8,500 BTC",false
+LDI,11.40,0.39,0.35,9446,2879643,0.328,131846738.10,Finance,NYSE,not checked (not published),true
+NCPL,11.31,3.05,2.74,62315,12488683,0.499,23936091.66,Commercial Services,NASDAQ,not checked (not published),true
+NXTT,11.28,3.70,3.33,200,19159,1.044,10437504.15,Technology Services,NASDAQ,not checked (not published),false
+SDA,11.25,0.23,0.21,6474,20977251,0.031,23910993.81,Consumer Services,NASDAQ,not checked (not published),true
+IVDA,11.12,0.19,0.17,907,161616,0.561,2522710.61,Electronic Technology,NASDAQ,not checked (not published),true
+KPRX,11.09,0.80,0.72,1200,59834,2.006,3539952.57,Health Technology,NASDAQ,not checked (not published),false
+RGS,11.00,21.80,19.64,1600,17677,9.051,54912037.76,Consumer Services,NASDAQ,not checked (not published),false
+STDN,10.97,9.03,8.14,3577,308726,1.159,1321107947.56,Process Industries,NYSE,not checked (not published),false
+FRMM,10.94,2.13,1.92,770,156716,0.491,29795174.41,Health Technology,NASDAQ,not checked (not published),true
+RFIL,10.94,7.00,6.31,300,158952,0.189,75934327.10,Electronic Technology,NASDAQ,not checked (not published),true
+GXAI,10.93,0.40,0.36,5950,564417,1.054,5511916.30,Technology Services,NASDAQ,not checked (not published),false
+LUCK,-10.86,3.53,3.96,109,272946,0.040,481234991.04,Consumer Services,NYSE,S&P cut the outlook to negative (B- affirmed) on accelerating same-store declines; follows the Nov 17 CEO $4.35/sh going-private proposal and a suspended dividend,true
+WKHS,10.86,1.94,1.75,1150,473542,0.243,21201455.18,Consumer Durables,NASDAQ,not checked (not published),true
+AIRE,10.76,0.39,0.35,791,174889,0.452,2899269.53,Technology Services,NASDAQ,not checked (not published),true
+SMX,10.74,2.99,2.70,3185478,2017656,157.880,2684173.94,Technology Services,NASDAQ,not checked (not published),false
+SNTI,10.73,1.96,1.77,276,206053,0.134,5090433.38,Health Technology,NASDAQ,not checked (not published),true
+LICN,-10.71,1.15,1.29,111863,350870,31.882,313483.35,Commercial Services,NASDAQ,not checked (not published),false
+AARD,10.56,1.02,0.92,980,1227633,0.080,22329096.84,Health Technology,NASDAQ,not checked (not published),true
+WIMI,10.51,0.43,0.39,20393,194180,10.502,7905572.65,Technology Services,NASDAQ,not checked (not published),false
+NTHI,10.48,3.48,3.15,1199,182448,0.657,100400048.23,Health Technology,NASDAQ,not checked (not published),true
+ENLV,10.48,1.16,1.05,4102,45738,8.968,1777209.49,Health Technology,NASDAQ,not checked (not published),false
+FTI,10.46,64.85,58.71,1471,3148120,0.047,25215841932.87,Industrial Services,NYSE,not checked (not published),true
+FJET,10.41,0.73,0.66,7547,1156238,0.653,40147095.24,Commercial Services,AMEX,not checked (not published),true
+HOVR,10.38,1.17,1.06,4721,559775,0.843,78535004.94,Electronic Technology,NASDAQ,not checked (not published),true
+TAOX,10.32,1.71,1.55,4510,125917,3.582,13756752.52,Technology Services,NASDAQ,not checked (not published),false
+FORM,10.23,80.49,73.02,3739,1579205,0.237,6310666381.00,Electronic Technology,NASDAQ,not checked (not published),true
+CIRC,10.21,0.15,0.14,19199,664909,2.887,17624186.63,Commercial Services,NASDAQ,not checked (not published),false
+SHAZ,10.16,18.54,16.83,42675,2699968,1.581,713388209.67,Technology Services,NASDAQ,not checked (not published),false
+OGEN,-10.13,0.14,0.16,34704,1778022,1.952,636636.91,Health Technology,AMEX,not checked (not published),false
+IQST,10.04,0.68,0.62,1190,147415,0.807,7635041.11,Communications,NASDAQ,not checked (not published),true
+BMM,10.00,2.75,2.50,100,582683,0.017,241642314.36,Non-Energy Minerals,NASDAQ,not checked (not published),true
+ASST,9.99,15.96,14.51,221328,8257598,2.680,2032498358.78,Finance,NASDAQ,"No company news: crypto-beta — an 8-K today shows 43,404 BTC and $462.4M cash with no ATM sales; BTC +12% off the $55,081 Saturday low to ~$61,300",false
+BTDR,9.97,3.25,2.96,360601,13135639,2.745,897495022.39,Technology Services,NASDAQ,not checked (not published),false
+HIVE,9.96,1.27,1.16,91718,11030161,0.832,351635316.32,Technology Services,NASDAQ,not checked (not published),true
+TREO,9.95,2.10,1.91,1000,109955,0.909,,Non-Energy Minerals,NASDAQ,not checked (not published),true
+DGXX,9.94,2.03,1.85,36221,2742917,1.321,206221218.60,Technology Services,NASDAQ,not checked (not published),false
+QMLS,9.91,2.10,1.91,9686,298937,3.240,73153881.74,Technology Services,NASDAQ,not checked (not published),false
+ACTU,-9.85,0.20,0.23,38698,1276488,3.032,12263751.33,Health Technology,NASDAQ,not checked (not published),false
+BTBT,9.85,0.57,0.51,255756,24559223,1.041,204224503.87,Commercial Services,NASDAQ,not checked (not published),false
+ARBE,9.80,0.35,0.32,146933,914814,16.062,45254974.77,Producer Manufacturing,NASDAQ,not checked (not published),false
+MGRX,9.79,0.14,0.12,15355,711568,2.158,3015853.45,Health Technology,NASDAQ,not checked (not published),false
+FWDI,9.76,3.60,3.28,94982,1660554,5.720,274637573.78,Finance,NASDAQ,No company release: the crypto-treasury complex is bid (Bitcoin back to $61K off a weekend 2-year low; DFDV SOL update 08:16 ET) plus a Nov 22 upgrade to Hold — flagged,false
+SLNH,9.72,0.41,0.37,102136,10598343,0.964,105135788.11,Electronic Technology,NASDAQ,not checked (not published),true
+DFDV,9.72,2.37,2.16,12746,1381418,0.923,94926746.72,Finance,NASDAQ,not checked (not published),true
+URG,9.71,0.50,0.46,186566,14204723,1.313,199490212.27,Non-Energy Minerals,AMEX,not checked (not published),false
+AIFA,9.71,3.05,2.78,343,83736,0.410,19581963.27,Consumer Services,NASDAQ,not checked (not published),true
+WRAP,9.71,1.13,1.03,4700,570264,0.824,75213536.15,Health Technology,NASDAQ,not checked (not published),true
+ELBM,9.63,0.36,0.33,22071,333354,6.621,38753686.60,Non-Energy Minerals,NASDAQ,not checked (not published),false
+GLXY,9.63,12.30,11.22,160278,9340780,1.716,4744564306.31,Finance,NASDAQ,not checked (not published),false
+TCRX,9.60,0.16,0.15,16483,481226,3.425,10837900.35,Health Technology,NASDAQ,not checked (not published),false
+ABAT,9.56,0.87,0.79,46308,3308983,1.399,124254808.22,Non-Energy Minerals,NASDAQ,not checked (not published),false
+SMXT,9.55,3.67,3.35,120,28009,0.428,17403752.40,Industrial Services,NASDAQ,not checked (not published),true
+AIRO,9.52,3.91,3.57,1000,378752,0.264,124562509.57,Electronic Technology,NASDAQ,not checked (not published),true
+LASE,9.51,0.45,0.41,60603,1140033,5.316,27178254.42,Electronic Technology,NASDAQ,not checked (not published),false
+BNGO,9.46,0.90,0.82,4882,246695,1.979,12590100.22,Health Technology,NASDAQ,not checked (not published),false
+SMTC,9.44,95.90,87.63,30668,3533743,0.868,8949926922.32,Electronic Technology,NASDAQ,not checked (not published),true
+RR,9.40,0.63,0.58,141813,5419725,2.617,142534557.30,Consumer Durables,NASDAQ,not checked (not published),false
+CCTG,-9.39,0.30,0.33,14651,1790315,0.818,4075414.18,Electronic Technology,NASDAQ,not checked (not published),true
+BMNR,9.32,14.19,12.98,986463,31587665,3.123,8889339216.64,Finance,NYSE,not checked (not published),false
+ROC,9.30,3.76,3.44,100,22232,0.450,73667639.33,Technology Services,NASDAQ,not checked (not published),true
+WYFI,9.29,6.94,6.35,27222,2026729,1.343,314296982.27,Technology Services,NASDAQ,not checked (not published),false
+NGNE,9.28,24.20,22.15,100,316380,0.032,501065392.68,Health Technology,NASDAQ,not checked (not published),true
+UAVS,9.26,0.29,0.27,6469,992380,0.652,18895071.22,Electronic Technology,AMEX,not checked (not published),true
+DFLI,9.25,1.65,1.51,120,67424,0.178,3214844.26,Producer Manufacturing,NASDAQ,not checked (not published),true
+OBAI,9.24,1.30,1.19,1624,105190,1.544,2483250.17,Technology Services,NASDAQ,not checked (not published),false
+SER,9.24,1.22,1.12,125,63830,0.196,32507729.72,Commercial Services,AMEX,not checked (not published),true
+CRBP,9.22,2.25,2.06,8646,1065424,0.812,46365208.25,Health Technology,NASDAQ,not checked (not published),true
+BKKT,9.21,2.64,2.42,16624,1303466,1.275,119265392.56,Commercial Services,NYSE,not checked (not published),false
+AMCI,9.17,1.19,1.09,33179,148883,22.285,28428696.06,Technology Services,NASDAQ,not checked (not published),false
+CIGL,-9.16,0.24,0.26,435196,6733072,6.464,59296938.08,Commercial Services,NASDAQ,not checked (not published),false
+NVDA,9.13,136.99,125.53,12632882,224750383,5.621,3301458967895.25,Electronic Technology,NASDAQ,AI/semi relief rally after Friday's rout (Nasdaq-100 futures +3.4%); reports the Trump administration is pushing for Jensen Huang's rehiring — no new NVDA release,false
+IZM,-9.10,0.80,0.88,569,786133,0.072,1922897.85,Retail Trade,NASDAQ,not checked (not published),true
+KEEL,9.08,1.50,1.38,283291,28760487,0.985,926702198.50,Technology Services,NASDAQ,not checked (not published),true
+AUID,8.94,0.15,0.14,8315,1340831,0.620,2466250.11,Electronic Technology,NASDAQ,not checked (not published),true
+GMHS,8.92,0.90,0.83,38840,53499,72.599,76063783.73,Technology Services,NASDAQ,not checked (not published),false
+SES,8.91,0.45,0.41,206909,23207514,0.892,160110147.02,Producer Manufacturing,NYSE,not checked (not published),true
+DDD,8.89,1.47,1.35,12039,3808668,0.316,244536734.40,Technology Services,NYSE,not checked (not published),true
+NVTS,8.88,6.62,6.08,360696,14852880,2.428,1784139878.65,Electronic Technology,NASDAQ,not checked (not published),false
+USAS,8.85,2.09,1.92,80712,4940551,1.634,714506585.11,Non-Energy Minerals,AMEX,not checked (not published),false
+VELO,8.85,3.24,2.98,12276,1717686,0.715,104467139.17,Producer Manufacturing,NASDAQ,not checked (not published),true
+GCTS,8.83,1.09,1.00,19581,1953428,1.002,100353985.49,Electronic Technology,NYSE,not checked (not published),false
+MBIO,-8.81,0.32,0.35,15904,38816,40.973,2448898.77,Health Technology,NASDAQ,not checked (not published),false
+ABR/PF,8.78,7.00,6.43,900,68463,1.315,206357948.41,Finance,NYSE,not checked (not published),false
+HIT,-8.75,0.35,0.38,2513,84115,2.988,27826372.00,Technology Services,NASDAQ,not checked (not published),false
+VICR,8.72,136.00,125.09,2399,987682,0.243,6276209347.77,Electronic Technology,NASDAQ,not checked (not published),true
+BRUN,8.71,3.87,3.56,54473,3937194,1.384,325781002.67,Technology Services,NASDAQ,not checked (not published),false
+TMQ,8.70,1.62,1.49,5773,1679720,0.344,293750751.84,Non-Energy Minerals,AMEX,not checked (not published),true
+VOYG,8.70,20.37,18.74,15034,1473692,1.020,1265006223.77,Technology Services,NYSE,not checked (not published),false
+ACRV,8.70,1.25,1.15,1884,266894,0.706,53639596.74,Health Technology,NASDAQ,not checked (not published),true
+PCT,8.68,1.71,1.57,30100,8396921,0.358,344055262.51,Industrial Services,NASDAQ,not checked (not published),true
+GNS,8.67,0.54,0.50,124471,1285575,9.682,10415071.70,Technology Services,AMEX,not checked (not published),false
+OUST,8.66,25.86,23.80,79125,2876094,2.751,1887706742.31,Electronic Technology,NASDAQ,not checked (not published),false
+UCTT,8.65,40.20,37.00,6051,1489015,0.406,1927998403.75,Producer Manufacturing,NASDAQ,not checked (not published),true
+HYMC,8.64,13.70,12.61,35904,2516444,1.427,1276614676.83,Non-Energy Minerals,NASDAQ,not checked (not published),false
+VERI,8.64,0.34,0.31,8673,2590006,0.335,41134931.39,Commercial Services,NASDAQ,not checked (not published),true
+RCAT,8.64,1.95,1.79,237294,8098265,2.930,298266055.49,Technology Services,NASDAQ,not checked (not published),false
+PENG,8.63,39.16,36.05,40980,3195571,1.282,2359072058.99,Electronic Technology,NASDAQ,not checked (not published),false
+AAOI,8.62,35.77,32.93,414233,13968869,2.965,3246869281.60,Electronic Technology,NASDAQ,not checked (not published),false
+HSCS,8.62,1.97,1.81,4082,88914,4.591,11322820.73,Health Technology,NASDAQ,not checked (not published),false
+NBIS,8.61,88.31,81.31,1261713,29394662,4.292,25866210526.94,Technology Services,NASDAQ,not checked (not published),false
+AXTI,8.60,33.20,30.57,374409,11594006,3.229,2181982033.58,Electronic Technology,NASDAQ,not checked (not published),false
+FLY,8.54,19.20,17.69,41291,3791324,1.089,3297712306.43,Electronic Technology,NASDAQ,not checked (not published),false
+ADUR,8.52,8.22,7.57,19428,335601,5.789,293914303.36,Process Industries,NASDAQ,not checked (not published),false
+DLXY,8.49,1.15,1.06,100,136299,0.073,3760500.00,Distribution Services,NASDAQ,not checked (not published),true
+AEHL,8.47,7.30,6.73,431,1734768,0.025,138808457.61,Producer Manufacturing,NASDAQ,not checked (not published),true
+BMGL,-8.46,0.35,0.38,99782,4108013,2.429,4764604.60,Health Services,NASDAQ,not checked (not published),false
+PBK,8.45,0.10,0.10,35248,698460,5.047,197401147.75,Utilities,NASDAQ,not checked (not published),false
+SCZM,8.44,6.68,6.16,3481,489272,0.711,621203844.59,Non-Energy Minerals,NASDAQ,not checked (not published),true
+RXT,8.42,2.06,1.90,51161,5487354,0.932,541880641.84,Technology Services,NASDAQ,not checked (not published),true
+DELL,8.42,301.43,278.02,239872,7823700,3.066,191653032378.53,Electronic Technology,NYSE,not checked (not published),false
+BAOS,8.40,0.13,0.12,3029,268904,1.126,4217945.23,Commercial Services,NASDAQ,not checked (not published),false
+EOSE,8.40,1.29,1.19,478968,25835650,1.854,472609600.11,Producer Manufacturing,NASDAQ,not checked (not published),false
+AYA,8.40,18.84,17.38,12374,825288,1.499,2716640550.00,Non-Energy Minerals,NASDAQ,not checked (not published),false
+PXED,-8.39,18.01,19.66,458,140929,0.325,660546341.91,Technology Services,NYSE,,true
+LVLU,8.37,4.90,4.52,100,11296,0.885,14183101.54,Retail Trade,NASDAQ,not checked (not published),true
+CHPT,8.37,9.45,8.72,1856,887430,0.209,253735575.58,Producer Manufacturing,NYSE,not checked (not published),true
+SPCE,8.36,1.13,1.04,133964,9110117,1.470,170930429.55,Electronic Technology,NYSE,not checked (not published),false
+KOPN,8.35,2.79,2.58,44536,3554046,1.253,518955676.01,Electronic Technology,NASDAQ,not checked (not published),false
+VLN,8.33,1.30,1.20,11498,658821,1.745,141791361.83,Electronic Technology,NYSE,not checked (not published),false
+AUGO,8.33,61.80,57.05,7522,840929,0.894,5182229236.57,Non-Energy Minerals,NASDAQ,not checked (not published),true
+ACMR,8.32,43.11,39.80,9947,1255312,0.792,3018180883.38,Producer Manufacturing,NASDAQ,not checked (not published),true
+CYCU,8.28,1.70,1.57,3276,140396,2.333,5491071.46,Technology Services,NASDAQ,not checked (not published),false
+ONDS,8.24,4.07,3.76,1136589,47911264,2.372,2407170740.11,Electronic Technology,NASDAQ,not checked (not published),false
+IZEA,8.23,2.50,2.31,600,44530,1.347,43230403.68,Commercial Services,NASDAQ,not checked (not published),false
+MSN,8.22,0.27,0.25,28388,132875,21.364,5733870.40,Distribution Services,AMEX,not checked (not published),false
+LUNR,8.21,9.50,8.78,189538,8929630,2.123,2167476868.18,Electronic Technology,NASDAQ,not checked (not published),false
+INHD,-8.20,2.02,2.20,56447,1145960,4.926,5090565.20,Producer Manufacturing,NASDAQ,not checked (not published),false
+CWD,8.20,0.37,0.34,2582,115777,2.230,4018463.07,Finance,NASDAQ,not checked (not published),false
+MSTR,8.19,84.17,77.80,867284,19206275,4.516,35549567493.84,Finance,NASDAQ,not checked (not published),false
+ACCS,8.19,3.70,3.42,700,15406,4.544,13947073.19,Technology Services,AMEX,not checked (not published),false
+POET,8.19,3.70,3.42,363721,8608541,4.225,644599000.94,Producer Manufacturing,NASDAQ,not checked (not published),false
+RXRX,8.16,2.65,2.45,302262,25596528,1.181,1651924880.92,Health Technology,NASDAQ,not checked (not published),false
+UPXI,8.16,0.50,0.46,38524,1463193,2.633,44418809.18,Health Technology,NASDAQ,not checked (not published),false
+AOSL,8.13,23.01,21.28,6687,634736,1.054,697534360.22,Electronic Technology,NASDAQ,not checked (not published),false
+SAGT,-8.11,1.02,1.11,5716,1056862,0.541,25245000.00,Technology Services,NASDAQ,not checked (not published),true
+NFE,8.11,4.00,3.70,200,440794,0.045,65286217.30,Utilities,NASDAQ,not checked (not published),true
+FLNC,8.09,3.74,3.46,148185,6873480,2.156,690390433.31,Producer Manufacturing,NASDAQ,not checked (not published),false
+RTB,8.06,4.02,3.72,1882,36891,5.102,58233095.39,Technology Services,NASDAQ,not checked (not published),false
+IREN,8.04,12.77,11.82,4340278,74218947,5.848,5419043383.27,Technology Services,NASDAQ,"No company news: neoclouds are rebounding with AI chips (CoreWeave, Nebius, IREN +8–10.5%) after the week's AI rout; IREN also signed a 5-year AI-lab deal at ~$22M/MW",false
+KDK,8.02,0.92,0.85,79977,7010359,1.141,188287529.62,Producer Manufacturing,NASDAQ,not checked (not published),false
+ZEO,8.01,0.29,0.27,41362,711303,5.815,18436579.34,Utilities,NASDAQ,not checked (not published),false
+OLB,8.00,0.12,0.11,448593,5445624,8.238,3874948.20,Technology Services,NASDAQ,not checked (not published),false
+AVAT,7.97,0.87,0.81,1959,489286,0.400,38045531.60,Finance,NASDAQ,not checked (not published),true
+SITM,7.96,390.00,361.24,3841,759370,0.506,11781794439.60,Electronic Technology,NASDAQ,not checked (not published),true
+RGNT,7.96,0.78,0.72,16821,51514,32.653,5449157.23,Health Technology,AMEX,not checked (not published),false
+DYAI,7.94,0.31,0.29,6682,94811,7.048,12420254.41,Health Services,NASDAQ,not checked (not published),false
+EVGN,7.94,0.34,0.32,627,415406,0.151,6161585.29,Health Technology,NASDAQ,not checked (not published),true
+AEHR,7.93,43.00,39.84,152671,2937223,5.198,1410175904.59,Electronic Technology,NASDAQ,"No company news: part of the chip/neocloud rebound (Micron, Lam, Marvell +7%, SK Hynix ADR +10%) after a 16.9% fall on Friday",false
+CRWD,-7.92,211.26,229.44,882838,9366373,9.426,216316471203.16,Technology Services,NASDAQ,CRWD agreed to buy Zscaler for ~$43.9B in stock (1.135 CRWD per ZS share); CRWD holders keep ~84.1% — dilution and integration risk is the sell-side story,false
+SATL,7.91,2.66,2.46,96887,5107356,1.897,409886763.83,Electronic Technology,NASDAQ,not checked (not published),false
+PURR,7.91,8.07,7.48,527048,15546358,3.390,2235848253.18,Finance,NASDAQ,not checked (not published),false
+MVST,7.90,0.25,0.23,41224,6391906,0.645,96239703.31,Producer Manufacturing,NASDAQ,not checked (not published),true
+LTRX,7.89,3.69,3.42,3429,816014,0.420,173224139.00,Electronic Technology,NASDAQ,not checked (not published),true
+COHU,7.88,40.25,37.31,963,1383542,0.070,1905776092.59,Electronic Technology,NASDAQ,not checked (not published),true
+TDTH,-7.87,0.33,0.36,171353,925154,18.522,19490733.25,Commercial Services,NASDAQ,not checked (not published),false
+ELAB,7.87,1.23,1.14,1004,534821,0.188,1437439.48,Health Technology,NASDAQ,not checked (not published),true
+ALM,7.86,6.89,6.39,60567,6816756,0.889,1964090705.08,Non-Energy Minerals,NASDAQ,not checked (not published),true
+SERV,7.84,2.20,2.04,47216,3952265,1.195,193337658.29,Producer Manufacturing,NASDAQ,not checked (not published),false
+SLDE,-7.82,24.16,26.21,3438,1254492,0.274,2663198957.74,Finance,NASDAQ,Ex-dividend today: $1.50 special plus $0.07 quarterly go ex on Nov 23 — about 6% of Friday's $26.21 close,true
+AIFC,7.81,0.17,0.15,9755,757832,1.287,23156928.28,Industrial Services,NASDAQ,not checked (not published),false
+SBET,7.81,4.83,4.48,241575,9661357,2.500,1049782182.66,Commercial Services,NASDAQ,not checked (not published),false
+REKR,7.80,0.20,0.18,60897,2415905,2.521,27391572.25,Commercial Services,NASDAQ,not checked (not published),false
+KAPA,7.80,0.47,0.44,160,101206,0.158,2201492.82,Health Technology,AMEX,not checked (not published),true
+TWST,7.79,111.37,103.32,5247,2459171,0.213,7593061315.61,Health Technology,NASDAQ,not checked (not published),true
+UAMY,7.79,2.40,2.23,85635,6402226,1.338,358943171.48,Non-Energy Minerals,NYSE,not checked (not published),false
+HPE/PC,7.78,111.91,103.83,100,178321,0.056,58532693272.58,Electronic Technology,NYSE,not checked (not published),true
+MARA,7.77,5.48,5.08,699229,38458358,1.818,2122987102.18,Technology Services,NASDAQ,not checked (not published),false
+BTQ,7.77,1.11,1.03,79677,1812352,4.396,5911887.33,Technology Services,NASDAQ,not checked (not published),false
+FTK,7.75,23.35,21.67,1145,323959,0.353,847174672.54,Industrial Services,NYSE,not checked (not published),true
+ANNX,7.74,3.34,3.10,4802,3637886,0.132,637151664.11,Health Technology,NASDAQ,not checked (not published),true
+CNXU,7.74,1.67,1.55,907,360241,0.252,51486149.56,Health Technology,NASDAQ,not checked (not published),true
+HBM,7.73,17.45,16.20,10481,5085787,0.206,7748963366.58,Non-Energy Minerals,NYSE,not checked (not published),true
+RKLB,7.71,48.92,45.42,531003,19662971,2.701,30918462896.52,Electronic Technology,NASDAQ,not checked (not published),false
+GELS,7.70,0.29,0.27,117,65761,0.178,3115847.02,Health Technology,NASDAQ,not checked (not published),true
+HPE,7.68,44.05,40.91,310512,16895080,1.838,58474820771.50,Electronic Technology,NYSE,not checked (not published),false
+HMR,7.67,1.05,0.98,3342,143604,2.327,61941596.34,Industrial Services,NASDAQ,not checked (not published),false
+FBLG,7.66,0.76,0.70,149,86403,0.172,6823010.58,Health Technology,NASDAQ,not checked (not published),true
+RIBB,7.65,8.30,7.71,300,4560,6.579,52150004.51,Finance,NASDAQ,not checked (not published),false
+ELOG,7.65,1.97,1.83,13891,676893,2.052,25279040.00,Transportation,NASDAQ,not checked (not published),false
+UMAC,7.64,9.30,8.64,41636,3096102,1.345,482778875.66,Electronic Technology,AMEX,not checked (not published),false
+LPTH,7.63,5.57,5.17,70883,3124224,2.269,390390288.08,Electronic Technology,NASDAQ,not checked (not published),false
+FGL,7.63,0.49,0.46,1392,1322479,0.105,36857.92,Industrial Services,NASDAQ,not checked (not published),true
+BORR,7.62,3.67,3.41,80954,10667009,0.759,1132241844.70,Industrial Services,NYSE,not checked (not published),true
+IAUX,7.62,1.13,1.05,166072,8761068,1.896,981097281.63,Non-Energy Minerals,AMEX,not checked (not published),false
+CRML,7.62,3.25,3.02,187267,6811431,2.749,631213760.26,Non-Energy Minerals,NASDAQ,not checked (not published),false
+WULF,7.61,10.60,9.85,836120,51470760,1.624,5316129234.42,Technology Services,NASDAQ,not checked (not published),false
+RDW,7.61,6.08,5.65,207055,12587722,1.645,1521333458.07,Electronic Technology,NYSE,not checked (not published),false
+AIIO,7.61,5.00,4.65,854,52772,1.618,47271856.38,Distribution Services,NASDAQ,not checked (not published),false
+WW,7.60,7.50,6.97,421,293299,0.144,74990699.78,Consumer Services,NASDAQ,not checked (not published),true
+FLL,7.60,0.41,0.38,1298,459245,0.283,14987593.56,Consumer Services,NASDAQ,not checked (not published),true
+CIFR,7.60,5.85,5.44,420905,56401173,0.746,2668868784.89,Technology Services,NASDAQ,not checked (not published),true
+WNW,7.60,1.77,1.64,270,25722,1.050,46604932.81,Retail Trade,NASDAQ,not checked (not published),false
+BEAT,7.60,0.30,0.28,18372,1150433,1.597,18740587.42,Health Technology,NASDAQ,not checked (not published),false
+STRK,7.59,62.50,58.09,1000,88365,1.132,35353729282.15,Finance,NASDAQ,not checked (not published),false
+TNON,7.58,0.97,0.90,1057,133734,0.790,2589369.54,Health Services,NASDAQ,not checked (not published),true
+XXII,-7.58,0.31,0.34,134471,2585195,5.202,171317.10,Health Technology,NASDAQ,not checked (not published),false
+MTEK,7.57,0.28,0.26,2358,498325,0.473,2956604.23,Consumer Durables,NASDAQ,not checked (not published),true
+SNT,7.56,1.85,1.72,907,265122,0.342,43163556.80,Electronic Technology,NASDAQ,not checked (not published),true
+MXL,7.55,44.58,41.45,29761,3384170,0.879,4056780415.15,Electronic Technology,NASDAQ,not checked (not published),true
+UEC,7.55,5.70,5.30,67405,10325404,0.653,2824832639.43,Non-Energy Minerals,AMEX,not checked (not published),true
+UPB,7.55,1.71,1.59,200,1310357,0.015,93727478.94,Health Technology,NASDAQ,not checked (not published),true
+DC,7.54,4.42,4.11,9085,1179010,0.771,593154226.53,Non-Energy Minerals,AMEX,not checked (not published),true
+RENX,-7.53,0.68,0.74,12390,89551,13.836,2381345.83,Finance,NASDAQ,not checked (not published),false
+STKE,7.53,1.00,0.93,2000,188504,1.061,39486875.57,Finance,NASDAQ,not checked (not published),false
+IESC,7.52,167.80,156.06,8502,545513,1.559,6758931200.95,Industrial Services,NASDAQ,not checked (not published),false
+NVT,7.52,109.50,101.84,3618,3286201,0.110,17694987835.15,Electronic Technology,NYSE,not checked (not published),true
+ALT,7.52,1.43,1.33,49863,3984900,1.251,278262918.34,Health Technology,NASDAQ,not checked (not published),false
+DUKR,7.51,1.86,1.73,520,60061,0.866,6372319.14,Electronic Technology,NASDAQ,not checked (not published),true
+AIMD,7.51,1.27,1.18,8396,3747797,0.224,9597707.26,Electronic Technology,NASDAQ,not checked (not published),true
+CNTX,7.50,0.17,0.16,5265,1466257,0.359,15803219.17,Health Technology,NASDAQ,not checked (not published),true
+TSEM,7.49,124.21,115.56,21759,3286485,0.662,14100028504.96,Electronic Technology,NASDAQ,not checked (not published),true
+SANM,7.48,150.21,139.76,332,1038731,0.032,7928489565.83,Electronic Technology,NASDAQ,not checked (not published),true
+ARQQ,7.47,11.79,10.97,5150,288343,1.786,205174424.97,Technology Services,NASDAQ,not checked (not published),false
+ORBS,7.46,0.58,0.54,51942,13107653,0.396,222688860.54,Finance,NASDAQ,not checked (not published),true
+GIPR,7.46,0.18,0.17,21928,5791647,0.379,1309442.51,Finance,NASDAQ,not checked (not published),true
+ECO,-7.46,78.50,84.83,22212,940355,2.362,3010377922.07,Transportation,NYSE,"Ex-dividend today: $7.00/sh Q3 dividend goes ex on Nov 23 — about 8% of Friday's $84.83 close. Mechanical, not news-driven",false
+MRAM,7.46,9.67,9.00,52319,719363,7.273,237282447.60,Electronic Technology,NASDAQ,"No company news: memory/storage-chip bounce (Micron +7%, SK Hynix ADR +10%, SanDisk +7.8%, Seagate +6.8%) after a 16.4% fall on Friday",false
+CRDO,7.44,107.29,99.86,168180,8561074,1.964,20165850247.86,Technology Services,NASDAQ,not checked (not published),false
+CNTN,7.44,1.30,1.21,400,722723,0.055,106130365.87,Technology Services,NASDAQ,not checked (not published),true
+BIYA,-7.44,1.12,1.21,1792,96923,1.849,7055116.03,Commercial Services,NASDAQ,not checked (not published),false
+THM,7.43,1.24,1.15,89399,1364319,6.553,323608297.88,Non-Energy Minerals,AMEX,"No company news: gold-miner rebound with spot gold +2.5% to ~$3,619, off a 14-month low",false
+ELMT,7.42,19.25,17.92,364,480210,0.076,590223137.11,Producer Manufacturing,NASDAQ,not checked (not published),true
+OCC,7.40,7.69,7.16,5337,117781,4.531,67995169.03,Electronic Technology,NASDAQ,not checked (not published),false
+RUM,7.40,4.50,4.19,26271,3979950,0.660,2231874781.86,Technology Services,NASDAQ,not checked (not published),true
+QH,7.40,3.29,3.06,100,6906,1.448,9040259.04,Technology Services,NASDAQ,not checked (not published),false
+AMOD,7.38,0.69,0.64,8132,5229512,0.156,44101850.37,Technology Services,NASDAQ,not checked (not published),true
+SRXH,7.37,0.86,0.80,65986,465267,14.182,17338392.08,Technology Services,AMEX,not checked (not published),false
+UUUU,7.36,5.33,4.96,177455,9580088,1.852,1410208801.54,Non-Energy Minerals,AMEX,not checked (not published),false
+TER,7.35,219.82,204.78,25323,4015824,0.631,34297555411.20,Electronic Technology,NASDAQ,not checked (not published),true
+RZLV,7.34,0.90,0.84,338018,8260120,4.092,375931532.89,Technology Services,NASDAQ,not checked (not published),false
+WORX,7.34,1.17,1.09,1625,8074590,0.020,1622905.93,Technology Services,NASDAQ,not checked (not published),true
+AVEX,7.34,11.85,11.04,1603,2530032,0.063,1502212360.19,Electronic Technology,NYSE,not checked (not published),true
+QMCO,7.32,12.32,11.48,11303,1617728,0.699,487347098.24,Electronic Technology,NASDAQ,not checked (not published),true
+ASTS,7.31,24.97,23.27,702246,18585662,3.778,9741038522.24,Communications,NASDAQ,not checked (not published),false
+MKSI,7.31,198.00,184.52,3174,1646327,0.193,13388854512.49,Producer Manufacturing,NASDAQ,not checked (not published),true
+AQMS,7.30,0.70,0.65,641,46346,1.383,2515195.04,Non-Energy Minerals,NASDAQ,not checked (not published),false
+BLZE,7.30,6.91,6.44,7600,2739218,0.277,436712009.66,Electronic Technology,NASDAQ,not checked (not published),true
+AMPX,7.28,6.19,5.77,67252,6007514,1.119,907767971.49,Producer Manufacturing,NYSE,not checked (not published),false
+FCEL,7.28,7.18,6.69,59911,5831440,1.027,573855235.67,Electronic Technology,NASDAQ,not checked (not published),false
+INFQ,7.28,6.78,6.32,130856,6794840,1.926,1533954246.98,Electronic Technology,NYSE,not checked (not published),false
+ASPI,7.27,1.18,1.10,112361,4631185,2.426,183884645.64,Industrial Services,NASDAQ,not checked (not published),false
+LABT,-7.27,0.23,0.24,288360,32007208,0.901,2032564.47,Health Technology,NASDAQ,not checked (not published),true
+OPEN,7.26,1.40,1.30,1203887,40863893,2.946,1302055409.25,Finance,NASDAQ,not checked (not published),false
+EXK,7.24,6.08,5.67,510213,7610942,6.704,1801239478.50,Non-Energy Minerals,NYSE,"No company news: precious-metals rebound (silver +2%, gold +2.5%); own catalyst is older — the Nov 19 Pitarrilla FS, after-tax NPV $736M",false
+TSSI,7.23,4.89,4.56,6333,891151,0.711,137994054.64,Technology Services,NASDAQ,not checked (not published),true
+PAVS,-7.23,2.18,2.35,1155,644882,0.179,1895810.56,Health Technology,NASDAQ,not checked (not published),true
+AEVA,7.23,8.45,7.88,23232,1909591,1.217,590623496.94,Electronic Technology,NASDAQ,not checked (not published),false
+ICHR,7.22,29.25,27.28,9471,1176867,0.805,1099106960.49,Producer Manufacturing,NASDAQ,not checked (not published),true
+VSH,7.20,23.97,22.36,10480,3519760,0.298,3676632126.25,Electronic Technology,NYSE,not checked (not published),true
+ABSI,7.19,8.05,7.51,20829,4286254,0.486,1390603886.16,Health Technology,NASDAQ,not checked (not published),true
+USAR,7.18,6.72,6.27,550957,16824428,3.275,2522150031.31,Producer Manufacturing,NASDAQ,not checked (not published),false
+ALGM,7.17,27.39,25.56,600,3160467,0.019,5108319723.92,Electronic Technology,NASDAQ,not checked (not published),true
+AMPG,7.17,1.92,1.79,9532,735568,1.296,58091821.03,Electronic Technology,NASDAQ,not checked (not published),false
+UNCY,7.16,3.59,3.35,2634,1104528,0.238,104772385.01,Health Technology,NASDAQ,not checked (not published),true
+SPRC,-7.16,0.18,0.20,284372,6226371,4.567,373475.94,Health Technology,NASDAQ,not checked (not published),false
+CLSK,7.16,5.24,4.89,138013,19452821,0.709,1345721449.69,Technology Services,NASDAQ,not checked (not published),true
+ARIS,7.14,12.90,12.04,23573,1758860,1.340,2666429889.94,Non-Energy Minerals,NYSE,not checked (not published),false
+NUAI,7.14,4.05,3.78,526781,13257420,3.973,569306362.50,Industrial Services,NASDAQ,not checked (not published),false
+TENX,7.14,1.34,1.25,31857,1746273,1.824,60982413.30,Health Technology,NASDAQ,not checked (not published),false
+PLAB,7.11,25.74,24.03,6259,807561,0.775,1518433793.04,Electronic Technology,NASDAQ,not checked (not published),true
+RVSN,7.10,1.81,1.69,6905,20025,34.482,3967857.37,Transportation,NASDAQ,not checked (not published),false
+CEVA,7.10,24.00,22.41,2024,509225,0.397,684654552.07,Electronic Technology,NASDAQ,not checked (not published),true
+AKAN,-7.09,3.93,4.23,458229,12917786,3.547,10347528.90,Process Industries,NASDAQ,not checked (not published),false
+SURG,7.08,0.11,0.11,162466,4471050,3.634,7044126.94,Technology Services,NASDAQ,not checked (not published),false
+MTSI,7.08,208.70,194.91,5065,1918575,0.264,16025563970.52,Electronic Technology,NASDAQ,not checked (not published),true
+EGO,7.07,26.50,24.75,67698,3742438,1.809,6924976150.41,Non-Energy Minerals,NYSE,not checked (not published),false
+BETA,7.06,18.34,17.13,5606,2214212,0.253,4309222912.47,Electronic Technology,NYSE,not checked (not published),true
+XNDU,7.06,1.82,1.70,48884,5325362,0.918,573993732.61,Electronic Technology,NASDAQ,not checked (not published),true
+BEEM,7.05,0.51,0.48,9010,1328868,0.678,12303783.28,Producer Manufacturing,NASDAQ,not checked (not published),true
+DTI,7.05,1.67,1.56,300,243192,0.123,58921309.33,Finance,NASDAQ,not checked (not published),true
+BLNK,7.04,0.34,0.32,9147,1761256,0.519,50094397.13,Producer Manufacturing,NASDAQ,not checked (not published),true
+KLAC,7.04,135.80,126.87,41311,14126814,0.292,176942298068.82,Electronic Technology,NASDAQ,not checked (not published),true
+MOVE,-7.03,3.04,3.27,2068,179906,1.149,118983637.48,Technology Services,NASDAQ,not checked (not published),false
+NG,7.03,5.00,4.67,34279,4475246,0.766,2193246333.08,Non-Energy Minerals,AMEX,not checked (not published),true
+CRCL,7.01,50.88,47.55,455422,10013929,4.548,13053421784.76,Technology Services,NYSE,not checked (not published),false
+SVIA,7.01,2.29,2.14,100,876747,0.011,172671498.14,Technology Services,NASDAQ,not checked (not published),true
+SCLX,-7.00,0.53,0.57,113,72892,0.155,3701678.43,Health Technology,NASDAQ,not checked (not published),true
+PRFX,7.00,0.51,0.48,4345,197677,2.198,1781414.52,Health Technology,NASDAQ,not checked (not published),false
+AVR,7.00,5.34,4.99,49937,1418830,3.520,520536903.59,Health Technology,NASDAQ,not checked (not published),false
+MNTN,6.98,4.75,4.44,2487,1443316,0.172,360001134.91,Technology Services,NYSE,not checked (not published),true
+ASM,6.98,3.68,3.44,45214,3792198,1.192,623276432.86,Non-Energy Minerals,AMEX,not checked (not published),false
+GAU,6.98,1.84,1.72,3338,2543632,0.131,482180183.51,Non-Energy Minerals,AMEX,not checked (not published),true
+ONTO,6.96,182.01,170.16,3131,1217513,0.257,8933838676.75,Electronic Technology,NYSE,not checked (not published),true
+LAC,6.96,1.35,1.26,140539,9714898,1.447,508534030.46,Non-Energy Minerals,NYSE,not checked (not published),false
+MNRO,-6.95,8.84,9.50,16919,1022183,1.655,276930036.08,Retail Trade,NASDAQ,The board did not declare the Q3 dividend and suspended future dividends as part of a macro/performance-improvement plan; strategic-alternatives review still active,false
+OMH,6.94,3.85,3.60,185353,9458592,1.960,8130788.26,Finance,NASDAQ,not checked (not published),false
+ENTG,6.92,133.14,124.53,3018,3504788,0.086,20344281167.42,Producer Manufacturing,NASDAQ,not checked (not published),true
+LRCX,6.90,195.91,183.27,101823,13111526,0.777,244725100333.34,Producer Manufacturing,NASDAQ,not checked (not published),true
+EVEX,6.90,1.24,1.16,5934,1249571,0.475,432138473.52,Electronic Technology,NYSE,not checked (not published),true
+ALAB,6.88,192.76,180.35,140038,4872396,2.874,33690993719.42,Electronic Technology,NASDAQ,not checked (not published),false
+HAO,6.87,1.71,1.60,1589,70083,2.267,1045026.96,Commercial Services,NASDAQ,not checked (not published),false
+NB,6.85,2.34,2.19,11878,2793107,0.425,342746310.33,Non-Energy Minerals,NASDAQ,not checked (not published),true
+RGTI,6.84,7.65,7.16,241018,16907657,1.425,2622290047.23,Electronic Technology,NASDAQ,not checked (not published),false
+LEU,6.84,87.00,81.43,9801,876490,1.118,1793805159.08,Non-Energy Minerals,NYSE,not checked (not published),false
+STRL,6.83,264.85,247.92,4816,1044219,0.461,8078596804.76,Industrial Services,NASDAQ,not checked (not published),true
+DNN,6.83,1.79,1.68,90967,27640277,0.329,1625002979.27,Non-Energy Minerals,AMEX,not checked (not published),true
+TDIC,6.82,1.41,1.32,2152,1636926,0.131,7029672.50,Commercial Services,NASDAQ,not checked (not published),true
+VSAT,6.81,60.09,56.26,5039,2510336,0.201,8363901324.10,Electronic Technology,NASDAQ,not checked (not published),true
+VPG,6.80,46.01,43.08,1040,338902,0.307,612872990.28,Electronic Technology,NYSE,not checked (not published),true
+OPTT,6.80,0.30,0.28,59737,1761848,3.391,2728247.42,Producer Manufacturing,AMEX,not checked (not published),false
+AVXL,6.80,0.63,0.59,3349,1267350,0.264,58556688.81,Health Technology,NASDAQ,not checked (not published),true
+GRWG,6.80,1.10,1.03,1200,321951,0.373,64480893.59,Distribution Services,NASDAQ,not checked (not published),true
+WOLF,6.79,20.52,19.22,34474,3320192,1.038,1099768020.15,Electronic Technology,NYSE,not checked (not published),false
+BW,6.78,3.78,3.54,34638,5267859,0.658,549785870.39,Electronic Technology,NYSE,not checked (not published),true
+CRMT,6.78,0.78,0.73,357,515526,0.069,6462320.10,Retail Trade,NASDAQ,not checked (not published),true
+VBIO,6.76,0.51,0.48,900,1226195,0.073,1106057.19,Health Technology,NASDAQ,not checked (not published),true
+DARE,6.76,0.43,0.41,100,172887,0.058,8556051.25,Health Technology,NASDAQ,not checked (not published),true
+PMA,-6.76,1.51,1.62,4136,56477,7.323,19598738.43,Industrial Services,NASDAQ,not checked (not published),false
+AU,6.72,77.30,72.43,69414,2697337,2.573,39037078121.40,Non-Energy Minerals,NYSE,not checked (not published),false
+DHT,-6.72,20.13,21.58,106479,5572410,1.911,3245672223.16,Transportation,NYSE,"Ex-dividend today: the $1.45 quarterly dividend (raised 18.9%) goes ex Nov 23, payable Nov 30 — about 6-7% of Friday's close",false
+HSDT,6.71,1.59,1.49,10073,626139,1.609,99989653.45,Health Technology,NASDAQ,not checked (not published),false
+BCG,6.71,1.75,1.64,914,62066,1.473,29855229.42,Finance,NASDAQ,not checked (not published),false
+CRWV,6.71,42.16,39.51,1876919,72989392,2.571,23446258906.97,Technology Services,NASDAQ,not checked (not published),false
+EROC,6.70,6.53,6.12,28212,3095255,0.911,1432682492.95,Producer Manufacturing,NYSE,not checked (not published),true
+ALOY,6.70,4.04,3.79,51090,2125092,2.404,281718084.09,Non-Energy Minerals,NASDAQ,not checked (not published),false
+POWI,6.69,41.78,39.16,500,842461,0.059,2334751543.29,Electronic Technology,NASDAQ,not checked (not published),true
+SEI,6.69,58.29,54.63,6269,3130285,0.200,4675205843.20,Industrial Services,NYSE,not checked (not published),true
+INOD,6.69,30.00,28.12,15376,1750747,0.878,1032380821.83,Technology Services,NASDAQ,not checked (not published),true
+CIX,6.68,42.78,40.10,200,17912,1.117,527762188.91,Producer Manufacturing,AMEX,not checked (not published),false
+AEIS,6.67,202.86,190.18,2500,695068,0.360,8207858233.55,Electronic Technology,NASDAQ,not checked (not published),true
+RMIX,6.67,6.24,5.85,14094,907886,1.552,476124310.40,Non-Energy Minerals,NASDAQ,not checked (not published),false
+VIVK,-6.67,0.21,0.23,203797,13993389,1.456,337468.13,Process Industries,NASDAQ,not checked (not published),false
+HL,6.66,11.21,10.51,271980,29274991,0.929,7530623667.26,Non-Energy Minerals,NYSE,not checked (not published),true
+DAVI,6.65,0.96,0.90,987,,,24000000.00,Health Technology,NASDAQ,not checked (not published),true
+TRX,6.65,0.72,0.68,111462,1747917,6.377,236361280.73,Non-Energy Minerals,AMEX,"No company news: the gold bounce (futures +2.5% to ~$3,604) after a -9% week; own last filing was Q3 on Nov 18",false
+LTBR,6.65,3.45,3.23,3503,740687,0.473,133736993.37,Process Industries,NASDAQ,not checked (not published),true
+RVP,-6.63,0.52,0.56,15000,35062,42.781,15597260.10,Health Technology,AMEX,not checked (not published),false
+NAMM,6.61,0.66,0.62,17857,425073,4.201,36862586.30,Non-Energy Minerals,NASDAQ,not checked (not published),false
+TE,6.60,1.17,1.10,455467,23552182,1.934,352485363.67,Producer Manufacturing,NYSE,not checked (not published),false
+XE,6.60,9.37,8.79,49123,6157682,0.798,3806150861.72,Producer Manufacturing,NASDAQ,not checked (not published),true
+BKSY,6.60,17.45,16.37,12123,1088798,1.113,722407497.28,Technology Services,NYSE,not checked (not published),false
+QBTS,6.60,6.95,6.52,486994,15930092,3.057,2641437827.62,Electronic Technology,NASDAQ,not checked (not published),false
+LGN,6.59,34.44,32.31,2887,1921594,0.150,3737687888.78,Industrial Services,NASDAQ,not checked (not published),true
+QUBT,6.59,4.69,4.40,146281,7638451,1.915,1064309990.64,Technology Services,NASDAQ,not checked (not published),false
+TMC,6.58,1.62,1.52,36679,5599906,0.655,714892276.89,Non-Energy Minerals,NASDAQ,not checked (not published),true
+CFG,6.57,62.57,58.71,500,4442369,0.011,26227775523.75,Finance,NYSE,not checked (not published),true
+IONQ,6.56,22.08,20.72,769174,24614706,3.125,9548774917.71,Electronic Technology,NYSE,not checked (not published),false
+ECG,6.55,81.61,76.59,5186,875231,0.593,4167345848.90,Industrial Services,NYSE,not checked (not published),true
+YELP,6.54,19.38,18.19,200,1290982,0.015,1056072375.36,Technology Services,NYSE,not checked (not published),true
+BAER,6.53,0.31,0.29,32411,1790787,1.810,18305530.89,Transportation,NASDAQ,not checked (not published),false
+ACHR,6.53,3.10,2.91,491455,25210764,1.949,2425927170.86,Electronic Technology,NYSE,not checked (not published),false
+SOUN,6.51,2.78,2.61,429907,18111221,2.374,1357733624.31,Technology Services,NASDAQ,not checked (not published),false
+TIL,6.50,5.57,5.23,1270,71668,1.772,37775607.94,Health Technology,NASDAQ,not checked (not published),false
+MUX,6.49,9.76,9.16,16809,1305857,1.287,601226727.49,Non-Energy Minerals,NYSE,not checked (not published),false
+OSS,6.48,4.27,4.01,12702,1351233,0.940,106909896.06,Electronic Technology,NASDAQ,not checked (not published),true
+PLUT,-6.48,1.01,1.08,3629,100804,3.600,15503500.94,Finance,NASDAQ,not checked (not published),false
+AMBQ,6.48,42.25,39.68,5018,454457,1.104,1051216800.52,Electronic Technology,NYSE,not checked (not published),false
+SVM,6.47,7.24,6.80,45454,3168015,1.435,1604295444.13,Non-Energy Minerals,AMEX,not checked (not published),false
+BJDX,-6.47,1.59,1.70,185,48836,0.379,1776044.03,Health Technology,NASDAQ,not checked (not published),true
+AURE,6.47,1.07,1.00,10097,124371,8.118,37330376.13,Technology Services,NASDAQ,not checked (not published),false
+SMCI,6.47,23.05,21.65,1404900,44174157,3.180,15195190287.08,Electronic Technology,NASDAQ,not checked (not published),false
+IMMX,6.47,7.41,6.96,1196,1202294,0.099,621050289.63,Health Technology,NASDAQ,not checked (not published),true
+P,6.46,98.00,92.05,16441,3597785,0.457,32656272993.92,Electronic Technology,NYSE,not checked (not published),true
+TRAW,6.46,0.19,0.18,8156,187049,4.360,2863110.56,Health Technology,NASDAQ,not checked (not published),false
+PRZO,6.46,0.31,0.29,1665,259245,0.642,9040367.55,Electronic Technology,NASDAQ,not checked (not published),true
+BRAG,-6.45,0.55,0.59,1649,46766,3.526,17115936.16,Technology Services,NASDAQ,not checked (not published),false
+OKLO,6.45,21.13,19.85,147921,10078693,1.468,4126469254.39,Producer Manufacturing,NYSE,not checked (not published),false
+BELFB,6.43,209.01,196.38,5306,202094,2.626,2924156266.49,Electronic Technology,NASDAQ,not checked (not published),false
+CABR,6.42,0.70,0.66,791,125350,0.631,8080368.09,Commercial Services,NASDAQ,not checked (not published),true
+HUT,6.42,48.90,45.95,29376,6740141,0.436,5869836383.90,Technology Services,NASDAQ,not checked (not published),true
+CHSN,-6.42,0.06,0.07,26128379,39937278,65.424,145613.73,Consumer Non-Durables,NASDAQ,not checked (not published),false
+NUR,6.41,0.41,0.39,3123,1326046,0.236,6036050.50,Distribution Services,NASDAQ,not checked (not published),true
+GSIT,6.41,2.68,2.52,1773,571868,0.310,103233728.81,Electronic Technology,NASDAQ,not checked (not published),true
+CMCT,-6.41,5.55,5.93,100,55453,0.180,18114105.91,Finance,NASDAQ,not checked (not published),true
+IAG,6.41,15.37,14.44,16892,5147196,0.328,8707345912.16,Non-Energy Minerals,NYSE,not checked (not published),true
+CZZL,-6.39,3.81,4.07,1503,,,877954073.40,Consumer Non-Durables,NASDAQ,"Priced a US$15.15M underwritten offering at $5.00/sh (3,030,000 shares) for a Nasdaq uplisting; 1-for-25 share consolidation effective Nov 20",true
+LSCC,6.39,104.59,98.31,2624,2669219,0.098,14875384835.29,Electronic Technology,NASDAQ,not checked (not published),true
+AIOT,6.38,2.00,1.88,650,2076958,0.031,269913390.43,Technology Services,NASDAQ,not checked (not published),true
+CLS,6.38,214.50,201.63,39216,3545371,1.106,27050981345.78,Electronic Technology,NYSE,not checked (not published),false
+SDEV,6.38,0.53,0.50,283781,11195768,2.535,38890938.68,Finance,AMEX,not checked (not published),false
+XTIA,6.38,0.82,0.77,46638,976146,4.778,31521121.98,Technology Services,NASDAQ,not checked (not published),false
+NIKI,6.37,1.67,1.57,100,20792,0.481,5207591.85,Health Technology,NASDAQ,not checked (not published),true
+DPRO,6.37,1.99,1.87,9782,832365,1.175,77858861.80,Consumer Durables,NASDAQ,not checked (not published),false
+CDE,6.36,11.36,10.68,629133,35050261,1.795,11608108797.68,Non-Energy Minerals,NYSE,not checked (not published),false
+PPTA,6.36,15.43,14.51,7962,1852421,0.430,1930609376.77,Non-Energy Minerals,NASDAQ,not checked (not published),true
+ACON,6.35,1.30,1.22,100,18408,0.543,3747080.91,Technology Services,NASDAQ,not checked (not published),true
+CTMX,6.34,2.16,2.03,596,4770469,0.012,470607232.93,Health Technology,NASDAQ,not checked (not published),true
+PDYN,6.33,2.52,2.37,21232,1179163,1.801,129480413.47,Producer Manufacturing,NASDAQ,not checked (not published),false
+AG,6.32,11.60,10.91,238130,12230469,1.947,5719403376.68,Non-Energy Minerals,NYSE,not checked (not published),false
+GRPN,6.30,10.46,9.84,1701,1316488,0.129,418464926.41,Retail Trade,NASDAQ,not checked (not published),true
+CGEM,6.30,9.45,8.89,100,887896,0.011,613502802.64,Health Technology,NASDAQ,not checked (not published),true
+NDRA,6.29,3.80,3.57,700,10422,6.717,5699384.56,Health Technology,NASDAQ,not checked (not published),false
+SANA,6.29,1.69,1.59,33713,2928163,1.151,506383073.47,Health Technology,NASDAQ,not checked (not published),false
+SHOP,6.29,131.50,123.72,65282,8573165,0.761,169177638736.22,Commercial Services,NASDAQ,not checked (not published),true
+MEI,6.27,10.85,10.21,900,647712,0.139,386748835.54,Electronic Technology,NYSE,not checked (not published),true
+RMBS,6.25,70.50,66.35,6361,1809194,0.352,7550266798.26,Electronic Technology,NASDAQ,not checked (not published),true
+SAIQ,6.25,2.55,2.40,22960,4116253,0.558,76031239.88,Finance,NASDAQ,not checked (not published),true
+CIEN,6.25,249.01,234.37,12057,3147358,0.383,35311741995.70,Electronic Technology,NYSE,not checked (not published),true
+SENS,6.23,8.52,8.02,2430,989278,0.246,466729938.61,Electronic Technology,NASDAQ,not checked (not published),true
+BBAI,6.23,1.68,1.58,280909,20514267,1.369,808014749.94,Technology Services,NYSE,not checked (not published),false
+FRVO,6.23,10.61,9.99,56485,9649467,0.585,3130849645.88,Utilities,NASDAQ,not checked (not published),true
+AMC,6.23,2.73,2.57,486039,23076315,2.106,2436810533.57,Consumer Services,NYSE,not checked (not published),false
+PL,6.22,11.19,10.53,78960,8099559,0.975,4069639586.83,Technology Services,NYSE,not checked (not published),true
+FNGR,-6.21,0.03,0.03,6654283,14656405,45.402,2636706.52,Technology Services,NASDAQ,not checked (not published),false
+BE,6.21,151.29,142.45,429314,17530317,2.449,44729898509.23,Electronic Technology,NYSE,not checked (not published),false
+RETO,6.20,4.28,4.03,1474,332801,0.443,8198455.76,Non-Energy Minerals,NASDAQ,not checked (not published),true
+PYPD,6.19,6.50,6.12,14075,206243,6.824,137295946.60,Health Technology,NASDAQ,not checked (not published),false
+CHMI/PA,6.19,16.99,16.00,400,7925,5.047,81213374.43,Finance,NYSE,not checked (not published),false
+UNH,-6.17,318.90,339.88,234419,6857871,3.418,285741626317.16,Health Services,NYSE,CMS's CY2028 Medicare Advantage/Part D proposed rule (Nov 20) overhauls Star Ratings; TD Cowen estimates a ~$107B MA payment cut across 2028-37,false
+GENK,6.17,0.86,0.81,2433,2113652,0.115,29153092.22,Consumer Services,NASDAQ,not checked (not published),true
+RBLX,6.16,49.60,46.72,53815,10168412,0.529,35499382408.42,Technology Services,NYSE,not checked (not published),true
+SA,6.16,17.70,16.67,1521,1075595,0.141,1912645801.44,Non-Energy Minerals,NYSE,not checked (not published),true
+FDMT,6.16,10.86,10.23,100,939432,0.011,612280279.75,Health Technology,NASDAQ,not checked (not published),true
+AMAT,6.15,321.23,302.63,71799,8487614,0.846,254927300805.42,Producer Manufacturing,NASDAQ,not checked (not published),true
+CAMT,6.14,94.68,89.20,1908,615741,0.310,4423945457.84,Electronic Technology,NASDAQ,not checked (not published),true
+UPST,6.13,16.62,15.66,66084,4933972,1.339,1643871692.07,Finance,NASDAQ,not checked (not published),false
+MPWR,6.12,1211.99,1142.05,1830,1069278,0.171,59106332733.70,Electronic Technology,NASDAQ,not checked (not published),true
+PLG,6.09,0.82,0.77,10454,1237815,0.845,104856520.56,Non-Energy Minerals,AMEX,not checked (not published),true
+SKE,6.08,25.28,23.83,1756,650705,0.270,3176281513.13,Non-Energy Minerals,NYSE,not checked (not published),true
+LPCN,6.08,1.57,1.48,2367,252210,0.939,17385300.59,Health Technology,NASDAQ,not checked (not published),true
+DIOD,6.07,77.38,72.95,1495,535585,0.279,3536289525.85,Electronic Technology,NASDAQ,not checked (not published),true
+AMSC,6.07,20.45,19.28,12376,854197,1.449,990905993.12,Producer Manufacturing,NASDAQ,not checked (not published),false
+NXT,6.06,71.20,67.13,4779,3106253,0.154,10720977369.13,Electronic Technology,NASDAQ,not checked (not published),true
+BYSI,6.06,0.35,0.33,1534,110321,1.390,14493171.21,Health Technology,NASDAQ,not checked (not published),false
+PHIO,6.05,0.70,0.66,5125,71773,7.141,8314750.82,Health Technology,NASDAQ,not checked (not published),false
+INIO,6.05,12.80,12.07,10822,6330954,0.171,9599999757.15,Producer Manufacturing,NASDAQ,not checked (not published),true
+RCT,6.04,1.58,1.49,10630,893589,1.190,2276780.00,Technology Services,NASDAQ,not checked (not published),false
+ORN,6.04,7.20,6.79,500,617037,0.081,292746586.75,Industrial Services,NYSE,not checked (not published),true
+DNA,6.03,7.91,7.46,10918,2508575,0.435,512765868.76,Health Services,NYSE,not checked (not published),true
+KOSS,6.02,3.17,2.99,199,29196,0.682,30008609.92,Consumer Durables,NASDAQ,not checked (not published),true
+IMSR,6.02,2.29,2.16,21455,2011064,1.067,242713452.96,Industrial Services,NASDAQ,not checked (not published),false
+NESR,6.02,18.85,17.78,5717,2853665,0.200,1925021808.99,Industrial Services,NASDAQ,not checked (not published),true
+AVT,6.01,77.87,73.45,2124,1438936,0.148,6403302568.62,Distribution Services,NASDAQ,not checked (not published),true
+HYLN,6.01,1.94,1.83,11376,1738178,0.654,347112234.55,Producer Manufacturing,AMEX,not checked (not published),true
+INTC,6.01,54.36,51.28,1929771,135976130,1.419,288923393122.32,Electronic Technology,NASDAQ,not checked (not published),false
+PGY,6.00,14.31,13.50,20105,1945898,1.033,1202436132.60,Technology Services,NASDAQ,not checked (not published),false
+TEM,5.99,57.28,54.04,56470,6153969,0.918,10447838327.37,Technology Services,NASDAQ,not checked (not published),true
+RZAI,5.98,1.78,1.68,2044,241108,0.848,99067489.22,Technology Services,NASDAQ,not checked (not published),true
+LIMN,5.98,2.66,2.51,1533,30833,4.972,3572933.20,Health Technology,NASDAQ,not checked (not published),false
+FTAI,5.97,158.98,150.02,1251,2072697,0.060,16257547889.97,Electronic Technology,NASDAQ,not checked (not published),true
+BTGO,5.97,3.55,3.35,10886,1203781,0.904,427487044.13,Technology Services,NYSE,not checked (not published),true
+LITE,5.96,488.00,460.54,77511,5960032,1.301,44261599332.44,Producer Manufacturing,NASDAQ,not checked (not published),false
+EQX,5.96,8.89,8.39,101977,12750872,0.800,10628803882.76,Non-Energy Minerals,AMEX,not checked (not published),true
+XXI,5.96,4.27,4.03,47781,1495344,3.195,2781916028.89,Finance,NYSE,not checked (not published),false
+SMR,5.95,3.56,3.36,557593,31403403,1.776,1530444752.26,Producer Manufacturing,NYSE,not checked (not published),false
+SAFX,5.95,0.04,0.04,832943,23549567,3.537,26845950.46,Energy Minerals,NASDAQ,not checked (not published),false
+CGNX,5.95,47.00,44.36,2231,2192845,0.102,7913769259.06,Electronic Technology,NASDAQ,not checked (not published),true
+SLDP,5.95,1.43,1.35,153533,3721266,4.126,327808065.75,Producer Manufacturing,NASDAQ,not checked (not published),false
+CANG,-5.94,1.69,1.80,51525,2193214,2.349,69450190.51,Technology Services,NYSE,not checked (not published),false
+VSTM,5.94,6.71,6.33,1715,4857370,0.035,845042644.14,Health Technology,NASDAQ,not checked (not published),true
+TTMI,5.93,62.34,58.85,51339,5193976,0.988,6569236598.36,Electronic Technology,NASDAQ,not checked (not published),true
+KULR,5.93,1.43,1.35,6904,930900,0.742,66181179.61,Producer Manufacturing,AMEX,not checked (not published),true
+INDI,5.92,1.61,1.52,28118,6896222,0.408,372510996.05,Electronic Technology,NASDAQ,not checked (not published),true
+SG,5.92,12.88,12.16,3748,4869576,0.077,1533252136.78,Consumer Services,NYSE,not checked (not published),true
+NFGC,5.92,1.25,1.18,22150,1415028,1.565,481416240.66,Non-Energy Minerals,AMEX,not checked (not published),false
+CORZ,5.91,12.00,11.33,107122,18076265,0.593,3866834080.14,Technology Services,NASDAQ,not checked (not published),true
+SWMR,5.90,7.36,6.95,4567,540028,0.846,142800726.79,Technology Services,NASDAQ,not checked (not published),true
+SSRM,5.90,22.86,21.59,23701,2802767,0.846,4562732137.74,Non-Energy Minerals,NASDAQ,not checked (not published),true
+RBRK,5.87,113.00,106.73,10653,2995188,0.356,23425401521.80,Technology Services,NYSE,not checked (not published),true
+TRT,5.86,4.54,4.29,2889,123418,2.341,46877331.26,Producer Manufacturing,NASDAQ,not checked (not published),false
+AMRO,-5.86,5.46,5.80,499,,,157498491.62,Producer Manufacturing,NASDAQ,not checked (not published),true
+HOOD,5.85,65.81,62.17,388069,19849906,1.955,59259165308.11,Finance,NASDAQ,not checked (not published),false
+DJT,5.84,3.95,3.73,207295,7284445,2.846,1099206906.70,Commercial Services,NASDAQ,not checked (not published),false
+AGLT,5.83,6.19,5.85,38863,3978623,0.977,1498851013.72,Producer Manufacturing,NASDAQ,not checked (not published),true
+RCUS,-5.83,14.71,15.62,26248,2244319,1.170,2118101943.54,Health Technology,NYSE,Phase 3 PRISM-1 of quemliclustat DISCONTINUED — the IDMC's interim analysis missed the pre-specified overall-survival efficacy boundary,false
+JOBY,5.82,3.82,3.61,726498,21618672,3.361,3883573380.14,Electronic Technology,NYSE,not checked (not published),false
+CHGG,5.81,0.51,0.48,3308,861971,0.384,56696472.51,Commercial Services,NYSE,not checked (not published),true
+SRFM,5.81,0.39,0.37,58944,2196104,2.684,52473446.48,Transportation,NYSE,not checked (not published),false
+NEXA,5.80,10.03,9.48,1790,705356,0.254,1328353111.43,Non-Energy Minerals,NYSE,not checked (not published),true
+LAES,5.80,1.02,0.96,295016,4778797,6.173,235040323.36,Electronic Technology,NASDAQ,"Quantum-security complex bid: the Nov 18 QuintessenceLabs LOI (60-day exclusivity, target H1-2027) plus a Nov 23 WISeTrust.com launch — no new LAES release today",false
+HKPD,-5.80,1.30,1.38,200,40462,0.494,3205634.20,Transportation,NASDAQ,not checked (not published),true
+DUOT,5.79,2.74,2.59,2300,1217820,0.189,93936694.79,Technology Services,NASDAQ,not checked (not published),true
+LWLG,5.79,2.74,2.59,38181,4327743,0.882,423446800.17,Process Industries,NASDAQ,not checked (not published),true
+FLD,5.79,0.33,0.31,4711,180085,2.616,18005424.01,Technology Services,NASDAQ,not checked (not published),false
+ELE,5.78,11.99,11.33,4051,526261,0.770,916598104.02,Energy Minerals,NASDAQ,not checked (not published),true
+KITT,5.78,0.73,0.69,564160,76926,733.380,1929518.74,Producer Manufacturing,NASDAQ,not checked (not published),false
+SNDK,5.78,83.82,79.24,4766224,95409268,4.996,95413545583.98,Electronic Technology,NASDAQ,No company news: memory-sector rebound after a 28% week (Friday -16% on the first post 8-for-1-split session; TrendForce cut its NAND forecast),false
+NRGV,5.78,2.93,2.77,7950,4683875,0.170,540381528.95,Producer Manufacturing,NYSE,not checked (not published),true
+ACXP,5.77,1.10,1.04,783,108476,0.722,6663948.08,Health Technology,NASDAQ,not checked (not published),true
+PRQR,5.77,1.10,1.04,4581,861213,0.532,155233617.21,Health Technology,NASDAQ,not checked (not published),true
+PSIX,5.77,29.90,28.27,3621,557541,0.649,689656929.09,Producer Manufacturing,NASDAQ,not checked (not published),true
+GENB,5.77,10.09,9.54,1100,972501,0.113,1302585339.17,Health Technology,NASDAQ,not checked (not published),true
+ADTN,5.76,4.22,3.99,1363,1958132,0.070,343912389.17,Electronic Technology,NASDAQ,not checked (not published),true
+CTEV,5.74,19.33,18.28,300,274471,0.109,330055611.18,Technology Services,NYSE,not checked (not published),true
+MITQ,-5.74,0.51,0.54,120,60702,0.198,5046772.31,Consumer Durables,AMEX,not checked (not published),true
+SECZ,5.74,6.45,6.10,103628,2658200,3.898,1054808476.23,Technology Services,NYSE,not checked (not published),false
+MYSZ,-5.73,0.82,0.87,1681,134008,1.254,1076049.67,Technology Services,NASDAQ,not checked (not published),false
+ESI,5.72,31.21,29.52,5561,4213633,0.132,7571639647.97,Process Industries,NYSE,not checked (not published),true
+FBDT,5.72,0.88,0.84,8069,216927,3.720,42472040.35,Electronic Technology,NASDAQ,not checked (not published),false
+BENF,5.71,0.44,0.41,11534,352046,3.276,8319819.12,Finance,NASDAQ,not checked (not published),false
+Q,5.71,109.38,103.47,4057,2134172,0.190,22864431933.75,Electronic Technology,NYSE,not checked (not published),true
+HNRG,5.70,9.45,8.94,2219,1107701,0.200,445522576.56,Utilities,NASDAQ,not checked (not published),true
+CCJ,5.70,61.30,57.99,24405,4022640,0.607,26698170581.80,Non-Energy Minerals,NYSE,not checked (not published),true
+APP,5.70,368.13,348.29,50588,5188570,0.975,121969569235.11,Technology Services,NASDAQ,not checked (not published),true
+PARK,5.70,18.00,17.03,100,44738,0.224,99630525.31,Health Services,NASDAQ,not checked (not published),true
+TII,5.69,1.30,1.23,1338,233895,0.572,128736003.31,Non-Energy Minerals,AMEX,not checked (not published),true
+SGML,5.69,3.90,3.69,14102,3048697,0.463,439492229.28,Non-Energy Minerals,NASDAQ,not checked (not published),true
+INO,5.68,1.86,1.76,518195,20611588,2.514,348390803.35,Health Technology,NASDAQ,not checked (not published),false
+CRH,5.68,93.05,88.05,1109,5335855,0.021,61899725658.89,Non-Energy Minerals,NYSE,not checked (not published),true
+CSAI,-5.68,0.45,0.48,7436,781385,0.952,391958.67,Technology Services,NASDAQ,not checked (not published),true
+FIGS,5.68,21.21,20.07,5600,4279868,0.131,3515933382.15,Consumer Non-Durables,NYSE,not checked (not published),true
+FLEX,5.68,70.00,66.24,3951,6660340,0.059,25862256246.23,Electronic Technology,NASDAQ,not checked (not published),true
+PHUN,5.67,1.49,1.41,2599,75956,3.422,30807754.63,Technology Services,NASDAQ,not checked (not published),false
+RIOT,5.67,17.15,16.23,525261,25704721,2.043,6434404731.40,Technology Services,NASDAQ,not checked (not published),false
+AGL,-5.66,85.11,90.22,1948,233620,0.834,1429483129.13,Health Services,NYSE,No company news: hit by the same Nov 20 CMS Star Ratings proposal — about 75% of members sit in 4+ star plans,true
+ITOC,5.66,1.68,1.59,11192,38647,28.960,12290250.26,Health Technology,NASDAQ,not checked (not published),false
+BYRN,5.65,3.23,3.06,3872,403573,0.959,75667570.48,Electronic Technology,NASDAQ,not checked (not published),true
+MRVL,5.65,129.19,122.28,480216,28457588,1.687,113286713023.22,Electronic Technology,NASDAQ,not checked (not published),false
+BTCS,5.65,0.69,0.65,7772,720392,1.079,36531660.87,Finance,NASDAQ,not checked (not published),false
+DOCN,5.65,70.53,66.76,10823,3778412,0.286,8322315340.40,Technology Services,NYSE,not checked (not published),true
+NVMI,5.64,296.70,280.86,1189,289899,0.410,9436887171.69,Electronic Technology,NASDAQ,not checked (not published),true
+AIP,5.64,17.43,16.50,4723,636471,0.742,866882124.32,Electronic Technology,NASDAQ,not checked (not published),true
+SPXC,5.64,143.97,136.29,818,719013,0.114,7213186952.35,Producer Manufacturing,NYSE,not checked (not published),true
+CBRS,5.62,87.32,82.67,165540,12727032,1.301,20841283603.05,Technology Services,NASDAQ,not checked (not published),false
+QNT,5.62,29.30,27.74,27424,2661045,1.031,7788410332.60,Electronic Technology,NASDAQ,not checked (not published),false
+CHGA,5.62,0.75,0.71,2434,51850,4.694,1235538.66,Health Technology,NASDAQ,not checked (not published),false
+FIX,5.61,1101.00,1042.47,719,721224,0.100,38519475784.88,Industrial Services,NYSE,not checked (not published),true
+RYDE,-5.60,1.01,1.07,10692,566312,1.888,171440536.57,Technology Services,AMEX,not checked (not published),false
+LCID,5.60,2.64,2.50,168038,13291763,1.264,1046067867.04,Consumer Durables,NASDAQ,not checked (not published),false
+PLUG,5.59,1.01,0.96,1074338,59377873,1.809,1412860535.21,Electronic Technology,NASDAQ,not checked (not published),false
+ASPN,5.59,4.72,4.47,6730,1219128,0.552,392366222.23,Process Industries,NYSE,not checked (not published),true
+GNRC,5.59,204.02,193.22,2288,1277000,0.179,12034931640.89,Producer Manufacturing,NYSE,not checked (not published),true
+TLN,5.58,351.51,332.92,5287,1111678,0.476,15292553496.53,Utilities,NASDAQ,not checked (not published),true
+VIAV,5.58,28.20,26.71,7751,6431657,0.121,6935003521.95,Technology Services,NASDAQ,not checked (not published),true
+LASR,5.58,34.08,32.28,2133,1077371,0.198,1984618064.65,Electronic Technology,NASDAQ,not checked (not published),true
+AAON,5.57,79.40,75.21,1895,1428678,0.133,6547524964.03,Producer Manufacturing,NASDAQ,not checked (not published),true
+SILC,5.57,23.70,22.45,1927,211947,0.909,136218386.03,Electronic Technology,NASDAQ,not checked (not published),true
+VUZI,5.57,1.15,1.08,7355,1228314,0.599,97538688.45,Electronic Technology,NASDAQ,not checked (not published),true
+GOW,5.56,2.47,2.34,720,289881,0.248,10951399.44,Finance,NASDAQ,not checked (not published),true
+ENLT,5.55,62.71,59.41,444,201726,0.220,8780152805.65,Utilities,NASDAQ,not checked (not published),true
+FIRY,5.55,13.50,12.79,192,226016,0.085,224099996.83,Technology Services,NYSE,not checked (not published),true
+HSLV,5.54,3.24,3.07,14222,622320,2.285,663546883.01,Non-Energy Minerals,AMEX,not checked (not published),false
+ZSTK,5.54,2.96,2.80,100,36232,0.276,64479658.76,Health Technology,NASDAQ,not checked (not published),true
+WDC,5.53,275.56,261.11,86854,8626960,1.007,103148515240.15,Electronic Technology,NASDAQ,not checked (not published),false
+JBL,5.53,238.25,225.76,1648,1206689,0.137,24533668429.47,Producer Manufacturing,NYSE,not checked (not published),true
+ABX,5.53,6.49,6.15,400,859390,0.047,634671723.08,Finance,NYSE,not checked (not published),true
+AMBA,5.52,56.00,53.07,21604,1415248,1.527,2471894425.63,Electronic Technology,NASDAQ,not checked (not published),false
+FISN,5.52,3.06,2.90,6917,945209,0.732,180263355.95,Producer Manufacturing,NASDAQ,not checked (not published),true
+HCWB,-5.51,0.71,0.75,100,116507,0.086,2222448.54,Health Technology,NASDAQ,not checked (not published),true
+FGI,-5.51,4.63,4.90,4753,26433,17.981,8941784.82,Producer Manufacturing,NASDAQ,not checked (not published),false
+AMKR,5.50,31.90,30.24,35517,5187466,0.685,7906086382.49,Electronic Technology,NASDAQ,not checked (not published),true
+NVA,5.50,2.11,2.00,2247,770563,0.292,80590113.31,Non-Energy Minerals,AMEX,not checked (not published),true
+W,5.50,100.53,95.29,878,2170382,0.040,13756400111.42,Retail Trade,NYSE,not checked (not published),true
+EVTL,5.49,0.29,0.28,29776,3372201,0.883,48922730.89,Electronic Technology,NYSE,not checked (not published),true
+MITK,5.49,16.15,15.31,3644,604828,0.602,728726384.47,Technology Services,NASDAQ,not checked (not published),true
+PDFS,5.49,32.11,30.44,2875,686040,0.419,1356693457.17,Technology Services,NASDAQ,not checked (not published),true
+EQPT,5.48,14.24,13.50,1800,3463366,0.052,3619399243.44,Technology Services,NASDAQ,not checked (not published),true
+CHRS,5.46,0.39,0.37,6643,2318598,0.287,60269931.37,Health Technology,NASDAQ,not checked (not published),true
+NXE,5.46,6.76,6.41,22678,6131554,0.370,4651114555.82,Non-Energy Minerals,NYSE,not checked (not published),true
+GFS,5.46,37.50,35.56,19118,5627444,0.340,20578164705.08,Electronic Technology,NASDAQ,not checked (not published),true
+BLSH,5.45,20.11,19.07,21880,1587247,1.378,3022577199.82,Technology Services,NYSE,not checked (not published),false
+INEO,5.43,0.52,0.49,2000,14601,13.698,8439447.92,Distribution Services,NASDAQ,not checked (not published),false
+AMR,5.43,137.00,129.95,673,247859,0.272,1734700189.51,Energy Minerals,NYSE,not checked (not published),true
+ONFO,-5.42,0.38,0.40,69707,7463520,0.934,945465.33,Commercial Services,NASDAQ,not checked (not published),true
+SEGG,-5.42,0.76,0.80,281754,2650635,10.630,3175324.96,Consumer Services,NASDAQ,not checked (not published),false
+CTXR,-5.41,0.48,0.51,145,263441,0.055,13204685.37,Health Technology,NASDAQ,not checked (not published),true
+AGX,5.41,283.48,268.94,706,301020,0.235,3977179483.17,Industrial Services,NYSE,not checked (not published),true
+GTBP,-5.41,2.80,2.96,1000,71409,1.400,5984271.62,Health Technology,NASDAQ,not checked (not published),false
+SHLS,5.40,6.83,6.48,1971,6695085,0.029,1150663139.19,Electronic Technology,NASDAQ,not checked (not published),true
+ATOM,5.39,2.15,2.04,8848,737426,1.200,84029310.00,Commercial Services,NASDAQ,not checked (not published),false
+HUMA,5.39,0.47,0.45,81906,5992483,1.367,130398426.31,Health Technology,NASDAQ,not checked (not published),false
+SXTP,5.38,0.49,0.47,1540,681924,0.226,2212712.47,Health Technology,NASDAQ,not checked (not published),true
+QS,5.38,2.94,2.79,191194,16115418,1.186,1829026473.20,Producer Manufacturing,NASDAQ,not checked (not published),false
+CDNL,5.37,5.00,4.75,20710,2326154,0.890,237689158.06,Industrial Services,NASDAQ,not checked (not published),true
+AVAV,5.37,91.45,86.79,8361,1417353,0.590,4647553209.93,Electronic Technology,NASDAQ,not checked (not published),true
+KRMN,5.37,30.82,29.25,7727,3525284,0.219,4084688839.47,Electronic Technology,NYSE,not checked (not published),true
+SDGR,5.36,24.16,22.93,9305,1674770,0.556,1813879617.44,Technology Services,NASDAQ,not checked (not published),true
+METC,5.36,5.70,5.41,3950,2246356,0.176,330150138.30,Energy Minerals,NASDAQ,not checked (not published),true
+ISOU,5.36,5.90,5.60,1440,117307,1.228,385141266.85,Non-Energy Minerals,AMEX,not checked (not published),false
+PLPC,5.36,260.00,246.78,1976,84385,2.342,1268979667.40,Producer Manufacturing,NASDAQ,not checked (not published),false
+ERO,5.36,22.62,21.47,15275,1640207,0.931,2361962428.28,Non-Energy Minerals,NYSE,not checked (not published),true
+ROAD,5.35,73.00,69.29,1362,799154,0.170,4188810342.96,Industrial Services,NASDAQ,not checked (not published),true
+PRME,5.35,3.74,3.55,12068,5521307,0.219,680386033.89,Health Technology,NASDAQ,not checked (not published),true
+VZLA,5.35,2.56,2.43,79973,5421810,1.475,908945653.42,Non-Energy Minerals,AMEX,not checked (not published),false
+MTRN,5.35,192.23,182.47,40,222143,0.018,4010017306.18,Electronic Technology,NYSE,not checked (not published),true
+BTG,5.34,4.34,4.12,73829,25444821,0.290,5716736903.57,Non-Energy Minerals,AMEX,not checked (not published),true
+CGC,5.34,0.45,0.43,125836,2868664,4.387,202236436.46,Process Industries,NASDAQ,not checked (not published),false
+MCHP,5.34,58.40,55.44,10338,15562089,0.066,31782659369.24,Electronic Technology,NASDAQ,not checked (not published),true
+MU,5.34,626.24,594.51,1270693,31562294,4.026,708542487537.68,Electronic Technology,NASDAQ,not checked (not published),false
+FPS,5.33,18.96,18.00,93592,11020497,0.849,5771971841.83,Producer Manufacturing,NYSE,not checked (not published),true
+CC,5.33,11.46,10.88,300,2477070,0.012,1725125215.16,Process Industries,NYSE,not checked (not published),true
+NXDR,5.32,1.98,1.88,794,2106235,0.038,765835363.72,Technology Services,NASDAQ,not checked (not published),true
+OESX,5.32,11.29,10.72,500,40444,1.236,46340380.03,Electronic Technology,NASDAQ,not checked (not published),false
+AMTM,5.31,21.42,20.34,100,1730370,0.006,5237327313.36,Electronic Technology,NYSE,not checked (not published),true
+ZURA,5.31,0.98,0.93,25341,7202065,0.352,94389272.41,Health Technology,NASDAQ,not checked (not published),true
+OKTA,5.30,201.61,191.46,10892,4606809,0.236,35245613702.02,Technology Services,NASDAQ,not checked (not published),true
+CVKD,-5.29,1.61,1.70,201,134870,0.149,6636550.69,Health Technology,NASDAQ,not checked (not published),true
+AUR,5.28,3.69,3.50,84159,25500037,0.330,7455856625.27,Technology Services,NASDAQ,not checked (not published),true
+POWL,5.28,156.00,148.18,5651,872468,0.648,5687521539.40,Producer Manufacturing,NASDAQ,not checked (not published),true
+ONCO,5.27,3.04,2.89,4590,291190,1.576,2496545.07,Health Technology,NASDAQ,not checked (not published),false
+CAST,5.26,0.93,0.88,15988,269013,5.943,47232294.74,Technology Services,NASDAQ,not checked (not published),false
+IAM,5.26,13.80,13.11,1584,,,675287524.21,Health Technology,NASDAQ,not checked (not published),true
+INTJ,5.26,2.00,1.90,2000,19834,10.084,4274995.79,Commercial Services,NASDAQ,not checked (not published),false
+VANI,5.26,1.20,1.14,4163,258122,1.613,108244032.63,Health Technology,NASDAQ,not checked (not published),false
+PI,5.26,151.50,143.93,719,400648,0.179,4675226282.21,Electronic Technology,NASDAQ,not checked (not published),true
+ACLS,5.25,95.00,90.26,100,386743,0.026,2933952964.05,Producer Manufacturing,NASDAQ,not checked (not published),true
+SLND,-5.25,0.77,0.81,3611,943202,0.383,41900340.80,Industrial Services,AMEX,not checked (not published),true
+ATLC,5.25,81.00,76.96,200,119151,0.168,1243169643.44,Finance,NASDAQ,not checked (not published),true
+FN,5.25,300.00,285.04,5490,1136029,0.483,10715254533.05,Electronic Technology,NYSE,not checked (not published),true
+STX,5.24,480.97,457.01,34351,5715447,0.601,110412515168.35,Electronic Technology,NASDAQ,not checked (not published),true
+ZENA,5.24,0.50,0.48,16325,1983886,0.823,100651313.08,Technology Services,NASDAQ,not checked (not published),true
+SNAL,-5.24,2.17,2.29,2517,245314,1.026,19455384.22,Technology Services,NASDAQ,not checked (not published),false
+SLBT,-5.24,0.52,0.55,1947,51696,3.766,292267992.12,Health Technology,NASDAQ,not checked (not published),false
+GRRR,5.23,5.53,5.25,23423,1206184,1.942,152509144.46,Technology Services,NASDAQ,not checked (not published),false
+FSLY,5.23,15.69,14.91,25237,6258534,0.403,2529244046.34,Technology Services,NASDAQ,not checked (not published),true
+VTR,-5.22,82.03,86.55,324,3520976,0.009,44313060279.71,Finance,NYSE,not checked (not published),true
+YSS,5.21,3.84,3.65,1384,2096946,0.066,520586498.10,Electronic Technology,NYSE,not checked (not published),true
+SOFI,5.20,13.13,12.48,1777089,55830796,3.183,17039865832.97,Finance,NASDAQ,not checked (not published),false
+TGEN,5.19,1.62,1.54,500,332891,0.150,48904270.71,Producer Manufacturing,AMEX,not checked (not published),true
+UROY,5.17,2.44,2.32,27164,2672872,1.016,929804251.97,Non-Energy Minerals,NASDAQ,not checked (not published),false
+SNOW,5.17,268.00,254.82,17523,4454273,0.393,94550399445.74,Technology Services,NYSE,not checked (not published),true
+AIRJ,5.16,1.63,1.55,5029,978387,0.514,124574193.86,Producer Manufacturing,NASDAQ,not checked (not published),true
+VRT,5.16,174.82,166.24,109917,8079943,1.360,67316260353.13,Electronic Technology,NYSE,not checked (not published),false
+MYO,5.15,0.85,0.81,1000,277530,0.360,34196575.47,Distribution Services,AMEX,not checked (not published),true
+EAF,5.15,7.55,7.18,500,557803,0.090,203075911.54,Producer Manufacturing,NYSE,not checked (not published),true
+BIOA,5.14,4.50,4.28,1068,717122,0.149,206813294.16,Health Technology,NASDAQ,not checked (not published),true
+CGAU,5.14,17.60,16.74,4932,1225505,0.402,3408624002.01,Non-Energy Minerals,NYSE,not checked (not published),true
+GORO,5.14,3.07,2.92,879,1245270,0.071,489368925.07,Non-Energy Minerals,AMEX,not checked (not published),true
+TOYO,5.14,3.89,3.70,9173,563841,1.627,166293866.53,Electronic Technology,NASDAQ,not checked (not published),false
+SION,5.13,2.97,2.83,1020,865152,0.118,134349631.07,Health Technology,NASDAQ,not checked (not published),true
+GOOGL,5.13,278.90,265.29,816339,37927922,2.152,3401499153129.86,Technology Services,NASDAQ,not checked (not published),false
+QXO,5.13,10.87,10.34,142313,20700931,0.687,11304350346.79,Distribution Services,NYSE,not checked (not published),true
+XRPN,5.12,7.19,6.84,3398,691802,0.491,419931923.72,Finance,NASDAQ,not checked (not published),true
+NRXP,5.12,2.26,2.15,6124,1560324,0.392,100181239.00,Health Technology,NASDAQ,not checked (not published),true
+AXON,5.10,306.00,291.14,5436,1485731,0.366,24918410127.74,Electronic Technology,NASDAQ,not checked (not published),true
+MWH,5.10,25.95,24.69,182,1928737,0.009,5261898209.32,Industrial Services,NASDAQ,not checked (not published),true
+SHMD,5.10,1.65,1.57,3233,819867,0.394,112910599.30,Electronic Technology,NASDAQ,not checked (not published),true
+SEDG,5.09,19.20,18.27,27757,3066655,0.905,1188756548.31,Producer Manufacturing,NASDAQ,not checked (not published),true
+AZIO,-5.08,0.42,0.45,421427,1025139,41.109,7885522.67,Technology Services,NASDAQ,not checked (not published),false
+ATI,5.07,174.00,165.60,550,1759542,0.031,23633152085.33,Non-Energy Minerals,NYSE,not checked (not published),true
+CTM,5.06,0.39,0.37,49087,591815,8.294,37059282.46,Process Industries,AMEX,not checked (not published),false
+ZKIN,5.06,1.66,1.58,491,13429,3.656,120702426.41,Producer Manufacturing,NASDAQ,not checked (not published),false
+NNE,5.06,9.56,9.10,18649,2033460,0.917,513375748.08,Producer Manufacturing,NASDAQ,not checked (not published),true
+SNAP,5.05,4.78,4.55,959076,46286458,2.072,8253036800.39,Technology Services,NYSE,not checked (not published),false
+FFAI,-5.05,0.10,0.10,9221185,4440691,207.652,1265833.95,Consumer Durables,NASDAQ,not checked (not published),false
+FSM,5.05,7.70,7.33,31816,4948175,0.643,2278871725.53,Non-Energy Minerals,NYSE,not checked (not published),true
+SKYA,5.05,2.29,2.18,36644,3244819,1.129,116456118.00,Technology Services,NASDAQ,not checked (not published),false
+BELFA,5.04,162.44,154.64,1071,103737,1.032,2886037087.55,Electronic Technology,NASDAQ,not checked (not published),false
+UONE,5.04,2.50,2.38,500,17647,2.833,10026065.13,Consumer Services,NASDAQ,not checked (not published),false
+ICMB,-5.04,0.93,0.98,4700,2754143,0.171,13373127.44,Finance,NASDAQ,not checked (not published),true
+AMTX,5.04,0.85,0.81,7095,1600322,0.443,62132948.53,Process Industries,NASDAQ,not checked (not published),true
+APH,5.04,73.26,69.75,16612,14455393,0.115,180898327838.06,Electronic Technology,NYSE,not checked (not published),true
+GOOG,5.04,277.30,264.00,584962,24876529,2.351,3398510964008.61,Technology Services,NASDAQ,not checked (not published),false
+OGC,5.03,23.58,22.45,4670,636628,0.734,5198616923.22,Non-Energy Minerals,NYSE,not checked (not published),true
+FEIM,5.03,57.00,54.27,690,233034,0.296,642577354.28,Electronic Technology,NASDAQ,not checked (not published),true
+BTOC,-5.03,1.70,1.79,233,62777,0.371,4828384.64,Transportation,NASDAQ,not checked (not published),true
+CDLR,-5.02,6.05,6.37,6358,,,2150199352.08,Industrial Services,NYSE,not checked (not published),true
+APUS,-5.00,1.52,1.60,900,124598,0.722,2808391.90,Health Technology,AMEX,not checked (not published),true
+CLW,5.00,16.60,15.81,100,275886,0.036,267952492.99,Process Industries,NYSE,not checked (not published),true
+FOSL,4.99,7.57,7.21,2220,1190589,0.186,452738784.21,Consumer Durables,NASDAQ,not checked (not published),true
+TPST,-4.99,0.27,0.29,29523,206337,14.308,5452214.49,Health Technology,NASDAQ,not checked (not published),false
+FIGR,4.99,25.03,23.84,15351,5188699,0.296,5663847674.06,Finance,NASDAQ,not checked (not published),true
+ALMU,4.99,5.11,4.87,1028,790175,0.130,98923839.06,Commercial Services,NASDAQ,not checked (not published),true
+TNXP,4.99,2.50,2.38,30477,1116567,2.730,48553527.90,Health Technology,NASDAQ,not checked (not published),false
+CNDT,4.99,0.92,0.88,498,1287379,0.039,143227175.85,Commercial Services,NASDAQ,not checked (not published),true
+AGI,4.99,26.11,24.87,28586,3871024,0.738,10928633876.79,Non-Energy Minerals,NYSE,not checked (not published),true
+ZCMD,4.98,0.82,0.78,2661,115046,2.313,3655872.47,Commercial Services,NASDAQ,not checked (not published),false
+GIL,4.97,34.61,32.97,260,2090507,0.012,6409880114.56,Consumer Non-Durables,NYSE,not checked (not published),true
+BBOT,4.97,1.90,1.81,534,632845,0.084,152477401.77,Health Technology,NASDAQ,not checked (not published),true
+TPVG,4.97,3.59,3.42,1884,264110,0.713,146625586.92,Miscellaneous,NYSE,not checked (not published),true
+TFPM,4.97,28.30,26.96,3974,550486,0.722,5820898570.08,Non-Energy Minerals,NYSE,not checked (not published),true
+ARCT,4.97,7.82,7.45,111,649760,0.017,225392050.77,Health Technology,NASDAQ,not checked (not published),true
+SLSN,4.96,1.48,1.41,9551,808415,1.181,104557630.33,Consumer Non-Durables,NASDAQ,not checked (not published),false
+AEM,4.96,158.81,151.30,14979,2136863,0.701,80910054597.20,Non-Energy Minerals,NYSE,not checked (not published),true
+LUMN,4.96,4.02,3.83,28876,16988574,0.170,4144791670.79,Communications,NASDAQ,not checked (not published),true
+CVM,-4.96,1.15,1.21,9478,251016,3.776,20227333.84,Health Technology,AMEX,not checked (not published),false
+BESS,4.95,2.33,2.22,3902,241210,1.618,17236346.08,Producer Manufacturing,AMEX,not checked (not published),false
+HTZ,4.95,1.17,1.11,302675,21918226,1.381,416447650.70,Finance,NASDAQ,not checked (not published),false
+GLW,4.95,99.06,94.38,157184,10197334,1.541,85327205581.47,Electronic Technology,NYSE,not checked (not published),false
+SLI,4.95,1.06,1.01,67427,1738969,3.877,261591201.15,Non-Energy Minerals,AMEX,not checked (not published),false
+EBS,4.95,5.30,5.05,206,1049075,0.020,272500485.49,Health Technology,NYSE,not checked (not published),true
+LAR,4.93,3.19,3.04,8135,2091481,0.389,523797978.73,Non-Energy Minerals,NYSE,not checked (not published),true
+PAAS,4.93,32.12,30.61,43620,5488603,0.795,13243781980.43,Non-Energy Minerals,NYSE,not checked (not published),true
+SVRN,4.93,11.28,10.75,1000,80150,1.248,21159745.92,Finance,NASDAQ,not checked (not published),false
+ZNB,-4.93,0.35,0.36,80017,5215013,1.534,1728214.96,Technology Services,NASDAQ,not checked (not published),false
+ALEC,4.93,2.45,2.33,9846,2119866,0.464,364748839.91,Health Technology,NASDAQ,not checked (not published),true
+GOAI,4.92,0.55,0.52,1439,116412,1.236,22623358.16,Technology Services,NASDAQ,not checked (not published),false
+QTTB,4.92,8.75,8.34,385,436266,0.088,261833984.41,Health Technology,NASDAQ,not checked (not published),true
+WPM,4.90,115.30,109.91,29470,2025624,1.455,52367989472.92,Non-Energy Minerals,NYSE,not checked (not published),false
+BNC,4.90,3.21,3.06,30207,865403,3.491,156561690.86,Producer Manufacturing,NASDAQ,not checked (not published),false
+ZSQR,4.90,1.82,1.74,100,340025,0.029,96460722.76,Technology Services,NASDAQ,not checked (not published),true
+ITRG,4.90,1.50,1.43,200,1958034,0.010,304309578.20,Non-Energy Minerals,AMEX,not checked (not published),true
+FET,4.88,72.40,69.03,109,173372,0.063,830623404.49,Industrial Services,NYSE,not checked (not published),true
+MOB,-4.88,1.17,1.23,200,212693,0.094,15055153.83,Electronic Technology,NASDAQ,not checked (not published),true
+BYND,4.87,3.99,3.80,13862,1109966,1.249,74745347.78,Consumer Non-Durables,NASDAQ,not checked (not published),false
+TGB,4.87,5.60,5.34,37389,4085640,0.915,2053943684.60,Non-Energy Minerals,AMEX,not checked (not published),true
+MDRN,-4.87,2.71,2.85,4842,,,40571793.31,Non-Energy Minerals,AMEX,not checked (not published),true
+IPGP,4.86,61.49,58.64,1019,365291,0.279,2613825536.36,Electronic Technology,NASDAQ,not checked (not published),true
+TLSA,-4.85,0.59,0.62,1278,542187,0.236,75766538.34,Health Technology,NASDAQ,not checked (not published),true
+TSLA,4.85,362.59,345.82,683852,36637361,1.867,1433223854422.94,Consumer Durables,NASDAQ,not checked (not published),false
+COHR,4.84,196.29,187.22,258325,9425238,2.741,38661019391.98,Electronic Technology,NYSE,not checked (not published),false
+ASYS,4.84,11.26,10.74,7674,267623,2.867,197141229.07,Producer Manufacturing,NASDAQ,not checked (not published),false
+ENPH,4.84,20.58,19.63,28585,7448616,0.384,2723027874.64,Producer Manufacturing,NASDAQ,not checked (not published),true
+UTI,4.83,18.00,17.17,305,1496486,0.020,991781986.37,Commercial Services,NYSE,not checked (not published),true
+VSEC,4.81,178.51,170.31,120,538157,0.022,5011017996.06,Industrial Services,NASDAQ,not checked (not published),true
+CWEN,4.80,29.90,28.53,4723,1507487,0.313,6137718141.29,Utilities,NYSE,not checked (not published),true
+ON,4.80,63.76,60.84,23780,10592498,0.224,24820778816.63,Electronic Technology,NASDAQ,not checked (not published),true
+KTOS,4.80,28.18,26.89,63064,4902558,1.286,5305547498.28,Electronic Technology,NASDAQ,not checked (not published),false
+BDMD,4.79,0.09,0.09,85004,34745295,0.245,5312763.68,Health Technology,NASDAQ,not checked (not published),true
+KGC,4.79,18.15,17.32,35295,8992304,0.393,21381390799.53,Non-Energy Minerals,NYSE,not checked (not published),true
+AMD,4.79,444.73,424.39,697236,35008673,1.992,729390301026.53,Electronic Technology,NASDAQ,not checked (not published),false
+USAU,4.79,8.10,7.73,250,199961,0.125,133882159.83,Non-Energy Minerals,NASDAQ,not checked (not published),true
+ORCL,4.78,106.03,101.19,469198,38113405,1.231,320606744720.60,Technology Services,NYSE,not checked (not published),false
+AMRC,4.78,21.69,20.70,1000,613760,0.163,1151985742.09,Industrial Services,NYSE,not checked (not published),true
+PICS,4.78,5.26,5.02,600,1019086,0.059,681630466.90,Commercial Services,NASDAQ,not checked (not published),true
+MP,4.77,35.57,33.95,128937,6380970,2.021,6340992007.74,Non-Energy Minerals,NYSE,not checked (not published),false
+OR,4.77,31.85,30.40,739,934084,0.079,5936987318.15,Non-Energy Minerals,NYSE,not checked (not published),true
+TXG,4.77,54.27,51.80,4953,3244820,0.153,7138360618.07,Health Technology,NASDAQ,not checked (not published),true
+CALC,-4.76,1.20,1.26,400,74230,0.539,8274178.10,Health Technology,NASDAQ,not checked (not published),true
+B,4.76,33.04,31.54,137366,8514412,1.613,53810026088.48,Non-Energy Minerals,NYSE,not checked (not published),false
+SATA,4.75,89.04,85.00,9617,443152,2.170,1935668375.05,Finance,NASDAQ,not checked (not published),false
+POLA,-4.75,0.24,0.25,63747,7233307,0.881,1045010.22,Electronic Technology,NASDAQ,not checked (not published),true
+FIVN,4.75,23.60,22.53,3257,1843061,0.177,1777088948.73,Technology Services,NASDAQ,not checked (not published),true
+PESI,4.75,13.24,12.64,100,312194,0.032,281191240.46,Industrial Services,NASDAQ,not checked (not published),true
+HCC,4.74,80.16,76.53,480,651404,0.074,4232615069.10,Energy Minerals,NYSE,not checked (not published),true
+SSYS,4.74,5.30,5.06,28583,967989,2.953,466838359.23,Electronic Technology,NASDAQ,not checked (not published),false
+EAT,4.73,195.62,186.78,500,1309167,0.038,8126582511.08,Consumer Services,NYSE,not checked (not published),true
+APPS,4.72,6.01,5.74,13083,3875669,0.338,732736780.21,Technology Services,NASDAQ,not checked (not published),true
+AVAH,4.72,11.53,11.01,7638,2234290,0.342,2518262644.02,Health Services,NASDAQ,not checked (not published),true
+BWA,4.72,49.17,46.95,200,2907504,0.007,9873505196.89,Producer Manufacturing,NYSE,not checked (not published),true
+REAX,4.72,8.65,8.26,3415,807535,0.423,328144634.39,Finance,NASDAQ,not checked (not published),true
+S,4.71,23.99,22.91,35559,11981351,0.297,8349698651.42,Technology Services,NYSE,not checked (not published),true
+TNYA,4.71,0.30,0.29,114316,3411569,3.351,68401263.17,Health Technology,NASDAQ,not checked (not published),false
+ZETA,4.71,30.90,29.51,24695,5680199,0.435,7893682153.42,Technology Services,NYSE,not checked (not published),true
+AVGO,4.71,318.74,304.41,284137,27252409,1.043,1521546807152.66,Electronic Technology,NASDAQ,not checked (not published),false
+WRBY,4.69,24.20,23.11,13298,4367026,0.305,2997178932.65,Retail Trade,NYSE,not checked (not published),true
+RGLD,4.69,232.45,222.03,2689,670424,0.401,19652050481.81,Non-Energy Minerals,NASDAQ,not checked (not published),true
+CABA,4.69,0.98,0.94,21724,4765351,0.456,211405991.54,Health Technology,NASDAQ,not checked (not published),true
+SKYQ,4.69,0.67,0.64,25110,935875,2.683,6193804.53,Energy Minerals,NASDAQ,not checked (not published),false
+MDB,4.69,299.30,285.90,10584,1443780,0.733,24110512968.19,Technology Services,NASDAQ,not checked (not published),true
+LAND,4.68,6.49,6.20,12760,1081526,1.180,280970566.14,Finance,NASDAQ,not checked (not published),false
+MTZ,4.67,151.47,144.71,1457,1813264,0.080,12163167989.45,Industrial Services,NYSE,not checked (not published),true
+CTGO,4.67,9.87,9.43,140,476983,0.029,333508449.23,Non-Energy Minerals,AMEX,not checked (not published),true
+AAUC,4.66,18.63,17.80,2160,493157,0.438,2617515085.81,Non-Energy Minerals,NYSE,not checked (not published),true
+ADI,4.66,362.03,345.92,12674,4757898,0.266,175429614738.78,Electronic Technology,NASDAQ,not checked (not published),true
+POWW,4.65,2.70,2.58,4269,691253,0.618,303917957.79,Electronic Technology,NASDAQ,not checked (not published),true
+SEZL,4.64,143.80,137.42,512,581953,0.088,4858053069.64,Technology Services,NASDAQ,not checked (not published),true
+HRTG,-4.64,30.86,32.36,100,218953,0.046,914456367.53,Finance,NYSE,not checked (not published),true
+GRAL,4.63,103.85,99.25,406,854876,0.047,4669321713.92,Health Technology,NASDAQ,not checked (not published),true
+GENI,4.63,5.42,5.18,1259,7039335,0.018,1506311536.85,Technology Services,NYSE,not checked (not published),true
+MF,4.62,16.07,15.36,100,201630,0.050,102334820.87,Commercial Services,NASDAQ,not checked (not published),true
+PLTR,4.62,150.12,143.49,266084,24189687,1.100,361713751866.20,Technology Services,NASDAQ,not checked (not published),false
+NTRA,4.61,286.00,273.40,3867,1970770,0.196,41471290822.40,Health Technology,NASDAQ,not checked (not published),true
+GPRK,4.60,9.10,8.70,400,800154,0.050,590557022.44,Energy Minerals,NYSE,not checked (not published),true
+NEPH,4.60,2.73,2.61,1100,65492,1.680,29675109.41,Health Technology,NASDAQ,not checked (not published),false
+SAIL,4.60,22.30,21.32,14094,4291565,0.328,12731328967.64,Technology Services,NASDAQ,not checked (not published),true
+WCC,4.60,295.00,282.04,7469,721999,1.034,14357599254.64,Distribution Services,NYSE,not checked (not published),false
+UAL,4.59,105.67,101.03,15507,5431671,0.285,34331588578.79,Transportation,NASDAQ,not checked (not published),true
+SGRX,4.59,2.28,2.18,664,1419404,0.047,1198008.22,Consumer Non-Durables,NASDAQ,not checked (not published),true
+SPAI,4.58,2.31,2.21,3465,718407,0.482,48490950.59,Electronic Technology,NASDAQ,not checked (not published),true
+U,4.58,46.80,44.75,51640,12041568,0.429,20771183385.89,Technology Services,NYSE,not checked (not published),true
+MNOV,4.58,1.37,1.31,2000,61210,3.267,70188755.08,Health Technology,NASDAQ,not checked (not published),false
+BULL,4.58,4.34,4.15,181345,10085534,1.798,2346514385.30,Finance,NASDAQ,not checked (not published),false
+FMC,4.58,4.08,3.90,19834,8458282,0.234,634444995.21,Process Industries,NYSE,not checked (not published),true
+MPT,4.57,1.83,1.75,304685,23356781,1.304,1077687044.97,Finance,NYSE,not checked (not published),false
+NEM,4.56,99.00,94.68,75390,7116336,1.059,102880130824.62,Non-Energy Minerals,NYSE,not checked (not published),false
+KN,4.56,32.35,30.94,468,795855,0.059,2740723925.50,Electronic Technology,NYSE,not checked (not published),true
+PRPO,4.55,18.14,17.35,220,31093,0.708,32523841.68,Health Services,NASDAQ,not checked (not published),true
+LNKS,-4.55,0.60,0.63,855,5231006,0.016,1062456.36,Electronic Technology,NASDAQ,not checked (not published),true
+LODE,4.55,1.38,1.32,8281,1780300,0.465,104958252.27,Industrial Services,AMEX,not checked (not published),true
+DRMA,4.53,0.53,0.51,788,5890210,0.013,2625828.81,Consumer Non-Durables,NASDAQ,not checked (not published),true
+VIP,4.53,0.60,0.57,2650,78898,3.359,21541266.90,Technology Services,NASDAQ,not checked (not published),false
+INLF,4.53,0.24,0.23,6412399,51945445,12.344,366071.08,Producer Manufacturing,NASDAQ,not checked (not published),false
+CECO,4.52,50.18,48.01,320,1437403,0.022,2941814329.27,Producer Manufacturing,AMEX,not checked (not published),true
+VCIG,-4.51,2.54,2.66,1833,681114,0.269,1360254.03,Commercial Services,NASDAQ,not checked (not published),true
+ROG,4.50,114.50,109.57,340,232009,0.147,2037577732.86,Process Industries,NYSE,not checked (not published),true
+HPAI,4.50,0.23,0.22,2491,6369330,0.039,8658789.41,Technology Services,NASDAQ,not checked (not published),true
+NKLR,4.50,2.10,2.01,300,366290,0.082,232096106.03,Producer Manufacturing,NASDAQ,not checked (not published),true
+RPD,4.50,14.94,14.30,3839,1931598,0.199,1024136827.07,Technology Services,NASDAQ,not checked (not published),true
+BWXT,4.50,113.42,108.54,2329,1306315,0.178,10392130085.77,Electronic Technology,NYSE,not checked (not published),true
+IHRT,4.49,0.47,0.45,2555,3101876,0.082,63160623.99,Consumer Services,NASDAQ,not checked (not published),true
+TMDE,-4.49,0.45,0.47,10706,59366,18.034,10580684.52,Distribution Services,AMEX,not checked (not published),false
+CLPT,4.49,7.22,6.91,2418,714528,0.338,231431808.82,Health Technology,NASDAQ,not checked (not published),true
+EVR,4.48,284.00,271.82,1253,547106,0.229,10786549899.79,Finance,NYSE,not checked (not published),true
+GRAN,-4.48,1.28,1.34,430,16413,2.620,31980916.54,Commercial Services,NASDAQ,not checked (not published),false
+BOOM,-4.48,6.40,6.70,100,686083,0.015,131462068.54,Industrial Services,NASDAQ,not checked (not published),true
+PRIM,4.48,56.00,53.60,1932,1555418,0.124,2941607215.67,Industrial Services,NYSE,not checked (not published),true
+NTSK,4.47,25.00,23.93,54270,6415523,0.846,10214693219.81,Technology Services,NASDAQ,not checked (not published),true
+CD,4.47,3.97,3.80,2639,368845,0.715,436704078.31,Technology Services,NASDAQ,not checked (not published),true
+AFRM,4.46,56.41,54.00,18202,4308819,0.422,19123822166.59,Finance,NASDAQ,not checked (not published),true
+ECX,4.46,0.55,0.53,17439,1056713,1.650,196246049.19,Technology Services,NASDAQ,not checked (not published),false
+BMEA,4.46,0.60,0.57,12456,2107670,0.591,43606846.80,Health Technology,NASDAQ,not checked (not published),true
+HIMS,4.45,15.25,14.60,194392,14164606,1.372,3574789392.47,Health Services,NYSE,not checked (not published),false
+BIRK,-4.45,32.00,33.49,312,1847288,0.017,5692410441.80,Consumer Non-Durables,NYSE,not checked (not published),true
+PWR,4.45,583.90,559.03,3525,1562295,0.226,87980386237.32,Industrial Services,NYSE,not checked (not published),true
+PEPG,4.44,3.95,3.78,1575,6086674,0.026,273443546.60,Health Technology,NASDAQ,not checked (not published),true
+RDDT,4.44,89.12,85.33,49375,6684954,0.739,17208513356.61,Technology Services,NYSE,not checked (not published),true
+FCX,4.44,48.03,45.99,92868,13920208,0.667,68919980283.54,Non-Energy Minerals,NYSE,not checked (not published),true
+OPTX,4.44,6.57,6.29,18537,657910,2.818,264598533.60,Electronic Technology,NASDAQ,not checked (not published),false
+QUCY,4.43,0.53,0.51,6096,422814,1.442,46648159.55,Health Technology,NASDAQ,not checked (not published),false
+FVRR,4.43,7.55,7.23,3304,986823,0.335,271427978.19,Technology Services,NYSE,not checked (not published),true
+LION,4.42,13.70,13.12,3302,3577121,0.092,4080647061.87,Consumer Services,NYSE,not checked (not published),true
+BCDA,-4.42,0.75,0.79,100,120925,0.083,11358629.21,Health Technology,NASDAQ,not checked (not published),true
+CXDO,4.42,4.49,4.30,1726,239094,0.722,149856393.88,Technology Services,NASDAQ,not checked (not published),true
+PUMP,4.41,6.63,6.35,11015,5641834,0.195,814577270.35,Industrial Services,NYSE,not checked (not published),true
+ASTL,4.41,4.50,4.31,19669,1301248,1.512,475476615.37,Producer Manufacturing,NASDAQ,not checked (not published),false
+NVEC,4.40,73.12,70.04,602,124848,0.482,354199062.58,Electronic Technology,NASDAQ,not checked (not published),true
+VTIX,4.39,0.39,0.37,100,278727,0.036,13404727.95,Electronic Technology,NASDAQ,not checked (not published),true
+ACCV,4.38,10.00,9.58,219,1425842,0.015,2249999947.81,Producer Manufacturing,NASDAQ,not checked (not published),true
+TXN,4.38,275.30,263.75,63654,8629249,0.738,251560970391.35,Electronic Technology,NASDAQ,not checked (not published),true
+LCTX,4.38,0.81,0.77,12915,1981183,0.652,203805660.32,Health Technology,AMEX,not checked (not published),true
+FNV,4.38,232.98,223.21,3807,639639,0.595,44945445854.89,Non-Energy Minerals,NYSE,not checked (not published),true
+UI,4.38,616.51,590.66,729,90360,0.807,37286205329.75,Electronic Technology,NYSE,not checked (not published),true
+KEYS,4.37,272.94,261.51,29139,1557872,1.870,46372506065.75,Electronic Technology,NYSE,not checked (not published),false
+ACRS,4.36,3.59,3.44,1354,2809901,0.048,569417635.20,Health Technology,NASDAQ,not checked (not published),true
+NTAP,4.36,164.52,157.65,840,2004533,0.042,32314853673.37,Electronic Technology,NASDAQ,not checked (not published),true
+HLIT,4.36,9.82,9.41,2338,1557046,0.150,1055161799.90,Electronic Technology,NASDAQ,not checked (not published),true
+TPC,4.36,90.81,87.02,2020,578856,0.349,4773801466.41,Industrial Services,NYSE,not checked (not published),true
+TEAD,-4.35,0.11,0.12,299,354764,0.084,10862833.83,Technology Services,NASDAQ,not checked (not published),true
+MRT,4.35,1.92,1.84,3747,58159,6.443,165772150.96,Finance,AMEX,not checked (not published),false
+EXTR,4.34,25.25,24.20,900,1699737,0.053,3312570012.15,Electronic Technology,NASDAQ,not checked (not published),true
+STLN,4.33,3.13,3.00,18221,4025609,0.453,319231893.64,Health Services,NASDAQ,not checked (not published),true
+CRS,4.33,265.00,254.00,382,1221231,0.031,13128294334.72,Non-Energy Minerals,NYSE,not checked (not published),true
+WNC,4.33,10.36,9.93,4170,862749,0.483,422052914.26,Producer Manufacturing,NYSE,not checked (not published),true
+VAL,4.32,73.86,70.80,2297,794833,0.289,5129064204.00,Industrial Services,NYSE,not checked (not published),true
+FRSH,4.31,12.58,12.06,5085,5328042,0.095,3300085315.80,Technology Services,NASDAQ,not checked (not published),true
+CLF,4.31,11.13,10.67,96421,22302205,0.432,6350610660.92,Non-Energy Minerals,NYSE,not checked (not published),true
+SXI,4.31,217.51,208.53,1133,169003,0.670,2632677984.73,Electronic Technology,NYSE,not checked (not published),true
+SSMR,4.31,10.90,10.45,5800,1121822,0.517,1568953482.93,Non-Energy Minerals,NYSE,not checked (not published),true
+TWLO,4.30,179.50,172.10,3040,2605212,0.117,27774758301.56,Technology Services,NYSE,not checked (not published),true
+CMCO,4.30,18.20,17.45,100,511056,0.020,526463578.69,Producer Manufacturing,NASDAQ,not checked (not published),true
+HPP,4.30,7.77,7.45,150,944914,0.016,431316396.23,Finance,NYSE,not checked (not published),true
+PACB,4.29,1.70,1.63,28662,12749078,0.225,531975434.85,Health Technology,NASDAQ,not checked (not published),true
+LMND,4.29,36.98,35.46,12888,1433621,0.899,2881526317.02,Finance,NYSE,not checked (not published),true
+COSM,4.27,2.93,2.81,2236,147696,1.514,14742847.63,Health Technology,NASDAQ,not checked (not published),false
+ENS,4.27,129.69,124.38,1638,610476,0.268,4615243080.97,Producer Manufacturing,NYSE,not checked (not published),true
+MBRX,-4.26,7.41,7.74,2955,40973,7.212,7865959.13,Health Technology,NASDAQ,not checked (not published),false
+EME,4.26,629.00,603.32,207,498531,0.042,27538881674.00,Industrial Services,NYSE,not checked (not published),true
+FRTT,4.26,0.49,0.47,343957,21944739,1.567,7444363.57,Finance,NASDAQ,not checked (not published),false
+TOON,4.25,0.44,0.42,548,236946,0.231,27389644.22,Consumer Services,AMEX,not checked (not published),true
+HLNE,4.24,84.51,81.07,271,606326,0.045,4711882219.96,Finance,NASDAQ,not checked (not published),true
+XTND,4.24,1.72,1.65,7961,3918840,0.203,428506961.82,Producer Manufacturing,NYSE,not checked (not published),true
+ILMN,4.24,201.00,192.82,524,2136959,0.025,30391200541.02,Health Technology,NASDAQ,not checked (not published),true
+ALHC,-4.24,6.10,6.37,43455,5680553,0.765,1276537136.58,Health Services,NASDAQ,not checked (not published),true
+CENX,4.24,29.52,28.32,4401,2137108,0.206,2922282000.23,Non-Energy Minerals,NASDAQ,not checked (not published),true
+ABCL,4.23,10.10,9.69,39635,3353797,1.182,3298840848.37,Health Technology,NASDAQ,not checked (not published),false
+DKI,4.22,0.94,0.90,7087,2540338,0.279,885026.49,Technology Services,NASDAQ,not checked (not published),true
+PLXS,4.22,197.90,189.89,3739,330266,1.132,5256990130.11,Electronic Technology,NASDAQ,not checked (not published),false
+SPHR,4.22,124.30,119.27,1099,880915,0.125,4464061351.26,Consumer Services,NYSE,not checked (not published),true
+JBLU,4.22,3.46,3.32,169644,32434498,0.523,1305637330.13,Transportation,NASDAQ,not checked (not published),true
+INTZ,4.21,0.28,0.27,2275,173312,1.313,7645040.55,Technology Services,NASDAQ,not checked (not published),false
+AADX,4.21,6.68,6.41,1300,2457846,0.053,1151588612.31,Electronic Technology,NYSE,not checked (not published),true
+COIN,4.21,106.26,101.97,157630,8569357,1.839,28133822640.00,Finance,NASDAQ,not checked (not published),false
+GOOGN,4.20,41.40,39.73,1624,1758656,0.092,3371510439083.41,Technology Services,NASDAQ,not checked (not published),true
+KLIC,4.19,57.00,54.71,200,742941,0.027,3014313738.51,Producer Manufacturing,NASDAQ,not checked (not published),true
+ELF,4.18,107.80,103.47,3158,1468862,0.215,6376115280.70,Consumer Non-Durables,NYSE,not checked (not published),true
+AOUT,4.18,18.60,17.85,371,164316,0.226,234701769.34,Consumer Durables,NASDAQ,not checked (not published),true
+APMD,4.17,16.76,16.09,130,377613,0.034,697760944.34,Health Technology,NASDAQ,not checked (not published),true
+LOOP,4.17,0.25,0.24,11817,364174,3.245,12203142.71,Process Industries,NASDAQ,not checked (not published),false
+MLSS,-4.17,0.23,0.24,10026,111806,8.967,20840545.33,Health Technology,AMEX,not checked (not published),false
+CMBT,4.16,16.78,16.11,17672,1079228,1.637,4869048641.15,Transportation,NYSE,not checked (not published),false
+CHAI,4.16,0.13,0.12,21654,430664,5.028,3305782.91,Technology Services,NASDAQ,not checked (not published),false
+AMLX,4.15,27.10,26.02,331,1363533,0.024,3484054976.40,Health Technology,NASDAQ,not checked (not published),true
+QCOM,4.15,156.16,149.94,73759,13253412,0.557,167091202720.35,Electronic Technology,NASDAQ,not checked (not published),true
+NEWP,4.15,4.27,4.10,13730,784501,1.750,793609597.44,Non-Energy Minerals,AMEX,not checked (not published),false
+VEEA,4.14,4.28,4.11,589,549886,0.107,17426085.61,Technology Services,NASDAQ,not checked (not published),true
+TECK,4.13,50.50,48.49,8069,2884910,0.280,24795554790.94,Non-Energy Minerals,NYSE,not checked (not published),true
+SRPT,4.13,13.88,13.33,9053,2393939,0.378,1488433659.95,Health Technology,NASDAQ,not checked (not published),true
+SIDU,4.12,0.77,0.73,127397,3933607,3.239,77447491.15,Electronic Technology,NASDAQ,not checked (not published),false
+BOXL,-4.12,0.81,0.85,17861,51195,34.888,684512.46,Electronic Technology,NASDAQ,not checked (not published),false
+CTRN,4.12,42.00,40.34,500,219271,0.228,350256776.10,Retail Trade,NASDAQ,not checked (not published),true
+GEV,4.10,728.00,699.33,19631,3998051,0.491,192684906564.32,Producer Manufacturing,NYSE,not checked (not published),true
+RCEL,4.10,16.26,15.62,251,542178,0.046,510892764.29,Health Technology,NASDAQ,not checked (not published),true
+FROG,4.10,105.10,100.97,3076,2397750,0.128,13097825621.80,Technology Services,NASDAQ,not checked (not published),true
+RUN,4.09,6.87,6.60,87947,11308637,0.778,1662269730.04,Electronic Technology,NASDAQ,not checked (not published),true
+DMLP,4.09,27.50,26.42,1354,105116,1.288,1384388717.54,Miscellaneous,NASDAQ,not checked (not published),false
+COUR,4.08,3.57,3.43,7568,7900082,0.096,904281028.10,Commercial Services,NYSE,not checked (not published),true
+IOND,4.07,56.45,54.24,3661,479600,0.763,2540034308.75,Technology Services,NASDAQ,not checked (not published),true
+BTU,4.07,16.10,15.47,9006,2780898,0.324,1962590058.28,Energy Minerals,NYSE,not checked (not published),true
+CVNA,4.07,66.45,63.85,19487,10409770,0.187,73311698350.75,Retail Trade,NYSE,not checked (not published),true
+BEAM,4.07,21.75,20.90,3171,2232289,0.142,2251030207.46,Health Technology,NASDAQ,not checked (not published),true
+RIVN,4.07,10.75,10.33,629162,29887517,2.105,15735840173.06,Consumer Durables,NASDAQ,not checked (not published),false
+CISS,-4.07,1.18,1.23,3707,588709,0.630,1362834.76,Transportation,NASDAQ,not checked (not published),true
+NGEN,4.07,1.92,1.85,21266,687384,3.094,206623523.38,Health Technology,NASDAQ,not checked (not published),false
+FTNT,4.06,129.62,124.56,16382,5731523,0.286,95234769368.42,Technology Services,NASDAQ,not checked (not published),true
+RAL,4.06,65.81,63.24,1956,1513992,0.129,7297030888.38,Electronic Technology,NYSE,not checked (not published),true
+BATL,-4.05,0.57,0.59,219378,3341521,6.565,33680686.34,Energy Minerals,AMEX,not checked (not published),false
+SSII,4.05,1.32,1.27,500,114151,0.438,265043769.20,Health Technology,NASDAQ,not checked (not published),true
+LENZ,4.05,3.08,2.97,4939,1077096,0.459,96932491.69,Health Technology,NASDAQ,not checked (not published),true
+SNPS,4.05,412.20,396.17,1555,1992696,0.078,78992626697.69,Technology Services,NASDAQ,not checked (not published),true
+RDZN,4.04,0.98,0.94,550,328033,0.168,84232580.96,Technology Services,NASDAQ,not checked (not published),true
+MYRG,4.04,257.72,247.71,3424,305691,1.120,4012702642.08,Industrial Services,NASDAQ,not checked (not published),false
+IOT,4.04,39.01,37.49,517,3569505,0.014,22844460411.78,Technology Services,NYSE,not checked (not published),true
+PGEN,4.04,4.38,4.21,2653,6637680,0.040,1570448827.30,Health Technology,NASDAQ,not checked (not published),true
+LFUS,4.03,372.00,357.58,4466,285001,1.567,9450119236.13,Electronic Technology,NASDAQ,not checked (not published),false
+ABOS,-4.02,0.18,0.19,42579,5273062,0.807,12946591.07,Health Technology,NASDAQ,not checked (not published),true
+IBKR,4.02,74.05,71.19,13099,4967751,0.264,125983698801.35,Finance,NASDAQ,not checked (not published),true
+NET,4.02,286.00,274.96,43112,4066184,1.060,101792194319.44,Technology Services,NYSE,not checked (not published),false
+BZAI,4.01,0.12,0.12,27967,2044293,1.368,17691638.11,Electronic Technology,NASDAQ,not checked (not published),false
+VMET,4.01,6.75,6.49,6960,290621,2.395,734599149.95,Miscellaneous,NASDAQ,not checked (not published),false
+MMED,4.00,16.65,16.01,1196,12663793,0.009,4684476652.42,Health Technology,NASDAQ,not checked (not published),true
+TRIP,3.99,7.29,7.01,9310,5665753,0.164,858954879.26,Consumer Services,NASDAQ,not checked (not published),true
+GDHG,3.99,0.13,0.12,1182855,9144982,12.934,7442311.31,Industrial Services,NASDAQ,not checked (not published),false
+SPPL,3.99,2.87,2.76,297,40377,0.736,28086346.17,Technology Services,NASDAQ,not checked (not published),true
+NTCL,-3.98,1.66,1.73,4532,827597,0.548,1519263.42,Technology Services,NASDAQ,not checked (not published),true
+NN,3.97,8.11,7.80,2930,3303058,0.089,1378548070.59,Technology Services,NASDAQ,not checked (not published),true
+GLDG,3.96,0.64,0.62,7128,613132,1.163,137909820.44,Non-Energy Minerals,AMEX,not checked (not published),false
+NCRA,3.95,1.33,1.28,3016,16723,18.035,3460143.55,Industrial Services,NASDAQ,not checked (not published),false
+AMSS,-3.95,0.21,0.21,264,96576,0.273,2396448.83,Distribution Services,NASDAQ,not checked (not published),true
+TENB,3.95,43.65,41.99,7182,3699366,0.194,4561757872.05,Technology Services,NASDAQ,not checked (not published),true
+OCUL,3.95,5.79,5.57,2134,2997159,0.071,1273932296.82,Health Technology,NASDAQ,not checked (not published),true
+AAL,3.95,12.37,11.90,624248,61103561,1.022,8196589446.88,Transportation,NASDAQ,not checked (not published),false
+VIVS,-3.95,0.25,0.26,3519345,33230458,10.591,5080514.60,Health Technology,NASDAQ,not checked (not published),false
+MBLY,3.94,4.75,4.57,49287,7991843,0.617,4038316458.48,Technology Services,NASDAQ,not checked (not published),true
+GROY,3.94,2.64,2.54,5508,1617894,0.340,613318365.26,Non-Energy Minerals,AMEX,not checked (not published),true
+PEW,3.94,1.32,1.27,1360,499272,0.272,39062301.64,Retail Trade,NYSE,not checked (not published),true
+AKAM,3.94,88.46,85.11,37326,6692345,0.558,12758512624.84,Technology Services,NASDAQ,not checked (not published),true
+INTT,3.93,11.36,10.93,299,151247,0.198,145818865.11,Electronic Technology,AMEX,not checked (not published),true
+FSLR,3.93,143.00,137.59,10267,3069444,0.334,15369803721.96,Electronic Technology,NASDAQ,not checked (not published),true
+HELP,3.93,6.35,6.11,26271,2052300,1.280,1388234.30,Health Technology,NASDAQ,not checked (not published),false
+BCTX,3.92,3.18,3.06,3522,64447,5.465,27768972.01,Health Technology,NASDAQ,not checked (not published),false
+DDOG,3.91,163.52,157.37,10534,4286294,0.246,59050493516.50,Technology Services,NASDAQ,not checked (not published),true
+REAL,3.90,11.20,10.78,643,4564799,0.014,1396785878.44,Retail Trade,NASDAQ,not checked (not published),true
+LOBO,3.89,2.67,2.57,388,41853,0.927,4016197.38,Consumer Durables,NASDAQ,not checked (not published),true
+RMSG,3.89,0.13,0.13,12816,429055,2.987,2116478.47,Technology Services,NASDAQ,not checked (not published),false
+CDNS,3.89,292.52,281.58,1651,2303447,0.072,80261340609.82,Technology Services,NASDAQ,not checked (not published),true
+PLBY,3.88,1.17,1.13,58553,993128,5.896,137681957.49,Retail Trade,NASDAQ,not checked (not published),false
+MLTX,3.88,11.50,11.07,500,1592562,0.031,978726901.45,Health Technology,NASDAQ,not checked (not published),true
+CVS,-3.88,77.70,80.84,89395,11428983,0.782,99415144190.46,Retail Trade,NYSE,not checked (not published),true
+CLNE,3.88,1.59,1.53,1293,2286276,0.057,350456533.54,Utilities,NASDAQ,not checked (not published),true
+GHRS,3.88,18.21,17.53,278,343136,0.081,1250588248.07,Health Technology,NASDAQ,not checked (not published),true
+XCUR,3.88,0.94,0.90,2560,73228,3.496,6120505.22,Health Technology,NASDAQ,not checked (not published),false
+QNTM,3.88,1.34,1.29,1012,109345,0.926,11741800.90,Health Technology,NASDAQ,not checked (not published),true
+GRND,3.87,13.95,13.43,660,2050624,0.032,2465377110.84,Technology Services,NYSE,not checked (not published),true
+GTN,3.86,5.65,5.44,1000,1239933,0.081,594934107.71,Consumer Services,NYSE,not checked (not published),true
+HYFM,3.85,0.52,0.50,139,608515,0.023,6962954.74,Producer Manufacturing,NASDAQ,not checked (not published),true
+ALK,3.85,35.03,33.73,9390,3928989,0.239,3950557424.93,Transportation,NYSE,not checked (not published),true
+QSI,3.85,0.94,0.91,150572,7421293,2.029,207436821.86,Technology Services,NASDAQ,not checked (not published),false
+TH,3.85,11.61,11.18,2473,2517562,0.098,1137022007.92,Consumer Services,NASDAQ,not checked (not published),true
+VRXA,-3.85,1.00,1.04,2532,168559,1.502,147732800.96,Health Technology,NASDAQ,not checked (not published),false
+PS,3.84,34.90,33.61,5374,491035,1.094,13960000288.67,Finance,NYSE,not checked (not published),false
+AI,3.83,9.48,9.13,7491,4818203,0.155,1491013105.20,Technology Services,NYSE,not checked (not published),true
+ARRY,3.83,3.93,3.79,35459,11025089,0.322,606278612.21,Producer Manufacturing,NASDAQ,not checked (not published),true
+NRG,3.83,91.16,87.80,1463,3657215,0.040,19145541098.54,Utilities,NYSE,not checked (not published),true
+CIIT,-3.83,1.27,1.32,1490,1789134,0.083,1503138.01,Transportation,NASDAQ,not checked (not published),true
+DLO,3.82,12.50,12.04,5555,2901901,0.191,3580874522.43,Technology Services,NASDAQ,not checked (not published),true
+SMMT,3.82,10.33,9.95,43697,6269536,0.697,8261561094.27,Health Technology,NASDAQ,not checked (not published),true
+ANET,3.82,174.06,167.66,66900,8310521,0.805,219907805546.72,Electronic Technology,NYSE,not checked (not published),true
+EONR,3.81,0.24,0.23,11584,812929,1.425,13510530.36,Energy Minerals,AMEX,not checked (not published),false
+CLWT,3.81,1.09,1.05,655,2455460,0.027,8078495.55,Electronic Technology,NASDAQ,not checked (not published),true
+MX,3.81,2.18,2.10,768,859667,0.089,82951564.10,Electronic Technology,NYSE,not checked (not published),true
+TTWO,3.81,218.00,210.00,72779,4148157,1.754,40812539886.75,Technology Services,NASDAQ,not checked (not published),false
+TT,3.81,401.00,386.29,143,1581673,0.009,87777033268.13,Producer Manufacturing,NYSE,not checked (not published),true
+FANG,3.81,182.44,175.75,592,2226090,0.027,50931381948.29,Energy Minerals,NASDAQ,not checked (not published),true
+NAUT,3.80,2.20,2.12,21378,7869626,0.272,280282998.38,Health Technology,NASDAQ,not checked (not published),true
+CVRX,3.79,0.52,0.50,700,712743,0.098,14812209.34,Health Technology,NASDAQ,not checked (not published),true
+ONEN,-3.79,0.51,0.53,3100,85724,3.616,55212078.55,Finance,NASDAQ,not checked (not published),false
+WRN,3.78,1.24,1.19,1506,1612802,0.093,279451070.09,Non-Energy Minerals,AMEX,not checked (not published),true
+EQ,-3.77,1.02,1.06,640,471813,0.136,83971189.19,Health Technology,NASDAQ,not checked (not published),true
+QNC,3.77,0.77,0.74,12086,695458,1.738,168953149.94,Electronic Technology,AMEX,not checked (not published),false
+BKR,3.77,46.50,44.81,1737,9237973,0.019,46178151256.58,Industrial Services,NASDAQ,not checked (not published),true
+SLS,3.77,14.18,13.66,229614,13399901,1.714,2889723965.84,Health Technology,NASDAQ,not checked (not published),false
+GCT,3.77,60.00,57.82,1050,667696,0.157,2137441521.27,Distribution Services,NASDAQ,not checked (not published),true
+FTW,3.77,10.46,10.08,2000,59409,3.366,329469431.82,Energy Minerals,NYSE,not checked (not published),false
+LBRT,3.77,11.16,10.75,3719,4763141,0.078,1821216303.00,Industrial Services,NYSE,not checked (not published),true
+BON,-3.76,1.01,1.04,706,14968,4.717,8213738.76,Health Technology,NASDAQ,not checked (not published),false
+NXPI,3.76,243.98,235.15,313,5216653,0.006,61495884102.54,Electronic Technology,NASDAQ,not checked (not published),true
+DAKT,3.75,18.80,18.12,200,464794,0.043,904141815.85,Producer Manufacturing,NASDAQ,not checked (not published),true
+GFUZ,3.75,4.36,4.20,600,135906,0.441,355970899.77,Producer Manufacturing,NASDAQ,not checked (not published),true
+BRFH,-3.75,0.69,0.71,2626,306940,0.856,11320843.02,Consumer Non-Durables,NASDAQ,not checked (not published),true
+MRLN,3.75,0.83,0.80,75872,3980323,1.906,85007712.94,Technology Services,NASDAQ,not checked (not published),false
+VIDA,3.74,0.56,0.54,100,67494,0.148,8565248.76,Technology Services,AMEX,not checked (not published),true
+BLDP,3.74,1.11,1.07,13421,3130494,0.429,390326036.74,Producer Manufacturing,NASDAQ,not checked (not published),true
+TARA,3.73,2.37,2.28,4000,922121,0.434,145620034.79,Health Technology,NASDAQ,not checked (not published),true
+GLSI,3.73,19.97,19.25,423,202648,0.209,293081254.22,Health Technology,NASDAQ,not checked (not published),true
+SPHL,3.72,2.50,2.41,1116,1775968,0.063,30651272.65,Consumer Durables,NASDAQ,not checked (not published),true
+ESAB,3.72,77.52,74.74,526,1129443,0.047,4819901023.71,Producer Manufacturing,NYSE,not checked (not published),true
+PIPR,3.72,62.51,60.27,2292,841073,0.273,4393452559.69,Finance,NYSE,not checked (not published),true
+SCCO,3.72,139.00,134.02,29297,1314227,2.229,118607777340.57,Non-Energy Minerals,NYSE,not checked (not published),false
+CEG,3.71,246.22,237.41,12160,3727673,0.326,87237562737.71,Utilities,NASDAQ,not checked (not published),true
+ARTV,3.70,3.92,3.78,4000,1199224,0.334,193774810.96,Health Technology,NASDAQ,not checked (not published),true
+IE,3.70,5.60,5.40,43819,2820110,1.554,893909415.26,Non-Energy Minerals,AMEX,not checked (not published),false
+OSPN,3.70,22.73,21.92,1155,853084,0.135,838618594.54,Technology Services,NASDAQ,not checked (not published),true
+VST,3.69,119.50,115.25,36747,6522167,0.563,40557664718.30,Utilities,NYSE,not checked (not published),true
+OCGN,3.69,0.80,0.77,18232,7113258,0.256,270155895.07,Health Technology,NASDAQ,not checked (not published),true
+MIR,3.68,16.66,16.07,2305,4701105,0.049,4090365234.69,Electronic Technology,NYSE,not checked (not published),true
+AFCG,-3.68,3.14,3.26,1714,64947,2.639,70347875.17,Finance,NASDAQ,not checked (not published),false
+MRKR,-3.67,1.05,1.09,39550,1434672,2.757,17506782.94,Health Technology,NASDAQ,not checked (not published),false
+MOS,3.67,19.34,18.66,4025,10551198,0.038,6149687223.77,Process Industries,NYSE,not checked (not published),true
+VITL,3.67,9.01,8.69,1641,1894470,0.087,386789048.26,Process Industries,NASDAQ,not checked (not published),true
+HNGE,3.66,109.65,105.78,600,1881095,0.032,8911398533.23,Technology Services,NYSE,not checked (not published),true
+HUM,-3.66,375.73,390.00,14130,1672892,0.845,45126765915.59,Health Services,NYSE,not checked (not published),true
+URI,3.65,1009.00,973.43,848,563425,0.151,62473840499.22,Finance,NYSE,not checked (not published),true
+QLYS,3.65,192.70,185.92,990,896908,0.110,6727043700.65,Technology Services,NASDAQ,not checked (not published),true
+CARR,3.64,51.78,49.96,911,6476261,0.014,42364335275.19,Producer Manufacturing,NYSE,not checked (not published),true
+MNKD,3.64,3.99,3.85,747,3499587,0.021,1283344114.04,Health Technology,NASDAQ,not checked (not published),true
+FRNM,3.63,9.70,9.36,100,818153,0.012,1081559210.85,Health Technology,NASDAQ,not checked (not published),true
+VSXY,3.63,98.00,94.57,679,1449859,0.047,7816875706.74,Retail Trade,NYSE,not checked (not published),true
+OXSQ,3.63,0.62,0.60,2688,2084765,0.129,75185966.84,Miscellaneous,NASDAQ,not checked (not published),true
+KKR,3.63,91.75,88.54,2588,5503472,0.047,81853807990.16,Finance,NYSE,not checked (not published),true
+DASH,3.62,158.13,152.60,2077,5443511,0.038,68945404727.61,Transportation,NASDAQ,not checked (not published),true
+MAKO,3.62,6.30,6.08,334,153672,0.217,552447510.62,Non-Energy Minerals,NASDAQ,not checked (not published),true
+BB,3.60,8.05,7.77,165756,12819994,1.293,4725609586.39,Technology Services,NYSE,not checked (not published),false
+SPIR,3.59,7.62,7.35,10793,560800,1.925,310627757.11,Technology Services,NYSE,not checked (not published),false
+NBIX,3.59,155.98,150.57,200,1424925,0.014,15788084732.28,Health Technology,NASDAQ,not checked (not published),true
+AOMR,-3.59,5.10,5.29,1208,140136,0.862,119318947.32,Finance,NYSE,not checked (not published),true
+ASH,3.59,75.00,72.40,11000,672338,1.636,3434502769.68,Consumer Non-Durables,NYSE,not checked (not published),false
+BX,3.58,114.77,110.80,5967,5556878,0.107,141669045493.91,Finance,NYSE,not checked (not published),true
+FLR,3.58,45.17,43.61,5324,2264606,0.235,5790083337.42,Industrial Services,NYSE,not checked (not published),true
+SQFT,-3.57,0.62,0.64,400,12398,3.226,1403243.42,Finance,NASDAQ,not checked (not published),false
+ESE,3.57,218.00,210.48,600,257433,0.233,6759649348.97,Electronic Technology,NYSE,not checked (not published),true
+COF/PN,3.57,13.92,13.44,1055,66376,1.589,111308124560.75,Finance,NYSE,not checked (not published),false
+ELV,-3.57,380.41,394.48,3164,1497483,0.211,82189824523.62,Health Services,NYSE,not checked (not published),true
+NCLH,3.56,16.56,15.99,84045,20157852,0.417,7605601370.70,Consumer Services,NYSE,not checked (not published),true
+PED,3.56,9.90,9.56,100,18553,0.539,131501044.49,Energy Minerals,AMEX,not checked (not published),true
+ALLO,3.55,0.65,0.63,6416,10023329,0.064,225203744.78,Health Technology,NASDAQ,not checked (not published),true
+META,3.55,580.76,560.84,253646,21753530,1.166,1484562625590.35,Technology Services,NASDAQ,not checked (not published),false
+MOD,3.55,129.09,124.67,6665,2468470,0.270,6867456090.83,Producer Manufacturing,NYSE,not checked (not published),true
+RCL,3.54,306.98,296.48,1344,2028978,0.066,82108234434.36,Consumer Services,NYSE,not checked (not published),true
+CAT,3.54,528.50,510.45,31288,3713980,0.842,241838528457.81,Producer Manufacturing,NYSE,not checked (not published),true
+CCL,3.54,27.53,26.59,96630,18366886,0.526,37017116470.25,Consumer Services,NYSE,not checked (not published),true
+BETR,3.53,14.65,14.15,100,930311,0.011,279009051.22,Finance,NASDAQ,not checked (not published),true
+DCOY,-3.53,0.80,0.83,255,56499,0.451,1908464.23,Health Technology,NASDAQ,not checked (not published),true
+KMT,3.53,22.04,21.29,308,1766208,0.017,1698040098.41,Producer Manufacturing,NYSE,not checked (not published),true
+PDSB,-3.52,0.75,0.78,139245,6511525,2.138,78754076.09,Health Technology,NASDAQ,not checked (not published),false
+BHE,3.52,57.59,55.63,100,419933,0.024,2059725906.58,Electronic Technology,NYSE,not checked (not published),true
+APVO,-3.51,0.39,0.40,15549,127029,12.241,1350973.11,Health Technology,NASDAQ,not checked (not published),false
+NNVC,3.51,1.18,1.14,306,168935,0.181,30154900.00,Health Technology,AMEX,not checked (not published),true
+FTHM,-3.51,0.07,0.08,8903,635254,1.401,2570152.79,Technology Services,NASDAQ,not checked (not published),false
+CAVA,3.50,50.55,48.84,9006,3365313,0.268,5906437311.42,Consumer Services,NYSE,not checked (not published),true
+JDZG,-3.50,0.09,0.09,193907,12905867,1.502,494268.00,Commercial Services,NASDAQ,not checked (not published),false
+EVGO,3.50,1.48,1.43,7484,6426488,0.116,466098332.28,Retail Trade,NASDAQ,not checked (not published),true
+TAP.A,-3.49,40.50,41.97,100,1251,7.994,7035109334.15,Consumer Non-Durables,NYSE,not checked (not published),false
+AMG,3.49,381.00,368.15,696,310255,0.224,9406462748.06,Finance,NYSE,not checked (not published),true
+DY,3.49,212.72,205.55,750,593341,0.126,6415838940.33,Industrial Services,NYSE,not checked (not published),true
+APO,3.48,115.03,111.16,619,3804108,0.016,67917459171.58,Finance,NYSE,not checked (not published),true
+NEXR,-3.48,1.11,1.15,1009,1005786,0.100,585493.15,Consumer Durables,NASDAQ,not checked (not published),true
+CADL,3.48,5.22,5.04,5585,1438893,0.388,409111253.25,Health Technology,NASDAQ,not checked (not published),true
+AISP,3.47,1.49,1.44,2672,485597,0.550,51314952.26,Technology Services,NASDAQ,not checked (not published),true
+WAL,3.46,70.25,67.90,200,1017560,0.020,7555393244.15,Finance,NYSE,not checked (not published),true
+WT,3.46,19.14,18.50,3351,2723678,0.123,2887918350.88,Finance,NYSE,not checked (not published),true
+BV,3.45,8.39,8.11,4906,1162343,0.422,765167942.07,Commercial Services,NYSE,not checked (not published),true
+EQIX,3.45,1001.61,968.22,148,682915,0.022,99147687590.64,Finance,NASDAQ,not checked (not published),true
+ORIO,3.45,1.05,1.01,300,94929,0.316,24882899.32,Finance,NASDAQ,not checked (not published),true
+ATPC,3.45,1.20,1.16,2913,45831,6.356,1200751.03,Health Technology,NASDAQ,not checked (not published),false
+BOLD,3.45,2.40,2.32,1000,134892,0.741,56667373.45,Health Technology,NASDAQ,not checked (not published),true
+TYGO,-3.44,0.52,0.54,200,592125,0.034,40501138.00,Electronic Technology,NASDAQ,not checked (not published),true
+ZJK,3.44,0.93,0.90,435054,301140,144.469,59813259.50,Producer Manufacturing,NASDAQ,not checked (not published),false
+FUBO,3.44,5.72,5.53,30454,1373932,2.217,624893116.17,Technology Services,NYSE,not checked (not published),false
+CCHH,3.43,0.75,0.73,1058,32099,3.296,14136544.27,Consumer Services,NASDAQ,not checked (not published),false
+NU,3.42,11.63,11.25,328157,81288290,0.404,56272156098.78,Finance,NYSE,not checked (not published),true
+SIF,3.42,14.50,14.02,800,69546,1.150,90684858.52,Electronic Technology,AMEX,not checked (not published),false
+ACN,3.42,228.79,221.22,5339,5838166,0.091,135224860868.07,Technology Services,NYSE,not checked (not published),true
+ENVX,3.42,1.21,1.17,82689,11111729,0.744,256769686.09,Producer Manufacturing,NASDAQ,not checked (not published),true
+SNDL,3.42,1.21,1.17,59595,1305990,4.563,294417973.57,Process Industries,NASDAQ,not checked (not published),false
+NEOV,3.41,2.12,2.05,200,987465,0.020,125298746.77,Producer Manufacturing,NASDAQ,not checked (not published),true
+OWL,3.41,9.10,8.80,36957,19729143,0.187,14257017235.20,Finance,NYSE,not checked (not published),true
+IA,3.40,17.95,17.36,4132,231692,1.783,321290179.88,Electronic Technology,NASDAQ,not checked (not published),false
+IVZ,3.39,27.42,26.52,1194,5830891,0.020,12051883383.37,Finance,NYSE,not checked (not published),true
+ATRO,3.39,56.99,55.12,4115,627242,0.656,2457279060.90,Electronic Technology,NASDAQ,not checked (not published),true
+WWW,3.39,25.60,24.76,982,1185918,0.083,2101422870.95,Consumer Non-Durables,NYSE,not checked (not published),true
+WETH,3.39,0.73,0.71,742,126609,0.586,32395042.82,Electronic Technology,NASDAQ,not checked (not published),true
+RELY,3.38,20.50,19.83,15237,3079542,0.495,4387257421.28,Commercial Services,NASDAQ,not checked (not published),true
+CUE,3.38,4.29,4.15,4743,831556,0.570,35863193.29,Health Technology,NASDAQ,not checked (not published),true
+SWKS,3.37,76.40,73.91,1027,4309418,0.024,17943857488.51,Electronic Technology,NASDAQ,not checked (not published),true
+SDOT,3.37,3.37,3.26,2967,54874,5.407,5765955.25,Consumer Services,NASDAQ,not checked (not published),false
+FATE,3.37,0.95,0.92,11826,1657900,0.713,115490321.55,Health Technology,NASDAQ,not checked (not published),true
+OSK,3.37,134.91,130.51,2323,699138,0.332,8225734248.37,Consumer Durables,NYSE,not checked (not published),true
+MLYS,3.37,14.12,13.66,1422,1801860,0.079,1250426107.29,Health Technology,NASDAQ,not checked (not published),true
+STI,3.36,2.99,2.89,2055,105769,1.943,28114265.82,Finance,NASDAQ,not checked (not published),false
+QURE,3.36,20.00,19.35,100,1878721,0.005,1402777279.59,Health Technology,NASDAQ,not checked (not published),true
+BMNP,3.35,96.74,93.60,3950,19558,20.196,8404115463.00,Finance,NYSE,not checked (not published),false
+GWRE,3.35,138.10,133.62,901,1019934,0.088,11411367622.39,Technology Services,NYSE,not checked (not published),true
+JLHL,3.35,4.47,4.33,3004,207555,1.447,95875381.53,Commercial Services,NASDAQ,not checked (not published),false
+NVAX,3.35,7.72,7.47,26357,6297365,0.419,1273869582.31,Health Technology,NASDAQ,not checked (not published),true
+DB,3.34,32.45,31.40,37519,2772436,1.353,59140036150.72,Finance,NYSE,not checked (not published),false
+YDKG,3.34,0.76,0.73,255,84774,0.301,4184962.20,Technology Services,NASDAQ,not checked (not published),true
+GNL,3.33,6.20,6.00,29662,3461796,0.857,1381607504.00,Finance,NYSE,not checked (not published),true
+KLAR,3.33,12.41,12.01,42263,6950495,0.608,4720145559.38,Commercial Services,NYSE,not checked (not published),true
+KSS,3.33,22.99,22.25,2888,4022918,0.072,2606524401.06,Retail Trade,NYSE,not checked (not published),true
+RIG,3.33,4.79,4.64,395923,43115063,0.918,5354858976.18,Industrial Services,NYSE,not checked (not published),true
+MTEN,3.32,0.26,0.25,13050,272531,4.788,1973664.87,Producer Manufacturing,NASDAQ,not checked (not published),false
+PNNT,3.32,2.80,2.71,1418,729454,0.194,182829073.80,Miscellaneous,NYSE,not checked (not published),true
+COMP,3.32,9.96,9.64,5597,14689042,0.038,7645740984.70,Finance,NYSE,not checked (not published),true
+MRNA,3.32,201.47,195.00,37520,13963808,0.269,81518703930.10,Health Technology,NASDAQ,not checked (not published),true
+SLGL,3.32,57.00,55.17,800,38401,2.083,186617934.91,Health Technology,NASDAQ,not checked (not published),false
+RZLT,3.32,4.05,3.92,517,1747685,0.030,391752102.86,Health Technology,NASDAQ,not checked (not published),true
+XYZ,3.32,71.97,69.66,17317,6084030,0.285,43507452102.77,Commercial Services,NYSE,not checked (not published),true
+AIM,3.32,0.12,0.11,63418,569592,11.134,4726509.40,Health Technology,AMEX,not checked (not published),false
+ONON,3.31,30.96,29.97,19024,10422331,0.183,10358021261.20,Consumer Non-Durables,NYSE,not checked (not published),true
+IBIO,3.31,0.83,0.80,3673,660429,0.556,58238775.05,Health Technology,NASDAQ,not checked (not published),true
+NTLA,3.31,10.33,10.00,32812,5392301,0.608,1450071946.99,Health Technology,NASDAQ,not checked (not published),true
+WBTN,3.31,8.52,8.25,7385,451053,1.637,1157285181.73,Technology Services,NASDAQ,not checked (not published),false
+RSKD,3.31,9.77,9.46,8129,2245867,0.362,1305697966.72,Technology Services,NYSE,not checked (not published),true
+TNMG,-3.30,2.05,2.12,810,2186672,0.037,1559174.88,Technology Services,NASDAQ,not checked (not published),true
+TEAM,3.29,139.08,134.65,6203,3315969,0.187,35027710502.09,Technology Services,NASDAQ,not checked (not published),true
+TTD,3.29,13.82,13.38,164824,20679626,0.797,6535313795.06,Technology Services,NASDAQ,not checked (not published),true
+BRN,-3.29,0.77,0.80,1100,38296,2.872,11169269.63,Energy Minerals,AMEX,not checked (not published),false
+KGS,3.29,41.01,39.70,1243,2237285,0.056,4157490244.32,Industrial Services,NYSE,not checked (not published),true
+REA,3.28,3.46,3.35,10593,201652,5.253,72525125.07,Non-Energy Minerals,AMEX,not checked (not published),false
+DAL,3.27,82.66,80.04,13767,6354885,0.217,54383036593.36,Transportation,NYSE,not checked (not published),true
+AIBZ,3.27,2.21,2.14,5208,919414,0.566,13573445.29,Technology Services,NASDAQ,not checked (not published),true
+PRLB,3.27,59.40,57.52,3579,270547,1.323,1417989431.80,Process Industries,NYSE,not checked (not published),false
+MGN,-3.27,3.70,3.83,645,226196,0.285,60063458.12,Commercial Services,NASDAQ,not checked (not published),true
+WOOF,3.27,2.53,2.45,439,3477288,0.013,724641528.11,Retail Trade,NASDAQ,not checked (not published),true
+BBIO,3.25,78.50,76.03,500,2786583,0.018,15291861082.97,Health Technology,NASDAQ,not checked (not published),true
+CERS,3.24,1.91,1.85,1050,2733312,0.038,385732513.74,Health Technology,NASDAQ,not checked (not published),true
+CSW,3.24,279.50,270.72,1141,113153,1.008,4553653952.02,Process Industries,NYSE,not checked (not published),false
+ORKA,3.24,98.91,95.81,916,983499,0.093,6708309177.91,Health Technology,NASDAQ,not checked (not published),true
+RNTZ,-3.23,3.60,3.72,1195,40535,2.948,10351196.13,Electronic Technology,NASDAQ,not checked (not published),false
+SOLS,3.22,62.50,60.55,752,2434787,0.031,9825689191.78,Process Industries,NASDAQ,not checked (not published),true
+URGN,3.22,28.54,27.65,1739,1384223,0.126,1399824902.53,Health Technology,NASDAQ,not checked (not published),true
+RH,3.21,111.40,107.94,1825,811802,0.225,2109153946.18,Retail Trade,NYSE,not checked (not published),true
+NAMS,3.20,19.00,18.41,2100,1684817,0.125,2278669986.58,Health Technology,NASDAQ,not checked (not published),true
+LIFE,3.20,32.22,31.22,10056,1562519,0.644,2094789589.20,Technology Services,NASDAQ,not checked (not published),true
+RILY,3.20,2.90,2.81,500,882916,0.057,116579280.68,Finance,NASDAQ,not checked (not published),true
+BURU,-3.20,0.21,0.22,248578,58196647,0.427,2950720.27,Electronic Technology,AMEX,not checked (not published),true
+NMRK,3.20,10.01,9.70,600,2303290,0.026,1796734748.06,Finance,NASDAQ,not checked (not published),true
+HWM,3.19,215.84,209.16,669,4225039,0.016,85831042083.69,Electronic Technology,NYSE,not checked (not published),true
+CMI,3.19,416.50,403.61,773,1546565,0.050,57092941660.83,Producer Manufacturing,NYSE,not checked (not published),true
+MGNI,3.19,25.57,24.78,2503,2551826,0.098,3670815583.30,Technology Services,NASDAQ,not checked (not published),true
+SW,3.18,38.90,37.70,4479,5137958,0.087,20340547818.13,Process Industries,NYSE,not checked (not published),true
+RKT,3.18,14.19,13.75,79041,37204418,0.212,40262942570.87,Finance,NYSE,not checked (not published),true
+BN,3.18,38.95,37.75,3678,5148337,0.071,95525404475.17,Finance,NYSE,not checked (not published),true
+CLMT,3.18,31.50,30.53,964,1605372,0.060,2774911851.54,Energy Minerals,NASDAQ,not checked (not published),true
+OGG,3.17,1.95,1.89,5300,2169185,0.244,544566429.08,Non-Energy Minerals,NYSE,not checked (not published),true
+TLRY,3.17,1.95,1.89,83159,4797534,1.733,288185664.21,Process Industries,NASDAQ,not checked (not published),false
+MEGL,3.17,0.09,0.09,12710,1943079,0.654,6164578.33,Finance,NASDAQ,not checked (not published),true
+WGS,3.17,46.90,45.46,5824,1075614,0.541,1405709856.93,Health Services,NASDAQ,not checked (not published),true
+BAM,3.17,50.49,48.94,400,3269130,0.012,80676872406.77,Finance,NYSE,not checked (not published),true
+CNH,3.17,11.08,10.74,7173,15253058,0.047,13688382110.27,Producer Manufacturing,NYSE,not checked (not published),true
+MOH,-3.17,192.11,198.39,2805,991892,0.283,10028142115.23,Health Services,NYSE,not checked (not published),true
+CENN,3.16,0.12,0.11,202792,22895650,0.886,2066290.63,Consumer Durables,NASDAQ,not checked (not published),true
+RCON,3.16,0.98,0.95,250,392831,0.064,2032935.73,Distribution Services,NASDAQ,not checked (not published),true
+HAPN,3.15,14.56,14.11,1047,2334819,0.045,1676784413.21,Finance,NASDAQ,not checked (not published),true
+CPA,3.15,142.00,137.66,1100,384324,0.286,5796358229.83,Transportation,NYSE,not checked (not published),true
+CR,3.15,208.50,202.13,3875,432816,0.895,12058213439.35,Electronic Technology,NYSE,not checked (not published),true
+KALU,3.15,93.00,90.16,1000,371719,0.269,1520539453.95,Non-Energy Minerals,NASDAQ,not checked (not published),true
+PSEC,3.15,1.31,1.27,26798,7849688,0.341,729655916.98,Miscellaneous,NASDAQ,not checked (not published),true
+BFLY,3.15,5.57,5.40,5179,4643622,0.112,1489763035.71,Health Technology,NYSE,not checked (not published),true
+SGLY,3.14,0.40,0.39,1787,1781022,0.100,2225947.40,Transportation,NASDAQ,not checked (not published),true
+BNY,3.13,145.66,141.24,594,3568558,0.017,98011707514.09,Finance,NYSE,not checked (not published),true
+REGCO,-3.12,19.25,19.87,800,6587,12.145,13064226875.44,Finance,NASDAQ,not checked (not published),false
+PEGA,3.12,28.10,27.25,1394,2893073,0.048,4598945578.15,Technology Services,NASDAQ,not checked (not published),true
+AZR,-3.12,3.73,3.85,129,54580,0.236,53287935.82,Health Technology,NASDAQ,not checked (not published),true
+VIK,3.12,96.95,94.02,550,4283721,0.013,42892823484.89,Consumer Services,NYSE,not checked (not published),true
+ENR,3.12,29.45,28.56,3209,1166149,0.275,2026675706.00,Consumer Non-Durables,NYSE,not checked (not published),true
+AVTR,3.12,15.30,14.84,2074,9412271,0.022,10369079179.82,Health Technology,NYSE,not checked (not published),true
+GVA,3.11,117.00,113.47,339,668038,0.051,5163244547.33,Industrial Services,NYSE,not checked (not published),true
+SNX,3.11,223.50,216.76,2227,770248,0.289,17830273389.52,Distribution Services,NYSE,not checked (not published),true
+AXG,3.11,0.79,0.76,13301,279800,4.754,915301.79,Finance,NASDAQ,not checked (not published),false
+ST,3.11,36.50,35.40,745,1680911,0.044,5313028137.19,Electronic Technology,NYSE,not checked (not published),true
+HXHX,3.11,0.11,0.10,8409,3947373,0.213,1658844.00,Transportation,NASDAQ,not checked (not published),true
+CTKB,3.10,6.31,6.12,349,1265329,0.028,825246810.08,Health Technology,NASDAQ,not checked (not published),true
+IR,3.10,80.73,78.30,570,4345842,0.013,31001917675.57,Producer Manufacturing,NYSE,not checked (not published),true
+FOUR,3.10,39.25,38.07,1538,2356710,0.065,2941549889.55,Commercial Services,NYSE,not checked (not published),true
+ATEN,3.10,31.30,30.36,3750,1176154,0.319,2255212900.55,Technology Services,NYSE,not checked (not published),true
+CRSP,3.09,40.31,39.10,10822,1911618,0.566,3910102446.97,Health Technology,NASDAQ,not checked (not published),true
+IBG,-3.09,0.64,0.66,2379,40269,5.908,2709575.29,Consumer Non-Durables,NASDAQ,not checked (not published),false
+VERU,3.09,2.00,1.94,19821,165252,11.994,34100640.21,Health Technology,NASDAQ,not checked (not published),false
+TDUP,3.09,1.50,1.46,1501,1803482,0.083,199661725.77,Retail Trade,NASDAQ,not checked (not published),true
+DUOL,3.09,149.50,145.02,1516,1442378,0.105,7053111677.30,Technology Services,NASDAQ,not checked (not published),true
+MSDL,3.09,13.35,12.95,1241,639892,0.194,1112074681.71,Finance,NYSE,not checked (not published),true
+SRI,3.09,4.34,4.21,143,219458,0.065,123920193.19,Producer Manufacturing,NYSE,not checked (not published),true
+HSHP,3.09,15.03,14.58,9468,420691,2.251,708965069.07,Transportation,NYSE,not checked (not published),false
+VGZ,3.08,2.34,2.27,14993,2651792,0.565,341572941.99,Non-Energy Minerals,AMEX,not checked (not published),true
+ETN,3.08,320.93,311.33,3697,3175589,0.116,124681299622.13,Producer Manufacturing,NYSE,not checked (not published),true
+QTEX,3.08,1.03,1.00,292914,4809731,6.090,69140961.54,Health Technology,NASDAQ,not checked (not published),false
+IPST,-3.07,1.42,1.47,3085,679952,0.454,1414225.01,Consumer Non-Durables,NASDAQ,not checked (not published),true
+ZTG,3.07,0.27,0.26,8036,6408951,0.125,4757684.98,Technology Services,NASDAQ,not checked (not published),true
+SBLK,3.07,26.53,25.74,17005,1423196,1.195,2970969528.70,Transportation,NASDAQ,not checked (not published),false
+BLND,3.07,0.85,0.82,133,1484712,0.009,202529583.48,Technology Services,NYSE,not checked (not published),true
+AMZN,3.06,254.38,246.82,645630,47264753,1.366,2750646048557.36,Retail Trade,NASDAQ,not checked (not published),false
+DCO,3.06,138.00,133.90,1116,190973,0.584,2087123957.25,Electronic Technology,NYSE,not checked (not published),true
+GANX,3.06,1.03,1.00,470,699272,0.067,45861109.69,Health Technology,NASDAQ,not checked (not published),true
+ROST,3.06,219.99,213.46,1666,2292634,0.073,70276495178.85,Retail Trade,NASDAQ,not checked (not published),true
+ALGT,3.06,94.00,91.21,5506,534883,1.029,2566900749.85,Transportation,NASDAQ,not checked (not published),false
+ROK,3.06,373.00,361.93,159,1067402,0.015,40939984805.48,Producer Manufacturing,NYSE,not checked (not published),true
+NWCL,3.06,3.37,3.27,100,346507,0.029,1031307143.87,Producer Manufacturing,NASDAQ,not checked (not published),true
+HUBB,3.06,416.00,403.66,262,670509,0.039,21979374100.26,Producer Manufacturing,NYSE,not checked (not published),true
+BDTX,3.05,1.35,1.31,2100,841742,0.249,77582140.08,Health Technology,NASDAQ,not checked (not published),true
+EU,3.05,0.46,0.45,11610,3159639,0.367,90574767.08,Non-Energy Minerals,NASDAQ,not checked (not published),true
+FCNCA,-3.05,2012.25,2075.52,10,82148,0.012,21834864013.70,Finance,NASDAQ,not checked (not published),true
+ZYN,3.05,10.49,10.18,4014,208800,1.922,65889307.34,Transportation,NASDAQ,not checked (not published),false
+KURA,3.04,7.12,6.91,6934,2273746,0.305,654176277.02,Health Technology,NASDAQ,not checked (not published),true
+IDR,3.03,14.27,13.85,5001,310405,1.611,225901290.64,Non-Energy Minerals,AMEX,not checked (not published),false
+EVLV,3.03,3.91,3.80,800,2510887,0.032,709217132.42,Electronic Technology,NASDAQ,not checked (not published),true
+DRK,3.03,1.36,1.32,743,117633,0.632,14400167.33,Technology Services,NASDAQ,not checked (not published),true
+PSQL,3.03,3.40,3.30,10583,643903,1.644,721798521.27,Electronic Technology,NASDAQ,not checked (not published),false
+BIAF,-3.03,1.60,1.65,2934,128424,2.285,2912009.70,Health Technology,NASDAQ,not checked (not published),false
+GNPX,3.03,1.49,1.45,796,158359,0.503,1993987.66,Health Technology,NASDAQ,not checked (not published),true
+VCTR,3.03,113.70,110.36,1016,613847,0.166,7027106694.91,Finance,NASDAQ,not checked (not published),true
+LTRN,-3.02,0.24,0.24,100,246580,0.041,3774650.34,Health Technology,NASDAQ,not checked (not published),true
+VKTX,3.02,25.52,24.77,10268,4313982,0.238,3254098457.90,Health Technology,NASDAQ,not checked (not published),true
+VMI,3.02,397.30,385.66,722,213410,0.338,7604290760.76,Producer Manufacturing,NYSE,not checked (not published),true
+TFC,3.01,47.19,45.81,4345,7835980,0.055,56556669448.16,Finance,NYSE,not checked (not published),true
+LIF,3.01,40.70,39.51,2400,780073,0.308,3327441288.93,Technology Services,NASDAQ,not checked (not published),true
+AENT,-3.01,4.51,4.65,150,32808,0.457,229918133.72,Distribution Services,NASDAQ,not checked (not published),true
+FIG,3.01,16.26,15.78,56650,11689035,0.485,8709410688.71,Technology Services,NYSE,not checked (not published),true
+GRO,3.01,1.37,1.33,1554,285711,0.544,85112951.68,Non-Energy Minerals,AMEX,not checked (not published),true
+SKYD,3.01,6.41,6.23,126326,24690659,0.512,32344564079.19,Consumer Services,NYSE,not checked (not published),true
+JELD,3.00,0.72,0.70,6000,1407241,0.426,62469278.72,Non-Energy Minerals,NYSE,not checked (not published),true
+OGI,3.00,0.60,0.58,17777,624314,2.847,84739004.06,Process Industries,NASDAQ,not checked (not published),false
+CSCO,3.00,93.36,90.64,46106,19812319,0.233,368066965412.55,Electronic Technology,NASDAQ,not checked (not published),true
