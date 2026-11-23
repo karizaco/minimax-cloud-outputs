@@ -9,6 +9,7 @@ status: ok
 pending_count: 3
 already_reported_count: 0
 non_us_count: 0
+degraded_sources: 1
 reaction_ranked: true
 band_low_usd: 40000000000
 contract: EARNINGS_REMINDER_V4
