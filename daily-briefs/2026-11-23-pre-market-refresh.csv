@@ -1,0 +1,1169 @@
+ticker,name,premarket_close,premarket_change_pct,premarket_volume,avg_volume_30d,pct_of_adv,prior_close,prior_session_change_pct,live_close,live_change_pct,live_volume,market_cap,sector,exchange,screen_complete
+WETO,Wetour Robotics Limited,0.6955,339.08,125360740,7406686,1692.53,0.1584,-68.31,,,,2359843,Transportation,NASDAQ,false
+RSSS,"Research Solutions, Inc",3.1717,47.52,3024868,59705,5066.29,2.1500,4.88,,,,70160683,Commercial Services,NASDAQ,false
+GMEX,GMEX ROBOTICS CORPORATION,0.2619,36.41,95181552,2765017,3442.35,0.1920,-40.06,,,,301559,Retail Trade,NASDAQ,false
+MRM,MEDIROM Healthcare Technologies Inc.,0.3071,33.52,32027736,774872,4133.29,0.2300,-6.12,,,,1817448,Consumer Services,NASDAQ,false
+MEDS,"DataMeds AI, Inc.",1.7700,32.09,30247966,5412612,558.84,1.3400,84.14,,,,7661961,Distribution Services,NASDAQ,false
+DWTX,"Dogwood Therapeutics, Inc.",1.3515,30.58,7010829,124333,5638.73,1.0350,-2.36,,,,39565889,Health Technology,NASDAQ,false
+CRWV,"CoreWeave, Inc.",51.4050,30.11,6082686,72989392,8.33,39.5089,-12.02,,,,21972525839,Technology Services,NASDAQ,false
+NVDA,NVIDIA Corporation,163.0000,29.85,39791524,224750382,17.70,125.5295,-14.01,,,,3025272970581,Electronic Technology,NASDAQ,false
+NBIS,Nebius Group N.V.,104.1700,28.11,3078835,29394661,10.47,81.3129,-16.11,,,,23815893760,Technology Services,NASDAQ,false
+DRMA,"Dermata Therapeutics, Inc.",0.6400,25.61,888,5890209,0.02,0.5095,-4.23,,,,2511941,Consumer Non-Durables,NASDAQ,false
+FRMI,Fermi Inc.,2.4400,25.13,1311797,30716858,4.27,1.9500,-5.34,,,,1261559208,Finance,NASDAQ,false
+ASX,"ASE Technology Holding Co., Ltd.",32.6200,24.17,302589,11137993,2.72,26.2704,-13.84,,,,61092605270,Electronic Technology,NYSE,false
+SHAZ,"SharonAI Holdings, Inc.",20.6435,22.66,163282,2699968,6.05,16.8299,-18.06,,,,647590268,Technology Services,NASDAQ,false
+IREN,IREN Limited,14.4900,22.59,8309442,74218946,11.20,11.8199,-17.97,,,,5015903899,Technology Services,NASDAQ,false
+UMC,United Microelectronics Corporation (NEW),14.7300,22.34,739923,13737830,5.39,12.0402,-10.15,,,,30486289292,Electronic Technology,NYSE,false
+DELL,Dell Technologies Inc.,340.0100,22.30,382850,7823700,4.89,278.0131,-11.04,,,,176768656278,Electronic Technology,NYSE,false
+ZS,"Zscaler, Inc.",238.1300,22.23,685032,2480270,27.62,194.8212,-5.29,,,,31766316264,Technology Services,NASDAQ,false
+BTDR,Bitdeer Technologies Group,3.6000,21.83,629633,13135638,4.79,2.9549,-13.34,,,,816155651,Technology Services,NASDAQ,false
+BRUN,Boost Run Inc.,4.3300,21.63,119606,3937194,3.04,3.5600,-14.73,,,,299684850,Technology Services,NASDAQ,false
+APLD,Applied Digital Corporation,13.9124,21.08,3006767,27528446,10.92,11.4903,-17.81,,,,3474427888,Technology Services,NASDAQ,false
+CRDO,Credo Technology Group Holding Ltd,120.8800,21.05,278717,8561074,3.26,99.8596,-15.20,,,,18768878802,Technology Services,NASDAQ,false
+CYPH,Cypherpunk Technologies Inc.,1.7050,20.92,564038,13729663,4.11,1.4100,-18.02,,,,210148644,Finance,NASDAQ,false
+KNOP,KNOT Offshore Partners LP,8.8400,20.77,51898,118806,43.68,7.3197,-8.39,,,,252928143,Transportation,NYSE,false
+ATPC,Agape ATP Corporation,1.4000,20.69,3388,45831,7.39,1.1600,-15.94,,,,1160726,Health Technology,NASDAQ,false
+HUT,Hut 8 Corp.,55.4500,20.67,136466,6740141,2.02,45.9518,-17.65,,,,5515725600,Technology Services,NASDAQ,false
+SINT,"SiNtx Technologies, Inc.",1.3251,20.46,378,32057,1.18,1.1000,-6.78,,,,8314065,Health Technology,NASDAQ,false
+MXL,"MaxLinear, Inc",49.9143,20.42,49530,3384170,1.46,41.4502,-13.88,,,,3771950386,Electronic Technology,NASDAQ,false
+BRAI,Braiin Limited,1.7800,20.27,1198349,4877649,24.57,1.4800,1.37,,,,305010577,Technology Services,NASDAQ,false
+QXL,Quantum X Labs Inc.,2.8000,20.17,16434,29449,55.80,2.3300,-18.82,,,,51553395,Electronic Technology,NASDAQ,false
+MTSI,"MACOM Technology Solutions Holdings, Inc.",234.1600,20.14,18637,1918574,0.97,194.9059,-10.82,,,,14966663505,Electronic Technology,NASDAQ,false
+USDE,StablecoinX Inc.,4.2100,19.94,76087,1076076,7.07,3.5101,-18.75,,,,95427526,Technology Services,NASDAQ,false
+AXTI,AXT Inc,36.6000,19.73,657301,11594005,5.67,30.5688,-12.26,,,,2009132252,Electronic Technology,NASDAQ,false
+SRTM,Stratum Holdings Corp.,0.9001,19.49,26687,848109,3.15,0.7533,0.00,,,,46284,Finance,NASDAQ,false
+PENG,"Penguin Solutions, Inc.",42.8900,18.97,61692,3195571,1.93,36.0511,-15.20,,,,2171703172,Electronic Technology,NASDAQ,false
+KYMR,"Kymera Therapeutics, Inc.",136.9382,18.76,680710,931106,73.11,115.3067,-3.42,,,,9844175788,Health Technology,NASDAQ,false
+ASST,"Strive, Inc.",17.2300,18.75,330040,8257598,4.00,14.5095,-12.64,,,,1847841553,Finance,NASDAQ,false
+SRFM,Surf Air Mobility Inc.,0.4353,18.69,135910,2196103,6.19,0.3668,-10.56,,,,49593558,Transportation,NYSE,false
+SMCI,"Super Micro Computer, Inc.",25.6800,18.61,2956050,44174157,6.69,21.6508,-9.19,,,,14272272005,Electronic Technology,NASDAQ,false
+BTBT,"Bit Digital, Inc.",0.6099,18.45,394569,24559222,1.61,0.5149,-13.68,,,,185917958,Commercial Services,NASDAQ,false
+AEHR,Aehr Test Systems,47.1880,18.44,210649,2937223,7.17,39.8413,-16.90,,,,1306544373,Electronic Technology,NASDAQ,false
+TSEM,Tower Semiconductor Ltd.,136.8200,18.40,44517,3286484,1.35,115.5574,-9.56,,,,13118100749,Electronic Technology,NASDAQ,false
+LTRN,Lantern Pharma Inc.,0.2898,18.27,1100,246580,0.45,0.2450,-13.70,,,,3892211,Health Technology,NASDAQ,false
+WYFI,"WhiteFiber, Inc.",7.5000,18.11,48586,2026729,2.40,6.3500,-16.99,,,,287577210,Technology Services,NASDAQ,false
+BGDE,"Big Digital Energy, Inc.",2.4800,18.10,2471,91209,2.71,2.0999,-9.48,,,,13480408,Technology Services,NASDAQ,false
+ALAB,"Astera Labs, Inc.",212.9500,18.08,227596,4872396,4.67,180.3438,-14.77,,,,31521948108,Electronic Technology,NASDAQ,false
+AAOI,"Applied Optoelectronics, Inc.",38.8400,17.95,667316,13968868,4.78,32.9292,-16.55,,,,2989080387,Electronic Technology,NASDAQ,false
+DCGO,DocGo Inc.,0.2064,17.94,28910147,766210,3773.13,0.1750,1.98,,,,17323660,Health Services,NASDAQ,false
+DFDV,DeFi Development Corp.,2.5437,17.76,35895,1381417,2.60,2.1601,-15.29,,,,86515516,Finance,NASDAQ,false
+NVTS,Navitas Semiconductor Corporation,7.1600,17.76,637101,14852880,4.29,6.0802,-15.20,,,,1638605809,Electronic Technology,NASDAQ,false
+SNOA,"Sonoma Pharmaceuticals, Inc.",0.8500,17.73,6688,73354,9.12,0.7220,-10.83,,,,3654470,Health Technology,NASDAQ,false
+LITE,Lumentum Holdings Inc.,542.0200,17.69,181020,5960031,3.04,460.5489,-13.94,,,,41770977370,Producer Manufacturing,NASDAQ,false
+BE,Bloom Energy Corporation,167.6500,17.69,853074,17530316,4.87,142.4505,-15.26,,,,42116293493,Electronic Technology,NYSE,false
+GPUS,"Hyperscale Data, Inc.",0.1518,17.58,3938515,41312091,9.53,0.1291,-15.01,,,,33637699,Producer Manufacturing,AMEX,false
+CIRC,"Circle8 Group, Inc.",0.1600,17.56,25388,664908,3.82,0.1361,-12.25,,,,15570782,Commercial Services,NASDAQ,false
+GLXY,Galaxy Digital Inc.,13.1700,17.38,211637,9340780,2.27,11.2200,-8.93,,,,4327968415,Finance,NASDAQ,false
+MSS,Maison Solutions Inc.,1.2910,17.36,4762904,2809616,169.52,1.1000,63.20,,,,2634766,Retail Trade,NASDAQ,false
+GNS,Genius Group Limited,0.5859,17.35,174430,1285574,13.57,0.4993,-50.76,,,,9583939,Technology Services,AMEX,false
+MRVL,"Marvell Technology, Inc.",143.4800,17.34,1056590,28457587,3.71,122.2771,-11.69,,,,107227333915,Electronic Technology,NASDAQ,false
+CORZ,"Core Scientific, Inc.",13.2900,17.30,312805,18076264,1.73,11.3299,-15.19,,,,3650935844,Technology Services,NASDAQ,false
+DXST,Decent Holding Inc.,0.6577,17.28,1062,32758,3.24,0.5608,-23.69,,,,1397585,Industrial Services,NASDAQ,false
+COHR,Coherent Corp.,219.3900,17.18,483103,9425238,5.13,187.2248,-12.90,,,,36874604160,Electronic Technology,NYSE,false
+MPWR,"Monolithic Power Systems, Inc.",1337.6000,17.12,5586,1069278,0.52,1142.0765,-11.87,,,,55695498559,Electronic Technology,NASDAQ,false
+SKHY,SK hynix Inc.,121.2800,17.10,1514610,23646949,6.41,103.5696,-13.11,,,,73650345847,Electronic Technology,NASDAQ,false
+SITM,SiTime Corporation,422.9200,17.07,9528,759369,1.25,361.2540,-10.83,,,,10912962624,Electronic Technology,NASDAQ,false
+SMTC,Semtech Corporation,102.5000,16.97,40258,3533742,1.14,87.6293,-13.93,,,,8178124047,Electronic Technology,NASDAQ,false
+ENTG,"Entegris, Inc.",145.6100,16.93,8991,3504788,0.26,124.5275,-9.85,,,,19028184194,Producer Manufacturing,NASDAQ,false
+MU,"Micron Technology, Inc.",695.0000,16.90,2470771,31562293,7.83,594.5252,-13.89,,,,672642428248,Electronic Technology,NASDAQ,false
+DOCN,"DigitalOcean Holdings, Inc.",78.0000,16.84,36831,3778411,0.97,66.7580,-13.40,,,,7877467349,Technology Services,NYSE,false
+NXPI,NXP Semiconductors N.V.,274.7000,16.82,10401,5216653,0.20,235.1481,-6.60,,,,59270256360,Electronic Technology,NASDAQ,false
+HIVE,HIVE Digital Technologies Ltd,1.3488,16.78,242358,11030160,2.20,1.1550,-14.44,,,,319794323,Technology Services,NASDAQ,false
+GLOO,"Gloo Holdings, Inc.",2.5100,16.74,250,320468,0.08,2.1501,-16.02,,,,196791743,Technology Services,NASDAQ,false
+TER,"Teradyne, Inc.",239.0600,16.74,55998,4017403,1.39,204.7799,-0.06,,,,31950149710,Electronic Technology,NASDAQ,false
+BAK,Braskem SA,0.8612,16.61,59965,2723249,2.20,0.7385,-12.61,,,,588561172,Process Industries,NYSE,false
+REKR,"Rekor Systems, Inc.",0.2149,16.48,67362,2415905,2.79,0.1845,-12.02,,,,25408472,Commercial Services,NASDAQ,false
+WULF,TeraWulf Inc.,11.4716,16.46,2398336,51470760,4.66,9.8502,-14.94,,,,4939988015,Technology Services,NASDAQ,false
+AMBR,Amber International Holding Limited,0.9709,16.46,11060,96207,11.50,0.8337,-38.70,,,,78597276,Finance,NASDAQ,false
+KLAC,KLA Corporation,147.6600,16.39,93801,14126814,0.66,126.8666,-10.33,,,,165306843564,Electronic Technology,NASDAQ,false
+FORM,"FormFactor, Inc.",84.9600,16.35,11693,1579204,0.74,73.0211,-10.83,,,,5724995144,Electronic Technology,NASDAQ,false
+KEEL,Keel Infrastructure Corp.,1.5998,16.35,709200,28760486,2.47,1.3750,-19.59,,,,849590293,Technology Services,NASDAQ,false
+ARM,Arm Holdings plc,177.0100,16.30,286941,5816015,4.93,152.2012,-14.09,,,,161949213086,Electronic Technology,NASDAQ,false
+CIFR,Cipher Digital Inc.,6.3200,16.28,1119415,56401173,1.98,5.4352,-16.13,,,,2480344359,Technology Services,NASDAQ,false
+ONTO,Onto Innovation Inc.,197.8500,16.27,5202,1217512,0.43,170.1643,-13.15,,,,8352189381,Electronic Technology,NYSE,false
+ALMU,"Aeluma, Inc.",5.6600,16.22,3428,790175,0.43,4.8701,-9.81,,,,94224236,Commercial Services,NASDAQ,false
+DGXX,Digi Power X Inc.,2.1500,16.22,99435,2742916,3.63,1.8499,-10.19,,,,187584450,Technology Services,NASDAQ,false
+SVRN,"SVRN, Inc.",12.4900,16.19,3032,80150,3.78,10.7496,-19.78,,,,20165538,Finance,NASDAQ,false
+LRCX,Lam Research Corporation,212.7900,16.11,172537,13111526,1.32,183.2659,-10.02,,,,228935578266,Producer Manufacturing,NASDAQ,false
+PARA,"Parabolic Technologies, Inc.",3.2500,16.07,1637,610316,0.27,2.8000,0.00,,,,2379754,Technology Services,NASDAQ,false
+SOAR,"SOAR AI, Inc.",0.1915,16.06,91275426,3065656,2977.35,0.1650,-12.23,,,,9340282,Technology Services,AMEX,false
+EPSM,Epsium Enterprise Limited,0.6500,16.05,651,35774,1.82,0.5601,-13.16,,,,7518241,Distribution Services,NASDAQ,false
+OPRT,Oportun Financial Corporation,11.9500,16.02,100,708554,0.01,10.2999,-5.76,,,,474622136,Finance,NASDAQ,false
+VRT,"Vertiv Holdings, LLC",192.6700,15.90,197429,8079943,2.44,166.2381,-10.14,,,,64012442061,Electronic Technology,NYSE,false
+ZVIA,Zevia PBC,0.9860,15.82,1000,425111,0.24,0.8513,-9.13,,,,65881423,Consumer Non-Durables,NYSE,false
+RXT,"Rackspace Technology, Inc.",2.2000,15.79,96840,5487354,1.76,1.9000,-17.75,,,,499792825,Technology Services,NASDAQ,false
+CLSK,"CleanSpark, Inc.",5.6603,15.75,328985,19452821,1.69,4.8901,-16.27,,,,1255835475,Technology Services,NASDAQ,false
+ABTC,American Bitcoin Corp.,4.0500,15.71,24303,1017835,2.39,3.5001,-8.85,,,,254878070,Technology Services,NASDAQ,false
+ALGM,"Allegro MicroSystems, Inc.",29.5700,15.69,5329,3160466,0.17,25.5597,-10.06,,,,4766514394,Electronic Technology,NASDAQ,false
+OUST,"Ouster, Inc.",27.5303,15.67,132916,2876094,4.62,23.8007,-15.48,,,,1737332577,Electronic Technology,NASDAQ,false
+SLMT,Solmate Infrastructure Public Limited Company,2.5895,15.60,1047,47764,2.19,2.2401,-13.85,,,,24660818,Consumer Services,NASDAQ,false
+ILAG,Intelligent Living Application Group Inc.,1.7684,15.58,448,168572,0.27,1.5300,-16.85,,,,3177770,Consumer Durables,NASDAQ,false
+ACMR,"ACM Research, Inc.",46.0000,15.58,19408,1255312,1.55,39.7993,-12.53,,,,2786443960,Producer Manufacturing,NASDAQ,false
+POET,POET Technologies Inc.,3.9523,15.56,468203,8608541,5.44,3.4201,-15.97,,,,595818536,Producer Manufacturing,NASDAQ,false
+STX,Seagate Technology Holdings PLC,528.0000,15.53,63460,5715446,1.11,457.0241,-12.35,,,,104911725786,Electronic Technology,NASDAQ,false
+AMAT,"Applied Materials, Inc.",349.5700,15.51,120021,8487613,1.41,302.6318,-10.71,,,,240166388702,Producer Manufacturing,NASDAQ,false
+TE,T1 Energy Inc.,1.2700,15.45,707450,23552181,3.00,1.1000,-14.73,,,,330661692,Producer Manufacturing,NYSE,false
+HPE,Hewlett Packard Enterprise Company,47.1900,15.35,471472,16895080,2.79,40.9103,-10.07,,,,54306581561,Electronic Technology,NYSE,false
+CNEY,CN Energy Group Inc.,0.4210,15.34,5380,154141,3.49,0.3650,1.11,,,,4473436,Producer Manufacturing,NASDAQ,false
+BMNR,"BitMine Immersion Technologies, Inc.",14.9700,15.33,1555034,31587664,4.92,12.9801,-13.87,,,,8131333547,Finance,NYSE,false
+FLNC,"Fluence Energy, Inc.",3.9900,15.32,216569,6873480,3.15,3.4599,-9.66,,,,638703449,Producer Manufacturing,NASDAQ,false
+XCH,XCHG Limited,3.2000,15.32,511,179332,0.28,2.7749,-9.90,,,,12283354,Producer Manufacturing,NASDAQ,false
+AMKR,"Amkor Technology, Inc.",34.8700,15.31,69826,5187466,1.35,30.2402,-11.40,,,,7493779807,Electronic Technology,NASDAQ,false
+MCHP,Microchip Technology Incorporated,63.9100,15.28,43793,15562089,0.28,55.4389,-5.18,,,,30171757456,Electronic Technology,NASDAQ,false
+PAAI,"Paradium.AI, Inc.",0.4184,15.26,34531,214237,16.12,0.3630,-21.09,,,,17282667,Technology Services,AMEX,false
+FSP,Franklin Street Properties Corp.,0.4233,15.25,409,828238,0.05,0.3673,-2.34,,,,38203502,Finance,AMEX,false
+FWDI,"Forward Industries, Inc.",3.7800,15.24,102555,1660553,6.18,3.2801,-16.75,,,,242217776,Finance,NASDAQ,false
+TSSI,"TSS, Inc.",5.2532,15.20,15127,891151,1.70,4.5601,-14.77,,,,128684204,Technology Services,NASDAQ,false
+TROX,Tronox Holdings plc,1.6700,15.17,20594,4337413,0.47,1.4500,-11.59,,,,231571750,Process Industries,NYSE,false
+AIP,"Arteris, Inc.",19.0000,15.15,14780,636470,2.32,16.5002,-12.74,,,,820628517,Electronic Technology,NASDAQ,false
+ONDS,Ondas Inc,4.3294,15.14,1725542,47911264,3.60,3.7601,-11.11,,,,2223823583,Electronic Technology,NASDAQ,false
+ASTS,"AST SpaceMobile, Inc.",26.7920,15.14,1031802,18585661,5.55,23.2691,-8.92,,,,9077852079,Communications,NASDAQ,false
+NAKA,Nakamoto Inc.,3.9600,15.12,4675,183433,2.55,3.4399,-15.89,,,,63111864,Technology Services,NASDAQ,false
+MRAM,"Everspin Technologies, Inc.",10.3600,15.11,61822,719362,8.59,9.0001,-16.36,,,,220807737,Electronic Technology,NASDAQ,false
+SNDK,Sandisk Corporation,91.2000,15.09,8624016,95409267,9.04,79.2423,-16.05,,,,90200074260,Electronic Technology,NASDAQ,false
+EOSE,"Eos Energy Enterprises, Inc.",1.3695,15.08,610701,25835650,2.36,1.1900,-12.50,,,,435973197,Producer Manufacturing,NASDAQ,false
+VPG,"Vishay Precision Group, Inc.",49.5701,15.07,3728,338902,1.10,43.0782,-11.92,,,,573844130,Electronic Technology,NYSE,false
+ORCL,Oracle Corporation,116.3600,14.99,1287129,38113404,3.38,101.1914,-8.48,,,,305971861721,Technology Services,NYSE,false
+LUNR,"Intuitive Machines, Inc.",10.0800,14.87,281792,8929630,3.16,8.7751,-10.28,,,,2003055145,Electronic Technology,NASDAQ,false
+CLS,"Celestica, Inc.",231.6100,14.87,105839,3545371,2.99,201.6279,-16.07,,,,25427922465,Electronic Technology,NYSE,false
+BGL,Blue Gold Limited,0.0850,14.86,6494,2096227,0.31,0.0740,-20.43,,,,3204327,Non-Energy Minerals,NASDAQ,false
+MARA,"MARA Holdings, Inc.",5.8402,14.85,1497211,38458358,3.89,5.0851,-18.57,,,,1969961571,Technology Services,NASDAQ,false
+GEMI,"Gemini Space Station, Inc.",1.7800,14.84,14034,2000719,0.70,1.5500,-9.09,,,,203098694,Finance,NASDAQ,false
+CMND,Clearmind Medicine Inc.,3.0200,14.82,1087,7275,14.94,2.6302,-13.48,,,,1334523,Non-Energy Minerals,NASDAQ,false
+KDK,"Kodiak AI, Inc.",0.9796,14.69,104258,7010358,1.49,0.8541,-11.80,,,,174307803,Producer Manufacturing,NASDAQ,false
+BW,"Babcock & Wilcox Enterprises, Inc.",4.0600,14.69,71262,5267859,1.35,3.5400,-15.51,,,,514878830,Electronic Technology,NYSE,false
+TSM,Taiwan Semiconductor Manufacturing Company Ltd.,366.0000,14.68,996431,15782513,6.31,319.1489,-9.36,,,,1570360545679,Electronic Technology,NYSE,false
+VNET,"VNET Group, Inc.",2.5000,14.68,217277,6986924,3.11,2.1800,-0.46,,,,620627801,Technology Services,NASDAQ,false
+QMLS,"QumulusAI, Inc.",2.1900,14.66,13140,298936,4.40,1.9100,-9.69,,,,66557383,Technology Services,NASDAQ,false
+ADI,"Analog Devices, Inc.",396.3900,14.59,34538,4757898,0.73,345.9202,-8.35,,,,167620890500,Electronic Technology,NASDAQ,false
+MSTR,Strategy Inc,89.1400,14.58,1289816,19206275,6.72,77.7972,-9.67,,,,32859170144,Finance,NASDAQ,false
+NVMI,Nova Ltd.,321.4000,14.43,1904,289899,0.66,280.8704,-7.37,,,,8933077623,Electronic Technology,NASDAQ,false
+VELO,"Velo3D, Inc.",3.4000,14.29,21719,1717686,1.26,2.9749,-12.24,,,,95976079,Producer Manufacturing,NASDAQ,false
+CBRS,Cerebras Systems Inc.,94.4200,14.21,271823,12727031,2.14,82.6723,-4.93,,,,19731435129,Technology Services,NASDAQ,false
+RCAT,"Red Cat Holdings, Inc.",2.0500,14.21,447102,8098265,5.52,1.7949,-7.47,,,,274557728,Technology Services,NASDAQ,false
+SIMO,Silicon Motion Technology Corporation,148.4711,14.20,13584,1073319,1.27,130.0097,-9.56,,,,4408346391,Electronic Technology,NASDAQ,false
+CIEN,Ciena Corporation,267.6446,14.20,17077,3147358,0.54,234.3648,-10.76,,,,33235665119,Electronic Technology,NYSE,false
+P,"Everpure, Inc.",105.0600,14.13,20521,3597785,0.57,92.0529,-12.75,,,,30673570705,Electronic Technology,NYSE,false
+SBET,"Sharplink, Inc.",5.1123,14.11,314931,9661357,3.26,4.4802,-9.13,,,,973711009,Commercial Services,NASDAQ,false
+FLY,Firefly Aerospace Inc.,20.1800,14.08,64171,3791324,1.69,17.6893,-9.37,,,,3038360974,Electronic Technology,NASDAQ,false
+WOLF,"Wolfspeed, Inc.",21.9200,14.05,50780,3320191,1.53,19.2196,-14.50,,,,1029843671,Electronic Technology,NYSE,false
+VSH,"Vishay Intertechnology, Inc.",25.5000,14.04,15539,3519760,0.44,22.3606,-10.74,,,,3429682701,Electronic Technology,NYSE,false
+LPTH,"LightPath Technologies, Inc.",5.9000,14.01,81482,3124224,2.61,5.1750,-13.89,,,,362705519,Electronic Technology,NASDAQ,false
+GCTS,"GCT Semiconductor Holding, Inc.",1.1400,14.00,59533,1953428,3.05,1.0000,-10.71,,,,92211693,Electronic Technology,NYSE,false
+CAN,Canaan Inc.,0.1341,13.93,260068,8008359,3.25,0.1177,-4.15,,,,84161384,Electronic Technology,NASDAQ,false
+CLDI,"Calidi Biotherapeutics, Inc.",0.5439,13.91,2671,43839,6.09,0.4775,-5.45,,,,1646985,Health Technology,AMEX,false
+AMPX,"Amprius Technologies, Inc.",6.5714,13.89,120205,6007514,2.00,5.7700,-9.84,,,,846133660,Producer Manufacturing,NYSE,false
+VSAT,"ViaSat, Inc.",64.0400,13.83,11867,2510336,0.47,56.2593,-8.49,,,,7830805266,Electronic Technology,NASDAQ,false
+MKSI,MKS Inc.,210.0000,13.81,8413,1646327,0.51,184.5181,-10.03,,,,12477330478,Producer Manufacturing,NASDAQ,false
+RMBS,"Rambus, Inc.",75.4900,13.78,17116,1809193,0.95,66.3473,-12.92,,,,7105818469,Electronic Technology,NASDAQ,false
+WDC,Western Digital Corporation,297.0700,13.77,140351,8626960,1.63,261.1145,-12.02,,,,97739544253,Electronic Technology,NASDAQ,false
+STRL,"Sterling Infrastructure, Inc.",282.0000,13.75,7997,1044218,0.77,247.9121,-9.27,,,,7562188861,Industrial Services,NASDAQ,false
+ATOM,Atomera Incorporated,2.3200,13.73,74007,737425,10.04,2.0399,-11.69,,,,79730136,Commercial Services,NASDAQ,false
+HIMX,"Himax Technologies, Inc.",7.8000,13.70,30821,1322283,2.33,6.8602,-9.50,,,,1197070023,Electronic Technology,NASDAQ,false
+TBLA,Taboola.com Ltd.,2.1142,13.67,767,2134708,0.04,1.8599,0.54,,,,495268345,Technology Services,NASDAQ,false
+ICHR,Ichor Holdings,31.0000,13.64,19725,1176866,1.68,27.2791,-15.15,,,,1025081637,Producer Manufacturing,NASDAQ,false
+FCEL,"FuelCell Energy, Inc.",7.6000,13.60,101771,5831439,1.75,6.6901,-11.86,,,,534893557,Electronic Technology,NASDAQ,false
+AEIS,"Advanced Energy Industries, Inc.",215.9900,13.57,2602,695075,0.37,190.1823,-0.05,,,,7694816518,Electronic Technology,NASDAQ,false
+RIOT,"Riot Platforms, Inc.",18.4300,13.56,986610,25704721,3.84,16.2293,-8.46,,,,6089235498,Technology Services,NASDAQ,false
+SQNS,Sequans Communications S.A.,2.3500,13.53,700,68994,1.01,2.0699,-2.36,,,,31078931,Electronic Technology,NYSE,false
+TTMI,"TTM Technologies, Inc.",66.8000,13.51,79542,5193976,1.53,58.8494,-13.46,,,,6201349570,Electronic Technology,NASDAQ,false
+PURR,Hyperliquid Strategies Inc,8.4900,13.50,656005,15546358,4.22,7.4802,-10.95,,,,2072025290,Finance,NASDAQ,false
+GSIT,"GSI Technology, Inc.",2.8600,13.49,6687,571868,1.17,2.5200,-10.32,,,,97016221,Electronic Technology,NASDAQ,false
+SATL,Satellogic Inc.,2.7975,13.49,156781,5107356,3.07,2.4650,-10.04,,,,379838674,Electronic Technology,NASDAQ,false
+PMAX,Powell Max Limited,0.6357,13.48,9965,932722,1.07,0.5602,-8.16,,,,1099092,Communications,NASDAQ,false
+PLPC,Preformed Line Products Company,280.0100,13.47,3104,84385,3.68,246.7701,-8.86,,,,1204456932,Producer Manufacturing,NASDAQ,false
+FJET,"Starfighters Space, Inc.",0.7500,13.43,8397,1156237,0.73,0.6612,-5.54,,,,36363369,Commercial Services,AMEX,false
+MIRA,"MIRA Pharmaceuticals, Inc.",0.3300,13.40,14621,167775,8.71,0.2910,-20.99,,,,12228428,Health Technology,NASDAQ,false
+KLIC,"Kulicke and Soffa Industries, Inc.",62.0400,13.40,1045,742940,0.14,54.7090,-11.16,,,,2893212362,Producer Manufacturing,NASDAQ,false
+FLEX,Flex Ltd.,75.1000,13.38,7187,6660340,0.11,66.2374,-10.75,,,,24473083625,Electronic Technology,NASDAQ,false
+IONQ,"IonQ, Inc.",23.4906,13.37,1156065,24614705,4.70,20.7203,-8.76,,,,8960625738,Electronic Technology,NYSE,false
+BSEM,"BioStem Technologies, Inc.",0.7200,13.37,21393,240814,8.88,0.6351,-10.23,,,,12180349,Health Technology,NASDAQ,false
+FPS,"Forgent Power Solutions, Inc.",20.4000,13.33,201947,11020497,1.83,18.0005,-14.12,,,,5479720103,Producer Manufacturing,NYSE,false
+BEEM,Beam Global,0.5400,13.33,9339,1328868,0.70,0.4765,-10.13,,,,11493340,Producer Manufacturing,NASDAQ,false
+OPEN,Opendoor Technologies Inc,1.4789,13.33,1881623,40863893,4.60,1.3050,-10.62,,,,1213961784,Finance,NASDAQ,false
+MCHPP,Microchip Technology Incorporated - Depositary Shares Each Representing a 1/20th Interest in a Share of 7.50% Series A Mandatory Convertible Preferred Stock,55.5100,13.24,100,262453,0.04,49.0198,-5.86,,,,30171757456,Electronic Technology,NASDAQ,false
+SERV,Serve Robotics Inc.,2.3100,13.24,87106,3952264,2.20,2.0399,-10.92,,,,179284887,Producer Manufacturing,NASDAQ,false
+NUAI,"New Era Energy & Digital, Inc.",4.2800,13.23,614935,13257419,4.64,3.7799,-11.68,,,,531352605,Industrial Services,NASDAQ,false
+BKKT,"Bakkt, Inc.",2.7400,13.22,23076,1303465,1.77,2.4201,-7.98,,,,109206648,Commercial Services,NYSE,false
+BFRI,Biofrontera Inc.,0.6000,13.21,2445,199141,1.23,0.5300,-7.02,,,,9512969,Health Technology,NASDAQ,false
+NAK,"Northern Dynasty Minerals, Ltd.",0.4700,13.20,116793,5258347,2.22,0.4152,-18.64,,,,233526573,Non-Energy Minerals,AMEX,false
+RKLB,Rocket Lab Corporation,51.4000,13.17,875985,19662970,4.45,45.4184,-10.92,,,,28706389713,Electronic Technology,NASDAQ,false
+XXI,"Twenty One Capital, Inc.",4.5600,13.15,57341,1495343,3.83,4.0300,-6.50,,,,2625555409,Finance,NYSE,false
+RGTI,"Rigetti Computing, Inc.",8.1000,13.13,380090,16907657,2.25,7.1599,-11.17,,,,2454326371,Electronic Technology,NASDAQ,false
+FN,Fabrinet,322.4400,13.12,9965,1136028,0.88,285.0424,-8.56,,,,10180920507,Electronic Technology,NYSE,false
+CRNT,Ceragon Networks Ltd.,2.2500,13.07,1700,537645,0.32,1.9899,-7.44,,,,180878448,Electronic Technology,NASDAQ,false
+SLNH,"Soluna Holdings, Inc.",0.4185,13.05,133434,10598343,1.26,0.3702,-7.73,,,,95817993,Electronic Technology,NASDAQ,false
+SNES,"SenesTech, Inc.",0.7800,13.04,200,2191951,0.01,0.6900,5.50,,,,4708478,Process Industries,NASDAQ,false
+LSCC,Lattice Semiconductor Corporation,111.1000,13.01,4508,2669218,0.17,98.3099,-11.37,,,,13982207506,Electronic Technology,NASDAQ,false
+SLE,"Super League Enterprise, Inc.",3.6727,13.01,400,81479,0.49,3.2499,-9.22,,,,12396472,Technology Services,NASDAQ,false
+COHU,"Cohu, Inc.",42.1600,13.00,1900,1383542,0.14,37.3097,-8.53,,,,1766571577,Electronic Technology,NASDAQ,false
+AGPU,Axe Compute Inc.,6.4500,12.96,29802,263064,11.33,5.7100,-10.85,,,,66185318,Health Technology,NASDAQ,false
+SNPS,"Synopsys, Inc.",447.5100,12.96,5678,1992696,0.28,396.1668,-8.06,,,,75920691215,Technology Services,NASDAQ,false
+USAR,"USA Rare Earth, Inc.",7.0818,12.95,756482,16824428,4.50,6.2699,-8.73,,,,2353256056,Producer Manufacturing,NASDAQ,false
+ON,ON Semiconductor Corporation,68.7000,12.92,90714,10592497,0.86,60.8395,-7.43,,,,23684068118,Electronic Technology,NASDAQ,false
+RDW,Redwire Corporation,6.3796,12.91,416203,12587722,3.31,5.6502,-13.21,,,,1413739151,Electronic Technology,NYSE,false
+EJH,E-Home Household Service Holdings Limited,1.2500,12.91,105,13759,0.76,1.1071,1.57,,,,3542890,Consumer Services,NASDAQ,false
+UUUU,Energy Fuels Inc,5.6000,12.90,242381,9580088,2.53,4.9601,-9.49,,,,1313546602,Non-Energy Minerals,AMEX,false
+QBTS,D-Wave Quantum Inc.,7.3600,12.88,712089,15930091,4.47,6.5202,-10.81,,,,2478010738,Electronic Technology,NASDAQ,false
+BLZE,"Backblaze, Inc.",7.2690,12.87,28642,2739217,1.05,6.4402,-11.42,,,,407008009,Electronic Technology,NASDAQ,false
+NNBR,"NN, Inc.",2.8100,12.85,1810,2289123,0.08,2.4900,-10.75,,,,233423158,Producer Manufacturing,NASDAQ,false
+BTGO,"BitGo Holdings, Inc.",3.7804,12.85,13325,1203780,1.11,3.3499,-6.16,,,,403403267,Technology Services,NYSE,false
+INFQ,"Infleqtion, Inc.",7.1300,12.82,194437,6794839,2.86,6.3198,-13.42,,,,1429880655,Electronic Technology,NYSE,false
+VICR,Vicor Corporation,141.1100,12.81,5004,987682,0.51,125.0864,-11.61,,,,5772728142,Electronic Technology,NASDAQ,false
+AOSL,Alpha and Omega Semiconductor Limited,24.0000,12.78,8768,634736,1.38,21.2804,-15.32,,,,645090447,Electronic Technology,NASDAQ,false
+ASPI,ASP Isotopes Inc.,1.2400,12.73,130561,4631184,2.82,1.1000,-3.08,,,,171417890,Industrial Services,NASDAQ,false
+GLW,Corning Incorporated,106.3900,12.73,261993,10197334,2.57,94.3759,-10.94,,,,81299035627,Electronic Technology,NYSE,false
+WETH,Wetouch Technology Inc.,0.7950,12.70,6806,126608,5.38,0.7054,-9.25,,,,31333420,Electronic Technology,NASDAQ,false
+EROK,"EagleRock Land, LLC",22.2000,12.69,6129,304370,2.01,19.7001,-2.91,,,,2590935628,Finance,NYSE,false
+GRRR,Gorilla Technology Group Inc.,5.9200,12.65,51840,1206183,4.30,5.2552,-16.32,,,,144925055,Technology Services,NASDAQ,false
+PL,Planet Labs PBC,11.8542,12.58,145776,8099558,1.80,10.5296,-9.46,,,,3831319163,Technology Services,NYSE,false
+WKHS,"Workhorse Group, Inc.",1.9700,12.57,1250,473542,0.26,1.7500,-5.41,,,,19125024,Consumer Durables,NASDAQ,false
+SES,SES AI Corporation,0.4637,12.55,247359,23207513,1.07,0.4120,-14.70,,,,147014443,Producer Manufacturing,NYSE,false
+ASTC,Astrotech Corporation,3.9380,12.51,381,27243,1.40,3.5001,-0.85,,,,7446218,Electronic Technology,NASDAQ,false
+CECO,CECO Environmental Corp.,54.0000,12.48,2901,1437403,0.20,48.0085,-4.99,,,,2814692924,Producer Manufacturing,AMEX,false
+MEI,"Methode Electronics, Inc.",11.4800,12.44,1600,647711,0.25,10.2099,-10.75,,,,363936001,Electronic Technology,NYSE,false
+QMCO,Quantum Corporation,12.9000,12.37,26733,1617728,1.65,11.4799,-17.23,,,,454118887,Electronic Technology,NASDAQ,false
+PLAB,"Photronics, Inc.",27.0000,12.36,14552,807561,1.80,24.0299,-8.80,,,,1417702023,Electronic Technology,NASDAQ,false
+INTC,Intel Corporation,57.5900,12.30,3408819,135976129,2.51,51.2823,-7.97,,,,272553193512,Electronic Technology,NASDAQ,false
+STDN,"Standard Nuclear, Inc.",9.1400,12.29,6335,308726,2.05,8.1396,-9.66,,,,1284737868,Process Industries,NYSE,false
+HAWK,"HawkEye 360, Inc.",18.1224,12.28,6698,1972925,0.34,16.1404,-10.73,,,,1602981636,Technology Services,NYSE,false
+NEPH,"Nephros, Inc.",2.9305,12.28,1300,65492,1.98,2.6100,-8.10,,,,28370709,Health Technology,NASDAQ,false
+EROC,"ERock, Inc.",6.8700,12.25,57337,3095254,1.85,6.1203,-15.59,,,,1342728462,Producer Manufacturing,NYSE,false
+RXRX,"Recursion Pharmaceuticals, Inc.",2.7502,12.25,428853,25596527,1.68,2.4501,-9.93,,,,1527251305,Health Technology,NASDAQ,false
+SMR,NuScale Power Corporation,3.7700,12.20,864159,31403403,2.75,3.3601,-11.81,,,,1444464710,Producer Manufacturing,NYSE,false
+ENRD,Einride AB,1.7500,12.18,5000,93265,5.36,1.5600,-3.11,,,,228835314,Technology Services,NASDAQ,false
+ACLS,"Axcelis Technologies, Inc.",101.2500,12.18,526,386743,0.14,90.2567,-9.69,,,,2787564153,Producer Manufacturing,NASDAQ,false
+HOS,"Hornbeck Offshore Services, Inc.",5.5300,12.17,6759,3431482,0.20,4.9300,-7.50,,,,1094317183,Industrial Services,NYSE,false
+UCTT,"Ultra Clean Holdings, Inc.",41.5000,12.16,12103,1489015,0.81,37.0007,-12.96,,,,1774525894,Producer Manufacturing,NASDAQ,false
+AMSC,American Superconductor Corporation,21.6199,12.14,14571,854197,1.71,19.2794,-12.72,,,,934213571,Producer Manufacturing,NASDAQ,false
+PROP,Prairie Operating Co.,0.3230,12.11,300,1337559,0.02,0.2881,-7.06,,,,34250803,Energy Minerals,NASDAQ,false
+SURG,"SurgePays, Inc.",0.1188,12.08,162566,4471049,3.64,0.1060,-23.63,,,,6578656,Technology Services,NASDAQ,false
+FFR,FF EAI Robotics Ecosystem Inc.,0.4000,12.04,4611291,400072,1152.61,0.3570,-12.50,,,,9879724,Technology Services,NASDAQ,false
+SEI,"Solaris Energy Infrastructure, Inc.",61.2000,12.02,13032,3130284,0.42,54.6331,-11.06,,,,4382053032,Industrial Services,NYSE,false
+FIX,"Comfort Systems USA, Inc.",1167.7000,12.01,2471,721224,0.34,1042.4962,-6.42,,,,36471751063,Industrial Services,NYSE,false
+NIPG,NIP Group Inc.,2.8000,12.00,100,13946,0.72,2.5000,-10.71,,,,21303965,Technology Services,NASDAQ,false
+ECOR,"electroCore, Inc.",4.9500,11.99,5051,167284,3.02,4.4200,-8.87,,,,40778945,Health Technology,NASDAQ,false
+CAMT,Camtek Ltd.,99.8797,11.97,3767,615740,0.61,89.2022,-8.77,,,,4167891158,Electronic Technology,NASDAQ,false
+CRCL,"Circle Internet Group, Inc.",53.2100,11.92,584388,10013929,5.84,47.5429,-8.36,,,,12197817192,Technology Services,NYSE,false
+OCC,Optical Cable Corporation,8.0100,11.87,7343,117780,6.23,7.1601,-12.15,,,,63308895,Electronic Technology,NASDAQ,false
+TWST,Twist Bioscience Corporation,115.5700,11.86,6197,2459170,0.25,103.3166,-7.44,,,,7044222817,Health Technology,NASDAQ,false
+NMAD,"Nomad Power Solutions, Inc.",2.8619,11.79,2699,263187,1.03,2.5601,13.53,,,,47154257,Health Technology,NASDAQ,false
+STM,STMicroelectronics N.V.,43.7200,11.79,168460,11233210,1.50,39.1090,-10.67,,,,35924333800,Electronic Technology,NYSE,false
+BDSX,"Biodesix, Inc.",8.4500,11.77,990,228642,0.43,7.5602,-8.92,,,,83829139,Health Services,NASDAQ,false
+NCRA,"Nocera, Inc.",1.4300,11.77,3116,16722,18.63,1.2794,-9.26,,,,3187768,Industrial Services,NASDAQ,false
+HTT,High Templar Tech Limited,1.5200,11.76,2268,83869,2.70,1.3601,-0.73,,,,211185565,Technology Services,NYSE,false
+QNT,Quantinuum Inc.,31.0000,11.75,44456,2661044,1.67,27.7405,-0.79,,,,7373737291,Electronic Technology,NASDAQ,false
+GFS,GlobalFoundries Inc.,39.7200,11.70,28485,5627444,0.51,35.5595,-8.68,,,,19513587651,Electronic Technology,NASDAQ,false
+MOBX,"Mobix Labs, Inc.",1.9097,11.68,1261,153279,0.82,1.7100,-2.84,,,,5776519,Electronic Technology,NASDAQ,false
+QCOM,QUALCOMM Incorporated,167.4400,11.67,150463,13253411,1.14,149.9418,-7.45,,,,160435802612,Electronic Technology,NASDAQ,false
+ECG,"Everus Construction Group, Inc.",85.5197,11.66,5868,875231,0.67,76.5894,-8.66,,,,3911003781,Industrial Services,NYSE,false
+ABAT,American Battery Technology Company,0.8815,11.64,70394,3308983,2.13,0.7896,-9.67,,,,113410700,Non-Energy Minerals,NASDAQ,false
+CRML,Critical Metals Corp.,3.3711,11.63,239539,6811430,3.52,3.0199,-13.22,,,,586543248,Non-Energy Minerals,NASDAQ,false
+EMAT,Evolution Metals & Technologies Corp.,0.6732,11.62,4049,936068,0.43,0.6031,-14.58,,,,379235016,Non-Energy Minerals,NASDAQ,false
+ORBS,Eightco Holdings Inc.,0.6040,11.60,76746,13107653,0.59,0.5412,-13.37,,,,207220102,Finance,NASDAQ,false
+GTM,ZoomInfo Technologies Inc.,3.0800,11.59,3362,4856960,0.07,2.7601,-2.47,,,,809900300,Technology Services,NASDAQ,false
+QUBT,Quantum Computing Inc.,4.9100,11.59,205875,7638450,2.70,4.4000,-9.84,,,,998499777,Technology Services,NASDAQ,false
+ABSI,Absci Corporation,8.3800,11.58,29308,4286254,0.68,7.5103,-7.97,,,,1297321141,Health Technology,NASDAQ,false
+NRGV,"Energy Vault Holdings, Inc.",3.0900,11.55,17947,4683875,0.38,2.7701,-9.48,,,,510872640,Producer Manufacturing,NYSE,false
+FOXX,Foxx Development Holdings Inc.,1.4500,11.54,378,31632,1.19,1.3000,-4.41,,,,9229939,Distribution Services,NASDAQ,false
+KC,Kingsoft Cloud Holdings Limited,6.1000,11.52,12828,1510116,0.85,5.4699,-8.38,,,,1759960955,Technology Services,NASDAQ,false
+ASML,ASML Holding N.V. - New York Registry Shares,1411.8500,11.50,86339,1783209,4.84,1266.2332,-6.63,,,,489226022057,Electronic Technology,NASDAQ,false
+BLNE,"Beeline Holdings, Inc.",0.3230,11.49,1700,475095,0.36,0.2897,-21.72,,,,10287380,Commercial Services,NASDAQ,false
+RZLV,Rezolve AI PLC,0.9366,11.49,363031,8260120,4.39,0.8401,-9.76,,,,350211555,Technology Services,NASDAQ,false
+AIRO,"AIRO Group Holdings, Inc.",3.9800,11.48,1999,378752,0.53,3.5701,-15.00,,,,113730989,Electronic Technology,NASDAQ,false
+RBLX,Roblox Corporation,52.0850,11.48,101368,10168412,1.00,46.7214,0.80,,,,33438127945,Technology Services,NYSE,false
+RGC,Regencell Bioscience Holdings Limited,4.6600,11.48,823,313839,0.26,4.1801,-4.13,,,,2072796577,Health Technology,NASDAQ,false
+QS,QuantumScape Corporation,3.1100,11.47,279106,16115417,1.73,2.7900,-8.52,,,,1735708795,Producer Manufacturing,NASDAQ,false
+IMOS,ChipMOS TECHNOLOGIES INC.,39.7000,11.45,890,88563,1.00,35.6214,-13.61,,,,1301224635,Electronic Technology,NASDAQ,false
+SKYE,"Skye Bioscience, Inc.",0.7800,11.43,905,103770,0.87,0.7000,-11.03,,,,3096428,Health Technology,NASDAQ,false
+MX,Magnachip Semiconductor Corporation,2.3400,11.43,2889,859666,0.34,2.1000,-7.89,,,,79907470,Electronic Technology,NYSE,false
+NGNE,Neurogene Inc.,24.6800,11.42,200,316380,0.06,22.1504,-3.40,,,,458525034,Health Technology,NASDAQ,false
+NB,NioCorp Developments Ltd.,2.4400,11.42,15402,2793106,0.55,2.1899,-10.61,,,,320775393,Non-Energy Minerals,NASDAQ,false
+TXN,Texas Instruments Incorporated,293.8300,11.40,115532,8629249,1.34,263.7612,-7.70,,,,241006923141,Electronic Technology,NASDAQ,false
+URG,Ur Energy Inc,0.5080,11.40,487680,14204722,3.43,0.4560,-5.53,,,,181825978,Non-Energy Minerals,AMEX,false
+PLG,Platinum Group Metals Ltd.,0.8600,11.40,21933,1237815,1.77,0.7720,-10.44,,,,98839113,Non-Energy Minerals,AMEX,false
+IVVD,"Invivyd, Inc.",0.4596,11.36,34839115,4039244,862.52,0.4127,-7.45,,,,122007387,Health Technology,NASDAQ,false
+ACHR,Archer Aviation Inc.,3.2394,11.32,622515,25210763,2.47,2.9100,-9.06,,,,2277241312,Electronic Technology,NYSE,false
+INOD,Innodata Inc.,31.3000,11.31,19745,1750747,1.13,28.1197,-8.91,,,,967684957,Technology Services,NASDAQ,false
+SANM,Sanmina Corporation,155.5400,11.29,1001,1038731,0.10,139.7610,-9.69,,,,7376910337,Electronic Technology,NASDAQ,false
+NXTT,Next Technology Holding Inc.,3.7000,11.28,200,19159,1.04,3.3249,-8.53,,,,9379649,Technology Services,NASDAQ,false
+UAMY,United States Antimony Corporation,2.4800,11.21,117818,6402226,1.84,2.2300,-6.30,,,,333004647,Non-Energy Minerals,NYSE,false
+HURA,"TuHURA Biosciences, Inc.",1.3900,11.20,4666,472236,0.99,1.2500,-8.09,,,,82198019,Health Technology,NASDAQ,false
+INDI,"indie Semiconductor, Inc.",1.6900,11.18,38618,6896221,0.56,1.5201,-13.64,,,,351687400,Electronic Technology,NASDAQ,false
+XNDU,Xanadu Quantum Technologies Limited,1.8900,11.18,84362,5325361,1.58,1.6999,-6.59,,,,536147992,Electronic Technology,NASDAQ,false
+LDI,"loanDepot, Inc.",0.3890,11.14,11538,2879643,0.40,0.3500,-17.36,,,,118354343,Finance,NYSE,false
+IVDA,"Iveda Solutions, Inc.",0.1889,11.12,907,161615,0.56,0.1700,-6.90,,,,2270306,Electronic Technology,NASDAQ,false
+SOUN,"SoundHound AI, Inc.",2.9000,11.11,600755,18111220,3.32,2.6100,-10.31,,,,1274706748,Technology Services,NASDAQ,false
+KPRX,"Kiora Pharmaceuticals, Inc.",0.8001,11.09,1200,59834,2.01,0.7202,-12.28,,,,3186443,Health Technology,NASDAQ,false
+HBM,Hudbay Minerals Inc.,17.9900,11.08,47899,5085787,0.94,16.1955,-6.28,,,,7193061210,Non-Energy Minerals,NYSE,false
+STAK,STAK Inc.,2.1100,11.05,247606,7515896,3.29,1.9000,-6.40,,,,36499663,Industrial Services,NASDAQ,false
+HYMC,Hycroft Mining Holding Corporation,14.0000,11.02,83410,2516443,3.31,12.6103,-8.49,,,,1175044604,Non-Energy Minerals,NASDAQ,false
+MTRN,Materion Corporation,202.5697,11.02,252,222142,0.11,182.4623,-10.02,,,,3806418654,Electronic Technology,NYSE,false
+RGS,Regis Corporation,21.8000,11.00,1600,17677,9.05,19.6396,1.11,,,,49471212,Consumer Services,NASDAQ,false
+UMAC,"Unusual Machines, Inc.",9.5900,11.00,55699,3096101,1.80,8.6396,-14.88,,,,448517149,Electronic Technology,AMEX,false
+AGX,"Argan, Inc.",298.4900,10.99,898,301019,0.30,268.9341,-9.10,,,,3773185587,Industrial Services,NYSE,false
+ALM,Almonty Industries Inc.,7.0900,10.95,75552,6816756,1.11,6.3903,-15.48,,,,1820950859,Non-Energy Minerals,NASDAQ,false
+USAS,Americas Gold and Silver Corporation,2.1300,10.94,105448,4940551,2.13,1.9200,-6.34,,,,656388824,Non-Energy Minerals,AMEX,false
+VIAV,Viavi Solutions Inc.,29.6287,10.93,15943,6431657,0.25,26.7094,-9.06,,,,6568579577,Technology Services,NASDAQ,false
+IESC,"IES Holdings, Inc.",173.0344,10.88,14804,545513,2.71,156.0556,-6.49,,,,6286047695,Industrial Services,NASDAQ,false
+SILC,Silicom Ltd,24.8900,10.87,3879,211947,1.83,22.4497,-10.09,,,,129033872,Electronic Technology,NASDAQ,false
+OKLO,Oklo Inc.,22.0000,10.83,212647,10078692,2.11,19.8502,-4.75,,,,3876498566,Producer Manufacturing,NYSE,false
+AIRE,reAlpha Tech Corp.,0.3900,10.76,791,174888,0.45,0.3521,-5.48,,,,2617520,Technology Services,NASDAQ,false
+PESI,"Perma-Fix Environmental Services, Inc.",14.0000,10.76,200,312193,0.06,12.6399,-7.60,,,,268448435,Industrial Services,NASDAQ,false
+UEC,Uranium Energy Corp.,5.8700,10.75,98494,10325404,0.95,5.3002,-7.99,,,,2626598770,Non-Energy Minerals,AMEX,false
+OSS,"One Stop Systems, Inc.",4.4400,10.72,13827,1351233,1.02,4.0101,-7.82,,,,100400160,Electronic Technology,NASDAQ,false
+KOPN,Kopin Corporation,2.8500,10.68,75083,3554045,2.11,2.5750,-9.33,,,,478964468,Electronic Technology,NASDAQ,false
+AIFC,AI Financial Corporation,0.1700,10.68,10655,757831,1.41,0.1536,-4.71,,,,21478889,Industrial Services,NASDAQ,false
+PODC,"PodcastOne, Inc.",1.9800,10.61,1726,248868,0.69,1.7901,-2.19,,,,56036516,Technology Services,NASDAQ,false
+HMY,Harmony Gold Mining Company Limited,14.1800,10.61,235489,3408311,6.91,12.8198,-4.97,,,,8383484683,Non-Energy Minerals,NYSE,false
+AARD,"Aardvark Therapeutics, Inc.",1.0200,10.56,980,1227632,0.08,0.9226,-7.74,,,,20196887,Health Technology,NASDAQ,false
+JOBY,"Joby Aviation, Inc.",3.9910,10.55,929181,21618671,4.30,3.6101,-8.14,,,,3670078508,Electronic Technology,NYSE,false
+BFRG,"Bullfrog AI Holdings, Inc.",0.3931,10.55,4671,200793,2.33,0.3556,-8.84,,,,6647330,Technology Services,NASDAQ,false
+LEU,Centrus Energy Corp.,90.0000,10.52,12037,876490,1.37,81.4332,-9.22,,,,1678960392,Non-Energy Minerals,NYSE,false
+CDE,"Coeur Mining, Inc.",11.8028,10.51,972084,35050261,2.77,10.6803,-7.45,,,,10913929727,Non-Energy Minerals,NYSE,false
+ANVS,"Annovis Bio, Inc.",0.7860,10.51,9682,2643159,0.37,0.7112,-4.96,,,,44116618,Health Technology,NYSE,false
+SDEV,Stablecoin Development Corporation,0.5524,10.48,314581,11195767,2.81,0.5000,-10.30,,,,36558506,Finance,AMEX,false
+AIFA,"All In FutureTech Alliance, Inc.",3.0713,10.48,843,83735,1.01,2.7800,-5.44,,,,17848478,Consumer Services,NASDAQ,false
+ENLV,Enlivex Ltd.,1.1600,10.48,4102,45737,8.97,1.0500,-10.26,,,,1306500,Health Technology,NASDAQ,false
+FTI,TechnipFMC plc,64.8500,10.46,1471,3148119,0.05,58.7090,-4.23,,,,22828405241,Industrial Services,NYSE,false
+VOYG,"Voyager Technologies, Inc.",20.6875,10.39,18283,1473691,1.24,18.7404,-14.90,,,,1163723756,Technology Services,NYSE,false
+TAOX,Tao Synergies Inc.,1.7100,10.32,4856,125917,3.86,1.5500,-10.40,,,,12469571,Technology Services,NASDAQ,false
+CEVA,"CEVA, Inc.",24.7200,10.31,2424,509224,0.48,22.4096,-12.46,,,,639296188,Electronic Technology,NASDAQ,false
+QUIK,QuickLogic Corporation,9.7800,10.26,1512,202877,0.75,8.8699,-9.26,,,,166598415,Electronic Technology,NASDAQ,false
+AESI,Atlas Energy Solutions Inc.,5.4900,10.24,7533,5016155,0.15,4.9800,-11.39,,,,623783849,Industrial Services,NYSE,false
+GDS,GDS Holdings Limited,14.6900,10.20,40888,3409174,1.20,13.3303,-9.69,,,,2764567962,Technology Services,NASDAQ,false
+AXG,Solowin Holdings,0.8400,10.19,13401,279800,4.79,0.7623,0.69,,,,736014,Finance,NASDAQ,false
+BAND,Bandwidth Inc.,37.7400,10.19,1204,832895,0.14,34.2499,-14.27,,,,1109131814,Technology Services,NASDAQ,false
+TELO,"Telomir Pharmaceuticals, Inc.",0.4010,10.16,3350,146137,2.29,0.3640,-17.24,,,,26817956,Health Technology,NASDAQ,false
+PDYN,Palladyne AI Corp.,2.6100,10.13,25329,1179162,2.15,2.3699,-12.55,,,,121773246,Producer Manufacturing,NASDAQ,false
+DNN,Denison Mines Corp,1.8500,10.12,131747,27640277,0.48,1.6800,-7.18,,,,1521148384,Non-Energy Minerals,AMEX,false
+HSDT,Solana Company,1.6400,10.07,10373,626138,1.66,1.4900,-10.24,,,,93700996,Health Technology,NASDAQ,false
+QNRX,"Quoin Pharmaceuticals, Ltd.",3.6100,10.06,2544,19424,13.10,3.2800,-2.35,,,,15757648,Health Technology,NASDAQ,false
+ZETA,Zeta Global Holdings Corp.,32.4700,10.03,46939,5680199,0.83,29.5101,-8.41,,,,7538594186,Technology Services,NYSE,false
+ASM,Avino Silver & Gold Mines Ltd.,3.7845,10.01,71396,3792198,1.88,3.4401,-5.75,,,,582627969,Non-Energy Minerals,AMEX,false
+BMM,Blue Moon Metals Inc.,2.7500,10.00,100,582683,0.02,2.5000,-8.42,,,,262452080,Non-Energy Minerals,NASDAQ,false
+FTAI,FTAI Aviation Ltd.,165.0100,9.99,2778,2072696,0.13,150.0227,-10.80,,,,15341284026,Electronic Technology,NASDAQ,false
+HOVR,New Horizon Aircraft Ltd.,1.1658,9.98,5121,559775,0.91,1.0600,-6.19,,,,71151371,Electronic Technology,NASDAQ,false
+NVT,nVent Electric plc,112.0000,9.98,4042,3286200,0.12,101.8367,-5.79,,,,16457146677,Electronic Technology,NYSE,false
+HOOD,"Robinhood Markets, Inc.",68.3679,9.97,595984,19849906,3.00,62.1696,-9.44,,,,55983538485,Finance,NASDAQ,false
+UAVS,"AgEagle Aerial Systems, Inc.",0.2969,9.96,7002,992379,0.71,0.2700,-6.86,,,,17293794,Electronic Technology,AMEX,false
+RR,Richtech Robotics Inc.,0.6364,9.95,159931,5419724,2.95,0.5788,-11.94,,,,130289011,Consumer Durables,NASDAQ,false
+TREO,Tactical Resources Corp.,2.1000,9.95,1000,109955,0.91,1.9100,-4.02,,,,,Non-Energy Minerals,NASDAQ,false
+BELFA,Bel Fuse Inc.,170.0200,9.95,1479,103736,1.43,154.6339,-10.63,,,,2233017373,Electronic Technology,NASDAQ,false
+JBL,Jabil Inc.,248.2000,9.94,2265,1206689,0.19,225.7595,-8.39,,,,23247517249,Producer Manufacturing,NYSE,false
+BELFB,Bel Fuse Inc.,215.7900,9.88,9058,202094,4.48,196.3870,-10.93,,,,2747456139,Electronic Technology,NASDAQ,false
+TEM,"Tempus AI, Inc.",59.3800,9.88,96466,6153968,1.57,54.0408,-9.34,,,,9856984691,Technology Services,NASDAQ,false
+PRME,"Prime Medicine, Inc.",3.9000,9.86,14578,5521306,0.26,3.5500,-7.55,,,,645820968,Health Technology,NASDAQ,false
+UPXI,"Upexi, Inc.",0.5077,9.84,45798,1463193,3.13,0.4622,-15.70,,,,41068961,Health Technology,NASDAQ,false
+NXE,Nexgen Energy Ltd.,7.0400,9.83,45489,6131554,0.74,6.4099,-7.50,,,,4410302411,Non-Energy Minerals,NYSE,false
+BBAI,"BigBear.ai, Inc.",1.7350,9.81,441037,20514267,2.15,1.5800,-8.67,,,,760597739,Technology Services,NYSE,false
+METC,"Ramaco Resources, Inc.",5.9400,9.80,8150,2246356,0.36,5.4098,-8.92,,,,344525857,Energy Minerals,NASDAQ,false
+PLUG,"Plug Power, Inc.",1.0500,9.78,1306457,59377872,2.20,0.9565,-7.14,,,,1338020892,Electronic Technology,NASDAQ,false
+FAMI,"Farmmi, Inc. Ordinary Shares",0.0910,9.77,35733,1620342,2.21,0.0829,-10.09,,,,3103434,Process Industries,NASDAQ,false
+AEVA,"Aeva Technologies, Inc.",8.6499,9.77,37268,1909590,1.95,7.8800,-17.66,,,,550782621,Electronic Technology,NASDAQ,false
+GXAI,Gaxos.ai Inc.,0.3966,9.77,8200,564417,1.45,0.3613,-15.11,,,,4968701,Technology Services,NASDAQ,false
+TNON,"Tenon Medical, Inc.",0.9845,9.73,2057,133733,1.54,0.8972,-8.97,,,,2406944,Health Services,NASDAQ,false
+ROG,Rogers Corporation,120.2200,9.72,462,232009,0.20,109.5698,-9.03,,,,1949846219,Process Industries,NYSE,false
+VECO,Veeco Instruments Inc.,37.2000,9.70,7200,910937,0.79,33.9107,-9.55,,,,2073262674,Electronic Technology,NASDAQ,false
+AYA,Aya Gold & Silver Inc.,19.0640,9.69,18691,825287,2.26,17.3799,-8.04,,,,2506115326,Non-Energy Minerals,NASDAQ,false
+AIRJ,AirJoule Technologies Corporation,1.7000,9.68,5672,978386,0.58,1.5500,-6.63,,,,118460122,Producer Manufacturing,NASDAQ,false
+ARBE,Arbe Robotics Ltd.,0.3525,9.68,170558,914813,18.64,0.3214,-8.20,,,,41215497,Producer Manufacturing,NASDAQ,false
+XPEV,XPeng Inc.,8.8600,9.65,403011,8015034,5.03,8.0803,-13.86,,,,8949656528,Consumer Durables,NYSE,false
+MBRX,"Moleculin Biotech, Inc.",8.4869,9.65,3105,40973,7.58,7.7400,-2.40,,,,8216265,Health Technology,NASDAQ,false
+SPCE,"Virgin Galactic Holdings, Inc.",1.1400,9.62,158976,9110117,1.75,1.0400,-7.96,,,,157749265,Electronic Technology,NYSE,false
+VRXA,Veraxa Biotech AG,1.1400,9.62,6883,168558,4.08,1.0400,0.97,,,,153642113,Health Technology,NASDAQ,false
+RUM,RUM Group Inc.,4.5925,9.61,41816,3979950,1.05,4.1899,-8.71,,,,2078123408,Technology Services,NASDAQ,false
+CDNL,Cardinal Infrastructure Group Inc.,5.2000,9.59,24859,2326153,1.07,4.7450,-8.40,,,,225567011,Industrial Services,NASDAQ,false
+SMXT,Solarmax Technology Inc.,3.6700,9.55,120,28008,0.43,3.3501,-8.22,,,,15886259,Industrial Services,NASDAQ,false
+WQEY,WISeQey Corp,5.3400,9.54,320,41498,0.77,4.8749,-10.39,,,,20397614,Technology Services,NASDAQ,false
+IAUX,i-80 Gold Corp.,1.1500,9.52,170172,8761068,1.94,1.0500,0.00,,,,911639067,Non-Energy Minerals,AMEX,false
+SBSW,D/B/A Sibanye-Stillwater Limited,7.9400,9.52,108426,5538089,1.96,7.2498,-6.21,,,,5381545252,Non-Energy Minerals,NYSE,false
+LASE,LASE Corp.,0.4479,9.51,71788,1140033,6.30,0.4090,-3.86,,,,24817830,Electronic Technology,NASDAQ,false
+NXT,Nextpower Inc.,73.5000,9.49,12026,3106253,0.39,67.1294,-11.61,,,,10108134983,Electronic Technology,NASDAQ,false
+NCPL,Netcapital Inc.,3.0000,9.49,76810,12488683,0.62,2.7400,-17.72,,,,21503243,Commercial Services,NASDAQ,false
+ARQQ,Arqit Quantum Inc.,12.0100,9.48,7921,288342,2.75,10.9700,-13.01,,,,190904448,Technology Services,NASDAQ,false
+BNGO,"Bionano Genomics, Inc.",0.9000,9.46,4882,246695,1.98,0.8222,-7.10,,,,11501756,Health Technology,NASDAQ,false
+LAC,Lithium Americas Corp.,1.3789,9.44,210661,9714897,2.17,1.2600,-5.26,,,,475441773,Non-Energy Minerals,NYSE,false
+SANA,"Sana Biotechnology, Inc.",1.7400,9.43,37038,2928163,1.26,1.5901,-8.62,,,,476419578,Health Technology,NASDAQ,false
+BUUU,BUUU Group Limited,3.6000,9.42,1389,698297,0.20,3.2901,-12.96,,,,653986188,Commercial Services,NASDAQ,false
+SCZM,Santacruz Silver Mining Ltd.,6.7400,9.42,21551,489271,4.40,6.1598,-6.81,,,,572846659,Non-Energy Minerals,NASDAQ,false
+AU,AngloGold Ashanti PLC,79.2300,9.39,109917,2697337,4.08,72.4289,-5.92,,,,36577691699,Non-Energy Minerals,NYSE,false
+DJT,Trump Media & Technology Group Corp.,4.0800,9.38,247650,7284445,3.40,3.7301,-8.80,,,,1038537390,Commercial Services,NASDAQ,false
+LTRX,"Lantronix, Inc.",3.7400,9.36,4729,816013,0.58,3.4199,-12.76,,,,160549202,Electronic Technology,NASDAQ,false
+BKSY,BlackSky Technology Inc.,17.9000,9.35,17412,1088797,1.60,16.3695,-12.88,,,,677696890,Technology Services,NYSE,false
+MOD,"Modexus Solutions, Inc.",136.3100,9.34,20518,2468470,0.83,124.6662,-7.35,,,,6632059730,Producer Manufacturing,NYSE,false
+IQST,iQSTEL Inc.,0.6780,9.31,1961,147414,1.33,0.6203,-4.27,,,,6938201,Communications,NASDAQ,false
+ROC,Rank One Computing Corporation,3.7600,9.30,100,22232,0.45,3.4401,-3.91,,,,67398053,Technology Services,NASDAQ,false
+GEV,GE Vernova Inc.,764.2975,9.29,35446,3998050,0.89,699.3298,-7.53,,,,185096614983,Producer Manufacturing,NYSE,false
+AMBA,"Ambarella, Inc.",58.0000,9.29,32080,1415248,2.27,53.0698,-9.94,,,,2342561377,Electronic Technology,NASDAQ,false
+AUR,"Aurora Innovation, Inc.",3.8300,9.27,160839,25500036,0.63,3.5051,-8.72,,,,7081669684,Technology Services,NASDAQ,false
+GMTL,Guardian Metal Resources PLC,3.6600,9.25,1100,330747,0.33,3.3501,-11.14,,,,138912018,Non-Energy Minerals,AMEX,false
+DFLI,Dragonfly Energy Holdings Corp,1.6496,9.25,120,67423,0.18,1.5099,-12.72,,,,2942783,Producer Manufacturing,NASDAQ,false
+SER,"Serina Therapeutics, Inc.",1.2235,9.24,125,63829,0.20,1.1200,-6.67,,,,29757792,Commercial Services,AMEX,false
+VERI,"Veritone, Inc.",0.3400,9.22,12897,2590006,0.50,0.3113,-18.47,,,,37863111,Commercial Services,NASDAQ,false
+CCJ,Cameco Corporation,63.3400,9.22,45880,4022640,1.14,57.9930,-5.58,,,,25258734141,Non-Energy Minerals,NYSE,false
+XE,"X-Energy, Inc.",9.6000,9.22,79955,6157681,1.30,8.7896,-9.38,,,,3570551342,Producer Manufacturing,NASDAQ,false
+XRPN,Evernorth Holdings Inc.,7.4700,9.21,4874,691801,0.70,6.8400,-6.94,,,,399490175,Finance,NASDAQ,false
+Q,"Qnity Electronics, Inc.",113.0000,9.21,6268,2134171,0.29,103.4704,-8.94,,,,21629717281,Electronic Technology,NYSE,false
+CDNS,"Cadence Design Systems, Inc.",307.4400,9.18,2543,2303447,0.11,281.5900,-7.64,,,,77259634517,Technology Services,NASDAQ,false
+SECZ,Securitize Corp.,6.6600,9.18,109878,2658199,4.13,6.1000,-7.29,,,,997570806,Technology Services,NYSE,false
+AMCI,AMC Robotics Corporation,1.1900,9.17,33968,148883,22.82,1.0900,36.25,,,,26039730,Technology Services,NASDAQ,false
+NOK,Nokia Corporation Sponsored,7.5100,9.16,5064621,75315909,6.72,6.8798,-8.27,,,,39986262598,Electronic Technology,NYSE,false
+ARIS,Aris Mining Corporation,13.1400,9.14,25937,1758859,1.47,12.0396,-5.49,,,,2488667897,Non-Energy Minerals,NYSE,false
+LTBR,Lightbridge Corporation,3.5300,9.12,19598,740686,2.65,3.2350,-9.13,,,,125402659,Process Industries,NASDAQ,false
+AVAV,"AeroVironment, Inc.",94.7000,9.11,15654,1417352,1.10,86.7931,-9.51,,,,4410728738,Electronic Technology,NASDAQ,false
+SKE,Skeena Resources Limited,26.0000,9.11,8206,650705,1.26,23.8292,-7.71,,,,2994097644,Non-Energy Minerals,NYSE,false
+EVTL,Vertical Aerospace Ltd.,0.3000,9.09,40272,3372200,1.19,0.2750,-4.65,,,,46376253,Electronic Technology,NYSE,false
+XTND,"Xtend AI Robotics, Inc.",1.7999,9.08,21087,3918840,0.54,1.6501,-7.82,,,,411067725,Producer Manufacturing,NYSE,false
+BFLY,"Butterfly Network, Inc.",5.8900,9.07,9334,4643622,0.20,5.4002,-7.69,,,,1444294505,Health Technology,NYSE,false
+KEYS,Keysight Technologies Inc.,285.1500,9.04,41369,1557872,2.66,261.5095,-7.07,,,,44430549063,Electronic Technology,NYSE,false
+CNXU,Conexeu Sciences Inc.,1.6900,9.03,2807,360240,0.78,1.5500,-25.48,,,,47786546,Health Technology,NASDAQ,false
+SEDG,"SolarEdge Technologies, Inc.",19.9200,9.03,35414,3066654,1.15,18.2702,-10.13,,,,1131176153,Producer Manufacturing,NASDAQ,false
+VIVK,"Vivakor, Inc.",0.2453,9.02,1465604,13993388,10.47,0.2250,-4.21,,,,1526604,Process Industries,NASDAQ,false
+CDXS,"Codexis, Inc.",1.1011,9.02,5319,1014182,0.52,1.0100,-3.81,,,,110693508,Process Industries,NASDAQ,false
+SHOP,Shopify Inc.,134.8781,9.02,78164,8573165,0.91,123.7187,-6.25,,,,159168497828,Commercial Services,NASDAQ,false
+IPSC,"Century Therapeutics, Inc.",1.2700,9.01,100,925461,0.01,1.1650,-11.74,,,,211560507,Health Technology,NASDAQ,false
+LINK,"Interlink Electronics, Inc.",2.3000,9.00,301,25138,1.20,2.1101,-13.17,,,,33239693,Electronic Technology,NASDAQ,false
+EXK,Endeavour Silver Corporation,6.1800,8.99,634933,7610941,8.34,5.6702,-6.74,,,,1679608565,Non-Energy Minerals,NYSE,false
+ELBM,Electra Battery Materials Corporation,0.3600,8.99,22361,333354,6.71,0.3303,-15.16,,,,35350297,Non-Energy Minerals,NASDAQ,false
+SOFI,"SoFi Technologies, Inc.",13.6000,8.97,2228764,55830795,3.99,12.4805,-7.76,,,,16197048273,Finance,NASDAQ,false
+APH,Amphenol Corporation,76.0000,8.97,31107,14455393,0.22,69.7440,-7.76,,,,172218627534,Electronic Technology,NYSE,false
+CHPT,"ChargePoint Holdings, Inc.",9.5000,8.94,4004,887430,0.45,8.7204,-9.45,,,,234134838,Producer Manufacturing,NYSE,false
+AUID,authID Inc.,0.1475,8.94,8315,1340830,0.62,0.1354,-5.97,,,,2263933,Electronic Technology,NASDAQ,false
+AVEX,AEVEX Corp.,12.0255,8.93,5099,2530031,0.20,11.0397,-14.15,,,,1399529490,Electronic Technology,NYSE,false
+QSI,Quantum-Si Incorporated,0.9900,8.91,226419,7421292,3.05,0.9090,-15.05,,,,199745837,Technology Services,NASDAQ,false
+SLDP,"Solid Power, Inc.",1.4700,8.89,191851,3721266,5.16,1.3500,-10.00,,,,309404243,Producer Manufacturing,NASDAQ,false
+CRBP,"Corbus Pharmaceuticals Holdings, Inc.",2.2430,8.88,9546,1065424,0.90,2.0601,-15.40,,,,42449924,Health Technology,NASDAQ,false
+PLTR,Palantir Technologies Inc.,156.2300,8.88,469193,24189686,1.94,143.4882,-6.63,,,,345738784008,Technology Services,NASDAQ,false
+ASYS,"Amtech Systems, Inc.",11.6900,8.85,8274,267622,3.09,10.7395,-12.33,,,,188037016,Producer Manufacturing,NASDAQ,false
+NNE,Nano Nuclear Energy Inc.,9.9000,8.79,34155,2033459,1.68,9.1001,-8.73,,,,488653122,Producer Manufacturing,NASDAQ,false
+ABR/PF,"Arbor Realty Trust 6.25% Series F Fixed-to-Floating Rate Cumulative Redeemable Preferred Stock, Liquidation Preference $25.00 per share",7.0000,8.78,900,68462,1.31,6.4350,-4.95,,,,189701914,Finance,NYSE,false
+PONY,Pony AI Inc.,3.6000,8.76,109552,4116404,2.66,3.3100,-5.97,,,,1486380685,Technology Services,NASDAQ,false
+HL,Hecla Mining Company,11.4300,8.75,346120,29274990,1.18,10.5103,-5.74,,,,7060379548,Non-Energy Minerals,NYSE,false
+PLXS,Plexus Corp.,206.5000,8.75,6949,330266,2.10,189.8851,-9.03,,,,5044213520,Electronic Technology,NASDAQ,false
+BTCS,BTCS Inc.,0.7100,8.73,13023,720391,1.81,0.6530,-12.23,,,,34577728,Finance,NASDAQ,false
+GAU,Galiano Gold Inc.,1.8700,8.72,7538,2543632,0.30,1.7200,-4.97,,,,450733649,Non-Energy Minerals,AMEX,false
+FEIM,"Frequency Electronics, Inc.",59.0000,8.72,1189,233034,0.51,54.2678,-10.03,,,,611801281,Electronic Technology,NASDAQ,false
+FRVO,Fervo Energy Company,10.8600,8.71,89417,9649467,0.93,9.9899,-10.32,,,,2947258178,Utilities,NASDAQ,false
+AG,First Majestic Silver Corp.,11.8600,8.71,351533,12230469,2.87,10.9098,-3.62,,,,5379197486,Non-Energy Minerals,NYSE,false
+DDOG,"Datadog, Inc.",171.0500,8.69,19275,4286293,0.45,157.3742,-5.46,,,,56829599833,Technology Services,NASDAQ,false
+GNRC,Generac Holdings Inc.,210.0100,8.69,3724,1277000,0.29,193.2192,-5.79,,,,11397850660,Producer Manufacturing,NYSE,false
+PCT,"PureCycle Technologies, Inc.",1.7117,8.68,30100,8396921,0.36,1.5750,-10.00,,,,316578278,Industrial Services,NASDAQ,false
+ANET,"Arista Networks, Inc.",182.2100,8.68,115902,8310521,1.39,167.6573,-11.57,,,,211822030782,Electronic Technology,NYSE,false
+BTQ,BTQ Technologies Corp.,1.1192,8.66,96287,1812352,5.31,1.0300,-9.65,,,,151396765,Technology Services,NASDAQ,false
+GFI,Gold Fields Limited,34.3300,8.66,68045,3738873,1.82,31.5940,-3.41,,,,28780730031,Non-Energy Minerals,NYSE,false
+GHM,Graham Corporation,76.0697,8.62,740,237795,0.31,70.0329,-9.44,,,,822009959,Producer Manufacturing,NYSE,false
+HSCS,HeartSciences Inc.,1.9660,8.62,4082,88913,4.59,1.8100,-10.84,,,,10424367,Health Technology,NASDAQ,false
+NTHI,"NeOnc Technologies Holdings, Inc.",3.4211,8.61,1299,182448,0.71,3.1499,-9.48,,,,90879354,Health Technology,NASDAQ,false
+EQPT,EquipmentShare.com Inc,14.6600,8.59,1900,3463365,0.05,13.5003,-4.32,,,,3431312485,Technology Services,NASDAQ,false
+UPST,"Upstart Holdings, Inc.",17.0008,8.56,100699,4933972,2.04,15.6603,-7.88,,,,1548909495,Finance,NASDAQ,false
+TMC,TMC the metals company Inc.,1.6500,8.55,62966,5599906,1.12,1.5200,-8.43,,,,670763124,Non-Energy Minerals,NASDAQ,false
+AMC,"AMC Entertainment Holdings, Inc.",2.7898,8.55,572602,23076314,2.48,2.5701,-7.89,,,,2293993798,Consumer Services,NYSE,false
+BLSH,Bullish,20.7000,8.55,33570,1587247,2.11,19.0696,-4.46,,,,2866262914,Technology Services,NYSE,false
+SCAG,Scage Future,0.7142,8.54,6721,53310,12.61,0.6580,-12.27,,,,3185144,Consumer Durables,NASDAQ,false
+XLAB,Exascale Labs Holdings Inc.,1.4435,8.53,14755,14820127,0.10,1.3300,-10.74,,,,85565276,Finance,NASDAQ,false
+INIO,INNIO N.V.,13.1000,8.53,16577,6330954,0.26,12.0704,-5.78,,,,9052499771,Producer Manufacturing,NASDAQ,false
+APP,Applovin Corporation,378.0000,8.53,62420,5188570,1.20,348.2908,-8.11,,,,115396140681,Technology Services,NASDAQ,false
+IE,Ivanhoe Electric Inc.,5.8600,8.52,44219,2820110,1.57,5.3999,-6.25,,,,861984078,Non-Energy Minerals,AMEX,false
+BORR,Borr Drilling Limited,3.7000,8.50,126100,10667008,1.18,3.4101,4.28,,,,1052028526,Industrial Services,NYSE,false
+DLXY,Delixy Holdings Limited,1.1500,8.49,100,136298,0.07,1.0600,-8.62,,,,3466200,Distribution Services,NASDAQ,false
+MYND,"Mynd.ai, Inc.",0.2199,8.49,1000,2539574,0.04,0.2027,-8.65,,,,9556212,Technology Services,AMEX,false
+AEHL,Antelope Enterprise Holdings Limited,7.3000,8.47,431,1734768,0.02,6.7300,-8.06,,,,127969989,Producer Manufacturing,NASDAQ,false
+AMRC,"Ameresco, Inc.",22.4500,8.45,5109,613759,0.83,20.7008,-9.05,,,,1099405480,Industrial Services,NYSE,false
+CGNX,Cognex Corporation,48.1100,8.45,4480,2192844,0.20,44.3615,-6.92,,,,7469251155,Electronic Technology,NASDAQ,false
+NEXA,Nexa Resources S.A.,10.2800,8.44,5266,705356,0.75,9.4799,-4.82,,,,1255512212,Non-Energy Minerals,NYSE,false
+HIMS,"Hims & Hers Health, Inc.",15.8300,8.42,269837,14164605,1.91,14.6006,-8.86,,,,3422421320,Health Services,NYSE,false
+AVR,Anteris Technologies Global Corp.,5.4100,8.42,59806,1418830,4.22,4.9899,-1.96,,,,486492199,Health Technology,NASDAQ,false
+ETN,"Eaton Corporation, PLC",337.5000,8.41,8648,3175589,0.27,311.3181,-5.82,,,,120951699783,Producer Manufacturing,NYSE,false
+BAOS,Baosheng Media Group Holdings Limited,0.1264,8.40,3029,268903,1.13,0.1166,-7.53,,,,3890921,Commercial Services,NASDAQ,false
+WRN,Western Copper and Gold Corporation,1.2900,8.40,1806,1612801,0.11,1.1900,-9.16,,,,269268642,Non-Energy Minerals,AMEX,false
+LVLU,"Lulu's Fashion Lounge Holdings, Inc.",4.8984,8.37,100,11296,0.89,4.5201,-4.19,,,,13087461,Retail Trade,NASDAQ,false
+NG,Novagold Resources Inc.,5.0600,8.35,38501,4475245,0.86,4.6701,-2.91,,,,2049270798,Non-Energy Minerals,AMEX,false
+SNOW,Snowflake Inc.,276.1000,8.35,22244,4454272,0.50,254.8223,-5.13,,,,89900495473,Technology Services,NYSE,false
+VLN,Valens Semiconductor Ltd.,1.3000,8.33,11773,658820,1.79,1.2000,-13.04,,,,130884333,Electronic Technology,NYSE,false
+ADUR,Aduro Clean Technologies Inc.,8.2000,8.32,26054,335601,7.76,7.5702,-4.78,,,,270834350,Process Industries,NASDAQ,false
+FSLY,"Fastly, Inc.",16.1500,8.32,33703,6258534,0.54,14.9095,-11.57,,,,2403491930,Technology Services,NASDAQ,false
+IAM,"Iambic Therapeutics, Inc.",14.2000,8.31,2504,,,13.1105,-8.06,,,,641523148,Health Technology,NASDAQ,false
+PDFS,"PDF Solutions, Inc.",32.9700,8.31,4175,686040,0.61,30.4404,-13.03,,,,1286133567,Technology Services,NASDAQ,false
+KTOS,"Kratos Defense & Security Solutions, Inc.",29.1203,8.29,78006,4902558,1.59,26.8910,-9.31,,,,5062674670,Electronic Technology,NASDAQ,false
+PRIM,Primoris Services Corporation,58.0400,8.28,2599,1555418,0.17,53.6018,-10.79,,,,2815538335,Industrial Services,NYSE,false
+CYCU,"Cycurion, Inc.",1.7000,8.28,3276,140395,2.33,1.5700,-5.42,,,,5071164,Technology Services,NASDAQ,false
+POWI,"Power Integrations, Inc.",42.3900,8.25,1720,842461,0.20,39.1594,-7.49,,,,2188340604,Electronic Technology,NASDAQ,false
+VZLA,Vizsla Silver Corp.,2.6300,8.23,86209,5421810,1.59,2.4300,-13.83,,,,862788256,Non-Energy Minerals,AMEX,false
+PWR,"Quanta Services, Inc.",605.0000,8.22,5332,1562295,0.34,559.0464,-4.83,,,,84233045586,Industrial Services,NYSE,false
+NAMM,Namib Minerals,0.6700,8.22,44876,425072,10.56,0.6191,-1.46,,,,34578223,Non-Energy Minerals,NASDAQ,false
+MP,MP Materials Corp.,36.7400,8.22,203888,6380969,3.20,33.9494,-7.39,,,,6052197882,Non-Energy Minerals,NYSE,false
+MSN,Emerson Radio Corporation,0.2725,8.22,28388,132874,21.36,0.2518,-7.46,,,,5298540,Distribution Services,AMEX,false
+HYLN,Hyliion Holdings Corp.,1.9800,8.20,12557,1738178,0.72,1.8299,-8.96,,,,327430613,Producer Manufacturing,AMEX,false
+CWD,CaliberCos Inc.,0.3657,8.20,3032,115776,2.62,0.3380,-8.35,,,,3714084,Finance,NASDAQ,false
+JAGX,"Jaguar Health, Inc.",0.2456,8.19,114168,808598,14.12,0.2270,-30.58,,,,3029539,Health Technology,NASDAQ,false
+ACCS,ACCESS Newswire Inc.,3.7000,8.19,700,15405,4.54,3.4199,-2.01,,,,12891619,Technology Services,AMEX,false
+DEFT,"Defi Technologies, Inc.",0.2911,8.18,7949,1878811,0.42,0.2691,3.90,,,,104554768,Finance,NASDAQ,false
+NVEC,NVE Corporation,75.7600,8.17,802,124848,0.64,70.0379,-11.16,,,,339279299,Electronic Technology,NASDAQ,false
+RDDT,"Reddit, Inc.",92.2900,8.16,72173,6684954,1.08,85.3273,-5.06,,,,16476688114,Technology Services,NYSE,false
+PGY,Pagaya Technologies Ltd.,14.6000,8.15,36745,1945898,1.89,13.4998,-7.66,,,,1134373710,Technology Services,NASDAQ,false
+SGML,Sigma Lithium Corporation,3.9900,8.13,95119,3048696,3.12,3.6900,-9.34,,,,415827263,Non-Energy Minerals,NASDAQ,false
+RTB,"RTB Digital, Inc.",4.0200,8.06,1882,36890,5.10,3.7202,-0.27,,,,53887342,Technology Services,NASDAQ,false
+ERO,Ero Copper Corp.,23.2000,8.06,22720,1640206,1.39,21.4696,-8.05,,,,2241880341,Non-Energy Minerals,NYSE,false
+ABCL,AbCellera Biologics Inc.,10.4700,8.05,76419,3353796,2.28,9.6900,-7.45,,,,3164927507,Health Technology,NASDAQ,false
+NCNA,NuCana plc,0.8098,8.05,920,31567,2.91,0.7495,4.37,,,,3610274,Health Technology,NASDAQ,false
+DNA,"Ginkgo Bioworks Holdings, Inc.",8.0600,8.04,14770,2508574,0.59,7.4602,-9.02,,,,483594612,Health Services,NYSE,false
+VSEC,VSE Corporation,184.0000,8.04,3141,538157,0.58,170.3073,-5.70,,,,4780832866,Industrial Services,NASDAQ,false
+TXG,"10x Genomics, Inc.",55.9600,8.03,16104,3244819,0.50,51.8004,-9.72,,,,6813471163,Health Technology,NASDAQ,false
+AEON,"AEON Biopharma, Inc.",0.1328,8.01,444555,1131899,39.28,0.1230,-7.59,,,,10346963,Health Technology,AMEX,false
+BETA,"Beta Technologies, Inc.",18.5000,8.00,9446,2214212,0.43,17.1296,-9.03,,,,4024917584,Electronic Technology,NYSE,false
+BIRD,"Smartbird, Inc.",1.1500,7.98,1200,376224,0.32,1.0650,-7.79,,,,12764276,Technology Services,NASDAQ,false
+SA,"Seabridge Gold, Inc.",18.0000,7.98,7976,1075594,0.74,16.6698,-7.70,,,,1801691031,Non-Energy Minerals,NYSE,false
+AVAT,Avalanche Treasury Corporation,0.8703,7.98,3455,489286,0.71,0.8060,-7.38,,,,35238679,Finance,NASDAQ,false
+POWL,"Powell Industries, Inc.",160.0000,7.98,18278,872468,2.09,148.1756,-6.66,,,,5402416293,Producer Manufacturing,NASDAQ,false
+AIOT,"PowerFleet, Inc.",2.0299,7.97,2150,2076958,0.10,1.8801,-8.74,,,,253718587,Technology Services,NASDAQ,false
+RGNT,Regentis Biomaterials Ltd.,0.7758,7.96,16821,51514,32.65,0.7186,-14.42,,,,5047389,Health Technology,AMEX,false
+WIMI,WiMi Hologram Cloud Inc.,0.4200,7.94,20893,194179,10.76,0.3891,-14.75,,,,7153623,Technology Services,NASDAQ,false
+EVGN,Evogene Ltd.,0.3413,7.94,627,415405,0.15,0.3162,1.02,,,,5708381,Health Technology,NASDAQ,false
+FCX,"Freeport-McMoRan, Inc.",49.6300,7.91,116193,13920208,0.83,45.9920,-6.37,,,,65992710665,Non-Energy Minerals,NYSE,false
+DAVA,Endava plc,1.2300,7.89,1000,282101,0.35,1.1401,-3.39,,,,64078112,Technology Services,NYSE,false
+PSIX,"Power Solutions International, Inc.",30.5000,7.89,3932,557541,0.71,28.2695,-11.02,,,,652060247,Producer Manufacturing,NASDAQ,false
+TSAT,Telesat Corporation,40.0000,7.87,997,228947,0.44,37.0817,-10.24,,,,1908629890,Communications,NASDAQ,false
+AGLT,"Agility Robotics, Inc.",6.3100,7.86,87392,3978623,2.20,5.8502,-9.86,,,,1416225798,Producer Manufacturing,NASDAQ,false
+NOVT,Novanta Inc.,109.9900,7.84,847,553332,0.15,101.9937,-11.22,,,,3857451550,Electronic Technology,NASDAQ,false
+EGO,Eldorado Gold Corporation,26.6900,7.84,70279,3742438,1.88,24.7496,-7.79,,,,6467666404,Non-Energy Minerals,NYSE,false
+MWC,"Micware Co., Ltd.",1.2940,7.83,2621,144848,1.81,1.2000,-7.69,,,,71303300,Technology Services,NASDAQ,false
+KAPA,"Kairos Pharma, Ltd.",0.4699,7.80,160,101205,0.16,0.4359,-4.62,,,,2042202,Health Technology,AMEX,false
+WGS,GeneDx Holdings Corp.,49.0000,7.79,8135,1075614,0.76,45.4588,-7.68,,,,1362549469,Health Services,NASDAQ,false
+HPE/PC,Hewlett Packard Enterprise Company 7.625% Series C Mandatory Convertible Preferred Stock,111.9100,7.78,100,178321,0.06,103.8319,-10.67,,,,54306581561,Electronic Technology,NYSE,false
+MVST,"Microvast Holdings, Inc.",0.2496,7.77,41824,6391905,0.65,0.2316,-8.46,,,,89192138,Producer Manufacturing,NASDAQ,false
+ADTN,"ADTRAN Holdings, Inc.",4.3000,7.77,1463,1958131,0.07,3.9900,-10.14,,,,325168349,Electronic Technology,NASDAQ,false
+WRAP,"Wrap Technologies, Inc.",1.1100,7.77,5600,570264,0.98,1.0300,-9.65,,,,68557471,Health Technology,NASDAQ,false
+COIN,"Coinbase Global, Inc.",109.8800,7.76,273969,8569357,3.20,101.9673,-6.34,,,,26997985080,Finance,NASDAQ,false
+FTK,"Flotek Industries, Inc.",23.3500,7.75,1145,323958,0.35,21.6705,-11.55,,,,786221634,Industrial Services,NYSE,false
+REAX,Real REMAX Group Inc.,8.9000,7.75,6098,807535,0.76,8.2599,-6.67,,,,313349674,Finance,NASDAQ,false
+AACG,ATA Creativity Global,0.5160,7.75,1690,297347,0.57,0.4789,-9.64,,,,32545484,Commercial Services,NASDAQ,false
+ANNX,"Annexon, Inc.",3.3400,7.74,4902,3637886,0.13,3.1001,-9.09,,,,591368311,Health Technology,NASDAQ,false
+RZAI,Roze AI Inc.,1.8100,7.74,3408,241108,1.41,1.6800,-13.85,,,,93480892,Technology Services,NASDAQ,false
+TMQ,Trilogy Metals Inc.,1.6050,7.72,13453,1679720,0.80,1.4900,-14.86,,,,270228202,Non-Energy Minerals,AMEX,false
+AUGO,Aura Minerals Inc.,61.4500,7.71,8258,840928,0.98,57.0513,-6.51,,,,4783918737,Non-Energy Minerals,NASDAQ,false
+ELMT,The Elmet Group Co.,19.3000,7.70,2979,480210,0.62,17.9201,-8.10,,,,549444084,Producer Manufacturing,NASDAQ,false
+GELS,Gelteq Limited,0.2909,7.70,117,65761,0.18,0.2701,-3.74,,,,2893057,Health Technology,NASDAQ,false
+LGN,Legence Corp.,34.7900,7.68,3237,1921593,0.17,32.3087,-7.92,,,,3506524265,Industrial Services,NASDAQ,false
+BABA,Alibaba Group Holding Limited,87.3000,7.67,453314,11233563,4.04,81.0811,-2.68,,,,211566975892,Retail Trade,NYSE,false
+HMR,Heidmar Maritime Holdings Corp.,1.0500,7.67,3342,143603,2.33,0.9752,-3.45,,,,57528995,Industrial Services,NASDAQ,false
+AMBQ,"Ambiq Micro, Inc.",42.7200,7.66,5205,454456,1.15,39.6805,-12.98,,,,987272962,Electronic Technology,NYSE,false
+FBLG,"FibroBiologics, Inc.",0.7590,7.66,149,86402,0.17,0.7050,-15.06,,,,6337579,Health Technology,NASDAQ,false
+RIBB,Ribbon Acquisition Corp,8.3000,7.65,300,4560,6.58,7.7102,-2.53,,,,48442956,Finance,NASDAQ,false
+ELOG,Eastern International Ltd.,1.9700,7.65,13891,676893,2.05,1.8300,26.21,,,,23482559,Transportation,NASDAQ,false
+LUMN,"Lumen Technologies, Inc.",4.1221,7.63,54846,16988574,0.32,3.8299,-8.15,,,,3948893556,Communications,NASDAQ,false
+AIIO,Robo.ai Inc.,5.0037,7.61,854,52772,1.62,4.6498,-6.81,,,,43930317,Distribution Services,NASDAQ,false
+WW,"WW International, Inc.",7.5000,7.60,421,293298,0.14,6.9703,-12.55,,,,69691357,Consumer Services,NASDAQ,false
+FLL,"Full House Resorts, Inc.",0.4090,7.60,1298,459245,0.28,0.3801,-2.39,,,,13928568,Consumer Services,NASDAQ,false
+IBKR,"Interactive Brokers Group, Inc.",76.6000,7.60,26579,4967750,0.54,71.1896,-5.90,,,,32256459450,Finance,NASDAQ,false
+WNW,Meiwu Technology Company Limited,1.7700,7.60,270,25721,1.05,1.6450,-13.42,,,,43313623,Retail Trade,NASDAQ,false
+BB,BlackBerry Limited,8.3600,7.59,376907,12819994,2.94,7.7702,-6.61,,,,4561240557,Technology Services,NYSE,false
+VST,Vistra Corp.,124.0000,7.59,50916,6522167,0.78,115.2523,-7.17,,,,39115237312,Utilities,NYSE,false
+STRK,Strategy Inc - 8.00% Series A Perpetual Strike Preferred Stock,62.5000,7.59,1000,88365,1.13,58.0909,-3.76,,,,28941903657,Finance,NASDAQ,false
+MTEK,Maris-Tech Ltd.,0.2800,7.57,2358,498325,0.47,0.2603,-1.96,,,,2748585,Consumer Durables,NASDAQ,false
+SNT,Senstar Technologies Corporation,1.8500,7.56,907,265122,0.34,1.7200,-2.27,,,,40130442,Electronic Technology,NASDAQ,false
+UPB,"Upstream Bio, Inc.",1.7100,7.55,200,1310357,0.02,1.5900,-20.50,,,,87150111,Health Technology,NASDAQ,false
+STKE,Sol Strategies Inc.,1.0000,7.53,3000,188504,1.59,0.9300,-6.48,,,,36722794,Finance,NASDAQ,false
+DUKR,DUKE Robotics Corp.,1.8600,7.51,520,60060,0.87,1.7301,15.33,,,,5926942,Electronic Technology,NASDAQ,false
+PPTA,Perpetua Resources Corp.,15.6000,7.51,8262,1852421,0.45,14.5103,-6.21,,,,1815169124,Non-Energy Minerals,NASDAQ,false
+CNTX,Context Therapeutics Inc.,0.1720,7.50,5265,1466257,0.36,0.1600,-5.10,,,,14700669,Health Technology,NASDAQ,false
+TWLO,Twilio Inc.,185.0000,7.50,5512,2605212,0.21,172.0930,-3.74,,,,26629726483,Technology Services,NYSE,false
+TECK,Teck Resources Ltd,52.1300,7.50,9914,2884910,0.34,48.4930,-5.98,,,,23811097615,Non-Energy Minerals,NYSE,false
+APPS,"Digital Turbine, Inc.",6.1700,7.49,26832,3875669,0.69,5.7401,-7.72,,,,699678786,Technology Services,NASDAQ,false
+OLB,"The OLB Group, Inc.",0.1236,7.48,459936,5445623,8.45,0.1150,-4.33,,,,3587915,Technology Services,NASDAQ,false
+EXTR,"Extreme Networks, Inc.",26.0097,7.48,2100,1699737,0.12,24.1996,-9.19,,,,3174819576,Electronic Technology,NASDAQ,false
+AMD,"Advanced Micro Devices, Inc.",456.1200,7.48,1438996,35008673,4.11,424.3766,-13.25,,,,696036664899,Electronic Technology,NASDAQ,false
+MT,Arcelor Mittal NY Registry Shares NEW,59.6700,7.47,20461,1324692,1.54,55.5225,-6.17,,,,42101938131,Non-Energy Minerals,NYSE,false
+OPTX,"Syntec Optics Holdings, Inc.",6.7600,7.47,19515,657909,2.97,6.2901,9.77,,,,253360447,Electronic Technology,NASDAQ,false
+AXNX,Axonex AI Group Limited,0.8920,7.46,200,327666,0.06,0.8301,-8.28,,,,5626564,Commercial Services,NASDAQ,false
+ATHE,Alterity Therapeutics Limited,1.6331,7.44,100,168040,0.06,1.5200,-8.16,,,,28049691,Health Technology,NASDAQ,false
+MBLY,Mobileye Global Inc.,4.9100,7.44,72533,7991842,0.91,4.5700,-10.22,,,,3885285519,Technology Services,NASDAQ,false
+THM,"International Tower Hill Mines, Ltd.",1.2354,7.43,89399,1364319,6.55,1.1500,-6.50,,,,301238094,Non-Energy Minerals,AMEX,false
+FIGR,"Figure Technology Solutions, Inc.",25.6100,7.42,19736,5188698,0.38,23.8410,-7.74,,,,5394571656,Finance,NASDAQ,false
+EME,"EMCOR Group, Inc.",648.1100,7.42,620,498530,0.12,603.3420,-5.15,,,,26414559764,Industrial Services,NYSE,false
+ESI,Element Solutions Inc.,31.7100,7.42,7470,4213632,0.18,29.5196,-7.84,,,,7161640577,Process Industries,NYSE,false
+RUN,Sunrun Inc.,7.0891,7.41,124995,11308636,1.11,6.6000,-7.30,,,,1596940352,Electronic Technology,NASDAQ,false
+KULR,"KULR Technology Group, Inc.",1.4500,7.41,8299,930899,0.89,1.3500,-12.34,,,,62478735,Producer Manufacturing,AMEX,false
+DDD,3D Systems Corporation,1.4500,7.41,13013,3808667,0.34,1.3500,-8.78,,,,224574547,Technology Services,NYSE,false
+QH,Quhuo Limited,3.2863,7.40,100,6906,1.45,3.0599,-1.29,,,,8417732,Technology Services,NASDAQ,false
+AMOD,"Alpha Modus Holdings, Inc.",0.6900,7.38,8132,5229511,0.16,0.6426,-12.21,,,,41072245,Technology Services,NASDAQ,false
+SRXH,SRX Global Inc.,0.8590,7.37,72933,465267,15.68,0.8000,-22.33,,,,16147512,Technology Services,AMEX,false
+WPM,Wheaton Precious Metals Corp,118.0100,7.37,36527,2025623,1.80,109.9097,-5.36,,,,49919910867,Non-Energy Minerals,NYSE,false
+ALT,"Altimmune, Inc.",1.4279,7.36,70588,3984899,1.77,1.3300,-5.67,,,,258803972,Health Technology,NASDAQ,false
+SVM,Silvercorp Metals Inc.,7.3000,7.35,69750,3168014,2.20,6.8002,-6.34,,,,1506796825,Non-Energy Minerals,AMEX,false
+QXO,"QXO, Inc.",11.1000,7.35,201210,20700930,0.97,10.3400,-6.17,,,,10753172270,Distribution Services,NYSE,false
+WORX,SCWorx Corp.,1.1700,7.34,1625,8074590,0.02,1.0900,-4.39,,,,1511938,Technology Services,NASDAQ,false
+LWLG,"Lightwave Logic, Inc.",2.7800,7.34,47561,4327743,1.10,2.5899,-13.67,,,,400265406,Process Industries,NASDAQ,false
+IPGP,IPG Photonics Corporation,62.9400,7.33,1719,365291,0.47,58.6416,-8.29,,,,2492677337,Electronic Technology,NASDAQ,false
+JKS,Jinko Holdings Limited,7.4900,7.31,24013,873587,2.75,6.9798,-9.47,,,,350807046,Electronic Technology,NYSE,false
+AQMS,"Aqua Metals, Inc.",0.6978,7.30,2801,46346,6.04,0.6503,-33.31,,,,2343983,Non-Energy Minerals,NASDAQ,false
+DC,Dakota Gold Corp.,4.4100,7.30,11417,1179009,0.97,4.1100,-5.73,,,,551552912,Non-Energy Minerals,AMEX,false
+LBRT,Liberty Energy Inc.,11.5400,7.30,14609,4763140,0.31,10.7549,-11.84,,,,1755123775,Industrial Services,NYSE,false
+IMUX,"Immunic, Inc.",7.5000,7.30,1049,280282,0.37,6.9897,-5.41,,,,111006943,Health Technology,NASDAQ,false
+TNYA,"Tenaya Therapeutics, Inc.",0.3075,7.29,121071,3411568,3.55,0.2866,-3.99,,,,65324231,Health Technology,NASDAQ,false
+FRMM,"Forum Markets, Incorporated",2.0600,7.29,1270,156715,0.81,1.9200,-4.48,,,,26857622,Health Technology,NASDAQ,false
+RBRK,"Rubrik, Inc.",114.5070,7.29,14880,2995188,0.50,106.7266,-6.83,,,,22125602694,Technology Services,NYSE,false
+PAAS,Pan American Silver Corp.,32.8400,7.29,56043,5488603,1.02,30.6086,-5.50,,,,12621175791,Non-Energy Minerals,NYSE,false
+SSRM,SSR Mining Inc.,23.1600,7.27,32984,2802767,1.18,21.5904,-7.30,,,,4308587349,Non-Energy Minerals,NASDAQ,false
+EH,EHang Holdings Limited,2.6600,7.26,18019,739024,2.44,2.4800,-12.98,,,,187972544,Technology Services,NASDAQ,false
+IPX,IperionX Limited,10.6800,7.23,5475,310606,1.76,9.9599,-12.17,,,,397938129,Non-Energy Minerals,NASDAQ,false
+TRT,Trio-Tech International,4.6000,7.23,6789,123418,5.50,4.2898,-7.74,,,,44280375,Producer Manufacturing,NASDAQ,false
+NET,"Cloudflare, Inc.",294.6900,7.18,52482,4066184,1.29,274.9487,-9.46,,,,97862873252,Technology Services,NYSE,false
+CAI,"Caris Life Sciences, Inc.",18.8400,7.17,3055,3966127,0.08,17.5795,-5.18,,,,5041671222,Health Technology,NASDAQ,false
+HSLV,Highlander Silver Corp.,3.2900,7.17,22594,622319,3.63,3.0699,-5.83,,,,628731151,Non-Energy Minerals,AMEX,false
+UNCY,"Unicycive Therapeutics, Inc.",3.5900,7.16,2634,1104527,0.24,3.3501,-5.10,,,,97768103,Health Technology,NASDAQ,false
+FET,"Forum Energy Technologies, Inc.",73.9700,7.16,570,173372,0.33,69.0276,-4.38,,,,791960409,Industrial Services,NYSE,false
+TGEN,Tecogen Inc.,1.6500,7.14,1500,332891,0.45,1.5400,-10.47,,,,46489244,Producer Manufacturing,AMEX,false
+SPCX,Space Exploration Technologies Corp,136.9000,7.13,3659920,106194293,3.45,127.7887,-7.69,,,,1735524117945,Communications,NASDAQ,false
+CLF,Cleveland-Cliffs Inc.,11.4300,7.12,171984,22302205,0.77,10.6703,-8.96,,,,6088141577,Non-Energy Minerals,NYSE,false
+LFUS,"Littelfuse, Inc.",383.0000,7.11,6048,285000,2.12,357.5763,-6.85,,,,9083800098,Electronic Technology,NASDAQ,false
+RVSN,Rail Vision Ltd.,1.8100,7.10,6905,20025,34.48,1.6900,-12.44,,,,3704795,Transportation,NASDAQ,false
+SHLS,"Shoals Technologies Group, Inc.",6.9400,7.10,9170,6695084,0.14,6.4799,-9.87,,,,1091697971,Electronic Technology,NASDAQ,false
+OKTA,"Okta, Inc.",205.0200,7.08,17375,4606809,0.38,191.4643,-7.44,,,,33471182974,Technology Services,NASDAQ,false
+SYM,Symbotic Inc.,33.3000,7.07,11337,1717834,0.66,31.1011,-6.21,,,,18809333397,Producer Manufacturing,NASDAQ,false
+RPD,"Rapid7, Inc.",15.3100,7.06,7171,1931597,0.37,14.3004,-6.72,,,,980061474,Technology Services,NASDAQ,false
+BIDU,"Baidu, Inc.",66.2700,7.06,95725,2634634,3.63,61.8999,-6.75,,,,21665143252,Technology Services,NASDAQ,false
+DAVE,Dave Inc.,244.5100,7.06,4426,386750,1.14,228.3860,-3.86,,,,2921808526,Finance,NASDAQ,false
+VBIO,"Valion Bio, Inc.",0.5145,7.05,1000,1226194,0.08,0.4806,-10.98,,,,1035999,Health Technology,NASDAQ,false
+DTI,Drilling Tools International Corporation,1.6700,7.05,300,243192,0.12,1.5600,-3.11,,,,55040265,Finance,NASDAQ,false
+MUX,McEwen Inc.,9.8100,7.04,21734,1305857,1.66,9.1648,-4.63,,,,564574073,Non-Energy Minerals,NYSE,false
+LASR,"nLIGHT, Inc.",34.5500,7.03,3447,1077370,0.32,32.2807,-14.33,,,,1879796687,Electronic Technology,NASDAQ,false
+SVIA,"Silvia, Inc.",2.2900,7.01,100,876746,0.01,2.1400,-2.51,,,,161361138,Technology Services,NASDAQ,false
+PRFX,PRF Technologies Ltd.,0.5091,7.00,4345,197676,2.20,0.4758,-23.68,,,,1664893,Health Technology,NASDAQ,false
+MNTN,"MNTN, Inc.",4.7500,6.98,2487,1443315,0.17,4.4401,-4.93,,,,336506324,Technology Services,NYSE,false
+BLNK,Blink Charging Co.,0.3448,6.98,11867,1761256,0.67,0.3223,-14.28,,,,46798330,Producer Manufacturing,NASDAQ,false
+SDGR,"Schrodinger, Inc.",24.5300,6.98,11824,1674769,0.71,22.9295,-12.95,,,,1721533925,Technology Services,NASDAQ,false
+ACRV,"Acrivon Therapeutics, Inc.",1.2300,6.96,1984,266893,0.74,1.1500,-17.86,,,,49348429,Health Technology,NASDAQ,false
+OMH,Ohmyhome Limited,3.8500,6.94,193563,9458592,2.05,3.6001,-14.69,,,,6943406,Finance,NASDAQ,false
+IVA,Inventiva S.A. - American Depository Shares,3.3577,6.93,27390,2823034,0.97,3.1401,-8.99,,,,769508239,Health Technology,NASDAQ,false
+SLI,Standard Lithium Ltd.,1.0800,6.93,76122,1738968,4.38,1.0100,-8.18,,,,249251993,Non-Energy Minerals,AMEX,false
+IAG,Iamgold Corporation,15.4400,6.93,22313,5147195,0.43,14.4394,-5.19,,,,8183148387,Non-Energy Minerals,NYSE,false
+AXON,"Axon Enterprise, Inc.",311.3000,6.92,8747,1485730,0.59,291.1523,-5.16,,,,23708320015,Electronic Technology,NASDAQ,false
+ZH,Zhihu Inc.,2.1700,6.90,4322,259001,1.67,2.0299,-16.12,,,,197669769,Technology Services,NYSE,false
+ENVX,Enovix Corporation,1.2505,6.88,165389,11111729,1.49,1.1700,-9.30,,,,248281432,Producer Manufacturing,NASDAQ,false
+HAO,Haoxi Health Technology Limited,1.7100,6.87,1589,70082,2.27,1.6001,-11.11,,,,977803,Commercial Services,NASDAQ,false
+FUBO,FuboTV Inc.,5.9100,6.87,32708,1373932,2.38,5.5301,-11.94,,,,604136177,Technology Services,NYSE,false
+WRD,WeRide Inc.,3.1901,6.87,23551,2493001,0.94,2.9850,-8.58,,,,1022258028,Technology Services,NASDAQ,false
+FLWS,"1-800-FLOWERS.COM, Inc.",1.9984,6.87,800,497228,0.16,1.8699,-11.37,,,,120068138,Retail Trade,NASDAQ,false
+ALOY,REalloys Inc.,4.0500,6.86,54040,2125092,2.54,3.7900,-12.87,,,,264036682,Non-Energy Minerals,NASDAQ,false
+FSLR,"First Solar, Inc.",147.0000,6.84,16243,3069444,0.53,137.5889,-9.45,,,,14788330728,Electronic Technology,NASDAQ,false
+CABA,"Cabaletta Bio, Inc.",1.0000,6.83,24246,4765351,0.51,0.9361,-7.32,,,,201935866,Health Technology,NASDAQ,false
+DRK,DarkHorse Technologies Inc.,1.4100,6.82,3742,117632,3.18,1.3200,-5.04,,,,13976633,Technology Services,NASDAQ,false
+EQX,Equinox Gold Corp.,8.9620,6.82,137245,12750871,1.08,8.3898,-5.52,,,,10031008388,Non-Energy Minerals,AMEX,false
+KGC,Kinross Gold Corporation,18.5000,6.81,52326,8992304,0.58,17.3205,-5.10,,,,20403619209,Non-Energy Minerals,NYSE,false
+OPTT,"Ocean Power Technologies, Inc.",0.3000,6.80,232042,1761848,13.17,0.2809,-13.33,,,,2529400,Producer Manufacturing,AMEX,false
+AVXL,Anavex Life Sciences Corp.,0.6317,6.80,3349,1267350,0.26,0.5915,-11.39,,,,54830183,Health Technology,NASDAQ,false
+BTG,B2Gold Corp,4.4000,6.80,126943,25444821,0.50,4.1199,-5.29,,,,5426948396,Non-Energy Minerals,AMEX,false
+CSCO,"Cisco Systems, Inc.",96.8000,6.80,84258,19812319,0.43,90.6367,-4.29,,,,357343506265,Electronic Technology,NASDAQ,false
+BTCT,BTC Digital Ltd.,0.5400,6.78,11377,346704,3.28,0.5057,-8.07,,,,5967547,Technology Services,NASDAQ,false
+CRMT,"America's Car-Mart, Inc.",0.7750,6.78,357,515526,0.07,0.7258,-10.28,,,,6052067,Retail Trade,NASDAQ,false
+DARE,"Dare Bioscience, Inc.",0.4350,6.76,100,172886,0.06,0.4075,-9.86,,,,8014168,Health Technology,NASDAQ,false
+SEZL,Sezzle Inc.,146.7000,6.75,825,581953,0.14,137.4239,-6.09,,,,4642514970,Technology Services,NASDAQ,false
+PACB,"Pacific Biosciences of California, Inc.",1.7400,6.75,44182,12749078,0.35,1.6300,-7.39,,,,510070564,Health Technology,NASDAQ,false
+AEM,Agnico Eagle Mines Limited,161.5000,6.74,19763,2136862,0.92,151.3022,-4.39,,,,77083881748,Non-Energy Minerals,NYSE,false
+KITT,"Nauticus Robotics, Inc.",0.7366,6.74,770449,76926,1001.54,0.6901,-15.84,,,,1824056,Producer Manufacturing,NASDAQ,false
+ARRY,"Array Technologies, Inc.",4.0400,6.74,69078,11025089,0.63,3.7849,-9.67,,,,583909554,Producer Manufacturing,NASDAQ,false
+FRNM,"Freenome, Inc.",9.9900,6.73,1145,818152,0.14,9.3601,-5.69,,,,1043648887,Health Technology,NASDAQ,false
+TNXP,Tonix Pharmaceuticals Holding Corp.,2.5399,6.72,34782,1116567,3.12,2.3800,-6.67,,,,46247007,Health Technology,NASDAQ,false
+VIVO,VivoPower PLC,1.7500,6.71,10188,949029,1.07,1.6400,-1.80,,,,52469430,Utilities,NASDAQ,false
+MITK,"Mitek Systems, Inc.",16.3358,6.70,5733,604827,0.95,15.3100,-7.32,,,,690823588,Technology Services,NASDAQ,false
+B,Barrick Mining Corporation,33.6500,6.69,221622,8514411,2.60,31.5400,-5.48,,,,51367076962,Non-Energy Minerals,NYSE,false
+CIX,CompX International Inc.,42.7800,6.68,200,17911,1.12,40.1012,-6.51,,,,494699948,Producer Manufacturing,AMEX,false
+REAL,"The RealReal, Inc.",11.5000,6.68,4410,4564799,0.10,10.7799,-8.88,,,,1344406408,Retail Trade,NASDAQ,false
+NEM,Newmont Corporation,101.0000,6.68,88707,7116336,1.25,94.6757,-5.37,,,,98390816025,Non-Energy Minerals,NYSE,false
+RMIX,"Suncrete, Inc.",6.2400,6.67,18876,907885,2.08,5.8498,-7.14,,,,446366540,Non-Energy Minerals,NASDAQ,false
+TRX,TRX Gold Corporation,0.7200,6.67,120761,1747917,6.91,0.6750,-6.12,,,,221619481,Non-Energy Minerals,AMEX,false
+ATLX,Atlas Lithium Corporation,1.4500,6.62,700,306236,0.23,1.3600,-10.53,,,,42030000,Non-Energy Minerals,NASDAQ,false
+ERNA,Ernexa Therapeutics Inc.,1.4500,6.62,400,17223,2.32,1.3600,-16.56,,,,2301868,Health Technology,NASDAQ,false
+NPO,Enpro Inc.,269.9900,6.61,97,220497,0.04,253.2502,-4.01,,,,5361757279,Producer Manufacturing,NYSE,false
+CMPS,COMPASS Pathways Plc - American Depository Shares,8.5800,6.58,25883,3506157,0.74,8.0503,-6.94,,,,1140559069,Health Technology,NASDAQ,false
+BDMD,Baird Medical Investment Holdings Ltd,0.0956,6.58,102555,34745295,0.30,0.0897,-12.91,,,,2870612,Health Technology,NASDAQ,false
+CFG,"Citizens Financial Group, Inc.",62.5670,6.57,500,4442368,0.01,58.7098,-2.97,,,,24610940288,Finance,NYSE,false
+TLK,"PT Telekomunikasi Indonesia, Tbk",11.7000,6.56,3168,2617804,0.12,10.9797,-2.14,,,,11278233605,Communications,NYSE,false
+AGI,Alamos Gold Inc.,26.5000,6.55,36626,3871023,0.95,24.8710,-4.24,,,,10409617943,Non-Energy Minerals,NYSE,false
+ECX,ECARX Holdings Inc.,0.5611,6.55,20178,1056713,1.91,0.5266,-23.70,,,,206948991,Technology Services,NASDAQ,false
+CAT,"Caterpillar, Inc.",543.8720,6.55,45336,3713980,1.22,510.4383,-5.01,,,,233578953361,Producer Manufacturing,NYSE,false
+YELP,Yelp Inc.,19.3800,6.54,200,1290981,0.02,18.1904,-1.99,,,,991225826,Technology Services,NYSE,false
+BNC,BNB Standard Corporation,3.2600,6.54,30957,865402,3.58,3.0599,-10.00,,,,149245724,Producer Manufacturing,NASDAQ,false
+GILT,Gilat Satellite Networks Ltd.,5.0600,6.53,22627,1310801,1.73,4.7498,-3.85,,,,365890863,Electronic Technology,NASDAQ,false
+OFIX,Orthofix Medical Inc.,6.4661,6.53,150,584658,0.03,6.0697,-4.26,,,,247411993,Health Technology,NASDAQ,false
+ENPH,"Enphase Energy, Inc.",20.9100,6.52,75173,7448615,1.01,19.6301,-10.69,,,,2597329309,Producer Manufacturing,NASDAQ,false
+HSAI,Hesai Group,12.6000,6.51,14982,2058588,0.73,11.8299,-7.36,,,,1978399768,Producer Manufacturing,NASDAQ,false
+CLFD,"Clearfield, Inc.",27.0000,6.51,120,140355,0.09,25.3497,-10.99,,,,342702837,Electronic Technology,NASDAQ,false
+BULL,Webull Corporation,4.4200,6.51,355292,10085533,3.52,4.1498,-9.19,,,,2243786797,Finance,NASDAQ,false
+TII,Titan Mining Corporation,1.3100,6.50,1438,233894,0.61,1.2300,-7.52,,,,121804064,Non-Energy Minerals,AMEX,false
+TIL,"Instil Bio, Inc.",5.5700,6.50,1270,71668,1.77,5.2300,-5.77,,,,35469735,Health Technology,NASDAQ,false
+CEG,Constellation Energy Corporation,252.8400,6.50,17436,3727673,0.47,237.4085,-5.80,,,,84116114733,Utilities,NASDAQ,false
+SE,Sea Limited,66.7000,6.50,41187,7964676,0.52,62.6291,-5.02,,,,37257618248,Retail Trade,NYSE,false
+RLMD,"Relmada Therapeutics, Inc.",2.7900,6.49,500,1690617,0.03,2.6200,-15.76,,,,279540487,Health Technology,NASDAQ,false
+RIVN,"Rivian Automotive, Inc.",11.0000,6.49,953116,29887517,3.19,10.3296,-8.50,,,,15121044556,Consumer Durables,NASDAQ,false
+SENS,"Senseonics Holdings, Inc.",8.5400,6.48,3728,989277,0.38,8.0203,-9.94,,,,439339683,Electronic Technology,NASDAQ,false
+IMSR,Terrestrial Energy Inc.,2.3000,6.48,28133,2011063,1.40,2.1600,-6.09,,,,228934959,Industrial Services,NASDAQ,false
+AURE,Aurelion Inc.,1.0700,6.47,10097,124371,8.12,1.0050,-2.43,,,,35062643,Technology Services,NASDAQ,false
+MTZ,"MasTec, Inc.",154.0600,6.46,1557,1813264,0.09,144.7116,-12.17,,,,11620334322,Industrial Services,NYSE,false
+TRAW,"Traws Pharma, Inc.",0.1863,6.46,18156,187048,9.71,0.1750,-23.91,,,,2689449,Health Technology,NASDAQ,false
+PRZO,ParaZero Technologies Ltd.,0.3100,6.46,1665,259244,0.64,0.2912,-17.16,,,,8492113,Electronic Technology,NASDAQ,false
+SWKS,"Skyworks Solutions, Inc.",78.6700,6.44,1581,4309418,0.04,73.9102,-6.04,,,,17358106528,Electronic Technology,NASDAQ,false
+ISOU,IsoEnergy Ltd.,5.9600,6.43,2840,117306,2.42,5.5999,-6.67,,,,365557812,Non-Energy Minerals,AMEX,false
+CABR,"Caring Brands, Inc.",0.7024,6.42,791,125349,0.63,0.6600,-2.58,,,,7592601,Commercial Services,NASDAQ,false
+ELVA,Electrovaya Inc.,3.4800,6.42,1419,464826,0.31,3.2701,-11.86,,,,163496388,Producer Manufacturing,NASDAQ,false
+DPRO,Draganfly Inc.,1.9900,6.42,12459,832365,1.50,1.8699,-6.50,,,,73196959,Consumer Durables,NASDAQ,false
+IOT,Samsara Inc.,39.9000,6.41,2070,3569505,0.06,37.4965,-2.36,,,,21957268473,Technology Services,NYSE,false
+NUR,Nuran Wireless Inc.,0.4150,6.41,3123,1326046,0.24,0.3900,-12.91,,,,5145932,Distribution Services,NASDAQ,false
+SNAP,Snap Inc.,4.8400,6.37,1184523,46286458,2.56,4.5502,-11.13,,,,7855924151,Technology Services,NYSE,false
+NIKI,"Niki BioSolutions, Inc.",1.6700,6.37,100,20791,0.48,1.5700,-6.55,,,,4895760,Health Technology,NASDAQ,false
+CENX,Century Aluminum Company,30.1200,6.36,6534,2137108,0.31,28.3189,-6.96,,,,2803490048,Non-Energy Minerals,NASDAQ,false
+ACON,"Aclarion, Inc.",1.3000,6.35,100,18408,0.54,1.2224,-13.92,,,,3523408,Technology Services,NASDAQ,false
+SPAI,Safe Pro Group Inc.,2.3500,6.33,8375,718407,1.17,2.2101,-12.30,,,,46365682,Electronic Technology,NASDAQ,false
+CGAU,Centerra Gold Inc.,17.8000,6.33,9732,1225504,0.79,16.7403,-6.64,,,,3242066238,Non-Energy Minerals,NYSE,false
+AKAM,"Akamai Technologies, Inc.",90.4800,6.31,51464,6692344,0.77,85.1096,-7.20,,,,12275344896,Technology Services,NASDAQ,false
+HTZ,"Hertz Global Holdings, Inc",1.1800,6.31,378194,21918225,1.73,1.1100,-9.76,,,,396787032,Finance,NASDAQ,false
+YSS,York Space Systems Inc.,3.8800,6.30,18332,2096946,0.87,3.6500,1.96,,,,494828312,Electronic Technology,NYSE,false
+CGEM,"Cullinan Therapeutics, Inc.",9.4500,6.30,100,887895,0.01,8.8899,-1.98,,,,577147080,Health Technology,NASDAQ,false
+NDRA,ENDRA Life Sciences Inc.,3.8000,6.29,700,10422,6.72,3.5751,-3.38,,,,5361920,Health Technology,NASDAQ,false
+TRAK,"ReposiTrak, Inc.",6.2600,6.28,1300,105358,1.23,5.8901,-1.01,,,,107231469,Technology Services,NYSE,false
+AMTX,"Aemetis, Inc",0.8600,6.28,8315,1600321,0.52,0.8092,-14.52,,,,59150567,Process Industries,NASDAQ,false
+JMIA,Jumia Technologies AG,2.7100,6.27,71997,2859615,2.52,2.5501,2.00,,,,317648070,Technology Services,NYSE,false
+ODD,ODDITY Tech Ltd.,14.4700,6.24,11124,885300,1.26,13.6201,0.07,,,,628216425,Technology Services,NASDAQ,false
+GPRO,"GoPro, Inc.",0.5397,6.24,267838,6861514,3.90,0.5080,-5.24,,,,110404272,Consumer Durables,NASDAQ,false
+BX,Blackstone Inc.,117.7000,6.23,51027,5556878,0.92,110.7973,-4.47,,,,137769306907,Finance,NYSE,false
+BYRN,"Byrna Technologies, Inc.",3.2500,6.21,5326,403572,1.32,3.0600,-13.07,,,,71618548,Electronic Technology,NASDAQ,false
+PYPD,PolyPid Ltd.,6.5000,6.21,14577,206242,7.07,6.1200,-6.56,,,,129289305,Health Technology,NASDAQ,false
+RETO,"ReTo Eco-Solutions, Inc.",4.2800,6.20,1474,332800,0.44,4.0301,-12.39,,,,3775557,Non-Energy Minerals,NASDAQ,false
+RRX,Regal Rexnord Corporation,161.7900,6.20,916,1243067,0.07,152.3446,-6.97,,,,10146087083,Producer Manufacturing,NYSE,false
+TFPM,Triple Flag Precious Metals Corp.,28.6300,6.19,6006,550485,1.09,26.9611,-2.81,,,,5545280051,Non-Energy Minerals,NYSE,false
+CHMI/PA,Cherry Hill Mortgage Investment Corporation 8.20% Series A Cumulative Redeemable Preferred Stock,16.9900,6.19,400,7925,5.05,15.9996,-5.66,,,,76481106,Finance,NYSE,false
+SPIR,"Spire Global, Inc.",7.8100,6.19,11202,560800,2.00,7.3547,-7.37,,,,299852631,Technology Services,NYSE,false
+NTSK,"Netskope, Inc.",25.4100,6.18,65817,6415522,1.03,23.9311,-3.51,,,,9777504350,Technology Services,NASDAQ,false
+MMED,"MiniMed Group, Inc.",17.0000,6.18,1408,12663792,0.01,16.0105,-1.54,,,,4504412685,Health Technology,NASDAQ,false
+RFIL,"RF Industries, Ltd.",6.7000,6.18,3280,158951,2.06,6.3100,-7.34,,,,68449372,Electronic Technology,NASDAQ,false
+GENK,"GEN Restaurant Group, Inc.",0.8600,6.17,2433,2113652,0.12,0.8100,-12.90,,,,27458145,Consumer Services,NASDAQ,false
+FDMT,"4D Molecular Therapeutics, Inc.",10.8600,6.16,100,939432,0.01,10.2298,-4.57,,,,576761258,Health Technology,NASDAQ,false
+FSM,Fortuna Mining Corp.,7.7800,6.14,58640,4948174,1.19,7.3299,-7.80,,,,2169367499,Non-Energy Minerals,NYSE,false
+NAUT,"Nautilus Biotechnology, Inc.",2.2500,6.13,58041,7869625,0.74,2.1200,-2.30,,,,270029519,Health Technology,NASDAQ,false
+ENS,EnerSys,132.0000,6.13,2650,610476,0.43,124.3758,-6.13,,,,4426277541,Producer Manufacturing,NYSE,false
+SSMR,Sunshine Silver Mining & Refining Company,11.0900,6.12,6024,1121821,0.54,10.4504,-13.21,,,,1504180174,Non-Energy Minerals,NYSE,false
+BEAM,Beam Therapeutics Inc.,22.1800,6.12,4540,2232289,0.20,20.9009,-0.19,,,,2163058912,Health Technology,NASDAQ,false
+NIO,NIO Inc.,2.6000,6.12,7123679,38424750,18.54,2.4501,-7.89,,,,6316650413,Consumer Durables,NYSE,false
+VOXR,Vox Royalty Corp.,4.0000,6.10,400,643565,0.06,3.7700,-5.75,,,,261997223,Finance,NASDAQ,false
+SNX,TD SYNNEX Corporation,229.9400,6.08,4930,770247,0.64,216.7609,-4.99,,,,17292572975,Distribution Services,NYSE,false
+CRSP,CRISPR Therapeutics AG,41.4764,6.08,15738,1911617,0.82,39.0992,0.44,,,,3792731473,Health Technology,NASDAQ,false
+UROY,Uranium Royalty Corp.,2.4610,6.08,31878,2672872,1.19,2.3199,-8.66,,,,884076174,Non-Energy Minerals,NASDAQ,false
+NTRA,"Natera, Inc.",290.0000,6.07,5004,1970770,0.25,273.4044,-5.70,,,,39644233954,Health Technology,NASDAQ,false
+BVN,Buenaventura Mining Company Inc.,20.8000,6.07,7396,1139166,0.65,19.6097,-7.63,,,,4980682461,Non-Energy Minerals,NYSE,false
+BYSI,"BeyondSpring, Inc.",0.3500,6.06,1534,110321,1.39,0.3300,-24.49,,,,13664990,Health Technology,NASDAQ,false
+HLIT,Harmonic Inc.,9.9800,6.06,7738,1557045,0.50,9.4098,-10.55,,,,1011107182,Electronic Technology,NASDAQ,false
+PHIO,Phio Pharmaceuticals Corp.,0.6957,6.05,5125,71772,7.14,0.6560,-8.25,,,,7840271,Health Technology,NASDAQ,false
+NRXP,"NRX Pharmaceuticals, Inc.",2.2800,6.05,9512,1560323,0.61,2.1499,-15.69,,,,95305161,Health Technology,NASDAQ,false
+RAL,Ralliant Corporation,67.0600,6.04,2074,1513991,0.14,63.2403,-3.66,,,,7012068582,Electronic Technology,NYSE,false
+LAES,SEALSQ Corp,1.0200,6.03,711841,4778796,14.90,0.9620,-14.11,,,,222154442,Electronic Technology,NASDAQ,false
+TSLA,"Tesla, Inc.",366.6400,6.02,1144269,36637361,3.12,345.8215,-7.64,,,,1366942820098,Consumer Durables,NASDAQ,false
+KOSS,Koss Corporation,3.1700,6.02,199,29196,0.68,2.9900,-8.00,,,,28304650,Consumer Durables,NASDAQ,false
+AFRM,"Affirm Holdings, Inc.",57.2500,6.02,32946,4308818,0.76,53.9992,-5.11,,,,18306796614,Finance,NASDAQ,false
+TEL,TE Connectivity plc,212.0000,6.02,849,2077866,0.04,199.9623,-5.32,,,,57330419272,Electronic Technology,NYSE,false
+ILMN,"Illumina, Inc.",204.3900,6.00,1912,2136958,0.09,192.8208,-3.90,,,,29154384519,Health Technology,NASDAQ,false
+LCID,"Lucid Group, Inc.",2.6500,6.00,340760,13291762,2.56,2.5000,-10.39,,,,990632095,Consumer Durables,NASDAQ,false
+FUTU,Futu Holdings Limited,88.0000,6.00,26781,1181362,2.27,83.0189,-4.80,,,,11638945892,Finance,NASDAQ,false
+TPC,Tutor Perini Corporation,92.2397,6.00,3276,578856,0.57,87.0186,-4.64,,,,4574564515,Industrial Services,NYSE,false
+FTNT,"Fortinet, Inc.",132.0300,6.00,20768,5731522,0.36,124.5566,-5.25,,,,91515448132,Technology Services,NASDAQ,false
+CATX,"Perspective Therapeutics, Inc.",0.7990,6.00,230,3512176,0.01,0.7538,-3.85,,,,91027989,Health Technology,AMEX,false
+VUZI,Vuzix Corporation,1.1500,5.99,8489,1228314,0.69,1.0850,-9.58,,,,92395212,Electronic Technology,NASDAQ,false
+LIMN,"Liminatus Pharma, Inc.",2.6600,5.98,1533,30832,4.97,2.5099,-10.68,,,,3371452,Health Technology,NASDAQ,false
+MIR,"Mirion Technologies, Inc.",17.0300,5.97,2696,4701105,0.06,16.0706,-6.46,,,,3945058446,Electronic Technology,NYSE,false
+BWXT,"BWX Technologies, Inc.",115.0100,5.96,5733,1306314,0.44,108.5410,-7.28,,,,9944999114,Electronic Technology,NYSE,false
+BIOA,"BioAge Labs, Inc.",4.5349,5.96,1268,717121,0.18,4.2798,-9.13,,,,196702422,Health Technology,NASDAQ,false
+U,Unity Software Inc.,47.4150,5.96,88978,12041568,0.74,44.7480,-4.18,,,,19861334541,Technology Services,NYSE,false
+CERS,Cerus Corporation,1.9600,5.95,2370,2733311,0.09,1.8499,-2.63,,,,373615262,Health Technology,NASDAQ,false
+DRD,DRDGOLD Limited,21.2100,5.94,11183,260216,4.30,20.0208,-3.19,,,,1780306824,Non-Energy Minerals,NYSE,false
+NFGC,New Found Gold Corp,1.2500,5.93,24010,1415027,1.70,1.1800,1.72,,,,454529655,Non-Energy Minerals,AMEX,false
+HYFM,"Hydrofarm Holdings Group, Inc.",0.5304,5.93,339,608514,0.06,0.5007,-13.75,,,,6704522,Producer Manufacturing,NASDAQ,false
+ARW,"Arrow Electronics, Inc.",181.9800,5.93,319,520022,0.06,171.7927,-6.10,,,,8685274368,Distribution Services,NYSE,false
+SG,"Sweetgreen, Inc.",12.8800,5.92,3748,4869575,0.08,12.1601,-0.16,,,,1447542390,Consumer Services,NYSE,false
+ELE,Elemental Royalty Corporation,12.0000,5.91,4551,526261,0.86,11.3304,-8.63,,,,866482818,Energy Minerals,NASDAQ,false
+ATI,ATI Inc.,175.3900,5.91,1487,1759541,0.08,165.6029,-5.01,,,,22492241295,Non-Energy Minerals,NYSE,false
+NTLA,"Intellia Therapeutics, Inc.",10.5900,5.90,60913,5392300,1.13,10.0000,5.04,,,,1403585205,Health Technology,NASDAQ,false
+SWMR,"Swarmer, Inc",7.3600,5.90,4567,540028,0.85,6.9500,-12.36,,,,134845795,Technology Services,NASDAQ,false
+LMND,"Lemonade, Inc.",37.5500,5.89,14273,1433620,1.00,35.4613,-7.22,,,,2763086079,Finance,NYSE,false
+IQMX,IQM Quantum Computers Oyj,6.6800,5.86,12667,254281,4.98,6.3102,-10.50,,,,1195721111,Electronic Technology,NASDAQ,false
+TLN,Talen Energy Corporation,352.4400,5.86,9789,1111677,0.88,332.9303,-6.46,,,,14483789679,Utilities,NASDAQ,false
+AI,"C3.ai, Inc.",9.6650,5.86,16187,4818203,0.34,9.1300,-9.06,,,,1435965153,Technology Services,NYSE,false
+SXI,Standex International Corporation,220.7197,5.85,1235,169002,0.73,208.5212,-4.91,,,,2523986668,Electronic Technology,NYSE,false
+VSTM,"Verastem, Inc.",6.7000,5.85,1915,4857369,0.04,6.3297,-7.73,,,,797673681,Health Technology,NASDAQ,false
+KRMN,Karman Holdings Inc.,30.9562,5.83,10956,3525284,0.31,29.2509,-11.34,,,,3876610919,Electronic Technology,NYSE,false
+APWC,Asia Pacific Wire & Cable Corporation Limited,1.0900,5.83,103,5738,1.80,1.0300,-6.79,,,,42469428,Electronic Technology,NASDAQ,false
+GOOGL,Alphabet Inc.,280.7250,5.82,1255204,37927922,3.31,265.2854,-2.70,,,,3235509897217,Technology Services,NASDAQ,false
+CHGG,"Chegg, Inc.",0.5100,5.81,3308,861970,0.38,0.4820,-5.30,,,,53583725,Commercial Services,NYSE,false
+GOOG,Alphabet Inc.,279.3000,5.80,873738,24876529,3.51,263.9887,-2.59,,,,3235509897216,Technology Services,NASDAQ,false
+DUOT,"Duos Technologies Group, Inc.",2.7400,5.79,2300,1217820,0.19,2.5900,-13.38,,,,88794175,Technology Services,NASDAQ,false
+FLD,"Fold Holdings, Inc.",0.3270,5.79,4711,180084,2.62,0.3091,6.59,,,,17019806,Technology Services,NASDAQ,false
+ARAI,Arrive AI Inc.,1.2800,5.79,70682,263990,26.77,1.2099,-21.94,,,,1733665,Technology Services,NASDAQ,false
+HWM,Howmet Aerospace Inc.,221.2600,5.79,1364,4225038,0.03,209.1502,-4.13,,,,83174669951,Electronic Technology,NYSE,false
+GRAL,"GRAIL, Inc.",104.9800,5.77,506,854875,0.06,99.2531,-5.33,,,,4462495716,Health Technology,NASDAQ,false
+ARCT,Arcturus Therapeutics Holdings Inc.,7.8800,5.77,211,649759,0.03,7.4501,-1.97,,,,214727721,Health Technology,NASDAQ,false
+ACXP,"Acurx Pharmaceuticals, Inc.",1.1000,5.77,783,108475,0.72,1.0400,0.97,,,,6300460,Health Technology,NASDAQ,false
+PRQR,ProQR Therapeutics N.V.,1.1000,5.77,4581,861212,0.53,1.0400,-0.95,,,,146766329,Health Technology,NASDAQ,false
+GENB,"Generate Biomedicines, Inc.",10.0900,5.77,2718,972500,0.28,9.5396,-8.00,,,,1231582174,Health Technology,NASDAQ,false
+XHR,"Xenia Hotels & Resorts, Inc.",22.7500,5.76,5000,817765,0.61,21.5110,-1.19,,,,1984207918,Finance,NYSE,false
+INTT,inTest Corporation,11.5600,5.76,1899,151247,1.26,10.9304,-12.49,,,,140299313,Electronic Technology,AMEX,false
+LIND,Lindblad Expeditions Holdings Inc.,32.0000,5.75,11280,839473,1.34,30.2600,-3.20,,,,1986807776,Consumer Services,NASDAQ,false
+IMMX,"Immix Biopharma, Inc.",7.3600,5.75,4943,1202293,0.41,6.9598,-1.14,,,,583334685,Health Technology,NASDAQ,false
+CTEV,Claritev Corporation,19.3300,5.74,300,274471,0.11,18.2807,-3.94,,,,312127086,Technology Services,NYSE,false
+BEAT,"Heartbeam, Inc.",0.2909,5.74,71702,1150432,6.23,0.2751,-10.94,,,,17417349,Health Technology,NASDAQ,false
+EU,enCore Energy Corp.,0.4749,5.72,20724,3159639,0.66,0.4492,-5.37,,,,87894114,Non-Energy Minerals,NASDAQ,false
+CSTM,Constellium SE,20.9900,5.72,2646,1529203,0.17,19.8543,-5.14,,,,2671224360,Non-Energy Minerals,NYSE,false
+SVCO,"Silvaco Group, Inc.",7.0400,5.71,8719,276182,3.16,6.6597,-10.48,,,,227751421,Technology Services,NASDAQ,false
+PARK,"Park Dental Partners, Inc.",18.0000,5.70,100,44738,0.22,17.0293,-6.79,,,,94261546,Health Services,NASDAQ,false
+USAU,U.S. Gold Corp.,8.1700,5.69,1350,199960,0.68,7.7302,-8.09,,,,127766555,Non-Energy Minerals,NASDAQ,false
+BHP,BHP Group Limited,71.0000,5.69,64382,3417963,1.88,67.1776,-2.00,,,,172885756047,Non-Energy Minerals,NYSE,false
+NTAP,"NetApp, Inc.",166.6100,5.68,2184,2004532,0.11,157.6552,-7.36,,,,30965455151,Electronic Technology,NASDAQ,false
+PHUN,"Phunware, Inc.",1.4900,5.67,2599,75956,3.42,1.4101,-4.08,,,,29153647,Technology Services,NASDAQ,false
+WWD,"Woodward, Inc.",345.0600,5.67,2521,781341,0.32,326.5449,-2.73,,,,19050835123,Producer Manufacturing,NASDAQ,false
+ITOC,iTonic Holdings Ltd,1.6800,5.66,11192,38646,28.96,1.5900,6.00,,,,11631843,Health Technology,NASDAQ,false
+CSIQ,Canadian Solar Inc.,6.3600,5.65,48598,2448597,1.98,6.0199,-24.94,,,,408738442,Electronic Technology,NASDAQ,false
+SPXC,"SPX Technologies, Inc.",143.9700,5.64,818,719013,0.11,136.2836,-4.91,,,,6828403485,Producer Manufacturing,NYSE,false
+MDB,"MongoDB, Inc.",302.0000,5.63,14142,1443780,0.98,285.9036,-3.74,,,,23031057994,Technology Services,NASDAQ,false
+PS,Pershing Square Inc.,35.5000,5.62,8231,491035,1.68,33.6111,-8.77,,,,13444000277,Finance,NYSE,false
+CHGA,Change Agents Corporation,0.7500,5.62,2434,51850,4.69,0.7101,-10.23,,,,1169808,Health Technology,NASDAQ,false
+SDA,SunCar Technology Group Inc.,0.2225,5.62,10729,20977251,0.05,0.2107,-9.14,,,,21493372,Consumer Services,NASDAQ,false
+RGLD,"Royal Gold, Inc.",234.4900,5.61,5483,670423,0.82,222.0339,-4.10,,,,18771393712,Non-Energy Minerals,NASDAQ,false
+ULCC,"Frontier Group Holdings, Inc.",8.1000,5.61,8805,4150234,0.21,7.6697,-3.40,,,,1767302561,Transportation,NASDAQ,false
+TENX,"Tenax Therapeutics, Inc.",1.3200,5.60,33592,1746272,1.92,1.2500,-10.07,,,,56920562,Health Technology,NASDAQ,false
+XTIA,"XTI Aerospace, Inc.",0.8132,5.60,48212,976146,4.94,0.7701,-9.82,,,,29631747,Technology Services,NASDAQ,false
+ASPN,"Aspen Aerogels, Inc.",4.7200,5.59,6730,1219127,0.55,4.4701,-8.21,,,,371584112,Process Industries,NYSE,false
+OWL,Blue Owl Capital Inc.,9.2900,5.57,73278,19729143,0.37,8.7998,-2.33,,,,13787005678,Finance,NYSE,false
+WRBY,Warby Parker Inc.,24.4000,5.56,16748,4367025,0.38,23.1148,-4.21,,,,2862801282,Retail Trade,NYSE,false
+NU,Nu Holdings Ltd.,11.8700,5.56,460513,81288290,0.57,11.2448,-4.86,,,,54409320320,Finance,NYSE,false
+GOW,GOWell Energy Technology,2.4700,5.56,720,289880,0.25,2.3399,8.33,,,,109372021,Finance,NASDAQ,false
+GDC,GD Culture Group Limited,1.1400,5.56,11265,142405,7.91,1.0800,-13.60,,,,4495500,Technology Services,NASDAQ,false
+ENLT,Enlight Renewable Energy Ltd.,62.7100,5.55,444,201726,0.22,59.4126,-4.19,,,,8318113190,Utilities,NASDAQ,false
+FIRY,Firy Inc.,13.5000,5.55,369,226015,0.16,12.7901,-9.16,,,,212313996,Technology Services,NYSE,false
+ABX,"Abacus Global Management, Inc.",6.4900,5.53,400,859389,0.05,6.1499,-5.82,,,,601422357,Finance,NYSE,false
+HUMA,"Humacyte, Inc.",0.4700,5.52,84245,5992483,1.41,0.4454,-17.90,,,,123731272,Health Technology,NASDAQ,false
+FISN,"Deep Fission, Inc.",3.0600,5.52,6917,945209,0.73,2.8999,-14.96,,,,170837821,Producer Manufacturing,NASDAQ,false
+AVT,"Avnet, Inc.",77.5000,5.51,2763,1438936,0.19,73.4528,-6.19,,,,6040153259,Distribution Services,NASDAQ,false
+PUMP,ProPetro Holding Corp.,6.7000,5.51,26165,5641833,0.46,6.3501,-8.76,,,,780175817,Industrial Services,NYSE,false
+ELAB,PMGC Holdings Inc.,1.2028,5.51,1104,534820,0.21,1.1400,-10.24,,,,1332586,Health Technology,NASDAQ,false
+SGRX,SANGRIX INC.,2.3000,5.50,764,1419403,0.05,2.1801,-8.79,,,,1145464,Consumer Non-Durables,NASDAQ,false
+SKYA,"SkyAI, Inc.",2.3000,5.50,39638,3244819,1.22,2.1801,-45.50,,,,110862156,Technology Services,NASDAQ,false
+NVA,Nova Minerals Corp,2.1100,5.50,2247,770563,0.29,2.0000,-13.04,,,,76388733,Non-Energy Minerals,AMEX,false
+KLAR,Klarna Group plc,12.6700,5.50,56256,6950494,0.81,12.0095,-5.21,,,,4553712392,Commercial Services,NYSE,false
+META,"Meta Platforms, Inc.",591.6540,5.49,377349,21753529,1.73,560.8626,-5.93,,,,1433642301356,Technology Services,NASDAQ,false
+KZIA,Kazia Therapeutics Limited,5.1900,5.49,3890,290306,1.34,4.9199,-8.38,,,,67422199,Health Technology,NASDAQ,false
+JBLU,JetBlue Airways Corporation,3.5015,5.47,241920,32434498,0.75,3.3199,-4.05,,,,1252808074,Transportation,NASDAQ,false
+HNGE,"Hinge Health, Inc.",111.5620,5.47,700,1881094,0.04,105.7761,-2.15,,,,8596878585,Technology Services,NYSE,false
+CHRS,"Coherus Oncology, Inc.",0.3900,5.46,6643,2318597,0.29,0.3698,-4.47,,,,57148258,Health Technology,NASDAQ,false
+TH,Target Hospitality Corp.,11.7900,5.46,4623,2517561,0.18,11.1796,-1.32,,,,1094872360,Consumer Services,NASDAQ,false
+INEO,INNEOVA Holdings Limited,0.5219,5.43,2000,14600,13.70,0.4950,-8.33,,,,8004442,Distribution Services,NASDAQ,false
+OII,"Oceaneering International, Inc.",33.3900,5.43,860,1013395,0.08,31.6703,-4.89,,,,3148904142,Producer Manufacturing,NYSE,false
+IQ,"iQIYI, Inc.",0.5200,5.41,40208,8157465,0.49,0.4933,-10.96,,,,476046693,Technology Services,NASDAQ,false
+TENB,"Tenable Holdings, Inc.",44.2617,5.41,8679,3699366,0.23,41.9900,-4.76,,,,4388275213,Technology Services,NASDAQ,false
+GENI,Genius Sports Limited,5.4600,5.41,102119,7039334,1.45,5.1798,-11.00,,,,1439611395,Technology Services,NYSE,false
+TOYO,"TOYO Co., Ltd",3.9000,5.41,14124,563840,2.50,3.6998,-4.88,,,,158171544,Electronic Technology,NASDAQ,false
+AAON,"AAON, Inc.",79.2700,5.40,1995,1428677,0.14,75.2087,-2.43,,,,6202006959,Producer Manufacturing,NASDAQ,false
+MRNA,"Moderna, Inc.",205.5200,5.39,54073,13963808,0.39,195.0090,-2.17,,,,78901089478,Health Technology,NASDAQ,false
+CRSR,"Corsair Gaming, Inc.",11.3500,5.39,17082,1324965,1.29,10.7695,-5.11,,,,1176643585,Technology Services,NASDAQ,false
+SXTP,"60 Degrees Pharmaceuticals, Inc.",0.4934,5.38,1540,681923,0.23,0.4682,-6.36,,,,2099700,Health Technology,NASDAQ,false
+UAL,"United Airlines Holdings, Inc.",106.4500,5.36,35148,5431671,0.65,101.0345,-4.26,,,,32824078679,Transportation,NASDAQ,false
+CGC,Canopy Growth Corporation,0.4499,5.36,137801,2868663,4.80,0.4270,-9.97,,,,191985234,Process Industries,NASDAQ,false
+ROAD,"Construction Partners, Inc.",73.0000,5.35,1362,799153,0.17,69.2928,-4.08,,,,3975926968,Industrial Services,NASDAQ,false
+ARXS,"Arxis, Inc.",51.0500,5.34,500,861791,0.06,48.4621,-5.94,,,,20872782491,Electronic Technology,NASDAQ,false
+AIBZ,Bitzero Holdings Inc.,2.2542,5.34,6203,919413,0.67,2.1399,-10.83,,,,122910063,Technology Services,NASDAQ,false
+NXDR,"Nextdoor Holdings, Inc.",1.9800,5.32,794,2106235,0.04,1.8800,-4.08,,,,727156809,Technology Services,NASDAQ,false
+OESX,"Orion Energy Systems, Inc.",11.2900,5.32,500,40444,1.24,10.7197,-3.34,,,,44000786,Electronic Technology,NASDAQ,false
+MS,Morgan Stanley,174.4700,5.31,191923,6595903,2.91,165.6728,-5.32,,,,258949467335,Finance,NYSE,false
+OMDA,"Omada Health, Inc.",12.5000,5.31,2540,1347713,0.19,11.8697,-5.04,,,,736387817,Technology Services,NASDAQ,false
+WCC,"WESCO International, Inc.",297.0000,5.30,8101,721999,1.12,282.0513,-8.18,,,,13726838284,Distribution Services,NYSE,false
+AGNCM,AGNC Investment Corp. - Depositary Shares rep 6.875% Series D Fixed-to-Floating Cumulative Redeemable Preferred Stock,24.8500,5.30,1175,26722,4.40,23.5992,-0.17,,,,20750294006,Finance,NASDAQ,false
+DQ,DAQO New Energy Corp.,9.3600,5.29,1266,587953,0.22,8.8897,-7.01,,,,601551979,Process Industries,NYSE,false
+BCG,"Binah Capital Group, Inc.",1.7267,5.29,1014,62065,1.63,1.6399,-9.39,,,,27978615,Finance,NASDAQ,false
+CHRN,ChronoScale Holdings Corporation,8.3700,5.28,895,180928,0.49,7.9502,-6.58,,,,1157817743,Technology Services,NASDAQ,false
+CVNA,Carvana Co.,67.2200,5.28,34595,10409770,0.33,63.8488,-6.10,,,,70443219559,Retail Trade,NYSE,false
+OR,OR Royalties Inc.,32.0000,5.26,1542,934083,0.17,30.4009,-3.31,,,,5666700611,Non-Energy Minerals,NYSE,false
+VANI,"Vivani Medical, Inc.",1.2000,5.26,4163,258122,1.61,1.1400,4.59,,,,102831831,Health Technology,NASDAQ,false
+INTJ,Intelligent Group Limited,2.0000,5.26,2000,19834,10.08,1.9001,-16.67,,,,4061246,Commercial Services,NASDAQ,false
+LAR,Lithium Argentina AG,3.2000,5.26,11735,2091481,0.56,3.0401,-5.30,,,,499167979,Non-Energy Minerals,NYSE,false
+PI,"Impinj, Inc.",151.5000,5.26,719,400647,0.18,143.9293,-9.40,,,,4441619266,Electronic Technology,NASDAQ,false
+DB,Deutsche Bank AG,33.0500,5.25,63554,2772435,2.29,31.4014,-3.92,,,,57226414025,Finance,NYSE,false
+ZENA,"ZenaTech, Inc.",0.4999,5.24,26869,1983885,1.35,0.4750,-3.34,,,,95637875,Technology Services,NASDAQ,false
+CMI,Cummins Inc.,424.7600,5.24,1800,1546565,0.12,403.6108,-4.17,,,,55326007644,Producer Manufacturing,NYSE,false
+BENF,Beneficient,0.4362,5.24,13063,352045,3.71,0.4145,-13.08,,,,7870112,Finance,NASDAQ,false
+JCI,Johnson Controls International plc,136.9900,5.23,3015,4795815,0.06,130.1815,-4.28,,,,78134001411,Producer Manufacturing,NYSE,false
+NESR,National Energy Services Reunited Corp,18.7100,5.23,5825,2853664,0.20,17.7801,-10.97,,,,1815750014,Industrial Services,NASDAQ,false
+ZCMD,Zhongchao Inc.,0.8257,5.20,3088,115045,2.68,0.7849,-3.66,,,,3482396,Commercial Services,NASDAQ,false
+FMST,Foremost Clean Energy Ltd.,0.5681,5.18,1905,314577,0.61,0.5401,-10.87,,,,9371892,Non-Energy Minerals,NASDAQ,false
+BCYC,Bicycle Therapeutics plc,3.0500,5.17,7726,450125,1.72,2.9001,-4.92,,,,202979744,Health Technology,NASDAQ,false
+FIG,FIGMA INC,16.6000,5.16,87950,11689034,0.75,15.7855,-2.92,,,,8454984484,Technology Services,NYSE,false
+NX,Quanex Building Products Corporation,18.5297,5.16,1989,426505,0.47,17.6205,-2.87,,,,807457792,Producer Manufacturing,NYSE,false
+MYO,Myomo Inc.,0.8528,5.15,1000,277529,0.36,0.8110,-3.45,,,,32520430,Distribution Services,AMEX,false
+EAF,GrafTech International Ltd.,7.5500,5.15,500,557802,0.09,7.1802,-9.34,,,,193123847,Producer Manufacturing,NYSE,false
+SUPX,SuperX AI Technology Limited,3.8900,5.14,2919,405361,0.72,3.6998,-5.13,,,,171080641,Commercial Services,NASDAQ,false
+SION,"Sionna Therapeutics, Inc.",2.9700,5.13,1020,865151,0.12,2.8251,-4.88,,,,127790474,Health Technology,NASDAQ,false
+SNDL,SNDL Inc.,1.2300,5.13,62845,1305989,4.81,1.1700,-5.65,,,,284685148,Process Industries,NASDAQ,false
+FMC,FMC Corporation,4.1000,5.13,22209,8458282,0.26,3.8999,-9.09,,,,606677818,Process Industries,NYSE,false
+INO,"Inovio Pharmaceuticals, Inc.",1.8500,5.11,588700,20611587,2.86,1.7601,2.92,,,,329660115,Health Technology,NASDAQ,false
+TKNO,"Alpha Teknova, Inc.",8.0197,5.11,1130,653619,0.17,7.6298,-2.30,,,,479950886,Health Technology,NASDAQ,false
+MWH,"SOLV Energy, Inc.",25.9500,5.10,182,1928737,0.01,24.6908,-9.16,,,,5006407198,Industrial Services,NASDAQ,false
+SHMD,SCHMID Group N.V.,1.6500,5.10,3233,819867,0.39,1.5699,-13.74,,,,107436146,Electronic Technology,NASDAQ,false
+LOT,Lotus Technology Inc.,0.1900,5.09,567,374987,0.15,0.1808,-9.78,,,,115833561,Consumer Durables,NASDAQ,false
+IOND,Ionic Digital Inc.,57.0000,5.09,3861,479600,0.81,54.2392,-6.48,,,,2440592752,Technology Services,NASDAQ,false
+DY,"Dycom Industries, Inc.",216.0000,5.08,1087,593341,0.18,205.5577,-7.14,,,,6199584872,Industrial Services,NYSE,false
+GRPN,"Groupon, Inc.",10.3400,5.08,2045,1316488,0.16,9.8401,-9.23,,,,393661078,Retail Trade,NASDAQ,false
+HELP,Helus Pharma Inc.,6.4200,5.07,26871,2052300,1.31,6.1102,-9.88,,,,487624845,Health Technology,NASDAQ,false
+CTM,"Castellum, Inc.",0.3900,5.06,49087,591815,8.29,0.3712,-11.79,,,,35272835,Process Industries,AMEX,false
+ZKIN,"ZK International Group Co., Ltd",1.6600,5.06,491,13428,3.66,1.5800,-4.24,,,,95925446,Producer Manufacturing,NASDAQ,false
+SKYD,Skydance Corporation,6.5400,5.06,155386,24690659,0.63,6.2250,-1.81,,,,31400285610,Consumer Services,NYSE,false
+ADEA,Adeia Inc.,13.5000,5.06,14037,1502084,0.93,12.8498,-0.39,,,,1412704826,Technology Services,NASDAQ,false
+AIT,"Applied Industrial Technologies, Inc.",289.0100,5.05,1975,310283,0.64,275.1166,-4.61,,,,10045635878,Distribution Services,NYSE,false
+CRS,Carpenter Technology Corporation,266.8300,5.05,489,1221231,0.04,254.0029,-5.17,,,,12583346268,Non-Energy Minerals,NYSE,false
+BDC,Belden Inc,97.4700,5.04,256,436201,0.06,92.7932,-7.25,,,,3628091372,Producer Manufacturing,NYSE,false
+UONE,"Urban One, Inc.",2.5000,5.04,500,17647,2.83,2.3800,16.67,,,,10842451,Consumer Services,NASDAQ,false
+KN,Knowles Corporation,32.5000,5.04,968,795854,0.12,30.9406,-7.11,,,,2621267334,Electronic Technology,NYSE,false
+HNRG,Hallador Energy Company,9.3900,5.03,3027,1107701,0.27,8.9403,-9.97,,,,421478501,Utilities,NASDAQ,false
+XRX,Xerox Holdings Corporation,0.8974,5.03,8487,8258929,0.10,0.8544,-0.65,,,,113813558,Electronic Technology,NASDAQ,false
+INLF,INLIF LIMITED,0.2411,5.01,6645568,51945445,12.79,0.2296,-18.29,,,,350208,Producer Manufacturing,NASDAQ,false
+BILI,Bilibili Inc.,11.1300,5.00,40336,3411341,1.18,10.6000,-4.16,,,,4437360616,Technology Services,NASDAQ,false
+QTEX,QTREX Quantum Ltd.,1.0500,5.00,449770,4809731,9.35,1.0000,-10.71,,,,67075050,Health Technology,NASDAQ,false
+MRLN,"Merlin, Inc.",0.8400,5.00,82446,3980322,2.07,0.8000,-9.36,,,,81935145,Technology Services,NASDAQ,false
+TT,Trane Technologies plc,405.5800,4.99,274,1581672,0.02,386.3035,-3.87,,,,84557082746,Producer Manufacturing,NYSE,false
+FOSL,"Fossil Group, Inc.",7.5700,4.99,2220,1190589,0.19,7.2102,-5.13,,,,431208274,Consumer Durables,NASDAQ,false
+SUNB,"Sunbelt Rentals Holdings, Inc.",76.6500,4.99,8708,3046767,0.29,73.0070,-5.80,,,,29914886857,Finance,NYSE,false
+CNDT,Conduent Incorporated,0.9200,4.99,498,1287378,0.04,0.8763,-11.12,,,,136423885,Commercial Services,NASDAQ,false
+FROG,JFrog Ltd.,106.0000,4.99,3502,2397749,0.15,100.9620,-7.60,,,,12582511550,Technology Services,NASDAQ,false
+RILY,"BRC Group Holdings, Inc.",2.9500,4.98,1550,882916,0.18,2.8101,-5.39,,,,112961303,Finance,NASDAQ,false
+IDCC,"InterDigital, Inc.",265.9900,4.98,46,219636,0.02,253.3721,-6.42,,,,6525098925,Technology Services,NASDAQ,false
+GIL,"Gildan Activewear, Inc.",34.6100,4.97,260,2090507,0.01,32.9713,-2.89,,,,6106146991,Consumer Non-Durables,NYSE,false
+SMMT,Summit Therapeutics Inc.,10.4448,4.97,87093,6269535,1.39,9.9503,-5.87,,,,7957650811,Health Technology,NASDAQ,false
+BBOT,"BridgeBio Oncology Therapeutics, Inc.",1.9000,4.97,534,632844,0.08,1.8100,-2.69,,,,145254788,Health Technology,NASDAQ,false
+TPVG,TriplePoint Venture Growth BDC Corp.,3.5900,4.97,1884,264109,0.71,3.4200,-3.66,,,,139682314,Miscellaneous,NYSE,false
+BESS,Bimergen Energy Corporation,2.3300,4.95,3902,241209,1.62,2.2201,-6.72,,,,16422613,Producer Manufacturing,AMEX,false
+SATS,"Strive, Inc. - 15.00% Series A Perpetual SATS Preferred Stock",90.0000,4.94,11272,,,85.7633,-0.08,,,,6659387772,Finance,NASDAQ,false
+QFIN,"Qfin Holdings, Inc.",4.6700,4.94,7287,2062884,0.35,4.4502,-4.71,,,,581830491,Finance,NASDAQ,false
+TREX,"Trex Company, Inc.",52.2900,4.94,1021,2211046,0.05,49.8285,-1.50,,,,4979855394,Non-Energy Minerals,NYSE,false
+W,Wayfair Inc.,99.9900,4.93,4777,2170382,0.22,95.2921,-5.85,,,,13039494739,Retail Trade,NYSE,false
+LUXE,LuxExperience B.V.,10.8500,4.93,6197,246477,2.51,10.3402,-1.99,,,,1444496274,Retail Trade,NYSE,false
+DT,"Dynatrace, Inc.",45.5900,4.93,5642,8245259,0.07,43.4480,-3.81,,,,12467722333,Technology Services,NYSE,false
+ALEC,"Alector, Inc.",2.4500,4.93,9846,2119865,0.46,2.3349,1.52,,,,347627976,Health Technology,NASDAQ,false
+GOAI,Eva Live Inc.,0.5500,4.92,1439,116412,1.24,0.5242,2.74,,,,21562117,Technology Services,NASDAQ,false
+SSYS,"Stratasys, Ltd.",5.3090,4.92,32033,967988,3.31,5.0600,-7.83,,,,445698509,Electronic Technology,NASDAQ,false
+QTTB,Q32 Bio Inc.,8.7500,4.92,385,436266,0.09,8.3397,-1.65,,,,249565192,Health Technology,NASDAQ,false
+BTTC,Black Titan Corp,0.2392,4.91,39456,244055,16.17,0.2280,-7.39,,,,3419307,Technology Services,NASDAQ,false
+TIGR,UP Fintech Holding Limited,3.8500,4.90,115333,2492130,4.63,3.6702,-3.67,,,,660032470,Finance,NASDAQ,false
+SLS,"SELLAS Life Sciences Group, Inc.",14.3297,4.90,283805,13399901,2.12,13.6603,-8.08,,,,2784716113,Health Technology,NASDAQ,false
+ZSQR,Z Squared Inc.,1.8200,4.90,100,340024,0.03,1.7350,-5.71,,,,91955689,Technology Services,NASDAQ,false
+AA,Alcoa Corporation,35.0300,4.90,44647,5259658,0.85,33.3937,-5.29,,,,8815273631,Non-Energy Minerals,NYSE,false
+EVGO,EVgo Inc.,1.5000,4.90,8984,6426487,0.14,1.4299,-9.49,,,,450351767,Retail Trade,NASDAQ,false
+ITRG,Integra Resources Corp.,1.5000,4.90,200,1958034,0.01,1.4299,-5.30,,,,290108464,Non-Energy Minerals,AMEX,false
+BCS,Barclays PLC,21.4900,4.88,60075,6035026,1.00,20.4901,-3.89,,,,69010192059,Finance,NYSE,false
+INVX,"Innovex International, Inc.",23.4400,4.88,1819,581812,0.31,22.3494,-4.81,,,,1566911648,Industrial Services,NYSE,false
+QLYS,"Qualys, Inc.",194.9800,4.87,1194,896907,0.13,185.9254,-3.38,,,,6490357887,Technology Services,NASDAQ,false
+TGB,Trekor Metals Limited,5.6000,4.87,37389,4085640,0.92,5.3399,-4.81,,,,1958582013,Non-Energy Minerals,AMEX,false
+DIOD,Diodes Incorporated,76.5000,4.87,2095,535584,0.39,72.9475,-9.90,,,,3333837179,Electronic Technology,NASDAQ,false
+KODK,Eastman Kodak Company,8.1900,4.87,2789,876336,0.32,7.8097,-2.13,,,,766160982,Producer Manufacturing,NYSE,false
+MYRG,"MYR Group, Inc.",259.7500,4.86,4330,305690,1.42,247.7112,-6.64,,,,3856846854,Industrial Services,NASDAQ,false
+CPS,Cooper-Standard Holdings Inc.,18.3400,4.86,147,370660,0.04,17.4900,-3.42,,,,310822891,Producer Manufacturing,NYSE,false
+DASH,"DoorDash, Inc.",160.0000,4.85,8346,5443510,0.15,152.5990,-2.88,,,,66534299383,Transportation,NASDAQ,false
+HUBB,Hubbell Inc,423.2300,4.85,437,670508,0.07,403.6528,-3.60,,,,21327389782,Producer Manufacturing,NYSE,false
+AMPG,"Amplitech Group, Inc.",1.8766,4.84,10332,735567,1.40,1.7900,-7.25,,,,54206516,Electronic Technology,NASDAQ,false
+UTI,Universal Technical Institute Inc,18.0000,4.83,7405,1496485,0.49,17.1707,-14.87,,,,946049816,Commercial Services,NYSE,false
+ONCO,"Onconetix, Inc.",3.0297,4.83,5190,291190,1.78,2.8901,-8.54,,,,2371566,Health Technology,NASDAQ,false
+KKR,KKR & Co. Inc.,92.8100,4.82,3591,5503472,0.07,88.5423,-3.90,,,,78990039885,Finance,NYSE,false
+WLDN,"Willdan Group, Inc.",72.4000,4.82,1185,234493,0.51,69.0708,-4.94,,,,1058575525,Commercial Services,NASDAQ,false
+SQM,Sociedad Quimica y Minera S.A.,49.2300,4.81,20907,993748,2.10,46.9707,-1.84,,,,13464255473,Process Industries,NYSE,false
+SOLS,Solstice Advanced Materials Inc.,63.4500,4.79,1777,2434787,0.07,60.5497,-6.21,,,,9519127689,Process Industries,NASDAQ,false
+PICS,PicS N.V.,5.2600,4.78,600,1019086,0.06,5.0200,3.51,,,,650529457,Commercial Services,NASDAQ,false
+GANX,"Gain Therapeutics, Inc.",1.0471,4.77,1553,699272,0.22,0.9994,-4.82,,,,44498634,Health Technology,NASDAQ,false
+NOW,"ServiceNow, Inc.",91.8400,4.77,168902,18759251,0.90,87.6587,-1.36,,,,90991080634,Technology Services,NYSE,false
+TLRY,"Tilray Brands, Inc.",1.9800,4.76,98079,4797533,2.04,1.8900,-8.70,,,,279318413,Process Industries,NASDAQ,false
+S,"SentinelOne, Inc.",24.0000,4.76,44809,11981351,0.37,22.9095,-4.58,,,,7973805590,Technology Services,NYSE,false
+TKR,Timken Company (The),102.6300,4.76,200,884720,0.02,97.9668,-4.82,,,,6724692818,Producer Manufacturing,NYSE,false
+NCLH,Norwegian Cruise Line Holdings Ltd.,16.7500,4.75,97134,20157852,0.48,15.9905,-6.33,,,,7343814367,Consumer Services,NYSE,false
+KEP,Korea Electric Power Corporation,9.4900,4.75,10597,1187365,0.89,9.0597,-0.11,,,,12121212117,Utilities,NYSE,false
+PATH,"UiPath, Inc.",11.4800,4.74,93577,24548748,0.38,10.9605,-2.40,,,,5711866395,Technology Services,NYSE,false
+KMT,Kennametal Inc.,22.3000,4.74,2104,1766208,0.12,21.2908,-4.31,,,,1640108596,Producer Manufacturing,NYSE,false
+HCC,"Warrior Met Coal, Inc.",80.1600,4.74,480,651403,0.07,76.5324,-3.31,,,,4040943503,Energy Minerals,NYSE,false
+EAT,"Brinker International, Inc.",195.6200,4.73,500,1309167,0.04,186.7851,-2.15,,,,7759345064,Consumer Services,NYSE,false
+LPCN,Lipocine Inc.,1.5500,4.73,5468,252210,2.17,1.4800,-1.33,,,,16388691,Health Technology,NASDAQ,false
+GROY,Gold Royalty Corp.,2.6600,4.72,8108,1617894,0.50,2.5401,-1.17,,,,590086609,Non-Energy Minerals,AMEX,false
+SSII,SS Innovations International Inc.,1.3300,4.72,14586,114151,12.78,1.2701,-0.78,,,,254734060,Health Technology,NASDAQ,false
+AVAH,Aveanna Healthcare Holdings Inc.,11.5300,4.72,7638,2234290,0.34,11.0103,2.90,,,,2404689654,Health Services,NASDAQ,false
+BWA,BorgWarner Inc.,49.1674,4.72,200,2907504,0.01,46.9513,-4.86,,,,9428220101,Producer Manufacturing,NYSE,false
+NRG,"NRG Energy, Inc.",91.9400,4.72,3720,3657214,0.10,87.7960,-6.45,,,,18439869553,Utilities,NYSE,false
+GRAB,Grab Holdings Limited,2.8796,4.71,902554,74911057,1.20,2.7501,-6.14,,,,11188421997,Transportation,NASDAQ,false
+VISN,"Vistance Networks, Inc.",4.0000,4.71,5078,7354932,0.07,3.8201,-4.50,,,,777692963,Electronic Technology,NASDAQ,false
+SATA,"Strive, Inc. - Variable Rate Series A Perpetual Preferred Stock",89.0000,4.71,9717,443168,2.19,84.9967,-0.07,,,,6620077938,Finance,NASDAQ,false
+ALGT,Allegiant Travel Company,95.5000,4.70,5626,534882,1.05,91.2130,-6.04,,,,2490712951,Transportation,NASDAQ,false
+RCT,RedCloud Holdings plc,1.5600,4.70,11075,893588,1.24,1.4900,-22.40,,,,1126150,Technology Services,NASDAQ,false
+LAND,Gladstone Land Corporation,6.4900,4.68,12760,1081526,1.18,6.1998,-0.64,,,,268415641,Finance,NASDAQ,false
+IRM,Iron Mountain Incorporated (Delaware),107.0000,4.68,518,1528406,0.03,102.2163,-6.03,,,,30444568410,Finance,NYSE,false
+GYGY,"Game Your Game, Inc.",0.2710,4.67,26191,1768706,1.48,0.2589,-17.23,,,,3726089,Technology Services,NASDAQ,false
+SKYQ,Sky Quarry Inc.,0.6699,4.67,30249,935875,3.23,0.6400,-8.57,,,,5916470,Energy Minerals,NASDAQ,false
+CTGO,Contango Silver & Gold Inc.,9.8700,4.67,140,476983,0.03,9.4296,-5.13,,,,318640798,Non-Energy Minerals,AMEX,false
+AAUC,Allied Gold Corporation,18.6300,4.66,2160,493157,0.44,17.8005,-4.25,,,,2500900081,Non-Energy Minerals,NYSE,false
+XHG,XChange TEC.INC,3.2300,-3.00,138,438647,0.03,3.3299,-1.19,,,,171654590,Finance,NASDAQ,false
+AENT,Alliance Entertainment Holding Corporation,4.5100,-3.01,150,32808,0.46,4.6500,-2.72,,,,237055282,Distribution Services,NASDAQ,false
+FCNCA,"First Citizens BancShares, Inc.",2012.2500,-3.05,10,82148,0.01,2075.5544,-3.66,,,,22521404874,Finance,NASDAQ,false
+IPST,"IP Strategy Holdings, Inc.",1.4200,-3.07,3085,679951,0.45,1.4650,-9.29,,,,1459042,Consumer Non-Durables,NASDAQ,false
+IBG,Innovation Beverage Group Limited,0.6420,-3.09,2379,40268,5.91,0.6625,-5.36,,,,2796096,Consumer Non-Durables,NASDAQ,false
+OCG,Oriental Culture Holding LTD,1.4000,-3.11,399,30050,1.33,1.4449,-6.17,,,,2800861,Retail Trade,NASDAQ,false
+AZR,"Azora Therapeutics, Inc.",3.7300,-3.12,129,54580,0.24,3.8501,-0.52,,,,55002293,Health Technology,NASDAQ,false
+REGCO,Regency Centers Corporation - 5.875% Series B Cumulative Redeemable Preferred Stock,19.2500,-3.12,800,6587,12.15,19.8699,-0.13,,,,8502420111,Finance,NASDAQ,false
+BURU,"Nuburu, Inc.",0.2150,-3.15,312854,58196646,0.54,0.2220,-4.68,,,,2056240,Electronic Technology,AMEX,false
+MOH,Molina Healthcare Inc,192.1100,-3.17,2805,991892,0.28,198.3993,-2.43,,,,10355958119,Health Services,NYSE,false
+SLGB,Smart Logistics Global Limited,0.1357,-3.21,7551816,13395701,56.37,0.1402,-7.52,,,,6028600,Transportation,NASDAQ,false
+RNTZ,Rantizo,3.6000,-3.23,1195,40535,2.95,3.7202,-4.86,,,,231920561,Electronic Technology,NASDAQ,false
+SEGG,Sports Entertainment Gaming Global Corporation,0.7725,-3.23,299853,2650635,11.31,0.7983,14.95,,,,3357433,Consumer Services,NASDAQ,false
+HUM,Humana Inc.,377.3800,-3.24,14880,1672891,0.89,390.0165,2.63,,,,46840266953,Health Services,NYSE,false
+MGN,Megan Holdings Limited,3.7000,-3.27,645,226195,0.29,3.8251,-2.17,,,,62092629,Commercial Services,NASDAQ,false
+BRN,"Barnwell Industries, Inc.",0.7738,-3.29,1100,38296,2.87,0.8001,-3.16,,,,11548892,Energy Minerals,AMEX,false
+TNMG,TNL Mediagene,2.0500,-3.30,810,2186671,0.04,2.1200,-7.42,,,,1612415,Technology Services,NASDAQ,false
+TGL,Treasure Global Inc.,3.7500,-3.35,6177,714501,0.86,3.8800,-5.13,,,,3557584,Commercial Services,NASDAQ,false
+VOD,Vodafone Group Plc,13.5500,-3.35,43432,3803785,1.14,14.0197,-2.91,,,,32840036012,Communications,NASDAQ,false
+TYGO,"Tigo Energy, Inc.",0.5220,-3.44,200,592125,0.03,0.5406,-5.93,,,,41944282,Electronic Technology,NASDAQ,false
+OLOX,Olenox Industries Inc.,0.5310,-3.45,22020,4811431,0.46,0.5500,-2.45,,,,912638,Producer Manufacturing,NASDAQ,false
+NEXR,Nexera Technologies Ltd,1.1100,-3.48,1009,1005785,0.10,1.1500,-6.50,,,,606592,Consumer Durables,NASDAQ,false
+TAP.A,Molson Coors Beverage Company,40.5000,-3.49,100,1251,7.99,41.9646,-2.41,,,,7289589215,Consumer Non-Durables,NYSE,false
+FTHM,Fathom Holdings Inc.,0.0743,-3.51,8903,635254,1.40,0.0770,-15.38,,,,2663550,Technology Services,NASDAQ,false
+CVS,CVS Health Corporation,78.0000,-3.51,116297,11428982,1.02,80.8374,1.00,,,,103432693132,Retail Trade,NYSE,false
+HUIZ,Huize Holding Limited,2.0500,-3.53,148,387049,0.04,2.1250,-9.19,,,,21475412,Finance,NASDAQ,false
+DCOY,Decoy Therapeutics Inc.,0.8001,-3.53,255,56498,0.45,0.8294,-4.68,,,,1978352,Health Technology,NASDAQ,false
+LVWR,"LiveWire Group, Inc.",0.9550,-3.54,101469,4128923,2.46,0.9900,51.63,,,,203359516,Consumer Durables,NYSE,false
+SQFT,"Presidio Property Trust, Inc.",0.6219,-3.57,400,12397,3.23,0.6449,5.90,,,,1455252,Finance,NASDAQ,false
+AOMR,"Angel Oak Mortgage REIT, Inc.",5.1000,-3.59,1208,140135,0.86,5.2899,-3.29,,,,123764163,Finance,NYSE,false
+ACDC,ProFrac Holding Corp.,2.6500,-3.64,2226,1925148,0.12,2.7501,-6.62,,,,500837624,Industrial Services,NASDAQ,false
+AFCG,Advanced Flower Capital Inc.,3.1400,-3.68,1714,64946,2.64,3.2600,-1.21,,,,73036329,Finance,NASDAQ,false
+NHTC,Natural Health Trends Corp.,0.6158,-3.69,500,63967,0.78,0.6394,-2.65,,,,5430141,Consumer Non-Durables,NASDAQ,false
+DVA,DaVita Inc.,154.9900,-3.75,2510,830979,0.30,161.0286,3.00,,,,10128787169,Health Services,NYSE,false
+BRFH,Barfresh Food Group Inc.,0.6850,-3.75,2626,306939,0.86,0.7117,-4.60,,,,11762108,Consumer Non-Durables,NASDAQ,false
+APVO,Aptevo Therapeutics Inc.,0.3889,-3.76,22470,127029,17.69,0.4041,-2.37,,,,1400174,Health Technology,NASDAQ,false
+BON,Bon Natural Life Limited,1.0055,-3.76,706,14968,4.72,1.0448,-0.50,,,,8534773,Health Technology,NASDAQ,false
+EQ,"Equillium, Inc.",1.0200,-3.77,640,471812,0.14,1.0600,-5.36,,,,87264177,Health Technology,NASDAQ,false
+BAER,"Bridger Aerospace Group Holdings, Inc.",0.2800,-3.78,33411,1790787,1.87,0.2910,-6.85,,,,17183579,Transportation,NASDAQ,false
+PDSB,PDS Biotechnology Corporation,0.7480,-3.78,314317,6511525,4.83,0.7774,-3.70,,,,81631225,Health Technology,NASDAQ,false
+ONEN,ONE Nuclear Energy Inc.,0.5100,-3.79,3100,85724,3.62,0.5301,9.80,,,,57388084,Finance,NASDAQ,false
+CIIT,"Tianci International, Inc.",1.2695,-3.83,1490,1789133,0.08,1.3201,-8.97,,,,1562932,Transportation,NASDAQ,false
+APRE,"Aprea Therapeutics, Inc.",0.2201,-3.89,40881,278246,14.69,0.2290,-53.56,,,,3249770,Health Technology,NASDAQ,false
+AMSS,AMASS Brands Inc.,0.2065,-3.95,264,96575,0.27,0.2150,-4.44,,,,2495092,Distribution Services,NASDAQ,false
+CSAI,"Cloudastructure, Inc.",0.4600,-3.97,10435,781384,1.34,0.4790,-24.28,,,,415519,Technology Services,NASDAQ,false
+CISS,C3is Inc.,1.1800,-4.07,3707,588708,0.63,1.2301,4.24,,,,1420582,Transportation,NASDAQ,false
+RIME,"Algorhythm Holdings, Inc.",0.4988,-4.08,1973,1007017,0.20,0.5200,-2.99,,,,2126747,Consumer Services,NASDAQ,false
+NUWE,"Nuwellis, Inc.",3.2700,-4.11,202,1417236,0.01,3.4102,-10.50,,,,1844524,Health Technology,NASDAQ,false
+BOXL,Boxlight Corporation,0.8105,-4.12,17861,51195,34.89,0.8453,0.64,,,,713903,Electronic Technology,NASDAQ,false
+MLSS,"Milestone Scientific, Inc.",0.2300,-4.17,10026,111805,8.97,0.2400,-0.83,,,,21746656,Health Technology,AMEX,false
+CDLR,Cadeler plc,6.1000,-4.24,6858,,,6.3701,0.47,,,,2473892744,Industrial Services,NYSE,false
+ABOS,"Acumen Pharmaceuticals, Inc.",0.1784,-4.34,44383,5273061,0.84,0.1865,-3.52,,,,13489046,Health Technology,NASDAQ,false
+TEAD,Teads Holding Co.,0.1100,-4.35,299,354763,0.08,0.1150,-5.74,,,,11356598,Technology Services,NASDAQ,false
+TRUP,"Trupanion, Inc.",34.0000,-4.39,2479,434176,0.57,35.5611,-0.86,,,,1538536672,Finance,NASDAQ,false
+GPMT/PA,Granite Point Mortgage Trust Inc. 7.00% Series A Fixed-to-Floating Rate Cumulative Redeemable Preferred Stock,4.7800,-4.40,224,34871,0.64,5.0000,-4.03,,,,10123744,Finance,NYSE,false
+BCDA,"BioCardia, Inc.",0.7503,-4.42,100,120924,0.08,0.7850,1.60,,,,11883945,Health Technology,NASDAQ,false
+BIRK,Birkenstock Holding plc,32.0000,-4.45,312,1847288,0.02,33.4903,-2.59,,,,5957463303,Consumer Non-Durables,NYSE,false
+BOOM,DMC Global Inc.,6.4000,-4.48,100,686082,0.01,6.7002,-6.94,,,,137624353,Industrial Services,NASDAQ,false
+GRAN,Grande Group Limited,1.2800,-4.48,430,16413,2.62,1.3400,6.77,,,,33480021,Commercial Services,NASDAQ,false
+TMDE,TMD Energy Limited,0.4490,-4.49,10706,59365,18.03,0.4701,4.24,,,,11077906,Distribution Services,AMEX,false
+VCIG,VCI Global Limited,2.5400,-4.51,1833,681113,0.27,2.6600,-13.07,,,,1424518,Commercial Services,NASDAQ,false
+HRTG,"Heritage Insurance Holdings, Inc.",30.8600,-4.64,100,218952,0.05,32.3616,-0.15,,,,958904992,Finance,NYSE,false
+POLA,"Polar Power, Inc.",0.2426,-4.71,64596,7233307,0.89,0.2546,-3.71,,,,1097153,Electronic Technology,NASDAQ,false
+IMRN,Immuron Limited,0.8571,-4.75,1763,24625,7.16,0.8998,5.86,,,,7903779,Health Technology,NASDAQ,false
+ZEPP,Zepp Health Corporation,2.2000,-4.76,5027,73349,6.85,2.3100,-8.33,,,,33911666,Consumer Durables,NYSE,false
+CALC,"CalciMedica, Inc.",1.2000,-4.76,400,74230,0.54,1.2600,7.69,,,,8687887,Health Technology,NASDAQ,false
+TLSA,Tiziana Life Sciences Ltd,0.5905,-4.85,1278,542186,0.24,0.6206,-8.14,,,,79628643,Health Technology,NASDAQ,false
+VSA,VisionSys AI Inc.,1.5600,-4.88,1968,1048154,0.19,1.6400,0.61,,,,4580414,Commercial Services,NASDAQ,false
+APUS,"Apimeds Pharmaceuticals US, Inc.",1.5200,-5.00,900,124597,0.72,1.6000,-8.05,,,,2956202,Health Technology,AMEX,false
+BTOC,Armlogi Holding Corp.,1.7000,-5.03,233,62777,0.37,1.7900,-7.73,,,,5084005,Transportation,NASDAQ,false
+ICMB,"Investcorp Credit Management BDC, Inc.",0.9266,-5.04,4700,2754142,0.17,0.9758,-3.39,,,,14083204,Finance,NASDAQ,false
+BATL,Battalion Oil Corporation,0.5601,-5.05,473286,3341521,14.16,0.5899,-6.07,,,,35102892,Energy Minerals,AMEX,false
+XXII,"22nd Century Group, Inc",0.3195,-5.05,191881,2585194,7.42,0.3365,-15.43,,,,4142,Health Technology,NASDAQ,false
+TPET,Trio Petroleum Corp.,1.6600,-5.14,3381,274517,1.23,1.7499,0.00,,,,9316838,Energy Minerals,AMEX,false
+VTR,"Ventas, Inc.",82.0278,-5.22,324,3520976,0.01,86.5455,-0.52,,,,46756043283,Finance,NYSE,false
+SLBT,SL Science Holding Limited,0.5212,-5.24,1947,51696,3.77,0.5500,-5.37,,,,308417874,Health Technology,NASDAQ,false
+SLND,"Southland Holdings, Inc.",0.7686,-5.25,3611,943202,0.38,0.8112,3.36,,,,44222686,Industrial Services,AMEX,false
+CVKD,"Cadrenal Therapeutics, Inc.",1.6100,-5.29,201,134869,0.15,1.6999,0.59,,,,7007538,Health Technology,NASDAQ,false
+UNH,UnitedHealth Group Incorporated,321.8700,-5.30,263652,6857871,3.84,339.8838,2.85,,,,304544661840,Health Services,NYSE,false
+SNAL,"Snail, Inc.",2.1667,-5.38,3017,245314,1.23,2.2899,-0.43,,,,20531258,Technology Services,NASDAQ,false
+GTBP,"GT Biopharma, Inc.",2.8000,-5.41,1000,71409,1.40,2.9601,-6.92,,,,6326230,Health Technology,NASDAQ,false
+CTXR,"Citius Pharmaceuticals, Inc.",0.4810,-5.41,345,263441,0.13,0.5085,2.27,,,,13959631,Health Technology,NASDAQ,false
+CRWD,"CrowdStrike Holdings, Inc.",217.0100,-5.42,1109600,9366372,11.85,229.4460,-5.76,,,,234931606328,Technology Services,NASDAQ,false
+HCWB,HCW Biologics Inc.,0.7078,-5.51,100,116506,0.09,0.7491,1.90,,,,2352128,Health Technology,NASDAQ,false
+SPRC,SciSparc Ltd.,0.1847,-5.52,302812,6226370,4.86,0.1955,-34.83,,,,402283,Health Technology,NASDAQ,false
+CANG,Cango Inc.,1.7000,-5.56,65491,2193213,2.99,1.8001,9.76,,,,73839541,Technology Services,NYSE,false
+TRUG,"TruGolf Holdings, Inc.",0.2650,-5.56,239412,1202488,19.91,0.2806,2.04,,,,59029,Technology Services,NASDAQ,false
+RYDE,Ryde Group Ltd.,1.0101,-5.60,10692,566311,1.89,1.0700,-9.32,,,,181607142,Technology Services,AMEX,false
+FFAI,Faraday Future Intelligent Electric Inc.,0.0972,-5.63,9288583,4440690,209.17,0.1030,-14.59,,,,1333138,Consumer Durables,NASDAQ,false
+AGL,"agilon health, inc.",85.1097,-5.66,1948,233619,0.83,90.2159,0.80,,,,1515314563,Health Services,NYSE,false
+MYSZ,"My Size, Inc.",0.8200,-5.73,1681,134007,1.25,0.8698,22.51,,,,1141399,Technology Services,NASDAQ,false
+MITQ,"Moving iMage Technologies, Inc.",0.5071,-5.74,120,60702,0.20,0.5380,-3.24,,,,5354296,Consumer Durables,AMEX,false
+HKPD,"Cellyan Biotechnology Co., Ltd",1.3000,-5.80,200,40462,0.49,1.3800,2.60,,,,3402904,Transportation,NASDAQ,false
+RCUS,"Arcus Biosciences, Inc.",14.7100,-5.83,45391,2244319,2.02,15.6207,-1.01,,,,2249133403,Health Technology,NYSE,false
+AMRO,Amaero Inc.,5.4600,-5.86,499,,,5.7999,3.57,,,,167306090,Producer Manufacturing,NASDAQ,false
+TPST,"Tempest Therapeutics, Inc.",0.2700,-5.92,32623,206337,15.81,0.2870,-6.18,,,,5738667,Health Technology,NASDAQ,false
+DHT,"DHT Holdings, Inc.",20.3000,-5.93,113049,5572409,2.03,21.5797,0.33,,,,3479463814,Transportation,NYSE,false
+ZSTK,ZeroStack Corp.,2.6300,-6.07,2102,36231,5.80,2.8000,-3.78,,,,61097476,Health Technology,NASDAQ,false
+LABT,Lakewood-Amedex Biotherapeutics Inc.,0.2300,-6.08,294700,32007208,0.92,0.2449,15.03,,,,2191876,Health Technology,NASDAQ,false
+TDTH,Trident Digital Tech Holdings Ltd,0.3359,-6.23,181226,925154,19.59,0.3582,-11.34,,,,21156305,Commercial Services,NASDAQ,false
+AEMD,"Aethlon Medical, Inc.",5.1200,-6.23,522,51815,1.01,5.4602,12.81,,,,8776223,Health Technology,NASDAQ,false
+DBGI,"Digital Brands Group, Inc.",0.1500,-6.37,50217,11161755,0.45,0.1602,-6.48,,,,149548,Consumer Non-Durables,NASDAQ,false
+CZZL,Cizzle Brands Corporation,3.8100,-6.39,1503,,,4.0701,,,,,37514675,Consumer Non-Durables,NASDAQ,false
+RDHL,Redhill Biopharma Ltd.,0.2630,-6.41,4271,92517,4.62,0.2810,-13.08,,,,1708738,Health Technology,NASDAQ,false
+CMCT,Creative Media,5.5500,-6.41,100,55453,0.18,5.9301,3.31,,,,19354351,Finance,NASDAQ,false
+BRAG,Bragg Gaming Group Inc.,0.5510,-6.45,1649,46765,3.53,0.5890,-9.86,,,,18296345,Technology Services,NASDAQ,false
+BJDX,"Bluejay Diagnostics, Inc.",1.5900,-6.47,185,48836,0.38,1.7000,-5.56,,,,1898915,Health Technology,NASDAQ,false
+PLUT,Plutus Financial Group Limited,1.0100,-6.48,3629,100803,3.60,1.0800,14.65,,,,16578001,Finance,NASDAQ,false
+SLDE,"Slide Insurance Holdings, Inc.",24.5000,-6.52,4293,1254521,0.34,26.2088,-5.99,,,,2889006625,Finance,NASDAQ,false
+ECO,Okeanis Eco Tankers Corp.,79.2100,-6.63,26685,940355,2.84,84.8345,2.18,,,,3253125594,Transportation,NYSE,false
+RVP,"Retractable Technologies, Inc.",0.5210,-6.63,15000,35061,42.78,0.5580,-6.84,,,,16704934,Health Technology,AMEX,false
+PMA,PMA Graphene Technology Group Inc.,1.5105,-6.76,4136,56477,7.32,1.6200,22.73,,,,21019500,Industrial Services,NASDAQ,false
+INTS,"Intensity Therapeutics, Inc.",2.3100,-6.85,200,21233,0.94,2.4799,-0.80,,,,8186914,Health Technology,NASDAQ,false
+CYAB,"Cyabra, Inc.",1.7500,-6.96,103,1099413,0.01,1.8809,0.00,,,,2407637,Technology Services,NASDAQ,false
+SCLX,Scilex Holding Company,0.5262,-7.00,113,72892,0.16,0.5658,-12.95,,,,3980254,Health Technology,NASDAQ,false
+MOVE,"Corvex, Inc.",3.0400,-7.03,2068,179906,1.15,3.2699,-6.84,,,,127985689,Technology Services,NASDAQ,false
+LGHL,Lion Group Holding Ltd.,0.6600,-7.04,55739,1522230,3.66,0.7100,-17.35,,,,32762,Finance,NASDAQ,false
+OGEN,Oragenics Inc.,0.1457,-7.20,35605,1778021,2.00,0.1570,-8.72,,,,708377,Health Technology,AMEX,false
+PAVS,Paranovus Entertainment Technology Ltd.,2.1800,-7.23,1155,644882,0.18,2.3499,12.44,,,,2043649,Health Technology,NASDAQ,false
+BIYA,Baiya International Group Inc.,1.1200,-7.44,1792,96923,1.85,1.2100,-1.63,,,,8264135,Commercial Services,NASDAQ,false
+FNGR,"FingerMotion, Inc.",0.0283,-7.52,7050923,14656404,48.11,0.0306,-20.10,,,,2811262,Technology Services,NASDAQ,false
+RENX,RenX Enterprises Corp.,0.6800,-7.53,12766,89551,14.26,0.7354,-23.09,,,,2575401,Finance,NASDAQ,false
+SAGT,SAGTEC GLOBAL LIMITED,1.0216,-7.96,6682,1056862,0.63,1.1100,9.90,,,,25252500,Technology Services,NASDAQ,false
+YXT,YXT.COM GROUP HOLDING LIMITED - American Depository Shares,0.9202,-7.98,100,50239,0.20,1.0000,5.20,,,,6610266,Technology Services,NASDAQ,false
+BRBI,BRBI BR Partners S.A.,6.7900,-8.24,1600,8205,19.50,7.3997,-2.89,,,,776968209,Finance,NASDAQ,false
+FGI,FGI Industries Ltd.,4.4900,-8.37,4853,26433,18.36,4.9001,-6.84,,,,9463228,Producer Manufacturing,NASDAQ,false
+PXED,"Phoenix Education Partners, Inc.",18.0100,-8.39,458,140928,0.32,19.6594,-4.19,,,,721062803,Technology Services,NYSE,false
+BMGL,Basel Medical Group Ltd,0.3500,-8.66,101050,4108013,2.46,0.3832,20.01,,,,5204665,Health Services,NASDAQ,false
+HIT,"Health In Tech, Inc.",0.3492,-8.75,2513,84115,2.99,0.3827,12.36,,,,30495855,Technology Services,NASDAQ,false
+AKAN,Akanda Corp.,3.8500,-8.98,508975,12917786,3.94,4.2298,23.32,,,,11164945,Process Industries,NASDAQ,false
+INHD,Inno Holdings Inc.,2.0000,-9.09,59998,1145959,5.24,2.2000,-21.99,,,,5545278,Producer Manufacturing,NASDAQ,false
+IZM,ICZOOM Group Inc.,0.8000,-9.10,569,786132,0.07,0.8801,-0.55,,,,2115428,Retail Trade,NASDAQ,false
+SMX,SMX (Security Matters) Public Limited Company,2.4500,-9.26,3794188,2017655,188.05,2.7000,-9.09,,,,2423836,Technology Services,NASDAQ,false
+CCTG,CCSC Technology International Holdings Limited,0.3001,-9.39,14651,1790315,0.82,0.3312,11.93,,,,4497758,Electronic Technology,NASDAQ,false
+ZNB,Zeta Network Group,0.3290,-9.47,85650,5215012,1.64,0.3634,-11.84,,,,1817752,Technology Services,NASDAQ,false
+PLBL,Polibeli Group Ltd,8.8000,-9.65,6552,192305,3.41,9.7399,3.62,,,,3568613823,Retail Trade,NASDAQ,false
+CHA,Chagee Holdings Limited,11.8300,-9.90,15565,776884,2.00,13.1299,-14.85,,,,2504722492,Consumer Non-Durables,NASDAQ,false
+LICN,Lichen International Limited,1.1599,-10.09,116022,350869,33.07,1.2901,-9.79,,,,210615,Commercial Services,NASDAQ,false
+MDRN,Modern Mining Technology Corp.,2.5500,-10.53,5242,,,2.8501,21.28,,,,42647297,Non-Energy Minerals,AMEX,false
+ELPW,Elong Power Holding Limited,0.6751,-10.69,74916,3804992,1.97,0.7559,-11.15,,,,704566,Producer Manufacturing,NASDAQ,false
+LUCK,Lucky Strike Entertainment Corporation,3.5300,-10.86,109,272946,0.04,3.9601,1.28,,,,539855684,Consumer Services,NYSE,false
+SCNX,"Scienture Holdings, Inc.",2.0300,-10.88,705,46515,1.52,2.2778,-6.45,,,,4072778,Commercial Services,NASDAQ,false
+POM,POMDOCTOR LIMITED,1.5100,-10.91,959,4337740,0.02,1.6949,5.28,,,,60962603,Distribution Services,NASDAQ,false
+CIGL,Concorde International Group Ltd,0.2350,-11.05,448267,6733071,6.66,0.2642,51.66,,,,65276046,Commercial Services,NASDAQ,false
+ACTU,"Actuate Therapeutics, Inc.",0.2000,-11.23,43182,1276488,3.38,0.2253,5.38,,,,13604250,Health Technology,NASDAQ,false
+FMFC,Kandal M Venture Limited,1.0100,-12.17,789,127491,0.62,1.1499,-10.16,,,,566230,Consumer Non-Durables,NASDAQ,false
+TGHL,The GrowHub Limited,0.2550,-13.24,18368,511301,3.59,0.2939,13.04,,,,7435614,Technology Services,NASDAQ,false
+YFOR,YYForce Inc.,0.9780,-13.45,53121,782431,6.79,1.1300,0.00,,,,177124,Commercial Services,NASDAQ,false
+CHSN,Chanson International Holding,0.0576,-14.03,27017083,39937278,67.65,0.0670,-32.05,,,,155600,Consumer Non-Durables,NASDAQ,false
+MBIO,"Mustang Bio, Inc.",0.3002,-15.22,25904,38815,66.74,0.3541,-4.30,,,,2685522,Health Technology,NASDAQ,false
+KIDZ,KIDZ AI Inc.,0.8310,-15.77,2172,62808,3.46,0.9866,2.77,,,,1011522,Technology Services,NASDAQ,false
+POAS,Phaos Technology Holdings (Cayman) Limited,2.0400,-16.39,14387,4843459,0.30,2.4399,-23.03,,,,5135712,Electronic Technology,AMEX,false
+ITP,"IT Tech Packaging, Inc.",2.0500,-16.53,346,7274,4.76,2.4560,-44.83,,,,1041676,Process Industries,AMEX,false
+LHSW,Lianhe Sowell International Group Ltd,1.3700,-16.97,524,301547,0.17,1.6500,-7.30,,,,5252334,Electronic Technology,NASDAQ,false
+NIVF,NewGenIvf Group Limited,0.0222,-17.47,22317381,12516446,178.30,0.0269,-23.14,,,,33269,Health Services,NASDAQ,false
+MSGM,Motorsport Games Inc.,2.9200,-18.21,499,64838,0.77,3.5701,-4.29,,,,16382022,Technology Services,NASDAQ,false
+TOVX,"Theriva Biologics, Inc.",0.0981,-18.25,237864,3744175,6.35,0.1200,-6.25,,,,5507120,Health Technology,AMEX,false
+RAYA,Erayak Power Solution Group Inc.,0.5387,-20.33,434658,6013422,7.23,0.6762,37.72,,,,727044,Producer Manufacturing,NASDAQ,false
+ABTS,Abits Group Inc,0.1377,-20.68,12159272,2468073,492.66,0.1736,-31.92,,,,558027,Technology Services,NASDAQ,false
+GOVX,"GeoVax Labs, Inc.",1.4300,-20.99,84340,432642,19.49,1.8099,-5.24,,,,985459,Health Technology,NASDAQ,false
+NXAT,Nexus Advanced Technologies Inc.,0.4303,-21.48,1423789,12184531,11.69,0.5480,144.97,,,,1337920,Finance,NASDAQ,false
+FCHL,Fitness Champs Holdings Limited,0.0133,-21.76,145668565,10430078,1396.62,0.0170,-74.32,,,,22747,Commercial Services,NASDAQ,false
+FNUC,Frontier Nuclear and Minerals Inc.,0.2800,-23.54,74792,234555,31.89,0.3662,-8.70,,,,6601219,Process Industries,NASDAQ,false
+GNLN,"Greenlane Holdings, Inc.",0.3861,-24.74,155132,1371545,11.31,0.5130,-32.50,,,,356301,Finance,NASDAQ,false
+VWAV,"VisionWave Holdings, Inc.",0.1331,-26.95,4854056,8197270,59.22,0.1822,-72.46,,,,262751,Technology Services,NASDAQ,false
+IMCC,IM Cannabis Corp.,1.6300,-63.77,942,17649,5.34,4.4990,-66.67,,,,921897,Process Industries,NASDAQ,false
+RBNE,Robin Energy Ltd.,0.0399,-67.46,254455389,50849996,500.40,0.1226,-81.57,,,,30109,Transportation,NASDAQ,false
+CAPR,"Capricor Therapeutics, Inc.",1.9400,-74.44,4489127,4550691,98.65,7.5900,0.80,,,,441298645,Health Technology,NASDAQ,false
