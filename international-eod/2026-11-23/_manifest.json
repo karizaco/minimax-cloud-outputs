@@ -1,0 +1,628 @@
+{
+ "date": "2026-11-23",
+ "generated_at": "2026-11-23T21:39:15Z",
+ "provenance": "TradingView per-country scanners (issuer-country filtered, one call per region, all 16 complete) plus the America scanner for the US-listing map and the cross-venue cap check; the ATHEX General from Euronext Athens' own index page; FX from open.er-api, rate date Mon, 23 Nov 2026 00:02:32 +0000",
+ "market_cap_unit": "USD",
+ "price_currency": "listing (the `currency` column)",
+ "change_pct_unit": "percent",
+ "csv_columns": 18,
+ "fx_source": {
+  "provider": "open.er-api.com (local currency per 1 USD)",
+  "updated_utc": "Mon, 23 Nov 2026 00:02:32 +0000",
+  "per_usd": {
+   "USD": 1,
+   "AED": 3.6725,
+   "AFN": 65.187392,
+   "ALL": 81.82705,
+   "AMD": 360.567076,
+   "ANG": 1.79,
+   "AOA": 922.171399,
+   "ARS": 1575.9572,
+   "AUD": 1.507013,
+   "AWG": 1.79,
+   "AZN": 1.698002,
+   "BAM": 1.782021,
+   "BBD": 2,
+   "BDT": 124.425063,
+   "BGN": 1.782021,
+   "BHD": 0.376,
+   "BIF": 3002.275802,
+   "BMD": 1,
+   "BND": 1.289103,
+   "BOB": 11.723917,
+   "BRL": 5.945309,
+   "BSD": 1,
+   "BTN": 92.752736,
+   "BWP": 14.326243,
+   "BYN": 2.993982,
+   "BZD": 2,
+   "CAD": 1.433241,
+   "CDF": 2315.140957,
+   "CHF": 0.840419,
+   "CLF": 0.025719,
+   "CLP": 1016.589577,
+   "CNH": 6.673954,
+   "CNY": 6.681345,
+   "COP": 3437.41712,
+   "CRC": 447.588816,
+   "CUP": 24,
+   "CVE": 100.466052,
+   "CZK": 22.283029,
+   "DJF": 177.721,
+   "DKK": 6.806835,
+   "DOP": 60.03921,
+   "DZD": 136.983934,
+   "EGP": 54.166609,
+   "ERN": 15,
+   "ETB": 161.825929,
+   "EUR": 0.911134,
+   "FJD": 2.290056,
+   "FKP": 0.763586,
+   "FOK": 6.806832,
+   "GBP": 0.763577,
+   "GEL": 2.591948,
+   "GGP": 0.763586,
+   "GHS": 11.802194,
+   "GIP": 0.763586,
+   "GMD": 74.790909,
+   "GNF": 8835.326814,
+   "GTQ": 7.63739,
+   "GYD": 209.177059,
+   "HKD": 7.838987,
+   "HNL": 26.861394,
+   "HRK": 6.86493,
+   "HTG": 131.157097,
+   "HUF": 340.031355,
+   "IDR": 18276.102736,
+   "ILS": 3.351967,
+   "IMP": 0.763586,
+   "INR": 92.753491,
+   "IQD": 1514.602217,
+   "IRR": 1704813.871685,
+   "ISK": 124.854047,
+   "JEP": 0.763586,
+   "JMD": 158.379827,
+   "JOD": 0.709,
+   "JPY": 158.701406,
+   "KES": 129.915267,
+   "KGS": 87.469301,
+   "KHR": 4065.944525,
+   "KID": 1.507133,
+   "KMF": 448.247925,
+   "KRW": 1343.597019,
+   "KWD": 0.310445,
+   "KYD": 0.833333,
+   "KZT": 455.698773,
+   "LAK": 22399.549616,
+   "LBP": 89500,
+   "LKR": 332.392719,
+   "LRD": 167.862587,
+   "LSL": 17.513285,
+   "LYD": 6.468655,
+   "MAD": 9.97044,
+   "MDL": 18.313181,
+   "MGA": 4598.727328,
+   "MKD": 55.881655,
+   "MMK": 2097.819676,
+   "MNT": 3626.047912,
+   "MOP": 8.07387,
+   "MRU": 40.718811,
+   "MUR": 47.093189,
+   "MVR": 15.425097,
+   "MWK": 1737.831255,
+   "MXN": 19.113379,
+   "MYR": 4.112368,
+   "MZN": 63.640334,
+   "NAD": 17.513285,
+   "NGN": 1367.642612,
+   "NIO": 36.750173,
+   "NOK": 9.751101,
+   "NPR": 148.404378,
+   "NZD": 1.826906,
+   "OMR": 0.384497,
+   "PAB": 1,
+   "PEN": 3.442586,
+   "PGK": 4.49879,
+   "PHP": 63.908027,
+   "PKR": 276.545746,
+   "PLN": 4.064234,
+   "PYG": 6326.700243,
+   "QAR": 3.64,
+   "RON": 4.87032,
+   "RSD": 107.108039,
+   "RUB": 81.988351,
+   "RWF": 1478.983349,
+   "SAR": 3.75,
+   "SBD": 8.090626,
+   "SCR": 14.452936,
+   "SDG": 458.835548,
+   "SEK": 10.221203,
+   "SGD": 1.289081,
+   "SHP": 0.763586,
+   "SLE": 22.929351,
+   "SLL": 22929.350553,
+   "SOS": 571.117035,
+   "SRD": 37.298532,
+   "SSP": 5809.566063,
+   "STN": 22.322752,
+   "SYP": 121.549979,
+   "SZL": 17.513285,
+   "THB": 33.943445,
+   "TJS": 9.205441,
+   "TMT": 3.498883,
+   "TND": 3.06038,
+   "TOP": 2.395027,
+   "TRY": 50.583634,
+   "TTD": 6.775029,
+   "TVD": 1.507133,
+   "TWD": 32.968084,
+   "TZS": 2659.014429,
+   "UAH": 44.952432,
+   "UGX": 4163.265313,
+   "UYU": 40.573291,
+   "UZS": 11921.409559,
+   "VES": 919.8227,
+   "VND": 25779.206142,
+   "VUV": 120.966238,
+   "WST": 2.789487,
+   "XAF": 597.6639,
+   "XCD": 2.7,
+   "XCG": 1.79,
+   "XDR": 0.744757,
+   "XOF": 597.6639,
+   "XPF": 108.727292,
+   "YER": 236.155845,
+   "ZAR": 17.513472,
+   "ZMW": 20.534885,
+   "ZWG": 26.5872,
+   "ZWL": 26.5872
+  }
+ },
+ "floors_usd": {
+  "au": {
+   "floor_usd": 300000000,
+   "min_volume": 100000
+  },
+  "tw": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "ca": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "eu-de": {
+   "floor_usd": 300000000,
+   "min_volume": 50000
+  },
+  "eu-fr": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-it": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-es": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-nl": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-be": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-at": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-pt": {
+   "floor_usd": 50000000,
+   "min_volume": null
+  },
+  "eu-ie": {
+   "floor_usd": 200000000,
+   "min_volume": null
+  },
+  "eu-fi": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-dk": {
+   "floor_usd": 100000000,
+   "min_volume": null
+  },
+  "eu-gr": {
+   "floor_usd": 50000000,
+   "min_volume": null
+  }
+ },
+ "regions": {
+  "au": {
+   "universe_rows": 1545,
+   "unique_instruments": 1545,
+   "written": 294,
+   "excluded": {
+    "no_market_cap": 4,
+    "below_cap_floor": 1230,
+    "below_volume": 16,
+    "issuer_unresolved": 1,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 3,
+   "off_official_rows": 0,
+   "mover_rows": 2,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 0,
+   "floor_usd": 300000000,
+   "min_volume": 100000,
+   "file": "au.csv",
+   "venues": [
+    "ASX"
+   ]
+  },
+  "tw": {
+   "universe_rows": 2343,
+   "unique_instruments": 2343,
+   "written": 777,
+   "excluded": {
+    "no_market_cap": 58,
+    "below_cap_floor": 1508,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 1,
+   "off_official_rows": 0,
+   "mover_rows": 14,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 8,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "tw.csv",
+   "venues": [
+    "TPEX",
+    "TWSE"
+   ]
+  },
+  "ca": {
+   "universe_rows": 4284,
+   "unique_instruments": 2704,
+   "written": 598,
+   "excluded": {
+    "no_market_cap": 64,
+    "below_cap_floor": 1918,
+    "below_volume": 0,
+    "issuer_unresolved": 124,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 22,
+   "off_official_rows": 0,
+   "mover_rows": 14,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 6,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "ca.csv",
+   "venues": [
+    "CSE",
+    "TSX",
+    "TSXV"
+   ]
+  },
+  "eu-de": {
+   "universe_rows": 4302,
+   "unique_instruments": 708,
+   "written": 122,
+   "excluded": {
+    "no_market_cap": 4,
+    "below_cap_floor": 401,
+    "below_volume": 181,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "mover_rows": 6,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 4,
+   "floor_usd": 300000000,
+   "min_volume": 50000,
+   "file": "eu-de.csv",
+   "venues": [
+    "XETR"
+   ]
+  },
+  "eu-fr": {
+   "universe_rows": 542,
+   "unique_instruments": 542,
+   "written": 258,
+   "excluded": {
+    "no_market_cap": 1,
+    "below_cap_floor": 283,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 4,
+   "off_official_rows": 0,
+   "mover_rows": 4,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 2,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-fr.csv",
+   "venues": [
+    "EURONEXT"
+   ]
+  },
+  "eu-it": {
+   "universe_rows": 378,
+   "unique_instruments": 378,
+   "written": 177,
+   "excluded": {
+    "no_market_cap": 2,
+    "below_cap_floor": 199,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 4,
+   "off_official_rows": 0,
+   "mover_rows": 3,
+   "below_gate_rows": 3,
+   "no_catalyst_rows": 2,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-it.csv",
+   "venues": [
+    "MIL"
+   ]
+  },
+  "eu-es": {
+   "universe_rows": 230,
+   "unique_instruments": 230,
+   "written": 134,
+   "excluded": {
+    "no_market_cap": 24,
+    "below_cap_floor": 72,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 17,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 1,
+   "no_catalyst_rows": 1,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-es.csv",
+   "venues": [
+    "BME"
+   ]
+  },
+  "eu-nl": {
+   "universe_rows": 78,
+   "unique_instruments": 78,
+   "written": 55,
+   "excluded": {
+    "no_market_cap": 0,
+    "below_cap_floor": 23,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "mover_rows": 3,
+   "below_gate_rows": 1,
+   "no_catalyst_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-nl.csv",
+   "venues": [
+    "EURONEXT"
+   ]
+  },
+  "eu-be": {
+   "universe_rows": 101,
+   "unique_instruments": 101,
+   "written": 76,
+   "excluded": {
+    "no_market_cap": 1,
+    "below_cap_floor": 24,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 2,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 2,
+   "no_catalyst_rows": 1,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-be.csv",
+   "venues": [
+    "EURONEXT"
+   ]
+  },
+  "eu-at": {
+   "universe_rows": 65,
+   "unique_instruments": 65,
+   "written": 49,
+   "excluded": {
+    "no_market_cap": 2,
+    "below_cap_floor": 14,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 4,
+   "off_official_rows": 0,
+   "mover_rows": 2,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 0,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-at.csv",
+   "venues": [
+    "VIE"
+   ]
+  },
+  "eu-pt": {
+   "universe_rows": 30,
+   "unique_instruments": 30,
+   "written": 26,
+   "excluded": {
+    "no_market_cap": 0,
+    "below_cap_floor": 4,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 1,
+   "off_official_rows": 0,
+   "mover_rows": 0,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 1,
+   "floor_usd": 50000000,
+   "min_volume": null,
+   "file": "eu-pt.csv",
+   "venues": [
+    "EURONEXT"
+   ]
+  },
+  "eu-ie": {
+   "universe_rows": 19,
+   "unique_instruments": 19,
+   "written": 16,
+   "excluded": {
+    "no_market_cap": 0,
+    "below_cap_floor": 3,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "mover_rows": 2,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 0,
+   "floor_usd": 200000000,
+   "min_volume": null,
+   "file": "eu-ie.csv",
+   "venues": [
+    "EURONEXT"
+   ]
+  },
+  "eu-fi": {
+   "universe_rows": 189,
+   "unique_instruments": 189,
+   "written": 101,
+   "excluded": {
+    "no_market_cap": 4,
+    "below_cap_floor": 84,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 0,
+   "off_official_rows": 0,
+   "mover_rows": 1,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 1,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-fi.csv",
+   "venues": [
+    "OMXHEX"
+   ]
+  },
+  "eu-dk": {
+   "universe_rows": 133,
+   "unique_instruments": 133,
+   "written": 75,
+   "excluded": {
+    "no_market_cap": 1,
+    "below_cap_floor": 57,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 1,
+   "off_official_rows": 0,
+   "mover_rows": 0,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 1,
+   "floor_usd": 100000000,
+   "min_volume": null,
+   "file": "eu-dk.csv",
+   "venues": [
+    "OMXCOP"
+   ]
+  },
+  "eu-gr": {
+   "universe_rows": 127,
+   "unique_instruments": 127,
+   "written": 83,
+   "excluded": {
+    "no_market_cap": 0,
+    "below_cap_floor": 44,
+    "below_volume": 0,
+    "issuer_unresolved": 0,
+    "cap_issuer_mismatch": 0,
+    "stale_venue_print": 0
+   },
+   "carryover_rows": 1,
+   "off_official_rows": 0,
+   "mover_rows": 0,
+   "below_gate_rows": 0,
+   "no_catalyst_rows": 1,
+   "floor_usd": 50000000,
+   "min_volume": null,
+   "file": "eu-gr.csv",
+   "venues": [
+    "ATHEX"
+   ]
+  }
+ },
+ "closed_regions": {
+  "jp": {
+   "date": "2026-11-23",
+   "session": "closed",
+   "reason": "the Tokyo Stock Exchange was closed for Labor Thanksgiving Day; the JPX also ran group-wide BCP testing from 21 to 23 November",
+   "evidence": "JPX market-holidays calendar (Nov. 23 (Mon.) Labor Thanksgiving Day) and the JPX derivatives notice of 20 November; Yahoo daily bars for ^N225 and for TSE constituents 9984.T, 7203.T, 6758.T and 8306.T all stop at 2026-11-20; the TradingView Japan pull returned the 20 November session verbatim (TSE:9984 close 3,025, change -14.4755%, volume 109,918,800)",
+   "rows_written": 0,
+   "last_session_date": "2026-11-20",
+   "last_session_index_levels": {
+    "Nikkei 225": "56,436.65 (-5.06%)",
+    "TOPIX": "3,674.22 (-3.88%)"
+   },
+   "note": "no session on this date, so the region is removed from the artifact - no jp.csv, no rows in any movers table. Its last session's levels are published in the report's index table with THAT session's date"
+  }
+ },
+ "totals": {
+  "written": 2841,
+  "excluded": 6351
+ },
+ "degraded_sources": 0
+}
