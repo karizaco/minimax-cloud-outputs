@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "generated_at": "2026-11-23T21:41:48Z",
+ "generated_at": "2026-11-23T21:43:13Z",
  "provenance": "TradingView per-country scanners (issuer-country filtered, one call per region, all 16 complete) plus the America scanner for the US-listing map and the cross-venue cap check; the ATHEX General from Euronext Athens' own index page; FX from open.er-api, rate date Mon, 23 Nov 2026 00:02:32 +0000",
  "market_cap_unit": "USD",
  "price_currency": "listing (the `currency` column)",
