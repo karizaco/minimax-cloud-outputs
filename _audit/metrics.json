@@ -1,159 +1,87 @@
 {
- "audit_date_et": "2026-11-21",
- "audit_date_dow": "Sat",
+ "audit_date_et": "2026-11-22",
+ "audit_date_dow": "Sun",
  "market_closed": false,
- "origin_main_sha": "048c003",
+ "origin_main_sha": "084843c",
  "prior_gaps": [
-  {
-   "routine": "19-earnings-reminder-daily",
-   "path": "earnings/2026-11-20-reminders.md",
-   "label": "MISSING",
-   "cause": "quota_2056",
-   "gap_age_hours": 25.1,
-   "streak": 1,
-   "detail": "fire 06:00 ET; run 465385889689859 dispatched it (status 1, dispatch closed in 11.8 s) into session 465385936347264, which set the fleet title, then the turn died on the platform's Token Plan window: session status 2, status_message 'Token Plan usage limit reached: Upgrade your Token Plan or purchase Credits for more usage. (2056)'. The platform resumed it in place (query 'resume the work') and the resumed turn hit the same wall at 12:36 ET. No artifact and no commit for 11-20 (11-19's reminders file is present), so the fire never completed. A BILLING wall, not a code bug.",
-   "path_present": true,
-   "reconstruction": true
-  },
   {
    "routine": "07-focus-rvol-09:45",
    "path": "daily-screens/2026-11-20/focus-rvol-snapshot.md",
    "label": "MISSING",
    "cause": "platform_500",
-   "gap_age_hours": 21.3,
+   "gap_age_hours": 47.4,
    "streak": 1,
-   "detail": "fire 09:45 ET; run 465439954194654 dispatched it (status 1) into session 465440691294409, whose title is the platform's FALLBACK name '[cron] 07-stock-screener-focus-rvol-09%3A45.md', so the routine never executed its first step and never set its own title. That session's turns were consumed by an unrelated queued task (the fleet gate-ladder pass, query 'resume the work', last updated 23:27 ET), so the cron prompt's work never ran: no focus-rvol-snapshot.md or .csv for 11-20 (11-19 has both) and no commit carrying 'cron 07' for the date. The platform failed the fire, and a re-run is needed.",
+   "detail": "carried forward from the 2026-11-20 audit and still absent on origin/main: no commit carrying 'cron 07' exists for 11-20 and daily-screens/2026-11-20/focus-rvol-snapshot.md was never written. The 09:45 ET fire's session (465440691294409, created 09:45:01 ET) carried the platform's FALLBACK title '[cron] 07-stock-screener-focus-rvol-09%3A45.md' instead of the fleet title, so the routine never ran its first step, and the session's turns were consumed by an unrelated queued task (status 0, empty status_message). The platform mis-dispatched the fire - a re-run is needed.",
    "path_present": false,
    "reconstruction": false
-  },
-  {
-   "routine": "15b-earnings-reaction-settlement",
-   "path": "earnings/2026-11-20-reactions-settled.md",
-   "label": "MISSING",
-   "cause": "quota_2056",
-   "gap_age_hours": 18.8,
-   "streak": 1,
-   "detail": "fire 12:15 ET; session 465477950968130 carries the platform's FALLBACK title '[cron] 15b-earnings-reaction-settlement.md' and ended in status 2 - 'Token Plan usage limit reached: Upgrade your Token Plan or purchase Credits for more usage. (2056)' - 33 s after the dispatch (created 12:15, updated 12:15), so the FIRST model call was rejected by the platform's 5-hour Token Plan window. No title, no artifact, no commit for 11-20. The same window killed #10's 14:00 fire that afternoon. A BILLING wall, not a code bug; this routine delivered 11-19 (late).",
-   "path_present": true,
-   "reconstruction": true
   },
   {
    "routine": "10-breadth-snapshot",
    "path": "daily-screens/2026-11-20/breadth-snapshot.md",
    "label": "MISSING",
    "cause": "quota_2056",
-   "gap_age_hours": 17.1,
+   "gap_age_hours": 43.1,
    "streak": 1,
-   "detail": "fire 14:00 ET; session 465500981817435 carries the platform's FALLBACK title '[cron] 10-stock-screener-breadth-snapshot.md' and ended in status 2 - 'Token Plan usage limit reached: Upgrade your Token Plan or purchase Credits for more usage. (2056)' - 139 s after the dispatch (created 14:00, updated 14:02), so the first model call was rejected by the 5-hour Token Plan window. No artifact and no commit for 11-20. daily-screens/2026-11-20/breadth.md is cron #09's own end-of-day breadth file and NOT a near-miss (its front matter says so); #09's follow-up commit b980191 explicitly discloses the missing 14:00 ET counterpart. A BILLING wall, not a code bug.",
-   "path_present": false,
-   "reconstruction": false
-  },
-  {
-   "routine": "25-ntrt-gap-brief-daily",
-   "path": "ntrt/2026-11-20.md",
-   "label": "stalled",
-   "cause": "delayed_replay",
-   "gap_age_hours": 22.3,
-   "streak": 0,
-   "detail": "fire 08:45 ET; the artifact is present but landed 1109.8 min (18.5 h) later, at 03:14 ET on 11-21 (commit 412c877). The file says so itself: 'Reconstruction produced late. The run was suspended after the published pull and resumed on Saturday 21 November; every number below is Friday 20 November's pre-market tape, and this brief is a reconstruction of that session rather than a live screen.' The 08:52 ET published pull is Friday's real pre-market tape. Over the 45-min allowance on 4 of its last 4 due days (766.5 / 46.4 / 981.2 / 1109.8 min on 11-17 / 11-18 / 11-19 / 11-20), so it is chronically late; recommended allowance ~60 min for 25-ntrt-gap-brief-daily in latency.per_routine_allowed_minutes, or optimise the routine.",
+   "detail": "carried forward from the 2026-11-20 audit and still absent on origin/main: no commit carrying 'cron 10' exists for 11-20 and daily-screens/2026-11-20/breadth-snapshot.md was never written. Session 465500981817435 ended in status 2 with status_message 'Token Plan usage limit reached: Upgrade your Token Plan or purchase Credits for more usage. (2056)', and its only assistant turn carries finish_reason 'error' with usage.total_tokens == 0 - the FIRST model call was rejected, so the routine did no work at all. A BILLING wall (the 5-hour Token Plan window), not a code bug; a re-run is needed. daily-screens/2026-11-20/breadth.md is cron #09's own end-of-day file and NOT a near-miss for this path.",
    "path_present": true,
    "reconstruction": true
   },
   {
-   "routine": "25-ntrt-gap-brief-daily",
-   "path": "ntrt/2026-11-20.md",
+   "routine": "19-earnings-reminder-daily",
+   "path": "earnings/2026-11-20-reminders.md",
    "label": "reconstructed",
-   "cause": "delayed_replay",
-   "gap_age_hours": 22.3,
-   "streak": 0,
-   "detail": "the file at the expected path was rebuilt after the fact, not produced by the 11-20 run: the 08:45 ET fire was suspended after the 08:52 ET published pull and resumed on Saturday 21 November (commit 412c877 at 03:14 ET, 1109.8 min after the fire). It carries Friday 20 Nov's pre-market tape and the screen numbers, but it was written the next day. The cause of the original loss is the suspension and resume; the path exists, so this is NOT a MISSING.",
+   "cause": "quota_2056",
+   "gap_age_hours": 51.1,
+   "streak": 1,
+   "detail": "retired from MISSING: the engine now measures the path PRESENT and declares itself a rebuild, so the 'artifact is absent' statement no longer holds - but it was NOT produced by the 06:00 ET fire. It landed in commit 5e61829 at 11-21 11:46 ET, ~29.8 h after that fire, and its own run note says 'the session was suspended after the discovery phase and resumed on 2026-11-21 at 11:0x ET, about 29 hours after the 06:00 ET fire; this brief is a late reconstruction of the November 20 ET day built on settled closes and issuer release timestamps'. Cause of the ORIGINAL loss: the 06:00 ET fire was rejected by the platform's 5-hour Token Plan window (2056). NOT a MISSING - the file exists, but it was rebuilt after the fact, so the 11-20 brief is not a clean delivery.",
    "path_present": true,
    "reconstruction": true
   },
   {
-   "routine": "26b-agentic-pre-market-brief-refresh",
-   "path": "daily-briefs/2026-11-20-pre-market-refresh.md",
-   "label": "stalled",
-   "cause": "slow_run",
-   "gap_age_hours": 21.7,
-   "streak": 0,
-   "detail": "fire 09:20 ET; the turn completed normally (no platform error, empty status_message) but ran long: the artifact's front matter reads fire_time_et 09:20 and snapshot_et 11:02, and the push landed 11:24 ET (124.0 min, commit 4ac8771), 79 min over the 45-min allowance. The routine is slow, not blocked. Over the allowance on 3 of its last 4 due days (736.5 / 10.7 / 71.0 / 124.0 min on 11-17 / 11-18 / 11-19 / 11-20), so it is chronically late; recommended allowance ~130 min for 26b-agentic-pre-market-brief-refresh in latency.per_routine_allowed_minutes, or optimise the routine.",
+   "routine": "15b-earnings-reaction-settlement",
+   "path": "earnings/2026-11-20-reactions-settled.md",
+   "label": "reconstructed",
+   "cause": "quota_2056",
+   "gap_age_hours": 44.9,
+   "streak": 1,
+   "detail": "retired from MISSING: the engine now measures the path PRESENT and declares itself a rebuild, so the 'artifact is absent' statement no longer holds - but it was NOT produced by the 12:15 ET fire. It landed in commit 8ddb0de at 11-22 00:51 ET and its header reads 'REPLAY - the scheduled fire was blocked by the platform's Token Plan window; this run executed 2026-11-22 00:50:13 Sun, 2195 min after the fire', i.e. it was rebuilt 36.6 h later for the ORIGINAL 11-20 date. Cause of the ORIGINAL loss: the 12:15 ET fire was rejected by the 5-hour Token Plan window (2056). NOT a MISSING - the file exists, but it was rebuilt after the fact, so the 11-20 settlement board is not a clean delivery.",
    "path_present": true,
-   "reconstruction": false
-  },
-  {
-   "routine": "92b-preopen-catalyst-capture",
-   "path": "preopen-feed/2026-11-20-0950.jsonl",
-   "label": "stalled",
-   "cause": "delayed_replay",
-   "gap_age_hours": 21.2,
-   "streak": 0,
-   "detail": "fire 09:50 ET; the 09:50 checkpoint tape (249 records) and its digest landed 11:03 ET (73.9 min, commit 9c7144f), 29 min over the 45-min allowance. The session was resumed in place (query 'resume the work', last updated 12:09 ET), so the fire was blocked and continued late; the file is named for its 09:50 slot and carries that slot's own snapshot. The artifact is present, so this is NOT a MISSING.",
-   "path_present": true,
-   "reconstruction": false
-  },
-  {
-   "routine": "17-us-stocks-in-play-open",
-   "path": "us-stocks-in-play/2026-11-20-open.md",
-   "label": "stalled",
-   "cause": "slow_run",
-   "gap_age_hours": 21.2,
-   "streak": 0,
-   "detail": "fire 09:50 ET; the board was written at 11:25 ET (95.6 min, commit 9b94142), 51 min over the 45-min allowance. The board's own run note gives the reason: the first engine run reused the PREVIOUS day's record cache and was discarded by the publish gate, so the pull was re-run from scratch (8,137 symbols in the window, 7,654 fetched). The 09:50 window check passed ('fire-date: 2026-11-20', no replay), so nothing was blocked by the platform and the routine's own work was slow. The artifact is present, so this is NOT a MISSING.",
-   "path_present": true,
-   "reconstruction": false
-  },
-  {
-   "routine": "20-eod-watchlist-csv",
-   "path": "us-eod/2026-11-20.csv",
-   "label": "stalled",
-   "cause": "slow_run",
-   "gap_age_hours": 15.1,
-   "streak": 0,
-   "detail": "fire 16:00 ET; the session ran 16:00 to 18:20 ET with an empty status_message and a complete artifact, and the push landed 17:20 ET (80.1 min, commit af59cfd), 35 min over the 45-min allowance. The turn completed normally, so the routine is slow, not blocked. Over the allowance on 4 of its last 5 due days (92.8 / 77.7 / 561.1 / 81.8 / 80.1 min on 11-16 / 11-17 / 11-18 / 11-19 / 11-20), so it is chronically late; recommended allowance ~110 min for 20-eod-watchlist-csv in latency.per_routine_allowed_minutes, or optimise the routine.",
-   "path_present": true,
-   "reconstruction": false
+   "reconstruction": true
   }
  ],
  "path_presence": {
   "mcp-health/2026-W47.md": true,
-  "daily-screens/2026-11-21/peoplewish-backlog.md": true,
-  "daily-screens/2026-11-21/weekly-high-short-float.md": true,
-  "daily-screens/2026-11-21/weekly-ipo.md": true,
-  "earnings/2026-11-21-reminders.md": false,
-  "asia-pre-market/2026-11-21.md": false,
+  "macro-calendar/2026-11-22-week-ahead.md": true,
+  "weekly/2026-11-22-preview-tldr.md": true,
+  "weekly/2026-11-22-preview.md": true,
+  "earnings/2026-11-22-reminders.md": false,
+  "asia-pre-market/2026-11-22.md": false,
   "_audit/status.json (audit/status branch)": false,
-  "earnings/2026-11-21-reactions.md": false,
-  "daily-briefs/2026-11-21-pre-market.md": false,
-  "daily-screens/2026-11-21/pre-market-gapper.md": false,
-  "preopen-feed/2026-11-21-0830.md": false,
-  "ntrt/2026-11-21.md": false,
-  "daily-briefs/2026-11-21-pre-market-refresh.md": false,
-  "daily-screens/2026-11-21/focus-rvol-snapshot.md": false,
-  "preopen-feed/2026-11-21-0950.md": false,
-  "us-stocks-in-play/2026-11-21-open.md": false,
-  "cross-asset/2026-11-21.md": false,
-  "earnings/2026-11-21-reactions-settled.md": false,
-  "daily-screens/2026-11-21/breadth-snapshot.md": false,
-  "macro-calendar/2026-11-21-midweek.md": false,
-  "macro-calendar/2026-11-21-week-ahead.md": false,
-  "us-stocks-in-play/2026-11-21.md": false,
-  "daily-screens/2026-11-21/reversal-bullish-3_55.md": false,
-  "us-eod/2026-11-21.csv": false,
-  "international-eod/2026-11-21": false,
-  "options-flow/2026-11-21.md": false,
-  "weekly/2026-11-21-preview.md": false,
-  "daily-screens/2026-11-21/daily-sweep.md": false,
-  "daily-briefs/2026-11-21-post-market.md": false,
-  "earnings/2026-11-20-reminders.md": true,
+  "earnings/2026-11-22-reactions.md": false,
+  "daily-briefs/2026-11-22-pre-market.md": false,
+  "daily-screens/2026-11-22/pre-market-gapper.md": false,
+  "preopen-feed/2026-11-22-0830.md": false,
+  "ntrt/2026-11-22.md": false,
+  "daily-briefs/2026-11-22-pre-market-refresh.md": false,
+  "daily-screens/2026-11-22/focus-rvol-snapshot.md": false,
+  "preopen-feed/2026-11-22-0950.md": false,
+  "us-stocks-in-play/2026-11-22-open.md": false,
+  "cross-asset/2026-11-22.md": false,
+  "earnings/2026-11-22-reactions-settled.md": false,
+  "daily-screens/2026-11-22/breadth-snapshot.md": false,
+  "macro-calendar/2026-11-22-midweek.md": false,
+  "daily-screens/2026-11-22/weekly-ipo.md": false,
+  "us-stocks-in-play/2026-11-22.md": false,
+  "daily-screens/2026-11-22/reversal-bullish-3_55.md": false,
+  "us-eod/2026-11-22.csv": false,
+  "international-eod/2026-11-22": false,
+  "options-flow/2026-11-22.md": false,
+  "daily-screens/2026-11-22/daily-sweep.md": false,
+  "daily-briefs/2026-11-22-post-market.md": false,
   "daily-screens/2026-11-20/focus-rvol-snapshot.md": false,
-  "earnings/2026-11-20-reactions-settled.md": true,
-  "daily-screens/2026-11-20/breadth-snapshot.md": false,
-  "ntrt/2026-11-20.md": true,
-  "daily-briefs/2026-11-20-pre-market-refresh.md": true,
-  "preopen-feed/2026-11-20-0950.jsonl": true,
-  "us-stocks-in-play/2026-11-20-open.md": true,
-  "us-eod/2026-11-20.csv": true
+  "daily-screens/2026-11-20/breadth-snapshot.md": true,
+  "earnings/2026-11-20-reminders.md": true,
+  "earnings/2026-11-20-reactions-settled.md": true
  },
  "rows": [
   {
@@ -167,21 +95,24 @@
    "roster_schedule_agreement": true,
    "expected_path": "mcp-health/2026-W47.md",
    "alternates": [
-    "daily-screens/2026-11-21/peoplewish-backlog.md",
-    "daily-screens/2026-11-21/weekly-high-short-float.md",
-    "daily-screens/2026-11-21/weekly-ipo.md"
+    "macro-calendar/2026-11-22-week-ahead.md",
+    "weekly/2026-11-22-preview-tldr.md",
+    "weekly/2026-11-22-preview.md"
    ],
    "scheduled_times": [
     "02:00"
    ],
    "first_fire": null,
-   "state_hint": "not_due",
+   "state_hint": "due",
    "market_closed": false,
    "present": true,
    "is_directory": false,
    "size_bytes": 15566,
-   "last_delivered": "2026-11-21",
-   "age_days": 0,
+   "delivery_latency_min": 6.3,
+   "added_epoch": 1795331179,
+   "added_et": "02:06:19",
+   "last_delivered": "2026-11-23",
+   "age_days": -1,
    "tolerance_days": 7,
    "health": "ok",
    "lines": 207,
@@ -198,7 +129,7 @@
    "notes": [],
    "ground_truth_schedule": "0 6 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "earnings/2026-11-21-reminders.md",
+   "expected_path": "earnings/2026-11-22-reminders.md",
    "alternates": [],
    "scheduled_times": [
     "06:00"
@@ -210,10 +141,10 @@
    "is_directory": false,
    "size_bytes": null,
    "near_miss": [],
-   "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "last_delivered": "2026-11-23",
+   "age_days": -1,
    "tolerance_days": null,
-   "prior_state": "missing",
+   "prior_state": "not_due",
    "prior_streak": 1,
    "prior_latency_min": null
   },
@@ -226,11 +157,11 @@
    "notes": [],
    "ground_truth_schedule": "30 6 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "asia-pre-market/2026-11-21.md",
+   "expected_path": "asia-pre-market/2026-11-22.md",
    "alternates": [
-    "daily-screens/2026-11-21/peoplewish-backlog.md",
-    "daily-screens/2026-11-21/weekly-high-short-float.md",
-    "daily-screens/2026-11-21/weekly-ipo.md"
+    "macro-calendar/2026-11-22-week-ahead.md",
+    "weekly/2026-11-22-preview-tldr.md",
+    "weekly/2026-11-22-preview.md"
    ],
    "scheduled_times": [
     "06:30"
@@ -242,12 +173,12 @@
    "is_directory": false,
    "size_bytes": null,
    "near_miss": [],
-   "last_delivered": "2026-11-21",
-   "age_days": 0,
+   "last_delivered": "2026-11-23",
+   "age_days": -1,
    "tolerance_days": null,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 13.4
+   "prior_latency_min": null
   },
   {
    "routine": "91-schedule-drift-guard",
@@ -310,7 +241,7 @@
    "notes": [],
    "ground_truth_schedule": "0 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "earnings/2026-11-21-reactions.md",
+   "expected_path": "earnings/2026-11-22-reactions.md",
    "alternates": [],
    "scheduled_times": [
     "08:00"
@@ -323,11 +254,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": null,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 18.5
+   "prior_latency_min": null
   },
   {
    "routine": "26-agentic-pre-market-brief",
@@ -338,7 +269,7 @@
    "notes": [],
    "ground_truth_schedule": "30 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-briefs/2026-11-21-pre-market.md",
+   "expected_path": "daily-briefs/2026-11-22-pre-market.md",
    "alternates": [],
    "scheduled_times": [
     "08:30"
@@ -351,11 +282,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": null,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 13.9
+   "prior_latency_min": null
   },
   {
    "routine": "08-pre-market-gapper",
@@ -366,7 +297,7 @@
    "notes": [],
    "ground_truth_schedule": "34 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-21/pre-market-gapper.md",
+   "expected_path": "daily-screens/2026-11-22/pre-market-gapper.md",
    "alternates": [],
    "scheduled_times": [
     "08:34"
@@ -379,11 +310,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": null,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 7.1
+   "prior_latency_min": null
   },
   {
    "routine": "92a-preopen-catalyst-capture",
@@ -394,7 +325,7 @@
    "notes": [],
    "ground_truth_schedule": "30 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "preopen-feed/2026-11-21-0830.md",
+   "expected_path": "preopen-feed/2026-11-22-0830.md",
    "alternates": [],
    "scheduled_times": [
     "08:30"
@@ -407,11 +338,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": null,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 6.7
+   "prior_latency_min": null
   },
   {
    "routine": "25-ntrt-gap-brief-daily",
@@ -422,11 +353,11 @@
    "notes": [],
    "ground_truth_schedule": "45 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "ntrt/2026-11-21.md",
+   "expected_path": "ntrt/2026-11-22.md",
    "alternates": [
-    "daily-screens/2026-11-21/peoplewish-backlog.md",
-    "daily-screens/2026-11-21/weekly-high-short-float.md",
-    "daily-screens/2026-11-21/weekly-ipo.md"
+    "macro-calendar/2026-11-22-week-ahead.md",
+    "weekly/2026-11-22-preview-tldr.md",
+    "weekly/2026-11-22-preview.md"
    ],
    "scheduled_times": [
     "08:45"
@@ -438,12 +369,12 @@
    "is_directory": false,
    "size_bytes": null,
    "near_miss": [],
-   "last_delivered": "2026-11-21",
-   "age_days": 0,
+   "last_delivered": "2026-11-23",
+   "age_days": -1,
    "tolerance_days": null,
-   "prior_state": "delivered_late",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 1109.8
+   "prior_latency_min": null
   },
   {
    "routine": "26b-agentic-pre-market-brief-refresh",
@@ -454,7 +385,7 @@
    "notes": [],
    "ground_truth_schedule": "20 9 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-briefs/2026-11-21-pre-market-refresh.md",
+   "expected_path": "daily-briefs/2026-11-22-pre-market-refresh.md",
    "alternates": [],
    "scheduled_times": [
     "09:20"
@@ -467,11 +398,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": null,
-   "prior_state": "delivered_late",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 124.0
+   "prior_latency_min": null
   },
   {
    "routine": "07-focus-rvol-09:45",
@@ -482,7 +413,7 @@
    "notes": [],
    "ground_truth_schedule": "45 9 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-21/focus-rvol-snapshot.md",
+   "expected_path": "daily-screens/2026-11-22/focus-rvol-snapshot.md",
    "alternates": [],
    "scheduled_times": [
     "09:45"
@@ -495,7 +426,7 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-19",
-   "age_days": 2,
+   "age_days": 3,
    "tolerance_days": null,
    "prior_state": "missing",
    "prior_streak": 1,
@@ -510,7 +441,7 @@
    "notes": [],
    "ground_truth_schedule": "50 9 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "preopen-feed/2026-11-21-0950.md",
+   "expected_path": "preopen-feed/2026-11-22-0950.md",
    "alternates": [],
    "scheduled_times": [
     "09:50"
@@ -523,11 +454,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": null,
-   "prior_state": "delivered_late",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 73.9
+   "prior_latency_min": null
   },
   {
    "routine": "17-us-stocks-in-play-open",
@@ -539,11 +470,11 @@
    "ground_truth_schedule": "50 9,15 * * 1-5",
    "roster_schedule_agreement": true,
    "slot_regex": "^\\d{4}-\\d{2}-\\d{2}-open\\.md$",
-   "expected_path": "us-stocks-in-play/2026-11-21-open.md",
+   "expected_path": "us-stocks-in-play/2026-11-22-open.md",
    "alternates": [
-    "daily-screens/2026-11-21/peoplewish-backlog.md",
-    "daily-screens/2026-11-21/weekly-high-short-float.md",
-    "daily-screens/2026-11-21/weekly-ipo.md"
+    "macro-calendar/2026-11-22-week-ahead.md",
+    "weekly/2026-11-22-preview-tldr.md",
+    "weekly/2026-11-22-preview.md"
    ],
    "scheduled_times": [
     "09:50",
@@ -557,11 +488,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": null,
-   "prior_state": "delivered_late",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 95.6
+   "prior_latency_min": null
   },
   {
    "routine": "12-cross-asset-correlation",
@@ -572,11 +503,11 @@
    "notes": [],
    "ground_truth_schedule": "0 10 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "cross-asset/2026-11-21.md",
+   "expected_path": "cross-asset/2026-11-22.md",
    "alternates": [
-    "daily-screens/2026-11-21/peoplewish-backlog.md",
-    "daily-screens/2026-11-21/weekly-high-short-float.md",
-    "daily-screens/2026-11-21/weekly-ipo.md"
+    "macro-calendar/2026-11-22-week-ahead.md",
+    "weekly/2026-11-22-preview-tldr.md",
+    "weekly/2026-11-22-preview.md"
    ],
    "scheduled_times": [
     "10:00"
@@ -588,12 +519,12 @@
    "is_directory": false,
    "size_bytes": null,
    "near_miss": [],
-   "last_delivered": "2026-11-21",
-   "age_days": 0,
+   "last_delivered": "2026-11-23",
+   "age_days": -1,
    "tolerance_days": null,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 5.3
+   "prior_latency_min": null
   },
   {
    "routine": "15b-earnings-reaction-settlement",
@@ -604,7 +535,7 @@
    "notes": [],
    "ground_truth_schedule": "15 12 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "earnings/2026-11-21-reactions-settled.md",
+   "expected_path": "earnings/2026-11-22-reactions-settled.md",
    "alternates": [],
    "scheduled_times": [
     "12:15"
@@ -617,9 +548,9 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": null,
-   "prior_state": "missing",
+   "prior_state": "not_due",
    "prior_streak": 1,
    "prior_latency_min": null
   },
@@ -632,7 +563,7 @@
    "notes": [],
    "ground_truth_schedule": "0 14 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-21/breadth-snapshot.md",
+   "expected_path": "daily-screens/2026-11-22/breadth-snapshot.md",
    "alternates": [],
    "scheduled_times": [
     "14:00"
@@ -644,7 +575,7 @@
    "is_directory": false,
    "size_bytes": null,
    "near_miss": [],
-   "last_delivered": "2026-11-19",
+   "last_delivered": "2026-11-20",
    "age_days": 2,
    "tolerance_days": null,
    "prior_state": "missing",
@@ -660,7 +591,7 @@
    "notes": [],
    "ground_truth_schedule": "0 14 * * 3",
    "roster_schedule_agreement": true,
-   "expected_path": "macro-calendar/2026-11-21-midweek.md",
+   "expected_path": "macro-calendar/2026-11-22-midweek.md",
    "alternates": [],
    "scheduled_times": [
     "14:00"
@@ -673,7 +604,7 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-18",
-   "age_days": 3,
+   "age_days": 4,
    "tolerance_days": 7,
    "prior_state": "not_due",
    "prior_streak": 0,
@@ -688,21 +619,27 @@
    "notes": [],
    "ground_truth_schedule": "0 15 * * 0",
    "roster_schedule_agreement": true,
-   "expected_path": "macro-calendar/2026-11-21-week-ahead.md",
-   "alternates": [],
+   "expected_path": "macro-calendar/2026-11-22-week-ahead.md",
+   "alternates": [
+    "macro-calendar/2026-11-22-week-ahead.md"
+   ],
    "scheduled_times": [
     "15:00"
    ],
    "first_fire": "2026-11-01",
-   "state_hint": "not_due",
+   "state_hint": "due",
    "market_closed": false,
-   "present": false,
+   "present": true,
    "is_directory": false,
-   "size_bytes": null,
-   "near_miss": [],
-   "last_delivered": "2026-11-15",
-   "age_days": 6,
+   "size_bytes": 19894,
+   "delivery_latency_min": 4.7,
+   "added_epoch": 1795377882,
+   "added_et": "15:04:42",
+   "last_delivered": "2026-11-22",
+   "age_days": 0,
    "tolerance_days": 7,
+   "health": "ok",
+   "lines": 215,
    "prior_state": "not_due",
    "prior_streak": 0,
    "prior_latency_min": null
@@ -716,30 +653,24 @@
    "notes": [],
    "ground_truth_schedule": "0 15 * * 6",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-21/weekly-ipo.md",
-   "alternates": [
-    "daily-screens/2026-11-21/weekly-ipo.md"
-   ],
+   "expected_path": "daily-screens/2026-11-22/weekly-ipo.md",
+   "alternates": [],
    "scheduled_times": [
     "15:00"
    ],
    "first_fire": null,
-   "state_hint": "due",
+   "state_hint": "not_due",
    "market_closed": false,
-   "present": true,
+   "present": false,
    "is_directory": false,
-   "size_bytes": 13480,
-   "delivery_latency_min": 9.2,
-   "added_epoch": 1795291750,
-   "added_et": "15:09:10",
+   "size_bytes": null,
+   "near_miss": [],
    "last_delivered": "2026-11-21",
-   "age_days": 0,
+   "age_days": 1,
    "tolerance_days": 7,
-   "health": "ok",
-   "lines": 115,
-   "prior_state": "not_due",
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 9.2
   },
   {
    "routine": "17-us-stocks-in-play",
@@ -751,11 +682,11 @@
    "ground_truth_schedule": "50 9,15 * * 1-5",
    "roster_schedule_agreement": true,
    "slot_regex": "^\\d{4}-\\d{2}-\\d{2}\\.md$",
-   "expected_path": "us-stocks-in-play/2026-11-21.md",
+   "expected_path": "us-stocks-in-play/2026-11-22.md",
    "alternates": [
-    "daily-screens/2026-11-21/peoplewish-backlog.md",
-    "daily-screens/2026-11-21/weekly-high-short-float.md",
-    "daily-screens/2026-11-21/weekly-ipo.md"
+    "macro-calendar/2026-11-22-week-ahead.md",
+    "weekly/2026-11-22-preview-tldr.md",
+    "weekly/2026-11-22-preview.md"
    ],
    "scheduled_times": [
     "09:50",
@@ -768,12 +699,12 @@
    "is_directory": false,
    "size_bytes": null,
    "near_miss": [],
-   "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "last_delivered": "2026-11-23",
+   "age_days": -1,
    "tolerance_days": null,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 34.2
+   "prior_latency_min": null
   },
   {
    "routine": "04-reversal-bullish-3:55",
@@ -784,7 +715,7 @@
    "notes": [],
    "ground_truth_schedule": "55 15 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-21/reversal-bullish-3_55.md",
+   "expected_path": "daily-screens/2026-11-22/reversal-bullish-3_55.md",
    "alternates": [],
    "scheduled_times": [
     "15:55"
@@ -797,11 +728,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": null,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 3.7
+   "prior_latency_min": null
   },
   {
    "routine": "20-eod-watchlist-csv",
@@ -812,7 +743,7 @@
    "notes": [],
    "ground_truth_schedule": "0 16 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "us-eod/2026-11-21.csv",
+   "expected_path": "us-eod/2026-11-22.csv",
    "alternates": [],
    "scheduled_times": [
     "16:00"
@@ -825,11 +756,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": null,
-   "prior_state": "delivered_late",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 80.1
+   "prior_latency_min": null
   },
   {
    "routine": "05-eod-international-daily",
@@ -840,7 +771,7 @@
    "notes": [],
    "ground_truth_schedule": "30 16 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "international-eod/2026-11-21",
+   "expected_path": "international-eod/2026-11-22",
    "alternates": [],
    "scheduled_times": [
     "16:30"
@@ -853,11 +784,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": null,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 8.2
+   "prior_latency_min": null
   },
   {
    "routine": "16-unusual-options-flow",
@@ -868,11 +799,11 @@
    "notes": [],
    "ground_truth_schedule": "35 16 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "options-flow/2026-11-21.md",
+   "expected_path": "options-flow/2026-11-22.md",
    "alternates": [
-    "daily-screens/2026-11-21/peoplewish-backlog.md",
-    "daily-screens/2026-11-21/weekly-high-short-float.md",
-    "daily-screens/2026-11-21/weekly-ipo.md"
+    "macro-calendar/2026-11-22-week-ahead.md",
+    "weekly/2026-11-22-preview-tldr.md",
+    "weekly/2026-11-22-preview.md"
    ],
    "scheduled_times": [
     "16:35"
@@ -884,12 +815,12 @@
    "is_directory": false,
    "size_bytes": null,
    "near_miss": [],
-   "last_delivered": "2026-11-21",
-   "age_days": 0,
+   "last_delivered": "2026-11-23",
+   "age_days": -1,
    "tolerance_days": null,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 6.8
+   "prior_latency_min": null
   },
   {
    "routine": "22-weekly-market-recap-preview",
@@ -900,21 +831,27 @@
    "notes": [],
    "ground_truth_schedule": "47 17 * * 0",
    "roster_schedule_agreement": true,
-   "expected_path": "weekly/2026-11-21-preview.md",
-   "alternates": [],
+   "expected_path": "weekly/2026-11-22-preview.md",
+   "alternates": [
+    "weekly/2026-11-22-preview.md"
+   ],
    "scheduled_times": [
     "17:47"
    ],
    "first_fire": "2026-11-01",
-   "state_hint": "not_due",
+   "state_hint": "due",
    "market_closed": false,
-   "present": false,
+   "present": true,
    "is_directory": false,
-   "size_bytes": null,
-   "near_miss": [],
-   "last_delivered": "2026-11-15",
-   "age_days": 6,
+   "size_bytes": 35803,
+   "delivery_latency_min": 9.3,
+   "added_epoch": 1795388180,
+   "added_et": "17:56:20",
+   "last_delivered": "2026-11-22",
+   "age_days": 0,
    "tolerance_days": 7,
+   "health": "ok",
+   "lines": 262,
    "prior_state": "not_due",
    "prior_streak": 0,
    "prior_latency_min": null
@@ -928,7 +865,7 @@
    "notes": [],
    "ground_truth_schedule": "30 18 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-21/daily-sweep.md",
+   "expected_path": "daily-screens/2026-11-22/daily-sweep.md",
    "alternates": [],
    "scheduled_times": [
     "18:30"
@@ -941,11 +878,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": null,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 6.9
+   "prior_latency_min": null
   },
   {
    "routine": "23-agentic-post-market-brief",
@@ -956,7 +893,7 @@
    "notes": [],
    "ground_truth_schedule": "30 22 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-briefs/2026-11-21-post-market.md",
+   "expected_path": "daily-briefs/2026-11-22-post-market.md",
    "alternates": [],
    "scheduled_times": [
     "22:30"
@@ -969,11 +906,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-20",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": null,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 7.3
+   "prior_latency_min": null
   }
  ]
 }
