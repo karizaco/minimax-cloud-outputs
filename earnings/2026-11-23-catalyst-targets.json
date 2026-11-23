@@ -1,0 +1,104 @@
+{
+  "us": [
+    {
+      "name": "SMTC",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-23",
+      "event_freshness": 0,
+      "premarket_pct": 9.039255962569907
+    },
+    {
+      "name": "FLNC",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-23",
+      "event_freshness": 0,
+      "premarket_pct": 7.803468208092486
+    },
+    {
+      "name": "HPE",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-23",
+      "event_freshness": 0,
+      "premarket_pct": 7.0153996577853945
+    }
+  ],
+  "eu": [
+    {
+      "name": "VER",
+      "chg": -16.83
+    },
+    {
+      "name": "CMBT",
+      "chg": 3.79
+    },
+    {
+      "name": "SIVE",
+      "chg": 11.92
+    },
+    {
+      "name": "ABVX",
+      "chg": 8.81
+    },
+    {
+      "name": "ASML",
+      "chg": 4.81
+    },
+    {
+      "name": "COFFEE_B",
+      "chg": 4.79
+    },
+    {
+      "name": "TYRES",
+      "chg": -4.15
+    },
+    {
+      "name": "YUBICO",
+      "chg": 4.97
+    }
+  ],
+  "au": [
+    {
+      "name": "ALQ",
+      "chg": -12.23
+    },
+    {
+      "name": "WEB",
+      "chg": -10.44
+    }
+  ],
+  "apac": [
+    {
+      "name": "RYM",
+      "market": "newzealand",
+      "chg": -4.37
+    },
+    {
+      "name": "APLAPOLLO",
+      "market": "india",
+      "chg": -21.39
+    },
+    {
+      "name": "4190",
+      "market": "ksa",
+      "chg": -8.04
+    }
+  ],
+  "budget": {
+    "US": 3,
+    "EU": 8,
+    "AU": 2,
+    "APAC": 3
+  },
+  "budget_total": 16,
+  "budget_cap": 16,
+  "budget_rule": "the US slice covers the rows whose earnings event can still explain today's move (fresh = the report is dated on the scan date), the EU/AU/APAC floors are never squeezed, and the leftover goes to the region with the most unexplained rows",
+  "earnings_calendar_rows": 463,
+  "asx_announcement_rows": 3,
+  "asx_fresh": [
+    "ALQ",
+    "ERD",
+    "GTK"
+  ],
+  "earnings_field_stale_rows": 3,
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-23.md"
+}
