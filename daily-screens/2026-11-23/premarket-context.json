@@ -1,0 +1,52 @@
+{
+  "catalysts": {
+    "CAPR": {
+      "confirmed": true,
+      "source": "issuer press release (GlobeNewswire), 11/20/2026 7:55 p.m. ET",
+      "note": "FDA Complete Response Letter for the resubmitted Deramiocel BLA (Duchenne muscular dystrophy) - insufficient evidence of effectiveness plus other clinical deficiencies; company says it is reviewing the letter and reviewing operating costs. Conference call 11/23 8:30 a.m. ET."
+    },
+    "KYMR": {
+      "confirmed": true,
+      "source": "issuer press release, 11/23/2026 7:00 a.m. ET (Reuters/TipRanks confirm)",
+      "note": "BROADEN2 Phase 2b topline for KT-621 (oral STAT6 degrader) in moderate-to-severe atopic dermatitis - all three doses met the primary and secondary endpoints; mid dose 72% mean EASI reduction vs 27% placebo, 62% EASI-75 vs 22% placebo. Webcast 8:00 a.m. ET."
+    },
+    "KNOP": {
+      "confirmed": true,
+      "source": "Schedule 13D/A + Form 4 (SEC), sale closed 11/20/2026; reported on the wire",
+      "note": "Knutsen NYK Offshore Tankers AS - the general partner, tied to chairman/director Trygve Seglem - bought Astaris Capital Management's entire 2,789,070-unit stake at $12.50 per unit in cash, lifting reported beneficial ownership to about 44.3% with a 24-month standstill; unit sale is a related-party block trade far above the traded price."
+    },
+    "ZS": {
+      "confirmed": true,
+      "source": "issuer press release + CrowdStrike announcement, 11/23/2026 (Dow Jones/Morningstar)",
+      "note": "CrowdStrike agreed to acquire Zscaler in an all-stock deal valued at about $43.9B ($260.41 per ZS share, roughly a 34% premium to the 11/20 close), alongside fiscal Q1 2027 results: revenue $949.3M (+20%), ARR $3,882M (+21%), adjusted EPS $1.23 vs $1.16 expected; expected to close in the second half of CrowdStrike's fiscal 2028."
+    },
+    "PURR": {
+      "confirmed": true,
+      "source": "crypto market move, not a company release - CoinDesk/Decrypt coverage, 11/23/2026",
+      "note": "STRUCTURAL CRYPTO-BETA gap, not an issuer catalyst: Hyperliquid Strategies is a digital-asset treasury name and the whole crypto-equity complex is gapping on the bitcoin rebound off Saturday's two-year low near $55.3K. Read it as beta, not as a setup."
+    },
+    "NUAI": {
+      "confirmed": true,
+      "source": "no issuer release today; sector/market move plus the 11/16/2026 Form S-3 resale registration (SEC)",
+      "note": "New Era Energy & Digital - no confirmed catalyst in this run; the move is data-centre-power theme beta riding the AI rebound, against an overhang from the S-3 registering 23.3M private-placement shares for resale."
+    }
+  },
+  "notes": [
+    "The market-wide backdrop is a REBOUND, not a new leg up: Friday 11/20 was a heavy AI-driven rout (Nvidia -23% on the week, bitcoin forced to a two-year low near $55.3K), and this pre-market is the bounce off it - Nasdaq-100 futures +3%, S&P 500 futures +2.4%, the chip ETF SMH +6.2%, XLK +4.1%, SPY +2.7%. A gap that clears 4% inside a 3% index move is not the same animal as a gap in a quiet tape.",
+    "CRYPTO GROUP ON ONE STORY: PURR (focus book) and the whole digital-asset-treasury/miner complex in the ladder - APLD, CYPH, NAK, BMNR, BTDR, GLXY, KEEL, RXT, HYMC, SBET and MSTR - are gapping together on the bitcoin rebound off Saturday's low, not on separate company news. The engine classified them IDIOSYNCRATIC because no crypto proxy was available in this run, so read the group as crypto beta, not as a dozen independent setups.",
+    "AI/SEMI GROUP ON ONE STORY: NVDA, MU, MRVL, AVGO and SNDK in the ladder, with AMBA in the focus book, are the AI-complex rebound off Friday's rout. Same read as the crypto group: one story, many tickers.",
+    "THREE SINGLE-NAME CATALYSTS AT THE TOP of the ladder are genuinely idiosyncratic and should not be read as beta: CAPR (FDA Complete Response Letter, 11/20 after the close), KYMR (BROADEN2 Phase 2b readout at 7:00 a.m. ET today) and KNOP (related-party block purchase of the Astaris stake at $12.50 per unit, closed 11/20).",
+    "CATALYST SOURCE: the issuer/wire confirmations for CAPR, KYMR, KNOP and ZS come from web_search over the GlobeNewswire, Reuters/Dow Jones and StockTitan copy and the SEC 13D/A and Form 4 filings; no issuer IR page was fetched separately for these four names.",
+    "TAPE FRESHNESS: the pre-market tape is served from a shared HTTP cache that can return an older vintage, so every row publishes its own tape_lag_min and the artifact names any lag over 30 minutes. A gap published on a stale print is the first thing to distrust on this board.",
+    "THE SIZE GATE LANDS ON THE LAST EXECUTED PRINT, so the flagged count is VINTAGE-SENSITIVE. Three pulls of the same tape this morning (08:36, 08:40 and 08:42 ET) returned 2, then 0, then 3 flags from one unchanged rule: the 25-share test is applied to the size of the newest print, and the newest print of a liquid market is often an odd lot. The published set is the NEWEST vintage (prints to 08:26 ET); the three flagged names each carried dozens of prints of 25+ shares behind them and their live quote corroborated the tape price to the cent, so they are markets, not quotes. Read the flagged count as 'on this vintage'.",
+    "DPC IS THE ONE STALE TAPE ON THE BOARD: its only print is timestamped 07:46 ET, roughly 50 minutes behind the wall clock, Nasdaq published no cumulative volume counter for it and the print itself was 7 shares. Its headline gap is a stale odd-lot print and the live quote was still at the prior close - treat it as no market, not as a +4.2% gap.",
+    "CYBERSECURITY/SOFTWARE GROUP ON THE AI REBOUND: NTSK, PANW, OKTA and VRDN in the focus book are cloud-security and software names riding the same AI rebound as the tech complex, with the CrowdStrike/Zscaler deal announced before the open adding to the cyber bid. Read them as sector beta; NTSK's own news flow this week was analyst target raises and a December 2 earnings date, not a fresh company event."
+  ],
+  "source_health": [
+    {"source": "web_search (issuer press releases, Dow Jones, Reuters, StockTitan, SEC filings)", "status": "ok", "role": "the catalysts"},
+    {"source": "tradingview america scanner (premarket ladder, sector/index proxies)", "status": "ok", "role": "the market ladder and the proxy moves"},
+    {"source": "api.nasdaq.com /extended-trading (the pre-market tape)", "status": "ok", "role": "the executed pre-market prints and volumes"},
+    {"source": "nasdaq /historical (session history for the denominator close)", "status": "ok", "role": "the reference-close confirmation"},
+    {"source": "coinmarketcap/coinbase (bitcoin level)", "status": "ok", "role": "the crypto-beta group note - published as prose, not as a number in the tables"}
+  ]
+}
