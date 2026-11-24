@@ -1,0 +1,119 @@
+{
+  "catalysts": {
+    "SHOE": {
+      "confirmed": true,
+      "source": "issuer 8-K + press release, 11/24 06:20 ET",
+      "note": "Q3 FY26 miss and guidance slashed: adj EPS $0.05 vs $0.27 est; FY26 adj EPS guide cut to $0.20-$0.28 vs $0.80 consensus; comps -5.1%; GAAP net loss $12.3M"
+    },
+    "FLNC": {
+      "confirmed": true,
+      "source": "issuer release 11/23 16:05 ET (Fluence Energy Q4/FY26)",
+      "note": "Record contracted backlog $8.9B (up from $5.3B) and record Q4 order intake $3.5B, but Q4 revenue $744M missed consensus and it swung to a $137.8M net loss on a contract-manufacturer ramp delay"
+    },
+    "DKS": {
+      "confirmed": true,
+      "source": "issuer release 11/24 07:00 ET (DICK'S Q3 FY26)",
+      "note": "Q3 beat: non-GAAP EPS $1.94 vs $1.42 est, revenue $5.13B vs $5.08B est, comps +2.6%; FY26 adj EPS guidance raised to $11.45-$12.30"
+    },
+    "INSM": {
+      "confirmed": true,
+      "source": "CNBC / Dow Jones, 11/24 04:19 ET",
+      "note": "Sanofi agrees to acquire Insmed for $175/share in cash, ~$41B equity value - the largest pharma deal since 2023; close projected H1 2027"
+    },
+    "HPE": {
+      "confirmed": true,
+      "source": "issuer release 11/23 + reaction 11/24 03:29 ET",
+      "note": "F/Q4 beat (revenue $14.55B, +50%; adj EPS $1.43 vs $1.28 est; FY27 EPS guide $5.05-$5.35) but the Q1 FY27 outlook fell short of the highest hopes; stock gave back the prior session's +18% AI rally"
+    },
+    "SMTC": {
+      "confirmed": true,
+      "source": "issuer release 11/23 16:14 ET (Semtech F/Q3)",
+      "note": "F/Q3 beat (non-GAAP EPS $1.17 vs ~$1.13 est, revenue $423M) with an upbeat current-quarter guide, yet the stock sold off - profit-taking after Monday's rally"
+    },
+    "ADI": {
+      "confirmed": true,
+      "source": "issuer release 11/24 07:00 ET (Analog Devices F/Q4)",
+      "note": "Record F/Q4 - revenue $4.37B, FY26 revenue $15.2B (+38%) - but F/Q1 guidance of $3.82 adj EPS missed the ~$3.89 consensus; the stock had already run +9.5% on 11/23"
+    },
+    "ANF": {
+      "confirmed": true,
+      "source": "issuer release 11/24 06:30 ET (Abercrombie & Fitch Q3)",
+      "note": "Q3 beat: EPS $3.82 vs $3.08 est, record Q3 net sales $1.4B (+11%), comps +6%, 16th straight quarter of growth; FY26 EPS outlook raised to $13.70-$13.90"
+    },
+    "EMBC": {
+      "confirmed": true,
+      "source": "issuer release 11/24 06:51 ET (Embecta Q3)",
+      "note": "Q3 beat: non-GAAP EPS $0.72 vs ~$0.29 est, revenue $298.7M vs ~$270M est"
+    },
+    "DLTR": {
+      "confirmed": true,
+      "source": "Reuters, 11/24 07:16 ET (Dollar Tree Q3)",
+      "note": "Q3 beat: revenue $5.08B vs $5.04B est, adj EPS $1.16 vs $0.92 est; FY26 adj EPS guidance raised to $8.05-$8.25 from $7.70-$8.05"
+    },
+    "KSS": {
+      "confirmed": true,
+      "source": "issuer release 11/24 07:00 ET (Kohl's Q3)",
+      "note": "Q3 beat on both top and bottom line and raises its FY26 outlook"
+    },
+    "BURL": {
+      "confirmed": true,
+      "source": "issuer release 11/24 06:48 ET (Burlington Stores Q3)",
+      "note": "Mixed Q3 results; gives a Q4 outlook and updates FY26 outlook"
+    },
+    "BBY": {
+      "confirmed": true,
+      "source": "issuer release 11/24 07:02 ET (Best Buy Q3)",
+      "note": "Q3 beat: non-GAAP EPS $1.62 vs $1.49 est, revenue $10.24B vs ~$9.91B est; raises FY27 guidance"
+    },
+    "A": {
+      "confirmed": true,
+      "source": "issuer release 11/23 16:10 ET (Agilent F/Q4)",
+      "note": "F/Q4 beat: non-GAAP EPS $1.86 vs ~$1.73 est, revenue $2.04B"
+    },
+    "DELL": {
+      "confirmed": true,
+      "source": "issuer IR calendar + market-wrap preview, 11/24",
+      "note": "REPORTS AFTER TODAY'S CLOSE - fiscal Q3 FY27; consensus EPS ~$6.55-$6.62 on revenue ~$49.3B (AI-server revenue guided to ~$19B); call 4:30pm ET"
+    },
+    "ANT": {
+      "confirmed": true,
+      "source": "Reuters / Bloomberg, 11/24 06:15 ET",
+      "note": "Broke below its $83 IPO price in pre-market (as much as -7.3% to $81.28) - a post-IPO valuation unwind with no company-specific news; the 11/19 debut opened at $111.50"
+    },
+    "INTC": {
+      "confirmed": true,
+      "source": "Investing.com, 11/24 07:18 ET",
+      "note": "Post-rally profit-taking, not news: +16.34% on 11/23 on its first external 18A-P foundry customer plus Jensen Huang's return as Nvidia CEO; no Intel-specific news identified as the trigger"
+    },
+    "IREN": {
+      "confirmed": true,
+      "source": "Reuters, 11/24 (pre-market)",
+      "note": "Crypto-complex pullback - IREN fell over 4% with CRWV -5.4% and Nebius -4.3% as bitcoin slipped overnight"
+    },
+    "SNDK": {
+      "confirmed": true,
+      "source": "BlockBeats / marketwire, 11/24 06:09 ET",
+      "note": "Memory-sector unwind with the post-Huang chip pullback - Micron -7.1%, SK Hynix -5.8%, Western Digital -5.0%, Seagate -4.8%"
+    },
+    "NVDA": {
+      "confirmed": true,
+      "source": "stockanalysis.com / Reuters, 11/24 06:05 ET",
+      "note": "Giving back part of the record +31.48% session (Jensen Huang reinstated as Nvidia CEO, ~$1T of market value added); -5.6% pre-market on profit-taking"
+    }
+  },
+  "notes": [
+    "**The tape is one story, not twelve.** 2026-11-23 closed with the biggest single-day equity move of the year in AI (NVDA +31.48% on Jensen Huang's reinstatement as CEO, INTC +16.34%, SNDK +10.69%, IREN +23.86%), and 2026-11-24 pre-market is the give-back: the sector proxies read SMH -5.05%, XLK -3.39%, SPY -1.31%, IWM -0.96% against bitcoin -1.99% overnight. Every semiconductor and crypto name in the Focus book is a beta expression of that unwind, not a single-name event.",
+    "**The day's positive catalyst cluster is RETAIL EARNINGS, not tech.** DKS, ANF, DLTR, KSS, BURL, BBY and EMBC all reported before the open and all gapped up on beats. The ladder's top half is that cluster, and the Focus book contains none of it.",
+    "**The two biggest single-name moves on the ladder are NOT tech beta.** SHOE (Q3 miss plus a guidance cut to $0.20-$0.28 adj EPS against a $0.80 consensus) and INSM (Sanofi's $175/share cash acquisition) are idiosyncratic - the engine classifies both IDIOSYNCRATIC because no proxy sits within 1.5pp of either move.",
+    "**NVDA's published pre-market LOW is a bad tick, not a traded level.** The /info extended-trading low field reads $141.59 against a $165.05 close - it is stamped 08:34:58 ET, seconds before the pull - while the executed tape and TradingView's pre-market low both sit near the published gap. The published gap is the executed print; the low field carries a stale quote and should not be read as a traded level.",
+    "**DELL reports after today's close** (fiscal Q3 FY27, consensus EPS ~$6.55-$6.62 on ~$49.3B revenue, call 4:30pm ET) and is on the ladder lower pre-market - a position to hold INTO the catalyst, not a gap to chase.",
+    "**The tape is ~15 minutes behind the wall clock on every Focus name** (tape_lag_min 15.3-16.5 across the scanned names, with a single cached vintage served on several of them). The re-pull wave re-checked the decision-relevant names and moved 6 of 7 tapes; the numbers published here are the newest prints the sources returned.",
+    "**Cron #92's 08:30 ET pre-open checkpoint was used, not skipped** (`preopen-feed/2026-11-24-0830.md`, 209 priced records, 22 named catalysts). Its published mover board is micro-cap-dominated - 10 of its 14 explained movers are under $50M market cap - so it overlaps only ONE of today's ladder names, SHOE, whose catalyst it corroborates from the issuer's own 8-K (Item 2.02, Results of Operations, filed 11/24). The day's real ladder - the retail-earnings cluster and the AI pullback - is invisible to it because its liquidity floor excludes it.",
+    "**The setup verdict in `## Focus names that did not qualify` is mechanical, and for NVDA it understates the move.** The renderer labels any name with three or more stylists 'good setup that went nowhere', and NVDA is the only name with four stylists - but NVDA did not go nowhere, it fell 5.35% against the book (the sector's give-back, on a print too small to be a market). Read that line as 'the best setup on the list, and here is what it did', not as 'it was flat'.",
+    "**Tape coverage:** 12 of 12 Focus names priced, 0 failed. Every name in the scan came back with a cached vintage (`cache-hit`), so the burst of pulls could not see an older tape - the published lag is what measures it."
+  ],
+  "source_health": [
+    {"source": "web_search / issuer releases", "query": "per-ticker catalyst confirmation for the ladder and the Focus book", "status": "ok - 20 names confirmed from an issuer release or the wire", "role": "the catalysts"},
+    {"source": "preopen-feed/ (cron #92 08:30 ET pre-open checkpoint)", "query": "preopen-feed/2026-11-24-0830.md - 209 priced records, 15 published movers, 22 named catalysts", "status": "ok - used to corroborate the SHOE 8-K (Item 2.02, Results of Operations) catalyst; its mover board is micro-cap-dominated so it covers only 1 of today's ladder names", "role": "the overnight catalyst corroboration"}
+  ]
+}
