@@ -44,7 +44,7 @@ Both denominators are published because they say different things. Measured agai
 | Hang Seng | 22,316.26 | -0.30% | 22:17 | vs the prior close 22,383.74 |
 | Shanghai Composite | 3,551.50 | +0.35% | 22:17 | vs the prior close 3,538.95 |
 
-Tokyo was closed on Monday 23 November, so the Nikkei print is **Tuesday's session measured against Friday 20 November's close of 56,436.65** — the same close published in the 20 November brief, which is why the two sessions look like one continuous move. The Kospi's **+6.12%** is the strongest leg anywhere in the tape and is a semiconductor-complex move, not a market move: Korea is the most Nvidia-levered equity market in Asia. The Hang Seng is the one Asia index that did not confirm, and it is the one that trades the least AI hardware. **Read the Asia leg as a continuation of the AI trade, not as a broadening.**
+Tokyo was closed on Monday 23 November, so the Nikkei print is **Tuesday's session measured against Friday 20 November's close of 56,436.65** — the same close published in the 20 November brief, which is why the two sessions look like one continuous move. The Kospi's **+6.12%** is the strongest leg anywhere in the tape, and it is the leg most exposed to the same driver: Korea's index is the most semiconductor-heavy of the three, and the Hang Seng — the one that trades the least AI hardware — did not confirm, printing -0.30%. **Read the Asia leg as a continuation of the AI trade, not as a broadening.**
 
 ### Economic calendar
 
