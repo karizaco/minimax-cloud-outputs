@@ -2,7 +2,7 @@
 date: 2026-11-24
 cron: 19-earnings-reminder-daily
 fire_time_et: 06:00
-snapshot_et: 06:21
+snapshot_et: 06:05
 source: EarningsWhispers earnings calendar + TradingView scanner + Nasdaq earnings calendar
 primary_source: TradingView scanner (market cap, issuer-level USD) | EarningsWhispers (EPS est, revenue est, release time)
 status: ok
