@@ -1,0 +1,32 @@
+{
+  "_schema": 2,
+  "_note": "cron #10 intraday breadth snapshot \u2014 flat regime schema, see SKILL.md \u00a73.5",
+  "size_cut_pct": 50,
+  "uncertainty": true,
+  "late_cycle": false,
+  "breadth_pct_spx": 29.08,
+  "index_below_20sma": true,
+  "vix": 26.45,
+  "vix3m": 25.54,
+  "atr_extensions": {
+    "IWM": {
+      "extension_pct": -4.35
+    },
+    "QQQ": {
+      "extension_pct": -8.28
+    },
+    "QQQE": {
+      "extension_pct": -5.98
+    },
+    "RSP": {
+      "extension_pct": -0.9
+    },
+    "SPY": {
+      "extension_pct": -4.89
+    }
+  },
+  "_vix_source": "Yahoo chart API (^VIX / ^VIX3M) \u2014 FALLBACK: the Cboe delayed-quote CDN answered HTTP 403 (Cloudflare) from this egress; both symbols read from the SAME 5m bar, pinned to the fire day and clock",
+  "_vix_quote_time_et": "2026-11-24 13:48:31 ET",
+  "_vix_session_mode": "regular hours \u2014 live print (Yahoo 5m bar pinned to the fire clock; it is the latest bar the feed carries for that session)",
+  "_data_date": "2026-11-23"
+}
