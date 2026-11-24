@@ -1,0 +1,122 @@
+{
+  "us": [
+    {
+      "name": "DKS",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-24",
+      "event_freshness": 0,
+      "premarket_pct": 17.498316750205742
+    },
+    {
+      "name": "EMBC",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-24",
+      "event_freshness": 0,
+      "premarket_pct": 13.141862489120973
+    },
+    {
+      "name": "ANF",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-24",
+      "event_freshness": 0,
+      "premarket_pct": 11.925952296190816
+    },
+    {
+      "name": "ADI",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-24",
+      "event_freshness": 0,
+      "premarket_pct": -9.44158415841584
+    },
+    {
+      "name": "KSS",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-24",
+      "event_freshness": 0,
+      "premarket_pct": 8.726415094339629
+    },
+    {
+      "name": "DLTR",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-24",
+      "event_freshness": 0,
+      "premarket_pct": 7.476635514018697
+    },
+    {
+      "name": "BURL",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-24",
+      "event_freshness": 0,
+      "premarket_pct": 6.306344616431371
+    },
+    {
+      "name": "BBY",
+      "tag": "PRE_GAP",
+      "last_earnings": "2026-11-24",
+      "event_freshness": 0,
+      "premarket_pct": 6.185567010309279
+    }
+  ],
+  "eu": [
+    {
+      "name": "MUR",
+      "chg": -9.35
+    },
+    {
+      "name": "NDA",
+      "chg": -11.66
+    },
+    {
+      "name": "CRI",
+      "chg": -5.49
+    }
+  ],
+  "au": [
+    {
+      "name": "SHV",
+      "chg": 17.07
+    },
+    {
+      "name": "LOV",
+      "chg": 10.58
+    }
+  ],
+  "apac": [
+    {
+      "name": "APLAPOLLO",
+      "market": "india",
+      "chg": -21.39
+    },
+    {
+      "name": "BN4",
+      "market": "singapore",
+      "chg": -4.64
+    },
+    {
+      "name": "FBU",
+      "market": "newzealand",
+      "chg": 4.91
+    }
+  ],
+  "budget": {
+    "US": 8,
+    "EU": 3,
+    "AU": 2,
+    "APAC": 3
+  },
+  "budget_total": 16,
+  "budget_cap": 16,
+  "budget_rule": "the US slice covers the rows whose earnings event can still explain today's move (fresh = the report is dated on the scan date), the EU/AU/APAC floors are never squeezed, and the leftover goes to the region with the most unexplained rows",
+  "earnings_calendar_rows": 262,
+  "asx_announcement_rows": 6,
+  "asx_fresh": [
+    "ARX",
+    "BPG",
+    "ERD",
+    "MPP",
+    "PEB",
+    "SHV"
+  ],
+  "earnings_field_stale_rows": 2,
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-24.md"
+}
