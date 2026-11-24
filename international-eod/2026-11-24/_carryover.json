@@ -1,0 +1,572 @@
+{
+ "au": [
+  {
+   "ticker": "ASX:MGH",
+   "name": "MAAS Group Holdings Ltd.",
+   "close": "3.27",
+   "volume": "5928992",
+   "change_pct": "-6.571428571428571",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "ASX:VAU",
+   "name": "Vault Minerals Limited",
+   "close": "5.52",
+   "volume": "56524954",
+   "change_pct": "-4.000000000000008",
+   "last_trade_date": "2026-11-23"
+  }
+ ],
+ "jp": [],
+ "tw": [
+  {
+   "ticker": "TWSE:1312A",
+   "name": "Grand Pacific Petrochemical Corp Pfd Shs A",
+   "close": "20.6",
+   "volume": "7900",
+   "change_pct": "-2.1377672209026097",
+   "last_trade_date": "2026-11-23"
+  }
+ ],
+ "ca": [
+  {
+   "ticker": "TSX:AQN.PR.D",
+   "name": "Algonquin Power & Utilities Corp. Cum Pfd Series D",
+   "close": "25.8",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:BCE.PR.H",
+   "name": "BCE Inc. Floating Rate Cum Red 1st Pfd Registered Series AH",
+   "close": "21.16",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-20"
+  },
+  {
+   "ticker": "TSX:BCE.PR.L",
+   "name": "BCE Inc. Cum Red Pfd Shs Series -AL- Fltg Rt",
+   "close": "21.51",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-20"
+  },
+  {
+   "ticker": "TSX:BN.PF.F",
+   "name": "Brookfield Corporation Cum Red Pref Class A Series 40",
+   "close": "24.95",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:BN.PR.T",
+   "name": "Brookfield Corporation Cum Pref Registered Shs -A- Series -26-",
+   "close": "23.08",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:CU.PR.D",
+   "name": "Canadian Utilities Ltd Cum Red Second Pfd Shs Series -AA-",
+   "close": "23.18",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:CU.PR.G",
+   "name": "Canadian Utilities Ltd Cum Red Second Pfd Shs Series -DD-",
+   "close": "21.47",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:CU.PR.H",
+   "name": "Canadian Utilities Limited 5 1/4 % Cum Red Second Pfd Shs Series -EE-",
+   "close": "23.8",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:EMA.PR.A",
+   "name": "Emera Incorporated Cum Reset 1st Pfd Shs Series A",
+   "close": "22.01",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-20"
+  },
+  {
+   "ticker": "TSX:EMA.PR.C",
+   "name": "Emera Incorporated Cum Reset 1st Pfd Shs Series C",
+   "close": "25.06",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:EMA.PR.H",
+   "name": "Emera Incorporated Cum Conv Red Perp Pfd Registered Shs Series -H- Reg S",
+   "close": "25.8",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:EMA.PR.L",
+   "name": "Emera Incorporated Cum Red Pfd Registered Shs Series L",
+   "close": "20.15",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:ENB.PR.G",
+   "name": "Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series G",
+   "close": "23.75",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-19"
+  },
+  {
+   "ticker": "TSX:ENB.PR.I",
+   "name": "Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series I",
+   "close": "22.73",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "TSX:ENB.PR.Z",
+   "name": "Enbridge Inc. Cum Red Floating Rate Pref Registered Shs Series 4",
+   "close": "22.8",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-19"
+  },
+  {
+   "ticker": "TSX:FFH.U",
+   "name": "Fairfax Financial Holdings Limited",
+   "close": "1930",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "TSX:FTS.PR.I",
+   "name": "Fortis Inc. Cum Red 1st Pfd Shs Series I Fltg Rt",
+   "close": "19.33",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-20"
+  },
+  {
+   "ticker": "TSX:MFC.PR.M",
+   "name": "Manulife Financial Corp Non Cum Pfd Registered Shs 1 Series -17-",
+   "close": "25.07",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:POW.PR.B",
+   "name": "Power Corporation of Canada 5.35 % Non Cum Pfd Shs Series B",
+   "close": "23.12",
+   "volume": "1200",
+   "change_pct": "-0.12958963282936323",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:PPL.PR.Q",
+   "name": "Pembina Pipeline Corp Cum Conv Red Perp Pfd Registered Shs A Series -17-",
+   "close": "25.7",
+   "volume": "2100",
+   "change_pct": "-0.07776049766718342",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:RFA.PR.I",
+   "name": "RFA Financial Inc. Pfd Shs Series I",
+   "close": "22.72",
+   "volume": "6026",
+   "change_pct": "-1.4316702819956695",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:TA.PR.E",
+   "name": "TransAlta Corporation Cum First Pfd Shs Series B",
+   "close": "20.91",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:TA.PR.G",
+   "name": "TransAlta Corp Floating Rate Cum 1st Pfd Registered Shs Series D",
+   "close": "24.36",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "TSX:TRP.PR.H",
+   "name": "TC Energy Corporation Cum Red 1st Pfd Registered Shs Series 4",
+   "close": "19.1",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "TSX:TRP.PR.L",
+   "name": "TC Energy Corporation Cum Red 1st Pfd Registered Shs Series -10-",
+   "close": "23.29",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "TSX:WFC",
+   "name": "Wall Financial Corporation",
+   "close": "20.3",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  }
+ ],
+ "eu-de": [],
+ "eu-fr": [
+  {
+   "ticker": "EURONEXT:ACMC",
+   "name": "Accor SA",
+   "close": "55.1",
+   "volume": "100",
+   "change_pct": "4.514415781487107",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "EURONEXT:CBDG",
+   "name": "Compagnie du Cambodge SA",
+   "close": "94",
+   "volume": "1",
+   "change_pct": "-1.0526315789473684",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "EURONEXT:FGRMC",
+   "name": "Eiffage SA",
+   "close": "116.85",
+   "volume": "321",
+   "change_pct": "0.3865979381443201",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "EURONEXT:MLPLC",
+   "name": "Placoplatre SA",
+   "close": "600",
+   "volume": "3",
+   "change_pct": "-6.25",
+   "last_trade_date": "2026-11-23"
+  }
+ ],
+ "eu-it": [
+  {
+   "ticker": "MIL:NOVA",
+   "name": "Novamarine S.P.A.",
+   "close": "8.15",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "MIL:PWS",
+   "name": "Powersoft S.p.A.",
+   "close": "13.55",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "MIL:YRM",
+   "name": "Rosetti Marino S.p.A.",
+   "close": "244",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-20"
+  }
+ ],
+ "eu-es": [
+  {
+   "ticker": "BME:CEV",
+   "name": "Compania Espanola de Viviendas en Alquiler, S.A.",
+   "close": "8.5",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "BME:GGC",
+   "name": "General de Galerias Comerciales SA",
+   "close": "161",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "BME:STNA",
+   "name": "Santa Ana Global Enterprises SA",
+   "close": "15.4",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "BME:YADR",
+   "name": "Adriano Care SOCIMI SA",
+   "close": "9.95",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-16"
+  },
+  {
+   "ticker": "BME:YADV",
+   "name": "ADVERO Properties Socimi SA",
+   "close": "13.8",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "BME:YAI1",
+   "name": "All Iron Re I Socimi SA",
+   "close": "13",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "BME:YATO",
+   "name": "Atom Hoteles SOCIMI SA",
+   "close": "15.8",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "BME:YCPS",
+   "name": "Castellana Properties Socimi SA",
+   "close": "9.5",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "BME:YEPSA",
+   "name": "Emperador Properties SOCIMI SA",
+   "close": "10.6",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "BME:YFID",
+   "name": "Fidere Patrimonio Socimi SAU",
+   "close": "37.4",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "BME:YGMP",
+   "name": "Gmp Property SOCIMI SA",
+   "close": "62",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "BME:YGOP",
+   "name": "GOP Properties SOCIMI SA",
+   "close": "19",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "BME:YHSP",
+   "name": "Hispanotels Inversiones SOCIMI SA",
+   "close": "8.6",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-18"
+  },
+  {
+   "ticker": "BME:YIBI",
+   "name": "IBI LION Socimi S.A.",
+   "close": "1.31",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "BME:YLFG",
+   "name": "LAFINCA GLOBAL ASSETS SOCIMI, S.A.",
+   "close": "4.2",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "BME:YORE",
+   "name": "Olimpo Real Estate SOCIMI, S.A.",
+   "close": "0.95",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "BME:YTRI",
+   "name": "Trivium Real Estate Socimi SA",
+   "close": "38.4",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "BME:YTRM",
+   "name": "Torimbia SOCIMI SA",
+   "close": "26.6",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "BME:YTST",
+   "name": "Testa Residencial Socimi SA",
+   "close": "3.3",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "BME:YVCP",
+   "name": "Veracruz Properties Socimi SA",
+   "close": "30.8",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "BME:YVIT",
+   "name": "Vitruvio Real Estate SOCIMI S.A.",
+   "close": "18.3",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "BME:YZBL",
+   "name": "Zambal Spain SOCIMI SA",
+   "close": "0.925",
+   "volume": "0",
+   "change_pct": "0",
+   "last_trade_date": "2026-11-19"
+  }
+ ],
+ "eu-nl": [],
+ "eu-be": [
+  {
+   "ticker": "EURONEXT:ROU",
+   "name": "Roularta Media Group NV",
+   "close": "11.1",
+   "volume": "1712",
+   "change_pct": "-2.2026431718061676",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "EURONEXT:SPA",
+   "name": "SPADEL S.A.",
+   "close": "332",
+   "volume": "90",
+   "change_pct": "0.6060606060606061",
+   "last_trade_date": "2026-11-23"
+  }
+ ],
+ "eu-at": [
+  {
+   "ticker": "VIE:BHD",
+   "name": "Burgenland Holding AG",
+   "close": "83",
+   "volume": "4",
+   "change_pct": "-1.7751479289940828",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "VIE:FKA",
+   "name": "Frauenthal Holding AG",
+   "close": "21.4",
+   "volume": "711",
+   "change_pct": "-0.925925925925939",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "VIE:MAN",
+   "name": "Josef Manner & Comp. AG",
+   "close": "97",
+   "volume": "60",
+   "change_pct": "-4.901960784313726",
+   "last_trade_date": "2026-11-23"
+  }
+ ],
+ "eu-pt": [
+  {
+   "ticker": "EURONEXT:SCP",
+   "name": "Sporting Clube de Portugal Futebol SAD",
+   "close": "0.935",
+   "volume": "2120",
+   "change_pct": "1.630434782608697",
+   "last_trade_date": "before 2026-11-16"
+  },
+  {
+   "ticker": "EURONEXT:SCT",
+   "name": "TOYOTA CAETANO PORTUGAL",
+   "close": "6.7",
+   "volume": "380",
+   "change_pct": "-8.219178082191776",
+   "last_trade_date": "before 2026-11-16"
+  }
+ ],
+ "eu-ie": [],
+ "eu-fi": [],
+ "eu-dk": [],
+ "eu-gr": [
+  {
+   "ticker": "ATHEX:FLEXO",
+   "name": "Flexopack SA Plastics",
+   "close": "7.9",
+   "volume": "250",
+   "change_pct": "1.282051282051289",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "ATHEX:MEVA",
+   "name": "MEVACO S.A.",
+   "close": "6.1",
+   "volume": "2",
+   "change_pct": "1.328903654485051",
+   "last_trade_date": "2026-11-23"
+  },
+  {
+   "ticker": "ATHEX:TREK",
+   "name": "Trek Development of Infrastructures & Services S.A.",
+   "close": "3.77",
+   "volume": "512",
+   "change_pct": "-0.5277044854881272",
+   "last_trade_date": "2026-11-23"
+  }
+ ]
+}
