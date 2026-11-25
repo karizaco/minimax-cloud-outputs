@@ -1,7 +1,7 @@
 {
  "date": "2026-11-25",
- "generated_at": "2026-11-25T21:34:51Z",
- "provenance": "TradingView per-country scanners (issuer-country filtered, one complete pull per region, 16/16) plus the America scanner for the US-listing map and the cross-venue cap check; index levels from the TradingView index scanner and the ATHEX's own print; FX from Frankfurter (rate date 2026-11-24) with TWD from open.er-api",
+ "generated_at": "2026-11-25T21:36:28Z",
+ "provenance": "TradingView per-country scanners (issuer-country filtered, one complete pull per region, 16/16) plus the America scanner for the US-listing map and the cross-venue cap check; index levels from the TradingView index scanner and the ATHEX's own print; FX from Frankfurter (rate date 2026-11-25) with TWD from open.er-api",
  "market_cap_unit": "USD",
  "price_currency": "listing (the `currency` column)",
  "change_pct_unit": "percent",
@@ -166,7 +166,7 @@
    },
    "carryover_rows": 0,
    "off_official_rows": 0,
-   "mover_rows": 8,
+   "mover_rows": 18,
    "below_gate_rows": 3,
    "no_catalyst_rows": 5,
    "floor_usd": 300000000,
@@ -185,14 +185,24 @@
     "TSE:9984",
     "TSE:5803",
     "TSE:6976",
-    "TSE:6323"
-   ],
-   "no_catalyst": [
+    "TSE:6323",
     "TSE:6871",
     "TSE:6981",
     "TSE:285A",
     "TSE:5801",
-    "TSE:3436"
+    "TSE:3436",
+    "TSE:6324",
+    "TSE:6857",
+    "TSE:8035",
+    "TSE:3110",
+    "TSE:6278"
+   ],
+   "no_catalyst": [
+    "TSE:6890",
+    "TSE:6920",
+    "TSE:6590",
+    "TSE:7729",
+    "TSE:6787"
    ],
    "below_gate": [
     "TSE:2388",
@@ -214,7 +224,7 @@
    },
    "carryover_rows": 2,
    "off_official_rows": 0,
-   "mover_rows": 6,
+   "mover_rows": 9,
    "below_gate_rows": 3,
    "no_catalyst_rows": 5,
    "floor_usd": 200000000,
@@ -230,14 +240,17 @@
     "TWSE:2454",
     "TWSE:2880",
     "TWSE:2337",
-    "TWSE:2303"
+    "TWSE:2303",
+    "TPEX:5289",
+    "TPEX:3260",
+    "TWSE:3443"
    ],
    "no_catalyst": [
-    "TPEX:7861",
-    "TPEX:7924",
     "TWSE:6949",
-    "TPEX:5289",
-    "TPEX:3260"
+    "TWSE:2441",
+    "TWSE:8021",
+    "TWSE:6770",
+    "TWSE:3030"
    ],
    "below_gate": [
     "TPEX:7595",
@@ -259,9 +272,9 @@
    },
    "carryover_rows": 19,
    "off_official_rows": 0,
-   "mover_rows": 8,
+   "mover_rows": 9,
    "below_gate_rows": 3,
-   "no_catalyst_rows": 1,
+   "no_catalyst_rows": 0,
    "floor_usd": 200000000,
    "min_volume": null,
    "file": "ca.csv",
@@ -278,11 +291,10 @@
     "TSX:DSV",
     "TSX:LUNR",
     "TSX:AYA",
-    "TSX:EDR"
-   ],
-   "no_catalyst": [
+    "TSX:EDR",
     "TSX:SGD"
    ],
+   "no_catalyst": [],
    "below_gate": [
     "TSXV:NBLC",
     "CSE:STGX",

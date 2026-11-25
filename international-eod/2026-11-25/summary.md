@@ -4,7 +4,7 @@
 
 - **The AI trade unwound on all 16 boards at once.** US October core PCE came in at **3.3% y/y, a tenth above consensus**, alongside a firm jobs print, and the Philadelphia Semiconductor Index fell **7.9%** overnight; the result was a single, synchronised risk-off session: the **TAIEX -4.80% at 38,195.43** (its sixth-largest point loss, and the second-largest intraday point loss on record at 36,681.90), the **Nikkei -2.78% at 57,011.62**, the **DAX -1.26% at 24,702.13**, the **FTSE MIB -1.81%**, the **ATX -3.10%** and the **ATHEX -2.77% at 2,454.94** (its steepest fall in 8.5 years), while the **ASX 200 slipped only 0.39% to 8,692.40** on hot Australian CPI and the **S&P/TSX actually closed +0.64% at 34,179.99** after the metals bounced off their lows into the bell. **4,243 names were published across all 16 boards**; every board traded and none was closed.
 - **The one consequential move was the semiconductor unwind, and a US trader can reach both sides of it.** Japanese and Taiwanese hardware names led the world lower - **SoftBank -14.83%** (ADR), **Fujikura -14.70%** (ADR), **Taiyo Yuden -14.55%** (ADR), **IBIDEN -16.01%** (OTC), **Kokusai Electric -17.28%** - against **MediaTek -10.00%** (limit-down), **Winbond -10.00%**, **Transcend -10.00%**, **Macronix -10.00%** and **United Microelectronics -9.99%** in Taiwan, while Europe's equipment names fell again: **ASM International -7.81%** (ADR), **Infineon -6.49%** (ADR), **ASML -5.79%** (ADR) and **BE Semiconductor -5.56%** (ADR), with **ROCKWOOL -15.64%** (ADR) the worst European mover of the day on a guidance cut. The two stand-out non-tech names are **Rémy Cointreau +13.13%** (ADR, results and raised targets) and **Bureau Veritas +6.60%** (ADR, a reported Advent takeover approach).
-- **The caveat that changes how to read it: `market_cap` is in USD while `open`/`high`/`low`/`close` are in the listing currency** (the `currency` column says which), and Taiwan's **-10.00% prints are limit prices, not calculated moves** - 392 Taiwanese stocks touched limit-down, so the TAIEX's -4.80% is a floor, not a valuation. Two further facts change the numbers themselves: **the TSX's +0.64% close is an intraday reversal**, not a session that was green (Reuters had it down 1.67% at 10:24 a.m. ET as gold hit a 14-month low), and **one row, `TPEX:7861` -16.21%, prints outside Taiwan's +/-10% band** - the same limit-band artefact the archive flagged on this name at +32.78% yesterday, kept out of the published tables.
+- **The caveat that changes how to read it: `market_cap` is in USD while `open`/`high`/`low`/`close` are in the listing currency** (the `currency` column says which), and Taiwan's **-10.00% prints are limit prices, not calculated moves** - 392 Taiwanese stocks touched limit-down, so the TAIEX's -4.80% is a floor, not a valuation. Two further facts change the numbers themselves: **the TSX's +0.64% close is an intraday reversal**, not a session that was green (Reuters had it down 1.67% at 10:24 a.m. ET as gold hit a 14-month low), and **two rows, `TPEX:7861` -16.21% and `TPEX:7924` -11.25%, print outside Taiwan's +/-10% band** - the limit-band artefact the archive flagged on the first of them at +32.78% yesterday, kept out of the published tables.
 
 ## Market context
 
@@ -80,7 +80,7 @@ The index level and the typical name disagree in both directions today, which is
 
 ## Top movers
 
-Liquid names (volume >= 100,000, market cap at or above the region's floor) whose move cleared +/-5%, with the driver that was actually sourced, largest absolute move first within the region. A row with no sourced driver is not here - it is under `## No catalyst`. Each region also publishes its single biggest liquid mover even when it did not clear +/-5%, so no region is silent; a region with no name at all says so instead of publishing an unsourced row. Taiwan and Japan each had far more qualifying names than a table can carry: the tables publish the largest movers with a sourced driver, and the remainder stays in the CSVs.
+Liquid names (volume >= 100,000, market cap at or above the region's floor) whose move cleared +/-5%, with the driver that was actually sourced, largest absolute move first within the region. A row whose print falls outside its venue's daily price band is not a move and is kept out of every published table (two Taiwanese rows, disclosed in the caveats). A row with no sourced driver is not here - it is under `## No catalyst`. Each region also publishes its single biggest liquid mover even when it did not clear +/-5%, so no region is silent; a region with no name at all says so instead of publishing an unsourced row. Taiwan and Japan each had far more qualifying names than a table can carry: the tables publish the largest movers with a sourced driver, and the remainder stays in the CSVs.
 
 ### au
 
@@ -107,6 +107,16 @@ Liquid names (volume >= 100,000, market cap at or above the region's floor) whos
 | `TSE:5803` | Fujikura Ltd | **-14.70%** | 2062.5 JPY | 51,111,200 | $26.64B | ADR | Fell 14.70% to Y2,062.5 - a named Fujikura in the AI-hardware rout (Il Sole 24 Ore Radiocor, 25 Nov; RTTNews via finanzen.at, 25 Nov) |
 | `TSE:6976` | Taiyo Yuden Co., Ltd. | **-14.55%** | 5874 JPY | 16,490,600 | $5.74B | ADR | Fell 14.55% to Y5,874 - a capacitor maker named among the day's biggest Nikkei decliners (Trading Economics, 25 Nov; MarketScreener, 25 Nov) |
 | `TSE:6323` | Rorze Corporation | **-14.48%** | 2639 JPY | 3,064,900 | $3.41B | none | Fell 14.48% to Y2,639 - a semiconductor-equipment name in the same complex (Investing.com Japan top losers, 25 Nov; MarketScreener, 25 Nov) |
+| `TSE:6871` | Micronics Japan Co., Ltd. | **-14.33%** | 8179 JPY | 1,310,100 | $2.30B | none | Fell 14.33% to Y8,179 - no company-specific release was found for 25 November; it fell with the Japanese AI-hardware complex (Investing.com Japan top losers, 25 Nov) |
+| `TSE:6981` | Murata Manufacturing Co., Ltd. | **-14.20%** | 4633 JPY | 26,678,800 | $62.51B | ADR | Fell 14.20% to Y4,633 - a named Murata Manufacturing in the AI-hardware rout, a close and a change the scanner and Investing.com's Japan table agree on exactly (Investing.com Japan top losers, 25 Nov; Trading Economics, 25 Nov) |
+| `TSE:285A` | Kioxia Holdings Corporation | **-14.18%** | 6895 JPY | 121,196,900 | $83.03B | OTC | Fell 14.18% to Y6,895 - a named Kioxia, the memory name most often cited in the AI unwind (Investing.com Japan top losers, 25 Nov; Trading Economics, 25 Nov) |
+| `TSE:5801` | Furukawa Electric Co., Ltd. | **-13.48%** | 1563.5 JPY | 27,041,600 | $7.98B | ADR | Fell 13.48% to Y1,563.5 - a named Furukawa Electric among the day's major Japanese losers (Investing.com Japan top losers, 25 Nov; RTTNews via finanzen.at, 25 Nov) |
+| `TSE:3436` | SUMCO Corporation | **-13.34%** | 1760.5 JPY | 11,066,500 | $4.47B | OTC | Fell 13.34% to Y1,760.5 - a named SUMCO in the semiconductor-material complex (Investing.com Japan top losers, 25 Nov; RTTNews via finanzen.at, 25 Nov) |
+| `TSE:6324` | Harmonic Drive Systems Inc. | **-13.07%** | 3665 JPY | 2,057,700 | $2.55B | OTC | Fell 13.07% to Y3,665 - a precision-motion name in the Japanese machinery complex (Investing.com Japan top losers, 25 Nov; RTTNews via finanzen.at, 25 Nov) |
+| `TSE:6857` | Advantest Corp. | **-12.94%** | 23745 JPY | 20,990,800 | $119.42B | ADR | Fell 12.94% to Y23,745 - a named Advantest, the semiconductor test-equipment heavyweight in the AI unwind (Investing.com Japan top losers, 25 Nov; Il Sole 24 Ore Radiocor, 25 Nov) |
+| `TSE:8035` | Tokyo Electron Ltd. | **-12.53%** | 7825 JPY | 22,102,900 | $130.65B | ADR | Fell 12.53% to Y7,825 - a named Tokyo Electron, the semiconductor-equipment heavyweight in the same unwind (Investing.com Japan top losers, 25 Nov; RTTNews via finanzen.at, 25 Nov) |
+| `TSE:3110` | Nitto Boseki Co., Ltd. | **-12.47%** | 2099.5 JPY | 4,691,700 | $2.82B | OTC | Fell 12.47% to Y2,099.5 - a process-industry materials name in the same complex (Investing.com Japan top losers, 25 Nov; RTTNews via finanzen.at, 25 Nov) |
+| `TSE:6278` | Union Tool Co. | **-12.27%** | 9220 JPY | 578,200 | $1.29B | none | Fell 12.27% to Y9,220 - a cutting-tool maker in the Japanese machinery complex (Investing.com Japan top losers, 25 Nov) |
 
 ### tw
 
@@ -118,6 +128,9 @@ Liquid names (volume >= 100,000, market cap at or above the region's floor) whos
 | `TWSE:2880` | Hua Nan Financial Holdings Co., Ltd. | **-10.00%** | 42.75 TWD | 26,000,800 | $20.28B | none | Fell 10.00% to NT$42.75 - locked at its daily limit-down (Taiwan News, 25 Nov) |
 | `TWSE:2337` | Macronix International Co., Ltd. | **-10.00%** | 61.2 TWD | 43,607,577 | $4.08B | none | Fell 10.00% to NT$61.20 - the worst main-board performer of the session, locked at its daily limit-down (Investing.com, 25 Nov) |
 | `TWSE:2303` | United Microelectronics Corp. | **-9.99%** | 87.4 TWD | 200,354,788 | $36.99B | ADR | Fell 9.99% - effectively the daily limit-down, a foundry name in the AI unwind (CNA via Focus Taiwan, 25 Nov; coinotag, 25 Nov) |
+| `TPEX:5289` | Innodisk Corp. | **-9.96%** | 768 TWD | 2,353,413 | $2.55B | none | Fell 9.96% to NT$768 - a memory and industrial-storage name locked near its daily limit-down with the memory complex (Investing.com Taiwan close, 25 Nov; TrendForce DRAM Market Bulletin, 25 Nov) |
+| `TPEX:3260` | ADATA Technology Co., Ltd. | **-9.96%** | 244 TWD | 7,048,848 | $2.93B | none | Fell 9.96% to NT$244 - a memory and storage name near its daily limit-down (Investing.com Taiwan close, 25 Nov; TrendForce DRAM Market Bulletin, 25 Nov) |
+| `TWSE:3443` | Global Unichip Corp. | **-9.95%** | 5070 TWD | 897,200 | $22.92B | none | Fell 9.95% to NT$5,070 - an AI-chip designer near its daily limit-down with the AI complex (CNA via Focus Taiwan, 25 Nov; Taiwan News, 25 Nov) |
 
 ### ca
 
@@ -131,6 +144,7 @@ Liquid names (volume >= 100,000, market cap at or above the region's floor) whos
 | `TSX:LUNR` | LunR Royalties Corp | **+5.44%** | 13.56 CAD | 191,723 | $1.09B | OTC | Rose 5.44% to C$13.56 - a royalty company, in the precious-metals and mining bounce into the close (MarketScreener Canada, 25 Nov) |
 | `TSX:AYA` | Aya Gold & Silver Inc. | **+5.22%** | 28.2 CAD | 1,194,215 | $2.71B | NASDAQ | Rose 5.22% to C$28.20 - gold and silver, in the metals bounce off the lows into the close (Reuters via Marketscreener, 25 Nov) |
 | `TSX:EDR` | Endeavour Silver Corp. | **+5.20%** | 8.7 CAD | 1,258,461 | $1.72B | NYSE | Rose 5.20% to C$8.70 - a silver and gold miner, in the same precious-metals bounce (Reuters via Marketscreener, 25 Nov) |
+| `TSX:SGD` | Snowline Gold Corp. | **+5.12%** | 11.5 CAD | 299,050 | $1.45B | OTC | Rose 5.12% to C$11.50 - gold, in the precious-metals bounce off a 14-month low into the close (Reuters via Marketscreener, 25 Nov; Yahoo Finance GC=F, 25 Nov) |
 
 ### eu-de
 
@@ -297,27 +311,21 @@ Names that moved with no sourced driver - no company release, no filing, no anal
 
 | Ticker | Name | Change | Close | Volume | Mkt cap (USD) |
 |---|---|---|---|---|---|
-| `TSE:6871` | Micronics Japan Co., Ltd. | **-14.33%** | 8179 JPY | 1,310,100 | $2.30B |
-| `TSE:6981` | Murata Manufacturing Co., Ltd. | **-14.20%** | 4633 JPY | 26,678,800 | $62.51B |
-| `TSE:285A` | Kioxia Holdings Corporation | **-14.18%** | 6895 JPY | 121,196,900 | $83.03B |
-| `TSE:5801` | Furukawa Electric Co., Ltd. | **-13.48%** | 1563.5 JPY | 27,041,600 | $7.98B |
-| `TSE:3436` | SUMCO Corporation | **-13.34%** | 1760.5 JPY | 11,066,500 | $4.47B |
+| `TSE:6890` | Ferrotec Corporation | **-11.87%** | 5863 JPY | 3,256,900 | $2.25B |
+| `TSE:6920` | Lasertec Corp. | **-11.67%** | 29325 JPY | 4,515,400 | $18.68B |
+| `TSE:6590` | Shibaura Mechatronics Corp. | **-11.50%** | 2255 JPY | 1,140,600 | $1.10B |
+| `TSE:7729` | Tokyo Seimitsu Co., Ltd | **-11.38%** | 10750 JPY | 662,300 | $3.13B |
+| `TSE:6787` | Meiko Electronics Co., Ltd. | **-11.34%** | 7740 JPY | 2,642,500 | $2.88B |
 
 ### tw
 
 | Ticker | Name | Change | Close | Volume | Mkt cap (USD) |
 |---|---|---|---|---|---|
-| `TPEX:7861` | Bellwether Electronic Corp. | **-16.21%** | 672 TWD | 291,378 | $1.57B |
-| `TPEX:7924` | TLC BioSciences Corp | **-11.25%** | 319.5 TWD | 280,799 | $1.46B |
 | `TWSE:6949` | PELL Bio-Med Technology Co Ltd | **-9.98%** | 36.55 TWD | 6,022,498 | $1.62B |
-| `TPEX:5289` | Innodisk Corp. | **-9.96%** | 768 TWD | 2,353,413 | $2.55B |
-| `TPEX:3260` | ADATA Technology Co., Ltd. | **-9.96%** | 244 TWD | 7,048,848 | $2.93B |
-
-### ca
-
-| Ticker | Name | Change | Close | Volume | Mkt cap (USD) |
-|---|---|---|---|---|---|
-| `TSX:SGD` | Snowline Gold Corp. | **+5.12%** | 11.5 CAD | 299,050 | $1.45B |
+| `TWSE:2441` | Greatek Electronics, Inc. | **-9.95%** | 92.3 TWD | 3,881,548 | $1.77B |
+| `TWSE:8021` | Topoint Technology Co., Ltd. | **-9.94%** | 244.5 TWD | 2,235,890 | $1.22B |
+| `TWSE:6770` | Powerchip Semiconductor Manufacturing Corp. | **-9.94%** | 48 TWD | 95,163,169 | $7.63B |
+| `TWSE:3030` | Test Research, Inc. | **-9.94%** | 208.5 TWD | 2,135,883 | $1.66B |
 
 ## Method, source health & caveats
 
@@ -352,7 +360,7 @@ Names that moved with no sourced driver - no company release, no filing, no anal
 
 - **The unit convention.** `market_cap` is **USD**; `open`/`high`/`low`/`close` are in the **listing currency** named in the `currency` column. A cap and a price in one row are therefore in two different currencies, by contract.
 - **Taiwan's limit prices are not calculated moves.** 392 Taiwanese stocks touched their daily limit-down on 25 November, and the -10.00% prints in the TAIEX tables are **the floor of the band**, not a valuation. The TAIEX's -4.80% is therefore partly a floor, not a measured decline.
-- **The limit-band class is live on one published row, and it is the same name as yesterday.** `TPEX:7861` (Bellwether Electronic) prints **-16.21%** - outside Taiwan's +/-10% band - and it printed **+32.78%** yesterday. Its implied prior (NT$802.0) reconciles exactly with its 24 November close of NT$802, so it is not a stale print, but no price-basis explanation was found and no company-specific release was located. It is kept out of every published table and disclosed here.
+- **The limit-band class is live on two rows, and both are kept out of every published table.** `TPEX:7861` (Bellwether Electronic) prints **-16.21%** - outside Taiwan's +/-10% band - and it printed **+32.78%** yesterday; `TPEX:7924` (TLC BioSciences) prints **-11.25%**, also outside the band. The first one's implied prior (NT$802.0) reconciles exactly with its 24 November close of NT$802, so it is not a stale print, but no price-basis explanation was found and no company-specific release was located for either. Both stay in the CSVs with the source's own field and are disclosed here rather than published as moves.
 - **The TSX's +0.64% close is an intraday reversal, not a green session.** Reuters had the index **down 1.67% at 33,393.08 at 10:24 a.m. ET** as spot gold broke below $3,500 to a 14-month low and silver slid 6.2%; it closed **up 217.69 points at 34,179.99** after the metals bounced off their lows into the bell. A reader who takes the Canadian session as “risk-on” will misread the gold and silver miners’ +5% to +7% closes, which are a bounce from a 14-month low, not a new bid.
 - **The macro driver was a hot US inflation print, not a company event.** US October core PCE came in at **3.3% y/y against a 3.2% consensus** (up from 3.1%), alongside a firm jobs print, and the Philadelphia Semiconductor Index fell **7.9%** overnight. US markets were closed on Thursday for Thanksgiving, so the US session on this date was still running when the Asian and European boards closed - the US session's own close is not in this artifact.
 - **Europe opened higher and closed lower.** The STOXX 600 was up about 0.4% at midday and ended down 1.06% as the US AI rout deepened through the afternoon, so a reader who takes an intraday European quote will get the sign wrong.
@@ -364,7 +372,9 @@ Names that moved with no sourced driver - no company release, no filing, no anal
 
 ### Sector rotation
 
-Mean and median `change_pct` per sector over the liquid subset (volume >= 100,000), across all 16 boards:
+Mean and median `change_pct` per sector over the liquid subset (volume >= 100,000), across all 16 boards. The scanner's sector taxonomy puts semiconductors and hardware in `Electronic Technology` and the equipment makers in `Producer Manufacturing`, so both appear below.
+
+**The worst eight sectors:**
 
 | Sector | Names | Mean | Median |
 |---|---|---|---|
@@ -376,10 +386,17 @@ Mean and median `change_pct` per sector over the liquid subset (volume >= 100,00
 | Non-Energy Minerals | 264 | +0.44% | +0.54% |
 | Health Services | 19 | +0.33% | +0.00% |
 | Technology Services | 146 | -0.03% | +0.26% |
-| Transportation | 92 | -0.10% | -0.03% |
-| Utilities | 76 | -0.13% | +0.31% |
-| Commercial Services | 105 | -0.23% | +0.35% |
-| Health Technology | 139 | -0.57% | -1.00% |
 
-The rotation is a clean two-way split on one theme: **semiconductor and electronics supply chains are the best sector in Asia and the worst in Europe**, which is what a single global AI-supply-chain trade repriced on opposite sides of the world looks like. The cross-market spread - Japanese and Taiwanese suppliers up double digits against European equipment makers down 6-16% - is the day's real story, and it is the reason the movers tables are not one list.
+**The best six sectors:**
+
+| Sector | Names | Mean | Median |
+|---|---|---|---|
+| Consumer Durables | 130 | -1.31% | -0.56% |
+| Communications | 32 | -1.32% | -0.39% |
+| Finance | 383 | -1.34% | -1.06% |
+| Process Industries | 206 | -2.26% | -1.38% |
+| Producer Manufacturing | 328 | -3.88% | -3.72% |
+| Electronic Technology | 415 | -6.17% | -6.93% |
+
+The rotation has one theme and no counter-theme: **Electronic Technology - the scanner's sector for semiconductors and hardware - is the worst sector of the day at a mean of -6.17% and a median of -6.93% across 415 liquid names**, with `Producer Manufacturing` (-3.88%) and `Process Industries` (-2.26%) behind it, while consumer-facing sectors held up (`Consumer Non-Durables` +1.71%, `Retail Trade` +1.15%). The damage is not geographic this time - Japanese, Taiwanese, German, Dutch, French, Austrian and Danish hardware names all fell together on the same driver, the hot US core PCE print and the 7.9% drop in the Philadelphia Semiconductor Index. What is NOT one-way is the index-versus-breadth split: Japan's typical name rose while its index fell, and Taiwan's typical name fell harder than its index.
 
