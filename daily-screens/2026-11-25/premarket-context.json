@@ -1,0 +1,52 @@
+{
+  "catalysts": {
+    "AMBA": {
+      "confirmed": true,
+      "source": "Ambarella Q3 FY2027 earnings release, 24 Nov 2026 (Benzinga/EBC/Yahoo Finance)",
+      "note": "Q3 revenue $115.22M vs $119.44M consensus and adj. EPS $0.28 vs $0.32; Q4 revenue guided to $70-75M vs $112.19M consensus on memory price inflation and customer order push-outs, which flips Q4 from an operating profit to roughly a $15M loss; Morgan Stanley downgraded to Equalweight and cut its target to $42 from $70"
+    },
+    "URBN": {
+      "confirmed": true,
+      "source": "Urban Outfitters Q3 FY2027 earnings release, 24 Nov 2026 (GlobeNewswire IR release, earnings call)",
+      "note": "Record net sales of $1,665.1M, up 8.9% Y/Y, narrowly missed the $1.667B consensus, and diluted EPS of $1.54 beat $1.53 by a penny; the guidance for the coming quarter is what the market rejected, and the stock gapped down more than 10% despite the EPS beat"
+    },
+    "DELL": {
+      "confirmed": true,
+      "source": "Dell Technologies 8-K EX-99.1, 24 Nov 2026 (SEC EDGAR)",
+      "note": "A beat-and-raise: record Q3 FY27 revenue of $54.9B, up 103% Y/Y, non-GAAP EPS of $9.45 against a ~$6.76 high end, a $132.3B AI server backlog, and FY27 revenue guidance raised to $202B from $192B. The gap is a BETA gap against a good print, not a reaction to the numbers"
+    },
+    "AXTI": {
+      "confirmed": true,
+      "source": "B. Riley target-price cut to $43 from $56 (Neutral), 24 Nov 2026 (TipRanks/MarketBeat)",
+      "note": "The InP substrate supplier is unwinding the AI-optical complex after a 24.4% jump on Monday; Tuesday it fell 16.94% on the sector slide plus the target cut. Q3 revenue of $73.4M was up 163% Y/Y, so the move is a de-rating and a profit-taking leg, not a results leg"
+    },
+    "CRWV": {
+      "confirmed": true,
+      "source": "HPE Q4 earnings call, 24 Nov 2026 (CEO Antonio Neri), plus CoreWeave bond-market reporting 24-25 Nov",
+      "note": "Neri said HPE Financial Services has not provided financing to neocloud or high-risk customers, which put the debt-funded neocloud model back in question; CoreWeave bonds hit record lows and one report put AI-debt-implied default odds at 68%. CRWV rose 22% on Monday's Huang-reinstatement rally and is giving it back"
+    },
+    "NBIS": {
+      "confirmed": true,
+      "source": "HPE Q4 earnings call, 24 Nov 2026 (CEO Antonio Neri) and neocloud coverage 24 Nov",
+      "note": "Same neocloud-financing story as CRWV: the sector unwound Monday's 20%+ rally on doubts over who will fund the data centers. Nebius has the cleanest balance sheet of the three but still moved with the group, and a Databricks co-founder comment on only one neocloud having robust workload isolation was read as pressure on the others"
+    },
+    "NVDA": {
+      "confirmed": true,
+      "source": "Investing.com/Reuters/CNBC pre-market coverage, 25 Nov 2026",
+      "note": "The reference name for the whole tape: Monday's board reinstatement of Jensen Huang sent NVDA up 31.5% and the Philadelphia Semiconductor Index up sharply, Tuesday gave back 7.9% at the index level, and Wednesday's pre-market extended the unwind on renewed doubts over AI-spending returns, fresh US tariff threats and higher-rate expectations ahead of the inflation print. At the open NVDA still kept roughly half of Monday's move"
+    }
+  },
+  "notes": [
+    "The AI-hardware complex moved as ONE group on ONE story this morning, not name by name. NVDA, AXTI, APLD, ALAB, LITE, MXL, SMTC, SITM, CRWV, NBIS and DELL all gapped lower together as Monday's Jensen Huang reinstatement rally unwound, and Reuters reported the US trade representative was about to publish Section 301 'overcapacity' findings on 16 economies including Taiwan and South Korea, with semiconductors and electronics on the illustrative sector list. Several of these names read as IDIOSYNCRATIC in the engine's driver classes only because the sector ETFs sat outside its 1.5pp proxy test, not because the moves were individual.",
+    "AMBA and URBN are the two genuinely company-specific gaps on the board: both printed after Monday's close and both gapped far below the AI complex.",
+    "DELL is the case worth flagging to a reader who trusts the headline: it beat and raised on 24 Nov (record $54.9B revenue, $9.45 non-GAAP EPS, FY27 revenue guidance raised to $202B, a $132.3B AI backlog) and still gapped down more than 5%. The gap is the complex moving, not the numbers.",
+    "The Focus universe is a momentum screen built on the 2026-11-24 session, so it structurally cannot contain a name whose move has not happened yet; the market ladder is the primary table for that reason.",
+    "Every Focus name in this scan had already been hit hard in the 2026-11-24 regular session, so today's gaps are a continuation of a two-day unwinding rather than a fresh shock. The prior-session column in the Focus table carries the size of that first leg."
+  ],
+  "source_health": [
+    {"source": "web_search (Reuters, CNBC, Investing.com, StockTitan, SEC EDGAR 8-K, issuer IR releases)", "status": "ok", "role": "the catalysts and the market driver"},
+    {"source": "Nasdaq /api/quote/{sym}/extended-trading (the tape)", "status": "ok", "role": "the pre-market prints, volumes and the executed-share gate"},
+    {"source": "Nasdaq /api/quote/{sym}/historical (session-exact closes)", "status": "ok", "role": "the reference close for the 2026-11-24 denominator"},
+    {"source": "TradingView america scanner", "status": "ok", "role": "the market ladder, the sector proxies and the earnings calendar"}
+  ]
+}
