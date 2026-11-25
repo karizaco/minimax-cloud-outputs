@@ -5,7 +5,7 @@ read: end-of-day (cron #09, 18:30 ET) — NOT the intraday snapshot (cron #10)
 fire_time_et: "18:30 ET, 2026-11-25 (scheduled fire; window check OK, stall_min 0 — not a replay)"
 data_date: "2026-11-25 — the settled close of the cron day; this breadth read is NOT T+1 (the SCREEN metrics in daily-sweep.md are shibui T+1 = 2026-11-24)"
 breadth_universe: "NYSE/NASDAQ/AMEX, type in {stock, dr}, market_cap_basic > $10B (TradingView scanner, USD) — 1086 names; totalCount 1086 = rows fetched, no truncation"
-vix_quote_time: "2026-11-25 16:15:01 ET (Yahoo chart API (^VIX / ^VIX3M) - FALLBACK: the Cboe delayed-quote CDN returned HTTP 403 (Cloudflare) from this egress on 2026-11-19; both symbols read from the same session bar, 1 pull(s) 0 s apart — identical)"
+vix_quote_time: "2026-11-25 16:15:01 ET (Yahoo chart API (^VIX / ^VIX3M) - FALLBACK: the Cboe delayed-quote CDN returned HTTP 403 (Cloudflare) from this egress on 2026-11-25 (first observed 2026-11-19, reproduced 2026-11-25); both symbols read from the same session bar, 1 pull(s) 0 s apart — identical)"
 vix_pair: "VIX 28.29 / VIX3M 26.29 — single pair, used everywhere in this document"
 cross_reference: "intraday counterpart: daily-screens/2026-11-25/breadth-snapshot.md (cron #10, 14:00 ET)"
 size_cut_pct: 0
@@ -69,7 +69,7 @@ A **BROAD** divergence: the average large cap is materially healthier than the i
 | VIX | **28.29** | 26.36 | +1.93 (+7.3%) | 2026-11-25 16:15:01 ET |
 | VIX3M | **26.29** | 25.47 | +0.82 (+3.2%) | 2026-11-25 16:15:01 ET |
 
-Source: Yahoo chart API (^VIX / ^VIX3M) - FALLBACK: the Cboe delayed-quote CDN returned HTTP 403 (Cloudflare) from this egress on 2026-11-19; both symbols read from the same session bar. Pulled 1 time(s), 0 s apart — **identical both times** (`vix_stable: true`). Ratio VIX/VIX3M = **1.0761** → `uncertainty: true` (the flag fires above 1.0).
+Source: Yahoo chart API (^VIX / ^VIX3M) - FALLBACK: the Cboe delayed-quote CDN returned HTTP 403 (Cloudflare) from this egress on 2026-11-25 (first observed 2026-11-19, reproduced 2026-11-25); both symbols read from the same session bar. Pulled 1 time(s), 0 s apart — **identical both times** (`vix_stable: true`). Ratio VIX/VIX3M = **1.0761** → `uncertainty: true` (the flag fires above 1.0).
 
 ## Regime
 
