@@ -1,206 +1,197 @@
 {
- "audit_date_et": "2026-11-23",
- "audit_run_et": "2026-11-24T07:16:24-0500",
- "origin_main_sha": "6d528ce",
- "due": 21,
- "delivered": 20,
- "missing": 1,
- "skipped_by_design_count": 0,
- "stale_routines": 0,
- "never_delivered": [],
- "not_yet_fired": [],
- "written_off": [],
- "skipped_by_design": [],
- "roster_gap": [],
- "gaps": [
-  {
-   "routine": "07-focus-rvol-09:45",
-   "path": "daily-screens/2026-11-20/focus-rvol-snapshot.md",
-   "label": "MISSING",
-   "cause": "platform_500",
-   "gap_age_hours": 93.5,
-   "streak": 1,
-   "detail": "carried forward from the 2026-11-22 audit and STILL absent on origin/main: the engine measures the path as absent and no commit carrying 'cron 07' exists for 11-20, so the 09:45 ET fire never wrote its artifact. cron_read view=runs for task 446509795921995 shows the fire WAS dispatched (run 465439954194654, scheduled_at_ms 1795185900000 = 2026-11-20 09:45:00 ET, status 1 in 1.9 s) into session 465440691294409, which the platform titled with its FALLBACK name '[cron] 07-stock-screener-focus-rvol-09%3A45.md' instead of the fleet title - the routine never ran its first step, so the platform mis-dispatched the fire. NEW THIS CYCLE: the routine itself is healthy again - its own 2026-11-23 fire delivered at 09:54:24 ET (9.4 min after the schedule) and daily-screens/2026-11-23/focus-rvol-snapshot.md is on origin/main, so this gap is now ONLY the un-repaired 2026-11-20 artifact, not a dead routine. One missed due fire (11-20; 07 does not fire on Sat/Sun and the 11-21/11-22 audits could not check it), so the streak stays 1. A re-run of the 11-20 fire is still needed - three audits have now reported it."
+  "audit_date_et": "2026-11-24",
+  "audit_run_et": "2026-11-25T07:04:26-05:00",
+  "origin_main_sha": "3b479ac",
+  "due": 21,
+  "delivered": 20,
+  "missing": 1,
+  "skipped_by_design_count": 0,
+  "stale_routines": 0,
+  "never_delivered": [],
+  "not_yet_fired": [],
+  "written_off": [],
+  "skipped_by_design": [],
+  "roster_gap": [],
+  "gaps": [
+    {
+      "routine": "07-focus-rvol-09:45",
+      "path": "daily-screens/2026-11-20/focus-rvol-snapshot.md",
+      "label": "MISSING",
+      "cause": "platform_500",
+      "gap_age_hours": 117.3,
+      "streak": 1,
+      "detail": "the 2026-11-20 09:45 ET fire of #07 never wrote its artifact: cron_read view=runs for task 446509795921995 shows run 465439954194654 dispatched (scheduled_at_ms 1795185900000 = 2026-11-20 09:45:00 ET, status 1 in 1.9 s) into session 465440691294409, and that session holds NO message from 2026-11-20 at all - its oldest recorded turn is 2026-11-22, when the session was reused for unrelated work - so the fire produced no model call (zero tokens), never set the fleet title and never staged a commit: `git log --grep=2026-11-20 | grep 'cron 07'` returns nothing, while daily-screens/2026-11-20/ holds 38 files written by OTHER routines, so this is a missing 07 fire and not a path mismatch. The engine re-measures daily-screens/2026-11-20/focus-rvol-snapshot.md as absent on origin/main, so the gap is carried forward a FIFTH consecutive audit (ages 21.3 -> 47.4 -> 70.0 -> 93.5 -> now). The routine itself is HEALTHY - it delivered daily-screens/2026-11-23/focus-rvol-snapshot.md (09:54:24 ET) and daily-screens/2026-11-24/focus-rvol-snapshot.md (13.1 min after its 09:45 fire) - so this is ONE unrepaired missed fire, not a dead routine, and the streak stays 1. A re-run of the 2026-11-20 fire is still needed."
+    }
+  ],
+  "routines": {
+    "01-weekly-mcp-health-check": {
+      "routine": "01-weekly-mcp-health-check",
+      "state": "not_due",
+      "streak": 0,
+      "delivery_latency_min": null
+    },
+    "19-earnings-reminder-daily": {
+      "routine": "19-earnings-reminder-daily",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 7.5
+    },
+    "02-asia-pre-market-reactions": {
+      "routine": "02-asia-pre-market-reactions",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 6.2
+    },
+    "91-schedule-drift-guard": {
+      "routine": "91-schedule-drift-guard",
+      "state": "not_due",
+      "streak": 0,
+      "delivery_latency_min": null
+    },
+    "90-delivery-auditor": {
+      "routine": "90-delivery-auditor",
+      "state": "not_due",
+      "streak": 0,
+      "delivery_latency_min": null
+    },
+    "15-earnings-reaction-scanner": {
+      "routine": "15-earnings-reaction-scanner",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 11.7
+    },
+    "26-agentic-pre-market-brief": {
+      "routine": "26-agentic-pre-market-brief",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 18.9
+    },
+    "08-pre-market-gapper": {
+      "routine": "08-pre-market-gapper",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 5.7
+    },
+    "92a-preopen-catalyst-capture": {
+      "routine": "92a-preopen-catalyst-capture",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 5.1
+    },
+    "25-ntrt-gap-brief-daily": {
+      "routine": "25-ntrt-gap-brief-daily",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 6.2
+    },
+    "26b-agentic-pre-market-brief-refresh": {
+      "routine": "26b-agentic-pre-market-brief-refresh",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 6.1
+    },
+    "07-focus-rvol-09:45": {
+      "routine": "07-focus-rvol-09:45",
+      "state": "missing",
+      "streak": 1,
+      "delivery_latency_min": null
+    },
+    "92b-preopen-catalyst-capture": {
+      "routine": "92b-preopen-catalyst-capture",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 3.7
+    },
+    "17-us-stocks-in-play-open": {
+      "routine": "17-us-stocks-in-play-open",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 25.3
+    },
+    "12-cross-asset-correlation": {
+      "routine": "12-cross-asset-correlation",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 3.5
+    },
+    "15b-earnings-reaction-settlement": {
+      "routine": "15b-earnings-reaction-settlement",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 3.4
+    },
+    "10-breadth-snapshot": {
+      "routine": "10-breadth-snapshot",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 6.6
+    },
+    "13-macro-calendar-midweek": {
+      "routine": "13-macro-calendar-midweek",
+      "state": "not_due",
+      "streak": 0,
+      "delivery_latency_min": null
+    },
+    "14-macro-calendar-week-ahead": {
+      "routine": "14-macro-calendar-week-ahead",
+      "state": "not_due",
+      "streak": 0,
+      "delivery_latency_min": null
+    },
+    "06-pattern-study-backlog": {
+      "routine": "06-pattern-study-backlog",
+      "state": "not_due",
+      "streak": 0,
+      "delivery_latency_min": null
+    },
+    "17-us-stocks-in-play": {
+      "routine": "17-us-stocks-in-play",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 22.6
+    },
+    "04-reversal-bullish-3:55": {
+      "routine": "04-reversal-bullish-3:55",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 27.9
+    },
+    "20-eod-watchlist-csv": {
+      "routine": "20-eod-watchlist-csv",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 70.2
+    },
+    "05-eod-international-daily": {
+      "routine": "05-eod-international-daily",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 8.3
+    },
+    "16-unusual-options-flow": {
+      "routine": "16-unusual-options-flow",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 4.2
+    },
+    "22-weekly-market-recap-preview": {
+      "routine": "22-weekly-market-recap-preview",
+      "state": "not_due",
+      "streak": 0,
+      "delivery_latency_min": null
+    },
+    "09-daily-sweep-18:30": {
+      "routine": "09-daily-sweep-18:30",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 5.8
+    },
+    "23-agentic-post-market-brief": {
+      "routine": "23-agentic-post-market-brief",
+      "state": "delivered",
+      "streak": 0,
+      "delivery_latency_min": 9.1
+    }
   },
-  {
-   "routine": "20-eod-watchlist-csv",
-   "path": "us-eod/2026-11-23.csv",
-   "label": "stalled",
-   "cause": "slow_run",
-   "gap_age_hours": 15.3,
-   "streak": 0,
-   "detail": "the artifact IS on origin/main (us-eod/2026-11-23.csv, 4,882 rows, 32 columns, commit 3beadc6) but it landed 130.1 min after the 16:00 ET fire - over cron #20's own 110-min allowance in latency.per_routine_allowed_minutes - so the state is delivered_late, not missing. The cause is a SLOW RUN, not a platform failure: session 466590269395056 ended healthily (status 0, empty status_message, 258,606 tokens, finish_reason 'stop'), and the work it actually did was large - it adjudicated 279 disputed prior closes against the exchange record, fixed the anchor rule in the repo (commits 131d13b, 53372d7) with a fault-injection test, and re-ran derive -> report -> gate (34/34) before pushing. The run record's ~10 s duration measures the DISPATCH, not the work. It is over the allowance on 1 of its last 3 due days (11-20: 80 min, 11-19: 81 min), so it is NOT chronically late; its 11-18 reading (561 min) falls outside that window. Recommended action: either optimise the settle loop or raise cron #20's per-routine allowance to ~135 min - the auditor does not widen it itself."
-  }
- ],
- "routines": {
-  "01-weekly-mcp-health-check": {
-   "routine": "01-weekly-mcp-health-check",
-   "state": "not_due",
-   "streak": 0,
-   "delivery_latency_min": null
-  },
-  "19-earnings-reminder-daily": {
-   "routine": "19-earnings-reminder-daily",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 5.4
-  },
-  "02-asia-pre-market-reactions": {
-   "routine": "02-asia-pre-market-reactions",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 10.7
-  },
-  "91-schedule-drift-guard": {
-   "routine": "91-schedule-drift-guard",
-   "state": "not_due",
-   "streak": 0,
-   "delivery_latency_min": null
-  },
-  "90-delivery-auditor": {
-   "routine": "90-delivery-auditor",
-   "state": "not_due",
-   "streak": 0,
-   "delivery_latency_min": null
-  },
-  "15-earnings-reaction-scanner": {
-   "routine": "15-earnings-reaction-scanner",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 22.8
-  },
-  "26-agentic-pre-market-brief": {
-   "routine": "26-agentic-pre-market-brief",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 12.4
-  },
-  "08-pre-market-gapper": {
-   "routine": "08-pre-market-gapper",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 10.5
-  },
-  "92a-preopen-catalyst-capture": {
-   "routine": "92a-preopen-catalyst-capture",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 3.9
-  },
-  "25-ntrt-gap-brief-daily": {
-   "routine": "25-ntrt-gap-brief-daily",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 19.2
-  },
-  "26b-agentic-pre-market-brief-refresh": {
-   "routine": "26b-agentic-pre-market-brief-refresh",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 6.9
-  },
-  "07-focus-rvol-09:45": {
-   "routine": "07-focus-rvol-09:45",
-   "state": "missing",
-   "streak": 1,
-   "delivery_latency_min": null
-  },
-  "92b-preopen-catalyst-capture": {
-   "routine": "92b-preopen-catalyst-capture",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 5.5
-  },
-  "17-us-stocks-in-play-open": {
-   "routine": "17-us-stocks-in-play-open",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 22.3
-  },
-  "12-cross-asset-correlation": {
-   "routine": "12-cross-asset-correlation",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 3.6
-  },
-  "15b-earnings-reaction-settlement": {
-   "routine": "15b-earnings-reaction-settlement",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 4.0
-  },
-  "10-breadth-snapshot": {
-   "routine": "10-breadth-snapshot",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 4.5
-  },
-  "13-macro-calendar-midweek": {
-   "routine": "13-macro-calendar-midweek",
-   "state": "not_due",
-   "streak": 0,
-   "delivery_latency_min": null
-  },
-  "14-macro-calendar-week-ahead": {
-   "routine": "14-macro-calendar-week-ahead",
-   "state": "not_due",
-   "streak": 0,
-   "delivery_latency_min": null
-  },
-  "06-pattern-study-backlog": {
-   "routine": "06-pattern-study-backlog",
-   "state": "not_due",
-   "streak": 0,
-   "delivery_latency_min": null
-  },
-  "17-us-stocks-in-play": {
-   "routine": "17-us-stocks-in-play",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 23.1
-  },
-  "04-reversal-bullish-3:55": {
-   "routine": "04-reversal-bullish-3:55",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 38.3
-  },
-  "20-eod-watchlist-csv": {
-   "routine": "20-eod-watchlist-csv",
-   "state": "delivered_late",
-   "streak": 0,
-   "delivery_latency_min": 130.1
-  },
-  "05-eod-international-daily": {
-   "routine": "05-eod-international-daily",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 10.3
-  },
-  "16-unusual-options-flow": {
-   "routine": "16-unusual-options-flow",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 2.9
-  },
-  "22-weekly-market-recap-preview": {
-   "routine": "22-weekly-market-recap-preview",
-   "state": "not_due",
-   "streak": 0,
-   "delivery_latency_min": null
-  },
-  "09-daily-sweep-18:30": {
-   "routine": "09-daily-sweep-18:30",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 5.9
-  },
-  "23-agentic-post-market-brief": {
-   "routine": "23-agentic-post-market-brief",
-   "state": "delivered",
-   "streak": 0,
-   "delivery_latency_min": 13.5
-  }
- },
- "audit_status": "gaps_found"
+  "audit_status": "gaps_found"
 }

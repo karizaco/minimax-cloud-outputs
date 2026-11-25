@@ -1,80 +1,80 @@
 {
- "audit_date_et": "2026-11-23",
- "audit_date_dow": "Mon",
+ "audit_date_et": "2026-11-24",
+ "audit_date_dow": "Tue",
  "market_closed": false,
- "origin_main_sha": "6d528ce",
+ "origin_main_sha": "3b479ac",
  "prior_gaps": [
   {
    "routine": "07-focus-rvol-09:45",
    "path": "daily-screens/2026-11-20/focus-rvol-snapshot.md",
    "label": "MISSING",
    "cause": "platform_500",
-   "gap_age_hours": 70.0,
+   "gap_age_hours": 93.5,
    "streak": 1,
-   "detail": "carried forward from the 2026-11-21 audit and still absent on origin/main: no commit carrying 'cron 07' exists for 11-20, and daily-screens/2026-11-20/focus-rvol-snapshot.md was never written - the newest 07 artifact is still 2026-11-19. cron_read view=runs for task 446509795921995 shows the fire WAS dispatched (run 465439954194654, scheduled_at_ms 1795185900000 = 2026-11-20 09:45:00 ET, status 1 in 1.9 s) into session 465440691294409, which the platform titled with its FALLBACK name '[cron] 07-stock-screener-focus-rvol-09%3A45.md' instead of the fleet title - so the routine never ran its first step and that session's turns were consumed by an unrelated queued task. The platform mis-dispatched the fire. That session was later reused by the operator on 2026-11-22 ('resume the work'), which is why it now shows an unrelated title and turns; the mis-dispatch itself is unchanged. daily-screens/2026-11-20/focus.md and focus.csv are cron #09's end-of-day files, NOT a near-miss for this path. ONE missed due fire only (11-20 - 07 does not fire on Sat/Sun), so the streak is 1, not 3. A re-run is needed.",
+   "detail": "carried forward from the 2026-11-22 audit and STILL absent on origin/main: the engine measures the path as absent and no commit carrying 'cron 07' exists for 11-20, so the 09:45 ET fire never wrote its artifact. cron_read view=runs for task 446509795921995 shows the fire WAS dispatched (run 465439954194654, scheduled_at_ms 1795185900000 = 2026-11-20 09:45:00 ET, status 1 in 1.9 s) into session 465440691294409, which the platform titled with its FALLBACK name '[cron] 07-stock-screener-focus-rvol-09%3A45.md' instead of the fleet title - the routine never ran its first step, so the platform mis-dispatched the fire. NEW THIS CYCLE: the routine itself is healthy again - its own 2026-11-23 fire delivered at 09:54:24 ET (9.4 min after the schedule) and daily-screens/2026-11-23/focus-rvol-snapshot.md is on origin/main, so this gap is now ONLY the un-repaired 2026-11-20 artifact, not a dead routine. One missed due fire (11-20; 07 does not fire on Sat/Sun and the 11-21/11-22 audits could not check it), so the streak stays 1. A re-run of the 11-20 fire is still needed - three audits have now reported it.",
    "path_present": false,
    "reconstruction": false
   },
   {
-   "routine": "10-breadth-snapshot",
-   "path": "daily-screens/2026-11-20/breadth-snapshot.md",
-   "label": "reconstructed",
-   "cause": "quota_2056",
-   "gap_age_hours": 65.7,
-   "streak": 1,
-   "detail": "retired from MISSING: the engine now measures the path PRESENT and the file declares itself a rebuild, so the 'artifact is absent' statement no longer holds - but it was NOT produced by the 2026-11-20 14:00 ET fire. The artifact landed in commit 7b99582 at 2026-11-22 09:09:57 ET, one minute AFTER the prior audit's snapshot (origin/main was at 048c003, which is 7b99582's parent), which is why the 2026-11-21 audit still saw it absent. Its own text says 'the scheduled fire was blocked by the platform for 2585 minutes and resumed in place on 2026-11-22' - rebuilt 43.1 h after the fire. Cause of the ORIGINAL loss: the 14:00 ET fire's session (465500981817435) died with status_message 'Token Plan usage limit reached ... (2056)' and its first assistant turn carried finish_reason 'error' with usage.total_tokens == 0 - the FIRST model call was rejected, so the routine did no work at all; the session was later resumed in place and published. A BILLING wall (the 5-hour Token Plan window), not a code bug. NOT a MISSING - the file exists, but it was rebuilt after the fact, so the 11-20 breadth read is not a clean delivery.",
+   "routine": "20-eod-watchlist-csv",
+   "path": "us-eod/2026-11-23.csv",
+   "label": "stalled",
+   "cause": "slow_run",
+   "gap_age_hours": 15.3,
+   "streak": 0,
+   "detail": "the artifact IS on origin/main (us-eod/2026-11-23.csv, 4,882 rows, 32 columns, commit 3beadc6) but it landed 130.1 min after the 16:00 ET fire - over cron #20's own 110-min allowance in latency.per_routine_allowed_minutes - so the state is delivered_late, not missing. The cause is a SLOW RUN, not a platform failure: session 466590269395056 ended healthily (status 0, empty status_message, 258,606 tokens, finish_reason 'stop'), and the work it actually did was large - it adjudicated 279 disputed prior closes against the exchange record, fixed the anchor rule in the repo (commits 131d13b, 53372d7) with a fault-injection test, and re-ran derive -> report -> gate (34/34) before pushing. The run record's ~10 s duration measures the DISPATCH, not the work. It is over the allowance on 1 of its last 3 due days (11-20: 80 min, 11-19: 81 min), so it is NOT chronically late; its 11-18 reading (561 min) falls outside that window. Recommended action: either optimise the settle loop or raise cron #20's per-routine allowance to ~135 min - the auditor does not widen it itself.",
    "path_present": true,
-   "reconstruction": true
+   "reconstruction": false
   }
  ],
  "path_presence": {
   "mcp-health/2026-W48.md": false,
-  "asia-pre-market/2026-11-23.md": true,
-  "cross-asset/2026-11-23.md": true,
-  "daily-briefs/2026-11-23-post-market.md": true,
-  "daily-briefs/2026-11-23-pre-market-refresh.md": true,
-  "daily-briefs/2026-11-23-pre-market.md": true,
-  "daily-screens/2026-11-23/_summary.md": true,
-  "daily-screens/2026-11-23/ariel-hernandez.md": true,
-  "daily-screens/2026-11-23/breadth-snapshot.md": true,
-  "daily-screens/2026-11-23/breadth.md": true,
-  "daily-screens/2026-11-23/daily-sweep.md": true,
-  "daily-screens/2026-11-23/focus-rvol-snapshot.md": true,
-  "daily-screens/2026-11-23/focus.md": true,
-  "earnings/2026-11-23-reminders.md": true,
+  "asia-pre-market/2026-11-24.md": true,
+  "cross-asset/2026-11-24.md": true,
+  "daily-briefs/2026-11-24-post-market.md": true,
+  "daily-briefs/2026-11-24-pre-market-refresh.md": true,
+  "daily-briefs/2026-11-24-pre-market.md": true,
+  "daily-screens/2026-11-24/_summary.md": true,
+  "daily-screens/2026-11-24/ariel-hernandez.md": true,
+  "daily-screens/2026-11-24/breadth-snapshot.md": true,
+  "daily-screens/2026-11-24/breadth.md": true,
+  "daily-screens/2026-11-24/daily-sweep.md": true,
+  "daily-screens/2026-11-24/focus-rvol-snapshot.md": true,
+  "daily-screens/2026-11-24/focus.md": true,
+  "earnings/2026-11-24-reminders.md": true,
   "_audit/status.json (audit/status branch)": false,
-  "earnings/2026-11-23-reactions.md": true,
-  "daily-screens/2026-11-23/pre-market-gapper.md": true,
-  "preopen-feed/2026-11-23-0830.md": true,
-  "preopen-feed/2026-11-23-0830.jsonl": true,
-  "ntrt/2026-11-23.md": true,
-  "preopen-feed/2026-11-23-0950.md": true,
-  "preopen-feed/2026-11-23-0950.jsonl": true,
-  "us-stocks-in-play/2026-11-23-open.md": true,
-  "earnings/2026-11-23-reactions-settled.md": true,
-  "macro-calendar/2026-11-23-midweek.md": false,
-  "macro-calendar/2026-11-23-week-ahead.md": false,
-  "daily-screens/2026-11-23/weekly-ipo.md": false,
-  "us-stocks-in-play/2026-11-23.md": true,
-  "daily-screens/2026-11-23/reversal-bullish-3_55.md": true,
-  "us-eod/2026-11-23.csv": true,
-  "daily-briefs/2026-11-23-pre-market-refresh.csv": true,
-  "daily-briefs/2026-11-23-pre-market.csv": true,
-  "daily-screens/2026-11-23/breadth-snapshot.csv": true,
-  "daily-screens/2026-11-23/focus-rvol-snapshot.csv": true,
-  "daily-screens/2026-11-23/focus.csv": true,
-  "daily-screens/2026-11-23/long-reversal-candidates.csv": true,
-  "daily-screens/2026-11-23/master.csv": true,
-  "daily-screens/2026-11-23/pre-market-gapper.csv": true,
-  "daily-screens/2026-11-23/reversal-bullish-3_55.csv": true,
-  "daily-screens/2026-11-23/short-candidates.csv": true,
-  "daily-screens/2026-11-23/tier-a.csv": true,
-  "international-eod/2026-11-23/au.csv": true,
-  "international-eod/2026-11-23": false,
-  "options-flow/2026-11-23.md": true,
-  "weekly/2026-11-23-preview.md": false,
+  "earnings/2026-11-24-reactions.md": true,
+  "daily-screens/2026-11-24/pre-market-gapper.md": true,
+  "preopen-feed/2026-11-24-0830.md": true,
+  "preopen-feed/2026-11-24-0830.jsonl": true,
+  "ntrt/2026-11-24.md": true,
+  "preopen-feed/2026-11-24-0950.md": true,
+  "preopen-feed/2026-11-24-0950.jsonl": true,
+  "us-stocks-in-play/2026-11-24-open.md": true,
+  "earnings/2026-11-24-reactions-settled.md": true,
+  "macro-calendar/2026-11-24-midweek.md": false,
+  "macro-calendar/2026-11-24-week-ahead.md": false,
+  "daily-screens/2026-11-24/weekly-ipo.md": false,
+  "us-stocks-in-play/2026-11-24.md": true,
+  "daily-screens/2026-11-24/reversal-bullish-3_55.md": true,
+  "us-eod/2026-11-24.csv": true,
+  "daily-briefs/2026-11-24-pre-market-refresh.csv": true,
+  "daily-briefs/2026-11-24-pre-market.csv": true,
+  "daily-screens/2026-11-24/breadth-snapshot.csv": true,
+  "daily-screens/2026-11-24/focus-rvol-snapshot.csv": true,
+  "daily-screens/2026-11-24/focus.csv": true,
+  "daily-screens/2026-11-24/long-reversal-candidates.csv": true,
+  "daily-screens/2026-11-24/master.csv": true,
+  "daily-screens/2026-11-24/pre-market-gapper.csv": true,
+  "daily-screens/2026-11-24/reversal-bullish-3_55.csv": true,
+  "daily-screens/2026-11-24/short-candidates.csv": true,
+  "daily-screens/2026-11-24/tier-a.csv": true,
+  "international-eod/2026-11-24/au.csv": true,
+  "international-eod/2026-11-24": false,
+  "options-flow/2026-11-24.md": true,
+  "weekly/2026-11-24-preview.md": false,
   "daily-screens/2026-11-20/focus-rvol-snapshot.md": false,
-  "daily-screens/2026-11-20/breadth-snapshot.md": true
+  "us-eod/2026-11-23.csv": true
  },
  "rows": [
   {
@@ -88,18 +88,18 @@
    "roster_schedule_agreement": true,
    "expected_path": "mcp-health/2026-W48.md",
    "alternates": [
-    "asia-pre-market/2026-11-23.md",
-    "cross-asset/2026-11-23.md",
-    "daily-briefs/2026-11-23-post-market.md",
-    "daily-briefs/2026-11-23-pre-market-refresh.md",
-    "daily-briefs/2026-11-23-pre-market.md",
-    "daily-screens/2026-11-23/_summary.md",
-    "daily-screens/2026-11-23/ariel-hernandez.md",
-    "daily-screens/2026-11-23/breadth-snapshot.md",
-    "daily-screens/2026-11-23/breadth.md",
-    "daily-screens/2026-11-23/daily-sweep.md",
-    "daily-screens/2026-11-23/focus-rvol-snapshot.md",
-    "daily-screens/2026-11-23/focus.md"
+    "asia-pre-market/2026-11-24.md",
+    "cross-asset/2026-11-24.md",
+    "daily-briefs/2026-11-24-post-market.md",
+    "daily-briefs/2026-11-24-pre-market-refresh.md",
+    "daily-briefs/2026-11-24-pre-market.md",
+    "daily-screens/2026-11-24/_summary.md",
+    "daily-screens/2026-11-24/ariel-hernandez.md",
+    "daily-screens/2026-11-24/breadth-snapshot.md",
+    "daily-screens/2026-11-24/breadth.md",
+    "daily-screens/2026-11-24/daily-sweep.md",
+    "daily-screens/2026-11-24/focus-rvol-snapshot.md",
+    "daily-screens/2026-11-24/focus.md"
    ],
    "scheduled_times": [
     "02:00"
@@ -111,12 +111,12 @@
    "is_directory": false,
    "size_bytes": null,
    "near_miss": [],
-   "last_delivered": "2026-11-24",
+   "last_delivered": "2026-11-25",
    "age_days": -1,
    "tolerance_days": 7,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 6.3
+   "prior_latency_min": null
   },
   {
    "routine": "19-earnings-reminder-daily",
@@ -127,9 +127,9 @@
    "notes": [],
    "ground_truth_schedule": "0 6 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "earnings/2026-11-23-reminders.md",
+   "expected_path": "earnings/2026-11-24-reminders.md",
    "alternates": [
-    "earnings/2026-11-23-reminders.md"
+    "earnings/2026-11-24-reminders.md"
    ],
    "scheduled_times": [
     "06:00"
@@ -139,18 +139,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 13994,
-   "delivery_latency_min": 5.4,
-   "added_epoch": 1795431925,
-   "added_et": "06:05:25",
-   "last_delivered": "2026-11-24",
+   "size_bytes": 15724,
+   "delivery_latency_min": 7.5,
+   "added_epoch": 1795518447,
+   "added_et": "06:07:27",
+   "last_delivered": "2026-11-25",
    "age_days": -1,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 186,
-   "prior_state": "not_due",
-   "prior_streak": 1,
-   "prior_latency_min": null
+   "lines": 196,
+   "prior_state": "delivered",
+   "prior_streak": 0,
+   "prior_latency_min": 5.4
   },
   {
    "routine": "02-asia-pre-market-reactions",
@@ -161,20 +161,20 @@
    "notes": [],
    "ground_truth_schedule": "30 6 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "asia-pre-market/2026-11-23.md",
+   "expected_path": "asia-pre-market/2026-11-24.md",
    "alternates": [
-    "asia-pre-market/2026-11-23.md",
-    "cross-asset/2026-11-23.md",
-    "daily-briefs/2026-11-23-post-market.md",
-    "daily-briefs/2026-11-23-pre-market-refresh.md",
-    "daily-briefs/2026-11-23-pre-market.md",
-    "daily-screens/2026-11-23/_summary.md",
-    "daily-screens/2026-11-23/ariel-hernandez.md",
-    "daily-screens/2026-11-23/breadth-snapshot.md",
-    "daily-screens/2026-11-23/breadth.md",
-    "daily-screens/2026-11-23/daily-sweep.md",
-    "daily-screens/2026-11-23/focus-rvol-snapshot.md",
-    "daily-screens/2026-11-23/focus.md"
+    "asia-pre-market/2026-11-24.md",
+    "cross-asset/2026-11-24.md",
+    "daily-briefs/2026-11-24-post-market.md",
+    "daily-briefs/2026-11-24-pre-market-refresh.md",
+    "daily-briefs/2026-11-24-pre-market.md",
+    "daily-screens/2026-11-24/_summary.md",
+    "daily-screens/2026-11-24/ariel-hernandez.md",
+    "daily-screens/2026-11-24/breadth-snapshot.md",
+    "daily-screens/2026-11-24/breadth.md",
+    "daily-screens/2026-11-24/daily-sweep.md",
+    "daily-screens/2026-11-24/focus-rvol-snapshot.md",
+    "daily-screens/2026-11-24/focus.md"
    ],
    "scheduled_times": [
     "06:30"
@@ -184,18 +184,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 33368,
-   "delivery_latency_min": 10.7,
-   "added_epoch": 1795434041,
-   "added_et": "06:40:41",
-   "last_delivered": "2026-11-24",
+   "size_bytes": 38866,
+   "delivery_latency_min": 6.2,
+   "added_epoch": 1795520173,
+   "added_et": "06:36:13",
+   "last_delivered": "2026-11-25",
    "age_days": -1,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 210,
-   "prior_state": "not_due",
+   "lines": 239,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 10.7
   },
   {
    "routine": "91-schedule-drift-guard",
@@ -258,9 +258,9 @@
    "notes": [],
    "ground_truth_schedule": "0 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "earnings/2026-11-23-reactions.md",
+   "expected_path": "earnings/2026-11-24-reactions.md",
    "alternates": [
-    "earnings/2026-11-23-reactions.md"
+    "earnings/2026-11-24-reactions.md"
    ],
    "scheduled_times": [
     "08:00"
@@ -270,18 +270,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 97998,
-   "delivery_latency_min": 22.8,
-   "added_epoch": 1795440166,
-   "added_et": "08:22:46",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 63971,
+   "delivery_latency_min": 11.7,
+   "added_epoch": 1795525899,
+   "added_et": "08:11:39",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 587,
-   "prior_state": "not_due",
+   "lines": 401,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 22.8
   },
   {
    "routine": "26-agentic-pre-market-brief",
@@ -292,9 +292,9 @@
    "notes": [],
    "ground_truth_schedule": "30 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-briefs/2026-11-23-pre-market.md",
+   "expected_path": "daily-briefs/2026-11-24-pre-market.md",
    "alternates": [
-    "daily-briefs/2026-11-23-pre-market.md"
+    "daily-briefs/2026-11-24-pre-market.md"
    ],
    "scheduled_times": [
     "08:30"
@@ -304,18 +304,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 48515,
-   "delivery_latency_min": 12.4,
-   "added_epoch": 1795441347,
-   "added_et": "08:42:27",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 46831,
+   "delivery_latency_min": 18.9,
+   "added_epoch": 1795528132,
+   "added_et": "08:48:52",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 414,
-   "prior_state": "not_due",
+   "lines": 420,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 12.4
   },
   {
    "routine": "08-pre-market-gapper",
@@ -326,9 +326,9 @@
    "notes": [],
    "ground_truth_schedule": "34 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-23/pre-market-gapper.md",
+   "expected_path": "daily-screens/2026-11-24/pre-market-gapper.md",
    "alternates": [
-    "daily-screens/2026-11-23/pre-market-gapper.md"
+    "daily-screens/2026-11-24/pre-market-gapper.md"
    ],
    "scheduled_times": [
     "08:34"
@@ -338,18 +338,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 20198,
-   "delivery_latency_min": 10.5,
-   "added_epoch": 1795441470,
-   "added_et": "08:44:30",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 20252,
+   "delivery_latency_min": 5.7,
+   "added_epoch": 1795527584,
+   "added_et": "08:39:44",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 152,
-   "prior_state": "not_due",
+   "lines": 150,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 10.5
   },
   {
    "routine": "92a-preopen-catalyst-capture",
@@ -360,10 +360,10 @@
    "notes": [],
    "ground_truth_schedule": "30 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "preopen-feed/2026-11-23-0830.md",
+   "expected_path": "preopen-feed/2026-11-24-0830.md",
    "alternates": [
-    "preopen-feed/2026-11-23-0830.jsonl",
-    "preopen-feed/2026-11-23-0830.md"
+    "preopen-feed/2026-11-24-0830.jsonl",
+    "preopen-feed/2026-11-24-0830.md"
    ],
    "scheduled_times": [
     "08:30"
@@ -373,18 +373,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 4354,
-   "delivery_latency_min": 3.9,
-   "added_epoch": 1795440832,
-   "added_et": "08:33:52",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 4418,
+   "delivery_latency_min": 5.1,
+   "added_epoch": 1795527305,
+   "added_et": "08:35:05",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
    "lines": 37,
-   "prior_state": "not_due",
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 3.9
   },
   {
    "routine": "25-ntrt-gap-brief-daily",
@@ -395,20 +395,20 @@
    "notes": [],
    "ground_truth_schedule": "45 8 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "ntrt/2026-11-23.md",
+   "expected_path": "ntrt/2026-11-24.md",
    "alternates": [
-    "asia-pre-market/2026-11-23.md",
-    "cross-asset/2026-11-23.md",
-    "daily-briefs/2026-11-23-post-market.md",
-    "daily-briefs/2026-11-23-pre-market-refresh.md",
-    "daily-briefs/2026-11-23-pre-market.md",
-    "daily-screens/2026-11-23/_summary.md",
-    "daily-screens/2026-11-23/ariel-hernandez.md",
-    "daily-screens/2026-11-23/breadth-snapshot.md",
-    "daily-screens/2026-11-23/breadth.md",
-    "daily-screens/2026-11-23/daily-sweep.md",
-    "daily-screens/2026-11-23/focus-rvol-snapshot.md",
-    "daily-screens/2026-11-23/focus.md"
+    "asia-pre-market/2026-11-24.md",
+    "cross-asset/2026-11-24.md",
+    "daily-briefs/2026-11-24-post-market.md",
+    "daily-briefs/2026-11-24-pre-market-refresh.md",
+    "daily-briefs/2026-11-24-pre-market.md",
+    "daily-screens/2026-11-24/_summary.md",
+    "daily-screens/2026-11-24/ariel-hernandez.md",
+    "daily-screens/2026-11-24/breadth-snapshot.md",
+    "daily-screens/2026-11-24/breadth.md",
+    "daily-screens/2026-11-24/daily-sweep.md",
+    "daily-screens/2026-11-24/focus-rvol-snapshot.md",
+    "daily-screens/2026-11-24/focus.md"
    ],
    "scheduled_times": [
     "08:45"
@@ -418,18 +418,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 15821,
-   "delivery_latency_min": 19.2,
-   "added_epoch": 1795442650,
-   "added_et": "09:04:10",
-   "last_delivered": "2026-11-24",
+   "size_bytes": 12115,
+   "delivery_latency_min": 6.2,
+   "added_epoch": 1795528274,
+   "added_et": "08:51:14",
+   "last_delivered": "2026-11-25",
    "age_days": -1,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 160,
-   "prior_state": "not_due",
+   "lines": 147,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 19.2
   },
   {
    "routine": "26b-agentic-pre-market-brief-refresh",
@@ -440,9 +440,9 @@
    "notes": [],
    "ground_truth_schedule": "20 9 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-briefs/2026-11-23-pre-market-refresh.md",
+   "expected_path": "daily-briefs/2026-11-24-pre-market-refresh.md",
    "alternates": [
-    "daily-briefs/2026-11-23-pre-market-refresh.md"
+    "daily-briefs/2026-11-24-pre-market-refresh.md"
    ],
    "scheduled_times": [
     "09:20"
@@ -452,18 +452,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 28639,
-   "delivery_latency_min": 6.9,
-   "added_epoch": 1795444012,
-   "added_et": "09:26:52",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 27376,
+   "delivery_latency_min": 6.1,
+   "added_epoch": 1795530368,
+   "added_et": "09:26:08",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
    "lines": 282,
-   "prior_state": "not_due",
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 6.9
   },
   {
    "routine": "07-focus-rvol-09:45",
@@ -474,9 +474,9 @@
    "notes": [],
    "ground_truth_schedule": "45 9 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-23/focus-rvol-snapshot.md",
+   "expected_path": "daily-screens/2026-11-24/focus-rvol-snapshot.md",
    "alternates": [
-    "daily-screens/2026-11-23/focus-rvol-snapshot.md"
+    "daily-screens/2026-11-24/focus-rvol-snapshot.md"
    ],
    "scheduled_times": [
     "09:45"
@@ -486,15 +486,15 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 45459,
-   "delivery_latency_min": 9.4,
-   "added_epoch": 1795445664,
-   "added_et": "09:54:24",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 39745,
+   "delivery_latency_min": 13.1,
+   "added_epoch": 1795532286,
+   "added_et": "09:58:06",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 379,
+   "lines": 320,
    "prior_state": "missing",
    "prior_streak": 1,
    "prior_latency_min": null
@@ -508,10 +508,10 @@
    "notes": [],
    "ground_truth_schedule": "50 9 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "preopen-feed/2026-11-23-0950.md",
+   "expected_path": "preopen-feed/2026-11-24-0950.md",
    "alternates": [
-    "preopen-feed/2026-11-23-0950.jsonl",
-    "preopen-feed/2026-11-23-0950.md"
+    "preopen-feed/2026-11-24-0950.jsonl",
+    "preopen-feed/2026-11-24-0950.md"
    ],
    "scheduled_times": [
     "09:50"
@@ -521,18 +521,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 4102,
-   "delivery_latency_min": 5.5,
-   "added_epoch": 1795445729,
-   "added_et": "09:55:29",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 4425,
+   "delivery_latency_min": 3.7,
+   "added_epoch": 1795532022,
+   "added_et": "09:53:42",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 36,
-   "prior_state": "not_due",
+   "lines": 37,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 5.5
   },
   {
    "routine": "17-us-stocks-in-play-open",
@@ -544,20 +544,20 @@
    "ground_truth_schedule": "50 9,15 * * 1-5",
    "roster_schedule_agreement": true,
    "slot_regex": "^\\d{4}-\\d{2}-\\d{2}-open\\.md$",
-   "expected_path": "us-stocks-in-play/2026-11-23-open.md",
+   "expected_path": "us-stocks-in-play/2026-11-24-open.md",
    "alternates": [
-    "asia-pre-market/2026-11-23.md",
-    "cross-asset/2026-11-23.md",
-    "daily-briefs/2026-11-23-post-market.md",
-    "daily-briefs/2026-11-23-pre-market-refresh.md",
-    "daily-briefs/2026-11-23-pre-market.md",
-    "daily-screens/2026-11-23/_summary.md",
-    "daily-screens/2026-11-23/ariel-hernandez.md",
-    "daily-screens/2026-11-23/breadth-snapshot.md",
-    "daily-screens/2026-11-23/breadth.md",
-    "daily-screens/2026-11-23/daily-sweep.md",
-    "daily-screens/2026-11-23/focus-rvol-snapshot.md",
-    "daily-screens/2026-11-23/focus.md"
+    "asia-pre-market/2026-11-24.md",
+    "cross-asset/2026-11-24.md",
+    "daily-briefs/2026-11-24-post-market.md",
+    "daily-briefs/2026-11-24-pre-market-refresh.md",
+    "daily-briefs/2026-11-24-pre-market.md",
+    "daily-screens/2026-11-24/_summary.md",
+    "daily-screens/2026-11-24/ariel-hernandez.md",
+    "daily-screens/2026-11-24/breadth-snapshot.md",
+    "daily-screens/2026-11-24/breadth.md",
+    "daily-screens/2026-11-24/daily-sweep.md",
+    "daily-screens/2026-11-24/focus-rvol-snapshot.md",
+    "daily-screens/2026-11-24/focus.md"
    ],
    "scheduled_times": [
     "09:50",
@@ -568,18 +568,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 75963,
-   "delivery_latency_min": 22.3,
-   "added_epoch": 1795446739,
-   "added_et": "10:12:19",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 60271,
+   "delivery_latency_min": 25.3,
+   "added_epoch": 1795533320,
+   "added_et": "10:15:20",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 323,
-   "prior_state": "not_due",
+   "lines": 292,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 22.3
   },
   {
    "routine": "12-cross-asset-correlation",
@@ -590,20 +590,20 @@
    "notes": [],
    "ground_truth_schedule": "0 10 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "cross-asset/2026-11-23.md",
+   "expected_path": "cross-asset/2026-11-24.md",
    "alternates": [
-    "asia-pre-market/2026-11-23.md",
-    "cross-asset/2026-11-23.md",
-    "daily-briefs/2026-11-23-post-market.md",
-    "daily-briefs/2026-11-23-pre-market-refresh.md",
-    "daily-briefs/2026-11-23-pre-market.md",
-    "daily-screens/2026-11-23/_summary.md",
-    "daily-screens/2026-11-23/ariel-hernandez.md",
-    "daily-screens/2026-11-23/breadth-snapshot.md",
-    "daily-screens/2026-11-23/breadth.md",
-    "daily-screens/2026-11-23/daily-sweep.md",
-    "daily-screens/2026-11-23/focus-rvol-snapshot.md",
-    "daily-screens/2026-11-23/focus.md"
+    "asia-pre-market/2026-11-24.md",
+    "cross-asset/2026-11-24.md",
+    "daily-briefs/2026-11-24-post-market.md",
+    "daily-briefs/2026-11-24-pre-market-refresh.md",
+    "daily-briefs/2026-11-24-pre-market.md",
+    "daily-screens/2026-11-24/_summary.md",
+    "daily-screens/2026-11-24/ariel-hernandez.md",
+    "daily-screens/2026-11-24/breadth-snapshot.md",
+    "daily-screens/2026-11-24/breadth.md",
+    "daily-screens/2026-11-24/daily-sweep.md",
+    "daily-screens/2026-11-24/focus-rvol-snapshot.md",
+    "daily-screens/2026-11-24/focus.md"
    ],
    "scheduled_times": [
     "10:00"
@@ -613,18 +613,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 14215,
-   "delivery_latency_min": 3.6,
-   "added_epoch": 1795446217,
-   "added_et": "10:03:37",
-   "last_delivered": "2026-11-24",
+   "size_bytes": 14788,
+   "delivery_latency_min": 3.5,
+   "added_epoch": 1795532610,
+   "added_et": "10:03:30",
+   "last_delivered": "2026-11-25",
    "age_days": -1,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 226,
-   "prior_state": "not_due",
+   "lines": 232,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 3.6
   },
   {
    "routine": "15b-earnings-reaction-settlement",
@@ -635,9 +635,9 @@
    "notes": [],
    "ground_truth_schedule": "15 12 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "earnings/2026-11-23-reactions-settled.md",
+   "expected_path": "earnings/2026-11-24-reactions-settled.md",
    "alternates": [
-    "earnings/2026-11-23-reactions-settled.md"
+    "earnings/2026-11-24-reactions-settled.md"
    ],
    "scheduled_times": [
     "12:15"
@@ -647,18 +647,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 10938,
-   "delivery_latency_min": 4.0,
-   "added_epoch": 1795454338,
-   "added_et": "12:18:58",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 11347,
+   "delivery_latency_min": 3.4,
+   "added_epoch": 1795540704,
+   "added_et": "12:18:24",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
    "lines": 102,
-   "prior_state": "not_due",
-   "prior_streak": 1,
-   "prior_latency_min": null
+   "prior_state": "delivered",
+   "prior_streak": 0,
+   "prior_latency_min": 4.0
   },
   {
    "routine": "10-breadth-snapshot",
@@ -669,9 +669,9 @@
    "notes": [],
    "ground_truth_schedule": "0 14 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-23/breadth-snapshot.md",
+   "expected_path": "daily-screens/2026-11-24/breadth-snapshot.md",
    "alternates": [
-    "daily-screens/2026-11-23/breadth-snapshot.md"
+    "daily-screens/2026-11-24/breadth-snapshot.md"
    ],
    "scheduled_times": [
     "14:00"
@@ -681,18 +681,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 13575,
-   "delivery_latency_min": 4.5,
-   "added_epoch": 1795460673,
-   "added_et": "14:04:33",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 15244,
+   "delivery_latency_min": 6.6,
+   "added_epoch": 1795547198,
+   "added_et": "14:06:38",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 197,
-   "prior_state": "not_due",
-   "prior_streak": 1,
-   "prior_latency_min": null
+   "lines": 251,
+   "prior_state": "delivered",
+   "prior_streak": 0,
+   "prior_latency_min": 4.5
   },
   {
    "routine": "13-macro-calendar-midweek",
@@ -703,7 +703,7 @@
    "notes": [],
    "ground_truth_schedule": "0 14 * * 3",
    "roster_schedule_agreement": true,
-   "expected_path": "macro-calendar/2026-11-23-midweek.md",
+   "expected_path": "macro-calendar/2026-11-24-midweek.md",
    "alternates": [],
    "scheduled_times": [
     "14:00"
@@ -716,7 +716,7 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-18",
-   "age_days": 5,
+   "age_days": 6,
    "tolerance_days": 7,
    "prior_state": "not_due",
    "prior_streak": 0,
@@ -731,7 +731,7 @@
    "notes": [],
    "ground_truth_schedule": "0 15 * * 0",
    "roster_schedule_agreement": true,
-   "expected_path": "macro-calendar/2026-11-23-week-ahead.md",
+   "expected_path": "macro-calendar/2026-11-24-week-ahead.md",
    "alternates": [],
    "scheduled_times": [
     "15:00"
@@ -744,11 +744,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-22",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": 7,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 4.7
+   "prior_latency_min": null
   },
   {
    "routine": "06-pattern-study-backlog",
@@ -759,7 +759,7 @@
    "notes": [],
    "ground_truth_schedule": "0 15 * * 6",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-23/weekly-ipo.md",
+   "expected_path": "daily-screens/2026-11-24/weekly-ipo.md",
    "alternates": [],
    "scheduled_times": [
     "15:00"
@@ -772,7 +772,7 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-21",
-   "age_days": 2,
+   "age_days": 3,
    "tolerance_days": 7,
    "prior_state": "not_due",
    "prior_streak": 0,
@@ -788,20 +788,20 @@
    "ground_truth_schedule": "50 9,15 * * 1-5",
    "roster_schedule_agreement": true,
    "slot_regex": "^\\d{4}-\\d{2}-\\d{2}\\.md$",
-   "expected_path": "us-stocks-in-play/2026-11-23.md",
+   "expected_path": "us-stocks-in-play/2026-11-24.md",
    "alternates": [
-    "asia-pre-market/2026-11-23.md",
-    "cross-asset/2026-11-23.md",
-    "daily-briefs/2026-11-23-post-market.md",
-    "daily-briefs/2026-11-23-pre-market-refresh.md",
-    "daily-briefs/2026-11-23-pre-market.md",
-    "daily-screens/2026-11-23/_summary.md",
-    "daily-screens/2026-11-23/ariel-hernandez.md",
-    "daily-screens/2026-11-23/breadth-snapshot.md",
-    "daily-screens/2026-11-23/breadth.md",
-    "daily-screens/2026-11-23/daily-sweep.md",
-    "daily-screens/2026-11-23/focus-rvol-snapshot.md",
-    "daily-screens/2026-11-23/focus.md"
+    "asia-pre-market/2026-11-24.md",
+    "cross-asset/2026-11-24.md",
+    "daily-briefs/2026-11-24-post-market.md",
+    "daily-briefs/2026-11-24-pre-market-refresh.md",
+    "daily-briefs/2026-11-24-pre-market.md",
+    "daily-screens/2026-11-24/_summary.md",
+    "daily-screens/2026-11-24/ariel-hernandez.md",
+    "daily-screens/2026-11-24/breadth-snapshot.md",
+    "daily-screens/2026-11-24/breadth.md",
+    "daily-screens/2026-11-24/daily-sweep.md",
+    "daily-screens/2026-11-24/focus-rvol-snapshot.md",
+    "daily-screens/2026-11-24/focus.md"
    ],
    "scheduled_times": [
     "09:50",
@@ -812,18 +812,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 74906,
-   "delivery_latency_min": 23.1,
-   "added_epoch": 1795468388,
-   "added_et": "16:13:08",
-   "last_delivered": "2026-11-24",
+   "size_bytes": 58600,
+   "delivery_latency_min": 22.6,
+   "added_epoch": 1795554759,
+   "added_et": "16:12:39",
+   "last_delivered": "2026-11-25",
    "age_days": -1,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 362,
-   "prior_state": "not_due",
+   "lines": 390,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 23.1
   },
   {
    "routine": "04-reversal-bullish-3:55",
@@ -834,9 +834,9 @@
    "notes": [],
    "ground_truth_schedule": "55 15 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-23/reversal-bullish-3_55.md",
+   "expected_path": "daily-screens/2026-11-24/reversal-bullish-3_55.md",
    "alternates": [
-    "daily-screens/2026-11-23/reversal-bullish-3_55.md"
+    "daily-screens/2026-11-24/reversal-bullish-3_55.md"
    ],
    "scheduled_times": [
     "15:55"
@@ -846,18 +846,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 12973,
-   "delivery_latency_min": 38.3,
-   "added_epoch": 1795469596,
-   "added_et": "16:33:16",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 13745,
+   "delivery_latency_min": 27.9,
+   "added_epoch": 1795555376,
+   "added_et": "16:22:56",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 83,
-   "prior_state": "not_due",
+   "lines": 112,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 38.3
   },
   {
    "routine": "20-eod-watchlist-csv",
@@ -868,20 +868,20 @@
    "notes": [],
    "ground_truth_schedule": "0 16 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "us-eod/2026-11-23.csv",
+   "expected_path": "us-eod/2026-11-24.csv",
    "alternates": [
-    "daily-briefs/2026-11-23-pre-market-refresh.csv",
-    "daily-briefs/2026-11-23-pre-market.csv",
-    "daily-screens/2026-11-23/breadth-snapshot.csv",
-    "daily-screens/2026-11-23/focus-rvol-snapshot.csv",
-    "daily-screens/2026-11-23/focus.csv",
-    "daily-screens/2026-11-23/long-reversal-candidates.csv",
-    "daily-screens/2026-11-23/master.csv",
-    "daily-screens/2026-11-23/pre-market-gapper.csv",
-    "daily-screens/2026-11-23/reversal-bullish-3_55.csv",
-    "daily-screens/2026-11-23/short-candidates.csv",
-    "daily-screens/2026-11-23/tier-a.csv",
-    "international-eod/2026-11-23/au.csv"
+    "daily-briefs/2026-11-24-pre-market-refresh.csv",
+    "daily-briefs/2026-11-24-pre-market.csv",
+    "daily-screens/2026-11-24/breadth-snapshot.csv",
+    "daily-screens/2026-11-24/focus-rvol-snapshot.csv",
+    "daily-screens/2026-11-24/focus.csv",
+    "daily-screens/2026-11-24/long-reversal-candidates.csv",
+    "daily-screens/2026-11-24/master.csv",
+    "daily-screens/2026-11-24/pre-market-gapper.csv",
+    "daily-screens/2026-11-24/reversal-bullish-3_55.csv",
+    "daily-screens/2026-11-24/short-candidates.csv",
+    "daily-screens/2026-11-24/tier-a.csv",
+    "international-eod/2026-11-24/au.csv"
    ],
    "scheduled_times": [
     "16:00"
@@ -891,18 +891,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 1127457,
-   "delivery_latency_min": 130.1,
-   "added_epoch": 1795475404,
-   "added_et": "18:10:04",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 1130502,
+   "delivery_latency_min": 70.2,
+   "added_epoch": 1795558213,
+   "added_et": "17:10:13",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 868,
-   "prior_state": "not_due",
+   "lines": 865,
+   "prior_state": "delivered_late",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 130.1
   },
   {
    "routine": "05-eod-international-daily",
@@ -913,20 +913,20 @@
    "notes": [],
    "ground_truth_schedule": "30 16 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "international-eod/2026-11-23",
+   "expected_path": "international-eod/2026-11-24",
    "alternates": [
-    "daily-briefs/2026-11-23-pre-market-refresh.csv",
-    "daily-briefs/2026-11-23-pre-market.csv",
-    "daily-screens/2026-11-23/breadth-snapshot.csv",
-    "daily-screens/2026-11-23/focus-rvol-snapshot.csv",
-    "daily-screens/2026-11-23/focus.csv",
-    "daily-screens/2026-11-23/long-reversal-candidates.csv",
-    "daily-screens/2026-11-23/master.csv",
-    "daily-screens/2026-11-23/pre-market-gapper.csv",
-    "daily-screens/2026-11-23/reversal-bullish-3_55.csv",
-    "daily-screens/2026-11-23/short-candidates.csv",
-    "daily-screens/2026-11-23/tier-a.csv",
-    "international-eod/2026-11-23/au.csv"
+    "daily-briefs/2026-11-24-pre-market-refresh.csv",
+    "daily-briefs/2026-11-24-pre-market.csv",
+    "daily-screens/2026-11-24/breadth-snapshot.csv",
+    "daily-screens/2026-11-24/focus-rvol-snapshot.csv",
+    "daily-screens/2026-11-24/focus.csv",
+    "daily-screens/2026-11-24/long-reversal-candidates.csv",
+    "daily-screens/2026-11-24/master.csv",
+    "daily-screens/2026-11-24/pre-market-gapper.csv",
+    "daily-screens/2026-11-24/reversal-bullish-3_55.csv",
+    "daily-screens/2026-11-24/short-candidates.csv",
+    "daily-screens/2026-11-24/tier-a.csv",
+    "international-eod/2026-11-24/au.csv"
    ],
    "scheduled_times": [
     "16:30"
@@ -937,30 +937,30 @@
    "present": true,
    "is_directory": true,
    "files_under": [
-    "international-eod/2026-11-23/_carryover.json",
-    "international-eod/2026-11-23/_excluded.json",
-    "international-eod/2026-11-23/_manifest.json",
-    "international-eod/2026-11-23/au.csv",
-    "international-eod/2026-11-23/ca.csv",
-    "international-eod/2026-11-23/eu-at.csv",
-    "international-eod/2026-11-23/eu-be.csv",
-    "international-eod/2026-11-23/eu-de.csv",
-    "international-eod/2026-11-23/eu-dk.csv",
-    "international-eod/2026-11-23/eu-es.csv",
-    "international-eod/2026-11-23/eu-fi.csv",
-    "international-eod/2026-11-23/eu-fr.csv"
+    "international-eod/2026-11-24/_carryover.json",
+    "international-eod/2026-11-24/_excluded.json",
+    "international-eod/2026-11-24/_manifest.json",
+    "international-eod/2026-11-24/au.csv",
+    "international-eod/2026-11-24/ca.csv",
+    "international-eod/2026-11-24/eu-at.csv",
+    "international-eod/2026-11-24/eu-be.csv",
+    "international-eod/2026-11-24/eu-de.csv",
+    "international-eod/2026-11-24/eu-dk.csv",
+    "international-eod/2026-11-24/eu-es.csv",
+    "international-eod/2026-11-24/eu-fi.csv",
+    "international-eod/2026-11-24/eu-fr.csv"
    ],
-   "size_bytes": 2608853,
-   "delivery_latency_min": 10.3,
-   "added_epoch": 1795470017,
-   "added_et": "16:40:17",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 2867597,
+   "delivery_latency_min": 8.3,
+   "added_epoch": 1795556297,
+   "added_et": "16:38:17",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "prior_state": "not_due",
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 10.3
   },
   {
    "routine": "16-unusual-options-flow",
@@ -971,20 +971,20 @@
    "notes": [],
    "ground_truth_schedule": "35 16 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "options-flow/2026-11-23.md",
+   "expected_path": "options-flow/2026-11-24.md",
    "alternates": [
-    "asia-pre-market/2026-11-23.md",
-    "cross-asset/2026-11-23.md",
-    "daily-briefs/2026-11-23-post-market.md",
-    "daily-briefs/2026-11-23-pre-market-refresh.md",
-    "daily-briefs/2026-11-23-pre-market.md",
-    "daily-screens/2026-11-23/_summary.md",
-    "daily-screens/2026-11-23/ariel-hernandez.md",
-    "daily-screens/2026-11-23/breadth-snapshot.md",
-    "daily-screens/2026-11-23/breadth.md",
-    "daily-screens/2026-11-23/daily-sweep.md",
-    "daily-screens/2026-11-23/focus-rvol-snapshot.md",
-    "daily-screens/2026-11-23/focus.md"
+    "asia-pre-market/2026-11-24.md",
+    "cross-asset/2026-11-24.md",
+    "daily-briefs/2026-11-24-post-market.md",
+    "daily-briefs/2026-11-24-pre-market-refresh.md",
+    "daily-briefs/2026-11-24-pre-market.md",
+    "daily-screens/2026-11-24/_summary.md",
+    "daily-screens/2026-11-24/ariel-hernandez.md",
+    "daily-screens/2026-11-24/breadth-snapshot.md",
+    "daily-screens/2026-11-24/breadth.md",
+    "daily-screens/2026-11-24/daily-sweep.md",
+    "daily-screens/2026-11-24/focus-rvol-snapshot.md",
+    "daily-screens/2026-11-24/focus.md"
    ],
    "scheduled_times": [
     "16:35"
@@ -994,18 +994,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 24620,
-   "delivery_latency_min": 2.9,
-   "added_epoch": 1795469871,
-   "added_et": "16:37:51",
-   "last_delivered": "2026-11-24",
+   "size_bytes": 24623,
+   "delivery_latency_min": 4.2,
+   "added_epoch": 1795556352,
+   "added_et": "16:39:12",
+   "last_delivered": "2026-11-25",
    "age_days": -1,
    "tolerance_days": null,
    "health": "ok",
    "lines": 247,
-   "prior_state": "not_due",
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 2.9
   },
   {
    "routine": "22-weekly-market-recap-preview",
@@ -1016,7 +1016,7 @@
    "notes": [],
    "ground_truth_schedule": "47 17 * * 0",
    "roster_schedule_agreement": true,
-   "expected_path": "weekly/2026-11-23-preview.md",
+   "expected_path": "weekly/2026-11-24-preview.md",
    "alternates": [],
    "scheduled_times": [
     "17:47"
@@ -1029,11 +1029,11 @@
    "size_bytes": null,
    "near_miss": [],
    "last_delivered": "2026-11-22",
-   "age_days": 1,
+   "age_days": 2,
    "tolerance_days": 7,
-   "prior_state": "delivered",
+   "prior_state": "not_due",
    "prior_streak": 0,
-   "prior_latency_min": 9.3
+   "prior_latency_min": null
   },
   {
    "routine": "09-daily-sweep-18:30",
@@ -1044,9 +1044,9 @@
    "notes": [],
    "ground_truth_schedule": "30 18 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-screens/2026-11-23/daily-sweep.md",
+   "expected_path": "daily-screens/2026-11-24/daily-sweep.md",
    "alternates": [
-    "daily-screens/2026-11-23/daily-sweep.md"
+    "daily-screens/2026-11-24/daily-sweep.md"
    ],
    "scheduled_times": [
     "18:30"
@@ -1056,18 +1056,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 22605,
-   "delivery_latency_min": 5.9,
-   "added_epoch": 1795476954,
-   "added_et": "18:35:54",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 23512,
+   "delivery_latency_min": 5.8,
+   "added_epoch": 1795563345,
+   "added_et": "18:35:45",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 288,
-   "prior_state": "not_due",
+   "lines": 256,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 5.9
   },
   {
    "routine": "23-agentic-post-market-brief",
@@ -1078,9 +1078,9 @@
    "notes": [],
    "ground_truth_schedule": "30 22 * * 1-5",
    "roster_schedule_agreement": true,
-   "expected_path": "daily-briefs/2026-11-23-post-market.md",
+   "expected_path": "daily-briefs/2026-11-24-post-market.md",
    "alternates": [
-    "daily-briefs/2026-11-23-post-market.md"
+    "daily-briefs/2026-11-24-post-market.md"
    ],
    "scheduled_times": [
     "22:30"
@@ -1090,18 +1090,18 @@
    "market_closed": false,
    "present": true,
    "is_directory": false,
-   "size_bytes": 36065,
-   "delivery_latency_min": 13.5,
-   "added_epoch": 1795491811,
-   "added_et": "22:43:31",
-   "last_delivered": "2026-11-23",
+   "size_bytes": 30467,
+   "delivery_latency_min": 9.1,
+   "added_epoch": 1795577945,
+   "added_et": "22:39:05",
+   "last_delivered": "2026-11-24",
    "age_days": 0,
    "tolerance_days": null,
    "health": "ok",
-   "lines": 309,
-   "prior_state": "not_due",
+   "lines": 312,
+   "prior_state": "delivered",
    "prior_streak": 0,
-   "prior_latency_min": null
+   "prior_latency_min": 13.5
   }
  ]
 }
