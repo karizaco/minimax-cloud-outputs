@@ -47,7 +47,7 @@ universe_crossings: 579
 - **Required: 29 of 223 published** (194 Liquid); **191 near misses**; **13 alerts** (provable crossings).
 - **The tape today: `broad_tape`.** **49.22% of the 1601 scored names cleared the 1.5x bar** (median 1.4899x, p90 3.0521x) and there were **579 crossings** across the whole scored set - the bar is a DESCRIPTION of a broad move, not a selection of it. 
 - **Alerts: SFNC (ACCELERATING), GLOB (ACCELERATING), WTS (ACCELERATING), SNDK (ACCELERATING), PYXS (ACCELERATING), MRX (DECELERATING), GAP (DECELERATING), ERAS (DECELERATING), WRD (DECELERATING), ESTC (DECELERATING), FSCO (DECELERATING), UDR (DECELERATING), CCC (DECELERATING).** **5 are still building and 8 are already fading** between the earlier snapshot and the fire; the near-miss watch list is **41 building vs 132 fading**.
-- **Every prior reading is RECOMPUTED on the same feed and the SAME TradingView denominator as today's reading**, so both sides of each crossing are one scale. The TV denominator is a rolling average and moves between fetches, so a published prior value is a cross-check, never the baseline.
+- **Every prior reading is RECOMPUTED on the same feed and the SAME reconstructed denominator as today's reading**, so both sides of each crossing are one scale. The denominator is a rolling average and moves between pulls, so a published prior value is a cross-check, never the baseline.
 - **The focus roster alone is a momentum screen on the previous session's data and structurally misses the day's movers**; the wider union is what carries them.
 - This artifact is a **late reconstruction** - a delayed replay of the 2026-11-20 09:45 ET fire, produced on 2026-11-27. That fire never executed (the platform created the session but the routine's first step never ran, so no model call, no artifact and no commit), so the snapshot window (09:30-09:45 ET) was rebuilt from Yahoo's 5-minute and daily bars, and the denominator was reconstructed as of the fire rather than pulled live. Calibrated against four published artifacts, the reconstruction reproduces a live fire's numbers to a 0.8% median (rvol_now). Two limits stand: Yahoo has revised some thin names' intraday bars since the fire (SMTC on 2026-11-25 changed 60%), and a name that was a crossing can sit outside the published top-25 table when more names price than they did at the fire.
 
@@ -349,13 +349,13 @@ This turnover is why the prior reading is recomputed rather than read from the p
 - window volume: Yahoo 5m bars, 09:30/09:35/09:40 stamps, the last COMPLETED bar
 - prior-10 same-window baseline: the same Yahoo series
 - prior-10 full-day volume: Yahoo 1d bars (median ratio 1.0000 vs Nasdaq consolidated, max deviation 0.32%)
-- denominator: TV `average_volume_10d_calc`, ONE pull used for BOTH sides of every crossing
+- denominator: `average_volume_10d_calc` RECONSTRUCTED as of the fire (not pulled live - see `denominator_source`): the 9 most recent completed sessions' daily volume plus the fire day's 09:30-09:45 volume, over 10. ONE denominator set used for BOTH sides of every crossing
 - the previous session's reading is recomputed on that same denominator; the published value is carried as a cross-check with its drift
 - **one vintage per artifact**: the whole run is one process, so every published number comes from the same bytes. The pre-market pass fetches the same window again with includePrePost=true, and the session volume in THAT response is compared with the bulk pass's - a drift over 2% publishes the share as `n/a` rather than mixing vintages
 - pre-market: `pm_vol` is MEASURED for the published rows (the bars before 09:30 on the includePrePost response) and is not subtracted from the session volume - the session bars exclude pre-market by construction
 
 ## Source health
-- TradingView scanner (the denominator): one pull, no truncation and no coverage problem reported - one denominator set used for BOTH sides of every crossing
+- Denominator: RECONSTRUCTED as of the fire, not pulled live (see `denominator_source`) - one denominator set used for BOTH sides of every crossing, so both sides stay on one scale
 - Yahoo chart API (session volume, close, baselines): healthy; the engine scored 1601 of 1945 candidates
 - unpriced names: 344 of 1945 candidates had no usable session window (`no_session_bars`); they are reported as unpriced, never as a zero
 - pre-market share: 223 published rows - not_subtracted 223; 223 row(s) carried NO measurable pre-market volume (Yahoo's pre-open bars carry volume 0 and Nasdaq's pre-session counter had no row for them), so their `pm_vol_source` reads `not_subtracted` and their `pm_share_pct` is `n/a` rather than a wrong number
@@ -368,6 +368,6 @@ This turnover is why the prior reading is recomputed rather than read from the p
 - **`rvol_tod_normalised` is a MORNING metric** - how hot a name is against its OWN norm at 09:45. It is not a full-day relative volume and it is not comparable with cron #09's completed-session `rvol_<date>` (call that `rvol_session_eod`).
 - **`rvol_intraday_live` is reference only** - mechanically tiny at 09:45, never used for bucketing.
 - **`rvol_trend` is the earlier-snapshot delta** (`rvol_now` - `rvol_prev`); the session-over-session delta is carried as `rvol_vs_prev_session`.
-- **The TV denominator is a rolling average** and moves ~2% every 15 minutes, so a name sitting within ~2% of the bar can flip on the denominator alone.
+- **The denominator is a rolling average** and moves ~2% every 15 minutes, so a name sitting within ~2% of the bar can flip on the denominator alone. The reconstructed denominator carries its own error (median 0.494% against four published artifacts, p90 1.479%, max 8.458% on thin names), which is inside that flip band for the thinnest names.
 - **The pre-market share is measured only on the fire's OWN day.** Nasdaq's pre-session counter is the source (Yahoo's extended-hours bars carry volume 0 - measured 2026-11-13, on the live session and on history), and a REPLAY cannot measure it at all: the endpoint serves TODAY's pre-market, which is a different session. On a replay the rows read `pm_vol_source: not_subtracted` and the share is `n/a` rather than a wrong number.
 - **`lag_sessions` is a WEEKDAY count** between the sweep's own `Screen data_date:` and this fire - a venue holiday inside the gap would add one, so it is an upper bound.
