@@ -1,0 +1,97 @@
+{
+  "us": [],
+  "eu": [
+    {
+      "name": "MDV",
+      "chg": 10.66
+    },
+    {
+      "name": "AMBU_B",
+      "chg": 7.31
+    },
+    {
+      "name": "ATS",
+      "chg": 8.12
+    },
+    {
+      "name": "BITTI",
+      "chg": 7.63
+    },
+    {
+      "name": "KOMPL",
+      "chg": 7.08
+    },
+    {
+      "name": "SILEX",
+      "chg": 9.0
+    },
+    {
+      "name": "ELG",
+      "chg": 7.97
+    },
+    {
+      "name": "BEKB",
+      "chg": 7.6
+    },
+    {
+      "name": "ELON",
+      "chg": -11.8
+    },
+    {
+      "name": "METSO",
+      "chg": 5.09
+    },
+    {
+      "name": "EXENS",
+      "chg": 6.46
+    }
+  ],
+  "au": [
+    {
+      "name": "WTC",
+      "chg": 15.08
+    },
+    {
+      "name": "SKS",
+      "chg": 10.41
+    }
+  ],
+  "apac": [
+    {
+      "name": "SKL",
+      "market": "newzealand",
+      "chg": -2.92
+    },
+    {
+      "name": "MGC",
+      "market": "thailand",
+      "chg": 8.2
+    },
+    {
+      "name": "WAAREERTL",
+      "market": "india",
+      "chg": 20.0
+    }
+  ],
+  "budget": {
+    "US": 0,
+    "EU": 11,
+    "AU": 2,
+    "APAC": 3
+  },
+  "budget_total": 16,
+  "budget_cap": 16,
+  "budget_rule": "the US slice covers the rows whose earnings event can still explain today's move (fresh = the report is dated on the scan date), the EU/AU/APAC floors are never squeezed, and the leftover goes to the region with the most unexplained rows",
+  "earnings_calendar_rows": 155,
+  "asx_announcement_rows": 6,
+  "asx_fresh": [
+    "AFP",
+    "AGT",
+    "AIH",
+    "IKE",
+    "RCL",
+    "TWL"
+  ],
+  "earnings_field_stale_rows": 0,
+  "catalyst_file": "/workspace/catalog/catalysts/2026-11-27.md"
+}
