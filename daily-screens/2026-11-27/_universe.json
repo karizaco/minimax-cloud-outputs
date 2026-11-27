@@ -1,0 +1,297 @@
+{
+  "marker": "premarket-universe-v2",
+  "status": "OK_WITH_FLAGS",
+  "fire_date": "2026-11-27",
+  "expected_prior_session": "2026-11-25",
+  "sessions_source": "nasdaq:SPY/historical",
+  "sessions_considered": [
+    "2026-11-25",
+    "2026-11-24",
+    "2026-11-23",
+    "2026-11-20",
+    "2026-11-19",
+    "2026-11-18",
+    "2026-11-17",
+    "2026-11-16"
+  ],
+  "universe_date": "2026-11-25",
+  "universe_stale": false,
+  "universe_path": "daily-screens/2026-11-25/focus.csv",
+  "universe_schema": "dated+today_close",
+  "universe_kind": "focus.csv",
+  "universe_provenance_path": null,
+  "universe_data_date": "2026-11-24",
+  "tv_cboe_session_valid": true,
+  "ref_close_column": "today_close",
+  "ref_close_session": "2026-11-25",
+  "screen_close_column_rejected": "screen_close_resolved",
+  "names": [
+    "AMTM",
+    "ANF",
+    "CELC",
+    "COGT",
+    "DKS",
+    "INSM",
+    "IRON",
+    "KSS",
+    "MMED",
+    "NAMS",
+    "NNNN",
+    "STOK"
+  ],
+  "reference_closes": {
+    "AMTM": {
+      "ref_close": 24.86,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview"
+      ],
+      "focus_csv_close": 24.86,
+      "tradingview_close": 24.86,
+      "cboe_close": null,
+      "nasdaq_historical_close": 24.86,
+      "cboe_last_trade_time": null,
+      "stylists": "qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|B_stockbee_ep9m|D_qullamaggie_ep",
+      "flags": "",
+      "data_date": "2026-11-24"
+    },
+    "ANF": {
+      "ref_close": 176.96,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview"
+      ],
+      "focus_csv_close": 176.96,
+      "tradingview_close": 176.96,
+      "cboe_close": null,
+      "nasdaq_historical_close": 176.96,
+      "cboe_last_trade_time": null,
+      "stylists": "peoplewish|qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|A_tv_breakout_4pct|D_qullamaggie_ep|G_peoplewish",
+      "flags": "",
+      "data_date": "2026-11-24"
+    },
+    "CELC": {
+      "ref_close": 71.74,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview"
+      ],
+      "focus_csv_close": 71.74,
+      "tradingview_close": 71.74,
+      "cboe_close": null,
+      "nasdaq_historical_close": 71.74,
+      "cboe_last_trade_time": null,
+      "stylists": "peoplewish|stockbee",
+      "origins": "A_stockbee_4pct|G_peoplewish",
+      "flags": "",
+      "data_date": "2026-11-24"
+    },
+    "COGT": {
+      "ref_close": 36.08,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview"
+      ],
+      "focus_csv_close": 36.08,
+      "tradingview_close": 36.08,
+      "cboe_close": null,
+      "nasdaq_historical_close": 36.08,
+      "cboe_last_trade_time": null,
+      "stylists": "jeff_sun|peoplewish|stockbee",
+      "origins": "A_stockbee_4pct|A_tv_breakout_4pct|G_peoplewish|TV_volume_breakout",
+      "flags": "",
+      "data_date": "2026-11-24"
+    },
+    "DKS": {
+      "ref_close": 158.59,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview"
+      ],
+      "focus_csv_close": 158.59,
+      "tradingview_close": 158.59,
+      "cboe_close": null,
+      "nasdaq_historical_close": 158.59,
+      "cboe_last_trade_time": null,
+      "stylists": "qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|D_qullamaggie_ep",
+      "flags": "",
+      "data_date": "2026-11-24"
+    },
+    "INSM": {
+      "ref_close": 170.31,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview"
+      ],
+      "focus_csv_close": 170.31,
+      "tradingview_close": 170.31,
+      "cboe_close": null,
+      "nasdaq_historical_close": 170.31,
+      "cboe_last_trade_time": null,
+      "stylists": "hernandez|peoplewish|qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|B_stockbee_ep9m|B_tv_ep9m|C_qullamaggie_rs|D_qullamaggie_ep|E_qullamaggie_5d_gainers|G_peoplewish|H_hernandez_theme",
+      "flags": "",
+      "data_date": "2026-11-24"
+    },
+    "IRON": {
+      "ref_close": 89.32,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview"
+      ],
+      "focus_csv_close": 89.32,
+      "tradingview_close": 89.32,
+      "cboe_close": null,
+      "nasdaq_historical_close": 89.32,
+      "cboe_last_trade_time": null,
+      "stylists": "hernandez|peoplewish|stockbee",
+      "origins": "A_stockbee_4pct|G_peoplewish|H_hernandez_theme",
+      "flags": "",
+      "data_date": "2026-11-24"
+    },
+    "KSS": {
+      "ref_close": 26.7,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview"
+      ],
+      "focus_csv_close": 26.7,
+      "tradingview_close": 26.7,
+      "cboe_close": null,
+      "nasdaq_historical_close": 26.7,
+      "cboe_last_trade_time": null,
+      "stylists": "jeff_sun|peoplewish|stockbee",
+      "origins": "A_stockbee_4pct|A_tv_breakout_4pct|B_stockbee_ep9m|B_tv_ep9m|G_peoplewish|TV_volume_breakout",
+      "flags": "",
+      "data_date": "2026-11-24"
+    },
+    "MMED": {
+      "ref_close": 18.84,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview"
+      ],
+      "focus_csv_close": 18.84,
+      "tradingview_close": 18.84,
+      "cboe_close": null,
+      "nasdaq_historical_close": 18.84,
+      "cboe_last_trade_time": null,
+      "stylists": "peoplewish|stockbee",
+      "origins": "A_stockbee_4pct|B_stockbee_ep9m|G_peoplewish",
+      "flags": "",
+      "data_date": "2026-11-24"
+    },
+    "NAMS": {
+      "ref_close": 24.18,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview"
+      ],
+      "focus_csv_close": 24.18,
+      "tradingview_close": 24.18,
+      "cboe_close": null,
+      "nasdaq_historical_close": 24.18,
+      "cboe_last_trade_time": null,
+      "stylists": "hernandez|qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|C_qullamaggie_rs|H_hernandez_theme",
+      "flags": "",
+      "data_date": "2026-11-24"
+    },
+    "NNNN": {
+      "ref_close": 3.65,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview"
+      ],
+      "focus_csv_close": 3.65,
+      "tradingview_close": 3.65,
+      "cboe_close": null,
+      "nasdaq_historical_close": 3.65,
+      "cboe_last_trade_time": null,
+      "stylists": "jeff_sun|stockbee",
+      "origins": "A_stockbee_4pct|TV_volume_breakout",
+      "flags": "",
+      "data_date": "2026-11-24"
+    },
+    "STOK": {
+      "ref_close": 35.41,
+      "ref_close_source": "focus.csv:today_close",
+      "confirmed_by": [
+        "nasdaq_historical",
+        "tradingview"
+      ],
+      "focus_csv_close": 35.41,
+      "tradingview_close": 35.41,
+      "cboe_close": null,
+      "nasdaq_historical_close": 35.41,
+      "cboe_last_trade_time": null,
+      "stylists": "hernandez|jeff_sun|qullamaggie|stockbee",
+      "origins": "A_stockbee_4pct|A_tv_breakout_4pct|C_qullamaggie_rs|H_hernandez_theme|TV_volume_breakout",
+      "flags": "",
+      "data_date": "2026-11-24"
+    }
+  },
+  "conflicts": [],
+  "flags": [
+    "the CSV's `screen_close_resolved` belongs to data_date 2026-11-24 and was NOT used as the denominator"
+  ],
+  "failures": [],
+  "assertions": [
+    {
+      "assertion": "H1_expected_prior_session_from_data",
+      "ok": true,
+      "detail": "sessions resolved from nasdaq:SPY/historical: ['2026-11-25', '2026-11-24', '2026-11-23', '2026-11-20', '2026-11-19', '2026-11-18']",
+      "hard": true
+    },
+    {
+      "assertion": "H2_published_focus_list_exists",
+      "ok": true,
+      "detail": "looked for a published sweep on ['2026-11-25']",
+      "hard": true
+    },
+    {
+      "assertion": "H2b_focus_csv_parses",
+      "ok": true,
+      "detail": "12 names, schema=dated+today_close",
+      "hard": true
+    },
+    {
+      "assertion": "H3_universe_session_is_the_expected_prior_session",
+      "ok": true,
+      "detail": "universe session 2026-11-25 vs expected prior session 2026-11-25",
+      "hard": true
+    },
+    {
+      "assertion": "H4_reference_close_column_for_the_denominator_session",
+      "ok": true,
+      "detail": "denominator column `today_close` resolves to session 2026-11-25",
+      "hard": true
+    },
+    {
+      "assertion": "H4_reference_close_for_every_name",
+      "ok": true,
+      "detail": "12/12 names have a reference close",
+      "hard": true
+    },
+    {
+      "assertion": "H5_reference_close_confirmed_by_an_independent_source",
+      "ok": true,
+      "detail": "12/12 names confirmed by an independent source (session-exact Nasdaq history; TV/Cboe only when their session matches)",
+      "hard": true
+    }
+  ]
+}

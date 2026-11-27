@@ -1,0 +1,163 @@
+{
+  "catalysts": {
+    "XP": {
+      "confirmed": true,
+      "source": "issuer Q3 release (wire, 11/26) + Bloomberg via StockTitan 11/27",
+      "note": "Q3 net revenue up 9% with an expanded capital return (dividend plus a bigger buyback) announced after Wednesday's close; also carried by the Brazil finance-minister pick."
+    },
+    "INTR": {
+      "confirmed": true,
+      "source": "Bloomberg via StockTitan 11/27",
+      "note": "Brazilian assets rallied after President Lula named Bradesco chairman Luiz Carlos Trabuco Cappi as finance minister; the Brazilian bank/payment block listed in the US gapped together on it."
+    },
+    "STNE": {
+      "confirmed": true,
+      "source": "Bloomberg via StockTitan 11/27",
+      "note": "Brazilian assets rallied after the Bradesco chairman was named Brazil's finance minister (same Brazil finance-minister pick as INTR, XP, PAGS, NU)."
+    },
+    "PAGS": {
+      "confirmed": true,
+      "source": "Bloomberg via StockTitan 11/27",
+      "note": "Brazilian assets rallied after the Bradesco chairman was named Brazil's finance minister (same Brazil finance-minister pick as INTR, XP, STNE, NU)."
+    },
+    "NU": {
+      "confirmed": true,
+      "source": "Bloomberg via StockTitan 11/27",
+      "note": "Brazilian assets rallied after the Bradesco chairman was named Brazil's finance minister (same Brazil finance-minister pick as INTR, XP, STNE, PAGS)."
+    },
+    "AFYA": {
+      "confirmed": true,
+      "source": "issuer release (Afya, EGM results 11/25) + OpenBell AI pre-market note 11/27",
+      "note": "Shareholders approved the YDUQS merger at the Nov 25 extraordinary general meeting (~99% of votes cast in favour); closing still subject to Brazilian antitrust approval."
+    },
+    "ECX": {
+      "confirmed": true,
+      "source": "issuer press release (PR Newswire, 11/27 06:00 ET)",
+      "note": "Board authorised a share repurchase programme of up to US$20 million of ordinary shares, to run until 30 Nov 2027 and funded from existing cash."
+    },
+    "VERA": {
+      "confirmed": true,
+      "source": "FDA notice via Vertex's release (11/25 16:02 ET) + wire (Investing.com, 11/26)",
+      "note": "FDA extended the PDUFA date for Vertex's rival IgA nephropathy drug povetacicept from 30 Nov 2026 to no later than 28 Feb 2027, giving Vera's Trutakna a longer competitive runway; VRTX fell on the same news."
+    },
+    "VRTX": {
+      "confirmed": true,
+      "source": "FDA notice via Vertex's release (11/25 16:02 ET)",
+      "note": "FDA extended the povetacicept decision to no later than 28 Feb 2027 (a major amendment requiring more review), pushing the approval out of the month and taking the stock down on the same news that lifted VERA."
+    },
+    "ALVO": {
+      "confirmed": true,
+      "source": "issuer release (11/26 04:35 ET)",
+      "note": "A US court granted Janssen a preliminary injunction over AVT05, Alvotech's proposed biosimilar of Simponi; the company said it will appeal."
+    },
+    "SNDK": {
+      "confirmed": true,
+      "source": "wire/market reports on Samsung's divisional restructuring (Lookonchain/BIT Stock Platform, 11/27) + CoinDesk pre-market wrap",
+      "note": "Memory and storage names rallied as Samsung restructured its memory-chip and system-LSI divisions to expand into the AI chip market; the whole storage and optical complex moved together on it."
+    },
+    "AAOI": {
+      "confirmed": true,
+      "source": "wire/market reports on Samsung's divisional restructuring (Lookonchain/BIT Stock Platform, 11/27)",
+      "note": "Optical-networking names gapped with the AI-infrastructure rebound (the same story as SNDK and the rest of the memory/optical complex)."
+    },
+    "MU": {
+      "confirmed": true,
+      "source": "CoinDesk pre-market wrap 11/27",
+      "note": "Memory stocks rose on the AI-infrastructure rebound that followed the AI selloff earlier in the week."
+    },
+    "COHR": {
+      "confirmed": true,
+      "source": "wire/market reports 11/27",
+      "note": "Optical-networking complex rallied with the AI-infrastructure rebound (same story as AAOI, LITE, MRVL)."
+    },
+    "LITE": {
+      "confirmed": true,
+      "source": "wire/market reports 11/27",
+      "note": "Optical-networking complex rallied with the AI-infrastructure rebound (same story as AAOI, COHR, MRVL)."
+    },
+    "AXTI": {
+      "confirmed": true,
+      "source": "wire/market reports 11/27",
+      "note": "Compound-semiconductor and optical names rallied with the AI-infrastructure rebound."
+    },
+    "PURR": {
+      "confirmed": true,
+      "source": "CoinDesk 11/27",
+      "note": "Crypto-linked equities moved with bitcoin trading back above $61,000, ending a seven-week losing streak if it holds."
+    },
+    "GLXY": {
+      "confirmed": true,
+      "source": "CoinDesk 11/27",
+      "note": "Crypto-linked equities moved with bitcoin trading back above $61,000 (same crypto block as PURR, BTDR, BRAI)."
+    },
+    "BTDR": {
+      "confirmed": true,
+      "source": "CoinDesk 11/27",
+      "note": "Crypto-linked equities moved with bitcoin trading back above $61,000 (same crypto block as PURR, GLXY, BRAI)."
+    },
+    "BRAI": {
+      "confirmed": true,
+      "source": "CoinDesk 11/27",
+      "note": "Crypto-linked equities moved with bitcoin trading back above $61,000 (same crypto block as PURR, GLXY, BTDR)."
+    },
+    "USAS": {
+      "confirmed": true,
+      "source": "CoinDesk 11/27",
+      "note": "Precious-metals names gapped with silver jumping above $44 an ounce and gold above $3,670 as global markets recovered."
+    },
+    "UUUU": {
+      "confirmed": true,
+      "source": "CoinDesk 11/27",
+      "note": "Metals and mining names gapped with the precious-metals and commodity rebound (silver, gold, WTI) after the Thanksgiving break."
+    }
+  },
+  "notes": [
+    "The day's gaps cluster into four blocks, and the engine's own driver_class reads IDIOSYNCRATIC on the ladder rows because it can only see index and sector proxies: (1) a BRAZILIAN BANK/PAYMENTS BLOCK — INTR, XP, STNE, PAGS, NU, plus AFYA and ECX — moving on one story, President Lula naming Bradesco chairman Luiz Carlos Trabuco Cappi as finance minister, which lifted Brazilian assets broadly; XP carried its own Q3 print and capital-return announcement on top of it, and AFYA its YDUQS merger vote. (2) an AI-INFRASTRUCTURE / MEMORY-AND-OPTICAL BLOCK — SNDK, MU, AAOI, COHR, LITE, AXTI, ALAB, CRDO, MRVL — moving on Samsung's restructuring of its memory-chip and system-LSI divisions to expand into the AI chip market, after the AI selloff earlier in the week; the sector proxy SMH is up a similar amount, so this block is a SECTOR BETA, not eight independent setups. (3) a CRYPTO AND PRECIOUS-METALS BLOCK — PURR, GLXY, BTDR, BRAI with bitcoin back above $61,000, and USAS, UUUU, NAK, ITRG with silver above $44 an ounce and gold above $3,670; both are commodity beta, and note bitcoin is still down about 20% for the month even on this bounce. (4) a single FDA PAIR — VERA up and VRTX down on the povetacicept decision slipping to 28 Feb 2027.",
+    "ALVO is the one confirmed negative catalyst in the book: a preliminary injunction for Janssen over AVT05.",
+    "AGLT and LAES gapped with no catalyst confirmed in this run — they are published as unconfirmed rather than given a story.",
+    "The Focus book (the 2026-11-25 sweep's list) produced no flagged names: nothing in it cleared the 4% gap bar with a real market behind the print. The market's real movers were post-sweep catalysts, which is the structural blind spot the momentum universe always has.",
+    "Premarket context came from the 08:30 ET preopen feed (2026-11-27-0830, 300 records, 21 named catalysts) and from the wire (issuer releases, Bloomberg via StockTitan, CoinDesk). The preopen feed's board is micro-cap dominated and captured almost none of the ladder's names, but it independently confirmed XP's US$0.46 Class A dividend alongside the enlarged buyback, and it published the day's larger small-cap movers (POM, UFG, MNDR, WETO, RETO) that sit below the ladder's filters."
+  ],
+  "source_health": [
+    {
+      "source": "preopen-feed/2026-11-27-0830 (cron #92 pre-open tape)",
+      "status": "ok",
+      "role": "the catalyst digest — 21 named catalysts over 300 records; confirmed XP's dividend, and it covered the small-cap movers the ladder's filters exclude"
+    },
+    {
+      "source": "web_search (issuer releases, Bloomberg via StockTitan, CoinDesk, wire movers pages)",
+      "status": "ok",
+      "role": "the catalysts and the group stories the preopen feed did not capture — the Brazil block, the FDA pair, the AI/memory block and the crypto/metals block"
+    },
+    {
+      "source": "Nasdaq extended-trading tape (pre-market prints, volumes, ranges)",
+      "status": "ok",
+      "role": "the executed prints and pre-market volume behind every gap"
+    },
+    {
+      "source": "TradingView america scanner (cross-check closes, pre-market %, 30d average volume, sector, earnings calendar)",
+      "status": "ok",
+      "role": "the reference-close cross-check, the liquidity ratio and the catalyst-ahead calendar"
+    },
+    {
+      "source": "Cboe delayed-quote CDN (independent close cross-check)",
+      "status": "ok",
+      "role": "the second reference-close confirmation"
+    },
+    {
+      "source": "Nasdaq per-symbol session history (session-exact close confirmation)",
+      "status": "ok",
+      "role": "confirming the denominator session's close"
+    },
+    {
+      "source": "prior sweep focus.csv (2026-11-25)",
+      "status": "ok",
+      "role": "the Focus universe, its provenance and the denominator close"
+    },
+    {
+      "source": "TradingView earnings_release_date",
+      "status": "ok",
+      "role": "the catalyst-ahead calendar; every Focus name's stamp is a PAST print, so the forward calendar is empty"
+    }
+  ]
+}
