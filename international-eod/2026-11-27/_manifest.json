@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated_at": "2026-11-27T21:47:07Z",
+ "generated_at": "2026-11-27T21:48:22Z",
  "provenance": "TradingView per-country scanners (issuer-country filtered, one complete pull per region, 16/16) plus the America scanner for the US-listing map and the cross-venue cap check; index levels from the TradingView index scanner, cross-checked against Yahoo via the MCP bridge, with the ATHEX and AT&S closes from the venue's own print; FX from Frankfurter (rate date 2026-11-27) with TWD from open.er-api; the 2026-11-26 prior-session anchor reconstructed from the bridge's daily bars because the archive has no 26 Nov session",
  "market_cap_unit": "USD",
  "price_currency": "listing (the `currency` column)",
